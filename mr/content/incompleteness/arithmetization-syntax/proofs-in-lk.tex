@@ -100,9 +100,18 @@ $\pi$ ही $\Log{LK}$ मधील !!a{derivation} असेल, तर $\Gn{\
 $\fn{EndSequent}(p) = (p)_{(p)_0+1}$ हे तिच्या अंतिम क्रमवर्तीची
 गोडेल संख्या देते आणि $\fn{LastRule}(p) = (p)_{(p)_0+2}$ हे तिच्या
 अखेरच्या नियमाचा संकेतांक देते. पुढीलप्रमाणे परिभाषित केलेला
+क्रमिकेच्या संकेतांकाची वैधता तपासण्यासाठी आदिम पुनरावर्ती अट घ्या:
+\[
+\fn{Seq}(u) \defiff u=0 \lor u=\prod_{i<\len{u}}p_i^{(u)_i+1}.
+\]
+ती रिक्त क्रमिकेचे दोन्ही संकेतांक स्वीकारते आणि अतिरिक्त अविभाज्य
+घटक असलेले अवैध संकेतांक वगळते.
 $\fn{Sequent}(s)$ गुणधर्म
 \[
-  \len{s} = 2 \land \bforall{i<\len{(s)_0} + \len{(s)_1}}{\fn{Sent}(((s)_0 \concat (s)_1)_i)}
+  \begin{gathered}
+  s=\tuple{(s)_0,(s)_1} \land \fn{Seq}((s)_0) \land \fn{Seq}((s)_1)\\
+  {}\land \bforall{i<\len{(s)_0} + \len{(s)_1}}{\fn{Sent}(((s)_0 \concat (s)_1)_i)}
+  \end{gathered}
 \]
 $s$ साठी खरा असतो, तर आणि तरच $s$ ही !!{sentence}s असलेल्या
 क्रमवर्तीची गोडेल संख्या असते. काही इतर क्रिया अधिक कठीण आहेत; त्या कशा कराव्यात याची
@@ -170,6 +179,7 @@ $s$ साठी खरा असतो, तर आणि तरच $s$ ही !
   तर आणि तरच खरे असते:
 \begin{align*}
 & \bexists{g < p}{\bexists{d < p}{\bexists{a < p}{\bexists{b < p}{\quad}}}} \\
+& \qquad \fn{Sequent}(\tuple{g,d}) \land \fn{Sent}(a) \land \fn{Sent}(b) \land {}\\
 & \qquad \fn{EndSequent}(p) =
   \tuple{g, d \concat
     \tuple{\Gn{(} \concat a \concat \Gn{\land} \concat b \concat \Gn{)}}} \land {} \\
@@ -195,6 +205,7 @@ $\Gamma \Sequent \Delta, \lexists[x][!A]$ आणि $\pi_1$ ची अंति�
 अट पूर्ण झाली तर आणि तरच खरे असते:
 \begin{align*}
   & \bexists{g<p}{\bexists{d<p}{\bexists{a<p}{\bexists{x<p}{\bexists{t<p}{\quad}}}}}\\
+  & \qquad \fn{Sequent}(\tuple{g,d}) \land \fn{Frm}(a) \land \fn{Var}(x) \land {}\\
   & \qquad \fn{ClTerm}(t) \land {}\\
   & \qquad \fn{EndSequent}(p) =
   \tuple{
@@ -208,17 +219,25 @@ $\Gamma \Sequent \Delta, \lexists[x][!A]$ आणि $\pi_1$ ची अंति�
   } \land {}\\
   & \qquad (p)_0 = 1 \land \fn{LastRule}(p) = 18.
 \end{align*}
+प्रस्तावित निष्पत्तीगाठीचा संकेतांक नेमक्या पुढीलपैकी एका रूपात असावा:
+\begin{align*}
+\fn{ProofNode}(p) \defiff {}& p=\tuple{0,\fn{EndSequent}(p)} \lor {}\\
+& p=\tuple{1,(p)_1,\fn{EndSequent}(p),\fn{LastRule}(p)} \lor {}\\
+& p=\tuple{2,(p)_1,(p)_2,\fn{EndSequent}(p),\fn{LastRule}(p)}.
+\end{align*}
+ही अट अनावश्यक अतिरिक्त घटक किंवा चुकीची गाठीची स्थानसंख्या वगळते.
 मग $\fn{Correct}(p)$ ची व्याख्या अशी करतो:
 \begin{multline*}
-  \fn{Sequent}(\fn{EndSequent}(p)) \land {}\\
+  \fn{ProofNode}(p) \land \fn{Sequent}(\fn{EndSequent}(p)) \land {}\\
   [(\fn{LastRule}(p) = 1 \land
   \fn{FollowsBy}_{\LeftR\Weakening}(p)) \lor \dots \lor {}\\
   (\fn{LastRule}(p) = 20 \land \fn{FollowsBy}_{\eq}(p)) \lor {}\\
   (p)_0 = 0 \land \fn{InitialSeq}(\fn{EndSequent}(p))]
 \end{multline*}
-पहिली ओळ $p$ ची अंतिम क्रमवर्ती खरोखर !!{sentence}s चीच
+पहिली ओळ गाठीच्या संकेतांकाचे नेमके रूप तपासते आणि $p$ ची अंतिम क्रमवर्ती खरोखर !!{sentence}s चीच
 क्रमवर्ती आहे, याची खात्री करते. शेवटची ओळ $p$ मध्ये फक्त आरंभीची
 क्रमवर्ती असण्याचा प्रसंग हाताळते.
+%READERNOTE{SOL6-A065 — मूळ proof-code चाचण्या decoded fields वरच विसंबतात. येथे sequence codes, नेमका दोन-बाजूंचा sequent code, नेमकी initial/unary/binary proof-node रूपे आणि दाखवलेल्या दोन्ही नियमांचे syntax domains तपासले. लांबी दोन असली तरी extra prime factor असलेल्या 42 चा sequent code म्हणून स्वीकार किंवा initial node ला तिसरा अनावश्यक घटक जोडण्याचा स्वीकार यामुळे थांबतो.}
 \end{proof}
 
 \begin{prob}

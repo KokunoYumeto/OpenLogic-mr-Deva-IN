@@ -20,7 +20,7 @@ def load(path):
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--attempt", type=int, required=True)
-parser.add_argument("--release", choices=["complete-v1.0", "complete-v1.1"], default="complete-v1.0")
+parser.add_argument("--release", choices=["complete-v1.0", "complete-v1.1", "complete-v1.2"], default="complete-v1.2")
 parser.add_argument("--pwsh", default=shutil.which("pwsh"))
 args = parser.parse_args()
 assert args.attempt > 0 and args.pwsh and Path(args.pwsh).is_file()
@@ -75,6 +75,9 @@ assert len(list((destination / "mr").rglob("*.tex"))) == 722
 run([sys.executable, "-X", "utf8", "tools/prepare_complete.py"], destination)
 rebuilt = destination / "build/full"
 assert sha(rebuilt / "openlogic-mr-full.tex") == sha(tex)
+run([sys.executable, '-X', 'utf8', 'tools/qa_complete_reader.py'], destination)
+report['rebuilt_static_qa_sha256'] = sha(rebuilt/'STATIC_QA.json')
+report['source_reader_notes'] = load(rebuilt/'STATIC_QA.json')['source_reader_notes']
 report["regenerated_tex_sha256"] = sha(rebuilt / "openlogic-mr-full.tex")
 run([args.pwsh, "-NoProfile", "-File", "tools/build_guarded.ps1", "-Target", "full",
      "-PrepareScript", "tools/prepare_complete.py", "-SlotTimeoutMilliseconds", "1500"], destination)
@@ -105,8 +108,9 @@ with zipfile.ZipFile(html_zip) as archive:
         verified.append({"filename": name, "bytes": len(data), "sha256": sha(local)})
 assert len(verified) == 78
 assert load(rebuilt / "HTML_QA.json")["result"] == "ready"
-if args.release == "complete-v1.1":
-    accepted = destination / "build/epub-complete-v1.1/accepted-html"
+if args.release in {"complete-v1.1", "complete-v1.2"}:
+    epub_root = Path("build") / ("epub-" + args.release)
+    accepted = destination / epub_root / "accepted-html"
     accepted.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(html_zip) as archive:
         for name in archive.namelist():
@@ -116,8 +120,8 @@ if args.release == "complete-v1.1":
     assert sha(accepted / "index.html") == sha(html_root / "index.html")
     epub = RELEASE / "06-openlogic-mr-complete.epub"
     run([sys.executable, "-X", "utf8", "tools/build_complete_epub.py",
-         "build/epub-complete-v1.1/EPUB_BUILD_CONFIG.json"], destination)
-    rebuilt_epub = destination / "build/epub-complete-v1.1/openlogic-mr-complete.epub"
+         str(epub_root / "EPUB_BUILD_CONFIG.json")], destination)
+    rebuilt_epub = destination / epub_root / "openlogic-mr-complete.epub"
     assert sha(rebuilt_epub) == sha(epub)
     report["rebuilt_epub_sha256"] = sha(rebuilt_epub)
     report["epub_byte_identity"] = True

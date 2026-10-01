@@ -1,0 +1,2500 @@
+{
+  "schema": "openlogic-explicit-cutcs-context-validation/1",
+  "result": "passed",
+  "units": [
+    {
+      "unit_id": "OLP-0655",
+      "source_sha256": "1ea55e9f187e9daf9de01d795d158934d0871b216a0a61f98b062c0ab8b4ec1c",
+      "target_sha256": "3890c9bd2b3288ea6475f2057f0596c8d60e64301c73c67db7e80bb5cc105a66",
+      "frozen_trees": [
+        {
+          "tree_cut": 1,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "!B\\land!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "!B\\land!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "!B\\land!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 9,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 2,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "!B": 1,
+              "!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "!B": 1,
+              "!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "!B": 1,
+              "!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 9,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 3,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 13,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 4,
+          "valid_shared_context": true,
+          "cut_formula": "!B",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "right": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 15,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 5,
+          "valid_shared_context": true,
+          "cut_formula": "!C",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1,
+              "!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "block_index": 15,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 6,
+          "valid_shared_context": true,
+          "cut_formula": "!B",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "right": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 15,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 7,
+          "valid_shared_context": true,
+          "cut_formula": "!C",
+          "left": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!C": 1,
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 15,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 8,
+          "valid_shared_context": true,
+          "cut_formula": "!B",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "right": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 15,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 9,
+          "valid_shared_context": true,
+          "cut_formula": "!B(t)",
+          "left": [
+            {
+              "\\Gamma": 1,
+              "\\Pi": 1
+            },
+            {
+              "\\Delta": 1,
+              "\\Lambda": 1,
+              "!B(t)": 1
+            }
+          ],
+          "right": [
+            {
+              "!B(t)": 1,
+              "\\Gamma": 1,
+              "\\Pi": 1
+            },
+            {
+              "\\Delta": 1,
+              "\\Lambda": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1,
+              "\\Pi": 1
+            },
+            {
+              "\\Delta": 1,
+              "\\Lambda": 1
+            }
+          ],
+          "block_index": 18,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 10,
+          "valid_shared_context": true,
+          "cut_formula": "!B\\land!C",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B\\land!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!B\\land!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 19,
+          "context_aliases": {}
+        }
+      ],
+      "current_trees": [
+        {
+          "tree_cut": 1,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "!B\\land!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "!B\\land!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "!B\\land!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 9,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 2,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "!B": 1,
+              "!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "!B": 1,
+              "!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "!B": 1,
+              "!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 9,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 3,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 13,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 4,
+          "valid_shared_context": true,
+          "cut_formula": "!B",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "right": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 15,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 5,
+          "valid_shared_context": true,
+          "cut_formula": "!C",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1,
+              "!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "block_index": 15,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 6,
+          "valid_shared_context": true,
+          "cut_formula": "!B",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "right": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 15,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 7,
+          "valid_shared_context": true,
+          "cut_formula": "!C",
+          "left": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!C": 1,
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 15,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 8,
+          "valid_shared_context": true,
+          "cut_formula": "!B",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "right": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 15,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 9,
+          "valid_shared_context": true,
+          "cut_formula": "!B(t)",
+          "left": [
+            {
+              "\\Gamma": 1,
+              "\\Pi": 1
+            },
+            {
+              "\\Delta": 1,
+              "\\Lambda": 1,
+              "!B(t)": 1
+            }
+          ],
+          "right": [
+            {
+              "!B(t)": 1,
+              "\\Gamma": 1,
+              "\\Pi": 1
+            },
+            {
+              "\\Delta": 1,
+              "\\Lambda": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1,
+              "\\Pi": 1
+            },
+            {
+              "\\Delta": 1,
+              "\\Lambda": 1
+            }
+          ],
+          "block_index": 18,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 10,
+          "valid_shared_context": true,
+          "cut_formula": "!B\\land!C",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B\\land!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!B\\land!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 19,
+          "context_aliases": {}
+        }
+      ]
+    },
+    {
+      "unit_id": "OLP-0656",
+      "source_sha256": "930858ac1885a22be7f561047de54c702127d914720572042917ed3c8cef3214",
+      "target_sha256": "e1c1be0e18e7afe835a0b4cca29dbcf5fcf5198a4c867300af2a0aef2732606a",
+      "frozen_trees": [
+        {
+          "tree_cut": 1,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 6,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 2,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 8,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 3,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!D": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!D": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!D": 1
+            }
+          ],
+          "block_index": 17,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 4,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1,
+              "\\Pi": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!D": 1,
+              "\\Lambda": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1,
+              "\\Pi": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!D": 1,
+              "\\Lambda": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1,
+              "\\Pi": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!D": 1,
+              "\\Lambda": 1
+            }
+          ],
+          "block_index": 18,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 5,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\lif!C": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\lif!C": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\lif!C": 1
+            }
+          ],
+          "block_index": 21,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 6,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\lif!C": 1,
+              "!C": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\lif!C": 1,
+              "!C": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\lif!C": 1,
+              "!C": 1
+            }
+          ],
+          "block_index": 21,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 7,
+          "valid_shared_context": false,
+          "cut_formula": null,
+          "left": [
+            {
+              "\\lexists[x][!B(x)]": 1,
+              "\\Gamma'": 1
+            },
+            {
+              "\\Delta": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\lexists[x][!B(x)]": 1,
+              "\\Gamma'": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma'": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 22,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 8,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\lexists[x][!B(x)]": 1,
+              "!B(c)": 1,
+              "\\Gamma'": 1
+            },
+            {
+              "\\Delta": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\lexists[x][!B(x)]": 1,
+              "!B(c)": 1,
+              "\\Gamma'": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\lexists[x][!B(x)]": 1,
+              "!B(c)": 1,
+              "\\Gamma'": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 22,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 9,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1
+            }
+          ],
+          "block_index": 24,
+          "context_aliases": {
+            "\\Delta": [
+              "\\Delta'",
+              "!B\\land!C"
+            ]
+          }
+        },
+        {
+          "tree_cut": 10,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1,
+              "!B": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1,
+              "!B": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1,
+              "!B": 1
+            }
+          ],
+          "block_index": 24,
+          "context_aliases": {
+            "\\Delta": [
+              "\\Delta'",
+              "!B\\land!C"
+            ]
+          }
+        },
+        {
+          "tree_cut": 11,
+          "valid_shared_context": false,
+          "cut_formula": null,
+          "left": [
+            {
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "!B\\land!C": 2,
+              "!C": 1,
+              "!A": 1,
+              "\\Delta'": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1,
+              "!C": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1,
+              "!C": 1
+            }
+          ],
+          "block_index": 24,
+          "context_aliases": {
+            "\\Delta": [
+              "\\Delta'",
+              "!B\\land!C"
+            ]
+          }
+        },
+        {
+          "tree_cut": 12,
+          "valid_shared_context": true,
+          "cut_formula": "\\lnot!B",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "\\lnot!B": 1
+            }
+          ],
+          "right": [
+            {
+              "\\lnot!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 28,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 13,
+          "valid_shared_context": true,
+          "cut_formula": "!B",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "right": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 28,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 14,
+          "valid_shared_context": true,
+          "cut_formula": "!B\\lor!C",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B\\lor!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!B\\lor!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 29,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 15,
+          "valid_shared_context": true,
+          "cut_formula": "!C",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1,
+              "!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "block_index": 29,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 16,
+          "valid_shared_context": true,
+          "cut_formula": "!B",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "right": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 29,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 17,
+          "valid_shared_context": true,
+          "cut_formula": "!B\\lif!C",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B\\lif!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!B\\lif!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 31,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 18,
+          "valid_shared_context": false,
+          "cut_formula": null,
+          "left": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 31,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 19,
+          "valid_shared_context": true,
+          "cut_formula": "!B",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "right": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 31,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 20,
+          "valid_shared_context": true,
+          "cut_formula": "\\lforall[x][!B(x)]",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "\\lforall[x][!B(x)]": 1
+            }
+          ],
+          "right": [
+            {
+              "\\lforall[x][!B(x)]": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 31,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 21,
+          "valid_shared_context": true,
+          "cut_formula": "\\lforall[x][!B(x)]",
+          "left": [
+            {
+              "!B(t)": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "\\lforall[x][!B(x)]": 1
+            }
+          ],
+          "right": [
+            {
+              "!B(t)": 1,
+              "\\lforall[x][!B(x)]": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "!B(t)": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 31,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 22,
+          "valid_shared_context": true,
+          "cut_formula": "!B(t)",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B(t)": 1
+            }
+          ],
+          "right": [
+            {
+              "!B(t)": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 32,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 23,
+          "valid_shared_context": false,
+          "cut_formula": null,
+          "left": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 37,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 24,
+          "valid_shared_context": false,
+          "cut_formula": null,
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "right": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 37,
+          "context_aliases": {}
+        }
+      ],
+      "current_trees": [
+        {
+          "tree_cut": 1,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 6,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 2,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 8,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 3,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!D": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!D": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!D": 1
+            }
+          ],
+          "block_index": 17,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 4,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1,
+              "\\Pi": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!D": 1,
+              "\\Lambda": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1,
+              "\\Pi": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!D": 1,
+              "\\Lambda": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1,
+              "\\Pi": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!D": 1,
+              "\\Lambda": 1
+            }
+          ],
+          "block_index": 18,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 5,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\lif!C": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\lif!C": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\lif!C": 1
+            }
+          ],
+          "block_index": 21,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 6,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\lif!C": 1,
+              "!C": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\lif!C": 1,
+              "!C": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\lif!C": 1,
+              "!C": 1
+            }
+          ],
+          "block_index": 21,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 7,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\lexists[x][!B(x)]": 1,
+              "\\Gamma'": 1
+            },
+            {
+              "\\Delta": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\lexists[x][!B(x)]": 1,
+              "\\Gamma'": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\lexists[x][!B(x)]": 1,
+              "\\Gamma'": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 22,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 8,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\lexists[x][!B(x)]": 1,
+              "!B(c)": 1,
+              "\\Gamma'": 1
+            },
+            {
+              "\\Delta": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\lexists[x][!B(x)]": 1,
+              "!B(c)": 1,
+              "\\Gamma'": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\lexists[x][!B(x)]": 1,
+              "!B(c)": 1,
+              "\\Gamma'": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 22,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 9,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1
+            }
+          ],
+          "block_index": 24,
+          "context_aliases": {
+            "\\Delta": [
+              "\\Delta'",
+              "!B\\land!C"
+            ]
+          }
+        },
+        {
+          "tree_cut": 10,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1,
+              "!B": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1,
+              "!B": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1,
+              "!B": 1
+            }
+          ],
+          "block_index": 24,
+          "context_aliases": {
+            "\\Delta": [
+              "\\Delta'",
+              "!B\\land!C"
+            ]
+          }
+        },
+        {
+          "tree_cut": 11,
+          "valid_shared_context": true,
+          "cut_formula": "!A",
+          "left": [
+            {
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1,
+              "!C": 1,
+              "!A": 1
+            }
+          ],
+          "right": [
+            {
+              "!A": 1,
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1,
+              "!C": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1,
+              "\\Delta'": 0,
+              "!B\\land!C": 0
+            },
+            {
+              "\\Delta'": 1,
+              "!B\\land!C": 1,
+              "!C": 1
+            }
+          ],
+          "block_index": 24,
+          "context_aliases": {
+            "\\Delta": [
+              "\\Delta'",
+              "!B\\land!C"
+            ]
+          }
+        },
+        {
+          "tree_cut": 12,
+          "valid_shared_context": true,
+          "cut_formula": "\\lnot!B",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "\\lnot!B": 1
+            }
+          ],
+          "right": [
+            {
+              "\\lnot!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 28,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 13,
+          "valid_shared_context": true,
+          "cut_formula": "!B",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "right": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 28,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 14,
+          "valid_shared_context": true,
+          "cut_formula": "!B\\lor!C",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B\\lor!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!B\\lor!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 29,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 15,
+          "valid_shared_context": true,
+          "cut_formula": "!C",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1,
+              "!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "block_index": 29,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 16,
+          "valid_shared_context": true,
+          "cut_formula": "!B",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "right": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 29,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 17,
+          "valid_shared_context": true,
+          "cut_formula": "!B\\lif!C",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B\\lif!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!B\\lif!C": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 31,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 18,
+          "valid_shared_context": true,
+          "cut_formula": "!C",
+          "left": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!C": 1,
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 31,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 19,
+          "valid_shared_context": true,
+          "cut_formula": "!B",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "right": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 31,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 20,
+          "valid_shared_context": true,
+          "cut_formula": "\\lforall[x][!B(x)]",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "\\lforall[x][!B(x)]": 1
+            }
+          ],
+          "right": [
+            {
+              "\\lforall[x][!B(x)]": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 31,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 21,
+          "valid_shared_context": true,
+          "cut_formula": "\\lforall[x][!B(x)]",
+          "left": [
+            {
+              "!B(t)": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "\\lforall[x][!B(x)]": 1
+            }
+          ],
+          "right": [
+            {
+              "!B(t)": 1,
+              "\\lforall[x][!B(x)]": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "!B(t)": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 31,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 22,
+          "valid_shared_context": true,
+          "cut_formula": "!B(t)",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B(t)": 1
+            }
+          ],
+          "right": [
+            {
+              "!B(t)": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 32,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 23,
+          "valid_shared_context": true,
+          "cut_formula": "!C",
+          "left": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!C": 1
+            }
+          ],
+          "right": [
+            {
+              "!C": 1,
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 37,
+          "context_aliases": {}
+        },
+        {
+          "tree_cut": 24,
+          "valid_shared_context": true,
+          "cut_formula": "!B",
+          "left": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1,
+              "!B": 1
+            }
+          ],
+          "right": [
+            {
+              "!B": 1,
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "conclusion": [
+            {
+              "\\Gamma": 1
+            },
+            {
+              "\\Delta": 1
+            }
+          ],
+          "block_index": 37,
+          "context_aliases": {}
+        }
+      ]
+    }
+  ],
+  "current_cuts_checked": 34,
+  "frozen_invalid_cuts": 5,
+  "limitations": "Syntactic multiset check of every explicit CutCS tree in these two units, with the explicitly recorded Case D end-succedent abbreviation in block24. Does not certify proof leaves, other rules, substitution admissibility, all omitted exercise cases or the whole cut-elimination theorem.",
+  "date": "2026-10-01",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra"
+}

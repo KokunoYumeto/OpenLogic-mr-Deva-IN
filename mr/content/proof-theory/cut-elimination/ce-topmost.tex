@@ -1,6 +1,7 @@
 % Part: proof-theory
 % Chapter: cut-elimination
 % Section: ce-topmost
+%READERNOTE{SOL6-A295: CutCS फक्त कट-सूत्र काढतो आणि उरलेला सामायिक संदर्भ जपतो. अस्तित्व-सूत्राचा संदर्भ पहिल्या वृक्षात जपला आहे; अभिव्यंजनाच्या वृक्षात आवश्यक दुर्बलीकरणाने दोन्ही आधारांचा संदर्भ जुळवला आहे आणि खालच्या कटचा योग्य निष्कर्ष दिला आहे.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -385,7 +386,7 @@ $\Gamma \Sequent \Delta$,
 \UnaryInf$!A, \lexists[x][!B(x)], \Gamma' \fCenter \Delta$
 \RightSubproofLabel{$\pi_2$}
 \RightLabel{\CutCS}
-\BinaryInf$\Gamma' \fCenter \Delta$
+\BinaryInf$\lexists[x][!B(x)], \Gamma' \fCenter \Delta$
 \DisplayProof
 \]
 पुन्हा पुढील सिद्धतेला
@@ -662,16 +663,17 @@ $\Gamma \fCenter \Delta$
 \BinaryInf$\Gamma \fCenter \Delta$
 \DisplayProof
 \]
-\CutCS{} ने संपणाऱ्या
-पुढील !!{proof} ची कट-कोटी
-$\pi$ पेक्षा कमी आहे:
+$\pi_2''$ च्या पूर्वांगात $!B$ घालून मिळालेल्या
+सिद्धतेला $\pi_2'''$ लिहू. आता दोन्ही आधारांचा सामायिक
+संदर्भ $!B,\Gamma$ आहे. \CutCS{} ने संपणाऱ्या
+पुढील !!{proof} ची कट-कोटी $\pi$ पेक्षा कमी आहे:
 \[
 \AxiomC{}
 \RightLabel{$\pi_1'$}
 \Deduce$!B, \Gamma \fCenter \Delta, !C$
 \AxiomC{}
-\RightLabel{$\pi_2''$}
-\Deduce$!C, \Gamma \fCenter \Delta$
+\RightLabel{$\pi_2'''$}
+\Deduce$!C, !B, \Gamma \fCenter \Delta$
 \RightLabel{\CutCS}
 \BinaryInf$!B, \Gamma \fCenter \Delta$
 \DisplayProof
@@ -848,13 +850,13 @@ $!A \ident (!B \lif !C)$
 \RightLabel{$\pi_1'$}
 \Deduce$!B, \Gamma \fCenter \Delta, !C$
 \AxiomC{}
-\RightLabel{$\pi_2''$}
-\Deduce$!C, \Gamma \fCenter \Delta$
+\RightLabel{$\pi_2'''$}
+\Deduce$!C, !B, \Gamma \fCenter \Delta$
 \RightLabel{\CutCS}
 \BinaryInf$!B, \Gamma \fCenter \Delta$
 \RightSubproofLabel{$\pi_1''$}
 \RightLabel{\CutCS}
-\BinaryInf$!B, \Gamma \fCenter \Delta$
+\BinaryInf$\Gamma \fCenter \Delta$
 \DisplayProof
 \]
 वरचा \CutCS{}, जो
@@ -871,6 +873,10 @@ $\pi$ पेक्षा कमी असण्याची
 $!B$ असल्यामुळे त्याची
 \emph{कोटी} $\pi$ च्या
 कट-कोटीपेक्षा कमी आहे.
+येथे $\pi_2'''$ हे आधीप्रमाणे $\pi_2''$ चे
+दुर्बलीकरण आहे; त्यामुळे वरच्या कटाच्या दोन्ही आधारांत
+$!B,\Gamma$ हा सामायिक संदर्भ आहे. खालचा कट $!B$
+काढतो; त्याचा निष्कर्ष $\Gamma\Sequent\Delta$ आहे.
 
 \olref{lem:cut-adm-G3c} नुसार
 !!a{proof} मधील एक सर्वोच्च

@@ -1,0 +1,69 @@
+{
+  "schema": "openlogic-prefix-interpretation-finite-replay/1",
+  "status": "passed",
+  "date": "2026-09-30",
+  "source_sha256": {
+    "mr/content/intuitionistic-logic/tableaux/rules.tex": "f650b77826f86bbe2911b69ba80ec8916e52a249afb85a97c15e109567f84341",
+    "mr/content/intuitionistic-logic/tableaux/soundness.tex": "b8082bf924d52cba261bbb90bef95086be5bbf37e933bc3ea224ec639d1724dc"
+  },
+  "partial_orders": 23,
+  "valid_sparse_prefix_interpretations": 2174,
+  "fresh_accessible_witness_extensions": 9582,
+  "adjacent_only_definition_counterexample": {
+    "prefixes": [
+      [
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "worlds": 2,
+    "R": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "interpretation_worlds": [
+      0,
+      1
+    ],
+    "old_definition_allows_true_false_closure_pair": true,
+    "corrected_definition_rejects_it": true
+  },
+  "freshness_counterexample": {
+    "old_prefixes": [
+      [
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "old_worlds": [
+      0,
+      0
+    ],
+    "accessible_witness_world": 1,
+    "weakly_new_prefix": [
+      1,
+      1
+    ],
+    "weakly_new_extension_fails": true,
+    "properly_fresh_prefix": [
+      1,
+      2
+    ],
+    "properly_fresh_extension_passes": true
+  },
+  "limitations": "Finite sparse-prefix interpretation replay and exact counterexamples only; the universal extension argument is the translated proof. No entire-corpus, all-infinite-prefix or independent human certification."
+}

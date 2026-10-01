@@ -40,7 +40,7 @@ with zipfile.ZipFile(epub) as archive:
 sample_specs=[
     ('cover','OEBPS/content-000.xhtml',1100,800,None),
     ('aristotle','OEBPS/content-030.xhtml',760,960,
-     'कॅटेगरीज' if 'v1.1' in config['release'] else 'ॲरिस्टॉटल'),
+     'कॅटेगरीज'),
     ('math-glyph','OEBPS/content-066.xhtml',760,640,'mglyph'),
     ('calculus','OEBPS/content-090.xhtml',760,960,'अवकलन'),
     ('greek','OEBPS/content-092.xhtml',420,860,None),

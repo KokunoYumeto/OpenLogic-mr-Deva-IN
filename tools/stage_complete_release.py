@@ -9,14 +9,20 @@ import zipfile
 from pathlib import Path
 
 import fitz
+from complete_reader_notes import verify_reader_notes
+from complete_reader_topology import heading_inventory
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--tag", choices=["complete-v1.0", "complete-v1.1"], default="complete-v1.0")
+parser.add_argument("--tag", choices=["complete-v1.0", "complete-v1.1", "complete-v1.2"], default="complete-v1.2")
 args = parser.parse_args()
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "build/full"
 TAG = args.tag
+WITH_EPUB = TAG in {"complete-v1.1", "complete-v1.2"}
+CANON_RECHECK_RELATIVE = "provenance/" + ("complete-v1.2" if TAG == "complete-v1.2" else "complete-v1.1") + "/CANON_RECHECK_101.json"
+CANON_RECHECK_PATH = ROOT / CANON_RECHECK_RELATIVE
+EPUB_BUILD = ROOT / "build" / ("epub-" + TAG)
 RELEASE = ROOT / "releases" / TAG
 RELEASE.mkdir(parents=True, exist_ok=True)
 FIXED_DATE = (2026, 9, 28, 0, 0, 0)
@@ -77,6 +83,10 @@ provenance_qa = load(BUILD / "PROVENANCE_QA.json")
 review_qa = load(BUILD / "release-provenance/translation-decisions/TRANSLATION_DECISION_QA.json")
 diagram_receipt = load(BUILD / "HTML_DIAGRAM_RECEIPT.json")
 projection_qa = load(BUILD / "FINAL_READER_PROJECTION_QA.json")
+reader_note_qa = load(BUILD / "READER_NOTE_QA.json")
+note_manifest = {row['unit_id']:row for row in (
+    json.loads(line) for line in (ROOT/'provenance/SOURCE_MANIFEST.jsonl').read_text(encoding='utf-8').splitlines() if line.strip())}
+reader_note_count = verify_reader_notes(ROOT, note_manifest, (BUILD/'openlogic-mr-full.tex').read_text(encoding='utf-8'), reader_note_qa)
 assert tex_receipt["result"] == "built-log-clean" and len(tex_receipt["passes"]) == 3
 assert tex_receipt["texInputSha256"] == inputs["reader_sha256"] == static_qa["reader_sha256"]
 assert sha(BUILD / "openlogic-mr-full.tex") == inputs["reader_sha256"]
@@ -101,23 +111,32 @@ assert provenance_qa["status"] == "passed" and provenance_qa["translated_units"]
 assert review_qa["status"] == "ready" and review_qa["source_units"] == 722
 assert not review_qa["missing_localization"] and not review_qa["pending"]
 assert review_qa["schema_errors"] == 0
-if TAG == "complete-v1.1":
-    epub_config = load(ROOT / "build/epub-complete-v1.1/EPUB_BUILD_CONFIG.json")
-    epub_build = load(ROOT / "build/epub-complete-v1.1/EPUB_BUILD_RECEIPT.json")
-    epub_qa = load(ROOT / "build/epub-complete-v1.1/EPUB_QA.json")
-    epub_visual_qa = load(ROOT / "build/epub-complete-v1.1/EPUB_VISUAL_QA.json")
-    canon_recheck = load(ROOT / "provenance/complete-v1.1/CANON_RECHECK_101.json")
+assert review_qa["release_tag"] == TAG
+if WITH_EPUB:
+    epub_config = load(EPUB_BUILD / "EPUB_BUILD_CONFIG.json")
+    epub_build = load(EPUB_BUILD / "EPUB_BUILD_RECEIPT.json")
+    epub_qa = load(EPUB_BUILD / "EPUB_QA.json")
+    epub_visual_qa = load(EPUB_BUILD / "EPUB_VISUAL_QA.json")
+    canon_recheck = load(CANON_RECHECK_PATH)
     assert epub_qa["status"] == "passed" and epub_qa["epubcheck_exit"] == 0
     assert epub_qa["epub_sha256"] == epub_build["epub"]["sha256"]
     assert epub_qa["reader_html_sha256"] == html_qa["html_sha256"] == epub_config["reader_html_sha256"]
-    assert epub_qa["scope"]["source_units"] == 722 and epub_qa["metrics"]["mathml_roots"] == 38456
+    assert epub_qa["scope"]["source_units"] == 722 and epub_qa["metrics"]["mathml_roots"] == html_qa["mathml_nodes"]
     assert epub_visual_qa["status"] == "passed-representative-actual-image-inspection"
     assert epub_visual_qa["epub_sha256"] == epub_qa["epub_sha256"]
     assert len(epub_visual_qa["samples"]) == 5
     assert canon_recheck["scope"]["intake_segments"] == 101 and canon_recheck["status"] in {"reviewed-pending-combined-reader-publication", "published"}
+    if TAG == "complete-v1.2":
+        assert canon_recheck["attribution_erratum"]["id"] == "SOL6-A344"
+        assert canon_recheck["attribution_erratum"]["historical_report_sha256"] == sha(ROOT / "provenance/complete-v1.1/CANON_RECHECK_101.json")
     assert epub_build["cold_epub_byte_identity"] and epub_build["cold_tree_byte_identity"]
 assert diagram_receipt["status"] == "final-source" and diagram_receipt["source_pdf_sha256"] == tex_receipt["pdf"]["sha256"]
-assert html_qa["diagrams"] == 70 and html_qa["sections"] == 613
+assert html_qa["diagrams"] == 70
+reader_headings = heading_inventory((BUILD / "openlogic-mr-full.tex").read_text(encoding="utf-8"))
+assert html_qa["generated_heading_counts"] == {"h1": 1, "h2": 1, "h3": 0}
+for tag, command, metric in (("h1", "part", "parts"), ("h2", "chapter", "chapters"), ("h3", "section", "sections")):
+    expected = sum(row["command"] == command for row in reader_headings) + html_qa["generated_heading_counts"][tag]
+    assert html_qa[metric] == html_qa["source_heading_counts"][tag] == expected
 pdf_pages = len(fitz.open(BUILD / "openlogic-mr-full.pdf"))
 assert pdf_pages >= 900
 assert pdf_qa["pages"] == pdf_pages
@@ -147,9 +166,12 @@ notes.write_text(
     "तपासलेली स्थिर सामग्री `build/core/html/assets/` मध्ये आहे. "
     "उर्वरित आकृत्यांचे स्थाननकाशे व ओळखी `build/full/` मध्ये आहेत.\n\n"
     "यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex — GPT-5.6 Sol आणि "
-    "GPT-6 Sol, दोन्ही Ultra effort. पूरक यांत्रिक पुनरावलोकन GPT-6 Astra, Ultra effort. स्रोताशी तुलना आणि यांत्रिक तपासण्या "
+    "GPT-6 Sol, दोन्ही Ultra effort. दुरुस्ती-पुनरावलोकन GPT-6.1 Sol, Ultra effort. स्रोताशी तुलना आणि यांत्रिक तपासण्या "
     "केल्या आहेत. अधिक तपशीलवार शब्दनिर्णय-पुनरावलोकन 722 पैकी 281 "
     "एककांपुरते आहे; स्वतंत्र मानवी पुनरावलोकनाचा दावा नाही. "
+    "या नव्या दुरुस्ती-पुनरावलोकनात मागील GPT-6 Sol कामातील सर्व519 "
+    "प्रभावित एकके प्रत्यक्ष वाचून 328 दुरुस्ती-निवडी नोंदल्या आहेत. "
+    "हा सर्व722 एककांच्या नव्या अर्थपुनर्वाचनाचा दावा नाही. "
     "मूळ निर्माते Open Logic Project आहेत. मजकूर व रूपांतर CC BY 4.0 "
     "अंतर्गत आहेत. घटकांच्या स्वतंत्र परवाना-नोंदी आणि SIL Open Font "
     "License जतन केले आहेत.\n",
@@ -170,6 +192,16 @@ for name in tracked:
         "tools/stage_complete_release.py",
     }:
         source_entries.append((name, pristine_core_tool if name == "tools/prepare_core_html.py" else ROOT / name))
+# Reproducibility depends on the actual required tools, including reviewed new
+# helpers that have not been committed yet. Preserve the pristine core-HTML
+# selection above and omit the same private-production-only exporters.
+included_tools = {name for name, _ in source_entries}
+for tool_path in sorted((ROOT / 'tools').iterdir()):
+    name = tool_path.relative_to(ROOT).as_posix()
+    if tool_path.is_file() and tool_path.suffix in {'.py', '.ps1'} and name not in included_tools and name not in {
+        'tools/prepare_complete_provenance.py', 'tools/sync_release_provenance.py', 'tools/stage_complete_release.py',
+    }:
+        source_entries.append((name, tool_path))
 source_entries.extend((name, ROOT / name) for name in sorted(target_paths))
 source_entries.extend((name, ROOT / name) for name in ("README.md", "LICENSE.md", ".gitignore", ".gitattributes"))
 for filename in ("SOURCE_MANIFEST.jsonl", "SEGMENT_CANON_USE.jsonl", "CANON_SOURCES.jsonl", "CANON_PASSAGES.jsonl", "TERM_DECISIONS.jsonl"):
@@ -180,15 +212,18 @@ for path in (BUILD / "release-provenance").rglob("*"):
         name = "provenance/" + path.relative_to(BUILD / "release-provenance").as_posix()
         if name not in included_provenance:
             source_entries.append((name, path))
-if TAG == "complete-v1.1":
-    source_entries.append(("provenance/complete-v1.1/CANON_RECHECK_101.json", ROOT / "provenance/complete-v1.1/CANON_RECHECK_101.json"))
-    source_entries.append(("build/epub-complete-v1.1/EPUB_BUILD_CONFIG.json", ROOT / "build/epub-complete-v1.1/EPUB_BUILD_CONFIG.json"))
+if WITH_EPUB:
+    source_entries.append((CANON_RECHECK_RELATIVE, CANON_RECHECK_PATH))
+    source_entries.append((f"build/epub-{TAG}/EPUB_BUILD_CONFIG.json", EPUB_BUILD / "EPUB_BUILD_CONFIG.json"))
+for path in sorted((ROOT / "provenance/sol6-reaudit").glob("*")):
+    if path.is_file():
+        source_entries.append((path.relative_to(ROOT).as_posix(), path))
 source_entries.append(("provenance/complete-v1.0/TERMINOLOGY_MR.jsonl",
                        ROOT / "provenance/complete-v1.0/TERMINOLOGY_MR.jsonl"))
 source_entries.append(("provenance/complete-v1.0/SOURCE_ISSUES_MR.jsonl",
                        ROOT / "provenance/complete-v1.0/SOURCE_ISSUES_MR.jsonl"))
 source_entries.append(("SOURCE_PACKAGE_README.md", notes))
-for name in ("INPUTS.json", "DRIVER_EDITORIAL_QA.json", "FINAL_READER_PROJECTION_QA.json", "PDF_VISUAL_QA.json", "HTML_VISUAL_QA.json", "HTML_DIAGRAM_VISUAL_QA.json", "HTML_DIAGRAM_INVENTORY.json", "HTML_DIAGRAM_RECEIPT.json",
+for name in ("INPUTS.json", "DRIVER_EDITORIAL_QA.json", "READER_NOTE_QA.json", "FINAL_READER_PROJECTION_QA.json", "PDF_VISUAL_QA.json", "HTML_VISUAL_QA.json", "HTML_DIAGRAM_VISUAL_QA.json", "HTML_DIAGRAM_INVENTORY.json", "HTML_DIAGRAM_RECEIPT.json",
              "TEX_BUILD_RECEIPT.json", "openlogic-mr-full.tex", "openlogic-mr-full.aux"):
     source_entries.append(("build/full/" + name, BUILD / name))
 source_entries.append(("build/core/HTML_BUILD_RECEIPT.json", ROOT / "build/core/HTML_BUILD_RECEIPT.json"))
@@ -238,6 +273,7 @@ for index, match in enumerate(chapter_starts):
         "% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.\n"
         "% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —\n"
         "% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.\n"
+        "% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.\n"
     )
     chapter.write_text(header + body, encoding="utf-8", newline="\n")
     assert chapter.read_text(encoding="utf-8")[len(header):] == body
@@ -258,16 +294,19 @@ for path in (BUILD / "release-provenance/translation-decisions").rglob("*"):
 for name in ("EXPERT_REVIEW_DECISIONS.jsonl", "EXPERT_REVIEW_OCCURRENCES.jsonl", "EXPERT_REVIEW_OCCURRENCES.csv",
              "EXPERT_REVIEW_LOG.md", "EXPERT_REVIEW_OCCURRENCES.md", "EXPERT_REVIEW_PRIORITY.md"):
     review_entries.append(("legacy/" + name, BUILD / "release-provenance" / name))
-    if TAG == "complete-v1.1":
+    if WITH_EPUB:
         review_entries.append(("historical-detailed-review/" + name,
                                BUILD / "release-provenance/historical-detailed-review" / name))
 review_entries.append(("SOURCE_ISSUES.jsonl", BUILD / "release-provenance/SOURCE_ISSUES.jsonl"))
 review_entries.append(("REVIEW_READER_BINDING.json", BUILD / "release-provenance/REVIEW_READER_BINDING.json"))
 for name in ("TERMINOLOGY_MR.jsonl", "SOURCE_ISSUES_MR.jsonl"):
     review_entries.append(("complete-v1.0/" + name, ROOT / "provenance/complete-v1.0" / name))
-if TAG == "complete-v1.1":
-    review_entries.append(("complete-v1.1/CANON_RECHECK_101.json", ROOT / "provenance/complete-v1.1/CANON_RECHECK_101.json"))
-    review_entries.append(("complete-v1.1/EPUB_VISUAL_QA.json", ROOT / "build/epub-complete-v1.1/EPUB_VISUAL_QA.json"))
+if WITH_EPUB:
+    review_entries.append((CANON_RECHECK_RELATIVE.removeprefix("provenance/"), CANON_RECHECK_PATH))
+    review_entries.append((f"{TAG}/EPUB_VISUAL_QA.json", EPUB_BUILD / "EPUB_VISUAL_QA.json"))
+for path in sorted((ROOT / "provenance/sol6-reaudit").glob("*")):
+    if path.is_file():
+        review_entries.append(("sol6-reaudit/" + path.name, path))
 scan_private(review_entries)
 make_zip(review_zip, review_entries)
 subprocess.run(["python", str(ROOT / "tools/validate_release_consistency.py"),
@@ -298,28 +337,44 @@ qa = {
     "semantic_proof_tables": html_qa["proof_tables"],
     "source_hashes_verified": 722,
     "review_context_occurrences": review_qa["context_occurrences"],
-    "review_total_occurrences": review_qa["context_occurrences"] + review_qa["source_issue_decisions"],
+    "review_total_occurrences": review_qa["total_review_occurrences"],
+    "corrective_decisions": review_qa.get("corrective_decisions", 0),
+    "corrective_occurrences": review_qa.get("corrective_occurrences", 0),
     "localized_term_decisions": review_qa["localized_term_decisions"],
     "localized_source_issues": review_qa["localized_source_issues"],
     "final_reader_projection_qa_sha256": sha(BUILD / "FINAL_READER_PROJECTION_QA.json"),
+    "source_reader_notes": reader_note_count,
+    "reader_note_qa_sha256": sha(BUILD / "READER_NOTE_QA.json"),
     "reader_notice_mr": "सर्व 722 स्रोत-एककांची जुळवणी तपासली आहे. संदर्भ-निर्देश स्वतंत्र तज्ज्ञ स्वीकृतीची प्रमाणपत्रे नाहीत. ऐतिहासिक तपशीलवार पुनरावलोकन 281 एककांपुरते आहे.",
     "provenance_report_sha256": sha(BUILD / "PROVENANCE_QA.json"),
 }
+if TAG == "complete-v1.2":
+    support = load(ROOT / "provenance/sol6-reaudit/SUPPORTING_ARTIFACT_AUDIT_361.json")
+    qa["sol6_reaudit"] = {
+        "affected_units_directly_read": 519,
+        "additional_control_units": 2,
+        "original_affected_tools_directly_read": 82,
+        "supporting_paths_checked": support["scope"]["total_supporting_paths"],
+        "corrective_choices": review_qa["corrective_decisions"],
+        "pdf_pages_actually_viewed": len(pdf_visual_qa["samples"]),
+        "current_svg_diagrams_actually_viewed": diagram_visual_qa["svg_assets_actually_viewed"],
+        "scope_notice_mr": "सर्व519 प्रभावित स्रोत-एककांचे प्रत्यक्ष पुनर्वाचन; सर्व722 एककांच्या नव्या अर्थपुनर्वाचनाचा दावा नाही. दृश्यतपासणी निवडक PDF/HTML/EPUB नमुने आणि सर्व57 नव्या SVG आकृत्यांपुरती आहे. स्वतंत्र मानवी स्वीकृती नाही.",
+    }
 qa_path = RELEASE / "RELEASE_QA.json"
-if TAG == "complete-v1.1":
-    qa["retrospective_canon_recheck"] = {"contexts": 101, "sha256": sha(ROOT / "provenance/complete-v1.1/CANON_RECHECK_101.json")}
-    qa["complete_epub"] = {"sha256": epub_qa["epub_sha256"], "qa_sha256": sha(ROOT / "build/epub-complete-v1.1/EPUB_QA.json"), "mathml_roots": 38456}
+if WITH_EPUB:
+    qa["retrospective_canon_recheck"] = {"contexts": 101, "sha256": sha(CANON_RECHECK_PATH)}
+    qa["complete_epub"] = {"sha256": epub_qa["epub_sha256"], "qa_sha256": sha(EPUB_BUILD / "EPUB_QA.json"), "mathml_roots": epub_qa["metrics"]["mathml_roots"]}
 write_json(qa_path, qa)
 assets = [artifact(path) for path in (pdf, tex, source_zip, html_zip, review_zip, qa_path, notes,
                                       RELEASE / "RELEASE_NOTES.md", RELEASE / "RELEASE_CONSISTENCY.json")]
 assets.extend(artifact(path) for path in chapter_sources)
-if TAG == "complete-v1.1":
+if WITH_EPUB:
     epub_file = RELEASE / "06-openlogic-mr-complete.epub"
     epub_file.write_bytes((ROOT / epub_config["output_epub"]).read_bytes())
     epub_qa_file = RELEASE / "EPUB_QA.json"
-    epub_qa_file.write_bytes((ROOT / "build/epub-complete-v1.1/EPUB_QA.json").read_bytes())
+    epub_qa_file.write_bytes((EPUB_BUILD / "EPUB_QA.json").read_bytes())
     canon_file = RELEASE / "CANON_RECHECK_101.json"
-    canon_file.write_bytes((ROOT / "provenance/complete-v1.1/CANON_RECHECK_101.json").read_bytes())
+    canon_file.write_bytes(CANON_RECHECK_PATH.read_bytes())
     assets.extend(artifact(path) for path in (epub_file, epub_qa_file, canon_file))
 reproduction_path = RELEASE / "RELEASE_REPRODUCIBILITY.json"
 reproduction_verified = False
@@ -331,7 +386,7 @@ if reproduction_path.is_file():
         and reproduction["html_zip_sha256"] == sha(html_zip)
         and reproduction["rebuilt_pdf_sha256"] == sha(pdf)
         and reproduction["regenerated_tex_sha256"] == sha(tex)
-        and (TAG != "complete-v1.1" or (
+        and (not WITH_EPUB or (
             reproduction.get("epub_byte_identity") is True
             and reproduction.get("rebuilt_epub_sha256") == sha(RELEASE / "06-openlogic-mr-complete.epub")))
     )
@@ -343,8 +398,8 @@ release_manifest = {
     "release": TAG,
     "description": "मुक्त तर्कशास्त्राची संपूर्ण मराठी आवृत्ती: PDF, संपादनयोग्य TeX, ऑफलाइन HTML आणि EPUB.",
     "ai_translation_correction_and_checks": {
-        "models": ["gpt-5.6-sol", "gpt-6-sol", "gpt-6-astra"], "effort": "ultra",
-        "reader_notice": "यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex — GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort; पूरक यांत्रिक पुनरावलोकन GPT-6 Astra, Ultra effort.",
+        "models": ["gpt-5.6-sol", "gpt-6-sol", "gpt-6.1-sol"], "effort": "ultra",
+        "reader_notice": "यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex — GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort; दुरुस्ती-पुनरावलोकन GPT-6.1 Sol, Ultra effort.",
     },
     "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
     "upstream_revision": REVISION,
@@ -356,15 +411,15 @@ release_manifest = {
     "full_edition_complete": True,
     "release_reproduction_verified": reproduction_verified,
 }
-if TAG == "complete-v1.1":
+if WITH_EPUB:
     release_manifest["epub"] = {"source_units": 722, "reading_documents": epub_qa["metrics"]["reading_documents"],
                                 "mathml_roots": epub_qa["metrics"]["mathml_roots"],
-                                "epubcheck_version": "5.3.0", "qa_sha256": sha(ROOT / "build/epub-complete-v1.1/EPUB_QA.json")}
-    release_manifest["epub"]["visual_qa_sha256"] = sha(ROOT / "build/epub-complete-v1.1/EPUB_VISUAL_QA.json")
+                                "epubcheck_version": "5.3.0", "qa_sha256": sha(EPUB_BUILD / "EPUB_QA.json")}
+    release_manifest["epub"]["visual_qa_sha256"] = sha(EPUB_BUILD / "EPUB_VISUAL_QA.json")
     release_manifest["retrospective_canon_recheck"] = {
         "date": "2026-09-29", "contexts": 101,
         "canon_sources": provenance_qa["canon_sources"], "canon_passages": provenance_qa["canon_passages"],
-        "sha256": sha(ROOT / "provenance/complete-v1.1/CANON_RECHECK_101.json")}
+        "sha256": sha(CANON_RECHECK_PATH)}
 manifest_path = RELEASE / "RELEASE_MANIFEST.json"
 write_json(manifest_path, release_manifest)
 checksums = RELEASE / "SHA256SUMS.txt"

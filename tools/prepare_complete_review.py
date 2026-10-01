@@ -10,6 +10,7 @@ from pathlib import Path
 from jsonschema import Draft202012Validator, FormatChecker
 from complete_review_pages import bind_units
 from complete_review_source_issues import derive as derive_source_issues
+from complete_review_repairs import derive as derive_corrective_repairs
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "build/full"
@@ -19,7 +20,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 LOCALIZED = ROOT / "provenance/complete-v1.0/TERMINOLOGY_MR.jsonl"
 SCHEMA = ROOT / "provenance/translation-decisions/translation-decision.schema.json"
 SCHEMA_HASH = "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90"
-MODELS = "OpenAI Codex — GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort; पूरक यांत्रिक पुनरावलोकन GPT-6 Astra, Ultra effort."
+MODELS = "OpenAI Codex — GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort; दुरुस्ती-पुनरावलोकन GPT-6.1 Sol, Ultra effort."
 
 def digest(data):
     return hashlib.sha256(data).hexdigest()
@@ -45,7 +46,7 @@ def scrub(value):
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--state-dir", type=Path)
-parser.add_argument("--release-tag", choices=["complete-v1.0", "complete-v1.1"], default="complete-v1.0")
+parser.add_argument("--release-tag", choices=["complete-v1.0", "complete-v1.1", "complete-v1.2"], default="complete-v1.2")
 args = parser.parse_args()
 if args.state_dir:
     issue_history = []
@@ -95,7 +96,7 @@ def locator(path, unit, start, end, term, sense, context):
     byte_start = sum(map(len, lines[:start - 1]))
     byte_end = sum(map(len, lines[:end]))
     excerpt = data[byte_start:byte_end].decode("utf-8").rstrip("\r\n")
-    assert excerpt.strip()
+    assert excerpt.strip(), (term, unit, path, start, end, 'empty review context')
     return {"path": path, "file_id": f"{unit}:{path}", "file_sha256": digest(data),
             "line_span": {"status": "available", "start": start, "end": end},
             "byte_span": {"status": "available", "start": byte_start, "end_exclusive": byte_end},
@@ -209,6 +210,13 @@ decisions.extend(source_legacy)
 occurrences.extend(source_occurrences)
 full_md.extend(["# स्रोतदुरुस्ती आणि निरीक्षणांच्या नोंदी", ""] + source_md)
 priority_md.extend(["# स्रोतदुरुस्ती आणि निरीक्षणांच्या नोंदी", ""] + source_md)
+repair_canonical, repair_legacy, repair_occurrences, repair_md, repair_qa = derive_corrective_repairs(
+    ROOT, edition, reader_bindings, locator)
+canonical.extend(repair_canonical)
+decisions.extend(repair_legacy)
+occurrences.extend(repair_occurrences)
+full_md.extend(["# नव्या प्रत्यक्ष दुरुस्ती-पुनरावलोकनाचे निर्णय", ""] + repair_md)
+priority_md.extend(["# नव्या प्रत्यक्ष दुरुस्ती-पुनरावलोकनाचे निर्णय", ""] + repair_md)
 assert len(occurrences) == len({row["occurrence_id"] for row in occurrences})
 assert {row["unit_id"] for row in occurrences} == set(manifest)
 write_rows(PROV / "EXPERT_REVIEW_DECISIONS.jsonl", decisions)
@@ -238,6 +246,7 @@ notice = ("# मराठी भाषांतरातील शब्दन�
           f"सर्व 722 स्रोत-एककांच्या नोंदवलेल्या सल्लामसलतीवरून {context_count:,} शब्दनिर्णय-संदर्भ आणि {len(source_occurrences)} स्रोतदुरुस्ती/निरीक्षण-संदर्भ तयार केले आहेत. "
           "ते प्रत्येक शब्दाच्या अक्षरशः वापराची किंवा स्वतंत्र तज्ज्ञ परीक्षणाची प्रमाणपत्रे नाहीत. "
           "ऐतिहासिक अधिक तपशीलवार पुनरावलोकन 281 एकके आणि 14,221 नोंदींपुरते आहे.\n\n"
+          f"नव्या दुरुस्ती-पुनरावलोकनातील {repair_qa['corrective_decisions']} निर्णय आणि {repair_qa['corrective_occurrences']} बदल-संदर्भही या नोंदीत आहेत. पूर्ण नव्या corpus पुनरावलोकनाचा दावा त्या संख्येवरून होत नाही.\n\n"
           f"मराठी शब्दनिर्णय-कारणे तयार: {len(localized)}/638; मराठी स्रोतदुरुस्ती/निरीक्षण-कारणे तयार: {source_qa['localized_source_issues']}/655. सर्व 722 एककांची शीर्षके, मूळ चालकांच्या नोंदी किंवा नियमसारण्या अंतिम PDF मधील प्रत्यक्ष स्थळांशी पडताळल्या आहेत; हे शब्दाच्या ओळीचे तंतोतंत पृष्ठ-निर्देश नाहीत. "
           + ("ही विकासावस्थेतील नोंद आहे; अंतिम प्रकाशनाची स्वीकृती नाही.\n\n"
              if missing or missing_source_localization else
@@ -259,8 +268,10 @@ pending = (["remaining-Marathi-rationale-localization"] if missing else []) + (
     ["remaining-Marathi-source-issue-localization"] if missing_source_localization else []) + (
     ["source-issue-locator-refinement"] if source_qa["source_issue_locator_fallbacks"] else [])
 qa = {"schema": "openlogic-mr-complete-review-qa/1", "status": "incomplete" if pending else "ready",
+      "release_tag": args.release_tag,
       "source_units": 722, "term_decisions": 638, "context_occurrences": context_count,
       "total_review_occurrences": len(occurrences), **source_qa,
+      **repair_qa,
       "localized_term_decisions": len(localized), "missing_localization": missing,
       "historical_detailed_review_units": 281, "historical_detailed_review_occurrences": 14221,
       "schema_errors": 0, "schema_sha256": SCHEMA_HASH,

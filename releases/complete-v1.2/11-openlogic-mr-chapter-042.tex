@@ -1,0 +1,419 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 42: क्रमवर्ती कलन
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{क्रमवर्ती कलन}\label{mvl:seq:chap}
+\section{परिचय}\label{mvl:seq:int:sec}
+अभिजात तर्कशास्त्रासाठीचे क्रमवर्ती कलन ही कार्यक्षम आणि सोपी
+निष्पत्ती-पद्धत आहे. बहुमूल्य तर्कशास्त्राची व्याख्या ससीम
+सत्यतामूल्ये असलेल्या मॅट्रिक्सने केली असेल, म्हणजे $V$ ससीम असेल,
+तर त्यासाठी क्रमवर्ती कलन देता येते. हे कसे करावे याची कल्पना
+अभिजात प्रसंगातील क्रमवर्तींचे अर्थ आणि निगमन नियमांचे रूप पाहिल्यावर
+मिळते.
+आता पुढील क्रमवर्ती लक्षात घ्या:
+\begin{align*}
+    \varphi_1, \dots, \varphi_m & \Sequent \psi_1, \dots, \psi_n
+\intertext{हिचा अर्थ पुढील सूत्र म्हणून लावता येतो:}
+    (\varphi_1 \land \cdots \land \varphi_m) & \lif (\psi_1 \lor \cdots \lor
+\psi_n)
+\end{align*}
+दुसऱ्या शब्दांत, क्रमवर्ती $\Gamma \Sequent \Delta$ ची
+सत्य-मूल्यांकन~$\pAssign{v}$ ने तेव्हा आणि केवळ तेव्हाच
+\emph{पूर्ति होते},
+जेव्हा काही $\varphi \in \Gamma$ साठी $\pValue{v}(\varphi) = \False$ असते
+किंवा काही $\varphi \in \Delta$ साठी $\pValue{v}(\varphi) = \True$ असते.
+या अर्थलक्षणानुसार, आरंभीच्या क्रमवर्ती $\varphi \Sequent \varphi$ ची
+नेहमी पूर्ति होते; कारण एकतर $\pValue v(\varphi) = \True$ असते
+किंवा $\pValue v(\varphi) = \False$ असते.
+बाजूची सूत्रे $\Gamma$, $\Delta$ वगळल्यास, $\Log{LK}$ मधील
+सशर्त संयोजकाचे निगमन नियम असे आहेत:
+\begin{defish}
+    \Axiom$ \fCenter \varphi$
+    \Axiom$ \psi \fCenter $
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$ \varphi \lif \psi \fCenter $
+    \DisplayProof
+    \hfill
+    \Axiom$ \varphi \fCenter \psi$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$ \fCenter \varphi \lif \psi $
+    \DisplayProof
+\end{defish}
+क्रमवर्तीच्या वरील चिन्हार्थलक्षी अर्थलक्षणाचा उपयोग केल्यास,
+$\LeftR{\lif}$ नियम असे सांगतो की $\pValue v(\varphi) = \True$
+आणि $\pValue v(\psi) = \False$ असतील, तर $\pValue v(\varphi \lif \psi) = \False$
+असते. त्याचप्रमाणे $\RightR{\lif}$ नियम असे सांगतो की
+$\pValue v(\varphi) = \False$ किंवा $\pValue v(\psi) = \True$
+असेल, तर $\pValue v(\varphi \lif \psi) = \True$ असते. प्रत्यक्षात,
+येथील ही दोन्ही सशर्त विधाने द्विशर्त विधाने आहेत.
+$\LeftR{\land}$ आणि $\RightR{\lor}$ नियमांच्या प्रमाणित रूपात
+त्यांना अनुरूप सशर्त विधाने द्विशर्त नसतील. पण या नियमांची
+अशी पर्यायी रूपे आहेत की त्यात ती द्विशर्त ठरतात:
+\begin{defish}
+    \Axiom$\varphi, \psi, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$\varphi \land \psi, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \hfill
+    \Axiom$ \Gamma \fCenter \Delta, \varphi, \psi$
+    \RightLabel{\RightR{\lor}}
+    \UnaryInf$ \Gamma \fCenter \Delta, \varphi \lor \psi$
+    \DisplayProof
+\end{defish}
+ही मूलभूत कल्पना $n$-मूल्य तर्कशास्त्राला लावल्यास, दोन जागांऐवजी
+$n$ जागा असलेले क्रमवर्ती कलन मिळते; प्रत्येक सत्यतामूल्यासाठी
+एक जागा असते. $V = \{\False, \Undef, \True\}$ असलेल्या त्रिमूल्य
+तर्कशास्त्रात क्रमवर्ती ही $\Gamma \mid \Pi \mid \Delta$ या रूपाची
+अभिव्यक्ती असते. तिची सत्य-मूल्यांकन~$\pAssign v$ ने तेव्हा आणि
+केवळ तेव्हाच पूर्ति होते, जेव्हा काही $\varphi \in \Gamma$ साठी
+$\pValue{v}(\varphi) = \False$ असते, किंवा काही $\varphi \in \Delta$ साठी
+$\pValue{v}(\varphi) = \True$ असते, किंवा काही $\varphi \in \Pi$ साठी
+$\pValue{v}(\varphi) = \Undef$ असते. त्यामुळे आरंभीच्या क्रमवर्ती
+$\varphi \mid \varphi \mid \varphi$ ची नेहमी पूर्ति होते.
+\section{नियम आणि निष्पत्ती}\label{mvl:seq:rul:sec}
+पुढे $\Gamma, \Delta, \Pi, \Lambda$ या वाक्यांच्या
+सांत क्रमिका दर्शवतात असे समजू.
+\begin{defn}[क्रमवर्ती]
+\emph{$n$-बाजूंची क्रमवर्ती} म्हणजे पुढील रूपाची अभिव्यक्ती:
+\[
+\Gamma_1 \nSequent \dots \nSequent \Gamma_n
+\]
+येथे प्रत्येक $\Gamma_i$ ही भाषा~$\Lang L$ मधील
+वाक्यांची सांत, शक्यतो रिकामी, क्रमिका असते.
+\end{defn}
+
+\begin{defn}[आरंभीची क्रमवर्ती]
+\emph{$n$-बाजूंची आरंभीची क्रमवर्ती} म्हणजे भाषेतील कोणत्याही
+वाक्य~$\varphi$ साठी $\varphi \nSequent \dots \nSequent \varphi$
+या रूपाची $n$-बाजूंची क्रमवर्ती.
+
+भाषेत $0$-स्थानी संयोजक~$\star$, म्हणजे विधानीय स्थिरांक,
+असेल तर $\dots \nSequent \star \nSequent \dots$ ही क्रमवर्तीही
+आरंभीची मानतो. यात $\tf{\star} \in V$ शी संबंधित
+सत्यतामूल्याच्या जागी $\star$ असते; इतर जागा रिकाम्या असतात.
+\end{defn}
+
+$n$-मूल्य तर्कशास्त्र~$\Log{L}$ मधील प्रत्येक संयोजकासाठी,
+त्या संयोजकाला $\Log{L}$ मध्ये मिळू शकणाऱ्या प्रत्येक
+सत्यतामूल्यासाठी एक तार्किक नियम असतो. $\Log{L}$ च्या
+$n$-बाजूंच्या क्रमवर्ती कलनातील निष्पत्त्या ही क्रमवर्तींची
+सांत वृक्षरूप मांडणी असते: सर्वांत वरच्या क्रमवर्ती आरंभीच्या असतात;
+आणि एखादी क्रमवर्ती एक किंवा अधिक क्रमवर्तींच्या खाली असेल,
+तर ती या कलनातील निगमन नियमाने त्यांच्यापासून योग्यरीत्या
+निष्पन्न झालेली असावी लागते. यात संयोजकांचे तार्किक नियम
+आणि पुढील विभागात दिलेले संरचनात्मक नियम दोन्ही येतात.
+
+\begin{defn}[प्रमेये]
+वाक्य~$\varphi$ हे $n$-मूल्य तर्कशास्त्र~$\Log{L}$ चे
+\emph{प्रमेय} तेव्हा असते, जेव्हा $\Log{L}$ मधील प्रत्येक निर्दिष्ट
+सत्यतामूल्याशी संबंधित जागेत $\varphi$ असलेल्या $n$-बाजूंच्या
+क्रमवर्तीची निष्पत्ती असते; या क्रमवर्तीतील
+इतर सर्व जागा रिकाम्या असाव्यात. $\varphi$ प्रमेय असेल तर
+$\Proves[\Log{L}] \varphi$ आणि नसेल तर $\Proves/[\Log{L}] \varphi$ लिहितो.
+\end{defn}
+
+\begin{defn}[निष्पन्नता]
+$n$-मूल्य तर्कशास्त्र~$\Log{L}$ मध्ये वाक्य~$\varphi$
+हे वाक्यांच्या संच~$\Gamma$ पासून \emph{निष्पन्न करता येण्याजोगे}
+असते, $\Gamma \Proves[\Log{L}] \varphi$, तेव्हा आणि केवळ तेव्हाच,
+जेव्हा एखादा ससीम उपसंच~$\Gamma_0 \subseteq \Gamma$
+आणि $\Gamma_0$ मधील वाक्यांची एखादी क्रमिका~$\Gamma_0'$
+अशी असते की पुढील क्रमवर्तीची निष्पत्ती असते:
+\[ \Lambda_1 \nSequent \dots \nSequent \Lambda_n \]
+येथे जागा~$i$ निर्दिष्ट सत्यतामूल्याशी संबंधित असेल तर
+$\Lambda_i$ हे $\varphi$ असते; अन्यथा ते $\Gamma_0'$ असते.
+$\varphi$ हे $\Gamma$ पासून निष्पन्न करता येण्याजोगे नसेल तर
+$\Gamma \Proves/ \varphi$ असे लिहितो.
+\end{defn}
+
+उदाहरणार्थ, $3$-मूल्य \L ukasiewicz तर्कशास्त्रासाठी
+$3$-बाजूंचे क्रमवर्ती कलन आहे. $3$-बाजूंच्या क्रमवर्ती
+$\Gamma \nSequent \Pi \nSequent \Delta$ मध्ये $\Gamma$
+हे~$\False$ शी, $\Delta$ हे~$\True$ शी आणि $\Pi$
+हे~$\Undef$ शी संबंधित असतात. स्वयंसिद्धके
+$\varphi \nSequent \varphi \nSequent \varphi$ ही आहेत. फक्त $\True$
+निर्दिष्ट असल्यामुळे, $\Gamma$ ही सांत क्रमिका असल्यास
+$\Gamma \Proves[\LogLuk[3]] \varphi$
+तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \nSequent \Gamma \nSequent \varphi$
+या क्रमवर्तीची निष्पत्ती असते. ($\Undef$ देखील निर्दिष्ट
+असते, तर $\Gamma \nSequent \varphi \nSequent \varphi$ या क्रमवर्तीची
+निष्पत्ती आवश्यक झाले असते.)
+अनंत आधारसूत्रसंचासाठी, आधीच्या व्याख्येनुसार त्यातील सांत
+उपसंचाच्या क्रमिकेचा वापर करायचा; अनंत क्रमवर्तीचा नाही.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{संरचनात्मक नियम}\label{mvl:seq:str:sec}
+
+$n$-बाजूंच्या क्रमवर्ती कलनातील संरचनात्मक नियम
+अभिजात प्रसंगाप्रमाणेच कार्य करतात; मात्र ते प्रत्येक जागा~$i$
+साठी स्वतंत्रपणे लागू होतात.
+
+\begin{defish}
+\begin{center}
+\AxiomC{$ \Gamma_1 \nSequent \dots \nSequent \phantom{\varphi,}\Gamma_i \nSequent \dots \nSequent \Gamma_n $}
+\RightLabel{$\iR{\Weakening}{i}$}
+\UnaryInfC{$\Gamma_1 \nSequent \dots \nSequent \varphi, \Gamma_i \nSequent \dots \nSequent \Gamma_n$}
+\DisplayProof
+\\[2ex]
+\AxiomC{$ \Gamma_1 \nSequent \dots \nSequent \varphi, \varphi, \Gamma_i \nSequent \dots \nSequent \Gamma_n $}
+\RightLabel{$\iR{\Contraction}{i}$}
+\UnaryInfC{$\Gamma_1 \nSequent \dots \nSequent \phantom{\varphi,}\varphi, \Gamma_i \nSequent
+\dots \nSequent \Gamma_n$}
+\DisplayProof
+\\[2ex]
+\AxiomC{$ \Gamma_1 \nSequent \dots \nSequent \Gamma_i, \varphi, \psi, \Gamma_i' \nSequent \dots \nSequent \Gamma_n $}
+\RightLabel{$\iR{\Exchange}{i}$}
+\UnaryInfC{$\Gamma_1 \nSequent \dots \nSequent \Gamma_i, \psi, \varphi, \Gamma_i' \nSequent \dots
+\nSequent \Gamma_n$}
+\DisplayProof
+\end{center}
+\end{defish}
+दुर्बलीकरण, आकुंचन आणि अदलाबदल यांच्या सलग निगमनांची मालिका
+अनेकदा दुहेरी निगमन रेषांनी दर्शवली जाते.
+\Cut{} नियमाची अनेक रूपे असतात: क्रमवर्तीतील भिन्न जागांच्या
+प्रत्येक जोडी~$i \neq j$ साठी एक रूप:
+\begin{defish}
+\[
+\AxiomC{$ \Gamma_1 \nSequent \dots \nSequent \varphi, \Gamma_i \nSequent \dots \nSequent \Gamma_n $}
+\AxiomC{$ \Delta_1 \nSequent \dots \nSequent \varphi, \Delta_j \nSequent \dots \nSequent \Delta_n $}
+\RightLabel{$\iR{\Cut}{i,j}$}
+\BinaryInfC{$\Gamma_1,\Delta_1 \nSequent \dots \nSequent \Gamma_n, \Delta_n$}
+\DisplayProof
+\]
+\end{defish}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{निवडक तर्कशास्त्रांसाठी विधानीय नियम}\label{mvl:seq:prl:sec}
+
+एखाद्या संयोजकासाठीचे $n$-बाजूंच्या क्रमवर्ती कलनातील निगमन नियम
+फक्त त्या संयोजकाच्या वैशिष्ट्यपूर्ण सत्यता-फलनावर अवलंबून असतात.
+म्हणून भिन्न तर्कशास्त्रांत एखाद्या संयोजकाची व्याख्या एकाच
+सत्यता-फलनाने केली असेल, तर त्या संयोजकाचे $n$-बाजूंचे
+क्रमवर्ती नियम त्या तर्कशास्त्रांत सारखेच असतात.
+
+\subsection{$\lnot$ साठीचे नियम}
+
+$\lnot$ साठीचे पुढील नियम \L ukasiewicz आणि क्लिनी यांच्या
+तर्कशास्त्रांना तसेच त्यांच्या प्रकारांना लागू होतात.
+
+\begin{defish}
+  \begin{center}
+\AxiomC{$ \Gamma \nSequent \Pi \nSequent \Delta, \varphi $}
+\RightLabel{\iR{\lnot}{\False}}
+\UnaryInfC{$ \lnot \varphi, \Gamma \nSequent \Pi \nSequent \Delta$}
+\DisplayProof
+\\[2ex]
+\AxiomC{$ \Gamma \nSequent \varphi, \Pi \nSequent \Delta $}
+\RightLabel{\iR{\lnot}{\Undef}}
+\UnaryInfC{$\Gamma \nSequent \lnot \varphi, \Pi \nSequent \Delta$}
+\DisplayProof
+\\[2ex]
+\AxiomC{$\varphi, \Gamma \nSequent \Pi \nSequent \Delta$}
+\RightLabel{\iR{\lnot}{\True}}
+\UnaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta,  \lnot \varphi$}
+\DisplayProof
+  \end{center}
+\end{defish}
+$\lnot$ साठीचे पुढील नियम G\"odel तर्कशास्त्राला लागू होतात.
+\begin{defish}
+\AxiomC{$ \Gamma \nSequent \varphi, \Pi \nSequent \Delta, \varphi $}
+\RightLabel{\iR{\lnot}{\False}[\LogGod]}
+\UnaryInfC{$ \lnot \varphi, \Gamma \nSequent \Pi \nSequent \Delta$}
+\DisplayProof
+\hfill
+\AxiomC{$\varphi, \Gamma \nSequent \Pi \nSequent \Delta$}
+\RightLabel{\iR{\lnot}{\True}[\LogGod]}
+\UnaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta,  \lnot \varphi$}
+\DisplayProof
+\hfill
+\end{defish}
+(G\"odel तर्कशास्त्रात $\lnot \varphi$ ला~$\Undef$ हे मूल्य
+कधीही मिळत नाही; म्हणून मधल्या जागेसाठी नियम नाही.)
+\subsection{$\land$ साठीचे नियम}
+\L ukasiewicz, प्रबळ क्लिनी आणि G\"odel यांच्या
+तर्कशास्त्रांतील $\land$ साठीचे नियम पुढीलप्रमाणे आहेत.
+\begin{defish}
+\begin{center}
+  \AxiomC{$\varphi, \psi, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \RightLabel{$\iR{\land}{\False}$}
+  \UnaryInfC{$\varphi \land \psi, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \DisplayProof
+\\[2ex]
+  \AxiomC{$\Gamma \nSequent \varphi, \Pi \nSequent \varphi, \Delta$}
+  \AxiomC{$\Gamma \nSequent \psi, \Pi \nSequent \psi, \Delta$}
+  \AxiomC{$\Gamma \nSequent \varphi, \psi, \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\land\Undef$}
+  \TrinaryInfC{$\Gamma \nSequent \varphi \land \psi, \Pi \nSequent \Delta$}
+  \DisplayProof
+  \\[2ex]
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, \varphi$}
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, \psi$}
+  \RightLabel{$\iR\land\True$}
+  \BinaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta, \varphi \land \psi$}
+  \DisplayProof
+\end{center}
+\end{defish}
+\subsection{$\lor$ साठीचे नियम}
+\L ukasiewicz, प्रबळ क्लिनी आणि G\"odel यांच्या
+तर्कशास्त्रांतील $\lor$ साठीचे नियम पुढीलप्रमाणे आहेत.
+\begin{defish}
+\begin{center}
+ \AxiomC{$\varphi, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \AxiomC{$\psi, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\lor\False$}
+  \BinaryInfC{$\varphi \lor \psi, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \DisplayProof
+\\[2ex]
+  \AxiomC{$\varphi, \Gamma \nSequent \varphi, \Pi \nSequent \Delta$}
+  \AxiomC{$\psi, \Gamma \nSequent \psi, \Pi \nSequent \Delta$}
+  \AxiomC{$\Gamma \nSequent \varphi, \psi, \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\lor\Undef$}
+  \TrinaryInfC{$\Gamma \nSequent \varphi \lor \psi, \Pi \nSequent \Delta$}
+  \DisplayProof
+  \\[2ex]
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, \varphi, \psi$}
+  \RightLabel{$\iR\lor\True$}
+  \UnaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta, \varphi \lor \psi$}
+  \DisplayProof
+\end{center}
+\end{defish}
+\subsection{$\lif$ साठीचे नियम}
+\L ukasiewicz तर्कशास्त्रातील $\lif$ साठीचे नियम पुढीलप्रमाणे आहेत.
+\begin{defish}
+\begin{center}
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, \varphi$}
+  \AxiomC{$\psi, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\lif\False[\LogLuk[3]]$}
+  \BinaryInfC{$\varphi \lif \psi, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \DisplayProof
+  \\[2ex]
+  \AxiomC{$\Gamma \nSequent \varphi, \psi, \Pi \nSequent \Delta$}
+  \AxiomC{$\psi, \Gamma \nSequent \Pi \nSequent \Delta, \varphi$}
+  \RightLabel{$\iR\lif\Undef[\LogLuk[3]]$}
+  \BinaryInfC{$\Gamma \nSequent \varphi \lif \psi, \Pi \nSequent \Delta$}
+  \DisplayProof
+\\[2ex]
+  \AxiomC{$\varphi, \Gamma \nSequent \psi, \Pi \nSequent \Delta, \psi$}
+  \AxiomC{$\varphi, \Gamma \nSequent \varphi, \Pi \nSequent \Delta, \psi$}
+  \RightLabel{$\iR{\lif}{\True}[\LogLuk[3]]$}
+  \BinaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta, \varphi \lif \psi$}
+  \DisplayProof
+\end{center}
+\end{defish}
+प्रबळ क्लिनी तर्कशास्त्रातील $\lif$ साठीचे नियम पुढीलप्रमाणे आहेत.
+\begin{defish}
+\begin{center}
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, \varphi$}
+  \AxiomC{$\psi, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\lif\False[\LogKs]$}
+  \BinaryInfC{$\varphi \lif \psi, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \DisplayProof
+  \\[2ex]
+  \AxiomC{$\psi, \Gamma \nSequent \psi, \Pi \nSequent \Delta$}
+  \AxiomC{$\Gamma \nSequent \varphi, \psi, \Pi \nSequent \Delta$}
+  \AxiomC{$\Gamma \nSequent \varphi, \Pi \nSequent \Delta, \varphi$}
+  \RightLabel{$\iR\lif\Undef[\LogKs]$}
+  \TrinaryInfC{$\Gamma \nSequent \varphi \lif \psi, \Pi \nSequent \Delta$}
+  \DisplayProof
+\\[2ex]
+  \AxiomC{$\varphi, \Gamma \nSequent \Pi \nSequent \Delta, \psi$}
+  \RightLabel{$\iR{\lif}{\True}[\LogKs]$}
+  \UnaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta, \varphi \lif \psi$}
+  \DisplayProof
+\end{center}
+\end{defish}
+G\"odel तर्कशास्त्रातील $\lif$ साठीचे नियम पुढीलप्रमाणे आहेत.
+\begin{defish}
+\begin{center}
+  \AxiomC{$\Gamma \nSequent \varphi, \Pi \nSequent \Delta, \varphi$}
+  \AxiomC{$\psi, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \RightLabel{$\iR\lif\False[\LogGod[3]]$}
+  \BinaryInfC{$\varphi \lif \psi, \Gamma \nSequent \Pi \nSequent \Delta$}
+  \DisplayProof
+  \\[2ex]
+  \AxiomC{$\Gamma \nSequent \psi, \Pi \nSequent \Delta$}
+  \AxiomC{$\Gamma \nSequent \Pi \nSequent \Delta, \varphi$}
+  \RightLabel{$\iR\lif\Undef[\LogGod[3]]$}
+  \BinaryInfC{$\Gamma \nSequent \varphi \lif \psi, \Pi \nSequent \Delta$}
+  \DisplayProof
+\\[2ex]
+  \AxiomC{$\varphi, \Gamma \nSequent \psi, \Pi \nSequent \Delta, \psi$}
+  \AxiomC{$\varphi, \Gamma \nSequent \varphi, \Pi \nSequent \Delta, \psi$}
+  \RightLabel{$\iR{\lif}{\True}[\LogGod[3]]$}
+  \BinaryInfC{$\Gamma \nSequent \Pi \nSequent \Delta, \varphi \lif \psi$}
+  \DisplayProof
+\end{center}
+\end{defish}
+\begin{sidewaysfigure}
+  \begin{center}
+  \AxiomC{$A \nSequent A \nSequent A$}
+  \RightLabel{\iR \Weakening \True}
+  \UnaryInfC{$A \nSequent A \nSequent B, A$}
+  \RightLabel{\iR \Weakening \Undef}
+  \UnaryInfC{$A \nSequent B, A \nSequent B, A$}
+  \RightLabel{\iR \Weakening \Undef}
+  \UnaryInfC{$A \nSequent A, B, A \nSequent B, A$}
+  \AxiomC{$A \nSequent A \nSequent A$}
+  \RightLabel{\iR \Weakening \True}
+  \UnaryInfC{$A \nSequent A \nSequent A, A$}
+  \RightLabel{\iR \Weakening \True}
+  \UnaryInfC{$A \nSequent A \nSequent B, A, A$}
+  \RightLabel{\iR \Weakening \False}
+  \UnaryInfC{$B, A \nSequent A \nSequent B, A, A$}
+  \RightLabel{$\iR\lif\Undef$}
+  \BinaryInfC{$A \nSequent A \lif B, A \nSequent B, A$}
+  \AxiomC{$B \nSequent B \nSequent B$}
+  \RightLabel{\iR \Weakening \Undef}
+  \UnaryInfC{$B \nSequent A, B \nSequent B$}
+  \RightLabel{\iR \Exchange \Undef}
+  \UnaryInfC{$B \nSequent B, A \nSequent B$}
+  \RightLabel{\iR \Weakening \Undef}
+  \UnaryInfC{$B \nSequent A, B, A \nSequent B$}
+  \RightLabel{\iR \Weakening \False}
+  \UnaryInfC{$A, B \nSequent A, B, A \nSequent B$}
+  \RightLabel{\iR \Exchange \False}
+  \UnaryInfC{$B, A \nSequent A, B, A \nSequent B$}
+  \AxiomC{$A \nSequent A \nSequent A$}
+  \RightLabel{\iR \Weakening \True}
+  \UnaryInfC{$A \nSequent A \nSequent B, A$}
+  \RightLabel{\iR \Weakening \False}
+  \UnaryInfC{$B, A \nSequent A \nSequent B, A$}
+  \RightLabel{\iR \Weakening \False}
+  \UnaryInfC{$B, B, A \nSequent A \nSequent B, A$}
+  \RightLabel{$\iR\lif\Undef$}
+  \BinaryInfC{$B, A \nSequent A \lif B, A \nSequent B$}
+  \RightLabel{$\iR\lif\False$}
+  \BinaryInfC{$A \lif B, A \nSequent A \lif B, A \nSequent B$}
+  \DisplayProof
+  \end{center}
+  \caption{$\LogLuk[3]$ मधील निष्पत्तीचे उदाहरण}
+\end{sidewaysfigure}
+\part{सामान्य मोडल तर्कशास्त्रे}\label{nml:part}
+\begin{editorial}
+  या भागात सामान्य मोडल तर्कशास्त्रांच्या अधिसिद्धांताचा विचार केला आहे.
+  सध्या यात मूलभूत मोडल तर्कशास्त्राच्या अभिजात अनुरूपता
+  सिद्धांतावरील Aldo Antonelli यांची टिपणे आहेत.
+\end{editorial}

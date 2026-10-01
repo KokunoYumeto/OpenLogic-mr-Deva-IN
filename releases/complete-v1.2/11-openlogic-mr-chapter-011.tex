@@ -1,0 +1,2098 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 11: टॅब्लो
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{टॅब्लो}\label{fol:tab::chap}\begingroup\setlength{\emergencystretch}{3em}\NewDocumentCommand{\sFmlaWide}{m m o}{\ensuremath{\IfNoValueTF{#3}{}{#3\,}\hbox to 1.2em{\ensuremath{#1}\hfil} #2}}
+\begin{editorial}
+हे प्रकरण चिन्हांकित सूत्रांवर आधारलेली विश्लेषणात्मक टॅब्लो पद्धत मांडते.
+टॅब्लोशी सिद्धता-पद्धती म्हणून संबंधित सामग्री समाविष्ट किंवा
+वगळण्यासाठी ``prfTab'' टॅग वापरा.
+\end{editorial}
+\section{नियम आणि टॅब्लो}\label{fol:tab:rul:sec}
+टॅब्लो म्हणजे वाक्य संरचना मध्ये ज्या संभाव्य प्रकारे
+सत्य अथवा असत्य असू शकते त्यांचा पद्धतशीर आढावा होय. टॅब्लोचे मूलभूत
+घटक चिन्हांकित सूत्रे असतात: वाक्ये सोबत सत्यतामूल्याचे
+``चिन्ह,'' म्हणजे $\True$ किंवा~$\False$. ही चिन्हांकित सूत्रे
+(खाली वाढणाऱ्या) वृक्षात मांडली जातात.
+\begin{defn}
+  एक \emph{चिन्हांकित सूत्र} म्हणजे सत्यतामूल्य आणि वाक्य यांची जोडी,
+  म्हणजे पुढीलपैकी एक:
+  \[
+  \sFmla{\True}{\varphi} \text{ किंवा } \sFmla{\False}{\varphi}.
+  \]
+\end{defn}
+
+सहज अर्थानुसार, $\sFmla{\True}{\varphi}$ चे वाचन आपण ``$\varphi$ सत्य असू
+शकते'' आणि $\sFmla{\False}{\varphi}$ चे वाचन ``$\varphi$ असत्य असू शकते''
+(एखाद्या संरचना मध्ये) असे करू शकतो.
+
+वृक्षातील प्रत्येक चिन्हांकित सूत्र एकतर \emph{गृहीतक} असते (ती
+वृक्षाच्या अगदी वरच्या टोकाला नोंदवलेली असतात), किंवा तिच्या वर असलेल्या
+चिन्हांकित सूत्राला अनेक निगमन नियमांपैकी एखादा नियम लावून ती मिळते.
+पूर्ववर्ती सूत्राच्या प्रत्येक संभाव्य मुख्य संकारक साठी दोन नियम
+असतात: चिन्ह~$\True$ असेल त्या स्थितीसाठी एक आणि चिन्ह~$\False$ असेल त्या
+स्थितीसाठी एक. काही नियम वृक्षाची शाखा फोडू देतात, तर काही नियम शाखेत फक्त
+चिन्हांकित सूत्रे जोडतात. एखादा नियम फक्त अगदी आधी येणाऱ्या
+चिन्हांकित सूत्र वरच लागू करावा असे नाही; मुळापासून नियम लागू करण्याच्या
+स्थानापर्यंतच्या शाखेतील कोणत्याही चिन्हांकित सूत्र वर तो लागू करता येतो
+(आणि अनेकदा आधीच्या एखाद्यावर लावावाच लागतो).
+
+एखाद्या शाखेत $\sFmla{\True}{\varphi}$ आणि $\sFmla{\False}{\varphi}$ ही दोन्ही
+असतील तेव्हा ती शाखा \emph{बंद} असते. ज्याची प्रत्येक शाखा बंद असते तो
+टॅब्लो बंद असतो. सहज अर्थानुसार, कोणतीही शाखा एक संयुक्त शक्यता
+वर्णन करते; परंतु $\sFmla{\True}{\varphi}$ आणि $\sFmla{\False}{\varphi}$ एकाच वेळी
+शक्य नाहीत. दुसऱ्या शब्दांत, एखादी शाखा बंद असेल तर तिने वर्णन केलेली शक्यता
+बाद होते. विशेषतः याचा अर्थ असा की, बंद टॅब्लो हा
+$\sFmla{\True}{\varphi}$ स्वरूपाचे प्रत्येक गृहीतक सत्य आणि
+$\sFmla{\False}{\varphi}$ स्वरूपाचे प्रत्येक गृहीतक असत्य करणाऱ्या सर्व शक्यता
+बाद करतो.
+
+बंद टॅब्लो \emph{$\varphi$ साठीचा} म्हणजे ज्याचे
+मूळ~$\sFmla{\False}{\varphi}$ आहे असा बंद टॅब्लो. असा बंद टॅब्लो
+अस्तित्वात असल्यास, $\varphi$ असत्य असण्याच्या सर्व शक्यता बाद होतात; म्हणजेच
+$\varphi$ प्रत्येक संरचना मध्ये सत्य असले पाहिजे.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{विधानीय नियम}\label{fol:tab:prl:sec}
+
+\subsection{$\lnot$ साठीचे नियम}
+
+\begin{defish}
+\AxiomC{\sFmla{\True}{\lnot \varphi}}
+\RightLabel{\TRule{\True}{\lnot}}
+\UnaryInfC{\sFmla{\False}{\varphi}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\False}{\lnot \varphi}}
+\RightLabel{\TRule{\False}{\lnot}}
+\UnaryInfC{\sFmla{\True}{\varphi}}
+\DisplayProof
+\end{defish}
+
+\subsection{$\land$ साठीचे नियम}
+
+\begin{defish}\noindent
+\AxiomC{\sFmla{\True}{\varphi \land \psi}}
+\RightLabel{\TRule{\True}{\land}}
+\UnaryInfC{\sFmla{\True}{\varphi}}
+\noLine
+\UnaryInfC{\sFmla{\True}{\psi}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\False}{\varphi \land \psi}}
+\RightLabel{\TRule{\False}{\land}}
+\UnaryInfC{$\sFmla{\False}{\varphi} \quad \mid \quad \sFmla{\False}{\psi}$}
+\DisplayProof
+\end{defish}
+
+\subsection{$\lor$ साठीचे नियम}
+
+\begin{defish}
+\AxiomC{\sFmla{\True}{\varphi \lor \psi}}
+\RightLabel{\TRule{\True}{\lor}}
+\UnaryInfC{$\sFmla{\True}{\varphi} \quad \mid \quad \sFmla{\True}{\psi}$}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\False}{\varphi \lor \psi}}
+\RightLabel{\TRule{\False}{\lor}}
+\UnaryInfC{\sFmla{\False}{\varphi}}
+\noLine
+\UnaryInfC{\sFmla{\False}{\psi}}
+\DisplayProof
+\end{defish}
+
+\subsection{$\lif$ साठीचे नियम}
+
+\begin{defish}
+\AxiomC{\sFmla{\True}{\varphi \lif \psi}}
+\RightLabel{\TRule{\True}{\lif}}
+\UnaryInfC{$\sFmla{\False}{\varphi} \quad \mid \quad \sFmla{\True}{\psi}$}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\False}{\varphi \lif \psi}}
+\RightLabel{\TRule{\False}{\lif}}
+\UnaryInfC{\sFmla{\True}{\varphi}}
+\noLine
+\UnaryInfC{\sFmla{\False}{\psi}}
+\DisplayProof
+\end{defish}
+
+\subsection{कट नियम}
+
+\begin{defish}
+\AxiomC{}
+\RightLabel{\Cut}
+\UnaryInfC{$\sFmla{\True}{\varphi} \quad \mid \quad \sFmla{\False}{\varphi}$}
+\DisplayProof
+\end{defish}
+
+\Cut{} नियम पूर्वीच्या चिन्हांकित सूत्र वर ``लावला'' जात नाही; त्याऐवजी
+तो टॅब्लो मधील प्रत्येक शाखा दोन शाखांत फोडू देतो: एका शाखेत
+$\sFmla{\True}{\varphi}$ आणि दुसरीत~$\sFmla{\False}{\varphi}$ असते. हा नियम आवश्यक
+नाही---ज्या चिन्हांकित सूत्रांच्या संचासाठी बंद टॅब्लो आहे, त्या
+संचासाठी \Cut{} न वापरणाराही एक बंद टॅब्लो असतो---परंतु त्यामुळे
+टॅब्लो सोयीस्कर रीतीने एकत्र जोडता येतात.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{संख्यापकांचे नियम}\label{fol:tab:qrl:sec}
+
+\subsection{$\lforall$ साठीचे नियम}
+
+\begin{defish}
+\AxiomC{\sFmla{\True}{\lforall[x][\varphi(x)]}}
+\RightLabel{\TRule{\True}{\forall}}
+\UnaryInfC{\sFmla{\True}{\varphi(t)}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\False}{\lforall[x][\varphi(x)]}}
+\RightLabel{\TRule{\False}{\lforall}}
+\UnaryInfC{\sFmla{\False}{\varphi(a)}}
+\DisplayProof
+\end{defish}
+
+\TRule{\True}{\lforall} मध्ये, $t$ हे बंद पद आहे (म्हणजे, चरे नसलेले
+पद). \TRule{\False}{\lforall} मध्ये, $a$~हा असा स्थिरांक आहे की तो
+\TRule{\False}{\lforall} नियमाच्या वरच्या शाखेत कोठेही येता कामा नये.
+\TRule{\False}{\forall} अनुमानाचा $a$ हा \emph{आयगेन चर} आहे, असे आपण
+म्हणतो.\footnote{वरील नियमात $a$ हा स्थिरांक असला तरी आपण
+``आयगेन चर'' ही संज्ञा वापरतो. यामागे ऐतिहासिक कारणे आहेत.}
+
+\subsection{$\lexists$ साठीचे नियम}
+
+\begin{defish}
+\AxiomC{\sFmla{\True}{\lexists[x][\varphi(x)]}}
+\RightLabel{\TRule{\True}{\lexists}}
+\UnaryInfC{\sFmla{\True}{\varphi(a)}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\False}{\lexists[x][\varphi(x)]}}
+\RightLabel{\TRule{\False}{\lexists}}
+\UnaryInfC{\sFmla{\False}{\varphi(t)}}
+\DisplayProof
+\end{defish}
+
+पुन्हा, $t$~हे बंद पद आहे आणि $a$~हा असा स्थिरांक आहे की तो
+\TRule{\True}{\lexists} नियमाच्या वरच्या शाखेत येत नाही. आपण $a$ ला
+\TRule{\True}{\lexists} अनुमानाचा \emph{आयगेन चर} म्हणतो.
+
+\TRule{\False}{\lforall} किंवा \TRule{\True}{\lexists} अनुमानाच्या वरच्या
+शाखेत आयगेन चर येत नसावा, या अटीला \emph{आयगेन चराची अट} म्हणतात.
+
+\begin{explain}
+ही प्रथा आठवा: $\varphi$ हे असे सूत्र असेल की त्यात
+चल~$x$ मुक्त असेल, तर हे आपण~$\varphi(x)$ असे लिहून दर्शवतो.
+त्याच संदर्भात, मग $\varphi(t)$ हा~$\Subst{\varphi}{t}{x}$ चा संक्षेप असतो.
+त्यामुळे \TRule{\False}{\lexists} नियम पुढीलप्रमाणेही लिहिता येईल:
+\begin{prooftree}
+  \AxiomC{\sFmla{\False}{\lexists[x][\varphi]}}
+  \RightLabel{\TRule{\False}{\lexists}}
+  \UnaryInfC{\sFmla{\False}{\Subst{\varphi}{t}{x}}}
+\end{prooftree}
+लक्षात घ्या की~$\varphi$ मध्ये $t$ आधीच येऊ शकते; उदा., $\varphi$ हे
+~$\Atom{\Obj P}{t,x}$ असू शकते. म्हणून,
+$\sFmla{\False}{\lexists[x][\Atom{\Obj P}{t,x}]}$ पासून
+$\sFmla{\False}{\Atom{\Obj P}{t,t}}$ निष्पन्न करणे हा
+\TRule{\False}{\lexists} चा योग्य उपयोग आहे. परंतु
+\TRule{\False}{\lforall} आणि~\TRule{\True}{\lexists} मधील आयगेन चराच्या
+अटींनुसार स्थिरांक~$a$ हा~$\varphi$ मध्ये येता कामा नये. म्हणून,
+$\sFmla{\False}{\lforall[x][\Atom{\Obj P}{a,x}]}$ पासून
+$\sFmla{\False}{\Atom{\Obj P}{a,a}}$ हे
+~$\TRule{\False}{\lforall}$ वापरून योग्य रीतीने निष्पन्न करता येत नाही.
+\end{explain}
+
+\begin{explain}
+\TRule{\True}{\lforall} आणि \TRule{\False}{\lexists} मध्ये पद~$t$ बंद
+असण्याव्यतिरिक्त त्यावर आणखी कोणतेही निर्बंध नाहीत. याउलट,
+\TRule{\True}{\lexists} आणि \TRule{\False}{\lforall} नियमांमध्ये आयगेन
+चराच्या अटीनुसार संबंधित अनुमानांच्या वरच्या शाखांमध्ये स्थिरांक~$a$
+कोठेही येता कामा नये. ही पद्धत निर्दोष राहील याची खात्री करण्यासाठी ही अट
+आवश्यक आहे. ही अट नसती, तर पुढील आकृती
+$\lexists[x][\varphi(x)] \lif \lforall[x][\varphi(x)]$ साठीचा
+बंद टॅब्लो ठरली असती:
+\begin{center}
+\begin{tableau}{}
+  [\sFmla{\False}{\lexists[x][\varphi(x)] \lif \lforall[x][\varphi(x)]}, just=\TAss
+    [\sFmla{\True}{\lexists[x][\varphi(x)]},
+      just={\TRule{\False}{\lif}[1]}
+      [\sFmla{\False}{\lforall[x][\varphi(x)]},
+        just={\TRule{\False}{\lif}[1]}
+        [\sFmla{\True}{\varphi(a)},
+          just={\TRule{\True}{\lexists}[2]}
+          [\sFmla{\False}{\varphi(a)},
+            just={\TRule{\False}{\lforall}[3]}, close]
+        ]
+      ]
+    ]
+  ]
+\end{tableau}
+\end{center}
+परंतु $\lexists[x][\varphi(x)] \lif
+\lforall[x][\varphi(x)]$ हे वैध नाही.
+\end{explain}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{टॅब्लो}\label{fol:tab:der:sec}
+
+\begin{explain}
+गृहीतक म्हणजे काय हे आपण सांगितले आहे आणि निगमन नियम दिले आहेत.
+टॅब्लो यांपासून विगमनाधारित रीतीने निर्माण होतात: प्रत्येक
+टॅब्लो ही एकतर एक किंवा अधिक गृहीतकांनी बनलेली एकच शाखा असते, किंवा
+टॅब्लोच्या एखाद्या शाखेवर निगमन नियमांपैकी एक नियम लावल्याने ती मिळते.
+\end{explain}
+
+\begin{defn}[टॅब्लो]
+$\sFmlaWide{S_1}{\varphi_1}$, \dots,\linebreak $\sFmlaWide{S_n}{\varphi_n}$ या गृहीतकांसाठीचा
+टॅब्लो (येथे प्रत्येक $S_i$ हे $\True$ किंवा~$\False$ यांपैकी एक
+आहे) म्हणजे पुढील अटी पूर्ण करणारा चिन्हांकित सूत्रांचा सांत वृक्ष होय:
+\begin{enumerate}
+\item वृक्षातील सर्वांत वरची $n$ चिन्हांकित सूत्रे म्हणजे एकाखाली एक
+  असलेली\linebreak $\sFmlaWide{S_i}{\varphi_i}$ ही सूत्रे होत.
+\item वृक्षातील गृहीतक नसलेली प्रत्येक चिन्हांकित सूत्र तिच्या वरच्या
+  शाखेतील चिन्हांकित सूत्राला निगमन नियम योग्य रीतीने लावल्याने मिळते.
+\end{enumerate}
+टॅब्लोची एखादी शाखा $\sFmla{\True}{\varphi}$ आणि
+~$\sFmla{\False}{\varphi}$ ही दोन्ही सूत्रे धारण करत असेल तर आणि तरच ती
+\emph{बंद} असते; अन्यथा ती \emph{खुली} असते. ज्याची प्रत्येक शाखा बंद
+असते तो टॅब्लो (त्याच्या गृहीतकांच्या संचासाठीचा)
+\emph{बंद टॅब्लो} असतो. टॅब्लो बंद नसेल, म्हणजे त्यात किमान
+एक खुली शाखा असेल, तर तो \emph{खुला} असतो.
+\end{defn}
+
+\begin{ex}
+  गृहीतकांचा प्रत्येक संच स्वतःच टॅब्लो असतो, परंतु साधारणतः तो बंद
+  नसतो. (स्पष्टपणे, तो बंद असेल तर गृहीतकांत $\sFmla{\True}{\varphi}$ आणि
+  ~$\sFmla{\False}{\varphi}$ ही चिन्हांकित सूत्रांची जोडी आधीच असली पाहिजे.)
+
+  एखाद्या टॅब्लो मधील चिन्हांकित सूत्र~$\varphi$ ला निगमन नियमांपैकी
+  एक नियम लावून त्या टॅब्लोपासून (तो खुला असो वा बंद) नवा आणि अधिक मोठा
+  टॅब्लो मिळवता येतो. नियम लागू केलेली~$\varphi$ ची आस्थिती ज्या ज्या शाखेत
+  आहे, त्या प्रत्येक शाखेच्या शेवटी तो नियम एक किंवा अधिक
+  चिन्हांकित सूत्रे जोडतो.
+
+  उदाहरणार्थ, $\sFmla{\True}{\varphi \land \lnot \varphi}$ हे गृहीतक विचारात घ्या.
+  केवळ त्या गृहीतकाने बनलेला (खुला) टॅब्लो पुढीलप्रमाणे आहे:
+  \begin{center}
+    \begin{tableau}{}
+      [\sFmla{\True}{\varphi \land \lnot \varphi}, just=\TAss]
+    \end{tableau}{}
+  \end{center}
+  त्या गृहीतकाला $\TRule{\True}{\land}$ नियम लावून त्यापासून नवा
+  टॅब्लो मिळतो. हा नियम टॅब्लोमध्ये $\sFmla{\True}{\varphi}$ आणि
+  $\sFmla{\True}{\lnot \varphi}$ या दोन नव्या ओळी जोडू देतो:
+  \begin{center}
+    \begin{tableau}{}
+      [\sFmla{\True}{\varphi \land \lnot \varphi}, just=\TAss
+        [\sFmla{\True}{\varphi}, just={\TRule{\True}{\land}[1]},
+          [\sFmla{\True}{\lnot \varphi}, just={\TRule{\True}{\land}[1]}
+          ]
+        ]
+      ]
+    \end{tableau}{}
+  \end{center}
+  टॅब्लो लिहिताना आपण लावलेले नियम उजवीकडे नोंदवतो (उदा.,
+  $\TRule{\True}{\land} 1$ याचा अर्थ त्या ओळीवरील चिन्हांकित सूत्र ही
+  ओळ~$1$ वरील चिन्हांकित सूत्राला $\TRule{\True}{\land}$ नियम लावल्याने
+  मिळाली आहे). या नव्या टॅब्लोमध्ये आता अधिक चिन्हांकित सूत्रे
+  आहेत, परंतु त्यांपैकी फक्त एकीला ($\sFmla{\True}{\lnot \varphi}$) नियम लावता
+  येतो (या स्थितीत $\TRule{\True}{\lnot}$ नियम). त्यामुळे पुढील बंद
+  टॅब्लो मिळतो:
+  \begin{center}
+    \begin{tableau}{}
+      [\sFmla{\True}{\varphi \land \lnot \varphi}, just=\TAss
+        [\sFmla{\True}{\varphi}, just={\TRule{\True}{\land}[1]}
+          [\sFmla{\True}{\lnot \varphi}, just={\TRule{\True}{\land}[1]}
+            [\sFmla{\False}{\varphi}, just={\TRule{\True}{\lnot}[3]}, close]
+          ]
+        ]
+      ]
+    \end{tableau}{}
+  \end{center}
+\end{ex}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{टॅब्लोची उदाहरणे}\label{fol:tab:pro:sec}
+
+\begin{ex}
+$(\varphi \land \psi) \lif \varphi$ या वाक्य साठी बंद टॅब्लो शोधू या.
+
+संबंधित गृहीतक टॅब्लोच्या सर्वांत वर लिहून आपण सुरुवात करतो.
+\begin{oltableau}
+  [\sFmla{\False}{(\varphi \land \psi) \lif \varphi},
+    just = \TAss]
+\end{oltableau}
+
+एकच गृहीतक असल्यामुळे ज्याला नियम लावता येईल अशी एकच चिन्हांकित सूत्र
+आहे. (प्रत्येक चिन्हांकित सूत्राला नेहमी जास्तीत जास्त एकच नियम लागू
+करता येतो: तो म्हणजे वाक्याच्या संबंधित चिन्हाचा आणि
+मुख्य संकारक चा नियम.) या स्थितीत याचा अर्थ असा की आपण
+$\TRule{\False}{\lif}$ लावला पाहिजे.
+\begin{oltableau}
+  [\sFmla{\False}{(\varphi \land \psi) \lif \varphi},
+    checked, just = \TAss
+    [\sFmla{\True}{\varphi \land \psi},
+      just={\TRule{\False}{\lif}[1]}
+      [\sFmla{\False}{\varphi}, just={\TRule{\False}{\lif}[1]}]
+    ]
+  ]
+\end{oltableau}
+कोणत्या चिन्हांकित सूत्रे ना त्यांचे संबंधित नियम लावले आहेत याची नोंद
+ठेवण्यासाठी आपण त्या वाक्याशेजारी खूण करतो. मात्र नियम सर्व खुल्या शाखांवर
+लावला असेल \emph{तरच} खूण करा. एखाद्या चिन्हांकित सूत्राला प्रत्येक
+खुल्या शाखेत संबंधित नियम लावल्यानंतर तिच्याकडे परत जाऊन तो नियम पुन्हा
+लावावा लागणार नाही. येथे एकच शाखा असल्यामुळे नियम एकदाच लावावा लागतो.
+(या खुणा केवळ टॅब्लो तयार करण्याची सोय आहेत आणि टॅब्लोच्या विन्यासाचा
+अधिकृत भाग नाहीत, हे लक्षात घ्या.)
+
+नियम लावता येईल अशी एक नवी चिन्हांकित सूत्र आहे: ओळ~$2$ वरील
+$\sFmla{\True}{\varphi \land \psi}$. $\TRule{\True}{\land}$ नियम लावल्यावर
+पुढील परिणाम मिळतो:
+\begin{oltableau}
+  [\sFmla{\False}{(\varphi \land \psi) \lif \varphi},
+    checked, just = \TAss
+    [\sFmla{\True}{\varphi \land \psi},
+      just={\TRule{\False}{\lif}[1]}, checked
+      [\sFmla{\False}{\varphi}, just={\TRule{\False}{\lif}[1]}
+        [\sFmla{\True}{\varphi}, just={\TRule{\True}{\land}[2]}
+          [\sFmla{\True}{\psi}, just={\TRule{\True}{\land}[2]}, close
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+शाखेत आता $\sFmla{\True}{\varphi}$ (ओळ~$4$ वर) आणि
+$\sFmla{\False}{\varphi}$ (ओळ~$3$ वर) ही दोन्ही असल्यामुळे शाखा बंद आहे.
+ती एकमेव शाखा असल्यामुळे टॅब्लो बंद आहे. आपण
+~$(\varphi \land \psi) \lif \varphi$ साठी बंद टॅब्लो शोधला आहे.
+\end{ex}
+
+\begin{ex}
+आता $(\lnot \varphi \lor \psi) \lif (\varphi \lif \psi)$ साठी बंद टॅब्लो शोधू या.
+
+संबंधित गृहीतकाने आपण सुरुवात करतो:
+\begin{oltableau}
+  [\sFmla{\False}{(\lnot \varphi \lor \psi) \lif
+      (\varphi \lif \psi)}, just=\TAss]
+\end{oltableau}
+या टॅब्लो मधील एकमेव चिन्हांकित सूत्राचा मुख्य संकारक~$\lif$
+आणि चिन्ह~$\False$ आहे; म्हणून तिला $\TRule{\False}{\lif}$ नियम लावल्यावर
+पुढील परिणाम मिळतो:
+\begin{oltableau}
+  [\sFmla{\False}{(\lnot \varphi \lor \psi)
+      \lif (\varphi \lif \psi)}, just=\TAss, checked
+    [\sFmla{\True}{\lnot \varphi \lor \psi},
+      just={\TRule{\False}{\lif}[1]}
+      [\sFmla{\False}{(\varphi \lif \psi)},
+        just={\TRule{\False}{\lif}[1]}
+      ]
+    ]
+  ]
+\end{oltableau}
+आता ओळ~$2$ ला~$\TRule{\True}{\lor}$ लावायचा की ओळ~$3$ ला
+$\TRule{\False}{\lif}$ लावायचा, असा पर्याय आपल्यापुढे आहे. प्रत्येक
+चिन्हांकित सूत्राला तिचा संबंधित नियम प्रत्येक शाखेत लावला, तर आपण कोणता
+क्रम निवडतो याने प्रत्यक्षात फरक पडत नाही. म्हणून पहिला पर्याय निवडू या.
+$\TRule{\True}{\lor}$ नियमामुळे टॅब्लोची शाखा फुटू शकते आणि नियमाचे
+दोन निष्कर्ष त्या दोन नव्या शाखांना जोडलेल्या नव्या चिन्हांकित सूत्रे
+असतील. त्यामुळे पुढील परिणाम मिळतो:
+\begin{oltableau}
+  [\sFmla{\False}{(\lnot \varphi \lor \psi) \lif
+      (\varphi \lif \psi)}, just=\TAss, checked
+    [\sFmla{\True}{\lnot \varphi \lor \psi},
+      just={\TRule{\False}{\lif}[1]}, checked
+      [\sFmla{\False}{(\varphi \lif \psi)},
+        just={\TRule{\False}{\lif}[1]}
+        [\sFmla{\True}{\lnot \varphi}, just={\TRule{\True}{\lor}[2]}]
+        [\sFmla{\True}{\psi}, just={\TRule{\True}{\lor}[2]}]
+      ]
+    ]
+  ]
+\end{oltableau}
+ओळ~$3$ ला आपण अद्याप $\TRule{\False}{\lif}$ नियम लावलेला नाही; तो आता
+लावू या. वेळ वाचवण्यासाठी तो दोन्ही शाखांवर लावू. प्रत्येक खुल्या शाखेत
+संबंधित नियम लावला असेल तरच चिन्हांकित सूत्र शेजारी खूण करतो, हे आठवा.
+म्हणून नियम ज्याला लागू होतो ती चिन्हांकित सूत्र असलेल्या प्रत्येक
+शाखेच्या शेवटी तो नियम लावणे उचित ठरते. त्यामुळे विविध शाखांत खाली जाऊन त्या
+चिन्हांकित सूत्र कडे पुन्हा परतावे लागत नाही.
+\begin{oltableau}
+  [\sFmla{\False}{(\lnot \varphi \lor \psi) \lif
+      (\varphi \lif \psi)}, just=\TAss, checked
+    [\sFmla{\True}{\lnot \varphi \lor \psi},
+      just={\TRule{\False}{\lif}[1]}, checked
+      [\sFmla{\False}{(\varphi \lif \psi)},
+        just={\TRule{\False}{\lif}[1]}, checked
+        [\sFmla{\True}{\lnot \varphi}, just={\TRule{\True}{\lor}[2]}
+          [\sFmla{\True}{\varphi}, just={\TRule{\False}{\lif}[3]}
+            [\sFmla{\False}{\psi}, just={\TRule{\False}{\lif}[3]}]
+          ]
+        ]
+        [\sFmla{\True}{\psi}, just={\TRule{\True}{\lor}[2]}
+          [\sFmla{\True}{\varphi}, just={\TRule{\False}{\lif}[3]}
+            [\sFmla{\False}{\psi}, just={\TRule{\False}{\lif}[3]}, close]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+उजवी शाखा आता बंद आहे. डाव्या शाखेत आपण अजूनही ओळ~$4$ ला
+$\TRule{\True}{\lnot}$ नियम लावू शकतो. त्यामुळे
+~$\sFmla{\False}{\varphi}$ मिळते आणि डावी शाखा बंद होते:
+\begin{oltableau}
+  [\sFmla{\False}{(\lnot \varphi \lor \psi) \lif
+      (\varphi \lif \psi)}, just=\TAss, checked
+    [\sFmla{\True}{\lnot \varphi \lor \psi},
+      just={\TRule{\False}{\lif}[1]}, checked
+      [\sFmla{\False}{(\varphi \lif \psi)},
+        just={\TRule{\False}{\lif}[1]}, checked
+        [\sFmla{\True}{\lnot \varphi}, just={\TRule{\True}{\lor}[2]}
+          [\sFmla{\True}{\varphi}, just={\TRule{\False}{\lif}[3]}
+            [\sFmla{\False}{\psi}, just={\TRule{\False}{\lif}[3]}
+              [\sFmla{\False}{\varphi},
+                just={\TRule{\True}{\lnot}[4]}, close]
+            ]
+          ]
+        ]
+        [\sFmla{\True}{\psi}, just={\TRule{\True}{\lor}[2]}
+          [\sFmla{\True}{\varphi}, just={\TRule{\False}{\lif}[3]}
+            [\sFmla{\False}{\psi},
+              just={\TRule{\False}{\lif}[3]}, close]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+\end{ex}
+
+\begin{ex}
+कितीही चिन्हांकित सूत्रे गृहीतके म्हणून घेऊन त्यांच्यासाठी टॅब्लो
+देता येतात. शाखा फोडू देणारे एकाहून अधिक नियम लावणेही अनेकदा आवश्यक असते;
+आणि सर्वसाधारणपणे टॅब्लोमध्ये कितीही शाखा असू शकतात. उदाहरणार्थ,
+पुढील सूत्रांसाठीचा टॅब्लो विचारात घ्या:
+$\{\sFmla{\True}{\varphi \lor (\psi \land \chi)}, \sFmla{\False}{(\varphi \lor \psi) \land (\varphi
+  \lor \chi)}\}$. पहिल्या गृहीतकाला $\TRule{\True}{\lor}$ लावून आपण
+सुरुवात करतो:
+\begin{oltableau}
+  [\sFmla{\True}{\varphi \lor (\psi \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\varphi \lor \psi) \land
+        (\varphi \lor \formula{C})}, just=\TAss
+      [\sFmla{\True}{\varphi}, just={\TRule{\True}{\lor}[1]}]
+      [\sFmla{\True}{\psi \land \formula{C}},
+        just={\TRule{\True}{\lor}[1]}]
+    ]
+  ]
+\end{oltableau}
+आता ओळ~$2$ ला $\TRule{\False}{\land}$ नियम लावता येतो. दोन्ही शाखांवर
+तो एकाच वेळी लावल्यामुळे आपण ओळ~$2$ वर खूण करू शकतो:
+\begin{oltableau}
+  [\sFmla{\True}{\varphi \lor (\psi \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\varphi \lor \psi) \land
+        (\varphi \lor \formula{C})}, just=\TAss, checked
+      [\sFmla{\True}{\varphi}, just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\varphi \lor \psi},
+          just={\TRule{\False}{\land}[2]}]
+        [\sFmla{\False}{\varphi \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}]
+      ]
+      [\sFmla{\True}{\psi \land \formula{C}},
+        just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\varphi \lor \psi},
+          just={\TRule{\False}{\land}[2]}]
+        [\sFmla{\False}{\varphi \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}]
+      ]
+    ]
+  ]
+\end{oltableau}
+आता $\varphi \lor \psi$ असलेल्या सर्व शाखांवर $\TRule{\False}{\lor}$ लावता
+येतो:
+\begin{oltableau}
+  [\sFmla{\True}{\varphi \lor (\psi \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\varphi \lor \psi) \land
+        (\varphi \lor \formula{C})}, just=\TAss, checked
+      [\sFmla{\True}{\varphi}, just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\varphi \lor \psi},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\varphi}, just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\psi},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+        [\sFmla{\False}{\varphi \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}]
+      ]
+      [\sFmla{\True}{\psi \land \formula{C}},
+        just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\varphi \lor \psi},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\varphi}, just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\psi},
+              just={\TRule{\False}{\lor}[4]}]
+          ]
+        ]
+        [\sFmla{\False}{\varphi \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}]
+      ]
+    ]
+  ]
+\end{oltableau}
+सर्वांत डावी शाखा आता बंद आहे. आता $\varphi \lor \chi$ ला
+$\TRule{\False}{\lor}$ लावू या:
+\begin{oltableau}
+  [\sFmla{\True}{\varphi \lor (\psi \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\varphi \lor \psi) \land
+        (\varphi \lor \formula{C})}, just=\TAss, checked
+      [\sFmla{\True}{\varphi}, just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\varphi \lor \psi},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\varphi},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\psi},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+        [\sFmla{\False}{\varphi \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\varphi},
+            just={\TRule{\False}{\lor}[4]}, move by=2
+            [\sFmla{\False}{\formula{C}},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+      ]
+      [\sFmla{\True}{\psi \land \formula{C}},
+        just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\varphi \lor \psi},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\varphi},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\psi},
+              just={\TRule{\False}{\lor}[4]}
+            ]
+          ]
+        ]
+        [\sFmla{\False}{\varphi \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\varphi},
+            just={\TRule{\False}{\lor}[4]}, move by=2
+            [\sFmla{\False}{\formula{C}},
+              just={\TRule{\False}{\lor}[4]}]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+स्पष्टतेसाठी $\TRule{\False}{\lor}$ दुसऱ्यांदा लावल्याचा परिणाम आपण खाली
+हलवला आहे, हे लक्षात घ्या. येथे समर्थन समान असते, त्यामुळे तसे करण्याची
+गरज नव्हती.
+
+दोन शाखा खुल्या राहतात आणि ओळ~$3$ वरील $\sFmla{\True}{\psi \land \chi}$
+वर खूण झालेली नाही. तिला $\TRule{\True}{\land}$ लावून पुढील बंद
+टॅब्लो मिळतो:
+\begin{oltableau}
+  [\sFmla{\True}{\varphi \lor (\psi \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\varphi \lor \psi) \land
+        (\varphi \lor \formula{C})}, just=\TAss, checked
+      [\sFmla{\True}{\varphi}, just={\TRule{\True}{\lor}[1]}
+        [\sFmla{\False}{\varphi \lor \psi},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\varphi},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\psi},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+        [\sFmla{\False}{\varphi \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\varphi},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{C}},
+              just={\TRule{\False}{\lor}[4]}, close]
+          ]
+        ]
+      ]
+      [\sFmla{\True}{\psi \land \formula{C}},
+        just={\TRule{\True}{\lor}[1]}, checked
+        [\sFmla{\False}{\varphi \lor \psi},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\varphi},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\psi},
+              just={\TRule{\False}{\lor}[4]}
+              [\sFmla{\True}{\psi},
+                just={\TRule{\True}{\land}[3]}
+                [\sFmla{\True}{\formula{C}},
+                  just={\TRule{\True}{\land}[3]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+        [\sFmla{\False}{\varphi \lor \formula{C}},
+          just={\TRule{\False}{\land}[2]}, checked
+          [\sFmla{\False}{\varphi},
+            just={\TRule{\False}{\lor}[4]}
+            [\sFmla{\False}{\formula{C}},
+              just={\TRule{\False}{\lor}[4]}
+              [\sFmla{\True}{\psi},
+                just={\TRule{\True}{\land}[3]}
+                [\sFmla{\True}{\formula{C}},
+                  just={\TRule{\True}{\land}[3]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+
+तुलनेसाठी, त्याच गृहीतकांच्या संचासाठी नियम वेगळ्या क्रमाने लावलेला बंद
+टॅब्लो पुढे दिला आहे:
+\begin{oltableau}
+  [\sFmla{\True}{\varphi \lor (\psi \land \formula{C})},
+    just=\TAss, checked
+    [\sFmla{\False}{(\varphi \lor \psi) \land
+        (\varphi \lor \formula{C})}, just=\TAss, checked
+      [\sFmla{\False}{\varphi \lor \psi},
+        just={\TRule{\False}{\land}[2]}, checked
+        [\sFmla{\False}{\varphi},
+          just={\TRule{\False}{\lor}[3]}
+          [\sFmla{\False}{\psi},
+            just={\TRule{\False}{\lor}[3]}
+            [\sFmla{\True}{\varphi},
+              just={\TRule{\True}{\lor}[1]},close
+            ]
+            [\sFmla{\True}{\psi \land \formula{C}},
+              just={\TRule{\True}{\lor}[1]}, checked
+              [\sFmla{\True}{\psi},
+                just={\TRule{\True}{\land}[6]}
+                [\sFmla{\True}{\formula{C}},
+                  just={\TRule{\True}{\land}[6]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+      [\sFmla{\False}{\varphi \lor \formula{C}},
+        just={\TRule{\False}{\land}[2]}, checked
+        [\sFmla{\False}{\varphi},
+          just={\TRule{\False}{\lor}[3]}
+          [\sFmla{\False}{\formula{C}},
+            just={\TRule{\False}{\lor}[3]}
+            [\sFmla{\True}{\varphi},
+              just={\TRule{\True}{\lor}[1]},close
+            ]
+            [\sFmla{\True}{\psi \land \formula{C}},
+              just={\TRule{\True}{\lor}[1]}, checked
+              [\sFmla{\True}{\psi},
+                just={\TRule{\True}{\land}[6]}
+                [\sFmla{\True}{\formula{C}},
+                  just={\TRule{\True}{\land}[6]},close
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+\end{ex}
+
+\begin{prob}
+पुढील सूत्रांचे बंद टॅब्लो द्या:
+\begin{enumerate}
+\item $\sFmla{\True}{\varphi \land (\psi \land \chi)}, \sFmla{\False}{(\varphi \land \psi) \land \chi}$.
+\item $\sFmla{\True}{\varphi \lor (\psi \lor \chi)}, \sFmla{\False}{(\varphi \lor \psi) \lor \chi}$.
+\item $\sFmla{\True}{\varphi \lif (\psi \lif \chi)}, \sFmla{\False}{\psi \lif (\varphi \lif \chi)}$.
+\item $\sFmla{\True}{\varphi}, \sFmla{\False}{\lnot\lnot \varphi}$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+पुढील सूत्रांचे बंद टॅब्लो द्या:
+\begin{enumerate}
+\item $\sFmla{\True}{(\varphi \lor \psi) \lif \chi}, \sFmla{\False}{\varphi \lif \chi}$.
+\item $\sFmla{\True}{(\varphi \lif \chi) \land (\psi \lif \chi)}, \sFmla{\False}{(\varphi \lor \psi) \lif \chi}$.
+\item $\sFmla{\False}{\lnot(\varphi \land \lnot \varphi)}$.
+\item $\sFmla{\True}{\psi \lif \varphi}, \sFmla{\False}{\lnot \varphi \lif \lnot \psi}$.
+\item $\sFmla{\False}{(\varphi \lif \lnot \varphi) \lif \lnot \varphi}$.
+\item $\sFmla{\False}{\lnot(\varphi \lif \psi) \lif \lnot \psi}$.
+\item $\sFmla{\True}{\varphi \lif \chi}, \sFmla{\False}{\lnot (\varphi \land \lnot \chi)}$.
+\item $\sFmla{\True}{\varphi \land \lnot \chi}, \sFmla{\False}{\lnot (\varphi \lif \chi)}$.
+\item $\sFmla{\True}{\varphi \lor \psi, \lnot \psi}, \sFmla{\False}{\varphi}$.
+\item $\sFmla{\True}{\lnot \varphi \lor \lnot \psi}, \sFmla{\False}{\lnot(\varphi \land \psi)}$.
+\item $\sFmla{\False}{(\lnot \varphi \land \lnot \psi) \lif\lnot(\varphi \lor \psi)}$.
+\item $\sFmla{\False}{\lnot(\varphi \lor \psi) \lif (\lnot \varphi \land \lnot \psi)}$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+पुढील सूत्रांचे बंद टॅब्लो द्या:
+\begin{enumerate}
+\item $\sFmla{\True}{\lnot(\varphi \lif \psi)}, \sFmla{\False}{\varphi}$.
+\item $\sFmla{\True}{\lnot(\varphi \land \psi)}, \sFmla{\False}{\lnot \varphi \lor \lnot \psi}$.
+\item $\sFmla{\True}{\varphi \lif \psi}, \sFmla{\False}{\lnot \varphi \lor \psi}$.
+\item $\sFmla{\False}{\lnot \lnot \varphi \lif \varphi}$.
+\item $\sFmla{\True}{\varphi \lif \psi}, \sFmla{\True}{\lnot \varphi \lif \psi}, \sFmla{\False}{\psi}$.
+\item $\sFmla{\True}{(\varphi \land \psi) \lif \chi}, \sFmla{\False}{(\varphi \lif \chi) \lor (\psi \lif \chi)}$.
+\item $\sFmla{\True}{(\varphi \lif \psi) \lif \varphi}, \sFmla{\False}{\varphi}$.
+\item $\sFmla{\False}{(\varphi \lif \psi) \lor (\psi \lif \chi)}$.
+\end{enumerate}
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{संख्यापकांसह टॅब्लो}\label{fol:tab:prq:sec}
+
+\begin{ex}
+संख्यापक हाताळताना आयगेन चराच्या अटीचा भंग होणार नाही याची खात्री करावी
+लागते; त्यासाठी कधीकधी काही अनुमाने करण्याचा क्रम बदलून पाहावा लागतो.
+सामान्यतः आयगेन चराच्या अटीच्या अधीन असलेले नियम आधी हाताळण्याचा प्रयत्न
+उपयोगी ठरतो (पूर्ण टॅब्लोमध्ये ते अधिक वर असतील).
+
+$\lexists[x][\lnot \varphi(x)] \lif \lnot \lforall[x][\varphi(x)]$ या
+वाक्य साठी टॅब्लो कसा द्यायचा ते पाहू. नेहमीप्रमाणे संबंधित
+गृहीतक नोंदवून आपण सुरुवात करतो:
+\begin{oltableau}
+[\sFmla{\False}{\lexists[x][\lnot \varphi(x)]\lif \lnot
+    \lforall[x][\varphi(x)]}, just=\TAss]
+\end{oltableau}
+मुख्य संकारक $\lif$ असल्यामुळे आपण $\TRule{\False}{\lif}$ लावतो:
+\begin{oltableau}
+[\sFmla{\False}{\lexists[x][\lnot \varphi(x)]\lif \lnot
+    \lforall[x][\varphi(x)]}, just=\TAss, checked
+  [\sFmla{\True}{\lexists[x][\lnot \varphi(x)]},
+    just={\TRule{\False}{\lif}[1]}
+    [\sFmla{\False}{\lnot\lforall[x][\varphi(x)]},
+      just={\TRule{\False}{\lif}[1]}]
+  ]
+]
+\end{oltableau}
+यानंतर ओळ~$2$ हाताळायची आहे. आपण $\TRule{\True}{\lexists}$ वापरतो.
+त्यासाठी नवा स्थिरांक आवश्यक आहे; अद्याप कोणतेही स्थिरांक आलेले
+नसल्यामुळे कोणताही एक, समजा~$a$, निवडता येतो.
+\begin{oltableau}
+[\sFmla{\False}{\lexists[x][\lnot \varphi(x)]\lif \lnot
+    \lforall[x][\varphi(x)]}, just=\TAss, checked
+  [\sFmla{\True}{\lexists[x][\lnot \varphi(x)]},
+    just={\TRule{\False}{\lif}[1]}, checked
+    [\sFmla{\False}{\lnot\lforall[x][\varphi(x)]},
+      just={\TRule{\False}{\lif}[1]}
+      [\sFmla{\True}{\lnot\varphi(a)}, just={\TRule{\True}{\lexists}[2]}]
+    ]
+  ]
+]
+\end{oltableau}
+आता ओळ~$3$ ला $\TRule{\False}{\lnot}$ लावतो:
+\begin{oltableau}
+[\sFmla{\False}{\lexists[x][\lnot \varphi(x)]\lif \lnot
+    \lforall[x][\varphi(x)]}, just=\TAss, checked
+  [\sFmla{\True}{\lexists[x][\lnot \varphi(x)]},
+    just={\TRule{\False}{\lif}[1]}, checked
+    [\sFmla{\False}{\lnot\lforall[x][\varphi(x)]},
+      just={\TRule{\False}{\lif}[1]}, checked
+      [\sFmla{\True}{\lnot\varphi(a)}, just={\TRule{\True}{\lexists}[2]}
+        [\sFmla{\True}{\lforall[x][\varphi(x)]},
+          just = {\TRule{\False}{\lnot}[3]}
+        ]
+      ]
+    ]
+  ]
+]
+\end{oltableau}
+ओळ~$4$ ला $\TRule{\True}{\lnot}$ आणि त्यानंतर ओळ~$5$ ला
+$\TRule{\True}{\lforall}$ लावल्यावर बंद टॅब्लो मिळतो.
+\begin{oltableau}
+[\sFmla{\False}{\lexists[x][\lnot \varphi(x)]\lif \lnot
+    \lforall[x][\varphi(x)]}, just=\TAss, checked
+  [\sFmla{\True}{\lexists[x][\lnot \varphi(x)]},
+    just={\TRule{\False}{\lif}[1]}, checked
+    [\sFmla{\False}{\lnot\lforall[x][\varphi(x)]},
+      just={\TRule{\False}{\lif}[1]}, checked
+      [\sFmla{\True}{\lnot\varphi(a)}, just={\TRule{\True}{\lexists}[2]}
+        [\sFmla{\True}{\lforall[x][\varphi(x)]},
+          just = {\TRule{\False}{\lnot}[3]}
+          [\sFmla{\False}{\varphi(a)}, just={\TRule{\True}{\lnot}[4]}
+            [\sFmla{\True}{\varphi(a)},
+              just={\TRule{\True}{\lforall}[5]}, close
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+]
+\end{oltableau}
+\end{ex}
+
+\begin{ex}
+पुढील संचासाठी टॅब्लो कसा द्यायचा ते पाहू:
+\[\sFmla{\False}{\lexists[x][\chi(x,b)]},
+\sFmla{\True}{\lexists[x][(\varphi(x) \land \psi(x))]},
+\sFmla{\True}{\lforall[x][(\psi(x) \lif \chi(x,b))]}.
+\]
+नेहमीप्रमाणे गृहीतकांनी सुरुवात करतो:
+\begin{oltableau}
+  [\sFmla{\False}{\lexists[x][\formula{C}(x,b)]}, just=\TAss
+    [\sFmla{\True}{\lexists[x][(\varphi(x) \land \psi(x))]},
+      just=\TAss
+      [\sFmla{\True}{\lforall[x][(\psi(x) \lif \formula{C}(x,b))]},
+        just=\TAss]
+    ]
+  ]
+\end{oltableau}
+आयगेन चराची अट असलेला नियम आपण नेहमी आधी लावला पाहिजे; येथे तो म्हणजे
+ओळ~$2$ ला $\TRule{\True}{\lexists}$. गृहीतकांत स्थिरांक~$b$ असल्यामुळे
+वेगळा अचर वापरावा लागतो; पुन्हा~$a$ निवडू या.
+\begin{oltableau}
+  [\sFmla{\False}{\lexists[x][\formula{C}(x,b)]}, just=\TAss
+    [\sFmla{\True}{\lexists[x][(\varphi(x) \land \psi(x))]},
+      just=\TAss, checked
+      [\sFmla{\True}{\lforall[x][(\psi(x) \lif \formula{C}(x,b))]},
+        just=\TAss
+        [\sFmla{\True}{\varphi(a) \land \psi(a)},
+          just={\TRule{\True}{\lexists}[2]}]
+      ]
+    ]
+  ]
+\end{oltableau}
+आता ओळ~$1$ ला $\TRule{\False}{\lexists}$ किंवा ओळ~$3$ ला
+$\TRule{\True}{\lforall}$ लावल्यास, $x$ च्या जागी कोणते बंद पद~$t$ ठेवायचे
+ते ठरवावे लागते. या नियमांना आयगेन चराची अट नसल्यामुळे हवे ते कोणतेही बंद
+पद निवडता येते. काही स्थितींमध्ये वेगवेगळी~$t$ वापरून नियम अनेकदा लावावा
+लागू शकतो. मात्र सर्वसाधारणपणे टॅब्लोमध्ये आधीच आलेल्या पदांपैकी
+एक---येथे $a$ किंवा~$b$---निवडणे फायदेशीर ठरते; आणि येथे $a$ मुळे बंद
+शाखा मिळण्याची शक्यता अधिक आहे असा अंदाज करता येतो.
+\begin{oltableau}
+  [\sFmla{\False}{\lexists[x][\formula{C}(x,b)]}, just=\TAss
+    [\sFmla{\True}{\lexists[x][(\varphi(x) \land \psi(x))]},
+      just=\TAss, checked
+      [\sFmla{\True}{\lforall[x][(\psi(x) \lif \formula{C}(x,b))]}, just=\TAss
+        [\sFmla{\True}{\varphi(a) \land \psi(a)}, just={\TRule{\True}{\lexists}[2]}
+          [\sFmla{\False}{\formula{C}(a,b)}, just={\TRule{\False}{\lexists}[1]}
+            [\sFmla{\True}{\psi(a) \lif \formula{C}(a,b)},
+              just={\TRule{\True}{\lforall}[3]}
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+ओळी $1$ आणि~$3$ वरील चिन्हांकित सूत्रे पुन्हा वापराव्या लागू शकतात,
+म्हणून त्यांवर खूण करत नाही. आता ओळ~$4$ ला $\TRule{\True}{\land}$ लावा:
+\begin{oltableau}
+  [\sFmla{\False}{\lexists[x][\formula{C}(x,b)]}, just=\TAss
+    [\sFmla{\True}{\lexists[x][(\varphi(x) \land \psi(x))]},
+      just=\TAss, checked
+      [\sFmla{\True}{\lforall[x][(\psi(x) \lif \formula{C}(x,b))]}, just=\TAss
+        [\sFmla{\True}{\varphi(a) \land \psi(a)},
+          just={\TRule{\True}{\lexists}[2]}, checked
+          [\sFmla{\False}{\formula{C}(a,b)}, just={\TRule{\False}{\lexists}[1]}
+            [\sFmla{\True}{\psi(a) \lif \formula{C}(a,b)},
+              just={\TRule{\True}{\lforall}[3]}
+              [\sFmla{\True}{\varphi(a)}, just={\TRule{\True}{\land}[4]}
+                [\sFmla{\True}{\psi(a)}, just={\TRule{\True}{\land}[4]}
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+आता ओळ~$6$ ला $\TRule{\True}{\lif}$ लावल्यास टॅब्लो बंद होतो:
+\begin{oltableau}
+  [\sFmla{\False}{\lexists[x][\formula{C}(x,b)]}, just=\TAss
+    [\sFmla{\True}{\lexists[x][(\varphi(x) \land \psi(x))]},
+      just=\TAss, checked
+      [\sFmla{\True}{\lforall[x][(\psi(x) \lif \formula{C}(x,b))]},
+        just=\TAss
+        [\sFmla{\True}{\varphi(a) \land \psi(a)},
+          just={\TRule{\True}{\lexists}[2]}, checked
+          [\sFmla{\False}{\formula{C}(a,b)},
+            just={\TRule{\False}{\lexists}[1]}
+            [\sFmla{\True}{\psi(a) \lif \formula{C}(a,b)},
+              just={\TRule{\True}{\lforall}[3]}, checked
+              [\sFmla{\True}{\varphi(a)},
+                just={\TRule{\True}{\land}[4]}
+                [\sFmla{\True}{\psi(a)},
+                  just={\TRule{\True}{\land}[4]}
+                  [\sFmla{\False}{\psi(a)},
+                    just={\TRule{\True}{\lif}[6]},close
+                  ]
+                  [\sFmla{\True}{\formula{C}(a,b)},
+                    just={\TRule{\True}{\lif}[6]},close
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+
+
+\end{ex}
+
+\begin{ex}
+पुढील संचासाठी आपण टॅब्लो तयार करतो:
+\[\sFmla{\True}{\lforall[x][\varphi(x)]}, \sFmla{\True}{\lforall[x][\varphi(x)]
+  \lif \lexists[y][\psi(y)]}, \sFmla{\True}{\lnot\lexists[y][\psi(y)]}.
+\]
+नेहमीप्रमाणे गृहीतके लिहून सुरुवात करतो:
+\begin{oltableau}
+  [\sFmla{\True}{\lforall[x][\varphi(x)]}, just=\TAss
+    [\sFmla{\True}{\lforall[x][\varphi(x)] \lif
+        \lexists[y][\psi(y)]}, just=\TAss
+      [\sFmla{\True}{\lnot\lexists[y][\psi(y)]}, just=\TAss
+      ]
+    ]
+  ]
+\end{oltableau}
+ओळ~$3$ ला $\TRule{\True}{\lnot}$ नियम लावून सुरुवात करतो. ``आयगेन
+चराची अट असलेले नियम नेहमी आधी लावा'' या नियमाचा एक परिणाम असा की
+``आयगेन चराची अट नसलेले संख्यापक-नियम आवश्यक होईपर्यंत पुढे ढकला.''
+शाखा फोडणारे नियमही पुढे ढकला.
+\begin{oltableau}
+  [\sFmla{\True}{\lforall[x][\varphi(x)]}, just=\TAss
+    [\sFmla{\True}{\lforall[x][\varphi(x)] \lif
+        \lexists[y][\psi(y)]}, just=\TAss
+      [\sFmla{\True}{\lnot\lexists[y][\psi(y)]}, just=\TAss, checked
+        [\sFmla{\False}{\lexists[y][\psi(y)]}, just={\TRule{\True}{\lnot}[3]}]
+      ]
+    ]
+  ]
+\end{oltableau}
+नव्या ओळ~$4$ साठी $\TRule{\False}{\lexists}$ आवश्यक आहे आणि हा आयगेन
+चराची अट नसलेला संख्यापक-नियम आहे. म्हणून तो पुढे ढकलून त्याऐवजी ओळ~$2$
+वर $\TRule{\True}{\lif}$ वापरतो.
+\begin{oltableau}
+  [\sFmla{\True}{\lforall[x][\varphi(x)]}, just=\TAss
+    [\sFmla{\True}{\lforall[x][\varphi(x)] \lif
+        \lexists[y][\psi(y)]}, just=\TAss, checked
+      [\sFmla{\True}{\lnot\lexists[y][\psi(y)]}, just=\TAss, checked
+        [\sFmla{\False}{\lexists[y][\psi(y)]},
+          just={\TRule{\True}{\lnot}[3]},
+          [\sFmla{\False}{\lforall[x][\varphi(x)]}, just={\TRule{\True}{\lif}[2]}]
+          [\sFmla{\True}{\lexists[y][\psi(y)]}, just={\TRule{\True}{\lif}[2]}]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+दोन्ही नव्या चिन्हांकित सूत्रे ना आयगेन चराच्या अटी असलेले नियम आवश्यक
+आहेत; म्हणून ते नियम यानंतर लावावेत:
+\begin{oltableau}
+  [\sFmla{\True}{\lforall[x][\varphi(x)]}, just=\TAss
+    [\sFmla{\True}{\lforall[x][\varphi(x)] \lif
+        \lexists[y][\psi(y)]}, just=\TAss, checked
+      [\sFmla{\True}{\lnot\lexists[y][\psi(y)]}, just=\TAss, checked
+        [\sFmla{\False}{\lexists[y][\psi(y)]},
+          just={\TRule{\True}{\lnot}[3]}
+          [\sFmla{\False}{\lforall[x][\varphi(x)]}, just={\TRule{\True}{\lif}[2]},checked
+            [\sFmla{\False}{\varphi(b)}, just={\TRule{\False}{\lforall}[5]}]
+          ]
+          [\sFmla{\True}{\lexists[y][\psi(y)]}, just={\TRule{\True}{\lif}[2]},checked
+            [\sFmla{\True}{\psi(c)}, just={\TRule{\True}{\lexists}[5]}]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+शाखा बंद करण्यासाठी ओळी $1$ आणि~$4$ वरील चिन्हांकित सूत्रे वापराव्या
+लागतात. त्यांच्या संबंधित नियमांना (\TRule{\True}{\lforall} आणि
+\TRule{\False}{\lexists}) आयगेन चराची अट नाही; म्हणून योग्य असलेली कोणतीही
+बंद पदे निवडण्याचे स्वातंत्र्य आहे. येथे ती अनुक्रमे $b$ आणि~$c$ आहेत.
+\begin{oltableau}
+  [\sFmla{\True}{\lforall[x][\varphi(x)]}, just=\TAss
+    [\sFmla{\True}{\lforall[x][\varphi(x)] \lif
+        \lexists[y][\psi(y)]}, just=\TAss, checked
+      [\sFmla{\True}{\lnot\lexists[y][\psi(y)]}, just=\TAss, checked
+        [\sFmla{\False}{\lexists[y][\psi(y)]},
+          just={\TRule{\True}{\lnot}[3]}
+          [\sFmla{\False}{\lforall[x][\varphi(x)]},
+            just={\TRule{\True}{\lif}[2]},checked
+            [\sFmla{\False}{\varphi(b)},
+              just={\TRule{\False}{\lforall}[5]}
+              [\sFmla{\True}{\varphi(b)},
+                just={\TRule{\True}{\lforall}[1]},close
+              ]
+            ]
+          ]
+          [\sFmla{\True}{\lexists[y][\psi(y)]},
+            just={\TRule{\True}{\lif}[2]},checked
+            [\sFmla{\True}{\psi(c)},
+              just={\TRule{\True}{\lexists}[5]}
+              [\sFmla{\False}{\psi(c)},
+                just={\TRule{\False}{\lexists}[4]},close
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+\end{oltableau}
+\end{ex}
+
+\begin{prob}
+पुढील सूत्रांचे बंद टॅब्लो द्या:
+\begin{enumerate}
+\item $\sFmla{\False}{(\lforall[x][\varphi(x)] \land \lforall[y][\psi(y)])
+\lif \lforall[z][(\varphi(z) \land \psi(z))]}$.
+\item $\sFmla{\False}{(\lexists[x][\varphi(x)] \lor \lexists[y][\psi(y)])
+\lif \lexists[z][(\varphi(z) \lor \psi(z))]}$.
+\item $\sFmla{\True}{\lforall[x][(\varphi(x) \lif \psi)]},
+\sFmla{\False}{\lexists[y][\varphi(y)] \lif \psi}$.
+\item $\sFmla{\True}{\lforall[x][\lnot \varphi(x)]},
+\sFmla{\False}{\lnot\lexists[x][\varphi(x)]}$.
+\item $\sFmla{\False}{\lnot\lexists[x][\varphi(x)] \lif \lforall[x][\lnot
+\varphi(x)]}$.
+\item $\sFmla{\False}{\lnot\lexists[x][\lforall[y][((\varphi(x,y) \lif
+\lnot \varphi(y,y)) \land (\lnot \varphi(y,y) \lif \varphi(x,y)))]]}$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+पुढील सूत्रांचे बंद टॅब्लो द्या:
+\begin{enumerate}
+\item $\sFmla{\False}{\lnot\lforall[x][\varphi(x)] \lif \lexists[x][\lnot\varphi(x)]}$.
+\item $\sFmla{\True}{(\lforall[x][\varphi(x)] \lif \psi)}, \sFmla{\False}{\lexists[y][(\varphi(y) \lif \psi)]}$.
+\item $\sFmla{\False}{\lexists[x][(\varphi(x) \lif \lforall[y][\varphi(y)])]}$.
+\end{enumerate}
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सिद्धता-उपपत्तीय संकल्पना}\label{fol:tab:ptn:sec}
+
+\begin{editorial}
+या विभागात टॅब्लोसाठी सिद्धतायोग्यता संबंध आणि सुसंगतता यांच्या व्याख्या
+एकत्रित केल्या आहेत.
+\end{editorial}
+
+\begin{explain}
+जशा आपण अनेक महत्त्वाच्या चिन्हार्थविषयक संकल्पना (वैधता, तार्किक निष्पन्नता,
+पूर्ततायोग्यता) परिभाषित केल्या आहेत, तशाच त्यांना अनुरूप
+\emph{सिद्धता-उपपत्तीय संकल्पना} आता परिभाषित करू. संरचना मध्ये
+वाक्यांची पूर्ति होते की नाही याचा आधार घेऊन या संकल्पना परिभाषित
+केल्या जात नाहीत; त्याऐवजी ठरावीक बंद टॅब्लोx च्या अस्तित्वाचा आधार
+घेतला जातो. या दोन प्रकारच्या संकल्पना एकमेकांशी जुळतात, हा एक महत्त्वाचा
+शोध होता. त्या जुळतात, हाच \emph{निर्दोषता प्रमेय} आणि
+\emph{संपूर्णता प्रमेय} यांचा आशय आहे.
+\end{explain}
+
+
+\begin{defn}[प्रमेये]
+एखादे वाक्य~$\varphi$ हे \emph{प्रमेय} असते, जर
+$\sFmla{\False}{\varphi}$ साठी बंद टॅब्लो असेल. $\varphi$ हे प्रमेय असेल
+तर आपण $\Proves \varphi$ लिहितो आणि ते प्रमेय नसेल तर $\Proves/ \varphi$ लिहितो.
+\end{defn}
+
+\begin{defn}[निष्पन्नता]
+वाक्य $\varphi$ हे वाक्यांच्या संच~$\Gamma$ \emph{पासून
+निष्पन्न करता येण्याजोगे} असते, म्हणजे $\Gamma \Proves \varphi$, तेव्हा आणि केवळ तेव्हाच,
+जेव्हा एखादा सांत संच $\{\psi_1, \dots, \psi_n\} \subseteq \Gamma$ असा असतो
+आणि पुढील संचासाठी बंद टॅब्लो असतो:
+\[\{
+  \sFmla{\False}{\varphi},
+  \sFmla{\True}{\psi_1}, \dots,
+  \sFmla{\True}{\psi_n}
+  \}.
+\]
+$\varphi$ हे $\Gamma$ पासून निष्पन्न करता येण्याजोगे नसेल, तर आपण $\Gamma \Proves/
+\varphi$ लिहितो.
+\end{defn}
+
+\begin{defn}[सुसंगतता]
+वाक्यांचा संच~$\Gamma$ हा \emph{विसंगत} असतो तेव्हा आणि केवळ तेव्हाच,
+जेव्हा एखादा सांत संच $\{\psi_1, \dots, \psi_n\} \subseteq \Gamma$ असा असतो
+आणि पुढील संचासाठी बंद टॅब्लो असतो:
+\[\{
+  \sFmla{\True}{\psi_1}, \dots,
+  \sFmla{\True}{\psi_n}
+  \}.
+\]
+$\Gamma$ विसंगत नसेल, तर त्याला \emph{सुसंगत} म्हणतो.
+\end{defn}
+
+\begin{prop}[परावर्तिता]
+\label{fol:tab:ptn:prop:reflexivity}
+$\varphi \in \Gamma$ असेल, तर $\Gamma \Proves \varphi$.
+\end{prop}
+
+\begin{proof}
+$\varphi \in \Gamma$ असेल, तर $\{\varphi\}$ हा $\Gamma$ चा सांत उपसंच आहे आणि पुढील टॅब्लो
+\begin{oltableau}
+  [\sFmla{\False}{\varphi}, just = \TAss
+    [\sFmla{\True}{\varphi}, just = \TAss,close]
+  ]
+\end{oltableau}
+बंद आहे.
+\end{proof}
+
+
+\begin{prop}[एकस्वनिकता]
+\label{fol:tab:ptn:prop:monotonicity}
+$\Gamma \subseteq \Delta$ आणि $\Gamma \Proves \varphi$ असेल, तर $\Delta
+\Proves \varphi$.
+\end{prop}
+
+\begin{proof}
+$\Gamma$ चा कोणताही सांत उपसंच हा $\Delta$ चासुद्धा सांत उपसंच असतो.
+\end{proof}
+
+\begin{prop}[संक्रमकता]
+\label{fol:tab:ptn:prop:transitivity}
+$\Gamma \Proves \varphi$ आणि $\{\varphi\} \cup
+\Delta \Proves \psi$ असेल, तर $\Gamma \cup \Delta \Proves \psi$.
+\end{prop}
+
+\begin{proof}
+$\{\varphi\} \cup \Delta \Proves \psi$ असेल, तर $\Delta_0 =
+\{\chi_1, \dots, \chi_n\} \subseteq \Delta$ असा सांत उपसंच असतो आणि पुढील संचासाठी
+\begin{align*}
+\{\sFmla{\False}{\psi}, & \sFmla{\True}{\varphi}, \sFmla{\True}{\chi_1},
+\dots, \sFmla{\True}{\chi_n}\}
+\intertext{बंद टॅब्लो असतो. जर $\Gamma \Proves \varphi$ असेल, तर
+  $\{\theta_1, \dots, \theta_m\} \subseteq \Gamma$ असा संच असतो आणि पुढील संचासाठीही}
+\{\sFmla{\False}{\varphi}, & \sFmla{\True}{\theta_1},
+\dots, \sFmla{\True}{\theta_m}\}
+\end{align*}
+बंद टॅब्लो असतो.
+
+आता पुढील गृहीतके असलेला टॅब्लो विचारात घ्या:
+\[\sFmla{\False}{\psi},
+\sFmla{\True}{\chi_1}, \dots, \sFmla{\True}{\chi_n},
+\sFmla{\True}{\theta_1}, \dots, \sFmla{\True}{\theta_m}.
+\]
+त्यात~$\varphi$ वर \Cut{} नियम लावा. यामुळे दोन शाखा तयार होतात: एका शाखेत
+$\sFmla{\True}{\varphi}$, तर दुसऱ्या शाखेत $\sFmla{\False}{\varphi}$ असते. त्यामुळे
+पहिल्या शाखेत पुढील सर्व गृहीतके उपलब्ध असतात:
+\[\{\sFmla{\False}{\psi}, \sFmla{\True}{\varphi},
+\sFmla{\True}{\chi_1}, \dots, \sFmla{\True}{\chi_n}\}
+\]
+या गृहीतकांसाठी बंद टॅब्लो असल्यामुळे तो त्या शाखेला जोडता येतो;
+$\sFmla{\True}{\varphi}$ मधून जाणारी प्रत्येक शाखा बंद होते. दुसऱ्या शाखेत
+पुढील सर्व गृहीतके उपलब्ध असतात:
+\[\{\sFmla{\False}{\varphi}, \sFmla{\True}{\theta_1}, \dots,
+\sFmla{\True}{\theta_m}\}
+\]
+म्हणून दुसरी शाखासुद्धा पूर्ण करून बंद टॅब्लो मिळवता येतो. यावरून
+$\Gamma \cup \Delta \Proves \psi$ हे दिसते.
+\end{proof}
+
+विशेषतः, याचा अर्थ असा की $\Gamma \Proves \varphi$ आणि $\varphi
+\Proves \psi$ असेल, तर $\Gamma \Proves \psi$. तसेच $\varphi_1,
+\dots, \varphi_n \Proves \psi$ असेल आणि प्रत्येक~$i$ साठी $\Gamma \Proves \varphi_i$
+असेल, तर $\Gamma \Proves \psi$, हेसुद्धा यावरून मिळते.
+
+\begin{prop}
+\label{fol:tab:ptn:prop:incons}
+$\Gamma$ विसंगत असतो तेव्हा आणि केवळ तेव्हाच, जेव्हा प्रत्येक
+  वाक्य~$\varphi$ साठी $\Gamma \Proves \varphi$.
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+
+\begin{prob}
+\ref{fol:tab:ptn:prop:incons} सिद्ध करा.
+\end{prob}
+
+
+
+
+\begin{prop}[संहतता]
+  \label{fol:tab:ptn:prop:proves-compact}
+  \begin{enumerate}
+  \item $\Gamma \Proves \varphi$ असेल, तर एखादा सांत उपसंच $\Gamma_0
+    \subseteq \Gamma$ असा आहे की $\Gamma_0 \Proves \varphi$.
+  \item $\Gamma$ चा प्रत्येक सांत उपसंच सुसंगत असेल, तर $\Gamma$ सुसंगत
+    असतो.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\Gamma \Proves \varphi$ असेल, तर $\Gamma_0 =
+      \{\psi_1, \dots, \psi_n\}$ असा त्याचा सांत उपसंच आणि पुढील संचासाठी बंद टॅब्लो असतो:
+      \[      \{\sFmla{\False}{\varphi}, \sFmla{\True}{\psi_1}, \dots, \sFmla{\True}{\psi_n}\}
+      \]
+      हा टॅब्लो $\Gamma_0 \Proves \varphi$ हेसुद्धा दाखवतो.
+    \item $\Gamma$ विसंगत असेल, तर
+      $\Gamma_0 = \{\psi_1, \dots, \psi_n\}$ असा त्याचा एखादा सांत उपसंच असून पुढील
+      संचाचा बंद टॅब्लो असतो:
+      \[      \{\sFmla{\True}{\psi_1}, \dots, \sFmla{\True}{\psi_n}\}
+      \]
+      हा बंद टॅब्लो $\Gamma_0$ विसंगत असल्याचे दाखवतो.
+  \end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{निष्पन्नता आणि सुसंगतता}\label{fol:tab:prv:sec}
+
+आता आपण निष्पन्नता संबंधाचे अनेक गुणधर्म सिद्ध करू. ते स्वतंत्रपणेही
+महत्त्वाचे आहेत, पण संपूर्णता प्रमेयाच्या सिद्धतेत प्रत्येकाची भूमिका असेल.
+
+\begin{prop}\label{fol:tab:prv:prop:provability-contr}
+  जर $\Gamma \Proves \varphi$ आणि $\Gamma \cup \{\varphi\}$ विसंगत असेल, तर
+  $\Gamma$ विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+$\Gamma_0 = \{\psi_1, \dots, \psi_n\}$ आणि $\Gamma_1
+  =\{\chi_1, \dots, \chi_m\} \subseteq \Gamma$ असे सांत उपसंच असतात की
+  \begin{align*}
+    \{\sFmla{\False}{\varphi}, &
+    \sFmla{\True}{\psi_1}, \dots, \sFmla{\True}{\psi_n}\} \\
+    \{\sFmla{\True}{\varphi}, &
+    \sFmla{\True}{\chi_1}, \dots, \sFmla{\True}{\chi_m}\}
+  \end{align*}
+  यांसाठी बंद टॅब्लो असतात. $\varphi$ वर \Cut{} नियम वापरून हे दोन्ही
+  एकाच बंद टॅब्लोमध्ये एकत्र करता येतात; त्यावरून $\Gamma_0
+  \cup \Gamma_1$ विसंगत असल्याचे दिसते. $\Gamma_0
+  \subseteq \Gamma$ आणि $\Gamma_1 \subseteq \Gamma$ असल्यामुळे $\Gamma_0 \cup
+  \Gamma_1 \subseteq \Gamma$; म्हणून $\Gamma$ विसंगत आहे.
+\end{proof}
+
+\begin{prop}
+\label{fol:tab:prv:prop:prov-incons}
+$\Gamma \Proves \varphi$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{\lnot \varphi\}$
+विसंगत असते.
+\end{prop}
+
+\begin{proof}
+प्रथम $\Gamma \Proves \varphi$ असे समजा; म्हणजे पुढील संचासाठी बंद
+टॅब्लो असतो:
+\[\{\sFmla{\False}{\varphi},
+\sFmla{\True}{\psi_1}, \dots, \sFmla{\True}{\psi_n}\}
+\]
+$\TRule{\True}{\lnot}$ नियम वापरून त्याचे पुढील संचासाठीच्या बंद
+टॅब्लोमध्ये रूपांतर करता येते:
+\[\{\sFmla{\True}{\lnot \varphi},
+\sFmla{\True}{\psi_1}, \dots, \sFmla{\True}{\psi_n}\}.
+\]
+
+दुसरीकडे, दुसऱ्या संचासाठी बंद टॅब्लो असेल, तर त्यातील पहिले
+गृहीतक~$\sFmla{\True}{\lnot \varphi}$ आणि त्या गृहीतकाला
+\TRule{\True}{\lnot} लावून मिळणारी सर्व सूत्रे काढून, तसेच
+$\sFmla{\False}{\varphi}$ हे गृहीतक जोडून, त्याचे पहिल्या संचासाठीच्या बंद
+टॅब्लोमध्ये रूपांतर करता येते. कारण एखादी शाखा पूर्वी
+$\sFmla{\True}{\lnot \varphi}$ ला \TRule{\True}{\lnot} लावून मिळणारा
+निष्कर्ष, म्हणजे $\sFmla{\False}{\varphi}$, असल्यामुळे बंद झाली असेल, तर नव्या
+टॅब्लो मधील संबंधित शाखाही बंद असते. जुन्या टॅब्लोतील एखादी शाखा
+$\sFmla{\True}{\lnot \varphi}$ हे गृहीतक आणि $\sFmla{\False}{\lnot \varphi}$
+ही दोन्ही सूत्रे असल्यामुळे बंद झाली असेल, तर $\sFmla{\False}{\lnot \varphi}$
+ला $\TRule{\False}{\lnot}$ लावून $\sFmla{\True}{\varphi}$ मिळवता येते आणि
+ती शाखा बंद करता येते. आपण $\sFmla{\False}{\varphi}$ हे गृहीतक जोडलेले
+असल्यामुळे ही शाखा बंद होते.
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves \lnot \varphi$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{\varphi\}$
+विसंगत असते, हे सिद्ध करा.
+\end{prob}
+
+\begin{prop}\label{fol:tab:prv:prop:explicit-inc}
+  जर $\Gamma \Proves \varphi$ आणि $\lnot \varphi \in \Gamma$ असेल, तर $\Gamma$
+  विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+  समजा $\Gamma \Proves \varphi$ आणि $\lnot \varphi \in \Gamma$. मग
+  $\psi_1$, \dots, $\psi_n \in \Gamma$ अशी वाक्ये असतात की
+  \[  \{\sFmla{\False}{\varphi}, \sFmla{\True}{\psi_1}, \dots, \sFmla{\True}{\psi_n}\}
+  \]
+  यासाठी बंद टॅब्लो असतो. \sFmla{\False}{\varphi} हे गृहीतक
+  \sFmla{\True}{\lnot \varphi} ने बदला आणि \sFmla{\True}{\lnot \varphi} ला
+  \TRule{\True}{\lnot} लावून मिळणारा निष्कर्ष गृहीतकांनंतर घाला. जुन्या
+  टॅब्लोमध्ये ओळ~$1$ च्या आधारे समर्थित कोणतेही वाक्य आता
+  ओळ~$n+2$ च्या आधारे समर्थित होते. म्हणून जुना टॅब्लो बंद असेल, तर
+  नवा टॅब्लोसुद्धा बंद असतो. सर्व गृहीतके~$\Gamma$ मध्ये असल्यामुळे हा टॅब्लो
+  $\Gamma$ विसंगत असल्याचे दाखवतो.
+\end{proof}
+
+\begin{prop}\label{fol:tab:prv:prop:provability-exhaustive}
+  $\Gamma \cup \{\varphi\}$ आणि $\Gamma \cup \{\lnot \varphi\}$ हे दोन्ही संच
+  विसंगत असतील, तर $\Gamma$ विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+  $\psi_1$, \dots, $\psi_n \in \Gamma$ आणि $\chi_1$, \dots,
+  $\chi_m \in \Gamma$ अशी वाक्ये असतील आणि
+  \begin{align*}
+    \{\sFmla{\True}{\varphi}, &
+    \sFmla{\True}{\psi_1}, \dots, \sFmla{\True}{\psi_n}\} \text{ आणि}\\
+    \{\sFmla{\True}{\lnot \varphi}, &
+    \sFmla{\True}{\chi_1}, \dots, \sFmla{\True}{\chi_m}\}
+  \end{align*}
+  या दोन्हींसाठी बंद टॅब्लो असतील, तर
+  $\sFmla{\True}{\psi_1}$, \dots, $\sFmla{\True}{\psi_n}$ आणि
+  $\sFmla{\True}{\chi_1}$, \dots, $\sFmla{\True}{\chi_m}$ ही गृहीतके घेऊन,
+  त्यानंतर \Cut{} नियम लावून, $\Gamma$ विसंगत असल्याचे दाखवणारा एकच
+  संयुक्त टॅब्लो तयार करता येतो. त्यामुळे दोन शाखा मिळतात: एक
+  $\sFmla{\True}{\varphi}$ ने, तर दुसरी $\sFmla{\False}{\varphi}$ ने सुरू होते.
+
+  डाव्या बाजूस पहिल्या टॅब्लो मधील त्याच्या गृहीतकांखालचा भाग जोडा.
+  येथे प्रत्येक नियमाचा उपयोग अजूनही योग्य आहे, कारण
+  $\sFmla{\True}{\varphi}$ सहित पहिल्या टॅब्लो मधील प्रत्येक गृहीतक
+  उपलब्ध आहे. त्यामुळे $\sFmla{\True}{\varphi}$ च्या खालील प्रत्येक शाखा बंद होते.
+
+  उजव्या बाजूस दुसऱ्या टॅब्लो मधील त्याच्या गृहीतकांखालचा भाग जोडा;
+  मात्र $\sFmla{\True}{\lnot \varphi}$ ला~$\TRule{\True}{\lnot}$ लावून मिळणारे
+  सर्व परिणाम काढून टाका. $\sFmla{\True}{\lnot \varphi}$ ला
+  $\TRule{\True}{\lnot}$ लावल्याचा निष्कर्ष $\sFmla{\False}{\varphi}$ हा आहे;
+  तरीही तो उपलब्ध असतो, कारण तो संयुक्त टॅब्लोच्या उजव्या बाजूवरील
+  \Cut{} नियमाचा निष्कर्ष आहे.
+
+  दुसऱ्या टॅब्लोतील एखादी शाखा $\sFmla{\True}{\lnot \varphi}$ हे गृहीतक
+  (जे आता संयुक्त टॅब्लोमध्ये गृहीतक म्हणून येत नाही) आणि
+  $\sFmla{\False}{\lnot \varphi}$ ही दोन्ही सूत्रे असल्यामुळे बंद झाली असेल,
+  तर $\sFmla{\False}{\lnot \varphi}$ ला $\TRule{\False}{\lnot}$ लावून
+  $\sFmla{\True}{\varphi}$ मिळवता येते. मग संयुक्त टॅब्लो मधील संबंधित
+  शाखासुद्धा बंद होते, कारण तिच्यात \Cut{} नियमाचा उजवीकडील निष्कर्ष
+  $\sFmla{\False}{\varphi}$ असतो. दुसऱ्या टॅब्लो मधील एखादी शाखा अन्य
+  कोणत्याही कारणाने बंद झाली असेल, तर संयुक्त टॅब्लो मधील संबंधित
+  शाखासुद्धा बंद होते; कारण जुन्या दुसऱ्या टॅब्लो मधील त्या शाखेवर
+  येणारी $\sFmla{\True}{\lnot \varphi}$ व्यतिरिक्त इतर सर्व चिन्हांकित सूत्रे
+  संयुक्त टॅब्लो मधील संबंधित शाखेवरही येतात.
+  \end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{निष्पन्नता आणि विधानीय संयोजक}\label{fol:tab:ppr:sec}
+
+\begin{explain}
+  टॅब्लोचा निष्पन्नता संबंध~$\Proves$ हा विधानीय संयोजकांशी संबंधित
+  काही मूलभूत तथ्ये सिद्ध करण्यासाठी पुरेसा सामर्थ्यवान आहे; उदाहरणार्थ,
+  $\varphi \land \psi \Proves \varphi$ आणि $\varphi, \varphi \lif \psi \Proves \psi$
+  (विध्यात्मक अनुमान). ही तथ्ये संपूर्णता प्रमेयाच्या सिद्धतेसाठी आवश्यक आहेत.
+\end{explain}
+
+\begin{prop}\label{fol:tab:ppr:prop:provability-land}
+  \begin{enumerate}
+  \item \label{fol:tab:ppr:prop:provability-land-left} $\varphi \land \psi \Proves
+    \varphi$ आणि $\varphi \land \psi \Proves \psi$ ही दोन्ही तथ्ये सत्य आहेत.
+  \item \label{fol:tab:ppr:prop:provability-land-right} $\varphi, \psi \Proves \varphi \land
+    \psi$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $\{\sFmla{\False}{\varphi}, \sFmla{\True}{\varphi \land \psi}\}$ आणि
+    $\{\sFmla{\False}{\psi}, \sFmla{\True}{\varphi \land \psi}\}$ या दोन्हींसाठी
+    बंद टॅब्लो आहेत:
+    \begin{oltableau}{}
+      [\sFmla{\False}{\varphi}, just=\TAss
+        [\sFmla{\True}{\varphi \land \psi}, just=\TAss
+          [\sFmla{\True}{\varphi},just={\TRule{\True}{\land}[2]}
+            [\sFmla{\True}{\psi},just={\TRule{\True}{\land}[2]}, close
+            ]
+          ]
+        ]
+      ]
+    \end{oltableau}
+    \begin{oltableau}{}
+      [\sFmla{\False}{\psi}, just=\TAss
+        [\sFmla{\True}{\varphi \land \psi}, just=\TAss
+          [\sFmla{\True}{\varphi},just={\TRule{\True}{\land}[2]}
+            [\sFmla{\True}{\psi},just={\TRule{\True}{\land}[2]}, close
+            ]
+          ]
+        ]
+      ]
+    \end{oltableau}
+    \item $\{\sFmla{\True}{\varphi}, \sFmla{\True}{\psi},
+      \sFmla{\False}{\varphi \land \psi}\}$ साठीचा बंद टॅब्लो पुढीलप्रमाणे आहे:
+      \begin{oltableau}
+        [\sFmla{\False}{\varphi \land \psi}, just = \TAss
+          [\sFmla{\True}{\varphi}, just = \TAss
+            [\sFmla{\True}{\psi}, just=\TAss
+              [\sFmla{\False}{\varphi}, just = {\TRule{\False}{\land}[1]}, close]
+              [\sFmla{\False}{\psi}, just = {\TRule{\False}{\land}[1]}, close]
+            ]
+          ]
+        ]
+      \end{oltableau}
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\label{fol:tab:ppr:prop:provability-lor}
+  \begin{enumerate}
+  \item $\{\varphi \lor \psi, \lnot \varphi, \lnot \psi\}$ विसंगत आहे.
+  \item $\varphi \Proves \varphi \lor \psi$ आणि $\psi \Proves \varphi \lor \psi$ ही दोन्ही
+    तथ्ये सत्य आहेत.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $\{\sFmla{\True}{\varphi \lor \psi}, \sFmla{\True}{\lnot \varphi},
+    \sFmla{\True}{\lnot \psi}\}$ साठी बंद टॅब्लो देऊ:
+    \begin{oltableau}
+      [\sFmla{\True}{\varphi \lor \psi}, just = \TAss
+        [\sFmla{\True}{\lnot \varphi}, just = \TAss
+          [\sFmla{\True}{\lnot \psi}, just = \TAss
+            [\sFmla{\False}{\varphi}, just = {\TRule{\True}{\lnot}[2]}
+              [\sFmla{\False}{\psi}, just = {\TRule{\True}{\lnot}[3]}
+                [\sFmla{\True}{\varphi}, just = {\TRule{\True}{\lor}[1]}, close]
+                [\sFmla{\True}{\psi}, just = {\TRule{\True}{\lor}[1]}, close]
+              ]
+            ]
+          ]
+        ]
+      ]
+    \end{oltableau}
+  \item $\{\sFmla{\False}{\varphi \lor \psi}, \sFmla{\True}{\varphi}\}$ आणि
+    $\{\sFmla{\False}{\varphi \lor \psi}, \sFmla{\True}{\psi}\}$ या दोन्हींसाठी
+    बंद टॅब्लो आहेत:
+    \begin{oltableau}{}
+      [\sFmla{\False}{\varphi \lor \psi}, just=\TAss
+        [\sFmla{\True}{\varphi}, just=\TAss
+          [\sFmla{\False}{\varphi},just={\TRule{\False}{\lor}[1]}
+            [\sFmla{\False}{\psi},just={\TRule{\False}{\lor}[1]}, close
+            ]
+          ]
+        ]
+      ]
+    \end{oltableau}
+    \begin{oltableau}{}
+      [\sFmla{\False}{\varphi \lor \psi}, just=\TAss
+        [\sFmla{\True}{\psi}, just=\TAss
+          [\sFmla{\False}{\varphi},just={\TRule{\False}{\lor}[1]}
+            [\sFmla{\False}{\psi},just={\TRule{\False}{\lor}[1]}, close
+            ]
+          ]
+        ]
+      ]
+    \end{oltableau}
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\label{fol:tab:ppr:prop:provability-lif}
+  \begin{enumerate}
+  \item \label{fol:tab:ppr:prop:provability-lif-left}  $\varphi, \varphi \lif \psi \Proves \psi$.
+  \item \label{fol:tab:ppr:prop:provability-lif-right}
+    $\lnot \varphi \Proves \varphi \lif \psi$ आणि $\psi \Proves \varphi \lif \psi$ ही दोन्ही
+    तथ्ये सत्य आहेत.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\{\sFmla{\False}{\psi}, \sFmla{\True}{\varphi \lif \psi},
+      \sFmla{\True}{\varphi}\}$ साठी बंद टॅब्लो आहे:
+      \begin{oltableau}
+        [\sFmla{\False}{\psi}, just=\TAss
+          [\sFmla{\True}{\varphi \lif \psi}, just=\TAss
+            [\sFmla{\True}{\varphi}, just=\TAss
+              [\sFmla{\False}{\varphi}, just = {\TRule{\True}{\lif}[2]}, close]
+              [\sFmla{\True}{\psi}, just = {\TRule{\True}{\lif}[2]}, close]
+            ]
+          ]
+        ]
+      \end{oltableau}
+    \item $\{\sFmla{\False}{\varphi \lif \psi}, \sFmla{\True}{\lnot \varphi}\}$ आणि
+      $\{\sFmla{\False}{\varphi \lif \psi}, \sFmla{\True}{\psi}\}$ या दोन्हींसाठी
+      बंद टॅब्लो आहेत:
+      \begin{oltableau}
+        [\sFmla{\False}{\varphi \lif \psi}, just = \TAss
+          [\sFmla{\True}{\lnot \varphi}, just = \TAss
+            [\sFmla{\True}{\varphi}, just = {\TRule{\False}{\lif}[1]}
+              [\sFmla{\False}{\psi}, just = {\TRule{\False}{\lif}[1]}
+                [\sFmla{\False}{\varphi}, just = {\TRule{\True}{\lnot}[2]}, close]
+              ]
+            ]
+          ]
+        ]
+      \end{oltableau}
+      \begin{oltableau}
+        [\sFmla{\False}{\varphi \lif \psi}, just = \TAss
+          [\sFmla{\True}{\psi}, just = \TAss
+            [\sFmla{\True}{\varphi}, just = {\TRule{\False}{\lif}[1]}
+              [\sFmla{\False}{\psi}, just = {\TRule{\False}{\lif}[1]},close
+              ]
+            ]
+          ]
+        ]
+      \end{oltableau}
+  \end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+\section{निष्पन्नता आणि संख्यापक}\label{fol:tab:qpr:sec}
+
+\begin{explain}
+  संपूर्णता प्रमेयासाठी या विभागात स्थापित केलेली~$\Proves$ संबंधी तथ्ये
+  टॅब्लोच्या नियमांनी निष्पन्न होतात, हेही आवश्यक आहे.
+\end{explain}
+
+\begin{thm}
+\label{fol:tab:qpr:thm:strong-generalization} जर $c$ हे $\Gamma$ किंवा~$\varphi(x)$ मध्ये
+न येणारे अचर असेल आणि $\Gamma \Proves \varphi(c)$, तर $\Gamma
+\Proves \lforall[x][\varphi(x)]$.
+\end{thm}
+
+\begin{proof}
+$\Gamma \Proves \varphi(c)$ असे समजा; म्हणजे $\psi_1$, \dots, $\psi_n
+\in \Gamma$ अशी वाक्ये आणि पुढील संचासाठी बंद टॅब्लो असतो:
+\begin{align*}
+\{ \sFmla{\False}{\varphi(c)}, &
+\sFmla{\True}{\psi_1}, \dots, \sFmla{\True}{\psi_n} \}.
+\intertext{पुढील संचासाठीही बंद टॅब्लो असतो, हे दाखवायचे आहे:}
+\{ \sFmla{\False}{\lforall[x][\varphi(x)]}, &
+\sFmla{\True}{\psi_1}, \dots, \sFmla{\True}{\psi_n} \}.
+\end{align*}
+बंद टॅब्लो घेऊन त्यातील पहिले गृहीतक
+$\sFmla{\False}{\lforall[x][\varphi(x)]}$ ने बदला आणि गृहीतकांनंतर
+$\sFmla{\False}{\varphi(c)}$ घाला.
+\begin{center}
+\begin{tableau}{not line numbering}
+  [\sFmla{\False}{\varphi(c)}
+    [\sFmla{\True}{\psi_1}
+      [\vdots
+      [\sFmla{\True}{\psi_n},
+        [][][]]]]]
+\end{tableau}\qquad
+\begin{tableau}{not line numbering}
+  [\sFmla{\False}{\lforall[x][\varphi(x)]}
+    [\sFmla{\True}{\psi_1}
+      [\vdots
+        [\sFmla{\True}{\psi_n},
+          [\sFmla{\False}{\varphi(c)}
+        [][][]]]]]]
+\end{tableau}
+\end{center}
+हा टॅब्लो अजूनही बंद आहे, कारण पूर्वी गृहीतके म्हणून उपलब्ध असलेली सर्व
+वाक्ये नव्या टॅब्लोच्या वरच्या भागात अजूनही उपलब्ध आहेत. घातलेली
+ओळ ही $\TRule{\False}{\lforall}$ च्या योग्य उपयोगाचा परिणाम आहे, कारण
+स्थिरांक~$c$ हे $\psi_1$, \dots, $\psi_n$ किंवा
+$\lforall[x][\varphi(x)]$ मध्ये येत नाही; म्हणजे ते नव्या टॅब्लोमध्ये घातलेल्या
+ओळीच्या वर येत नाही.
+\end{proof}
+
+\begin{prop}
+\label{fol:tab:qpr:prop:provability-quantifiers}
+\begin{enumerate}
+\item $\varphi(t) \Proves \lexists[x][\varphi(x)]$.
+\item $\lforall[x][\varphi(x)] \Proves \varphi(t)$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\begin{enumerate}
+\item
+  $\sFmla{\False}{\lexists[x][\varphi(x)]}, \sFmla{\True}{\varphi(t)}$ साठीचा बंद
+  टॅब्लो पुढीलप्रमाणे आहे:
+  \begin{oltableau}
+    [\sFmla{\False}{\lexists[x][\varphi(x)]}, just = \TAss
+      [\sFmla{\True}{\varphi(t)}, just = \TAss
+        [\sFmla{\False}{\varphi(t)}, just = {\TRule{\False}{\lexists}[1]}, close]]]
+    \end{oltableau}
+\item
+  $\sFmla{\False}{\varphi(t)}, \sFmla{\True}{\lforall[x][\varphi(x)]}, $
+  साठीचा बंद टॅब्लो पुढीलप्रमाणे आहे:
+  \begin{oltableau}
+    [\sFmla{\False}{\varphi(t)}, just = \TAss
+      [\sFmla{\True}{\lforall[x][\varphi(x)]}, just = \TAss
+        [\sFmla{\True}{\varphi(t)}, just = {\TRule{\True}{\lforall}[2]}, close]]]
+    \end{oltableau}
+\end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{निर्दोषता}\label{fol:tab:sou:sec}
+
+\begin{explain}
+टॅब्लोसारखी निष्पत्ती-पद्धत \emph{निर्दोष} असते, जर ती प्रत्यक्षात
+धारण न करणाऱ्या गोष्टी निष्पन्न करू शकत नसेल. त्यामुळे निर्दोषता हा
+निष्पत्ती-पद्धतींसाठी हमी दिलेल्या सुरक्षिततेचा एक प्रकार आहे. कोणता
+सिद्धता-उपपत्तीय गुणधर्म विचारात आहे यावर अवलंबून, उदाहरणार्थ, आपल्याला
+पुढील गोष्टी हव्या असतात:
+\begin{enumerate}
+\item प्रत्येक निष्पन्न करता येण्याजोगे~$\varphi$ हे वैध असते;
+\item एखादे वाक्य इतर काही वाक्यांपासून निष्पन्न करता येण्याजोगे असेल, तर ते
+  त्यांचा तार्किक परिणामही असते;
+\item वाक्यांचा संच विसंगत असेल, तर तो अपूर्ततायोग्य असतो.
+\end{enumerate}
+हे निष्पत्ती-पद्धतीचे महत्त्वाचे गुणधर्म आहेत. यांपैकी एखादा गुणधर्म
+खरा नसेल, तर निष्पत्ती-पद्धतीत दोष आहे---ती खूप जास्त गोष्टी
+निष्पन्न करेल. म्हणून निष्पत्ती-पद्धतीची निर्दोषता सिद्ध करणे अत्यंत
+महत्त्वाचे आहे.
+
+हे सर्व सिद्धता-उपपत्तीय गुणधर्म कोणत्या ना कोणत्या प्रकारच्या बंद
+टॅब्लो द्वारे परिभाषित केलेले असल्यामुळे, वरील (1)--(3) सिद्ध करण्यासाठी
+बंद टॅब्लोच्या चिन्हार्थविषयक गुणधर्मांबद्दल काहीतरी सिद्ध करावे लागते.
+प्रथम एखाद्या चिन्हांकित सूत्राची संरचनेत पूर्ती होणे म्हणजे काय ते
+परिभाषित करू; मग टॅब्लो बंद असेल, तर कोणतीही संरचना त्याची सर्व गृहीतके
+पूर्ण करत नाही, हे दाखवू. त्यानंतर (1)--(3) या परिणामाचे उपपरिणाम म्हणून
+मिळतील.
+\end{explain}
+
+\begin{defn}
+संरचना~$\Struct{M}$
+चिन्हांकित सूत्र $\sFmla{\True}{\varphi}$ \emph{पूर्ण करते} तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Sat{M}{\varphi}$; आणि ते
+$\sFmla{\False}{\varphi}$ पूर्ण करते तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Sat/{M}{\varphi}$. $\Struct{M}$
+हा चिन्हांकित सूत्रांचा संच~$\Gamma$ पूर्ण करतो तेव्हा आणि केवळ तेव्हाच,
+जेव्हा तो प्रत्येक $\sFmla{S}{\varphi} \in \Gamma$ पूर्ण करतो. $\Gamma$ पूर्ण
+करणारी एखादी संरचना असेल, तर तो
+\emph{पूर्ततायोग्य} आणि अन्यथा \emph{अपूर्ततायोग्य} असतो.
+\end{defn}
+
+\begin{thm}[निर्दोषता]
+  \label{fol:tab:sou:thm:tableau-soundness}
+  $\Gamma$ साठी बंद टॅब्लो असेल, तर $\Gamma$ अपूर्ततायोग्य असतो.
+\end{thm}
+
+\begin{proof}
+टॅब्लोच्या शाखेवरील चिन्हांकित सूत्रांचा संच पूर्ततायोग्य असेल, तर
+आणि केवळ तेव्हाच त्या शाखेला पूर्ततायोग्य म्हणू; तसेच टॅब्लोमध्ये
+किमान एक पूर्ततायोग्य शाखा असेल, तर त्याला पूर्ततायोग्य म्हणू.
+
+पुढील गोष्ट दाखवू: एखाद्या पूर्ततायोग्य टॅब्लोचा अनुमानाच्या कोणत्याही
+एका नियमाने विस्तार केल्यास मिळणारा टॅब्लो नेहमी पूर्ततायोग्य असतो.
+यावरून प्रमेय सिद्ध होईल: $\Gamma$ मधील केवळ गृहीतके असलेल्या टॅब्लो ला
+अनुमानाचे नियम लावून कोणताही बंद टॅब्लो मिळतो. म्हणून $\Gamma$
+पूर्ततायोग्य असेल, तर त्याच्यासाठीचा कोणताही टॅब्लो पूर्ततायोग्य असेल.
+पण बंद टॅब्लो स्पष्टपणे पूर्ततायोग्य नसतो: प्रत्येक शाखेत
+$\sFmla{\True}{\varphi}$ आणि $\sFmla{\False}{\varphi}$ ही दोन्ही सूत्रे असतात, आणि
+कोणतीही संरचना $\varphi$ ची पूर्ती आणि अपूर्ती या दोन्ही करू शकत नाही.
+
+आपल्याकडे पूर्ततायोग्य टॅब्लो, म्हणजे किमान एक पूर्ततायोग्य शाखा असलेला
+टॅब्लो, आहे असे समजा. अनुमानाचा नियम लावल्यावर एकतर शाखेत
+चिन्हांकित सूत्रे जोडली जातात, किंवा शाखा दोन भागांत विभागली जाते. त्या
+नियमाच्या उपयोगाने विस्तारली न गेलेली एखादी पूर्ततायोग्य शाखा टॅब्लोमध्ये
+असेल, तर विस्तारित टॅब्लोमध्येही ती पूर्ततायोग्य शाखा राहते; म्हणून
+विस्तारित टॅब्लोसुद्धा पूर्ततायोग्य असतो. त्यामुळे पूर्ततायोग्य शाखेलाच नियम
+लावला जातो ते प्रकरण पाहणे पुरेसे आहे.
+
+त्या शाखेवरील चिन्हांकित सूत्रांचा संच~$\Gamma$ असू द्या, आणि ज्या
+चिन्हांकित सूत्राला नियम लावला जातो ते $\sFmla{S}{\varphi} \in \Gamma$ असू
+द्या. नियम लावल्यावर शाखा विभागली जात नसेल, तर विस्तारित शाखा, म्हणजे
+$\Gamma$ आणि नियमाचे निष्कर्ष मिळून बनलेला संच, अजूनही पूर्ततायोग्य आहे हे
+दाखवावे लागेल. नियम लावल्यावर शाखा विभागली जात असेल, तर मिळणाऱ्या दोन
+शाखांपैकी किमान एक पूर्ततायोग्य आहे हे दाखवावे लागेल.
+
+प्रथम, शाखा न विभागणारी संभाव्य अनुमाने पाहू.
+\begin{enumerate}
+\item $\sFmla{\True}{\lnot \psi} \in \Gamma$ ला
+  $\TRule{\True}{\lnot}$ लावून शाखेचा विस्तार केला आहे असे समजा. मग
+  विस्तारित शाखेवरील चिन्हांकित सूत्रांचा संच $\Gamma \cup
+  \{\sFmla{\False}{\psi}\}$ असतो. समजा
+  $\Sat{M}{\Gamma}$. विशेषतः,
+  $\Sat{M}{\lnot \psi}$. त्यामुळे
+  $\Sat/{M}{\psi}$, म्हणजे
+  $\Struct{M}$ हे
+  $\sFmla{\False}{\psi}$ पूर्ण करते.
+\item $\sFmla{\False}{\lnot \psi} \in \Gamma$ ला
+  $\TRule{\False}{\lnot}$ लावून शाखेचा विस्तार केला आहे: सराव.
+\item $\sFmla{\True}{\psi \land \chi} \in \Gamma$ ला
+  $\TRule{\True}{\land}$ लावून शाखेचा विस्तार केला आहे. यामुळे शाखेवर
+  $\sFmla{\True}{\psi}$ आणि $\sFmla{\True}{\chi}$ ही दोन नवी
+  चिन्हांकित सूत्रे मिळतात. समजा
+  $\Sat{M}{\Gamma}$; विशेषतः,
+  $\Sat{M}{\psi \land \chi}$. मग
+  $\Sat{M}{\psi}$ आणि
+  $\Sat{M}{\chi}$. म्हणजे
+  $\Struct{M}$ हे
+  $\sFmla{\True}{\psi}$ आणि $\sFmla{\True}{\chi}$ ही दोन्ही सूत्रे पूर्ण करते.
+\item $\sFmla{\False}{\psi \lor \chi} \in \Gamma$ ला
+  $\TRule{\False}{\lor}$ लावून शाखेचा विस्तार केला आहे: सराव.
+\item $\sFmla{\False}{\psi \lif \chi} \in \Gamma$ ला
+  $\TRule{\False}{\lif}$ लावून शाखेचा विस्तार केला आहे. यामुळे शाखेवर
+  $\sFmla{\True}{\psi}$ आणि $\sFmla{\False}{\chi}$ ही दोन नवी
+  चिन्हांकित सूत्रे मिळतात. समजा
+  $\Sat{M}{\Gamma}$; विशेषतः,
+  $\Sat/{M}{\psi \lif \chi}$. मग
+  $\Sat{M}{\psi}$ आणि
+  $\Sat/{M}{\chi}$. म्हणजे
+  $\Struct{M}$ हे
+  $\sFmla{\True}{\psi}$ आणि $\sFmla{\False}{\chi}$ ही दोन्ही सूत्रे पूर्ण करते.
+
+
+\item $\sFmla{\True}{\lforall[x][\varphi(x)]} \in \Gamma$ ला
+  $\TRule{\True}{\lforall}$ लावून शाखेचा विस्तार केला आहे. यामुळे शाखेवर
+  नवीन चिन्हांकित सूत्र~$\sFmla{\True}{\varphi(t)}$ मिळते.
+  समजा $\Sat{M}{\Gamma}$; विशेषतः,
+  $\Sat{M}{\lforall[x][\varphi(x)]}$.
+  \ref{fol:syn:sem:prop:quant-terms} नुसार $\Sat{M}{\varphi(t)}$. परिणामी,
+  $\Struct{M}$ हे $\sFmla{\True}{\varphi(t)}$ पूर्ण करते.
+
+\item $\sFmla{\False}{\lforall[x][\varphi(x)]} \in \Gamma$ ला
+  $\TRule{\False}{\lforall}$ लावून शाखेचा विस्तार केला आहे. यामुळे शाखेवर
+  नवीन चिन्हांकित सूत्र~$\sFmla{\False}{\varphi(a)}$ मिळते, जेथे $a$ हे
+  $\Gamma$ मध्ये न येणारे स्थिरांक आहे. $\Gamma$ पूर्ततायोग्य असल्यामुळे
+  $\Sat{M}{\Gamma}$ अशी एखादी $\Struct{M}$ असते; विशेषतः,
+  $\Sat/{M}{\lforall[x][\varphi(x)]}$. आता
+  $\Gamma \cup \{\sFmla{\False}{\varphi(a)}\}$ पूर्ततायोग्य आहे हे दाखवायचे आहे.
+  त्यासाठी पुढीलप्रमाणे योग्य~$\Struct{M'}$ परिभाषित करू.
+
+  \ref{fol:syn:ass:prop:sat-quant} नुसार,
+  $\Sat/{M}{\lforall[x][\varphi(x)]}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा काही $s$
+  साठी $\Sat/{M}{\varphi(x)}[s]$. आता $\Struct{M'}$ ही $\Struct{M}$ सारखीच
+  असू द्या, फक्त $\Assign{a}{M'} = s(x)$. $a$ हे $\Gamma$ मध्ये येत
+  नसल्यामुळे, \ref{fol:syn:ext:cor:extensionality-sent} नुसार कोणत्याही
+  $\sFmla{\True}{\chi} \in \Gamma$ साठी $\Sat{M'}{\chi}$, आणि कोणत्याही
+  $\sFmla{\False}{\chi} \in \Gamma$ साठी $\Sat/{M'}{\chi}$.
+
+  \ref{fol:syn:ext:prop:extensionality} नुसार $\Sat/{M'}{\varphi(x)}[s]$.
+  \ref{fol:syn:ext:prop:ext-formulas} नुसार $\Sat/{M'}{\varphi(a)}[s]$.
+  $\varphi(a)$ हे वाक्य असल्यामुळे,
+  \ref{fol:syn:ass:prop:sentence-sat-true} नुसार $\Sat/{M'}{\varphi(a)}$;
+  म्हणजे $\Struct{M'}$ हे $\sFmla{\False}{\varphi(a)}$ पूर्ण करते.
+\item $\sFmla{\True}{\lexists[x][\psi(x)]} \in \Gamma$ ला
+  $\TRule{\True}{\lexists}$ लावून शाखेचा विस्तार केला आहे: सराव.
+\item $\sFmla{\False}{\lexists[x][\psi(x)]} \in \Gamma$ ला
+  $\TRule{\False}{\lexists}$ लावून शाखेचा विस्तार केला आहे: सराव.
+\end{enumerate}
+आता शाखा विभागणारी संभाव्य अनुमाने पाहू.
+\begin{enumerate}
+\item $\sFmla{\False}{\psi \land \chi} \in \Gamma$ ला
+  $\TRule{\False}{\land}$ लावून शाखेचा विस्तार केला आहे. यामुळे दोन शाखा
+  मिळतात: डावीकडील शाखा $\sFmla{\False}{\psi}$ मधून आणि उजवीकडील शाखा
+  $\sFmla{\False}{\chi}$ मधून पुढे जाते. समजा
+  $\Sat{M}{\Gamma}$; विशेषतः,
+  $\Sat/{M}{\psi \land \chi}$. मग एकतर
+  $\Sat/{M}{\psi}$ किंवा
+  $\Sat/{M}{\chi}$. पहिल्या प्रकरणात
+  $\Struct{M}$ हे
+  $\sFmla{\False}{\psi}$ पूर्ण करते; म्हणजे
+  $\Struct{M}$ डावीकडील शाखेवरील सूत्रे पूर्ण करते.
+  दुसऱ्या प्रकरणात $\Struct{M}$ हे
+  $\sFmla{\False}{\chi}$ पूर्ण करते; म्हणजे
+  $\Struct{M}$ उजवीकडील शाखेवरील सूत्रे पूर्ण करते.
+\item $\sFmla{\True}{\psi \lor \chi} \in \Gamma$ ला
+  $\TRule{\True}{\lor}$ लावून शाखेचा विस्तार केला आहे: सराव.
+\item $\sFmla{\True}{\psi \lif \chi} \in \Gamma$ ला
+  $\TRule{\True}{\lif}$ लावून शाखेचा विस्तार केला आहे: सराव.
+\item \Cut{} लावून शाखेचा विस्तार केला आहे. यामुळे दोन शाखा मिळतात: एका
+  शाखेत $\sFmla{\True}{\psi}$ आणि दुसऱ्या शाखेत $\sFmla{\False}{\psi}$ असते.
+  $\Sat{M}{\Gamma}$ आणि एकतर
+  $\Sat{M}{\psi}$ किंवा
+  $\Sat/{M}{\psi}$ असल्यामुळे,
+  $\Struct{M}$ हे डावीकडील किंवा उजवीकडील शाखा
+  पूर्ण करते.
+\end{enumerate}
+\end{proof}
+
+
+\begin{prob}
+\ref{fol:tab:sou:thm:tableau-soundness} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+
+
+
+\begin{cor}
+\label{fol:tab:sou:cor:weak-soundness}
+जर $\Proves \varphi$, तर $\varphi$ हे वैध आहे.
+\end{cor}
+
+\begin{cor}
+\label{fol:tab:sou:cor:entailment-soundness}
+जर $\Gamma \Proves \varphi$, तर $\Gamma \Entails \varphi$.
+\end{cor}
+
+\begin{proof}
+  जर $\Gamma \Proves \varphi$, तर काही $\psi_1$, \dots, $\psi_n \in
+  \Gamma$ साठी $\{\sFmla{\False}{\varphi}, \sFmla{\True}{\psi_1}, \dots,
+  \sFmla{\True}{\psi_n}\}$ चा बंद टॅब्लो असतो.
+  \ref{fol:tab:sou:thm:tableau-soundness} नुसार, प्रत्येक
+  संरचना~$\Struct{M}$
+  काही $\psi_i$ असत्य करते किंवा $\varphi$ सत्य करते. म्हणून
+  $\Sat{M}{\Gamma}$ असेल, तर
+  $\Sat{M}{\varphi}$ सुद्धा असेल.
+\end{proof}
+
+\begin{cor}
+\label{fol:tab:sou:cor:consistency-soundness}
+जर $\Gamma$ पूर्ततायोग्य असेल, तर तो सुसंगत आहे.
+\end{cor}
+
+\begin{proof}
+प्रतिलोम विधान सिद्ध करू. $\Gamma$ सुसंगत नाही असे समजा. मग
+$\psi_1$, \dots, $\psi_n \in \Gamma$ अशी वाक्ये आणि
+$\{\sFmla{\True}{\psi_1}, \dots, \sFmla{\True}{\psi_n}\}$ चा बंद
+टॅब्लो असतो. \ref{fol:tab:sou:thm:tableau-soundness} नुसार, प्रत्येक
+$i=1$, \dots,~$n$ साठी $\Sat{M}{\psi_i}$ अशी
+कोणतीही $\Struct{M}$ नसते. पण मग $\Gamma$
+पूर्ततायोग्य नसतो.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{टॅब्लो सह एकरूपता}\label{fol:tab:ide:sec}
+
+टॅब्लोमध्ये एकरूपता असल्यास अतिरिक्त निगमन नियम आवश्यक असतात.
+$\eq$ चे नियम पुढीलप्रमाणे आहेत ($t$, $t_1$ आणि $t_2$ ही बंद पदे आहेत):
+
+\begin{defish}
+\AxiomC{}
+\RightLabel{$\eq$}
+\UnaryInfC{\sFmla{\True}{\eq[t][t]}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\True}{\eq[t_1][t_2]}}
+\noLine
+\UnaryInfC{\sFmla{\True}{\varphi(t_1)}}
+\RightLabel{$\TRule{\True}{\eq}$}
+\UnaryInfC{\sFmla{\True}{\varphi(t_2)}}
+\DisplayProof
+\hfill
+\AxiomC{\sFmla{\True}{\eq[t_1][t_2]}}
+\noLine
+\UnaryInfC{\sFmla{\False}{\varphi(t_1)}}
+\RightLabel{$\TRule{\False}{\eq}$}
+\UnaryInfC{\sFmla{\False}{\varphi(t_2)}}
+\DisplayProof
+\end{defish}
+लक्षात घ्या की इतर सर्व नियमांपेक्षा वेगळे, $\TRule{\True}{\eq}$ आणि
+$\TRule{\False}{\eq}$ यांना शाखेवर आधीपासून \emph{दोन} चिन्हांकित
+सूत्रे असणे आवश्यक आहे, म्हणजे $\sFmla{\True}{\eq[t_1][t_2]}$
+आणि $\sFmla{S}{\varphi(t_1)}$ ही दोन्ही.
+
+\begin{ex}
+जर $s$ आणि $t$ ही बंद पदे असतील, तर $\eq[s][t], \varphi(s)
+\Proves \varphi(t)$:
+\begin{oltableau}
+  [\sFmla{\False}{\varphi(t)}, just = \TAss
+    [\sFmla{\True}{\eq[s][t]}, just = \TAss
+      [\sFmla{\True}{\varphi(s)}, just = \TAss
+        [\sFmla{\True}{\varphi(t)}, just={\TRule{\True}{\eq}[2, 3]}, close]
+      ]
+    ]
+  ]
+\end{oltableau}
+याला एकरूप वस्तूंच्या प्रतिस्थापनाचे तत्त्व किंवा लाइब्निझचा नियम म्हणून
+ओळखले जाऊ शकते.
+
+टॅब्लो द्वारे $\eq$ सममित आहे, म्हणजे $\eq[s_1][s_2]
+\Proves \eq[s_2][s_1]$, हे सिद्ध होते:
+\begin{oltableau}
+  [\sFmla{\False}{\eq[s_2][s_1]}, just = \TAss
+    [\sFmla{\True}{\eq[s_1][s_2]}, just = \TAss
+      [\sFmla{\True}{\eq[s_1][s_1]}, just = {$\eq$}
+        [\sFmla{\True}{\eq[s_2][s_1]}, just = {\TRule{\True}{\eq}[2, 3]}, close]
+      ]
+    ]
+  ]
+\end{oltableau}
+येथे ओळ~$2$ ही $\TRule{\True}{\eq}$ साठीचे पहिले आधारभूत
+सूत्र, $\sFmla{\True}{\eq[s_1][s_2]}$, आहे. ओळ~$3$ हे
+$\sFmla{\True}{\varphi(s_1)}$ या रूपातील दुसरे आधारविधान आहे---$\varphi(x)$ हे
+$\eq[x][s_1]$ आहे असे विचार करा; मग $\varphi(s_1)$ म्हणजे
+$\eq[s_1][s_1]$ आणि $\varphi(s_2)$ म्हणजे $\eq[s_2][s_1]$.
+
+तसेच $\eq$ संक्रमक आहे, म्हणजे $\eq[s_1][s_2],
+\eq[s_2][s_3] \Proves \eq[s_1][s_3]$, हेही ते सिद्ध करतात:
+\begin{oltableau}
+  [\sFmla{\False}{\eq[s_1][s_3]}, just = \TAss
+    [\sFmla{\True}{\eq[s_1][s_2]}, just = \TAss
+      [\sFmla{\True}{\eq[s_2][s_3]}, just = \TAss
+        [\sFmla{\True}{\eq[s_1][s_3]}, just = {\TRule{\True}{\eq}[3, 2]}, close]
+      ]
+    ]
+  ]
+\end{oltableau}
+या टॅब्लोमध्ये $\TRule{\True}{\eq}$ चे पहिले आधारभूत सूत्र
+ओळ~$3$ वरील $\sFmla{\True}{\eq[s_2][s_3]}$ आहे ($s_2$ ही~$t_1$ ची,
+आणि $s_3$ ही~$t_2$ ची भूमिका बजावतात). $\sFmla{\True}{\varphi(s_2)}$
+या रूपातील दुसरे आधारविधान ओळ~$2$ आहे. येथे $\varphi(x)$ हे
+$\eq[s_1][x]$ आहे असे विचार करा; त्यामुळे $\varphi(s_2)$ हे
+$\eq[s_1][s_2]$ (म्हणजे ओळ~$2$) आणि निष्कर्षातील
+सूत्र~$\eq[s_1][s_3]$ हे $\varphi(s_3)$ होते.
+\end{ex}
+
+\begin{prob}
+पुढील गोष्टींसाठी बंद टॅब्लो द्या:
+\begin{enumerate}
+\item $\sFmla{\False}{\lforall[x][\lforall[y][((x = y \land \varphi(x))
+      \lif \varphi(y))]]}$
+\item $\sFmla{\False}{\lexists[x][(\varphi(x) \land
+    \lforall[y][(\varphi(y) \lif y = x)])]}$,\\
+  $\sFmla{\True}{\lexists[x][\varphi(x)] \land
+    \lforall[y][\lforall[z][((\varphi(y) \land \varphi(z)) \lif y = z)]]}$
+\end{enumerate}
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{एकरूपता सह निर्दोषता}\label{fol:tab:sid:sec}
+
+\begin{prop}
+एकरूपतेचे नियम असलेले टॅब्लो निर्दोष आहेत: कोणताही बंद टॅब्लो
+  पूर्ततायोग्य नसतो.
+\end{prop}
+
+\begin{proof}
+मागीलप्रमाणे एवढेच दाखवायचे आहे की टॅब्लोची एखादी शाखा पूर्ततायोग्य
+असेल, तर तिला~$\eq$ चा कोणताही नियम लावून मिळणारी शाखासुद्धा पूर्ततायोग्य
+असते. शाखेवरील चिन्हांकित सूत्रांचा संच~$\Gamma$ असू द्या आणि
+$\Struct{M}$ ही $\Gamma$ पूर्ण करणारी संरचना असू द्या.
+
+शाखेचा~$\eq$ वापरून विस्तार केला आहे, म्हणजे चिन्हांकित
+सूत्र~$\sFmla{\True}{\eq[t][t]}$ जोडले आहे असे समजा. स्पष्टपणे
+$\Sat{M}{\eq[t][t]}$, म्हणून $\Struct{M}$ हे
+$\Gamma \cup \{\sFmla{\True}{\eq[t][t]}\}$ सुद्धा पूर्ण करते.
+
+$\TRule{\True}{\eq}$ वापरून शाखेचा विस्तार केला असेल, तर
+सूत्र~$\sFmla{S}{\varphi(t_2)}$ जोडतो; परंतु $\Gamma$ मध्ये
+$\sFmla{\True}{\eq[t_1][t_2]}$ आणि $\sFmla{\True}{\varphi(t_1)}$ ही दोन्ही
+असतात. म्हणून $\Sat{M}{\eq[t_1][t_2]}$ आणि $\Sat{M}{\varphi(t_1)}$.
+$s$ हा $s(x) = \Value{t_1}{M}$ असलेला चल-विन्यास असू द्या.
+\ref{fol:syn:ass:prop:sentence-sat-true} नुसार
+$\Sat{M}{\varphi(t_1)}[s]$. $\varAssign{s}{s}{x}$ असल्यामुळे,
+\ref{fol:syn:ext:prop:ext-formulas} नुसार $\Sat{M}{\varphi(x)}[s]$.
+$\Sat{M}{\eq[t_1][t_2]}$ असल्यामुळे
+$\Value{t_1}{M} = \Value{t_2}{M}$, आणि म्हणून
+$s(x) = \Value{t_2}{M}$. \ref{fol:syn:ext:prop:ext-formulas} पुन्हा
+लावल्याने $\Sat{M}{\varphi(t_2)}[s]$ सुद्धा मिळते.
+\ref{fol:syn:ass:prop:sentence-sat-true} नुसार
+$\Sat{M}{\varphi(t_2)}$. $\TRule{\False}{\eq}$ चे प्रकरण याचप्रमाणे आहे.
+\end{proof}
+
+
+
+\endgroup

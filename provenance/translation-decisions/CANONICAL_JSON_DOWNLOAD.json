@@ -3,13 +3,13 @@
   "description_mr": "संपूर्ण प्रमाणित निर्णय-JSON ची अचूक संकुचित प्रत. ZIP संग्रहांत DECISIONS.json हेच असंकुचित नाव आहे.",
   "compression": "gzip",
   "compressed_file": "DECISIONS.json.gz",
-  "compressed_bytes": 14148987,
-  "compressed_sha256": "93a463b9af7394b2d765c54c9c2203210e724400be1c33491fbb94ce81c47250",
+  "compressed_bytes": 15291352,
+  "compressed_sha256": "c3a1e748c575dc95617edb000dab66407fb107b46c8a6d0d8de2c587a7fb287b",
   "uncompressed_file": "DECISIONS.json",
-  "uncompressed_bytes": 167619353,
-  "uncompressed_sha256": "528c1f57d5b9e29cd53d6c984659329de64bf15071c005abd59a105c0309e66f",
-  "reader_pdf_sha256": "cafeb791c3252fc75a0c96bff6cc9ef68b1d2013ba984e0054385489e1b2bb4e",
+  "uncompressed_bytes": 178484004,
+  "uncompressed_sha256": "0956ad84fddab74e890cdbe5b6c27261674bc6c3855adcc1307820e22bab6aae",
+  "reader_pdf_sha256": "3ee7fe70d38346b3ffc7cd635aaa285e54a00e81e5cfe254467be7cc696306f9",
   "schema_sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
-  "review_bundle_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.0/05-openlogic-mr-complete-review.zip",
-  "source_bundle_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.0/03-openlogic-mr-complete-editable-sources.zip"
+  "review_bundle_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.2/05-openlogic-mr-complete-review.zip",
+  "source_bundle_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.2/03-openlogic-mr-complete-editable-sources.zip"
 }

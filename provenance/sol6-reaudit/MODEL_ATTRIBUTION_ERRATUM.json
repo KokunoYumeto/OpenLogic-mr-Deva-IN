@@ -1,0 +1,14 @@
+{
+  "schema": "openlogic-model-attribution-erratum/1",
+  "date": "2026-09-30",
+  "affected_release": "complete-v1.1",
+  "finding_mr": "या आवृत्तीतील पूरक GPT-6 Astra पुनरावलोकनाचे श्रेय चुकीचे होते. संबंधित संभाषणाच्या raw turn_context नोंदींत त्या कामाच्या अखेरपर्यंत GPT-6 Sol, Ultra दिसते; GPT-6 Astra चा एकही मॉडेल-संदर्भ नाही.",
+  "verified_model_intervals": [
+    {"model": "gpt-5.6-sol", "effort": "ultra", "first_context_utc": "2026-09-04T14:23:05.811Z", "last_context_utc": "2026-09-21T00:53:09.447Z", "contexts": 133},
+    {"model": "gpt-6-sol", "effort": "ultra", "first_context_utc": "2026-09-25T01:13:33.616Z", "last_context_utc": "2026-09-29T17:34:25.176Z", "contexts": 105}
+  ],
+  "corrective_reviewer": {"model": "gpt-6.1-sol", "effort": "ultra", "began_utc": "2026-09-30T00:52:45.558Z"},
+  "evidence": {"kind": "same-chat raw execution contexts", "snapshot_sha256": "63760660e9e93f41a78893120a216f1ea0454ef88e1cdcf92a2de6e3ec1450b8", "indexed_bytes": 866318861, "gpt6_sol_context_raw_line_span": [67605, 151051]},
+  "audit_scope": {"base_commit": "c9fb102e820d51e3cc14694358367b5c3161dc83", "released_commit": "c60b911aa8131fadb65e9600f0d2659a51230e9e", "changed_files": 727, "new_translation_units": 518, "changed_preexisting_translation_units": 1},
+  "limits_mr": "कालावधीवरून स्वतंत्र वाक्याचे लेखकत्व ठरवलेले नाही. जुन्या प्रकाशित bytes आणि पावत्या ऐतिहासिक पुरावे म्हणून जतन आहेत. सध्याचे पूर्ण पुनरावलोकन अद्याप चालू आहे; या श्रेयदुरुस्तीने त्याच्या पूर्णतेचा दावा होत नाही. स्वतंत्र मानवी किंवा मातृभाषिक तज्ज्ञ पुनरावलोकनाचा दावा नाही."
+}

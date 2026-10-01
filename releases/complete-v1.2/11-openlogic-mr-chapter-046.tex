@@ -1,0 +1,1395 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 46: संपूर्णता आणि कॅनॉनिकल प्रतिमाने
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{संपूर्णता आणि कॅनॉनिकल प्रतिमाने}\label{nml:com:chap}
+
+
+
+
+
+
+
+
+
+
+\section{प्रस्तावना}\label{nml:com:int:sec}
+
+$\Sigma$ ही मोडल प्रणाली असेल, तर निर्दोषता
+प्रमेय असे सांगते: $\Sigma \Proves \varphi$ असल्यास,
+ज्या प्रतिमान-वर्ग~$\mClass{C}$ मध्ये~$\Sigma$
+मधील सर्व सूत्रांचे सर्व दृष्टांत वैध
+आहेत, त्या वर्गात $\varphi$ वैध असते.
+विशेषतः, $\Log{K}
+\Proves \varphi$ असेल, तर $\varphi$ सर्व प्रतिमानांत
+सत्य असते; $\Log{KT} \Proves \varphi$ असेल,
+तर $\varphi$ सर्व परावर्ती प्रतिमानांत सत्य असते;
+$\Log{KD} \Proves \varphi$ असेल, तर $\varphi$
+सर्व सर्वत्र उत्तरवर्ती प्रतिमानांत सत्य असते; इत्यादी.
+
+संपूर्णता हा निर्दोषतेचा व्यत्यास आहे:
+उदाहरणार्थ, \Log{K} संपूर्ण आहे याचा अर्थ
+सूत्र~$\varphi$ वैध असेल, तर $\Proves \varphi$.
+संपूर्णता सिद्ध करणे निर्दोषता सिद्ध करण्यापेक्षा
+खूप कठीण आहे. सुरुवातीला प्रतिपरिवर्तन विचारात
+घेणे उपयुक्त ठरते: $\Proves/ \varphi$ असेल तेव्हा
+नेहमी प्रतिप्रतिमान, म्हणजे
+$\mSat/{M}{\varphi}$ असे~$\mModel{M}$ प्रतिमान,
+अस्तित्वात असेल, तर आणि तेव्हाच \Log{K}
+संपूर्ण असते. समतुल्यपणे ($\varphi$ चा निषेध
+घेतल्यास), $\Proves/ \lnot \varphi$ असेल तेव्हा
+$\varphi$ चे प्रतिमान असते, हे सिद्ध करता येईल.
+असे प्रतिमान रचताना $\varphi$ मधील माहिती
+वापरता येते. विशिष्ट सूत्रे साठी
+प्रतिमाने शोधतानाही आपण अनेकदा असेच करतो.
+उदाहरणार्थ, $p \lif \Box q$ चे प्रतिप्रतिमान
+शोधायचे असेल, तर त्यात $p$ सत्य आणि
+$\Box q$ असत्य असलेले जग हवे, हे माहीत असते.
+ज्या जगात $\Box q$ असत्य आहे, त्या जगापासून
+प्राप्य असे एखादे जग असले पाहिजे की त्यात $q$
+असत्य आहे. आपल्याला एवढेच ठरवायचे असते:
+कोणत्या जगांत विधानीय चले
+सत्य आहेत आणि कोणती जगे कोणत्या जगांपासून
+प्राप्य आहेत.
+
+पण संपूर्णता सिद्ध करताना प्रतिमान रचण्यासाठी
+आपल्यापाशी एखादे ठरावीक सूत्र~$\varphi$
+नसते. $\Proves/[\Sigma] \lnot \varphi$ असलेल्या
+प्रत्येक $\varphi$ साठी प्रतिमान अस्तित्वात आहे,
+हे दाखवायचे असते. ही किमान आवश्यक अट आहे:
+\emph{जर} $\Proves[\Sigma] \lnot \varphi$ असेल,
+तर निर्दोषतेनुसार~$\varphi$ चे
+($\Sigma$ सत्य असलेले) प्रतिमान असू शकत नाही.
+आता लक्षात घ्या की $\Proves/[\Sigma]
+\lnot \varphi$ असेल तेव्हा आणि तेव्हाच $\varphi$ हे
+$\Sigma$-सुसंगत असते. ($\Sigma
+\Proves/[\Sigma] \lnot \varphi$ आणि
+$\varphi \Proves/[\Sigma] \lfalse$ समतुल्य
+आहेत, हे आठवा.) म्हणून प्रत्येक
+$\Sigma$-सुसंगत सूत्र साठी प्रतिमान
+रचणे हे आपले काम आहे.
+
+आपण पुढील युक्ती वापरू: $\varphi$ सामावणारा
+$\Sigma$-सुसंगत सूत्रांचा संच शोधू;
+त्यात $\varphi$ सत्य करणारे जग कसे असावे
+हे सांगणारी इतर सूत्रेही असतील. असे संच
+\emph{संपूर्ण} $\Sigma$-सुसंगत संच असतात.
+प्रत्येक सुसंगत $\varphi$ साठी काम करणाऱ्या सर्वसाधारण रचनेत
+फक्त एकच जग ठेवणे नेहमी पुरेसे नसते. अनेक जगे आणि
+त्यांच्यातील प्राप्यता संबंध असण्यास रचनेने परवानगी दिली पाहिजे. $\varphi$ सामावणाऱ्या
+संपूर्ण $\Sigma$-सुसंगत संचात
+$\Box \psi$ आणि~$\Diamond \chi$ या रूपांतील
+इतर सूत्रे ही असतील. सर्व प्राप्य
+जगांत $\psi$ सत्य असले पाहिजे; किमान एका
+प्राप्य जगात $\chi$ सत्य असले पाहिजे. यासाठी
+शक्य असलेले \emph{सर्व} संपूर्ण
+$\Sigma$-सुसंगत संच जगांच्या संचाचा
+आधार म्हणून घेऊ. आपल्या प्रतिमानात एक
+संपूर्ण $\Sigma$-सुसंगत संच दुसऱ्यापासून
+केव्हा प्राप्य मानायचा, हे ठरवणे अवघड
+ठरेल.
+
+असे परिभाषित केलेल्या प्रतिमानात एखाद्या
+जगात---जे स्वतः संपूर्ण $\Sigma$-सुसंगत
+संच आहे---$\varphi$ सत्य असेल तेव्हा आणि
+तेव्हाच $\varphi$ त्या संचाचा घटक
+असेल, हे दाखवू. $\varphi$ हे
+$\Sigma$-सुसंगत असेल, तर किमान एका
+संपूर्ण $\Sigma$-सुसंगत संचाचा ते
+घटक असेल (हे आपण सिद्ध करू);
+म्हणून $\varphi$~सत्य असलेले जग मिळेल. अशा
+रीतीने प्रत्येक $\Sigma$-सुसंगत
+सूत्र~$\varphi$ काहीतरी जगात सत्य असलेले
+एकच प्रतिमान आपल्याला मिळेल.
+हेच~$\Sigma$ साठीचे \emph{कॅनॉनिकल}
+प्रतिमान आहे.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{संपूर्ण $\Sigma$-सुसंगत संच}\label{nml:com:ccs:sec}
+
+$\Sigma$ हा मोडल सूत्रांचा संच आहे असे
+समजा---सामान्य मोडल तर्कशास्त्राची स्वयंसिद्धके
+किंवा परिभाषक तत्त्वे म्हणून त्यांच्याकडे पाहा.
+संच~$\Gamma$ हा $\Sigma$-सुसंगत असेल तेव्हा
+आणि तेव्हाच $\Gamma \Proves/[\Sigma] \lfalse$;
+म्हणजे प्रत्येक $\varphi_i \in \Gamma$ असताना
+$\Sigma$ पासून~$\varphi_1 \lif (\varphi_2 \lif \cdots (\varphi_n \lif
+\lfalse)\dots)$ ची निष्पत्ती नसते.
+आपण ``कॅनॉनिकल'' प्रतिमान रचू; त्यात प्रत्येक
+जग विशिष्ट प्रकारचा $\Sigma$-सुसंगत संच
+असेल. तो केवळ $\Sigma$-सुसंगत नसून
+महत्तम अर्थाने तसा असेल: प्रत्येक मोडल
+सूत्राचे सत्यत्व तो ठरवेल.
+प्रत्येक $\varphi$ साठी $\varphi
+\in \Gamma$ किंवा $\lnot \varphi \in \Gamma$:
+
+\begin{defn}
+  संच~$\Gamma$ हा \emph{संपूर्ण $\Sigma$-सुसंगत}
+  असेल तेव्हा आणि तेव्हाच तो $\Sigma$-सुसंगत
+  असेल आणि प्रत्येक~$\varphi$ साठी
+  $\varphi \in \Gamma$ किंवा $\lnot \varphi \in \Gamma$
+  यांपैकी एक विधान खरे असेल.
+\end{defn}
+
+संपूर्ण $\Sigma$-सुसंगत संच~$\Gamma$ चे अनेक
+उपयुक्त गुणधर्म आहेत. प्रथम, ते निगामीदृष्ट्या
+बंद असतात: $\Gamma
+\Proves[\Sigma] \varphi$ असेल, तर $\varphi \in \Gamma$.
+विशेषतः, सूत्र~$\varphi \in \Sigma$ चा प्रत्येक
+दृष्टांतही $\in
+\Gamma$ असतो. शिवाय $\Gamma$ मधील सदस्यत्व
+विधानीय संयोगकांच्या सत्यत्व-अटींशी जुळते.
+आपण ``कॅनॉनिकल प्रतिमान'' परिभाषित करू तेव्हा
+हे महत्त्वाचे ठरेल.
+
+\begin{prop}\label{nml:com:ccs:prop:ccs-properties}
+  $\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत आहे असे
+  समजा. मग:
+  \begin{enumerate}
+  \item \label{nml:com:ccs:prop:ccs-closed}
+    $\Gamma$ हा~$\Sigma$ च्या सापेक्ष
+    निगामीदृष्ट्या बंद आहे.
+  \item \label{nml:com:ccs:prop:ccs-sigma}
+    $\Sigma \subseteq \Gamma$.
+  \item \label{nml:com:ccs:prop:ccs-lfalse}
+    $\lfalse \notin \Gamma$
+  \item \label{nml:com:ccs:prop:ccs-ltrue}
+    $\ltrue \in \Gamma$
+  \item \label{nml:com:ccs:prop:ccs-lnot}
+    $\lnot\varphi \in \Gamma$ असेल तेव्हा आणि
+    तेव्हाच $\varphi \notin
+    \Gamma$.
+  \item \label{nml:com:ccs:prop:ccs-land}
+    $\varphi \land \psi \in \Gamma$ असेल तेव्हा आणि तेव्हाच
+    $\varphi \in \Gamma$ आणि $\psi \in \Gamma$ असतील.
+  \item \label{nml:com:ccs:prop:ccs-lor}
+    $\varphi \lor \psi \in \Gamma$ असेल तेव्हा आणि तेव्हाच
+    $\varphi \in \Gamma$ किंवा $\psi \in \Gamma$ असेल.
+  \item \label{nml:com:ccs:prop:ccs-lif}
+    $\varphi \lif \psi \in \Gamma$ असेल तेव्हा आणि तेव्हाच
+    $\varphi \notin \Gamma$ किंवा $\psi \in \Gamma$ असेल.
+  \item \label{nml:com:ccs:prop:ccs-liff}
+    $\varphi \liff \psi \in \Gamma$ असेल तेव्हा आणि तेव्हाच
+    $\varphi \in \Gamma$ आणि $\psi \in
+    \Gamma$ दोन्ही असतील, किंवा
+    $\varphi \notin \Gamma$ आणि $\psi \notin \Gamma$
+    दोन्ही असतील.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $\Gamma \Proves[\Sigma] \varphi$ पण $\varphi \notin
+    \Gamma$ असे समजा. $\Gamma$ संपूर्ण
+    $\Sigma$-सुसंगत असल्याने
+    $\lnot\varphi \in \Gamma$. मग $\Gamma$ विसंगत
+    ठरेल, कारण $\varphi, \lnot \varphi \Proves[\Sigma] \lfalse$.
+
+  \item $\varphi \in \Sigma$ असेल, तर
+    $\Gamma \Proves[\Sigma] \varphi$; आणि
+    निगामी बंदतेवरून, म्हणजे
+    \ref{nml:com:ccs:prop:ccs-closed} वरून, $\varphi
+    \in \Gamma$.
+
+  \item $\lfalse \in \Gamma$ असेल,
+    तर $\Gamma \Proves[\Sigma] \lfalse$;
+    त्यामुळे $\Gamma$ हा $\Sigma$-विसंगत
+    ठरेल.
+
+  \item $\Gamma \Proves[\Sigma] \ltrue$;
+    म्हणून निगामी बंदतेवरून, म्हणजे
+    \ref{nml:com:ccs:prop:ccs-closed} वरून,
+    $\ltrue \in \Gamma$.
+
+\item $\lnot\varphi \in \Gamma$ असेल, तर
+    सुसंगततेमुळे $\varphi \notin \Gamma$.
+    उलट $\varphi \notin \Gamma$ असेल, तर
+    $\Gamma$ संपूर्ण $\Sigma$-सुसंगत
+    असल्याने $\lnot\varphi \in \Gamma$.
+
+  \item $\varphi \land \psi \in
+      \Gamma$ असे समजा. $(\varphi \land \psi) \lif \varphi$
+      हा सर्वतः-सत्य दृष्टांत असल्याने,
+      निगामी बंदतेवरून, म्हणजे
+      \ref{nml:com:ccs:prop:ccs-closed} वरून, $\varphi \in \Gamma$.
+      $\psi \in \Gamma$ साठीही तसेच. उलट
+      $\varphi \in \Gamma$ आणि $\psi \in
+      \Gamma$ दोन्ही असतील, तर निगामी
+      बंदतेवरून $(\varphi \land \psi) \in
+      \Gamma$; कारण $\varphi \lif (\psi \lif (\varphi \land \psi))$
+      हा सर्वतः-सत्य दृष्टांत आहे.
+
+  \item $\varphi \lor \psi \in
+      \Gamma$, पण $\varphi \notin \Gamma$ आणि
+      $\psi \notin \Gamma$ असे समजा. $\Gamma$
+      संपूर्ण $\Sigma$-सुसंगत असल्याने
+      $\lnot\varphi \in \Gamma$ आणि
+      $\lnot \psi \in \Gamma$. मग
+      $\lnot(\varphi \lor \psi) \in \Gamma$;
+      कारण $\lnot \varphi \lif (\lnot \psi \lif \lnot (\varphi \lor \psi))$
+      हा सर्वतः-सत्य दृष्टांत आहे. त्यामुळे
+      $\Gamma$ हा $\Sigma$-विसंगत ठरेल,
+      हा व्याघात आहे. उलट $\varphi \in \Gamma$ असेल,
+      तर $\varphi \lif (\varphi \lor \psi)$ हा सर्वतः-सत्य दृष्टांत
+      आणि निगामी बंदता यांवरून $\varphi \lor \psi \in \Gamma$.
+      तसेच $\psi \in \Gamma$ असेल, तर
+      $\psi \lif (\varphi \lor \psi)$ वापरून तोच निष्कर्ष मिळतो.
+
+  \item $\varphi \lif \psi \in
+      \Gamma$ आणि $\varphi \in \Gamma$ असे समजा.
+      मग $\Gamma \Proves[\Sigma] \psi$;
+      त्यामुळे निगामी बंदतेवरून $\psi \in \Gamma$.
+      उलट $\varphi
+      \lif \psi \notin \Gamma$ असेल, तर
+      $\Gamma$ संपूर्ण $\Sigma$-सुसंगत
+      असल्याने $\lnot (\varphi \lif \psi) \in \Gamma$.
+      $\lnot(\varphi \lif \psi) \lif \varphi$ हा
+      सर्वतः-सत्य दृष्टांत असल्याने निगामी
+      बंदतेवरून $\varphi \in
+      \Gamma$. तसेच $\lnot(\varphi \lif \psi) \lif
+      \lnot \psi$ हा सर्वतः-सत्य दृष्टांत असल्याने
+      $\lnot \psi \in
+      \Gamma$. $\Gamma$ हा $\Sigma$-सुसंगत
+      असल्यामुळे $\psi \notin \Gamma$.
+
+  \item $\varphi \liff \psi \in
+      \Gamma$ असे समजा. $\varphi \in \Gamma$
+      असेल, तर $\psi \in \Gamma$; कारण $(\varphi
+      \liff \psi) \lif (\varphi \lif \psi)$ हा
+      सर्वतः-सत्य दृष्टांत आहे. तसेच
+      $\psi \in \Gamma$ असेल, तर $\varphi \in \Gamma$.
+      म्हणून $\varphi \in \Gamma$ आणि $\psi \in \Gamma$
+      दोन्ही असतील, किंवा $\varphi \in \Gamma$
+      आणि $\psi \in \Gamma$ यांपैकी कोणतेही नसेल.
+
+      उलट $\varphi \liff \psi \notin \Gamma$
+      असे समजा. $\Gamma$ संपूर्ण
+      $\Sigma$-सुसंगत असल्याने
+      $\lnot (\varphi \liff \psi) \in
+      \Gamma$. $\lnot(\varphi \liff \psi) \lif (\varphi \lif \lnot \psi)$
+      हा सर्वतः-सत्य दृष्टांत असल्याने
+      $\varphi \in \Gamma$ असेल, तर
+      $\lnot \psi \in
+      \Gamma$; आणि $\Gamma$ हा
+      $\Sigma$-सुसंगत असल्याने $\psi \notin
+      \Gamma$. तसेच $\psi \in \Gamma$
+      असेल, तर $\varphi \notin \Gamma$.
+      म्हणून $\varphi \in \Gamma$ आणि $\psi \in \Gamma$
+      ही दोन्ही विधाने एकत्र खरी असण्याची शक्यता नाही;
+      तसेच $\varphi \notin \Gamma$ आणि $\psi \notin \Gamma$
+      ही दोन्ही विधाने एकत्र खरी असण्याचीही शक्यता नाही.
+  \end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{लिंडेनबाउमचे पूर्वप्रमेय}\label{nml:com:lin:sec}
+
+लिंडेनबाउमचे पूर्वप्रमेय असे सांगते की सूत्रांचा प्रत्येक
+$\Sigma$-सुसंगत संच एखाद्या \emph{संपूर्ण} $\Sigma$-सुसंगत
+संचात समाविष्ट असतो. कॅनॉनिकल प्रतिमानाची आपली रचना दाखवेल की
+प्रत्येक संपूर्ण $\Sigma$-सुसंगत संच~$\Delta$ साठी कॅनॉनिकल
+प्रतिमानात असे एक जग असते की नेमके~$\Delta$ मधील
+सूत्रे त्या जगात सत्य असतात. म्हणून लिंडेनबाउमचे पूर्वप्रमेय
+प्रत्येक $\Sigma$-सुसंगत संच कॅनॉनिकल प्रतिमानातील कोणत्या तरी
+जगात सत्य असल्याची हमी देते.
+
+\begin{thm}[लिंडेनबाउमचे पूर्वप्रमेय]\label{nml:com:lin:thm:lindenbaum}
+  $\Gamma$ हा $\Sigma$-सुसंगत असेल, तर~$\Gamma$ चा विस्तार असलेला
+  संपूर्ण $\Sigma$-सुसंगत संच~$\Delta$ अस्तित्वात असतो.
+\end{thm}
+
+\begin{proof}
+भाषेतील सर्व सूत्रांची $\varphi_0$, $\varphi_1$, \dots{} अशी यादी असू द्या;
+त्यात एखादे सूत्र पुन्हा येऊ शकते. उदाहरणार्थ, आधी
+$\Obj p_0$ नोंदवा आणि नंतर प्रत्येक $n \ge 1$ टप्प्यावर
+$\Obj p_0$, \dots,~$\Obj p_n$ यांमधीलच चल वापरून
+बनणारी व लांबी~$n$ पर्यंतची सर्व सूत्रे नोंदवा;
+अशा सूत्रांची संख्या सांत असते. आपण~$n$ वरील विगमनाने
+सूत्रांचे संच~$\Delta_n$ परिभाषित करू आणि मग
+$\Delta = \bigcup_n \Delta_n$ ठेवू. प्रथम $\Delta_0 = \Gamma$
+ठेवू. $\Delta_n$ परिभाषित झाला आहे असे धरून
+$\Delta_{n+1}$ ची व्याख्या अशी करू:
+\[\Delta_{n+1} =
+\begin{cases}
+  \Delta_n \cup \{\varphi_n\}, & \text{जर $\Delta_n \cup \{ \varphi_n\}$
+    हा $\Sigma$-सुसंगत असेल;} \\
+  \Delta_n \cup \{ \lnot \varphi_n\}, & \text{अन्यथा.}
+\end{cases}
+\]
+आता $\Delta = \bigcup_{n=0}^\infty \Delta_n$ ठेवू.
+
+या व्याख्येतून आवश्यक गुणधर्म असलेला संच~$\Delta$
+खरोखर मिळतो हे दाखवायचे आहे: $\Gamma \subseteq \Delta$
+आणि~$\Delta$ हा संपूर्ण $\Sigma$-सुसंगत आहे.
+
+$\Gamma \subseteq \Delta$ हे उघड आहे, कारण रचनेनुसार
+$\Delta_0 \subseteq \Delta$ आणि $\Delta_0 = \Gamma$.
+खरे तर प्रत्येक~$n$ साठी $\Delta_n \subseteq \Delta$,
+कारण~$\Delta$ हा सर्व $\Delta_n$ चा संघ आहे. (रचनेच्या
+प्रत्येक पायरीवर आधीच्या संचात सूत्र जोडतो; म्हणून
+$\Delta_n \subseteq \Delta_{n+1}$. तसेच
+$\subseteq$ संक्रमणशील असल्याने $n \le m$ असेल तेव्हा
+$\Delta_n \subseteq \Delta_{m}$.) रचनेच्या प्रत्येक
+टप्प्यावर आपण $\varphi_n$ किंवा $\lnot \varphi_n$ जोडतो आणि
+प्रत्येक सूत्र हे सर्व~$\varphi_n$ च्या यादीत किमान
+एकदा येते. म्हणून प्रत्येक $\varphi$ साठी $\varphi
+\in \Delta$ किंवा $\lnot \varphi \in \Delta$;
+त्यामुळे व्याख्येनुसार~$\Delta$ संपूर्ण आहे.
+
+शेवटी~$\Delta$ हा $\Sigma$-सुसंगत आहे हे दाखवायचे आहे.
+त्यासाठी (a)~$\Delta$ हा $\Sigma$-विसंगत असता, तर
+एखादा~$\Delta_n$ $\Sigma$-विसंगत असता, आणि
+(b)~सर्व $\Delta_n$ हे $\Sigma$-सुसंगत आहेत,
+असे आपण दाखवू.
+
+समजा~$\Delta$ हा $\Sigma$-विसंगत आहे. मग
+$\Delta \Proves[\Sigma] \lfalse$; म्हणजे
+$\varphi_1$, \dots,~$\varphi_k \in \Delta$ अशी सूत्रे असतात की
+$\Sigma \Proves \varphi_1 \lif (\varphi_2 \lif \cdots (\varphi_k
+\lif \lfalse)\dots)$. $\Delta = \bigcup_{n=0}^\infty \Delta_n$
+असल्याने प्रत्येक $\varphi_i \in \Delta_{n_i}$ असे कोणत्यातरी~$n_i$
+साठी असते. $n=\max(\{0\}\cup\{n_1,\dots,n_k\})$ घ्या;
+यामुळे शून्य गृहीतकांच्या $k=0$ प्रकरणातही $n=0$ ठरतो. $n_i \le n$ असल्यामुळे
+$\Delta_{n_i} \subseteq \Delta_n$. म्हणून ही सर्व
+$\varphi_i$ सूत्रे एखाद्या~$\Delta_n$ मध्ये असतात.
+याचा अर्थ $\Delta_n \Proves[\Sigma] \lfalse$,
+म्हणजेच~$\Delta_n$ हा $\Sigma$-विसंगत आहे.
+
+प्रत्येक $\Delta_n$ $\Sigma$-सुसंगत आहे हे दाखवण्यासाठी
+आपण~$n$ वरील सोपे विगमन वापरू. $\Delta_0 = \Gamma$
+आणि~$\Gamma$ $\Sigma$-सुसंगत असल्याचे गृहीत आहे;
+म्हणून $n = 0$ साठी दावा खरा आहे. आता तो~$n$
+साठी खरा आहे, म्हणजे $\Delta_n$ $\Sigma$-सुसंगत
+आहे, असे समजा. $\Delta_n \cup \{\varphi_n\}$ हा
+$\Sigma$-सुसंगत असेल, तर $\Delta_{n+1}$ हाच
+संच असतो; अन्यथा तो $\Delta_n \cup \{\lnot\varphi_n\}$
+असतो. पहिल्या प्रकरणात $\Delta_{n+1}$
+$\Sigma$-सुसंगत असणे स्पष्ट आहे. परंतु
+\ref{nml:prf:con:prop:consistencyfacts}\ref{nml:prf:con:prop:consistencyfacts-c}
+नुसार $\Delta_n \cup \{\varphi_n\}$ किंवा
+$\Delta_n \cup \{\lnot\varphi_n\}$ यांपैकी एक
+सुसंगत असतो; म्हणून दुसऱ्या प्रकरणातही
+$\Delta_{n+1}$ सुसंगत असतो.
+\end{proof}
+
+\begin{cor}\label{nml:com:lin:cor:provability-characterization}
+  $\Gamma \Proves[\Sigma] \varphi$ असेल तेव्हा आणि तेव्हाच
+  $\Gamma$ चा विस्तार असलेल्या प्रत्येक संपूर्ण
+  $\Sigma$-सुसंगत संच~$\Delta$ मध्ये $\varphi \in \Delta$
+  असते. ($\Gamma = \emptyset$ असतानाही हे लागू होते;
+  त्या बाबतीत मोडल प्रणाली~$\Sigma$ चे आणखी एक
+  लक्षणन मिळते.)
+\end{cor}
+
+\begin{proof}
+  $\Gamma \Proves[\Sigma] \varphi$ असे समजा आणि
+  $\Gamma$ चा विस्तार असलेला कोणताही संपूर्ण
+  $\Sigma$-सुसंगत संच~$\Delta$ घ्या. जर $\varphi
+  \notin \Delta$ असेल, तर महत्तमतेमुळे
+  $\lnot\varphi \in \Delta$. त्यामुळे एकस्वनिकतेने
+  $\Delta \Proves[\Sigma] \varphi$ आणि स्वतःच्या गृहीतकावरून
+  $\Delta \Proves[\Sigma] \lnot\varphi$; म्हणून~$\Delta$
+  विसंगत ठरेल. उलट $\Gamma \Proves/[\Sigma] \varphi$
+  असेल, तर $\Gamma \cup \{ \lnot\varphi\}$ हा
+  $\Sigma$-सुसंगत संच असतो. लिंडेनबाउमच्या
+  पूर्वप्रमेयानुसार $\Gamma \cup \{ \lnot\varphi \}$
+  चा विस्तार असलेला संपूर्ण सुसंगत संच~$\Delta$
+  अस्तित्वात असतो. सुसंगततेमुळे $\varphi
+  \notin \Delta$.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{मोडल कारक आणि संपूर्ण सुसंगत संच}\label{nml:com:mod:sec}
+
+\begin{explain}
+एखाद्या सामान्य मोडल तर्कशास्त्र~$\Sigma$ मधील संपूर्ण
+$\Sigma$-सुसंगत संच~$\Delta$ हे ज्याचे जग आहेत,
+असे प्रतिमान~$\mModel{M^\Sigma}$ रचताना अशा “जगां”मधील
+प्राप्यता संबंध~$R^\Sigma$ देखील परिभाषित करावा लागेल.
+प्राप्यता संबंध (आणि मूल्यांकन~$V^\Sigma$) यांची व्याख्या
+अशी हवी की $\mSat{M^\Sigma}{\varphi}[\Delta]$ असेल तेव्हा
+आणि तेव्हाच $\varphi \in \Delta$. हे कसे करावे?
+
+प्राप्यता संबंध परिभाषित केल्यावर, जगातील सत्यतेच्या
+व्याख्येनुसार $\mSat{M^\Sigma}{\Box\varphi}[\Delta]$
+  असेल तेव्हा आणि तेव्हाच $R^\Sigma\Delta\Delta'$ असलेल्या
+  प्रत्येक $\Delta'$ साठी $\mSat{M^\Sigma}{\varphi}[\Delta']$.
+$\mSat{M^\Sigma}{\varphi}[\Delta]$ असेल तेव्हा आणि तेव्हाच
+$\varphi \in \Delta$ हे सिद्ध करण्यासाठी हे विशेषतः
+मोडल कारकाने सुरू होणाऱ्या सूत्रे साठी खरे असणे
+आवश्यक आहे; म्हणजे
+$\mSat{M^\Sigma}{\Box\varphi}[\Delta]$ असेल
+  तेव्हा आणि तेव्हाच $\Box \varphi \in \Delta$.
+ही आवश्यकता आणि
+$\Box \varphi$
+साठी जगातील सत्यतेची व्याख्या एकत्र केल्यास:
+\[  \Box\varphi \in \Delta \text{ तेव्हा आणि तेव्हाच } \varphi \in \Delta' \text{
+    प्रत्येक $\Delta'$ साठी, जेथे } R^\Sigma\Delta\Delta'
+\]
+डावीकडून उजवीकडे जाणारी दिशा पाहा:
+  $\Box \varphi \in \Delta$ असेल, तर कोणत्याही $\varphi$
+  आणि $R^\Sigma\Delta\Delta'$ असलेल्या कोणत्याही
+  $\Delta'$ साठी $\varphi \in \Delta'$ असे ती सांगते.
+  प्रत्येक $\Box\varphi \in \Delta$ साठी $\varphi \in \Delta'$
+  असेल तेव्हा आणि तेव्हाच $R^\Sigma\Delta\Delta'$
+  अशी अट ठेवल्यास हे खरे ठरते. या द्विसशर्ताच्या
+  उजव्या बाजूची अट संक्षिप्तपणे
+  $\Setabs{\varphi}{\Box\varphi \in \Delta} \subseteq \Delta'$
+  अशी लिहिता येते.
+
+मग प्रश्न असा आहे: $R^\Sigma$ ची ही व्याख्या
+$\Box \varphi \in \Delta$ असेल तेव्हा आणि
+  तेव्हाच $\mSat{M^\Sigma}{\Box \varphi}[\Delta]$ याची
+  खरोखर हमी देते का? ती
+    $\Diamond \varphi \in \Delta$
+  असेल तेव्हा आणि तेव्हाच
+  $\mSat{M^\Sigma}{\Diamond \varphi}[\Delta]$ याचीही
+  हमी देते का? पुढील काही निष्कर्ष हे सिद्ध करतील.
+\end{explain}
+
+\begin{defn}
+  $\Gamma$ हा सूत्रांचा संच असेल, तर
+  \begin{align*}
+    \Box\Gamma & = \Setabs{\Box \psi}{\psi \in \Gamma}\\
+    \Diamond\Gamma & = \Setabs{\Diamond \psi}{\psi \in \Gamma}\\
+    \intertext{आणि}
+    \Box^{-1}\Gamma & = \Setabs{\psi}{\Box \psi \in \Gamma}\\
+    \Diamond^{-1}\Gamma & = \Setabs{\psi}{\Diamond \psi \in \Gamma}\\
+  \end{align*}
+\end{defn}
+
+दुसऱ्या शब्दांत, $\Box\Gamma$ म्हणजे~$\Gamma$ मधील
+प्रत्येक सूत्राच्या पुढे $\Box$ लावलेला संच;
+ही सर्व सूत्रे~$\Gamma$ मधूनच घेतली जातात.
+$\Box^{-1}\Gamma$ मध्ये~$\Gamma$ मधील $\Box$ ने
+सुरू होणाऱ्या सर्व सूत्रे मधील सुरुवातीचा
+$\Box$ काढून टाकला जातो. ही व्याख्या स्वतंत्रपणे
+फारशी महत्त्वाची नाही, पण संकेतलेखन बरेच सोपे करते.
+
+लक्षात घ्या की $\Box\Box^{-1}\Gamma \subseteq \Gamma$:
+\[\Box\Box^{-1}\Gamma = \Setabs{\Box\psi}{\Box\psi \in \Gamma}
+\]
+म्हणजे हा~$\Gamma$ मधील $\Box$ ने सुरू होणाऱ्या
+सर्व सूत्रांचाच संच आहे.
+
+\begin{lem}\label{nml:com:mod:lem:box1}
+  $\Gamma \Proves[\Sigma] \varphi$ असेल, तर
+  $\Box\Gamma \Proves[\Sigma] \Box \varphi$.
+\end{lem}
+
+\begin{proof}
+  $\Gamma \Proves[\Sigma] \varphi$ असेल, तर
+  $\psi_1$, \dots, $\psi_k \in \Gamma$ अशी सूत्रे
+  असतात. $k=0$ असेल, तर $\Sigma \Proves \varphi$;
+  \Nec{} ने $\Sigma \Proves \Box\varphi$ मिळते आणि
+  शून्य गृहीतकांच्या प्रकरणानुसार $\Box\Gamma \Proves[\Sigma] \Box\varphi$.
+  आता $k\geq1$ असे समजा. मग $\Sigma \Proves \psi_1 \lif (\psi_2 \lif \cdots
+  (\psi_k \lif \varphi)\cdots)$. $\Sigma$ सामान्य असल्याने
+  \RK{} नियमानुसार $\Sigma \Proves \Box\psi_1 \lif
+  (\Box\psi_2 \lif \cdots (\Box\psi_k \lif \Box\varphi)\cdots)$;
+  येथे अर्थातच $\Box\psi_1$, \dots, $\Box\psi_k \in
+  \Box\Gamma$. म्हणून व्याख्येनुसार
+  $\Box\Gamma \Proves[\Sigma] \Box \varphi$.
+\end{proof}
+
+\begin{lem}\label{nml:com:mod:lem:box2}
+  $\Box^{-1} \Gamma \Proves[\Sigma] \varphi$ असेल,
+  तर $\Gamma \Proves[\Sigma] \Box\varphi$.
+\end{lem}
+
+\begin{proof}
+  $\Box^{-1}\Gamma \Proves[\Sigma] \varphi$ असे
+  समजा. मग \ref{nml:com:mod:lem:box1} नुसार
+  $\Box\Box^{-1}\Gamma \Proves[\Sigma] \Box\varphi$.
+  पण $\Box\Box^{-1}\Gamma \subseteq \Gamma$
+  असल्याने एकस्वनिकतेनुसार
+  $\Gamma \Proves[\Sigma] \Box\varphi$.
+\end{proof}
+
+
+
+
+\begin{prop}\label{nml:com:mod:prop:box}
+  $\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत असेल,
+  तर $\Box \varphi \in \Gamma$ असेल तेव्हा आणि
+  तेव्हाच $\Box^{-1} \Gamma \subseteq \Delta$
+  असलेल्या प्रत्येक संपूर्ण $\Sigma$-सुसंगत
+  $\Delta$ साठी $\varphi \in \Delta$ असेल.
+\end{prop}
+
+\begin{proof}
+  $\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत आहे
+  असे समजा. डावीकडून उजवीकडे जाणारी दिशा सोपी आहे:
+  $\Box \varphi \in \Gamma$ आणि
+  $\Box^{-1}\Gamma \subseteq \Delta$ असे
+  समजा. $\Box\varphi \in \Gamma$ असल्याने
+  $\varphi \in \Box^{-1}\Gamma \subseteq \Delta$;
+  म्हणून $\varphi \in \Delta$.
+
+  उजवीकडून डावीकडे जाणाऱ्या दिशेसाठी आपण प्रतिपरिवर्तन सिद्ध करू:
+  $\Box\varphi \notin \Gamma$ असे समजा.
+  $\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत
+  असल्याने तो निगामीदृष्ट्या बंद आहे;
+  म्हणून $\Gamma \Proves/[\Sigma] \Box \varphi$.
+  \ref{nml:com:mod:lem:box2} नुसार
+  $\Box^{-1}\Gamma \Proves/[\Sigma] \varphi$.
+  \ref{nml:prf:con:prop:consistencyfacts}\ref{nml:prf:con:prop:consistencyfacts-b}
+  नुसार $\Box^{-1}\Gamma \cup \{ \lnot\varphi \}$
+  हा $\Sigma$-सुसंगत आहे. लिंडेनबाउमच्या
+  पूर्वप्रमेयानुसार $\Box^{-1}\Gamma \cup
+  \{ \lnot\varphi \} \subseteq \Delta$ असा
+  संपूर्ण $\Sigma$-सुसंगत संच~$\Delta$
+  असतो. सुसंगततेमुळे $\varphi \notin \Delta$.
+\end{proof}
+
+
+\begin{lem}\label{nml:com:mod:lem:box-iff-diamond}
+  $\Gamma$ आणि $\Delta$ हे संपूर्ण
+  $\Sigma$-सुसंगत असोत. मग
+  $\Box^{-1}\Gamma \subseteq \Delta$
+  असेल तेव्हा आणि तेव्हाच
+  $\Diamond\Delta \subseteq \Gamma$.
+\end{lem}
+
+\begin{proof}
+  डावीकडून उजवीकडे जाणारी दिशा: $\Box^{-1}\Gamma
+  \subseteq \Delta$ असे समजा आणि
+  $\Diamond\varphi \in \Diamond\Delta$
+  (म्हणजे $\varphi \in \Delta$) असे धरा.
+  $\Diamond\varphi \in \Gamma$ दाखवण्यासाठी
+  $\Box\lnot\varphi \notin \Gamma$ दाखवणे
+  पुरेसे आहे; कारण मग महत्तमतेमुळे
+  $\lnot\Box\lnot \varphi \in \Gamma$.
+  आता $\Box\lnot\varphi \in \Gamma$
+  असेल, तर गृहीतकानुसार
+  $\lnot\varphi \in \Delta$; पण
+  $\varphi \in \Delta$ असल्याने हे
+  $\Delta$ च्या सुसंगततेच्या
+  विरुद्ध आहे. म्हणून आवश्यकतेनुसार
+  $\Box\lnot\varphi \notin \Gamma$.
+
+  उजवीकडून डावीकडे जाणारी दिशा: $\Diamond\Delta
+  \subseteq \Gamma$ असे समजा.
+  प्रतिपरिवर्तन वापरू: $\Box\varphi
+  \notin \Gamma$ दाखवण्यासाठी
+  $\varphi \notin \Delta$ असे समजा.
+  $\varphi \notin \Delta$ असेल,
+  तर महत्तमतेमुळे
+  $\lnot\varphi \in \Delta$;
+  म्हणून गृहीतकानुसार
+  $\Diamond\lnot\varphi \in \Gamma$.
+  पण सामान्य मोडल तर्कशास्त्रात
+  $\Diamond\lnot\varphi$ हे
+  $\lnot\Box \varphi$ शी समतुल्य आहे;
+  आणि दुसरे सूत्र~$\Gamma$ मध्ये
+  असेल, तर सुसंगततेमुळे
+  $\Box\varphi \notin\Gamma$,
+  हेच दाखवायचे होते.
+\end{proof}
+
+
+
+
+
+
+\begin{prop}\label{nml:com:mod:prop:diamond}
+  $\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत
+  असेल, तर $\Diamond \varphi \in \Gamma$
+  असेल तेव्हा आणि तेव्हाच
+  $\Diamond\Delta \subseteq
+  \Gamma$ असा एखादा संपूर्ण
+  $\Sigma$-सुसंगत $\Delta$
+  असेल की $\varphi \in \Delta$.
+\end{prop}
+
+\begin{proof}
+$\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत
+आहे असे समजा. \Dual{} आणि निगामी बंदतेनुसार
+$\Diamond\varphi \in \Gamma$ असेल तेव्हा
+आणि तेव्हाच $\lnot\Box\lnot \varphi \in
+\Gamma$. $\Gamma$ संपूर्ण
+$\Sigma$-सुसंगत असल्याने
+\ref{nml:com:ccs:prop:ccs-properties}\ref{nml:com:ccs:prop:ccs-lnot}
+नुसार $\lnot\Box\lnot \varphi \in \Gamma$
+असेल तेव्हा आणि तेव्हाच
+$\Box\lnot \varphi \notin \Gamma$.
+\ref{nml:com:mod:prop:box} नुसार
+$\Box\lnot \varphi \notin \Gamma$
+असेल तेव्हा आणि तेव्हाच
+$\Box^{-1}\Gamma \subseteq \Delta$
+आणि $\lnot\varphi \notin \Delta$
+असा एखादा संपूर्ण $\Sigma$-सुसंगत
+$\Delta$ असतो. असा कोणताही~$\Delta$
+घ्या. \ref{nml:com:mod:lem:box-iff-diamond}
+नुसार $\Box^{-1}\Gamma \subseteq \Delta$
+असेल तेव्हा आणि तेव्हाच
+$\Diamond\Delta \subseteq \Gamma$.
+तसेच
+\ref{nml:com:ccs:prop:ccs-properties}\ref{nml:com:ccs:prop:ccs-lnot}
+नुसार $\lnot \varphi \notin \Delta$
+असेल तेव्हा आणि तेव्हाच
+$\varphi \in \Delta$. म्हणून
+$\Diamond\varphi \in \Gamma$
+असेल तेव्हा आणि तेव्हाच
+$\Diamond\Delta \subseteq \Gamma$
+आणि $\varphi \in \Delta$ असा एखादा
+संपूर्ण $\Sigma$-सुसंगत $\Delta$
+असतो.
+\end{proof}
+
+
+
+\begin{prob}
+  $\Gamma$ हा संपूर्ण $\Sigma$-सुसंगत
+  असेल, तर पुढील विधान दाखवा:
+  $\Diamond \varphi \in \Gamma$
+    असेल तेव्हा आणि तेव्हाच
+    $\Box^{-1}\Gamma \subseteq \Delta$
+    आणि $\varphi \in \Delta$ असा संपूर्ण
+    $\Sigma$-सुसंगत $\Delta$ असतो.
+  \emph{हे
+    \ref{nml:com:mod:lem:box-iff-diamond}
+    न वापरता करा}.
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{कॅनॉनिकल प्रतिमाने}\label{nml:com:cmd:sec}
+
+सुसंगत मोडल प्रणाली~$\Sigma$ साठीचे \emph{कॅनॉनिकल प्रतिमान}
+हे विशिष्ट प्रतिमान~$\mModel{M^\Sigma}$ आहे; त्याची
+जगे म्हणजे सर्व संपूर्ण $\Sigma$-सुसंगत संच.
+त्याचा प्राप्यता संबंध~$R^\Sigma$ आणि
+मूल्यांकन~$V^\Sigma$ यांची व्याख्या अशी केली
+जाते की जग~$\Delta$ येथे सत्य असलेली
+सूत्रे म्हणजे नेमकी~$\Delta$ मध्ये
+असलेली सूत्रे असतात.
+
+\begin{defn}
+  $\Sigma$ हे सुसंगत सामान्य मोडल तर्कशास्त्र असू द्या,
+  म्हणजे $\Sigma \Proves/ \lfalse$.
+  $\Sigma$ साठीचे \emph{कॅनॉनिकल प्रतिमान}
+  म्हणजे $\mModel{M}^\Sigma = \tuple{W^\Sigma, R^\Sigma,
+    V^\Sigma}$, जेथे:
+  \begin{enumerate}
+  \item $W^\Sigma = \Setabs{ \Delta }{\Delta \text{
+      हा संपूर्ण $\Sigma$-सुसंगत आहे} }$.
+  \item $R^\Sigma \Delta\Delta'$ असेल तेव्हा आणि
+    तेव्हाच $\Box^{-1}\Delta \subseteq
+      \Delta'$.
+  \item $V^\Sigma(p) = \Setabs{\Delta \in W^\Sigma}{p \in \Delta}$.
+  \end{enumerate}
+  सुसंगततेमुळे रिकामा संच $\Sigma$-सुसंगत आहे.
+  \ref{nml:com:lin:thm:lindenbaum} नुसार त्याचा संपूर्ण
+  $\Sigma$-सुसंगत विस्तार मिळतो; म्हणून $W^\Sigma$ रिकामा नाही.
+\end{defn}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सत्यता पूर्वप्रमेय}\label{nml:com:tru:sec}
+
+कॅनॉनिकल प्रतिमान~$\mModel{M^\Sigma}$ ची व्याख्या
+अशी केली आहे की $\mSat{M^\Sigma}{\varphi}[\Delta]$
+असेल तेव्हा आणि तेव्हाच $\varphi \in \Delta$.
+विधानीय चले साठी
+$V^\Sigma$ ची व्याख्याच हे थेट दाखवते.
+मात्र ही समतुल्यता सर्व सूत्रे साठी
+खरी आहे याची पडताळणी करावी लागेल.
+हे आपण विगमनाने करू. विगमन-पायरीत
+विधानीय कारक असलेल्या सूत्रे साठी
+समतुल्यता सिद्ध करावी लागते (येथे
+\ref{nml:com:ccs:prop:ccs-properties} वापरतो),
+तसेच मोडल कारक असलेल्या सूत्रांसाठीही
+(येथे \ref{nml:com:mod:sec} मधील निष्कर्ष वापरतो).
+
+\begin{prop}[सत्यता पूर्वप्रमेय]
+  \label{nml:com:tru:prop:truthlemma}
+  $\Sigma$ हे सुसंगत सामान्य मोडल तर्कशास्त्र असू द्या.
+  प्रत्येक $\Delta \in W^\Sigma$ आणि प्रत्येक सूत्र~$\varphi$ साठी
+  $\mSat{M^\Sigma}{\varphi}[\Delta]$ असेल तेव्हा
+  आणि तेव्हाच $\varphi \in \Delta$.
+\end{prop}
+
+\begin{proof}
+  $\varphi$ च्या रचनेवर विगमन करू.
+  \begin{enumerate}
+    \item \indcase{\varphi}{\lfalse}{$\mSat/{M^\Sigma}{\lfalse}[\Delta]$
+        हे \ref{nml:syn:trw:defn:mmodels} नुसार, आणि
+        $\lfalse \notin \Delta$ हे
+        \ref{nml:com:ccs:prop:ccs-properties}\ref{nml:com:ccs:prop:ccs-lfalse}
+        नुसार.}
+
+    \item \indcase{\varphi}{\ltrue}{$\mSat{M^\Sigma}{\ltrue}[\Delta]$
+        हे \ref{nml:syn:trw:defn:mmodels} नुसार, आणि
+        $\ltrue \in \Delta$ हे
+        \ref{nml:com:ccs:prop:ccs-properties}\ref{nml:com:ccs:prop:ccs-ltrue}
+        नुसार.}
+
+    \item \indcase{\varphi}{p}{$\mSat{M^\Sigma}{p}[\Delta]$
+      असेल तेव्हा आणि तेव्हाच $\Delta \in
+      V^\Sigma(p)$, हे \ref{nml:syn:trw:defn:mmodels}
+      नुसार. तसेच $\Delta
+      \in V^\Sigma(p)$ असेल तेव्हा आणि तेव्हाच
+      $p \in \Delta$, हे~$V^\Sigma$ च्या
+      व्याख्येनुसार.}
+
+    \item \indcase{\varphi}{\lnot \psi}{
+        $\mSat{M^\Sigma}{\lnot \psi}[\Delta]$
+          असेल तेव्हा आणि तेव्हाच
+          $\mSat/{M^\Sigma}{\psi}[\Delta]$
+          (\ref{nml:syn:trw:defn:mmodels} नुसार);
+          असेल तेव्हा आणि तेव्हाच $\psi \notin \Delta$
+          (विगमन गृहीतकानुसार);
+          असेल तेव्हा आणि तेव्हाच
+          $\lnot \psi \in \Delta$
+          (\ref{nml:com:ccs:prop:ccs-properties}\ref{nml:com:ccs:prop:ccs-lnot}
+          नुसार).}
+
+    \item \indcase{\varphi}{\psi \land \chi}{
+        $\mSat{M^\Sigma}{\psi \land
+            \chi}[\Delta]$ असेल तेव्हा आणि तेव्हाच
+          $\mSat{M^\Sigma}{\psi}[\Delta]$ आणि
+          $\mSat{M^\Sigma}{\chi}[\Delta]$
+          (\ref{nml:syn:trw:defn:mmodels} नुसार);
+          असेल तेव्हा आणि तेव्हाच $\psi \in \Delta$
+          आणि $\chi \in \Delta$
+          (विगमन गृहीतकानुसार);
+          असेल तेव्हा आणि तेव्हाच $\psi \land \chi \in
+          \Delta$
+          (\ref{nml:com:ccs:prop:ccs-properties}\ref{nml:com:ccs:prop:ccs-land}
+          नुसार).}
+
+    \item \indcase{\varphi}{\psi \lor \chi}{
+        $\mSat{M^\Sigma}{\psi \lor
+            \chi}[\Delta]$ असेल तेव्हा आणि तेव्हाच
+          $\mSat{M^\Sigma}{\psi}[\Delta]$ किंवा
+          $\mSat{M^\Sigma}{\chi}[\Delta]$
+          (\ref{nml:syn:trw:defn:mmodels} नुसार);
+          असेल तेव्हा आणि तेव्हाच $\psi \in \Delta$
+          किंवा $\chi \in \Delta$
+          (विगमन गृहीतकानुसार);
+          असेल तेव्हा आणि तेव्हाच $\psi \lor \chi \in
+          \Delta$
+          (\ref{nml:com:ccs:prop:ccs-properties}\ref{nml:com:ccs:prop:ccs-lor}
+          नुसार).}
+
+    \item \indcase{\varphi}{\psi \lif \chi}{
+        $\mSat{M^\Sigma}{\psi \lif
+            \chi}[\Delta]$ असेल तेव्हा आणि तेव्हाच
+          $\mSat/{M^\Sigma}{\psi}[\Delta]$ किंवा
+          $\mSat{M^\Sigma}{\chi}[\Delta]$
+          (\ref{nml:syn:trw:defn:mmodels} नुसार);
+          असेल तेव्हा आणि तेव्हाच $\psi \notin \Delta$
+          किंवा $\chi \in \Delta$
+          (विगमन गृहीतकानुसार);
+          असेल तेव्हा आणि तेव्हाच $\psi \lif \chi
+          \in \Delta$
+          (\ref{nml:com:ccs:prop:ccs-properties}\ref{nml:com:ccs:prop:ccs-lif}
+          नुसार).}
+
+    \item \indcase{\varphi}{\psi \liff \chi}{
+        $\mSat{M^\Sigma}{\psi \liff
+            \chi}[\Delta]$ असेल तेव्हा आणि तेव्हाच
+          $\mSat{M^\Sigma}{\psi}[\Delta]$ आणि
+          $\mSat{M^\Sigma}{\chi}[\Delta]$
+          ही दोन्ही, किंवा
+          $\mSat/{M^\Sigma}{\psi}[\Delta]$ आणि
+          $\mSat/{M^\Sigma}{\chi}[\Delta]$
+          ही दोन्ही
+          (\ref{nml:syn:trw:defn:mmodels} नुसार);
+          असेल तेव्हा आणि तेव्हाच $\psi \in \Delta$
+          आणि $\chi \in \Delta$ ही दोन्ही, किंवा
+          $\psi \notin \Delta$ आणि $\chi \notin
+          \Delta$ ही दोन्ही
+          (विगमन गृहीतकानुसार);
+          असेल तेव्हा आणि तेव्हाच $\psi \liff \chi \in
+          \Delta$
+          (\ref{nml:com:ccs:prop:ccs-properties}\ref{nml:com:ccs:prop:ccs-liff}
+          नुसार).}
+
+    \item \indcase{\varphi}{\Box \psi}{
+        प्रथम
+          $\mSat{M^\Sigma}{\Box \psi}[\Delta]$
+          असे समजा.
+          \ref{nml:syn:trw:defn:mmodels} नुसार
+          $R^\Sigma \Delta\Delta'$ असलेल्या
+          प्रत्येक $\Delta'$ साठी
+          $\mSat{M^\Sigma}{\psi}[\Delta']$.
+          विगमन गृहीतकानुसार
+          $R^\Sigma \Delta\Delta'$ असलेल्या
+          प्रत्येक $\Delta'$ साठी $\psi \in
+          \Delta'$. $R^\Sigma$ च्या
+          व्याख्येनुसार $\Box^{-1} \Delta
+          \subseteq \Delta'$ असलेल्या प्रत्येक
+          $\Delta'$ साठी $\psi \in \Delta'$.
+          \ref{nml:com:mod:prop:box} नुसार
+          $\Box \psi \in \Delta$.
+
+          आता $\Box \psi \in \Delta$ असे समजा.
+          $R^\Sigma \Delta\Delta'$ म्हणजेच
+          $\Box^{-1}\Delta \subseteq \Delta'$
+          असलेला कोणताही $\Delta' \in W^\Sigma$
+          घ्या. $\Box \psi \in \Delta$
+          असल्याने $\psi \in \Box^{-1} \Delta$.
+          परिणामी $\psi \in \Delta'$.
+          विगमन गृहीतकानुसार
+          $\mSat{M^\Sigma}{\psi}[\Delta']$.
+          $R^\Sigma \Delta\Delta'$ असलेला
+          $\Delta'$ स्वेच्छ असल्याने
+          $R^\Sigma \Delta\Delta'$ असलेल्या
+          सर्व $\Delta' \in W^\Sigma$ साठी
+          $\mSat{M^\Sigma}{\psi}[\Delta']$.
+          \ref{nml:syn:trw:defn:mmodels} नुसार
+          $\mSat{M^\Sigma}{\Box
+            \psi}[\Delta]$.}
+
+    \item \indcase{\varphi}{\Diamond \psi}{
+        प्रथम
+          $\mSat{M^\Sigma}{\Diamond \psi}[\Delta]$
+          असे समजा.
+          \ref{nml:syn:trw:defn:mmodels} नुसार
+          $R^\Sigma \Delta\Delta'$ असलेल्या
+          एखाद्या $\Delta'$ साठी
+          $\mSat{M^\Sigma}{\psi}[\Delta']$.
+          विगमन गृहीतकानुसार
+          $R^\Sigma \Delta\Delta'$ असलेल्या
+          एखाद्या $\Delta'$ साठी
+          $\psi \in \Delta'$.
+          $R^\Sigma$ च्या व्याख्येनुसार,
+          $\Box^{-1} \Delta
+            \subseteq \Delta'$ असलेल्या
+            एखाद्या $\Delta'$ साठी
+            $\psi \in \Delta'$.
+            \ref{nml:com:mod:lem:box-iff-diamond} नुसार,
+          $\Diamond \Delta' \subseteq \Delta$
+          असलेल्या एखाद्या $\Delta'$ साठी
+          $\psi \in \Delta'$.
+          $\psi \in \Delta'$ असल्याने
+          $\Diamond \psi \in \Diamond
+          \Delta'$; म्हणून
+          $\Diamond \psi \in \Delta$.
+
+          आता $\Diamond \psi \in \Delta$
+          असे समजा. \ref{nml:com:mod:prop:diamond}
+          नुसार $\Diamond \Delta' \subseteq
+          \Delta$ आणि $\psi \in \Delta'$
+          असलेला संपूर्ण $\Sigma$-सुसंगत
+          $\Delta' \in W^\Sigma$ असतो.
+          \ref{nml:com:mod:lem:box-iff-diamond}
+            नुसार $\Box^{-1}
+            \Delta \subseteq \Delta'$
+            आणि $\psi \in \Delta'$ असलेला
+            $\Delta' \in W^\Sigma$ असतो.
+          $R^\Sigma$ च्या व्याख्येनुसार
+          $R^\Sigma \Delta\Delta'$;
+          म्हणून $R^\Sigma
+          \Delta\Delta'$ आणि
+          $\psi \in \Delta'$ असलेला
+          $\Delta' \in W^\Sigma$ असतो.
+          विगमन गृहीतकानुसार $\mSat{M^\Sigma}{\psi}[\Delta']$.
+          \ref{nml:syn:trw:defn:mmodels}
+          नुसार $\mSat{M^\Sigma}{\Diamond
+            \psi}[\Delta]$.}
+  \end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{\Log{K} चे निर्धारण आणि संपूर्णता}\label{nml:com:cmk:sec}
+
+आता संपूर्णता सिद्ध करण्यासाठी कॅनॉनिकल प्रतिमान
+वापरता येईल. $\Sigma$ साठीच्या कॅनॉनिकल
+प्रतिमानात सत्य असलेली सूत्रे म्हणजे
+नेमकी $\Sigma$-निष्पन्न करता येण्याजोगे सूत्रे असतात;
+या तथ्यावरून संपूर्णता मिळते. हा गुणधर्म
+असलेले प्रतिमान~$\Sigma$ चे
+\emph{निर्धारण करते} असे म्हणतात.
+
+\begin{defn}
+  सर्व सूत्रांपैकी प्रत्येक~$\varphi$ साठी
+  $\mSat{M}{\varphi}$ असेल तेव्हा आणि तेव्हाच
+  $\Sigma \Proves \varphi$ असेल, तर
+  प्रतिमान~$\mModel{M}$ हे सामान्य मोडल
+  तर्कशास्त्र~$\Sigma$ चे
+  \emph{निर्धारण करते}.
+\end{defn}
+
+\begin{thm}[निर्धारण]\label{nml:com:cmk:thm:determination}
+   $\Sigma$ हे सुसंगत सामान्य मोडल तर्कशास्त्र असू द्या. मग
+   $\mSat{M^\Sigma}{\varphi}$ असेल तेव्हा
+   आणि तेव्हाच $\Sigma \Proves \varphi$.
+\end{thm}
+
+\begin{proof}
+  $\mSat{M^\Sigma}{\varphi}$ असेल, तर प्रत्येक
+  संपूर्ण $\Sigma$-सुसंगत $\Delta$ साठी
+  $\mSat{M^\Sigma}{\varphi}[\Delta]$.
+  म्हणून सत्यता पूर्वप्रमेयानुसार प्रत्येक
+  संपूर्ण $\Sigma$-सुसंगत $\Delta$ साठी
+  $\varphi \in \Delta$. त्यामुळे
+  \ref{nml:com:lin:cor:provability-characterization}
+  वरून ($\Gamma = \emptyset$ घेऊन)
+  $\Sigma \Proves \varphi$.
+
+  उलट $\Sigma \Proves \varphi$ असेल, तर
+  \ref{nml:com:ccs:prop:ccs-properties}\ref{nml:com:ccs:prop:ccs-closed}
+  नुसार प्रत्येक संपूर्ण $\Sigma$-सुसंगत
+  $\Delta$ मध्ये~$\varphi$ असते. म्हणून
+  सत्यता पूर्वप्रमेयानुसार प्रत्येक~$\Delta \in
+  W^\Sigma$ साठी
+  $\mSat{M^\Sigma}{\varphi}[\Delta]$;
+  म्हणजे $\mSat{M^\Sigma}{\varphi}$.
+\end{proof}
+
+निर्दोषतेनुसार \Log{K} सुसंगत आहे, कारण असत्य सूत्र वैध नाही.
+\Log{K} साठीचे कॅनॉनिकल प्रतिमान~\Log{K}
+चे निर्धारण करत असल्याने
+\Log{K} ची संपूर्णता लगेच निष्पन्नतेने मिळते:
+
+\begin{cor}\label{nml:com:cmk:cor:Kcomplete}
+  मूलभूत मोडल तर्कशास्त्र~\Log{K}
+सर्व प्रतिमानांच्या वर्गाच्या सापेक्ष
+संपूर्ण आहे; म्हणजे
+$\Entails \varphi$ असेल, तर $\Log{K}
+\Proves \varphi$.
+\end{cor}
+
+\begin{proof}
+  प्रतिपरिवर्तनाने: $\Log{K} \Proves/ \varphi$
+  असेल, तर निर्धारणावरून
+  $\mSat/{M^{\Log{K}}}{\varphi}$;
+  म्हणून~$\varphi$ वैध नाही.
+\end{proof}
+
+सर्वसाधारणपणे एखादी प्रणाली~$\Sigma$
+प्रतिमानांच्या एखाद्या वर्गाच्या सापेक्ष
+संपूर्ण आहे हे सिद्ध करण्यासाठी
+केवळ निर्धारण पुरेसे नसते. उदाहरणार्थ,
+\Log{KTB4} ची परावर्ती, सममित आणि
+संक्रमक प्रतिमानांच्या वर्गाच्या सापेक्ष
+संपूर्णता विचारात घ्या. प्रणाली~$\Sigma$
+साठीच्या कॅनॉनिकल प्रतिमानातून ही संपूर्णता सिद्ध करायची असेल,
+तर ते प्रतिमान त्या वर्गातील सदस्य आहे हेही दाखवावे लागते.
+कॅनॉनिकल प्रतिमानाच्या रचनेवरून हे
+स्पष्टपणे मिळत नाही---काही वेळा
+तर ते खरेही नसते!
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{चौकट-संपूर्णता}\label{nml:com:fra:sec}
+
+दिलेल्या तर्कशास्त्राच्या कॅनॉनिकल प्रतिमानाला
+संबंधित चौकट-गुणधर्म आहे हे दाखवल्यावर
+\Log{K} साठीचे संपूर्णता प्रमेय इतर
+मोडल प्रणालींनाही लागू करता येते.
+
+\begin{thm}\label{nml:com:fra:thm:completeframeprops}
+  सुसंगत सामान्य मोडल तर्कशास्त्र~$\Sigma$ मध्ये
+  \ref{nml:com:fra:tab:correspondencetable} च्या
+  डाव्या बाजूच्या सूत्रांपैकी एखादे असेल,
+  तर~$\Sigma$ साठीच्या कॅनॉनिकल प्रतिमानाला
+  उजव्या बाजूचा संबंधित गुणधर्म असतो.
+\end{thm}
+
+\begin{table}[htp]
+  \centering
+    \begin{tabular}{| l || l |}
+      \hline
+      \emph{$\Sigma$ मध्ये \dots असेल, तर} & \emph{$\Sigma$ साठीचे
+        कॅनॉनिकल प्रतिमान \dots असते:} \\
+      \hline \hline
+      \Ax{D}:\;\; $\Box\varphi \lif \Diamond \varphi$ & \quad सर्वत्र उत्तरवर्ती; \\
+      \hline
+      \Ax{T}:\;\; $\Box\varphi \lif \varphi$ &\quad  परावर्ती;\\
+      \hline
+      \Ax{B}: \;\;$\varphi \lif \Box\Diamond\varphi$ &\quad  सममित; \\
+      \hline
+      \Ax{4}: \;\; $\Box\varphi \lif \Box\Box\varphi$ & \quad संक्रमक; \\
+      \hline
+      \Ax{5}: \;\; $\Diamond \varphi \lif \Box\Diamond\varphi$& \quad युक्लिडी.\\
+      \hline
+    \end{tabular}
+    \caption{मूलभूत अनुरूपता तथ्ये.}
+    \label{nml:com:fra:tab:correspondencetable}
+\end{table}
+
+\begin{proof}
+  यांपैकी प्रत्येक प्रकरण स्वतंत्रपणे पाहू.
+
+  $\Sigma$ मध्ये \Ax{D} आहे असे समजा आणि
+  $\Delta \in W^\Sigma$ घ्या.
+  $R^\Sigma \Delta\Delta'$ असा
+  $\Delta'$ अस्तित्वात आहे हे दाखवायचे आहे.
+  त्यासाठी $\Box^{-1}\Delta$ हा
+  $\Sigma$-सुसंगत आहे हे दाखवणे पुरेसे;
+  कारण मग लिंडेनबाउमच्या पूर्वप्रमेयानुसार
+  त्याचा विस्तार असलेला संपूर्ण
+  $\Sigma$-सुसंगत संच
+  $\Delta' \supseteq \Box^{-1}\Delta$
+  असतो आणि $R^\Sigma$ च्या व्याख्येनुसार
+
+  $R^\Sigma \Delta\Delta'$.
+  म्हणून व्याघातासाठी $\Box^{-1}\Delta$
+  हा $\Sigma$-सुसंगत \emph{नाही}
+  असे समजा; म्हणजे
+  $\Box^{-1}\Delta \Proves[\Sigma] \lfalse$.
+  \ref{nml:com:mod:lem:box2} नुसार
+  $\Delta \Proves[\Sigma] \Box\lfalse$;
+  आणि $\Sigma$ मध्ये \Ax{D} असल्याने
+  $\Delta \Proves[\Sigma] \Diamond\lfalse$
+  हेही मिळते. पण $\Sigma$ सामान्य असल्याने
+  $\Sigma \Proves \lnot\Diamond \lfalse$
+  (\ref{nml:prf:nor:prop:notDiamondBot});
+  म्हणून $\Delta
+  \Proves[\Sigma] \lnot\Diamond \lfalse$
+  हेही मिळते. हा~$\Delta$ च्या
+  सुसंगततेशी व्याघात आहे.
+
+  आता $\Sigma$ मध्ये \Ax{T} आहे
+  असे समजा आणि $\Delta \in W^\Sigma$
+  घ्या. $R^\Sigma \Delta\Delta$
+  दाखवायचे आहे; म्हणजेच
+
+  $\Box^{-1}\Delta \subseteq \Delta$.
+  पण $\Box\varphi \in \Delta$ असेल,
+  तर \Ax{T} नुसार $\varphi \in \Delta$;
+  हेच अपेक्षित होते.
+
+  आता $\Sigma$ मध्ये \Ax{B} आहे
+  असे समजा आणि $\Delta$, $\Delta' \in
+  W^\Sigma$ साठी $R^\Sigma
+  \Delta\Delta'$ असे धरा.
+  $R^\Sigma \Delta'\Delta$
+  दाखवायचे आहे; म्हणजे
+  $\Box^{-1}\Delta'
+    \subseteq \Delta$.
+    \ref{nml:com:mod:lem:box-iff-diamond} नुसार
+    ही अट पुढील अटीशी समतुल्य आहे:
+  $\Diamond\Delta \subseteq \Delta'$.
+  म्हणून $\varphi \in \Delta$ असे
+  समजा. \Ax{B} नुसार
+  $\Box\Diamond\varphi \in \Delta$.
+  $R^\Sigma \Delta\Delta'$ या
+  गृहीतकावरून
+  $\Box^{-1}\Delta \subseteq \Delta'$;
+  म्हणून आवश्यकतेनुसार
+  $\Diamond\varphi \in \Delta'$.
+
+  आता $\Sigma$ मध्ये \Ax{4} आहे असे
+  समजा आणि $R^\Sigma \Delta_1\Delta_2$
+  व $R^\Sigma \Delta_2\Delta_3$
+  असे धरा. $R^\Sigma
+  \Delta_1\Delta_3$ दाखवायचे आहे.
+  गृहीतकावरून
+  $\Box^{-1}\Delta_1 \subseteq \Delta_2$
+  आणि $\Box^{-1}\Delta_2 \subseteq \Delta_3$
+  या दोन्ही अटी मिळतात.
+  $R^\Sigma \Delta_1\Delta_3$
+  साठी $\Box^{-1}\Delta_1
+  \subseteq \Delta_3$ दाखवणे पुरेसे.
+  म्हणून $\psi \in \Box^{-1}\Delta_1$
+  घ्या; म्हणजे $\Box\psi \in \Delta_1$.
+  \Ax{4} नुसार $\Box\Box\psi \in
+  \Delta_1$ हेही मिळते. गृहीतकांवरून
+  आधी $\Box\psi \in \Delta_2$
+  आणि नंतर $\psi \in \Delta_3$,
+  हेच अपेक्षित होते.
+
+  आता $\Sigma$ मध्ये \Ax{5} आहे
+  असे समजा आणि $R^\Sigma
+  \Delta_1\Delta_2$ व
+  $R^\Sigma \Delta_1\Delta_3$
+  असे धरा. $R^\Sigma
+  \Delta_2\Delta_3$ दाखवायचे आहे.
+  पहिल्या गृहीतकावरून
+  $\Box^{-1}\Delta_1 \subseteq \Delta_2$
+
+  मिळते; दुसरे गृहीतक
+  $\Diamond\Delta_3 \subseteq \Delta_1$
+  याच्याशी समतुल्य आहे
+  \ref{nml:com:mod:lem:box-iff-diamond} नुसार.
+  $R^\Sigma \Delta_2\Delta_3$
+  दाखवण्यासाठी
+    \ref{nml:com:mod:lem:box-iff-diamond} नुसार,
+    पुढील अट दाखवणे पुरेसे:
+  $\Diamond\Delta_3 \subseteq \Delta_2$.
+  म्हणून $\Diamond\varphi \in
+  \Diamond\Delta_3$ घ्या;
+  म्हणजे $\varphi \in \Delta_3$.
+  दुसऱ्या गृहीतकानुसार
+  $\Diamond\varphi \in \Delta_1$;
+  \Ax{5} नुसार
+  $\Box\Diamond\varphi \in \Delta_1$
+  हेही मिळते. आता पहिल्या
+  गृहीतकावरून $\Diamond\varphi \in
+  \Delta_2$, हेच अपेक्षित होते.
+  \end{proof}
+
+या निष्कर्षांवरून अनेक प्रणालींसाठी
+संपूर्णतेची निष्पन्नता मिळते.
+उदाहरणार्थ, $\Log{S5} = \Log{KT5} =
+\Log{KTB4}$ हे सर्व परावर्ती युक्लिडी
+प्रतिमानांच्या वर्गाच्या सापेक्ष संपूर्ण
+आहे, हे आपल्याला माहीत आहे.
+हा वर्ग सर्व परावर्ती, सममित आणि
+संक्रमक प्रतिमानांच्या वर्गाइतकाच आहे.
+
+\begin{thm}\label{nml:com:fra:thm:generaldet}
+  $\mClass{C}_\Ax{D}$,
+  $\mClass{C}_\Ax{T}$,
+  $\mClass{C}_\Ax{B}$,
+  $\mClass{C}_\Ax{4}$ आणि
+  $\mClass{C}_\Ax{5}$
+  हे अनुक्रमे सर्व सर्वत्र उत्तरवर्ती,
+  परावर्ती, सममित, संक्रमक आणि
+  युक्लिडी प्रतिमानांचे वर्ग असू द्या.
+  मग \Ax{D}, \Ax{T}, \Ax{B},
+  \Ax{4} आणि \Ax{5} यांमधील
+  कोणत्याही योजना $\varphi_1$, \dots, $\varphi_n$
+  साठी प्रणाली
+  $\Log{K}\varphi_1 \dots \varphi_n$
+  हिचे निर्धारण प्रतिमानांचा वर्ग
+  $\mClass{C} = \mClass{C}_{\varphi_1} \cap \dots
+  \cap \mClass{C}_{\varphi_n}$ करतो.
+\end{thm}
+
+\begin{prop}
+  $\Sigma$ हे सुसंगत सामान्य मोडल तर्कशास्त्र
+  असू द्या. मग:
+  \begin{enumerate}
+  \item\label{nml:com:fra:prop:anotherfive-a}
+    $\Sigma$ मध्ये $\Diamond\varphi \lif \Box
+    \varphi$ ही योजना असेल, तर~$\Sigma$
+    साठीचे कॅनॉनिकल प्रतिमान
+    आंशिक फलनीय असते.
+  \item $\Sigma$ मध्ये
+    $\Diamond\varphi \liff \Box
+    \varphi$ ही योजना असेल, तर~$\Sigma$
+    साठीचे कॅनॉनिकल प्रतिमान
+    फलनीय असते.
+  \item $\Sigma$ मध्ये
+    $\Box\Box\varphi \lif \Box
+    \varphi$ ही योजना असेल, तर~$\Sigma$
+    साठीचे कॅनॉनिकल प्रतिमान
+    दुर्बल सघन असते.
+  \end{enumerate}
+  (या चौकट-गुणधर्मांच्या व्याख्यांसाठी
+  \ref{nml:frd:acc:tab:anotherfive} पाहा.)
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $\Sigma$ मध्ये
+    $\Diamond \varphi \lif \Box \varphi$
+    ही योजना आहे असे समजा.
+    $R^\Sigma$ आंशिक फलनीय आहे हे
+    दाखवण्यासाठी कोणत्याही
+    $\Delta_1$, $\Delta_2$,
+    $\Delta_3 \in W^\Sigma$
+    साठी $R^\Sigma \Delta_1\Delta_2$
+    आणि $R^\Sigma \Delta_1\Delta_3$
+    असतील, तर $\Delta_2=\Delta_3$
+    हे सिद्ध करायचे आहे.
+    $R^\Sigma \Delta_1\Delta_2$
+    असल्याने $\Box^{-1}\Delta_1
+    \subseteq \Delta_2$;
+    आणि $R^\Sigma \Delta_1\Delta_3$
+    असल्याने $\Box^{-1}\Delta_1
+    \subseteq \Delta_3$
+    .
+    $\Delta_2=\Delta_3$ साठी
+    $\Delta_2 \subseteq \Delta_3$
+    आणि $\Delta_3 \subseteq \Delta_2$
+    हे दोन्ही समावेश सिद्ध करणे पुरेसे.
+    पहिल्या समावेशासाठी
+    $\varphi \in \Delta_2$ घ्या;
+    मग $\Diamond\varphi \in \Delta_1$.
+    या योजनेवरून आणि~$\Delta_1$ च्या
+    निगामी बंदतेवरून
+    $\Box\varphi \in \Delta_1$ हेही मिळते.
+    $R^\Sigma \Delta_1\Delta_3$
+    या गृहीतकावरून $\varphi \in \Delta_3$.
+    दुसरा समावेशही तसाच सिद्ध होतो.
+
+  \item $\Diamond\varphi \liff \Box\varphi$ या योजनेतून
+    $\Box\varphi \lif \Diamond\varphi$, म्हणजे \Ax{D}, मिळते.
+    म्हणून हे \ref{nml:com:fra:prop:anotherfive-a}
+    आणि \ref{nml:com:fra:thm:completeframeprops}
+    मधील सर्वत्र उत्तरवर्तित्वाच्या
+    सिद्धतेवरून लगेच मिळते.
+
+  \item $\Sigma$ मध्ये
+    $\Box\Box\varphi \lif \Box\varphi$
+    ही योजना आहे असे समजा.
+    $R^\Sigma$ दुर्बल सघन आहे हे
+    दाखवण्यासाठी $R^\Sigma
+    \Delta_1\Delta_2$ घ्या.
+    $R^\Sigma \Delta_1\Delta_3$
+    आणि $R^\Sigma \Delta_3\Delta_2$
+    असा संपूर्ण $\Sigma$-सुसंगत
+    संच~$\Delta_3$ अस्तित्वात आहे
+    हे दाखवायचे आहे. असे ठेवू:
+    \[    \Gamma = \Box^{-1}\Delta_1 \cup \Diamond\Delta_2.
+    \]
+    $\Gamma$ हा $\Sigma$-सुसंगत
+    आहे हे दाखवणे पुरेसे. मग
+    लिंडेनबाउमच्या पूर्वप्रमेयानुसार
+    त्याचा विस्तार असा संपूर्ण
+    $\Sigma$-सुसंगत संच~$\Delta_3$
+    मिळतो की $\Box^{-1}\Delta_1
+    \subseteq \Delta_3$ आणि
+    $\Diamond\Delta_2 \subseteq \Delta_3$.
+    म्हणजे $R^\Sigma \Delta_1\Delta_3$
+
+    आणि $R^\Sigma \Delta_3\Delta_2$
+    (
+      \ref{nml:com:mod:lem:box-iff-diamond} नुसार).
+
+    व्याघातासाठी $\Gamma$ सुसंगत
+    नाही असे समजा. $\Box^{-1}\Delta_1\subseteq\Delta_2$
+    आणि $\Delta_2$ सुसंगत असल्याने फक्त पहिल्या संचातील
+    गृहीतके वापरून व्याघात मिळू शकत नाही. म्हणून
+    पुढील finite witness मध्ये $n\geq0$ आणि $m\geq1$ निवडता येतात.
+    मग $\Box\varphi_1$, \dots,
+    $\Box\varphi_n \in \Delta_1$
+    आणि $\psi_1$, \dots,~$\psi_m \in \Delta_2$
+    अशी सूत्रे असतात की
+    \[\varphi_1, \dots,
+    \varphi_n, \Diamond\psi_1, \dots, \Diamond\psi_m \Proves[\Sigma]
+    \lfalse.\]
+    $\Diamond (\psi_1 \land \dots \land \psi_m) \to
+    (\Diamond\psi_1 \land \dots \land \Diamond\psi_m)$
+    हे प्रत्येक सामान्य मोडल तर्कशास्त्रात
+    निष्पन्न करता येण्याजोगे असल्याने
+    पुढीलप्रमाणे युक्तिवाद करून
+    आपण~$\Delta_2$ च्या
+    सुसंगततेशी व्याघात मिळवतो:
+    \begin{align*}
+      \varphi_1, \dots, \varphi_n, & \Diamond\psi_1, \dots,
+      \Diamond\psi_m \Proves[\Sigma] \lfalse \\
+      \varphi_1, \dots,\varphi_n & \Proves[\Sigma] (\Diamond\psi_1 \land
+      \dots \land \Diamond\psi_m) \lif \lfalse\\
+      & \qquad\text{निगमन प्रमेयानुसार}\\
+      & \qquad\text{\ref{nml:prf:prp:prop:derivabilityfacts}\ref{nml:prf:prp:prop:derivabilityfacts-deduction}, आणि \Taut} \\
+      \varphi_1, \dots,\varphi_n & \Proves[\Sigma]
+      \Diamond(\psi_1 \land
+      \dots \land \psi_m) \lif \lfalse\\
+      & \qquad \text{$\Sigma$ सामान्य असल्याने} \\
+      \varphi_1, \dots,\varphi_n & \Proves[\Sigma]
+      \lnot\Diamond (\psi_1 \land \dots \land \psi_m)\\
+      & \qquad\text{\PL नुसार} \\
+      \varphi_1, \dots,\varphi_n & \Proves[\Sigma]
+      \Box\lnot (\psi_1 \land \dots \land \psi_m)\\
+      & \qquad\text{$\lnot\Diamond$ साठी $\Box\lnot$} \\
+      \Box\varphi_1, \dots,\Box\varphi_n
+      & \Proves[\Sigma] \Box\Box \lnot (\psi_1 \land \dots \land \psi_m)\\
+      & \qquad\text{\ref{nml:com:mod:lem:box1} नुसार} \\
+      \Box\varphi_1, \dots,\Box\varphi_n
+      & \Proves[\Sigma]
+      \Box\lnot (\psi_1 \land \dots \land \psi_m)\\
+      &\qquad\text{$\Box\Box\varphi \lif \Box\varphi$ योजनेनुसार} \\
+      \Delta_1 & \Proves[\Sigma]
+      \Box\lnot (\psi_1 \land \dots \land \psi_m)\\
+      &\qquad\text{एकस्वनिकतेनुसार, \ref{nml:prf:prp:prop:derivabilityfacts}\ref{nml:prf:prp:prop:derivabilityfacts-monotonicity}} \\
+      & \Box\lnot (\psi_1 \land \dots \land \psi_m) \in \Delta_1\\
+      &\qquad\text{निगामी बंदतेनुसार}; \\
+      & \lnot (\psi_1 \land \dots \land \psi_m) \in \Delta_2\\
+      &\qquad \text{कारण }
+      R^\Sigma \Delta_1\Delta_2.
+    \end{align*}
+  \end{enumerate}
+\end{proof}
+
+या उदाहरणांवरून प्रत्येक मोडल
+प्रणाली~$\Sigma$ \emph{संपूर्ण}
+असेल असे वाटू शकते: म्हणजे~$\Sigma$
+ची सर्व प्रमेये ज्या प्रत्येक चौकटीत
+वैध आहेत, त्या प्रत्येक चौकटीत
+वैध असलेले प्रत्येक सूत्रही
+ती प्रणाली सिद्ध करत असेल.
+पण दुर्दैवाने या अर्थाने संपूर्ण
+नसलेल्या अनेक प्रणाली आहेत.
+
+
+

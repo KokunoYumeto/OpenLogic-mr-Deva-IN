@@ -1,0 +1,15 @@
+{
+  "schema": "factorial-source-workflow-repair/1",
+  "date": "2026-09-30",
+  "tool": "tools/prepare_complete.py",
+  "tool_sha256": "810a960977ef6c5d2f47c499cc5a5bb6e7d2e834ca0285770035c82581d9f4b1",
+  "related_source_issue": "OLINC-126",
+  "source_correction": "SOL6-A132",
+  "target_path": "mr/content/lambda-calculus/lambda-definability/fixpoints.tex",
+  "target_sha256": "e41b77c50b5caadf1faa08bf2676611477753a1b1ad1e8dccc6b1f335d648ecd",
+  "reader_sha256": "4b19b9337700ab28feb9cf2bd9e2a56c2c5d50ffd944fb7fad77a6589b038a93",
+  "reader_projection_applied": false,
+  "result": "source assembly passed; compilation pending after occupied bounded TeX acquisition",
+  "rationale_mr": "Factorial ची scope source मध्येच दुरुस्त झाल्यावर जुनी reader-only projection assertion stale झाली. Generator ने नेमके दुरुस्त display आणि दोन recursive Fac occurrences पडताळले; report मध्ये source correction आणि reader projection यांचा फरक अचूक केला. Historical 97-choice checkpoint आणि त्याची मूळ projection receipt जपली.",
+  "limitations_mr": "हा यशस्वी source assembly चा पुरावा आहे; नवीन PDF compilation, rendering किंवा updated complete review चा दावा नाही."
+}

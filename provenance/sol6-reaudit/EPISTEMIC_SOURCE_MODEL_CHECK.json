@@ -1,0 +1,50 @@
+{
+  "schema": "openlogic-actual-epistemic-source-model-check/1",
+  "status": "passed",
+  "date": "2026-09-30",
+  "source_sha256": {
+    "mr/content/applied-modal-logic/epistemic-logic/truth-at-w.tex": "6e0f6554062b970824d0d24b8599bd294562589e76457ea8c98b057a1ad2a2df",
+    "mr/content/applied-modal-logic/epistemic-logic/public-announcement-logic-semantics.tex": "c5ce570836a27a58d0b3bfcd5ac5c24fbda564f14cb035cb9ff84e14815a1e9f",
+    "mr/content/applied-modal-logic/epistemic-logic/bisimulations.tex": "618b2393a0be70613207554e86902f940285515b4911a34bbf1b4326dd14e5d3"
+  },
+  "models": "Actual TikZ node valuations and agent-labelled arrows parsed from the source; formulas evaluated independently.",
+  "six_exercise_results": [
+    true,
+    false,
+    true,
+    true,
+    true,
+    true
+  ],
+  "ordinary_knowledge_disjunction_counterexample_at_w1": {
+    "knowledge_of_excluded_middle": true,
+    "disjunction_of_knowledge": false
+  },
+  "p_update_worlds": [
+    "w1",
+    "w3"
+  ],
+  "moore_update_worlds": [
+    "w1"
+  ],
+  "truthful_moore_announcement_becomes_false": true,
+  "p_announcement_yields_common_knowledge": true,
+  "false_guard_is_vacuously_true": true,
+  "bisimulation_pairs": [
+    [
+      "w1",
+      "v1"
+    ],
+    [
+      "w2",
+      "v2"
+    ],
+    [
+      "w3",
+      "v2"
+    ]
+  ],
+  "forth_back_all_printed_agents": "passed",
+  "two_atom_valuation_choices": 16,
+  "limitations": "Exact finite examples only; no all-frame or entire-corpus mathematical certification. Bisimulation valuation agreement is stipulated in the source, not present in the bare diagram."
+}

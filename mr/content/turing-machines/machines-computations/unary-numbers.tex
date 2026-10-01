@@ -55,12 +55,13 @@ $\TMblank$ असलेल्या घरात एक रेघ लिहा �
   \node[state]         (C) [right of=B] {$q_2$};
 
   \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
-           edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+           edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A)
         (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
             edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
         (C) edge [loop above] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (C);
 \end{tikzpicture}
 \]\caption{$f(x,y) = x+y$ संगणित करणारे यंत्र}
+%READERNOTE{SOL6-A041 — गोठवलेल्या addition diagram मध्ये प्रारंभिक अवस्थेत रेघ वाचणारा loop दुसऱ्या अवस्थेकडे जातो. त्यामुळे मधला blank भरला जात नाही; उदाहरणार्थ तीन आणि दोन या आदानांचे output सलग पाच रेघा नसते. हा loop प्रारंभिक अवस्थेकडे परत नेला आहे; separator भरल्यावरच पुढच्या अवस्थेत जाते.}
 \ollabel{fig:adder}
 \end{figure}
 \end{ex}
@@ -189,13 +190,14 @@ $\delta(q_0,
 
 \begin{prob}
 \olref[tur][mac][una]{ex:mover} मध्ये आपण
-\olref[tur][mac][una]{fig:doubler-disc} मधील दुप्पट करणारे यंत्र
+\olref[tur][mac][rep]{ex:doubler} मधील मूळ दुप्पट करणारे यंत्र
 आणि \olref[tur][mac][una]{fig:mover} मधील खंड हलवणारे यंत्र
 एकत्र करून बनणाऱ्या यंत्राचे वर्णन केले. हे संयुक्त यंत्र
 आदान~$x=0$, म्हणजे रिकामी फीत, घेऊन सुरू केल्यास काय घडते?
 या वेळी यंत्राने प्रदान~$2x=0$ देऊन थांबावे यासाठी त्यात
 काय बदल कराल? (एक अवस्था आणि एक संक्रमण जोडून हे करता
 आले पाहिजे.)
+%READERNOTE{SOL6-A041 — या mover exercise मधील गोठवलेला संदर्भ disciplined doubler कडे होता. आधीच्या परिच्छेदातील रचना मूळ सहा-अवस्थांच्या doubler ला mover जोडते; संदर्भ त्याच यंत्राकडे दुरुस्त केला.}
 \end{prob}
 
 \begin{prob}

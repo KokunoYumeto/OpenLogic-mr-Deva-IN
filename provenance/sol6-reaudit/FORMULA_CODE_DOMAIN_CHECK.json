@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "method": "Exact integer power inequalities; the textbook partial recursive implementations are not executed.",
+  "valid_atom_counterexample": {
+    "formula": "P^2_0(c_0,c_0)",
+    "symbol_codes": [
+      4320,
+      39366,
+      24,
+      354294,
+      24,
+      118098
+    ],
+    "formula_code_strict_log2_upper": 1618511,
+    "argument_tuple_log2_lower": 67108866,
+    "old_z_less_than_x": false
+  },
+  "wrong_arity_counterexample": {
+    "formula": "P^1_0(v_0,v_0)",
+    "predicate_arity": 1,
+    "argument_tuple_length": 2,
+    "tuple_code_strict_log2_upper": 24579,
+    "formula_code_log2_lower": 708590,
+    "old_z_less_than_x": true,
+    "first_argument_is_term": true,
+    "new_length_guard": false
+  },
+  "empty_sequence_sentence_counterexample": {
+    "code": 0,
+    "length": 0,
+    "old_universals": "vacuously true",
+    "new_Frm_guard": false
+  },
+  "general_corrected_bound": "For k=len(x)>=1 choose the subformula parse sequence. n<=k and each argument term code<=x. Its canonical tuple code is at most p_(k-1)^(k*(x+1)); also require len(z)=n. Frm(x) is required before absence of free occurrences.",
+  "input_hashes": {
+    "upstream/content/incompleteness/arithmetization-syntax/coding-symbols.tex": "bef2c4a725e39661d3534b411cccf9fd5f21bca5e08c401a07a7b32e403fa2d3",
+    "upstream/content/incompleteness/arithmetization-syntax/coding-formulas.tex": "b8658dcae853e6a0e1321e127effe853874900cc16270e1cc25ab03c8f37b8be",
+    "mr/content/incompleteness/arithmetization-syntax/coding-formulas.tex": "fa61d7224e99397913c72e31247a0f232a98481163e8c4813690819365554112"
+  },
+  "scope_limitations": "Counterexamples and the general bound are mathematically checked; no claim of full semantic corpus review or native expert acceptance."
+}

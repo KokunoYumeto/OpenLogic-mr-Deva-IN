@@ -1,0 +1,48 @@
+{
+  "id": "SOL6-A360",
+  "date": "2026-10-01",
+  "record_kind": "workflow_provenance",
+  "source_choices_added": 0,
+  "problem": "The root synchronization receipt still bound the old segment-canon file despite current target/segment corrections.",
+  "correction": "Run the existing owner-state synchronization tool and verify every current output hash, byte count and record count. Dated historical checkpoint and release receipts remain unchanged.",
+  "previous_tracked_receipt_sha256": "cca04852e9ceb5256eb9c9ff5b6e6e95ce345bf6f3949337a1479257d5d11717",
+  "current_receipt_sha256": "281608a535b492ad99c812c58b624adcbe768f82b134eba629d279812fdf2019",
+  "current_scope": {
+    "source_manifest_units": 722,
+    "translated_units": 722,
+    "first_translated_unit": "OLP-0001",
+    "last_translated_unit": "OLP-0722",
+    "aligned_segments": 6644,
+    "canon_sources": 124,
+    "canon_passages": 181,
+    "term_decisions": 638
+  },
+  "current_outputs": {
+    "SOURCE_MANIFEST.jsonl": {
+      "records": 722,
+      "bytes": 355745,
+      "sha256": "f243d399ca5d8a572a58de7e9b0ad0d7243283a8f92983b1058bfe01ade39c3b"
+    },
+    "SEGMENT_CANON_USE.jsonl": {
+      "records": 6644,
+      "bytes": 10821186,
+      "sha256": "7c367bc2a97b514e4bd5e1898882e0ff01ce7cc38bf4f2ddf789f1c73d1e2ac8"
+    },
+    "CANON_SOURCES.jsonl": {
+      "records": 124,
+      "bytes": 79909,
+      "sha256": "56ee46ab0641d0020e5b5bee61eda27d4beeff7749f96ad0cd3b364fb1e5778c"
+    },
+    "CANON_PASSAGES.jsonl": {
+      "records": 181,
+      "bytes": 175874,
+      "sha256": "807fa897569547ea9d91a7f60aa32cd9aa4fedfb1fd52fc1cfe808426904367d"
+    },
+    "TERM_DECISIONS.jsonl": {
+      "records": 638,
+      "bytes": 684253,
+      "sha256": "b3d9009dca8a156b5d250e96fac3797997a7dc269887c7fe90a79e3b26e1602b"
+    }
+  },
+  "tool_sha256": "1a217ad028647652ec53431a4602ebf6f19c5f44f7f5e9b04837b52cb4ed774c"
+}

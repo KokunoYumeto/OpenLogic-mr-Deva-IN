@@ -1,0 +1,19 @@
+{
+  "id": "SOL6-A288",
+  "record_kind": "workflow_repair",
+  "source_choice": false,
+  "finding": "Localized OLINC321 still said the current proof did not establish its negation statement after A285.",
+  "repair": "Acknowledge the corrected A285 derivation while retaining the historical localized row and immutable source issue ledger.",
+  "historical_localized_row": {
+    "issue_id": "OLINC-321",
+    "rationale_mr": "OLINC-321: हा हिशोब आधीच्या विधानाची उलट दिशा सिद्ध करतो; येथे दिलेल्या निषेधाच्या विधानाची सिद्धता नाही.",
+    "derivation": "मराठी स्रोतफाइलमधील आधीची स्पष्ट READERNOTE; नवा स्रोतदोष दावा नाही"
+  },
+  "before_localized_index_sha256": "f613196816f1fe51c3b6909f7d2b9c897884d5cbd876a5c313f032b772347957",
+  "after_localized_index_sha256": "b763104712883eea8d3323e53f65c71498e5d0538870ff9072bab36da5d7eef4",
+  "source_history_sha256": "c015a22ae11cf8f9da72509aa787424599e3611b46412a32a4f219377f8b11f9",
+  "status": "current index reconciled; refreshed final reader/review pending",
+  "date": "2026-10-01",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra"
+}

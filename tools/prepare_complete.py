@@ -7,6 +7,7 @@ from contextlib import redirect_stdout
 from io import StringIO
 from pathlib import Path
 from complete_wrapper_notes import preserve_notes
+from complete_reader_notes import preserve_reader_notes, project_note, verify_reader_notes
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "build/full"
@@ -41,6 +42,8 @@ extra_preamble = [
     r"\renewcommand{\tablename}{तक्ता}",
     r"\providecommand{\gitissue}[1]{\href{https://github.com/OpenLogicProject/OpenLogic/issues/#1}{मूळ स्रोताची नोंद #1}}",
     r"\crefname{lem}{पूर्वप्रमेय}{पूर्वप्रमेये}",
+    r"\crefname{table}{तक्ता}{तक्ते}",
+    r"\Crefname{table}{तक्ता}{तक्ते}",
     # The three-level number 67.10.1 needs more room in the contents.
     r"\makeatletter\renewcommand*\l@subsection{\@dottedtocline{2}{3.8em}{4.2em}}\makeatother",
     r"\newcommand{\lnand}{\mathbin{\uparrow}}",
@@ -69,7 +72,7 @@ for command in extra_preamble:
         core_preamble += command + "\n"
 core_preamble = re.sub(
     r"\\hypersetup\{pdftitle=\{[^\n]*?\},pdfauthor=\{[^\n]*?\}\}",
-    lambda _: r"\hypersetup{pdftitle={मुक्त तर्कशास्त्र: संपूर्ण मराठी आवृत्ती},pdfauthor={Open Logic Project; OpenAI Codex: GPT-5.6 Sol, GPT-6 Sol; supplementary GPT-6 Astra review; Ultra effort}}",
+    lambda _: r"\hypersetup{pdftitle={मुक्त तर्कशास्त्र: संपूर्ण मराठी आवृत्ती},pdfauthor={Open Logic Project; OpenAI Codex: GPT-5.6 Sol, GPT-6 Sol; corrective review GPT-6.1 Sol; Ultra effort}}",
     core_preamble,
     count=1,
 )
@@ -85,7 +88,7 @@ titlepage = r"""\begin{titlepage}
 पर्यायी आणि मूळ मार्गाबाहेरील विभाग पुढील पूरक भागात दिले आहेत.\par
 यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
 GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.\par
-पूरक यांत्रिक पुनरावलोकन: GPT-6 Astra, Ultra effort.\par
+दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.\par
 स्रोताशी तुलना, शब्दनिर्णय आणि यांत्रिक तपासण्या केल्या आहेत.
 स्वतंत्र मानवी संपादनाचा दावा नाही.
 काही तांत्रिक संज्ञा तज्ज्ञ-पुनरावलोकनासाठी खुल्या आहेत.\par
@@ -147,10 +150,7 @@ for unit in supplement_units:
 
 
 def source_note(note):
-    for old, new in [("_", r"\_"), ("^", r"\textasciicircum{}"),
-                     ("&", r"\&"), ("%", r"\%")]:
-        note = note.replace(old, new)
-    return r"\begin{quote}\small\textbf{स्रोतनोंद.} " + note + r"\end{quote}"
+    return r"\begin{quote}\small\textbf{स्रोतनोंद.} " + project_note(note) + r"\end{quote}"
 
 
 def convert_unit(unit):
@@ -276,30 +276,16 @@ def project(old, new, expected):
     out = out.replace(old, new)
 
 
-# OLINC-126: show the complete IsZero application inside the outer lambda.
-# The aligned target retains the frozen display; this reader projection keeps
-# its recursive Fac occurrence and adds an explicit Marathi explanation.
-factorial_before = r"""\begin{align*}
-  \fn{Fac} & \ident \lambd[n][\fn{IsZero}\, n\, \num{1}] \\
-    & \qquad (\fn{Mult}\, n
-  ((\lambd[n][\fn{IsZero} \, n \, \num 1\, (\fn{Mult}\, n\, (\fn{Fac}
-    (\fn{Pred}\, n)))]) (\fn{Pred}\, n)))
+# SOL6-A132 now fixes OLINC-126 in the aligned source itself. Require its
+# exact reviewed display instead of applying the obsolete reader projection.
+factorial_source = r"""\begin{align*}
+  B &\ident \lambd[m][\fn{IsZero}\,m\,\num{1}
+       (\fn{Mult}\,m\,(\fn{Fac}(\fn{Pred}\,m)))]\\
+  \fn{Fac} &\ident \lambd[n][\fn{IsZero}\,n\,\num{1}
+       (\fn{Mult}\,n\,(B(\fn{Pred}\,n)))]
 \end{align*}"""
-factorial_after = r"""\begin{align*}
-  \fn{Fac} & \ident \lambda n.\,\bigl[\fn{IsZero}\, n\, \num{1} \\
-    & \qquad (\fn{Mult}\, n
-  ((\lambd[n][\fn{IsZero} \, n \, \num 1\, (\fn{Mult}\, n\, (\fn{Fac}
-    (\fn{Pred}\, n)))]) (\fn{Pred}\, n)))\bigr]
-\end{align*}
-\begin{quote}\small\textbf{स्रोतदुरुस्ती (OLINC-126).}
-मूळ प्रदर्शनात बाह्य लॅम्डाचे शरीर पहिल्या ओळीवरच संपते.
-येथे दोन्ही ओळींना व्यापणारे कंस घालून
-$\fn{IsZero}$ च्या दोन्ही शाखा त्या एकाच शरीरात दाखवल्या आहेत.
-आतील $\fn{Fac}$ चा स्वसंदर्भ तसाच आहे; त्यामुळे हे अजून शुद्ध लॅम्डा पद नाही.
-\end{quote}"""
-project(factorial_before, factorial_after, 1)
-assert factorial_before.count(r"\fn{Fac}") == 2
-assert factorial_after.split(r"\end{align*}")[0].count(r"\fn{Fac}") == 2
+assert out.count(factorial_source) == 1
+assert factorial_source.count(r"\fn{Fac}") == 2
 # An unnumbered bibliography must not inherit the preceding section's marks.
 project(r"\chapter*{संदर्भ}" + "\n\n" + r"\addcontentsline{toc}{chapter}{संदर्भ}",
         r"\chapter*{संदर्भ}" + "\n" + r"\markboth{संदर्भ}{संदर्भ}" + "\n\n"
@@ -339,6 +325,7 @@ project("    घेता येते. पहिल्या प्रसंग
         "    घेता येते. पहिल्या प्रसंगात:\\par\\endgroup\n    \\[", 1)
 out, wrapper_note_qa = preserve_notes(ROOT, by_unit, out, helpers["selected"],
                                      helpers["replace_tokens"], core_ns["prior"]["reader_symbol_projections"])
+out, reader_note_qa = preserve_reader_notes(ROOT, by_unit, out)
 labels = re.findall(r"\\label\{([^}]+)\}", out)
 assert len(labels) == len(set(labels)), [x for x in labels if labels.count(x) > 1][:10]
 out = re.sub(r"\\readerexternalref\{([^}]+)\}",
@@ -365,16 +352,21 @@ tex.write_text(out, encoding="utf-8", newline="\n")
     "reader_sha256": hashlib.sha256(out.encode("utf-8")).hexdigest(),
     "factorial": {
         "issue_id": "OLINC-126", "unit_id": "OLP-0379", "occurrences": 1,
-        "aligned_target_unchanged": True,
-        "before_sha256": hashlib.sha256(factorial_before.encode("utf-8")).hexdigest(),
-        "after_sha256": hashlib.sha256(factorial_after.encode("utf-8")).hexdigest(),
+        "source_correction_id": "SOL6-A132",
+        "aligned_source_correction_applied": True,
+        "reader_projection_applied": False,
+        "display_sha256": hashlib.sha256(factorial_source.encode("utf-8")).hexdigest(),
+        "current_target_sha256": hashlib.sha256((ROOT / "mr/content/lambda-calculus/lambda-definability/fixpoints.tex").read_bytes()).hexdigest(),
         "recursive_fac_retained": True,
-        "reason_mr": "IsZero च्या दोन्ही शाखा एकाच बाह्य लॅम्डा शरीरात दाखवल्या; स्वसंदर्भ जपला आणि स्रोतदुरुस्ती स्पष्ट केली.",
+        "reason_mr": "SOL6-A132 ने aligned target मध्येच IsZero च्या दोन्ही शाखांची बाह्य लॅम्डा व्याप्ती दुरुस्त केली. दोन छोट्या helper equations मधील स्वसंदर्भ जपला. जुन्या reader-only projection ऐवजी या नेमक्या दुरुस्त source display ची पडताळणी केली.",
     },
     "bibliography": {"heading_mr": "संदर्भ", "running_marks_reset": True},
 }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 wrapper_note_qa["reader_sha256"] = hashlib.sha256(out.encode("utf-8")).hexdigest()
 (BUILD / "DRIVER_EDITORIAL_QA.json").write_text(json.dumps(wrapper_note_qa, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+reader_note_qa["reader_sha256"] = hashlib.sha256(out.encode("utf-8")).hexdigest()
+verify_reader_notes(ROOT, by_unit, out, reader_note_qa)
+(BUILD / "READER_NOTE_QA.json").write_text(json.dumps(reader_note_qa, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 core_inputs = json.loads((ROOT / "build/core/INPUTS.json").read_text(encoding="utf-8"))
 proof_inputs = json.loads((ROOT / "build/proof/INPUTS.json").read_text(encoding="utf-8"))
 manifest_by_target = {"mr/" + row["source_path"]: row["unit_id"] for row in manifest}
@@ -391,6 +383,12 @@ receipt = {
     "schema": "openlogic-mr-full-reader-input/1",
     "frozen_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
     "source_units_translated": 722,
+    "input_units": [
+        {"unit_id": row["unit_id"], "source_path": "upstream/" + row["source_path"],
+         "source_sha256": row["source_sha256"], "target_path": "mr/" + row["source_path"],
+         "target_sha256": hashlib.sha256((ROOT / "mr" / row["source_path"]).read_bytes()).hexdigest()}
+        for row in manifest
+    ],
     "core_unit_count": len(core_inputs["input_units"]),
     "core_unit_ids": sorted(core_ids),
     "proof_unit_ids": sorted(proof_ids),

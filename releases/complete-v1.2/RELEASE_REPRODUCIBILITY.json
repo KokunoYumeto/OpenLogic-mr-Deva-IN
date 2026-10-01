@@ -1,0 +1,17 @@
+{
+  "schema": "openlogic-mr-complete-release-reproduction/1",
+  "status": "pending-later-natural-checkpoint",
+  "source_zip_sha256": "cd41c8b055fe108f2f2e71df57075d9a4344b848d5b2c1ea294fbf6a5f979057",
+  "html_zip_sha256": "759ee75fc90d5c4384720e8aac8906266af452afc8bd6831b066f699581e24f5",
+  "released_pdf_sha256": "3ee7fe70d38346b3ffc7cd635aaa285e54a00e81e5cfe254467be7cc696306f9",
+  "released_tex_sha256": "f793f2b144cc8f15013bb68008c2302643c90d64bc6a1f922e9f03a4598d48f3",
+  "source_date_epoch": "1788480000",
+  "attempt": 3,
+  "scope_mr": "संपूर्ण प्रकाशित स्रोत-ZIP मधून नव्याने तयार केलेला PDF आणि ऑफलाइन HTML मधील प्रत्येक फाइल.",
+  "extracted_files_verified": 1839,
+  "rebuilt_static_qa_sha256": "c5d714ec831885cd6d6ff99b06d5e1291987524600c42a2c57c89868cf7a1be2",
+  "source_reader_notes": 346,
+  "regenerated_tex_sha256": "f793f2b144cc8f15013bb68008c2302643c90d64bc6a1f922e9f03a4598d48f3",
+  "guarded_build_result": "slot-occupied",
+  "guarded_build_receipt_sha256": "4600c78184f9600a41b3f83a80254f67d9db849aac127cc8b8180cd15a8def07"
+}

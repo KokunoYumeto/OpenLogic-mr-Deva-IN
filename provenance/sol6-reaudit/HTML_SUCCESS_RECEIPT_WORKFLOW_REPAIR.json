@@ -1,0 +1,24 @@
+{
+  "schema": "openlogic-html-success-receipt-workflow-repair/1",
+  "id": "SOL6-A186",
+  "date": "2026-09-30",
+  "status": "actual-matching-reader-runtime-checked",
+  "review_model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "finding_mr": "नंतरचा bounded TeX slot प्रयत्न आधीचा यशस्वी reader/PDF संबंध रद्द करत नाही. HTML diagrams आणि QA यांनी TEX_SUCCESS_RECEIPT वापरावी, actual PDF hash आणि assembled reader hash दोन्ही जुळवावे. जुन्या PDF सोबत नवीन reader जोडणे मान्य नाही.",
+  "changed_tools": {
+    "tools/complete_html_diagrams.py": "ef88fbfd553807f822dd7ec1609331436e7202189e324ef8d5d0b64e4d383532",
+    "tools/qa_complete_html.py": "606a2cb4d8c2036498d969d9af4796c3f47ba3d83d0a54402be98f30b655f736",
+    "tools/complete_math_glyphs.py": "f7546891e3f4bf6e2586ead5e18988d5db27728a54cde3f1c7ec88c573857b8a"
+  },
+  "source_reader_sha256": "89982d3eb49b8320e9080ee7f724a53264f660ff82e92f0ee3b804c8965800d7",
+  "pdf_sha256": "fc364801cfb4d1aa8175e8f875dde95f0fa54bef91a47d3ff139aff4d36d43a7",
+  "diagram_receipt_sha256": "9b57f8e0647946243ed9dc2c40576cc2b147de7b57a1da3b609a58aabdbf4b6e",
+  "checks": {
+    "actual_diagram_regeneration": "57 SVG assets; accepted receipt hash unchanged",
+    "actual_html_qa": "ready",
+    "actual_glyph_extraction": "three glyphs and embedded-font receipts byte-identical after closing PDF",
+    "scope": "179 corrective source decisions; three newer source repairs still await assembly"
+  },
+  "limitations": "The occupied-slot and changed-reader branches were inspected in code, not exercised by changing or fabricating build receipts. No new compilation, publication or full-corpus semantic-review claim."
+}

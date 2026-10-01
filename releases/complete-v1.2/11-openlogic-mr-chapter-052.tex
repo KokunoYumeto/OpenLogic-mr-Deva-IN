@@ -1,0 +1,683 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 52: प्रस्तावना
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{प्रस्तावना}\label{int:int:chap}
+
+
+
+
+
+
+
+
+
+
+\section{रचनाशील तर्कविचार}\label{int:int:cr:sec}
+
+मोडल संकारक किंवा द्वितीय-क्रम संख्यापक जोडून अभिजात
+तर्कशास्त्राचा विस्तार करता येतो; त्याउलट
+अंतःप्रज्ञावादी तर्कशास्त्र अभिजात तर्कशास्त्रावर
+मर्यादा घालते, म्हणून ते ``अभिजातेतर'' आहे.
+अभिजात तर्कशास्त्र अनेक अर्थांनी \emph{अरचनाशील}
+आहे. एका प्रकारच्या रचनाशील गणिताला वैशिष्ट्यपूर्ण
+असणारा अधिक ``रचनाशील'' तर्कविचार अंतःप्रज्ञावादी
+तर्कशास्त्रात पकडायचा आहे. यामागील काही प्रेरणा
+पुढील उदाहरणांतून स्पष्ट होतील.
+
+समजा, एखादी व्यक्ती असा दावा करते की तिने एक नैसर्गिक
+संख्या~$n$ शोधली आहे: $n$ सम असेल, तर रीमान
+गृहीतक सत्य आहे; आणि $n$ विषम असेल, तर ते असत्य
+आहे. छान बातमी!{} रीमान गृहीतक सत्य आहे की नाही
+हा गणितातील मोठ्या अनिर्णीत प्रश्नांपैकी एक आहे.
+या व्यक्तीने तो प्रश्न गणनेचा, म्हणजे विशिष्ट संख्या
+सम आहे की नाही हे ठरवण्याचा, प्रश्न केला असे दिसते.
+
+मग~$n$ चे ते जादुई मूल्य कोणते? ती व्यक्ती असे
+सांगते: रीमान गृहीतक सत्य असेल, तर~$n$ ही नैसर्गिक
+संख्या $2$ आहे; अन्यथा ती $3$ आहे.
+
+तुम्ही रागाने तुमचे पैसे परत मागता. अभिजात दृष्टिकोनातून
+वरील वर्णन खरोखरच~$n$ चे एकमेव मूल्य ठरवते;
+पण तुम्हाला हवे आहे ते~$n$ चे \emph{स्पष्टपणे}
+दिलेले मूल्य.
+
+आता आणखी एक, कदाचित कमी कृत्रिम, उदाहरण पाहू.
+अपरिमेय संख्येचा परिमेय घात घेऊन परिमेय उत्तर मिळू
+शकते, हे माहीत आहे. उदाहरणार्थ, $\sqrt{2}^2 = 2$.
+पण अपरिमेय संख्येचा \emph{अपरिमेय} घात घेतल्यावरही
+परिमेय उत्तर मिळू शकते का, हे तितके स्पष्ट नाही.
+पुढील प्रमेय या प्रश्नाचे होकारार्थी उत्तर देते:
+
+\begin{thm}
+$a$ आणि $b$ अशा अपरिमेय संख्या आहेत की $a^b$ परिमेय आहे.
+\end{thm}
+
+\begin{proof}
+$\sqrt{2}^{\sqrt{2}}$ पाहा. ही संख्या परिमेय असेल,
+तर काम झाले: $a = b = \sqrt{2}$ घेता येईल. अन्यथा
+ती अपरिमेय आहे. मग
+\[(\sqrt{2}^{\sqrt{2}})^{\sqrt{2}} = \sqrt{2}^{\sqrt{2} \cdot
+  \sqrt{2}} = \sqrt{2}^2 = 2,
+\]
+आणि हे परिमेय आहे. म्हणून या वेळी $a$ म्हणून
+$\sqrt{2}^{\sqrt{2}}$ आणि $b$ म्हणून~$\sqrt 2$ घ्या.
+\end{proof}
+
+ही सिद्धता वैध आहे का? बहुतेक गणितज्ञांना ती वैध
+वाटते. तरीही इथे थोडे असमाधानकारक काहीतरी आहे:
+विशिष्ट गुणधर्म असलेल्या वास्तव संख्यांच्या जोडीचे
+अस्तित्व सिद्ध केले, पण ती जोडी \emph{कोणती} हे
+सांगता आले नाही. हाच निष्कर्ष अशा रीतीनेही सिद्ध
+करता येतो की $a$, $b$ ही जोडी सिद्धतेत \emph{दिली}
+जाते: $a = \sqrt{3}$ आणि $b = \log_3 4$ घ्या. मग
+\[a^b = \sqrt{3}^{\log_3 4} = 3^{1/2 \cdot \log_3 4} = (3^{\log_3
+  4})^{1/2} = 4^{1/2}= 2,
+\]
+कारण $3^{\log_3 x} = x$.
+
+पहिल्या सिद्धतेतील पावलांसारखी पावले ग्राह्य नसतील
+असा तर्कविचार अंतःप्रज्ञावादी तर्कशास्त्रात पकडायचा
+आहे. $\varphi(x)$ ची पूर्तता करणारा $x$ अस्तित्वात आहे
+हे सिद्ध करण्यासाठी दुसऱ्या सिद्धतेप्रमाणे एखादा
+विशिष्ट~$x$ आणि तो $\varphi$ ची पूर्तता करतो याची
+सिद्धता द्यावी लागते. $\varphi$ किंवा $\psi$ सत्य आहे
+हे सिद्ध करायचे असेल, तर या दोहोंपैकी एकाची
+सिद्धता देता आली पाहिजे.
+
+औपचारिक भाषेत सांगायचे तर, अभिजात तर्कशास्त्राची
+निष्पत्ती व्यवस्था विशिष्ट प्रकारे मर्यादित
+केल्यावर अंतःप्रज्ञावादी तर्कशास्त्र मिळते. गणिती
+दृष्टिकोनातून या केवळ औपचारिक निगमन व्यवस्था
+आहेत; पण आधी सांगितल्याप्रमाणे त्यांत एका प्रकारचा
+गणिती तर्कविचार पकडायचा आहे. तो तर्कविचार
+गणिताविषयीच्या विशिष्ट तात्त्विक दृष्टिकोनातून
+(उदाहरणार्थ, ब्रौवर यांच्या अंतःप्रज्ञावादातून)
+समर्थनीय मानता येईल; किंवा बिशप यांच्या
+रचनाशीलतावादाच्या धर्तीवर अधिक ``मूर्त'' आणि
+समाधानकारक गणिती तर्कविचार मानता येईल. औपचारिक
+वर्णन अनौपचारिक प्रेरणा खरोखर पकडते का, यावरही
+वाद करता येईल. पण आपली तात्त्विक भूमिका काहीही
+असो, अंतःप्रज्ञावादी तर्कशास्त्राचा औपचारिकरीत्या
+मांडलेल्या तर्कशास्त्राप्रमाणे अभ्यास करता येतो;
+आणि अनेक गणिती तर्कशास्त्रज्ञांना तो अभ्यास
+रसपूर्ण वाटतो.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{अंतःप्रज्ञावादी तर्कशास्त्राची विन्यासमीमांसा}\label{int:int:syn:sec}
+
+अंतःप्रज्ञावादी तर्कशास्त्राचा विन्यास विधानीय
+तर्कशास्त्राच्या विन्यासासारखाच आहे. अभिजात विधानीय
+तर्कशास्त्रात काही संयोजकांची व्याख्या इतर
+संयोजकांनी करता येते. उदाहरणार्थ, $\varphi \lif \psi$ ची
+$\lnot \varphi \lor \psi$ ने, किंवा $\varphi \lor \psi$ ची
+$\lnot(\lnot \varphi \land \lnot \psi)$ ने व्याख्या करता
+येते. म्हणून अभिजात तर्कशास्त्राच्या मांडणीत काही
+संयोजक अशा व्याख्यांची संक्षिप्त रूपे म्हणून येतात.
+अंतःप्रज्ञावादी तर्कशास्त्रात मात्र दोन अपवाद सोडता
+तसे होत नाही: $\lnot \varphi$ हे $\varphi \lif \lfalse$ चे
+संक्षिप्त रूप म्हणून परिभाषित करता येते---आणि
+सहसा तसे करतात. अर्थात मग $\lfalse$ ची स्वतःची
+व्याख्या इतर संयोजकांच्या साहाय्याने केलेली नसली पाहिजे!{} तसेच
+$\varphi \liff \psi$ ची अभिजात तर्कशास्त्राप्रमाणे
+$(\varphi \lif \psi) \land (\psi \lif \varphi)$ अशी व्याख्या
+करता येते.
+
+विधानीय अंतःप्रज्ञावादी तर्कशास्त्रातील सूत्रे
+ही \emph{विधानीय चले} आणि विधानीय
+स्थिरांक~$\lfalse$ यांपासून \emph{तार्किक संयोजके}
+वापरून तयार होतात. आपल्याकडे पुढील गोष्टी आहेत:
+
+\begin{enumerate}
+\item विधानीय चलांचा गणनीय अनंत संच~$\PVar$: $\Obj p_0$,
+  $\Obj p_1$, \dots
+  \item असत्यता दर्शवणारा विधानीय स्थिरांक~$\lfalse$.
+\item तार्किक संयोजके: $\land$
+  (संयोग), $\lor$ (विकल्पयोग), $\lif$ (सशर्त)
+\item विरामचिन्हे: (, ), आणि स्वल्पविराम.
+\end{enumerate}
+
+\begin{defn}[सूत्र]
+\label{int:int:syn:defn:formulas} विधानीय अंतःप्रज्ञावादी
+तर्कशास्त्रातील \emph{सूत्रे} चा संच~$\Frm[L_0]$
+पुढीलप्रमाणे विगमनाने परिभाषित करतो:
+\begin{enumerate}
+\item $\lfalse$ हे अण्विक सूत्र आहे.
+
+\item प्रत्येक विधानीय चल~$\Obj p_i$ हे अण्विक
+  सूत्र आहे.
+
+\item $\varphi$ आणि $\psi$ ही सूत्रे असतील, तर $(\varphi \land
+  \psi)$ हे सूत्र आहे.
+
+\item $\varphi$ आणि $\psi$ ही सूत्रे असतील, तर $(\varphi \lor \psi)$
+  हे सूत्र आहे.
+
+\item $\varphi$ आणि $\psi$ ही सूत्रे असतील, तर $(\varphi \lif \psi)$
+  हे सूत्र आहे.
+
+\item याखेरीज दुसरे काहीही सूत्र नाही.
+\end{enumerate}
+\end{defn}
+
+वर दिलेल्या मूलभूत संयोजकांखेरीज पुढील
+\emph{परिभाषित} चिन्हेही वापरतो: $\lnot$ (नकार)
+आणि $\liff$ (द्विशर्त). परिभाषित
+संकारकांनी तयार झालेल्या सूत्रांचा अर्थ पुढीलप्रमाणे:
+\begin{enumerate}
+\item $\lnot \varphi$ हे $\varphi \lif \lfalse$ चे संक्षिप्त रूप आहे.
+
+\item $\varphi \liff \psi$ हे $(\varphi \lif \psi) \land (\psi
+  \lif \varphi)$ चे संक्षिप्त रूप आहे.
+\end{enumerate}
+
+$\lnot$ ला औपचारिकरीत्या संक्षिप्त रूप मानले असले,
+तरी कधीकधी ते मूलभूत असल्यासारखे~$\lnot$ चे स्पष्ट नियम
+आणि व्याख्यांतील खंड देऊ. याचा मुख्य उद्देश सरावाचे
+प्रश्न मांडता यावेत हा आहे.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{ब्रौवर--हीटिंग--कोल्मोगोरोव अर्थनिर्धारण}\label{int:int:bhk:sec}
+
+\begin{editorial}
+  BHK अर्थनिर्धारण वापरून अंतःप्रज्ञावादी विधानांची
+  वैधता सिद्ध करणाऱ्या सिद्धता गोंधळात टाकतात;
+  त्यांचे अधिक चांगले स्पष्टीकरण द्यायला हवे.
+\end{editorial}
+
+अंतःप्रज्ञावादी संयोजकांचे एक अनौपचारिक रचनाशील
+अर्थनिर्धारण आहे; त्याला बहुधा ब्रौवर--हीटिंग--कोल्मोगोरोव
+अर्थनिर्धारण म्हणतात. त्यात ``रचना'' ही संकल्पना
+वापरली जाते; तिला रचनाशील सिद्धता समजू शकता.
+(औपचारिक निष्पत्ती व्यवस्थेतील
+निष्पत्ती शी गल्लत होऊ नये म्हणून BHK
+अर्थनिर्धारणात ``सिद्धता'' हा शब्द वापरत नाही.)
+या सहज समजणाऱ्या संकल्पनेच्या आधारे BHK अर्थनिर्धारण
+अंतःप्रज्ञावादी संयोजकांचे अर्थ स्पष्ट करते.
+
+\begin{enumerate}
+\item अण्विक विधानाची रचना कशाला म्हणायचे हे आपल्याला
+  माहीत आहे असे गृहीत धरू.
+\item $\varphi_1 \land \varphi_2$ ची रचना म्हणजे $\tuple{M_1, M_2}$
+  ही जोडी; येथे $M_1$ ही~$\varphi_1$ ची आणि $M_2$ ही~$\varphi_2$
+  ची रचना आहे.
+\item $\varphi_1 \lor \varphi_2$ ची रचना म्हणजे $\tuple{s, M}$
+  ही जोडी; यात $s$ हे~$1$ आणि $M$ ही~$\varphi_1$ ची रचना
+  असते, किंवा $s$ हे~$2$ आणि $M$ ही~$\varphi_2$ ची रचना
+  असते.
+\item $\varphi \lif \psi$ ची रचना म्हणजे~$\varphi$ ची रचना
+  घेऊन तिला~$\psi$ च्या रचनेत रूपांतरित करणारे फलन.
+\item $\lfalse$ (असंगती) ची कोणतीही रचना नसते.
+\item $\lnot \varphi$ हे $\varphi \lif \lfalse$ चे समानार्थी रूप
+  म्हणून परिभाषित केले आहे. म्हणजे $\lnot \varphi$ ची रचना
+  ही~$\varphi$ ची रचना घेऊन तिला~$\lfalse$ च्या रचनेत
+  रूपांतरित करणारे फलन असते.
+\end{enumerate}
+
+\begin{ex}
+उदाहरणार्थ $\lnot \lfalse$ घ्या. त्याची रचना हे
+असे फलन असते जे~$\lfalse$ ची कोणतीही रचना इनपुट
+म्हणून घेऊन~$\lfalse$ ची रचना आउटपुट म्हणून देते.
+ओळख फलन~$\Id{}$ ही अशीच एक रचना आहे:
+$\lfalse$ ची रचना~$M$ दिली, तर $\Id{}(M) = M$
+ही~$\lfalse$ ची रचना देते.
+\end{ex}
+
+साधारणपणे $\lnot \varphi$ चा अर्थ ``$\varphi$ ची रचना अशक्य आहे'' असा होतो.
+
+\begin{ex}
+कोणत्याही विधान~$\varphi$ साठी $\varphi \lif \lnot \lnot \varphi$
+सिद्ध करू. हेच सूत्र $\varphi \lif ((\varphi \lif \lfalse) \lif
+\lfalse)$ आहे. याची रचना असे फलन~$f$ असली पाहिजे
+की $\varphi$ ची रचना~$M$ दिल्यावर ते $(\varphi \lif \lfalse)
+\lif \lfalse$ ची रचना~$f(M)$ देते. हे फलन~$f$
+$(\varphi \lif \lfalse) \lif \lfalse$ ची रचना कशी
+तयार करते ते पाहू: $\varphi \lif \lfalse$
+ची रचना~$h$ इनपुट म्हणून घेऊन~$\lfalse$ ची रचना
+आउटपुट म्हणून देणारे फलन $g$ परिभाषित करायचे आहे.
+त्यासाठी $g$ ची व्याख्या अशी करा: इनपुट~$h$ हे
+आधी मिळालेल्या~$\varphi$ च्या
+रचनेवर~$M$ लावा. $h$ चे आउटपुट~$h(M)$ ही
+$\lfalse$ ची रचना असल्याने, $M$ ही~$\varphi$ ची रचना
+असेल तेव्हा $f(M)(h) = h(M)$ ही~$\lfalse$ ची रचना
+असते.
+\end{ex}
+
+\begin{ex}
+आता $\lnot(\varphi \land \lnot \varphi)$, म्हणजेच $(\varphi
+\land (\varphi \lif \lfalse)) \lif \lfalse$, याची रचना
+देऊ. ती असे फलन~$f$ आहे की $\varphi \land (\varphi \lif
+\lfalse)$ ची रचना~$M$ इनपुट म्हणून दिल्यास ते
+$\lfalse$ ची रचना देते. संयोग $\psi_1 \land \psi_2$
+ची रचना म्हणजे $\tuple{N_1, N_2}$ ही जोडी; येथे
+$N_1$ ही~$\psi_1$ ची आणि $N_2$ ही~$\psi_2$ ची
+रचना आहे. $\psi_1 \land \psi_2$ च्या रचनेतून
+अनुक्रमे $\psi_1$ आणि $\psi_2$ यांच्या रचना मिळवणारी
+फलने $p_1$ आणि $p_2$ अशी परिभाषित करू:
+\begin{align*}
+  p_1(\tuple{N_1, N_2}) &= N_1\\
+  p_2(\tuple{N_1, N_2}) &= N_2
+\end{align*}
+फलन~$f$ पुढीलप्रमाणे काम करते. प्रथम ते आपल्या
+इनपुट~$M$ ला $p_1$ लावते; त्यामुळे~$\varphi$ ची रचना
+मिळते. नंतर~$M$ ला $p_2$ लावते; त्यामुळे
+$\varphi \lif \lfalse$ ची रचना मिळते. ही रचना म्हणजे
+फलन~$p_2(M)$; त्याला~$\varphi$ ची रचना इनपुट म्हणून
+दिल्यास ते~$\lfalse$ ची रचना देते. दुसऱ्या शब्दांत,
+$p_2(M)$ हे $p_1(M)$ ला लावल्यास~$\lfalse$ ची
+रचना मिळते. म्हणून $f(M) = p_2(M)(p_1(M))$ अशी
+व्याख्या करता येते.
+\end{ex}
+
+\begin{ex}
+आता $((\varphi \land \psi) \lif \chi) \lif (\varphi \lif
+(\psi \lif \chi))$ ची रचना देऊ. म्हणजे, $(\varphi \land
+\psi) \lif \chi$ ची रचना~$g$ घेऊन $(\varphi \lif (\psi \lif
+\chi))$ ची रचना देणारे फलन $f$ हवे. रचना~$g$
+ही स्वतः फलन आहे: $\varphi \land \psi$ च्या रचनांपासून
+$\chi$ च्या रचनांकडे जाणारे. आणि आउटपुट~$f(g)$
+हे फलन~$h_g$ आहे: $\varphi$ च्या रचनांपासून, $\psi$
+च्या रचनांना~$\chi$ च्या रचनांत नेणाऱ्या फलनांकडे जाणारे.
+
+ठीक आहे, हे गोंधळात टाकणारे आहे. इनपुट~$g$ साठी
+$f$ चे आउटपुट ठरणारे फलन $h_g$ तयार करायचे आहे.
+$h_g$ चा इनपुट ही~$\varphi$ ची रचना~$M$ आहे.
+$h_g(M)$ चे आउटपुट हे~$\psi$ च्या रचनांपैकी~$N$
+पासून~$\chi$ च्या रचनांकडे जाणारे फलन~$k_M$ असले
+पाहिजे. $k_{g,M}(N) = g(\tuple{M, N})$ असे ठेवू.
+$\tuple{M, N}$ ही~$\varphi \land \psi$ ची रचना आहे हे
+आठवा. म्हणून $k_{g,M}$ ही $\psi \lif \chi$ ची रचना
+आहे: ती~$\psi$ च्या रचना~$N$ यांना~$\chi$ च्या
+रचनांत नेते. आता $h_g(M) = k_{g,M}$ असे ठेवू.
+हे फलन~$\varphi$ च्या रचना~$M$ यांना $\psi
+\lif \chi$ च्या रचना~$k_{g,M}$ यांत नेते. पुढे
+$f(g) = h_g$ असे ठेवू. हे फलन $(\varphi \land \psi)
+\lif \chi$ च्या रचना~$g$ यांना $\varphi \lif (\psi \lif \chi)$
+च्या रचनांत नेते. हुश्श!{}
+\end{ex}
+
+$\varphi \lor \lnot \varphi$ या विधानाला विमध्य सिद्धांत
+म्हणतात. काही विशिष्ट~$\varphi$ साठी (उदाहरणार्थ,
+$\lfalse \lor \lnot \lfalse$) तो सिद्ध करता येतो;
+पण सर्वसाधारणपणे नाही. कारण अंतःप्रज्ञावादी
+विकल्पयोगासाठी दोन विकल्पांपैकी एकाची रचना लागते;
+पण काही विधाने अशी आहेत की सध्या ती सिद्धही
+करता येत नाहीत किंवा खोडताही येत नाहीत
+(उदाहरणार्थ, गोल्डबाखचे अनुमान). मात्र विमध्य
+सिद्धांत खोडताही येत नाही: म्हणजे $\lnot \lnot (\varphi
+\lor \lnot \varphi)$ सत्य असते.
+
+\begin{ex}
+$\lnot \lnot (\varphi \lor \lnot \varphi)$ सिद्ध करण्यासाठी
+$\lnot(\varphi \lor \lnot \varphi)$, म्हणजे $(\varphi
+\lor (\varphi \lif \lfalse)) \lif \lfalse$, याची रचना
+घेऊन तिला~$\lfalse$ च्या रचनेत रूपांतरित करणारे
+फलन~$f$ हवे. दुसऱ्या शब्दांत, $g$ ही $\lnot(\varphi
+\lor \lnot \varphi)$ ची रचना असेल, तर $f(g)$ ही
+$\lfalse$ ची रचना ठरेल, असे फलन $f$ हवे.
+
+$g$ ही $\lnot(\varphi \lor \lnot \varphi)$ ची रचना आहे असे
+समजा; म्हणजे ते $\varphi \lor \lnot \varphi$ ची रचना घेऊन
+तिला~$\lfalse$ च्या रचनेत नेणारे फलन आहे.
+$\varphi \lor \lnot \varphi$ ची रचना म्हणजे $\tuple{s, M}$
+ही जोडी: यात एकतर $s = 1$ आणि $M$ ही~$\varphi$ ची
+रचना असते, किंवा $s = 2$ आणि $M$ ही $\lnot \varphi$
+ची रचना असते. $h_1$ हे~$\varphi$ ची रचना~$M_1$ घेऊन
+$\varphi \lor \lnot \varphi$ ची रचना देणारे फलन असू द्या:
+ते $M_1$ ला $\tuple{1, M_1}$ कडे नेते. तसेच $h_2$
+हे $\lnot \varphi$ ची रचना~$M_2$ घेऊन
+$\varphi \lor \lnot \varphi$ ची रचना देणारे फलन असू द्या:
+ते $M_2$ ला $\tuple{2, M_2}$ कडे नेते.
+
+$k$ हे $\comp{h_1}{g}$ असू द्या. ते~$\varphi$ ची रचना
+दिल्यावर~$\lfalse$ ची रचना देणारे फलन आहे; म्हणजे
+ते~$\varphi \lif \lfalse$ किंवा $\lnot \varphi$ ची रचना
+आहे. आता $l$ हे $\comp{h_2}{g}$ असू द्या. हे
+फलन $\lnot \varphi$ ची रचना दिल्यावर~$\lfalse$ ची
+रचना देते. $k$ ही $\lnot \varphi$ ची रचना असल्याने,
+$l(k)$ ही~$\lfalse$ ची रचना आहे.
+
+अशा प्रकारे $\lnot(\varphi \lor \lnot \varphi)$ ची
+रचना~$g$ घेऊन तिला~$\lfalse$ च्या रचनेत कसे
+रूपांतरित करायचे ते सांगितले. म्हणजे
+$\lnot(\varphi \lor \lnot \varphi)$ ची रचना~$g$
+घेऊन~$\lfalse$ ची रचना~$l(k)$ देणारे फलन $f$
+ही $\lnot\lnot(\varphi \lor \lnot \varphi)$ ची रचना आहे.
+\end{ex}
+
+पाहिल्याप्रमाणे, सूत्रांची अंतःप्रज्ञावादी
+वैधता दाखवण्यासाठी BHK अर्थनिर्धारण वापरणे लवकरच
+अवजड आणि गोंधळात टाकणारे होते. सुदैवाने,
+अंतःप्रज्ञावादी तर्कशास्त्रासाठी अधिक चांगल्या
+निष्पत्ती व्यवस्था आणि अधिक नेमकी
+चिन्हार्थमीमांसक अर्थलक्षणे उपलब्ध आहेत.
+
+
+
+
+
+
+
+
+
+
+
+\section{नैसर्गिक निगमन}\label{int:int:ntd:sec}
+
+$\FalseCl$ चे नियम वगळलेले नैसर्गिक निगमन ही
+अंतःप्रज्ञावादी तर्कशास्त्रासाठीची प्रमाणित
+निष्पत्ती व्यवस्था आहे. येथे ते नियम पुन्हा
+देऊन BHK अर्थनिर्धारणाच्या साहाय्याने त्यामागची
+प्रेरणा स्पष्ट करू. प्रत्येक नियम असा समजू शकतो
+की आधारविधानांच्या रचना असतील, तर निष्कर्षाचीही
+रचना आहे असे त्यावरून ठरवता येते.
+
+नैसर्गिक निगमनातील निष्पत्त्यांमध्ये मुक्त न
+केलेली गृहीतके असतात. म्हणून~$\Gamma$ या
+मुक्त न केलेले गृहीतकांपासून~$\varphi$ ची
+निष्पत्ती असेल, तर तिला प्रत्येक $\psi \in
+\Gamma$ च्या रचना घेऊन~$\varphi$ ची रचना देणारे
+फलन मानावे. कोणत्याही मुक्त न केलेले गृहीतकांशिवाय
+$\varphi$ ची निष्पत्ती असेल, तर BHK अर्थनिर्धारणाच्या
+अर्थाने~$\varphi$ ची रचना असते. मात्र पुढील चर्चेत गरज
+नसेल तेव्हा~$\Gamma$ चा उल्लेख वगळू.
+
+गृहीतक~$\varphi$ स्वतःच त्या मुक्त न केलेले
+गृहीतक~$\varphi$ पासून~$\varphi$ ची निष्पत्ती आहे.
+हे BHK अर्थनिर्धारणाशी जुळते: रचनांवरील ओळख फलन
+$\varphi$ ची कोणतीही रचना घेऊन~$\varphi$ चीच रचना देते.
+
+\subsection{संयोग}
+
+\begin{defish}
+\AxiomC{$\varphi$}
+\AxiomC{$\psi$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$\varphi \land \psi$}
+\DisplayProof
+\hfill
+\begin{tabular}{l}
+\AxiomC{$\varphi \land \psi$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$\varphi$}
+\DisplayProof
+\\[3ex]
+\AxiomC{$\varphi \land \psi$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$\psi$}
+\DisplayProof
+\end{tabular}
+\end{defish}
+आपल्याकडे अनुक्रमे $\varphi_1$ आणि $\varphi_2$ यांच्या
+रचना $N_1$, $N_2$ आहेत असे समजा. मग
+$\varphi_1 \land \varphi_2$ चीही रचना आहे: जोडी
+$\tuple{N_1, N_2}$.
+BHK अर्थनिर्धारणानुसार $\varphi_1 \land \varphi_2$ ची
+रचना म्हणजे $\tuple{N_1, N_2}$ ही जोडी. अशी जोडी
+आपल्याकडे आहे असे समजा. मग प्रत्येक संयुक्त घटकाची
+रचना आहे: $N_1$ ही~$\varphi_1$ ची आणि $N_2$ ही
+$\varphi_2$ ची रचना आहे.
+\subsection{सशर्त}
+\begin{defish}
+  \AxiomC{$\Discharge{\varphi}{u}$}
+  \DeduceC{$\psi$}
+  \DischargeRule{$\Intro{\lif}$}{u}
+  \UnaryInfC{$\varphi \lif \psi$}
+  \DisplayProof
+\hfill
+  \AxiomC{$\varphi \lif \psi$}
+  \AxiomC{$\varphi$}
+  \RightLabel{$\Elim{\lif}$}
+  \BinaryInfC{$\psi$}
+  \DisplayProof
+\end{defish}
+मुक्त न केलेले गृहीतक~$\varphi$ पासून~$\psi$ ची
+निष्पत्ती असेल, तर~$\varphi$ च्या रचनांना~$\psi$
+च्या रचनांत नेणारे फलन~$f$ असते. तेच फलन
+$\varphi \lif \psi$ ची रचना आहे. म्हणून $\Intro\lif$
+च्या आधारविधानाची रचना~$\varphi$ च्या रचनेवर अवलंबून
+असेल, तर निष्कर्ष $\varphi
+\lif \psi$ ची रचना असते.
+दुसरीकडे, $\varphi$ ची रचना~$N$ आणि $\varphi \lif \psi$
+ची रचना~$f$ आहेत असे समजा. $\varphi \lif \psi$ ची
+रचना हे~$\varphi$ च्या रचनांना~$\psi$ च्या रचनांत नेणारे
+फलन असते. म्हणून $f(N)$ ही~$\psi$ ची रचना आहे;
+म्हणजे $\Elim\lif$ च्या निष्कर्षाची रचना आहे.
+\subsection{विकल्पयोग}
+\begin{defish}
+\begin{tabular}{l}
+\AxiomC{$\varphi$}
+\RightLabel{\Intro{\lor}}
+\UnaryInfC{$\varphi \lor \psi$}
+\DisplayProof
+\\[3ex]
+\AxiomC{$\psi$}
+\RightLabel{\Intro{\lor}}
+\UnaryInfC{$\varphi \lor \psi$}
+\DisplayProof
+\end{tabular}
+\hfill
+\AxiomC{$\varphi \lor \psi$}
+\AxiomC{$\Discharge{\varphi}{n}$}
+\DeduceC{$\chi$}
+\AxiomC{$\Discharge{\psi}{n}$}
+\DeduceC{$\chi$}
+\DischargeRule{\Elim{\lor}}{n}
+\TrinaryInfC{$\chi$}
+\DisplayProof
+\end{defish}
+$\varphi_i$ ची रचना~$N_i$ असेल, तर तिच्यापासून
+$\varphi_1 \lor \varphi_2$ ची रचना~$\tuple{i, N_i}$ करता
+येते. उलट, $\varphi_1 \lor \varphi_2$ ची रचना म्हणजे
+$\tuple{i, N_i}$ ही जोडी आपल्याकडे असेल, जिथे
+$N_i$ ही~$\varphi_i$ ची रचना आहे; तसेच अनुक्रमे
+$\varphi_1$, $\varphi_2$ यांच्या रचनांना~$\chi$ च्या रचनांत
+नेणारी फलने $f_1$, $f_2$ असतील, तर $f_i(N_i)$
+ही~$\chi$ ची रचना मिळते. हाच~$\Elim\lor$ चा निष्कर्ष.
+\subsection{असंगती}
+\begin{defish}
+  \AxiomC{$\lfalse$}
+  \RightLabel{\FalseInt}
+  \UnaryInfC{$\varphi$}
+  \DisplayProof
+\end{defish}
+मुक्त न केलेले गृहीतके~$\psi_1$, \dots, $\psi_n$
+यांपासून~$\lfalse$ ची निष्पत्ती असेल, तर
+$\psi_1$, \dots, $\psi_n$ यांच्या रचनांना~$\lfalse$
+च्या रचनेत नेणारे फलन~$f(M_1,
+\dots, M_n)$ असते. $\lfalse$ ची रचना नसल्याने
+$\psi_1$, \dots, $\psi_n$ या सर्वांच्या रचनाही एकत्र
+असू शकत नाहीत. म्हणून $f$ बाबत पुढीलही खरे असते:
+$M_1$, \dots, $M_n$ या अनुक्रमे $\psi_1$, \dots,
+$\psi_n$ यांच्या रचना \emph{असतील तर}, $f(M_1, \dots,
+M_n)$ ही~$\varphi$ ची रचना \emph{असते}.
+\subsection{$\lnot$ साठीचे नियम}
+$\lnot \varphi$ ची व्याख्या $\varphi \lif \lfalse$ अशी
+असल्याने काटेकोरपणे पाहता~$\lnot$ साठी वेगळे
+नियम लागत नाहीत. तरी ते द्यायचे झाले, तर असे दिसतील:
+\begin{defish}
+\AxiomC{$\Discharge{\varphi}{n}$}
+\noLine
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{n}
+\UnaryInfC{$\lnot \varphi$}
+\DisplayProof
+\hfill
+\AxiomC{$\lnot \varphi$}
+\AxiomC{$\varphi$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\DisplayProof
+\end{defish}
+\subsection{निष्पत्तीची उदाहरणे}
+\begin{enumerate}
+\item $\Proves \varphi \lif (\lnot \varphi \lif \lfalse)$, i.e., $\Proves \varphi
+  \lif ((\varphi \lif \lfalse) \lif \lfalse)$
+  \begin{prooftree}
+    \AxiomC{$\Discharge{\varphi}{2}$}
+    \AxiomC{$\Discharge{\varphi \lif \lfalse}{1}$}
+    \RightLabel{\Elim\lif}
+    \BinaryInfC{$\lfalse$}
+    \DischargeRule{\Intro\lif}{1}
+    \UnaryInfC{$(\varphi \lif \lfalse)\lif \lfalse$}
+    \DischargeRule{\Intro\lif}{2}
+    \UnaryInfC{$\varphi \lif (\varphi \lif \lfalse) \lif \lfalse$}
+  \end{prooftree}
+\item $\Proves ((\varphi \land \psi) \lif \chi) \lif (\varphi \lif (\psi \lif \chi))$
+  \begin{prooftree}
+    \AxiomC{$\Discharge{(\varphi \land \psi) \lif \chi}{3}$}
+    \AxiomC{$\Discharge{\varphi}{2}$}
+    \AxiomC{$\Discharge{\psi}{1}$}
+    \RightLabel{\Intro\land}
+    \BinaryInfC{$\varphi \land \psi$}
+    \RightLabel{\Elim\lif}
+    \BinaryInfC{$\chi$}
+    \DischargeRule{\Intro\lif}{1}
+    \UnaryInfC{$\psi \lif \chi$}
+    \DischargeRule{\Intro\lif}{2}
+    \UnaryInfC{$\varphi \lif (\psi \lif \chi)$}
+    \DischargeRule{\Intro\lif}{3}
+    \UnaryInfC{$((\varphi \land \psi) \lif \chi) \lif (\varphi \lif (\psi \lif \chi))$}
+  \end{prooftree}
+\item $\Proves \lnot(\varphi \land \lnot \varphi)$, i.e., $\Proves (\varphi \land (\varphi
+  \lif \lfalse))\lif \lfalse$
+  \begin{prooftree}
+    \AxiomC{$\Discharge{\varphi \land (\varphi \lif \lfalse)}{1}$}
+    \RightLabel{\Elim\land}
+    \UnaryInfC{$\varphi \lif \lfalse$}
+    \AxiomC{$\Discharge{\varphi \land (\varphi \lif \lfalse)}{1}$}
+    \RightLabel{\Elim\land}
+    \UnaryInfC{$\varphi$}
+    \RightLabel{\Elim\lif}
+    \BinaryInfC{$\lfalse$}
+    \DischargeRule{\Intro\lif}{1}
+    \UnaryInfC{$(\varphi \land (\varphi \lif \lfalse))\lif \lfalse$}
+  \end{prooftree}
+\item $\Proves \lnot\lnot(\varphi \lor \lnot \varphi)$, i.e., $\Proves ((\varphi \lor
+  (\varphi \lif \lfalse))\lif \lfalse)\lif \lfalse$
+  \begin{prooftree}\hskip-3em
+    \AxiomC{$\Discharge{(\varphi \lor (\varphi \lif \lfalse))\lif \lfalse}{2}$}
+    \AxiomC{$\Discharge{(\varphi \lor (\varphi \lif \lfalse))\lif \lfalse}{2}$}
+    \AxiomC{$\Discharge{\varphi}{1}$}
+    \RightLabel{\Intro\lor}
+    \UnaryInfC{$\varphi \lor (\varphi \lif \lfalse)$}
+    \RightLabel{\Elim\lif}
+    \BinaryInfC{$\lfalse$}
+    \DischargeRule{\Intro\lif}{1}
+    \UnaryInfC{$\varphi \lif \lfalse$}
+    \RightLabel{\Intro\lor}
+    \UnaryInfC{$\varphi \lor (\varphi \lif \lfalse)$}
+    \RightLabel{\Elim\lif}
+    \insertBetweenHyps{\hskip -4em}
+    \BinaryInfC{$\lfalse$}
+    \DischargeRule{\Intro\lif}{2}
+    \UnaryInfC{$((\varphi \lor (\varphi \lif \lfalse))\lif \lfalse)\lif \lfalse$}
+  \end{prooftree}
+\end{enumerate}
+\begin{prop}
+  अंतःप्रज्ञावादी तर्कशास्त्रातील नैसर्गिक निगमनात
+  $\Gamma \Proves \varphi$ असेल, तर अभिजात तर्कशास्त्रातही
+  $\Gamma \Proves \varphi$ असते. विशेषतः, $\varphi$ हे
+  अंतःप्रज्ञावादी प्रमेय असेल, तर ते अभिजात प्रमेयही असते.
+\end{prop}
+\begin{proof}
+  नैसर्गिक निगमनाचा प्रत्येक नियम अभिजात नैसर्गिक
+  निगमनाचाही नियम आहे. म्हणून अंतःप्रज्ञावादी
+  तर्कशास्त्रातील प्रत्येक निष्पत्ती ही अभिजात
+  तर्कशास्त्रातीलही निष्पत्ती आहे.
+\end{proof}
+\begin{prob}
+  पुढील सूत्रांची अंतःप्रज्ञावादी तर्कशास्त्रात
+  निष्पत्त्या द्या:
+  \begin{enumerate}
+    \item $(\lnot \varphi \lor \psi) \lif (\varphi \lif \psi)$
+    \item $\lnot\lnot\lnot \varphi \lif \lnot \varphi$
+    \item $\lnot\lnot (\varphi \land \psi) \liff (\lnot\lnot \varphi\land \lnot \lnot \psi)$
+    \item $\lnot (\varphi \lor \psi) \liff (\lnot \varphi \land \lnot \psi)$
+    \item $(\lnot \varphi \lor \lnot \psi) \lif \lnot (\varphi \land \psi)$
+    \item $\lnot\lnot ( \varphi \land \psi) \lif  (\lnot\lnot \varphi \lor
+    \lnot\lnot \psi)$
+  \end{enumerate}
+\end{prob}
+\section{स्वयंसिद्धकीय निष्पत्ती}\label{int:int:axd:sec}
+अंतःप्रज्ञावादी विधानीय तर्कशास्त्रातील स्वयंसिद्धकीय
+निष्पत्त्या या संकल्पनात्मकदृष्ट्या सर्वांत सोप्या
+आणि ऐतिहासिकदृष्ट्या पहिल्या निष्पत्ती-पद्धती आहेत. त्यांचे कार्य अभिजात विधानीय
+तर्कशास्त्रातल्याप्रमाणेच चालते.
+\begin{defn}[निष्पन्नता]
+जर $\Gamma$ हा $\Lang L$ मधील सूत्रांचा संच
+असेल, तर $\Gamma$ पासूनची \emph{निष्पत्ती} म्हणजे
+सूत्रांचा सांत अनुक्रम $\varphi_1$, \dots,~$\varphi_n$
+असा की प्रत्येक $i \le n$ साठी पुढीलपैकी एक अट
+पूर्ण होते:
+\begin{enumerate}
+\item $\varphi_i \in \Gamma$; किंवा
+\item $\varphi_i$ हे स्वयंसिद्धक आहे; किंवा
+\item एखाद्या $\varphi_j$ आणि $\varphi_k$ पासून, जिथे $j < i$
+  आणि $k < i$, विध्यात्मक अनुमानाने $\varphi_i$ निष्पन्न होते;
+  म्हणजे $\varphi_k \ident \varphi_j \lif \varphi_i$.
+\end{enumerate}
+\end{defn}
+\begin{defn}[स्वयंसिद्धके]
+अंतःप्रज्ञावादी विधानीय तर्कशास्त्रातील
+\emph{स्वयंसिद्धकांचा} संच $\PAx$ हा पुढील रूपांच्या
+सर्व सूत्रांचा बनलेला आहे:
+\begin{align}
+  & (\varphi \land \psi) \lif \varphi \label{int:int:axd:ax:land1}\\
+  & (\varphi \land \psi) \lif \psi \label{int:int:axd:ax:land2}\\
+  & \varphi \lif (\psi \lif (\varphi \land \psi)) \label{int:int:axd:ax:land3}\\
+  & \varphi \lif (\varphi \lor \psi) \label{int:int:axd:ax:lor1}\\
+  & \varphi \lif (\psi \lor \varphi) \label{int:int:axd:ax:lor2}\\
+  & (\varphi \lif \chi) \lif ((\psi \lif \chi) \lif ((\varphi \lor \psi) \lif \chi)) \label{int:int:axd:ax:lor3}\\
+  & \varphi \lif (\psi \lif \varphi) \label{int:int:axd:ax:lif1}\\
+  & (\varphi \lif (\psi \lif \chi)) \lif ((\varphi \lif \psi) \lif (\varphi \lif \chi)) \label{int:int:axd:ax:lif2}\\
+  & \lfalse \lif \varphi \label{int:int:axd:ax:lfalse1}
+\end{align}
+\end{defn}
+\begin{defn}[निष्पन्नता]
+सूत्र~$\varphi$ हे $\Gamma$ पासून \emph{निष्पन्न करता येण्याजोगे}
+असते, म्हणजे $\Gamma \Proves \varphi$, जर $\Gamma$
+पासून सुरू होऊन $\varphi$ वर संपणारी निष्पत्ती असेल.
+\end{defn}
+\begin{defn}[प्रमेये]
+रिक्त संचापासून $\varphi$ ची निष्पत्ती असेल,
+तर सूत्र~$\varphi$ हे \emph{प्रमेय} असते.
+$\varphi$ हे प्रमेय असेल तर आपण $\Proves \varphi$ लिहितो
+आणि ते प्रमेय नसेल तर $\Proves/ \varphi$ लिहितो.
+\end{defn}
+\begin{prop}
+  अंतःप्रज्ञावादी तर्कशास्त्राच्या स्वयंसिद्धकीय
+  निष्पत्ती-पद्धतीत $\Gamma \Proves \varphi$
+  असेल, तर अभिजात तर्कशास्त्रातही
+  $\Gamma \Proves \varphi$ असते. विशेषतः, $\varphi$ हे
+  अंतःप्रज्ञावादी प्रमेय असेल, तर ते अभिजात प्रमेयही असते.
+\end{prop}
+\begin{proof}
+  प्रत्येक अंतःप्रज्ञावादी स्वयंसिद्धक हे अभिजात
+  स्वयंसिद्धकही आहे. म्हणून अंतःप्रज्ञावादी
+  तर्कशास्त्रातील प्रत्येक निष्पत्ती ही अभिजात
+  तर्कशास्त्रातीलही निष्पत्ती आहे.
+\end{proof}

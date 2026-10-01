@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "finite_sequences_checked": 3905,
+  "lengths": [
+    1,
+    5
+  ],
+  "element_range": [
+    0,
+    4
+  ],
+  "zero_modulus_counterexample": {
+    "a": 0,
+    "b": 1,
+    "c": 0,
+    "totalized_remainders": [
+      0,
+      0
+    ],
+    "equal_remainders": true,
+    "c_divides_a_minus_b": false,
+    "corrected_positive_modulus_guard": false
+  },
+  "method": "Exact integer LCM, coprimality, constructive CRT and inverse pairing checks.",
+  "general_argument_mr": "j किमान एक आणि प्रत्येक a_i पेक्षा मोठे आहे. m ला 1 ते j मधील प्रत्येक धन संख्या विभाजित करते. दोन भिन्न निर्देशांकांच्या moduli मध्ये सामाईक अविभाज्य p असता p हा i-k ला आणि म्हणून m ला विभाजित करतो, पण 1+(i+1)m ला विभाजित केल्यामुळे p हा m ला विभाजित करू शकत नाही. त्यामुळे सर्व moduli परस्पर सहमूळ आहेत; ते a_i पेक्षा मोठेही आहेत. CRT ने एकाच z मध्ये सर्व शेष मिळतात आणि Cantor जोडीकरण z,m जपते.",
+  "input_hashes": {
+    "upstream/content/incompleteness/representability-in-q/beta-function.tex": "041d2d3510e2d838d1631634a22a8d5eeb0fb5942df402382cafab3d82b6f5d0",
+    "mr/content/incompleteness/representability-in-q/beta-function.tex": "2c9b1e8a8c3d63b40389b7c10d2c59f593b4d4c75564ec316bc28e75c1c7302a"
+  },
+  "scope_limitations": "Finite examples support the mathematical construction, alongside its general argument. They do not execute the textbook minimization-only implementation or constitute full corpus/human review."
+}

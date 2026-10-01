@@ -1,6 +1,7 @@
 % Part: applied-modal-logics
 % Chapter: epistemic-logic
 % Section: truth-at-w
+%READERNOTE{SOL6-A189: संक्रमण-संवरणाच्या powers मध्ये मूळ zero-based indexing ऐवजी पूर्वीच्या व्याख्येशी जुळणारे R^1=R आणि n>0 union वापरले. Positive-path आणि reflexive-path conventions वेगळ्या ठेवल्या; मूळ common-knowledge semantics बदलली नाही.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -114,20 +115,29 @@ $\Box$-सूत्रे तेथे रिक्तपणे सत्य अ
 व्याख्येनुसार, संबंध~$R$ चे \emph{संक्रमक संवरण}~$R^+$
 पुढीलप्रमाणे असते:
 \begin{align*}
-  R^+ &= \bigcup_{ n \in \mathbb{N}} R^n,
+  R^+ &= \bigcup_{0 < n \in \mathbb{N}} R^n,
 \intertext{येथे}
-  R^0 & = R \text{ आणि}\\
-  R^{n+1} & = \Setabs{\tuple{x, z}}{\exists y (R^n xy \land Ryz)}.
+  R^1 & = R \text{ आणि}\\
+  R^{n+1} & = \Setabs{\tuple{x, z}}{\exists y (R^n xy \land Ryz)}\quad(n\geq1).
 \end{align*}
 मग $G$ हा कर्त्यांचा समूह असेल, तर सर्व कर्त्यांच्या
 प्राप्यता संबंधांच्या संघाचे संक्रमक संवरण म्हणून
 $R_G = ( \bigcup_{b
 \in G} R_b )^+$ परिभाषित करतो.
+यात एक किंवा अधिक प्राप्यता-पायऱ्या असलेले मार्ग घेतले
+आहेत; शून्य पायऱ्यांचा मार्ग आपोआप जोडलेला नाही.
 
 \begin{defn}
 $G' \subseteq G$ असेल, तर $\mSat{M}{\CKnows_{G'} !A}[ w]$
 तेव्हा आणि केवळ तेव्हाच, जेव्हा $R_{G'} w w'$ असलेल्या
 प्रत्येक $w'$ साठी $\mSat{M}{!A}[w']$.
 \end{defn}
+ही अट सर्व रिकामेतर सीमित कर्तृक्रमांसाठी ज्ञानाची
+अट घेण्यास समतुल्य आहे. येथे सामान्य $R_a$ संबंधांसाठी
+संक्रमक संवरण घेतले आहे; परावर्ती संक्रमक संवरण नाही.
+समूह रिकामेतर आणि त्यातील संबंध परावर्ती असतील, तर
+$R_{G'}ww$ असल्याने सामायिक ज्ञान असलेले सूत्र~$w$
+येथेही सत्य असते. रिकाम्या समूहासाठी संबंध रिकामा
+आणि ही सार्विक अट रिक्तपणे सत्य असते.
 
 \end{document}

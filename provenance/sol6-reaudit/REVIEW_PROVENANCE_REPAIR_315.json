@@ -1,0 +1,38 @@
+{
+  "id": "SOL6-A315",
+  "date": "2026-10-01",
+  "record_kind": "workflow_provenance",
+  "title": "Bind legacy page locators only to their recorded PDF and describe actual proof-search controls.",
+  "before_tool_sha256": "9ef7b3be4b392327d51b145f7a4c34de95db71e6095ac6c8e9af35d399ce29f2",
+  "after_tool_sha256": "e438f3dcf6b972f5c5c0f3583a4c489cc3802e32aacf15b5eafdad83c86cae6d",
+  "exact_before_tool": "C:\\interlanguage-task-state\\openlogic-mr-Deva-IN\\work\\sol6-audit\\BEFORE_TOOL_SOL6-A315.py",
+  "page_binding_cases_actually_checked": 4,
+  "before_corrective_journal_sha256": "92622673dc86995bfc48e47637e09568ad3ad6693a33bfe40a1814d55d4cda84",
+  "after_corrective_journal_sha256": "44f6ade0e1bfea63757f2d9ca8d67c3ecf525f83c3091c31beb337342c764470",
+  "historical_copied_control_descriptions": [
+    {
+      "id": "SOL6-A311",
+      "canon_role_mr": "पूर्ण frozen English/Marathi normalization units प्रत्यक्ष वाचली; आधी प्रत्यक्ष वाचलेल्या N1/N2 rule tables, discharge scope, regularization आणि syntactic subformula definition नियंत्रक आहेत. नवीन बाह्य canon consultation, स्वतंत्र मानव परीक्षण किंवा संपूर्ण formal verification केल्याचा दावा नाही.",
+      "review_question_mr": "रूपांतरणात उघडी गृहीतके अनवधानाने discharge होतात का? प्रतीतील eigenvariables नियमित राहतात का? अंतिम असत्य सूत्रासाठी रिकामा उत्तरपक्ष जपला आहे का? संदर्भ संचाचे बहुसंचात रूपांतर केल्यावर आवश्यक contraction केले आहे का? उपसूत्राच्या दाव्यात गृहीतके, संख्यापकांची उदाहरणे आणि असत्याची अट समाविष्ट आहेत का?"
+    },
+    {
+      "id": "SOL6-A312",
+      "canon_role_mr": "पूर्ण frozen English/Marathi normalization units प्रत्यक्ष वाचली; आधी प्रत्यक्ष वाचलेल्या N1/N2 rule tables, discharge scope, regularization आणि syntactic subformula definition नियंत्रक आहेत. नवीन बाह्य canon consultation, स्वतंत्र मानव परीक्षण किंवा संपूर्ण formal verification केल्याचा दावा नाही.",
+      "review_question_mr": "रूपांतरणात उघडी गृहीतके अनवधानाने discharge होतात का? प्रतीतील eigenvariables नियमित राहतात का? अंतिम असत्य सूत्रासाठी रिकामा उत्तरपक्ष जपला आहे का? संदर्भ संचाचे बहुसंचात रूपांतर केल्यावर आवश्यक contraction केले आहे का? उपसूत्राच्या दाव्यात गृहीतके, संख्यापकांची उदाहरणे आणि असत्याची अट समाविष्ट आहेत का?"
+    },
+    {
+      "id": "SOL6-A313",
+      "canon_role_mr": "पूर्ण frozen English/Marathi normalization units प्रत्यक्ष वाचली; आधी प्रत्यक्ष वाचलेल्या N1/N2 rule tables, discharge scope, regularization आणि syntactic subformula definition नियंत्रक आहेत. नवीन बाह्य canon consultation, स्वतंत्र मानव परीक्षण किंवा संपूर्ण formal verification केल्याचा दावा नाही.",
+      "review_question_mr": "रूपांतरणात उघडी गृहीतके अनवधानाने discharge होतात का? प्रतीतील eigenvariables नियमित राहतात का? अंतिम असत्य सूत्रासाठी रिकामा उत्तरपक्ष जपला आहे का? संदर्भ संचाचे बहुसंचात रूपांतर केल्यावर आवश्यक contraction केले आहे का? उपसूत्राच्या दाव्यात गृहीतके, संख्यापकांची उदाहरणे आणि असत्याची अट समाविष्ट आहेत का?"
+    },
+    {
+      "id": "SOL6-A314",
+      "canon_role_mr": "पूर्ण frozen English/Marathi normalization units प्रत्यक्ष वाचली; आधी प्रत्यक्ष वाचलेल्या N1/N2 rule tables, discharge scope, regularization आणि syntactic subformula definition नियंत्रक आहेत. नवीन बाह्य canon consultation, स्वतंत्र मानव परीक्षण किंवा संपूर्ण formal verification केल्याचा दावा नाही.",
+      "review_question_mr": "रूपांतरणात उघडी गृहीतके अनवधानाने discharge होतात का? प्रतीतील eigenvariables नियमित राहतात का? अंतिम असत्य सूत्रासाठी रिकामा उत्तरपक्ष जपला आहे का? संदर्भ संचाचे बहुसंचात रूपांतर केल्यावर आवश्यक contraction केले आहे का? उपसूत्राच्या दाव्यात गृहीतके, संख्यापकांची उदाहरणे आणि असत्याची अट समाविष्ट आहेत का?"
+    }
+  ],
+  "before_live_ledger_sha256": "418ec111f1ba572db7319ad84bbd3ec76a74bd0a180a872126ddd494dd18bd32",
+  "after_live_ledger_sha256": "a81eb4018b6d2368d510335ce73926dd9817e9eaab846de0bc077f53bfbc88d8",
+  "live_review_metadata_updated": 18,
+  "scope": "No new mathematical choice or original dated receipt overwrite. Other legacy metadata and current source bindings preserved."
+}

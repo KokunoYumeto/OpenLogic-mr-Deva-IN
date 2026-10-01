@@ -1,0 +1,16 @@
+{
+  "id": "SOL6-A356",
+  "date": "2026-10-01",
+  "record_kind": "workflow_packaging",
+  "source_choices_added": 0,
+  "before_stage_sha256": "62e2b0011970ed59ad3713836eaf9b828f80749c3d95cea1067cfbc06bc6ac7a",
+  "after_stage_sha256": "19efc6911f972c028e473392a08b33c39d4cf2f89bb16cbc90917590706f1bb0",
+  "required_untracked_helpers": [
+    "tools/complete_diagram_inventory.py",
+    "tools/complete_reader_topology.py",
+    "tools/complete_review_repairs.py",
+    "tools/render_complete_svg_assets.py"
+  ],
+  "scope": "Stage actual reviewed Python/PowerShell build helpers, preserving unrelated core-HTML changes by packaging its pristine HEAD version. Historical release packages unchanged. Runtime stage and cold-source reproduction pending.",
+  "runtime_validation": "passed_complete_v1.2_staging_and_cross_package_consistency"
+}

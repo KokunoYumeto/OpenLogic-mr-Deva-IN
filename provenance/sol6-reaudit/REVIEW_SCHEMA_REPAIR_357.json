@@ -1,0 +1,20 @@
+{
+  "id": "SOL6-A357",
+  "date": "2026-10-01",
+  "record_kind": "workflow_schema",
+  "source_choices_added": 0,
+  "problem": "A355 attempted to add unsupported status properties to canonical decision objects; the closed schema rejected them.",
+  "correction": "Keep reporting lanes and machine status in corrective/localized ledgers. Canonical notation kind, Marathi rationale, classification and review question explicitly explain the withdrawal using existing schema fields. Canonical schema unchanged.",
+  "before_tool_bindings": {
+    "tools/complete_review_repairs.py": "c944f48f894a5ff1a6a993606894144196d51369c657494c17f4b74e8e14eb35",
+    "tools/complete_review_source_issues.py": "df7434ad3f82a0bfc36f54d773698795c6e1262a6e0a95c9ca9c32c3b7e7fe82",
+    "tools/prepare_complete.py": "4cb986e5d6aa8765005545767ad8b5a9a8da3a2d8982528f5af0b39e521049ab"
+  },
+  "after_tool_bindings": {
+    "tools/complete_review_repairs.py": "6355ee3f63e9c7ea90f45d05d0d0bc4dcb6863ab139ac6e276d81246b13e5df9",
+    "tools/complete_review_source_issues.py": "4e14924edab86e6a8a9f234ab568a78f6c0141d51d25dd46628577e99bc2cedb"
+  },
+  "canonical_schema_sha256": "50e7fa407b62c711f92f8b93be591d3b4a6e1c4adb1386c398bb5f76844d9f90",
+  "current_schema_errors": 0,
+  "current_corrective_decisions": 328
+}

@@ -1,0 +1,18 @@
+{
+  "id": "SOL6-A355",
+  "date": "2026-10-01",
+  "record_kind": "workflow_disclosure",
+  "source_choices_added": 0,
+  "before_tools": {
+    "tools/complete_review_repairs.py": "bad12139997cc0786c6b550959cef1a313f6493aa442d7da2720142c766d1c08",
+    "tools/complete_review_source_issues.py": "d928417c097ab92cb4d4bbc4072c5f22e34677e025d498770fbf31f5de7af205",
+    "tools/prepare_complete.py": "810a960977ef6c5d2f47c499cc5a5bb6e7d2e834ca0285770035c82581d9f4b1"
+  },
+  "after_tools": {
+    "tools/complete_review_repairs.py": "c944f48f894a5ff1a6a993606894144196d51369c657494c17f4b74e8e14eb35",
+    "tools/complete_review_source_issues.py": "df7434ad3f82a0bfc36f54d773698795c6e1262a6e0a95c9ca9c32c3b7e7fe82",
+    "tools/prepare_complete.py": "4cb986e5d6aa8765005545767ad8b5a9a8da3a2d8982528f5af0b39e521049ab"
+  },
+  "frozen_source_issues_sha256": "c015a22ae11cf8f9da72509aa787424599e3611b46412a32a4f219377f8b11f9",
+  "scope": "Live review generators explicitly retain optional/withdrawn status; localized disjunction classification and semantic review corrected. Default table reference names localized. Frozen source and historical receipts unchanged."
+}

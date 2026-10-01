@@ -1,0 +1,18 @@
+{
+  "id": "SOL6-A299",
+  "date": "2026-10-01",
+  "record_kind": "workflow_disclosure",
+  "title": "Current supplemental wrapper and localized344 acknowledge the actual A296 variable-witness repair.",
+  "before_tool_sha256": "7ec1ba77c5f72c1997e32b75c33f84f88cacc8341db87d854b97de8919a5d697",
+  "after_tool_sha256": "f5f24fe6260dd031d3b3e5f731a4dc1433fb66bcb07a53d02fda120032ab3f3a",
+  "exact_before_tool": "C:\\interlanguage-task-state\\openlogic-mr-Deva-IN\\work\\sol6-audit\\BEFORE_TOOL_SOL6-A299.py",
+  "before_localized_index_sha256": "355c4b00604611406bd6d4bb11f646454a495df0a45a1f3acb5d2833ebbba02d",
+  "after_localized_index_sha256": "01170946d6de03ca04c0c3dfedc36655a085df4ab8dc9aebc42eac6bfef29e02",
+  "historical_localized_row": {
+    "issue_id": "OLINC-344",
+    "rationale_mr": "फलनचिन्हे नसताना t फक्त स्थिरक असते हा मूळ दावा पदांच्या व्याकरणातील चर-प्रकरण गाळतो. नियमात t साठी ही मर्यादा नाही, पण परिच्छेद फक्त स्थिरक हाताळतो. मराठीत परिच्छेद स्थिरकाचे प्रकरण म्हणून स्पष्ट केला आहे आणि न हाताळलेले चर-पद प्रकरण नोंदवले आहे; सिद्धी-वृक्ष कायम आहेत. फक्त स्थिरक-साक्षी वापरणारे सामान्यीकरण येथे पुरवलेले नाही.",
+    "review_question_mr": "सिद्धी पूर्ण करण्यासाठी चर-पदाचे प्रकरण किंवा स्पष्ट स्थिरक-साक्षी सामान्यीकरण आवश्यक आहे का?"
+  },
+  "immutable_source_issues_sha256": "c015a22ae11cf8f9da72509aa787424599e3611b46412a32a4f219377f8b11f9",
+  "scope": "Current disclosure only. No mathematical source choice, frozen issue edit, original dated receipt overwrite or exercise solution."
+}

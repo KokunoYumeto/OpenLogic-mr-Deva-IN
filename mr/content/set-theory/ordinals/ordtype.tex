@@ -24,7 +24,7 @@ $\tuple{A, <}$ हे सुक्रमण मानू. \olref[basic]{ordisoid
 विसंगतीचा पुरावा पूर्ण करण्यासाठी कोणत्या तरी क्रमसूचक संख्या $\alpha$ साठी $f$ हे $\alpha \to B$ समरूपण आहे, हे दाखवू.
 
 $\ran{f}
-= B$ हे उघड आहे. \olref[iso]{lemordsegments} वरून $f$ क्रम जपते; म्हणजे $\gamma \in \beta$ तेव्हाच आणि तेव्हाच $f(\gamma) \lessdot f(\beta)$. $\dom{f}$ ही क्रमसूचक संख्या आहे हे दाखवण्यासाठी \olref[basic]{corordtransitiveord} वरून $\dom{f}$ संक्रमक आहे हे दाखवणे पुरेसे आहे. म्हणून $\beta \in \dom{f}$ निश्चित करू; म्हणजे एखाद्या $b$ साठी $\ordeq{\beta}{\tuple{B_b, \lessdot_b}}$. $\gamma \in
+= B$ हे उघड आहे. \olref[iso]{lemordsegments} वरून $f$ क्रम जपते; म्हणजे $\gamma \in \beta$ तेव्हा आणि केवळ तेव्हाच $f(\gamma) \lessdot f(\beta)$. $\dom{f}$ ही क्रमसूचक संख्या आहे हे दाखवण्यासाठी \olref[basic]{corordtransitiveord} वरून $\dom{f}$ संक्रमक आहे हे दाखवणे पुरेसे आहे. म्हणून $\beta \in \dom{f}$ निश्चित करू; म्हणजे एखाद्या $b$ साठी $\ordeq{\beta}{\tuple{B_b, \lessdot_b}}$. $\gamma \in
 \beta$ असेल, तर \olref[iso]{wellordinitialsegment} वरून $\gamma \in \dom{f}$. म्हणून $\beta \subseteq
 \dom{f}$.
 \end{proof}
@@ -40,8 +40,8 @@ $\tuple{A, <}$ हे सुक्रमण असेल, तर त्याच
 \begin{cor}\ollabel{ordtypesworklikeyouwant}
 $\tuple{A, <}$ आणि $\tuple{B, \lessdot}$ ही सुक्रमणे असतील, तर:
 \begin{align*}
-	\ordtype{A, <} = \ordtype{B, \lessdot}&\text{ तेव्हाच आणि तेव्हाच }\ordeq{\tuple{A, <}}{\tuple{B, \lessdot}}\\
-	\ordtype{A, <} \in \ordtype{B, \lessdot}&\text{ तेव्हाच आणि तेव्हाच }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ अशा काही }b \in B
+	\ordtype{A, <} = \ordtype{B, \lessdot}&\text{ तेव्हा आणि केवळ तेव्हाच }\ordeq{\tuple{A, <}}{\tuple{B, \lessdot}}\\
+	\ordtype{A, <} \in \ordtype{B, \lessdot}&\text{ तेव्हा आणि केवळ तेव्हाच }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ अशा काही }b \in B
 \end{align*}
 \end{cor}
 
@@ -49,9 +49,9 @@ $\tuple{A, <}$ आणि $\tuple{B, \lessdot}$ ही सुक्रमणे �
 पहिली समता \olref[basic]{ordisoidentity} वरून मिळते. दुसरा दावा सिद्ध करण्यासाठी $\ordtype{A, <} = \alpha$ आणि $\ordtype{B,
 \lessdot} = \beta$ मानू; तसेच $f \colon \beta \to \tuple {B, \lessdot}$ हे समरूपण घेऊ. मग:
 \begin{align*}
-	\alpha \in \beta&\text{ तेव्हाच आणि तेव्हाच }\funrestrictionto{f}{\alpha} \colon \alpha \to B_{f(\alpha)}\text{ हे समरूपण आहे}\\
-	&\text{ तेव्हाच आणि तेव्हाच }\ordeq{\tuple{A, <}}{\tuple{B_{f(\alpha)}, \lessdot_{f(\alpha)}}}\\
-	&\text{ तेव्हाच आणि तेव्हाच }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ अशा काही $b \in B$ साठी}
+	\alpha \in \beta&\text{ तेव्हा आणि केवळ तेव्हाच }\funrestrictionto{f}{\alpha} \colon \alpha \to B_{f(\alpha)}\text{ हे समरूपण आहे}\\
+	&\text{ तेव्हा आणि केवळ तेव्हाच }\ordeq{\tuple{A, <}}{\tuple{B_{f(\alpha)}, \lessdot_{f(\alpha)}}}\\
+	&\text{ तेव्हा आणि केवळ तेव्हाच }\ordeq{\tuple{A, <}}{\tuple{B_b, \lessdot_b}}\text{ अशा काही $b \in B$ साठी}
 \end{align*}
 हे \olref[iso]{ordisounique}, \olref[iso]{wellordinitialsegment} आणि \olref[basic]{ordissetofsmallerord} वरून मिळते.
 \end{proof}

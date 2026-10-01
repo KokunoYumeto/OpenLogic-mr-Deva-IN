@@ -1,0 +1,936 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 54: निर्दोषता आणि संपूर्णता
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{निर्दोषता आणि संपूर्णता}\label{int:sc:chap}
+\begin{editorial}
+  या प्रकरणात अंतःप्रज्ञावादी विधानीय तर्कशास्त्रासाठी
+  निर्दोषता आणि संपूर्णता यांविषयीचे निष्कर्ष
+  एकत्र दिले आहेत. याला प्रस्तावना हवी आहे.
+  संपूर्णतेची सिद्धता सिद्धतायोग्यतेबद्दलच्या
+  अशा तथ्यांचा आधार घेते की जी कुठेतरी
+  स्पष्टपणे मांडून सिद्ध करायला हवीत.
+\end{editorial}
+
+
+
+
+
+
+
+
+
+\section{स्वयंसिद्धकीय निष्पत्तीची निर्दोषता}\label{int:sc:sax:sec}
+
+\begin{editorial}
+  निर्दोषतेची सिद्धता सर्व स्वयंसिद्धके
+  अंतःप्रज्ञावादी अर्थाने वैध आहेत, या
+  तथ्यावर अवलंबून आहे. हे अजून सिद्ध
+  करायचे आहे; उदाहरणार्थ, चिन्हार्थमीमांसेच्या
+  प्रकरणात ते करता येईल.
+\end{editorial}
+
+\begin{thm}[निर्दोषता]
+  \label{int:sc:sax:thm:soundness}
+  $\Gamma \Proves \varphi$ असेल, तर
+  $ \Gamma \Entails \varphi$.
+\end{thm}
+
+\begin{proof}
+  $\Gamma \Proves \varphi$ असेल, तर
+  $\Gamma \Entails \varphi$, हे सिद्ध करू.
+  $\Gamma$ पासून~$\varphi$ च्या
+  निष्पत्तीमधील सूत्रांची
+  संख्या~$n$ यावर विगमनाने सिद्धता करतो.
+  $\varphi_1$, \dots, $\varphi_n = \varphi$ ही
+  $\Gamma$ पासूनची निष्पत्ती असेल,
+  तर $\Gamma \Entails \varphi_n$ हे दाखवू.
+  $\varphi_1$, \dots, $\varphi_n$ ही
+  निष्पत्ती असेल, तर कोणत्याही $k<n$
+  साठी $\varphi_1$, \dots, $\varphi_k$ हीही
+  निष्पत्ती आहे, हे लक्षात घ्या.
+
+  लांबी~$0$ च्या निष्पत्त्या नसतात; म्हणून
+  $n=0$ साठी दावा रिक्तपणे खरा आहे.
+  त्यामुळे लांबी~$<n$ असलेल्या सर्व
+  निष्पत्त्या साठी दावा खरा आहे, असे
+  विगमन-गृहीतक घेऊ. आता~$\varphi_n$ चे
+  समर्थन कशावर आहे त्यानुसार प्रकार पाहू.
+
+  \begin{enumerate}
+  \item $\varphi_n$ हे स्वयंसिद्धक आहे.
+    सर्व स्वयंसिद्धके वैध असल्याने कोणत्याही~$\Gamma$
+    साठी $\Gamma \Entails
+    \varphi_n$.
+  \item $\varphi_n \in \Gamma$. मग कोणतेही
+    $\mModel{M}$ आणि $w$ घ्या.
+    $\mSat{M}{\Gamma}[w]$ असेल, तर उघडच
+    $\mSat{M}{\varphi_n}[w]$; म्हणजे
+    $\Gamma \Entails \varphi$.
+  \item $\varphi_n$ हे $\varphi_i$ आणि
+    $\varphi_j \ident \varphi_i \lif
+    \varphi_n$ यांपासून \MP{} ने निष्पन्न होते.
+    $\varphi_1$, \dots, $\varphi_i$ आणि
+    $\varphi_1$, \dots, $\varphi_j$ या
+    $\Gamma$ पासूनच्या निष्पत्त्या आहेत.
+    म्हणून विगमन-गृहीतकानुसार
+    $\Gamma \Entails \varphi_i$ आणि
+    $\Gamma \Entails \varphi_i \lif \varphi_n$.
+
+    $\mSat{M}{\Gamma}[w]$ असे समजा.
+    $\mSat{M}{\Gamma}[w]$ आणि
+    $\Gamma \Entails \varphi_i \lif \varphi_n$
+    असल्यामुळे $\mSat{M}{\varphi_i \lif
+      \varphi_n}[w]$. व्याख्येनुसार याचा अर्थ
+    असा की $Rww'$ असलेल्या प्रत्येक $w'$
+    साठी $\mSat{M}{\varphi_i}[w']$ असेल, तर
+    $\mSat{M}{\varphi_n}[w']$. $R$ परावर्ती
+    असल्याने $w$ हेही $Rww'$ पूर्ण करणाऱ्या
+    $w'$ पैकी एक आहे. म्हणजे
+    $\mSat{M}{\varphi_i}[w]$ असेल, तर
+    $\mSat{M}{\varphi_n}[w]$.
+    $\Gamma \Entails \varphi_i$ असल्याने
+    $\mSat{M}{\varphi_i}[w]$. म्हणून
+    अपेक्षेप्रमाणे $\mSat{M}{\varphi_n}[w]$.
+  \end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{नैसर्गिक निगमनाची निर्दोषता}\label{int:sc:snd:sec}
+
+आता संबंधी चिन्हार्थमीमांसेच्या दृष्टीने नैसर्गिक निगमनाची
+निर्दोषता सिद्ध करू. म्हणजेच, गृहीतकांच्या संचापासून
+एखादे सूत्र निष्पन्न करता येण्याजोगे असेल, तर त्या
+गृहीतकांच्या संचापासून ते सूत्र
+तार्किकरीत्या निष्पन्न होते, हे दाखवू.
+
+\begin{thm}[निर्दोषता]
+  \label{int:sc:snd:thm:soundness}
+  $\Gamma \Proves \varphi$ असेल, तर $ \Gamma \Entails \varphi$.
+\end{thm}
+
+\begin{proof}
+  $\Gamma \Proves \varphi$ असेल, तर $\Gamma \Entails \varphi$,
+  हे सिद्ध करू. $\Gamma$ पासून~$\varphi$ च्या
+  निष्पत्ती वर विगमनाने सिद्धता करतो.
+
+  \begin{enumerate}
+  \item निष्पत्तीमध्ये केवळ गृहीतक~$\varphi$ असेल,
+    तर $\varphi \Proves \varphi$. आता $\varphi \Entails \varphi$ हे
+    दाखवायचे आहे. $ \mSat{M}{\varphi}[w]$ असे समजा.
+    मग उघडच $\mSat{M}{\varphi}[w]$.
+
+  \item निष्पत्तीचा शेवट $\Intro{\land}$ ने होतो:
+    आधारविधान~$\psi$ ची
+      मुक्त न केलेले गृहीतके~$\Gamma$ यांपासून आणि
+      आधारविधान~$\chi$ ची मुक्त न केलेले
+      गृहीतके~$\Delta$ यांपासून असलेल्या
+      निष्पत्त्यांवरून $\Gamma \Proves
+      \psi$ आणि $\Delta \Proves \chi$ हे मिळते.
+      विगमन-गृहीतकानुसार $\Gamma \Entails \psi$
+      आणि $\Delta \Entails \chi$. संपूर्ण
+      निष्पत्तीची मुक्त न केलेले गृहीतके
+      $\Gamma$ व $\Delta$ मिळून असल्यामुळे
+      $\Gamma \cup \Delta \Entails \psi \land \chi$
+      हे दाखवायचे आहे. म्हणून
+      $\mSat{M}{\Gamma \cup \Delta}[w]$ असे समजा.
+      मग $\mSat{M}{\Gamma}[w]$ सुद्धा.
+      $\Gamma \Entails \psi$ असल्याने
+      $\mSat{M}{\psi}[w]$. त्याचप्रमाणे
+      $\mSat{M}{\chi}[w]$. म्हणून
+      $\mSat{M}{\psi \land \chi}[w]$.
+
+  \item निष्पत्तीचा शेवट $\Elim{\land}$ ने होतो:
+    आधारविधान $\psi
+        \land \chi$ ची मुक्त न केलेले गृहीतके
+        $\Gamma$ यांपासून असलेली निष्पत्ती
+        $\Gamma \Proves \psi \land \chi$ हे दाखवते.
+        विगमन-गृहीतकानुसार
+        $\Gamma \Entails \psi \land \chi$.
+        $\Gamma \Entails \psi$ हे दाखवायचे आहे.
+        म्हणून $\mSat{M}{\Gamma}[w]$ असे समजा.
+        $\Gamma \Entails \psi \land \chi$
+        असल्याने $\mSat{M}{\psi \land \chi}[w]$.
+        मग $\mSat{M}{\psi}[w]$ सुद्धा.
+        त्याचप्रमाणे $\Elim\land$ चा शेवट~$\chi$
+        ने होत असेल, तर $\Gamma \Entails \chi$.
+
+  \item निष्पत्तीचा शेवट $\Intro{\lor}$ ने होतो:
+    आधारविधान $\psi$ आहे,
+      आणि~$\psi$ येथे संपणाऱ्या निष्पत्तीची
+      मुक्त न केलेले गृहीतके $\Gamma$ आहेत,
+      असे समजा. मग $\Gamma \Proves \psi$;
+      विगमन-गृहीतकानुसार $\Gamma \Entails \psi$.
+      $\Gamma \Entails \psi \lor \chi$ हे दाखवायचे आहे.
+      $\mSat{M}{\Gamma}[w]$ असे समजा.
+      $\Gamma \Entails \psi$ असल्याने
+      $\mSat{M}{\psi}[w]$. पण मग
+      $\mSat{M}{\psi \lor \chi}[w]$ सुद्धा.
+      त्याचप्रमाणे आधारविधान~$\chi$ असेल, तर
+      $\Gamma \Entails \chi$.
+
+  \item निष्पत्तीचा शेवट~$\Elim{\lor}$ ने होतो:
+    आधारविधानांवर संपणाऱ्या
+      निष्पत्त्या अनुक्रमे $\psi \lor \chi$ ची
+      मुक्त न केलेले गृहीतके~$\Gamma$,
+      $\theta$ ची मुक्त न केलेले गृहीतके
+      $\Delta_1 \cup \{\psi\}$, आणि $\theta$ ची
+      मुक्त न केलेले गृहीतके
+      $\Delta_2 \cup \{\chi\}$ यांपासून आहेत.
+      म्हणून $\Gamma \Proves \psi \lor \chi$,
+      $\Delta_1 \cup \{\psi\} \Proves \theta$,
+      आणि $\Delta_2 \cup \{\chi\} \Proves \theta$.
+      विगमन-गृहीतकानुसार
+      $\Gamma \Entails \psi \lor \chi$,
+      $\Delta_1 \cup \{\psi\} \Entails \theta$,
+      आणि $\Delta_2 \cup \{\chi\} \Entails \theta$.
+      $\Gamma \cup \Delta_1 \cup \Delta_2 \Entails \theta$
+      हे सिद्ध करायचे आहे.
+
+    $\mSat{M}{\Gamma \cup \Delta_1 \cup \Delta_2}[w]$
+    असे समजा. मग $\mSat{M}{\Gamma}[w]$;
+    $\Gamma \Entails \psi \lor \chi$ असल्याने
+    $\mSat{M}{\psi \lor \chi}[w]$.
+    $\mSat{M}{}$ च्या व्याख्येनुसार
+    $\mSat{M}{\psi}[w]$ किंवा
+    $\mSat{M}{\chi}[w]$. म्हणून दोन प्रकार पाहू:
+    (a)~$\mSat{M}{\psi}[w]$. मग
+    $\mSat{M}{\Delta_1 \cup \{\psi\}}[w]$.
+    $\Delta_1 \cup \{\psi\} \Entails \theta$
+    असल्याने $\mSat{M}{\theta}[w]$.
+    (b)~$\mSat{M}{\chi}[w]$. मग
+    $\mSat{M}{\Delta_2 \cup \{\chi\}}[w]$.
+    $\Delta_2 \cup \{\chi\} \Entails \theta$
+    असल्याने $\mSat{M}{\theta}[w]$.
+    म्हणून दोन्ही प्रकारांत
+    $\mSat{M}{\theta}[w]$, हेच दाखवायचे होते.
+
+  \item निष्पत्तीचा शेवट $\Intro{\lif}$ ने होतो
+    आणि निष्कर्ष~$\psi\lif \chi$ आहे. मग
+    आधारविधान~$\chi$ आहे, आणि त्या आधारविधानावर
+    संपणाऱ्या निष्पत्तीची
+    मुक्त न केलेले गृहीतके~$\Gamma \cup
+    \{\psi\}$ आहेत. म्हणून
+    $\Gamma \cup \{\psi\} \Proves \chi$;
+    विगमन-गृहीतकानुसार
+    $\Gamma \cup \{\psi\} \Entails \chi$.
+    $\Gamma \Entails \psi \lif \chi$ हे दाखवायचे आहे.
+
+    $\mSat{M}{\Gamma}[w]$ असे समजा.
+    $Rww'$ असे असलेल्या सर्व $w'$ साठी
+    $\mSat{M}{\psi}[w']$ असेल, तर
+    $\mSat{M}{\chi}[w']$, हे दाखवायचे आहे.
+    म्हणून $Rww'$ आणि $\mSat{M}{\psi}[w']$
+    असे गृहीत धरा.
+    \ref{int:sem:rel:prop:true-monotonic} नुसार
+    $\mSat{M}{\Gamma}[w']$.
+    $\Gamma \cup \{\psi\} \Entails \chi$
+    असल्याने $\mSat{M}{\chi}[w']$,
+    हेच दाखवायचे होते.
+
+  \item निष्पत्तीचा शेवट $\Elim{\lif}$ ने होतो
+    आणि निष्कर्ष~$\chi$ आहे. आधारविधाने
+    $\psi \lif \chi$ आणि $\psi$ आहेत;
+    त्यांची निष्पत्त्या अनुक्रमे
+    मुक्त न केलेले गृहीतके $\Gamma$ आणि
+    $\Delta$ यांपासून आहेत. म्हणून
+    $\Gamma \Proves \psi \lif \chi$ आणि
+    $\Delta \Proves \psi$.
+    विगमन-गृहीतकानुसार
+    $\Gamma \Entails \psi \lif \chi$
+    आणि $\Delta \Entails \psi$.
+    $\Gamma \cup \Delta \Entails \chi$
+    हे दाखवायचे आहे.
+
+    $\mSat{M}{\Gamma \cup \Delta}[w]$ असे समजा.
+    $\mSat{M}{\Gamma}[w]$ आणि
+    $\Gamma \Entails \psi \lif \chi$ असल्याने
+    $\mSat{M}{\psi \lif \chi}[w]$.
+    व्याख्येनुसार, $Rww'$ असे असलेल्या
+    सर्व $w'$ साठी $\mSat{M}{\psi}[w']$
+    असेल, तर $\mSat{M}{\chi}[w']$.
+    $R$ परावर्ती असल्याने $w$ हे
+    $Rww'$ असलेल्या $w'$ पैकी एक आहे.
+    म्हणजे $\mSat{M}{\psi}[w]$ असेल,
+    तर $\mSat{M}{\chi}[w]$.
+    $\mSat{M}{\Delta}[w]$ आणि
+    $\Delta \Entails \psi$ असल्याने
+    $\mSat{M}{\psi}[w]$. म्हणून
+    अपेक्षेप्रमाणे $\mSat{M}{\chi}[w]$.
+
+  \item निष्पत्तीचा शेवट $\FalseInt$ ने होतो
+    आणि निष्कर्ष~$\varphi$ आहे. आधारविधान
+    $\lfalse$ आहे; त्या आधारविधानाची
+    निष्पत्ती ज्या
+    मुक्त न केलेले गृहीतकांपासून आहे,
+    ती~$\Gamma$ आहेत. मग
+    $\Gamma \Proves \lfalse$.
+    विगमन-गृहीतकानुसार
+    $\Gamma \Entails \lfalse$.
+    $\Gamma \Entails \varphi$ हे दाखवायचे आहे.
+
+    अप्रत्यक्ष सिद्धता करू.
+    $\Gamma \Entails/ \varphi$ असेल, तर
+    असे प्रतिमान~$\mModel{M}$ आणि जग~$w$
+    आहेत की $\mSat{M}{\Gamma}[w]$
+    आणि $\mSat/{M}{\varphi}[w]$.
+    $\Gamma \Entails \lfalse$
+    असल्याने $\mSat{M}{\lfalse}[w]$.
+    पण हे अशक्य आहे; कारण व्याख्येनुसार
+    $\mSat/{M}{\lfalse}[w]$.
+    म्हणून $\Gamma \Entails \varphi$.
+  \item निष्पत्तीचा शेवट $\Intro\lnot$ ने होतो: सराव.
+  \item निष्पत्तीचा शेवट $\Elim\lnot$ ने होतो: सराव.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \ref{int:sc:snd:thm:soundness} ची सिद्धता
+  पूर्ण करा. $\Intro\lnot$ आणि $\Elim\lnot$
+  या प्रकारांसाठी
+  \ref{int:sem:rel:defn:true-at-w} मधील
+  $\mSat{M}{\lnot \varphi}[w]$ ची व्याख्या वापरा;
+  म्हणजे $\lnot \varphi$ हे
+  $\varphi \lif \lfalse$ ने व्याख्यित आहे
+  असे मानू नका.
+\end{prob}
+
+\begin{prob}
+  खालील सूत्रे अंतःप्रज्ञावादी तर्कशास्त्रात
+  निष्पन्न करता येण्याजोगे नाहीत, हे दाखवा:
+  \begin{enumerate}
+    \item $(\varphi \lif \psi) \lor (\psi \lif \varphi)$
+    \item $(\lnot\lnot \varphi \lif \varphi) \lif (\varphi \lor \lnot \varphi)$
+    \item $(\varphi \lif \psi \lor \chi) \lif \bigl((\varphi \lif \psi)\lor(\varphi \lif \chi)\bigr)$
+  \end{enumerate}
+\end{prob}
+
+
+
+
+
+
+\begin{quote}\small\textbf{स्रोतनोंद.} SOL6-A200: शून्य ते एक ही विगमन-पायरी स्पष्ट केली. सांत proof support रिकामा असल्यास शून्य टप्पा घेतला; नवीन सूत्र न मिळवता स्थिर राहणारी शाखा जपली. आधीचे fairness argument बदलले नाही.\end{quote}
+
+
+
+
+
+
+\section{लिंडेनबाउमचे पूर्वप्रमेय}\label{int:sc:lin:sec}
+
+अंतःप्रज्ञावादी तर्कशास्त्राचे संपूर्णता प्रमेय सिद्ध करताना
+$\Gamma \Proves/ \varphi$ असे गृहीत धरून
+$\mSat{M}{\Gamma}$ आणि~$\mSat/{M}{\varphi}$
+असे प्रतिमान रचले जाते.
+
+अभिजात तर्कशास्त्रात निष्पन्नता चा संबंध
+सुसंगततेच्या संकल्पनेत आणता येतो. कारण सूत्रांच्या
+एखाद्या संचापासून सूत्र~$\varphi$
+निष्पन्न करता येण्याजोगे असते तेव्हा आणि केवळ तेव्हाच
+त्या संचात~$\varphi$ चे नकरण घातल्यावर मिळणारा
+संच विसंगत असतो. अंतःप्रज्ञावादी तर्कशास्त्रात
+हे शक्य नाही. अंतःप्रज्ञावादी तर्कशास्त्रात
+$\lnot\varphi$ विसंगत असल्यास केवळ
+$\Proves \lnot\lnot \varphi$ हे मिळते.
+$\lnot\lnot\varphi \lif \varphi$ हे सर्वसाधारणपणे
+अंतःप्रज्ञावादी रीतीने खरे नसल्याने
+$\Proves \varphi$ असा निष्कर्ष काढता येत नाही.
+
+म्हणून प्रतिमान~$\mModel{M}$ रचताना
+सूत्र~$\varphi$ ची निष्पन्नता नसणे
+याची नोंद ठेवावी लागेल. त्यामुळे अभिजात
+पद्धतीप्रमाणे प्रतिमान~$\mModel{M}$
+रचण्यासाठी $\Gamma^* \supseteq \Gamma$
+असा संपूर्ण संच वापरता येणार नाही;
+कारण प्रत्येक संपूर्ण संच~$\Gamma^*$ साठी
+$\Gamma^* \Proves \varphi \lor \lnot \varphi$.
+
+संपूर्ण संच~$\Gamma^*$ वापरण्याऐवजी
+सूत्रांच्या अभाज्य संचाची संकल्पना वापरू:
+
+\begin{defn}\label{int:sc:lin:defn:prime}
+  सूत्रांचा संच~$\Gamma$
+  \emph{अभाज्य} असतो तेव्हा आणि केवळ तेव्हाच
+  पुढील अटी पूर्ण होतात:
+  \begin{enumerate}
+  \item\label{int:sc:lin:defn:prime1} $\Gamma$ सुसंगत असतो,
+    म्हणजे $\Gamma \Proves/ \lfalse$;
+  \item\label{int:sc:lin:defn:prime2} $\Gamma \Proves \varphi$
+    असेल, तर $\varphi \in \Gamma$; आणि
+  \item\label{int:sc:lin:defn:prime3} $\varphi \lor \psi \in \Gamma$
+    असेल, तर $\varphi \in \Gamma$ किंवा
+    $\psi \in \Gamma$.
+  \end{enumerate}
+\end{defn}
+
+\begin{lem}[लिंडेनबाउमचे पूर्वप्रमेय]
+  \label{int:sc:lin:lem:lindenbaum}
+  $\Gamma \Proves/ \varphi$ असेल, तर
+  $\Gamma^* \supseteq \Gamma$ असा
+  अभाज्य~$\Gamma^*$ अस्तित्वात असतो
+  आणि $\Gamma^* \Proves/ \varphi$.
+\end{lem}
+
+\begin{proof}
+  $\psi \lor \chi$ या रूपातील सर्व
+  सूत्रांचे एक प्रगणन
+  $\psi_1 \lor \chi_1$, $\psi_2 \lor \chi_2$, \dots,
+  असू द्या. सूत्रांच्या संचांची
+  वाढती श्रेणी~$\Gamma_n$ परिभाषित करू;
+  प्रत्येक $\Gamma_{n+1}$ हा $\Gamma_n$
+  मध्ये जास्तीतजास्त एक नवे सूत्र मिळवून
+  परिभाषित केला जाईल.
+  $\Gamma^*$ हा सर्व~$\Gamma_n$ चा
+  संयोग असेल. नवी सूत्रे अशी निवडू
+  की $\Gamma^*$ अभाज्य राहील आणि
+  $\Gamma^* \Proves/ \varphi$ सुद्धा राहील.
+  यासाठी प्रत्येक पायरीवर पुढील अटी
+  पूर्ण करणारा पहिला विकल्पयोग~
+  $\psi_i \lor \chi_i$ शोधला पाहिजे:
+  \begin{enumerate}
+  \item\label{int:sc:lin:gamma-1}
+    $\Gamma_n \Proves \psi_i \lor \chi_i$
+  \item\label{int:sc:lin:gamma-2}
+    $\psi_i \notin \Gamma_n$ आणि
+    $\chi_i \notin \Gamma_n$
+  \end{enumerate}
+  $\Gamma_n \cup \{\psi_i\} \Proves/ \varphi$
+  असेल, तर $\Gamma_n$ मध्ये $\psi_i$
+  मिळवू; अन्यथा $\chi_i$ मिळवू.
+  हे यशस्वी होते ते दाखवायचे आहे.
+  सध्या \ref{int:sc:lin:gamma-1} आणि~
+  \ref{int:sc:lin:gamma-2} पूर्ण करणारा सर्वात
+  लहान $i$ म्हणजे $i(n)$ असे ठरवू.
+
+  $\Gamma_0 = \Gamma$ असे ठेवून
+  \[  \Gamma_{n+1} = \begin{cases}
+    \Gamma_n \cup \{\psi_{i(n)}\} &
+    \text{जर $\Gamma_n \cup \{\psi_{i(n)}\} \Proves/ \varphi$ असेल} \\
+    \Gamma_n \cup \{\chi_{i(n)}\} & \text{अन्यथा}
+    \end{cases}
+  \]
+  अशी व्याख्या करू. $i(n)$ अपरिभाषित
+  असेल, म्हणजे $\Gamma_n \Proves \psi \lor \chi$
+  असताना नेहमी $\psi \in \Gamma_n$
+  किंवा $\chi \in \Gamma_n$ असेल, तर
+  $\Gamma_{n+1} = \Gamma_n$ ठेवू.
+  आता $\Gamma^* = \bigcup_{n=0}^\infty \Gamma_n$
+  असे ठेवू.
+
+  प्रथम प्रत्येक $n$ साठी
+  $\Gamma_n \Proves/ \varphi$ हे दाखवू.
+  $n$ वर विगमन करू. $n = 0$ साठी
+  हा दावा प्रमेयाच्या गृहीतकामुळे,
+  म्हणजे $\Gamma \Proves/ \varphi$ मुळे,
+  खरा आहे. कोणत्याही $n\geq0$ साठी
+  $\Gamma_n \Proves/ \varphi$ असल्यास
+  $\Gamma_{n+1} \Proves/ \varphi$
+  हे दाखवायचे आहे.
+  $i(n)$ अपरिभाषित असेल, तर
+  $\Gamma_{n+1} = \Gamma_n$;
+  काहीच सिद्ध करावे लागत नाही.
+  म्हणून $i(n)$ परिभाषित आहे असे
+  समजा. सोयीसाठी $i = i(n)$ असे लिहू.
+
+  दाव्याचे व्यत्यस्त रूप सिद्ध करू.
+  $\Gamma_{n+1} \Proves \varphi$ असे समजा.
+  रचनेनुसार $\Gamma_n \cup
+  \{\psi_i\} \Proves/ \varphi$ असेल, तर
+  $\Gamma_{n+1} = \Gamma_n \cup
+  \{\psi_i\}$; अन्यथा
+  $\Gamma_{n+1} = \Gamma_n \cup \{\chi_i\}$.
+  पहिला प्रकार असूच शकत नाही;
+  कारण तेव्हा $\Gamma_{n+1} \Proves/ \varphi$.
+  म्हणून $\Gamma_n \cup
+  \{\psi_i\} \Proves \varphi$ आणि
+  $\Gamma_{n+1} = \Gamma_n \cup \{\chi_i\}$.
+  $i(n)$ च्या व्याख्येनुसार
+  $\Gamma _n \Proves \psi_i \lor \chi_i$.
+  $\Gamma_n \cup \{\psi_i\} \Proves \varphi$
+  आहे. तसेच
+  $\Gamma_{n+1} = \Gamma_n \cup
+  \{\chi_i\} \Proves \varphi$ आहे.
+  त्यामुळे $\Gamma_n \Proves \varphi$,
+  हेच दाखवायचे होते.
+
+  $\Gamma^* \Proves \varphi$ असेल, तर
+  $\Gamma' \subseteq \Gamma^*$
+  असा काही परिमित उपसंच असेल की
+  $\Gamma' \Proves \varphi$.
+  प्रत्येक $\theta \in \Gamma'$ कोणत्या
+  तरी~$i$ साठी $\Gamma_i$ मध्ये असले
+  पाहिजे. $\Gamma'$ रिकामा असेल, तर $n=0$ घ्या;
+  अन्यथा या निर्देशांकांपैकी सर्वात मोठा $n$ घ्या. $i \le n$ असेल, तर
+  $\Gamma_i \subseteq \Gamma_n$;
+  म्हणून $\Gamma' \subseteq \Gamma_n$.
+  पण मग $\Gamma_n \Proves \varphi$,
+  आणि वर सिद्ध केलेल्या
+  $\Gamma_n \Proves/ \varphi$ शी हा विरोधाभास.
+
+  शेवटी $\Gamma^*$ अभाज्य आहे,
+  म्हणजे \ref{int:sc:lin:defn:prime} मधील
+  \ref{int:sc:lin:defn:prime1},
+  \ref{int:sc:lin:defn:prime2} आणि~
+  \ref{int:sc:lin:defn:prime3} या अटी
+  पूर्ण करतो, हे दाखवू.
+
+  प्रथम $\Gamma^* \Proves/ \varphi$;
+  म्हणून $\Gamma^*$ सुसंगत आहे,
+  आणि \ref{int:sc:lin:defn:prime1} पूर्ण होते.
+
+  आता $\Gamma^* \Proves \psi \lor \chi$
+  असेल, तर $\psi \in \Gamma^*$
+  किंवा $\chi \in \Gamma^*$,
+  हे दाखवू. यावरून
+  \ref{int:sc:lin:defn:prime3} सिद्ध होते;
+  कारण $\psi \lor \chi \in \Gamma^*$
+  असेल, तर $\Gamma^* \Proves \psi
+  \lor \chi$ सुद्धा. म्हणून
+  $\Gamma^* \Proves \psi \lor \chi$
+  पण $\psi \notin \Gamma^*$
+  आणि $\chi \notin \Gamma^*$
+  असे समजा.
+  $\Gamma^* \Proves \psi \lor \chi$
+  असल्याने कोणत्या तरी~$n$ साठी
+  $\Gamma_n \Proves \psi \lor \chi$.
+  $\psi \lor \chi$ हा विकल्पयोग
+  प्रगणनात, समजा $\psi_j \lor \chi_j$
+  म्हणून, येतो.
+  $\psi_j \lor \chi_j$ हा
+  $i(n)$ च्या व्याख्येतील गुणधर्म
+  पूर्ण करतो: $\Gamma_n \Proves \psi_j
+  \lor \chi_j$, तर
+  $\psi_j \notin \Gamma_n$ आणि
+  $\chi_j \notin \Gamma_n$.
+  त्या निर्देशांकापेक्षा आधीचे निर्देशांक
+  परिमित संख्येने आहेत. हा विकल्पयोग
+  निवडला जात नाही तोवर अटी पूर्ण करत
+  राहतो; तोवर निवडलेला विकल्पयोग
+  $\psi_i \lor \chi_i$ त्याच्या आधीचाच असतो.
+  त्यातील $\psi_i$ किंवा $\chi_i$
+  मिळवल्यावर तो पुन्हा अटी पूर्ण करत नाही.
+  म्हणून काही टप्प्यावर~$m$
+  असे मिळेल की $j = i(m)$.
+  पण तेव्हा $\psi \in \Gamma_{m+1}$
+  किंवा $\chi \in \Gamma_{m+1}$;
+  आणि हे $\psi \notin \Gamma^*$
+  व $\chi \notin \Gamma^*$ या
+  गृहीतकाच्या विरुद्ध आहे.
+
+  आता $\Gamma^* \Proves \psi$
+  असे समजा. मग
+  $\Gamma^* \Proves \psi \lor \psi$.
+  पण $\Gamma^* \Proves \psi \lor \psi$
+  असेल, तर $\psi \in \Gamma^*$,
+  हे आत्ताच सिद्ध केले आहे.
+  त्यामुळे $\Gamma^*$ हा
+  \ref{int:sc:lin:defn:prime} मधील
+  \ref{int:sc:lin:defn:prime2} पूर्ण करतो.
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves/ \bot$ असेल, तर
+अभिजात तर्कशास्त्रात $\Gamma$ सुसंगत
+असतो, म्हणजे~$\Gamma$ मधील सर्व सूत्रांना
+सत्य करणारे मूल्यांकन अस्तित्वात असते,
+हे दाखवा.
+\end{prob}
+
+
+
+
+
+
+\begin{quote}\small\textbf{स्रोतनोंद.} SOL6-A201: मूळ one-based pair list आणि शून्यासहित natural-number worlds यांतील विसंगती दुरुस्त केली. सर्व नैसर्गिक निर्देशांकांसाठी formula-pair enumeration शून्यापासून सुरू केली; शाखा आणि truth-lemma साठी लागणाऱ्या गुणधर्मांना बदल नाही.\end{quote}
+
+
+
+
+
+
+\section{कॅनॉनिकल प्रतिमान}\label{int:sc:mod:sec}
+
+आपल्या प्रतिमानातील जगे नैसर्गिक संख्यांच्या
+सांत क्रमिका~$\sigma$ असतील, म्हणजे
+$\sigma \in \Nat^*$. $\Nat^*$ ची
+विगमनाने पुढीलप्रमाणे व्याख्या होते:
+\begin{enumerate}
+\item $\emptyseq \in \Nat^*$.
+\item $\sigma \in \Nat^*$ आणि $n \in \Nat$
+  असतील, तर $\sigma.n \in
+  \Nat^*$ (येथे $\sigma.n$ म्हणजे
+  $\sigma \concat \tuple{n}$, आणि
+  $\sigma \concat \sigma'$ म्हणजे
+  $\sigma$ व $\sigma'$ यांची जोडणी).
+\item इतर काहीही $ \Nat^*$ मध्ये नाही.
+\end{enumerate}
+म्हणून $\Nat^*$ वापरून विगमनात्मक
+व्याख्या देता येतात.
+
+सूत्रांच्या सर्व जोड्यांचे
+$\tuple{\psi_0, \chi_0}$,
+$\tuple{\psi_1, \chi_1}$,
+$\tuple{\psi_2, \chi_2}$, \dots,
+असे $n\in\Nat=\{0,1,2,\dots\}$ ने निर्देशांकित
+प्रगणन असू द्या. सूत्रे
+चा संच~$\Delta$ दिला असता
+$\Delta(\sigma)$ ची विगमनाने
+पुढीलप्रमाणे व्याख्या करा:
+\begin{enumerate}
+\item $\Delta(\emptyseq) = \Delta$
+\item $\Delta(\sigma.n) = {}$
+  \[  \begin{cases}
+    (\Delta(\sigma) \cup \{\psi_n\})^* &
+    \text{जर $\Delta(\sigma) \cup \{\psi_n\} \Proves/ \chi_n$ असेल} \\
+    \Delta(\sigma) & \text{अन्यथा}
+  \end{cases}
+  \]
+\end{enumerate}
+येथे $(\Delta(\sigma) \cup \{\psi_n\})^*$
+म्हणजे $\Delta(\sigma) \cup \{\psi_n\}$
+या संचाला आणि सूत्र~$\chi_n$
+ला \ref{int:sc:lin:lem:lindenbaum} लावल्यावर
+मिळणारा सूत्रांचा अभाज्य संच.
+या व्याख्येनुसार
+$\Delta(\sigma) \cup \{\psi_n\} \Proves/ \chi_n$
+असेल, तर $\Delta(\sigma.n)
+\Proves \psi_n$ आणि
+$\Delta(\sigma.n) \Proves/ \chi_n$,
+हे लक्षात घ्या. तसेच कोणत्याही~$n$
+साठी $\Delta(\sigma) \subseteq \Delta(\sigma.n)$.
+$\Delta$ अभाज्य असेल, तर सर्व~$\sigma$
+साठी $\Delta(\sigma)$ अभाज्य असतो.
+
+\begin{defn}\label{int:sc:mod:defn:canonical-model}
+  $\Delta$ अभाज्य आहे असे समजा.
+  मग $\Delta$ साठीचे
+  \emph{कॅनॉनिकल प्रतिमान}
+  $\mModel{M(\Delta)}$ पुढीलप्रमाणे परिभाषित होते:
+  \begin{enumerate}
+  \item $W = \Nat^*$, म्हणजे नैसर्गिक
+    संख्यांच्या सांत क्रमिकांचा संच.
+  \item $R$ हा असा अंशतः क्रम आहे की
+    $R\sigma\sigma'$ तेव्हा आणि केवळ
+    तेव्हाच जेव्हा $\sigma$ हा~$\sigma'$
+    चा आरंभीचा खंड असतो (म्हणजे
+    काही क्रमिका~$\sigma''$ साठी
+    $\sigma' = \sigma \concat \sigma''$).
+  \item $V(p) = \Setabs{\sigma}{p \in \Delta(\sigma)}$.
+  \end{enumerate}
+\end{defn}
+
+$R$ हा खरोखर अंशतः क्रम आहे,
+हे सहज तपासता येते. तसेच~$V$ वरील
+एकस्वनिकतेची अट पूर्ण होते.
+$\Delta(\sigma) \subseteq \Delta(\sigma.n)$
+असल्याने $R\sigma\sigma'$ असेल तेव्हा
+$\Delta(\sigma) \subseteq \Delta(\sigma')$;
+हे~$\sigma$ पासूनच्या विस्ताराच्या
+लांबीवर विगमनाने मिळते.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सत्यता पूर्वप्रमेय}\label{int:sc:tru:sec}
+
+पुढील पूर्वप्रमेय कॅनॉनिकल प्रतिमानातील
+पूर्तीचा संबंध अभाज्य संच
+$\Delta(\sigma)$ मध्ये कोणती
+सूत्रे घटक आहेत
+याच्याशी जोडते.
+
+\begin{lem}\label{int:sc:tru:lem:truth}
+  $\Delta$ अभाज्य असेल, तर
+  $\mSat{M(\Delta)}{\varphi}[\sigma]$
+  तेव्हा आणि केवळ तेव्हाच
+  $\Delta(\sigma) \Proves \varphi$.
+\end{lem}
+
+\begin{proof}
+  $\varphi$ वर विगमन करू.
+  \begin{enumerate}
+    \item \indcase{\varphi}{\lfalse}{$\Delta(\sigma)$
+      अभाज्य असल्याने सुसंगत आहे;
+      म्हणून $\Delta(\sigma) \Proves/ \indfrm$.
+      व्याख्येनुसार
+      $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.}
+    \item \indcase{\varphi}{p}{$\mSat{{}}{}$ च्या
+        व्याख्येनुसार
+        $\mSat{M(\Delta)}{\indfrm}[\sigma]$
+        तेव्हा आणि केवळ तेव्हाच
+        $\sigma \in V(p)$;
+        म्हणजे $\Delta(\sigma) \Proves \indfrm$;
+        कारण हा अभाज्य संच निष्पत्तीखाली संवृत आहे.}
+    \item \indcase!{\varphi}{\lnot \psi}{}
+    \item \indcase{\varphi}{\psi \land
+        \chi}{$\mSat{M(\Delta)}{\indfrm}[\sigma]$
+        तेव्हा आणि केवळ तेव्हाच
+        $\mSat{M(\Delta)}{\psi}[\sigma]$
+        आणि $\mSat{M(\Delta)}{\chi}[\sigma]$.
+        विगमन-गृहीतकानुसार
+        $\mSat{M(\Delta)}{\psi}[\sigma]$
+        तेव्हा आणि केवळ तेव्हाच
+        $\Delta(\sigma) \Proves
+        \psi$; आणि~$\chi$ साठीही तसेच.
+        पण $\Delta(\sigma) \Proves \psi$
+        आणि $\Delta(\sigma) \Proves \chi$
+        हे तेव्हा आणि केवळ तेव्हाच,
+        जेव्हा $\Delta(\sigma)
+        \Proves \indfrm$.}
+    \item \indcase{\varphi}{\psi \lor
+        \chi}{$\mSat{M(\Delta)}{\indfrm}[\sigma]$
+        तेव्हा आणि केवळ तेव्हाच
+        $\mSat{M(\Delta)}{\psi}[\sigma]$
+        किंवा $\mSat{M(\Delta)}{\chi}[\sigma]$.
+        विगमन-गृहीतकानुसार हे
+        तेव्हा आणि केवळ तेव्हाच,
+        जेव्हा $\Delta(\sigma) \Proves \psi$
+        किंवा $\Delta(\sigma) \Proves \chi$.
+        आता हे पुन्हा
+        $\Delta(\sigma) \Proves \indfrm$
+        च्या तुल्य आहे, हे दाखवायचे आहे.
+        डावीकडून उजवीकडील दिशा उघड आहे.
+        उजवीकडून डावीकडील दिशा
+        $\Delta(\sigma)$ अभाज्य
+        असल्याने मिळते.}
+    \item \indcase{\varphi}{\psi \lif \chi}{आधी
+        डावीकडून उजवीकडील दिशेचे
+        व्यत्यस्त रूप पाहू:
+        $\Delta(\sigma) \Proves/ \psi
+        \lif \chi$ असे समजा.
+        मग $\Delta(\sigma) \cup \{\psi\} \Proves/
+        \chi$ सुद्धा.
+        कोणत्या तरी~$n$ साठी
+        $\tuple{\psi, \chi}$ ही
+        $\tuple{\psi_n, \chi_n}$ असल्याने
+        $\Delta(\sigma.n) = (\Delta(\sigma) \cup
+        \{\psi\})^*$; आणि
+        $\Delta(\sigma.n) \Proves \psi$
+        पण $\Delta(\sigma.n) \Proves/
+        \chi$. विगमन-गृहीतकानुसार
+        $\mSat{M(\Delta)}{\psi}[\sigma.n]$
+        आणि $\mSat/{M(\Delta)}{\chi}[\sigma.n]$.
+        $R\sigma(\sigma.n)$ असल्यामुळे
+        याचा अर्थ
+        $\mSat/{M(\Delta)}{\indfrm}[\sigma]$.
+
+        आता $\Delta(\sigma) \Proves \psi \lif \chi$
+        असे समजा आणि $R\sigma\sigma'$ असू द्या.
+        $\Delta(\sigma) \subseteq
+        \Delta(\sigma')$ असल्याने
+        $\Delta(\sigma') \Proves
+        \psi$ असेल, तर
+        $\Delta(\sigma') \Proves \chi$.
+        दुसऱ्या शब्दांत, $R\sigma\sigma'$
+        असलेल्या प्रत्येक $\sigma'$ साठी
+        $\Delta(\sigma') \Proves/ \psi$
+        किंवा $\Delta(\sigma') \Proves
+        \chi$. विगमन-गृहीतकानुसार
+        $R\sigma\sigma'$ असेल तेव्हा
+        $\mSat/{M(\Delta)}{\psi}[\sigma']$
+        किंवा $\mSat{M(\Delta)}{\chi}[\sigma']$;
+        म्हणजे
+        $\mSat{M(\Delta)}{\indfrm}[\sigma]$.}
+  \end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{संपूर्णता प्रमेय}\label{int:sc:cpl:sec}
+
+\begin{thm}\label{int:sc:cpl:thm:completeness}
+  $\Gamma \Entails \varphi$ असेल, तर
+  $\Gamma \Proves \varphi$.
+\end{thm}
+
+\begin{proof}
+  व्यत्यस्त रूप सिद्ध करू:
+  $\Gamma \Proves/ \varphi$ असे समजा.
+  मग \ref{int:sc:lin:lem:lindenbaum} नुसार
+  $\Gamma^* \supseteq \Gamma$ असा
+  अभाज्य संच आहे की
+  $\Gamma^* \Proves/ \varphi$.
+  \ref{int:sc:mod:defn:canonical-model}
+  मध्ये व्याख्यित केलेले $\Gamma^*$ साठीचे
+  कॅनॉनिकल प्रतिमान~$\mModel{M(\Gamma^*)}$
+  घ्या. प्रत्येक $\psi \in \Gamma$
+  साठी $\Gamma^* \Proves \psi$.
+  $\Gamma^*(\emptyseq) = \Gamma^*$,
+  हे लक्षात घ्या. सत्यता पूर्वप्रमेयानुसार
+  (\ref{int:sc:tru:lem:truth})
+  सर्व $\psi \in \Gamma$ साठी
+  $\mSat{M(\Gamma^*)}{\psi}[\emptyseq]$
+  आणि
+  $\mSat/{M(\Gamma^*)}{\varphi}[\emptyseq]$.
+  यावरून $\Gamma \Entails/ \varphi$.
+\end{proof}
+
+\begin{prob}
+  $\varphi$ मध्ये फक्त विधानीय चले,
+  $\lor$ आणि~$\land$ असतील, तर
+  $\Entails/ \varphi$ हे दाखवा.
+  यावरून अंतःप्रज्ञावादी तर्कशास्त्रात
+  $\lor$ आणि~$\land$ वापरून
+  $\lif$ ची व्याख्या करता येत नाही,
+  असा निष्कर्ष काढा.
+\end{prob}
+
+\begin{prob}
+  संपूर्णता प्रमेय वापरून
+  $\Proves \varphi \lor \psi$ असेल,
+  तर $\Proves \varphi$ किंवा
+  $\Proves \psi$, हे सिद्ध करा.
+  (सूचना: $\mSat/{M_1}{\varphi}$
+  आणि $\mSat/{M_2}{\psi}$
+  असे गृहीत धरून
+  $\mSat/{M}{\varphi \lor \psi}$
+  असेल असे नवे प्रतिमान
+  $\mModel{M}$ रचा.)
+\end{prob}
+
+\begin{prob}
+  $\mModel{M}$ हे रेषीय क्रम
+  वापरणारे संबंधी प्रतिमान असेल,
+  तर $\mSat{M}{(\varphi \lif \psi)\lor(\psi \lif \varphi)}$,
+  हे दाखवा.
+\end{prob}
+
+
+
+
+
+
+\begin{quote}\small\textbf{स्रोतनोंद.} SOL6-A203: मूळ atom-only quotient चुकीचा असल्याची OLINC-226 सूचना योग्य होती; तरी त्याच अवैध truth-equivalence ची सिद्धता exercise मध्ये मागितली होती. आता सर्व उपसूत्रांवरील योग्य गाळणी, implication आणि primitive negation सहित truth-preservation proof, finite bound आणि bounded decision procedure दिली. Exercise योग्य गाळणीच्या तपशिलांसाठी केला.\end{quote}
+
+
+
+
+
+
+\section{निर्णेयता}\label{int:sc:dec:sec}
+संपूर्णता प्रमेयाची सिद्धता
+$\Gamma \Proves/ \varphi$ असलेल्या
+प्रत्येक वेळी $\Gamma \Entails/ \varphi$
+याचा साक्षीदार म्हणून अनंत जगे
+असलेले प्रतिमान देते, हे लक्षात घ्या.
+पुढील विधानानुसार
+$\Entails \varphi$ सिद्ध करण्यासाठी
+सर्व सांत प्रतिमानांमध्ये (म्हणजे
+जगांचा सांत संच असलेल्या प्रतिमानांमध्ये)
+$\mSat{M}{\varphi}$ हे सिद्ध करणे पुरेसे आहे.
+
+\begin{thm}\label{int:sc:dec:thm:decidability}
+  $\Entails/ \varphi$ असेल, तर
+  $\mSat/{M'}{\varphi}$ असे सांत प्रतिमान
+  अस्तित्वात असते.
+\end{thm}
+
+\begin{proof}
+  $\mModel{M}=\tuple{W,R,V}$ हे $\mSat/{M}{\varphi}$
+  असे प्रतिमान असू द्या. $S$ हा $\varphi$ च्या सर्व उपसूत्रांचा
+  सांत संच असू द्या; विशेषतः $\varphi\in S$ आणि $S$
+  उपसूत्रे घेण्याखाली संवृत आहे. $P$ हा $\varphi$ मध्ये
+  येणाऱ्या विधानीय चलांचा संच आहे.
+  प्रत्येक $w\in W$ साठी
+  \[    [w]=\Setabs{\psi\in S}{\mSat{M}{\psi}[w]}
+  \]
+  असे ठरवून $\mModel{M'}=\tuple{W',R',V'}$ परिभाषित करू:
+  \[    W'=\Setabs{[w]}{w\in W},\qquad
+    R'[w][u]\ \text{तेव्हा आणि केवळ तेव्हाच}\ [w]\subseteq[u],
+  \]
+  आणि $p\in P$ साठी $V'(p)=\Setabs{[w]\in W'}{p\in[w]}$;
+  इतर विधानचरांसाठी $V'(p)=\emptyset$.
+  $W'$ अरिक्त असून $|W'|\leq 2^{|S|}$.
+  उपसंच-संबंध हा अंशतः क्रम आहे, आणि $V'$ ची
+  एकस्वनिकता व्याख्येवरून मिळते. म्हणून $\mModel{M'}$
+  हे सांत संबंधी प्रतिमान आहे.
+
+\begin{quote}\small\textbf{स्रोतनोंद.} OLINC-226: मूळ atom-only quotient उपसूत्रांची सत्यता जपत नव्हता. खाली त्याच्या जागी सर्व उपसूत्रांवरील योग्य गाळणीची सिद्धता आहे; समतुल्यता S मधील सूत्रांसाठीच सांगितली आहे.\end{quote}
+  प्रत्येक $\psi\in S$ साठी रचनेवरील विगमनाने
+  \[    \mSat{M}{\psi}[w]\ \text{तेव्हा आणि केवळ तेव्हाच}\
+    \mSat{M'}{\psi}[{[w]}]
+  \]
+  हे सिद्ध करू. विधानचरांसाठी दावा $V'$ च्या व्याख्येवरून
+  मिळतो; $\lfalse$ दोन्ही प्रतिमानांत कोठेही सत्य नसतो.
+  $\land$ आणि $\lor$ यांचे प्रकार त्यांच्या स्थानिक
+  सत्यता-अटी आणि विगमन-गृहीतकावरून मिळतात.
+  $\psi\ident \chi\lif \theta$ असू द्या. मूळ प्रतिमानात
+  $\mSat{M}{\psi}[w]$ असेल आणि $[w]\subseteq[u]$,
+  तर $\psi\in[w]\subseteq[u]$; म्हणून $\mSat{M}{\psi}[u]$.
+  $\mSat{M'}{\chi}[{[u]}]$ असेल, तर विगमन-गृहीतकामुळे
+  $\mSat{M}{\chi}[u]$; मूळ संबंधाच्या परावर्तितेने
+  $\mSat{M}{\theta}[u]$, आणि पुन्हा विगमन-गृहीतकामुळे
+  $\mSat{M'}{\theta}[{[u]}]$. म्हणून $\mSat{M'}{\psi}[{[w]}]$.
+  उलट, $\mSat/{M}{\psi}[w]$ असेल, तर काही $u$ साठी
+  $Rwu$, $\mSat{M}{\chi}[u]$ आणि $\mSat/{M}{\theta}[u]$.
+  मूळ प्रतिमानातील सत्यतेच्या एकस्वनिकतेमुळे
+  $[w]\subseteq[u]$; विगमन-गृहीतकाने $[u]$ ही नव्या
+  प्रतिमानातही त्या सशर्त सूत्राची प्रतिउदाहरण-अवस्था आहे.
+  $\psi\ident\lnot \chi$ असेल, तर त्याच पद्धतीने:
+  $\mSat{M}{\psi}[w]$ आणि $[w]\subseteq[u]$ वरून
+  $\mSat{M}{\psi}[u]$, म्हणून $\mSat/{M}{\chi}[u]$ आणि
+  $\mSat/{M'}{\chi}[{[u]}]$. त्यामुळे नव्या प्रतिमानातही
+  $\lnot \chi$ सत्य आहे. मूळ प्रतिमानात $\lnot \chi$ असत्य
+  असेल, तर $Rwu$ आणि $\mSat{M}{\chi}[u]$ असलेली अवस्था
+  $u$ मिळते; तिच्यासाठी $[w]\subseteq[u]$ आणि
+  $\mSat{M'}{\chi}[{[u]}]$, म्हणून नव्या प्रतिमानातही नकरण
+  असत्य आहे. प्रत्येक प्रकारात आवश्यक घटक-उपसूत्रे $S$
+  मध्ये असल्याने विगमन-गृहीतक लागू आहे.
+  अखेरीस $\mSat/{M}{\varphi}$ असल्याने काही $w\in W$
+  साठी $\mSat/{M}{\varphi}[w]$; समतुल्यतेवरून
+  $\mSat/{M'}{\varphi}[{[w]}]$. म्हणून $\mSat/{M'}{\varphi}$.
+\end{proof}
+
+\begin{prob}
+\ref{int:sc:dec:thm:decidability} मधील योग्य
+उपसूत्र-गाळणीचे तपशील तपासा: $V'$ नेमके परिभाषित आहे,
+अंशतः क्रमाच्या दृष्टीने एकस्वनिक आहे, आणि $|W'|\leq2^{|S|}$
+हे दाखवा. $S$ उपसूत्रे घेण्याखाली संवृत असण्याची अट
+विगमन-सिद्धतेत कुठे वापरली आहे ते स्पष्ट करा.
+\end{prob}
+
+\ref{int:sc:dec:thm:decidability} आणि त्याच्या सिद्धतेतील
+मर्यादेवरून $\Entails \varphi$ ठरवणारा अल्गोरिदम मिळतो.
+$S$ आणि $P$ प्रभावीपणे मोजा. $1\leq n\leq2^{|S|}$
+असलेल्या प्रत्येक $n$ साठी $n$ जगांवरील सर्व अंशतः क्रम
+आणि $P$ वरील सर्व एकस्वनिक मूल्यांकने यांचा सांत शोध करा.
+इतर विधानचरांना रिकामा संच दिल्याने $\varphi$ ची सत्यता बदलत नाही.
+प्रत्येक अशा प्रतिमानातील प्रत्येक जगात $\varphi$ च्या सत्यतेचे
+recursive clauses वापरून मूल्यांकन करा. प्रतिउदाहरण मिळाल्यास
+$\Entails/ \varphi$; कोणतेही मिळाले नाही, तर प्रमेयानुसार
+$\Entails \varphi$. हा शोध नेहमी संपतो.
+
+
+
+

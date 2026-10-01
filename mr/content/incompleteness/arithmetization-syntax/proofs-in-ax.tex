@@ -152,7 +152,7 @@ $\delta$ ही $!A_1$, \dots,~$!A_n$ या !!{formula}s ची
   तरच ती रिकामी नसते आणि तिच्यातील प्रत्येक ओळ स्वयंसिद्धक
   किंवा विध्यात्मक अनुमान अथवा \QR{} ने समर्थित असते. म्हणून:
   \[
-  \fn{Deriv}(d) \defiff \len{d}>0 \land
+  \fn{Deriv}(d) \defiff \fn{Seq}(d) \land \len{d}>0 \land
   \bforall{i < \len{d}}{(\fn{IsAx}((d)_i) \lor
     \fn{MP}(d,i) \lor \fn{QR}(d, i))}
   \]
@@ -218,11 +218,12 @@ $\emptyset$ पासूनच्या !!a{derivation} चा संकेत�
   \fn{Cond}(s, y) & = \fn{hCond}(s, y, \len{s})\\
   \intertext{म्हणून $\Prf[\Gamma](x, y)$ ची व्याख्या अशी करता येते:}
   \Prf[\Gamma](x, y) & \defiff \fn{Sent}(y) \land
-  \bexists{s < \fn{sequenceBound}(x,x)}{(} \\
+  \bexists{s < \fn{sequenceBound}(x,x)}{(\fn{Seq}(s) \land {}} \\
   &\qquad (x)_{\len{x}-1} = \fn{Cond}(s,y) \land {} \\
   &\qquad\bforall{i<\len{s}}{(s)_i \in \Gamma} \land {} \\
   &\qquad\fn{Deriv}(x)).
 \end{align*}
+%READERNOTE{SOL6-A067 — decoded ओळी व लांबी तपासणे म्हणजे canonical क्रमिकासंकेतांक तपासणे नव्हे. एका axiom च्या singleton proof-code ला त्याच्या support बाहेरील अविभाज्य घटकाने गुणले तरी जुन्या length आणि line projections बदलत नाहीत; जुनी Deriv कसोटी ते अवैध संख्या स्वीकारते. येथे Deriv(d) आणि antecedent-list s साठी मागील Seq अट जोडली.}
 येथे पुनरावर्तनाने क्रमिकेतील पूर्वांगे आतून बाहेर या क्रमाने
 जोडली जातात; आधी लिहिलेल्या बाहेरून आतच्या यादीसाठी ती उलट क्रमाने
 निवडता येतात. $s$ वरील परिबंध असा मिळतो: प्रत्येक $(s)_i$ ही

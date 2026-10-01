@@ -54,6 +54,8 @@ def main():
         if not condition:
             failures.append(message)
     source_bytes = (reader / "index.html").read_bytes()
+    accepted = json.loads((reader.parent / "HTML_QA.json").read_text(encoding="utf-8"))
+    check(accepted["result"] == "ready" and accepted["html_sha256"] == q.digest(source_bytes), "स्वीकृत HTML ची चालू पडताळणी अपूर्ण")
     check(q.digest(source_bytes) == config["reader_html_sha256"], "स्वीकृत HTML चा हॅश बदलला")
     check(receipt["epub"]["sha256"] == q.digest(epub.read_bytes()), "EPUB बांधणीची हॅश-जुळणी चुकली")
     check(receipt["cold_epub_byte_identity"] and receipt["cold_tree_byte_identity"], "दुसरी स्थानिक बांधणी जुळली नाही")
@@ -96,7 +98,7 @@ def main():
         check(" ".join(text_with_glyph_alternatives(b) for b in bodies) == text_with_glyph_alternatives(source.find(f"{{{X}}}body")), "वाचनक्रमातील पूर्ण मजकूर बदलला")
         source_math = list(source.iter(f"{{{M}}}math"))
         output_math = [m for d in content for m in d.iter(f"{{{M}}}math")]
-        check(len(source_math) == len(output_math) == 38456, "MathML सूत्रांची संख्या बदलली")
+        check(len(source_math) == len(output_math) == accepted["mathml_nodes"], "MathML सूत्रांची संख्या बदलली")
         check([canonical_math(m) for m in source_math] == [canonical_math(m) for m in output_math], "घोषित glyph रूपांतराबाहेरील MathML बदलला", len(source_math))
         raw_equal = sum(q.c14n(a) == q.c14n(b) for a, b in zip(source_math, output_math))
         metrics["mathml_roots"] = len(output_math)
@@ -104,7 +106,7 @@ def main():
         metrics["mathml_roots_with_declared_glyph_projection"] = len(output_math) - raw_equal
         source_glyphs = list(source.iter(f"{{{M}}}img"))
         output_glyphs = [g for d in content for g in d.iter(f"{{{M}}}mglyph")]
-        check(len(source_glyphs) == len(output_glyphs) == 68, "विशेष glyph संख्या बदलली")
+        check(len(source_glyphs) == len(output_glyphs) == accepted["custom_math_glyphs"], "विशेष glyph संख्या बदलली")
         for before, after in zip(source_glyphs, output_glyphs):
             check(all(before.get(k) == after.get(k) for k in ("src", "alt")), "glyph चिन्ह किंवा पर्यायी मजकूर बदलला")
             match = re.fullmatch(r"height:([0-9.]+)em;vertical-align:([-0-9.]+)em", before.get("style", ""))
@@ -117,7 +119,7 @@ def main():
         annotations = lambda d: [n.text for n in d.iter(f"{{{M}}}annotation") if n.get("encoding") == "application/x-tex"]
         check(annotations(source) == [a for d in content for a in annotations(d)], "मूळ TeX annotations बदलल्या")
         metrics["tex_annotations"] = sum(len(annotations(d)) for d in content)
-        for tag, expected in (("h1", 16), ("h2", 83), ("h3", 613), ("img", 70)):
+        for tag, expected in (*accepted["source_heading_counts"].items(), ("img", accepted["diagrams"])):
             src = list(source.iter(f"{{{X}}}{tag}"))
             out = [n for d in content for n in d.iter(f"{{{X}}}{tag}")]
             check(len(src) == len(out) == expected, tag + " ची संख्या बदलली")
@@ -126,10 +128,10 @@ def main():
         proofs = lambda d: [n for n in d.iter(f"{{{X}}}figure") if "proof" in n.get("class", "").split()]
         source_proofs = proofs(source)
         output_proofs = [p for d in content for p in proofs(d)]
-        check(len(source_proofs) == len(output_proofs) == 466, "सिद्धतांची संख्या बदलली")
+        check(len(source_proofs) == len(output_proofs) == accepted["proof_tables"], "सिद्धतांची संख्या बदलली")
         check([annotations(p) for p in source_proofs] == [annotations(p) for p in output_proofs], "सिद्धतेतील सूत्रक्रम बदलला")
         metrics["proof_formula_rows"] = sum(len(annotations(p)) for p in output_proofs)
-        check(metrics["proof_formula_rows"] == 2527, "सिद्धतेतील सूत्रांची व्याप्ती बदलली")
+        check(metrics["proof_formula_rows"] == sum(len(annotations(p)) for p in source_proofs), "सिद्धतेतील सूत्रांची व्याप्ती बदलली")
         source_ids = source.xpath("//@id")
         output_ids = [identifier for d in content for identifier in d.xpath("//@id")]
         rows = receipt["content"]["id_crosswalk"]
@@ -183,8 +185,9 @@ def main():
              "epub_sha256": q.digest(epub.read_bytes()), "reader_html_sha256": config["reader_html_sha256"],
              "metrics": dict(metrics), "failures": failures, "epubcheck_exit": result.returncode,
              "epubcheck_report_sha256": q.digest(report.read_bytes()) if report.exists() else None,
-             "scope": {"source_units": 722, "aligned_segments": 6644, "main_chapters": 79, "reader_sections": 613},
-             "preservation_mr": "संपूर्ण मजकूर, TeX annotations, सूत्रक्रम, सिद्धता, संसाधने आणि संदर्भ जतन आहेत. 68 HTML glyph-images चे घोषित MathML mglyph रूपांतर आहे; उर्वरित MathML मध्ये बदल नाही.",
+             "scope": {"source_units": 722, "aligned_segments": 6644, "main_chapters": 79, "reader_sections": 613,
+                       "reader_section_headings_including_notes": accepted["sections"]},
+             "preservation_mr": f"संपूर्ण मजकूर, TeX annotations, सूत्रक्रम, सिद्धता, संसाधने आणि संदर्भ जतन आहेत. {len(source_glyphs)} HTML glyph-images चे घोषित MathML mglyph रूपांतर आहे; उर्वरित MathML मध्ये बदल नाही.",
              "limitations_mr": ["दृश्य नमुन्यांची तपासणी स्वतंत्र नोंदीत आहे.", "वाचन-प्रणालीनुसार MathML आधार बदलतो; स्वतंत्र मानवी भाषिक किंवा सुलभता-प्रमाणपत्राचा दावा नाही."]}
     (build / "EPUB_QA.json").write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps({"status": audit["status"], "checks": checks, "metrics": dict(metrics), "failures": failures}, ensure_ascii=False))

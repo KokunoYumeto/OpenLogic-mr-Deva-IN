@@ -22,7 +22,7 @@
 
 \begin{defn}
   $\delta$ ही नैसर्गिक निगमनातील !!a{derivation} असेल, तर
-  $\Gn{\delta}$ ची आगमनाने व्याख्या पुढीलप्रमाणे करतो:
+  $\Gn{\delta}$ ची विगमनाने व्याख्या पुढीलप्रमाणे करतो:
   \begin{enumerate}
   \item
     $\delta$ मध्ये फक्त गृहीतक~$!A$ असेल, तर $\Gn{\delta}$ म्हणजे
@@ -122,9 +122,9 @@ $\delta$ आणि $!A$ यांच्या गोडेल संख्या
     सांकेतीकरणाचे विशेष प्रकरण आहे, हे लक्षात घ्या. म्हणून आदिम
     पुनरावर्ती फलन $\fn{SubtreeSeq}(d)$ हे $d$ च्या सर्व
     उप-!!{derivation}s च्या गोडेल संख्यांची क्रमिका देते
-    (तिची लांबी जास्तीत जास्त~$d$ असते). म्हणून व्याख्या अशी करता येते:
+    ($d$ च्या या क्रमिकेत पुनरुक्तीही असू शकतात). म्हणून व्याख्या अशी करता येते:
     \[
-    \fn{Assum}(x, d, n) \defiff \bexists{i<d}{(\fn{SubtreeSeq}(d))_i =
+    \fn{Assum}(x, d, n) \defiff \bexists{i<\len{\fn{SubtreeSeq}(d)}}{(\fn{SubtreeSeq}(d))_i =
       \tuple{0, x, n}}.
     \]
   \item $\fn{Discharge}(x, d, n)$ आदिम पुनरावर्ती आहे, हे दाखवू.
@@ -217,15 +217,22 @@ $\delta$ आणि $!A$ यांच्या गोडेल संख्या
     \fn{EndFmla}(d) = (\Gn{\lexists} \concat x \concat a)).
   \end{multline*}
 
+नेमका गाठीचा आकार तपासण्यासाठी मागील विभागातील वैध क्रमिकासंकेतांकाची
+अट वापरा. गृहीतकाला तीन घटक असतात; नियमगाठीला आधारविधानांच्या
+संख्येपेक्षा चार अधिक घटक असतात:
+\[
+\fn{NDNode}(d) \defiff \fn{Seq}(d) \land
+[((d)_0=0 \land \len{d}=3) \lor ((d)_0\le3 \land \len{d}=(d)_0+4)].
+\]
   मग $\fn{Correct}(d)$ ची व्याख्या अशी करतो:
   \begin{multline*}
-    \fn{Sent}(\fn{EndFmla}(d)) \land {}\\
+    \fn{NDNode}(d) \land \fn{Sent}(\fn{EndFmla}(d)) \land {}\\
     [(\fn{LastRule}(d) = 1 \land
     \fn{FollowsBy}_{\Intro\land}(d)) \lor \dots \lor {}\\
     (\fn{LastRule}(d) = 16 \land \fn{FollowsBy}_{\Elim\eq}(d)) \lor {}\\
     \bexists{n<d}{\bexists{x<d}{(d = \tuple{0, x, n})}}].
   \end{multline*}
-  पहिली ओळ $d$ चे अंतिम !!{formula} वाक्य आहे, याची खात्री
+  पहिली ओळ संकेतांकाचा नेमका गाठीचा आकार आणि $d$ चे अंतिम !!{formula} वाक्य आहे, याची खात्री
   करते. शेवटची ओळ $d$ मध्ये फक्त गृहीतक असण्याचा प्रसंग हाताळते.
 \end{proof}
 
@@ -301,12 +308,17 @@ $\delta$ आणि $!A$ यांच्या गोडेल संख्या
   $\bexists{j<(d')_0}{d = (d')_{j+1}}$. म्हणून
   $\fn{OpenAssum}(z, d)$ ची व्याख्या अशी करता येते:
   \begin{multline*}
-    \bexists{s<\fn{SubtreeSeq}(d)}{(\fn{Subseq}(s, \fn{SubtreeSeq}(d))
+    \bexists{s<1+\fn{sequenceBound}(d,d)}{(\fn{Seq}(s) \land \len{s}>0 \land {}\\
+      \fn{Subseq}(s, \fn{SubtreeSeq}(d))
       \land (s)_0 = d \land {}} \\
     \bexists{n<d}{((s)_{\len{s} \tsub 1} = \tuple{0, z, n} \land {}}\\
       \bforall{i<(\len{s} \tsub 1)}{(\fn{Subderiv}((s)_{i+1}, (s)_i) \land {}}\\
       (n=0 \lor \fn{DischargeLabel}((s)_i) \neq n)))).
   \end{multline*}
+मार्गात प्रत्येक पुढचा गाठीचा संकेतांक आधीच्यापेक्षा लहान असतो.
+म्हणून वैध मार्गात जास्तीत जास्त $d$ गाठी आणि प्रत्येक संकेतांक
+जास्तीत जास्त $d$ असतो; वरची आदिम पुनरावर्ती मर्यादा पुरेशी आहे.
+%READERNOTE{SOL6-A066 — मूळ OpenAssum च्या मार्गसंकेतांकासाठी पूर्ण subtree क्रमिकेचा code हा strict upper bound घेतला आहे. फक्त एक गृहीतक असलेल्या निष्पत्तीसाठी आवश्यक singleton मार्गाचा code त्या क्रमिकेच्या code इतकाच असतो; म्हणून मूळ कसोटी त्या गृहीतकाला उघडे मानत नाही. येथे वैध nonempty मार्गाला सर्वसाधारण sequence bound दिला. Exact node guard ने extra fields वगळले, आणि Assum ने प्रत्यक्ष subtree क्रमिकेच्या पूर्ण लांबीपर्यंत शोध घेतला.}
 \end{proof}
 
 \begin{prop}

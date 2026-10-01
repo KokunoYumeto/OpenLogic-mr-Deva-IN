@@ -1,0 +1,26 @@
+{
+  "id": "SOL6-A362",
+  "date": "2026-10-01",
+  "record_kind": "workflow_runtime_validation",
+  "status": "passed_staging",
+  "release": "complete-v1.2",
+  "source_choices_added": 0,
+  "source_units": 722,
+  "aligned_segments": 6644,
+  "corrective_choices": 328,
+  "canonical_decisions": 1621,
+  "review_occurrences": 26364,
+  "pdf_pages": 957,
+  "current_pdf_sha256": "3ee7fe70d38346b3ffc7cd635aaa285e54a00e81e5cfe254467be7cc696306f9",
+  "required_new_helpers_in_source_zip": {
+    "tools/complete_diagram_inventory.py": "d802ca6353e2eaa62bdb7cb97231c5b630f17a5a9cb87dd96472e6824490a394",
+    "tools/complete_reader_topology.py": "2e2fbcaa808e40674901b676ca878ae3230d756b15ffe8c3e593defdef64d19f",
+    "tools/complete_review_repairs.py": "6355ee3f63e9c7ea90f45d05d0d0bc4dcb6863ab139ac6e276d81246b13e5df9",
+    "tools/render_complete_svg_assets.py": "92e4f47edbf593f7cdadc58bc727073a943b4ac0a88c36699c74568159f613a6"
+  },
+  "pristine_unrelated_core_html_tool_preserved": true,
+  "current_reader_notes": 346,
+  "cross_package_consistency": "passed",
+  "cold_whole_source_reproduction": "pending",
+  "limitations": "This runtime result validates staging and package consistency. The final release reproduction receipt separately determines cold PDF/HTML/EPUB identity; publication is still pending."
+}

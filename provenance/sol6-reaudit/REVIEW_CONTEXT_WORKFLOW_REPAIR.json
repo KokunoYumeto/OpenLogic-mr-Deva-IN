@@ -1,0 +1,95 @@
+{
+  "schema": "openlogic-review-context-workflow-repair/1",
+  "status": "validated_at_corrected_146_checkpoint",
+  "source_issue_aligned_target_contexts": 655,
+  "source_issue_history_preserved": true,
+  "regression": {
+    "issue_id": "OLINC-133",
+    "historical_target_lines": [
+      182,
+      182
+    ],
+    "old_context": "blank line after new prose changed line numbers",
+    "current_source_lines": [
+      175,
+      175
+    ],
+    "current_target_lines": [
+      183,
+      191
+    ],
+    "aligned_blocks": [
+      16
+    ]
+  },
+  "derived_corrective_rendering_descriptions": [
+    "SOL6-A101",
+    "SOL6-A102",
+    "SOL6-A103",
+    "SOL6-A104",
+    "SOL6-A105",
+    "SOL6-A106",
+    "SOL6-A107",
+    "SOL6-A108",
+    "SOL6-A109",
+    "SOL6-A110",
+    "SOL6-A111",
+    "SOL6-A112",
+    "SOL6-A113",
+    "SOL6-A114",
+    "SOL6-A115",
+    "SOL6-A116",
+    "SOL6-A117",
+    "SOL6-A118",
+    "SOL6-A119",
+    "SOL6-A120",
+    "SOL6-A121",
+    "SOL6-A122",
+    "SOL6-A123",
+    "SOL6-A124",
+    "SOL6-A125",
+    "SOL6-A126",
+    "SOL6-A127",
+    "SOL6-A128",
+    "SOL6-A129",
+    "SOL6-A130",
+    "SOL6-A131",
+    "SOL6-A132",
+    "SOL6-A133",
+    "SOL6-A134",
+    "SOL6-A135",
+    "SOL6-A136",
+    "SOL6-A137",
+    "SOL6-A138",
+    "SOL6-A139",
+    "SOL6-A140",
+    "SOL6-A141",
+    "SOL6-A142",
+    "SOL6-A143",
+    "SOL6-A144",
+    "SOL6-A145",
+    "SOL6-A146",
+    "SOL6-A147",
+    "SOL6-A148",
+    "SOL6-A149"
+  ],
+  "schema_validation_errors": 0,
+  "cross_surface_consistency": "passed",
+  "reader_pdf_sha256": "6e994e5befde31d417299559e8fbff82c2bfe7695f4a5598cc41b579bb14a466",
+  "tools": [
+    {
+      "path": "tools/complete_review_source_issues.py",
+      "sha256": "5b2d01d11e744ada826bedf38ed8a899e048193ca807b1f5aba25df113c0d3d3"
+    },
+    {
+      "path": "tools/complete_review_repairs.py",
+      "sha256": "bad12139997cc0786c6b550959cef1a313f6493aa442d7da2720142c766d1c08"
+    },
+    {
+      "path": "tools/prepare_complete_review.py",
+      "sha256": "419bb55ba3f614a7c7dce24f1dc4ed3da1b0bb3ce76c40c91d45a8179026fd18"
+    }
+  ],
+  "reason_mr": "Source-issue target contexts आता historical line offsets वर अवलंबून नाहीत; गोठवलेल्या source context ला त्याच क्रमांकांचे संपूर्ण translated blocks जोडले आणि current byte/line spans पुन्हा मोजले. मूळ नोंदी बदलल्या नाहीत. नंतरच्या 49 repair rows मध्ये title आणि affected segments होते, chosen_marathi key नव्हती; त्यांपासून स्पष्ट derived description दिले, exact target excerpts जपले आणि recorded review_question_mr वापरला. Canonical schema मध्ये अतिरिक्त field न घालता recording_mode आणि confidence explanation मध्ये derivation स्पष्ट केली.",
+  "limitations_mr": "हा 146-choice checkpoint मधील tool/schema/hash validation चा पुरावा आहे. सद्य 151 source choices मधील पुढील पाच choices त्या PDF मध्ये अद्याप नाहीत. Aligned contexts हे नवीन corpus semantic किंवा स्वतंत्र मानवी review नाहीत; आगामी source edits साठी review artifacts पुन्हा तयार करावे लागतील."
+}

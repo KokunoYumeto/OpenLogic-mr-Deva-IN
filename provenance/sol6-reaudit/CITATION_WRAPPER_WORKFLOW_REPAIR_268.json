@@ -1,0 +1,34 @@
+{
+  "id": "SOL6-A268",
+  "record_kind": "workflow_repair",
+  "source_choice": false,
+  "tools": [
+    {
+      "path": "tools/prepare_core536.py",
+      "sha256": "d2f28fda8f452f8d4048e97023aa9ef6e1daa8dbf173db55fd63c68fd9d2ba24",
+      "scope": "entire file directly read"
+    },
+    {
+      "path": "tools/prepare_core546.py",
+      "sha256": "d593089fd67d8a9959a07d93d28d24e150d3b03f4486d712a530dd8b58e41895",
+      "scope": "entire file directly read"
+    }
+  ],
+  "finding": "The story wrapper rendered six English page prefixes; the Z-minus wrapper accepted only the old English Appendix A key and rendered that locator in English.",
+  "repair": "Render the identical story citation page locators with Marathi page prefixes. Accept both historical English and current Marathi Appendix A keys, rendering the exact Marathi locator. Citation keys, authors and page/appendix identifiers are preserved.",
+  "validation": {
+    "full_assembly_and_static_qa": "passed",
+    "reader_sha256": "546150a6d6e5428c4ff2f4692523d80a5cd5f805d658127915b509d6924c3052",
+    "reader_bytes": 5545605,
+    "latest_guarded_attempt": {
+      "result": "slot-occupied",
+      "acquired": false,
+      "passes": []
+    },
+    "compilation_and_matching_visual_review": "pending; no TeX pass launched"
+  },
+  "limitations": "The preserved corrected-249 PDF/review/web checkpoint does not cover these wrapper repairs or the257 current source choices. No source choice, new publication or independent human review is claimed.",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "date": "2026-09-30"
+}

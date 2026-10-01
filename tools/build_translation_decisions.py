@@ -162,6 +162,11 @@ def reader_locator(legacy):
             "reason": legacy.get("page_locator_precision")
             or "This occurrence has not yet been paginated in the coherent reader.",
         }
+    if legacy.get("reader_pdf_sha256") != PDF_SHA256:
+        return {
+            "status": "pending",
+            "reason": "The recorded page locator belongs to another or unbound PDF; repagination is required for this reader.",
+        }
     return {
         "status": "available",
         "artifact_filename": PDF_FILENAME,

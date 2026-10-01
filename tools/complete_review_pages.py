@@ -27,6 +27,17 @@ def bind_units(root, manifest):
     pdf_hash = hashlib.sha256(pdf_path.read_bytes()).hexdigest()
     receipt = json.loads((build / "TEX_BUILD_RECEIPT.json").read_text(encoding="utf-8-sig"))
     assert receipt["result"] == "built-log-clean" and receipt["pdf"]["sha256"] == pdf_hash
+    inputs = json.loads((build / "INPUTS.json").read_text(encoding="utf-8"))
+    assert inputs["reader_sha256"] == receipt["texInputSha256"]
+    assert hashlib.sha256((build / "openlogic-mr-full.tex").read_bytes()).hexdigest() == inputs["reader_sha256"]
+    input_units = {row["unit_id"]: row for row in inputs["input_units"]}
+    assert len(input_units) == 722 and set(input_units) == set(manifest)
+    for uid, unit in manifest.items():
+        binding = input_units[uid]
+        assert binding["source_path"] == "upstream/" + unit["source_path"]
+        assert binding["target_path"] == "mr/" + unit["source_path"]
+        assert hashlib.sha256((root / binding["source_path"]).read_bytes()).hexdigest() == binding["source_sha256"]
+        assert hashlib.sha256((root / binding["target_path"]).read_bytes()).hexdigest() == binding["target_sha256"], f"Reader must be rebuilt before binding revised unit {uid}"
     aux_path = build / "openlogic-mr-full.aux"
     aux_hash = hashlib.sha256(aux_path.read_bytes()).hexdigest()
     labels = {}

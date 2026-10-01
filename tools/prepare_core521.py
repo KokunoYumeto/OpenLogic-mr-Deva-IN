@@ -5,6 +5,7 @@ import json
 import re
 import runpy
 from pathlib import Path
+from complete_reader_notes import NOTE, project_note
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -59,20 +60,20 @@ assert imports == ["material-conditional", "paradoxes-material", "strict-conditi
 available.update({"cnt:part", "cnt:int:chap"})
 files = []
 reader_note_count = 0
+expected_reader_notes = 0
 for name in imports:
     path = folder / (name + ".tex")
     raw = path.read_text(encoding="utf-8")
-    if name == "counterfactuals":
-        def render_reader_note(match):
-            global reader_note_count
-            reader_note_count += 1
-            assert match.group(1).startswith("OLINC-238:")
-            return (
-                r"\begin{quote}\small\textbf{स्रोतविश्लेषणाची मर्यादा.} "
-                + match.group(1)
-                + r"\end{quote}"
-            )
-        raw = re.sub(r"(?m)^[ \t]*%READERNOTE\{(.*)\}$", render_reader_note, raw)
+    # SOL6-A204: later source repairs may add notes to any imported unit.
+    expected_reader_notes += len(NOTE.findall(raw))
+
+    def render_reader_note(match):
+        global reader_note_count
+        reader_note_count += 1
+        return (r"\begin{quote}\small\textbf{स्रोतनोंद.} "
+                + project_note(match.group(1)) + r"\end{quote}")
+
+    raw = NOTE.sub(render_reader_note, raw)
     content = selected(raw)
     file_id = re.search(r"\\olfileid\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}", content)
     assert file_id and list(file_id.groups())[:2] == ["cnt", "int"], path
@@ -82,7 +83,7 @@ for name in imports:
     available.update(prefix + ":" + label for label in re.findall(r"\\ollabel\{([^}]+)\}", content))
     available.update(re.findall(r"\\label\{([^}]+)\}", content))
     files.append((name, content, parts, prefix))
-assert reader_note_count == 1
+assert reader_note_count == expected_reader_notes
 external.difference_update(available)
 
 chunks = [
@@ -136,11 +137,13 @@ new_notes = r"""
 S5 ची व्याप्ती मराठीत स्पष्ट केली आहे.
 \item \textbf{OLINC-238}: स्टालनाकर आणि
 लुईस यांना एकच अद्वितीय सर्वाधिक जवळचे जग
-गृहीत धरणारी सत्यता-अट देणे हे सुलभीकरण
-आहे. लुईसच्या विश्लेषणात समसमान जवळची
-अनेक जगे किंवा सर्वात जवळचे जग नसणेही
-शक्य आहे. विभागात दिसणारी टीप ही मर्यादा
-स्पष्ट करते. मूळ इंग्रजी बाइट्स बदललेले नाहीत.
+गृहीत धरणारी मूळ सत्यता-अट दुरुस्त केली आहे.
+स्टालनाकरची निवडलेल्या जगाची अट आणि
+लुईसची गोलक-अट वेगळ्या दिल्या आहेत.
+लुईसच्या विश्लेषणात समसमान जवळची अनेक जगे
+किंवा सर्वात जवळचे जग नसणेही शक्य आहे.
+आधीची स्रोतनोंद हा भेद जपते. मूळ इंग्रजी
+बाइट्स बदललेले नाहीत.
 """
 assert notes.count(r"\end{enumerate}") >= 1
 notes = notes.replace(r"\end{enumerate}", new_notes + r"\end{enumerate}", 1)
@@ -171,7 +174,7 @@ assert len(inputs) == 518 and inputs[-1]["unit_id"] == "OLP-0521"
 assert out.count(r"\chapter{") == 56
 assert len(re.findall(r"\\section(?:\[[^]]*\])?\{", out)) == 449
 assert "518 स्रोत-एकके आणि 449 वाचक-विभाग" in out
-assert "स्रोतविश्लेषणाची मर्यादा" in out
+assert "OLINC-238" in out
 assert "!!" not in out and not re.search(r"![A-Z]", out)
 labels = re.findall(r"\\label\{([^}]+)\}", out)
 assert len(labels) == len(set(labels)), "Cumulative reader labels must be unique"

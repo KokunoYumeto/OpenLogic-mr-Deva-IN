@@ -1,0 +1,25 @@
+{
+  "id": "SOL6-A278",
+  "record_kind": "workflow_repair",
+  "source_choice": false,
+  "finding": "Legacy core397 reader note and localized OLINC137 review still called the constant-value issue open after the directly reviewed A142 matrix/constant-scope correction.",
+  "repair": "Acknowledge the current RM3 table and explicit false-constant extension; use the established Marathi induction term in the same wrapper. Preserve historical ledger and prior localized row.",
+  "before_tool_sha256": "7faebae8ae06562c04551398fb5d0e59b227698d3d73635f8d47b86104cc0d42",
+  "after_tool_sha256": "e76154a37416265b41637aae06b91222d9e2097374fbd659ac3c81bf6eb807f1",
+  "before_localized_index_sha256": "4077c92bc6b63b158f1133e320d12c252f448ee978e60fffb1770967cbc8e085",
+  "after_localized_index_sha256": "df3e7433573fe343c8c418189f9f5de2a39592910ec9997fb655ad514b848686",
+  "historical_localized_row": {
+    "issue_id": "OLINC-137",
+    "rationale_mr": "R-Mingle भाषेत शून्यस्थानी असत्य संयोजक आहे; फलनवर्णन मात्र त्या संयोजकाविना लुकाशेविच मॅट्रिक्सकडे निर्देश करते. अतिरिक्त स्थिरांकाचे मूल्य अस्पष्ट आहे. मूळ वर्णन राखून ही बाब नोंदली; असत्य मूल्य संभाव्य असले तरी गुप्तपणे नेमले नाही.",
+    "review_question_mr": "या मॅट्रिक्समध्ये शून्यस्थानी असत्याचे मूल्य असत्य म्हणून स्पष्ट द्यावे का?"
+  },
+  "source_choice_evidence": {
+    "id": "SOL6-A142",
+    "receipt_sha256": "deb2dba681f7cfa0fc3f29cd669e3f4ae556d2fea09bef52069623ff084e3095"
+  },
+  "source_history_sha256": "c015a22ae11cf8f9da72509aa787424599e3611b46412a32a4f219377f8b11f9",
+  "status": "local disclosures repaired; refreshed assembly/review/compiled visual checkpoint pending",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "date": "2026-09-30"
+}

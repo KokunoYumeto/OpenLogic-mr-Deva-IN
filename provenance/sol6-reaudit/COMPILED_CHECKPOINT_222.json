@@ -1,0 +1,164 @@
+{
+  "schema": "openlogic-scoped-compiled-checkpoint/1",
+  "status": "compiled-and-scoped-rendering-inspected; review-bundle-not-refreshed",
+  "corrective_source_decisions_in_assembled_scope": 222,
+  "pdf_sha256": "3f7dbab5fad04ad6515eaba9b061aaef0cd72436cc773294c541a9101f7411f4",
+  "reader_sha256": "3975fb5c44634e2bfc127eed83b56235f6397a06715fb7fba139c9577caa1b50",
+  "pages": 949,
+  "date": "2026-09-30",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "build_result": "built-log-clean",
+  "pdf_qa_status": "provisional",
+  "pdf_qa_problems": [
+    "source translations changed after reader assembly: OLP-0550, OLP-0551"
+  ],
+  "pages_actually_viewed": [
+    664,
+    665,
+    666,
+    667,
+    668,
+    669,
+    670,
+    671,
+    672,
+    673,
+    674,
+    675,
+    911,
+    929,
+    930
+  ],
+  "images_actually_viewed": [
+    {
+      "page": 664,
+      "filename": "page-664.png",
+      "sha256": "50474be20a037010e5c43296e61e6df39018299aefebf326e86cb105b7da2578"
+    },
+    {
+      "page": 665,
+      "filename": "page-665.png",
+      "sha256": "ed621a8f5395ee6af885e84d52ae238a4faf3e4a58913cd0df09edf3f8f120d4"
+    },
+    {
+      "page": 666,
+      "filename": "page-666.png",
+      "sha256": "aa49753515c15e2752bfb388a835b02fba565e49d7dbe086c6637bb25af34808"
+    },
+    {
+      "page": 667,
+      "filename": "page-667.png",
+      "sha256": "a14a2875301fd85f6e8fdcd6db4b3cb9ebe6782a1722614d8a345240516015d8"
+    },
+    {
+      "page": 668,
+      "filename": "page-668.png",
+      "sha256": "e29bf6854b08f6b64d369c8d7de7b01c4b3c5f8e45d21f776934d50cc592432d"
+    },
+    {
+      "page": 669,
+      "filename": "page-669.png",
+      "sha256": "d0ae8f4fb1daf42ff5b63e0f2cca0e87b711f5efcb795f90c98590c94b110464"
+    },
+    {
+      "page": 670,
+      "filename": "page-670.png",
+      "sha256": "2b262c6ee7ce8d859cb18c41b55ce02599d7c74924b4ae41785ac248942982b7"
+    },
+    {
+      "page": 671,
+      "filename": "page-671.png",
+      "sha256": "50586fc06696b2b124820ead552f74ed75f27c083ab9161a1a4dfd9894d73a7b"
+    },
+    {
+      "page": 672,
+      "filename": "page-672.png",
+      "sha256": "ca9e9158e52223ce6a8d7bd7bda385c7d4b719103e3763f77bae2d695c6c3925"
+    },
+    {
+      "page": 673,
+      "filename": "page-673.png",
+      "sha256": "4d3921af08225f06ccfd98887ba2064869125dfe8506ec7d1151d73c8fec183a"
+    },
+    {
+      "page": 674,
+      "filename": "page-674.png",
+      "sha256": "70f943c94f3768b80e9f11ba290f794eeefc55b8791528c2f4ba591b2db26854"
+    },
+    {
+      "page": 675,
+      "filename": "page-675.png",
+      "sha256": "f80d648b76090f8bfa0838bf98343fee20f31aaabd9467d32b18de5502775567"
+    },
+    {
+      "page": 911,
+      "filename": "page-911.png",
+      "sha256": "bd882317c06703776fb4d3c01b274af9458213c7c3330a49009a5d799fae638b"
+    },
+    {
+      "page": 929,
+      "filename": "page-929.png",
+      "sha256": "a3911f57ac38aa305f0cc64d9f36f8928475c9cbb92851c9c9dcdce6dcbd778a"
+    },
+    {
+      "page": 930,
+      "filename": "page-930.png",
+      "sha256": "a5703241bf248810543d89c294f4536c729e586254790ba5aba5f133eaa063de"
+    }
+  ],
+  "bindings": [
+    {
+      "file": "openlogic-mr-full.pdf",
+      "sha256": "3f7dbab5fad04ad6515eaba9b061aaef0cd72436cc773294c541a9101f7411f4",
+      "bytes": 3896305
+    },
+    {
+      "file": "openlogic-mr-full.tex",
+      "sha256": "3975fb5c44634e2bfc127eed83b56235f6397a06715fb7fba139c9577caa1b50",
+      "bytes": 5539678
+    },
+    {
+      "file": "openlogic-mr-full.toc",
+      "sha256": "5d6f786a45852a1aafdad5d9e009aaa5c04f8612a376077563bc4658c0ec66fb",
+      "bytes": 99445
+    },
+    {
+      "file": "INPUTS.json",
+      "sha256": "be24ceb97f15176d84c11f80e2da36b3573178cb8ced29d2f3f9149d5a61a916",
+      "bytes": 309668
+    },
+    {
+      "file": "STATIC_QA.json",
+      "sha256": "993782ed226dbb255d78ee2f3361b16f19c69baa2b068afcaaff15f070045650",
+      "bytes": 746
+    },
+    {
+      "file": "READER_NOTE_QA.json",
+      "sha256": "5810305ffba333bd2dbac16176bc74ae26993ea93956ea3085274263e6b3d492",
+      "bytes": 150909
+    },
+    {
+      "file": "PDF_QA.json",
+      "sha256": "913681473a3adaba9c1011d15151d68e2526b039f21d06737c6054e1e6dd191d",
+      "bytes": 4240
+    },
+    {
+      "file": "TEX_BUILD_RECEIPT.json",
+      "sha256": "3f23d92ab51f572a2eae5e9794c7f925d037ab4aef4e1f1b853e54c8090beda8",
+      "bytes": 1151
+    },
+    {
+      "file": "TEX_SUCCESS_RECEIPT.json",
+      "sha256": "3f23d92ab51f572a2eae5e9794c7f925d037ab4aef4e1f1b853e54c8090beda8",
+      "bytes": 1151
+    }
+  ],
+  "observed_rendering_defect": "On page 929, explicit URL commands in two new editorial notes are printed as literal TeX; note projection must preserve safe live URLs before the next checkpoint.",
+  "limitations": [
+    "Current sources already contain later A230/A231 corrections; the compiled reader is historical to those changes.",
+    "Current review artifacts remain at the separately validated 214-correction checkpoint. No 222-correction source/PDF/review consistency pass is asserted.",
+    "Fifteen rendered pages were directly inspected; this is not full-page or independent human review.",
+    "No new HTML/EPUB, release staging, cold source reproduction or publication is asserted."
+  ]
+}

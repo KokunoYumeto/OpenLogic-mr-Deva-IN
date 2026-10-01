@@ -1,0 +1,1613 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 10: नैसर्गिक निगमन
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{नैसर्गिक निगमन}\label{fol:ntd::chap}
+\begin{editorial}
+हे प्रकरण Gentzen/Prawitz शैलीतील नैसर्गिक निगमन पद्धत मांडते.
+
+नैसर्गिक निगमनाशी सिद्धता-पद्धती म्हणून संबंधित सामग्री समाविष्ट किंवा
+वगळण्यासाठी ``prfND'' हा टॅग वापरा.
+\end{editorial}
+
+
+
+
+
+
+\section{नियम आणि निष्पत्ती}\label{fol:ntd:rul:sec}
+
+\begin{explain}
+नैसर्गिक निगमन पद्धतींचा उद्देश गणितीय सिद्धतेत वापरल्या जाणाऱ्या अनौपचारिक
+तर्कपद्धतीशी जवळचे साम्य राखणे हा आहे (म्हणूनच ती काहीशी ``नैसर्गिक'' आहे).
+नैसर्गिक निगमनातील सिद्धता गृहीतकांपासून सुरू होतात.
+त्यानंतर अनुमाननियम लागू केले जातात. \Intro{\lnot}, \Intro{\lif},
+\Elim{\lor} आणि \Elim{\lexists} अनुमाननियमांद्वारे
+गृहीतके ``मुक्त'' केली जातात; स्पष्टतेसाठी मुक्त केलेल्या
+गृहीतकाचा लेबल त्या अनुमानाजवळ ठेवला जातो.
+\end{explain}
+
+\begin{defn}[गृहीतक]
+\emph{गृहीतक} म्हणजे कोणत्याही शाखेच्या सर्वांत वरच्या स्थानावर असलेले
+कोणतेही वाक्य होय.
+\end{defn}
+
+नैसर्गिक निगमनातील निष्पत्त्या ही वाक्यांची विशिष्ट वृक्षरचना असते;
+त्यातील सर्वांत वरच्या वाक्ये गृहीतके असतात. एखादे वाक्य एक,
+दोन किंवा तीन इतर क्रमवर्तींच्या खाली असल्यास, ते अनुमाननियमाने योग्य
+प्रकारे आलेले असले पाहिजे. अनुमानाच्या शीर्षस्थानी असलेल्या वाक्यांना
+\emph{आधारविधाने} म्हणतात आणि खालील वाक्याला अनुमानाचा
+\emph{निष्कर्ष} म्हणतात. प्रत्येक संकारक साठी नियम जोड्यांमध्ये येतात:
+एक प्रवेशन नियम आणि एक विलोपन नियम. ते निष्कर्षात संकारक आणतात
+किंवा नियमाच्या आधारविधानातून संकारक काढतात. काही नियम विशिष्ट
+प्रकारचे गृहीतक \emph{मुक्त} करण्याची परवानगी देतात. कोणते
+गृहीतक कोणत्या अनुमानाने मुक्त केले हे दर्शवण्यासाठी गृहीतक आणि
+अनुमान दोन्हींना लेबल देतो. हे गृहीतक ``$\Discharge{\varphi}{n}$.` असे लिहून दर्शवले जाते.
+
+
+सर्व संकारक $\land$, $\lor$, $\lif$, $\lnot$ आणि $\lfalse$ यांच्यासाठीचे नियम विचारात घेणे प्रचलित आहे, जरी त्यांपैकी काही परिभाषित केलेले असले तरी.
+
+
+
+
+
+
+
+
+
+
+
+\section{विधानीय नियम}\label{fol:ntd:prl:sec}
+
+
+\subsection{$\land$ साठीचे नियम}
+
+\begin{defish}
+\AxiomC{$\varphi$}
+\AxiomC{$\psi$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$\varphi \land \psi$}
+\DisplayProof
+\hfill
+\begin{tabular}{r}
+\AxiomC{$\varphi \land \psi$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$\varphi$}
+\DisplayProof
+\\[3ex]
+\AxiomC{$\varphi \land \psi$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$\psi$}
+\DisplayProof
+\end{tabular}
+\end{defish}
+\subsection{$\lor$ साठीचे नियम}
+\begin{defish}
+\begin{tabular}{r}
+\AxiomC{$\varphi$}
+\RightLabel{\Intro{\lor}}
+\UnaryInfC{$\varphi \lor \psi$}
+\DisplayProof
+\\[3ex]
+\AxiomC{$\psi$}
+\RightLabel{\Intro{\lor}}
+\UnaryInfC{$\varphi \lor \psi$}
+\DisplayProof
+\end{tabular}
+\hfill
+\AxiomC{$\varphi \lor \psi$}
+\AxiomC{$\Discharge{\varphi}{n}$}
+\DeduceC{$\chi$}
+\AxiomC{$\Discharge{\psi}{n}$}
+\DeduceC{$\chi$}
+\DischargeRule{\Elim{\lor}}{n}
+\TrinaryInfC{$\chi$}
+\DisplayProof
+\end{defish}
+\subsection{$\lif$ साठीचे नियम}
+\begin{defish}
+\AxiomC{$\Discharge{\varphi}{n}$}
+\DeduceC{$\psi$}
+\DischargeRule{\Intro{\lif}}{n}
+\UnaryInfC{$\varphi \lif \psi$}
+\DisplayProof
+\hfill
+\AxiomC{$\varphi \lif \psi$}
+\AxiomC{$\varphi$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$\psi$}
+\DisplayProof
+\end{defish}
+\subsection{$\lnot$ साठीचे नियम}
+\begin{defish}
+\AxiomC{$\Discharge{\varphi}{n}$}
+\noLine
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{n}
+\UnaryInfC{$\lnot \varphi$}
+\DisplayProof
+\hfill
+\AxiomC{$\lnot \varphi$}
+\AxiomC{$\varphi$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\DisplayProof
+\end{defish}
+\subsection{$\lfalse$ साठीचे नियम}
+\begin{defish}
+\AxiomC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$\varphi$}
+\DisplayProof
+\hfill
+\AxiomC{$\Discharge{\lnot \varphi}{n}$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\FalseCl}{n}
+\UnaryInfC{$\varphi$}
+\DisplayProof
+\end{defish}
+लक्षात घ्या की $\Intro{\lnot}$ आणि $\FalseCl$ हे अगदी सारखे आहेत: फरक
+असा की $\Intro{\lnot}$ हा नकारयुक्त वाक्य~$\lnot \varphi$ निष्पन्न
+करतो, तर $\FalseCl$ हा सकारात्मक वाक्य~$\varphi$ निष्पन्न करतो.
+जेव्हा एखादा नियम एखादे गृहीतक मुक्त करता येते असे दर्शवतो, तेव्हा आपण ती
+परवानगी मानतो, आवश्यकता नाही. उदा., $\Intro{\lif}$ नियमात आधारविधान~$\psi$
+च्या निष्पत्तीमधील $\varphi$ या रूपाची कितीही गृहीतके—शून्यसुद्धा—आपण
+मुक्त करू शकतो.
+\section{संख्यापकांचे नियम}\label{fol:ntd:qrl:sec}
+\subsection{$\lforall$ साठीचे नियम}
+\begin{defish}
+\AxiomC{$\varphi(a)$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[x][\Atom{\varphi}{x}]$}
+\DisplayProof
+\hfill
+\AxiomC{$\lforall[x][\Atom{\varphi}{x}]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$\varphi(t)$}
+\DisplayProof
+\end{defish}
+$\lforall$ च्या नियमांमध्ये, $t$ हे बंद पद आहे (म्हणजे, कोणतेही चर
+नसलेले पद), आणि $a$~हा असा स्थिरांक आहे की तो
+निष्कर्ष~$\lforall[x][\varphi(x)]$ मध्ये किंवा आधारविधान~$\varphi(a)$ ने समाप्त
+होणाऱ्या निष्पत्तीमध्ये मुक्त न केलेली असलेल्या कोणत्याही
+गृहीतकात येत नाही. आपण $a$ ला \Intro{\lforall} अनुमानाचा
+\emph{आयगेन चर} म्हणतो.\footnote{वरील नियमात $a$ हा अचर असला तरी आपण
+``आयगेन चर'' ही संज्ञा वापरतो. यामागे ऐतिहासिक कारणे आहेत.}
+\subsection{$\lexists$ साठीचे नियम}
+\begin{defish}
+\AxiomC{$\Atom{\varphi}{t}$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][\Atom{\varphi}{x}]$}
+\DisplayProof
+\hfill
+\AxiomC{$\lexists[x][\Atom{\varphi}{x}]$}
+\AxiomC{[$\Atom{\varphi}{a}$]$^n$}
+\DeduceC{$\chi$}
+\DischargeRule{\Elim{\lexists}}{n}
+\BinaryInfC{$\chi$}
+\DisplayProof
+\end{defish}
+पुन्हा, $t$ हे बंद पद आहे आणि $a$ हा असा स्थिरांक आहे की तो
+आधारविधान $\lexists[x][\varphi(x)]$ मध्ये, निष्कर्ष~$\chi$ मध्ये किंवा दोन
+आधारविधानांनी समाप्त होणाऱ्या निष्पत्त्या मधील कोणत्याही
+मुक्त न केलेली गृहीतकात ($\varphi(a)$ ही गृहीतके वगळता) येत नाही. आपण
+$a$ ला \Elim{\lexists} अनुमानाचा \emph{आयगेन चर} म्हणतो.
+\Intro{\lforall} आणि \Elim{\lexists} अनुमानांसाठी आयगेन चरावर लागू होणारे
+निर्बंध वर स्वतंत्रपणे सांगितले आहेत. त्यांत संबंधित आधारविधान व निष्कर्ष,
+तसेच आधारविधानांकडे नेणाऱ्या निष्पत्त्या मधील मुक्त न केलेली गृहीतके,
+यांबाबत वेगवेगळे निर्बंध आहेत. या निर्बंधांना \emph{आयगेन चराची अट} म्हणतात.
+\begin{explain}
+ही प्रथा आठवा: $\varphi$ हे असे सूत्र असेल की त्यात
+चल~$x$ मुक्त असेल, तर हे आपण~$\varphi(x)$ असे लिहून दर्शवतो.
+त्याच संदर्भात, मग $\varphi(t)$ हा~$\Subst{\varphi}{t}{x}$ चा संक्षेप असतो.
+त्यामुळे $\Intro\lexists$ नियम पुढीलप्रमाणेही लिहिता येईल:
+\begin{prooftree}
+\AxiomC{$\Subst{\varphi}{t}{x}$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][\varphi]$}
+\end{prooftree}
+लक्षात घ्या की~$\varphi$ मध्ये $t$ आधीपासून येऊ शकते; उदा., $\varphi$ हे
+$\Atom{\Obj P}{t,x}$ असू शकते. म्हणून,~$\Atom{\Obj P}{t,t}$ पासून
+$\lexists[x][\Atom{\Obj P}{t,x}]$ निष्पन्न करणे हे~$\Intro\lexists$
+चे योग्य उपयोजन आहे---आधारविधानात~$t$ जेथे येते त्यांपैकी एक किंवा
+अधिक ठिकाणी त्याऐवजी बद्ध चल~$x$ घालता येतो; सर्वच ठिकाणी
+असा ``बदल'' करणे आवश्यक नाही. परंतु $\Intro\lforall$ आणि
+$\Elim\lexists$ मधील आयगेन चराच्या अटीनुसार स्थिरांक~$a$ हा~$\varphi$
+मध्ये येता कामा नये. म्हणून, $\Intro\lforall$ वापरून
+$\Atom{\Obj P}{a,a}$ पासून $\lforall[x][\Atom{\Obj P}{a,x}]$ योग्य
+रीतीने निष्पन्न करता येत नाही.
+\end{explain}
+\begin{explain}
+\Intro{\lexists} आणि \Elim{\lforall} मध्ये पद~$t$ बंद
+असण्याव्यतिरिक्त त्यावर आणखी कोणतेही निर्बंध नाहीत; म्हणून इतर कोणत्याही
+अटीची काळजी करावी लागत नाही. याउलट, \Elim{\lexists} आणि
+\Intro{\lforall} नियमांमध्ये आयगेन चराच्या अटीनुसार स्थिरांक~$a$ हा
+निष्कर्षात किंवा कोणत्याही मुक्त न केलेली गृहीतकात कोठेही येता कामा नये.
+ही पद्धत निर्दोष आहे, म्हणजे ती केवळ अशा मुक्त न केलेली गृहीतकांपासूनच
+वाक्ये निष्पन्न करते की ज्यांच्यापासून ती तार्किकरीत्या निष्पन्न
+होतात, याची खात्री करण्यासाठी ही अट आवश्यक आहे. ही अट नसती, तर पुढील
+निष्पत्तीला परवानगी मिळाली असती:
+\begin{prooftree}
+  \AxiomC{$\lexists[x][\varphi(x)]$}
+  \AxiomC{$\Discharge{\varphi(a)}{1}$}
+  \RightLabel{*\Intro{\lforall}}
+  \UnaryInfC{$\lforall[x][\varphi(x)]$}
+  \RightLabel{\Elim{\lexists}}
+  \BinaryInfC{$\lforall[x][\varphi(x)]$}
+\end{prooftree}
+परंतु, $\lexists[x][\varphi(x)] \Entails/ \lforall[x][\varphi(x)]$.
+संख्यापकांच्या विलोपन नियमांमध्ये चलांच्या जागी केवळ बंद पदे
+ठेवण्याची परवानगी असल्यामुळे, वाक्यांच्या संचापासून निष्पन्न करता
+येणारे कोणतेही सूत्र हे स्वतः वाक्य असते, हे निष्पन्न होते.
+\end{explain}
+\section{निष्पत्ती}\label{fol:ntd:der:sec}
+\begin{explain}
+गृहीतक म्हणजे काय हे आपण सांगितले आहे आणि निगमन नियम दिले आहेत.
+नैसर्गिक निगमनातील निष्पत्त्या यांपासून आगमनाने निर्माण होतात:
+प्रत्येक निष्पत्ती ही एकतर स्वतंत्र गृहीतक असते किंवा एक, दोन वा तीन
+निष्पत्त्या नंतर केलेले योग्य अनुमान असते.
+\end{explain}
+\begin{defn}[निष्पत्ती]
+\emph{निष्पत्ती} म्हणजे गृहीतके~$\Gamma$
+यांपासून वाक्य~$\varphi$ ची पुढील अटी पूर्ण करणारी वाक्यांची
+सांत वृक्षरचना होय:
+\begin{enumerate}
+\item वृक्षातील सर्वांत वरची वाक्ये ही एकतर $\Gamma$ मध्ये असतात
+  किंवा वृक्षातील एखाद्या अनुमानाने मुक्त केलेली असतात.
+\item वृक्षातील सर्वांत खालचे वाक्य हे~$\varphi$ असते.
+\item वृक्षाच्या तळाशी असलेले वाक्य~$\varphi$ वगळता, वृक्षातील प्रत्येक
+  वाक्य हे एखाद्या निगमन नियमाच्या योग्य उपयोजनाचे आधारविधान असते
+  आणि त्या उपयोजनाचा निष्कर्ष वृक्षात त्या वाक्याच्या थेट खाली येतो.
+\end{enumerate}
+मग $\varphi$ हा त्या निष्पत्तीचा \emph{निष्कर्ष} आणि $\Gamma$ ही तिची
+मुक्त न केलेली गृहीतके आहेत, असे आपण म्हणतो.
+जर~$\Gamma$ या गृहीतकांपासून $\varphi$ ची निष्पत्ती अस्तित्वात असेल, तर
+$\varphi$ हे~$\Gamma$ पासून \emph{निष्पन्न करता येण्याजोगे} आहे असे म्हणतो; चिन्हांत:
+$\Gamma \Proves \varphi$. प्रत्येक गृहीतक मुक्त केलेले असणारी $\varphi$
+ची निष्पत्ती असेल, तर आपण~$\Proves \varphi$ असे लिहितो.
+\end{defn}
+\begin{ex}
+प्रत्येक गृहीतक स्वतःच निष्पत्ती असते. म्हणून, उदा., एकटे $\varphi$ ही
+निष्पत्ती आहे आणि एकटे $\psi$ सुद्धा. यांवर, समजा,
+$\Intro{\land}$ नियम लागू करून नवी निष्पत्ती मिळवता येते:
+\begin{prooftree}
+\AxiomC{$\varphi$}
+\AxiomC{$\psi$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$\varphi \land \psi$}
+\end{prooftree}
+हे नियम सर्वसाधारण असतात: त्यांतील $\varphi$ आणि~$\psi$ यांच्या जागी कोणतीही
+वाक्ये, उदा., $\chi$ आणि~$\theta$, ठेवता येतात. मग निष्कर्ष
+$\chi \land \theta$ असेल, आणि म्हणून
+\begin{prooftree}
+\AxiomC{$\chi$}
+\AxiomC{$\theta$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$\chi \land \theta$}
+\end{prooftree}
+ही योग्य निष्पत्ती आहे. अर्थात, गृहीतकांची अदलाबदल करून $\theta$ ला
+$\varphi$ ची आणि $\chi$ ला~$\psi$ ची भूमिका देता येते. त्यामुळे,
+\begin{prooftree}
+\AxiomC{$\theta$}
+\AxiomC{$\chi$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$\theta \land \chi$}
+\end{prooftree}
+हीसुद्धा योग्य निष्पत्ती आहे.
+आता आपण दुसरा नियम, समजा, $\Intro{\lif}$ लागू करू शकतो. त्यामुळे सोपाधिक
+विधानाचा निष्कर्ष काढता येतो आणि त्या विधानाच्या पूर्वांगाशी एकरूप असलेले
+कोणतेही गृहीतक मुक्त करता येते. म्हणून पुढील दोन्या निष्पत्त्या योग्य आहेत:
+\begin{prooftree}
+\AxiomC{$\Discharge{\chi}{1}$}
+\AxiomC{$\theta$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$\chi \land \theta$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$\chi \lif (\chi \land \theta)$}
+\DisplayProof\bottomAlignProof
+\AxiomC{$\chi$}
+\AxiomC{$\Discharge{\theta}{1}$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$\chi \land \theta$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$\theta \lif (\chi \land \theta)$}
+\end{prooftree}
+त्या अनुक्रमे $\theta \Proves \chi \lif (\chi \land \theta)$ आणि
+$\chi \Proves \theta \lif (\chi \land \theta)$ हे दाखवतात.
+गृहीतके मुक्त करणे ही परवानगी आहे, आवश्यकता नाही, हे आठवा: गृहीतके मुक्त
+करणे बंधनकारक नसते. विशेषतः, निष्पत्तीमध्ये ती गृहीतके नसली तरीही
+नियम लागू करता येतो. उदाहरणार्थ, मुक्त करण्यासाठी~$\varphi$ हे गृहीतक
+नसले तरी पुढील उपयोजन अनुज्ञात आहे:
+\begin{prooftree}
+  \AxiomC{$\psi$}
+  \DischargeRule{\Intro{\lif}}{1}
+  \UnaryInfC{$\varphi \lif \psi$}
+\end{prooftree}
+\end{ex}
+\section{निष्पत्ती: उदाहरणे}\label{fol:ntd:pro:sec}
+\begin{ex}
+वाक्य $(\varphi \land \psi) \lif \varphi$ ची निष्पत्ती देऊ.
+हवा असलेला निष्कर्ष निष्पत्तीच्या तळाशी लिहून आपण सुरुवात करतो.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInfC{$(\varphi\land \psi) \lif \varphi$}
+\end{prooftree}
+पुढे, या रूपाचे वाक्य कोणत्या प्रकारच्या अनुमानामुळे मिळू शकते हे
+शोधावे लागते. निष्कर्षाचा मुख्य संकारक हा $\lif$ आहे; म्हणून
+\Intro{\lif} नियम वापरून निष्कर्षापर्यंत पोहोचण्याचा प्रयत्न करू. काम पुढे
+जाताना संबंधित गृहीतके लिहून ठेवणे आणि निगमन नियमांना लेबले देणे उत्तम;
+त्यामुळे सिद्धतेच्या शेवटी सर्व गृहीतके मुक्त झाली आहेत का हे सहज
+दिसते.
+\begin{prooftree}
+\AxiomC{$\Discharge{\varphi \land \psi}{1}$}
+\DeduceC{$\varphi$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$(\varphi\land \psi) \lif \varphi$}
+\end{prooftree}
+आता गृहीतक $\varphi \land \psi$ पासून $\varphi$ पर्यंतच्या पायऱ्या भराव्या लागतील.
+येथे हाताळण्यासाठी फक्त एकच संयोजक, $\land$, असल्यामुळे $\land$ चा विलोपन
+नियम वापरलाच पाहिजे. त्यामुळे पुढील सिद्धता मिळते:
+\begin{prooftree}
+\AxiomC{$\Discharge{\varphi \land \psi}{1}$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$\varphi$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$(\varphi\land \psi) \lif \varphi$}
+\end{prooftree}
+आता आपल्याकडे $(\varphi \land \psi) \lif \varphi$ ची योग्य निष्पत्ती आहे.
+\end{ex}
+\begin{ex}
+आता $(\lnot \varphi \lor \psi) \lif (\varphi \lif \psi)$ ची निष्पत्ती देऊ.
+हवा असलेला निष्कर्ष निष्पत्तीच्या तळाशी लिहून आपण सुरुवात करतो.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInfC{$(\lnot \varphi \lor \psi) \lif (\varphi \lif \psi)$}
+\end{prooftree}
+हा निष्कर्ष देऊ शकणारा तार्किक नियम शोधण्यासाठी निष्कर्षातील $\lnot$,
+$\lor$ आणि $\lif$ हे तार्किक संयोजक पाहतो. सध्या $\lif$ ची पहिली आस्थितीच
+महत्त्वाची आहे, कारण अंतिम क्रमवर्तीतील वाक्याचा तो मुख्य संकारक
+आहे; $\lnot$, $\lor$ आणि $\lif$ ची दुसरी आस्थिती दुसऱ्या संयोजकाच्या
+व्याप्तीत असल्यामुळे त्यांचा विचार नंतर करू. म्हणून आपण \Intro{\lif}
+नियमाने सुरुवात करतो. त्याचे योग्य उपयोजन पुढीलप्रमाणे असले पाहिजे:
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot \varphi \lor \psi}{1}$}
+\DeduceC{$\varphi \lif \psi$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$(\lnot \varphi \lor \psi) \lif (\varphi \lif \psi)$}
+\end{prooftree}
+पुढे जाण्यासाठी आता दोन पर्याय आहेत. एकतर तळापासून वरच्या दिशेने काम
+चालू ठेवून \Intro{\lif} नियमाचे आणखी एक उपयोजन शोधता येईल, किंवा वरून
+खाली काम करून \Elim{\lor} नियम लागू करता येईल. दुसरा पर्याय घेऊ.
+\Elim{\lor} चे सर्वांत डावे आधारविधान म्हणून $\lnot \varphi \lor \psi$ हे
+गृहीतक वापरू. \Elim{\lor} च्या योग्य उपयोजनासाठी इतर दोन्ही आधारविधाने
+$\varphi \lif \psi$ या निष्कर्षाशी एकरूप असली पाहिजेत; मात्र प्रत्येकाला
+अनुक्रमे आणखी एका गृहीतकापासून, म्हणजे $\lnot \varphi \lor \psi$ च्या दोन
+विकल्पघटकांपैकी एकापासून, निष्पन्न करता येते. त्यामुळे आपली
+निष्पत्ती पुढीलप्रमाणे दिसेल:
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot \varphi \lor \psi}{1}$}
+\AxiomC{$\Discharge{\lnot \varphi}{2}$}
+\DeduceC{$\varphi \lif \psi$}
+\AxiomC{$\Discharge{\psi}{2}$}
+\DeduceC{$\varphi \lif \psi$}
+\DischargeRule{\Elim{\lor}}{2}
+\TrinaryInfC{$\varphi \lif \psi$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$(\lnot \varphi \lor \psi) \lif (\varphi \lif \psi)$}
+\end{prooftree}
+उजवीकडील दोन्ही शाखांत आपल्याला $\varphi \lif \psi$ हे निष्पन्न करायचे आहे;
+त्यासाठी \Intro{\lif} वापरणे सर्वांत योग्य आहे.
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot \varphi \lor \psi}{1}$}
+\AxiomC{$\Discharge{\lnot \varphi}{2}, \Discharge{\varphi}{3}$}
+\DeduceC{$\psi$}
+\DischargeRule{\Intro{\lif}}{3}
+\UnaryInfC{$\varphi \lif \psi$}
+\AxiomC{$\Discharge{\psi}{2}, \Discharge{\varphi}{4}$}
+\DeduceC{$\psi$}
+\DischargeRule{\Intro{\lif}}{4}
+\UnaryInfC{$\varphi \lif \psi$}
+\DischargeRule{\Elim{\lor}}{2}
+\TrinaryInfC{$\varphi \lif \psi$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$(\lnot \varphi \lor \psi) \lif (\varphi \lif \psi)$}
+\end{prooftree}
+निष्पत्तीच्या उरलेल्या दोन भागांसाठी, मधल्या भागात $\lnot \varphi$ आणि
+$\varphi$ यांपासून, तर उजवीकडील भागात $\varphi$ आणि $\psi$ यांपासून, $\psi$ मिळवणाऱ्या
+निष्पत्त्या हवी आहेत. यांपैकी पहिली आधी घेऊ. $\lnot \varphi$ आणि $\varphi$ ही
+\Elim{\lnot} ची दोन आधारविधाने आहेत:
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot \varphi}{2}$}
+\AxiomC{$\Discharge{\varphi}{3}$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\DeduceC{$\psi$}
+\end{prooftree}
+\FalseInt वापरून $\psi$ हा निष्कर्ष मिळवता येतो आणि शाखा पूर्ण करता येते.
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot \varphi \lor \psi}{1}$}
+\AxiomC{$\Discharge{\lnot \varphi}{2}$}
+\AxiomC{$\Discharge{\varphi}{3}$}
+\RightLabel{\Intro{\lfalse}}
+\BinaryInfC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$\psi$}
+\DischargeRule{\Intro{\lif}}{3}
+\UnaryInfC{$\varphi \lif \psi$}
+\AxiomC{$\Discharge{\psi}{2}, \Discharge{\varphi}{4}$}
+\DeduceC{$\psi$}
+\DischargeRule{\Intro{\lif}}{4}
+\UnaryInfC{$\varphi \lif \psi$}
+\DischargeRule{\Elim{\lor}}{2}
+\TrinaryInfC{$\varphi \lif \psi$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$(\lnot \varphi \lor \psi) \lif (\varphi \lif \psi)$}
+\end{prooftree}
+आता सर्वांत उजवी शाखा पाहू. येथे हे लक्षात घेणे महत्त्वाचे आहे की
+निष्पत्तीची व्याख्या
+\emph{गृहीतके मुक्त करण्याची परवानगी देते}, पण
+\emph{तसे करणे आवश्यक ठरवत नाही}. दुसऱ्या शब्दांत, $\varphi$ आणि $\psi$ या
+गृहीतकांपैकी एकाचा उपयोग न करता दुसऱ्यापासून $\psi$ निष्पन्न करता येत असेल,
+तर ते योग्य आहे. $\psi$ पासून $\psi$ हे निष्पन्न करणे तर क्षुल्लक आहे:
+एकटे $\psi$ ही अशी निष्पत्ती असून कोणत्याही अनुमानाची गरज नाही. म्हणून
+गृहीतक~$\varphi$ सरळ वगळता येते.
+\begin{prooftree}
+\AxiomC{$\Discharge{\lnot \varphi \lor \psi}{1}$}
+\AxiomC{$\Discharge{\lnot \varphi}{2}$}
+\AxiomC{$\Discharge{\varphi}{3}$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$\psi$}
+\DischargeRule{\Intro{\lif}}{3}
+\UnaryInfC{$\varphi \lif \psi$}
+\AxiomC{$\Discharge{\psi}{2}$}
+\RightLabel{\Intro{\lif}}
+\UnaryInfC{$\varphi \lif \psi$}
+\DischargeRule{\Elim{\lor}}{2}
+\TrinaryInfC{$\varphi \lif \psi$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$(\lnot \varphi \lor \psi) \lif (\varphi \lif \psi)$}
+\end{prooftree}
+लक्षात घ्या की पूर्ण झालेल्या निष्पत्तीमध्ये सर्वांत उजवीकडील
+\Intro{\lif} अनुमान प्रत्यक्षात कोणतेही गृहीतक मुक्त करत नाही.
+\end{ex}
+\begin{ex}
+आतापर्यंत आपल्याला \FalseCl{} नियमाची गरज पडलेली नाही. हा नियम विशेष आहे,
+कारण नियमाच्या निष्कर्षाचे उप-सूत्र नसलेले गृहीतक तो मुक्त करू देतो.
+त्याचा \FalseInt{} नियमाशी जवळचा संबंध आहे. खरे तर \FalseInt{} नियम हे
+\FalseCl{} नियमाचे विशेष प्रकरण आहे---``अंतःप्रज्ञावादी तर्कशास्त्र''
+नावाचे एक तर्कशास्त्र आहे आणि त्यात केवळ \FalseInt{} अनुज्ञात आहे. इतर
+कोणताही मार्ग चालत नसताना \FalseCl{} नियम हा अखेरचा उपाय असतो. उदाहरणार्थ,
+आपल्याला $\varphi \lor \lnot \varphi$ हे निष्पन्न करायचे आहे असे समजा. नेहमीच्या
+पद्धतीनुसार $\Intro{\lor}$ वापरून $\varphi \lor \lnot \varphi$ हे निष्पन्न
+करण्याचा प्रयत्न करू. पण त्यासाठी कोणत्याही गृहीतकांशिवाय $\varphi$ किंवा
+$\lnot \varphi$ यांपैकी एक निष्पन्न करावे लागेल, आणि ते शक्य नाही. अशा वेळी
+\FalseCl{} उपयोगी पडतो!
+\begin{prooftree}
+  \AxiomC{$\Discharge{\lnot(\varphi \lor \lnot \varphi)}{1}$}
+  \DeduceC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$\varphi \lor \lnot \varphi$}
+\end{prooftree}
+आता $\lnot(\varphi \lor \lnot \varphi)$ पासून $\lfalse$ ची निष्पत्ती शोधायची
+आहे. $\lfalse$ हा $\Elim{\lnot}$ चा निष्कर्ष असल्यामुळे तो नियम वापरून
+पाहू:
+\begin{prooftree}
+  \AxiomC{$\Discharge{\lnot(\varphi \lor \lnot \varphi)}{1}$}
+  \DeduceC{$\lnot \varphi$}
+  \AxiomC{$\Discharge{\lnot(\varphi \lor \lnot \varphi)}{1}$}
+  \DeduceC{$\varphi$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$\varphi \lor \lnot \varphi$}
+\end{prooftree}
+$\lnot \varphi$ ची निष्पत्ती शोधण्याच्या आपल्या पद्धतीनुसार
+$\Intro{\lnot}$ चे उपयोजन करावे लागेल:
+\begin{prooftree}
+  \AxiomC{$\Discharge{\lnot(\varphi \lor \lnot \varphi)}{1}, \Discharge{\varphi}{2}$}
+  \DeduceC{$\lfalse$}
+  \DischargeRule{\Intro{\lnot}}{2}
+  \UnaryInfC{$\lnot \varphi$}
+  \AxiomC{$\Discharge{\lnot(\varphi \lor \lnot \varphi)}{1}$}
+  \DeduceC{$\varphi$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$\varphi \lor \lnot \varphi$}
+\end{prooftree}
+येथे $\lnot(\varphi \lor \lnot \varphi)$ हे गृहीतक आणि आपल्या नव्या $\varphi$
+गृहीतकापासून~$\Intro{\lor}$ ने निष्पन्न होणारे $\varphi \lor \lnot \varphi$
+यांना $\Elim{\lnot}$ लावून $\lfalse$ सहज मिळवता येते:
+\begin{prooftree}
+  \AxiomC{$\Discharge{\lnot(\varphi \lor \lnot \varphi)}{1}$}
+  \AxiomC{$\Discharge{\varphi}{2}$}
+  \RightLabel{\Intro{\lor}}
+  \UnaryInfC{$\varphi \lor \lnot \varphi$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\Intro{\lnot}}{2}
+  \UnaryInfC{$\lnot \varphi$}
+  \AxiomC{$\Discharge{\lnot(\varphi \lor \lnot \varphi)}{1}$}
+  \DeduceC{$\varphi$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$\varphi \lor \lnot \varphi$}
+\end{prooftree}
+उजव्या बाजूला हीच पद्धत वापरतो; फक्त तेथे $\varphi$ हे~\FalseCl ने मिळवतो:
+\begin{prooftree}
+  \AxiomC{$\Discharge{\lnot(\varphi \lor \lnot \varphi)}{1}$}
+  \AxiomC{$\Discharge{\varphi}{2}$}
+  \RightLabel{\Intro{\lor}}
+  \UnaryInfC{$\varphi \lor \lnot \varphi$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\Intro{\lnot}}{2}
+  \UnaryInfC{$\lnot \varphi$}
+  \AxiomC{$\Discharge{\lnot(\varphi \lor \lnot \varphi)}{1}$}
+  \AxiomC{$\Discharge{\lnot \varphi}{3}$}
+  \RightLabel{\Intro{\lor}}
+  \UnaryInfC{$\varphi \lor \lnot \varphi$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\FalseCl}{3}
+  \UnaryInfC{$\varphi$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$\varphi \lor \lnot \varphi$}
+\end{prooftree}
+\end{ex}
+\begin{prob}
+पुढील गोष्टी दाखवणाऱ्या निष्पत्त्या द्या:
+\begin{enumerate}
+\item $\varphi \land (\psi \land \chi) \Proves (\varphi \land \psi) \land \chi$.
+\item $\varphi \lor (\psi \lor \chi) \Proves (\varphi \lor \psi) \lor \chi$.
+\item $\varphi \lif (\psi \lif \chi) \Proves \psi \lif (\varphi \lif \chi)$.
+\item $\varphi \Proves \lnot\lnot \varphi$.
+\end{enumerate}
+\end{prob}
+\begin{prob}
+पुढील गोष्टी दाखवणाऱ्या निष्पत्त्या द्या:
+\begin{enumerate}
+\item $(\varphi \lor \psi) \lif \chi \Proves \varphi \lif \chi$.
+\item $(\varphi \lif \chi) \land (\psi \lif \chi) \Proves (\varphi \lor \psi) \lif \chi$.
+\item $\Proves \lnot(\varphi \land \lnot \varphi)$.
+\item $\psi \lif \varphi \Proves \lnot \varphi \lif \lnot \psi$.
+\item $\Proves (\varphi \lif \lnot \varphi) \lif \lnot \varphi$.
+\item $\Proves \lnot(\varphi \lif \psi) \lif \lnot \psi$.
+\item $\varphi \lif \chi \Proves \lnot (\varphi \land \lnot \chi)$.
+\item $\varphi \land \lnot \chi \Proves \lnot (\varphi \lif \chi)$.
+\item $\varphi \lor \psi, \lnot \psi \Proves \varphi$.
+\item $\lnot \varphi \lor \lnot \psi \Proves \lnot(\varphi \land \psi)$.
+\item $\Proves (\lnot \varphi \land \lnot \psi) \lif\lnot(\varphi \lor \psi)$.
+\item $\Proves \lnot(\varphi \lor \psi) \lif (\lnot \varphi \land \lnot \psi)$.
+\end{enumerate}
+\end{prob}
+\begin{prob}
+पुढील गोष्टी दाखवणाऱ्या निष्पत्त्या द्या:
+\begin{enumerate}
+\item $\lnot(\varphi \lif \psi) \Proves \varphi$.
+\item $\lnot(\varphi \land \psi) \Proves \lnot \varphi \lor \lnot \psi$.
+\item $\varphi \lif \psi \Proves \lnot \varphi \lor \psi$.
+\item $\Proves \lnot \lnot \varphi \lif \varphi$.
+\item $\varphi \lif \psi, \lnot \varphi \lif \psi \Proves \psi$.
+\item $(\varphi \land \psi) \lif \chi \Proves (\varphi \lif \chi) \lor (\psi \lif \chi)$.
+\item $(\varphi \lif \psi) \lif \varphi \Proves \varphi$.
+\item $\Proves (\varphi \lif \psi) \lor (\psi \lif \chi)$.
+\end{enumerate}
+(या सर्वांसाठी $\FalseCl$~नियम आवश्यक आहे.)
+\end{prob}
+\section{संख्यापकांसह निष्पत्ती}\label{fol:ntd:prq:sec}
+\begin{ex}
+संख्यापक हाताळताना आयगेन चराच्या अटीचा भंग होणार नाही याची खात्री करावी
+लागते; त्यासाठी कधीकधी काही अनुमाने करण्याचा क्रम बदलून पाहावा लागतो.
+सामान्यतः आयगेन चराच्या अटीच्या अधीन असलेले नियम आधी हाताळण्याचा प्रयत्न
+उपयोगी ठरतो (पूर्ण सिद्धतेत ते अधिक खाली असतील).
+सूत्र $\lexists[x][\lnot \varphi(x)] \lif \lnot \lforall[x][\varphi(x)]$
+ची निष्पत्ती कशी द्यायची ते पाहू. नेहमीप्रमाणे सुरुवात करून लिहू:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInfC{$\lexists[x][\lnot \varphi(x)]\lif \lnot \lforall[x][\varphi(x)]$}
+\end{prooftree}
+ही शेवटची पायरी \Intro{\lif} नियमाने समर्थित होण्यासाठी काय आवश्यक आहे ते
+प्रथम लिहू.
+\begin{prooftree}
+\AxiomC{$\Discharge{\lexists[x][\lnot \varphi(x)]}{1}$}
+\DeduceC{$\lnot \lforall[x][\varphi(x)]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$\lexists[x][\lnot \varphi(x)]\lif \lnot \lforall[x][\varphi(x)]$}
+\end{prooftree}
+$\lnot \lforall[x][\varphi(x)]$ वर लागू करता येईल असा कोणताही स्पष्ट नियम
+नसल्यामुळे, \Elim{\lexists} नियम वापरता येईल अशा रीतीने निष्पत्ती
+मांडू. येथे आयगेन चराच्या अटीकडे लक्ष देऊन, प्रमुख आधारविधान
+$\lexists[x][\lnot \varphi(x)]$ किंवा निष्कर्ष यांत, तसेच त्यांच्याकडे नेणाऱ्या
+निष्पत्तीतील इतर कोणत्याही मुक्त न केलेल्या गृहीतकात न येणारा अचर निवडावा
+लागतो. (परंतु येथे कोणतेही स्थिरांक येत नसल्यामुळे कोणताही अचर चालेल.)
+\begin{prooftree}
+\AxiomC{$\Discharge{\lexists[x][\lnot \varphi(x)]}{1}$}
+\AxiomC{$\Discharge{\lnot \varphi(a)}{2}$}
+\DeduceC{$\lnot \lforall[x][\varphi(x)]$}
+\DischargeRule{\Elim{\lexists}}{2}
+\BinaryInfC{$\lnot \lforall[x][\varphi(x)]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$\lexists[x][\lnot \varphi(x)] \lif \lnot \lforall[x][\varphi(x)]$}
+\end{prooftree}
+$\lnot \lforall[x][\varphi(x)]$ हे निष्पन्न करण्यासाठी \Intro{\lnot} नियम
+वापरून पाहू: यासाठी, आवश्यक असल्यास $\lforall[x][\varphi(x)]$ हे अतिरिक्त गृहीतक वापरून,
+व्याघात निष्पन्न करावा लागेल. अर्थात या व्याघातात $\lnot \varphi(a)$ हे गृहीतक
+वापरले जाऊ शकते; ते \Elim{\lexists} अनुमानाने मुक्त केले जाईल. ही रचना
+पुढीलप्रमाणे करता येते:
+\begin{prooftree}
+\AxiomC{$\Discharge{\lexists[x][\lnot \varphi(x)]}{1}$}
+\AxiomC{$\Discharge{\lnot \varphi(a)}{2}, \Discharge{\lforall[x][\varphi(x)]}{3}$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{3}
+\UnaryInfC{$\lnot \lforall[x][\varphi(x)]$}
+\DischargeRule{\Elim{\lexists}}{2}
+\BinaryInfC{$\lnot \lforall[x][\varphi(x)]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$\lexists[x][\lnot \varphi(x)]\lif \lnot \lforall[x][\varphi(x)]$}
+\end{prooftree}
+व्याघात मिळण्याच्या आपण अगदी जवळ आलो आहोत. आयगेन चराची अट नसलेला
+\Elim{\lforall} नियम येथे लागू करणे सर्वांत सोपे आहे. सार्वत्रिक
+संख्यापकाने बद्ध असलेल्या~$x$ च्या जागी हवे ते कोणतेही बंद पद ठेवता येते;
+व्याघातापर्यंत पोहोचण्यासाठी~$a$ चाच पुढे वापर करणे सर्वांत सयुक्तिक आहे.
+\begin{prooftree}
+\AxiomC{$\Discharge{\lexists[x][\lnot \varphi(x)]}{1}$}
+\AxiomC{$\Discharge{\lnot \varphi(a)}{2}$}
+\AxiomC{$\Discharge{\lforall[x][\varphi(x)]}{3}$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$\varphi(a)$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{3}
+\UnaryInfC{$\lnot \lforall[x][\varphi(x)]$}
+\DischargeRule{\Elim{\lexists}}{2}
+\BinaryInfC{$\lnot \lforall[x][\varphi(x)]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$\lexists[x][\lnot \varphi(x)]\lif \lnot \lforall[x][\varphi(x)]$}
+\end{prooftree}
+विशेषतः संख्यापक हाताळताना, आयगेन चराच्या अटीचा भंग झालेला नाही याची या
+टप्प्यावर पुन्हा तपासणी करणे महत्त्वाचे आहे. आपण लावलेल्या नियमांपैकी फक्त
+\Elim{\exists} हा नियम त्या अटीच्या अधीन होता. त्याचा आयगेन चर~$a$ प्रमुख
+आधारविधानात किंवा निष्कर्षात येत नाही आणि नियमाने मुक्त केलेले तात्पुरते
+गृहीतक वगळता संबंधित कोणत्याही मुक्त न केलेल्या गृहीतकातही येत नाही. म्हणून
+ही योग्य निष्पत्ती आहे.
+\end{ex}
+\begin{ex}
+कधीकधी इतर सूत्रांपासून सूत्र निष्पन्न करायचे असते. अशा वेळी
+काही गृहीतके मुक्त न केलेली राहू शकतात. अंतिम ध्येयाबरोबरच गृहीतकांचीही
+नोंद ठेवणे महत्त्वाचे आहे.
+गृहीतके $\lexists[x][(\varphi(x) \land \psi(x))]$ आणि
+$\lforall[x][(\psi(x) \lif \chi(x,b))]$ यांपासून सूत्र
+$\lexists[x][\chi(x,b)]$ ची निष्पत्ती कशी द्यायची ते पाहू.
+नेहमीप्रमाणे सुरुवात करून निष्कर्ष तळाशी लिहू.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInfC{$\lexists[x][\chi(x,b)]$}
+\end{prooftree}
+आपल्याकडे वापरण्यासाठी दोन आधारविधाने आहेत. पहिले वापरण्यासाठी, म्हणजे
+$\lexists[x][(\varphi(x) \land \psi(x))]$ पासून
+$\lexists[x][\chi(x, b)]$ ची निष्पत्ती शोधण्याचा प्रयत्न करण्यासाठी,
+\Elim{\lexists} नियम वापरू. त्याला आयगेन चराची अट असल्यामुळे तो नियम आधी
+लावू. मग पुढील मिळते:
+\begin{prooftree}
+\AxiomC{$\lexists[x][(\varphi(x) \land \psi(x))]$}
+\AxiomC{$\Discharge{\varphi(a) \land \psi(a)}{1}$}
+\DeduceC{$\lexists[x][\chi(x,b)]$}
+\DischargeRule{\Elim{\lexists}}{1}
+\BinaryInfC{$\lexists[x][\chi(x,b)]$}
+\end{prooftree}
+आपण वापरत असलेल्या दोन्ही गृहीतकांत~$\psi$ समान आहे. या टप्प्यावर
+\Elim{\land} लावून~$\psi(a)$ वेगळे काढणे उपयोगी ठरेल.
+\begin{prooftree}
+\AxiomC{$\lexists[x][(\varphi(x) \land \psi(x)])$}
+\AxiomC{$\Discharge{\varphi(a)
+\land \psi(a)}{1}$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$\psi(a)$}
+\DeduceC{$\lexists[x][\chi(x,b)]$}
+\DischargeRule{\Elim{\lexists}}{1}
+\BinaryInfC{$\lexists[x][\chi(x,b)]$}
+\end{prooftree}
+वापरण्यासाठी असलेले दुसरे गृहीतक म्हणजे~$\lforall[x][(\psi(x) \lif
+  \chi(x,b))]$. येथे आयगेन चराची अट नसल्यामुळे \Elim{\lforall} वापरून
+स्थिरांक~$a$ हे $x$ च्या जागी ठेवता येते आणि
+$\psi(a) \lif \chi(a, b)$ मिळते. आता आपल्याकडे $\psi(a) \lif \chi(a,b)$ आणि
+$\psi(a)$ दोन्ही आहेत. यानंतर \Elim{\lif} नियमाचे सरळ उपयोजन करावे.
+\begin{prooftree}
+\AxiomC{$\lexists[x][(\varphi(x) \land \psi(x))]$}
+\AxiomC{$\lforall[x][(\psi(x) \lif \chi(x,b))]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$\psi(a) \lif \chi(a,b)$}
+\AxiomC{$\Discharge{\varphi(a)
+\land \psi(a)}{1}$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$\psi(a)$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$\chi(a,b)$}
+\DeduceC{$\lexists[x][\chi(x,b)]$}
+\DischargeRule{\Elim{\lexists}}{1}
+\insertBetweenHyps{\hspace{-5em}}
+\BinaryInfC{$\lexists[x][\chi(x,b)]$}
+\end{prooftree}
+आपण ध्येयाच्या अगदी जवळ आलो आहोत!{} \Intro{\lexists} चे एक उपयोजन केले
+की ध्येय गाठले.
+\begin{prooftree}
+\AxiomC{$\lexists[x][(\varphi(x) \land \psi(x))]$}
+\AxiomC{$\lforall[x][(\psi(x) \lif \chi(x,b))]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$\psi(a) \lif \chi(a,b)$}
+\AxiomC{$\Discharge{\varphi(a)
+\land \psi(a)}{1}$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$\psi(a)$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$\chi(a,b)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][\chi(x,b)]$}
+\DischargeRule{\Elim{\lexists}}{1}
+\insertBetweenHyps{\hspace{-5em}}
+\BinaryInfC{$\lexists[x][\chi(x,b)]$}
+\end{prooftree}
+प्रत्येक पायरीवर आयगेन चराच्या अटींचा भंग झालेला नाही याची खात्री केल्यामुळे
+ही योग्य निष्पत्ती आहे असा विश्वास ठेवता येतो.
+\end{ex}
+\begin{ex}
+गृहीतके $\lforall[x][\varphi(x)] \lif \lexists[y][\psi(y)]$ आणि
+$\lnot\lexists[y][\psi(y)]$ यांपासून सूत्र
+$\lnot\lforall[x][\varphi(x)]$ ची निष्पत्ती द्या.
+नेहमीप्रमाणे सुरुवात करून अपेक्षित सूत्र तळाशी लिहू.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInfC{$\lnot\lforall[x][\varphi(x)]$}
+\end{prooftree}
+निष्पत्तीची शेवटची ओळ नकरण आहे; म्हणून \Intro{\lnot} वापरून पाहू.
+त्यासाठी व्याघात कसा निष्पन्न करायचा ते शोधावे लागेल.
+\begin{prooftree}
+\AxiomC{$\Discharge{\lforall[x][\varphi(x)]}{1}$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot\lforall[x][\varphi(x)]$}
+\end{prooftree}
+येथपर्यंत सर्व ठीक आहे. \Elim{\lforall} वापरता येईल, पण त्याने ध्येयापर्यंत
+पोहोचण्यास मदत होईल का हे स्पष्ट नाही. त्याऐवजी आपले एक गृहीतक वापरू.
+$\lforall[x][\varphi(x)] \lif \lexists[y][\psi(y)]$ आणि
+$\lforall[x][\varphi(x)]$ यांच्या आधारे \Elim{\lif} नियम वापरता येईल.
+\begin{prooftree}
+\AxiomC{$\lforall[x][\varphi(x)] \lif \lexists[y][\psi(y)]$}
+\AxiomC{$\Discharge{\lforall[x][\varphi(x)]}{1}$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$\lexists[y][\psi(y)]$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot\lforall[x][\varphi(x)]$}
+\end{prooftree}
+आता वापरण्यासाठी एक अखेरचे गृहीतक उरले आहे. \Elim{\lnot} वापरून
+व्याघातापर्यंत पोहोचण्यास ते मदत करेल असे दिसते.
+\begin{prooftree}
+\AxiomC{$\lnot\lexists[y][\psi(y)]$}
+\AxiomC{$\lforall[x][\varphi(x)] \lif \lexists[y][\psi(y)]$}
+\AxiomC{$\Discharge{\lforall[x][\varphi(x)]}{1}$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$\lexists[y][\psi(y)]$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot\lforall[x][\varphi(x)]$}
+\end{prooftree}
+\end{ex}
+\begin{prob}
+पुढील गोष्टी दाखवणाऱ्या निष्पत्त्या द्या:
+\begin{enumerate}
+\item $\Proves (\lforall[x][\varphi(x)] \land \lforall[y][\psi(y)]) \lif
+\lforall[z][(\varphi(z) \land \psi(z))]$.
+\item $\Proves (\lexists[x][\varphi(x)] \lor \lexists[y][\psi(y)]) \lif
+\lexists[z][(\varphi(z) \lor \psi(z))]$.
+\item $\lforall[x][(\varphi(x) \lif \psi)] \Proves \lexists[y][\varphi(y)] \lif \psi$.
+\item $\lforall[x][\lnot \varphi(x)] \Proves \lnot\lexists[x][\varphi(x)]$.
+\item $\Proves \lnot\lexists[x][\varphi(x)] \lif \lforall[x][\lnot \varphi(x)]$.
+\item $\Proves \lnot\lexists[x][\lforall[y][((\varphi(x,y) \lif \lnot
+\varphi(y,y)) \land (\lnot \varphi(y,y) \lif \varphi(x,y)))]]$.
+\end{enumerate}
+\end{prob}
+\begin{prob}
+पुढील गोष्टी दाखवणाऱ्या निष्पत्त्या द्या:
+\begin{enumerate}
+\item $\Proves \lnot\lforall[x][\varphi(x)] \lif \lexists[x][\lnot\varphi(x)]$.
+\item $(\lforall[x][\varphi(x)] \lif \psi) \Proves \lexists[y][(\varphi(y) \lif \psi)]$.
+\item $\Proves \lexists[x][(\varphi(x) \lif \lforall[y][\varphi(y)])]$.
+\end{enumerate}
+(या सर्वांसाठी $\FalseCl$~नियम आवश्यक आहे.)
+\end{prob}
+\section{सिद्धता-उपपत्तीय संकल्पना}\label{fol:ntd:ptn:sec}
+\begin{editorial}
+या विभागात नैसर्गिक निगमनासाठी सिद्धतायोग्यता संबंध आणि सुसंगतता यांच्या
+व्याख्या एकत्रित केल्या आहेत.
+\end{editorial}
+\begin{explain}
+जशा आपण अनेक महत्त्वाच्या चिन्हार्थविषयक संकल्पना (वैधता, तार्किक निष्पन्नता,
+पूर्ततायोग्यता) परिभाषित केल्या आहेत, तशाच आता त्यांना अनुरूप
+\emph{सिद्धता-उपपत्तीय संकल्पना} परिभाषित करू. या संकल्पना संरचना मध्ये
+वाक्यांची पूर्ति होते की नाही याच्या आधारे परिभाषित केलेल्या नसून,
+काही वाक्यांची इतरांपासूनची निष्पन्नता किंवा
+अनिष्पन्नता यांचा आधार घेऊन परिभाषित केल्या आहेत. या दोन प्रकारच्या
+संकल्पना एकमेकांशी जुळतात, हा एक महत्त्वाचा शोध होता. त्या जुळतात, हाच
+\emph{निर्दोषता प्रमेय} आणि \emph{संपूर्णता प्रमेय} यांचा आशय आहे.
+\end{explain}
+\begin{defn}[प्रमेये]
+एखादे वाक्य~$\varphi$ हे \emph{प्रमेय} असते, जर नैसर्गिक निगमनात $\varphi$ ची
+अशी निष्पत्ती असेल की तिच्यातील सर्व गृहीतके मुक्त आहेत.
+$\varphi$ हे प्रमेय असेल तर आपण $\Proves \varphi$ लिहितो आणि ते प्रमेय नसेल तर
+$\Proves/ \varphi$ लिहितो.
+\end{defn}
+\begin{defn}[निष्पन्नता]
+वाक्य $\varphi$ हे वाक्यांच्या संच~$\Gamma$ \emph{पासून
+निष्पन्न करता येण्याजोगे} असते, म्हणजे $\Gamma \Proves \varphi$, तेव्हा आणि केवळ तेव्हाच,
+जेव्हा निष्कर्ष~$\varphi$ असणारी अशी निष्पत्ती असेल की तिच्यातील प्रत्येक
+गृहीतक एकतर मुक्त आहे किंवा $\Gamma$ मध्ये आहे. $\varphi$ हे $\Gamma$
+पासून निष्पन्न करता येण्याजोगे नसेल, तर आपण $\Gamma \Proves/ \varphi$ लिहितो.
+\end{defn}
+\begin{defn}[सुसंगतता]
+वाक्यांचा संच~$\Gamma$ हा \emph{विसंगत} असतो तेव्हा आणि केवळ तेव्हाच,
+जेव्हा $\Gamma \Proves \lfalse$. $\Gamma$ विसंगत नसेल, म्हणजे
+$\Gamma \Proves/ \lfalse$ असेल, तर त्याला \emph{सुसंगत} म्हणतो.
+\end{defn}
+\begin{prop}[परावर्तिता]
+\label{fol:ntd:ptn:prop:reflexivity}
+$\varphi \in \Gamma$ असेल, तर $\Gamma \Proves \varphi$.
+\end{prop}
+\begin{proof}
+केवळ $\varphi$ हे गृहीतक स्वतःच $\varphi$ ची अशी निष्पत्ती आहे की तिच्यातील
+प्रत्येक मुक्त न केलेली गृहीतक (म्हणजे $\varphi$) $\Gamma$ मध्ये आहे.
+\end{proof}
+\begin{prop}[एकस्वनिकता]
+\label{fol:ntd:ptn:prop:monotonicity}
+$\Gamma \subseteq \Delta$ आणि $\Gamma \Proves \varphi$ असेल, तर $\Delta
+\Proves \varphi$.
+\end{prop}
+\begin{proof}
+$\Gamma$ पासून $\varphi$ ची कोणतीही निष्पत्ती ही $\Delta$ पासून $\varphi$ चीही
+निष्पत्ती असते.
+\end{proof}
+\begin{prop}[संक्रमकता]
+\label{fol:ntd:ptn:prop:transitivity}
+$\Gamma \Proves \varphi$ आणि $\{\varphi\} \cup \Delta \Proves
+\psi$ असेल, तर $\Gamma \cup \Delta \Proves \psi$.
+\end{prop}
+\begin{proof}
+$\Gamma \Proves \varphi$ असेल, तर $\varphi$ ची अशी निष्पत्ती~$\delta_0$ असते
+की तिच्यातील सर्व मुक्त न केलेली गृहीतके $\Gamma$ मध्ये असतात. $\{\varphi\}
+\cup \Delta \Proves \psi$ असेल, तर $\psi$ ची अशी निष्पत्ती~$\delta_1$
+असते की तिच्यातील सर्व मुक्त न केलेली गृहीतके $\{\varphi\} \cup \Delta$ मध्ये
+असतात. आता पुढील रचना विचारात घ्या:
+\begin{prooftree}
+  \AxiomC{$\Delta, \Discharge{\varphi}{1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$\psi$}
+  \DischargeRule{\Intro{\lif}}{1}
+  \UnaryInfC{$\varphi \lif \psi$}
+  \AxiomC{$\Gamma$}
+  \RightLabel{$\delta_0$}
+  \DeduceC{$\varphi$}
+  \RightLabel{\Elim{\lif}}
+  \BinaryInfC{$\psi$}
+\end{prooftree}
+आता सर्व मुक्त न केलेली गृहीतके $\Gamma \cup \Delta$ मध्ये आहेत; म्हणून
+यावरून $\Gamma \cup \Delta \Proves \psi$ हे दिसते.
+\end{proof}
+$\Gamma = \{\varphi_1, \varphi_2, \ldots, \varphi_k\}$ हा सांत संच असेल, तेव्हा
+$\Gamma \Proves \psi$ ऐवजी आपण $\varphi_1,\varphi_2,\ldots,\varphi_k \Proves \psi$ हे
+सरलीकृत संकेतलेखन वापरू शकतो. विशेषतः, $\varphi \Proves \psi$ याचा अर्थ
+$\{\varphi\} \Proves \psi$ असा होतो.
+लक्षात घ्या की $\Gamma \Proves \varphi$ आणि $\varphi
+\Proves \psi$ असेल, तर $\Gamma \Proves \psi$. तसेच $\varphi_1,
+\dots, \varphi_n \Proves \psi$ असेल आणि प्रत्येक~$i$ साठी $\Gamma \Proves \varphi_i$
+असेल, तर $\Gamma \Proves \psi$, हेसुद्धा यावरून मिळते.
+\begin{prop}
+\label{fol:ntd:ptn:prop:incons}
+पुढील विधाने सममूल्य आहेत.
+    \begin{enumerate}
+      \item \( \Gamma \) विसंगत आहे.
+      \item प्रत्येक वाक्य~\( {\varphi} \) साठी \( \Gamma \Proves {\varphi} \).
+      \item एखाद्या वाक्य~\( {\varphi} \) साठी \( \Gamma \Proves {\varphi} \) आणि \( \Gamma \Proves \lnot {\varphi} \).
+    \end{enumerate}
+\end{prop}
+\begin{proof}
+सराव.
+\end{proof}
+\begin{prob}
+\ref{fol:ntd:ptn:prop:incons} सिद्ध करा.
+\end{prob}
+\begin{prop}[संहतता]
+  \label{fol:ntd:ptn:prop:proves-compact}
+  \begin{enumerate}
+  \item $\Gamma \Proves \varphi$ असेल, तर एखादा सांत उपसंच $\Gamma_0
+    \subseteq \Gamma$ असा आहे की $\Gamma_0 \Proves \varphi$.
+  \item $\Gamma$ चा प्रत्येक सांत उपसंच सुसंगत असेल, तर $\Gamma$ सुसंगत
+    असतो.
+  \end{enumerate}
+\end{prop}
+\begin{proof}
+  \begin{enumerate}
+    \item $\Gamma \Proves \varphi$ असेल, तर $\Gamma$ पासून $\varphi$ ची
+      निष्पत्ती~$\delta$ असते. $\Gamma_0$ हा $\delta$ मधील
+      मुक्त न केलेली गृहीतकांचा संच असू द्या. प्रत्येक निष्पत्ती सांत
+      असल्यामुळे $\Gamma_0$ मधील वाक्यांची संख्या सांतच असते.
+      म्हणून $\delta$ ही सांत~$\Gamma_0 \subseteq \Gamma$ पासून $\varphi$ ची
+      निष्पत्ती आहे.
+    \item (1) मध्ये $\varphi
+      \ident \lfalse$ हे विशेष प्रकरण घेतल्यावर मिळणारे हे निषेधात्मक उलट
+      विधान आहे.
+  \end{enumerate}
+\end{proof}
+\section{निष्पन्नता आणि सुसंगतता}\label{fol:ntd:prv:sec}
+आता आपण निष्पन्नता संबंधाचे अनेक गुणधर्म सिद्ध करू. ते स्वतंत्रपणेही
+महत्त्वाचे आहेत, पण संपूर्णता प्रमेयाच्या सिद्धतेत प्रत्येकाची भूमिका असेल.
+\begin{prop}\label{fol:ntd:prv:prop:provability-contr}
+  जर $\Gamma \Proves \varphi$ आणि $\Gamma \cup \{\varphi\}$ विसंगत असेल, तर
+  $\Gamma$ विसंगत आहे.
+\end{prop}
+\begin{proof}
+$\Gamma$ पासून $\varphi$ ची निष्पत्ती~$\delta_1$ आणि $\Gamma \cup \{\varphi\}$
+पासून $\lfalse$ ची निष्पत्ती~$\delta_2$ असू द्या. मग आपण पुढीलप्रमाणे
+निष्पन्न करू शकतो:
+\begin{prooftree}
+\AxiomC{$\Gamma, \Discharge{\varphi}{1}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot \varphi$}
+\AxiomC{$\Gamma$}
+\RightLabel{$\delta_1$}
+\DeduceC{$\varphi$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\end{prooftree}
+नव्या निष्पत्तीमध्ये गृहीतक~$\varphi$ हे मुक्त आहे; म्हणून ही
+$\Gamma$ पासूनची निष्पत्ती आहे.
+\end{proof}
+\begin{prop}
+\label{fol:ntd:prv:prop:prov-incons}
+$\Gamma \Proves \varphi$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{\lnot \varphi\}$
+विसंगत असते.
+\end{prop}
+\begin{proof}
+प्रथम $\Gamma \Proves \varphi$ असे समजा; म्हणजे $\Gamma$ मधील
+मुक्त न केलेली गृहीतकांपासून $\varphi$ ची निष्पत्ती~$\delta_0$ असते.
+पुढीलप्रमाणे $\Gamma \cup \{\lnot \varphi\}$ पासून $\lfalse$ ची
+निष्पत्ती मिळते:
+\begin{prooftree}
+  \AxiomC{$\lnot \varphi$}
+  \AxiomC{$\Gamma$}
+  \RightLabel{$\delta_0$}
+  \DeduceC{$\varphi$}
+  \RightLabel{\Elim{\lnot}}
+  \BinaryInfC{$\lfalse$}
+\end{prooftree}
+आता $\Gamma \cup \{\lnot \varphi\}$ विसंगत आहे असे समजा आणि $\Gamma \cup
+\{\lnot \varphi\}$ मधील मुक्त न केलेली गृहीतकांपासून $\lfalse$ ची संबंधित
+निष्पत्ती~$\delta_1$ असू द्या. $\FalseCl$ वापरून पुढीलप्रमाणे केवळ
+$\Gamma$ पासून $\varphi$ ची निष्पत्ती मिळते:
+\begin{prooftree}
+  \AxiomC{$\Gamma, \Discharge{\lnot \varphi}{1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$\lfalse$}
+  \RightLabel{\FalseCl}
+  \DischargeRule{\FalseCl}{1}
+  \UnaryInfC{$\varphi$}
+\end{prooftree}
+\end{proof}
+\begin{prob}
+$\Gamma \Proves \lnot \varphi$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{\varphi\}$
+विसंगत असते, हे सिद्ध करा.
+\end{prob}
+\begin{prop}\label{fol:ntd:prv:prop:explicit-inc}
+  जर $\Gamma \Proves \varphi$ आणि $\lnot \varphi \in \Gamma$ असेल, तर $\Gamma$
+  विसंगत आहे.
+\end{prop}
+\begin{proof}
+  समजा $\Gamma \Proves \varphi$ आणि $\lnot \varphi \in \Gamma$. मग $\Gamma$ पासून
+  $\varphi$ ची निष्पत्ती~$\delta$ असते. $\Elim{\lnot}$ नियमाचा पुढील सोपा
+  उपयोग विचारात घ्या:
+  \begin{prooftree}
+    \AxiomC{$\lnot \varphi$}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta$}
+    \DeduceC{$\varphi$}
+    \RightLabel{\Elim{\lnot}}
+    \BinaryInfC{$\lfalse$}
+  \end{prooftree}
+  $\lnot \varphi \in \Gamma$ असल्यामुळे सर्व मुक्त न केलेली गृहीतके
+  $\Gamma$ मध्ये आहेत. म्हणून यावरून $\Gamma \Proves \lfalse$ हे दिसते.
+\end{proof}
+\begin{prop}\label{fol:ntd:prv:prop:provability-exhaustive}
+  $\Gamma \cup \{\varphi\}$ आणि $\Gamma \cup \{\lnot \varphi\}$ हे दोन्ही संच
+  विसंगत असतील, तर $\Gamma$ विसंगत आहे.
+\end{prop}
+\begin{proof}
+$\delta_1$ आणि $\delta_2$ या अनुक्रमे $\Gamma \cup \{ \varphi \}$ पासून
+$\lfalse$ ची आणि $\Gamma \cup \{ \lnot \varphi \}$ पासून $\lfalse$ ची
+निष्पत्त्या असू द्या. मग आपण पुढीलप्रमाणे निष्पन्न करू शकतो:
+\begin{prooftree}
+\AxiomC{$\Gamma, \Discharge{\lnot \varphi}{2}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{2}
+\UnaryInfC{$\lnot \lnot \varphi$}
+\AxiomC{$\Gamma, \Discharge{\varphi}{1}$}
+\RightLabel{$\delta_1$}
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{1}
+\UnaryInfC{$\lnot \varphi$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\end{prooftree}
+$\varphi$ आणि $\lnot \varphi$ ही गृहीतके मुक्त असल्यामुळे ही केवळ
+$\Gamma$ पासून $\lfalse$ ची निष्पत्ती आहे. म्हणून $\Gamma$ विसंगत
+आहे.
+\end{proof}
+\section{निष्पन्नता आणि विधानीय संयोजक}\label{fol:ntd:ppr:sec}
+\begin{explain}
+  नैसर्गिक निगमनाचा निष्पन्नता संबंध~$\Proves$ हा विधानीय संयोजकांशी
+  संबंधित काही मूलभूत तथ्ये सिद्ध करण्यासाठी पुरेसा सामर्थ्यवान आहे; उदाहरणार्थ,
+  $\varphi \land \psi
+  \Proves \varphi$ आणि $\varphi, \varphi \lif \psi \Proves \psi$ (विध्यात्मक अनुमान). ही
+  तथ्ये संपूर्णता प्रमेयाच्या सिद्धतेसाठी आवश्यक आहेत.
+\end{explain}
+\begin{prop}\label{fol:ntd:ppr:prop:provability-land}
+  \begin{enumerate}
+  \item \label{fol:ntd:ppr:prop:provability-land-left} $\varphi \land \psi \Proves
+    \varphi$ आणि $\varphi \land \psi \Proves \psi$ ही दोन्ही तथ्ये सत्य आहेत.
+  \item \label{fol:ntd:ppr:prop:provability-land-right} $\varphi, \psi \Proves \varphi \land \psi$.
+  \end{enumerate}
+\end{prop}
+\begin{proof}
+  \begin{enumerate}
+  \item आपण पुढील दोन्ही निष्पन्न करू शकतो:
+    \begin{prooftree}
+      \AxiomC{$\varphi \land \psi$}
+      \RightLabel{\Elim{\land}}
+      \UnaryInfC{$\varphi$}
+      \DisplayProof\qquad\bottomAlignProof
+      \AxiomC{$\varphi \land \psi$}
+      \RightLabel{\Elim{\land}}
+      \UnaryInfC{$\psi$}
+    \end{prooftree}
+  \item आपण पुढील निष्पन्न करू शकतो:
+    \begin{prooftree}
+      \AxiomC{$\varphi$}
+      \AxiomC{$\psi$}
+      \RightLabel{\Intro{\land}}
+      \BinaryInfC{$\varphi \land \psi$}
+    \end{prooftree}
+  \end{enumerate}
+\end{proof}
+\begin{prop}\label{fol:ntd:ppr:prop:provability-lor}
+  \begin{enumerate}
+  \item $\varphi \lor \psi, \lnot \varphi, \lnot \psi$ विसंगत आहे.
+  \item $\varphi \Proves \varphi \lor \psi$ आणि $\psi \Proves \varphi \lor \psi$ ही दोन्ही
+    तथ्ये सत्य आहेत.
+  \end{enumerate}
+\end{prop}
+\begin{proof}
+  \begin{enumerate}
+  \item पुढील निष्पत्ती विचारात घ्या:
+    \begin{prooftree}
+      \AxiomC{$\varphi \lor \psi$}
+      \AxiomC{$\lnot \varphi$}
+      \AxiomC{$\Discharge{\varphi}{1}$}
+      \RightLabel{\Elim{\lnot}}
+      \BinaryInfC{$\lfalse$}
+      \AxiomC{$\lnot \psi$}
+      \AxiomC{$\Discharge{\psi}{1}$}
+      \RightLabel{\Elim{\lnot}}
+      \BinaryInfC{$\lfalse$}
+      \DischargeRule{\Elim{\lor}}{1}
+      \TrinaryInfC{$\lfalse$}
+    \end{prooftree}
+    ही $\varphi \lor \psi$, $\lnot \varphi$ आणि $\lnot \psi$ या मुक्त न केलेली
+    गृहीतकांपासून $\lfalse$ ची निष्पत्ती आहे.
+  \item आपण पुढील दोन्ही निष्पन्न करू शकतो:
+    \begin{prooftree}
+      \AxiomC{$\varphi$}
+      \RightLabel{\Intro{\lor}}
+      \UnaryInfC{$\varphi \lor \psi$}
+      \DisplayProof\qquad\bottomAlignProof
+      \AxiomC{$\psi$}
+      \RightLabel{\Intro{\lor}}
+      \UnaryInfC{$\varphi \lor \psi$}
+    \end{prooftree}
+  \end{enumerate}
+\end{proof}
+\begin{prop}\label{fol:ntd:ppr:prop:provability-lif}
+  \begin{enumerate}
+  \item \label{fol:ntd:ppr:prop:provability-lif-left} $\varphi, \varphi \lif \psi \Proves \psi$.
+  \item \label{fol:ntd:ppr:prop:provability-lif-right}
+    $\lnot \varphi \Proves \varphi \lif \psi$ आणि $\psi \Proves \varphi \lif \psi$ ही दोन्ही
+    तथ्ये सत्य आहेत.
+  \end{enumerate}
+\end{prop}
+\begin{proof}
+  \begin{enumerate}
+  \item आपण पुढील निष्पन्न करू शकतो:
+    \begin{prooftree}
+      \AxiomC{$\varphi \lif \psi$}
+      \AxiomC{$\varphi$}
+      \RightLabel{\Elim{\lif}}
+      \BinaryInfC{$\psi$}
+    \end{prooftree}
+  \item हे पुढील दोन निष्पत्त्या दाखवतात:
+    \begin{prooftree}
+      \AxiomC{$\lnot \varphi$}
+      \AxiomC{$\Discharge{\varphi}{1}$}
+      \RightLabel{\Elim{\lnot}}
+      \BinaryInfC{$\lfalse$}
+      \RightLabel{\FalseInt}
+      \UnaryInfC{$\psi$}
+      \DischargeRule{\Intro{\lif}}{1}
+      \UnaryInfC{$\varphi \lif \psi$}
+      \DisplayProof\qquad\bottomAlignProof
+      \AxiomC{$\psi$}
+      \RightLabel{\Intro{\lif}}
+      \UnaryInfC{$\varphi \lif \psi$}
+    \end{prooftree}
+    लक्षात घ्या की $\Intro{\lif}$ गृहीतक~$\varphi$ हे मुक्त करू शकतो;
+    पण ते करणे आवश्यक नाही.
+  \end{enumerate}
+\end{proof}
+\section{निष्पन्नता आणि संख्यापक}\label{fol:ntd:qpr:sec}
+\begin{explain}
+  संपूर्णता प्रमेयासाठी या विभागात स्थापित केलेली~$\Proves$ संबंधी तथ्ये
+  नैसर्गिक निगमनाच्या नियमांनी निष्पन्न होतात, हेही आवश्यक आहे.
+\end{explain}
+\begin{thm}
+\label{fol:ntd:qpr:thm:strong-generalization} जर $c$ हे $\Gamma$ किंवा $\varphi(x)$ मध्ये
+न येणारे स्थिर असेल आणि $\Gamma \Proves \varphi(c)$, तर $\Gamma
+\Proves \lforall[x][\varphi(x)]$.
+\end{thm}
+\begin{proof}
+$\delta$ ही $\Gamma$ पासून $\varphi(c)$ ची निष्पत्ती असू द्या.
+\Intro{\lforall} अनुमान जोडल्यावर आपल्याला $\lforall[x][\varphi(x)]$ ची
+निष्पत्ती मिळते. $c$ हे $\Gamma$ किंवा $\varphi(x)$ मध्ये येत नसल्यामुळे
+आयगेन चराची अट पूर्ण होते.
+\end{proof}
+\begin{prop}
+\label{fol:ntd:qpr:prop:provability-quantifiers}
+\begin{enumerate}
+\item $\varphi(t) \Proves \lexists[x][\varphi(x)]$.
+\item $\lforall[x][\varphi(x)] \Proves \varphi(t)$.
+\end{enumerate}
+\end{prop}
+\begin{proof}
+\begin{enumerate}
+\item पुढील ही~$\lexists[x][\varphi(x)]$ ची $\varphi(t)$ पासूनची
+  निष्पत्ती आहे:
+\begin{prooftree}
+\AxiomC{$\varphi(t)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][\varphi(x)]$}
+\end{prooftree}
+\item पुढील ही~$\varphi(t)$ ची $\lforall[x][\varphi(x)]$ पासूनची
+  निष्पत्ती आहे:
+\begin{prooftree}
+\AxiomC{$\lforall[x][\varphi(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$\varphi(t)$}
+\end{prooftree}
+\end{enumerate}
+\end{proof}
+\section{निर्दोषता}\label{fol:ntd:sou:sec}
+\begin{explain}
+नैसर्गिक निगमनासारखी निष्पत्ती-पद्धत \emph{निर्दोष} असते, जर ती
+प्रत्यक्षात निष्पन्न न होणाऱ्या गोष्टी निष्पन्न करू शकत नसेल. त्यामुळे
+निर्दोषता हा निष्पत्ती-पद्धतींसाठी हमी दिलेल्या सुरक्षिततेचा एक प्रकार
+आहे. कोणता सिद्धता-उपपत्तीय गुणधर्म विचारात आहे यावर अवलंबून, उदाहरणार्थ,
+आपल्याला पुढील गोष्टी हव्या असतात:
+\begin{enumerate}
+\item प्रत्येक निष्पन्न करता येण्याजोगे वाक्य हे वैध असते;
+\item एखादे वाक्य इतर काही वाक्यांपासून निष्पन्न करता येण्याजोगे असेल, तर ते
+  त्यांचा तार्किक परिणामही असते;
+\item वाक्यांचा संच विसंगत असेल, तर तो अपूर्ततायोग्य असतो.
+\end{enumerate}
+हे निष्पत्ती-पद्धतीचे महत्त्वाचे गुणधर्म आहेत. यांपैकी एखादा गुणधर्म
+खरा नसेल, तर निष्पत्ती-पद्धतीत दोष आहे---ती खूप जास्त गोष्टी
+निष्पन्न करेल. म्हणून निष्पत्ती-पद्धतीची निर्दोषता सिद्ध करणे अत्यंत
+महत्त्वाचे आहे.
+\end{explain}
+\begin{thm}[निर्दोषता]
+\label{fol:ntd:sou:thm:soundness}
+$\varphi$ हे मुक्त न केलेली गृहीतके~$\Gamma$ यांच्यापासून निष्पन्न करता येण्याजोगे असेल, तर
+$\Gamma \Entails \varphi$.
+\end{thm}
+\begin{proof}
+$\delta$ ही $\varphi$ ची निष्पत्ती असू द्या. $\delta$ मधील अनुमानांच्या
+संख्येवर विगमनाने पुढे जाऊ.
+विगमनाच्या आधारपायरीसाठी अनुमानांची संख्या~$0$ असेल तेव्हा दावा सिद्ध करू.
+या प्रकरणात $\delta$ मध्ये फक्त एकच वाक्य~$\varphi$, म्हणजे एक गृहीतक,
+असते. ते गृहीतक मुक्त न केलेली असते, कारण गृहीतके फक्त अनुमानांद्वारे
+मुक्त होऊ शकतात आणि येथे कोणतेही अनुमान नाही. म्हणून सिद्धतेतील
+सर्व मुक्त न केलेली गृहीतके पूर्ण करणारी कोणतीही
+संरचना~$\Struct{M}$
+$\varphi$ हेदेखील पूर्ण करते.
+आता विगमन पायरी पाहू. $\delta$ मध्ये $n$ अनुमाने आहेत असे समजा. सर्वांत
+खालच्या अनुमानाची आधारविधाने अशा उप-निष्पत्त्या वापरून निष्पन्न केली
+आहेत की प्रत्येकामध्ये $n$ पेक्षा कमी अनुमाने आहेत. विगमन गृहीतक असे धरू:
+सर्वांत खालच्या अनुमानाची आधारविधाने, त्या आधारविधानांवर संपणाऱ्या
+उप-निष्पत्त्यांच्या मुक्त न केलेली गृहीतकांपासून निष्पन्न होतात. संपूर्ण
+सिद्धतेच्या मुक्त न केलेली गृहीतकांपासून निष्कर्ष~$\varphi$ निष्पन्न होतो, हे
+आपल्याला दाखवायचे आहे.
+सर्वांत खालच्या अनुमानाच्या प्रकारानुसार प्रकरणे वेगळी करू. प्रथम एकच
+आधारविधान असलेली संभाव्य अनुमाने पाहू.
+\begin{enumerate}
+\item शेवटचे अनुमान \Intro{\lnot} आहे असे समजा: निष्पत्तीचे रूप
+  पुढीलप्रमाणे आहे:
+  \begin{prooftree}
+    \AxiomC{$\Gamma, \Discharge{\varphi}{n}$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$\lfalse$}
+    \DischargeRule{\Intro{\lnot}}{n}
+    \UnaryInfC{$\lnot \varphi$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार $\lfalse$ हे $\delta_1$ च्या मुक्त न केलेली
+  गृहीतकांपासून~$\Gamma \cup \{\varphi\}$ निष्पन्न होते. एखादी
+  संरचना~$\Struct{M}$
+  विचारात घ्या. जर $\Sat{M}{\Gamma}$, तर
+  $\Sat{M}{\lnot \varphi}$, हे दाखवायचे आहे.
+  विसंगतीद्वारे सिद्धतेसाठी असे समजा की
+  $\Sat{M}{\Gamma}$, पण
+  $\Sat/{M}{\lnot \varphi}$, म्हणजे
+  $\Sat{M}{\varphi}$. याचा अर्थ
+  $\Sat{M}{\Gamma \cup \{\varphi\}}$ असा होईल. हे आपल्या
+  विगमन गृहीतकाच्या विरुद्ध आहे. म्हणून
+  $\Sat{M}{\lnot \varphi}$.
+\item शेवटचे अनुमान \Elim{\land} आहे. याचे दोन प्रकार आहेत: $\varphi \land
+  \psi$ या आधारविधानापासून $\varphi$ किंवा $\psi$ निष्पन्न केले जाऊ शकते. पहिले
+  प्रकरण पाहू. निष्पत्ती~$\delta$ पुढीलप्रमाणे दिसते:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$\varphi \land \psi$}
+    \RightLabel{\Elim{\land}}
+    \UnaryInfC{$\varphi$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार $\varphi \land \psi$ हे $\delta_1$ च्या
+  मुक्त न केलेली गृहीतकांपासून~$\Gamma$ निष्पन्न होते. एखादी
+  संरचना~$\Struct{M}$ विचारात घ्या.
+  जर $\Sat{M}{\Gamma}$, तर
+  $\Sat{M}{\varphi}$, हे दाखवायचे आहे.
+  $\Sat{M}{\Gamma}$ असे समजा. आपल्या विगमन
+  गृहीतकानुसार ($\Gamma \Entails \varphi \land \psi$),
+  $\Sat{M}{\varphi \land \psi}$ हे आपल्याला माहीत आहे.
+  व्याख्येनुसार, $\Sat{M}{\varphi \land \psi}$ तेव्हा आणि
+  केवळ तेव्हाच, जेव्हा $\Sat{M}{\varphi}$ आणि
+  $\Sat{M}{\psi}$. ($\varphi \land \psi$ पासून $\psi$
+  निष्पन्न करण्याचे प्रकरणही असेच हाताळता येते.)
+\item शेवटचे अनुमान \Intro{\lor} आहे. याचे दोन प्रकार आहेत: $\varphi$ या
+  आधारविधानापासून किंवा $\psi$ या आधारविधानापासून $\varphi \lor \psi$ निष्पन्न
+  केले जाऊ शकते. पहिले प्रकरण पाहू. निष्पत्तीचे रूप पुढीलप्रमाणे आहे:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$\varphi$}
+    \RightLabel{\Intro{\lor}}
+    \UnaryInfC{$\varphi \lor \psi$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार $\varphi$ हे $\delta_1$ च्या मुक्त न केलेली
+  गृहीतकांपासून~$\Gamma$ निष्पन्न होते. एखादी
+  संरचना~$\Struct{M}$
+  विचारात घ्या. जर $\Sat{M}{\Gamma}$, तर
+  $\Sat{M}{\varphi \lor \psi}$, हे दाखवायचे आहे.
+  $\Sat{M}{\Gamma}$ असे समजा; मग
+  $\Gamma \Entails \varphi$ (विगमन गृहीतक) असल्यामुळे
+  $\Sat{M}{\varphi}$. म्हणून
+  $\Sat{M}{\varphi \lor \psi}$ हेदेखील असलेच पाहिजे.
+  ($\psi$ पासून $\varphi \lor \psi$ निष्पन्न करण्याचे प्रकरणही असेच हाताळता येते.)
+\item शेवटचे अनुमान \Intro{\lif} आहे. $\varphi$ हे गृहीतक आणि $\psi$ हा निष्कर्ष
+  असलेल्या उपसिद्धतेपासून $\varphi \lif \psi$ निष्पन्न केले जाते, म्हणजे:
+  \begin{prooftree}
+    \AxiomC{$\Gamma, \Discharge{\varphi}{n}$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$\psi$}
+    \DischargeRule{\Intro{\lif}}{n}
+    \UnaryInfC{$\varphi \lif \psi$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार $\psi$ हे $\delta_1$ च्या मुक्त न केलेली
+  गृहीतकांपासून निष्पन्न होते, म्हणजे $\Gamma \cup \{\varphi\} \Entails \psi$.
+  एखादी
+  संरचना~$\Struct{M}$
+  विचारात घ्या. शेवटच्या अनुमानात $\varphi$ चे विसर्जन झाल्यामुळे $\delta$
+  ची मुक्त न केलेली गृहीतके फक्त $\Gamma$ आहेत. म्हणून
+  $\Gamma \Entails \varphi \lif \psi$ हे दाखवायचे आहे. विसंगतीद्वारे सिद्धतेसाठी
+  असे समजा की एखाद्या
+  संरचना~$\Struct{M}$
+  साठी $\Sat{M}{\Gamma}$, पण
+  $\Sat/{M}{\varphi \lif \psi}$. मग
+  $\Sat{M}{\varphi}$ आणि
+  $\Sat/{M}{\psi}$. पण गृहीतकानुसार $\psi$ हा
+  $\Gamma \cup \{\varphi\}$ चा तार्किक परिणाम आहे, म्हणजे
+  $\Sat{M}{\psi}$; ही विसंगती आहे. म्हणून
+  $\Gamma \Entails \varphi \lif \psi$.
+\item शेवटचे अनुमान \FalseInt आहे. येथे $\delta$ पुढीलप्रमाणे संपते:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$\lfalse$}
+    \RightLabel{\FalseInt}
+    \UnaryInfC{$\varphi$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार $\Gamma \Entails \lfalse$. आपल्याला
+  $\Gamma \Entails \varphi$ हे दाखवायचे आहे. तसे नसल्याचे समजा; मग एखाद्या
+  $\Struct{M}$ साठी
+    $\Sat{M}{\Gamma}$ आणि
+    $\Sat/{M}{\varphi}$. पण नेहमीच
+    $\Sat/{M}{\lfalse}$ असल्यामुळे याचा अर्थ
+    $\Gamma \Entails/ \lfalse$ असा होईल, जो विगमन गृहीतकाच्या विरुद्ध आहे.
+\item शेवटचे अनुमान \FalseCl आहे: सराव.
+\item शेवटचे अनुमान \Intro{\lforall} आहे. मग $\delta$ चे रूप पुढीलप्रमाणे आहे:
+  \begin{prooftree}
+    \AxiomC{$\Gamma$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$\varphi(a)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][\varphi(x)]$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार आधारविधान~$\varphi(a)$ हे मुक्त न केलेली
+  गृहीतके~$\Gamma$ यांचा तार्किक परिणाम आहे.
+  $\Sat{M}{\Gamma}$ अशी एखादी रचना~$\Struct{M}$ विचारात घ्या. आपल्याला
+  $\Sat{M}{\lforall[x][\varphi(x)]}$ हे दाखवायचे आहे.
+  $\lforall[x][\varphi(x)]$ हे वाक्य असल्यामुळे याचा अर्थ प्रत्येक
+  चल-विन्यास~$s$ साठी $\Sat{M}{\varphi(x)}[s]$ दाखवायचे आहे
+  (\ref{fol:syn:ass:prop:sat-quant}). $\Gamma$ मध्ये केवळ वाक्ये असल्यामुळे
+  \ref{fol:syn:sat:defn:satisfaction} नुसार प्रत्येक $\psi \in \Gamma$ साठी
+  $\Sat{M}{\psi}[s]$. $\Struct{M'}$ ही $\Struct{M}$ सारखीच रचना असू द्या,
+  फक्त $\Assign{a}{M'} = s(x)$. $a$ हे $\Gamma$ मध्ये येत नसल्यामुळे
+  \ref{fol:syn:ext:cor:extensionality-sent} नुसार
+  $\Sat{M'}{\Gamma}$. $\Gamma \Entails \varphi(a)$ असल्यामुळे
+  $\Sat{M'}{\varphi(a)}$. $\varphi(a)$ हे वाक्य असल्यामुळे
+  \ref{fol:syn:ass:prop:sentence-sat-true} नुसार
+  $\Sat{M'}{\varphi(a)}[s]$. \ref{fol:syn:ext:prop:ext-formulas} नुसार
+  $\Sat{M'}{\varphi(x)}[s]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\Sat{M'}{\varphi(a)}$ (लक्षात घ्या की $\varphi(a)$ म्हणजे
+  $\Subst{\varphi(x)}{a}{x}$). म्हणून $\Sat{M'}{\varphi(x)}[s]$. $a$ हे $\varphi(x)$
+  मध्ये येत नसल्यामुळे \ref{fol:syn:ext:prop:extensionality} नुसार
+  $\Sat{M}{\varphi(x)}[s]$. पण $s$ हा स्वेच्छ चल-विन्यास होता, म्हणून
+  $\Sat{M}{\lforall[x][\varphi(x)]}$.
+\item शेवटचे अनुमान \Intro{\lexists} आहे: सराव.
+\item शेवटचे अनुमान \Elim{\forall} आहे: सराव.
+\end{enumerate}
+आता अनेक आधारविधाने असलेली संभाव्य अनुमाने पाहू:
+\Elim{\lor}, \Intro{\land}, \Elim{\lif} आणि
+  \Elim{\lexists}.
+\begin{enumerate}
+\item शेवटचे अनुमान \Intro{\land} आहे. $\varphi$ आणि $\psi$ या आधारविधानांपासून
+  $\varphi \land \psi$ निष्पन्न केले जाते आणि $\delta$ चे रूप पुढीलप्रमाणे आहे:
+  \begin{prooftree}
+    \AxiomC{$\Gamma_1$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$\varphi$}
+    \AxiomC{$\Gamma_2$}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$\psi$}
+    \RightLabel{\Intro{\land}}
+    \BinaryInfC{$\varphi \land \psi$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार $\varphi$ हे $\delta_1$ च्या मुक्त न केलेली
+  गृहीतकांपासून~$\Gamma_1$ निष्पन्न होते आणि $\psi$ हे $\delta_2$ च्या
+  मुक्त न केलेली गृहीतकांपासून~$\Gamma_2$ निष्पन्न होते. $\delta$ ची
+  मुक्त न केलेली गृहीतके $\Gamma_1 \cup \Gamma_2$ आहेत; म्हणून
+  $\Gamma_1 \cup \Gamma_2 \Entails \varphi \land \psi$ हे दाखवायचे आहे.
+  $\Sat{M}{\Gamma_1 \cup \Gamma_2}$ असलेली एखादी
+  संरचना~$\Struct{M}$
+  विचारात घ्या. $\Sat{M}{\Gamma_1}$ आणि
+  $\Gamma_1 \Entails \varphi$ असल्यामुळे
+  $\Sat{M}{\varphi}$ असलेच पाहिजे; तसेच
+  $\Sat{M}{\Gamma_2}$ आणि
+  $\Gamma_2 \Entails \psi$ असल्यामुळे
+  $\Sat{M}{\psi}$. या दोन्हींवरून
+  $\Sat{M}{\varphi \land \psi}$.
+\item शेवटचे अनुमान \Elim{\lor} आहे: सराव.
+\item शेवटचे अनुमान \Elim{\lif} आहे. $\varphi \lif \psi$ आणि $\varphi$ या
+  आधारविधानांपासून $\psi$ निष्पन्न केले जाते. निष्पत्ती~$\delta$
+  पुढीलप्रमाणे दिसते:
+  \begin{prooftree}
+    \AxiomC{$\Gamma_1$}
+    \RightLabel{$\delta_1$}
+    \DeduceC{$\varphi \lif \psi$}
+    \AxiomC{$\Gamma_2$}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$\varphi$}
+    \RightLabel{\Elim{\lif}}
+    \BinaryInfC{$\psi$}
+  \end{prooftree}
+  विगमन गृहीतकानुसार $\varphi \lif \psi$ हे $\delta_1$ च्या
+  मुक्त न केलेली गृहीतकांपासून~$\Gamma_1$ निष्पन्न होते आणि $\varphi$ हे
+  $\delta_2$ च्या मुक्त न केलेली गृहीतकांपासून~$\Gamma_2$ निष्पन्न होते.
+  एखादी
+  संरचना~$\Struct{M}$
+  विचारात घ्या. जर $\Sat{M}{\Gamma_1 \cup
+    \Gamma_2}$, तर $\Sat{M}{\psi}$, हे दाखवायचे आहे.
+  $\Sat{M}{\Gamma_1 \cup \Gamma_2}$ असे समजा.
+  $\Gamma_1 \Entails \varphi \lif \psi$ असल्यामुळे
+  $\Sat{M}{\varphi \lif \psi}$. तसेच
+  $\Gamma_2 \Entails \varphi$ असल्यामुळे
+  $\Sat{M}{\varphi}$. याचा अर्थ
+  $\Sat{M}{\psi}$ असा होतो (कारण
+  $\Sat/{M}{\psi}$ असेल, तर
+  $\Sat{M}{\varphi}$ असल्यामुळे
+  $\Sat/{M}{\varphi \lif \psi}$ असे होईल, जे
+  $\Sat{M}{\varphi \lif \psi}$ च्या विरुद्ध आहे).
+\item शेवटचे अनुमान \Elim{\lnot} आहे: सराव.
+\item शेवटचे अनुमान \Elim{\lexists} आहे: सराव.
+\end{enumerate}
+\end{proof}
+\begin{prob}
+\ref{fol:ntd:sou:thm:soundness} ची सिद्धता पूर्ण करा.
+\end{prob}
+\begin{cor}
+\label{fol:ntd:sou:cor:weak-soundness}
+जर $\Proves \varphi$, तर $\varphi$ हे वैध आहे.
+\end{cor}
+\begin{cor}
+\label{fol:ntd:sou:cor:consistency-soundness}
+जर $\Gamma$ पूर्ततायोग्य असेल, तर तो सुसंगत आहे.
+\end{cor}
+\begin{proof}
+प्रतिलोम विधान सिद्ध करू. $\Gamma$ सुसंगत नाही असे समजा. मग
+$\Gamma \Proves \lfalse$, म्हणजे $\Gamma$ मधील मुक्त न केलेली
+गृहीतकांपासून $\lfalse$ ची निष्पत्ती आहे. \ref{fol:ntd:sou:thm:soundness}
+नुसार $\Gamma$ पूर्ण करणारी कोणतीही
+संरचना~$\Struct{M}$
+$\lfalse$ देखील पूर्ण करते. प्रत्येक
+संरचना~$\Struct{M}$
+साठी $\Sat/{M}{\lfalse}$ असल्यामुळे कोणतीही
+$\Struct{M}$ $\Gamma$ पूर्ण करू शकत नाही,
+म्हणजे $\Gamma$ पूर्ततायोग्य नाही.
+\end{proof}
+\section{निष्पत्ती सह एकरूपता}\label{fol:ntd:ide:sec}
+एकरूपता असलेल्या निष्पत्त्या साठी अतिरिक्त अनुमाननियम आवश्यक असतात.
+\par\medskip\noindent
+\begin{defish}
+\AxiomC{}
+\RightLabel{\Intro{\eq}}
+\UnaryInfC{$\eq[t][t]$}
+\DisplayProof
+\par\medskip\noindent
+\begin{tabular}{r}
+\AxiomC{$\eq[t_1][t_2]$}
+\AxiomC{$\varphi(t_1)$}
+\RightLabel{\Elim{\eq}}
+\BinaryInfC{$\varphi(t_2)$}
+\DisplayProof
+\\[3ex]
+\AxiomC{$\eq[t_1][t_2]$}
+\AxiomC{$\varphi(t_2)$}
+\RightLabel{\Elim{\eq}}
+\BinaryInfC{$\varphi(t_1)$}
+\DisplayProof
+\end{tabular}
+\end{defish}
+वरील नियमांमध्ये $t$, $t_1$ आणि $t_2$ ही बंद पदे आहेत. \Intro{\eq} नियम
+आपल्याला कोणत्याही गृहीतकांशिवाय, थेट $\eq[t][t]$ या रूपाचे कोणतेही
+एकरूपता-विधान निष्पन्न करू देतो.
+\begin{ex}
+$s$ आणि $t$ ही बंद पदे असतील, तर $\varphi(s), \eq[s][t] \Proves \varphi(t)$:
+\begin{prooftree}
+\AxiomC{$\eq[s][t]$}
+\AxiomC{$\varphi(s)$}
+\RightLabel{$\Elim{\eq}$}
+\BinaryInfC{$\varphi(t)$}
+\end{prooftree}
+याला “एकरूप वस्तूंच्या प्रतिस्थापनाचे तत्त्व” किंवा लाइब्निझचा नियम
+म्हणून ओळखले जाऊ शकते.
+\end{ex}
+\begin{prob}
+$=$ हे सममित आणि संक्रमक दोन्ही आहे हे सिद्ध करा; म्हणजे
+$\lforall[x][\lforall[y][(\eq[x][y] \lif
+    \eq[y][x])]]$ आणि $\lforall[x][\lforall[y][\lforall[z]((\eq[x][y]
+    \land \eq[y][z]) \lif \eq[x][z])]]$ यांच्या
+निष्पत्त्या द्या.
+\end{prob}
+\begin{ex}
+आपण पुढील वाक्य निष्पन्न करतो:
+\begin{align*}
+& \lforall[x][\lforall[y][((\varphi(x) \land \varphi(y)) \lif \eq[x][y])]]
+\intertext{या वाक्य पासून:}
+& \lexists[x][\lforall[y][(\varphi(y) \lif \eq[y][x])]]
+\end{align*}
+निष्पत्ती उलट्या दिशेने विकसित करू:
+\begin{prooftree}
+\AxiomC{$\lexists[x][\lforall[y][(\varphi(y) \lif \eq[y][x])]]
+\quad \Discharge{\varphi(a) \land \varphi(b)}{1}$}
+\DeduceC{$\eq[a][b]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$((\varphi(a) \land \varphi(b)) \lif \eq[a][b])$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[y][((\varphi(a) \land \varphi(y)) \lif \eq[a][y])]$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[x][\lforall[y][((\varphi(x) \land \varphi(y)) \lif \eq[x][y])]]$}
+\end{prooftree}
+आता मुख्य गृहीतक वापरावे लागेल: ते अस्तित्ववाची सूत्र असल्यामुळे
+\Elim{\lexists} वापरून मध्यवर्ती निष्कर्ष~$\eq[a][b]$ निष्पन्न करू.
+\begin{prooftree}
+\AxiomC{$\lexists[x][\lforall[y][(\varphi(y) \lif \eq[y][x])]]$}
+\AxiomC{$\Discharge{\lforall[y][(\varphi(y) \lif \eq[y][c]])}{2}$}
+\noLine
+\UnaryInfC{$\Discharge{\varphi(a) \land \varphi(b)}{1}$}
+\DeduceC{$\eq[a][b]$}
+\DischargeRule{\Elim{\lexists}}{2}
+\BinaryInfC{$\eq[a][b]$}
+\DischargeRule{\Intro{\lif}}{1}
+\UnaryInfC{$((\varphi(a) \land \varphi(b)) \lif \eq[a][b])$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[y][((\varphi(a) \land \varphi(y)) \lif \eq[a][y])]$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[x][\lforall[y][((\varphi(x) \land \varphi(y)) \lif \eq[x][y])]]$}
+\end{prooftree}
+वरच्या उजव्या बाजूची उप-निष्पत्ती तिच्या गृहीतकांचा वापर करून
+$\eq[a][c]$ आणि $\eq[b][c]$ दाखवल्यावर पूर्ण होते. यासाठी दोन स्वतंत्र
+निष्पत्त्या आवश्यक आहेत. $\eq[a][c]$ साठीची निष्पत्ती
+पुढीलप्रमाणे आहे:
+\begin{prooftree}
+\AxiomC{$\Discharge{\lforall[y][(\varphi(y) \lif \eq[y][c]])}{2}$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$\varphi(a) \lif \eq[a][c]$}
+\AxiomC{$\Discharge{\varphi(a) \land \varphi(b)}{1}$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$\varphi(a)$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$\eq[a][c]$}
+\end{prooftree}
+$\eq[a][c]$ आणि $\eq[b][c]$ यांच्यापासून \Elim{\eq} वापरून
+$\eq[a][b]$ निष्पन्न करतो.
+\end{ex}
+\begin{prob}
+पुढील सूत्रांच्या निष्पत्त्या द्या:
+\begin{enumerate}
+\item $\lforall[x][\lforall[y][((\eq[x][y] \land \varphi(x)) \lif \varphi(y))]]$
+\item $\lexists[x][\varphi(x)] \land \lforall[y][\lforall[z][((\varphi(y) \land
+    \varphi(z)) \lif \eq[y][z])]] \lif \lexists[x][(\varphi(x) \land
+  \lforall[y][(\varphi(y) \lif \eq[y][x])])]$
+\end{enumerate}
+\end{prob}
+\section{एकरूपता सह निर्दोषता}\label{fol:ntd:sid:sec}
+\begin{prop}
+$\eq$ साठीच्या नियमांसह नैसर्गिक निगमन निर्दोष आहे.
+\end{prop}
+\begin{proof}
+$\eq[t][t]$ या रूपातील कोणतेही सूत्र वैध आहे, कारण प्रत्येक
+संरचना~$\Struct M$ साठी $\Sat{M}{\eq[t][t]}$. (लक्षात घ्या की
+$t$ हे बंद पद आहे असे आपण गृहीत धरतो, म्हणजे त्यात कोणतेही चल नाही;
+म्हणून चल-विन्यास अप्रासंगिक असतात.)
+निष्पत्तीमधील शेवटचे अनुमान \Elim{\eq} आहे असे समजा, म्हणजे
+निष्पत्तीचे रूप पुढीलप्रमाणे आहे:
+\begin{prooftree}
+  \AxiomC{$\Gamma_1$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$\eq[t_1][t_2]$}
+  \AxiomC{$\Gamma_2$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$\varphi(t_1)$}
+  \RightLabel{\Elim{\eq}}
+  \BinaryInfC{$\varphi(t_2)$}
+\end{prooftree}
+आधारविधाने~$\eq[t_1][t_2]$ आणि $\varphi(t_1)$ ही अनुक्रमे
+मुक्त न केलेली गृहीतके~$\Gamma_1$ आणि $\Gamma_2$ यांच्यापासून
+निष्पन्न केली आहेत. $\varphi(t_2)$ हे $\Gamma_1 \cup \Gamma_2$ पासून
+निष्पन्न होते, हे दाखवायचे आहे. $\Sat{M}{\Gamma_1 \cup
+  \Gamma_2}$ असलेली संरचना~$\Struct{M}$ विचारात घ्या. विगमन
+गृहीतकानुसार $\Sat{M}{\varphi(t_1)}$ आणि $\Sat{M}{\eq[t_1][t_2]}$.
+त्यामुळे $\Value{t_1}{M} = \Value{t_2}{M}$. $s$ हा कोणताही चल-विन्यास
+आणि $m = \Value{t_1}{M} = \Value{t_2}{M}$ असू द्या.
+\ref{fol:syn:ext:prop:ext-formulas} नुसार
+$\Sat{M}{\varphi(t_1)}[s]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Sat{M}{\varphi(x)}[\Subst{s}{m}{x}]$, आणि हे तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Sat{M}{\varphi(t_2)}[s]$. $\Sat{M}{\varphi(t_1)}$ असल्यामुळे
+$\Sat{M}{\varphi(t_2)}$.
+\end{proof}

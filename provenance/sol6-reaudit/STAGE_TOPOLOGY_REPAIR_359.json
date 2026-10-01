@@ -1,0 +1,25 @@
+{
+  "id": "SOL6-A359",
+  "date": "2026-10-01",
+  "record_kind": "workflow_topology",
+  "source_choices_added": 0,
+  "problem": "Release staging still assumed that rendered HTML had exactly 613 h3 headings, although 613 is the numbered source-book section count and the full reader contains a separate unnumbered section.",
+  "correction": "Derive expected rendered heading counts from the actual assembled TeX, plus declared generated headings, and compare them with the current HTML QA receipt.",
+  "source_book_scope": {
+    "chapters": 79,
+    "sections": 613
+  },
+  "actual_full_reader_headings": {
+    "parts": 16,
+    "chapters": 83,
+    "sections": 614
+  },
+  "generated_heading_counts": {
+    "h1": 1,
+    "h2": 1,
+    "h3": 0
+  },
+  "tool": "tools/stage_complete_release.py",
+  "tool_sha256": "45169091e795efbccf32cf2895cf1b77ac7b0192684932342388013a04c6b142",
+  "runtime_validation": "passed_complete_v1.2_staging_and_cross_package_consistency"
+}

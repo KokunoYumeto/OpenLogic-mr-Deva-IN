@@ -13,6 +13,7 @@ import subprocess
 from pathlib import Path
 
 import fitz
+from complete_diagram_inventory import current_inventory
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,63 +26,63 @@ PDF = BUILD / "openlogic-mr-full.pdf"
 # Page numbers are physical PDF pages. Coordinates are PDF points and exclude
 # captions, which remain in the surrounding semantic HTML.
 CROPS = {
-    "turing-machine": (335, 175, 65, 420, 240),
-    "tikz-015": (279, 200, 641, 395, 738),
-    "tikz-016": (287, 175, 550, 420, 675),
-    "tikz-017": (336, 195, 164, 390, 216),
-    "tikz-018": (336, 205, 315, 390, 400),
-    "tikz-019": (337, 205, 492, 390, 580),
-    "tikz-020": (338, 160, 565, 435, 733),
-    "tikz-021": (341, 175, 675, 435, 743),
-    "tikz-022": (342, 160, 100, 435, 353),
-    "tikz-023": (342, 150, 450, 450, 715),
-    "tikz-024": (343, 170, 630, 395, 778),
-    "tikz-025": (344, 170, 115, 395, 247),
-    "tikz-026": (345, 175, 65, 425, 224),
-    "tikz-027": (346, 170, 235, 435, 301),
-    "tikz-028": (346, 170, 372, 435, 550),
-    "tikz-029": (347, 140, 72, 455, 358),
-    "tikz-030": (351, 190, 70, 390, 152),
-    "tikz-031": (351, 200, 150, 390, 232),
-    "tikz-032": (351, 200, 283, 390, 365),
-    "tikz-033": (525, 240, 60, 345, 200),
-    "tikz-034": (527, 215, 205, 400, 325),
-    "tikz-035": (532, 215, 645, 370, 740),
-    "tikz-036": (534, 245, 665, 360, 718),
-    "tikz-037": (541, 200, 60, 400, 193),
-    "tikz-038": (555, 235, 367, 360, 441),
-    "tikz-039": (555, 190, 598, 405, 714),
-    "tikz-040": (557, 195, 60, 400, 235),
-    "tikz-041": (573, 165, 635, 430, 676),
-    "tikz-042": (573, 165, 676, 430, 745),
-    "tikz-043": (573, 185, 394, 415, 605),
-    "tikz-044": (577, 190, 211, 405, 349),
-    "tikz-045": (577, 187, 388, 415, 564),
-    "tikz-046": (593, 220, 355, 385, 445),
-    "tikz-047": (609, 232, 70, 370, 252),
-    "tikz-048": (611, 175, 60, 420, 219),
-    "tikz-049": (614, 150, 306, 450, 495),
-    "tikz-050": (648, 230, 62, 365, 188),
-    "tikz-051": (649, 210, 60, 385, 215),
-    "tikz-052": (650, 230, 72, 365, 199),
-    "tikz-053": (650, 230, 250, 365, 378),
-    "tikz-054": (650, 230, 426, 365, 555),
-    "tikz-055": (650, 230, 603, 365, 732),
-    "tikz-056": (651, 215, 60, 380, 215),
-    "tikz-057": (651, 210, 575, 385, 741),
-    "tikz-058": (653, 220, 565, 380, 741),
-    "tikz-059": (658, 215, 180, 375, 337),
-    "tikz-060": (659, 195, 60, 390, 219),
-    "tikz-061": (669, 202, 525, 395, 546),
-    "tikz-062": (669, 202, 597, 395, 620),
-    "tikz-063": (669, 202, 704, 395, 727),
-    "tikz-064": (703, 242, 710, 355, 773),
-    "tikz-065": (859, 195, 435, 385, 625),
-    "tikz-066": (861, 205, 248, 380, 359),
-    "tikz-067": (862, 145, 490, 450, 695),
-    "tikz-068": (865, 245, 60, 350, 165),
-    "tikz-069": (865, 245, 217, 350, 322),
-    "tikz-070": (865, 245, 433, 350, 534),
+    'turing-machine': (335, 178.017, 68.821, 416.106, 229.746),
+    'tikz-015': (279, 210.5, 643.26, 384.777, 732.497),
+    'tikz-016': (287, 182.153, 552.836, 413.125, 670.421),
+    'tikz-017': (336, 218.141, 172.865, 380.472, 205.081),
+    'tikz-018': (336, 216.048, 306.691, 379.125, 383.849),
+    'tikz-019': (337, 216.048, 493.671, 379.125, 570.829),
+    'tikz-020': (338, 167.152, 563.022, 428.022, 734.268),
+    'tikz-021': (341, 175.966, 675.462, 418.101, 737.439),
+    'tikz-022': (342, 163.101, 101.054, 430.966, 351.672),
+    'tikz-023': (342, 152.743, 455.121, 442.513, 705.738),
+    'tikz-024': (343, 216.048, 631.376, 379.125, 772.725),
+    'tikz-025': (344, 206.043, 113.85, 388.023, 240.483),
+    'tikz-026': (345, 190.08, 72.428, 408.535, 217.028),
+    'tikz-027': (346, 175.966, 235.954, 418.101, 297.931),
+    'tikz-028': (346, 178.456, 372.643, 420.158, 546.868),
+    'tikz-029': (347, 143.905, 72.428, 451.27, 355.922),
+    'tikz-030': (351, 216.048, 71.431, 379.125, 148.589),
+    'tikz-031': (351, 216.048, 151.526, 379.125, 228.684),
+    'tikz-032': (351, 216.048, 284.02, 379.125, 361.178),
+    'tikz-033': (530, 252.349, 65.953, 343.225, 192.179),
+    'tikz-034': (532, 219.684, 214.772, 375.093, 326.7),
+    'tikz-035': (538, 232.241, 362.707, 363.332, 438.233),
+    'tikz-036': (540, 249.426, 676.409, 348.881, 719.59),
+    'tikz-037': (547, 210.3, 68.567, 384.977, 186.55),
+    'tikz-038': (561, 249.013, 367.5, 349.292, 437.49),
+    'tikz-039': (561, 203.459, 611.182, 392.115, 711.49),
+    'tikz-040': (563, 208.362, 69.165, 386.914, 232.473),
+    'tikz-041': (579, 170.716, 644.687, 422.569, 676.025),
+    'tikz-042': (579, 172.757, 676.06, 422.522, 744.476),
+    'tikz-043': (580, 192.64, 69.731, 400.666, 274.166),
+    'tikz-044': (583, 201.11, 513.027, 394.165, 648.517),
+    'tikz-045': (584, 189.856, 69.165, 405.42, 238.369),
+    'tikz-046': (599, 229.199, 654.959, 366.374, 732.335),
+    'tikz-047': (616, 237.256, 71.552, 361.653, 251.62),
+    'tikz-048': (618, 185.119, 584.815, 410.158, 730.821),
+    'tikz-049': (621, 153.91, 308.364, 440.97, 491.504),
+    'tikz-050': (657, 239.727, 71.508, 354.425, 177.93),
+    'tikz-051': (658, 218.383, 69.165, 376.892, 205.629),
+    'tikz-052': (659, 239.727, 71.508, 354.425, 177.93),
+    'tikz-053': (659, 239.231, 255.975, 353.929, 362.397),
+    'tikz-054': (659, 239.727, 625.024, 354.425, 731.96),
+    'tikz-055': (660, 239.727, 70.994, 354.425, 177.93),
+    'tikz-056': (660, 226.004, 231.477, 369.271, 364.001),
+    'tikz-057': (661, 220.214, 69.166, 375.062, 215.834),
+    'tikz-058': (662, 229.406, 574.906, 368.904, 731.96),
+    'tikz-059': (667, 224.594, 266.482, 367.243, 416.13),
+    'tikz-060': (668, 207.586, 232.561, 384.252, 382.209),
+    'tikz-061': (678, 206.747, 526.666, 388.503, 542.713),
+    'tikz-062': (678, 208.408, 599.165, 386.87, 615.211),
+    'tikz-063': (678, 206.748, 706.893, 388.504, 722.94),
+    'tikz-064': (712, 247.644, 716.565, 347.624, 768.944),
+    'tikz-065': (871, 214.476, 440.189, 377.558, 623.536),
+    'tikz-066': (873, 218.018, 255.189, 374.014, 360.785),
+    'tikz-067': (874, 156.262, 500.024, 439.018, 683.152),
+    'tikz-068': (877, 255.688, 169.333, 339.588, 253.233),
+    'tikz-069': (877, 255.688, 325.662, 339.588, 409.562),
+    'tikz-070': (877, 255.688, 534.872, 339.588, 618.771),
 }
 
 
@@ -113,7 +114,7 @@ ALT_OVERRIDE = {
     "tikz-041": "अनंत प्रतिमानाची सुरुवात: 1, 2, 3, 4 अशी क्रमिक जगे; p सम क्रमांकांच्या जगांत सत्य आहे.",
     "tikz-042": "अनंत प्रतिमानाची दोन निस्यंदने: [1] आणि [2] यांच्यात दोन्ही दिशांचे बाण, दुसरीत [2] वर स्वबाण.",
     "tikz-043": "द्विआधारी वृक्ष-प्रतिमान: 0 पासून 00 आणि 01, मग 000, 001, 010, 011 अशी जगे फुटतात; p आणि q ची सत्यता दाखवली आहे.",
-    "tikz-045": "मूळ पाच जगांचे तीन वर्गांत निस्यंदन; वर्गांमधील बाण आणि p ची सत्यता दाखवली आहे.",
+    "tikz-045": "मूळ पाच जगांचे चार वर्गांत निस्यंदन; वर्गांमधील बाण आणि p ची सत्यता दाखवली आहे.",
     "tikz-046": "मूळ जग 1 पासून 1.1 आणि 1.2 कडे बाण; एका शाखेत p असत्य व q सत्य, दुसरीत p सत्य व q असत्य.",
     "tikz-047": "ज्ञानविषयक प्रतिमानातील w1, w2, w3 जगे, a आणि b लेबलांचे प्राप्यता बाण आणि p, q ची सत्यता.",
     "tikz-048": "डावीकडील चार जगांचा आणि उजवीकडील दोन जगांचा द्विअनुकरणसदृश ज्ञानविषयक प्रतिमान-आलेख.",
@@ -146,13 +147,25 @@ def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-inventory = json.loads((BUILD / "HTML_DIAGRAM_INVENTORY.json").read_text(encoding="utf-8"))
+def intersects_including_lines(a, b):
+    """PDF paths with zero height or width still contain visible strokes."""
+    return a.x0 <= b.x1 and a.y0 <= b.y1 and a.x1 >= b.x0 and a.y1 >= b.y0
+
+
+def contains_including_lines(a, b):
+    return a.x0 <= b.x0 and a.y0 <= b.y0 and a.x1 >= b.x1 and a.y1 >= b.y1
+
+
+tex_source = (BUILD / "openlogic-mr-full.tex").read_text(encoding="utf-8")
+inventory = current_inventory(tex_source)
+(BUILD / "HTML_DIAGRAM_INVENTORY.json").write_text(
+    json.dumps(inventory, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+)
 entries = {item["name"]: item for item in inventory}
 assert len(entries) == 70
 assert set(CROPS) == {"turing-machine"} | {f"tikz-{number:03d}" for number in range(15, 71)}
 assert set(CROPS).issubset(entries)
 assert set(ALT_OVERRIDE).issubset(CROPS)
-tex_source = (BUILD / "openlogic-mr-full.tex").read_text(encoding="utf-8")
 tikz_sources = list(re.finditer(r"\\begin\{tikzpicture\}.*?\\end\{tikzpicture\}", tex_source, re.S))
 assert len(tikz_sources) == 61
 for number in range(10, 71):
@@ -174,11 +187,14 @@ for name, crop in CROPS.items():
     for label in entries[name].get("figure_labels", []):
         if label in label_pages:
             assert label_pages[label] == crop[0], (name, label, label_pages[label], crop[0])
-tex_receipt_path = BUILD / "TEX_BUILD_RECEIPT.json"
+# A later bounded attempt may fail to acquire the slot. Only a successful
+# compilation can establish the PDF source, and it must match this reader.
+tex_receipt_path = BUILD / "TEX_SUCCESS_RECEIPT.json"
 tex_receipt = json.loads(tex_receipt_path.read_text(encoding="utf-8-sig")) if tex_receipt_path.exists() else {}
 verified_pdf = (
     tex_receipt.get("result") == "built-log-clean"
     and tex_receipt.get("pdf", {}).get("sha256") == pdf_sha
+    and tex_receipt.get("texInputSha256") == sha(BUILD / "openlogic-mr-full.tex")
 )
 receipt = {
     "schema": "openlogic-full-html-diagram-assets/1",
@@ -219,7 +235,7 @@ for name, (page_number, x0, y0, x1, y1) in CROPS.items():
                 assert not rect.intersects(clip) or clip.contains(rect), (name, span["text"], list(rect))
     for drawing in page.get_drawings():
         rect = drawing["rect"]
-        assert not rect.intersects(clip) or clip.contains(rect), (name, list(rect))
+        assert not intersects_including_lines(rect, clip) or contains_including_lines(clip, rect), (name, list(rect))
     cropped = fitz.open()
     cropped.new_page(width=clip.width, height=clip.height).show_pdf_page(
         fitz.Rect(0, 0, clip.width, clip.height), pdf, page_number - 1, clip=clip

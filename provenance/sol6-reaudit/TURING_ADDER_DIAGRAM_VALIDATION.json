@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "actual_tikz_transitions_extracted": true,
+  "input_bound_each": 40,
+  "general_argument": "q0 scans n strokes, fills the unique separator, q1 scans m strokes and the filled separator, and q2 erases exactly the final stroke. The disciplined tail preserves the tape while returning to square 1 and state h.",
+  "limitations": "Finite executions supplement the transition invariant; this is not a proof of arbitrary Turing programs or a full diagram/rendering audit.",
+  "results": [
+    {
+      "unit_id": "OLP-0258",
+      "source_sha256": "c1e405708a0c2a3ff77377f136b2d94703174a4a23eefa25a9f6555a13cfcba3",
+      "target_sha256": "e26506e71bd7f21ec277cbb89a5b64c52382ceb619505c45a4c10851f69d16bd",
+      "tested_input_pairs": 1681,
+      "frozen_source_wrong_sum_cases": 1640,
+      "corrected_example_3_2": {
+        "output": "11111",
+        "state": "C",
+        "head": 6,
+        "steps": 9,
+        "marker_preserved": true,
+        "left_boundary_attempt": false
+      },
+      "frozen_example_3_2": {
+        "output": "110011",
+        "state": "C",
+        "head": 3,
+        "steps": 5,
+        "marker_preserved": true,
+        "left_boundary_attempt": false
+      },
+      "corrected_zero_zero": {
+        "output": "",
+        "state": "C",
+        "head": 1,
+        "steps": 4,
+        "marker_preserved": true,
+        "left_boundary_attempt": false
+      }
+    },
+    {
+      "unit_id": "OLP-0260",
+      "source_sha256": "b90ae0706db20b57872c40cdbd28e8ecb3d9aa98bbab8f18974ca235e4607aaa",
+      "target_sha256": "d2660fa33c60b63bc67f5e50e5b9fe87900a940d0d66701f97bd4f616a81a945",
+      "tested_input_pairs": 1681,
+      "frozen_source_wrong_sum_cases": 1640,
+      "corrected_example_3_2": {
+        "output": "11111",
+        "state": "H",
+        "head": 1,
+        "steps": 15,
+        "marker_preserved": true,
+        "left_boundary_attempt": false
+      },
+      "frozen_example_3_2": {
+        "output": "110011",
+        "state": "H",
+        "head": 1,
+        "steps": 8,
+        "marker_preserved": true,
+        "left_boundary_attempt": false
+      },
+      "corrected_zero_zero": {
+        "output": "",
+        "state": "H",
+        "head": 1,
+        "steps": 5,
+        "marker_preserved": true,
+        "left_boundary_attempt": false
+      }
+    }
+  ],
+  "combined_graph_results": [
+    {
+      "unit_id": "OLP-0261",
+      "diagram_index": 0,
+      "source_sha256": "02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48",
+      "target_sha256": "314bb35693ac28d90ed8945e28f70379b721a017e4d9859f157bc033da0194c0",
+      "tested_input_pairs": 169,
+      "frozen_source_specification_failures": 156,
+      "corrected_example_3_2": {
+        "output": "11111",
+        "state": "C",
+        "head": 6,
+        "steps": 9,
+        "marker_preserved": true,
+        "left_boundary_attempt": false
+      }
+    },
+    {
+      "unit_id": "OLP-0261",
+      "diagram_index": 1,
+      "source_sha256": "02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48",
+      "target_sha256": "314bb35693ac28d90ed8945e28f70379b721a017e4d9859f157bc033da0194c0",
+      "tested_input_pairs": 169,
+      "frozen_source_specification_failures": 156,
+      "corrected_example_3_2": {
+        "output": "11111",
+        "state": "E",
+        "head": 1,
+        "steps": 15,
+        "marker_preserved": true,
+        "left_boundary_attempt": false
+      }
+    },
+    {
+      "unit_id": "OLP-0261",
+      "diagram_index": 2,
+      "source_sha256": "02dfa5443489d4035dc4e83de121becb3ebcd8a13564f9531ffb21b8ff5fef48",
+      "target_sha256": "314bb35693ac28d90ed8945e28f70379b721a017e4d9859f157bc033da0194c0",
+      "tested_input_pairs": 169,
+      "frozen_source_specification_failures": 156,
+      "corrected_example_3_2": {
+        "output": "0000001111111111",
+        "state": "E",
+        "head": 6,
+        "steps": 110,
+        "marker_preserved": true,
+        "left_boundary_attempt": false
+      }
+    }
+  ],
+  "combined_input_bound_each": 12,
+  "combined_limitations": "Final graph leaves leading blanks; verified the claimed doubled contiguous stroke block, not canonical numeric output.",
+  "validator": "tools/validate_turing_adder_diagrams.py",
+  "validator_sha256": "43e364c1e308ec6293803793e3b145bb8512ebcae4242e79180b28390182da5e"
+}

@@ -1,0 +1,171 @@
+{
+  "schema": "openlogic-scoped-direct-web-visual-review/1",
+  "status": "matched-179-decision-formats-and-scoped-inspection-recorded",
+  "date": "2026-09-30",
+  "review_model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "source_reader_sha256": "89982d3eb49b8320e9080ee7f724a53264f660ff82e92f0ee3b804c8965800d7",
+  "pdf_sha256": "fc364801cfb4d1aa8175e8f875dde95f0fa54bef91a47d3ff139aff4d36d43a7",
+  "html_sha256": "c4df35e8335e7403c243bfe8eaf11f6b1443dd9f39c480851b64fa49cc15a5ee",
+  "epub_sha256": "be58e8051995f7a20fd78833d5912d6d04df3c00a6d2faef2db644e2e0a51b71",
+  "html_mathml_roots": 38657,
+  "epub_independent_checks": 221038,
+  "mechanical_html_result": "ready",
+  "mechanical_browser_result": "pass",
+  "mechanical_epub_result": "passed",
+  "images_actually_viewed": [
+    {
+      "scope": "actual HTML browser sample",
+      "filename": "HTML_BROWSER_DESKTOP.png",
+      "sha256": "f0f0cc4bbb9220150cfe87264023635d2269305f3376dbe1aa6febff405b90fe"
+    },
+    {
+      "scope": "actual HTML browser sample",
+      "filename": "HTML_BROWSER_MOBILE.png",
+      "sha256": "6ca816090e983dda6a6a4af84efe1387b1f60b0f8208d8aeec3e98f859241803"
+    },
+    {
+      "scope": "actual HTML browser sample",
+      "filename": "HTML_BROWSER_WIDE_MATH.png",
+      "sha256": "fdc8b9334cbe3e72291a410300ffda03d3f68889e0fe9ab4512c5a49dc3eee2d"
+    },
+    {
+      "scope": "actual EPUB XHTML sample",
+      "label": "cover",
+      "filename": "EPUB_VISUAL_COVER_1100.png",
+      "sha256": "ffe747c366f3d4c4f89e9a8f2a1bfb1fab31eefb74597f1094c5e10287deb571"
+    },
+    {
+      "scope": "actual EPUB XHTML sample",
+      "label": "aristotle",
+      "filename": "EPUB_VISUAL_ARISTOTLE_760.png",
+      "sha256": "630259cd950415a695fc6d3a6163665a943d5f47a4ec93fb692bf43e909eea28"
+    },
+    {
+      "scope": "actual EPUB XHTML sample",
+      "label": "math-glyph",
+      "filename": "EPUB_VISUAL_MATH-GLYPH_760.png",
+      "sha256": "901f41cdaf42899b898560aa11150ce6e4e90c2752bb5e245a6eaae67304b99c"
+    },
+    {
+      "scope": "actual EPUB XHTML sample",
+      "label": "calculus",
+      "filename": "EPUB_VISUAL_CALCULUS_760.png",
+      "sha256": "21510c3709a05a2da994d8b143edf3cd5fd5a173e76502a4af109b78d6e678a6"
+    },
+    {
+      "scope": "actual EPUB XHTML sample",
+      "label": "greek",
+      "filename": "EPUB_VISUAL_GREEK_420.png",
+      "sha256": "f7eaeb9d362a10ef0807cb9cb6e035ffe2d194136bbfe91f247947b6b57c064e"
+    },
+    {
+      "scope": "actual SVG contact sheet",
+      "diagrams": [
+        "turing-machine",
+        "tikz-015",
+        "tikz-016",
+        "tikz-017",
+        "tikz-018",
+        "tikz-019",
+        "tikz-020",
+        "tikz-021",
+        "tikz-022",
+        "tikz-023",
+        "tikz-024",
+        "tikz-025"
+      ],
+      "filename": "svg-sheet-1.png",
+      "sha256": "184128417d6fdd4363de74ab117f392079702affb77caad54772f4abbb5a34e4"
+    },
+    {
+      "scope": "actual SVG contact sheet",
+      "diagrams": [
+        "tikz-026",
+        "tikz-027",
+        "tikz-028",
+        "tikz-029",
+        "tikz-030",
+        "tikz-031",
+        "tikz-032",
+        "tikz-033",
+        "tikz-034",
+        "tikz-035",
+        "tikz-036",
+        "tikz-037"
+      ],
+      "filename": "svg-sheet-2.png",
+      "sha256": "aeca489139106b98615b6eb6e0297887374f9ba788cace0be195c9ca3f3a78cc"
+    },
+    {
+      "scope": "actual SVG contact sheet",
+      "diagrams": [
+        "tikz-038",
+        "tikz-039",
+        "tikz-040",
+        "tikz-041",
+        "tikz-042",
+        "tikz-043",
+        "tikz-044",
+        "tikz-045",
+        "tikz-046",
+        "tikz-047",
+        "tikz-048",
+        "tikz-049"
+      ],
+      "filename": "svg-sheet-3.png",
+      "sha256": "da4c997cf44c1c23c428190377da3abe57357ecbc38304e3fc9643d095e1eef3"
+    },
+    {
+      "scope": "actual SVG contact sheet",
+      "diagrams": [
+        "tikz-050",
+        "tikz-051",
+        "tikz-052",
+        "tikz-053",
+        "tikz-054",
+        "tikz-055",
+        "tikz-056",
+        "tikz-057",
+        "tikz-058",
+        "tikz-059",
+        "tikz-060",
+        "tikz-061"
+      ],
+      "filename": "svg-sheet-4.png",
+      "sha256": "7f7b6b7c1a38bfb33701ea598189de776c8a025ee82c685a6fd093693b72885a"
+    },
+    {
+      "scope": "actual SVG contact sheet",
+      "diagrams": [
+        "tikz-062",
+        "tikz-063",
+        "tikz-064",
+        "tikz-065",
+        "tikz-066",
+        "tikz-067",
+        "tikz-068",
+        "tikz-069",
+        "tikz-070"
+      ],
+      "filename": "svg-sheet-5.png",
+      "sha256": "1b35e3b6a333b2f1df22a696aece72ec9d8f9c0bbf91cd74e5563170b1a7fcaf"
+    },
+    {
+      "scope": "five actual native MathML formulas",
+      "filename": "ACTUAL_READER_MATH_SHEET.png",
+      "sha256": "ae69913d6565b0a39a8eddeea5d839a4be621c0fae2bb8dffb615ac487def19e"
+    },
+    {
+      "scope": "seven actual axiom-5 rows and Box/Diamond rule labels",
+      "filename": "ACTUAL_AXIOM5_HTML.png",
+      "sha256": "46e0839f252cbf86cbe7ad23cfb1c09f9e8219ddfefc0e0ba6f9bf0f4fce361a"
+    }
+  ],
+  "limitations": [
+    "This is a validated local checkpoint for 179 corrective source decisions; the comprehensive audit, final staging, whole-source cold reproduction and publication remain incomplete.",
+    "All 57 generated diagrams were directly viewed in five actual SVG contact sheets. This does not assert that all PDF pages or all HTML/EPUB reading sections were visually inspected.",
+    "Three desktop/mobile HTML images, five actual EPUB XHTML samples, the five-formula MathML sheet and the seven-row axiom-5 HTML table were directly viewed. The two additional current HTML browser detail images were generated but are not included as inspected.",
+    "No independent human review is asserted."
+  ]
+}

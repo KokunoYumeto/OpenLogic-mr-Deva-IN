@@ -1,0 +1,22 @@
+{
+  "schema": "openlogic-derivability-system-subscript-check/1",
+  "status": "local_macro_and_MathML_checks_passed; full_HTML_EPUB_rebuild_pending",
+  "assembled_reader_sha256": "d99436ce281be93cb7a1d03e17dd15df1c5b6ff530d4cc0b1dad1a384ffdf621",
+  "actual_system_indexed_macro_occurrences_checked": 104,
+  "actual_negative_occurrences": 11,
+  "native_MathML_operator_cases": 4,
+  "previous_HTML_sha256": "78d8b9a427546f6a1742a5770f11ee351589465dd24bd5532c6f68edfd1b2d13",
+  "previous_HTML_unattached_system_annotations": 96,
+  "corrected_tools": [
+    {
+      "path": "tools/core_html_proofs.py",
+      "sha256": "c8f0a63de8ccb566dc4a3bad8aa64aa17ad0f528bd02886170a370f32f308beb"
+    },
+    {
+      "path": "tools/prepare_complete_html.py",
+      "sha256": "b0a9576ae631549b56f941c7da1006974261d8e4970576ffa50f2a191aa267d3"
+    }
+  ],
+  "finding_mr": "Proves च्या xparse slash आणि optional system argument चे योग्य operator व subscript जपले. जुन्या HTML मध्ये 96 annotations ने system ला square-bracket expression म्हणून दाखवले होते. स्थानिक conversion आता native MathML msub मध्ये योग्य positive/negative relation व system देते.",
+  "limitations_mr": "फक्त निर्दिष्ट macro uses व चार native MathML cases पडताळले. जुन्या HTML/EPUB artifacts अद्याप बदललेले नाहीत; full rebuild, browser visual inspection, final staging आणि publication बाकी. संपूर्ण tools किंवा corpus review पूर्ण झाल्याचा दावा नाही."
+}

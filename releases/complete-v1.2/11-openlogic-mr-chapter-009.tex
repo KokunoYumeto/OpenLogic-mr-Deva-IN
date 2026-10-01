@@ -1,0 +1,1812 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 9: क्रमवर्ती कलन
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{क्रमवर्ती कलन}\label{fol:seq::chap}
+\begin{editorial}
+  या प्रकरणात अभिजात प्रथम-क्रम तर्कशास्त्रासाठी गेंटझेन यांचे मानक
+  क्रमवर्ती कलन LK मांडले आहे. यात आणखी उदाहरणे आणि सराव समाविष्ट करणे
+  उपयुक्त ठरेल. सिद्धता-पद्धती म्हणून क्रमवर्ती कलनाशी संबंधित मजकूर
+  समाविष्ट करण्यासाठी किंवा वगळण्यासाठी ``prfLK'' हा टॅग वापरा.
+\end{editorial}
+
+
+
+
+
+
+\section{नियम आणि निष्पत्ती}\label{fol:seq:rul:sec}
+
+पुढील मजकुरात, $\Gamma, \Delta, \Pi, \Lambda$ या वाक्यांच्या सांत
+क्रमिका दर्शवतील, असे मानू.
+
+\begin{defn}[क्रमवर्ती]
+\emph{क्रमवर्ती} म्हणजे पुढील रूपाची अभिव्यक्ती होय:
+\[\Gamma \Sequent \Delta
+\]
+येथे $\Gamma$ आणि $\Delta$ या $\Lang L$ भाषेतील वाक्यांच्या
+सांत (संभवतः रिक्त) क्रमिका आहेत. $\Gamma$ ला \emph{पूर्वांग}, तर
+$\Delta$ ला \emph{उत्तरांग} म्हणतात.
+\end{defn}
+
+\begin{explain}
+क्रमवर्तीमागील अंतःप्रेरित कल्पना अशी आहे: पूर्वांगातील सर्व वाक्ये
+सत्य असतील, तर उत्तरांगातील वाक्यांपैकी किमान एक सत्य असते. म्हणजे,
+$\Gamma = \tuple{\varphi_1, \dots, \varphi_m}$ आणि
+$\Delta = \tuple{\psi_1, \dots, \psi_n}$ असतील, तर $\Gamma \Sequent \Delta$
+तेव्हा आणि केवळ तेव्हाच सत्य असते, जेव्हा
+\[(\varphi_1 \land \cdots \land \varphi_m) \lif (\psi_1 \lor \cdots \lor
+\psi_n)
+\]
+सत्य असते. याची दोन विशेष प्रकरणे आहेत: $\Gamma$ रिक्त असण्याचे आणि
+$\Delta$~रिक्त असण्याचे. $\Gamma$ रिक्त असेल, म्हणजेच $m = 0$ असेल, तर
+$\quad \Sequent \Delta$ तेव्हा आणि केवळ तेव्हाच सत्य असते, जेव्हा
+$\psi_1 \lor \dots \lor \psi_n$ सत्य असते. $\Delta$ रिक्त असेल, म्हणजेच
+$n = 0$ असेल, तर $\Gamma \Sequent \quad$ तेव्हा आणि केवळ तेव्हाच सत्य
+असते, जेव्हा $\lnot(\varphi_1 \land \dots \land \varphi_m)$ सत्य असते. एखाद्या
+क्रमवर्तीला तेव्हा आणि केवळ तेव्हाच वैध म्हणतो, जेव्हा तिच्याशी संबंधित
+वाक्य वैध असते.
+\end{explain}
+
+$\Gamma$ ही वाक्यांची क्रमिका असेल, तर $\Gamma$ च्या उजव्या टोकाला
+$\varphi$ जोडून मिळणाऱ्या क्रमिकेसाठी आपण $\Gamma, \varphi$ लिहितो (आणि $\Gamma$
+च्या डाव्या टोकाला $\varphi$ जोडून मिळणाऱ्या क्रमिकेसाठी $\varphi, \Gamma$
+लिहितो). $\Delta$ हीदेखील वाक्यांची क्रमिका असेल, तर $\Gamma,
+\Delta$ ही त्या दोन क्रमिकांची जोडणी असते.
+
+\begin{defn}[आरंभीची क्रमवर्ती]
+\emph{आरंभीची क्रमवर्ती} म्हणजे, भाषेतील कोणत्याही वाक्य~$\varphi$ साठी,
+पुढीलपैकी एका रूपाची क्रमवर्ती होय:
+  \begin{enumerate}
+    \item $\varphi \Sequent \varphi$
+    \item $\quad \Sequent \ltrue$
+    \item $\lfalse \Sequent \quad$
+  \end{enumerate}.
+\end{defn}
+
+क्रमवर्ती कलनातील निष्पत्त्या हे क्रमवर्तींचे विशिष्ट वृक्ष असतात.
+त्यांतील सर्वांत वरच्या क्रमवर्ती आरंभीच्या क्रमवर्ती असतात; आणि एखादी
+क्रमवर्ती इतर एक किंवा दोन क्रमवर्तींच्या खाली असेल, तर ती निगमनाच्या
+एखाद्या नियमानुसार त्यांच्यापासून योग्य रीतीने निष्पन्न झाली पाहिजे.
+$\Log{LK}$ चे नियम दोन मुख्य प्रकारांत विभागले आहेत: \emph{तार्किक} नियम
+आणि \emph{संरचनात्मक} नियम. खालच्या क्रमवर्तीतील $\varphi$ आणि/किंवा $\psi$
+असलेल्या वाक्याच्या मुख्य संकारक वरून तार्किक नियमांना नावे दिली
+जातात. प्रत्येक नियमाच्या दोन आवृत्त्या असतात: संकारक असलेले
+वाक्य डावीकडे असणारी क्रमवर्ती निष्पन्न करण्यासाठी एक, आणि ते
+वाक्य उजवीकडे असणारी क्रमवर्ती निष्पन्न करण्यासाठी दुसरी.
+
+
+
+
+
+
+
+
+
+\section{विधानीय नियम}\label{fol:seq:prl:sec}
+
+\subsection{$\lnot$ साठीचे नियम}
+
+\begin{defish}
+\Axiom$ \Gamma \fCenter \Delta, \varphi $
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$ \lnot \varphi, \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$\varphi, \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lnot \varphi $
+\DisplayProof
+\end{defish}
+
+\subsection{$\land$ साठीचे नियम}
+
+\begin{defish}\noindent
+\begin{tabular}{l}
+\Axiom$ \varphi, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$ \varphi \land \psi, \Gamma \fCenter \Delta$
+\DisplayProof
+\\[3ex]
+\Axiom$\psi, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$\varphi \land \psi, \Gamma \fCenter \Delta$
+\DisplayProof
+\end{tabular}
+\hfill
+\Axiom$\Gamma \fCenter \Delta, \varphi$
+\Axiom$ \Gamma \fCenter \Delta, \psi$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ \Gamma \fCenter \Delta, \varphi \land \psi $
+\DisplayProof
+\end{defish}
+\subsection{$\lor$ साठीचे नियम}
+\begin{defish}
+\Axiom$\varphi, \Gamma \fCenter \Delta$
+\Axiom$\psi, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\varphi \lor \psi, \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\begin{tabular}{r}
+\Axiom$\Gamma \fCenter \Delta, \varphi$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \Gamma \fCenter \Delta, \varphi \lor \psi$
+\DisplayProof
+\\[3ex]
+\Axiom$ \Gamma \fCenter \Delta, \psi$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \Gamma \fCenter \Delta, \varphi \lor \psi$
+\DisplayProof
+\end{tabular}
+\end{defish}
+\subsection{$\lif$ साठीचे नियम}
+\begin{defish}
+\Axiom$ \Gamma \fCenter \Delta, \varphi$
+\Axiom$ \psi, \Pi \fCenter \Lambda$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$ \varphi \lif \psi, \Gamma, \Pi \fCenter \Delta, \Lambda$
+\DisplayProof
+\hfill
+\Axiom$ \varphi, \Gamma \fCenter \Delta, \psi$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \Gamma \fCenter \Delta, \varphi \lif \psi $
+\DisplayProof
+\end{defish}
+\section{संख्यापकांचे नियम}\label{fol:seq:qrl:sec}
+\subsection{$\lforall$ साठीचे नियम}
+\begin{defish}
+\Axiom$ \varphi(t), \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$ \lforall[x][\varphi(x)],\Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, \varphi(a) $
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lforall[x][\varphi(x)]$
+\DisplayProof
+\end{defish}
+\LeftR{\lforall} मध्ये, $t$ हे बंद पद आहे (म्हणजे, चरे नसलेले पद).
+\RightR{\lforall} मध्ये, $a$~हा असा स्थिरांक आहे की तो
+\RightR{\lforall} नियमाच्या खालच्या क्रमवर्तीमध्ये कोठेही येता कामा नये.
+\RightR{\forall} अनुमानाचा $a$~हा \emph{आयगेन चर} आहे, असे आपण
+म्हणतो.\footnote{वरील नियमात $a$ हा स्थिरांक असला तरी आपण
+``आयगेन चर'' ही संज्ञा वापरतो. यामागे ऐतिहासिक कारणे आहेत.}
+\enlargethispage{1pt}
+\subsection{$\lexists$ साठीचे नियम}
+\begin{defish}
+\Axiom$ \varphi(a), \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][\varphi(x)], \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, \varphi(t) $
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$ \Gamma \fCenter \Delta, \lexists[x][\varphi(x)]$
+\DisplayProof
+\end{defish}
+पुन्हा, $t$~हे बंद पद आहे आणि $a$~हा असा स्थिरांक आहे की तो
+\LeftR{\lexists} नियमाच्या खालच्या क्रमवर्तीमध्ये येत नाही.
+\LeftR{\lexists} अनुमानाचा $a$~हा \emph{आयगेन चर} आहे, असे आपण म्हणतो.
+\RightR{\lforall} किंवा \LeftR{\lexists} अनुमानाच्या खालच्या
+क्रमवर्तीमध्ये आयगेन चर येत नसावा, या अटीला \emph{आयगेन चराची अट}
+म्हणतात.
+\begin{explain}
+ही प्रथा आठवा: $\varphi$ हे असे सूत्र असेल की त्यात
+चल~$x$ मुक्त असेल, तर हे आपण~$\varphi(x)$ असे लिहून दर्शवतो.
+त्याच संदर्भात, मग $\varphi(t)$ हा~$\Subst{\varphi}{t}{x}$ चा संक्षेप असतो.
+त्यामुळे \RightR{\lexists} नियम पुढीलप्रमाणेही लिहिता येईल:
+\begin{prooftree}
+  \Axiom$\Gamma \fCenter \Delta, \Subst{\varphi}{t}{x}$
+  \RightLabel{\RightR{\lexists}}
+  \UnaryInf$\Gamma \fCenter \Delta, \lexists[x][\varphi]$
+\end{prooftree}
+लक्षात घ्या की~$\varphi$ मध्ये $t$ आधीच येऊ शकते; उदा., $\varphi$ हे
+~$\Atom{\Obj P}{t,x}$ असू शकते. म्हणून,~$\Gamma \Sequent \Delta,
+\Atom{\Obj P}{t,t}$ पासून $\Gamma \Sequent \Delta,
+\lexists[x][\Atom{\Obj P}{t,x}]$ निष्पन्न करणे हा
+\RightR{\lexists} चा योग्य उपयोग आहे---आधारविधानात~$t$ ज्या ठिकाणी
+आले आहे, त्यांपैकी एक किंवा अधिक ठिकाणी (म्हणजे, त्या पदाच्या एक किंवा अधिक
+आस्थितींच्या जागी) बद्ध चल~$x$ घालता येतो; सर्वच आस्थिती बदलणे आवश्यक नाही. परंतु
+\RightR{\lforall} आणि~\LeftR{\lexists} मधील आयगेन चराच्या अटींनुसार
+स्थिरांक~$a$ हा~$\varphi$ मध्ये येता कामा नये. म्हणून,
+$\RightR{\lforall}$ वापरून $\Gamma \Sequent \Delta, \Atom{\Obj P}{a,a}$
+पासून $\Gamma \Sequent \Delta, \lforall[x][\Atom{\Obj P}{a,x}]$
+योग्य रीतीने निष्पन्न करता येत नाही.
+\end{explain}
+\begin{explain}
+\RightR{\lexists} आणि \LeftR{\lforall} मध्ये पद~$t$ बंद असण्याव्यतिरिक्त
+त्यावर आणखी कोणतेही निर्बंध नाहीत. याउलट, \LeftR{\lexists} आणि \RightR{\lforall}
+नियमांमध्ये आयगेन चराच्या अटीनुसार वरच्या क्रमवर्तीमध्ये~$\varphi(a)$ च्या
+बाहेर स्थिरांक~$a$ कोठेही येता कामा नये. ही पद्धत निर्दोष आहे,
+म्हणजे ती केवळ वैध क्रमवर्तीच निष्पन्न करते, याची खात्री करण्यासाठी ही
+अट आवश्यक आहे. ही अट नसती, तर पुढील निष्पत्त्या अनुज्ञात असत्या:
+\begin{prooftree}
+  \Axiom$\varphi(a) \fCenter \varphi(a)$
+  \RightLabel{*\LeftR{\lexists}}
+  \UnaryInf$\lexists[x][\varphi(x)] \fCenter \varphi(a)$
+  \RightLabel{\RightR{\lforall}}
+  \UnaryInf$\lexists[x][\varphi(x)] \fCenter \lforall[x][\varphi(x)]$
+  \DisplayProof\bottomAlignProof
+  \qquad
+  \Axiom$\varphi(a) \fCenter \varphi(a)$
+  \RightLabel{*\RightR{\lforall}}
+  \UnaryInf$\varphi(a) \fCenter \lforall[x][\varphi(x)]$
+  \RightLabel{\LeftR{\lexists}}
+  \UnaryInf$\lexists[x][\varphi(x)] \fCenter \lforall[x][\varphi(x)]$
+\end{prooftree}
+परंतु $\lexists[x][\varphi(x)] \Sequent \lforall[x][\varphi(x)]$ ही क्रमवर्ती
+वैध नाही.
+\end{explain}
+\section{संरचनात्मक नियम}\label{fol:seq:srl:sec}
+क्रमवर्तीच्या डाव्या आणि उजव्या बाजूंवरील वाक्यांची मांडणी बदलता येईल,
+असे आणखी काही नियम आपल्याला आवश्यक आहेत. तार्किक नियम ज्या वाक्ये वर
+लागू होतो, ती आधारविधानात अगदी डाव्या किंवा अगदी उजव्या टोकाला असणे आवश्यक
+असते. त्यामुळे वाक्ये योग्य स्थानी हलवता यावीत म्हणून आपल्याला
+``अदलाबदल'' नियमाची गरज आहे. तसेच कधी कधी दोन एकसारखी वाक्ये एकात
+एकत्र करता येणे आणि दोन्हींपैकी कोणत्याही बाजूला वाक्य जोडता येणे
+महत्त्वाचे असते.
+\subsection{दुर्बलीकरण}
+\begin{defish}
+\Axiom$ \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ \varphi, \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$ \Gamma \fCenter \Delta, \varphi$
+\DisplayProof
+\end{defish}
+\subsection{आकुंचन}
+\begin{defish}
+\Axiom$ \varphi, \varphi, \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\Contraction}}
+\UnaryInf$ \varphi, \Gamma \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, \varphi, \varphi$
+\RightLabel{\RightR{\Contraction}}
+\UnaryInf$ \Gamma \fCenter \Delta, \varphi$
+\DisplayProof
+\end{defish}
+\subsection{अदलाबदल}
+\begin{defish}
+\Axiom$ \Gamma, \varphi, \psi, \Pi \fCenter \Delta $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \Gamma, \psi, \varphi, \Pi \fCenter \Delta$
+\DisplayProof
+\hfill
+\Axiom$ \Gamma \fCenter \Delta, \varphi, \psi, \Lambda$
+\RightLabel{\RightR{\Exchange}}
+\UnaryInf$ \Gamma \fCenter \Delta, \psi, \varphi, \Lambda$
+\DisplayProof
+\end{defish}
+दुर्बलीकरण, आकुंचन आणि अदलाबदल या अनुमानांची मालिका अनेकदा दुहेरी
+अनुमानरेषांनी दर्शवली जाते.
+पुढील ``कट'' नावाचा नियम काटेकोर अर्थाने आवश्यक नाही; मात्र त्यामुळे
+निष्पत्त्या पुन्हा वापरणे आणि एकत्र करणे पुष्कळ सोपे होते.
+\begin{defish}
+\[
+\Axiom$ \Gamma \fCenter \Delta, \varphi$
+\Axiom$ \varphi, \Pi \fCenter \Lambda $
+\RightLabel{\Cut}
+\BinaryInf$ \Gamma, \Pi \fCenter \Delta, \Lambda$
+\DisplayProof
+\]
+\end{defish}
+
+
+
+
+
+
+
+
+
+\section{निष्पत्ती}\label{fol:seq:der:sec}
+
+\begin{explain}
+आरंभीची क्रमवर्ती कशी असते हे आपण सांगितले आहे आणि निगमन नियम दिले आहेत.
+क्रमवर्ती कलनातील निष्पत्त्या यांपासून विगमनाधारित रीतीने निर्माण केल्या
+जातात: प्रत्येक निष्पत्ती ही एकतर स्वतःच आरंभीची क्रमवर्ती असते, किंवा
+एका अनुमानाच्या वर असलेल्या एक किंवा दोन निष्पत्त्या ने बनलेली असते.
+\end{explain}
+
+\begin{defn}[$\Log{LK}$ निष्पत्ती]
+क्रमवर्ती~$S$ ची \emph{$\Log{LK}$-निष्पत्ती} म्हणजे पुढील अटी पूर्ण
+करणारा क्रमवर्तींचा सांत वृक्ष होय:
+\begin{enumerate}
+\item वृक्षातील सर्वांत वरच्या क्रमवर्ती आरंभीच्या क्रमवर्ती असतात.
+\item वृक्षातील सर्वांत खालची क्रमवर्ती~$S$ असते.
+\item वृक्षातील $S$ व्यतिरिक्त प्रत्येक क्रमवर्ती ही निगमन नियमाच्या योग्य
+  उपयोजनाचे आधारविधान असते आणि त्या उपयोजनाचा निष्कर्ष वृक्षात त्या
+  क्रमवर्तीच्या थेट खाली असतो.
+\end{enumerate}
+यानंतर $S$ ला त्या निष्पत्तीची \emph{अंतिम क्रमवर्ती} म्हणतो आणि
+$S$ ही \emph{$\Log{LK}$ मध्ये निष्पन्न करता येण्याजोगे} आहे (किंवा ती
+$\Log{LK}$-निष्पन्न करता येण्याजोगे आहे) असे म्हणतो.
+\end{defn}
+
+\begin{ex}
+प्रत्येक आरंभीची क्रमवर्ती, उदा., $\chi \Sequent \chi$, ही निष्पत्ती असते.
+उदाहरणार्थ, $\LeftR{\Weakening}$ नियम लागू करून आपण तिच्यापासून नवी
+निष्पत्ती मिळवू शकतो:
+\begin{prooftree}
+\Axiom$ \Gamma \fCenter \Delta $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ \varphi, \Gamma \fCenter \Delta$
+\end{prooftree}
+मात्र हा नियम सर्वसाधारण स्वरूपाचा आहे: नियमातील $\varphi$ च्या जागी कोणतेही
+वाक्य, उदा., $\theta$ सुद्धा, घेता येते. आधारविधान आपल्या आरंभीच्या
+क्रमवर्ती $\chi \Sequent \chi$ शी जुळत असेल, तर $\Gamma$ आणि $\Delta$ ही दोन्ही
+केवळ~$\chi$ असतात आणि निष्कर्ष $\theta, \chi \Sequent \chi$ असा असेल. म्हणून पुढील
+ही निष्पत्ती आहे:
+\begin{prooftree}
+\Axiom$ \chi \fCenter \chi $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ \theta, \chi \fCenter \chi$
+\end{prooftree}
+आता आपण दुसरा नियम, समजा $\LeftR{\Exchange}$, लागू करू शकतो; त्यामुळे
+डावीकडील दोन वाक्यांची अदलाबदल करता येते. म्हणून पुढीलही योग्य
+निष्पत्ती आहे:
+\begin{prooftree}
+\Axiom$ \chi \fCenter \chi $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ \theta, \chi \fCenter \chi$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \chi, \theta \fCenter \chi$
+\end{prooftree}
+नियमाच्या या उपयोजनात—मूळ नियम पुढीलप्रमाणे दिला होता—
+\begin{prooftree}
+\Axiom$ \Gamma, \varphi, \psi, \Pi \fCenter \Delta $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \Gamma, \psi, \varphi, \Pi \fCenter \Delta,$
+\end{prooftree}
+$\Gamma$ आणि $\Pi$ दोन्ही रिक्त ठेवले होते, $\Delta$ हे $\chi$ होते, आणि
+$\varphi$ व $\psi$ यांच्या भूमिका अनुक्रमे $\theta$ आणि~$\chi$ यांनी बजावल्या. अगदी
+याच प्रकारे पुढीलही निष्पत्ती आहे हे आपल्याला दिसते:
+\begin{prooftree}
+\Axiom$ \theta \fCenter \theta $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ \chi, \theta \fCenter \theta$
+\end{prooftree}
+आता या दोन निष्पत्त्या घेऊन $\RightR{\land}$ च्या साहाय्याने त्यांना
+एकत्र करता येते. तो नियम असा होता:
+\begin{prooftree}
+\Axiom$\Gamma \fCenter \Delta, \varphi$
+\Axiom$ \Gamma \fCenter \Delta, \psi$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ \Gamma \fCenter \Delta, \varphi \land \psi $
+\end{prooftree}
+आपल्या उदाहरणात आधारविधाने त्यांवर संपणाऱ्या निष्पत्त्यांच्या अंतिम
+क्रमवर्तींशी जुळली पाहिजेत. याचा अर्थ $\Gamma$ हे $\chi, \theta$ आहे, $\Delta$
+रिक्त आहे, $\varphi$ हे $\chi$ आहे आणि $\psi$ हे $\theta$ आहे. म्हणून अनुमान योग्य
+असेल, तर निष्कर्ष $\chi, \theta \Sequent \chi \land \theta$ हा आहे.
+\begin{prooftree}
+\Axiom$ \chi \fCenter \chi $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ \theta, \chi \fCenter \chi$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \chi, \theta \fCenter \chi$
+\Axiom$ \theta \fCenter \theta $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ \chi, \theta \fCenter \theta$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ \chi, \theta \fCenter \chi \land \theta $
+\end{prooftree}
+अर्थात, आधारविधानांचा क्रम उलटाही करता येतो; मग $\varphi$ हे $\theta$ आणि $\psi$
+हे~$\chi$ असेल.
+\begin{prooftree}
+\Axiom$ \theta \fCenter \theta $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ \chi, \theta \fCenter \theta$
+\Axiom$ \chi \fCenter \chi $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ \theta, \chi \fCenter \chi$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \chi, \theta \fCenter \chi$
+\RightLabel{\RightR{\land}}
+\BinaryInf$ \chi, \theta \fCenter \theta \land \chi $
+\end{prooftree}
+\end{ex}
+
+
+
+
+
+
+
+
+
+\section{निष्पत्ती: उदाहरणे}\label{fol:seq:pro:sec}
+
+\begin{ex}
+क्रमवर्ती $\varphi \land \psi \Sequent \varphi$ ची एक $\Log{LK}$-निष्पत्ती द्या.
+
+हवी असलेली अंतिम क्रमवर्ती निष्पत्तीच्या तळाशी लिहून आपण सुरुवात करतो.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\varphi\land \psi \fCenter \varphi$
+\end{prooftree}
+यानंतर, या स्वरूपाची खालची क्रमवर्ती कोणत्या प्रकारच्या अनुमानामुळे मिळू शकते
+हे शोधावे लागते. ते एखाद्या संरचनात्मक नियमाचे उपयोजन असू शकते; पण आधी
+तार्किक नियम शोधणे योग्य ठरते. खालच्या क्रमवर्तीत येणारा एकमेव तार्किक
+संयोजक $\land$ आहे; म्हणून आपण $\land$ चा नियम शोधत आहोत. $\land$ हे चिन्ह
+पूर्वांगात येत असल्यामुळे आपण \LeftR{\land} नियम पाहतो.
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{\LeftR{\land}}
+\UnaryInf$\varphi\land \psi \fCenter \varphi$
+\end{prooftree}
+\LeftR{\land} अनुमानाची वरची क्रमवर्ती काय असू शकते यासाठी दोन पर्याय आहेत:
+वरची क्रमवर्ती $\varphi \Sequent \varphi$ किंवा $\psi \Sequent \varphi$ असू शकते. स्पष्टपणे,
+$\varphi \Sequent \varphi$ ही आरंभीची क्रमवर्ती आहे (ही आपल्या दृष्टीने चांगली बाब
+आहे), तर $\psi \Sequent \varphi$ ही सर्वसाधारणपणे निष्पन्न करता येत नाही. आपण वरची
+क्रमवर्ती भरू:
+\begin{prooftree}
+\Axiom$\varphi \fCenter \varphi$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$\varphi\land \psi \fCenter \varphi$
+\end{prooftree}
+आता आपल्याकडे क्रमवर्ती $\varphi \land \psi \Sequent \varphi$ ची योग्य
+$\Log{LK}$-निष्पत्ती आहे.
+\end{ex}
+
+\begin{ex}
+क्रमवर्ती $\lnot \varphi \lor \psi \Sequent \varphi \lif \psi$ ची एक
+$\Log{LK}$-निष्पत्ती द्या.
+
+हवी असलेली अंतिम क्रमवर्ती निष्पत्तीच्या तळाशी लिहून सुरुवात करा.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot \varphi \lor \psi \fCenter \varphi \lif \psi$
+\end{prooftree}
+ही अंतिम क्रमवर्ती देऊ शकेल असा तार्किक नियम शोधण्यासाठी तिच्यातील तार्किक
+संयोजक पाहू: $\lnot$, $\lor$ आणि $\lif$. सध्या आपल्याला फक्त $\lor$ आणि
+$\lif$ यांचा विचार करायचा आहे, कारण ती अंतिम क्रमवर्तीतील वाक्यांची
+मुख्य संकारक आहेत; $\lnot$ दुसऱ्या संयोजकाच्या व्याप्तीच्या आत आहे,
+म्हणून त्याचा विचार आपण नंतर करू. शेवटच्या अनुमानासाठी आपल्याकडे
+\LeftR{\lor} नियम आणि \RightR{\lif} नियम हे तार्किक नियमांचे पर्याय आहेत.
+खरे तर कोणताही नियम निवडता येईल; पण आपण \RightR{\lif} नियम निवडू (दुसरे
+काही कारण नसले तरी त्यामुळे दोन शाखांत विभागणे काही काळ पुढे ढकलता येते).
+ही खालची क्रमवर्ती देऊ शकणाऱ्या \RightR{\lif} अनुमानांच्या स्वरूपानुसार ते
+पुढीलप्रमाणे असले पाहिजे:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \varphi, \lnot \varphi \lor \psi \fCenter \psi $
+\RightLabel{\RightR{\lif}} \UnaryInf$ \lnot \varphi \lor \psi \fCenter \varphi \lif \psi $
+\end{prooftree}
+
+$\lnot \varphi \lor \psi$ हे पूर्वांगाच्या बाहेरील टोकाला हलवले, तर आपण
+\LeftR{\lor} नियम लागू करू शकतो. रूपबंधानुसार त्याचे पुढीलप्रमाणे दोन वरच्या
+क्रमवर्तींत विभाजन झाले पाहिजे:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot \varphi, \varphi \fCenter \psi$
+\AxiomC{}
+\UnaryInf$\psi, \varphi \fCenter \psi$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$ \lnot \varphi \lor \psi, \varphi \fCenter \psi $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \varphi, \lnot \varphi \lor \psi \fCenter \psi $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot \varphi \lor \psi \fCenter \varphi \lif \psi $
+\end{prooftree}
+आपण वरच्या दिशेने आरंभीच्या क्रमवर्तींपर्यंत वाट काढण्याचा प्रयत्न करीत आहोत
+हे लक्षात ठेवा; आपण बरेच जवळ आलो आहोत असे दिसते!{} उजवी शाखा आरंभीच्या
+क्रमवर्तीपासून केवळ एक दुर्बलीकरण आणि एक अदलाबदल दूर आहे; ते केल्यावर ती
+पूर्ण होते:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot \varphi, \varphi \fCenter \psi$
+\Axiom$\psi \fCenter \psi$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$\varphi, \psi \fCenter \psi$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\psi, \varphi \fCenter \psi$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot \varphi \lor \psi, \varphi \fCenter \psi $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \varphi, \lnot \varphi \lor \psi \fCenter \psi $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot \varphi \lor \psi \fCenter \varphi \lif \psi $
+\end{prooftree}
+
+आता डावी शाखा पाहू. कोणत्याही वाक्य मधील एकमेव तार्किक संयोजक हे
+पूर्वांगातील वाक्ये मधील $\lnot$ चिन्ह आहे; म्हणून आपण
+\LeftR{\lnot} नियमाचे एक उपयोजन शोधत आहोत.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \varphi \fCenter \psi, \varphi$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot \varphi, \varphi \fCenter \psi$
+\Axiom$\psi \fCenter \psi$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$\varphi, \psi \fCenter \psi$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\psi, \varphi \fCenter \psi$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot \varphi \lor \psi, \varphi \fCenter \psi $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \varphi, \lnot \varphi \lor \psi \fCenter \psi $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot \varphi \lor \psi \fCenter \varphi \lif \psi $
+\end{prooftree}
+उजवी शाखा जशी पूर्ण केली, त्याचप्रमाणे ही डावी शाखासुद्धा पूर्ण होण्यासाठी
+आता केवळ एक दुर्बलीकरण आणि एक अदलाबदल करायची आहे.
+\begin{prooftree}
+\Axiom$\varphi \fCenter \varphi$
+\RightLabel{\RightR{\Weakening}}
+\UnaryInf$ \varphi \fCenter \varphi, \psi$
+\RightLabel{\RightR{\Exchange}}
+\UnaryInf$ \varphi \fCenter \psi, \varphi$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot \varphi, \varphi \fCenter \psi$
+\Axiom$\psi \fCenter \psi$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$\varphi, \psi \fCenter \psi$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\psi, \varphi \fCenter \psi$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot \varphi \lor \psi, \varphi \fCenter \psi $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$ \varphi, \lnot \varphi \lor \psi \fCenter \psi $
+\RightLabel{\RightR{\lif}}
+\UnaryInf$ \lnot \varphi \lor \psi \fCenter \varphi \lif \psi $
+\end{prooftree}
+\end{ex}
+
+\begin{ex}
+क्रमवर्ती $\lnot \varphi \lor \lnot \psi \Sequent \lnot (\varphi \land \psi)$ ची एक
+$\Log{LK}$-निष्पत्ती द्या.
+
+वरील तंत्रे वापरून, हवी असलेली अंतिम क्रमवर्ती तळाशी लिहून आपण सुरुवात करतो.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \lnot \varphi \lor \lnot \psi \fCenter \lnot (\varphi \land \psi) $
+\end{prooftree}
+अंतिम क्रमवर्तीतील वाक्यांची उपलब्ध मुख्य संक्रियके $\lor$ चिन्ह आणि
+$\lnot$ चिन्ह ही आहेत. येथे \LeftR{\lor} किंवा \RightR{\lnot} यांपैकी कोणताही
+नियम लागू केला तरी चालेल; पण दोन शाखांत विभागणे क्षणभर टाळता यावे म्हणून आपण
+\RightR{\lnot} नियमापासून सुरुवात करू:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\varphi \land \psi, \lnot \varphi \lor \lnot \psi \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot \varphi \lor \lnot \psi \fCenter \lnot (\varphi \land \psi)$
+\end{prooftree}
+आता \LeftR{\land} नियम पाहायचा की \LeftR{\lor} नियम, असा पर्याय आहे.
+\LeftR{\land} नियम लागू केल्यावर काय होते ते पाहू: $\varphi, \lnot \varphi \lor \lnot \psi
+\Sequent \quad$ या क्रमवर्तीपासून किंवा $\psi, \lnot \varphi \lor \lnot \psi \Sequent
+\quad$ या क्रमवर्तीपासून सुरुवात करण्याचा पर्याय आपल्याकडे आहे. ही
+निष्पत्ती $\varphi$ आणि $\psi$ यांच्या दृष्टीने सममित असल्यामुळे आपण पहिला पर्याय
+निवडू:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\varphi, \lnot \varphi \lor \lnot \psi \fCenter $
+\RightLabel{\LeftR{\land}}
+\UnaryInf$\varphi \land \psi, \lnot \varphi \lor \lnot \psi \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot \varphi \lor \lnot \psi \fCenter \lnot (\varphi \land \psi)$
+\end{prooftree}
+निष्पत्ती पुढे भरत राहिल्यावर आपल्यासमोर एक अडचण येते:
+\begin{prooftree}
+\Axiom$\varphi \fCenter \varphi$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$ \lnot \varphi, \varphi \fCenter$
+\AxiomC{}
+\RightLabel{?}
+\UnaryInf$\varphi \fCenter \psi$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$ \lnot \psi, \varphi \fCenter$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot \varphi \lor \lnot \psi, \varphi \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\varphi, \lnot \varphi \lor \lnot \psi \fCenter $
+\RightLabel{\LeftR{\land}}
+\UnaryInf$\varphi \land \psi, \lnot \varphi \lor \lnot \psi \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot \varphi \lor \lnot \psi \fCenter \lnot (\varphi \land \psi)$
+\end{prooftree}
+उजव्या शाखेच्या वरच्या टोकाचे आणखी लघुकरण करता येत नाही आणि संरचनात्मक
+अनुमानांच्या साहाय्याने तिला आरंभीची क्रमवर्ती बनवताही येत नाही; म्हणून हा
+योग्य मार्ग नाही. त्यामुळे वर \LeftR{\land} नियम लागू करणे ही स्पष्टपणे चूक
+होती. मागील अवस्थेकडे परत जाऊन त्याऐवजी \LeftR{\lor} नियम लागू केल्यावर
+आपल्याला पुढील निष्पत्ती मिळते:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lnot \varphi, \varphi \land \psi \fCenter $
+
+\AxiomC{}
+\UnaryInf$\lnot \psi, \varphi \land \psi \fCenter $
+
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot \varphi \lor \lnot \psi, \varphi \land \psi \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\varphi \land \psi, \lnot \varphi \lor \lnot \psi \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot \varphi \lor \lnot \psi \fCenter \lnot (\varphi \land \psi)$
+\end{prooftree}
+पूर्वी केल्याप्रमाणे प्रत्येक शाखा पूर्ण केल्यावर आपल्याला पुढील निष्पत्ती
+मिळते:
+\begin{prooftree}
+\Axiom$ \varphi \fCenter\varphi$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$\varphi \land \psi \fCenter \varphi$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot \varphi, \varphi \land \psi \fCenter $
+
+\Axiom$ \psi \fCenter \psi$
+\RightLabel{\LeftR{\land}}
+\UnaryInf$\varphi \land \psi \fCenter \psi$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot \psi, \varphi \land \psi \fCenter $
+
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$\lnot \varphi \lor \lnot \psi, \varphi \land \psi \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\varphi \land \psi, \lnot \varphi \lor \lnot \psi \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\lnot \varphi \lor \lnot \psi \fCenter \lnot (\varphi \land \psi)$
+\end{prooftree}
+(या पायऱ्यांत $\lnot$ नियमांपेक्षा खाली $\land$ नियम लागू केले असते, तरीही
+आपल्याला योग्य निष्पत्ती मिळाली असती).
+\end{ex}
+
+\begin{ex}
+आतापर्यंत आपण आकुंचन नियम वापरलेला नाही; परंतु कधी कधी तो आवश्यक असतो. असे
+घडणारे एक उदाहरण पाहू. आपल्याला $\quad \Sequent \varphi \lor \lnot \varphi$ सिद्ध
+करायचे आहे असे समजा. $\RightR{\lor}$ उलट्या दिशेने लागू केल्यास पुढील दोन
+निष्पत्त्या पैकी एक मिळेल:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \fCenter \varphi$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter \varphi \lor \lnot \varphi$
+\DisplayProof\qquad\bottomAlignProof
+\AxiomC{}
+\UnaryInf$\varphi \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \fCenter \lnot \varphi$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter \varphi \lor \lnot \varphi$
+\end{prooftree}
+यांपैकी कोणतीही अर्थातच आरंभीच्या क्रमवर्तीवर संपत नाही. यासाठीची युक्ती अशी
+की आकुंचन नियम आपल्याला वाक्याच्या दोन प्रती एकात एकत्र करू देतो—आणि
+सिद्धता शोधताना, म्हणजे तळापासून वर जाताना, आपण आधारविधानात $\varphi \lor \lnot
+\varphi$ ची एक प्रत राखून ठेवू शकतो, उदा.,
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \fCenter \varphi \lor \lnot \varphi, \varphi$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter \varphi \lor \lnot \varphi, \varphi \lor \lnot \varphi$
+\RightLabel{\RightR{\Contraction}}
+\UnaryInf$ \fCenter \varphi \lor \lnot \varphi$
+\end{prooftree}
+आता आपण $\RightR{\lor}$ दुसऱ्यांदा लागू करून~$\lnot \varphi$ सुद्धा मिळवू शकतो;
+त्यातून एक पूर्ण निष्पत्ती मिळते.
+\begin{prooftree}
+\Axiom$\varphi \fCenter \varphi$
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\fCenter \varphi, \lnot \varphi$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$\fCenter \varphi, \varphi \lor \lnot \varphi$
+\RightLabel{\RightR{\Exchange}}
+\UnaryInf$ \fCenter \varphi \lor \lnot \varphi, \varphi$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$ \fCenter \varphi \lor \lnot \varphi, \varphi \lor \lnot \varphi$
+\RightLabel{\RightR{\Contraction}}
+\UnaryInf$ \fCenter \varphi \lor \lnot \varphi$
+\end{prooftree}
+\end{ex}
+
+\begin{prob}
+पुढील क्रमवर्तींसाठी निष्पत्त्या तयार करा:
+\begin{enumerate}
+\item $\varphi \land (\psi \land \chi) \Sequent (\varphi \land \psi) \land \chi$.
+\item $\varphi \lor (\psi \lor \chi) \Sequent (\varphi \lor \psi) \lor \chi$.
+\item $\varphi \lif (\psi \lif \chi) \Sequent \psi \lif (\varphi \lif \chi)$.
+\item $\varphi \Sequent \lnot\lnot \varphi$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+पुढील क्रमवर्तींसाठी निष्पत्त्या तयार करा:
+\begin{enumerate}
+\item $(\varphi \lor \psi) \lif \chi \Sequent \varphi \lif \chi$.
+\item $(\varphi \lif \chi) \land (\psi \lif \chi) \Sequent (\varphi \lor \psi) \lif \chi$.
+\item $\Sequent \lnot(\varphi \land \lnot \varphi)$.
+\item $\psi \lif \varphi \Sequent \lnot \varphi \lif \lnot \psi$.
+\item $\Sequent (\varphi \lif \lnot \varphi) \lif \lnot \varphi$.
+\item $\Sequent \lnot(\varphi \lif \psi) \lif \lnot \psi$.
+\item $\varphi \lif \chi \Sequent \lnot (\varphi \land \lnot \chi)$.
+\item $\varphi \land \lnot \chi \Sequent \lnot (\varphi \lif \chi)$.
+\item $\varphi \lor \psi, \lnot \psi \Sequent \varphi$.
+\item $\lnot \varphi \lor \lnot \psi \Sequent \lnot(\varphi \land \psi)$.
+\item $\Sequent (\lnot \varphi \land \lnot \psi) \lif\lnot(\varphi \lor \psi)$.
+\item $\Sequent \lnot(\varphi \lor \psi) \lif (\lnot \varphi \land \lnot \psi)$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+पुढील क्रमवर्तींसाठी निष्पत्त्या तयार करा:
+\begin{enumerate}
+\item $\lnot(\varphi \lif \psi) \Sequent \varphi$.
+\item $\lnot(\varphi \land \psi) \Sequent \lnot \varphi \lor \lnot \psi$.
+\item $\varphi \lif \psi \Sequent \lnot \varphi \lor \psi$.
+\item $\Sequent \lnot \lnot \varphi \lif \varphi$.
+\item $\varphi \lif \psi, \lnot \varphi \lif \psi \Sequent \psi$.
+\item $(\varphi \land \psi) \lif \chi \Sequent (\varphi \lif \chi) \lor (\psi \lif \chi)$.
+\item $(\varphi \lif \psi) \lif \varphi \Sequent \varphi$.
+\item $\Sequent (\varphi \lif \psi) \lor (\psi \lif \chi)$.
+\end{enumerate}
+(या सर्वांसाठी $\RightR{\Contraction}$~नियम आवश्यक आहे.)
+\end{prob}
+
+
+
+
+
+
+
+
+\section{संख्यापकांसह निष्पत्ती}\label{fol:seq:prq:sec}
+
+\begin{ex}
+क्रमवर्ती $\lexists[x][\lnot \varphi(x)]
+\Sequent \lnot \lforall[x][\varphi(x)]$ ची एक $\Log{LK}$-निष्पत्ती द्या.
+
+संख्यापक हाताळताना आयगेन चराच्या अटीचा भंग होणार नाही याची खात्री करावी
+लागते; काही वेळा त्यासाठी ठरावीक अनुमाने कोणत्या क्रमाने करायची, यात फेरबदल
+करावा लागतो. सामान्यतः आयगेन चराची अट लागू असलेले नियम आधी हाताळण्याचा
+प्रयत्न केल्यास मदत होते (पूर्ण झालेल्या सिद्धतेत ते खालच्या बाजूस असतील).
+तसेच पुढे काय येईल याचा विचार करून आरंभीची क्रमवर्ती कशी असेल याचा अंदाज
+लावणे उपयुक्त ठरते. आपल्या बाबतीत ती $\varphi(a) \Sequent \varphi(a)$ यासारखी असावी
+लागेल. याचा अर्थ असा की संख्यापकांचे नियम ``उलट्या दिशेने'' लागू करताना
+$\lforall$ नियम आणि $\lexists$ नियम या दोन्हींसाठी एकच पद---ज्याला आपण $a$
+म्हणू---निवडावे लागेल. प्रत्येक नियमासाठी वेगवेगळी पदे निवडली, तर शेवटी
+$\varphi(a) \Sequent \varphi(b)$ यासारखी क्रमवर्ती मिळेल; ती अर्थातच निष्पन्न करता
+येत नाही.
+
+नेहमीप्रमाणे आपण पुढील क्रमवर्ती लिहून सुरुवात करतो:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lexists[x][\lnot \varphi(x)] \fCenter \lnot \lforall[x][\varphi(x)]$
+\end{prooftree}
+आपण \LeftR{\exists} नियम किंवा \RightR{\lnot} नियम यांपैकी कोणताही लागू करू
+शकतो. \LeftR{\exists} नियमाला आयगेन चराची अट लागू असल्यामुळे तो उशिरा
+हाताळण्यापेक्षा लवकर हाताळणे योग्य ठरेल; म्हणून तोच नियम आधी लागू करू.
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$ \lnot \varphi(a) \fCenter \lnot \lforall[x][\varphi(x)]$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][\lnot \varphi(x)] \fCenter \lnot \lforall[x][\varphi(x)]$
+\end{prooftree}
+\LeftR{\lnot} आणि \RightR{\lnot} नियम उलट्या दिशेने लागू केल्यावर पुढील
+निष्पत्ती मिळते:
+\begin{prooftree}
+\AxiomC{}
+\UnaryInf$\lforall[x][\varphi(x)] \fCenter \varphi(a)$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot \varphi(a), \lforall[x][\varphi(x)] \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\lforall[x][\varphi(x)], \lnot \varphi(a) \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \lnot \varphi(a) \fCenter \lnot \lforall[x] \varphi(x)$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x] \lnot \varphi(x) \fCenter \lnot \lforall[x] \varphi(x)$
+\end{prooftree}
+या टप्प्यावर \LeftR{\forall} नियम लागू करणे हाच आपल्यापुढील एकमेव पर्याय
+आहे. या नियमाला आयगेन चराचे बंधन लागू नसल्यामुळे आपला मार्ग मोकळा आहे.
+आपल्याला आरंभीची क्रमवर्ती (जिचे स्वरूप $\varphi(a) \Sequent \varphi(a)$ असे आहे)
+मिळवण्याचा प्रयत्न करायचा आहे, हे आठवा; म्हणून नियम लागू करताना $\varphi$ मध्ये
+घालायचे पद म्हणून $a$ निवडले पाहिजे.
+\begin{prooftree}
+\Axiom$\varphi(a) \fCenter \varphi(a)$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$\lforall[x][\varphi(x)] \fCenter \varphi(a)$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot \varphi(a), \lforall[x][\varphi(x)] \fCenter $
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\lforall[x][\varphi(x)], \lnot \varphi(a) \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \lnot \varphi(a) \fCenter \lnot \lforall[x][\varphi(x)]$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$ \lexists[x][ \lnot \varphi(x)] \fCenter \lnot \lforall[x][\varphi(x)]$
+\end{prooftree}
+विशेषतः संख्यापक हाताळताना, या टप्प्यावर आयगेन चराच्या अटीचा भंग झालेला नाही
+ना, हे पुन्हा तपासणे महत्त्वाचे असते. आयगेन चराची अट लागू असलेला आपण वापरलेला
+एकमेव नियम \LeftR{\exists} होता आणि आयगेन चर~$a$ त्याच्या खालच्या क्रमवर्तीत
+(म्हणजे अंतिम क्रमवर्तीत) येत नाही; म्हणून ही योग्य निष्पत्ती आहे.
+\end{ex}
+
+\begin{prob}
+पुढील क्रमवर्तींसाठी निष्पत्त्या तयार करा:
+\begin{enumerate}
+\item $\Sequent (\lforall[x][\varphi(x)] \land \lforall[y][\psi(y)]) \lif
+\lforall[z][(\varphi(z) \land \psi(z))]$.
+\item $\Sequent (\lexists[x][\varphi(x)] \lor \lexists[y][\psi(y)]) \lif
+\lexists[z][(\varphi(z) \lor \psi(z))]$.
+\item $\lforall[x][(\varphi(x) \lif \psi)] \Sequent \lexists[y][\varphi(y)] \lif \psi$.
+\item $\lforall[x][\lnot \varphi(x)] \Sequent \lnot\lexists[x][\varphi(x)]$.
+\item $\Sequent \lnot\lexists[x][\varphi(x)] \lif \lforall[x][\lnot \varphi(x)]$.
+\item $\Sequent \lnot\lexists[x][\lforall[y][((\varphi(x,y) \lif \lnot
+\varphi(y,y)) \land (\lnot \varphi(y,y) \lif \varphi(x,y)))]]$.
+\end{enumerate}
+\end{prob}
+
+\begin{prob}
+पुढील क्रमवर्तींसाठी निष्पत्त्या तयार करा:
+\begin{enumerate}
+\item $\Sequent \lnot\lforall[x][\varphi(x)] \lif \lexists[x][\lnot\varphi(x)]$.
+\item $(\lforall[x][\varphi(x)] \lif \psi) \Sequent \lexists[y][(\varphi(y) \lif \psi)]$.
+\item $\Sequent \lexists[x][(\varphi(x) \lif \lforall[y][\varphi(y)])]$.
+\end{enumerate}
+(या सर्वांसाठी $\RightR{\Contraction}$~नियम आवश्यक आहे.)
+\end{prob}
+
+
+
+
+
+
+
+\begin{editorial}
+  या विभागात नैसर्गिक निगमनासाठी सिद्धतायोग्यता संबंध आणि सुसंगतता यांच्या
+  व्याख्या एकत्रित केल्या आहेत.
+\end{editorial}
+
+
+
+\section{सिद्धता-उपपत्तीय संकल्पना}\label{fol:seq:ptn:sec}
+
+\begin{explain}
+जशा आपण अनेक महत्त्वाच्या चिन्हार्थविषयक संकल्पना (वैधता, तार्किक निष्पन्नता,
+पूर्ततायोग्यता) परिभाषित केल्या आहेत, तशाच त्यांना अनुरूप
+\emph{सिद्धता-उपपत्तीय संकल्पना} आता परिभाषित करू. संरचना मध्ये
+वाक्यांची पूर्ति होते की नाही, याचा आधार घेऊन या संकल्पना परिभाषित
+केल्या जात नाहीत; त्याऐवजी ठरावीक क्रमवर्तींची निष्पन्नता किंवा
+अनिष्पन्नता यांचा आधार घेतला जातो. या दोन प्रकारच्या संकल्पना
+एकमेकांशी जुळतात, हा एक महत्त्वाचा शोध होता. त्या जुळतात, हाच
+\emph{निर्दोषता प्रमेय} आणि \emph{संपूर्णता प्रमेय} यांचा आशय आहे.
+\end{explain}
+
+\begin{defn}[प्रमेये]
+वाक्य~$\varphi$ हे \emph{प्रमेय} असते, जर $\Log{LK}$ मध्ये
+$\quad \Sequent \varphi$ या क्रमवर्तीची निष्पत्ती असेल. $\varphi$ हे प्रमेय
+असेल तर आपण $\Proves \varphi$ लिहितो आणि ते प्रमेय नसेल तर $\Proves/ \varphi$ लिहितो.
+\end{defn}
+
+\begin{defn}[निष्पन्नता]
+वाक्य~$\varphi$ हे वाक्यांच्या संच~$\Gamma$ \emph{पासून
+निष्पन्न करता येण्याजोगे} असते, म्हणजे $\Gamma \Proves \varphi$, तेव्हा आणि केवळ तेव्हाच,
+जेव्हा एखादा सांत उपसंच~$\Gamma_0 \subseteq \Gamma$ आणि $\Gamma_0$ मधील
+वाक्यांची एखादी क्रमिका $\Gamma_0'$ अशी असते की $\Log{LK}$
+$\Gamma_0' \Sequent \varphi$ हे निष्पन्न करते. $\varphi$ हे $\Gamma$ पासून
+निष्पन्न करता येण्याजोगे नसेल, तर आपण $\Gamma \Proves/ \varphi$ लिहितो.
+\end{defn}
+
+आकुंचन, दुर्बलीकरण आणि अदलाबदल नियमांमुळे $\Gamma_0'$ मधील
+वाक्यांचा क्रम आणि त्यांची पुनरावृत्ती कितीदा होते हे महत्त्वाचे नसते:
+$\Gamma_0' \Sequent \varphi$ ही क्रमवर्ती निष्पन्न करता येण्याजोगे असेल, तर
+$\Gamma_0'$ मध्ये असलेली तीच वाक्ये असणाऱ्या कोणत्याही
+$\Gamma_0''$ साठी $\Gamma_0'' \Sequent \varphi$ ही क्रमवर्तीसुद्धा निष्पन्न करता
+येते. उदाहरणार्थ, $\Gamma_0 = \{\psi, \chi\}$ असेल, तर
+$\Gamma_0' = \tuple{\psi, \psi, \chi}$ आणि $\Gamma_0'' =
+\tuple{\chi, \chi, \psi}$ या दोन्ही क्रमिकांमध्ये $\Gamma_0$ मधीलच
+वाक्ये आहेत. यांपैकी एक क्रमिका असणारी क्रमवर्ती निष्पन्न करता येण्याजोगे असेल,
+तर दुसरी असणारी क्रमवर्तीसुद्धा निष्पन्न करता येते; उदा.:
+\begin{prooftree}
+  \AxiomC{}
+  \Deduce$\psi, \psi, \chi \fCenter \varphi$
+  \RightLabel{\LeftR{\Contraction}}
+  \UnaryInf$\psi, \chi \fCenter \varphi$
+  \RightLabel{\LeftR{\Exchange}}
+  \UnaryInf$\chi, \psi \fCenter \varphi$
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$\chi, \chi, \psi \fCenter \varphi$
+\end{prooftree}
+यापुढे $\Gamma_0$ हा वाक्यांचा सांत संच असेल, तर
+$\Gamma_0 \Sequent \varphi$ याचा अर्थ असा कोणताही क्रमवर्ती घेऊ की ज्याच्या
+पूर्वांगात $\Gamma_0$ मधील वाक्यांची क्रमिका आहे; तसेच आवश्यक असल्यास
+आकुंचन, अदलाबदल आणि दुर्बलीकरणे गृहीत धरू.
+
+\begin{defn}[सुसंगतता]
+वाक्यांचा संच~$\Gamma$ हा \emph{विसंगत} असतो तेव्हा आणि केवळ तेव्हाच, जेव्हा
+एखादा सांत उपसंच~$\Gamma_0 \subseteq \Gamma$ असा असतो की $\Log{LK}$
+$\Gamma_0 \Sequent \quad$ हे निष्पन्न करते. $\Gamma$ विसंगत नसेल,
+म्हणजे प्रत्येक सांत $\Gamma_0 \subseteq \Gamma$ साठी $\Log{LK}$
+$\Gamma_0 \Sequent \quad$ हे निष्पन्न करत नसेल, तर त्याला
+\emph{सुसंगत} म्हणतो.
+\end{defn}
+
+\begin{prop}[परावर्तिता]
+\label{fol:seq:ptn:prop:reflexivity}
+$\varphi \in \Gamma$ असेल, तर $\Gamma \Proves \varphi$.
+\end{prop}
+
+\begin{proof}
+$\varphi \Sequent \varphi$ ही आरंभीची क्रमवर्ती निष्पन्न करता येण्याजोगे आहे आणि $\{\varphi\}
+\subseteq \Gamma$.
+\end{proof}
+
+\begin{prop}[एकस्वनिकता]
+\label{fol:seq:ptn:prop:monotonicity}
+$\Gamma \subseteq \Delta$ आणि $\Gamma \Proves \varphi$ असेल, तर $\Delta
+\Proves \varphi$.
+\end{prop}
+
+\begin{proof}
+$\Gamma \Proves \varphi$ असे समजा; म्हणजे, एखादा सांत $\Gamma_0
+\subseteq \Gamma$ असा आहे की $\Gamma_0 \Sequent \varphi$ ही क्रमवर्ती
+निष्पन्न करता येण्याजोगे आहे. $\Gamma \subseteq \Delta$ असल्यामुळे $\Gamma_0$ हा
+$\Delta$ चासुद्धा सांत उपसंच आहे. म्हणून $\Gamma_0 \Sequent \varphi$ ची
+निष्पत्ती ही $\Delta \Proves \varphi$ हेसुद्धा दाखवते.
+\end{proof}
+
+\begin{prop}[संक्रमकता]
+\label{fol:seq:ptn:prop:transitivity}
+$\Gamma \Proves \varphi$ आणि $\{\varphi\} \cup \Delta \Proves
+\psi$ असेल, तर $\Gamma \cup \Delta \Proves \psi$.
+\end{prop}
+
+\begin{proof}
+$\Gamma \Proves \varphi$ असेल, तर एखादा सांत $\Gamma_0 \subseteq \Gamma$
+आणि $\Gamma_0 \Sequent \varphi$ ची निष्पत्ती~$\pi_0$ असते.
+$\{\varphi\} \cup \Delta \Proves \psi$ असेल, तर एखाद्या सांत उपसंचासाठी
+$\Delta_0 \subseteq \Delta$, $\varphi, \Delta_0 \Sequent \psi$ ची
+निष्पत्ती~$\pi_1$ असते. पुढील निष्पत्ती विचारात घ्या:
+\begin{prooftree}
+  \AxiomC{}
+  \RightLabel{$\pi_0$}
+  \Deduce$\Gamma_0 \fCenter \varphi$
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\varphi, \Delta_0 \fCenter \psi$
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma_0, \Delta_0 \fCenter \psi$
+\end{prooftree}
+$\Gamma_0 \cup \Delta_0 \subseteq \Gamma \cup \Delta$ असल्यामुळे यावरून
+$\Gamma \cup \Delta \Proves \psi$ हे दिसते.
+\end{proof}
+
+विशेषतः, याचा अर्थ असा की $\Gamma \Proves \varphi$ आणि $\varphi
+\Proves \psi$ असेल, तर $\Gamma \Proves \psi$. तसेच $\varphi_1,
+\dots, \varphi_n \Proves \psi$ असेल आणि प्रत्येक~$i$ साठी $\Gamma \Proves \varphi_i$
+असेल, तर $\Gamma \Proves \psi$, हेसुद्धा यावरून मिळते.
+
+\begin{prop}
+\label{fol:seq:ptn:prop:incons}
+$\Gamma$ विसंगत असतो तेव्हा आणि केवळ तेव्हाच, जेव्हा प्रत्येक
+  वाक्य~$\varphi$ साठी $\Gamma \Proves {\varphi}$.
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+\begin{prob}
+\ref{fol:seq:ptn:prop:incons} सिद्ध करा.
+\end{prob}
+
+\begin{prop}[संहतता]
+  \label{fol:seq:ptn:prop:proves-compact}
+  \begin{enumerate}
+  \item $\Gamma \Proves \varphi$ असेल, तर एखादा सांत उपसंच $\Gamma_0
+    \subseteq \Gamma$ असा आहे की $\Gamma_0 \Proves \varphi$.
+  \item $\Gamma$ चा प्रत्येक सांत उपसंच सुसंगत असेल, तर $\Gamma$ सुसंगत
+    असतो.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\Gamma \Proves \varphi$ असेल, तर एखादा सांत उपसंच
+      $\Gamma_0 \subseteq \Gamma$ असा आहे की $\Gamma_0
+      \Sequent \varphi$ या क्रमवर्तीची निष्पत्ती आहे. परिणामी,
+      $\Gamma_0 \Proves \varphi$.
+    \item $\Gamma$ विसंगत असेल, तर एखादा सांत
+      उपसंच~$\Gamma_0 \subseteq \Gamma$ असा आहे की $\Log{LK}$
+      $\Gamma_0 \Sequent \quad$ हे निष्पन्न करते. पण मग $\Gamma_0$ हा
+      $\Gamma$ चा विसंगत सांत उपसंच आहे.
+  \end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+
+\section{निष्पन्नता आणि सुसंगतता}\label{fol:seq:prv:sec}
+
+आता आपण निष्पन्नता संबंधाचे अनेक गुणधर्म सिद्ध करू. ते स्वतंत्रपणेही
+महत्त्वाचे आहेत, पण संपूर्णता प्रमेयाच्या सिद्धतेत प्रत्येकाची भूमिका असेल.
+
+\begin{prop}\label{fol:seq:prv:prop:provability-contr}
+  जर $\Gamma \Proves \varphi$ आणि $\Gamma \cup \{\varphi\}$ विसंगत असेल, तर
+  $\Gamma$ विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+अशी सांत $\Gamma_0$ आणि $\Gamma_1 \subseteq \Gamma$ असतात की
+$\Log{LK}$ निष्पन्न $\Gamma_0 \Sequent \varphi$ आणि $\varphi, \Gamma_1
+\Sequent \quad$. $\Gamma_0 \Sequent \varphi$ ची $\Log{LK}$-निष्पत्ती
+~$\pi_0$ आणि $\Gamma_1, \varphi \Sequent \quad$ ची $\Log{LK}$-निष्पत्ती
+~$\pi_1$ अशी नावे देऊ. मग आपण निष्पन्न करू शकतो
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{$\pi_0$}
+\Deduce$ \Gamma_0 \fCenter \varphi $
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\varphi, \Gamma_1 \fCenter $
+\RightLabel{\Cut}
+\BinaryInf$ \Gamma_0,\Gamma_1 \fCenter $
+\end{prooftree}
+
+कारण $\Gamma_0 \subseteq \Gamma$ आणि $\Gamma_1 \subseteq \Gamma$,
+$\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$; म्हणून $\Gamma$ विसंगत आहे.
+\end{proof}
+
+\begin{prop}
+\label{fol:seq:prv:prop:prov-incons}
+$\Gamma \Proves \varphi$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{\lnot \varphi\}$
+विसंगत असते.
+\end{prop}
+
+\begin{proof}
+प्रथम $\Gamma \Proves \varphi$ असे गृहीत धरा; म्हणजे $\Gamma \Sequent \varphi$ ची
+निष्पत्ती~$\pi_0$ आहे. $\LeftR{\lnot}$ नियम जोडल्यावर आपल्याला
+$\lnot \varphi, \Gamma
+\Sequent \quad$ ची निष्पत्ती मिळते; म्हणजे $\Gamma \cup \{\lnot \varphi\}$
+विसंगत आहे.
+
+जर $\Gamma \cup \{\lnot \varphi\}$ विसंगत असेल, तर $\lnot \varphi, \Gamma
+\Sequent \quad$ ची निष्पत्ती~$\pi_1$ असते. खालील $\Gamma \Sequent \varphi$
+ची निष्पत्ती आहे:
+\begin{prooftree}
+  \Axiom$\varphi \fCenter \varphi$
+  \RightLabel{\RightR{\lnot}}
+  \UnaryInf$\fCenter \varphi, \lnot \varphi$
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\lnot \varphi, \Gamma \fCenter$
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma \fCenter \varphi$
+\end{prooftree}
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves \lnot \varphi$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{\varphi\}$
+विसंगत असते, हे सिद्ध करा.
+\end{prob}
+
+\begin{prop}\label{fol:seq:prv:prop:explicit-inc}
+  जर $\Gamma \Proves \varphi$ आणि $\lnot \varphi \in \Gamma$ असेल, तर $\Gamma$
+  विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+  समजा $\Gamma \Proves \varphi$ आणि $\lnot \varphi \in \Gamma$. मग $\Gamma_0 \Sequent
+  \varphi$ ची निष्पत्ती~$\pi$ असते. $\lnot \varphi, \Gamma_0 \Sequent \quad$
+  ही क्रमवर्तीही निष्पन्न करता येण्याजोगे आहे:
+  \begin{prooftree}
+    \AxiomC{}
+    \RightLabel{$\pi$}
+    \Deduce$\Gamma_0 \fCenter \varphi$
+    \Axiom$\varphi \fCenter \varphi$
+    \RightLabel{\LeftR{\lnot}}
+    \UnaryInf$\lnot \varphi, \varphi \fCenter$
+    \RightLabel{\LeftR{\Exchange}}
+    \UnaryInf$\varphi, \lnot \varphi \fCenter$
+    \RightLabel{\Cut}
+    \BinaryInf$\Gamma_0, \lnot \varphi \fCenter$
+  \end{prooftree}
+  कारण $\lnot \varphi \in \Gamma$ आणि $\Gamma_0 \subseteq \Gamma$, यावरून
+  $\Gamma$ विसंगत असल्याचे दिसते.
+\end{proof}
+
+\begin{prop}\label{fol:seq:prv:prop:provability-exhaustive}
+  जर $\Gamma \cup \{\varphi\}$ आणि $\Gamma \cup \{\lnot \varphi\}$ दोन्ही
+  विसंगत असतील, तर $\Gamma$ विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+अशी सांत संच $\Gamma_0 \subseteq \Gamma$ आणि $\Gamma_1
+\subseteq \Gamma$, तसेच $\Log{LK}$-निष्पत्त्या $\pi_0$ आणि $\pi_1$
+$\varphi, \Gamma_0 \Sequent \quad$ आणि $\lnot \varphi, \Gamma_1 \Sequent
+\quad$ यांचे अनुक्रमे, असतात. मग आपण निष्पन्न करू शकतो
+\begin{prooftree}
+\AxiomC{}
+\RightLabel{$\pi_0$}
+\Deduce$ \varphi, \Gamma_0 \fCenter $
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$ \Gamma_0 \fCenter \lnot \varphi$
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\lnot \varphi, \Gamma_1 \fCenter  $
+\RightLabel{\Cut}
+\BinaryInf$ \Gamma_0, \Gamma_1 \fCenter $
+\end{prooftree}
+कारण $\Gamma_0 \subseteq \Gamma$ आणि $\Gamma_1 \subseteq \Gamma$,
+$\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$. म्हणून $\Gamma$ विसंगत आहे.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+\section{निष्पन्नता आणि विधानीय संयोजक}\label{fol:seq:ppr:sec}
+
+\begin{explain}
+  क्रमवर्ती कलनातील निष्पन्नता संबंध~$\Proves$ हा विधानीय संयोजकांशी
+  संबंधित काही मूलभूत तथ्ये सिद्ध करण्यासाठी पुरेसा सामर्थ्यवान आहे; उदाहरणार्थ,
+  $\varphi \land \psi
+  \Proves \varphi$ आणि $\varphi, \varphi \lif \psi \Proves \psi$ (विध्यात्मक अनुमान). ही
+  तथ्ये संपूर्णता प्रमेयाच्या सिद्धतेसाठी आवश्यक आहेत.
+\end{explain}
+
+\begin{prop}\label{fol:seq:ppr:prop:provability-land}
+  \begin{enumerate}
+  \item \label{fol:seq:ppr:prop:provability-land-left} $\varphi \land \psi \Proves
+    \varphi$ आणि $\varphi \land \psi \Proves \psi$ ही दोन्ही तथ्ये सत्य आहेत.
+  \item \label{fol:seq:ppr:prop:provability-land-right} $\varphi, \psi \Proves \varphi \land
+    \psi$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $\varphi \land \psi \Sequent \varphi$ आणि $\varphi \land \psi \Sequent
+    \psi$ या दोन्ही क्रमवर्ती निष्पन्न करता येण्याजोगे आहेत:
+    \begin{prooftree}
+      \Axiom$\varphi \fCenter \varphi$
+      \RightLabel{\LeftR{\land}}
+      \UnaryInf$\varphi \land \psi \fCenter \varphi$
+      \DisplayProof\qquad\bottomAlignProof
+      \Axiom$\psi \fCenter \psi$
+      \RightLabel{\LeftR{\land}}
+      \UnaryInf$\varphi \land \psi \fCenter \psi$
+    \end{prooftree}
+    \item $\varphi, \psi \Sequent \varphi \land \psi$ या क्रमवर्तीची निष्पत्ती येथे आहे:
+    \begin{prooftree}
+      \Axiom$\varphi \fCenter \varphi$
+      \Axiom$\psi \fCenter \psi$
+      \RightLabel{\RightR{\land}}
+      \BinaryInf$\varphi, \psi \fCenter \varphi \land \psi$
+    \end{prooftree}
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\label{fol:seq:ppr:prop:provability-lor}
+  \begin{enumerate}
+  \item $\varphi \lor \psi, \lnot \varphi, \lnot \psi$ विसंगत आहे.
+  \item $\varphi \Proves \varphi \lor \psi$ आणि $\psi \Proves \varphi \lor \psi$ ही दोन्ही तथ्ये आहेत.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $\varphi \lor \psi, \lnot \varphi,
+    \lnot \psi \Sequent$ या क्रमवर्तीची निष्पत्ती देऊ:
+    \begin{prooftree}
+      \Axiom$\varphi \fCenter \varphi$
+      \RightLabel{\LeftR{\lnot}}
+      \UnaryInf$\lnot \varphi, \varphi \fCenter$
+      \doubleLine
+      \UnaryInf$\varphi, \lnot \varphi, \lnot \psi \fCenter$
+      \Axiom$\psi \fCenter \psi$
+      \RightLabel{\LeftR{\lnot}}
+      \UnaryInf$\lnot \psi, \psi \fCenter$
+      \doubleLine
+      \UnaryInf$\psi, \lnot \varphi, \lnot \psi \fCenter$
+      \RightLabel{\LeftR{\lor}}
+      \BinaryInf$ \varphi \lor \psi, \lnot \varphi, \lnot \psi \fCenter $
+    \end{prooftree}
+    (दुहेरी अनुमान-रेषा दुर्बलीकरण, आकुंचन आणि अदलाबदल यांच्या अनेक अनुमानांना
+    दर्शवतात, हे लक्षात ठेवा.)
+  \item   $\varphi \Sequent \varphi \lor \psi$ आणि $\psi \Sequent \varphi
+    \lor \psi$ या दोन्ही क्रमवर्तींना निष्पत्त्या आहेत:
+    \begin{prooftree}
+      \Axiom$\varphi \fCenter \varphi$
+      \RightLabel{\RightR{\lor}}
+      \UnaryInf$\varphi \fCenter \varphi \lor \psi$
+      \DisplayProof\qquad\bottomAlignProof
+      \Axiom$\psi \fCenter \psi$
+      \RightLabel{\RightR{\lor}}
+      \UnaryInf$\psi \fCenter \varphi \lor \psi$
+    \end{prooftree}
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\label{fol:seq:ppr:prop:provability-lif}
+  \begin{enumerate}
+  \item \label{fol:seq:ppr:prop:provability-lif-left}  $\varphi, \varphi \lif \psi \Proves \psi$.
+  \item \label{fol:seq:ppr:prop:provability-lif-right}
+    $\lnot \varphi \Proves \varphi \lif \psi$ आणि $\psi \Proves \varphi \lif \psi$ ही दोन्ही तथ्ये आहेत.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\varphi \lif \psi, \varphi \Sequent \psi$ ही क्रमवर्ती निष्पन्न करता येण्याजोगे आहे:
+      \begin{prooftree}
+        \Axiom$\varphi \fCenter \varphi$
+        \Axiom$\psi \fCenter \psi$
+        \RightLabel{\LeftR{\lif}}
+        \BinaryInf$\varphi \lif \psi, \varphi  \fCenter \psi$
+      \end{prooftree}
+    \item $\lnot \varphi \Sequent \varphi \lif \psi$ आणि $\psi
+      \Sequent \varphi \lif \psi$ या दोन्ही क्रमवर्ती निष्पन्न करता येण्याजोगे आहेत:
+      \begin{prooftree}
+        \Axiom$\varphi \fCenter \varphi$
+        \RightLabel{\LeftR{\lnot}}
+        \UnaryInf$\lnot \varphi, \varphi \fCenter$
+        \RightLabel{\LeftR{\Exchange}}
+        \UnaryInf$\varphi, \lnot \varphi \fCenter$
+        \RightLabel{\RightR{\Weakening}}
+        \UnaryInf$\varphi, \lnot \varphi \fCenter \psi$
+        \RightLabel{\RightR{\lif}}
+        \UnaryInf$\lnot \varphi \fCenter \varphi \lif \psi$
+        \DisplayProof\qquad\bottomAlignProof
+        \Axiom$\psi \fCenter \psi$
+        \RightLabel{\LeftR{\Weakening}}
+        \UnaryInf$\varphi, \psi \fCenter \psi$
+        \RightLabel{\RightR{\lif}}
+        \UnaryInf$\psi \fCenter \varphi \lif \psi$
+      \end{prooftree}
+  \end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+\section{निष्पन्नता आणि संख्यापक}\label{fol:seq:qpr:sec}
+
+\begin{explain}
+  संपूर्णता प्रमेयासाठी या विभागात स्थापित केलेली~$\Proves$ संबंधी तथ्ये
+  क्रमवर्ती कलनातील नियमांनी निष्पन्न होतात, हेही आवश्यक आहे.
+\end{explain}
+
+\begin{thm}
+\label{fol:seq:qpr:thm:strong-generalization} जर $c$ हे $\Gamma$ किंवा $\varphi(x)$ मध्ये
+न येणारे स्थिर असेल आणि $\Gamma \Proves \varphi(c)$, तर $\Gamma
+\Proves \lforall[x][\varphi(x)]$.
+\end{thm}
+
+\begin{proof}
+$\pi_0$ ही $\Gamma_0 \Sequent \varphi(c)$ या क्रमवर्तीची $\Log{LK}$-निष्पत्ती
+असलेली एखादी सांत $\Gamma_0 \subseteq \Gamma$ घ्या.  $\RightR{\lforall}$
+अनुमान जोडल्यावर आपल्याला $\Gamma_0 \Sequent
+\lforall[x][\varphi(x)]$ ची निष्पत्ती मिळते, कारण $c$ हे $\Gamma$ किंवा
+$\varphi(x)$ मध्ये येत नाही आणि म्हणून आयगेन चराची अट पूर्ण होते.
+\end{proof}
+
+\begin{prop}
+\label{fol:seq:qpr:prop:provability-quantifiers}
+\begin{enumerate}
+\item $\varphi(t) \Proves \lexists[x][\varphi(x)]$.
+\item $\lforall[x][\varphi(x)] \Proves \varphi(t)$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\begin{enumerate}
+\item $\varphi(t) \Sequent \lexists[x][\varphi(x)]$ ही क्रमवर्ती
+  निष्पन्न करता येण्याजोगे आहे:
+  \begin{prooftree}
+    \Axiom$\varphi(t) \fCenter \varphi(t)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\varphi(t) \fCenter \lexists[x][\varphi(x)]$
+    \end{prooftree}
+\item $\lforall[x][\varphi(x)] \Sequent \varphi(t)$ ही क्रमवर्ती
+  निष्पन्न करता येण्याजोगे आहे:
+  \begin{prooftree}
+    \Axiom$\varphi(t) \fCenter \varphi(t)$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][\varphi(x)] \fCenter \varphi(t)$
+    \end{prooftree}
+\end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+
+\section{निर्दोषता}\label{fol:seq:sou:sec}
+
+\begin{explain}
+क्रमवर्ती कलनासारखी निष्पत्ती-पद्धत \emph{निर्दोष} असते, जर ती
+प्रत्यक्षात धारण न करणाऱ्या गोष्टी निष्पन्न करू शकत नसेल. त्यामुळे
+निर्दोषता हा निष्पत्ती-पद्धतींसाठी हमी दिलेल्या सुरक्षिततेचा एक प्रकार
+आहे. कोणता सिद्धता-उपपत्तीय गुणधर्म विचारात आहे यावर अवलंबून, उदाहरणार्थ,
+आपल्याला पुढील गोष्टी हव्या असतात:
+\begin{enumerate}
+\item प्रत्येक निष्पन्न करता येण्याजोगे~$\varphi$ हे वैध असते;
+\item एखादे वाक्य इतर काही वाक्यांपासून निष्पन्न करता येण्याजोगे असेल, तर ते
+  त्यांचे तार्किक परिणामही असते;
+\item वाक्यांचा संच विसंगत असेल, तर तो अपूर्ततायोग्य असतो.
+\end{enumerate}
+हे निष्पत्ती-पद्धतीचे महत्त्वाचे गुणधर्म आहेत. यांपैकी एखादा गुणधर्म
+खरा नसेल, तर निष्पत्ती-पद्धतीत दोष आहे—ती खूप जास्त निष्पत्ती
+निष्पन्न करेल. म्हणून निष्पत्ती-पद्धतीची निर्दोषता सिद्ध करणे अत्यंत
+महत्त्वाचे आहे.
+
+वरील सर्व सिद्धता-उपपत्तीय गुणधर्म क्रमवर्ती कलनातील ठरावीक क्रमवर्तींच्या
+निष्पन्नता द्वारे परिभाषित केलेले असल्याने, (1)--(3) सिद्ध करण्यासाठी
+निष्पन्न करता येण्याजोगे क्रमवर्तींच्या चिन्हार्थविषयक गुणधर्मांबद्दल काहीतरी सिद्ध करावे
+लागते. प्रथम क्रमवर्ती \emph{वैध} असणे म्हणजे काय ते परिभाषित करू आणि मग
+प्रत्येक निष्पन्न करता येण्याजोगे क्रमवर्ती वैध असते हे दाखवू. त्यानंतर (1)--(3) या
+परिणामाच्या उपपरिणामांप्रमाणे मिळतील.
+\end{explain}
+
+\begin{defn}
+संरचना~$\Struct
+  M$ क्रमवर्ती
+$\Gamma \Sequent \Delta$ \emph{पूर्ण करते} तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Sat/{M}{\varphi}$ हे एखाद्या $\varphi \in \Gamma$ साठी किंवा
+$\Sat{M}{\varphi}$ हे एखाद्या $\varphi \in \Delta$ साठी असते.
+
+क्रमवर्ती \emph{वैध} असते तेव्हा आणि केवळ तेव्हाच, जेव्हा प्रत्येक
+संरचना~$\Struct
+  M$ ते पूर्ण करते.
+\end{defn}
+
+\begin{thm}[निर्दोषता]
+\label{fol:seq:sou:thm:sequent-soundness} जर $\Log{LK}$ निष्पन्न $\Theta
+\Sequent \Xi$, तर $\Theta \Sequent \Xi$ वैध आहे.
+\end{thm}
+
+\begin{proof}
+  $\Theta \Sequent \Xi$ ची निष्पत्ती~$\pi$ असू द्या. $\pi$ मधील
+अनुमानांची संख्या~$n$ यावर विगमनाने पुढे जाऊ.
+
+अनुमानांची संख्या~$0$ असेल, तर $\pi$ मध्ये फक्त आरंभीची क्रमवर्ती असते.
+प्रत्येक आरंभीची क्रमवर्ती $\varphi \Sequent \varphi$ स्पष्टपणे वैध असते, कारण प्रत्येक
+$\Struct M$ साठी एकतर
+  $\Sat/{M}{\varphi}$ किंवा
+$\Sat{M}{\varphi}$.
+
+  अनुमानांची संख्या~0 पेक्षा जास्त असेल, तर सर्वांत खालच्या अनुमानाच्या
+प्रकारानुसार प्रकरणे वेगळी करू. विगमन गृहीतकानुसार त्या अनुमानाची आधारविधाने
+वैध आहेत असे गृहीत धरू, कारण कोणत्याही आधारविधानाच्या निष्पत्तीमधील
+अनुमानांची संख्या~$n$ पेक्षा कमी असते.
+
+प्रथम, एकच आधारविधान असलेली संभाव्य अनुमाने पाहू.
+\begin{enumerate}
+\item शेवटचे अनुमान दुर्बलीकरण आहे. मग $\Theta \Sequent \Xi$ हे एकतर
+  $\varphi, \Gamma \Sequent \Delta$ (शेवटचे अनुमान
+  \LeftR{\Weakening} असेल) किंवा $\Gamma \Sequent \Delta, \varphi$ (ते
+  \RightR{\Weakening} असेल), आणि निष्पत्ती पुढीलपैकी एका रूपात संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\Weakening}}
+    \UnaryInf$\varphi, \Gamma \fCenter \Delta$
+    \DisplayProof\qquad\bottomAlignProof
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta$
+    \RightLabel{\RightR{\Weakening}}
+    \UnaryInf$\Gamma \fCenter \Delta, \varphi$
+  \end{prooftree}
+  विगमन गृहीतकानुसार $\Gamma \Sequent \Delta$ वैध आहे; म्हणजे प्रत्येक
+  संरचना~$\Struct{M}$,
+  एकतर एखादे $\chi \in \Gamma$ असे आहे की
+  $\Sat/{M}{\chi}$, किंवा एखादे $\chi \in
+  \Delta$ असे आहे की $\Sat{M}{\chi}$.
+
+  जर $\Sat/{M}{\chi}$ हे एखाद्या $\chi \in \Gamma$ साठी
+  असेल, तर $\Theta = \varphi, \Gamma$ असल्याने $\chi \in \Theta$ देखील आहे आणि
+  म्हणून $\Sat/{M}{\chi}$ हे एखाद्या $\chi \in \Theta$ साठी
+  आहे. त्याचप्रमाणे, जर $\Sat{M}{\chi}$ हे एखाद्या
+  $\chi \in \Delta$ साठी असेल, तर $\chi \in \Xi$ आणि
+  $\Sat{M}{\chi}$ हे एखाद्या $\chi \in \Xi$ साठी आहे.
+  म्हणून $\Theta \Sequent \Xi$ वैध आहे.
+\item शेवटचे अनुमान \LeftR{\lnot} आहे. मग त्याचे आधारविधान
+  $\Gamma \Sequent \Delta, \varphi$ आणि निष्कर्ष $\lnot \varphi, \Gamma \Sequent
+  \Delta$ असतो; म्हणजे निष्पत्ती पुढील रूपात संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, \varphi$
+    \RightLabel{\LeftR{\lnot}}
+    \UnaryInf$\lnot \varphi, \Gamma \fCenter \Delta$
+  \end{prooftree}
+  आणि $\Theta = \lnot \varphi, \Gamma$, तर $\Xi = \Delta$.
+
+  विगमन गृहीतकानुसार $\Gamma \Sequent \Delta, \varphi$ वैध आहे; म्हणजे प्रत्येक
+  $\Struct{M}$ साठी एकतर (a) एखाद्या
+  $\chi \in \Gamma$ साठी
+  $\Sat/{M}{\chi}$, किंवा (b) एखाद्या $\chi \in
+  \Delta$ साठी, $\Sat{M}{\chi}$, किंवा (c)
+  $\Sat{M}{\varphi}$. $\Theta
+  \Sequent \Xi$ देखील वैध आहे हे दाखवायचे आहे. $\Struct{M}$
+    ही संरचना घ्या. (a) असल्यास,
+  एखादे $\chi \in \Gamma$ असे आहे की
+  $\Sat/{M}{\chi}$, आणि $\chi \in \Theta$ मध्ये
+  देखील आहे. (b) असल्यास, एखादे $\chi \in \Delta$ असे आहे की
+  $\Sat{M}{\chi}$, आणि $\chi \in \Xi$ मध्ये
+  देखील आहे. शेवटी, जर $\Sat{M}{\varphi}$ असेल, तर
+  $\Sat/{M}{\lnot \varphi}$. कारण $\lnot \varphi \in
+  \Theta$ मध्ये असल्याने, एखादे $\chi \in \Theta$ असे आहे की
+  $\Sat/{M}{\chi}$. म्हणून $\Theta
+  \Sequent \Xi$ वैध आहे.
+\item शेवटचे अनुमान \RightR{\lnot} आहे: सरावासाठी.
+\item शेवटचे अनुमान \LeftR{\land} आहे. याचे दोन प्रकार आहेत: आधारविधानाच्या
+  डाव्या बाजूला असलेल्या $\varphi$ किंवा $\psi$ पासून $\varphi
+  \land \psi$ डावीकडे निष्पन्न केले जाऊ शकते. पहिल्या प्रकारात $\pi$ पुढील रूपात
+  संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\varphi, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$\varphi \land \psi, \Gamma \fCenter \Delta$
+  \end{prooftree}
+  आणि $\Theta = \varphi \land \psi, \Gamma$, तर $\Xi = \Delta$. आता
+  संरचना~$\Struct
+  M$ घ्या. विगमन गृहीतकानुसार
+  $\varphi, \Gamma \Sequent \Delta$ वैध असल्याने, (a)
+  $\Sat/{M}{\varphi}$, (b)
+  $\Sat/{M}{\chi}$ हे एखाद्या $\chi \in \Gamma$ साठी, किंवा
+  (c)~$\Sat{M}{\chi}$ हे एखाद्या $\chi \in \Delta$ साठी.
+  (a) प्रकरणात $\Sat/{M}{\varphi \land \psi}$, म्हणून
+  $\chi \in \Theta$ (म्हणजे $\varphi \land \psi$) असे आहे की
+  $\Sat/{M}{\chi}$. (b) प्रकरणात एखादे $\chi
+  \in \Gamma$ असे आहे की $\Sat/{M}{\chi}$ आणि
+  $\chi \in \Theta$ देखील आहे. (c) प्रकरणात एखादे $\chi \in \Delta$ असे आहे
+  की $\Sat{M}{\chi}$ आणि $\Xi = \Delta$ असल्याने
+  $\chi \in \Xi$ देखील आहे. म्हणून प्रत्येक प्रकरणात
+  $\Struct
+    M$ $\varphi \land \psi, \Gamma \Sequent
+  \Delta$ पूर्ण करते. $\Struct{M}$ स्वेच्छ
+  असल्याने $\Gamma \Sequent \Delta$ वैध आहे. $\varphi \land \psi$ हे $\psi$ पासून
+  निष्पन्न होण्याचे प्रकरणही असेच हाताळता येते; फक्त $\varphi$ ऐवजी $\psi$ घ्या.
+\item शेवटचे अनुमान \RightR{\lor} आहे. याचे दोन प्रकार आहेत: आधारविधानाच्या
+  उजव्या बाजूला असलेल्या $\varphi$ किंवा $\psi$ पासून $\varphi
+  \lor \psi$ उजवीकडे निष्पन्न केले जाऊ शकते. पहिल्या प्रकारात $\pi$ पुढील रूपात
+  संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, \varphi$
+    \RightLabel{\RightR{\lor}}
+    \UnaryInf$\Gamma \fCenter \Delta, \varphi \lor \psi$
+  \end{prooftree}
+  येथे $\Theta = \Gamma$ आणि $\Xi = \Delta, \varphi \lor \psi$. आता
+  संरचना~$\Struct{M}$ घ्या.
+  $\Gamma \Sequent \Delta, \varphi$ वैध असल्याने, (a)
+  $\Sat{M}{\varphi}$, (b)
+  $\Sat/{M}{\chi}$ हे एखाद्या $\chi \in \Gamma$ साठी, किंवा
+  (c)~$\Sat{M}{\chi}$ हे एखाद्या $\chi \in \Delta$ साठी.
+  (a) प्रकरणात $\Sat{M}{\varphi \lor \psi}$. (b) प्रकरणात
+  एखादे $\chi \in \Gamma$ असे आहे की
+  $\Sat/{M}{\chi}$. (c) प्रकरणात एखादे $\chi
+  \in \Delta$ असे आहे की $\Sat{M}{\chi}$. म्हणून
+  प्रत्येक प्रकरणात $\Struct{M}$
+  $\Gamma \Sequent \Delta, \varphi \lor \psi$, म्हणजेच $\Theta \Sequent \Xi$ पूर्ण
+  करते. $\Struct{M}$ स्वेच्छ असल्याने
+  $\Theta \Sequent \Xi$ वैध आहे. $\varphi \lor \psi$ हे $\psi$ पासून निष्पन्न होण्याचे
+  प्रकरणही असेच हाताळता येते; फक्त $\varphi$ ऐवजी $\psi$ घ्या.
+\item शेवटचे अनुमान \RightR{\lif} आहे. मग $\pi$ पुढील रूपात संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\varphi, \Gamma \fCenter \Delta, \psi$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\Gamma \fCenter \Delta, \varphi \lif \psi$
+  \end{prooftree}
+  पुन्हा, विगमन गृहीतकानुसार आधारविधान वैध आहे; निष्कर्षही वैध आहे हे
+  दाखवायचे आहे. $\Struct{M}$ स्वेच्छ घ्या.
+  $\varphi, \Gamma \Sequent \Delta, \psi$ वैध असल्याने पुढीलपैकी किमान एक प्रकरण
+  लागू होते: (a) $\Sat/{M}{\varphi}$, (b)
+  $\Sat{M}{\psi}$, (c)
+  $\Sat/{M}{\chi}$ हे एखाद्या~$~\chi \in \Gamma$ साठी, किंवा
+  (d) $\Sat{M}{\chi}$ हे एखाद्या $\chi \in \Delta$ साठी.
+  (a) आणि (b) प्रकरणांत $\Sat{M}{\varphi \lif \psi}$
+  आणि म्हणून $\chi \in \Delta, \varphi \lif \psi$ असे आहे की
+  $\Sat{M}{\chi}$. (c) प्रकरणात एखाद्या $\chi \in
+  \Gamma$ साठी $\Sat/{M}{\chi}$. (d) प्रकरणात
+  एखाद्या $\chi \in \Delta$ साठी $\Sat{M}{\chi}$. प्रत्येक
+  प्रकरणात $\Struct{M}$ $\Gamma
+  \Sequent \Delta, \varphi \lif \psi$ पूर्ण करते. $\Struct{M}$
+  स्वेच्छ असल्याने $\Gamma \Sequent \Delta, \varphi \lif \psi$ वैध आहे.
+\item शेवटचे अनुमान \LeftR{\lforall} आहे. मग सूत्र~$\varphi(x)$ आणि
+  बंद पद~$t$ असे आहेत की $\pi$ पुढील रूपात संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\varphi(t), \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[x][\varphi(x)], \Gamma \fCenter \Delta$
+  \end{prooftree}
+  निष्कर्ष $\lforall[x][\varphi(x)], \Gamma
+  \Sequent \Delta$ वैध आहे हे दाखवायचे आहे. संरचना~$\Struct M$ घ्या.
+  आधारविधान $\varphi(t), \Gamma \Sequent \Delta$ वैध असल्याने, (a)
+  $\Sat/{M}{\varphi(t)}$, (b) $\Sat/{M}{\chi}$ हे एखाद्या $\chi \in \Gamma$ साठी, किंवा
+  (c)~$\Sat{M}{\chi}$ हे एखाद्या $\chi \in \Delta$ साठी असते. (a) प्रकरणात,
+  \ref{fol:syn:sem:prop:quant-terms} नुसार, जर
+  $\Sat{M}{\lforall[x][\varphi(x)]}$ असेल, तर $\Sat{M}{\varphi(t)}$. म्हणून
+  $\Sat/{M}{\varphi(t)}$ असल्याने $\Sat/{M}{\lforall[x][\varphi(x)]}$. (b) आणि
+  (c) प्रकरणांत $\Struct{M}$ देखील $\lforall[x][\varphi(x)], \Gamma
+  \Sequent \Delta$ पूर्ण करते. $\Struct M$ स्वेच्छ असल्याने,
+  $\lforall[x][\varphi(x)], \Gamma \Sequent \Delta$ वैध आहे.
+\item शेवटचे अनुमान \RightR{\lexists} आहे: सरावासाठी.
+\item शेवटचे अनुमान \RightR{\lforall} आहे. मग
+  सूत्र~$\varphi(x)$ आणि स्थिरांक~$a$ असे आहेत की $\pi$ पुढील रूपात
+  संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, \varphi(a)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma \fCenter \Delta, \lforall[x][\varphi(x)]$
+  \end{prooftree}
+  येथे आयगेन चराची अट पूर्ण आहे, म्हणजे $a$ हे $\varphi(x)$, $\Gamma$ किंवा
+  $\Delta$ मध्ये येत नाही. विगमन गृहीतकानुसार शेवटच्या अनुमानाचे आधारविधान
+  वैध आहे. निष्कर्षही वैध आहे हे दाखवायचे आहे; म्हणजे कोणत्याही
+  संरचना~$\Struct M$ साठी (a) $\Sat{M}{\lforall[x][\varphi(x)]}$, (b)
+  एखाद्या $\chi \in \Gamma$ साठी $\Sat/{M}{\chi}$, किंवा (c) एखाद्या
+  $\chi \in \Delta$ साठी $\Sat{M}{\chi}$.
+
+  $\Struct{M}$ ही स्वेच्छ संरचना घ्या. (b) किंवा (c) लागू असेल तर
+  काम झाले; म्हणून दोन्ही लागू नाहीत असे गृहीत धरा: प्रत्येक $\chi \in
+  \Gamma$ साठी $\Sat{M}{\chi}$ आणि प्रत्येक $\chi \in \Delta$ साठी
+  $\Sat/{M}{\chi}$. आता (a), म्हणजेच $\Sat{M}{\lforall[x][\varphi(x)]}$, हे दाखवायचे
+  आहे. \ref{fol:syn:ass:prop:sat-quant} नुसार सर्व चल-विन्यास~$s$ साठी
+  $\Sat{M}{\varphi(x)}[s]$ दाखवणे पुरेसे आहे. म्हणून $s$ हा स्वेच्छ चल-विन्यास घ्या.
+  $\Struct{M'}$ ही $\Struct{M}$ सारखीच रचना घ्या, फक्त
+  $\Assign{a}{M'} = s(x)$ असेल. \ref{fol:syn:ext:cor:extensionality-sent}
+  नुसार प्रत्येक $\chi \in \Gamma$ साठी $a$ हे $\Gamma$ मध्ये येत नसल्यामुळे
+  $\Sat{M'}{\chi}$, आणि प्रत्येक $\chi \in \Delta$ साठी $\Sat/{M'}{\chi}$.
+  पण आधारविधान वैध असल्याने $\Sat{M'}{\varphi(a)}$. \ref{fol:syn:ass:prop:sentence-sat-true}
+  नुसार $\varphi(a)$ हे वाक्य असल्यामुळे $\Sat{M'}{\varphi(a)}[s]$.
+  आता $\varAssign{s}{s}{x}$ आणि $s(x) = \Value{a}{M'}[s]$, कारण
+  $\Struct{M'}$ याच प्रकारे परिभाषित केले आहे. म्हणून
+  \ref{fol:syn:ext:prop:ext-formulas} लागू होते आणि $\Sat{M'}{\varphi(x)}[s]$
+  मिळते. $a$ हे $\varphi(x)$ मध्ये येत नसल्याने
+  \ref{fol:syn:ext:prop:extensionality} नुसार $\Sat{M}{\varphi(x)}[s]$.
+  $s$ स्वेच्छ असल्याने सर्व चल-विन्यासांसाठी $\Sat{M}{\varphi(x)}[s]$ सिद्ध झाले.
+\item शेवटचे अनुमान \LeftR{\lexists} आहे: सरावासाठी.
+
+\end{enumerate}
+आता दोन आधारविधाने असलेली संभाव्य अनुमाने पाहू.
+\begin{enumerate}
+\item शेवटचे अनुमान कट आहे; म्हणून $\pi$ पुढील रूपात संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, \varphi$
+    \AxiomC{}
+    \Deduce$\varphi, \Pi \fCenter \Lambda$
+    \RightLabel{\Cut}
+    \BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda$
+  \end{prooftree}
+  $\Struct{M}$ ही संरचना घ्या. विगमन गृहीतकानुसार आधारविधाने वैध असल्याने
+  $\Struct{M}$ दोन्ही आधारविधाने पूर्ण करते.
+  दोन प्रकरणे पाहू: (a) $\Sat/{M}{\varphi}$ आणि (b)
+  $\Sat{M}{\varphi}$. (a) प्रकरणात डावे आधारविधान पूर्ण
+  करण्यासाठी $\Struct{M}$ ने
+  $\Gamma \Sequent \Delta$ पूर्ण केले पाहिजे; मग ते निष्कर्षही पूर्ण करते.
+  (b) प्रकरणात उजवे आधारविधान पूर्ण करण्यासाठी
+  $\Struct{M}$ ने $\Pi \setminus \Lambda$ पूर्ण
+  केले पाहिजे. पुन्हा, $\Struct{M}$ निष्कर्ष पूर्ण करते.
+\item शेवटचे अनुमान \RightR{\land} आहे. मग $\pi$ पुढील रूपात संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, \varphi$
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, \psi$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\Gamma \fCenter \Delta, \varphi \land \psi$
+  \end{prooftree}
+  संरचना~$\Struct
+    M$ घ्या. $\Struct{M}$
+  ने $\Gamma \Sequent \Delta$ पूर्ण केले तर काम झाले. तसे नसल्याचे गृहीत धरा.
+  विगमन गृहीतकानुसार $\Gamma \fCenter
+  \Delta, \varphi$ वैध असल्याने,
+  $\Sat{M}{\varphi}$. त्याचप्रमाणे, कारण $\Gamma
+  \Sequent \Delta, \psi$ वैध असल्याने,
+  $\Sat{M}{\psi}$. म्हणून
+  $\Sat{M}{\varphi \land \psi}$.
+\item शेवटचे अनुमान \LeftR{\lor} आहे: सरावासाठी.
+\item शेवटचे अनुमान \LeftR{\lif} आहे. मग $\pi$ पुढील रूपात संपते:
+  \begin{prooftree}
+    \AxiomC{}
+    \Deduce$\Gamma \fCenter \Delta, \varphi$
+    \AxiomC{}
+    \Deduce$\psi, \Pi \fCenter \Lambda$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$\varphi \lif \psi, \Gamma, \Pi \fCenter \Delta, \Lambda$
+  \end{prooftree}
+  पुन्हा,
+  संरचना~$\Struct{M}$
+  $\Struct{M}$ ने $\Gamma, \Pi \Sequent
+  \Delta, \Lambda$ पूर्ण केलेले नाही असे गृहीत धरा. आपल्याला
+  $\Sat/{M}{\varphi \lif \psi}$ दाखवायचे आहे.
+  $\Struct{M}$ ने $\Gamma,
+  \Pi \Sequent \Delta, \Lambda$ पूर्ण केलेले नसल्याने ते $\Gamma \Sequent
+  \Delta$ किंवा $\Pi \Sequent \Lambda$ यांपैकी कोणतेही पूर्ण करत नाही. $\Gamma
+  \Sequent \Delta, \varphi$ वैध असल्याने $\Sat{M}{\varphi}$.
+  $\psi, \Pi \Sequent \Lambda$ वैध असल्याने
+  $\Sat/{M}{\psi}$. म्हणून
+  $\Sat/{M}{\varphi \lif \psi}$, जे दाखवायचे होते तेच.
+\end{enumerate}
+\end{proof}
+
+
+\begin{prob}
+\ref{fol:seq:sou:thm:sequent-soundness} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+
+
+
+\begin{cor}
+\label{fol:seq:sou:cor:weak-soundness}
+जर $\Proves \varphi$, तर $\varphi$ हे वैध आहे.
+\end{cor}
+
+\begin{cor}
+\label{fol:seq:sou:cor:entailment-soundness}
+जर $\Gamma \Proves \varphi$, तर $\Gamma \Entails \varphi$.
+\end{cor}
+
+\begin{proof}
+जर $\Gamma \Proves \varphi$ असेल, तर $\Gamma_0 \subseteq \Gamma$ असा काही
+मर्यादित संच आणि $\Gamma_0 \Sequent \varphi$ ची निष्पत्ती असते. \ref{fol:seq:sou:thm:sequent-soundness}
+नुसार, प्रत्येक
+संरचना~$\Struct{M}$
+किंवा $\psi \in \Gamma_0$ असत्य करते, किंवा $\varphi$ सत्य करते. म्हणून,
+जर $\Sat{M}{\Gamma}$ असेल, तर
+$\Sat{M}{\varphi}$ देखील असेल.
+\end{proof}
+
+\begin{cor}
+\label{fol:seq:sou:cor:consistency-soundness}
+जर $\Gamma$ पूर्ण करण्यायोग्य असेल, तर तो सुसंगत आहे.
+\end{cor}
+
+\begin{proof}
+प्रतिलोम विधान सिद्ध करू. $\Gamma$ सुसंगत नाही असे गृहीत धरा. मग
+$\Gamma_0 \subseteq \Gamma$ असा काही मर्यादित संच आणि
+$\Gamma_0 \Sequent \quad$ ची निष्पत्ती असते. \ref{fol:seq:sou:thm:sequent-soundness}
+नुसार $\Gamma_0 \Sequent \quad$ वैध आहे. दुसऱ्या शब्दांत, प्रत्येक
+संरचना~$\Struct{M}$ साठी
+$\chi \in \Gamma_0$ असे आहे की
+$\Sat/{M}{\chi}$; आणि $\Gamma_0 \subseteq \Gamma$
+असल्याने ते $\chi$ $\Gamma$ मध्येही आहे. त्यामुळे कोणतेही
+$\Struct{M}$ $\Gamma$ पूर्ण करत नाही, आणि
+$\Gamma$ पूर्ण करण्यायोग्य नाही.
+\end{proof}
+
+
+
+
+
+
+
+
+
+\section{निष्पत्ती सह एकरूपता}\label{fol:seq:ide:sec}
+
+निष्पत्त्या आणि एकरूपता साठी अतिरिक्त आरंभीच्या क्रमवर्ती
+आणि अनुमाननियमांची आवश्यकता असते.
+
+\begin{defn}[$\eq$ साठी आरंभीच्या क्रमवर्ती]
+जर $t$ हे बंद पद असेल, तर ${} \Sequent \eq[t][t]$ ही आरंभीची क्रमवर्ती असते.
+\end{defn}
+
+$\eq$ साठीचे नियम पुढीलप्रमाणे आहेत ($t_1$ आणि $t_2$ ही बंद पदे आहेत):
+
+\begin{defish}
+\Axiom$ \eq[t_1][t_2], \Gamma \fCenter \Delta, \varphi(t_1) $
+\RightLabel{$\eq$}
+\UnaryInf$\eq[t_1][t_2], \Gamma \fCenter \Delta, \varphi(t_2)$
+\DisplayProof
+\hfill
+\Axiom$\eq[t_1][t_2], \Gamma \fCenter \Delta, \varphi(t_2) $
+\RightLabel{$\eq$}
+\UnaryInf$\eq[t_1][t_2], \Gamma  \fCenter \Delta, \varphi(t_1)$
+\DisplayProof
+\end{defish}
+
+\begin{ex}
+जर $s$ आणि $t$ ही बंद पदे असतील, तर $\eq[s][t], \varphi(s)
+\Proves \varphi(t)$:
+\begin{prooftree}
+\Axiom$ \varphi(s) \fCenter \varphi(s)$
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$\eq[s][t], \varphi(s)  \fCenter \varphi(s)$
+\RightLabel{$\eq$}
+\UnaryInf$\eq[s][t], \varphi(s)  \fCenter \varphi(t)$
+\end{prooftree}
+याला एकरूप वस्तूंच्या प्रतिस्थापनाचे तत्त्व किंवा लाइब्निझचा नियम
+म्हणून ओळखले जाऊ शकते.
+
+$\Log{LK}$ सिद्ध करते की $\eq$ सममित आणि संक्रमक आहे:
+\begin{prooftree}
+\Axiom$ \fCenter \eq[t_1][t_1] $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$ \eq[t_1][t_2] \fCenter \eq[t_1][t_1] $
+\RightLabel{$\eq$}
+\UnaryInf$ \eq[t_1][t_2] \fCenter \eq[t_2][t_1]$
+\DisplayProof\qquad\bottomAlignProof
+\Axiom$ \eq[t_1][t_2] \fCenter \eq[t_1][t_2] $
+\RightLabel{\LeftR{\Weakening}}
+\UnaryInf$\eq[t_2][t_3], \eq[t_1][t_2]  \fCenter \eq[t_1][t_2] $
+\RightLabel{$\eq$}
+\UnaryInf$\eq[t_2][t_3], \eq[t_1][t_2]  \fCenter \eq[t_1][t_3]$
+\RightLabel{\LeftR{\Exchange}}
+\UnaryInf$\eq[t_1][t_2], \eq[t_2][t_3]  \fCenter \eq[t_1][t_3]$
+\end{prooftree}
+डावीकडील निष्पत्तीमध्ये सूत्र~$\eq[x][t_1]$ हे आपले
+$\varphi(x)$ आहे. उजवीकडे $\varphi(x)$ हे~$\eq[t_1][x]$ असे घेतो.
+\end{ex}
+
+\begin{prob}
+पुढील क्रमवर्तींच्या निष्पत्त्या द्या:
+\begin{enumerate}
+\item $\Sequent \lforall[x][\lforall[y][((x = y \land \varphi(x)) \lif \varphi(y))]]$
+\item $\lexists[x][\varphi(x)] \land \lforall[y][\lforall[z][((\varphi(y) \land
+    \varphi(z)) \lif y = z)]] \Sequent
+\lexists[x][(\varphi(x) \land \lforall[y][(\varphi(y) \lif y = x)])]$
+\end{enumerate}
+\end{prob}
+
+
+
+
+
+
+
+
+
+\section{एकरूपता सह निर्दोषता}\label{fol:seq:sid:sec}
+
+\begin{prop}
+$\Log{LK}$ मधील आरंभीच्या क्रमवर्ती आणि एकरूपतेच्या नियमांसहची पद्धत निर्दोष आहे.
+\end{prop}
+
+\begin{proof}
+${} \Sequent \eq[t][t]$ या रूपातील आरंभीच्या क्रमवर्ती वैध आहेत, कारण
+प्रत्येक संरचना~$\Struct M$ साठी $\Sat{M}{\eq[t][t]}$ असते. (लक्षात घ्या की
+$t$ हे बंद पद आहे असे आपण गृहीत धरतो, म्हणजे त्यात कोणतेही चल नाही;
+म्हणून चल-विन्यास अप्रासंगिक असतात.)
+
+निष्पत्तीमधील शेवटचे अनुमान $=$ आहे असे गृहीत धरा. मग आधारविधान
+$\eq[t_1][t_2], \Gamma \Sequent \Delta, \varphi(t_1)$ आणि निष्कर्ष
+$\eq[t_1][t_2], \Gamma \Sequent \Delta, \varphi(t_2)$ असतो. संरचना~$\Struct M$
+घ्या. निष्कर्ष वैध आहे हे दाखवायचे आहे; म्हणजे $\Sat{M}{\eq[t_1][t_2]}$ आणि
+$\Sat{M}{\Gamma}$ असल्यास, एकतर $\Sat{M}{\chi}$ हे एखाद्या $\chi \in \Delta$ साठी
+असते किंवा $\Sat{M}{\varphi(t_2)}$ असते.
+
+विगमन गृहीतकानुसार आधारविधान वैध आहे. म्हणजे $\Sat{M}{\eq[t_1][t_2]}$ आणि
+$\Sat{M}{\Gamma}$ असल्यास, एकतर (a) एखाद्या $\chi \in \Delta$ साठी
+$\Sat{M}{\chi}$ किंवा (b) $\Sat{M}{\varphi(t_1)}$. (a) प्रकरणात काम झाले.
+(b) प्रकरणाचा विचार करू. $s$ हा चल-विन्यास घ्या, ज्यासाठी
+$s(x) = \Value{t_1}{M}$. \ref{fol:syn:ass:prop:sentence-sat-true} नुसार,
+$\Sat{M}{\varphi(t_1)}[s]$. $\varAssign{s}{s}{x}$ असल्याने,
+\ref{fol:syn:ext:prop:ext-formulas} नुसार $\Sat{M}{\varphi(x)}[s]$. कारण
+$\Sat{M}{\eq[t_1][t_2]}$, आपल्याला $\Value{t_1}{M} = \Value{t_2}{M}$,
+आणि म्हणून $s(x) = \Value{t_2}{M}$ मिळते. \ref{fol:syn:ext:prop:ext-formulas}
+पुन्हा लागू केल्याने $\Sat{M}{\varphi(t_2)}[s]$ देखील मिळते.
+\ref{fol:syn:ass:prop:sentence-sat-true} नुसार,
+$\Sat{M}{\varphi(t_2)}$.
+\end{proof}
+
+
+

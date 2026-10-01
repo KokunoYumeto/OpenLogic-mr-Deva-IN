@@ -1,0 +1,68 @@
+{
+  "schema": "openlogic-modal-frame-standard-translation-check/1",
+  "status": "passed",
+  "actual_table_formula_count": 10,
+  "finite_nonempty_frames": 530,
+  "frame_sizes": [
+    1,
+    2,
+    3
+  ],
+  "modal_world_truth_cases": 210604,
+  "correspondence_frame_checks": [
+    530,
+    530,
+    530,
+    530,
+    530,
+    530,
+    530,
+    530,
+    530,
+    530
+  ],
+  "relation_fact_and_S5_combination_frame_checks": 530,
+  "monadic_reflexivity_frame_checks": 530,
+  "fresh_standard_translation_formulas": 94,
+  "two_world_standard_translation_cases": 48128,
+  "freshness_counterexample": {
+    "worlds": [
+      0,
+      1
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ]
+    ],
+    "p_true_worlds": [],
+    "at_world": 0,
+    "modal_Box_p": false,
+    "incorrect_y_equals_x_translation": true,
+    "fresh_translation": false
+  },
+  "bindings": [
+    {
+      "unit_id": "OLP-0421",
+      "source_sha256": "eca3a45ea91f4840016751d184f7c2b82c1d1141c2164c1dce4c8775fcf49622",
+      "target_sha256": "a6bacb1d556c47449a9c9ef640793676f455b42ff109908312299316404aaded"
+    },
+    {
+      "unit_id": "OLP-0423",
+      "source_sha256": "a107f2b5ce681ff056d243b0cd68955cdf997d66276ce17b74207164b1af6d8c",
+      "target_sha256": "e479b072bfa05edbcc34e79824da25b00e788b4c4188f0efd39140d3e05df2a0"
+    },
+    {
+      "unit_id": "OLP-0425",
+      "source_sha256": "057897c91d88ced3eebfd46a08cba8c26a80da294f8870f37e08146e01f39798",
+      "target_sha256": "fa41069115132f1e683d7c02053603ece4cb57e1e51f55bcb447d19b399d9066"
+    },
+    {
+      "unit_id": "OLP-0426",
+      "source_sha256": "1b4691078284c0f45e4ec808398c3952649ec79732167d7b2d6a1ce7ad974490",
+      "target_sha256": "04f9e148e8e879c48c1ed24108c3ddb433d473fb4904890622128e84fc4541a3"
+    }
+  ],
+  "limitations_mr": "प्रत्यक्ष table मधील दहा मोडल सूत्रे parse करून सर्व एक/दोन/तीन-जगी संबंध व आवश्यक सर्व valuations तपासले. Standard-translation mechanism स्वतंत्र first-order assignment evaluator शी दोन-जगी finite cases मध्ये जुळवला. हे arbitrary infinite-frame correspondence, सर्व सूत्रांचे formal certification, नवीन primary-paper review, PDF visual inspection किंवा human review यांचा दावा नाही."
+}

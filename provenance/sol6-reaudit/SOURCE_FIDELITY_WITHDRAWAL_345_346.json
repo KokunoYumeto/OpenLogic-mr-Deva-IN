@@ -1,0 +1,36 @@
+{
+  "schema": "openlogic-source-fidelity-withdrawal/1",
+  "date": "2026-10-01",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "source_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "reporting_lane": "suggested_improvement",
+  "implementation_status": "unimplemented",
+  "no_new_upstream_report": true,
+  "no_public_repair_claim": true,
+  "historical_receipts_preserved": true,
+  "records": [
+    {
+      "id": "SOL6-A195",
+      "withdrawal": "SOL6-A345",
+      "unit_id": "OLP-0493",
+      "proposal_mr": "मूळातील योग्य अपरिमेय साक्षींसाठी पुढील अतिरिक्त प्राथमिक सिद्धता स्वतंत्र अध्यापन-स्पष्टीकरणात देता येईल. ही भाषांतरातील आवश्यक दुरुस्ती नाही.",
+      "optional_proof_tex_mr": "या दोन्ही संख्या अपरिमेय आहेत हेही दाखवू.\n$\\sqrt3=m/n$ हे लघुतम रूपातील धन परिमेय रूप असेल,\nतर $m^2=3n^2$ वरून $3$ ने $m$ भागला जातो.\n$m=3k$ ठेवून $n^2=3k^2$ मिळते, म्हणून $3$ ने $n$ ही\nभागला जातो; हे लघुतम रूपाला विरोधी आहे.\nतसेच $\\log_3 4=m/n$ आणि $m,n$ धन पूर्णांक असतील,\nतर $3^m=4^n=2^{2n}$ मिळते; डावी बाजू $3$ ने\nभागली जाते, पण उजवी बाजू नाही. म्हणून $b$ अपरिमेय आहे.",
+      "exact_source_faithful_block": "ही सिद्धता वैध आहे का? बहुतेक गणितज्ञांना ती वैध\nवाटते. तरीही इथे थोडे असमाधानकारक काहीतरी आहे:\nविशिष्ट गुणधर्म असलेल्या वास्तव संख्यांच्या जोडीचे\nअस्तित्व सिद्ध केले, पण ती जोडी \\emph{कोणती} हे\nसांगता आले नाही. हाच निष्कर्ष अशा रीतीनेही सिद्ध\nकरता येतो की $a$, $b$ ही जोडी सिद्धतेत \\emph{दिली}\nजाते: $a = \\sqrt{3}$ आणि $b = \\log_3 4$ घ्या. मग\n\\[\na^b = \\sqrt{3}^{\\log_3 4} = 3^{1/2 \\cdot \\log_3 4} = (3^{\\log_3\n  4})^{1/2} = 4^{1/2}= 2,\n\\]\nकारण $3^{\\log_3 x} = x$.",
+      "source_sha256": "0e2e1481d7a5d642bbb24f9a77b1521b56c1aa7d17842dd6b8c9e21cdb6d9ad1",
+      "before_target_sha256": "1567512a16dd78c93be749295143373f44bf035c490366bc9207ad559a2ab683",
+      "after_target_sha256": "a6ac9597e099fa79f5e3bd31d10254dec3a757c58142f5ef31a98a77aa122e6e"
+    },
+    {
+      "id": "OLINC-169",
+      "withdrawal": "SOL6-A346",
+      "unit_id": "OLP-0433",
+      "proposal_mr": "अध्यापनासाठी अंतिम विकल्पाचा क्रम विधानाशी जुळवता येईल. दोन्ही क्रम वैध असल्याने ही ऐच्छिक संपादकीय सूचना आहे; वर्तमान भाषांतर मूळ क्रम जपते.",
+      "proposed_formula": "$\\Log{K} \\Proves \\Diamond(!A\\lor!B) \\lif (\\Diamond!A \\lor \\Diamond!B)$",
+      "source_faithful_formula": "$\\Log{K} \\Proves \\Diamond(!A\\lor!B) \\lif (\\Diamond!B \\lor \\Diamond!A)$",
+      "source_sha256": "75ea00c1a293c5648d59722ef93fb3a0c0b5b4a003e638f656fa4e1c11eddd4e",
+      "before_target_sha256": "be653fa052544aea69aa178428dc72b02e17f5c9c881a159bb7c007870966fd4",
+      "after_target_sha256": "502e2e5be2f04b4ac74b112bc1d2b5cdb3cd6b6a9bc96d6418e2c236b849a96f"
+    }
+  ]
+}

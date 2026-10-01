@@ -1,0 +1,1588 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 13: संपूर्णता प्रमेय
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{संपूर्णता प्रमेय}\label{fol:com::chap}
+
+
+
+
+
+
+
+
+
+\section{परिचय}\label{fol:com:int:sec}
+
+संपूर्णता प्रमेय हा तर्कशास्त्राविषयीच्या सर्वांत मूलभूत निष्कर्षांपैकी एक
+आहे. त्याच्या दोन मांडण्या आहेत; त्यांची सममूल्यता आपण सिद्ध करू. त्याची
+पहिली मांडणी चिन्हार्थी परिणाम आणि आपल्या निष्पत्ती-पद्धतीतील संबंधाबद्दल
+एक मूलभूत विधान करते: जर वाक्य~$\varphi$ हे काही वाक्ये
+$\Gamma$ यांच्यापासून निष्पन्न होत असेल, तर $\Gamma \Proves \varphi$ हे
+प्रस्थापित करणारी निष्पत्ती सुद्धा असते. त्यामुळे प्रत्यक्षात निष्पन्न
+न होणाऱ्या गोष्टी सिद्ध न करता निष्पत्ती-पद्धत जितकी सामर्थ्यवान असू
+शकते तितकी ती असते.
+
+दुसऱ्या मांडणीत ते प्रतिमानाच्या अस्तित्वाविषयीचा निष्कर्ष म्हणून सांगता येते:
+वाक्यांचा प्रत्येक सुसंगत संच पूर्ततायोग्य असतो. सुसंगतता ही
+सिद्धता-उपपत्तीय संकल्पना आहे: आपली निष्पत्ती-पद्धत विशिष्ट
+निष्पत्त्या निर्माण करू शकत नाही, असे ती सांगते. पण~$\Gamma$ पासून
+विशिष्ट प्रकारच्या निष्पत्त्यांनाहीत एवढ्यावरूनच
+संरचना~$\Struct{M}$
+अस्तित्वात असून $\Sat{M}{\Gamma}$ आहे, याची हमी
+आहे, असे कोण म्हणेल? संपूर्णता प्रमेय प्रथम सिद्ध होण्यापूर्वी---
+खरे तर आज आपल्याकडे असलेल्या निष्पत्ती-पद्धती निर्माण होण्यापूर्वी---
+महान जर्मन गणितज्ञ डाव्हीट हिल्बर्ट यांचे मत होते की गणिती सिद्धांतांची
+सुसंगतता त्यांच्या विषयातील वस्तूंच्या अस्तित्वाची हमी देते. गोटलोप फ्रेग
+यांना लिहिलेल्या पत्रात त्यांनी ते पुढीलप्रमाणे मांडले:
+\begin{quote}
+  स्वेच्छपणे दिलेली स्वयंसिद्धके आणि त्यांचे सर्व परिणाम परस्परविरोधी नसतील,
+  तर ती सत्य असतात आणि स्वयंसिद्धकांनी परिभाषित केलेल्या वस्तू अस्तित्वात
+  असतात. माझ्यासाठी सत्य आणि अस्तित्वाचा निकष हाच आहे.
+\end{quote}
+फ्रेग यांनी याला तीव्र विरोध केला. संपूर्णता प्रमेयाची दुसरी मांडणी दाखवते
+की निदान पुढील अर्थाने हिल्बर्ट बरोबर होते: स्वयंसिद्धके सुसंगत असतील, तर
+त्या सर्वांना सत्य करणारी \emph{एखादी}
+संरचना अस्तित्वात असते.
+
+संपूर्णता प्रमेय---किंवा अधिक नेमके सांगायचे तर त्याची सिद्धता---महत्त्वाची
+असण्याची हीच काही एकमेव कारणे नाहीत. त्याचे अनेक महत्त्वाचे परिणाम आहेत;
+त्यांपैकी काहींची स्वतंत्र चर्चा करू. उदाहरणार्थ, $\Gamma \Proves \varphi$ हे
+दाखवणारी कोणतीही निष्पत्ती सांत असल्यामुळे ती~$\Gamma$ मधील सांतच
+वाक्ये वापरू शकते. म्हणून संपूर्णता प्रमेयावरून असे निष्पन्न होते की
+$\varphi$ हा~$\Gamma$ चा परिणाम असेल, तर तो~$\Gamma$ च्या एखाद्या सांत उपसंचाचाही
+परिणाम असतो. याला \emph{संहतता} म्हणतात. सममूल्य रीतीने, $\Gamma$ चा प्रत्येक
+सांत उपसंच सुसंगत असेल, तर $\Gamma$ स्वतः सुसंगत असला पाहिजे.
+
+संहतता प्रमेय हे संपूर्णता प्रमेयापासून निष्पत्त्या मधून जाणाऱ्या वळणाने
+मिळत असले, तरी संपूर्णता प्रमेयाची \emph{सिद्धता} वापरून ते थेट प्रस्थापित
+करणेही शक्य आहे. कारण त्या सिद्धतेत विशिष्ट गुणधर्म---सुसंगतता---असलेला
+वाक्यांचा संच घेऊन त्यातून विशिष्ट गुणधर्म असलेली संरचना
+रचली जाते (या प्रकरणात ती त्या संचाची पूर्ति करते). सुसंगत संचांऐवजी
+``सांततः पूर्ततायोग्य'' वाक्यांच्या संचांपासून सुरुवात केल्यास जवळजवळ
+हीच रचना वापरून संहतता थेट प्रस्थापित करता येते.
+या रचनेतून इतर परिणामही मिळतात; उदाहरणार्थ, वाक्यांच्या
+  कोणत्याही पूर्ततायोग्य संचाला सांत किंवा गणनीय अनंत असे प्रतिमान असते.
+  (या निष्कर्षाला ल्योव्हेनहाइम--स्कोलेम प्रमेय म्हणतात.) सर्वसाधारणपणे,
+  वाक्यांच्या संचांपासून संरचना रचण्याची पद्धत तर्कशास्त्रात
+  वारंवार आणि कधी कधी तत्त्वज्ञानातही वापरली जाते.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सिद्धतेचा आराखडा}\label{fol:com:out:sec}
+
+संपूर्णता प्रमेयाची सिद्धता काहीशी गुंतागुंतीची आहे आणि ती प्रथम वाचताना
+वाट चुकणे सोपे आहे. म्हणून सिद्धतेचा आराखडा पाहू. पहिली पायरी म्हणजे
+दृष्टिकोनातील बदल; त्यामुळे सिद्धतेकडे जाणारा मार्ग दिसू लागतो. संपूर्णतेचा
+अर्थ “जेव्हा जेव्हा $\Gamma \Entails \varphi$, तेव्हा $\Gamma \Proves \varphi$”
+असा घेतल्यास कल्पनाही सुचणे कठीण जाऊ शकते: कारण $\Gamma \Proves \varphi$ हे
+दाखवण्यासाठी आपल्याला निष्पत्ती शोधावी लागते, आणि $\Gamma \Entails
+\varphi$ हे गृहीतक त्यासाठी कोणत्याही प्रकारे मदत करते असे दिसत नाही. काही
+सिद्धता-पद्धतींसाठी निष्पत्ती थेट रचता येते; पण आपण थोडा वेगळा मार्ग
+घेऊ. आवश्यक दृष्टिकोन-बदल असा आहे: संपूर्णता पुढीलप्रमाणेही मांडता येते:
+“$\Gamma$ सुसंगत असेल, तर तो पूर्ततायोग्य असतो.” कदाचित~$\Gamma$ मधील
+माहिती आणि तो सुसंगत असल्याचे गृहीतक वापरून आपण~$\Gamma$ मधील प्रत्येक
+वाक्य पूर्ण करणारी
+संरचना रचू शकू. शेवटी, आपल्याला
+कोणत्या प्रकारची संरचना हवी आहे हे
+माहीत आहे:~$\Gamma$ जिचे वर्णन करतो अशीच!{}
+
+$\Gamma$ मध्ये फक्त आण्विक
+  वाक्ये असतील, तर त्याच्यासाठी
+प्रतिमान रचणे सोपे आहे. सर्व आण्विक वाक्ये ही
+  $\Atom{P}{a_1,\dots,a_n}$ या रूपाची आहेत असे समजा; येथे $a_i$ ही
+  स्थिरांक आहेत. आपल्याला फक्त
+
+  प्रांत~$\Domain{M}$ आणि~$P$ साठी असे निर्देशन ठरवायचे आहे की
+  $\Sat{M}{\Atom{P}{a_1,\ldots,a_n}}$. पण ते फार कठीण नाही:
+  $\Domain{M} = \Nat$, $\Assign{\Obj c_i}{M} = i$ असे ठेवा आणि प्रत्येक
+  $\Atom{P}{a_1,\ldots,a_n} \in \Gamma$ साठी $\tuple{k_1,
+    \dots, k_n}$ हे क्रमित बहुपद $\Assign{P}{M}$ मध्ये घाला; येथे $k_i$
+  हा स्थिर चिन्ह~$a_i$ चा निर्देशांक आहे (म्हणजे $a_i \ident \Obj
+  c_{k_i}$).
+
+आता $\Gamma$ मध्ये~$\lnot \psi$ हे एखादे सूत्र असून $\psi$ आण्विक आहे
+असे समजा. $\Struct{M}$ ची रचना $\lnot \psi$ सत्य
+करण्याच्या शक्यतेत अडथळा आणेल, अशी काळजी वाटू शकते. पण येथेच~$\Gamma$ ची
+सुसंगतता उपयोगी पडते: $\lnot \psi \in \Gamma$ असेल, तर $\psi \notin \Gamma$;
+अन्यथा $\Gamma$ विसंगत असेल. आणि $\psi \notin \Gamma$ असेल, तर आपल्या
+$\Struct{M}$ च्या रचनेनुसार
+$\Sat/{M}{\psi}$; म्हणून
+$\Sat{M}{\lnot \psi}$. आतापर्यंत सर्व ठीक आहे.
+
+$\Gamma$ मध्ये गुंतागुंतीची, अनाण्विक सूत्रे असतील तर काय? उदाहरणार्थ,
+त्यात $\varphi \land \psi$ आहे असे समजा. ते सत्य करण्यासाठी $\varphi$ आणि $\psi$ ही
+दोन्ही~$\Gamma$ मध्ये असल्याप्रमाणे आपण पुढे गेले पाहिजे. आणि $\varphi \lor
+\psi \in \Gamma$ असेल, तर त्यांपैकी किमान एक सत्य करावे लागेल; म्हणजे
+त्यांपैकी एक~$\Gamma$ मध्ये असल्याप्रमाणे पुढे जावे लागेल.
+
+यावरून पुढील कल्पना सुचते: आपण~$\Gamma$ मध्ये अतिरिक्त सूत्रे
+अशा रीतीने भर घालतो की (a)~मिळणारा संच सुसंगत राहील, (b)~प्रत्येक
+संभाव्य आण्विक वाक्य~$\varphi$ साठी मिळणाऱ्या संचात $\varphi$ किंवा
+$\lnot \varphi$ यांपैकी एक असेल, आणि (c)~संचात $\varphi \land \psi$ असेल तेव्हा
+$\varphi$ व $\psi$ ही दोन्ही असतील, तर $\varphi \lor \psi$ असेल तेव्हा $\varphi$ किंवा
+$\psi$ यांपैकी किमान एकही असेल, इत्यादी. हे आपण करत राहतो (कदाचित
+अनंतकाळपर्यंत). अशा रीतीने भर घातलेल्या सर्व सूत्रांच्या संचाला
+$\Gamma^*$ म्हणू. मग वरील रचनेतून आपल्याला अशी
+संरचना~$\Struct{M}$
+मिळेल की ती~$\Gamma^*$ मधील सर्व वाक्ये पूर्ण करते, हे विगमनाने सिद्ध
+करता येईल. $\Gamma \subseteq \Gamma^*$ असल्यामुळे ती~$\Gamma$ मधीलही
+सर्व वाक्ये पूर्ण करेल. प्रत्यक्षात (a) आणि~(b) यांची हमी देणे पुरेसे
+ठरते. ज्या वाक्यसंचासाठी (b) खरे असते त्याला \emph{संपूर्ण} म्हणतात.
+त्यामुळे सुसंगत संच~$\Gamma$ चा विस्तार करून सुसंगत आणि संपूर्ण संच
+$\Gamma^*$ मिळवणे हे आपले उद्दिष्ट असेल.
+
+
+या योजनेत एक अडचण आहे: $\lexists[x][\varphi(x)] \in \Gamma$ असेल, तर या
+प्रक्रियेत एखादे स्थिरांक~$c$ निवडून $\varphi(c)$ ची भर घालता यावी अशी
+आपली अपेक्षा आहे. पण ते नेहमी करता येईल हे कसे कळणार? कदाचित आपल्या
+भाषेत मोजकीच स्थिरांक असतील आणि त्यांपैकी प्रत्येकासाठी
+$\lnot \varphi(c) \in \Gamma$ असेल. आपण $\varphi(c)$ चीही भर घालू शकत नाही,
+कारण त्यामुळे संच विसंगत होईल; आणि $\Struct{M}$ ने $\varphi(c)$ सत्य करावे की
+$\lnot \varphi(c)$ हे आपल्याला कळणार नाही. शिवाय, $\Gamma$ मध्ये अशा भाषेतील
+वाक्येच असू शकतात जिच्यात एकही स्थिर चिन्ह नाही (उदा., संचसिद्धान्ताची
+भाषा).
+
+या समस्येचा उपाय म्हणजे सुरुवातीलाच अनंत स्थिरे आणि त्यांना संख्यापकांशी
+योग्य प्रकारे जोडणारी वाक्ये यांची भर घालणे. (अर्थात, त्यामुळे विसंगती
+निर्माण होऊ शकत नाही, हे आपल्याला तपासावे लागेल.)
+
+आण्विक वाक्यांमध्ये फक्त स्थिरांक असतील, तर आपली मूळ रचना चांगली
+चालते. पण भाषेत फलने सुद्धा असू शकतात. अशा वेळी सर्व काही योग्य
+रीतीने चालण्यासाठी या फलने ना नेमून द्यायची~$\Nat$ वरील योग्य
+फलने शोधणे अवघड ठरू शकते. म्हणून आणखी एक युक्ती वापरू: $\Obj c_i$ चा
+अर्थ लावण्यासाठी $i$ वापरण्याऐवजी स्थिरांकाचा संचच प्रांत म्हणून
+घेऊ. मग $\Struct M$ प्रत्येक स्थिरांक ला तेच स्थिर नेमून देऊ शकते:
+$\Assign{\Obj c_i}{M} = \Obj c_i$. पण पूर्ण मार्गच का घेऊ नये:
+$\Domain{M}$ हा भाषेतील सर्व \emph{पदांचा} संच असू द्या!{} असे केल्यास
+फलने ना फलनांचे स्पष्ट निर्देशन मिळते (या फलनांची प्रचले पदे असतात
+आणि त्यांची मूल्येही पदे असतात): फलन~$\Obj f^n_i$ ला आपण असे
+फलन नेमून देतो की $n$ पदे $t_1$, \dots,~$t_n$ आदान म्हणून दिल्यावर ते
+$\Obj f^n_i(t_1, \dots, t_n)$ हे पद मूल्य म्हणून देते.
+
+कोड्याचा शेवटचा भाग म्हणजे~$\eq$ चे काय करायचे. विधेय~$\eq$ चा
+अर्थ स्थिर आहे: $\Sat{M}{\eq[t][t']}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Value{t}{M} = \Value{t'}{M}$. आता पद~$t$ चे मूल्य हे $t$ स्वतःच
+असेल अशी मांडणी केली, तर $t$ आणि $t'$ हे अगदी एकच पद असल्याखेरीज ही
+संरचना $\eq[t][t']$ या रूपातील \emph{एकही} वाक्य सत्य करणार नाही.
+आणि ही अर्थातच समस्या आहे; कारण फलने असलेल्या भाषेतील जवळजवळ
+प्रत्येक रोचक उपपत्तीमध्ये $t$ व $t'$ ही वेगळी पदे असूनही $\eq[t][t']$
+या रूपाची वाक्ये प्रमेये असतील (उदा., अंकगणिताच्या उपपत्तींमध्ये
+$\eq[(\Obj 0+ \Obj 0)][\Obj 0]$). ही समस्या सोडवण्यासाठी आपण
+$\Struct M$ चा प्रांत बदलतो: $\Domain{M}$ मधील वस्तू म्हणून पदे वापरण्याऐवजी
+पदांचे संच वापरतो; आणि प्रत्येक संचात~$\Gamma$ मधील वाक्यांनी समान असणे
+आवश्यक ठरवलेली सर्व पदे असतात. उदाहरणार्थ, $\Gamma$ ही अंकगणिताची उपपत्ती
+असेल, तर अशा संचांपैकी एकात $\Obj 0$, $(\Obj 0 + \Obj 0)$, $(\Obj
+0 \times \Obj 0)$, इत्यादी असतील. हाच संच आपण $\Obj 0$ ला नेमून देऊ;
+आणि तो त्यातील सर्व पदांचे मूल्यही आहे, उदा., $(\Obj 0 + \Obj 0)$ चेही,
+हे निष्पन्न होईल. म्हणून सुधारित संरचनांमध्ये
+$\eq[(\Obj 0+ \Obj 0)][\Obj 0]$ हे वाक्य सत्य असेल.
+
+मग आपण पुढीलप्रमाणे काम करू. प्रथम संपूर्ण सुसंगत संचांच्या गुणधर्मांचा
+अभ्यास करू. विशेषतः, संपूर्ण सुसंगत संचात $\varphi \land \psi$ तेव्हा आणि
+केवळ तेव्हाच असते, जेव्हा त्यात $\varphi$ व~$\psi$ ही दोन्ही असतात; $\varphi \lor \psi$
+तेव्हा आणि केवळ तेव्हाच असते, जेव्हा त्यांपैकी किमान एक असते; इत्यादी,
+हे सिद्ध करू (\ref{fol:com:ccs:prop:ccs}). त्यानंतर वाक्यांच्या
+  “संतृप्त” संचांची व्याख्या करून त्यांचा अभ्यास करू. प्रत्येक संख्यकीकृत
+  वाक्याला तिच्या दृष्टांतांशी जोडणाऱ्या सशर्तांचा समावेश असलेला
+  संच म्हणजे संतृप्त संच (\ref{fol:com:hen:defn:henkin-exp}). कोणत्याही सुसंगत
+  संच~$\Gamma$ चा विस्तार करून संतृप्त संच~$\Gamma'$ नेहमी मिळवता येतो,
+  हे आपण दाखवू (\ref{fol:com:hen:lem:henkin}). एखादा संच सुसंगत, संतृप्त आणि
+  संपूर्ण असेल, तर त्यात $\lexists[x][\varphi(x)]$ तेव्हा
+    आणि केवळ तेव्हाच असते, जेव्हा एखाद्या बंद पद~$t$ साठी त्यात $\varphi(t)$
+    असते आणि
+  $\lforall[x][\varphi(x)]$ तेव्हा आणि केवळ तेव्हाच असते,
+    जेव्हा प्रत्येक बंद पद~$t$ साठी त्यात $\varphi(t)$ असते
+  (\ref{fol:com:hen:prop:saturated-instances}), हाही गुणधर्म त्याला असतो.
+त्यानंतर संतृप्त सुसंगत संच
+$\Gamma'$ घेऊन त्याचा विस्तार करून
+संतृप्त, सुसंगत आणि संपूर्ण संच~$\Gamma^*$
+मिळवता येतो, हे दाखवू (\ref{fol:com:lin:lem:lindenbaum}). याच~$\Gamma^*$ चा
+वापर आपण आपले पद-प्रतिमान~$\Struct M(\Gamma^*)$ परिभाषित करण्यासाठी करू.
+पद-प्रतिमानाचा प्रांत हा बंद पदांचा संच असतो आणि त्यातील
+  विधेयांचा अर्थ आण्विक वाक्ये यांच्या~$\Gamma^*$ मधील सदस्यत्वाने ठरते
+(\ref{fol:com:mod:defn:termmodel}). संतृप्त, संपूर्ण सुसंगत
+संचांचे गुणधर्म वापरून
+$\Sat{M(\Gamma^*)}{\varphi}$ तेव्हा आणि
+केवळ तेव्हाच, जेव्हा $\varphi \in \Gamma^*$, हे दाखवू
+(\ref{fol:com:mod:lem:truth}); म्हणून विशेषतः
+$\Sat{M(\Gamma^*)}{\Gamma}$.
+शेवटी, $\Gamma$ मध्ये~$\eq$ सुद्धा असेल तर पद-प्रतिमानाची
+  व्याख्या कशी करायची याचा विचार करू
+  (\ref{fol:com:ide:defn:term-model-factor}) आणि ते~$\Gamma^*$ ची पूर्ति करते,
+  हे दाखवू (\ref{fol:com:ide:lem:truth}).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{वाक्याचे संपूर्ण सुसंगत संच}\label{fol:com:ccs:sec}
+
+\begin{defn}[संपूर्ण संच]
+\label{fol:com:ccs:def:complete-set} वाक्यांचा संच~$\Gamma$
+\emph{संपूर्ण} असतो तेव्हा आणि केवळ तेव्हाच, जेव्हा कोणत्याही
+वाक्य~$\varphi$ साठी $\varphi \in \Gamma$ किंवा $\lnot \varphi \in \Gamma$.
+\end{defn}
+
+\begin{explain}
+संपूर्ण वाक्यसंच कोणताही प्रश्न अनुत्तरित ठेवत नाहीत. कोणत्याही
+वाक्य~$\varphi$ साठी $\varphi$ सत्य आहे की असत्य हे~$\Gamma$ “सांगतो.”
+संपूर्ण संचांचे महत्त्व संपूर्णता प्रमेयाच्या सिद्धतेपलीकडेही आहे.
+उदाहरणार्थ, जी उपपत्ती संपूर्ण असून स्वयंसिद्धकीय रीतीने मांडता
+येते, तिच्याविषयी नेहमी निर्णय घेता येतो.
+\end{explain}
+
+\begin{explain}
+संपूर्णतेच्या सिद्धतेत संपूर्ण सुसंगत संच महत्त्वाचे असतात, कारण
+वाक्यांचा प्रत्येक सुसंगत संच~$\Gamma$ हा एखाद्या संपूर्ण
+सुसंगत संच~$\Gamma^*$ मध्ये समाविष्ट असतो, याची हमी आपण देऊ शकतो.
+संपूर्ण सुसंगत संचात प्रत्येक वाक्य~$\varphi$ साठी $\varphi$ किंवा
+त्याचे नकरण $\lnot \varphi$ यांपैकी एक असते, पण दोन्ही नसतात. हे विशेषतः
+आण्विक वाक्ये यांच्यासाठी खरे असते.
+म्हणून स्थिरांकाची योग्य भर घालून विस्तारित केलेल्या
+भाषेतील संपूर्ण सुसंगत संचापासून आपण अशी
+संरचना रचू शकतो की तिच्यातील
+विधेयांचा अर्थ
+हा~$\Gamma^*$ मध्ये कोणती आण्विक
+वाक्ये आहेत त्यानुसार परिभाषित
+केला जातो. त्यानंतर ही संरचना
+$\Gamma^*$ मधील सर्व वाक्ये (आणि म्हणून~$\Gamma$ मधीलही सर्व)
+सत्य करते, हे दाखवता येते. या शेवटच्या तथ्याच्या सिद्धतेसाठी
+$\lnot \varphi \in \Gamma^*$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\varphi \notin
+\Gamma^*$; $(\varphi \lor \psi) \in \Gamma^*$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\varphi \in \Gamma^*$ किंवा $\psi \in \Gamma^*$; इत्यादी तथ्ये आवश्यक असतात.
+\end{explain}
+
+पुढे आपण $\Proves$ ची परावर्तिता, एकस्वनिकता आणि संक्रमकता हे गुणधर्म
+अनेकदा अध्याहृतपणे वापरू (पाहा
+
+  \ref{fol:seq:ptn:sec}, \ref{fol:ntd:ptn:sec}, \ref{fol:axd:ptn:sec}, \ref{fol:tab:ptn:sec}).
+
+\begin{prop}
+\label{fol:com:ccs:prop:ccs}
+$\Gamma$ हा संपूर्ण आणि सुसंगत आहे असे समजा. मग:
+\begin{enumerate}
+\item \label{fol:com:ccs:prop:ccs-prov-in} जर $\Gamma \Proves \varphi$, तर $\varphi \in
+  \Gamma$.
+
+\item \label{fol:com:ccs:prop:ccs-and} $\varphi \land \psi \in \Gamma$
+  तेव्हा आणि केवळ तेव्हाच, जेव्हा $\varphi \in \Gamma$ आणि $\psi \in \Gamma$
+  ही दोन्ही खरे आहेत.
+
+\item \label{fol:com:ccs:prop:ccs-or} $\varphi \lor \psi \in \Gamma$ तेव्हा
+  आणि केवळ तेव्हाच, जेव्हा $\varphi \in \Gamma$ किंवा $\psi \in \Gamma$.
+
+\item \label{fol:com:ccs:prop:ccs-if} $\varphi \lif \psi \in \Gamma$ तेव्हा
+  आणि केवळ तेव्हाच, जेव्हा $\varphi \notin \Gamma$ किंवा $\psi \in \Gamma$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+पुढील सर्व प्रकरणांत $\Gamma$ हा संपूर्ण आणि सुसंगत आहे असे समजू.
+\begin{enumerate}
+\item जर $\Gamma \Proves \varphi$, तर $\varphi \in \Gamma$.
+
+$\Gamma \Proves \varphi$ असे समजा. उलटपक्षी $\varphi \notin \Gamma$ असे गृहीत
+धरा. $\Gamma$ हा संपूर्ण असल्यामुळे $\lnot \varphi \in \Gamma$. पुढील
+संदर्भांनुसार
+
+  \ref{fol:seq:prv:prop:explicit-inc}, \ref{fol:ntd:prv:prop:explicit-inc}, \ref{fol:axd:prv:prop:explicit-inc}, \ref{fol:tab:prv:prop:explicit-inc},
+$\Gamma$ विसंगत आहे. हे $\Gamma$ सुसंगत असल्याच्या गृहीतकाशी विसंगत आहे.
+म्हणून $\varphi \notin \Gamma$ असणे शक्य नाही; त्यामुळे $\varphi \in \Gamma$.
+
+\item
+
+$\varphi \land \psi \in \Gamma$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\varphi \in
+\Gamma$ आणि $\psi \in \Gamma$ ही दोन्ही खरे आहेत:
+
+पुढे जाणाऱ्या दिशेसाठी $\varphi \land \psi \in \Gamma$ असे समजा. मग
+पुढील संदर्भांतील
+
+  \ref{fol:seq:ppr:prop:provability-land}, \ref{fol:ntd:ppr:prop:provability-land}, \ref{fol:axd:ppr:prop:provability-land}, \ref{fol:tab:ppr:prop:provability-land}, बाब~(1) नुसार
+$\Gamma \Proves \varphi$ आणि $\Gamma \Proves \psi$. \ref{fol:com:ccs:prop:ccs-prov-in}
+नुसार $\varphi \in \Gamma$ आणि $\psi \in \Gamma$, अपेक्षेप्रमाणे.
+
+उलट दिशेसाठी $\varphi \in \Gamma$ आणि $\psi \in \Gamma$ असे समजा. पुढील
+संदर्भांतील
+
+  \ref{fol:seq:ppr:prop:provability-land}, \ref{fol:ntd:ppr:prop:provability-land}, \ref{fol:axd:ppr:prop:provability-land}, \ref{fol:tab:ppr:prop:provability-land}, बाब~(2) नुसार
+$\Gamma \Proves \varphi \land \psi$. \ref{fol:com:ccs:prop:ccs-prov-in} नुसार $\varphi \land
+\psi \in \Gamma$.
+
+\item
+
+प्रथम $\varphi \lor \psi \in \Gamma$ असेल, तर $\varphi \in \Gamma$ किंवा $\psi \in
+\Gamma$, हे दाखवू. $\varphi \lor \psi \in \Gamma$, पण $\varphi \notin \Gamma$ आणि
+$\psi \notin \Gamma$ असे समजा. $\Gamma$ हा संपूर्ण असल्यामुळे
+$\lnot \varphi \in \Gamma$ आणि $\lnot \psi \in \Gamma$. पुढील संदर्भांतील
+
+  \ref{fol:seq:ppr:prop:provability-lor}, \ref{fol:ntd:ppr:prop:provability-lor}, \ref{fol:axd:ppr:prop:provability-lor}, \ref{fol:tab:ppr:prop:provability-lor},
+बाब~(1) नुसार $\Gamma$ विसंगत आहे; हा विरोधाभास आहे. म्हणून $\varphi \in
+\Gamma$ किंवा $\psi \in \Gamma$.
+
+उलट दिशेसाठी $\varphi \in \Gamma$ किंवा $\psi \in \Gamma$ असे समजा. पुढील
+संदर्भांतील
+
+  \ref{fol:seq:ppr:prop:provability-lor}, \ref{fol:ntd:ppr:prop:provability-lor}, \ref{fol:axd:ppr:prop:provability-lor}, \ref{fol:tab:ppr:prop:provability-lor}, बाब~(2) नुसार
+$\Gamma \Proves \varphi \lor \psi$. \ref{fol:com:ccs:prop:ccs-prov-in} नुसार $\varphi \lor
+\psi \in \Gamma$, अपेक्षेप्रमाणे.
+
+\item
+
+पुढे जाणाऱ्या दिशेसाठी $\varphi \lif \psi \in \Gamma$ असे समजा आणि उलटपक्षी
+$\varphi \in \Gamma$ व $\psi \notin \Gamma$ असे गृहीत धरा. या गृहीतकांनुसार
+$\varphi \lif \psi \in \Gamma$ आणि $\varphi \in \Gamma$. पुढील संदर्भांतील
+
+  \ref{fol:seq:ppr:prop:provability-lif}, \ref{fol:ntd:ppr:prop:provability-lif}, \ref{fol:axd:ppr:prop:provability-lif}, \ref{fol:tab:ppr:prop:provability-lif}, बाब~(1) नुसार
+$\Gamma \Proves \psi$. पण मग \ref{fol:com:ccs:prop:ccs-prov-in} नुसार $\psi \in
+\Gamma$; हे $\psi \notin \Gamma$ या गृहीतकाशी विसंगत आहे.
+
+उलट दिशेसाठी प्रथम $\varphi \notin \Gamma$ हे प्रकरण पाहू. $\Gamma$ हा
+संपूर्ण असल्यामुळे $\lnot \varphi \in \Gamma$. पुढील संदर्भांतील
+
+  \ref{fol:seq:ppr:prop:provability-lif}, \ref{fol:ntd:ppr:prop:provability-lif}, \ref{fol:axd:ppr:prop:provability-lif}, \ref{fol:tab:ppr:prop:provability-lif}, बाब~(2) नुसार
+$\Gamma \Proves \varphi \lif \psi$. पुन्हा \ref{fol:com:ccs:prop:ccs-prov-in} नुसार
+$\varphi \lif \psi \in \Gamma$, अपेक्षेप्रमाणे.
+
+आता $\psi \in \Gamma$ हे प्रकरण पाहू. पुढील संदर्भांतील
+
+  \ref{fol:seq:ppr:prop:provability-lif}, \ref{fol:ntd:ppr:prop:provability-lif}, \ref{fol:tab:ppr:prop:provability-lif}, \ref{fol:axd:ppr:prop:provability-lif},
+पुन्हा बाब~(2) नुसार $\Gamma \Proves \varphi \lif \psi$.
+\ref{fol:com:ccs:prop:ccs-prov-in} नुसार $\varphi \lif \psi \in \Gamma$.
+\end{enumerate}
+\end{proof}
+
+
+\begin{prob}
+\ref{fol:com:ccs:prop:ccs} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{हेंकिन विस्तार}\label{fol:com:hen:sec}
+
+\begin{explain}
+संपूर्णता प्रमेय सिद्ध करण्यातील एक आव्हान असे आहे की संपूर्ण सुसंगत
+संच~$\Gamma$ पासून आपण रचलेल्या प्रतिमानाने~$\Gamma$ मधील सर्व संख्यकीकृत
+सूत्रे सत्य केली पाहिजेत. याची हमी देण्यासाठी लिऑन हेंकिन यांची एक
+युक्ती वापरतो. थोडक्यात, भाषेत अनंत स्थिरांकाची भर घालून तिचा विस्तार
+करणे आणि एक मुक्त चल असलेल्या प्रत्येक सूत्र~$\varphi(x)$ साठी
+पुढील रूपाचे सूत्र जोडणे, ही ती युक्ती:
+$\lexists[x][\varphi(x)] \lif \varphi(c)$,
+येथे $c$ हे नवीन स्थिरांक पैकी एक आहे. $\Gamma$ पूर्ण करणारी
+संरचना आपण रचू तेव्हा, यामुळे प्रत्येक
+सत्य अस्तित्ववाची वाक्याचा साक्षी
+नवीन स्थिरांमध्ये असेल, याची हमी मिळेल.
+\end{explain}
+
+\begin{prop}
+\label{fol:com:hen:prop:lang-exp}
+$\Gamma$ हा $\Lang L$ मध्ये सुसंगत असेल आणि $\Lang L$ मध्ये नवीन
+स्थिरांकाचा गणनीय अनंत संच $\Obj d_0$, $\Obj d_1$, \dots
+मिळवून $\Lang L'$ तयार केली असेल, तर $\Gamma$ हा~$\Lang L'$ मध्ये
+सुसंगत असतो.
+\end{prop}
+
+\begin{defn}[संतृप्त संच]
+भाषा $\Lang {L}$ मधील सूत्रांचा संच $\Gamma$
+\emph{संतृप्त} असतो तेव्हा आणि केवळ तेव्हाच, जेव्हा एक मुक्त
+चल~$x$ असलेल्या प्रत्येक सूत्र~$\varphi(x) \in \Frm[L]$
+साठी असे स्थिरांक~$c \in \Lang{L}$ असते की
+$\lexists[x][\varphi(x)] \lif \varphi(c) \in \Gamma$.
+\end{defn}
+
+पुढील प्रमेयाच्या सिद्धतेत खालील व्याख्या वापरली जाईल.
+
+\begin{defn}
+\label{fol:com:hen:defn:henkin-exp}
+$\Lang L'$ ही \ref{fol:com:hen:prop:lang-exp} मधीलप्रमाणे असू द्या. ज्या
+$\Lang L'$ मधील सूत्रे~$\varphi_i(x_i)$ मध्ये एक चर ($x_i$) मुक्तपणे
+येतो, त्या सर्वांचे $\varphi_0(x_0)$, $\varphi_1(x_1)$, \dots असे प्रगणन निश्चित
+करा. आपण~$n$ वर विगमनाने वाक्ये~$\theta_n$ परिभाषित करतो.
+
+$\Lang{L}$ मध्ये आपण भर घातलेल्या $\Obj d_i$ पैकी~$\varphi_0(x_0)$ मध्ये
+न येणारे पहिले स्थिरांक म्हणजे $c_0$ असू द्या. $\theta_0$,
+\dots,~$\theta_{n-1}$ आधीच परिभाषित केली आहेत असे गृहीत धरून, नवीन
+स्थिरांक~$\Obj d_i$ पैकी~$\theta_0$, \dots,~$\theta_{n-1}$ यांमध्ये किंवा
+$\varphi_n(x_n)$ मध्ये न येणारे पहिले स्थिर म्हणजे $c_n$ असू द्या.
+
+आता $\theta_{n}$ हे पुढील सूत्र असू द्या:
+$\lexists[x_{n}][\varphi_{n}(x_{n})] \lif
+  \varphi_{n}(c_{n})$.
+\end{defn}
+
+\begin{lem}
+\label{fol:com:hen:lem:henkin}
+प्रत्येक सुसंगत संच~$\Gamma$ चा विस्तार करून संतृप्त सुसंगत
+संच~$\Gamma'$ मिळवता येतो.
+\end{lem}
+
+\begin{proof}
+भाषा~$\Lang{L}$ मधील वाक्यांचा सुसंगत संच~$\Gamma$ दिला असता,
+नवीन स्थिरांकाचा गणनीय अनंत संच जोडून भाषेचा विस्तार
+$\Lang{L'}$ पर्यंत करा. \ref{fol:com:hen:prop:lang-exp} नुसार $\Gamma$ या अधिक
+समृद्ध भाषेतही सुसंगत असतो. तसेच $\theta_i$ ही
+\ref{fol:com:hen:defn:henkin-exp} मधीलप्रमाणे असू द्या. पुढील व्याख्या करा:
+\begin{align*}
+\Gamma_0 & = \Gamma \\
+\Gamma_{n+1} & = \Gamma_n \cup \{\theta_n \}
+\end{align*}
+म्हणजे $\Gamma_{n+1} = \Gamma \cup \{ \theta_0, \dots, \theta_n \}$; आणि
+$\Gamma' = \bigcup_{n} \Gamma_n$ असू द्या. $\Gamma'$ स्पष्टपणे संतृप्त आहे.
+
+$\Gamma'$ विसंगत असेल, तर कोणत्यातरी $n$ साठी $\Gamma_n$ विसंगत असेल
+(सराव: का ते स्पष्ट करा). म्हणून $\Gamma'$ सुसंगत आहे हे दाखवण्यासाठी
+प्रत्येक संच~$\Gamma_n$ सुसंगत आहे हे~$n$ वर विगमनाने दाखवणे पुरेसे आहे.
+
+विगमनाचा आधार म्हणजे $\Gamma_0 = \Gamma$ सुसंगत आहे हे विधानच; ते
+प्रमेयाचे गृहीतक आहे. विगमन-पायरीसाठी $\Gamma_{n}$ सुसंगत आहे, पण
+$\Gamma_{n+1} = \Gamma_n \cup \{\theta_n\}$ विसंगत आहे असे समजा. लक्षात
+घ्या की $\theta_n$ हे
+$\lexists[x_{n}][\varphi_{n}(x_n)] \lif \varphi_{n}(c_{n})$
+आहे; येथे $\varphi_n(x_n)$ हे फक्त~$x_n$ चर मुक्त असलेले $\Lang{L'}$ चे
+सूत्र आहे. $c_n$ निवडण्याच्या पद्धतीनुसार
+(\ref{fol:com:hen:defn:henkin-exp} पाहा), $c_n$ हे~$\varphi_n(x_n)$ किंवा~$\Gamma_n$
+मध्ये येत नाही.
+
+$\Gamma_n \cup \{\theta_n\}$ विसंगत असेल, तर $\Gamma_n
+\Proves \lnot \theta_n$; म्हणून पुढील दोन्ही विधाने खरी आहेत:
+
+\[\Gamma_n \Proves \lexists[x_n][\varphi_n(x_n)]
+\qquad
+\Gamma_n \Proves \lnot \varphi_n(c_n)
+\]
+$c_n$ हे $\Gamma_n$ किंवा~$\varphi_n(x_n)$ मध्ये येत नसल्यामुळे
+\ref{fol:axd:qpr:thm:strong-generalization}, \ref{fol:seq:qpr:thm:strong-generalization}, \ref{fol:ntd:qpr:thm:strong-generalization}, \ref{fol:tab:qpr:thm:strong-generalization}
+लागू होते.
+$\Gamma_n \Proves \lnot \varphi_n(c_n)$
+यापासून अनुक्रमे
+$\Gamma_n \Proves \lforall[x_n][\lnot \varphi_n(x_n)]$
+मिळते. अशा रीतीने आपल्याकडे पुढील दोन्ही विधाने आहेत:
+$\Gamma_n \Proves \lexists[x_n][\varphi_n(x_n)]$ आणि
+$\Gamma_n \Proves \lforall[x_n][\lnot \varphi_n(x_n)]$;
+म्हणून $\Gamma_n$ स्वतः विसंगत आहे.
+(लक्षात घ्या की
+$\lforall[x_n][\lnot \varphi_n(x_n)] \Proves
+  \lnot\lexists[x_n][\varphi_n(x_n)]$.)
+हा विरोधाभास आहे: $\Gamma_n$ सुसंगत असल्याचे गृहीत होते. म्हणून
+$\Gamma_n \cup \{ \theta_n\}$ सुसंगत आहे.
+
+\end{proof}
+
+\begin{explain}
+आता आपण दाखवू की संतृप्त असलेल्या \emph{संपूर्ण}, सुसंगत संचांना पुढील
+गुणधर्म असतो: त्यात सर्ववाची संख्यकीकृत वाक्य
+  तेव्हा आणि केवळ तेव्हाच असते, जेव्हा त्याचे सर्व दृष्टांत त्यात असतात
+   आणि त्यात अस्तित्ववाची
+  संख्यकीकृत वाक्य तेव्हा आणि केवळ तेव्हाच असते, जेव्हा त्याचा
+  किमान एक दृष्टांत त्यात असतो. संपूर्ण, सुसंगत, संतृप्त संचापासून
+आपण निर्माण करू ती संरचना त्यातील सर्व संख्यकीकृत वाक्ये सत्य करते,
+हे दाखवण्यासाठी हा गुणधर्म वापरू.
+\end{explain}
+
+\begin{prop}\label{fol:com:hen:prop:saturated-instances}
+$\Gamma$ हा संपूर्ण, सुसंगत आणि संतृप्त आहे असे समजा.
+\begin{enumerate}
+\item $\lexists[x][\varphi(x)] \in \Gamma$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा किमान एका बंद पद~$t$ साठी $\varphi(t) \in \Gamma$.
+\item $\lforall[x][\varphi(x)] \in \Gamma$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा सर्व बंद पदे~$t$ यांच्यासाठी $\varphi(t) \in \Gamma$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item
+    प्रथम $\lexists[x][\varphi(x)]
+      \in \Gamma$ असे समजा. $\Gamma$ संतृप्त असल्यामुळे कोणत्यातरी
+      स्थिरांक~$c$ साठी
+      $(\lexists[x][\varphi(x)] \lif \varphi(c)) \in \Gamma$. पुढील संदर्भांतील
+      \ref{fol:axd:ppr:prop:provability-lif}, \ref{fol:seq:ppr:prop:provability-lif}, \ref{fol:ntd:ppr:prop:provability-lif}, \ref{fol:tab:ppr:prop:provability-lif},
+      बाब~(1), आणि
+      \ref{fol:com:ccs:prop:ccs}\ref{fol:com:ccs:prop:ccs-prov-in} नुसार $\varphi(c)
+      \in \Gamma$.
+
+    उलट दिशेसाठी संतृप्तता आवश्यक नाही: $\varphi(t) \in \Gamma$ असे समजा.
+    मग पुढील संदर्भांतील
+      \ref{fol:axd:qpr:prop:provability-quantifiers}, \ref{fol:seq:qpr:prop:provability-quantifiers}, \ref{fol:ntd:qpr:prop:provability-quantifiers}, \ref{fol:tab:qpr:prop:provability-quantifiers},
+      बाब~(1) नुसार $\Gamma \Proves \lexists[x][\varphi(x)]$.
+    \ref{fol:com:ccs:prop:ccs}\ref{fol:com:ccs:prop:ccs-prov-in} नुसार
+    $\lexists[x][\varphi(x)] \in \Gamma$.
+  \item
+    सर्व बंद पदे~$t$ यांच्यासाठी
+      $\varphi(t) \in \Gamma$ असे समजा. विरोधासाठी
+      $\lforall[x][\varphi(x)] \notin \Gamma$ असे गृहीत धरा. $\Gamma$ संपूर्ण
+      असल्यामुळे $\lnot\lforall[x][\varphi(x)] \in \Gamma$. संतृप्ततेनुसार
+      कोणत्यातरी स्थिरांक~$c$ साठी
+      $(\lexists[x][\lnot \varphi(x)] \lif \lnot \varphi(c)) \in
+        \Gamma$. $c$ हे बंद पद असल्यामुळे गृहीतकानुसार $\varphi(c) \in
+      \Gamma$. पण यामुळे $\Gamma$ विसंगत होईल. (सराव: पुढील संच विसंगत
+      असल्याचे दाखवणारी निष्पत्ती द्या:
+      \[      \lnot \lforall[x][\varphi(x)],
+      \lexists[x][\lnot \varphi(x)] \lif \lnot
+        \varphi(c), \varphi(c)
+      \]
+      .)
+
+      उलट दिशेसाठी संतृप्तता आवश्यक नाही:
+      $\lforall[x][\varphi(x)] \in \Gamma$ असे समजा. मग पुढील संदर्भांतील
+      \ref{fol:axd:qpr:prop:provability-quantifiers}, \ref{fol:seq:qpr:prop:provability-quantifiers}, \ref{fol:ntd:qpr:prop:provability-quantifiers}, \ref{fol:tab:qpr:prop:provability-quantifiers},
+      बाब~(2) नुसार $\Gamma \Proves \varphi(t)$. \ref{fol:com:ccs:prop:ccs}
+      नुसार $\varphi(t) \in \Gamma$.
+  \end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{लिंडेनबाउमचे पूर्वप्रमेय}\label{fol:com:lin:sec}
+
+\begin{explain}
+आता आपण असे पूर्वप्रमेय सिद्ध करू की वाक्यांचा कोणताही सुसंगत
+संच केवळ सुसंगतच नव्हे, तर संपूर्ण असलेल्या एखाद्या वाक्यसंचात
+समाविष्ट असतो. या सिद्धतेत प्रत्येक वेळी एक वाक्य जोडले जाते
+आणि प्रत्येक पायरीवर संच सुसंगत राहील याची हमी दिली जाते. हे अशा रीतीने
+करतो की प्रत्येक $\varphi$ साठी कोणत्यातरी टप्प्यावर $\varphi$ किंवा $\lnot
+\varphi$ यांपैकी एक जोडले जाईल. मग त्या रचनेतील सर्व टप्प्यांचा संघ $\varphi$
+किंवा त्याचे नकरण~$\lnot \varphi$ यांपैकी एक समाविष्ट करतो आणि म्हणून तो
+संपूर्ण असतो. प्रत्येक टप्प्यावर विसंगती येणार नाही याची खात्री केल्यामुळे
+तो सुसंगतही असतो.
+\end{explain}
+
+\begin{lem}[लिंडेनबाउमचे पूर्वप्रमेय]
+\label{fol:com:lin:lem:lindenbaum} भाषा~$\Lang{L}$ मधील प्रत्येक सुसंगत
+संच~$\Gamma$ चा विस्तार करून संपूर्ण आणि सुसंगत असा
+संच~$\Gamma^*$ मिळवता येतो.
+\end{lem}
+
+\begin{proof}
+$\Gamma$ सुसंगत असू द्या. $\Lang L$ मधील सर्व वाक्यांचे
+$\varphi_0$, $\varphi_1$, \dots{} असे प्रगणन असू द्या. $\Gamma_0 = \Gamma$
+अशी व्याख्या करा, आणि
+\[\Gamma_{n+1} =
+\begin{cases}
+\Gamma_n \cup \{ \varphi_n \} & \textrm{जर $\Gamma_n \cup \{\varphi_n\}$
+  सुसंगत असेल;} \\
+\Gamma_n \cup \{ \lnot \varphi_n \} & \textrm{अन्यथा.}
+\end{cases}
+\]
+$\Gamma^* = \bigcup_{n \geq 0} \Gamma_n$ असू द्या.
+
+प्रत्येक $\Gamma_n$ सुसंगत आहे: व्याख्येनुसार $\Gamma_0$ सुसंगत आहे.
+$\Gamma_{n+1} = \Gamma_n \cup \{\varphi_n\}$ असेल, तर याचे कारण हा
+दुसरा संच सुसंगत असणे हेच आहे. तो सुसंगत नसेल, तर $\Gamma_{n+1} =
+\Gamma_n \cup \{\lnot \varphi_n\}$. $\Gamma_n \cup \{\lnot \varphi_n\}$
+सुसंगत आहे हे आपल्याला पडताळावे लागेल. तो सुसंगत नाही असे समजा. मग
+$\Gamma_n \cup \{\varphi_n\}$ आणि $\Gamma_n \cup \{\lnot \varphi_n\}$ हे
+\emph{दोन्ही} विसंगत आहेत. याचा अर्थ
+
+  \ref{fol:axd:prv:prop:provability-exhaustive}, \ref{fol:seq:prv:prop:provability-exhaustive}, \ref{fol:ntd:prv:prop:provability-exhaustive}, \ref{fol:tab:prv:prop:provability-exhaustive}
+नुसार $\Gamma_n$ विसंगत असेल; पण हे विगमन-गृहीतकाच्या विरुद्ध आहे.
+
+प्रत्येक~$n$ आणि प्रत्येक $i < n$ साठी $\Gamma_i \subseteq \Gamma_n$.
+हे~$n$ वरील सोप्या विगमनाने मिळते. $n=0$ असेल, तर $i < 0$ असा
+कोणताही निर्देशांक नसतो; म्हणून विधान आपोआप लागू होते. विगमन-पायरीसाठी ते~$n$
+साठी खरे आहे असे समजा. $i < n+1$ असेल, तर $\Gamma_i \subseteq
+\Gamma_{n+1}$ हे दाखवू. रचनेनुसार $\Gamma_{n+1} = \Gamma_n \cup
+\{\varphi_n\}$ किंवा $= \Gamma_n \cup \{\lnot \varphi_n\}$. म्हणून $\Gamma_n
+\subseteq \Gamma_{n+1}$. $i < n+1$ असेल, तर विगमन-गृहीतकानुसार
+$\Gamma_i \subseteq \Gamma_n$ ($i < n$ असल्यास), किंवा $\Gamma_n
+\subseteq \Gamma_n$ हे क्षुल्लक तथ्य लागू होते ($i = n$ असल्यास).
+म्हणून~$\subseteq$ च्या संक्रमणशीलतेने $\Gamma_i \subseteq
+\Gamma_{n+1}$ मिळते.
+
+यावरून $\Gamma^*$ सुसंगत आहे हे मिळते. ते कसे ते पाहू: $\Gamma'
+\subseteq \Gamma^*$ हा सांत संच असू द्या. प्रत्येक $\psi \in \Gamma'$
+हे कोणत्यातरी~$i$ साठी~$\Gamma_i$ मध्येही असते. या निर्देशांकांतील
+सर्वांत मोठा निर्देशांक $n$ असू द्या. $i \le n$ असेल, तर $\Gamma_i
+\subseteq \Gamma_n$ असल्यामुळे प्रत्येक $\psi \in \Gamma'$ हे
+$\in \Gamma_n$ देखील आहे, म्हणजे $\Gamma' \subseteq \Gamma_n$, आणि
+$\Gamma_n$ सुसंगत आहे. म्हणून प्रत्येक सांत उपसंच $\Gamma' \subseteq
+\Gamma^*$ सुसंगत आहे.
+
+  \ref{fol:axd:ptn:prop:proves-compact}, \ref{fol:seq:ptn:prop:proves-compact}, \ref{fol:ntd:ptn:prop:proves-compact}, \ref{fol:tab:ptn:prop:proves-compact} नुसार $\Gamma^*$
+सुसंगत आहे.
+
+$\Frm[L]$ मधील प्रत्येक वाक्य हा~$\Gamma^*$ ची व्याख्या
+करण्यासाठी वापरलेल्या यादीत येतो. $\varphi_n \notin \Gamma^*$ असेल, तर
+$\Gamma_n \cup \{\varphi_n\}$ विसंगत होते हेच त्याचे कारण आहे. पण मग
+$\lnot \varphi_n \in \Gamma^*$; म्हणून $\Gamma^*$ हा संपूर्ण आहे.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{प्रतिमानाची रचना}\label{fol:com:mod:sec}
+
+\begin{explain}
+सध्या आपण~$\eq$ चा विचार करत नाही; म्हणजे~$\eq$ नसलेला
+  वाक्यांचा सुसंगत संच~$\Gamma$ पूर्ततायोग्य आहे एवढेच आपल्याला
+  दाखवायचे आहे. प्रथम~$\Gamma$ चा विस्तार करून सुसंगत, संपूर्ण
+  आणि संतृप्त असा संच~$\Gamma^*$ मिळवतो. या बाबतीत
+  प्रतिमान~$\Struct{M(\Gamma^*)}$ ची व्याख्या सोपी आहे: आपण~$\Lang{L'}$
+  मधील बंद पदांचा संच प्रांत म्हणून घेतो. प्रत्येक स्थिरांक ला तेच
+  स्थिर नेमतो आणि, अधिक व्यापकपणे, प्रत्येक बंद पद~$t$ साठी
+  $\Value{t}{M(\Gamma^*)} = t$ याची खात्री करतो. विधेये ना
+  असे विस्तार नेमतो की एखादे आण्विक वाक्य हे
+  $\Struct{M(\Gamma^*)}$ मध्ये तेव्हा आणि केवळ तेव्हाच सत्य असते, जेव्हा
+  ते~$\Gamma^*$ मध्ये असते. त्यामुळे~$\Gamma^*$ मधील सर्व आण्विक
+  वाक्ये हे~$\Struct{M(\Gamma^*)}$ मध्ये सत्य होतील, हे उघड आहे.
+  आपण सुरुवात केलेला~$\Gamma^*$ सुसंगत, संपूर्ण आणि संतृप्त असेल, तर
+  उरलेली वाक्येही सत्य असतात.
+\end{explain}
+
+
+\begin{defn}[पद-प्रतिमान]
+\label{fol:com:mod:defn:termmodel}
+$\Gamma^*$ हा भाषा~$\Lang L$ मधील वाक्यांचा संपूर्ण,
+सुसंगत आणि संतृप्त संच असू द्या. $\Gamma^*$ चे
+\emph{पद-प्रतिमान}~$\Struct M(\Gamma^*)$ ही पुढीलप्रमाणे परिभाषित केलेली
+संरचना आहे:
+\begin{enumerate}
+\item प्रांत~$\Domain{M(\Gamma^*)}$ हा~$\Lang L$ मधील सर्व बंद
+  पदांचा संच आहे.
+\item स्थिरांक~$c$ चा निर्वचनार्थ स्वतः~$c$ आहे:
+  $\Assign{c}{M(\Gamma^*)} = c$.
+\item फलन~$f$ ला असे फलन नेमले जाते की बंद पदे $t_1$, \dots,
+  $t_n$ ही वितर्के दिली असता त्याचे मूल्य बंद पद $f(t_1, \dots, t_n)$
+  असते:
+\[\Assign{f}{M(\Gamma^*)}(t_1, \dots, t_n) = f(t_1,\dots, t_n)
+\]
+\item $R$ हे $n$-स्थानी विधेय असेल, तर
+  \[  \tuple{t_1, \dots,
+  t_n} \in \Assign{R}{M(\Gamma^*)} \text{ तेव्हा आणि केवळ तेव्हाच } \Atom{R}{t_1, \dots,
+    t_n} \in \Gamma^*.
+  \]
+\end{enumerate}
+\end{defn}
+
+
+
+आपल्याकडे खरोखरच $\Value{t}{M(\Gamma^*)} = t$ आहे, हे आता पडताळू.
+
+\begin{lem}
+\label{fol:com:mod:lem:val-in-termmodel} \ref{fol:com:mod:defn:termmodel} मधील
+$\Struct M(\Gamma^*)$ हे पद-प्रतिमान असू द्या; मग
+$\Value{t}{M(\Gamma^*)} = t$.
+\end{lem}
+\begin{proof}
+ ही सिद्धता~$t$ वरील विगमनाने मिळते. $t$ हे स्थिरांक असण्याचा
+ आधार-प्रसंग पद-प्रतिमानाच्या व्याख्येवरून थेट मिळतो. विगमन-पायरीसाठी
+ $t_1, \ldots, t_n$ ही अशी बंद पदे आहेत की
+ $\Value{t_i}{M(\Gamma^*)} = t_i$, आणि $f$ हे $n$-स्थानी
+ फलन आहे, असे समजा. मग
+\begin{align*}
+\Value{f(t_1,\ldots,t_n)}{M(\Gamma^*)} &= \Assign{f}{M(\Gamma^*)}(\Value{t_1}
+ {M(\Gamma^*)},
+\ldots, \Value{t_n}{M(\Gamma^*)}) \\
+&= \Assign{f}{M(\Gamma^*)}(t_1, \dots, t_n) \\
+&= f(t_1,\dots, t_n),
+\end{align*}
+आणि म्हणून विगमनाने हे प्रत्येक बंद पद~$t$ साठी लागू होते.
+\end{proof}
+
+
+
+\begin{explain}
+  एखादी संरचना~$\Struct{M}$ अस्तित्ववाची संख्यकीकृत
+    वाक्य~$\lexists[x][\varphi(x)]$ सत्य करू शकते, पण ती सत्य करते
+    असा कोणताही दृष्टांत~$\varphi(t)$ नसेल.
+  एखादी संरचना~$\Struct{M}$ सर्ववाची संख्यकीकृत
+    वाक्य~$\lforall[x][\varphi(x)]$ चे सर्व दृष्टांत~$\varphi(t)$ सत्य करू
+    शकते, पण~$\lforall[x][\varphi(x)]$ सत्य करणार नाही. याचे कारण सामान्यतः
+  प्रांत~$\Domain{M}$ मधील प्रत्येक घटक हे एखाद्या बंद पदाचे
+  मूल्य नसते ($\Struct{M}$ बंद पदांनी आच्छादित नसेल). म्हणूनच
+  पूर्ति-संबंधाची व्याख्या चर-मूल्यांकनांच्या साहाय्याने केली जाते. पण आपल्या
+  पद-प्रतिमान~$\Struct{M(\Gamma^*)}$ साठी त्याची आवश्यकता नसती---कारण
+  ते बंद पदांनी आच्छादित आहे. पुढील निष्पत्तीचा आशय हाच आहे.
+\end{explain}
+
+\begin{prop}
+\label{fol:com:mod:prop:quant-termmodel}
+\ref{fol:com:mod:defn:termmodel} मधील $\Struct M(\Gamma^*)$ हे पद-प्रतिमान असू द्या.
+\begin{enumerate}
+\item $\Sat{M(\Gamma^*)}{\lexists[x][\varphi(x)]}$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा किमान एका बंद पद~$t$ साठी $\Sat{M(\Gamma^*)}{\varphi(t)}$.
+\item $\Sat{M(\Gamma^*)}{\lforall[x][\varphi(x)]}$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा सर्व बंद पदे~$t$ यांच्यासाठी $\Sat{M(\Gamma^*)}{\varphi(t)}$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\begin{enumerate}
+\item
+  \ref{fol:syn:ass:prop:sat-quant} नुसार
+    $\Sat{M(\Gamma^*)}{\lexists[x][\varphi(x)]}$ तेव्हा आणि केवळ तेव्हाच,
+    जेव्हा किमान एका चर-मूल्यांकन~$s$ साठी
+    $\Sat{M(\Gamma^*)}{\varphi(x)}[s]$. $\Domain{M(\Gamma^*)}$ मध्ये
+    $\Lang{L}$ मधील बंद पदे असल्यामुळे, हे तेव्हा आणि केवळ तेव्हाच लागू
+    होते, जेव्हा असे किमान एक बंद पद~$t$ असते की $s(x) = t$ आणि
+    $\Sat{M(\Gamma^*)}{\varphi(x)}[s]$. \ref{fol:syn:ext:prop:ext-formulas}
+    नुसार, $s(x) = t$ असेल तेथे $\Sat{M(\Gamma^*)}{\varphi(x)}[s]$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा $\Sat{M(\Gamma^*)}{\varphi(t)}[s]$. तसेच
+    \ref{fol:syn:ass:prop:sentence-sat-true} नुसार,
+    $\varphi(t)$ हे वाक्य असल्यामुळे $\Sat{M(\Gamma^*)}{\varphi(t)}[s]$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा $\Sat{M(\Gamma^*)}{\varphi(t)}$.
+\item
+  \ref{fol:syn:ass:prop:sat-quant} नुसार
+    $\Sat{M(\Gamma^*)}{\lforall[x][\varphi(x)]}$ तेव्हा आणि केवळ तेव्हाच,
+    जेव्हा प्रत्येक चर-मूल्यांकन $s$ साठी
+    $\Sat{M(\Gamma^*)}{\varphi(x)}[s]$. लक्षात घ्या की
+    $\Domain{M(\Gamma^*)}$ मध्ये~$\Lang{L}$ मधील बंद पदे असतात. त्यामुळे
+    प्रत्येक बंद पद~$t$ साठी $s(x) = t$ असे चर-मूल्यांकन मिळते, आणि
+    कोणत्याही चर-मूल्यांकनासाठी $s(x)$ हे एखादे बंद पद~$t$ असते.
+    \ref{fol:syn:ext:prop:ext-formulas} नुसार, $s(x) = t$ असेल तेथे
+    $\Sat{M(\Gamma^*)}{\varphi(x)}[s]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $\Sat{M(\Gamma^*)}{\varphi(t)}[s]$. तसेच
+    \ref{fol:syn:ass:prop:sentence-sat-true} नुसार,
+    $\varphi(t)$ हे वाक्य असल्यामुळे $\Sat{M(\Gamma^*)}{\varphi(t)}[s]$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा $\Sat{M(\Gamma^*)}{\varphi(t)}$.
+\end{enumerate}
+\end{proof}
+
+
+
+
+\begin{lem}[सत्यता पूर्वप्रमेय]
+\label{fol:com:mod:lem:truth} $\varphi$ मध्ये~$\eq$ येत नाही असे समजा. मग
+$\Sat{M(\Gamma^*)}{\varphi}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\varphi \in \Gamma^*$.
+\end{lem}
+
+\begin{proof}
+दोन्ही दिशा एकाच वेळी, $\varphi$ वरील विगमनाने सिद्ध करू.
+\begin{enumerate}
+\item \indcase{\varphi}{\lfalse}
+  {$\Sat/{M(\Gamma^*)}{\lfalse}$
+    हे पूर्तिच्या व्याख्येनुसार मिळते. दुसरीकडे, $\Gamma^*$ सुसंगत
+    असल्यामुळे $\lfalse \notin \Gamma^*$.}
+
+\item \indcase{\varphi}{\ltrue}
+  {$\Sat{M(\Gamma^*)}{\ltrue}$
+    हे पूर्तिच्या व्याख्येनुसार मिळते. दुसरीकडे, $\Gamma^*$ सुसंगत व
+    संपूर्ण असल्यामुळे आणि $\Gamma^* \Proves \ltrue$ असल्यामुळे
+    $\ltrue \in \Gamma^*$.}
+
+\item \indcase{\varphi}{R(t_1, \dots, t_n)}
+  {$\Sat{M(\Gamma^*)}{\Atom{R}{t_1, \dots, t_n}}$ तेव्हा आणि केवळ तेव्हाच,
+    जेव्हा $\tuple{t_1, \dots, t_n} \in \Assign{R}{M(\Gamma^*)}$
+    (पूर्तिच्या व्याख्येनुसार); आणि हे तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $R(t_1, \dots, t_n) \in \Gamma^*$ ($\Struct M(\Gamma^*)$ च्या
+    रचनेनुसार).}
+
+\item
+  \indcase{\varphi}{\lnot \psi}
+    {$\Sat{M(\Gamma^*)}{\indfrm}$ तेव्हा
+    आणि केवळ तेव्हाच, जेव्हा
+    $\Sat/{M(\Gamma^*)}{\psi}$
+    (पूर्तिच्या व्याख्येनुसार). विगमन-गृहीतकानुसार,
+    $\Sat/{M(\Gamma^*)}{\psi}$ तेव्हा
+    आणि केवळ तेव्हाच, जेव्हा $\psi \notin \Gamma^*$. $\Gamma^*$ सुसंगत
+    आणि संपूर्ण असल्यामुळे $\psi \notin \Gamma^*$ तेव्हा आणि केवळ
+    तेव्हाच, जेव्हा $\lnot \psi \in \Gamma^*$.}
+
+\item
+
+  \indcase{\varphi}{\psi \land
+    \chi}{$\Sat{M(\Gamma^*)}{\indfrm}$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $\Sat{M(\Gamma^*)}{\psi}$ आणि
+    $\Sat{M(\Gamma^*)}{\chi}$ हे दोन्ही
+    लागू होतात (पूर्तिच्या व्याख्येनुसार); आणि हे तेव्हा आणि केवळ तेव्हाच,
+    जेव्हा $\psi \in \Gamma^*$ आणि $\chi \in \Gamma^*$ हे दोन्ही लागू
+    होतात (विगमन-गृहीतकानुसार). तसेच
+    \ref{fol:com:ccs:prop:ccs}\ref{fol:com:ccs:prop:ccs-and} नुसार, हे तेव्हा आणि
+    केवळ तेव्हाच लागू होते, जेव्हा $(\psi \land \chi) \in \Gamma^*$.}
+
+\item
+
+  \indcase{\varphi}{\psi \lor \chi}
+    {$\Sat{M(\Gamma^*)}{\indfrm}$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $\Sat{M(\Gamma^*)}{\psi}$ किंवा
+    $\Sat{M(\Gamma^*)}{\chi}$
+    (पूर्तिच्या व्याख्येनुसार); आणि हे तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $\psi \in \Gamma^*$ किंवा $\chi \in \Gamma^*$ (विगमन-गृहीतकानुसार).
+    \ref{fol:com:ccs:prop:ccs}\ref{fol:com:ccs:prop:ccs-or} नुसार, हे तेव्हा आणि
+    केवळ तेव्हाच लागू होते, जेव्हा $(\psi \lor \chi) \in \Gamma^*$.}
+
+\item
+
+  \indcase{\varphi}{\psi \lif \chi}
+    {$\Sat{M(\Gamma^*)}{\indfrm}$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $\Sat/{M(\Gamma^*)}{\psi}$ किंवा $\Sat{M (\Gamma^*)}{\chi}$
+    (पूर्तिच्या व्याख्येनुसार); आणि हे तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $\psi \notin \Gamma^*$ किंवा $\chi \in \Gamma^*$ (विगमन-गृहीतकानुसार).
+    \ref{fol:com:ccs:prop:ccs}\ref{fol:com:ccs:prop:ccs-if} नुसार, हे तेव्हा आणि
+    केवळ तेव्हाच लागू होते, जेव्हा $(\psi \lif \chi) \in \Gamma^*$.}
+
+
+\item
+
+    \indcase{\varphi}{\lforall[x][\psi(x)]}{$\Sat{M(\Gamma^*)}{\indfrm}$ तेव्हा
+      आणि केवळ तेव्हाच, जेव्हा सर्व बंद पदे~$t$ यांच्यासाठी
+      $\Sat{M(\Gamma^*)}{\psi(t)}$ (\ref{fol:com:mod:prop:quant-termmodel}).
+      विगमन-गृहीतकानुसार हे तेव्हा आणि केवळ तेव्हाच लागू होते, जेव्हा सर्व
+      बंद पदे~$t$ यांच्यासाठी $\psi(t) \in \Gamma^*$; आणि
+      \ref{fol:com:hen:prop:saturated-instances} नुसार हे पुन्हा तेव्हा आणि
+      केवळ तेव्हाच लागू होते, जेव्हा $\lforall[x][\psi(x)] \in \Gamma^*$.}
+
+
+\item
+
+    \indcase{\varphi}{\lexists[x][\psi(x)]}{$\Sat{M(\Gamma^*)}{\indfrm}$ तेव्हा
+      आणि केवळ तेव्हाच, जेव्हा किमान एका बंद पद~$t$ साठी
+      $\Sat{M(\Gamma^*)}{\psi(t)}$ (\ref{fol:com:mod:prop:quant-termmodel}).
+      विगमन-गृहीतकानुसार हे तेव्हा आणि केवळ तेव्हाच लागू होते, जेव्हा किमान
+      एका बंद पद~$t$ साठी $\psi(t) \in \Gamma^*$. तसेच
+      \ref{fol:com:hen:prop:saturated-instances} नुसार हे पुन्हा तेव्हा आणि
+      केवळ तेव्हाच लागू होते, जेव्हा $\lexists[x][\psi(x)] \in \Gamma^*$.}
+
+
+\end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{एकरूपता}\label{fol:com:ide:sec}
+
+\begin{explain}
+मागील विभागात दिलेली पद-प्रतिमानाची रचना ही~$\eq$ नसलेल्या
+संच~$\Gamma$ साठी प्रथम-कोटी तर्कशास्त्राची संपूर्णता प्रस्थापित करण्यास
+पुरेशी आहे. पद-प्रतिमान हे~$\eq$ नसलेले प्रत्येक $\varphi \in \Gamma^*$
+पूर्त करते (आणि म्हणून सर्व $\varphi \in \Gamma$ पूर्त करते). पण~$\eq$
+उपस्थित असेल, तर ही रचना चालत नाही. कारण मग~$\Gamma^*$ मध्ये
+वाक्य~$\eq[t][t']$ असू शकते, पण पद-प्रतिमानात कोणत्याही पदाचे
+मूल्य ते पद स्वतःच असते. म्हणून $t$ आणि $t'$ ही भिन्न पदे असतील, तर
+पद-प्रतिमानातील त्यांची मूल्ये---म्हणजे अनुक्रमे $t$ आणि $t'$---भिन्न
+असतात; त्यामुळे $\eq[t][t']$ असत्य असते. मात्र ``भागाकार घेणे'' म्हणून
+ओळखली जाणारी रचना वापरून हे दुरुस्त करता येते.
+\end{explain}
+
+\begin{defn}
+  $\Gamma^*$ हा~$\Lang L$ मधील वाक्यांचा सुसंगत आणि संपूर्ण संच
+  असू द्या. $\Lang L$ मधील बंद पदांच्या संचावर आपण~$\approx$ हा संबंध
+  पुढीलप्रमाणे परिभाषित करतो:
+  \[  t \approx t' \text{\quad तेव्हा आणि केवळ तेव्हाच \quad} \eq[t][t'] \in \Gamma^*
+  \]
+\end{defn}
+
+\begin{prop}
+\label{fol:com:ide:prop:approx-equiv}
+$\approx$ या संबंधाला पुढील गुणधर्म आहेत:
+\begin{enumerate}
+\item $\approx$ परावर्ती आहे.
+\item $\approx$ सममित आहे.
+\item $\approx$ संक्रमक आहे.
+\item $t \approx t'$, $f$ हे फलन, आणि $t_1$, \dots,
+  $t_{i-1}$, $t_{i+1}$, \dots, $t_n$ ही बंद पदे असतील, तर
+\[\Atom{f}{t_1,\dots, t_{i-1}, t, t_{i+1}, \dots, t_n} \approx
+\Atom{f}{t_1,\dots, t_{i-1}, t', t_{i+1}, \dots, t_n}.
+\]
+\item $t \approx t'$, $R$ हे विधेय, आणि $t_1$, \dots,
+  $t_{i-1}$, $t_{i+1}$, \dots, $t_n$ ही बंद पदे असतील, तर
+\begin{multline*}
+\Atom{R}{t_1,\dots, t_{i-1}, t, t_{i+1}, \dots, t_n} \in \Gamma^* \text{ तेव्हा आणि केवळ तेव्हाच } \\
+\Atom{R}{t_1,\dots, t_{i-1}, t', t_{i+1}, \dots, t_n} \in \Gamma^*.
+\end{multline*}
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+$\Gamma^*$ सुसंगत आणि संपूर्ण असल्यामुळे $\eq[t][t'] \in
+\Gamma^*$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma^* \Proves
+\eq[t][t']$. म्हणून पुढील विधाने दाखवणे पुरेसे आहे:
+\begin{enumerate}
+\item प्रत्येक बंद पद~$t$ साठी $\Gamma^* \Proves \eq[t][t]$.
+\item $\Gamma^* \Proves \eq[t][t']$ असेल, तर $\Gamma^* \Proves \eq[t'][t]$.
+\item $\Gamma^* \Proves \eq[t][t']$ आणि $\Gamma^* \Proves
+  \eq[t'][t'']$ असेल, तर $\Gamma^* \Proves \eq[t][t'']$.
+\item $\Gamma^* \Proves \eq[t][t']$ असेल, तर
+\[\Gamma^* \Proves
+\eq[\Atom{f}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n}][\Atom{f}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}]
+\]
+प्रत्येक $n$-स्थानी फलन~$f$ आणि बंद पदे $t_1$, \dots,
+$t_{i-1}$, $t_{i+1}$, \dots,~$t_n$ यांच्यासाठी.
+\item $\Gamma^* \Proves \eq[t][t']$ आणि
+$\Gamma^* \Proves
+\Atom{R}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n}$ असेल, तर
+\[\Gamma^* \Proves
+\Atom{R}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}
+\]
+प्रत्येक $n$-स्थानी विधेय~$R$ आणि बंद पदे $t_1$, \dots,
+$t_{i-1}$, $t_{i+1}$, \dots,~$t_n$ यांच्यासाठी.
+\end{enumerate}
+
+\end{proof}
+
+\begin{prob}
+\ref{fol:com:ide:prop:approx-equiv} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\begin{defn}
+$\Gamma^*$ हा भाषा~$\Lang L$ मधील सुसंगत आणि संपूर्ण संच आहे,
+$t$ हे बंद पद आहे, आणि~$\approx$ हा मागील व्याख्येतील संबंध आहे असे
+समजा. मग:
+\[\equivrep{t}{\approx} = \Setabs{t'}{t'\in \Trm[L], t \approx t'}
+\]
+आणि $\equivclass{\Trm[L]}{\approx} = \Setabs{\equivrep{t}{\approx}}{t \in \Trm[L]}$.
+\end{defn}
+
+\begin{defn}
+\label{fol:com:ide:defn:term-model-factor}
+$\Struct M = \Struct M(\Gamma^*)$ हे \ref{fol:com:mod:defn:termmodel} मधील
+$\Gamma^*$ चे पद-प्रतिमान असू द्या. मग
+$\Struct{\equivclass{M}{\approx}}$ ही पुढील संरचना आहे:
+\begin{enumerate}
+\item $\Domain{\equivclass{M}{\approx}} = \equivclass{\Trm[L]}{\approx}$.
+\item $\Assign{c}{\equivclass{M}{\approx}} = \equivrep{c}{\approx}$
+\item $\Assign{f}{\equivclass{M}{\approx}}(\equivrep{t_1}{\approx}, \dots,
+  \equivrep{t_n}{\approx}) = \equivrep{\Atom{f}{t_1,\dots, t_n}}{\approx}$
+\item $\tuple{\equivrep{t_1}{\approx}, \dots, \equivrep{t_n}{\approx}} \in
+  \Assign{R}{\equivclass{M}{\approx}}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\Sat{M}{\Atom{R}{t_1,\dots, t_n}}$; म्हणजे तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\Atom{R}{t_1,\dots, t_n} \in \Gamma^*$.
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+लक्षात घ्या की~$\equivclass{\Trm[L]}{\approx}$ च्या घटकांना
+$\equivrep{t}{\approx}$ असे संबोधून, म्हणजेच
+\emph{प्रतिनिधी}~$t \in \equivrep{t}{\approx}$ यांच्या साहाय्याने,
+आपण त्यांच्यासाठी $\Assign{f}{\equivclass{M}{\approx}}$ आणि
+$\Assign{R}{\equivclass{M}{\approx}}$ परिभाषित केली आहेत. या व्याख्या
+प्रतिनिधींच्या निवडीवर अवलंबून नाहीत याची आपल्याला खात्री केली पाहिजे.
+म्हणजे, तेच तुल्यतावर्ग निश्चित करणारी दुसरी~$t'$ निवडली
+($\equivrep{t}{\approx} = \equivrep{t'}{\approx}$), तरी व्याख्यांतून तेच
+फल मिळाले पाहिजे. उदाहरणार्थ, $R$ हे एकस्थानी विधेय असेल, तर
+व्याख्येच्या शेवटच्या बाबीनुसार $\equivrep{t}{\approx} \in
+\Assign{R}{\equivclass{M}{\approx}}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Sat{M}{\Atom{R}{t}}$. आता $t \approx t'$ असलेल्या दुसऱ्या
+पद~$t'$ साठी $\Sat/{M}{\Atom{R}{t'}}$ असेल, तर व्याख्येनुसार
+$\equivrep{t'}{\approx} \notin \Assign{R}{\equivclass{M}{\approx}}$ असावे
+लागेल. $t \approx t'$ असेल, तर $\equivrep{t}{\approx} =
+\equivrep{t'}{\approx}$; पण $\equivrep{t}{\approx} \in
+\Assign{R}{\equivclass{M}{\approx}}$ आणि $\equivrep{t}{\approx}
+\notin \Assign{R}{\equivclass{M}{\approx}}$ ही दोन्ही विधाने लागू होऊ
+शकत नाहीत. मात्र \ref{fol:com:ide:prop:approx-equiv} मुळे असे होऊ शकत नाही, याची
+हमी मिळते.
+
+\end{explain}
+
+\begin{prop}
+$\Struct{\equivclass{M}{\approx}}$ सुव्याख्यायित आहे; म्हणजे $t_1$,
+  \dots, $t_n$, $t_1'$, \dots, $t_n'$ ही बंद पदे असतील आणि
+  $t_i \approx t_i'$ असेल, तर
+\begin{enumerate}
+\item $\equivrep{\Atom{f}{t_1,\dots, t_n}}{\approx} =
+    \equivrep{\Atom{f}{t_1',\dots, t_n'}}{\approx}$, म्हणजे
+  \[  \Atom{f}{t_1,\dots, t_n} \approx \Atom{f}{t_1',\dots, t_n'}
+  \]
+  आणि
+\item $\Sat{M}{\Atom{R}{t_1,\dots, t_n}}$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\Sat{M}{\Atom{R}{t_1',\dots, t_n'}}$; म्हणजे
+  \[    \Atom{R}{t_1,\dots, t_n} \in \Gamma^* \text{ तेव्हा आणि केवळ तेव्हाच }
+    \Atom{R}{t_1',\dots, t_n'} \in \Gamma^*.
+  \]
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\ref{fol:com:ide:prop:approx-equiv} वरून~$n$ वरील विगमनाने मिळते.
+\end{proof}
+
+पद-प्रतिमानाच्या बाबतीत होते त्याप्रमाणेच, सत्यता पूर्वप्रमेय सिद्ध
+करण्यापूर्वी आपल्याला पुढील पूर्वप्रमेयाची गरज आहे.
+
+\begin{lem}
+\label{fol:com:ide:lem:val-in-termmodel-factored} $\Struct M = \Struct M
+ (\Gamma^*)$ असू द्या; मग $\Value{t}{\equivclass{M}{\approx}} = \equivrep{t}
+ {\approx}$.
+\end{lem}
+\begin{proof}
+ही सिद्धता \ref{fol:com:mod:lem:val-in-termmodel} च्या सिद्धतेसारखीच आहे.
+\end{proof}
+
+\begin{prob}
+\ref{fol:com:ide:lem:val-in-termmodel-factored} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\begin{lem}
+\label{fol:com:ide:lem:truth}
+सर्व वाक्ये~$\varphi$ यांच्यासाठी $\Sat{\equivclass{M}{\approx}}{\varphi}$ तेव्हा आणि
+केवळ तेव्हाच, जेव्हा $\varphi \in \Gamma^*$.
+\end{lem}
+
+\begin{proof}
+\ref{fol:com:mod:lem:truth} च्या सिद्धतेप्रमाणेच~$\varphi$ वरील विगमनाने सिद्धता
+मिळते. $\varphi \ident \eq[t][t']$ असण्याच्या प्रसंगाकडेच फक्त अधिक लक्ष
+देण्याची गरज आहे.
+\begin{align*}
+\Sat{\equivclass{M}{\approx}}{\eq[t][t']} & \text{ तेव्हा आणि केवळ तेव्हाच } \equivrep{t}{\approx} = \equivrep{t'}{\approx}
+\text{ ($\Struct{\equivclass{M}{\approx}}$ च्या व्याख्येनुसार)}\\
+& \text{ तेव्हा आणि केवळ तेव्हाच } t \approx t' \text{ ($\equivrep{t}{\approx}$ च्या व्याख्येनुसार)}\\
+& \text{ तेव्हा आणि केवळ तेव्हाच } \eq[t][t'] \in \Gamma^* \text{ ($\approx$ च्या व्याख्येनुसार).}
+\end{align*}
+\end{proof}
+
+\begin{digress}
+लक्षात घ्या की $\Struct{M(\Gamma^*)}$ हे नेहमी गणनीय आणि अनंत
+असले, तरी $\Struct{\equivclass{M}{\approx}}$ सांत असू शकते; कारण
+$\equivrep{t}{\approx}$ असे फक्त सांत अनेक वर्ग असू शकतात. हे अपेक्षितच
+आहे, कारण~$\Gamma$ मध्ये अशी वाक्ये असू शकतात की ती सत्य असणारी
+कोणतीही संरचना सांत असणे आवश्यक असते. उदाहरणार्थ,
+$\lforall[x][\lforall[y][x = y]]$ हे सुसंगत वाक्य आहे, पण ज्याच्या
+प्रांत मध्ये नेमका एकच घटक आहे अशाच संरचनांमध्ये
+त्याची पूर्ति होते.
+\end{digress}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{संपूर्णता प्रमेय}\label{fol:com:cth:sec}
+
+\begin{explain}
+आपल्या निष्पत्ती एकत्र करू: आपल्याला संपूर्णता प्रमेय मिळते.
+\end{explain}
+
+\begin{thm}[संपूर्णता प्रमेय]
+\label{fol:com:cth:thm:completeness}
+$\Gamma$ हा वाक्यांचा संच असू द्या. $\Gamma$ सुसंगत असेल, तर
+तो पूर्ततायोग्य आहे.
+\end{thm}
+
+\begin{proof}
+$\Gamma$ सुसंगत आहे असे समजा.
+  \ref{fol:com:hen:lem:henkin} नुसार असा संतृप्त सुसंगत संच
+  $\Gamma' \supseteq \Gamma$ असतो. \ref{fol:com:lin:lem:lindenbaum} नुसार
+असा $\Gamma^* \supseteq \Gamma'$ असतो की तो
+सुसंगत आणि संपूर्ण असतो.
+
+  $\Gamma' \subseteq \Gamma^*$ असल्यामुळे प्रत्येक
+  सूत्र~$\varphi(x)$ साठी~$\Gamma^*$ मध्ये पुढील रूपाचे वाक्य
+  असते:
+  $\lexists[x][\varphi(x)] \lif \varphi(c)$.
+  म्हणून~$\Gamma^*$ संतृप्त आहे. $\Gamma$ मध्ये~$\eq$ येत नसेल, तर
+\ref{fol:com:mod:lem:truth} नुसार
+$\Sat{M(\Gamma^*)}{\varphi}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\varphi \in
+\Gamma^*$. यावरून विशेषतः प्रत्येक $\varphi \in \Gamma$ साठी
+$\Sat{M(\Gamma^*)}{\varphi}$; म्हणून
+$\Gamma$ पूर्ततायोग्य आहे.
+  $\Gamma$ मध्ये~$\eq$ येत असेल, तर \ref{fol:com:ide:lem:truth} नुसार
+  सर्व वाक्ये~$\varphi$ यांच्यासाठी
+  $\Sat{\equivclass{M}{\approx}}{\varphi}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\varphi \in \Gamma^*$. विशेषतः, प्रत्येक $\varphi \in \Gamma$ साठी
+  $\Sat{\equivclass{M}{\approx}}{\varphi}$; म्हणून $\Gamma$ पूर्ततायोग्य आहे.
+\end{proof}
+
+\begin{cor}[संपूर्णता प्रमेय, दुसरी आवृत्ती]
+\label{fol:com:cth:cor:completeness}
+प्रत्येक $\Gamma$ आणि प्रत्येक वाक्ये~$\varphi$ साठी: जर
+$\Gamma \Entails \varphi$, तर $\Gamma \Proves \varphi$.
+\end{cor}
+
+\begin{proof}
+लक्षात घ्या की \ref{fol:com:cth:cor:completeness} आणि
+\ref{fol:com:cth:thm:completeness} यांमधील $\Gamma$ वर सर्ववाची संख्यकीकरण केलेले
+आहे. आपला गोंधळ होऊ नये म्हणून \ref{fol:com:cth:thm:completeness} हे वेगळा चर
+वापरून पुन्हा मांडू: वाक्यांचा कोणताही संच~$\Delta$ दिला असता,
+जर $\Delta$ सुसंगत असेल, तर तो पूर्ततायोग्य आहे. प्रतिपरिवर्तनाने,
+$\Delta$ पूर्ततायोग्य नसेल, तर $\Delta$ विसंगत आहे. अनुप्रमेय सिद्ध
+करण्यासाठी याचा वापर करू.
+
+$\Gamma \Entails \varphi$ असे समजा. मग \ref{fol:syn:sem:prop:entails-unsat}
+नुसार $\Gamma \cup \{\lnot \varphi\}$ अपूर्ततायोग्य आहे. $\Gamma \cup
+\{\lnot \varphi\}$ हाच आपला $\Delta$ घेतल्यास,
+\ref{fol:com:cth:thm:completeness} च्या मागील आवृत्तीनुसार $\Gamma \cup
+\{\lnot \varphi\}$ विसंगत आहे. पुढील संदर्भांनुसार,
+
+  \ref{fol:axd:prv:prop:prov-incons}, \ref{fol:seq:prv:prop:prov-incons}, \ref{fol:ntd:prv:prop:prov-incons}, \ref{fol:tab:prv:prop:prov-incons},
+$\Gamma \Proves \varphi$.
+\end{proof}
+
+
+\begin{prob}
+\ref{fol:com:cth:cor:completeness} वापरून
+\ref{fol:com:cth:thm:completeness} सिद्ध करा आणि अशा रीतीने
+संपूर्णता प्रमेयाच्या दोन्ही मांडण्या समतुल्य आहेत हे दाखवा.
+\end{prob}
+
+
+
+
+
+\begin{prob}
+एखादी निष्पत्ती प्रणाली संपूर्ण असण्यासाठी तिचे नियम इतके समर्थ
+असले पाहिजेत की प्रत्येक अपूर्ततायोग्य संच विसंगत असल्याचे ते सिद्ध करू
+शकतील. संपूर्णता सिद्ध करण्यासाठी निष्पत्तीचे कोणते नियम आवश्यक
+होते? यांपैकी कोणताही नियम सिद्धतेत कोठेच वापरलेला नाही का? या प्रश्नांची
+उत्तरे देण्यासाठी, \ref{fol:com:cth:thm:completeness} च्या सिद्धतेपर्यंत
+नेणाऱ्या कोणत्या निष्पत्तींमध्ये निष्पत्तीचे कोणते नियम वापरले, हे
+दाखवणारी यादी किंवा आकृती तयार करा. या सिद्धतांमधील नियमांच्या कोणत्याही
+अध्याहृत वापरांची नोंद अवश्य करा.
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{संहतता प्रमेय}\label{fol:com:com:sec}
+
+संपूर्णता प्रमेयाची एक महत्त्वाची निष्पत्ती म्हणजे संहतता प्रमेय.
+वाक्यांच्या एखाद्या संचाचा प्रत्येक \emph{सांत} उपसंच पूर्ततायोग्य असेल,
+तर संपूर्ण संच पूर्ततायोग्य असतो---तो संच स्वतः अनंत असला तरीही, असे
+संहतता प्रमेय सांगते. हे मुळीच उघड नाही. प्रथमदर्शनी तरी अशी शक्यता
+नाकारली जाईल असे काही दिसत नाही की वाक्यांचे अनंत संच व्याघाती
+असतील, पण व्याघात, जणू काही, अनंत संख्येमुळेच उद्भवत असेल. अशी परिस्थिती
+नाकारता येते, असे संहतता प्रमेय सांगते: ज्यांचा प्रत्येक सांत उपसंच
+पूर्ततायोग्य आहे असे वाक्यांचे अपूर्ततायोग्य अनंत संच नसतात.
+संपूर्णता प्रमेयाप्रमाणे याची तार्किक निष्पन्नतेशी संबंधित आवृत्तीही आहे:
+वाक्यांच्या अनंत संचापासून काही निष्पन्न होत असेल, तर ते आधीच
+एखाद्या सांत उपसंचापासून निष्पन्न होते.
+
+\begin{defn}
+  सूत्रांचा संच~$\Gamma$ \emph{सांततः पूर्ततायोग्य} असतो तेव्हा आणि
+  केवळ तेव्हाच, जेव्हा प्रत्येक सांत $\Gamma_0 \subseteq \Gamma$
+  पूर्ततायोग्य असतो.
+\end{defn}
+
+\begin{thm}[संहतता प्रमेय]
+\label{fol:com:com:thm:compactness}
+वाक्यांचा कोणताही संच~$\Gamma$ आणि कोणतेही वाक्य~$\varphi$ यांच्यासाठी पुढील
+विधाने लागू होतात:
+\begin{enumerate}
+  \item $\Gamma \Entails \varphi$ तेव्हा आणि केवळ तेव्हाच, जेव्हा असा सांत
+    $\Gamma_0 \subseteq \Gamma$ असतो की $\Gamma_0 \Entails \varphi$.
+  \item $\Gamma$ पूर्ततायोग्य असतो तेव्हा आणि केवळ तेव्हाच, जेव्हा तो
+    सांततः पूर्ततायोग्य असतो.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+आपण (2) सिद्ध करू. $\Gamma$ पूर्ततायोग्य असेल, तर अशी
+संरचना~$\Struct{M}$
+असते की प्रत्येक $\varphi \in \Gamma$ साठी
+$\Sat{M}{\varphi}$. अर्थात, ही
+$\Struct{M}$ देखील~$\Gamma$ चा प्रत्येक सांत
+उपसंच पूर्त करते; म्हणून~$\Gamma$ सांततः पूर्ततायोग्य आहे.
+
+आता $\Gamma$ सांततः पूर्ततायोग्य आहे असे समजा. मग प्रत्येक सांत
+उपसंच~$\Gamma_0 \subseteq \Gamma$ पूर्ततायोग्य आहे. निर्दोषतेनुसार
+(
+  \ref{fol:axd:sou:cor:consistency-soundness}, \ref{fol:seq:sou:cor:consistency-soundness}, \ref{fol:ntd:sou:cor:consistency-soundness}, \ref{fol:tab:sou:cor:consistency-soundness}),
+प्रत्येक सांत उपसंच सुसंगत आहे. मग पुढील संदर्भांनुसार $\Gamma$ स्वतः
+सुसंगत असला पाहिजे:
+
+  \ref{fol:axd:ptn:prop:proves-compact}, \ref{fol:seq:ptn:prop:proves-compact}, \ref{fol:ntd:ptn:prop:proves-compact}, \ref{fol:tab:ptn:prop:proves-compact}.
+संपूर्णतेनुसार (\ref{fol:com:cth:thm:completeness}), $\Gamma$ सुसंगत
+असल्यामुळे तो पूर्ततायोग्य आहे.
+\end{proof}
+
+
+\begin{prob}
+\ref{fol:com:com:thm:compactness} मधील (1) सिद्ध करा.
+\end{prob}
+
+
+
+
+
+\begin{ex}
+उपपत्ती~$\Gamma$ च्या प्रत्येक प्रतिमान~$\Struct{M}$ मध्ये प्रत्येक
+पद~$t$ हे अर्थातच~$\Domain{M}$ मधील घटक निर्देशित करते.
+$\Domain{M}$ मधील प्रत्येक घटक देखील कोणत्यातरी पदाने निर्देशित
+केला जातो, याची हमी देता येते का? दुसऱ्या शब्दांत, ज्यांची सर्व प्रतिमाने
+बंद पदांनी आच्छादित आहेत अशा उपपत्ती~$\Gamma$ असतात का? $\Gamma$ ला
+अनंत प्रतिमाने असतील, तर असे नसते, हे संहतता प्रमेय दाखवते. ते पुढीलप्रमाणे
+दिसते: $\Struct{M}$ हे~$\Gamma$ चे अनंत प्रतिमान असू द्या आणि $c$ हे
+$\Gamma$ च्या भाषेत नसलेले स्थिरांक असू द्या. $\Gamma$ ची
+भाषा~$\Lang{L}$ मधील प्रत्येक पद~$t$ साठी असलेल्या सर्व
+$\eq/[c][t]$ या वाक्यांचा~$\Delta$ हा संच असू द्या, म्हणजे
+  \[  \Delta = \Setabs{\eq/[c][t]}{t \in \Trm[L]}.
+  \]
+$\Gamma \cup \Delta$ चा सांत उपसंच $\Gamma' \cup \Delta'$ असा लिहिता
+येतो; येथे $\Gamma' \subseteq \Gamma$ आणि $\Delta' \subseteq \Delta$.
+$\Delta'$ सांत असल्यामुळे त्यात फक्त सांत अनेक पदे असू शकतात.
+त्यांपैकी कोणत्याही पदाने निर्देशित न केलेला $\Domain{M}$ मधील
+घटक $a \in \Domain{M}$ असू द्या आणि $\Struct{M'}$ ही
+$\Struct{M}$ सारखीच, पण $\Assign{c}{M'} = a$ देखील असलेली संरचना
+असू द्या. $\Delta'$ मध्ये येणाऱ्या प्रत्येक~$t$ साठी
+$a \neq \Value{t}{M}$ असल्यामुळे $\Sat{M'}{\Delta'}$. तसेच
+$\Sat{M}{\Gamma}$, $\Gamma' \subseteq \Gamma$, आणि~$\Gamma$ मध्ये $c$
+येत नसल्यामुळे $\Sat{M'}{\Gamma'}$ देखील. म्हणून $\Gamma \cup \Delta$
+च्या प्रत्येक सांत उपसंच $\Gamma' \cup \Delta'$ साठी
+$\Sat{M'}{\Gamma' \cup \Delta'}$. त्यामुळे $\Gamma \cup \Delta$ चा
+प्रत्येक सांत उपसंच पूर्ततायोग्य आहे. संहततेनुसार $\Gamma \cup \Delta$
+स्वतः पूर्ततायोग्य आहे. म्हणून $\Sat{M}{\Gamma \cup \Delta}$ अशी
+प्रतिमाने असतात. असे प्रत्येक $\Struct{M}$ हे~$\Gamma$ चे प्रतिमान आहे,
+पण ते बंद पदांनी आच्छादित नाही; कारण~$\Lang{L}$ मधील सर्व पदे~$t$
+यांच्यासाठी $\Value{c}{M} \neq \Value{t}{M}$.
+\end{ex}
+
+\begin{ex}
+विधेय~$<$, स्थिरांक~$\Obj{0}$, $\Obj{1}$, आणि
+फलने~$+$, $\times$, व~$-$ असलेल्या भाषा~$\Lang{L}$ चा
+विचार करा. प्रांत~$\Rat$ आणि उघड निर्वचनार्थ असलेल्या
+संरचना~$\Struct{Q}$ मध्ये सत्य असलेल्या या भाषा मधील सर्व
+वाक्यांचा संच~$\Gamma$ असू द्या. $\Gamma$ म्हणजे परिमेय
+संख्यांविषयी सत्य असलेल्या~$\Lang{L}$ मधील सर्व वाक्यांचा संच.
+अर्थात~$\Rat$ मध्ये (आणि~$\Real$ मध्येही) अशा संख्या~$r$ नसतात की त्या
+$0$ पेक्षा मोठ्या, पण प्रत्येक $k \in \PosInt$ साठी $1/k$ पेक्षा लहान
+असतात. अशी संख्या अस्तित्वात असती, तर ती \emph{अतिसूक्ष्म संख्या} असती:
+शून्येतर, पण अनंतपटीने लहान. $\Gamma$ ची अतिसूक्ष्म संख्या असलेली प्रतिमाने
+अस्तित्वात आहेत, हे दाखवण्यासाठी संहतता प्रमेय वापरता येते. आपल्या भाषेत
+भागाकाराचे फलन नाही (शून्याने भागाकार अपरिभाषित असतो आणि
+फलनांचे निर्वचन सर्वत्र परिभाषित फलनांनी केले पाहिजे). तरीही
+$r < 1/k$ हे व्यक्त करता येते; कारण हे तेव्हा आणि केवळ तेव्हाच लागू होते,
+जेव्हा $r \cdot k < 1$. आता $c$ हे नवीन स्थिरांक असू द्या आणि
+$\Delta$ पुढीलप्रमाणे असू द्या:
+\[\{\Obj{0} < c\}
+\cup \Setabs{ c \times \num k < \Obj{1} }{k \in \PosInt}
+\]
+(येथे $\num{k} = (\Obj{1} + (\Obj{1} + \dots + (\Obj{1} +
+\Obj{1})\dots))$ मध्ये $k$ इतके~$\Obj{1}$ आहेत). $\Delta$ च्या कोणत्याही
+सांत उपसंच~$\Delta_0$ साठी असा~$K$ असतो की~$\Delta_0$ मधील सर्व
+वाक्ये $c \times \num{k} < \Obj{1}$ यांमध्ये $k < K$ असते.
+$\Assign{c}{Q'} = 1/K$ असे ठेवून $\Struct{Q}$ चा विस्तार
+$\Struct{Q'}$ पर्यंत केला, तर कोणत्याही सांत $\Gamma_0 \subseteq \Gamma$
+साठी $\Sat{Q'}{\Gamma_0 \cup \Delta_0}$, आणि म्हणून $\Gamma \cup \Delta$
+सांततः पूर्ततायोग्य आहे (सराव: हे सविस्तर सिद्ध करा). संहततेनुसार
+$\Gamma \cup \Delta$ पूर्ततायोग्य आहे. $\Gamma \cup \Delta$ च्या
+कोणत्याही प्रतिमान~$\Struct{S}$ मध्ये एक अतिसूक्ष्म संख्या असते, ती म्हणजे
+$\Assign{c}{S}$.
+\end{ex}
+
+
+
+\begin{prob}
+अंकगणिताच्या प्रमाण प्रतिमान~$\Struct{N}$ मध्ये प्रत्येक सूत्र~$\num{n}
+< x$ ची पूर्ति करणारा कोणताही घटक~$k \in \Domain{N}$ नाही
+(येथे $\num{n}$ हे $n$ इतकी~$\prime$ चिन्हे असलेले
+$\Obj{0}^{\prime\dots\prime}$ आहे). अंकगणिताच्या प्रमाण
+प्रतिमान~$\Struct{N}$ मध्ये सत्य असलेली अंकगणिताच्या भाषेतील
+वाक्ये ही प्रत्येक सूत्र~$\num{n} < x$ ची पूर्ति \emph{करणारा}
+घटक असलेल्या संरचना~$\Struct{N'}$ मध्येही सत्य आहेत,
+हे दाखवण्यासाठी संहतता प्रमेय वापरा.
+\end{prob}
+
+
+
+\begin{ex}
+एकरूपता असलेले प्रथम-कोटी तर्कशास्त्र हे प्रांताच्या आकाराला
+एखादी किमान मर्यादा असली पाहिजे, असे व्यक्त करू शकते हे आपल्याला माहीत
+आहे: वाक्य~$\varphi_{\ge n}$ (जे ``किमान $n$ भिन्न वस्तू आहेत'' असे सांगते)
+फक्त अशा रचनांमध्ये सत्य असते ज्यांत $\Domain{M}$ मध्ये किमान~$n$ वस्तू
+असतात. म्हणून
+  \[  \Delta = \Setabs{\varphi_{\ge n}}{n \ge 1}
+  \]
+असे घेतले, तर~$\Delta$ चे कोणतेही प्रतिमान अनंत असले पाहिजे. म्हणून
+एखाद्या उपपत्तीला फक्त अनंत प्रतिमानेच आहेत याची हमी तिच्यात~$\Delta$
+मिळवून देता येते: $\Gamma \cup \Delta$ ची प्रतिमाने म्हणजे~$\Gamma$ ची
+सर्व आणि फक्त अनंत प्रतिमाने.
+
+अशा रीतीने प्रथम-कोटी तर्कशास्त्र अनंतता व्यक्त करू शकते. पण ते सांतता
+व्यक्त करू शकत नाही, हे संहतता प्रमेय दाखवते. कारण वाक्यांचा
+एखादा संच~$\Lambda$ सर्व आणि फक्त सांत संरचनांमध्ये पूर्त होतो
+असे समजा. मग $\Delta \cup \Lambda$ सांततः पूर्ततायोग्य आहे. का? सांत
+$\Delta' \cup \Lambda' \subseteq \Delta \cup \Lambda$ असा संच असू
+द्या; येथे $\Delta' \subseteq \Delta$ आणि $\Lambda' \subseteq \Lambda$.
+$\varphi_{\ge n} \in \Delta'$ असेल अशा संख्यांपैकी सर्वांत मोठी संख्या~$n$
+असू द्या. $\Lambda$ ची सर्व सांत रचनांमध्ये पूर्ति होत असल्यामुळे,
+त्याला सांत अनेक, पण $\ge n$ इतके घटक असलेले
+प्रतिमान~$\Struct{M}$ असते. पण मग $\Sat{M}{\Delta' \cup \Lambda'}$.
+संहततेनुसार $\Delta \cup \Lambda$ ला अनंत प्रतिमान असते; पण हे
+$\Lambda$ ची पूर्ति फक्त सांत संरचनांमध्ये होते या गृहीतकाच्या
+विरुद्ध आहे.
+\end{ex}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{संहतता प्रमेयाची प्रत्यक्ष सिद्धता}\label{fol:com:cpd:sec}
+
+संपूर्णता प्रमेयाच्या सिद्धतेतील कल्पनाच वापरून, संपूर्णता प्रमेयाचा आधार
+न घेता संहतता प्रमेय प्रत्यक्ष सिद्ध करता येते. संपूर्णता प्रमेयाच्या
+सिद्धतेत आपण वाक्यांच्या सुसंगत संच~$\Gamma$ पासून सुरुवात केली,
+त्याचा विस्तार करून वाक्यांचा सुसंगत, संतृप्त आणि
+संपूर्ण संच~$\Gamma^*$ मिळवला; आणि मग~$\Gamma^*$ पासून रचलेल्या
+पद-प्रतिमान~$\Struct{M(\Gamma^*)}$
+मध्ये~$\Gamma$ मधील सर्व वाक्ये सत्य आहेत, म्हणजे~$\Gamma$
+पूर्ततायोग्य आहे, हे दाखवले.
+
+सांततः पूर्ततायोग्य वाक्यसंच पूर्ततायोग्य असतो हे दाखवण्यासाठी हीच पद्धत
+वापरता येते. फक्त सत्यता पूर्वप्रमेयापर्यंत नेणाऱ्या निष्पत्तींच्या अशा
+समांतर आवृत्त्या सिद्ध कराव्या लागतील की त्यांत ``सुसंगत'' ऐवजी ``सांततः
+पूर्ततायोग्य'' वापरलेले असेल.
+
+\begin{prop}
+\label{fol:com:cpd:prop:fsat-ccs}
+$\Gamma$ हा संपूर्ण आणि सांततः पूर्ततायोग्य आहे असे समजा. मग:
+\begin{enumerate}
+\item $(\varphi \land \psi) \in \Gamma$
+  तेव्हा आणि केवळ तेव्हाच, जेव्हा $\varphi \in \Gamma$ आणि $\psi \in \Gamma$
+  ही दोन्ही विधाने लागू होतात.
+
+\item $(\varphi \lor \psi) \in \Gamma$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\varphi \in \Gamma$ किंवा $\psi \in \Gamma$ यांपैकी एक लागू होते.
+
+\item $(\varphi \lif \psi) \in \Gamma$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\varphi \notin \Gamma$ किंवा $\psi \in \Gamma$ यांपैकी एक लागू होते.
+\end{enumerate}
+\end{prop}
+
+
+\begin{prob}
+\ref{fol:com:cpd:prop:fsat-ccs} सिद्ध करा. $\Proves$ चा वापर टाळा.
+\end{prob}
+
+
+
+
+
+\begin{lem}
+\label{fol:com:cpd:lem:fsat-henkin} प्रत्येक सांततः पूर्ततायोग्य संच~$\Gamma$ चा
+विस्तार करून संतृप्त आणि सांततः पूर्ततायोग्य संच~$\Gamma'$ मिळवता येतो.
+\end{lem}
+
+
+
+\begin{prob}
+\ref{fol:com:cpd:lem:fsat-henkin} सिद्ध करा. (सूचना: महत्त्वाची
+पायरी म्हणजे निष्पत्त्या किंवा सुसंगततेचा अजिबात आधार न घेता,
+$\Gamma_n$ सांततः पूर्ततायोग्य असेल, तर $\Gamma_n \cup \{\theta_n\}$
+देखील सांततः पूर्ततायोग्य आहे हे दाखवणे.)
+\end{prob}
+
+
+
+\begin{prop}\label{fol:com:cpd:prop:fsat-instances}
+$\Gamma$ हा संपूर्ण, सांततः पूर्ततायोग्य आणि संतृप्त आहे असे समजा.
+\begin{enumerate}
+\item $\lexists[x][\varphi(x)] \in \Gamma$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा किमान एका बंद पद~$t$ साठी $\varphi(t) \in \Gamma$.
+\item $\lforall[x][\varphi(x)] \in \Gamma$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा सर्व बंद पदे~$t$ यांच्यासाठी $\varphi(t) \in \Gamma$.
+\end{enumerate}
+\end{prop}
+
+
+
+\begin{prob}
+\ref{fol:com:cpd:prop:fsat-instances} सिद्ध करा.
+\end{prob}
+
+
+\begin{lem}
+\label{fol:com:cpd:lem:fsat-lindenbaum} प्रत्येक सांततः पूर्ततायोग्य संच~$\Gamma$
+चा विस्तार करून संपूर्ण आणि सांततः पूर्ततायोग्य संच~$\Gamma^*$
+मिळवता येतो.
+\end{lem}
+
+
+\begin{prob}
+\ref{fol:com:cpd:lem:fsat-lindenbaum} सिद्ध करा. (सूचना: महत्त्वाची
+पायरी म्हणजे $\Gamma_n$ सांततः पूर्ततायोग्य असेल, तर $\Gamma_n \cup
+\{\varphi_n\}$ किंवा $\Gamma_n \cup \{\lnot \varphi_n\}$ यांपैकी एक संच सांततः
+पूर्ततायोग्य असतो हे दाखवणे.)
+\end{prob}
+
+
+
+
+\begin{thm}[संहतता]
+\label{fol:com:cpd:thm:compactness-direct} $\Gamma$ पूर्ततायोग्य असतो तेव्हा आणि
+केवळ तेव्हाच, जेव्हा तो सांततः पूर्ततायोग्य असतो.
+\end{thm}
+
+\begin{proof}
+$\Gamma$ पूर्ततायोग्य असेल, तर अशी
+संरचना~$\Struct{M}$
+असते की प्रत्येक $\varphi \in \Gamma$ साठी
+$\Sat{M}{\varphi}$. अर्थात, ही
+$\Struct{M}$ देखील~$\Gamma$ चा प्रत्येक
+सांत उपसंच पूर्त करते; म्हणून~$\Gamma$ सांततः पूर्ततायोग्य आहे.
+
+आता $\Gamma$ सांततः पूर्ततायोग्य आहे असे समजा.
+  \ref{fol:com:cpd:lem:fsat-henkin} नुसार असा सांततः पूर्ततायोग्य, संतृप्त संच
+  $\Gamma' \supseteq \Gamma$ असतो. \ref{fol:com:cpd:lem:fsat-lindenbaum} नुसार
+$\Gamma'$ चा विस्तार करून संपूर्ण आणि सांततः
+पूर्ततायोग्य संच~$\Gamma^*$ मिळवता येतो, आणि $\Gamma^*$
+  अजूनही संतृप्त असतो. \ref{fol:com:mod:defn:termmodel} मधीलप्रमाणे
+पद-प्रतिमान~$\Struct{M(\Gamma^*)}$
+रचा. लक्षात घ्या की \ref{fol:com:mod:prop:quant-termmodel} हे
+$\Gamma^*$ सुसंगत आहे (किंवा त्या दृष्टीने संपूर्ण वा संतृप्त आहे)
+या तथ्यावर अवलंबून नव्हते; ते फक्त $\Struct{M(\Gamma^*)}$ हे बंद पदांनी
+आच्छादित आहे या तथ्यावर अवलंबून होते.
+सत्यता पूर्वप्रमेयाची सिद्धता (\ref{fol:com:mod:lem:truth}) तशीच लागू होते,
+जर \ref{fol:com:ccs:prop:ccs} च्या संदर्भाऐवजी
+\ref{fol:com:cpd:prop:fsat-ccs} चा संदर्भ वापरला आणि
+\ref{fol:com:hen:prop:saturated-instances} च्या संदर्भाऐवजी
+\ref{fol:com:cpd:prop:fsat-instances} चा संदर्भ वापरला.
+
+\end{proof}
+
+
+\begin{prob}
+\ref{fol:com:cpd:thm:compactness-direct} च्या सिद्धतेला आवश्यक असलेली
+सत्यता पूर्वप्रमेयाची (\ref{fol:com:mod:lem:truth}) संपूर्ण सिद्धता
+लिहा.
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{लोव्हेनहाइम--स्कोलेम प्रमेय}\label{fol:com:dls:sec}
+
+एखाद्या उपपत्तीला अनंत प्रतिमान असेल, तर तिला फार तर गणनीय अनंत
+असलेले प्रतिमानही असते, असे लोव्हेनहाइम--स्कोलेम प्रमेय सांगते. या
+तथ्याची तात्काळ निष्पत्ती अशी की एखाद्या संरचनेचा आकार
+अगणनीय आहे हे प्रथम-कोटी तर्कशास्त्र व्यक्त करू शकत नाही: सर्व
+अगणनीय संरचनांमध्ये पूर्त होणारे कोणतेही वाक्य
+किंवा वाक्यांचा कोणताही संच हा एखाद्या गणनीय रचनेतही
+पूर्त होतो.
+
+\begin{thm}
+\label{fol:com:dls:thm:downward-ls} $\Gamma$ सुसंगत असेल, तर त्याला
+गणनीय प्रतिमान असते; म्हणजे ज्याचा प्रांत सांत किंवा
+गणनीय अनंत आहे अशा संरचनांमध्ये तो पूर्ततायोग्य असतो.
+\end{thm}
+
+\begin{proof}
+$\Gamma$ सुसंगत असेल, तर संपूर्णता प्रमेयाच्या सिद्धतेतून मिळणाऱ्या
+संरचना~$\Struct M$ चा प्रांत~$\Domain{M}$ हा भाषा~$\Lang L$ मधील
+पदांच्या संचापेक्षा मोठा नसतो. म्हणून $\Struct M$ फार तर
+गणनीय अनंत आहे.
+\end{proof}
+
+\begin{thm}
+\label{fol:com:dls:noidentity-ls} $\Gamma$ हा एकरूपतेविना प्रथम-कोटी तर्कशास्त्राच्या
+भाषेतील वाक्यांचा सुसंगत संच असेल, तर त्याला गणनीय अनंत
+प्रतिमान असते; म्हणजे ज्याचा प्रांत अनंत आणि गणनीय आहे अशा
+संरचनांमध्ये तो पूर्ततायोग्य असतो.
+\end{thm}
+
+\begin{proof}
+$\Gamma$ सुसंगत असेल आणि त्यात एकरूपता येणारी वाक्ये नसतील, तर संपूर्णता
+प्रमेयाच्या सिद्धतेतून मिळणाऱ्या संरचना~$\Struct M$ चा
+प्रांत~$\Domain{M}$ हा भाषा~$\Lang L'$ मधील पदांच्या संचाशी एकरूप असतो.
+म्हणून $\Trm[L']$ हे गणनीय अनंत असल्यामुळे $\Struct{M}$ देखील
+गणनीय अनंत आहे.
+\end{proof}
+
+\begin{ex}[स्कोलेमची विरोधापत्ती]
+त्सेर्मेलो--फ्रेंकेल संचसिद्धान्त~$\Log{ZFC}$ ही एक अतिशय समर्थ चौकट
+आहे; संचांच्या आकारांविषयीच्या तथ्यांसह जवळजवळ सर्व गणिती विधाने तिच्यात
+व्यक्त करता येतात. म्हणून, उदाहरणार्थ, वास्तव संख्यांचा संच~$\Real$ हा
+अगणनीय आहे हे~$\Log{ZFC}$ सिद्ध करू शकते; कोणत्याही संचाचा
+घातसंच त्या संचापेक्षा मोठा असतो हे कँटर यांचे प्रमेयही ती सिद्ध करू शकते;
+आणि असेच पुढे. $\Log{ZFC}$ सुसंगत असेल, तर तिची सर्व प्रतिमाने अनंत
+असतात. शिवाय, त्या सर्व प्रतिमानांत असे घटक असतात की उपपत्तीच्या
+मते ते अगणनीय असतात; उदाहरणार्थ, नैसर्गिक संख्यांचा घातसंच
+अस्तित्वात आहे हे~$\Log{ZFC}$ चे प्रमेय सत्य करणारा घटक. लोव्हेनहाइम--स्कोलेम
+प्रमेयानुसार $\Log{ZFC}$ ला गणनीय प्रतिमानेही असतात---ज्यांत
+``अगणनीय'' संच असतात, पण जी स्वतः गणनीय असतात.
+\end{ex}
+
+
+

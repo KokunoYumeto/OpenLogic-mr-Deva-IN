@@ -1,6 +1,7 @@
 % Part: many-valued-logic
 % Chapter: three-valued-logics
 % Section: multiple-designation
+%READERNOTE{SOL6-A142: फक्त निर्दिष्ट मूल्ये बदलून लूकासेविच मॅट्रिक्सला R-Mingle म्हणणे अयोग्य होते. R-Mingle चे वेगळे सशर्त कोष्टक Kooi आणि Tamminga यांच्या primary paper मधील विभाग 4, पृ. 10 शी जुळवले; जोडलेल्या असत्यता-स्थिराचे मूल्य F स्पष्ट केले. LP आणि Hallden यांच्या classical tautologies ची समानता केवळ समान चार-संयोजकीय खंडात आहे.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -12,7 +13,8 @@
 
 आतापर्यंत पाहिलेल्या सर्व तर्कशास्त्रांत निर्दिष्ट
 सत्यतामूल्यांचा संच $V^+ = \{\True\}$ होता; म्हणजे एखाद्या
-विधानाचे सत्यतामूल्य~$\True$ असेल तेव्हाच ते सत्य मानले जाई.
+विधान निर्दिष्ट मानले जाई, जर आणि फक्त जर त्याचे
+सत्यतामूल्य~$\True$ असेल.
 पण एखादे विधान फक्त~$\False$ नसले, तरी ते सत्य मानता येईल.
 अशा वेळी, उदाहरणार्थ, मॅट्रिक्समध्ये
 $V^+ = \{\True, \Undef\}$ असे ठरवून तर्कशास्त्र मिळेल.
@@ -21,7 +23,8 @@ $V^+ = \{\True, \Undef\}$ असे ठरवून तर्कशास्त�
 \emph{विरोधापत्तीचे तर्कशास्त्र}~$\LogLP$ पुढील मॅट्रिक्सने
 परिभाषित होते:
 \begin{enumerate}
-  \item $\lnot$, $\land$, $\lor$, $\lif$ असलेली मानक विधानीय भाषा $\Lang L_0$.
+  \item मानक विधानीय भाषा $\Lang L_0$ चा केवळ
+  $\lnot$, $\land$, $\lor$, $\lif$ हे संयोजक असलेला खंड.
   \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
   \item $\True$ आणि $\Undef$ निर्दिष्ट आहेत, म्हणजे $V^+ = \{\True, \Undef\}$.
   \item सत्यता-फलने प्रबळ क्लिनी तर्कशास्त्रातील फलनांसारखीच आहेत.
@@ -32,8 +35,9 @@ $V^+ = \{\True, \Undef\}$ असे ठरवून तर्कशास्त�
 Halld\'en यांचे \emph{निरर्थकतेचे तर्कशास्त्र}~$\LogHal$
 पुढील मॅट्रिक्सने परिभाषित होते:
 \begin{enumerate}
-  \item $\lnot$, $\land$, $\lor$, $\lif$ आणि $1$-स्थानी
-  संयोजक~$+$ असलेली मानक विधानीय भाषा $\Lang L_0$.
+  \item मानक विधानीय भाषा $\Lang L_0$ च्या
+  $\lnot$, $\land$, $\lor$, $\lif$ या संयोजकांच्या खंडाचा
+  $1$-स्थानी संयोजक~$+$ जोडून केलेला विस्तार.
   \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
   \item $\True$ आणि $\Undef$ निर्दिष्ट आहेत, म्हणजे $V^+ = \{\True, \Undef\}$.
   \item सत्यता-फलने दुर्बल क्लिनी तर्कशास्त्रातील फलनांसारखीच
@@ -82,29 +86,29 @@ Halld\'en यांचे \emph{निरर्थकतेचे तर्क�
     \False & \text{इतर वेळी}
   \end{cases}
   \]
-  आता $!A$ वरील आगमनाने दाखवू की (a)~$\pValue v(!A)[\LogKs]
+  आता $!A$ वरील विगमनाने दाखवू की (a)~$\pValue v(!A)[\LogKs]
   = \False$ असेल, तर $\pValue {v'}(!A)[\LogCL] = \False$;
   आणि (b)~$\pValue v(!A)[\LogKs] = \True$ असेल, तर
   $\pValue {v'}(!A)[\LogCL] = \True$.
   \begin{enumerate}
-    \item आगमनाचा आधार: $!A \ident p$. (a) किंवा (b) चा
+    \item विगमनाचा आधार: $!A \ident p$. (a) किंवा (b) चा
     पूर्वपक्ष लागू असेल, तेव्हा मूळ मूल्य अनुक्रमे असत्य किंवा
     सत्य असते; त्या प्रकरणांतच
     \olref[syn][val]{defn:pValue} नुसार $\pValue v(!A)[\LogKs]
     = \pAssign v(p) = \pValue {v'}(!A)[\LogCL]$ ही समानता
     मिळते, आणि त्यावरून (a) व~(b) दोन्ही सिद्ध होतात.
 
-    आगमनाच्या पायरीसाठी पुढील प्रकरणे पाहू:
+    विगमनाच्या पायरीसाठी पुढील प्रकरणे पाहू:
     \item $!A \ident \lnot !B$.
     \begin{enumerate}
       \item $\pValue v(\lnot!B)[\LogKs] = \False$ असे समजा.
       $\tf{\lnot}[\LogKs]$ च्या व्याख्येनुसार
-      $\pValue v(!B)[\LogKs]  = \True$. आगमन गृहितकातील
+      $\pValue v(!B)[\LogKs]  = \True$. विगमन गृहितकातील
       प्रकरण~(b) नुसार $\pValue {v'}(!B)[\LogCL]  = \True$;
       म्हणून $\pValue {v'}(\lnot !B)[\LogCL] = \False$.
       \item $\pValue v(\lnot!B)[\LogKs] = \True$ असे समजा.
       $\tf{\lnot}[\LogKs]$ च्या व्याख्येनुसार
-      $\pValue v(!B)[\LogKs]  = \False$. आगमन गृहितकातील
+      $\pValue v(!B)[\LogKs]  = \False$. विगमन गृहितकातील
       प्रकरण~(a) नुसार $\pValue {v'}(!B)[\LogCL]  = \False$;
       म्हणून $\pValue {v'}(\lnot !B)[\LogCL] = \True$.
     \end{enumerate}
@@ -114,14 +118,14 @@ Halld\'en यांचे \emph{निरर्थकतेचे तर्क�
       \item $\pValue v(!B \land !C)[\LogKs] = \False$ असे समजा.
       $\tf{\land}[\LogKs]$ च्या व्याख्येनुसार
       $\pValue v(!B)[\LogKs]  = \False$ किंवा
-      $\pValue v(!C)[\LogKs]  = \False$. आगमन गृहितकातील
+      $\pValue v(!C)[\LogKs]  = \False$. विगमन गृहितकातील
       प्रकरण~(a) नुसार $\pValue {v'}(!B)[\LogCL]  = \False$
       किंवा $\pValue {v'}(!C)[\LogCL]  = \False$;
       म्हणून $\pValue {v'}(!B \land !C)[\LogCL] = \False$.
       \item $\pValue v(!B \land !C)[\LogKs] = \True$ असे समजा.
       $\tf{\land}[\LogKs]$ च्या व्याख्येनुसार
       $\pValue v(!B)[\LogKs]  = \True$ आणि
-      $\pValue v(!C)[\LogKs]  = \True$. आगमन गृहितकातील
+      $\pValue v(!C)[\LogKs]  = \True$. विगमन गृहितकातील
       प्रकरण~(b) नुसार $\pValue {v'}(!B)[\LogCL]  = \True$
       आणि $\pValue {v'}(!C)[\LogCL]  = \True$;
       म्हणून $\pValue {v'}(!B \land !C)[\LogCL] = \True$.
@@ -150,8 +154,10 @@ Halld\'en यांचे \emph{निरर्थकतेचे तर्क�
 सर्वतः सत्य आहे हे सिद्ध करा.
 \end{prob}
 
-यांची सर्वतः सत्य सूत्रे अभिजात तर्कशास्त्रासारखीच असली,
-तरी त्यांचे तार्किक निष्पन्नता संबंध वेगळे आहेत. उदाहरणार्थ,
+दोन्ही तर्कशास्त्रांच्या समान चार-संयोजकीय भाषाखंडात त्यांची
+सर्वतः सत्य सूत्रे अभिजात तर्कशास्त्रासारखीच असली, तरी त्यांचे
+तार्किक निष्पन्नता संबंध वेगळे आहेत. Halld\'en यांच्या अतिरिक्त
+संयोजकाचा समावेश असलेल्या सूत्रांसाठी हे समानतेचे विधान नाही. उदाहरणार्थ,
 $\LogLP$ हे \emph{व्याघातसहिष्णु} आहे: त्यात
 $\lnot p, p \Entails/ q$. म्हणून
 $\lnot !A, !A \Entails !B$ हे स्फोटाचे तत्त्व सर्वसाधारणपणे
@@ -173,17 +179,35 @@ $\lnot !A, !A \Entails !B$ हे स्फोटाचे तत्त्व �
 
 $\LogLuk[3]$ मध्ये $\Undef$ हे मूल्यही निर्दिष्ट मानल्यास
 काय होईल?
+केवळ निर्दिष्ट मूल्यांचा हा बदल केल्याने पुढील R-Mingle
+मॅट्रिक्स मिळत नाही; त्यासाठी सशर्त विधानाचे सत्यता-फलनही बदलते.
 
 \begin{defn}
-  \emph{त्रिमूल्य R-Mingle}~$\LogRM[3]$ हे तर्कशास्त्र पुढील
-  मॅट्रिक्सने परिभाषित होते:
+  \emph{त्रिमूल्य R-Mingle}~$\LogRM[3]$ चा असत्यता-स्थिरासह
+  विस्तार पुढील मॅट्रिक्सने परिभाषित होतो:
   \begin{enumerate}
     \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$ असलेली मानक विधानीय भाषा $\Lang L_0$.
     \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
     \item $\True$ आणि $\Undef$ निर्दिष्ट आहेत, म्हणजे $V^+ = \{\True, \Undef\}$.
-    \item सत्यता-फलने \L ukasiewicz तर्कशास्त्र~$\LogLuk[3]$
-    मधील फलनांसारखीच आहेत.
+    \item $\tf{\lfalse}=\False$. $\lnot$, $\land$ आणि $\lor$
+    यांची सत्यता-फलने \L ukasiewicz तर्कशास्त्र~$\LogLuk[3]$
+    मधील फलनांसारखीच आहेत. सशर्त विधानाचे सत्यताकोष्टक असे आहे:
+    \begin{center}
+      \begin{tabular}{c|ccc}
+        $\tf{\lif}[\LogRM[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\False$ & $\False$ \\
+        $\Undef$ & $\True$ & $\Undef$ & $\False$ \\
+        $\False$ & $\True$ & $\True$ & $\True$
+      \end{tabular}
+    \end{center}
   \end{enumerate}
+  येथे $\Undef$ हे मधले मूल्य सत्य आणि असत्य दोन्ही असल्याचे
+  दर्शवते. सशर्त विधानाचे कोष्टक \L ukasiewicz यांच्या कोष्टकापेक्षा
+  वेगळे आहे.\footnote{Barteld Kooi आणि Allard Tamminga,
+  ``Completeness via Correspondence for Extensions of the Logic of
+  Paradox,'' (2012), प्रथम ऑनलाइन आवृत्ती पृ. 10, विभाग 4;
+  \url{https://doi.org/10.1017/S1755020312000196}.}
 \end{defn}
 
 \begin{prob}
@@ -220,10 +244,10 @@ $V^+ = \{\True, \Undef\}$ घेतल्यास असे घडते.
   \olref[mvl][thr][mul]{prop:gl-udes} सिद्ध करा.
   \olref[mvl][thr][mul]{prop:LP-taut-CL} मधील कल्पना
   वापरा; मात्र गुणधर्म (a) आणि~(b) सिद्ध करण्याऐवजी
-  $\pValue v(!A)[\LogGod] = \False$ तेव्हाच आणि तेव्हाच
+  $\pValue v(!A)[\LogGod] = \False$ जर आणि फक्त जर
   $\pValue {v'}(!A)[\LogCL] = \False$ हे दाखवा (आणि म्हणून
-  $\pValue v(!A)[\LogGod] \in \{\True,\Undef\}$ तेव्हाच
-  आणि तेव्हाच $\pValue {v'}(!A)[\LogCL] = \True$).
+  $\pValue v(!A)[\LogGod] \in \{\True,\Undef\}$ जर आणि
+  फक्त जर $\pValue {v'}(!A)[\LogCL] = \True$).
   यावरून विधान का सिद्ध होते ते स्पष्ट करा.
 \end{prob}
 

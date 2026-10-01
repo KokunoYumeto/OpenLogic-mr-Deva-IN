@@ -18,8 +18,8 @@
     },
     "SEGMENT_CANON_USE.jsonl": {
       "records": 6644,
-      "bytes": 9652774,
-      "sha256": "bae79d836ce41d989f3d51c587033bf66fe5b13ab5c87fdd3f165ad9cdad13fe"
+      "bytes": 10821186,
+      "sha256": "7c367bc2a97b514e4bd5e1898882e0ff01ce7cc38bf4f2ddf789f1c73d1e2ac8"
     },
     "CANON_SOURCES.jsonl": {
       "records": 124,

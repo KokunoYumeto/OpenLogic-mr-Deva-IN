@@ -1,0 +1,18 @@
+{
+  "id": "SOL6-A221",
+  "kind": "local_validation_workflow_repair",
+  "date": "2026-09-30",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "file": "tools/qa_complete_epub.py",
+  "file_sha256": "13eeb8ef47f22b834e7994063854a97d0d31da3236f95ae3d3547b7b49f1d397",
+  "review_scope": "Complete tool directly read. Glyph and proof counts now compare with accepted current HTML instead of historical literal counts; each ordered glyph, dimension, alternate text, math root, proof annotation and resource remains checked.",
+  "observed_failure": "68 historical glyphs required despite actual 70 accepted source and EPUB glyphs; failed receipt preserved privately as EPUB_QA_214_BEFORE_A221.json.",
+  "result": "passed",
+  "independent_checks": 231694,
+  "source_glyphs": 70,
+  "epub_sha256": "8e4ad7eb9637b661dc49fd1db86191d201e9b45e93ccfca792993aca9c6a93ad",
+  "reader_html_sha256": "26d21eb75e53784130b7ef93f3a51713800a02d854ef78483a9a199e971031f4",
+  "epubcheck_exit": 0,
+  "limitations": "No EPUB byte change was needed. Seven actual current web/EPUB samples were inspected; no all-page or human review claimed."
+}

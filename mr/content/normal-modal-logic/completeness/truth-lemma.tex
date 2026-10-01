@@ -1,6 +1,7 @@
 % Part: normal-modal-logic
 % Chapter: completeness
 % Section: truth-lemma
+%READERNOTE{SOL6-A167: Truth lemma मधील accessibility bridge आणि विगमन गृहीतक. Diamond च्या forward case मध्ये Box-inverse containment वरून Diamond-image containment मिळवण्यासाठी box-iff-diamond lemma आवश्यक आहे; जुन्या prop-diamond reference ने ती containment थेट मिळत नाही. योग्य lemma दाखवला. Reverse case मध्ये B चे membership आणि Diamond satisfaction यांच्या मध्ये induction hypothesis चे B satisfaction पाऊल जोडले. Theorem मध्ये consistent normal Sigma व Delta in W scope स्पष्ट केला; सर्व Boolean व Box cases आणि prior probAnd repair जपले.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -27,7 +28,8 @@ $V^\Sigma$ ची व्याख्याच हे थेट दाखवत�
 
 \begin{prop}[सत्यता पूर्वप्रमेय]
   \ollabel{prop:truthlemma}
-  प्रत्येक !!{formula}~$!A$ साठी
+  $\Sigma$ हे सुसंगत सामान्य मोडल तर्कशास्त्र असू द्या.
+  प्रत्येक $\Delta \in W^\Sigma$ आणि प्रत्येक !!{formula}~$!A$ साठी
   $\mSat{M^\Sigma}{!A}[\Delta]$ असेल तेव्हा
   आणि तेव्हाच $!A \in \Delta$.
 \end{prop}
@@ -182,7 +184,7 @@ $V^\Sigma$ ची व्याख्याच हे थेट दाखवत�
             \subseteq \Delta'$ असलेल्या
             एखाद्या $\Delta'$ साठी
             $!B \in \Delta'$.
-            \olref[mod]{prop:diamond} नुसार,}{}
+            \olref[mod]{lem:box-iff-diamond} नुसार,}{}
           $\Diamond \Delta' \subseteq \Delta$
           असलेल्या एखाद्या $\Delta'$ साठी
           $!B \in \Delta'$.
@@ -208,6 +210,7 @@ $V^\Sigma$ ची व्याख्याच हे थेट दाखवत�
           \Delta\Delta'$ आणि
           $!B \in \Delta'$ असलेला
           $\Delta' \in W^\Sigma$ असतो.
+          विगमन गृहीतकानुसार $\mSat{M^\Sigma}{!B}[\Delta']$.
           \olref[syn][trw]{defn:mmodels}
           नुसार $\mSat{M^\Sigma}{\Diamond
             !B}[\Delta]$.}}}{}

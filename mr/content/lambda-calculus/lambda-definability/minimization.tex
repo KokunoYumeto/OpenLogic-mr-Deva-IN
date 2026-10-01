@@ -20,7 +20,7 @@
 आहे हे दाखवावे लागेल.
 
 \begin{lem}
-  \ollabel{lem:min} $f(x_1, \dots, x_k, y)$ हे नियमित
+  \ollabel{lem:min} $f(x_1, \dots, x_k, y)$ हे सर्वत्र परिभाषित आणि नियमित
   आणि !!{lambda definable} असेल, तर
   \[
   h(x_1, \dots, x_k) = \umin{y}{f(x_1,\dots,x_k, y) = 0}
@@ -36,10 +36,13 @@
   स्थिरबिंदू संयोजक वापरू:
   \begin{align*}
     \fn{Search} & \ident \lambd[g][\lambd[f\,\vec{x}\,y][
-        \fn{IsZero} (f\, \vec{x}\, y)\, y\, (g\, \vec{x} (\fn{Succ}\, y))]]\\
+        \fn{IsZero} (f\, \vec{x}\, y)\, y\, (g\, f\, \vec{x} (\fn{Succ}\, y))]]\\
     H & \ident \lambd[\vec x][(Y \, \fn{Search}) F\, \vec{x}\, \num{0}],
   \end{align*}
-  येथे $Y$ हा कोणताही स्थिरबिंदू संयोजक आहे.
+  येथे $Y$ हा \olref[fp]{defn:Turing-Y} मधील
+  ट्यूरिंग स्थिरबिंदू संयोजक आहे. Recursive call मध्ये
+  predicate प्रतिनिधी पुन्हा पहिला फलसाधक म्हणून द्यायचा
+  आहे; तो वगळल्यास पुढील calls चे सर्व फलसाधक सरकतात.
   सहज अर्थाने, $\fn{Search}$ हे स्वतःला पुन्हा
   बोलावणारे फलन आहे: $y$ पासून सुरू करून
   $f\, \vec x\, y$ शून्य आहे का हे तपासते;
@@ -50,7 +53,8 @@
   $f(n_1, \dots, n_k, m) = 0$ पूर्ण करणारा
   लघुतम~$m$ परत करते.
 
-  नेमके सांगायचे तर, पुढील गोष्ट पाहा:
+  ट्यूरिंग संयोजकाच्या थेट उकलीने आणि परिभाषित
+  प्रत्येक predicate चाचणीच्या न्यूनीकरणाने पुढील गोष्ट मिळते:
   \begin{align*}
     (Y \, \fn{Search}) F \num{n_1}
     \dots\num{n_k}\, \num{m} & \red \num{m}
@@ -72,7 +76,7 @@
  \olref[prf]{lem:basic} नुसार सर्व मूलभूत फलने
  !!{lambda definable} आहेत. तसेच \olref[prf]{lem:comp},
  \olref[prf]{lem:prim} आणि \olref{lem:min} नुसार
- !!{lambda definable} फलनांचा वर्ग संयोजन,
+ सर्वत्र परिभाषित !!{lambda definable} फलनांचा वर्ग संयोजन,
  आदिम पुनरावर्तन आणि नियमित लघुतमीकरण यांच्या
  अंतर्गत बंद असतो.
 \end{proof}

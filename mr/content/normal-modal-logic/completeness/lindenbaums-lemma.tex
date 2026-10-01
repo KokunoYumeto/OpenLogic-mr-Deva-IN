@@ -1,6 +1,7 @@
 % Part: normal-modal-logic
 % Chapter: completeness
 % Section: lindenbaums-lemma
+%READERNOTE{SOL6-A164: Lindenbaum proof मधील रिकाम्या finite premise list चा निर्देशांक. Finite witness list शून्य-लांबीची असू शकते. मूळ proof मध्ये त्या list मधील indices चा largest घेतला होता, पण empty list ला largest नसतो. Max of zero plus the listed indices ही नेमकी convention दिली; k=0 साठी n=0 मिळतो. Increasing chain मधील finite witness containment आणि सर्व Delta_n ची consistency proof जपली. पूर्वीची exhaustive enumeration साठी length-at-most-n दुरुस्ती योग्य.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -75,8 +76,8 @@ $!A_1$, \dots,~$!A_k \in \Delta$ अशी सूत्रे असतात �
 $\Sigma \Proves !A_1 \lif (!A_2 \lif \cdots (!A_k
 \lif \lfalse)\dots)$. $\Delta = \bigcup_{n=0}^\infty \Delta_n$
 असल्याने प्रत्येक $!A_i \in \Delta_{n_i}$ असे कोणत्यातरी~$n_i$
-साठी असते. या निर्देशांकांतील सर्वांत मोठा निर्देशांक~$n$
-असू द्या. $n_i \le n$ असल्यामुळे
+साठी असते. $n=\max(\{0\}\cup\{n_1,\dots,n_k\})$ घ्या;
+यामुळे शून्य गृहीतकांच्या $k=0$ प्रकरणातही $n=0$ ठरतो. $n_i \le n$ असल्यामुळे
 $\Delta_{n_i} \subseteq \Delta_n$. म्हणून ही सर्व
 $!A_i$ सूत्रे एखाद्या~$\Delta_n$ मध्ये असतात.
 याचा अर्थ $\Delta_n \Proves[\Sigma] \lfalse$,

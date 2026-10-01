@@ -320,6 +320,8 @@ def _label_text(text):
         r"\to": "→",
         r"\lnot": "¬",
         r"\lfalse": "⊥",
+        r"\Box": "□",
+        r"\Diamond": "◇",
         r"\top": "⊤",
         r"\forall": "∀",
         r"\exists": "∃",
@@ -346,7 +348,8 @@ def _label_text(text):
         r"\,": " ",
     }
     for old, new in replacements.items():
-        text = text.replace(old, new)
+        boundary = r"(?![A-Za-z])" if old[-1].isalpha() else ""
+        text = re.sub(re.escape(old) + boundary, lambda _: new, text)
     text = re.sub(r"\\(?:ensuremath|mathrm|text)\{([^{}]*)\}", r"\1", text)
     text = re.sub(r"\\[A-Za-z]+", "", text)
     text = text.replace("{", "").replace("}", "").replace("_", "")
@@ -601,13 +604,38 @@ def _replace_args(text, command, count, formatter, optional=False):
     return text
 
 
+def expand_derivability_macro(text):
+    """Preserve Proves' slash negation and one optional system subscript."""
+    pattern = re.compile(r"\\Proves(?![A-Za-z])")
+    cursor = 0
+    while match := pattern.search(text, cursor):
+        position = match.end()
+        while position < len(text) and text[position].isspace():
+            position += 1
+        negative = position < len(text) and text[position] == "/"
+        end = position + 1 if negative else match.end()
+        if negative:
+            position += 1
+            while position < len(text) and text[position].isspace():
+                position += 1
+        system = None
+        if position < len(text) and text[position] == "[":
+            system, end = _balanced_square(text, position)
+        replacement = r"\nvdash" if negative else r"\vdash"
+        if system is not None:
+            replacement += "_{" + system + "}"
+        replacement += " "
+        text = text[:match.start()] + replacement + text[end:]
+        cursor = match.start() + len(replacement)
+    return text
+
+
 def expand_proof_math_macros(text):
     """Expand proof macros to ordinary TeX understood by Pandoc/texmath."""
     # A few tableau source blocks use the upstream metavariable shorthand;
     # semantic MathML can represent its argument directly as ordinary math.
     text = re.sub(r"\\formula\{([^{}]*)\}", r" \1", text)
-    text = text.replace(r"\Proves/", r"\nvdash")
-    text = re.sub(r"\\Proves\b", r"\\vdash", text)
+    text = expand_derivability_macro(text)
     text = text.replace(r"\fCenter", r"\Rightarrow")
     text = text.replace(r"\Sequent", r"\Rightarrow")
     text = text.replace(r"\nSequent", r"\mid")
@@ -654,7 +682,7 @@ def expand_proof_math_macros(text):
         text,
         "Subst",
         3,
-        lambda args, _: args[0] + "[" + args[1] + "/" + args[2] + "]",
+        lambda args, _: "{" + args[0] + "}[" + args[1] + "/" + args[2] + "]",
     )
     text = _replace_args(
         text,
@@ -719,8 +747,8 @@ def expand_proof_math_macros(text):
         lambda args, _: (args[0] + "=" + args[1]) if len(args) == 2 else "=",
     )
     text = re.sub(r"\\Obj\s*([A-Za-z])", r"\\mathsf{\1}", text)
-    text = text.replace(r"\lif", r"\to")
-    text = text.replace(r"\tof", r"\leftrightarrow")
+    text = re.sub(r"\\liff(?![A-Za-z])", r"\\leftrightarrow ", text)
+    text = re.sub(r"\\lif(?![A-Za-z])", r"\\to ", text)
     text = text.replace(r"\lfalse", r"\bot").replace(r"\ltrue", r"\top")
     return text
 

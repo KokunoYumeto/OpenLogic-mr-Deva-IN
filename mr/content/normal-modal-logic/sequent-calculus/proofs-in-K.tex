@@ -1,6 +1,7 @@
 % Part: normal-modal-logic
 % Chapter: sequent-calculus
 % Section: proofs-in-K
+%READERNOTE{SOL6-A184: Dual च्या सिद्धतेतील पहिल्या नकार-पायरीत उजव्या बाजूचे सूत्र नकारासह डावीकडे जाते. त्यामुळे चुकीचे उजवा-नकार नियम-नाव डावा-नकार असे केले. अंतिम संयोग-नियमाच्या पायरीत द्विशर्ती दोन सशर्त सूत्रांच्या संयोगाचे संक्षिप्त रूप म्हणून घेतली आहे हे स्पष्ट केले; मूळ सिद्धतेतील सूत्रे जपली.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -82,9 +83,12 @@
 
 \iftag{notprvBox,notprvDiamond}{}{
   येथे~\Dual ची !!a{derivation} दिली आहे.
+  या सिद्धतेत $!B \liff !C$ हे
+  $(!B \lif !C) \land (!C \lif !B)$ चे संक्षिप्त रूप घेतले आहे;
+  म्हणून शेवटची पायरी दोन सशर्त सूत्रांचा संयोग बनवते.
   \begin{prooftree}
     \Axiom$!A \fCenter !A$
-    \RightLabel{\RightR{\lnot}}
+    \RightLabel{\LeftR{\lnot}}
     \UnaryInf$\lnot !A, !A \fCenter $
     \RightLabel{$\Diamond$}
     \UnaryInf$\Diamond\lnot !A, \Box !A \fCenter $

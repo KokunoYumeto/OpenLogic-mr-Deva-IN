@@ -1,0 +1,42 @@
+{
+  "id": "SOL6-A256",
+  "record_kind": "workflow_repair",
+  "source_choice": false,
+  "tools": [
+    {
+      "path": "tools/prepare_core579.py",
+      "sha256": "625d48b0ace6df202f6b9539d96244825f0507ec351a174869cfc2f6de0a228f",
+      "scope": "entire file directly read"
+    },
+    {
+      "path": "tools/prepare_core585.py",
+      "sha256": "86f6a224b1a7d1abafee0002c870204afa74fa6fb418bd4e8312ea6bd08f7517",
+      "scope": "entire file directly read"
+    },
+    {
+      "path": "tools/prepare_core591.py",
+      "sha256": "dfdc22effb375b91e14e038562b47e2dbf668e8b83a47ba7463f43eb51369e0b",
+      "scope": "entire file directly read"
+    }
+  ],
+  "finding": "The legacy wrappers lacked exact localized citation aliases, and two editorial notes described source defects or optional exposition that the current translation no longer contains.",
+  "repair": "Accept the exact Marathi Potter, Hume and Boolos locators alongside historical English keys. Describe the nonzero-base scope now repaired in both exponentiation definitions. Retain the necessary infinite-cardinal induction repair without claiming the withdrawn optional growth/uniqueness explanation.",
+  "validation": {
+    "full_assembly_and_static_qa": "passed",
+    "guarded_tex": "three clean passes with one bounded acquisition",
+    "checkpoint": "corrected-249",
+    "pdf_sha256": "bdb725f748eb4e5abcfa6a88c8ea8cb258abe8c42b25904774187db1fde16034",
+    "pages_actually_viewed": [
+      710,
+      716,
+      721,
+      723,
+      724
+    ],
+    "visual_scope": "Localized citation projections, current exponentiation definition, concise cardinal induction and fixed-point proof, and preserved necessary successor seed were inspected in the matching PDF."
+  },
+  "limitations": "This workflow repair adds no source choice. All source units, final staging, cold whole-source reproduction and successor publication are not complete.",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "date": "2026-09-30"
+}

@@ -68,7 +68,7 @@ $\delta(q, \sigma) = \tuple{h, \sigma, N}$ ही सूचना जोडा�
   \node[state]         (H) [left of=D] {$h$};
 
   \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
-           edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+           edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A)
         (B) edge [loop below] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
             edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
         (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
@@ -76,6 +76,7 @@ $\delta(q, \sigma) = \tuple{h, \sigma, N}$ ही सूचना जोडा�
         edge node {\TMtrans{\TMendtape}{\TMendtape}{\TMright}} (H);
 \end{tikzpicture}
 \]\caption{शिस्तबद्ध बेरीज-यंत्र}
+%READERNOTE{SOL6-A042 — गोठवलेल्या disciplined addition diagram मध्येही प्रारंभिक stroke-loop चुकीने दुसऱ्या अवस्थेत जात होता. पहिला input block पार करताना प्रारंभिक अवस्थेतच राहणारा loop दिला; separator भरल्यावर पुढची अवस्था घेतली जाते. अंतिम head घर एकवर आणि designated h अवस्थेत पोहोचण्याची रचना कायम.}
 \ollabel{fig:adder-disc}
 \end{figure}
 \end{ex}

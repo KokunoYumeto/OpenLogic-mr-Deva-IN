@@ -1,0 +1,184 @@
+{
+  "checkpoint": "328 corrective source choices; 346 notes; 957-page PDF",
+  "pdf_sha256": "3ee7fe70d38346b3ffc7cd635aaa285e54a00e81e5cfe254467be7cc696306f9",
+  "static_source_and_pdf_consistency": "passed",
+  "pages_actually_viewed": [
+    1,
+    351,
+    557,
+    558,
+    559,
+    623,
+    624,
+    795,
+    797,
+    807,
+    808,
+    818,
+    819,
+    827,
+    830,
+    835,
+    836,
+    840,
+    850,
+    915,
+    931,
+    932,
+    938
+  ],
+  "rendered_samples": [
+    {
+      "page": 1,
+      "sha256": "c39ada6d0c9433441d7cbc0679be43f8a3f15dcfbc82a7720477c5c4e31f9711"
+    },
+    {
+      "page": 351,
+      "sha256": "be510c5849cfde542b495e5172808f892af8c9bd08d3beb7dafa0753134692af"
+    },
+    {
+      "page": 557,
+      "sha256": "1a55d1d068fb4ecd59002346ba92a6c1cb697ec82cfaaf5b6adfda4bc429a155"
+    },
+    {
+      "page": 558,
+      "sha256": "3f67369198fa3f67e78a59e5645984aaed22c4337e50ea151618eed814f5eb16"
+    },
+    {
+      "page": 559,
+      "sha256": "0d9db66d326dff5245f53779212fbbe472211b6a0862ff0c73b9e4123f40fbe6"
+    },
+    {
+      "page": 623,
+      "sha256": "729521b58e00303b50ae290dbcb1b6a6288b63777e0da0af485930fb526248e7"
+    },
+    {
+      "page": 624,
+      "sha256": "ea25afc50f964681a1672aa091bcf712be75dc6e9ddb5c953150a264aee33c0c"
+    },
+    {
+      "page": 795,
+      "sha256": "e171d50ac7d0ff7afe9bb4911cfadada28edbe99993dec728f6fbd592c4bd978"
+    },
+    {
+      "page": 797,
+      "sha256": "22aefdaf48dd519b9df51bfdcd53ba054d4ad144fde1fa223e46379800fc8877"
+    },
+    {
+      "page": 807,
+      "sha256": "296fa63717de173d51fdb107d35e8295002bf6da129e5ac075fce4e623eea0ad"
+    },
+    {
+      "page": 808,
+      "sha256": "86342304e4c015eeec9559894dffdcf24330f63c44e78d94ef349d9fa968c585"
+    },
+    {
+      "page": 818,
+      "sha256": "cbfa5e9e8b08ab423871a5926e04c81c25b8c42bd03d3fda88f974b2051f6525"
+    },
+    {
+      "page": 819,
+      "sha256": "ee79c6c50e9ff01ce52170149d9ceddb2a27fa6a82b7a840b2d7c001fca50240"
+    },
+    {
+      "page": 827,
+      "sha256": "aecc95d292fa2a255bb23161fca11477d66e9fba693763714e7593fb6c1af304"
+    },
+    {
+      "page": 830,
+      "sha256": "e215a527420a7b48a562d6f3c0d4aa73c2650e149375cbb4cd0ad8e9d6ebed4f"
+    },
+    {
+      "page": 835,
+      "sha256": "d8e657dbdac86b3d5380f4e7d27adf9fd46695202b6152aa882872cbdc102ca9"
+    },
+    {
+      "page": 836,
+      "sha256": "cd553e3ab6e43009e3f74e804b792b8064eda2cb62bc74984fa5ea94820eea23"
+    },
+    {
+      "page": 840,
+      "sha256": "2d1f5af5b96bbdc3e49638bd0f24f2888e88552a8b95041ca7664b137a145474"
+    },
+    {
+      "page": 850,
+      "sha256": "d672b5a93218f1bc58aba50c151e7c462fc55e4256624b6bf407dc39a86ea9d3"
+    },
+    {
+      "page": 915,
+      "sha256": "ea8ef0e61e607e78ac4db3c1a1690a11cc270dd9a1f46f04fee6161ddb500c69"
+    },
+    {
+      "page": 931,
+      "sha256": "7bff43b3a235e0151363f8a8fac431b9018e9ed35888d721ac217f3743a0a764"
+    },
+    {
+      "page": 932,
+      "sha256": "569260509f96d9b552483ddd7c4d85b80363e5ad0f5f4d2db9b4b9409956999a"
+    },
+    {
+      "page": 938,
+      "sha256": "4620409c5b65c2f0af77b183b409836577b809c9a10bde39b71edaba4b07b3ea"
+    }
+  ],
+  "notes_chapter_navigation": {
+    "compiled_toc_page": 915,
+    "pdf_bookmark_page": 915,
+    "opening_page_actually_viewed": 915,
+    "status": "passed"
+  },
+  "visual_observation_mr": "दाखवलेल्या पानांवरील मराठी मजकूर, सूत्रे, पुराव्याचे संदर्भ आणि शीर्षके प्रत्यक्ष पाहिली. मजकूर व समीकरणे पानांच्या चौकटीत आणि वाचनीय आहेत. Notes chapter चे प्रत्यक्ष उघडलेले पान, compiled contents entry व PDF bookmark एकाच पानावर आहेत.",
+  "limitations_mr": "फक्त दाखवलेल्या पानांची प्रत्यक्ष दृश्यतपासणी झाली. सर्व PDF पानांची दृश्य किंवा अर्थतपासणी, स्वतंत्र मानवी पुनरावलोकन, अंतिम staging, cold reproduction किंवा successor publication झाल्याचा दावा नाही.",
+  "bindings": [
+    {
+      "path": "build/full/TEX_SUCCESS_RECEIPT.json",
+      "sha256": "1cbad5c589f445ac1a4c4e633e9d560c74d3f1aa71baf1bcf1d324cbd6743f97"
+    },
+    {
+      "path": "build/full/INPUTS.json",
+      "sha256": "509c7e42a22cf8e75b07f169065b8e6cdb33a271f097c87fb7bb5376161d57d5"
+    },
+    {
+      "path": "build/full/STATIC_QA.json",
+      "sha256": "c5d714ec831885cd6d6ff99b06d5e1291987524600c42a2c57c89868cf7a1be2"
+    },
+    {
+      "path": "build/full/READER_NOTE_QA.json",
+      "sha256": "08fbb3c1354805182e1ee977e387945860054d8ced5391b2ef49c326d4009aa6"
+    },
+    {
+      "path": "build/full/PDF_QA.json",
+      "sha256": "1271f73d38af6506f56d6155bd243e94689c9fa81d1f901482adb9b421fc5676"
+    },
+    {
+      "path": "build/full/RELEASE_CONSISTENCY_WORKING_QA.json",
+      "sha256": "d54a338f2908c174accf25c70c2aec2c389a282d509c1f9bc4f7a87e394069a6"
+    },
+    {
+      "path": "provenance/sol6-reaudit/CORRECTIVE_REPAIRS.jsonl",
+      "sha256": "75136b6a6862f0e6715be0b0e5b4c6f46ab29d15c414d41f3463e3621a544f72"
+    },
+    {
+      "path": "provenance/translation-decisions/TRANSLATION_DECISION_QA.json",
+      "sha256": "433a79194d8577b2ff67f5ac763e601b8037446cbba3715f26a0522e788dfcf0"
+    },
+    {
+      "path": "build/full/openlogic-mr-full.tex",
+      "sha256": "f793f2b144cc8f15013bb68008c2302643c90d64bc6a1f922e9f03a4598d48f3"
+    },
+    {
+      "path": "build/full/openlogic-mr-full.pdf",
+      "sha256": "3ee7fe70d38346b3ffc7cd635aaa285e54a00e81e5cfe254467be7cc696306f9"
+    },
+    {
+      "path": "build/full/openlogic-mr-full.toc",
+      "sha256": "c8bbd4a5aef6111446492be2e0db6dd5dad0890e2506d7b26d483b09d694f407"
+    },
+    {
+      "path": "provenance/translation-decisions/DECISIONS.json.gz",
+      "sha256": "c3a1e748c575dc95617edb000dab66407fb107b46c8a6d0d8de2c587a7fb287b"
+    }
+  ],
+  "reader_pdf_tex_and_canonical_review_bytes_preserved": true,
+  "inspected_png_bytes_preserved": 23
+}

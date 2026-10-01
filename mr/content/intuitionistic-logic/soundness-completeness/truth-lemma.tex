@@ -24,7 +24,7 @@ $\Delta(\sigma)$ मध्ये कोणती
 \end{lem}
 
 \begin{proof}
-  $!A$ वर आगमन करू.
+  $!A$ वर विगमन करू.
   \begin{enumerate}
     \item \indcase{!A}{\lfalse}{$\Delta(\sigma)$
       अभाज्य असल्याने सुसंगत आहे;
@@ -36,14 +36,15 @@ $\Delta(\sigma)$ मध्ये कोणती
         $\mSat{M(\Delta)}{\indfrm}[\sigma]$
         तेव्हा आणि केवळ तेव्हाच
         $\sigma \in V(p)$;
-        म्हणजे $\Delta(\sigma) \Proves \indfrm$.}
+        म्हणजे $\Delta(\sigma) \Proves \indfrm$;
+        कारण हा अभाज्य संच निष्पत्तीखाली संवृत आहे.}
     \item \indcase!{!A}{\lnot !B}{}
     \item \indcase{!A}{!B \land
         !C}{$\mSat{M(\Delta)}{\indfrm}[\sigma]$
         तेव्हा आणि केवळ तेव्हाच
         $\mSat{M(\Delta)}{!B}[\sigma]$
         आणि $\mSat{M(\Delta)}{!C}[\sigma]$.
-        आगमन-गृहीतकानुसार
+        विगमन-गृहीतकानुसार
         $\mSat{M(\Delta)}{!B}[\sigma]$
         तेव्हा आणि केवळ तेव्हाच
         $\Delta(\sigma) \Proves
@@ -58,7 +59,7 @@ $\Delta(\sigma)$ मध्ये कोणती
         तेव्हा आणि केवळ तेव्हाच
         $\mSat{M(\Delta)}{!B}[\sigma]$
         किंवा $\mSat{M(\Delta)}{!C}[\sigma]$.
-        आगमन-गृहीतकानुसार हे
+        विगमन-गृहीतकानुसार हे
         तेव्हा आणि केवळ तेव्हाच,
         जेव्हा $\Delta(\sigma) \Proves !B$
         किंवा $\Delta(\sigma) \Proves !C$.
@@ -83,7 +84,7 @@ $\Delta(\sigma)$ मध्ये कोणती
         \{!B\})^*$; आणि
         $\Delta(\sigma.n) \Proves !B$
         पण $\Delta(\sigma.n) \Proves/
-        !C$. आगमन-गृहीतकानुसार
+        !C$. विगमन-गृहीतकानुसार
         $\mSat{M(\Delta)}{!B}[\sigma.n]$
         आणि $\mSat/{M(\Delta)}{!C}[\sigma.n]$.
         $R\sigma(\sigma.n)$ असल्यामुळे
@@ -101,7 +102,7 @@ $\Delta(\sigma)$ मध्ये कोणती
         असलेल्या प्रत्येक $\sigma'$ साठी
         $\Delta(\sigma') \Proves/ !B$
         किंवा $\Delta(\sigma') \Proves
-        !C$. आगमन-गृहीतकानुसार
+        !C$. विगमन-गृहीतकानुसार
         $R\sigma\sigma'$ असेल तेव्हा
         $\mSat/{M(\Delta)}{!B}[\sigma']$
         किंवा $\mSat{M(\Delta)}{!C}[\sigma']$;

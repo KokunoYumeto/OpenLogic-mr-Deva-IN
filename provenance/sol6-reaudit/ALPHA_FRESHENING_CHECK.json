@@ -1,0 +1,26 @@
+{
+  "schema": "sol6-alpha-freshening-check/1",
+  "date": "2026-09-30",
+  "status": "passed",
+  "generated_source_terms": 210,
+  "generated_replacement_terms": 48,
+  "substitution_cases": 30240,
+  "original_defined_cases": 11376,
+  "original_intentionally_undefined_cases": 18864,
+  "independent_oracle": "de Bruijn binding tree, replacing only named free leaves; compared to raw named partial substitutions in two independently freshened alpha variants",
+  "counterexample": {
+    "M": "lambda x.lambda y.a",
+    "N_prime": "lambda y.a",
+    "R": "b",
+    "target_variable": "y",
+    "fresh_outer_name": "z",
+    "first_Nprime_z_for_x_defined": true,
+    "subsequent_lambda_z_body_b_for_y_defined": false,
+    "corrected_all_binders_fresh_procedure_defined": true
+  },
+  "binding": {
+    "path": "mr/content/lambda-calculus/syntax/alpha.tex",
+    "sha256": "71fdbcf3fbe296389162a57cae5ccc6364a5956f39b3e6b7cf20e49cb734d6ba"
+  },
+  "limitations_mr": "तीन मूळ नावांवर size at most four च्या सांत generated पदांसाठी तपासणी आहे. संपूर्ण proof assistant formalization किंवा सर्व पदांचा exhaustive दावा नाही. Infinite variable supply, inner-to-outer valid alpha steps आणि binding-tree completeness यांचे सामान्य argument प्रत्यक्ष proof मध्ये आहे."
+}

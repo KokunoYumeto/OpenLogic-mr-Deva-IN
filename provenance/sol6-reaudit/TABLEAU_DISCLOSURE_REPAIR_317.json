@@ -1,0 +1,31 @@
+{
+  "id": "SOL6-A317",
+  "date": "2026-10-01",
+  "record_kind": "workflow_disclosure",
+  "title": "Current tableau notation/saturation disclosures acknowledge the actual correction and proof controls.",
+  "before_localized_index_sha256": "01170946d6de03ca04c0c3dfedc36655a085df4ab8dc9aebc42eac6bfef29e02",
+  "after_localized_index_sha256": "3e1d9c11c690bf2e7c232f562b2803d782998fa06ecd8aa1bc4c251e77e7998c",
+  "historical_localized_rows": [
+    {
+      "issue_id": "OLINC-411",
+      "rationale_mr": "sFmla(True,lforall) आणि sFmla(False,lexists) यांत बद्ध चर व सूत्र नाही, जरी दुसरा वितर्क पूर्ण चिन्हांकित सूत्रासाठी असतो. मराठीत मूळ प्रतीकात्मक रूपे राखून अपूर्ण चिन्हांकन स्रोत-संपादकासाठी नोंदवले आहे. संख्यापक-चिन्हांची रूपबंध-संक्षिप्त नोंद अभिप्रेत असू शकते, पण ती स्पष्ट केलेली नाही.",
+      "review_question_mr": "ही दोन्ही चिन्हांकित रूपे पूर्ण संख्यापकीय सूत्रे दाखवावीत, किंवा संक्षिप्त रूपबंध म्हणून स्पष्ट परिभाषित करावीत का?"
+    },
+    {
+      "issue_id": "OLINC-412",
+      "rationale_mr": "मूळ सान्त खुल्या शाखेसाठी सर्व अणुरहित सूत्रे तपासलेली म्हणते, पण आधीचा परिच्छेद सत्य सार्वत्रिक आणि असत्य अस्तित्वसूत्रे कधीही तपासल्याची खूण घेत नाहीत असे सांगतो. मराठीत मुद्रित पर्याय राखून आवश्यक अपवाद किंवा संतृप्ततेची अट गाळल्याचे नोंदवले आहे. अचूक योग्य अट पदांच्या नियोजनावर अवलंबते; नवी पूर्ण अट ठरवल्याचा दावा नाही.",
+      "review_question_mr": "सान्त खुल्या शाखेसाठी सर्व अणुरहित सूत्रे तपासलेली या वाक्याऐवजी कोणती अचूक संतृप्ततेची अट द्यावी?"
+    }
+  ],
+  "before_corrective_journal_sha256": "c73338e5310c5254fcb5d9d9e38a1187e5e22838f78b330a1da8fddb0a426c27",
+  "after_corrective_journal_sha256": "35e7364f1acaf8aba9c14fe9d091e69cec12be14891be4dc2219afb8af9580a9",
+  "historical_copied_control": {
+    "canon_role_mr": "पूर्ण frozen English/Marathi normalization units प्रत्यक्ष वाचली; आधी प्रत्यक्ष वाचलेल्या N1/N2 rule tables, discharge scope, regularization आणि syntactic subformula definition नियंत्रक आहेत. नवीन बाह्य canon consultation, स्वतंत्र मानव परीक्षण किंवा संपूर्ण formal verification केल्याचा दावा नाही.",
+    "review_question_mr": "रूपांतरणात उघडी गृहीतके अनवधानाने discharge होतात का? प्रतीतील eigenvariables नियमित राहतात का? अंतिम असत्य सूत्रासाठी रिकामा उत्तरपक्ष जपला आहे का? संदर्भ संचाचे बहुसंचात रूपांतर केल्यावर आवश्यक contraction केले आहे का? उपसूत्राच्या दाव्यात गृहीतके, संख्यापकांची उदाहरणे आणि असत्याची अट समाविष्ट आहेत का?"
+  },
+  "before_live_ledger_sha256": "5e1ef0150e6f3984d0c64351daaa8b682b02a18cbe7d8838f90622984faa65aa",
+  "after_live_ledger_sha256": "e44c874a25a0f3efcde612e36a1b44c8594941080d7b300ae3c3f939d79d695e",
+  "tableau_and_sequent_example_bodies_byte_equal_after_utf8_decode": true,
+  "immutable_source_issues_sha256": "c015a22ae11cf8f9da72509aa787424599e3611b46412a32a4f219377f8b11f9",
+  "scope": "Current disclosure and metadata only; no source choice or original dated receipt overwrite."
+}

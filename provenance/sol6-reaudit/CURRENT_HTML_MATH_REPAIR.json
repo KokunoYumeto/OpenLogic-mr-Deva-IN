@@ -1,0 +1,57 @@
+{
+  "schema": "openlogic-current-html-math-repair/1",
+  "status": "native_MathML_checks_passed_full_reader_rebuild_pending",
+  "reader_sha256": "7e6c90049fb3e0b7a7fbfe3ac2907bcd46d994fc99ce8e517155e2fe667ba054",
+  "actual_optional_system_macros": 104,
+  "actual_negative_optional_system_macros": 11,
+  "native_MathML_cases": 9,
+  "formulae": [
+    {
+      "source": "\\Gamma\\Proves[\\Sigma] A",
+      "expanded": "\\Gamma\\vdash_{\\Sigma}  A"
+    },
+    {
+      "source": "\\Gamma\\Proves/[\\Sigma] A",
+      "expanded": "\\Gamma\\nvdash_{\\Sigma}  A"
+    },
+    {
+      "source": "\\Gamma\\Proves[\\Log{K}] A",
+      "expanded": "\\Gamma\\vdash_{\\mathbf{K}}  A"
+    },
+    {
+      "source": "\\Gamma\\Proves A",
+      "expanded": "\\Gamma\\vdash  A"
+    },
+    {
+      "source": "\\Proves_m S",
+      "expanded": "\\vdash _m S"
+    },
+    {
+      "source": "\\Proves_n S",
+      "expanded": "\\vdash _n S"
+    },
+    {
+      "source": "\\Proves/_{m} S",
+      "expanded": "\\nvdash _{m} S"
+    },
+    {
+      "source": "\\Proves^k S",
+      "expanded": "\\vdash ^k S"
+    },
+    {
+      "source": "\\Subst{M'}{R}{y}\\aeq\\Subst{M''}{R''}{y}",
+      "expanded": "{M'}[R/y]\\aeq{M''}[R''/y]"
+    }
+  ],
+  "tools": [
+    {
+      "path": "tools/core_html_proofs.py",
+      "sha256": "132961a5ff2428c2989092eafb9a8d8b46a60b25d4b92fd523db17be66c2c4e3"
+    },
+    {
+      "path": "tools/prepare_complete_html.py",
+      "sha256": "bc2d4d0c3db66c525612447de8d70de73180e1e2f359b6514d7a7f4c663c9b9c"
+    }
+  ],
+  "limitations": "Checks cover these macro contracts and actual failing reader expressions. Full reader, browser, EPUB and semantic corpus review remain separate."
+}

@@ -1,0 +1,230 @@
+{
+  "schema": "lambda-search-arity-check/1",
+  "status": "passed",
+  "case_count": 40,
+  "cases": [
+    {
+      "case": "search_one_parameter_0",
+      "value": 0,
+      "beta_steps": 17
+    },
+    {
+      "case": "search_one_parameter_1",
+      "value": 1,
+      "beta_steps": 57
+    },
+    {
+      "case": "search_one_parameter_2",
+      "value": 2,
+      "beta_steps": 128
+    },
+    {
+      "case": "search_one_parameter_3",
+      "value": 3,
+      "beta_steps": 240
+    },
+    {
+      "case": "search_one_parameter_4",
+      "value": 4,
+      "beta_steps": 403
+    },
+    {
+      "case": "search_two_parameters_0_0",
+      "value": 0,
+      "beta_steps": 25
+    },
+    {
+      "case": "search_two_parameters_0_1",
+      "value": 1,
+      "beta_steps": 73
+    },
+    {
+      "case": "search_two_parameters_0_2",
+      "value": 2,
+      "beta_steps": 152
+    },
+    {
+      "case": "search_two_parameters_1_0",
+      "value": 1,
+      "beta_steps": 71
+    },
+    {
+      "case": "search_two_parameters_1_1",
+      "value": 2,
+      "beta_steps": 150
+    },
+    {
+      "case": "search_two_parameters_1_2",
+      "value": 3,
+      "beta_steps": 270
+    },
+    {
+      "case": "search_two_parameters_2_0",
+      "value": 2,
+      "beta_steps": 148
+    },
+    {
+      "case": "search_two_parameters_2_1",
+      "value": 3,
+      "beta_steps": 268
+    },
+    {
+      "case": "search_two_parameters_2_2",
+      "value": 4,
+      "beta_steps": 439
+    },
+    {
+      "case": "search_no_parameters_0",
+      "value": 0,
+      "beta_steps": 15
+    },
+    {
+      "case": "search_no_parameters_1",
+      "value": 1,
+      "beta_steps": 53
+    },
+    {
+      "case": "search_no_parameters_2",
+      "value": 2,
+      "beta_steps": 122
+    },
+    {
+      "case": "search_no_parameters_3",
+      "value": 3,
+      "beta_steps": 232
+    },
+    {
+      "case": "fixed_point_factorial_0",
+      "value": 1,
+      "beta_steps": 9
+    },
+    {
+      "case": "fixed_point_factorial_1",
+      "value": 1,
+      "beta_steps": 41
+    },
+    {
+      "case": "fixed_point_factorial_2",
+      "value": 2,
+      "beta_steps": 240
+    },
+    {
+      "case": "fixed_point_factorial_3",
+      "value": 6,
+      "beta_steps": 1502
+    },
+    {
+      "case": "fixed_point_factorial_4",
+      "value": 24,
+      "beta_steps": 10294
+    },
+    {
+      "case": "tuple_recursion_0_0",
+      "value": 0,
+      "beta_steps": 11
+    },
+    {
+      "case": "tuple_recursion_0_1",
+      "value": 0,
+      "beta_steps": 27
+    },
+    {
+      "case": "tuple_recursion_0_2",
+      "value": 0,
+      "beta_steps": 43
+    },
+    {
+      "case": "tuple_recursion_0_3",
+      "value": 0,
+      "beta_steps": 59
+    },
+    {
+      "case": "tuple_recursion_1_0",
+      "value": 1,
+      "beta_steps": 11
+    },
+    {
+      "case": "tuple_recursion_1_1",
+      "value": 2,
+      "beta_steps": 27
+    },
+    {
+      "case": "tuple_recursion_1_2",
+      "value": 3,
+      "beta_steps": 43
+    },
+    {
+      "case": "tuple_recursion_1_3",
+      "value": 4,
+      "beta_steps": 59
+    },
+    {
+      "case": "tuple_recursion_2_0",
+      "value": 2,
+      "beta_steps": 11
+    },
+    {
+      "case": "tuple_recursion_2_1",
+      "value": 4,
+      "beta_steps": 27
+    },
+    {
+      "case": "tuple_recursion_2_2",
+      "value": 6,
+      "beta_steps": 43
+    },
+    {
+      "case": "tuple_recursion_2_3",
+      "value": 8,
+      "beta_steps": 59
+    },
+    {
+      "case": "tuple_recursion_3_0",
+      "value": 3,
+      "beta_steps": 11
+    },
+    {
+      "case": "tuple_recursion_3_1",
+      "value": 6,
+      "beta_steps": 27
+    },
+    {
+      "case": "tuple_recursion_3_2",
+      "value": 9,
+      "beta_steps": 43
+    },
+    {
+      "case": "tuple_recursion_3_3",
+      "value": 12,
+      "beta_steps": 59
+    },
+    {
+      "case": "strict_partial_composition_counterexample",
+      "value": 0,
+      "beta_steps": 1
+    }
+  ],
+  "bindings": [
+    {
+      "target_path": "mr/content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+      "target_sha256": "15dc6854193288d3b81a7eb42919a34b873bfe83789fab96cafe1f36a1b9a562",
+      "verified_anchor": "g(x_1, \\dots, x_n, y, h(x_1, \\dots, x_n, y))"
+    },
+    {
+      "target_path": "mr/content/lambda-calculus/lambda-definability/fixpoints.tex",
+      "target_sha256": "e41b77c50b5caadf1faa08bf2676611477753a1b1ad1e8dccc6b1f335d648ecd",
+      "verified_anchor": "\\lambd[ab][b (\\fn{Add}\\, a) \\num{0}]"
+    },
+    {
+      "target_path": "mr/content/lambda-calculus/lambda-definability/minimization.tex",
+      "target_sha256": "ca5ad4d086882618a5b1b7a7f518104a27d958cdba2b6e36b555b69a04419b80",
+      "verified_anchor": "g\\, f\\, \\vec{x} (\\fn{Succ}\\, y)"
+    },
+    {
+      "target_path": "mr/content/lambda-calculus/lambda-definability/partial-recursive-functions.tex",
+      "target_sha256": "65904da034b850cbab900d7ac930f15454e69d06f2e625f154a9454607bdc072",
+      "verified_anchor": "\\lambd[x][\\num{0}]"
+    }
+  ],
+  "limitations_mr": "Printed constructions च्या स्वतंत्र de-Bruijn beta normalization ने parameter arities 0,1,2, tuple recursion, factorial आणि erasing-composition counterexample ची सांत तपासणी केली. General theorem हा reader मधील induction वर आधारित आहे; हा exhaustive divergent-input किंवा formal proof-assistant दावा नाही."
+}

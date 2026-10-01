@@ -1,0 +1,502 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 49: मोडल क्रमवर्ती कलन
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{मोडल क्रमवर्ती कलन}\label{nml:seq:chap}
+
+
+
+
+
+
+
+
+
+
+\section{प्रस्तावना}\label{nml:seq:int:sec}
+
+विधानीय तर्कशास्त्राच्या क्रमवर्ती कलनात
+~$\Box$ आणि~
+$\Diamond$ यांच्याशी संबंधित
+अतिरिक्त नियम घालून त्याचा विस्तार करता येतो.
+उदाहरणार्थ,~$\Log{K}$ साठी \Log{LK} बरोबर पुढील
+नियम मिळतात:
+\[    \Axiom$\Gamma \fCenter \Delta, \varphi$
+    \RightLabel{$\Box$}
+    \UnaryInf$\Box\Gamma \fCenter \Diamond\Delta, \Box\varphi$
+    \DisplayProof
+    \qquad
+    \Axiom$\varphi, \Gamma \fCenter \Delta$
+    \RightLabel{$\Diamond$}
+    \UnaryInf$\Diamond\varphi, \Box\Gamma \fCenter \Diamond\Delta$
+    \DisplayProof
+\]
+~$\Log{K}$ च्या विस्तारांसाठीही आणखी नियम
+जोडावे लागतात.
+
+प्रत्येक मोडल तर्कशास्त्रासाठी अशा प्रकारचे
+क्रमवर्ती कलन उपलब्ध असेलच असे नाही. अर्थदृष्ट्या
+साध्या असलेल्या~$\Log{S5}$ साठीसुद्धा (त्याची
+व्याख्या प्राप्यता-संबंध मुळीच न वापरता करता येते),
+मूळ मसुद्यात~$\Log{LK}$ पासून मिळणारे आणि~\Cut
+नियमाशिवाय संपूर्ण असणारे कलन ज्ञात नसल्याचे म्हटले आहे.
+हे सध्याच्या सर्व क्रमवर्ती कलनांविषयीचे विधान समजू नये.
+उदाहरणार्थ, \href{https://arxiv.org/abs/1711.04634v3}{Aghaei
+आणि Mohammadi यांच्या 2018 मधील लेखात} $\Log{G3c}$ चा
+विस्तार असलेले $\Log{G3S5}$ दिले आहे. कलम~3 मधील नियम
+आणि प्रमेये~5.1 व~5.2 त्यातील कटची अनुमतता आणि संपूर्णता
+देतात; सिद्धतेसाठी त्याच कलनाचे अर्धविराम वापरणारे रूप घेतले आहे.
+या प्रकरणात पुढे दिलेल्या विशिष्ट $\Log{LK}$-विस्तारासाठी
+कटची गरज असल्याचा निष्कर्ष वेगळा आहे.
+$\Log{S5}$ साठी कट-मुक्त संपूर्ण \emph{हायपरक्रमवर्ती}
+कलनही आहे.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{\Log{K} साठी नियम}\label{nml:seq:rul:sec}
+
+नेहमीच्या विधानीय संयोजकांसाठीचे नियम हे
+नेहमीच्या क्रमवर्ती कलनातील~$\Log{LK}$ नियमांसारखेच
+आहेत. स्वयंसिद्धकेही तीच आहेत: $\varphi \Sequent \varphi$
+या रूपातील कोणतीही क्रमवर्ती स्वयंसिद्धक असते.
+
+मोडल संकारक~$\Box$
+आणि~$\Diamond$ यांच्यासाठी
+पुढील अतिरिक्त नियम
+आहेत:
+\[    \Axiom$\Gamma \fCenter \Delta, \varphi$
+    \RightLabel{$\Box$}
+    \UnaryInf$\Box\Gamma \fCenter \Diamond\Delta, \Box\varphi$
+    \DisplayProof
+    \qquad
+    \Axiom$\varphi, \Gamma \fCenter \Delta$
+    \RightLabel{$\Diamond$}
+    \UnaryInf$\Diamond\varphi, \Box\Gamma \fCenter \Diamond\Delta$
+    \DisplayProof
+\]
+येथे $\Box\Gamma$ म्हणजे~$\Gamma$
+मधील प्रत्येक सूत्राच्या आधी~$\Box$
+लावून~$\Gamma$ पासून मिळणारा सूत्रांचा अनुक्रम;
+आणि $\Diamond\Delta$ म्हणजे~$\Delta$
+मधील प्रत्येक सूत्राच्या आधी~$\Diamond$
+लावून~$\Delta$ पासून मिळणारा सूत्रांचा अनुक्रम.
+
+
+$\Gamma$~आणि~$\Delta$
+रिकामे असू शकतात; अशा वेळी निष्कर्ष-क्रमवर्तीतील
+त्यांचे अनुक्रमे
+$\Box\Gamma$~आणि~$\Diamond\Delta$
+हे भागही रिकामे असतात.
+
+एका सूत्र~$\varphi$ पुरतेच
+उजव्या बाजूला~$\Box$ जोडणे आणि
+डाव्या बाजूला~$\Diamond$ जोडणे
+मर्यादित ठेवणे आवश्यक आहे. जर
+उजवीकडे कोणत्याही संख्येने सूत्रे ना~$\Box$
+जोडण्याची किंवा डावीकडे
+कोणत्याही संख्येने सूत्रे ना~$\Diamond$ जोडण्याची
+मुभा असती, तर पुढील निष्पन्न करता आले असते:
+  \[      \Axiom$\varphi \fCenter \varphi$
+      \RightLabel{\RightR{\lnot}}
+      \UnaryInf$\fCenter \varphi, \lnot \varphi$
+      \RightLabel{$\Box*$}
+      \UnaryInf$\fCenter \Box\varphi, \Box\lnot \varphi$
+      \doubleLine
+      \RightLabel{\RightR{\lor}}
+      \UnaryInf$\fCenter \Box\varphi \lor \Box \lnot \varphi$
+      \DisplayProof
+    \qquad
+      \Axiom$\varphi \fCenter \varphi$
+      \RightLabel{\LeftR{\lnot}}
+      \UnaryInf$\lnot \varphi, \varphi \fCenter$
+      \RightLabel{$\Diamond*$}
+      \UnaryInf$\Diamond\lnot \varphi,\Diamond\varphi \fCenter $
+      \RightLabel{\RightR{\lnot}}
+      \UnaryInf$\Diamond\varphi \fCenter \lnot\Diamond\lnot \varphi$
+      \RightLabel{\RightR{\lif}}
+      \UnaryInf$ \fCenter \Diamond\varphi \lif \lnot\Diamond\lnot \varphi$
+      \DisplayProof
+  \]
+मात्र $\Box\varphi \lor \Box \lnot \varphi$ आणि
+$\Diamond\varphi \lif \lnot\Diamond\lnot \varphi$ यांपैकी कोणतेही सूत्र~$\Log{K}$ मध्ये
+वैध नाही.
+
+जर आधारविधानात~$\varphi$ व्यतिरिक्त बाजूची सूत्रेही
+असू दिली, आणि $\Box$ नियमाने उजवीकडे
+फक्त~$\varphi$ ला~$\Box$ जोडू दिला किंवा
+$\Diamond$ नियमाने डावीकडे
+फक्त~$\varphi$ ला~$\Diamond$ जोडू दिला (पण बाजूच्या
+सूत्रांवर कोणतीही क्रिया केली नाही), तर पुढील
+निष्पन्न करता आले असते:
+\[    \Axiom$\varphi \fCenter \varphi$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\fCenter \varphi, \lnot \varphi$
+    \RightLabel{\RightR{\Exchange}}
+    \UnaryInf$\fCenter \lnot \varphi, \varphi$
+    \RightLabel{$\Box*$}
+    \UnaryInf$\fCenter \lnot\varphi, \Box \varphi$
+    \doubleLine
+    \RightLabel{\RightR{\lor}}
+    \UnaryInf$\fCenter \lnot\varphi \lor \Box \varphi$
+    \DisplayProof
+  \qquad
+    \Axiom$\varphi \fCenter \varphi$
+    \RightLabel{\LeftR{\lnot}}
+    \UnaryInf$\lnot \varphi, \varphi \fCenter$
+    \RightLabel{$\Diamond*$}
+    \UnaryInf$\Diamond\lnot \varphi, \varphi \fCenter $
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\varphi \fCenter \lnot\Diamond\lnot \varphi$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$ \fCenter \varphi \lif \lnot\Diamond\lnot \varphi$
+    \DisplayProof
+\]
+मात्र $\lnot\varphi \lor \Box \varphi$ (जे $\varphi
+\lif \Box\varphi$ शी सममूल्य आहे) आणि $\varphi \lif \lnot\Diamond\lnot \varphi$
+ यांपैकी कोणतेही
+सूत्र~$\Log{K}$ मध्ये वैध नाही.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{\Log{K} साठी क्रमवर्ती निष्पत्ती}\label{nml:seq:prk:sec}
+
+
+
+\begin{ex}
+  $\Proves (\Box\varphi \land \Box\psi)
+  \lif \Box (\varphi \land \psi)$ हे दाखवणारी क्रमवर्ती कलनातील
+  निष्पत्ती पुढे दिली आहे.
+  \begin{prooftree}
+    \Axiom$\varphi \fCenter \varphi$
+    \doubleLine
+    \UnaryInf$\psi, \varphi \fCenter \varphi$
+    \Axiom$\psi \fCenter \psi$
+    \doubleLine
+    \UnaryInf$\psi, \varphi \fCenter \psi$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\psi, \varphi \fCenter \varphi \land \psi$
+    \RightLabel{$\Box$}
+    \UnaryInf$\Box\psi, \Box\varphi \fCenter \Box
+    (\varphi \land \psi)$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$\Box\varphi \land \Box\psi, \Box\varphi \fCenter \Box
+    (\varphi \land \psi)$
+    \RightLabel{\LeftR{\Exchange}}
+    \UnaryInf$\Box\varphi, \Box\varphi \land \Box\psi \fCenter \Box
+    (\varphi \land \psi)$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$\Box\varphi \land \Box\psi, \Box\varphi \land \Box\psi \fCenter \Box (\varphi \land \psi)$
+    \RightLabel{\LeftR{\Contraction}}
+    \UnaryInf$\Box\varphi \land \Box\psi \fCenter \Box (\varphi \land \psi)$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\fCenter (\Box\varphi \land \Box\psi)
+    \lif \Box (\varphi \land \psi)$
+  \end{prooftree}
+\end{ex}
+
+
+
+  \begin{ex}
+    $\Proves \Diamond(\varphi
+    \lor \psi) \lif (\Diamond \varphi \lor \Diamond\psi)$ हे दाखवणारी
+    क्रमवर्ती कलनातील निष्पत्ती पुढे दिली आहे.
+    \begin{prooftree}
+      \Axiom$\varphi \fCenter \varphi$
+      \doubleLine
+      \UnaryInf$\varphi \fCenter \varphi, \psi$
+      \Axiom$\psi \fCenter \psi$
+      \doubleLine
+      \UnaryInf$\psi \fCenter \varphi, \psi$
+      \RightLabel{\LeftR{\lor}}
+      \BinaryInf$\varphi \lor \psi \fCenter \varphi, \psi$
+      \RightLabel{$\Diamond$}
+      \UnaryInf$\Diamond(\varphi \lor \psi) \fCenter
+      \Diamond \varphi, \Diamond\psi$
+      \RightLabel{\RightR{\lor}}
+      \UnaryInf$\Diamond(\varphi \lor \psi) \fCenter
+      \Diamond \varphi, \Diamond \varphi \lor \Diamond\psi$
+      \RightLabel{\RightR{\Exchange}}
+      \UnaryInf$\Diamond(\varphi \lor \psi) \fCenter \Diamond \varphi \lor \Diamond\psi, \Diamond \varphi$
+      \RightLabel{\RightR{\lor}}
+      \UnaryInf$\Diamond(\varphi \lor \psi) \fCenter
+      \Diamond \varphi \lor \Diamond\psi, \Diamond \varphi \lor \Diamond\psi$
+      \RightLabel{\RightR{\Contraction}}
+      \UnaryInf$\Diamond(\varphi
+      \lor \psi) \fCenter \Diamond \varphi \lor \Diamond\psi$
+      \RightLabel{\RightR{\lif}}
+      \UnaryInf$\fCenter \Diamond(\varphi
+      \lor \psi) \lif (\Diamond \varphi \lor \Diamond\psi)$
+    \end{prooftree}
+  \end{ex}
+
+
+
+  येथे~\Dual ची निष्पत्ती दिली आहे.
+  या सिद्धतेत $\psi \liff \chi$ हे
+  $(\psi \lif \chi) \land (\chi \lif \psi)$ चे संक्षिप्त रूप घेतले आहे;
+  म्हणून शेवटची पायरी दोन सशर्त सूत्रांचा संयोग बनवते.
+  \begin{prooftree}
+    \Axiom$\varphi \fCenter \varphi$
+    \RightLabel{\LeftR{\lnot}}
+    \UnaryInf$\lnot \varphi, \varphi \fCenter $
+    \RightLabel{$\Diamond$}
+    \UnaryInf$\Diamond\lnot \varphi, \Box \varphi \fCenter $
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\Box \varphi \fCenter \lnot\Diamond\lnot \varphi$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\fCenter \Box \varphi \lif \lnot\Diamond\lnot \varphi$
+    \Axiom$\varphi \fCenter \varphi$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\fCenter \varphi, \lnot \varphi $
+    \RightLabel{\RightR{\Exchange}}
+    \UnaryInf$\fCenter \lnot \varphi, \varphi $
+    \RightLabel{$\Box$}
+    \UnaryInf$\fCenter \Diamond\lnot \varphi, \Box \varphi$
+    \RightLabel{\RightR{\Exchange}}
+    \UnaryInf$\fCenter \Box \varphi, \Diamond\lnot \varphi$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\lnot\Diamond\lnot \varphi \fCenter \Box \varphi$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\fCenter \lnot \Diamond \lnot \varphi \lif \Box \varphi$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\fCenter \Box \varphi \liff \lnot\Diamond\lnot \varphi$
+  \end{prooftree}
+
+
+
+
+
+
+
+
+\begin{prob}
+  पुढील सूत्रे साठी~$\Log{K}$ मध्ये
+  क्रमवर्ती कलनातील सिद्धता शोधा:
+  \begin{enumerate}
+    \item $\Box \lnot p \lif \Box(p \lif q)$
+    \item $(\Box p \lor \Box q) \lif \Box(p \lor q)$
+    \item $\Diamond p \lif \Diamond(p \lor q)$
+    \item $\Box(p \land q) \lif \Box p$
+  \end{enumerate}
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{इतर प्राप्यता-संबंधांसाठी नियम}\label{nml:seq:mru:sec}
+
+विशिष्ट प्राप्यता-संबंधांनी निर्धारित होणाऱ्या
+तर्कशास्त्रांचा विचार करण्यासाठी आपण
+\ref{nml:seq:mru:tab:more-rules} मधील अतिरिक्त नियम पाहू.
+
+
+\begin{table}
+  \begin{center}
+    \def\arraystretch{3}
+    \begin{tabular}{cc}
+    \hline
+      \Axiom$\varphi, \Gamma \fCenter \Delta$
+      \RightLabel{T$\Box$}
+      \UnaryInf$\Box\varphi, \Gamma \fCenter \Delta$
+      \DisplayProof
+    &
+      \Axiom$\Gamma \fCenter \Delta, \varphi$
+      \RightLabel{T$\Diamond$}
+      \UnaryInf$\Gamma \fCenter \Delta, \Diamond\varphi$
+      \DisplayProof
+    \\[1ex]
+    \multicolumn{2}{c}{
+      \Axiom$\Gamma \fCenter \Delta$
+      \RightLabel{D}
+      \UnaryInf$\Box\Gamma \fCenter \Diamond\Delta$
+      \DisplayProof}
+    \\[1ex]
+      \Axiom$\Gamma, \Diamond\Pi \fCenter \Box\Delta, \Lambda, \varphi$
+      \RightLabel{B$\Box$}
+      \UnaryInf$\Box\Gamma, \Pi \fCenter \Delta, \Diamond\Lambda, \Box\varphi$
+      \DisplayProof
+      &
+      \Axiom$\varphi, \Diamond\Gamma, \Pi \fCenter \Box\Lambda, \Delta$
+      \RightLabel{B$\Diamond$}
+      \UnaryInf$\Diamond\varphi, \Gamma, \Box\Pi \fCenter \Lambda, \Diamond\Delta$
+      \DisplayProof
+    \\[1ex]
+      \Axiom$\Box\Gamma \fCenter \Diamond\Delta, \varphi$
+      \RightLabel{4$\Box$}
+      \UnaryInf$\Box\Gamma \fCenter \Diamond\Delta, \Box\varphi$
+      \DisplayProof
+      &
+      \Axiom$\varphi, \Box\Gamma \fCenter \Diamond\Delta$
+      \RightLabel{4$\Diamond$}
+      \UnaryInf$\Diamond\varphi, \Box\Gamma \fCenter \Diamond\Delta$
+      \DisplayProof
+    \\[1ex]
+      \Axiom$\Box\Gamma, \Diamond\Pi \fCenter \Box\Delta,
+      \Diamond\Lambda, \varphi$
+      \RightLabel{5$\Box$}
+      \UnaryInf$\Box\Gamma, \Diamond\Pi \fCenter \Box\Delta,
+      \Diamond\Lambda, \Box\varphi$
+      \DisplayProof
+&
+      \Axiom$\varphi, \Diamond\Gamma, \Box\Pi \fCenter \Diamond\Delta, \Box\Lambda$
+      \RightLabel{5$\Diamond$}
+      \UnaryInf$\Diamond\varphi,\Diamond\Gamma,\Box\Pi \fCenter \Diamond\Delta,\Box\Lambda$
+      \DisplayProof
+    \\[1ex]
+    \hline
+    \end{tabular}
+  \end{center}
+  \caption{अधिक मोडल नियम.}
+  \label{nml:seq:mru:tab:more-rules}
+\end{table}
+हे नियम जोडल्यावर \ref{nml:seq:mru:tab:logics-rules} मध्ये
+दिलेल्या तर्कशास्त्रांसाठी निर्दोष आणि संपूर्ण
+पद्धती मिळतात.
+\begin{table}
+  \begin{center}
+    \begin{tabular}{lll}
+      \hline
+      तर्कशास्त्र & $R$ हा \dots आहे & नियम\\
+      \hline
+      $\Log{T} = \Log{KT}$ & परावर्ती & $\Box$,
+      $\Diamond$,
+      T$\Box$
+      ,
+      T$\Diamond$
+      \\ \hline
+      $\Log{D} = \Log{KD}$ & सर्वत्र उत्तरवर्ती & $\Box$,
+      $\Diamond$,
+        D
+      \\ \hline
+      $\Log{K4}$ & संक्रमक & $\Box$,
+      $\Diamond$,
+      4$\Box$
+      ,
+      4$\Diamond$
+      \\ \hline
+      $\Log{B} = \Log{KTB}$ & परावर्ती, & $\Box$,
+      $\Diamond$,
+      T$\Box$
+      ,
+      T$\Diamond$\\
+      & सममित &
+      B$\Box$
+      ,
+      B$\Diamond$
+      \\ \hline
+      $\Log{S4} = \Log{KT4}$ & परावर्ती, & $\Box$,
+      $\Diamond$,
+      T$\Box$
+      ,
+      T$\Diamond$\\
+      & संक्रमक &
+      4$\Box$
+      ,
+      4$\Diamond$
+      \\ \hline
+      $\Log{S5} = \Log{KT5}$ & परावर्ती, & $\Box$,
+      $\Diamond$,
+      T$\Box$
+      ,
+      T$\Diamond$\\
+      & संक्रमक, &
+      5$\Box$
+      ,
+      5$\Diamond$\\
+      &  युक्लिडी &
+      \\ \hline
+    \end{tabular}
+  \end{center}
+  \caption{विविध मोडल तर्कशास्त्रांसाठी क्रमवर्ती नियम.}
+  \label{nml:seq:mru:tab:logics-rules}
+\end{table}
+\begin{ex}
+  $\Log{K4} \Proves \Ax{4}$, म्हणजे
+  $\Box\varphi \lif \Box\Box\varphi$, हे दाखवणारी क्रमवर्ती
+  निष्पत्ती पुढे दिली आहे.
+  \begin{prooftree}
+    \Axiom$\Box\varphi \fCenter \Box\varphi$
+    \RightLabel{4$\Box$}
+    \UnaryInf$\Box\varphi \fCenter \Box\Box\varphi$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\fCenter \Box\varphi \lif \Box\Box\varphi$
+  \end{prooftree}
+\end{ex}
+\begin{ex}
+  $\Log{S5} \Proves \Ax{5}$, म्हणजे
+  $\Diamond\varphi \lif \Box\Diamond\varphi$, हे दाखवणारी
+  क्रमवर्ती निष्पत्ती पुढे दिली आहे.
+  \begin{prooftree}
+    \Axiom$\Diamond\varphi \fCenter \Diamond\varphi$
+    \RightLabel{5$\Box$}
+    \UnaryInf$\Diamond\varphi \fCenter \Box\Diamond\varphi$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\fCenter \Diamond\varphi \lif \Box\Diamond\varphi$
+  \end{prooftree}
+\end{ex}
+\begin{ex}
+या विभागात दिलेले \Log{S5} साठीचे क्रमवर्ती कलन \Cut{} नियमाशिवाय
+संपूर्ण नाही; उदा., $\Diamond\Box \varphi \lif \varphi$ हे~$\Log{S5}$ मध्ये वैध असलेले
+सूत्र~\Cut शिवाय सिद्ध करता येत नाही. पुढे~\Cut
+वापरणारी निष्पत्ती दिली आहे:
+\begin{prooftree}
+\Axiom$\Box \varphi \fCenter \Box\varphi$
+\RightLabel{5$\Diamond$}
+\UnaryInf$\Diamond\Box\varphi \fCenter \Box\varphi$
+\Axiom$\varphi \fCenter \varphi$
+\RightLabel{T$\Box$}
+\UnaryInf$\Box\varphi \fCenter \varphi$
+\RightLabel{\Cut}
+\BinaryInf$\Diamond\Box\varphi \fCenter \varphi$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$\fCenter \Diamond\Box\varphi \lif \varphi$
+\end{prooftree}
+\end{ex}
+\begin{prob}
+पुढील निष्कर्ष दाखवणाऱ्या क्रमवर्ती निष्पत्त्या द्या:
+  \begin{enumerate}
+  \item $\Log{KT5} \Proves \Ax{B}$;
+  \item $\Log{KT5} \Proves \Ax{4}$;
+  \item $\Log{KDB4} \Proves \Ax{T}$;
+  \item $\Log{KB4} \Proves \Ax{5}$;
+  \item $\Log{KB5} \Proves \Ax{4}$;
+  \item $\Log{KT} \Proves \Ax{D}$.
+  \end{enumerate}
+\end{prob}
+\part{उपयोजित मोडल तर्कशास्त्र}\label{aml:part}
+\begin{editorial}
+या भागात कालिक आणि ज्ञानविषयक तर्कशास्त्रांसारख्या
+मोडल तर्कशास्त्राच्या काही उपयोजनांवरील प्रायोगिक
+मसुदा साहित्य आहे.
+\end{editorial}

@@ -40,12 +40,15 @@ $\cardle{X}{Y}$, जर आणि फक्त जर
 हा संबंधही परिभाषित करता येतो.
 
 \begin{prop}
+%READERNOTE{SOL6-A096: Injectivity फक्त तुलना केल्या जाणाऱ्या X वरील प्रतिबंधासाठी आहे. फलन पूर्ण प्रांतावर परिभाषित असले तरी X बाहेरील मूल्ये मनमानी असू शकतात; त्यांवर injectivity मागितलेली नाही.}
 पुढील सूत्र
 \[
-\lexists[u][(\lforall[x][(X(x) \lif Y(u(x)))] \land \lforall[x][\lforall[y][(\eq[u(x)][u(y)] \lif
+\lexists[u][(\lforall[x][(X(x) \lif Y(u(x)))] \land \lforall[x][\lforall[y][((X(x) \land X(y) \land \eq[u(x)][u(y)]) \lif
       \eq[x][y])]])]
 \]
-आकारमानाने मोठा नाही हा संबंध परिभाषित करते.
+आकारमानाने मोठा नाही हा संबंध परिभाषित करते. येथे
+एकास एक अट फक्त X मधील दोन घटकांसाठी मागितली आहे.
+X वरील फलन पूर्ण प्रांतावर मनमानी वाढवता येते.
 \end{prop}
 
 दोन संचांचे आकारमान समान असते, म्हणजे ते
@@ -56,7 +59,7 @@ $\cardle{X}{Y}$, जर आणि फक्त जर
 पुढील सूत्र
 \begin{multline*}
   \lexists[u][(\lforall[x][(X(x) \lif Y(u(x)))] \land {}\\
-    \lforall[x][\lforall[y][(\eq[u(x)][u(y)] \lif \eq[x][y])]]
+    \lforall[x][\lforall[y][((X(x) \land X(y) \land \eq[u(x)][u(y)]) \lif \eq[x][y])]]
   \land {} \\\lforall[y][(Y(y) \lif \lexists[x][(X(x)
       \land \eq[y][u(x)])])])]
 \end{multline*}

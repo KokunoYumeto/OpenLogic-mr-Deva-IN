@@ -1,0 +1,393 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 63: क्रमसूचक अंकगणित
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{क्रमसूचक अंकगणित}\label{sth:ord-arithmetic:chap}
+
+
+
+
+\section{परिचय}\label{sth:ord-arithmetic:intro:sec}
+
+\ref{sth:ordinals:chap} मध्ये आपण क्रमसूचक संख्यांची उपपत्ती विकसित केली. \ref{sth:spine:chap} मध्ये आपण पाहिले की पदानुक्रमाचा उर्वरित भाग ज्याभोवती बांधला जातो असा कणा म्हणून क्रमसूचक संख्यांकडे पाहता येते. पण क्रमसूचक संख्यांची तेवढीच भूमिका नाही. क्रमसूचक अंकगणित करण्याचे कामही आहे.
+
+\ref{sth:ordinals:idea:sec} मध्ये $\omega$, $\omega+1$ आणि $\omega+\omega$ यांचा उल्लेख करताना आपण याची आधीच थोडी कल्पना दिली होती. तेव्हा आपण अनौपचारिकपणे बोललो; आता ते नीट स्पष्ट करण्याची वेळ आली आहे. मात्र या प्रकरणात तत्त्वज्ञान फारसे नाही, हे सांगायला हवे. येथे मुख्यतः तांत्रिक विकास आहे; त्याबरोबर एकच गोष्ट दोन वेगवेगळ्या मार्गांनी करता येते हे दाखवणारे (किंचित) रोचक निरीक्षण आहे.
+
+
+
+
+
+
+
+\section{क्रमसूचक बेरीज}\label{sth:ord-arithmetic:add:sec}
+
+समजा आपल्याला $\alpha$ आणि $\beta$ यांची बेरीज करायची आहे. $\alpha$ च्या एका {प्रतीनंतर} लगेच $\beta$ ची एक प्रत ठेवता येईल. (येथे \emph{प्रती} घ्याव्या लागतात; कारण \ref{sth:ordinals:basic:ordinalsaresubsets} वरून $\alpha \subseteq \beta$ किंवा $\beta \subseteq \alpha$ यांपैकी एक खरे असते.) याचा सहज अर्थ असा की आधी $\alpha$-लांबीचा पायऱ्यांचा अनुक्रम पार करायचा आणि \emph{त्यानंतर} $\beta$-लांबीचा अनुक्रम पार करायचा. मिळालेला अनुक्रम सुक्रमित असेल; म्हणून \ref{sth:ordinals:ordtype:thmOrdinalRepresentation} नुसार तो एका (अद्वितीय) क्रमसूचक संख्येशी समरूप असेल. त्या क्रमसूचक संख्येला $\alpha$ आणि $\beta$ यांची \emph{बेरीज} मानता येईल.
+
+क्रमसूचक बेरीजेमागील सहज कल्पना ही आहे. तिची काटेकोर व्याख्या करण्यासाठी संचांच्या \emph{प्रती} घेण्याच्या कल्पनेपासून सुरुवात करू. कोणती वस्तू कुठून आली हे ओळखण्यासाठी $0$ आणि $1$ या मनमानी खूणा वापरायच्या:
+
+\begin{defn}\label{sth:ord-arithmetic:add:defdissum}
+$A$ आणि $B$ यांची \emph{विभक्त बेरीज} म्हणजे $A \disjointsum B = (A\times
+\{0\}) \cup (B \times \{1\})$.
+\end{defn}
+
+यानंतर क्रमसूचक संख्यांच्या जोड्यांवर क्रम परिभाषित करू:
+
+\begin{defn}
+कोणत्याही क्रमसूचक संख्या $\alpha_1, \alpha_2, \beta_1, \beta_2$ यांच्यासाठी पुढीलप्रमाणे म्हणू:
+\begin{align*}
+  \tuple{\alpha_1, \alpha_2} \rlexless \tuple{\beta_1, \beta_2}\text{ तेव्हा आणि केवळ तेव्हाच }&
+  \text{एकतर $\alpha_2 \in \beta_2$}\\
+  & \text{किंवा $\alpha_2 = \beta_2$ आणि $\alpha_1 \in \beta_1$ या दोन्ही अटी}
+\end{align*}
+\end{defn}
+
+हा \emph{उलट शब्दकोशीय} क्रम आहे; कारण आधी दुसऱ्या घटकानुसार आणि मग पहिल्या घटकानुसार क्रम लावला जातो. आता $\alpha$ ची प्रत आणि तिच्यानंतर $\beta$ ची प्रत घेतल्यावर मिळणारा क्रमप्रकार म्हणजे $\alpha \ordplus \beta$ अशी व्याख्या आपल्याला करायची होती, हे आठवा. त्यासाठी पुढील व्याख्या करू:
+
+\begin{defn}\label{sth:ord-arithmetic:add:defordplus}
+कोणत्याही क्रमसूचक संख्या $\alpha$, $\beta$ यांची बेरीज म्हणजे $\alpha \ordplus
+\beta = \ordtype{\alpha \disjointsum \beta, \rlexless}$.
+\end{defn}
+\noindent
+येथे आपण लेखनाचा किंचित सैल वापर केला आहे. काटेकोरपणे “$\rlexless$” ऐवजी “$\Setabs{\tuple{x,y}\in (\alpha\disjointsum\beta)\times(\alpha\disjointsum\beta)}{x \rlexless y}$” असे लिहायला हवे. तरी संक्षेपासाठी पुढेही हा सैल वापर करू.
+
+पुढील निष्कर्ष आणि \ref{sth:ordinals:ordtype:thmOrdinalRepresentation} मिळून आपली व्याख्या नीट ठरते याची खात्री देतात:
+
+\begin{lem}\label{sth:ord-arithmetic:add:ordsumlessiswo}
+कोणत्याही क्रमसूचक संख्या $\alpha$ आणि $\beta$ यांच्यासाठी $\tuple{\alpha \disjointsum \beta, \rlexless}$ हे सुक्रमण आहे.
+\end{lem}
+
+\begin{proof}
+$\alpha \disjointsum \beta$ वर $\rlexless$ हा संबंध संयोजित आहे, हे स्पष्ट आहे. तो सुस्थापित आहे हे दाखवण्यासाठी रिकामा नसलेला $X \subseteq \alpha
+\disjointsum \beta$ निश्चित करा. $X$ मधील ज्या घटकांचा दुसरा निर्देशांक शक्य तितका लहान आहे त्यांचा उपसंच $Y$ असू द्या; म्हणजे $Y = \Setabs{\tuple{\gamma, i} \in X}{(\forall \tuple{\delta, j} \in X)i \leq j}$. आता $Y$ मधील सर्वांत लहान पहिला निर्देशांक असलेला घटक निवडा.
+\end{proof}
+\noindent
+अशा रीतीने क्रमसूचक बेरीजची एक नीट आणि स्पष्ट व्याख्या मिळाली. आता एक अपेक्षित निष्कर्ष पाहू (\ref{sth:z:infinity-again:defnomega} नुसार $1 = \{0\}$ हे आठवा):
+\begin{prop}
+कोणत्याही क्रमसूचक संख्या $\alpha$ साठी $\alpha \ordplus  1 = \ordsucc{\alpha}$.
+\end{prop}
+
+\begin{proof}
+$\ordsucc{\alpha} = \alpha \cup
+\{\alpha\}$ पासून $\alpha\disjointsum1 = (\alpha \times \{0\})
+\cup (\{0\} \times \{1\})$ कडे जाणारे समरूपण $f$ पाहा: $\gamma \in \alpha$ साठी $f(\gamma) =
+\tuple{\gamma, 0}$, आणि $f(\alpha) = \tuple{0,
+1}$.
+\end{proof}
+\noindent
+शिवाय, बेरीज पुढील पुनरावर्ती अटी पूर्ण करते हे सहज दाखवता येते:
+
+\begin{lem}\label{sth:ord-arithmetic:add:ordadditionrecursion}
+कोणत्याही क्रमसूचक संख्या $\alpha, \beta$ यांच्यासाठी:
+\begin{align*}
+  \alpha\ordplus 0 &= \alpha\\
+  \alpha \ordplus  (\beta\ordplus 1) &= (\alpha \ordplus  \beta) \ordplus  1\\
+  \alpha  \ordplus  \beta &= \supstrict_{\delta < \beta}(\alpha \ordplus  \delta) && \text{जर $\beta $ सीमा क्रमसूचक संख्या असेल तर}
+\end{align*}
+\end{lem}
+
+\begin{proof}
+प्रत्येक प्रकरण तपासू. प्रथम:
+\begin{align*}
+  \alpha \ordplus  0
+  & = \ordtype{(\alpha \times \{0\}) \cup (0 \times \{1\}), \rlexless} \\
+  &= \ordtype{(\alpha \times \{0\}) \cup 0, \rlexless}\\
+  &= \alpha\\
+  \alpha \ordplus (\beta \ordplus  1)
+  &= \ordtype{(\alpha\times \{0\}) \cup (\ordsucc{\beta}\times \{1\}), \rlexless} \\
+  &= \ordtype{(\alpha\times \{0\}) \cup (\beta \times \{1\}), \rlexless} \ordplus 1\\
+  &= (\alpha \ordplus  \beta) \ordplus  1
+\end{align*}
+आता $\beta \neq \emptyset$ ही सीमा क्रमसूचक संख्या असू द्या. $\delta < \beta$ असेल, तर $\delta\ordplus 1 < \beta$ सुद्धा; म्हणून $\alpha \ordplus  \delta$ हा $\alpha \ordplus  \beta$ चा उचित आरंभीचा खंड आहे. त्यामुळे $\alpha
+\ordplus  \beta$ हा $X = \Setabs{\alpha
+\ordplus  \delta}{\delta < \beta}$ चा काटेकोर ऊर्ध्वबंध आहे. शिवाय, $\alpha \leq \gamma <
+\alpha \ordplus  \beta$ असेल, तर काही $\delta < \beta$ साठी $\gamma = \alpha \ordplus
+\delta$ असते, हे स्पष्ट आहे. म्हणून $\alpha \ordplus  \beta =
+\supstrict_{\delta< \beta}(\alpha\ordplus \delta)$.
+\end{proof}
+
+पण आता एक लक्षवेधी बाब आहे. क्रमसूचक बेरीज परिभाषित करण्यासाठी आपण \emph{त्याऐवजी} अनंतपार पुनरावर्तनाचे प्रमेय थेट वापरू शकलो असतो आणि \ref{sth:ord-arithmetic:add:ordadditionrecursion} मध्ये दिलेलीच पुनरावर्तन समीकरणे मांडू शकलो असतो (फक्त “$\beta \ordplus 1$” ऐवजी “$\ordsucc{\beta}$” वापरून).
+
+म्हणून क्रमसूचक संख्यांवरील क्रिया परिभाषित करण्याचे दोन मार्ग आहेत. सुक्रमित संच स्पष्टपणे रचून त्याचा क्रमप्रकार घेता येतो; ही \emph{संश्लेषणात्मक} पद्धत. किंवा केवळ पुनरावर्तन समीकरणे देऊन \emph{पुनरावर्ती} पद्धतीने व्याख्या करता येते. योग्य रीतीने केल्यास दोन्हींचा निष्कर्ष मात्र एकच असतो. कारण \ref{sth:ordinals:ordtype:thmOrdinalRepresentation} नुसार या पुनरावर्तन समीकरणांनी \emph{अद्वितीय} क्रमसूचक संख्या ठरतात.
+
+अनेक बाबतींत क्रमसूचक अंकगणित नैसर्गिक संख्यांच्या बेरीजेसारखेच वागते. उदाहरणार्थ, पुढील निष्कर्ष सिद्ध करता येतो:
+
+\begin{lem}\label{sth:ord-arithmetic:add:ordinaladditionisnice}
+$\alpha, \beta, \gamma$ या क्रमसूचक संख्या असतील, तर:
+\begin{enumerate}
+  \item\label{sth:ord-arithmetic:add:ordaddition1} $\beta < \gamma$ असेल, तर $\alpha
+  \ordplus  \beta < \alpha \ordplus  \gamma$
+  \item\label{sth:ord-arithmetic:add:ordaddition2} $\alpha \ordplus  \beta =
+  \alpha\ordplus \gamma$ असेल, तर $\beta = \gamma$
+  \item\label{sth:ord-arithmetic:add:ordaddition3} $\alpha \ordplus  (\beta \ordplus
+  \gamma) = (\alpha \ordplus  \beta) \ordplus  \gamma$; म्हणजे बेरीज सहचारी आहे
+  \item\label{sth:ord-arithmetic:add:ordaddition4} $\alpha \leq \beta$ असेल, तर $\alpha
+  \ordplus  \gamma \leq \beta \ordplus \gamma$
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+इतर विधाने सरावासाठी ठेवून \ref{sth:ord-arithmetic:add:ordaddition3} सिद्ध करू. \ref{sth:ord-arithmetic:add:ordadditionrecursion} वापरून $\gamma$ वर साध्या अनंतपार विगमनाने पुरावा देऊ. $\gamma = 0$ असेल, तर:
+\[
+(\alpha \ordplus  \beta) \ordplus  0 = \alpha \ordplus  \beta  = \alpha \ordplus  (\beta \ordplus  0)
+\]
+$\gamma = \delta\ordplus 1$ असेल, तर विगमनगृहीतक म्हणून $(\alpha
+\ordplus  \beta) \ordplus  \delta = \alpha \ordplus  (\beta \ordplus
+\delta)$ मानू. आता \ref{sth:ord-arithmetic:add:ordadditionrecursion} तीनदा वापरल्यास:
+\begin{align*}
+  (\alpha \ordplus  \beta) \ordplus  (\delta \ordplus  1) & = ((\alpha \ordplus  \beta) \ordplus  \delta)\ordplus 1\\
+  & = (\alpha \ordplus  (\beta \ordplus  \delta)) \ordplus  1\\
+  & = \alpha \ordplus  ((\beta \ordplus  \delta)\ordplus 1)\\
+  & = \alpha \ordplus  (\beta \ordplus  (\delta\ordplus 1))
+\end{align*}
+$\gamma$ ही सीमा क्रमसूचक संख्या असेल, तर प्रत्येक $\delta \in \gamma$ साठी $(\alpha \ordplus  \beta) \ordplus  \delta =
+\alpha \ordplus  (\beta \ordplus  \delta)$ असे विगमनगृहीतक मानू. मग:
+\begin{align*}
+  (\alpha \ordplus  \beta) \ordplus  \gamma & = \supstrict_{\delta < \gamma}((\alpha \ordplus  \beta) \ordplus  \delta) \\
+  &= \supstrict_{\delta < \gamma}(\alpha \ordplus  (\beta \ordplus  \delta))\\
+  &= \alpha \ordplus  \supstrict_{\delta < \gamma}(\beta \ordplus  \delta)\\
+  & = \alpha \ordplus  (\beta \ordplus  \gamma)
+\end{align*}
+\end{proof}
+
+\begin{prob}
+\ref{sth:ord-arithmetic:add:ordinaladditionisnice} मधील उर्वरित विधाने सिद्ध करा.
+\end{prob}
+
+या बाबतींत क्रमसूचक बेरीज परिचित वाटावी. पण एका अत्यंत महत्त्वाच्या बाबतीत ती नैसर्गिक संख्यांच्या बेरीजेसारखी \emph{नाही}.
+
+\begin{prop}\label{sth:ord-arithmetic:add:ordsumnotcommute}
+क्रमसूचक बेरीज {क्रमनिरपेक्ष नाही}; $1 \ordplus  \omega = \omega <
+\omega \ordplus  1$.
+\end{prop}
+
+\begin{proof}
+$1 \ordplus  \omega = \supstrict_{n < \omega} (1 \ordplus n)
+= \omega \in \omega \cup \{\omega\} = \ordsucc{\omega} = \omega
+\ordplus  1$ हे लक्षात घ्या.
+\end{proof}
+\noindent
+सुरुवातीला आश्चर्य वाटू शकते; पण \emph{वाटायला नको}. एका बाजूला, $1 \ordplus  \omega$ पाहताना आपण सर्व नैसर्गिक संख्यांच्या \emph{आधी} एक जादा घटक ठेवून मिळणाऱ्या क्रमप्रकाराचा विचार करतो. \ref{sfr:infinite:hilbert:sec} मधील हिल्बर्टच्या हॉटेलप्रमाणे विचार केल्यास, सहज अर्थाने या जादा पहिल्या घटकामुळे एकूण क्रमप्रकारात फरक पडू नये. दुसऱ्या बाजूला, $\omega \ordplus  1$ पाहताना आपण सर्व नैसर्गिक संख्यांच्या \emph{नंतर} एक जादा घटक ठेवून मिळणाऱ्या क्रमप्रकाराचा विचार करतो. आणि तो अगदीच वेगळा प्रकार आहे!
+
+
+
+
+
+
+
+\section{क्रमसूचक बेरीजचा उपयोग}\label{sth:ord-arithmetic:using-addition:sec}
+
+क्रमसूचक संख्यांची बेरीज वापरून \ref{sth:spine:rank:defnsetrank} च्या अर्थाने विविध संचांचे प्रतांक स्पष्टपणे मोजता येतात:
+
+\begin{lem}\label{sth:ord-arithmetic:using-addition:rankcomputation}
+$\setrank{A} = \alpha$ आणि $\setrank{B} = \beta$ असतील, तर:
+\begin{enumerate}
+  \item\label{sth:ord-arithmetic:using-addition:exrankpow} $\setrank{\Pow{A}} = \alpha\ordplus 1$
+  \item\label{sth:ord-arithmetic:using-addition:exrankpair} $\setrank{\{A, B\}} = \max(\alpha,
+  \beta) \ordplus 1$
+  \item\label{sth:ord-arithmetic:using-addition:exrankcup} $\setrank{A \cup B} = \max(\alpha,
+  \beta)$
+  \item\label{sth:ord-arithmetic:using-addition:exranktuple} $\setrank{\tuple{A,B}} = \max(\alpha,
+  \beta) \ordplus  2$
+  \item\label{sth:ord-arithmetic:using-addition:exranktimes} $\setrank{A \times B} \leq \max(\alpha,
+  \beta) \ordplus  2$
+  \item\label{sth:ord-arithmetic:using-addition:exrankunion} $\alpha$ रिकामी किंवा सीमा क्रमसूचक संख्या असेल, तर $\setrank{\bigcup A} = \alpha$; $\alpha = \gamma\ordplus 1$ असेल, तर $\setrank{\bigcup A} = \gamma$
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+संपूर्ण पुराव्यात आपण \ref{sth:spine:rank:ranksupstrict} वारंवार वापरू.
+
+\emph{\ref{sth:ord-arithmetic:using-addition:exrankpow}.} $x \subseteq A$ असेल, तर $\setrank{x} \leq
+\setrank{A}$. म्हणून $\setrank{\Pow{A}} \leq \alpha \ordplus  1$. विशेषतः $A
+\in \Pow{A}$ असल्याने $\setrank{\Pow{A}} = \alpha \ordplus  1$.
+
+\emph{\ref{sth:ord-arithmetic:using-addition:exrankpair}.} \ref{sth:spine:rank:ranksupstrict} नुसार.
+
+\emph{\ref{sth:ord-arithmetic:using-addition:exrankcup}.} \ref{sth:spine:rank:ranksupstrict} नुसार.
+
+\emph{\ref{sth:ord-arithmetic:using-addition:exranktuple}.} \ref{sth:ord-arithmetic:using-addition:exrankpair} दोनदा वापरल्यास.
+
+\emph{\ref{sth:ord-arithmetic:using-addition:exranktimes}.} $A \times B \subseteq
+\Pow{\Pow{A \cup B}}$ हे लक्षात घेऊन \ref{sth:ord-arithmetic:using-addition:exranktuple} वापरा.
+
+\emph{\ref{sth:ord-arithmetic:using-addition:exrankunion}.} $\alpha = \gamma\ordplus 1$ असेल, तर काही $c \in A$ साठी $\setrank{c} = \gamma$ असते आणि $A$ च्या कोणत्याही घटक चा प्रतांक याहून मोठा नसतो; म्हणून $\setrank{\bigcup A} = \gamma$. $\alpha$ ही सीमा क्रमसूचक संख्या असेल, तर $A$ मध्ये $\alpha$ च्या मनमान्या जवळ (पण काटेकोरपणे खाली) प्रतांक असलेले घटक असतात. त्यामुळे $\bigcup A$ मध्येही $\alpha$ च्या मनमान्या जवळ (पण काटेकोरपणे खाली) प्रतांक असलेले घटक असतात, आणि म्हणून $\setrank{\bigcup A} = \alpha$.
+\end{proof}
+\noindent
+\ref{sth:ord-arithmetic:using-addition:exranktimes} मध्ये \emph{अ}समानता का येते, हे दाखवण्याचे काम सरावासाठी सोडतो.
+
+\begin{prob}
+$\setrank{A \times B}=
+\max(\setrank{A}, \setrank{B})$ असेल असे संच $A$ आणि $B$ द्या. तसेच $\setrank{A \times B}= \max(\setrank{A}, \setrank{B}) \ordplus  2$ असेल असे संच $A$ आणि $B$ द्या. इतर कोणते प्रतांक शक्य आहेत का?
+\end{prob}
+
+क्रमसूचक संख्या “सांत” किंवा “अनंत” असण्याचा अर्थ लावण्याचे अनेक रास्त मार्ग समतुल्य आहेत, हे दाखवण्याच्या स्थितीतही आता आपण आहोत:
+
+\begin{lem}\label{sth:ord-arithmetic:using-addition:ordinfinitycharacter}
+कोणत्याही क्रमसूचक संख्या $\alpha$ साठी पुढील विधाने समतुल्य आहेत:
+\begin{enumerate}
+  \item\label{sth:ord-arithmetic:using-addition:ord:notinomega} $\alpha\notin \omega$; म्हणजे $\alpha$ नैसर्गिक संख्या नाही
+  \item\label{sth:ord-arithmetic:using-addition:ord:omegaplus} $\omega \leq \alpha$
+  \item\label{sth:ord-arithmetic:using-addition:ord:oneplus} $1 \ordplus  \alpha = \alpha$
+
+  \item\label{sth:ord-arithmetic:using-addition:ord:plusone} $\alpha \approx \alpha\ordplus 1$; म्हणजे $\alpha$ आणि $\alpha\ordplus 1$ यांचे संख्याबल समान आहे
+  \item\label{sth:ord-arithmetic:using-addition:ord:infinite} $\alpha$ डेडेकिंड-अनंत आहे
+  \end{enumerate}
+\end{lem}
+\noindent
+म्हणून क्रमसूचक संख्या सांत किंवा अनंत असण्याचा अर्थ समजण्याचे पाच सिद्ध करता येण्याजोगे समतुल्य मार्ग आपल्याकडे आहेत.
+
+\begin{proof}
+\emph{\ref{sth:ord-arithmetic:using-addition:ord:notinomega} $\Rightarrow$ \ref{sth:ord-arithmetic:using-addition:ord:omegaplus}.} त्रिपर्यायानुसार.
+
+\emph{\ref{sth:ord-arithmetic:using-addition:ord:omegaplus} $\Rightarrow$ \ref{sth:ord-arithmetic:using-addition:ord:oneplus}.} $\alpha \geq \omega$ निश्चित करा. अनंतपार विगमनानुसार अशी लघुतम क्रमसूचक संख्या $\gamma$ असते (ती $0$ असू शकते) की काही सीमा क्रमसूचक संख्या $\beta$ साठी $\alpha = \beta \ordplus \gamma$. मग:
+\[
+  1 \ordplus \alpha =
+  1 \ordplus (\beta \ordplus \gamma) =
+  (1 \ordplus \beta) \ordplus \gamma =
+  \supstrict_{\delta < \beta} (1 \ordplus  \delta) \ordplus  \gamma =
+  \beta \ordplus  \gamma =
+  \alpha.
+\]
+\emph{\ref{sth:ord-arithmetic:using-addition:ord:oneplus} $\Rightarrow$ \ref{sth:ord-arithmetic:using-addition:ord:plusone}.} $f \colon (\alpha \disjointsum 1) \to (1
+\disjointsum \alpha)$ हे एकास-एक आच्छादन सहज मिळते. $1 \ordplus \alpha = \alpha$ असेल, तर $g \colon (1 \disjointsum \alpha) \to \alpha$ हे समरूपण असते. आता $\comp{f}{g}$ पाहा.
+
+\emph{\ref{sth:ord-arithmetic:using-addition:ord:plusone} $\Rightarrow$ \ref{sth:ord-arithmetic:using-addition:ord:infinite}.} $\alpha \approx \alpha \ordplus 1$ असेल, तर $f \colon
+(\alpha \disjointsum 1) \to \alpha$ हे एकास-एक आच्छादन असते. प्रत्येक $\gamma < \alpha$ साठी $g(\gamma) = f(\gamma, 0)$ अशी व्याख्या करा. हे एकास-एक फलन $\alpha$ डेडेकिंड-अनंत आहे याची साक्ष देते; कारण $f(0,1) \in \alpha \setminus \ran{g}$.
+
+\emph{\ref{sth:ord-arithmetic:using-addition:ord:infinite} $\Rightarrow$ \ref{sth:ord-arithmetic:using-addition:ord:notinomega}.} हा \ref{sth:z:infinity-again:naturalnumbersarentinfinite} आहे.
+\end{proof}
+
+
+
+
+
+
+
+
+\section{क्रमसूचक गुणाकार}\label{sth:ord-arithmetic:mult:sec}
+
+आता क्रमसूचक गुणाकाराकडे वळू; त्यासाठीची पद्धत क्रमसूचक बेरीजेसारखीच आहे. समजा $\alpha$ ला~$\beta$ ने गुणायचे आहे. रुंदी $\alpha$ आणि उंची $\beta$ असलेली आयताकृती जाळी कल्पा. प्रत्येक ओळीतून पुढे जावे, मग पुढील ओळीतून\ldots आणि अखेरीस संपूर्ण जाळीतून जावे; त्यातून $\alpha$ आणि $\beta$ यांचा गुणाकार मिळतो. दुसऱ्या शब्दांत, $\beta$ मधील \emph{प्रत्येक} घटकाऐवजी $\alpha$ ची एक प्रत ठेवून $\alpha$ आणि $\beta$ यांचा गुणाकार तयार होतो.
+
+हे औपचारिक करण्यासाठी $\alpha$ आणि $\beta$ यांच्या कार्तीय गुणाकारावर उलट शब्दकोशीय क्रम वापरू:
+
+\begin{defn}
+कोणत्याही क्रमसूचक संख्या $\alpha, \beta$ यांचा गुणाकार म्हणजे $\alpha \ordtimes \beta = \ordtype{\alpha \times \beta, \rlexless}$.
+\end{defn}
+\noindent
+ही व्याख्या नीट ठरते याची पुन्हा खात्री करावी लागेल:
+
+\begin{lem}\label{sth:ord-arithmetic:mult:ordtimeslessiswo}
+कोणत्याही क्रमसूचक संख्या $\alpha$ आणि $\beta$ यांच्यासाठी $\tuple{\alpha \times \beta, \rlexless}$ हे सुक्रमण आहे.
+\end{lem}
+
+\begin{proof}
+\ref{sth:ord-arithmetic:add:ordsumlessiswo} प्रमाणेच.
+\end{proof}
+\noindent
+गुणाकार पुढीलप्रमाणे वागतो, हे सिद्ध करणेही कठीण नाही:
+
+\begin{lem}\label{sth:ord-arithmetic:mult:ordtimesrecursion}
+कोणत्याही क्रमसूचक संख्या $\alpha, \beta$ यांच्यासाठी:
+\begin{align*}
+  \alpha \ordtimes 0 &= 0\\
+  \alpha \ordtimes (\beta \ordplus 1) &=
+    (\alpha \ordtimes \beta) \ordplus \alpha\\
+  \alpha  \ordtimes \beta &=
+    \bigcup_{\delta < \beta}(\alpha \ordtimes \delta) &&
+    \text{$\beta$ ही सीमा क्रमसूचक संख्या असेल तेव्हा}.
+\end{align*}
+\end{lem}
+
+\begin{proof}
+सरावासाठी सोडले आहे.
+\end{proof}
+
+खरे तर बेरीजप्रमाणेच, प्रत्यक्ष व्याख्येऐवजी या पुनरावर्तन समीकरणांवरून क्रमसूचक गुणाकार परिभाषित करता आला असता. त्याचप्रमाणे, काही गुणधर्म परिचितही वाटतात:
+
+\begin{lem}\label{sth:ord-arithmetic:mult:ordinalmultiplicationisnice}
+$\alpha, \beta, \gamma$ या क्रमसूचक संख्या असतील, तर:
+\begin{enumerate}
+  \item\label{sth:ord-arithmetic:mult:ordtimes1} $\alpha \neq 0$ आणि $\beta < \gamma$ असतील,
+  तर $\alpha \ordtimes \beta < \alpha \ordtimes \gamma$;
+  \item\label{sth:ord-arithmetic:mult:ordtimes2} $\alpha \neq 0$ आणि $\alpha \ordtimes
+  \beta = \alpha\ordtimes\gamma$ असतील, तर $\beta = \gamma$;
+  \item\label{sth:ord-arithmetic:mult:ordtimes3} $\alpha \ordtimes (\beta \ordtimes
+  \gamma) = (\alpha \ordtimes \beta) \ordtimes \gamma$;
+  \item\label{sth:ord-arithmetic:mult:ordtimes4} $\alpha \leq \beta$ असेल, तर $\alpha
+  \ordtimes \gamma \leq \beta \ordtimes \gamma$;
+  \item\label{sth:ord-arithmetic:mult:ordtimes5} $\alpha \ordtimes (\beta \ordplus
+  \gamma) = (\alpha \ordtimes \beta )\ordplus (\alpha\ordtimes
+  \gamma)$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+सरावासाठी सोडले आहे.
+\end{proof}
+
+मनसोक्त इतर निष्कर्ष सिद्ध करा (किंवा शोधून वाचा). पण \ref{sth:ord-arithmetic:add:ordsumnotcommute} लक्षात घेतल्यास पुढील गोष्ट आश्चर्यकारक वाटू नये:
+
+\begin{prop}
+क्रमसूचक गुणाकार क्रमनिरपेक्ष नाही: $2 \ordtimes \omega  =
+\omega < \omega \ordtimes 2$
+\end{prop}
+
+\begin{proof}
+$2 \ordtimes \omega = \supstrict_{n < \omega}(2\ordtimes  n) = \omega \in \supstrict_{n < \omega}(\omega \ordplus n) = \omega \ordplus \omega = \omega \ordtimes 2$.
+\end{proof}
+\noindent
+यामागील सहज कारणही सरळ आहे. $2
+\ordtimes \omega$ मोजताना प्रत्येक नैसर्गिक संख्येऐवजी दोन घटक ठेवता. सर्व “अर्ध्या” संख्या नैसर्गिक संख्यांमध्ये घातल्या, म्हणजे $\Setabs{\nicefrac{n}{2}}{n \in \omega}$ वरील नेहमीच्या क्रमाचा विचार केला, तरी तोच क्रमप्रकार मिळेल. या रूपात पाहिल्यास तो क्रमप्रकार स्वतः $\omega$ च्याच क्रमप्रकारासारखा आहे, हे स्पष्ट होते. पण $\omega \ordtimes 2$ मोजताना $\omega$ च्या दोन प्रती एकीमागोमाग ठेवता.
+
+\begin{prob}
+\ref{sth:ord-arithmetic:mult:ordtimeslessiswo},
+\ref{sth:ord-arithmetic:mult:ordtimesrecursion},
+आणि
+\ref{sth:ord-arithmetic:mult:ordinalmultiplicationisnice}
+सिद्ध करा.
+\end{prob}
+
+
+
+
+
+
+
+
+\section{क्रमसूचक घातांकन}\label{sth:ord-arithmetic:expo:sec}
+
+आता क्रमसूचक घातांकनाकडे वळू. दुर्दैवाने, क्रमसूचक घातांकनाची \emph{सोपी} संश्लेषणात्मक व्याख्या नाही.
+
+अर्थात स्पष्ट संश्लेषणात्मक व्याख्या \emph{आहेत}. त्यांपैकी एक पाहू. $\text{finfun}(\alpha,\beta)$ हा अशा सर्व फलन $f
+\colon \alpha \to \beta$ यांचा संच असू द्या की $\Setabs{\gamma \in
+\alpha}{f(\gamma) \neq 0}$ हा संच एखाद्या नैसर्गिक संख्येइतका संख्याबल असलेला आहे. $\text{finfun}(\alpha,\beta)$ वर पुढीलप्रमाणे सुक्रमण परिभाषित करा: $f
+\sqsubset g$ तेव्हा आणि केवळ तेव्हाच $f \neq g$ आणि $f(\gamma_0) < g(\gamma_0)$; येथे $\gamma_0 = \text{max}\Setabs{\gamma \in \alpha}{f(\gamma) \neq
+g(\gamma)}$. शून्येतर आधार $\alpha$ साठी $\ordexpo{\alpha}{\beta}$ ची व्याख्या $\ordtype{\text{finfun}(\beta, \alpha), \sqsubset}$ अशी करता येते. पॉटर यांनी ही स्पष्ट व्याख्या वापरली आहे आणि लगेच असे स्पष्ट केले:
+\begin{quote}
+  हा क्रम निवडण्यामागे एकमेव कारण म्हणजे योग्य पुनरावर्ती अट पूर्ण करणारी क्रमसूचक घातांकनाची व्याख्या मिळावी ही आपली इच्छा\ldots; आणि क्रमित बेरीज किंवा क्रमित गुणाकार यांपेक्षा या क्रमाची कल्पना करणे खूप कठीण आहे.
+  (पॉटर 2004, पृ.~199)
+\end{quote}
+अगदी तसेच. बेरीज समजावताना आपण “$\alpha$ ची प्रत आणि तिच्यानंतर $\beta$ ची प्रत” असे म्हटले; गुणाकार समजावताना “$\alpha$ च्या प्रतींचा $\beta$-लांबीचा अनुक्रम” असे म्हटले. पण $\text{finfun}(\alpha, \gamma)$ विषयी इतके थोडक्यात सांगण्यासारखे आपल्याकडे काही नाही. म्हणून त्याऐवजी क्रमसूचक घातांकनाची व्याख्या थेट अनंतपार पुनरावर्तनाने \emph{देऊ}; म्हणजे:
+
+\begin{defn}\label{sth:ord-arithmetic:expo:ordexporecursion}
+शून्येतर क्रमसूचक आधार $\alpha$ साठी:
+\begin{align*}
+  \ordexpo{\alpha}{0} &= 1\\
+  \ordexpo{\alpha}{\beta\ordplus 1} &=\ordexpo{\alpha}{\beta} \ordtimes \alpha\\
+  \ordexpo{\alpha}{\beta} &= \bigcup_{\delta < \beta}\ordexpo{\alpha}{\delta}& & \text{$\beta$ ही सीमा क्रमसूचक संख्या असेल तेव्हा}
+\end{align*}
+\end{defn}
+
+आपण संच उपपत्तीचे \emph{संशोधक म्हणून} काम करत असतो, तर क्रमसूचक घातांकनाचे आणखी काही गुणधर्म तपासण्याची इच्छा झाली असती. पण त्याविषयी येथे अधिक काही सांगायचे नाही; फक्त क्रमसूचक घातांकन क्रमनिरपेक्ष नाही, ही अपेक्षित बाब नोंदवू. कारण $\ordexpo{2}{\omega} =
+\bigcup_{\delta < \omega}\ordexpo{2}{\delta} = \omega$, तर $\ordexpo{\omega}{2} = \omega \ordtimes \omega$. पण घातांकन क्रमनिरपेक्ष असावे अशी \emph{अपेक्षाही} ठेवू नये; नैसर्गिक संख्यांच्या बाबतीतही तसे नाही: $\ordexpo{2}{3} = 8 < 9 = \ordexpo{3}{2}$.
+
+\begin{prob}
+अनंतपार विगमन वापरून सिद्ध करा की, आधार शून्येतर असेल आणि $\ordexpo{\alpha}{\beta} = \ordtype{\text{finfun}(\beta, \alpha),
+\sqsubset}$ अशी व्याख्या केली, तर \ref{sth:ord-arithmetic:expo:ordexporecursion} मधील पुनरावर्तन समीकरणे मिळतात.
+\end{prob}
+
+
+

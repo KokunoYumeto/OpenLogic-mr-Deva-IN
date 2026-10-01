@@ -1,0 +1,86 @@
+{
+  "schema": "openlogic-scoped-direct-web-visual-review/1",
+  "status": "matched-239-decision-formats-and-scoped-inspection-recorded",
+  "date": "2026-09-30",
+  "review_model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "corrective_source_decisions": 239,
+  "source_reader_sha256": "9cbdb45279063acf2e7022a43f471429fe277c99a2383963920d0e8598c27522",
+  "pdf_sha256": "b7b56ecc977b7ccb661dec4cd053f3a1f48ee932d7057a85258d34e65e42014e",
+  "html_sha256": "e87c7e83ac16892541aba6e0024e98eca77e1b566ea1fd436ad996bf39c984f1",
+  "epub_sha256": "65d5f793ef2feb17c4ea07032dcb06d4d36b39895f073987467b0617de79e0bf",
+  "html_mathml_roots": 38910,
+  "epub_independent_checks": 231037,
+  "mechanical_html_result": "ready",
+  "mechanical_browser_result": "pass",
+  "mechanical_epub_result": "passed",
+  "epubcheck_exit": 0,
+  "cold_epub_byte_identity": true,
+  "cold_epub_tree_byte_identity": true,
+  "images_actually_viewed": [
+    {
+      "scope": "actual HTML browser sample",
+      "filename": "HTML_BROWSER_DESKTOP.png",
+      "sha256": "f0f0cc4bbb9220150cfe87264023635d2269305f3376dbe1aa6febff405b90fe"
+    },
+    {
+      "scope": "actual HTML browser sample",
+      "filename": "HTML_BROWSER_MOBILE.png",
+      "sha256": "6ca816090e983dda6a6a4af84efe1387b1f60b0f8208d8aeec3e98f859241803"
+    },
+    {
+      "scope": "actual HTML browser sample",
+      "filename": "HTML_BROWSER_MATH_GLYPH.png",
+      "sha256": "ec7134c55954693ba94f8027b2115840f5104127b30bf69cd6cd6d973a7c206d"
+    },
+    {
+      "scope": "actual HTML browser sample",
+      "filename": "HTML_BROWSER_ARISTOTLE.png",
+      "sha256": "7ab4f6c255acaa899d8ae140475a9beb0ced06d2921609a85a73ed1644e1a9e0"
+    },
+    {
+      "scope": "actual HTML browser sample",
+      "filename": "HTML_BROWSER_WIDE_MATH.png",
+      "sha256": "a19c475f3dc12db418a5e4b3b51952b1a2b4145229bf24a3cee7dc3064f3a979"
+    },
+    {
+      "scope": "actual EPUB XHTML sample",
+      "label": "cover",
+      "filename": "EPUB_VISUAL_COVER_1100.png",
+      "sha256": "ffe747c366f3d4c4f89e9a8f2a1bfb1fab31eefb74597f1094c5e10287deb571"
+    },
+    {
+      "scope": "actual EPUB XHTML sample",
+      "label": "aristotle",
+      "filename": "EPUB_VISUAL_ARISTOTLE_760.png",
+      "sha256": "630259cd950415a695fc6d3a6163665a943d5f47a4ec93fb692bf43e909eea28"
+    },
+    {
+      "scope": "actual EPUB XHTML sample",
+      "label": "math-glyph",
+      "filename": "EPUB_VISUAL_MATH-GLYPH_760.png",
+      "sha256": "01a605e3d192d1229b00405af60b4166efc16be794ab8f789222d8dbb980b050"
+    },
+    {
+      "scope": "actual EPUB XHTML sample",
+      "label": "calculus",
+      "filename": "EPUB_VISUAL_CALCULUS_760.png",
+      "sha256": "21510c3709a05a2da994d8b143edf3cd5fd5a173e76502a4af109b78d6e678a6"
+    },
+    {
+      "scope": "actual EPUB XHTML sample",
+      "label": "greek",
+      "filename": "EPUB_VISUAL_GREEK_420.png",
+      "sha256": "f7eaeb9d362a10ef0807cb9cb6e035ffe2d194136bbfe91f247947b6b57c064e"
+    }
+  ],
+  "limitations": [
+    "This local checkpoint covers 239 recorded corrective source decisions. The comprehensive semantic/tool audit, final staging, whole-source cold reproduction and publication remain incomplete.",
+    "Five HTML browser screenshots and five EPUB XHTML screenshots were directly inspected. These ten images do not establish inspection of all sections, formulas or assets.",
+    "All 57 current SVG crops have mechanical PDF geometry and label bindings. The sampled calculus asset was actually viewed in the EPUB screenshot; no complete current SVG contact-sheet inspection is claimed.",
+    "Fifteen PDF pages were directly inspected in the separate corrected-239 checkpoint. That is not all 949 pages.",
+    "Independent EPUB checks and cold byte/tree identity apply to the accepted current HTML projection; whole-source release reproduction is still pending.",
+    "No independent human review is asserted."
+  ],
+  "accepted_html_files_preserved": 78
+}

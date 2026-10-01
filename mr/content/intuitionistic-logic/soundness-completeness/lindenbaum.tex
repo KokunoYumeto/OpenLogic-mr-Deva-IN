@@ -1,6 +1,7 @@
 % part: intuitionistic-logic
 % chapter: soundness-completeness
 % section: lindenbaum
+%READERNOTE{SOL6-A200: शून्य ते एक ही विगमन-पायरी स्पष्ट केली. सांत proof support रिकामा असल्यास शून्य टप्पा घेतला; नवीन सूत्र न मिळवता स्थिर राहणारी शाखा जपली. आधीचे fairness argument बदलले नाही.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -70,7 +71,7 @@ $\Gamma^* \Proves !A \lor \lnot !A$.
   असू द्या. !!{formula}s च्या संचांची
   वाढती श्रेणी~$\Gamma_n$ परिभाषित करू;
   प्रत्येक $\Gamma_{n+1}$ हा $\Gamma_n$
-  मध्ये एक नवे !!{formula} मिळवून
+  मध्ये जास्तीतजास्त एक नवे !!{formula} मिळवून
   परिभाषित केला जाईल.
   $\Gamma^*$ हा सर्व~$\Gamma_n$ चा
   संयोग असेल. नवी !!{formula}s अशी निवडू
@@ -112,10 +113,10 @@ $\Gamma^* \Proves !A \lor \lnot !A$.
 
   प्रथम प्रत्येक $n$ साठी
   $\Gamma_n \Proves/ !A$ हे दाखवू.
-  $n$ वर आगमन करू. $n = 0$ साठी
+  $n$ वर विगमन करू. $n = 0$ साठी
   हा दावा प्रमेयाच्या गृहीतकामुळे,
   म्हणजे $\Gamma \Proves/ !A$ मुळे,
-  खरा आहे. $n>0$ असेल, तर
+  खरा आहे. कोणत्याही $n\geq0$ साठी
   $\Gamma_n \Proves/ !A$ असल्यास
   $\Gamma_{n+1} \Proves/ !A$
   हे दाखवायचे आहे.
@@ -152,8 +153,8 @@ $\Gamma^* \Proves !A \lor \lnot !A$.
   $\Gamma' \Proves !A$.
   प्रत्येक $!D \in \Gamma'$ कोणत्या
   तरी~$i$ साठी $\Gamma_i$ मध्ये असले
-  पाहिजे. यांपैकी सर्वात मोठा
-  $n$ घ्या. $i \le n$ असेल, तर
+  पाहिजे. $\Gamma'$ रिकामा असेल, तर $n=0$ घ्या;
+  अन्यथा या निर्देशांकांपैकी सर्वात मोठा $n$ घ्या. $i \le n$ असेल, तर
   $\Gamma_i \subseteq \Gamma_n$;
   म्हणून $\Gamma' \subseteq \Gamma_n$.
   पण मग $\Gamma_n \Proves !A$,

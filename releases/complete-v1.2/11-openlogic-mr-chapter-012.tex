@@ -1,0 +1,1084 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 12: स्वयंसिद्धकीय निष्पत्ती
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{स्वयंसिद्धकीय निष्पत्ती}\label{fol:axd::chap}
+\begin{editorial}
+  या प्रकरणातील मजकूर कोणते संयोजक आणि संख्यापक आदिम किंवा परिभाषित
+  आहेत हे दर्शवणाऱ्या विविध टॅग्जचे पालन करतो याची खात्री करण्याचा अद्याप
+  कोणताही प्रयत्न केलेला नाही: यांपैकी $\liff$ परिभाषित आहे, तर बाकी
+  सर्व आदिम आहेत असे गृहीत धरले आहे. FOL टॅग सत्य
+  असल्यास आपण संख्यापकांसह आवृत्ती तयार करतो; अन्यथा संख्यापकांविना
+  आवृत्ती तयार करतो.
+\end{editorial}
+
+
+
+
+
+
+
+
+
+\section{नियम आणि निष्पत्ती}\label{fol:axd:rul:sec}
+
+\begin{explain}
+  स्वयंसिद्धकीय निष्पत्त्या ही तर्कशास्त्रासाठी कदाचित सर्वांत सोपी
+  निष्पत्ती-पद्धत आहे. निष्पत्ती म्हणजे केवळ सूत्रांचा
+  अनुक्रम. निष्पत्ती म्हणून गणले जाण्यासाठी अनुक्रमातील प्रत्येक
+  सूत्र एकतर स्वयंसिद्धकाचे उदाहरण असले पाहिजे, किंवा अनुक्रमात
+  त्याच्या आधी येणाऱ्या एक वा अधिक सूत्रांपासून निगमन नियमाने
+  निष्पन्न झाले पाहिजे. निष्पत्ती तिचे शेवटचे सूत्र
+  निष्पन्न करते.
+\end{explain}
+
+\begin{defn}[निष्पन्नता]
+जर $\Gamma$ हा $\Lang L$ मधील सूत्रांचा संच असेल, तर
+$\Gamma$ पासूनची \emph{निष्पत्ती} म्हणजे सूत्रांचा सांत अनुक्रम
+$\varphi_1$, \dots,~$\varphi_n$ असा की प्रत्येक $i \le n$ साठी पुढीलपैकी एक अट
+पूर्ण होते:
+\begin{enumerate}
+\item $\varphi_i \in \Gamma$; किंवा
+\item $\varphi_i$ हे स्वयंसिद्धक आहे; किंवा
+\item $j < i$ (आणि $k < i$) असलेल्या एखाद्या $\varphi_j$ (आणि $\varphi_k$)
+  पासून निगमन नियमाने $\varphi_i$ निष्पन्न होते.
+\end{enumerate}
+\end{defn}
+
+योग्य निष्पत्ती म्हणून कशाची गणना होते हे आपण कोणते निगमन नियम
+मान्य करतो (आणि अर्थातच कोणती सूत्रे स्वयंसिद्धके मानतो) यावर अवलंबून
+असते. निगमन नियम म्हणजे असे जर-तर विधान जे विशिष्ट अटींमध्ये
+निष्पत्तीमधील पायरी~$A_i$ ही निगमनाची योग्य पायरी आहे असे सांगते.
+
+\begin{defn}[निगमन नियम]
+\emph{निगमन नियम} हा $\Gamma$ पासूनच्या निष्पत्तीमध्ये निगमनाची
+योग्य पायरी म्हणून कशाची गणना होते यासाठी पुरेशी अट देतो.
+\end{defn}
+
+उदाहरणार्थ, $\varphi \in \Gamma$ असलेला कोणताही एक-घटकी अनुक्रम $\varphi$ हा
+आपोआपच निष्पत्ती म्हणून गणला जात असल्यामुळे, पुढील नियम हा
+अतिशय सोपा निगमन नियम असू शकतो:
+\begin{quote}
+  जर $\varphi \in \Gamma$, तर $\Gamma$ पासूनच्या कोणत्याही निष्पत्तीमध्ये $\varphi$ ही नेहमीच निगमनाची योग्य पायरी असते.
+\end{quote}
+त्याचप्रमाणे, $\varphi$ हे स्वयंसिद्धकांपैकी एक असेल, तर एकटे $\varphi$ ही
+निष्पत्ती असते; म्हणून पुढील विधानही निगमन नियम आहे:
+\begin{quote}
+  जर $\varphi$ हे स्वयंसिद्धक असेल, तर $\varphi$ ही निगमनाची योग्य पायरी असते.
+\end{quote}
+विचाराधीन पायरीच्या आधी दिसणाऱ्या सूत्रांचा निगमन नियम आधार घेतो
+तेव्हा गोष्ट अधिक रोचक होते. पुढील नियमाला \emph{विध्यात्मक अनुमान}
+म्हणतात:
+\begin{quote}
+  जर $\psi \lif \varphi$ आणि $\psi$ हे निष्पत्तीमध्ये यापूर्वी आढळत असतील,
+  तर~$\varphi$ ही निगमनाची योग्य पायरी असते.
+\end{quote}
+हा एकमेव निगमन नियम असेल, तर वर दिलेल्या निष्पत्तीच्या व्याख्येचा
+अर्थ असा होतो: प्रत्येक $i \le n$ साठी पुढीलपैकी एक अट पूर्ण होत असेल
+तेव्हा आणि केवळ तेव्हाच $\varphi_1$, \dots,~$\varphi_n$ ही निष्पत्ती असते:
+\begin{enumerate}
+\item $\varphi_i \in \Gamma$; किंवा
+\item $\varphi_i$ हे स्वयंसिद्धक आहे; किंवा
+\item एखाद्या $j < i$ साठी $\varphi_j$ हे $\psi \lif \varphi_i$ आहे, आणि एखाद्या
+  $k < i$ साठी $\varphi_k$ हे~$\psi$ आहे.
+\end{enumerate}
+शेवटचे कलम असे सांगते की~$\varphi_j$ ($\psi \lif \varphi_i$) आणि $\varphi_k$ ($\psi$)
+यांपासून विध्यात्मक अनुमानाने $\varphi_i$ निष्पन्न होते. आपण $1$ पासून~$n$
+पर्यंत जाऊ शकलो आणि प्रत्येक वेळी~$\Gamma$ मध्ये असलेले, स्वयंसिद्धक
+असलेले किंवा निगमन नियमाने योग्य निगमन-पायरी ठरणारे सूत्र~$\varphi_i$
+मिळाले, तर संपूर्ण अनुक्रम योग्य निष्पत्ती म्हणून गणला जातो.
+
+\begin{defn}[निष्पन्नता]
+जर $\Gamma$ पासून सुरू होऊन $\varphi$ वर संपणारी निष्पत्ती असेल, तर
+सूत्र~$\varphi$ हे $\Gamma$ पासून \emph{निष्पन्न करता येण्याजोगे} असते; हे आपण
+$\Gamma \Proves \varphi$ असे लिहितो.
+\end{defn}
+
+\begin{defn}[प्रमेये]
+रिक्त संचापासून $\varphi$ ची निष्पत्ती असेल, तर सूत्र~$\varphi$ हे
+\emph{प्रमेय} असते. $\varphi$ हे प्रमेय असेल तर आपण $\Proves \varphi$ लिहितो आणि
+ते प्रमेय नसेल तर $\Proves/ \varphi$ लिहितो.
+\end{defn}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{विधानीय संयोजकांसाठी स्वयंसिद्धके आणि नियम}\label{fol:axd:prp:sec}
+
+\begin{defn}[स्वयंसिद्धके]
+विधानीय संयोजकांसाठीच्या \emph{स्वयंसिद्धकांचा} संच $\PAx$ हा पुढील रूपांच्या
+सर्व सूत्रांचा बनलेला आहे:
+\begin{align}
+  & (\varphi \land \psi) \lif \varphi \label{fol:axd:prp:ax:land1}\\
+  & (\varphi \land \psi) \lif \psi \label{fol:axd:prp:ax:land2}\\
+  & \varphi \lif (\psi \lif (\varphi \land \psi)) \label{fol:axd:prp:ax:land3}\\
+  & \varphi \lif (\varphi \lor \psi) \label{fol:axd:prp:ax:lor1}\\
+  & \varphi \lif (\psi \lor \varphi) \label{fol:axd:prp:ax:lor2}\\
+  & (\varphi \lif \chi) \lif ((\psi \lif \chi) \lif ((\varphi \lor \psi) \lif \chi)) \label{fol:axd:prp:ax:lor3}\\
+  & \varphi \lif (\psi \lif \varphi) \label{fol:axd:prp:ax:lif1}\\
+  & (\varphi \lif (\psi \lif \chi)) \lif ((\varphi \lif \psi) \lif (\varphi \lif \chi)) \label{fol:axd:prp:ax:lif2}\\
+  & (\varphi \lif \psi) \lif ((\varphi \lif \lnot \psi) \lif \lnot \varphi) \label{fol:axd:prp:ax:lnot1}\\
+  & \lnot \varphi \lif (\varphi \lif \psi) \label{fol:axd:prp:ax:lnot2}\\
+  & \ltrue \label{fol:axd:prp:ax:ltrue}\\
+  & \lfalse \lif \varphi \label{fol:axd:prp:ax:lfalse1}\\
+  & (\varphi \lif \lfalse) \lif \lnot \varphi \label{fol:axd:prp:ax:lfalse2}\\
+  & \lnot\lnot \varphi \lif \varphi \label{fol:axd:prp:ax:dne}
+\end{align}
+\end{defn}
+
+\begin{defn}[विध्यात्मक अनुमान]
+  जर $\psi$ आणि $\psi \lif \varphi$ हे निष्पत्तीमध्ये आधीच आलेले असतील,
+  तर $\varphi$ ही निगमनाची योग्य पायरी असते.
+\end{defn}
+
+विध्यात्मक अनुमान या नियमाचा संक्षेप आपण ``\MP'' असा करू.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{संख्यापकांसाठी स्वयंसिद्धके आणि नियम}\label{fol:axd:qua:sec}
+
+\begin{defn}[संख्यापकांसाठी स्वयंसिद्धके]
+संख्यापकांचे नियमन करणारी \emph{स्वयंसिद्धके} म्हणजे पुढील रूपांचे सर्व
+दृष्टांत होत:
+\begin{align}
+\label{fol:axd:qua:ax:q1} & \lforall[x][\psi] \lif \psi(t), \\
+\label{fol:axd:qua:ax:q2} & \psi(t) \lif \lexists[x][\psi].
+\end{align}
+कोणत्याही बंद पद~$t$ साठी.
+\end{defn}
+
+\begin{defn}[संख्यापकांसाठी नियम]
+\item जर $\psi \lif \varphi(a)$ हे निष्पत्तीमध्ये आधीच आलेले असेल आणि
+  $a$ ची~$\Gamma$ किंवा~$\psi$ मध्ये आस्थिति नसेल, तर $\psi \lif
+  \lforall[x][\varphi(x)]$ ही निगमनाची योग्य पायरी असते.
+\item जर $\varphi(a) \lif \psi$ हे निष्पत्तीमध्ये आधीच आलेले असेल आणि
+  $a$ ची~$\Gamma$ किंवा~$\psi$ मध्ये आस्थिति नसेल, तर
+  $\lexists[x][\varphi(x)] \lif \psi$ ही निगमनाची योग्य पायरी असते.
+\end{defn}
+
+यांपैकी कोणत्याही नियमाचा संक्षेप आपण ``\QR'' असा करू.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{निष्पत्ती: उदाहरणे}\label{fol:axd:pro:sec}
+
+
+\begin{ex}
+आपल्याला $(\lnot \theta \lor \varphi_{E}) \lif (\theta \lif
+\varphi_{E})$ हे सिद्ध करायचे आहे असे समजा. स्पष्टपणे, हे आपल्या कोणत्याही
+स्वयंसिद्धकाचे उदाहरण नाही; म्हणून ते निष्पन्न करण्यासाठी \MP{} नियम
+वापरावा लागेल. आपला एकमेव नियम~MP आहे; $\varphi$ आणि $\varphi \lif \psi$ दिले असता
+या नियमाने~$\psi$ ला समर्थित करता येते. एक युक्ती अशी असेल: $\varphi$ म्हणून
+$\lnot \theta$, $\psi$ म्हणून $\varphi_{E}$ आणि $\chi$ म्हणून $\theta \lif \varphi_{E}$ घेऊन
+\ref{fol:axd:prp:ax:lor3} वापरणे, म्हणजे पुढील उदाहरण वापरणे:
+\[(\lnot \theta \lif (\theta \lif \varphi_{E})) \lif ((\varphi_{E} \lif (\theta \lif \varphi_{E})) \lif ((\lnot
+\theta \lor \varphi_{E}) \lif (\theta \lif \varphi_{E}))).
+\]
+का? MP चे दोन उपयोग केल्यावर शेवटचा भाग मिळतो, आणि आपल्याला नेमके तेच
+हवे आहे. तसेच $\lnot \theta \lif (\theta \lif \varphi_{E})$ हे
+\ref{fol:axd:prp:ax:lnot2} चे उदाहरण आणि $\varphi_{E} \lif (\theta \lif \varphi_{E})$ हे
+\ref{fol:axd:prp:ax:lif1} चे उदाहरण आहे, हे सहज दिसते. म्हणून आपली
+निष्पत्ती अशी आहे:
+\begin{derivation}
+  1. &  $\lnot \theta \lif (\theta \lif \varphi_{E})$ & \ref{fol:axd:prp:ax:lnot2} \\
+  2. & $(\lnot \theta \lif (\theta \lif \varphi_{E})) \lif {}$\\
+  &\qquad $((\varphi_{E} \lif (\theta \lif \varphi_{E})) \lif ((\lnot \theta \lor \varphi_{E}) \lif (\theta \lif \varphi_{E})))$ & \ref{fol:axd:prp:ax:lor3}\\
+  3. & $(\varphi_{E} \lif (\theta \lif \varphi_{E})) \lif ((\lnot \theta \lor \varphi_{E}) \lif (\theta \lif \varphi_{E}))$ & 1, 2, \MP\\
+  4. & $\varphi_{E} \lif (\theta \lif \varphi_{E})$ & \ref{fol:axd:prp:ax:lif1}\\
+  5. & $(\lnot \theta \lor \varphi_{E}) \lif (\theta \lif \varphi_{E})$ & 3, 4, \MP
+\end{derivation}
+\end{ex}
+
+\begin{ex}\label{fol:axd:pro:ex:identity}
+$\theta \lif \theta$ ची निष्पत्ती शोधून पाहू. हे स्वयंसिद्धकाचे उदाहरण
+नाही; म्हणून ते निष्पन्न करण्यासाठी आपल्याला \MP{} वापरावा लागेल.
+\ref{fol:axd:prp:ax:lif1} हे~$\varphi \lif \psi$ या रूपाचे स्वयंसिद्धक आहे आणि त्याला
+आपण~\MP लावू शकतो. त्याचा उपयोग व्हायचा असेल, तर अर्थातच या वेळी
+\MP{} ने योग्य पायरी म्हणून समर्थित होणारे $\psi$ हे~$\theta \lif \theta$ असले
+पाहिजे, कारण आपल्याला तेच निष्पन्न करायचे आहे. त्यामुळे $\varphi$ सुद्धा
+$\theta$ असले पाहिजे; म्हणजे आपण \ref{fol:axd:prp:ax:lif1} चे पुढील उदाहरण पाहू शकतो:
+\[\theta \lif (\theta \lif \theta)
+\]
+\MP लावण्यासाठी आपल्याला संबंधित दुसरे आधारविधान, म्हणजे~$\varphi$, सुद्धा
+समर्थित करावे लागेल. पण आपल्या प्रकरणात ते~$\theta$ असेल, आणि एकटे~$\theta$
+निष्पन्न करता येणार नाही. म्हणून आपल्याला वेगळी युक्ती हवी.
+
+केवळ~$\lif$ असलेले दुसरे स्वयंसिद्धक म्हणजे \ref{fol:axd:prp:ax:lif2}, म्हणजे
+\[(\varphi \lif (\psi \lif \chi)) \lif ((\varphi \lif \psi) \lif (\varphi \lif \chi))
+\]
+\MP{} दोनदा लावून आपण शेवटच्या अंतःस्थ सशर्त विधानापर्यंत पोहोचू शकतो.
+पुन्हा, याचा अर्थ असा की \ref{fol:axd:prp:ax:lif2} चे असे उदाहरण आपल्याला हवे
+ज्यात $\varphi \lif \chi$ हे $\theta \lif \theta$, म्हणजे आपण साध्य करू पाहत असलेले
+सूत्र, असेल. मग अर्थातच $\varphi$ आणि $\chi$ ही दोन्ही~$\theta$ असतात.
+$\varphi \lif (\psi \lif \chi)$ आणि $\varphi \lif \psi$, म्हणजे आपल्या प्रकरणात
+$\theta \lif (\psi \lif \theta)$ आणि $\theta \lif \psi$, ही दोन्हीही निष्पन्न करता येण्याजोगे
+होतील अशा रीतीने~$\psi$ कसे निवडावे? आपण $\psi$ काहीही निवडले, तरी यांपैकी
+पहिले हे आधीच \ref{fol:axd:prp:ax:lif1} चे उदाहरण आहे. आणि $\psi$ हे
+$(\theta \lif \theta)$ असेल, तर $\theta \lif \psi$ हे \ref{fol:axd:prp:ax:lif1} चे आणखी
+एक उदाहरण असेल. म्हणून आपली निष्पत्ती अशी आहे:
+\begin{derivation}
+  1. & $\theta \lif ((\theta \lif \theta) \lif \theta)$ & \ref{fol:axd:prp:ax:lif1}\\
+  2. & $(\theta \lif ((\theta \lif \theta) \lif \theta)) \lif {}$\\
+  & \qquad $((\theta \lif (\theta \lif \theta)) \lif (\theta \lif \theta))$ & \ref{fol:axd:prp:ax:lif2}\\
+  3. & $(\theta \lif (\theta \lif \theta)) \lif (\theta \lif \theta)$ & 1, 2, \MP\\
+  4. & $\theta \lif (\theta \lif \theta)$ & \ref{fol:axd:prp:ax:lif1}\\
+  5. & $\theta \lif \theta$ & 3, 4, \MP
+\end{derivation}
+\end{ex}
+
+\begin{ex}\label{fol:axd:pro:ex:chain}
+कधी कधी काही इतर सूत्रे~$\Gamma$ पासून एखाद्या सूत्राची
+निष्पत्ती आहे हे आपल्याला दाखवायचे असते. उदाहरणार्थ,
+$\Gamma = \{\varphi \lif \psi, \psi \lif \chi\}$ पासून $\varphi \lif \chi$ हे
+निष्पन्न करता येते, हे दाखवू.
+\begin{derivation}
+  1. & $\varphi \lif \psi$ & \Hyp\\
+  2. & $\psi \lif \chi$ & \Hyp\\
+  3. & $(\psi \lif \chi) \lif (\varphi \lif (\psi \lif \chi))$ & \ref{fol:axd:prp:ax:lif1} \\
+  4. & $\varphi \lif (\psi \lif \chi)$ & 2, 3, \MP\\
+  5. & $(\varphi \lif (\psi \lif \chi)) \lif {}$\\
+  & \qquad $((\varphi \lif \psi) \lif (\varphi \lif \chi))$ & \ref{fol:axd:prp:ax:lif2}\\
+  6. & $((\varphi \lif \psi) \lif (\varphi \lif \chi))$ & 4, 5, \MP\\
+  7. & $\varphi \lif \chi$ & 1, 6, \MP
+\end{derivation}
+``\Hyp'' (``hypothesis'', म्हणजे ``गृहीतक'') असे लेबल असलेल्या ओळी
+त्या ओळीवरील सूत्र हा~$\Gamma$ चा घटक असल्याचे दर्शवतात.
+\end{ex}
+
+\begin{prop}
+  \label{fol:axd:pro:prop:chain} जर $\Gamma \Proves \varphi \lif \psi$ आणि $\Gamma
+  \Proves \psi \lif \chi$, तर $\Gamma \Proves \varphi \lif \chi$
+\end{prop}
+
+\begin{proof}
+  $\Gamma \Proves \varphi \lif \psi$ आणि $\Gamma \Proves \psi \lif
+  \chi$ असे समजा. मग~$\Gamma$ पासून $\varphi \lif \psi$ ची निष्पत्ती
+  असते; तसेच~$\Gamma$ पासून $\psi \lif \chi$ चीही निष्पत्ती असते.
+  त्यांची जोडणी करून त्या एकाच निष्पत्तीमध्ये एकत्र करा. आता मागील
+  उदाहरणातील निष्पत्तीच्या ओळी 3--7 जोडा. ही~$\Gamma$ पासूनची
+  निष्पत्ती आहे, आणि नव्या निष्पत्तीची शेवटची ओळ
+  $\varphi \lif \chi$ आहे. लक्षात घ्या की ओळी 4 आणि~7 साठी दिलेली
+  समर्थने पुढील बदलांनंतरही वैध राहतात: ओळ क्रमांक~1 चा निर्देश $\varphi
+  \lif \psi$ च्या निष्पत्तीच्या शेवटच्या ओळीच्या निर्देशाने आणि ओळ
+  क्रमांक~2 चा निर्देश $\psi \lif \chi$ च्या निष्पत्तीच्या शेवटच्या
+  ओळीच्या निर्देशाने बदला.
+\end{proof}
+
+\begin{prob}
+स्वयंसिद्धकांपासूनच्या निष्पत्त्या मांडून पुढील विधाने सिद्ध करा:
+\begin{enumerate}
+\item $(\varphi \land \psi) \lif (\psi \land \varphi)$
+\item $((\varphi \land \psi) \lif \chi) \lif (\varphi \lif (\psi \lif \chi))$
+\item $\lnot(\varphi \lor \psi) \lif \lnot \varphi$
+\end{enumerate}
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{संख्यापकांसह निष्पत्ती}\label{fol:axd:prq:sec}
+
+\begin{ex}
+$(\lforall[x][\varphi(x)] \land
+\lforall[y][\psi(y)]) \lif \lforall[x][(\varphi(x) \land \psi(x))]$ ची
+निष्पत्ती देऊ.
+
+प्रथम, लक्षात घ्या की
+\begin{align*}
+  (\lforall[x][\varphi(x)] \land \lforall[y][\psi(y)]) & \lif \lforall[x][\varphi(x)]\\
+  \intertext{हे \ref{fol:axd:prp:ax:land1} चे उदाहरण आहे, आणि}
+  \lforall[x][\varphi(x)] & \lif \varphi(a) \\
+  \intertext{हे \ref{fol:axd:qua:ax:q1} चे उदाहरण आहे. म्हणून \ref{fol:axd:pro:prop:chain} वरून आपल्याला माहीत आहे की}
+  (\lforall[x][\varphi(x)] \land \lforall[y][\psi(y)]) & \lif \varphi(a) \\
+  \intertext{हे निष्पन्न करता येण्याजोगे आहे. त्याचप्रमाणे,}
+  (\lforall[x][\varphi(x)] \land \lforall[y][\psi(y)]) & \lif \lforall[y][\psi(y)] \qquad\text{आणि}\\
+    \lforall[y][\psi(y)] & \lif \psi(a)\\
+    \intertext{ही अनुक्रमे \ref{fol:axd:prp:ax:land2} आणि \ref{fol:axd:qua:ax:q1} यांची उदाहरणे असल्यामुळे,}
+    (\lforall[x][\varphi(x)] \land \lforall[y][\psi(y)]) & \lif \psi(a)\\
+    \intertext{हे \ref{fol:axd:pro:prop:chain} मुळे सिद्धतायोग्य आहे. \ref{fol:axd:prp:ax:land3} चे योग्य उदाहरण आणि~\MP चे दोन उपयोग करून आपल्याला दिसते की}
+    (\lforall[x][\varphi(x)] \land \lforall[y][\psi(y)]) & \lif (\varphi(a) \land \psi(a))\\
+    \intertext{हे सिद्धतायोग्य आहे. आता \QR{} लावून पुढील सूत्र मिळते:}
+(\lforall[x][\varphi(x)] \land \lforall[y][\psi(y)]) & \lif \lforall[x][(\varphi(x) \land \psi(x))].
+\end{align*}
+\end{ex}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सिद्धता-उपपत्तीय संकल्पना}\label{fol:axd:ptn:sec}
+
+\begin{explain}
+जशा आपण अनेक महत्त्वाच्या चिन्हार्थविषयक संकल्पना
+(वैधता, तार्किक निष्पन्नता, पूर्ततायोग्यता)
+परिभाषित केल्या आहेत, तशाच आता त्यांना अनुरूप
+\emph{सिद्धता-उपपत्तीय संकल्पना} परिभाषित करू. या संकल्पना संरचना
+मध्ये वाक्यांची पूर्ति होते की नाही याचा आधार घेऊन परिभाषित केल्या
+जात नाहीत; त्याऐवजी विशिष्ट सूत्रांची निष्पन्नता किंवा
+अनिष्पन्नता यांचा आधार घेतला जातो. या दोन प्रकारच्या संकल्पना
+एकमेकांशी जुळतात, हा एक महत्त्वाचा शोध होता. त्या जुळतात, हाच
+\emph{निर्दोषता प्रमेय} आणि \emph{संपूर्णता प्रमेय} यांचा आशय आहे.
+\end{explain}
+
+\begin{defn}[निष्पन्नता]
+सूत्र~$\varphi$ हे $\Gamma$ \emph{पासून निष्पन्न करता येण्याजोगे} असते, म्हणजे
+$\Gamma \Proves \varphi$, जर~$\Gamma$ पासून सुरू होऊन~$\varphi$ वर संपणारी
+निष्पत्ती असेल.
+\end{defn}
+
+\begin{defn}[प्रमेये]
+रिक्त संचापासून $\varphi$ ची निष्पत्ती असेल, तर सूत्र~$\varphi$ हे
+\emph{प्रमेय} असते. $\varphi$ हे प्रमेय असेल तर आपण $\Proves \varphi$ लिहितो आणि
+ते प्रमेय नसेल तर $\Proves/ \varphi$ लिहितो.
+\end{defn}
+
+\begin{defn}[सुसंगतता]
+सूत्रांचा संच~$\Gamma$ हा $\Gamma\Proves/ \lfalse$ असेल तेव्हा आणि
+केवळ तेव्हाच \emph{सुसंगत} असतो; अन्यथा तो \emph{विसंगत} असतो.
+\end{defn}
+
+\begin{prop}[परावर्तिता]
+\label{fol:axd:ptn:prop:reflexivity}
+$\varphi \in \Gamma$ असेल, तर $\Gamma \Proves \varphi$.
+\end{prop}
+
+\begin{proof}
+  एकटे सूत्र~$\varphi$ ही~$\Gamma$ पासून $\varphi$ ची निष्पत्ती आहे.
+\end{proof}
+
+\begin{prop}[एकस्वनिकता]
+\label{fol:axd:ptn:prop:monotonicity}
+$\Gamma \subseteq \Delta$ आणि $\Gamma \Proves \varphi$ असेल, तर $\Delta
+\Proves \varphi$.
+\end{prop}
+
+\begin{proof}
+$\Gamma$ पासून $\varphi$ ची कोणतीही निष्पत्ती ही~$\Delta$ पासून $\varphi$ चीही
+निष्पत्ती असते.
+\end{proof}
+
+\begin{prop}[संक्रमकता]
+\label{fol:axd:ptn:prop:transitivity}
+$\Gamma \Proves \varphi$ आणि $\{\varphi\} \cup \Delta \Proves
+\psi$ असेल, तर $\Gamma \cup \Delta \Proves \psi$.
+\end{prop}
+
+\begin{proof}
+  $\{\varphi\} \cup \Delta \Proves \psi$ असे समजा. मग~$\{\varphi\} \cup
+  \Delta$ पासून $\psi_1$, \dots, $\psi_l = \psi$ ही निष्पत्ती असते.
+  त्या निष्पत्तीमधील काही पायऱ्या योग्य असतात, कारण एखादा नियम
+  त्यांपूर्वीच्या~$\psi_i = \varphi$ या ओळीचा निर्देश करतो. गृहीतकानुसार,
+  $\Gamma$ पासून~$\varphi$ ची निष्पत्ती असते, म्हणजे निष्पत्ती
+  $\varphi_1$, \dots, $\varphi_k = \varphi$ अशी असते की प्रत्येक $\varphi_i$ हे स्वयंसिद्धक,
+  $\Gamma$ चा घटक, किंवा निगमन नियमाने योग्य ठरलेले असते. आता
+  पुढील अनुक्रम विचारात घ्या:
+  \[  \varphi_1, \dots, \varphi_k = \varphi, \psi_1, \dots, \psi_l = \psi.
+  \]
+  ही $\Gamma \cup \Delta$ पासून~$\psi$ ची योग्य निष्पत्ती आहे, कारण
+  प्रत्येक $B_i = \varphi$ ला आता~$\varphi_k = \varphi$ ला समर्थित करणाऱ्या त्याच नियमाने
+  समर्थन मिळते.
+\end{proof}
+
+लक्षात घ्या की विशेषतः याचा अर्थ असा होतो: $\Gamma \Proves \varphi$ आणि $\varphi
+\Proves \psi$ असेल, तर $\Gamma \Proves \psi$. तसेच $\varphi_1,
+\dots, \varphi_n \Proves \psi$ असेल आणि प्रत्येक~$i$ साठी $\Gamma \Proves \varphi_i$
+असेल, तर $\Gamma \Proves \psi$, हेसुद्धा यावरून मिळते.
+
+\begin{prop}
+\label{fol:axd:ptn:prop:incons}
+$\Gamma$ विसंगत असतो तेव्हा आणि केवळ तेव्हाच, जेव्हा प्रत्येक~$\varphi$ साठी
+$\Gamma \Proves \varphi$.
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+
+\begin{prob}
+\ref{fol:axd:ptn:prop:incons} सिद्ध करा.
+\end{prob}
+
+
+
+
+\begin{prop}[संहतता]
+\label{fol:axd:ptn:prop:proves-compact}
+  \begin{enumerate}
+  \item $\Gamma \Proves \varphi$ असेल, तर एखादा सांत उपसंच $\Gamma_0
+    \subseteq \Gamma$ असा असतो की $\Gamma_0 \Proves \varphi$.
+  \item $\Gamma$ चा प्रत्येक सांत उपसंच सुसंगत असेल, तर $\Gamma$ सुसंगत
+    असतो.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\Gamma \Proves \varphi$ असेल, तर सूत्रांचा सांत अनुक्रम
+      $\varphi_1$, \dots,~$\varphi_n$ असा असतो की $\varphi \ident \varphi_n$ आणि प्रत्येक
+      $\varphi_i$ हे एकतर तर्कशास्त्रीय स्वयंसिद्धक, $\Gamma$ चा घटक,
+      किंवा आधीच्या सूत्रांपासून विध्यात्मक अनुमानाने निष्पन्न झालेले
+      असते. $\Gamma$ मध्ये असलेल्या त्या $\varphi_i$ चा संच~$\Gamma_0$ म्हणून
+      घ्या. मग ही निष्पत्ती त्याचप्रमाणे~$\Gamma_0$ पासूनची
+      निष्पत्ती असते, आणि म्हणून $\Gamma_0 \Proves \varphi$.
+    \item (1) मध्ये $\varphi
+      \ident \lfalse$ हे विशेष प्रकरण घेतल्यावर मिळणारे हे निषेधात्मक उलट
+      विधान आहे.
+\end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{निगमन प्रमेय}\label{fol:axd:ded:sec}
+
+आपण पाहिल्याप्रमाणे, स्वयंसिद्धकीय पद्धतीत निष्पत्त्या देणे किचकट
+असते आणि निष्पत्त्या शोधणे कठीण असू शकते. सूत्रांच्या लांब
+याद्या प्रत्यक्ष लिहिण्याऐवजी काही सोपे निष्कर्ष वापरून अशा
+निष्पत्त्या अस्तित्वात आहेत असा युक्तिवाद करणे सहसा सोपे असते. असे तीन
+निष्कर्ष आपण आधीच प्रस्थापित केले आहेत: $\varphi \in \Gamma$ हे माहीत असेल,
+तर $\Gamma \Proves \varphi$ असे नेहमी म्हणता येते, हे
+\ref{fol:axd:ptn:prop:reflexivity} सांगतो. $\Gamma \Proves \varphi$ असेल, तर
+$\Gamma \cup \{\psi\} \Proves \varphi$ सुद्धा असते, हे
+\ref{fol:axd:ptn:prop:monotonicity} सांगतो. आणि $\Gamma \Proves \varphi$ व
+$\varphi \Proves \psi$ असेल, तर $\Gamma \Proves \psi$, असे
+\ref{fol:axd:ptn:prop:transitivity} वरून मिळते. पुढे आणखी एक सोपा निष्कर्ष,
+विध्यात्मक अनुमानाची ``अधि''-आवृत्ती, दिली आहे:
+
+\begin{prop}
+  \label{fol:axd:ded:prop:mp} जर $\Gamma \Proves \varphi$ आणि $\Gamma \Proves \varphi \lif
+  \psi$, तर $\Gamma \Proves \psi$.
+\end{prop}
+
+\begin{proof}
+  $\{\varphi, \varphi \lif \psi\} \Proves \psi$ हे आपल्याकडे आहे:
+  \begin{derivation}
+    1. & $\varphi$ & Hyp.\\
+    2. & $\varphi \lif \psi$ & Hyp.\\
+    3. & $\psi$ & 1, 2, MP
+  \end{derivation}
+  \ref{fol:axd:ptn:prop:transitivity} वरून $\Gamma \Proves \psi$.
+\end{proof}
+
+या संदर्भात आपण वापरणार असलेला सर्वांत महत्त्वाचा निष्कर्ष म्हणजे निगमन
+प्रमेय:
+
+\begin{thm}[निगमन प्रमेय]
+\label{fol:axd:ded:thm:deduction-thm} $\Gamma \cup \{\varphi\} \Proves \psi$ तेव्हा आणि
+केवळ तेव्हाच, जेव्हा $\Gamma \Proves \varphi \lif \psi$.
+\end{thm}
+
+\begin{proof}
+``जर'' ही दिशा तात्काळ मिळते. $\Gamma \Proves \varphi \lif \psi$ असेल, तर
+\ref{fol:axd:ptn:prop:monotonicity} वरून $\Gamma \cup \{\varphi\} \Proves \varphi \lif \psi$
+सुद्धा असते. तसेच \ref{fol:axd:ptn:prop:reflexivity} वरून
+$\Gamma \cup \{\varphi\} \Proves \varphi$. म्हणून \ref{fol:axd:ded:prop:mp} वरून
+$\Gamma \cup \{\varphi\} \Proves \psi$.
+
+``केवळ जर'' या दिशेसाठी, $\Gamma \cup \{\varphi\}$ पासून $\psi$ च्या
+निष्पत्तीच्या लांबीवर विगमन करू.
+
+विगमनाच्या आधारपायरीसाठी, लांबी~$1$ असलेल्या प्रत्येक निष्पत्ती साठी
+दावा सिद्ध करू. $\Gamma \cup \{\varphi\}$ पासून~$\psi$ ची लांबी~$1$ असलेली
+निष्पत्ती म्हणजे एकटे $\psi$; ती योग्य असेल, तर $\psi$ हे एकतर
+$\in \Gamma \cup \{\varphi\}$ असते किंवा स्वयंसिद्धक असते. $\psi \in \Gamma$
+असेल किंवा ते स्वयंसिद्धक असेल, तर $\Gamma \Proves \psi$. तसेच
+\ref{fol:axd:prp:ax:lif1} वरून $\Gamma \Proves \psi \lif (\varphi \lif \psi)$, आणि
+\ref{fol:axd:ded:prop:mp} वरून $\Gamma \Proves \varphi \lif \psi$. $\psi \in \{ \varphi\}$
+असेल, तर $\Gamma \Proves \varphi \lif \psi$, कारण शेवटचे वाक्य~$\varphi
+\lif \psi$ हे $\varphi \lif \varphi$ सारखेच आहे आणि ते आपण
+\ref{fol:axd:pro:ex:identity} मध्ये निष्पन्न केले आहे.
+
+विगमन पायरीसाठी, $\Gamma \cup \{\varphi\}$ पासून~$\psi$ ची एखादी
+निष्पत्ती विध्यात्मक अनुमानाने समर्थित असलेल्या~$\psi$ या पायरीने
+संपते असे समजा. (तिला विध्यात्मक अनुमानाने समर्थन मिळत नसेल, तर
+$\psi \in \Gamma$, $\psi \ident \varphi$, किंवा $\psi$ हे स्वयंसिद्धक असते, आणि
+विगमनाच्या आधारपायरीतील युक्तिवादच लागू होतो.) मग एखाद्या
+सूत्र~$\chi$ साठी त्या निष्पत्तीमधील आधीच्या काही पायऱ्या
+$\chi \lif \psi$ आणि $\chi$ असतात; म्हणजे $\Gamma \cup \{\varphi\} \Proves \chi \lif \psi$
+आणि $\Gamma \cup \{\varphi\} \Proves \chi$. त्यांच्याशी संबंधित
+निष्पत्त्या लहान असल्यामुळे त्यांना विगमन गृहीतक लागू होते. म्हणून
+आपल्याकडे पुढील दोन्ही आहेत:
+\begin{align*}
+  & \Gamma \Proves \varphi \lif (\chi \lif \psi); \\
+  & \Gamma \Proves \varphi \lif \chi.
+\end{align*}
+पण \ref{fol:axd:prp:ax:lif2} वरून पुढीलही मिळते:
+\[\Gamma \Proves (\varphi \lif (\chi \lif \psi)) \lif
+((\varphi\lif \chi)  \lif (\varphi \lif \psi)),
+\]
+आणि \ref{fol:axd:ded:prop:mp} चे दोन उपयोग केल्यावर आवश्यकतेनुसार
+$\Gamma \Proves \varphi \lif \psi$ मिळते.
+\end{proof}
+
+निगमन प्रमेय खरे ठरावे यासाठीच \ref{fol:axd:prp:ax:lif1} आणि
+\ref{fol:axd:prp:ax:lif2} यांची नेमकी अशी निवड केली होती, हे लक्षात घ्या.
+
+निष्पन्नता विषयीची पुढील काही उपयुक्त तथ्ये सरावासाठी सोडली आहेत.
+
+\begin{prop}
+  \label{fol:axd:ded:prop:derivfacts}
+\begin{enumerate}
+\item $\Proves (\varphi \lif \psi) \lif ((\psi \lif \chi)
+  \lif (\varphi \lif \chi))$; \label{fol:axd:ded:derivfacts:a}
+
+\item $\Gamma \cup \{ \lnot \varphi\}
+  \Proves \lnot \psi$ असेल, तर $\Gamma \cup \{ \psi\} \Proves
+  \varphi$ (प्रतिपरिवर्तन); \label{fol:axd:ded:derivfacts:b}
+\item  $\{ \varphi, \lnot\varphi\} \Proves
+    \psi$ (Ex Falso Quodlibet, म्हणजे असत्यापासून काहीही; स्फोट); \label{fol:axd:ded:derivfacts:c}
+\item  $\{ \lnot\lnot\varphi\} \Proves
+  \varphi$ (द्विनकरण विलोपन);\label{fol:axd:ded:derivfacts:d}
+\item $\Gamma \Proves \lnot\lnot\varphi$ असेल, तर $\Gamma \Proves
+  \varphi$;\label{fol:axd:ded:derivfacts:e}
+\end{enumerate}
+\end{prop}
+
+
+\begin{prob}
+  \ref{fol:axd:ded:prop:derivfacts} सिद्ध करा.
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{संख्यापकांसह निगमन प्रमेय}\label{fol:axd:ddq:sec}
+
+\begin{thm}[निगमन प्रमेय]
+\label{fol:axd:ddq:thm:deduction-thm-q} जर $\Gamma \cup \{\varphi\} \Proves \psi$ असेल,
+तर $\Gamma \Proves \varphi \lif \psi$.
+\end{thm}
+
+\begin{proof}
+$\Gamma \cup \{\varphi\}$ पासून $\psi$ च्या निष्पत्तीच्या लांबीवर
+आपण पुन्हा विगमन करू.
+
+विगमनाच्या आधारपायरीचा पुरावा~\ref{fol:axd:ded:thm:deduction-thm} च्या
+पुराव्यातील आधारपायरीच्या पुराव्यासारखाच आहे.
+
+विगमन पायरीसाठी, $\Gamma \cup \{\varphi\}$ पासून $\psi$ ची निष्पत्ती
+एखाद्या निगमन नियमाने समर्थित असलेल्या~$\psi$ या पायरीने संपते असे पुन्हा
+समजा. निगमन नियम विध्यात्मक अनुमान असेल, तर आपण
+\ref{fol:axd:ded:thm:deduction-thm} च्या पुराव्याप्रमाणेच पुढे जाऊ. निगमन
+नियम \QR असेल, तर $\psi \ident \chi \lif \lforall[x][\theta(x)]$ आहे आणि
+$\chi \lif \theta(a)$ या रूपाचे सूत्र त्या निष्पत्तीमध्ये आधी
+येते, जेथे $a$ हे~$\chi$, $\varphi$, किंवा $\Gamma$ मध्ये येत नाही. म्हणून
+आपल्याकडे पुढील आहे:
+\begin{align*}
+  \Gamma \cup \{\varphi\} & \Proves \chi \lif \theta(a),\\
+  \intertext{आणि विगमन गृहीतक लागू होते; म्हणजे पुढील मिळते:}
+    \Gamma & \Proves \varphi \lif (\chi \lif \theta(a)).\\
+  \intertext{पुढील सूत्रावरून}
+  & \Proves (\varphi \lif (\chi \lif \theta(a))) \lif ((\varphi \land \chi) \lif \theta(a))\\
+  \intertext{आणि विध्यात्मक अनुमानामुळे पुढील मिळते:}
+  \Gamma & \Proves (\varphi \land \chi) \lif \theta(a).\\
+  \intertext{आयगेन चराची अट अजूनही लागू असल्यामुळे, या निष्पत्तीमध्ये \QR ने समर्थित एक पायरी जोडून पुढील मिळवता येते:}
+    \Gamma & \Proves (\varphi \land \chi) \lif \lforall[x][\theta(x)].\\
+    \intertext{आपल्याकडे पुढीलही आहे:}
+    & \Proves ((\varphi \land \chi) \lif \lforall[x][\theta(x)]) \lif (\varphi \lif (\chi \lif \lforall[x][\theta(x)])),\\
+    \intertext{म्हणून विध्यात्मक अनुमानाने,}
+    \Gamma & \Proves \varphi \lif (\chi \lif \lforall[x][\theta(x)]),
+\end{align*}
+
+म्हणजे $\Gamma \Proves \varphi \lif \psi$.
+
+
+$\psi$ ला \QR या नियमाने समर्थन मिळते, पण त्याचे रूप
+$\lexists[x][\theta(x)] \lif \chi$ आहे, हे प्रकरण आपण सरावासाठी सोडतो.
+\end{proof}
+
+\begin{prob}
+  \ref{fol:axd:ddq:thm:deduction-thm-q} चा पुरावा पूर्ण करा.
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{निष्पन्नता आणि सुसंगतता}\label{fol:axd:prv:sec}
+
+आता आपण निष्पन्नता संबंधाचे अनेक गुणधर्म सिद्ध करू. ते स्वतंत्रपणेही
+महत्त्वाचे आहेत, पण संपूर्णता प्रमेयाच्या सिद्धतेत प्रत्येकाची भूमिका असेल.
+
+\begin{prop}\label{fol:axd:prv:prop:provability-contr}
+  जर $\Gamma \Proves \varphi$ आणि $\Gamma \cup \{\varphi\}$ विसंगत असेल, तर
+  $\Gamma$ विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+  जर $\Gamma \cup \{\varphi\}$ विसंगत असेल, तर $\Gamma \cup \{\varphi\}
+  \Proves \lfalse$. \ref{fol:axd:ptn:prop:reflexivity} वरून प्रत्येक
+  $\psi \in \Gamma$ साठी $\Gamma \Proves \psi$. गृहीतकानुसार
+  $\Gamma \Proves \varphi$ सुद्धा असल्यामुळे प्रत्येक $\psi \in \Gamma \cup
+  \{\varphi\}$ साठी $\Gamma \Proves \psi$. \ref{fol:axd:ptn:prop:transitivity}
+  वरून $\Gamma \Proves \lfalse$, म्हणजे $\Gamma$ विसंगत आहे.
+\end{proof}
+
+\begin{prop}
+\label{fol:axd:prv:prop:prov-incons}
+$\Gamma \Proves \varphi$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{\lnot \varphi\}$
+विसंगत असते.
+\end{prop}
+
+\begin{proof}
+प्रथम $\Gamma \Proves \varphi$ असे समजा. मग \ref{fol:axd:ptn:prop:monotonicity}
+वरून $\Gamma \cup \{\lnot \varphi\} \Proves \varphi$. \ref{fol:axd:ptn:prop:reflexivity}
+वरून $\Gamma \cup \{\lnot \varphi\} \Proves \lnot \varphi$. तसेच
+\ref{fol:axd:prp:ax:lnot2} वरून $\Proves \lnot \varphi \lif (\varphi \lif \lfalse)$.
+म्हणून \ref{fol:axd:ded:prop:mp} चे दोन उपयोग करून $\Gamma \cup \{\lnot
+\varphi\} \Proves \lfalse$ मिळते.
+
+आता $\Gamma \cup \{\lnot \varphi\}$ विसंगत आहे असे गृहीत धरा, म्हणजे
+$\Gamma \cup \{\lnot \varphi\} \Proves \lfalse$. निगमन प्रमेयावरून $\Gamma
+\Proves \lnot \varphi \lif \lfalse$. \ref{fol:axd:prp:ax:lfalse2} वरून $\Gamma
+\Proves (\lnot \varphi \lif \lfalse) \lif \lnot\lnot \varphi$, म्हणून
+\ref{fol:axd:ded:prop:mp} वरून $\Gamma \Proves \lnot\lnot \varphi$. आपल्याकडे
+$\Gamma \Proves \lnot\lnot \varphi \lif \varphi$ हेही असल्यामुळे
+(\ref{fol:axd:prp:ax:dne}), \ref{fol:axd:ded:prop:mp} च्या आणखी एका उपयोगाने
+$\Gamma \Proves \varphi$ मिळते.
+\end{proof}
+
+\begin{prob}
+$\Gamma \Proves \lnot \varphi$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\Gamma \cup \{\varphi\}$
+विसंगत असते, हे सिद्ध करा.
+\end{prob}
+
+\begin{prop}\label{fol:axd:prv:prop:explicit-inc}
+  जर $\Gamma \Proves \varphi$ आणि $\lnot \varphi \in \Gamma$ असेल, तर $\Gamma$
+  विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+  \ref{fol:axd:prp:ax:lnot2} वरून $\Gamma \Proves \lnot \varphi \lif (\varphi \lif \lfalse)$.
+  \ref{fol:axd:ded:prop:mp} चे दोन उपयोग करून $\Gamma \Proves \lfalse$ मिळते.
+\end{proof}
+
+
+\begin{prop}\label{fol:axd:prv:prop:provability-exhaustive}
+  $\Gamma \cup \{\varphi\}$ आणि $\Gamma \cup \{\lnot \varphi\}$ हे दोन्ही संच
+  विसंगत असतील, तर $\Gamma$ विसंगत आहे.
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+
+\begin{prob}
+  \ref{fol:axd:prv:prop:provability-exhaustive} सिद्ध करा
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{निष्पन्नता आणि विधानीय संयोजक}\label{fol:axd:ppr:sec}
+
+\begin{explain}
+  स्वयंसिद्धकीय निगमनाचा निष्पन्नता संबंध~$\Proves$ हा विधानीय
+  संयोजकांशी संबंधित काही मूलभूत तथ्ये सिद्ध करण्यासाठी पुरेसा सामर्थ्यवान
+  आहे; उदाहरणार्थ, $\varphi \land \psi \Proves \varphi$ आणि $\varphi, \varphi \lif \psi
+  \Proves \psi$ (विध्यात्मक अनुमान). ही तथ्ये संपूर्णता प्रमेयाच्या
+  सिद्धतेसाठी आवश्यक आहेत.
+\end{explain}
+
+\begin{prop}\label{fol:axd:ppr:prop:provability-land}
+  \begin{enumerate}
+  \item \label{fol:axd:ppr:prop:provability-land-left} $\varphi \land \psi \Proves
+    \varphi$ आणि $\varphi \land \psi \Proves \psi$ ही दोन्ही तथ्ये सत्य आहेत.
+  \item \label{fol:axd:ppr:prop:provability-land-right} $\varphi, \psi \Proves \varphi \land \psi$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item \ref{fol:axd:prp:ax:land1} आणि \ref{fol:axd:prp:ax:land2} यांपासून,
+      अनुक्रमे विध्यात्मक अनुमान लावून.
+
+  \item \ref{fol:axd:prp:ax:land3} पासून विध्यात्मक अनुमान दोनदा लावून.
+  \end{enumerate}
+\end{proof}
+
+
+\begin{prop}\label{fol:axd:ppr:prop:provability-lor}
+  \begin{enumerate}
+  \item $\varphi \lor \psi, \lnot \varphi, \lnot \psi$ विसंगत आहे.
+  \item $\varphi \Proves \varphi \lor \psi$ आणि $\psi \Proves \varphi \lor \psi$ ही दोन्ही
+    तथ्ये सत्य आहेत.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item \ref{fol:axd:prp:ax:lnot2} पासून $\Proves \lnot \varphi \lif (\varphi
+    \lif \lfalse)$ आणि $\Proves \lnot \psi \lif (\psi \lif \lfalse)$
+    मिळतात. म्हणून निगमन प्रमेयाने $\{\lnot \varphi\} \Proves \varphi \lif
+    \lfalse$ आणि $\{\lnot \psi\} \Proves \psi \lif \lfalse$ मिळतात.
+    \ref{fol:axd:prp:ax:lor3} पासून $\{\lnot \varphi, \lnot \psi\} \Proves (\varphi
+    \lor \psi) \lif \lfalse$ मिळते. निगमन प्रमेयाने $\{\varphi \lor \psi,
+    \lnot \varphi, \lnot \psi\} \Proves \lfalse$.
+
+  \item \ref{fol:axd:prp:ax:lor1} आणि \ref{fol:axd:prp:ax:lor2} यांपासून विध्यात्मक
+    अनुमानाने.
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\label{fol:axd:ppr:prop:provability-lif}
+  \begin{enumerate}
+  \item \label{fol:axd:ppr:prop:provability-lif-left} $\varphi, \varphi \lif \psi \Proves \psi$.
+  \item \label{fol:axd:ppr:prop:provability-lif-right}
+    $\lnot \varphi \Proves \varphi \lif \psi$ आणि $\psi \Proves \varphi \lif \psi$ ही दोन्ही
+    तथ्ये सत्य आहेत.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item आपण पुढील निष्पन्न करू शकतो:
+    \begin{derivation}
+      1. & $\varphi$ & \Hyp\\
+      2. & $\varphi \lif \psi$ & \Hyp\\
+      3. & $\psi$ & 1, 2, \MP
+    \end{derivation}
+
+  \item अनुक्रमे \ref{fol:axd:prp:ax:lnot2}, \ref{fol:axd:prp:ax:lif1} आणि निगमन
+    प्रमेय वापरून.
+  \end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{निष्पन्नता आणि संख्यापक}\label{fol:axd:qpr:sec}
+
+\begin{explain}
+  संपूर्णता प्रमेयासाठी या विभागात स्थापित केलेली~$\Proves$ संबंधी तथ्ये
+  स्वयंसिद्धकीय निगमनातून निष्पन्न होतात, हेही आवश्यक आहे.
+\end{explain}
+
+\begin{thm}
+\label{fol:axd:qpr:thm:strong-generalization} जर $c$ हे $\Gamma$ किंवा $\varphi(x)$ मध्ये
+न येणारे स्थिरांक असेल आणि $\Gamma \Proves \varphi(c)$, तर $\Gamma
+\Proves \lforall[x][\varphi(x)]$.
+\end{thm}
+
+\begin{proof}
+निगमन प्रमेयाने $\Gamma \Proves \ltrue \lif \varphi(c)$. $c$ हे
+$\Gamma$ किंवा~$\top$ मध्ये येत नसल्यामुळे $\Gamma \Proves
+\ltrue \lif \lforall[x][\varphi(x)]$ मिळते. त्यानंतर सत्य स्थिरांकाचे
+स्वयंसिद्धक आणि विध्यात्मक अनुमान वापरून $\Gamma \Proves
+\lforall[x][\varphi(x)]$ मिळते.
+
+\end{proof}
+
+\begin{prop}
+\label{fol:axd:qpr:prop:provability-quantifiers}
+\begin{enumerate}
+\item $\varphi(t) \Proves \lexists[x][\varphi(x)]$.
+
+\item $\lforall[x][\varphi(x)] \Proves \varphi(t)$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+\begin{enumerate}
+\item \ref{fol:axd:qua:ax:q2} आणि निगमन प्रमेय वापरून.
+\item \ref{fol:axd:qua:ax:q1} आणि निगमन प्रमेय वापरून.
+\end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{निर्दोषता}\label{fol:axd:sou:sec}
+
+\begin{explain}
+स्वयंसिद्धकीय निगमनासारखी निष्पत्ती-पद्धत
+\emph{निर्दोष} असते, जर ती प्रत्यक्षात निष्पन्न न होणाऱ्या गोष्टी
+निष्पन्न करू शकत नसेल. त्यामुळे निर्दोषता हा निष्पत्ती-पद्धतींसाठी
+हमी दिलेल्या सुरक्षिततेचा एक प्रकार आहे. कोणता सिद्धता-उपपत्तीय गुणधर्म
+विचारात आहे यावर अवलंबून, उदाहरणार्थ, आपल्याला पुढील गोष्टी हव्या असतात:
+\begin{enumerate}
+\item प्रत्येक निष्पन्न करता येण्याजोगे~$\varphi$ वैध असते;
+\item $\varphi$ हे इतर काही सूत्रे~$\Gamma$ यांच्यापासून निष्पन्न करता येण्याजोगे असेल,
+  तर ते त्यांचा तार्किक परिणामही असते;
+\item सूत्रांचा संच~$\Gamma$ विसंगत असेल, तर तो अपूर्ततायोग्य असतो.
+\end{enumerate}
+हे निष्पत्ती-पद्धतीचे महत्त्वाचे गुणधर्म आहेत. यांपैकी एखादा गुणधर्म
+खरा नसेल, तर निष्पत्ती-पद्धतीत दोष आहे---ती खूप जास्त गोष्टी
+निष्पन्न करेल. म्हणून निष्पत्ती-पद्धतीची निर्दोषता सिद्ध करणे अत्यंत
+महत्त्वाचे आहे.
+\end{explain}
+
+\begin{prop}
+  जर $\varphi$ हे स्वयंसिद्धक असेल, तर
+  प्रत्येक संरचना~$\Struct{M}$ आणि चल-विन्यास~$s$ साठी $\Sat{M}{\varphi}[s]$.
+\end{prop}
+
+\begin{proof}
+सर्व स्वयंसिद्धके वैध आहेत हे तपासावे लागते. उदाहरणार्थ,
+  \ref{fol:axd:qua:ax:q1} चे प्रकरण पाहू: $t$ हे $\varphi$ मध्ये $x$ साठी
+  आदेशनासाठी मुक्त आहे असे समजा आणि
+  $\Sat{M}{\lforall[x][\varphi]}[s]$ असे गृहीत धरा. मग पूर्ततेच्या व्याख्येनुसार
+  प्रत्येक $\varAssign{s'}{s}{x}$ साठी $\Sat{M}{\varphi}[s']$, आणि विशेषतः
+  $s'(x) = \Value{t}{M}[s]$ असताना हे खरे आहे.
+  \ref{fol:syn:ext:prop:ext-formulas} नुसार
+  $\Sat{M}{\Subst{\varphi}{t}{x}}[s]$. यावरून
+  $\Sat{M}{(\lforall[x][\varphi] \lif \Subst{\varphi}{t}{x})}[s]$ हे सिद्ध होते.
+\end{proof}
+
+\begin{thm}[निर्दोषता]
+\label{fol:axd:sou:thm:soundness}
+जर $\Gamma \Proves \varphi$, तर $\Gamma \Entails \varphi$.
+\end{thm}
+
+\begin{proof}
+$\Gamma$ पासून $\varphi$ च्या निष्पत्तीच्या लांबीवर विगमन करू. अनुमानांनी
+समर्थित कोणत्याही पायऱ्या नसतील, तर निष्पत्तीमधील सर्व सूत्रे
+ही स्वयंसिद्धकांची दृष्टांते असतात किंवा~$\Gamma$ मध्ये असतात. आधीच्या
+विधानानुसार सर्व स्वयंसिद्धके वैध आहेत;
+म्हणून $\varphi$ हे स्वयंसिद्धक असेल, तर $\Gamma \Entails \varphi$. जर
+$\varphi \in \Gamma$, तर स्पष्टपणे $\Gamma \Entails \varphi$.
+
+जर~$\varphi$ च्या निष्पत्तीमधील शेवटची पायरी विध्यात्मक अनुमानाने समर्थित
+असेल, तर त्या निष्पत्तीमध्ये $\psi$ आणि $\psi \lif \varphi$ ही सूत्रे
+असतात; आणि त्या सूत्रे वर संपणाऱ्या निष्पत्तीच्या भागांना विगमन
+गृहीतक लागू होते (कारण त्यांच्यात अनुमानाने समर्थित किमान एक पायरी कमी
+असते). म्हणून विगमन गृहीतकानुसार $\Gamma \Entails \psi$ आणि
+$\Gamma \Entails \psi \lif \varphi$. मग
+\ref{fol:syn:sem:thm:sem-deduction}
+नुसार $\Gamma \Entails \varphi$.
+
+आता शेवटची पायरी \QR ने समर्थित आहे असे समजा. मग त्या पायरीचे
+रूप $\chi \lif \lforall[x][\psi(x)]$ असते आणि तिच्याआधीची पायरी
+$\chi \lif \psi(c)$ असते; येथे $c$ हे $\Gamma$, $\chi$ किंवा
+$\lforall[x][B(x)]$ यांमध्ये येत नाही. विगमन गृहीतकानुसार
+$\Gamma \Entails \chi \lif \psi(c)$.
+\ref{fol:syn:sem:thm:sem-deduction} नुसार $\Gamma \cup \{\chi\} \Entails
+\psi(c)$.
+
+
+$\Sat{M}{\Gamma \cup
+  \{\chi\}}$ अशी एखादी रचना~$\Struct{M}$ विचारात घ्या. आपल्याला
+$\Sat{M}{\lforall[x][\psi(x)]}$ हे दाखवायचे आहे.
+$\lforall[x][\psi(x)]$ हे वाक्य असल्यामुळे याचा अर्थ प्रत्येक
+चल-विन्यास~$s$ साठी $\Sat{M}{\psi(x)}[s]$ दाखवायचे आहे
+(\ref{fol:syn:ass:prop:sat-quant}). $\Gamma \cup \{\chi\}$ मध्ये केवळ
+वाक्ये असल्यामुळे \ref{fol:syn:sat:defn:satisfaction} नुसार प्रत्येक
+$\theta \in \Gamma$ साठी $\Sat{M}{\theta}[s]$. $\Struct{M'}$ ही
+$\Struct{M}$ सारखीच रचना असू द्या, फक्त $\Assign{c}{M'} = s(x)$.
+$c$ हे~$\Gamma$ किंवा~$\chi$ मध्ये येत नसल्यामुळे
+\ref{fol:syn:ext:cor:extensionality-sent} नुसार
+$\Sat{M'}{\Gamma \cup \{\chi\}}$. $\Gamma \cup \{\chi\}
+\Entails \psi(c)$ असल्यामुळे $\Sat{M'}{\psi(c)}$. $\psi(c)$ हे वाक्य
+असल्यामुळे \ref{fol:syn:ass:prop:sentence-sat-true} नुसार
+$\Sat{M'}{\psi(c)}[s]$. \ref{fol:syn:ext:prop:ext-formulas} नुसार
+$\Sat{M'}{\psi(x)}[s]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+$\Sat{M'}{\psi(c)}[s]$ (लक्षात घ्या की $\psi(c)$ म्हणजे
+$\Subst{\psi(x)}{c}{x}$). म्हणून $\Sat{M'}{\psi(x)}[s]$. $c$ हे~$\psi(x)$
+मध्ये येत नसल्यामुळे \ref{fol:syn:ext:prop:extensionality} नुसार
+$\Sat{M}{\psi(x)}[s]$. पण $s$ हा स्वेच्छ चल-विन्यास होता, म्हणून
+$\Sat{M}{\lforall[x][\psi(x)]}$. त्यामुळे $\Gamma \cup \{\chi\} \Entails
+\lforall[x][\psi(x)]$. \ref{fol:syn:sem:thm:sem-deduction} नुसार
+$\Gamma \Entails \chi \lif \lforall[x][\psi(x)]$.
+
+
+$\varphi$ हे \QR ने समर्थित पण $\lexists[x][\psi(x)] \lif \chi$ या रूपाचे असलेले
+प्रकरण सरावासाठी सोडले आहे.
+\end{proof}
+
+
+\begin{prob}
+  \ref{fol:axd:sou:thm:soundness} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+
+\begin{cor}
+\label{fol:axd:sou:cor:weak-soundness}
+जर $\Proves \varphi$, तर $\varphi$ हे वैध आहे.
+\end{cor}
+
+\begin{cor}
+\label{fol:axd:sou:cor:consistency-soundness}
+जर $\Gamma$ पूर्ततायोग्य असेल, तर तो सुसंगत आहे.
+\end{cor}
+
+\begin{proof}
+प्रतिलोम विधान सिद्ध करू. $\Gamma$ सुसंगत नाही असे समजा. मग
+$\Gamma \Proves \lfalse$, म्हणजे~$\Gamma$ पासून $\lfalse$ ची
+निष्पत्ती असते. \ref{fol:axd:sou:thm:soundness} नुसार $\Gamma$ पूर्ण करणाऱ्या
+प्रत्येक
+संरचना~$\Struct{M}$
+ने~$\lfalse$ पूर्ण केले पाहिजे. प्रत्येक
+संरचना~$\Struct{M}$ साठी
+  $\Sat/{M}{\lfalse}$ असल्यामुळे कोणतीही
+$\Struct{M}$ $\Gamma$ पूर्ण करू शकत नाही;
+म्हणजे $\Gamma$ अपूर्ततायोग्य आहे.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{निष्पत्ती सह एकरूपता}\label{fol:axd:ide:sec}
+
+निष्पत्त्यांमध्ये $\eq$ समाविष्ट करण्यासाठी आपण फक्त नवीन
+स्वयंसिद्धक-आकार जोडतो. निष्पत्ती आणि $\Proves$ यांच्या व्याख्या
+तशाच राहतात; आता आपण नवीन स्वयंसिद्धकेही मान्य करतो.
+
+\begin{defn}[एकरूपता साठीची स्वयंसिद्धके]
+\begin{align}
+\label{fol:axd:ide:ax:id1} & \eq[t][t], \\
+\label{fol:axd:ide:ax:id2} & \eq[t_1][t_2] \lif (\psi(t_1) \lif
+  \psi(t_2)),
+\end{align}
+येथे $t$, $t_1$, $t_2$ ही कोणतीही बंद पदे आहेत.
+\end{defn}
+
+\begin{prop}\label{fol:axd:ide:prop:sound}
+  \ref{fol:axd:ide:ax:id1} आणि \ref{fol:axd:ide:ax:id2} ही स्वयंसिद्धके वैध आहेत.
+\end{prop}
+
+\begin{proof}
+  सराव.
+\end{proof}
+
+\begin{prob}
+\ref{fol:axd:ide:prop:sound} सिद्ध करा.
+\end{prob}
+
+\begin{prop}\label{fol:axd:ide:prop:iden1}
+ कोणतेही पद $t$ आणि कोणताही संच~$\Gamma$ यांसाठी
+ $\Gamma \Proves \eq[t][t]$.
+\end{prop}
+
+\begin{prop}\label{fol:axd:ide:prop:iden2}
+  जर $\Gamma \Proves \varphi(t_1)$ आणि $\Gamma \Proves
+  \eq[t_1][t_2]$, तर $\Gamma \Proves \varphi(t_2)$.
+\end{prop}
+
+\begin{proof}
+पुढील सूत्र
+\[(\eq[t_1][t_2] \lif (\varphi(t_1) \lif \varphi(t_2)))
+\]
+हा~\ref{fol:axd:ide:ax:id2} चा दृष्टांत आहे. निष्कर्ष~\MP चे दोन उपयोग केल्यावर
+मिळतो.
+\end{proof}
+
+
+

@@ -1,0 +1,261 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 41: अनंतमूल्य तर्कशास्त्रे
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{अनंतमूल्य तर्कशास्त्रे}\label{mvl:inf:chap}
+
+
+
+
+
+
+
+
+
+\section{परिचय}\label{mvl:inf:int:sec}
+
+मॅट्रिक्समधील सत्यतामूल्यांची संख्या ससीम असण्याची गरज नाही.
+अनंत सत्यतामूल्यांसाठी एक नैसर्गिक पर्याय म्हणजे $0$ आणि~$1$
+यांदरम्यानच्या परिमेय संख्यांचा संच,
+$V_\infty = [0,1] \cap \Rat$; म्हणजे
+\begin{align*}
+    V_\infty & = \Setabs{\frac{n}{m}}{n,m \in \Nat \text{ आणि } 0<m \text{ आणि } n\le m}.
+\intertext{हा अनंत सत्यतामूल्यांचा संच विचारात घेताना दोन किंवा
+अधिक मूल्ये असलेले पुढील उपसंचही पाहणे अनेकदा उपयोगाचे असते:}
+V_m & = \Setabs{\frac{n}{m-1}}{n \in \Nat \text{ आणि } n<m}
+\intertext{उदाहरणार्थ, $V_5$ मध्ये समान अंतरावर असलेली $5$ सत्यतामूल्ये आहेत:}
+V_5 & = \{0, \frac{1}{4}, \frac{1}{2}, \frac{3}{4}, 1\}.
+\end{align*}
+या सत्यतामूल्यांच्या संचांवर आधारलेल्या तर्कशास्त्रांत
+सहसा फक्त $1$ निर्दिष्ट असते, म्हणजे $V^+ = \{1\}$.
+दुसऱ्या शब्दांत, $1$ ला निरपेक्ष सत्याची आणि $0$ ला
+निरपेक्ष असत्यतेची भूमिका देतो; पण सूत्रे ना~$V$
+मधील कोणतेही मधले मूल्य मिळू शकते.
+
+याशिवाय $0$ आणि~$1$ यांदरम्यानच्या सर्व \emph{वास्तव}
+संख्यांचा संच $V_{[0,1]} = [0,1]$, किंवा $[0,1]$ चे इतर
+अनंत उपसंचही विचारात घेता येतात. हा सत्यतामूल्यांचा संच
+वापरणाऱ्या तर्कशास्त्रांना अनेकदा \emph{अस्पष्ट} म्हणतात.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{\L ukasiewicz यांचे तर्कशास्त्र}\label{mvl:inf:luk:sec}
+
+\begin{editorial}
+  अनंतमूल्य \L ukasiewicz तर्कशास्त्रावरील हा विभाग
+  संक्षिप्त ``प्रारूप'' आहे.
+\end{editorial}
+
+\begin{defn}\label{mvl:inf:luk:def:lukasiewicz} अनंतमूल्य \L ukasiewicz
+तर्कशास्त्र~$\LogLuk[\infty]$ पुढील मॅट्रिक्सने परिभाषित होते:
+\begin{enumerate}
+  \item मानक विधानीय भाषा $\Lang L_0$ चा केवळ
+  $\lnot$, $\land$, $\lor$, $\lif$ हे संयोजक असलेला खंड.
+  \item सत्यतामूल्यांचा संच $V_\infty$.
+  \item $1$ हेच एकमेव निर्दिष्ट मूल्य आहे, म्हणजे $V^+ = \{1\}$.
+  \item सत्यता-फलने पुढील सूत्रांनी दिली आहेत:
+  \begin{align*}
+    \tf{\lnot}[\LogLuk](x) & = 1 - x\\
+    \tf{\land}[\LogLuk](x,y) & = \min(x,y)\\
+    \tf{\lor}[\LogLuk](x,y) & = \max(x,y)\\
+    \tf{\lif}[\LogLuk](x,y) & = \min(1,1-(x-y)) = \begin{cases}
+      1 & \text{जर } x \le y\\
+      1-(x-y) & \text{इतर वेळी.}
+    \end{cases}
+    \end{align*}
+\end{enumerate}
+$m$-मूल्य \L ukasiewicz तर्कशास्त्राची व्याख्या याचप्रमाणे,
+फक्त $V = V_m$ घेऊन केली जाते.
+\end{defn}
+
+\begin{prop}
+  \ref{mvl:thr:luk:def:lukasiewicz} मध्ये परिभाषित
+  $\LogLuk[3]$ आणि \ref{mvl:inf:luk:def:lukasiewicz} मध्ये
+  परिभाषित $\LogLuk[3]$ हे एकच तर्कशास्त्र आहे.
+\end{prop}
+
+\begin{proof}
+  \ref{mvl:thr:luk:def:lukasiewicz} मधील संयोजकांची
+  सत्यताकोष्टके आणि \ref{mvl:inf:luk:def:lukasiewicz} मधील
+  समीकरणांनी निश्चित होणारी सत्यताकोष्टके यांची तुलना
+  केल्यास हे दिसते:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $1$ & $0$ \\
+      $1/2$ & $1/2$ \\
+      $0$ & $1$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1/2$ & $1/2$ & $0$\\
+      $0$ & $0$ & $0$ & $0$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1$ & $1$ \\
+      $1/2$ & $1$ & $1/2$ & $1/2$ \\
+      $0$ & $1$ & $1/2$ & $0$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogLuk[3]]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1$ & $1$ & $1/2$  \\
+      $0$ & $1$ & $1$ & $1$
+    \end{tabular}
+  \end{center}
+\end{proof}
+\begin{prop}\label{mvl:inf:luk:prop:luk-infty-m}
+  $\Gamma \Entails[\LogLuk[\infty]] \psi$ असेल, तर
+  सर्व~$m \ge 2$ साठी $\Gamma \Entails[\LogLuk[m]] \psi$.
+\end{prop}
+\begin{proof}
+  सराव.
+\end{proof}
+\begin{prob}
+  \ref{mvl:inf:luk:prop:luk-infty-m} सिद्ध करा.
+\end{prob}
+खरे तर आधारसूत्रांचा संच ससीम असेल, तर याचे प्रतिलोम
+विधानही खरे आहे.
+अनंतमूल्य \L ukasiewicz तर्कशास्त्र हे सर्वाधिक प्रचलित
+अस्पष्ट तर्कशास्त्र आहे. अस्पष्ट तर्कशास्त्रावरील साहित्यात
+सशर्त विधानाची व्याख्या अनेकदा $\lnot \varphi \lor \psi$ अशी
+केली जाते. त्यातून अनंतमूल्य प्रबळ क्लिनी तर्कशास्त्र मिळेल.
+\begin{prob}
+  $(p \lif q) \lor (q \lif p)$ हे $\LogLuk[\infty]$
+  मध्ये सर्वतः सत्य सूत्र आहे हे दाखवा.
+\end{prob}
+\section{G\"odel तर्कशास्त्रे}\label{mvl:inf:god:sec}
+\begin{editorial}
+  अनंतमूल्य G\"odel तर्कशास्त्रावरील हा विभाग
+  संक्षिप्त ``प्रारूप'' आहे.
+\end{editorial}
+\begin{defn}\label{mvl:inf:god:def:goedel} अनंतमूल्य G\"odel
+तर्कशास्त्र~$\LogGod[\infty]$ पुढील मॅट्रिक्सने परिभाषित होते:
+\begin{enumerate}
+  \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$ असलेली मानक विधानीय भाषा $\Lang L_0$.
+  \item सत्यतामूल्यांचा संच $V_\infty$.
+  \item $1$ हेच एकमेव निर्दिष्ट मूल्य आहे, म्हणजे $V^+ = \{1\}$.
+  \item सत्यता-फलने पुढील सूत्रांनी दिली आहेत:
+  \begin{align*}
+    \tf{\lfalse} & = 0\\
+    \tf{\lnot}[\LogGod](x) & = \begin{cases}
+      1 & \text{जर } x =0\\
+      0 & \text{इतर वेळी}
+    \end{cases}\\
+    \tf{\land}[\LogGod](x,y) & = \min(x,y)\\
+    \tf{\lor}[\LogGod](x,y) & = \max(x,y)\\
+    \tf{\lif}[\LogGod](x,y) & = \begin{cases}
+      1 & \text{जर } x \le y\\
+      y & \text{इतर वेळी.}
+    \end{cases}
+    \end{align*}
+\end{enumerate}
+$m$-मूल्य G\"odel तर्कशास्त्राची व्याख्या याचप्रमाणे,
+फक्त $V = V_m$ घेऊन केली जाते.
+\end{defn}
+\begin{prop}
+  \ref{mvl:thr:god:defn:goedel} मध्ये परिभाषित
+  $\LogGod[3]$ आणि \ref{mvl:inf:god:def:goedel} मध्ये परिभाषित
+  $\LogGod[3]$ हे एकच तर्कशास्त्र आहे.
+\end{prop}
+\begin{proof}
+  \ref{mvl:thr:god:defn:goedel} मधील संयोजकांची
+  सत्यताकोष्टके आणि \ref{mvl:inf:god:def:goedel} मधील
+  समीकरणांनी निश्चित होणारी सत्यताकोष्टके यांची तुलना
+  केल्यास हे दिसते:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}[\LogGod[3]]$ & \\
+      \hline
+      $1$ & $0$ \\
+      $1/2$ & $0$ \\
+      $0$ & $1$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogGod]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1/2$ & $1/2$ & $0$\\
+      $0$ & $0$ & $0$ & $0$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogGod]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1$ & $1$ \\
+      $1/2$ & $1$ & $1/2$ & $1/2$ \\
+      $0$ & $1$ & $1/2$ & $0$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogGod]$ & $1$ & $1/2$ & $0$ \\
+      \hline
+      $1$ & $1$ & $1/2$ & $0$ \\
+      $1/2$ & $1$ & $1$ & $0$  \\
+      $0$ & $1$ & $1$ & $1$
+    \end{tabular}
+  \end{center}
+\end{proof}
+\begin{prop}\label{mvl:inf:god:prop:god-infty-m}
+  $\Gamma \Entails[\LogGod[\infty]] \psi$ असेल, तर
+  सर्व~$m \ge 2$ साठी $\Gamma \Entails[\LogGod[m]] \psi$.
+\end{prop}
+\begin{proof}
+  सराव.
+\end{proof}
+\begin{prob}
+  \ref{mvl:inf:god:prop:god-infty-m} सिद्ध करा.
+\end{prob}
+खरे तर आधारसूत्रांचा संच ससीम असेल, तर याचे प्रतिलोम
+विधानही खरे आहे.
+$\LogGod[3]$ प्रमाणेच $\LogGod[\infty]$ मध्येही
+अंतःप्रज्ञावादी तर्कशास्त्रात वैध असलेली सर्व सूत्रे
+सर्वतः सत्य आहेत; आणि आधीची सर्वतः सत्य नसलेल्या सूत्रांची
+उदाहरणे $\LogGod[\infty]$ मध्येही सर्वतः सत्य नाहीत:
+\begin{align*}
+  & p \lor \lnot p && (p \lif q) \lif (\lnot p \lor q) \\
+  & \lnot\lnot p \lif p && \lnot(\lnot p \land \lnot q) \lif (p \lor q) \\
+  & ((p \lif q) \lif p) \lif p && \lnot(p \lif q) \lif (p \land \lnot q)
+\end{align*}
+अंतःप्रज्ञावादी तर्कशास्त्रात वैध नसलेले, पण
+$\LogGod[3]$ मध्ये सर्वतः सत्य असलेले
+सूत्र~$(p \lif q) \lor (q \lif p)$ हे
+$\LogGod[\infty]$ मध्येही सर्वतः सत्य आहे. खरे तर
+$(\varphi \lif \psi) \lor (\psi \lif \varphi)$ ही योजना
+अंतःप्रज्ञावादी तर्कशास्त्रात जोडून $\LogGod[\infty]$
+चे वैशिष्ट्यीकरण करता येते. हे Michael Dummett यांनी
+दाखवले; म्हणून $\LogGod[\infty]$ ला अनेकदा
+G\"odel--Dummett तर्कशास्त्र~$\Log{LC}$ म्हणतात.
+\begin{prob}
+  $(p \lif q) \lor (q \lif p)$ हे $\LogGod[\infty]$
+  मध्ये सर्वतः सत्य सूत्र आहे हे दाखवा.
+\end{prob}
+\begin{prob}
+  $(p \lif q) \lor (q \lif r) \lor (r \lif s)$ हे
+  $\LogGod[3]$ मध्ये सर्वतः सत्य असूनही
+  $\LogGod[\infty]$ मध्ये सर्वतः सत्य नाही हे दाखवा.
+\end{prob}

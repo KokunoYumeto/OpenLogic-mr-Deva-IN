@@ -1,6 +1,7 @@
 % part: intuitionistic-logic
 % chapter: soundness-completeness
 % section: canonical-model
+%READERNOTE{SOL6-A201: मूळ one-based pair list आणि शून्यासहित natural-number worlds यांतील विसंगती दुरुस्त केली. सर्व नैसर्गिक निर्देशांकांसाठी formula-pair enumeration शून्यापासून सुरू केली; शाखा आणि truth-lemma साठी लागणाऱ्या गुणधर्मांना बदल नाही.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -13,7 +14,7 @@
 आपल्या प्रतिमानातील जगे नैसर्गिक संख्यांच्या
 सांत क्रमिका~$\sigma$ असतील, म्हणजे
 $\sigma \in \Nat^*$. $\Nat^*$ ची
-आगमनाने पुढीलप्रमाणे व्याख्या होते:
+विगमनाने पुढीलप्रमाणे व्याख्या होते:
 \begin{enumerate}
 \item $\emptyseq \in \Nat^*$.
 \item $\sigma \in \Nat^*$ आणि $n \in \Nat$
@@ -24,15 +25,17 @@ $\sigma \in \Nat^*$. $\Nat^*$ ची
   $\sigma$ व $\sigma'$ यांची जोडणी).
 \item इतर काहीही $ \Nat^*$ मध्ये नाही.
 \end{enumerate}
-म्हणून $\Nat^*$ वापरून आगमनात्मक
+म्हणून $\Nat^*$ वापरून विगमनात्मक
 व्याख्या देता येतात.
 
 !!{formula}s च्या सर्व जोड्यांचे
+$\tuple{!B_0, !C_0}$,
 $\tuple{!B_1, !C_1}$,
 $\tuple{!B_2, !C_2}$, \dots,
-असे प्रगणन असू द्या. !!{formula}s
+असे $n\in\Nat=\{0,1,2,\dots\}$ ने निर्देशांकित
+प्रगणन असू द्या. !!{formula}s
 चा संच~$\Delta$ दिला असता
-$\Delta(\sigma)$ ची आगमनाने
+$\Delta(\sigma)$ ची विगमनाने
 पुढीलप्रमाणे व्याख्या करा:
 \begin{enumerate}
 \item $\Delta(\emptyseq) = \Delta$
@@ -85,6 +88,6 @@ $\Delta(\sigma) \subseteq \Delta(\sigma.n)$
 असल्याने $R\sigma\sigma'$ असेल तेव्हा
 $\Delta(\sigma) \subseteq \Delta(\sigma')$;
 हे~$\sigma$ पासूनच्या विस्ताराच्या
-लांबीवर आगमनाने मिळते.
+लांबीवर विगमनाने मिळते.
 
 \end{document}

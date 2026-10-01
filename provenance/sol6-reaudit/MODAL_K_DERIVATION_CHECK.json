@@ -1,0 +1,84 @@
+{
+  "schema": "openlogic-modal-K-derivation-check/1",
+  "status": "passed",
+  "actual_proof_lines": [
+    {
+      "line": 1,
+      "rule": "Taut",
+      "status": "passed"
+    },
+    {
+      "line": 2,
+      "rule": "NEC",
+      "status": "passed"
+    },
+    {
+      "line": 3,
+      "rule": "K",
+      "status": "passed"
+    },
+    {
+      "line": 4,
+      "rule": "MP",
+      "status": "passed"
+    },
+    {
+      "line": 5,
+      "rule": "K",
+      "status": "passed"
+    },
+    {
+      "line": 6,
+      "rule": "Taut",
+      "status": "passed"
+    },
+    {
+      "line": 7,
+      "rule": "MP",
+      "status": "passed"
+    },
+    {
+      "line": 8,
+      "rule": "MP",
+      "status": "passed"
+    },
+    {
+      "line": 9,
+      "rule": "Taut",
+      "status": "passed"
+    },
+    {
+      "line": 10,
+      "rule": "MP",
+      "status": "passed"
+    }
+  ],
+  "propositional_truth_assignments_checked": 28,
+  "frozen_source_malformed_rows": [
+    6,
+    8,
+    9
+  ],
+  "unchanged_K_rows": [
+    3,
+    5
+  ],
+  "bindings": [
+    {
+      "unit_id": "OLP-0428",
+      "source_sha256": "554f263088c8e6e98b5cd4e9bf341c5497f787d11f9d136b07fceb1671a36068",
+      "target_sha256": "ed57357b6d4c419886effbd957eeba045cd4769e55ca241484b93ad3f36057b1"
+    },
+    {
+      "unit_id": "OLP-0431",
+      "source_sha256": "c320ad89ad9b3c091d61aceebf38dc3626e52bcf4d66d23cf7c356646090393d",
+      "target_sha256": "3f1f11a19aa788095681ec682c318a06ca6e74dabdceeecb7a8d9ee91809eb61"
+    },
+    {
+      "unit_id": "OLP-0432",
+      "source_sha256": "ee93bd761e5cfd7c4f8b6084821dddb812fcf712c8c0733964d5d7e8bed143b8",
+      "target_sha256": "e6499fd0749b605b2cf51cd025b541ad654d5ee0529ae9730ac7b3c1d5ef898a"
+    }
+  ],
+  "limitations_mr": "प्रत्यक्ष दहा ओळींच्या proof मधील सर्व formulas कठोरपणे parse केली. तीन tautologies च्या सर्व Boolean assignments, दोन K instances, एक NEC आणि चार MP steps तपासले. Modal subformulas या propositional tautology तपासणीसाठी स्वतंत्र atoms आहेत. हे सर्व chapter proofs, arbitrary theorem-prover certification, PDF visual inspection किंवा human review नाही."
+}

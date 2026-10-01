@@ -1,6 +1,7 @@
 % Part: lambda-calculus
 % Chapter: lambda-definability
 % Section: lists
+%READERNOTE{SOL6-A292: यादीतील पदांच्या मुक्त चरांना बाहेरच्या lambda ने पकडू नये म्हणून संचायक आणि आरंभीच्या मूल्याची चरे यादी गुंफण्यापूर्वी निवडली आहेत. ही अट सर्वसाधारण पदांसाठी आवश्यक आहे; सर्व बंद पदांसाठी ती आपोआप पूर्ण होते.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -9,7 +10,9 @@
 \olfileid{lam}{ldf}{lst}
 \olsection{याद्या}
 
-यादी $[M_1, M_2, \ldots, M_n]$ पुढीलप्रमाणे परिभाषित करता येते:
+यादी $[M_1, M_2, \ldots, M_n]$ पुढीलप्रमाणे परिभाषित करता येते.
+येथे $s$ आणि $z$ ही परस्पर भिन्न आणि कोणत्याही $M_i$ मध्ये
+मुक्त नसलेली चरे ही पदे गुंफण्यापूर्वी निवडली आहेत:
 \[
   [M_1, M_2, \ldots, M_n] \ident \lambd[sz][s M_1 (s M_2 (\ldots (s M_n z)))]
 \]

@@ -1,0 +1,635 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 37: चर्च–रॉसर गुणधर्म
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{चर्च–रॉसर गुणधर्म}\label{lam:cr:chap}
+
+
+
+
+
+
+
+
+
+\section{व्याख्या आणि गुणधर्म}\label{lam:cr:dap:sec}
+
+या प्रकरणात चर्च–रॉसर गुणधर्माची कल्पना आणि त्या
+गुणधर्माचे काही सामान्य पैलू मांडू.
+
+\begin{defn}[चर्च–रॉसर गुणधर्म, CR] पदांवरील संबंध $\xredone$
+  पुढील अट पूर्ण करत असेल, तर त्याला \emph{चर्च–रॉसर गुणधर्म}
+  आहे असे म्हणतात: $M \xredone P$ आणि $M \xredone Q$
+  असतील, तर असे~$N$ अस्तित्वात असते की
+  $P \xredone N$ आणि $Q \xredone N$.
+\end{defn}
+
+लॅम्डा कलनाकडे संगणनाचे एक प्रतिमान म्हणून पाहता येते.
+त्यात सामान्य रूपातील पदे ``मूल्ये'' आहेत आणि पदांवरील
+न्यूनीकरणसंबंध हे ``संगणननियम'' आहेत. चर्च–रॉसर गुणधर्म
+असे सांगतो की संगणन पुढे नेण्याचे एकाहून अधिक मार्ग
+असले, तरी निकाल मिळत असल्यास त्याचे मूल्य एकमेव असते.
+
+प्राथमिक बीजगणितातील उदाहरण घ्या. $4 \times (1+2) + 3$
+मोजण्याचे अनेक मार्ग आहेत. आधी $1+2$ चे~$3$ करून
+$4
+\times 3+3$ मिळवता येते. किंवा वितरणनियम वापरून
+आधी $4 \times (1+2)$ चे $4 \times 1+4
+\times 2+3$ असे रूप करता येते. या दोन्ही रूपांचे
+पुढील न्यूनीकरण $12+3$ मध्ये होते.
+
+$\xredone$ म्हणजे $\beta$-न्यूनीकरण घेतले, तर
+चर्च–रॉसर गुणधर्माचा एक परिणाम लगेच दिसतो:
+पदाचे सामान्य रूप असेल, तर ते एकमेव असते.
+समजा $M$ चे $P$ आणि $Q$ मध्ये न्यूनीकरण होते,
+आणि ही दोन्ही सामान्य रूपे आहेत. चर्च–रॉसर गुणधर्मामुळे
+असे $N$ असते की $P$ आणि $Q$ या दोन्हींचे त्यात
+न्यूनीकरण होते. पण गृहीतकानुसार $P$ आणि $Q$ ही
+सामान्य रूपे असल्याने $P$ आणि $Q$ यांचे $N$ मध्ये
+न्यूनीकरण फक्त तुच्छ न्यूनीकरणच असू शकते.
+म्हणजे $P$, $Q$ आणि $N$ ही समान आहेत.
+त्यामुळे पदाच्या सामान्य रूपाचा उल्लेख आपण
+\emph{एकमेव} म्हणून करू शकतो.
+
+लॅम्डा कलनाकडे संगणनाचे प्रतिमान म्हणून पाहिल्यास,
+एखाद्या पदाचे सामान्य रूप हा त्या पदापासून सुरू झालेल्या
+संगणनाचा ``अंतिम निकाल'' मानता येतो. वरील निष्कर्षानुसार
+असा अंतिम निकाल अस्तित्वात असेल, तर तो एकच असतो.
+उदाहरणार्थ, $4 \times (1+2)+3$ मोजल्याचा निकाल
+एकच, म्हणजे~$15$, असतो.
+
+\begin{thm} \label{lam:cr:dap:thm:str}
+  संबंध $\xredone$ ला चर्च–रॉसर गुणधर्म असेल आणि
+  $\xred$ हा $\xredone$ समाविष्ट करणारा सर्वांत लहान
+  संक्रमक संबंध असेल, तर $\xred$ लाही चर्च–रॉसर
+  गुणधर्म असतो.
+\end{thm}
+
+\begin{proof}
+  समजा
+  \begin{align*}
+    M & \xredone P_1 \xredone \dots \xredone P_m \text{ आणि}\\
+    M & \xredone Q_1 \xredone \dots \xredone Q_n.
+  \end{align*}
+  उंची $m + 1$ आणि रुंदी $n + 1$ असलेली पदांची
+  $N$ जाळी रचून प्रमेय सिद्ध करू. $i$ व्या ओळीतील
+  आणि $j$ व्या स्तंभातील पद $N_{i,j}$ असे दर्शवू.
+
+  $N_{i,j} \xredone N_{i+1,j}$ आणि
+  $N_{i,j} \xredone N_{i,j+1}$ होईल अशी $N$
+  रचू. तिची व्याख्या पुढीलप्रमाणे:
+  \begin{align*}
+    N_{0,0} &= M \\
+    N_{i,0} &= P_i && \text{जर } 1 \le i \le m \\
+    N_{0,j} &= Q_j && \text{जर } 1 \le j \le n \\
+  \intertext{आणि इतर प्रसंगी:}
+    N_{i,j} &= R
+  \end{align*}
+  येथे $R$ हे असे पद आहे की $N_{i-1,j} \xredone R$
+  आणि $N_{i,j-1}
+  \xredone R$. $\xredone$ च्या चर्च–रॉसर गुणधर्मामुळे
+  असे पद नेहमी अस्तित्वात असते.
+
+  आता $N_{m,0} \xredone \dots \xredone N_{m,n}$
+  आणि $N_{0,n}
+  \xredone \dots \xredone N_{m,n}$ मिळते.
+  येथे $N_{m,0}$ हे $P_m$ आणि $N_{0,n}$ हे $Q_n$ आहे.
+  $\xred$ च्या व्याख्येनुसार प्रमेय सिद्ध होते.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{समांतर $\beta$-न्यूनीकरण}\label{lam:cr:pb:sec}
+
+या विभागात \emph{समांतर $\beta$-न्यूनीकरण} ही संकल्पना
+मांडू आणि तिला चर्च–रॉसर गुणधर्म आहे हे सिद्ध करू.
+
+\begin{defn}[समांतर $\beta$-न्यूनीकरण, $\bredpar$] \label{lam:cr:pb:defn:bredpar}
+  पदांचे समांतर न्यूनीकरण ($\bredpar$) पुढीलप्रमाणे
+  विगमनाने परिभाषित केले जाते:
+  \begin{enumerate}
+    \item \label{lam:cr:pb:defn:bredpar1} $x \bredpar x$.
+    \item \label{lam:cr:pb:defn:bredpar2} $N \bredpar N'$ असेल, तर $\lambd[x][N] \bredpar
+      \lambd[x][N']$.
+    \item \label{lam:cr:pb:defn:bredpar3} $P \bredpar P'$ आणि $Q \bredpar Q'$ असतील, तर $PQ \bredpar
+      P'Q'$.
+    \item \label{lam:cr:pb:defn:bredpar4} $N \bredpar N'$ आणि $Q \bredpar Q'$ असतील, तर
+      $(\lambd[x][N])Q \bredpar \Subst{N'}{Q'}{x}$.
+  \end{enumerate}
+\end{defn}
+
+समांतर $\beta$-न्यूनीकरणात एका पायरीत पदातील कितीही
+रेडेक्सचे संकुचन करता येते. ते $\beta$-न्यूनीकरणापेक्षा
+वेगळे आहे: मूळ पदात असलेल्या रेडेक्सचेच संकुचन त्या
+पायरीत करता येते; समांतर $\beta$-न्यूनीकरणामुळे नव्याने निर्माण
+झालेल्या रेडेक्सचे नाही. उदाहरणार्थ,
+$(\lambd[f][fx])(\lambd[y][y])$ या पदाचे समांतर
+$\beta$-न्यूनीकरण केल्यास तेच पद किंवा
+$(\lambd[y][y])x$ मिळू शकते; एका पायरीत पुढे~$x$
+मिळू शकत नाही. मात्र नेहमीच्या $\beta$-न्यूनीकरणाने
+ते~$x$ मध्ये न्यूनीत होते. कारण संबंधित रेडेक्स समांतर
+$\beta$-न्यूनीकरणाची पहिली पायरी झाल्यावरच निर्माण
+होतो. दुसरी समांतर $\beta$-न्यूनीकरणाची पायरी
+घेतल्यास~$x$ मिळते.
+
+\begin{thm}\label{lam:cr:pb:thm:refl}
+  $M \bredpar M$.
+\end{thm}
+
+\begin{proof}
+  सरावासाठी.
+\end{proof}
+
+\begin{prob}
+  \ref{lam:cr:pb:thm:refl} सिद्ध करा.
+\end{prob}
+
+\begin{defn}[$\beta$-पूर्ण विकास]\label{lam:cr:pb:defn:bcd}
+  $M$ चा \emph{$\beta$-पूर्ण विकास}~$\bcd{M}$ पुढीलप्रमाणे
+  विगमनाने परिभाषित केला जातो:
+  \begin{align}
+    \bcd{x} &= x \label{lam:cr:pb:defn:bcd1} \\
+    \bcd{(\lambd[x][N])} &= \lambd[x][\bcd{N}] \label{lam:cr:pb:defn:bcd2}\\
+    \bcd{(PQ)} &= \bcd{P}\bcd{Q} && \text{जर $P$ हे $\lambd$-अमूर्तीकरण नसेल तर}
+    \label{lam:cr:pb:defn:bcd3} \\
+    \bcd{((\lambd[x][N])Q)} &= \Subst{\bcd{N}}{\bcd{Q}}{x} \label{lam:cr:pb:defn:bcd4}
+  \end{align}
+\end{defn}
+
+पदाचा $\beta$-पूर्ण विकास म्हणजे नावाप्रमाणे
+``संपूर्ण समांतर न्यूनीकरण''. समांतर $\beta$-न्यूनीकरणात
+एखाद्या रेडेक्सचे संकुचन टाळता येते; पण पूर्ण विकासात
+सर्व मूळ रेडेक्सचे संकुचन करावेच लागते. म्हणून
+$(\lambd[f][fx])(\lambd[y][y])$ चा पूर्ण विकास तेच
+पद नसून $(\lambd[y][y])x$ आहे.
+
+\begin{editorial}
+  या व्याख्येत अडचण अशी की ($\lambd$-)पदांवरील फलने
+  पुनरावर्ती रीतीने कशी परिभाषित करायची हे अजून
+  मांडलेले नाही. पुढे दुरुस्त करू.
+\end{editorial}
+
+\begin{lem}\label{lam:cr:pb:lem:comp}
+  $M \bredpar M'$ आणि $R \bredpar R'$ असतील, तर $\Subst{M}{R}{y}
+  \bredpar \Subst{M'}{R'}{y}$.
+\end{lem}
+
+\begin{proof}
+
+अमूर्तीकरणांची नावे आवश्यक त्या सर्व मुक्त चरांपासून
+आणि आदेशित चरांपासून वेगळी निवडू. पुढील आदेशनसूत्र वापरू:
+\[\Subst{\Subst{N}{Q}{x}}{R}{y}
+=\Subst{\Subst{N}{R}{y}}{\Subst{Q}{R}{y}}{x},
+\qquad x\ne y,\quad x\notin\FV{R}.
+\]
+हे सूत्र पदाच्या रचनेवरील विगमनाने सिद्ध होते. चराचे नाव
+$x$ असल्यास दोन्ही बाजू $\Subst{Q}{R}{y}$ होतात;
+नाव $y$ असल्यास दोन्ही बाजू $R$ होतात, कारण $R$ मध्ये
+$x$ मुक्त नाही. इतर चर तसेच राहतात. उपयोजनात दोन्ही
+उपपदांवर विगमन गृहीतक लागू होते. अमूर्तीकरणात त्याचे
+बद्ध नाव दोन्ही आदेशित पदांच्या मुक्त चरांपासून आणि
+$x,y$ पासून वेगळे निवडल्याने तेच गृहीतक देहाला लागू
+करता येते. याने वर्गपदांवरील सूत्र सिद्ध होते.
+या सिद्धतेतील बाह्य अमूर्तीकरणाचे नाव $x$ हे $y$ पासून
+आणि $R,R'$ यांच्या सर्व मुक्त चरांपासून वेगळे निवडू.
+  $M \bredpar M'$ च्या निष्पत्ती वर विगमन करू.
+  \begin{enumerate}
+    \item अखेरची पायरी \ref{lam:cr:pb:defn:bredpar1} आहे: सरावासाठी.
+    \item अखेरची पायरी \ref{lam:cr:pb:defn:bredpar2} आहे: मग $M$ हे
+      $\lambd[x][N]$ आणि $M'$ हे $\lambd[x][N']$ आहे,
+      जेथे $N \bredpar N'$. आपल्याला
+      $\Subst{(\lambd[x][N])}{R}{y} \bredpar
+      \Subst{(\lambd[x][N'])}{R'}{y}$, म्हणजे
+      $\lambd[x][\Subst{N}{R}{y}] \bredpar
+      \lambd[x][\Subst{N'}{R'}{y}]$, हे सिद्ध करायचे आहे.
+      ते \ref{lam:cr:pb:defn:bredpar2} आणि विगमन गृहीतकावरून
+      लगेच मिळते.
+    \item अखेरची पायरी \ref{lam:cr:pb:defn:bredpar3} आहे: सरावासाठी.
+    \item अखेरची पायरी \ref{lam:cr:pb:defn:bredpar4} आहे: $M$ हे
+      $(\lambd[x][N])Q$ आणि $M'$ हे $\Subst{N'}{Q'}{x}$ आहे.
+      आपल्याला $\Subst{((\lambd[x][N])Q)}{R}{y} \bredpar
+      \Subst{\Subst{N'}{Q'}{x}}{R'}{y}$, म्हणजे
+      $(\lambd[x][\Subst{N}{R}{y}])\Subst{Q}{R}{y} \bredpar
+      \Subst{\Subst{N'}{R'}{y}}{\Subst{Q'}{R'}{y}}{x}$,
+      हे सिद्ध करायचे आहे. वरील आदेशनसूत्राने या दोन
+      उजव्या बाजू समान आहेत. मग \ref{lam:cr:pb:defn:bredpar4}
+      आणि दोन्ही पूर्वपक्षांना लागू केलेल्या विगमन गृहीतकावरून
+      आवश्यक समांतर न्यूनीकरण मिळते.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \ref{lam:cr:pb:lem:comp} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\begin{lem}\label{lam:cr:pb:lem:cont}
+  $M \bredpar M'$ असेल, तर $M' \bredpar \bcd{M}$.
+\end{lem}
+\begin{proof}
+  $M \bredpar M'$ च्या निष्पत्ती वर विगमन करू.
+  \begin{enumerate}
+    \item अखेरचा नियम \ref{lam:cr:pb:defn:bredpar1} आहे: सरावासाठी.
+    \item अखेरचा नियम \ref{lam:cr:pb:defn:bredpar2} आहे: $M$ हे
+      $\lambd[x][N]$ आणि $M'$ हे $\lambd[x][N']$ आहे,
+      जेथे $N \bredpar N'$. आपल्याला $\lambd[x][N'] \bredpar
+      \bcd{(\lambd[x][N])}$, म्हणजे \ref{lam:cr:pb:defn:bcd2} नुसार
+      $\lambd[x][N'] \bredpar \lambd[x][\bcd{N}]$,
+      दाखवायचे आहे. ते \ref{lam:cr:pb:defn:bredpar2} आणि
+      विगमन गृहीतकावरून मिळते.
+    \item अखेरचा नियम \ref{lam:cr:pb:defn:bredpar3} आहे: $M$ हे $PQ$
+      आणि $M'$ हे $P'Q'$ आहे, जेथे $P$, $Q$, $P'$, $Q'$
+      अशी पदे आहेत की $P \bredpar P'$ आणि $Q \bredpar Q'$.
+      विगमन गृहीतकानुसार $P' \bredpar \bcd{P}$ आणि
+      $Q' \bredpar \bcd{Q}$.
+      \begin{enumerate}
+        \item काही $x$ आणि $N$ साठी $P$ हे $\lambd[x][N]$
+          असेल, तर काही $N'$ साठी $P'$ हे $\lambd[x][N']$
+          असावे लागते आणि $N \bredpar N'$. विगमन गृहीतकानुसार
+          $N' \bredpar \bcd{N}$ आणि $Q' \bredpar \bcd{Q}$.
+          मग \ref{lam:cr:pb:defn:bredpar4} नुसार
+          $(\lambd[x][N'])Q' \bredpar
+          \Subst{\bcd{N}}{\bcd{Q}}{x}$.
+        \item $P$ हे $\lambd$-अमूर्तीकरण नसेल, तर
+          \ref{lam:cr:pb:defn:bredpar3} नुसार $P'Q' \bredpar
+          \bcd{P}\bcd{Q}$; आणि \ref{lam:cr:pb:defn:bcd3} नुसार
+          उजवीकडील पद $\bcd{PQ}$ आहे.
+      \end{enumerate}
+    \item अखेरचा नियम \ref{lam:cr:pb:defn:bredpar4} आहे: काही
+      $x$, $N$, $Q$, $N'$ आणि~$Q'$ साठी $M$ हे
+      $(\lambd[x][N])Q$ आणि $M'$ हे $\Subst{N'}{Q'}{x}$,
+      जेथे $N \bredpar N'$ आणि $Q \bredpar Q'$.
+      विगमन गृहीतकानुसार $N' \bredpar \bcd{N}$ आणि
+      $Q' \bredpar \bcd{Q}$. \ref{lam:cr:pb:lem:comp} नुसार
+      $\Subst{N'}{Q'}{x} \bredpar \Subst{\bcd{N}}{\bcd{Q}}{x}$;
+      उजवीकडील पद नेमके $\bcd{((\lambd[x][N])Q)}$ आहे.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  \ref{lam:cr:pb:lem:cont} ची सिद्धता पूर्ण करा.
+\end{prob}
+
+\begin{thm}\label{lam:cr:pb:thm:cr}
+  $\bredpar$ ला चर्च–रॉसर गुणधर्म आहे.
+\end{thm}
+
+\begin{proof}
+  \ref{lam:cr:pb:lem:cont} वरून लगेच मिळते.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{$\beta$-न्यूनीकरण}\label{lam:cr:b:sec}
+
+\begin{lem}\label{lam:cr:b:lem:one-par}
+  $M \bredone M'$ असेल, तर $M \bredpar M'$.
+\end{lem}
+\begin{proof} $M \bredone M'$ च्या निष्पत्तीवर विगमन करू.
+  मूळस्थानी संकुचनाच्या प्रकरणात काही $x$, $N$ आणि~$Q$ साठी
+  $M$ हे $(\lambd[x][N])Q$ आणि $M'$ हे
+  $\Subst{N}{Q}{x}$ आहे. \ref{lam:cr:pb:thm:refl} नुसार
+  $N \bredpar N$ आणि $Q \bredpar Q$ असल्याने
+  \ref{lam:cr:pb:defn:bredpar}\ref{lam:cr:pb:defn:bredpar4} नुसार
+  $(\lambd[x][N])Q \bredpar \Subst{N}{Q}{x}$ लगेच मिळते.
+  अमूर्तीकरण किंवा उपयोजनाच्या आत संकुचन झाल्यास,
+  विगमन गृहीतक, अपरिवर्तित उपपदाची समांतर परावर्तिता
+  आणि संबंधित रचना-नियमांवरून निष्कर्ष मिळतो.
+\end{proof}
+
+\begin{lem}\label{lam:cr:b:lem:par-red}
+  $M \bredpar M'$ असेल, तर $M \bred M'$.
+\end{lem}
+
+\begin{proof} $M \bredpar M'$ च्या निष्पत्ती वर विगमन करू.
+  \begin{enumerate}
+  \item अखेरचा नियम \ref{lam:cr:pb:defn:bredpar1} आहे: मग $M$
+    आणि $M'$ दोन्ही $x$ आहेत आणि $x \bred x$.
+  \item अखेरचा नियम \ref{lam:cr:pb:defn:bredpar2} आहे: काही
+    $x$, $N$, $N'$ साठी $M$ हे $\lambd[x][N]$
+    आणि $M'$ हे $\lambd[x][N']$ आहे, जेथे
+    $N \bredpar N'$. विगमन गृहीतकानुसार $N \bred N'$.
+    मग $N \bred N'$ साठी लागणारी तीच $\bredone$
+    संकुचने अमूर्तीकरणाच्या आत करून
+    $\lambd[x][N] \bred \lambd[x][N']$ मिळते.
+  \item अखेरचा नियम \ref{lam:cr:pb:defn:bredpar3} आहे: काही
+    $P$, $Q$, $P'$, $Q'$ साठी $M$ हे $PQ$ आणि
+    $M'$ हे $P'Q'$ आहे, जेथे $P \bredpar P'$
+    आणि $Q \bredpar Q'$. विगमन गृहीतकानुसार
+    $P \bred P'$ आणि $Q \bred Q'$. म्हणून आधी
+    $P \bred P'$ आणि नंतर $Q \bred Q'$ असे
+    न्यूनीकरण केल्यावर $PQ \bred P'Q'$ मिळते.
+  \item अखेरचा नियम \ref{lam:cr:pb:defn:bredpar4} आहे: काही
+    $x$, $N$, $N'$, $Q$, $Q'$ साठी $M$ हे
+    $(\lambd[x][N])Q$ आणि $M'$ हे
+    $\Subst{N'}{Q'}{x}$ आहे, जेथे $N \bredpar N'$
+    आणि $Q \bredpar Q'$. विगमन गृहीतकानुसार
+    $Q \bred Q'$ आणि $N \bred N'$. म्हणून आधी
+    $N \bred N'$, मग $Q \bred Q'$, आणि शेवटी
+    $(\lambd[x][N'])Q'$ चे $\Subst{N'}{Q'}{x}$
+    मध्ये संकुचन करून
+    $(\lambd[x][N])Q \bred \Subst{N'}{Q'}{x}$ मिळते.
+  \end{enumerate}
+\end{proof}
+
+\begin{lem}\label{lam:cr:b:lem:str}
+  $\bredpar$ समाविष्ट करणारा सर्वांत लहान संक्रमक
+  संबंध $\bred$ आहे.
+\end{lem}
+
+\begin{proof}
+  $\bredpar$ समाविष्ट करणारा सर्वांत लहान संक्रमक
+  संबंध $\xred$ मानू.
+
+  $\bred \subseteq \xred$: समजा $M \bred M'$,
+  म्हणजे $M \ident M_1 \bredone \dots \bredone M_k \ident M'$.
+  \ref{lam:cr:b:lem:one-par} नुसार $M \ident M_1 \bredpar
+  \dots \bredpar M_k \ident M'$. $\xred$ मध्ये
+  $\bredpar$ समाविष्ट आहे आणि तो संक्रमक आहे;
+  म्हणून $M \xred M'$. शून्य संकुचनांच्या प्रकरणातही
+  समांतर न्यूनीकरणाच्या परावर्ती गुणधर्मामुळे हाच निष्कर्ष मिळतो.
+
+  $\xred \subseteq \bred$: समजा $M \xred M'$,
+  म्हणजे $M \ident M_1 \bredpar \dots \bredpar M_k \ident M'$.
+  \ref{lam:cr:b:lem:par-red} नुसार $M \ident M_1 \bred
+  \dots \bred M_k \ident M'$. $\bred$ संक्रमक
+  असल्याने $M \bred M'$.
+\end{proof}
+
+\begin{thm}\label{lam:cr:b:thm:cr}
+  $\bred$ ला चर्च–रॉसर गुणधर्म आहे.
+\end{thm}
+
+\begin{proof}
+  \ref{lam:cr:dap:thm:str}, \ref{lam:cr:pb:thm:cr} आणि
+  \ref{lam:cr:b:lem:str} वरून लगेच मिळते.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{समांतर $\beta\eta$-न्यूनीकरण}\label{lam:cr:pbe:sec}
+
+या विभागात $\beta\eta$-न्यूनीकरणाशी निगडित समांतर
+$\beta\eta$-न्यूनीकरणाला चर्च–रॉसर गुणधर्म आहे हे सिद्ध करू.
+
+\begin{defn}[समांतर $\beta\eta$-न्यूनीकरण, $\beredpar$] \label{lam:cr:pbe:defn:beredpar}
+  पदांवरील \emph{समांतर $\beta\eta$-न्यूनीकरण}
+  ($\beredpar$) पुढीलप्रमाणे विगमनाने परिभाषित केले जाते:
+  \begin{enumerate}
+    \item \label{lam:cr:pbe:defn:beredpar1} $x \beredpar x$.
+    \item \label{lam:cr:pbe:defn:beredpar2} $N \beredpar N'$ असेल, तर $\lambd[x][N] \beredpar
+      \lambd[x][N']$.
+    \item \label{lam:cr:pbe:defn:beredpar3} $P \beredpar P'$ आणि $Q \beredpar Q'$ असतील, तर $PQ \beredpar
+      P'Q'$.
+    \item \label{lam:cr:pbe:defn:beredpar4} $N \beredpar N'$ आणि $Q \beredpar Q'$ असतील, तर
+      $(\lambd[x][N])Q \beredpar \Subst{N'}{Q'}{x}$.
+    \item \label{lam:cr:pbe:defn:beredpar5} $N \beredpar N'$ असेल, तर $\lambd[x][Nx]
+      \beredpar N'$, मात्र $x \notin FV(N)$ असले पाहिजे.
+  \end{enumerate}
+\end{defn}
+
+\begin{thm}\label{lam:cr:pbe:thm:refl}
+  $M \beredpar M$.
+\end{thm}
+
+\begin{proof}
+  सरावासाठी.
+\end{proof}
+
+\begin{prob}
+  \ref{lam:cr:pbe:thm:refl} सिद्ध करा.
+\end{prob}
+
+\begin{defn}[$\beta\eta$-पूर्ण विकास]\label{lam:cr:pbe:defn:becd}
+  $M$ चा \emph{$\beta\eta$-पूर्ण विकास}~$\becd{M}$
+  पुढीलप्रमाणे परिभाषित केला जातो. पाचवी अट लागू
+  होत असल्यास दुसऱ्या अटीऐवजी ती वापरायची आहे:
+  \begin{align}
+    \becd{x} &= x \label{lam:cr:pbe:defn:becd1} \\
+    \becd{(\lambd[x][N])} &= \lambd[x][\becd{N}] \label{lam:cr:pbe:defn:becd2}\\
+    \becd{(PQ)} &= \becd{P}\becd{Q} && \text{जर $P$ हे $\lambd$-अमूर्तीकरण नसेल तर}
+    \label{lam:cr:pbe:defn:becd3} \\
+    \becd{((\lambd[x][N])Q)} &= \Subst{\becd{N}}{\becd{Q}}{x}
+                             \label{lam:cr:pbe:defn:becd4} \\
+    \becd{(\lambd[x][Nx])} &= \becd{N} \label{lam:cr:pbe:defn:becd5} & \text{जर $x
+                                                      \notin FV(N)$}
+  \end{align}
+\end{defn}
+
+\begin{lem}\label{lam:cr:pbe:lem:comp}
+  $M \beredpar M'$ आणि $R \beredpar R'$ असतील, तर $\Subst{M}{R}{y}
+  \beredpar \Subst{M'}{R'}{y}$.
+\end{lem}
+
+\begin{proof}
+  सर्व अमूर्तीकरणांची नावे आदेशनाच्या चरापासून आणि
+  दोन्ही आदेशित पदांच्या मुक्त चरांपासून वेगळी निवडू.
+  $M \beredpar M'$ च्या निष्पत्ती वर विगमन करू.
+
+  पहिली चार प्रकरणे \ref{lam:cr:pb:lem:comp} मधील
+  प्रकरणांसारखीच आहेत. अखेरचा नियम
+  \ref{lam:cr:pbe:defn:beredpar5} असेल, तर काही $x$ आणि~$N'$
+  साठी $M$ हे $\lambd[x][Nx]$, $M'$ हे $N'$
+  आहे, $x \notin FV(N)$ आणि $N \beredpar N'$.
+  आपल्याला $\Subst{(\lambd[x][Nx])}{R}{y} \beredpar
+  \Subst{N'}{R'}{y}$, म्हणजे
+  $\lambd[x][\Subst{N}{R}{y} x] \beredpar \Subst{N'}{R'}{y}$,
+  हे सिद्ध करायचे आहे. ते \ref{lam:cr:pbe:defn:beredpar}\ref{lam:cr:pbe:defn:beredpar5}
+  आणि विगमन गृहीतकावरून मिळते. बाह्य बद्ध नाव मूळ
+  देहात मुक्त नाही आणि आदेशित पदातही मुक्त नाही, म्हणून
+  आदेशनानंतरच्या देहात ते मुक्त होत नाही. त्यामुळे वापरलेल्या
+  इटा नियमाची ताजेपणाची अट पूर्ण होते.
+\end{proof}
+
+\begin{lem}\label{lam:cr:pbe:lem:cont}
+  $M \beredpar M'$ असेल, तर $M' \beredpar \becd{M}$.
+\end{lem}
+
+\begin{proof}
+
+प्रथम समांतर न्यूनीकरणाने नवीन मुक्त चरे निर्माण होत नाहीत,
+हे त्याच्या पाच नियमांवरील विगमनाने मिळते. बीटा प्रकरणात
+आदेशनाचे मुक्त-चर नियम वापरतात; इटा प्रकरणात बद्ध चर
+उरलेल्या पदात मुक्त नसतो. पूर्ण विकास हाही एक समांतर
+न्यूनीकरण आहे, हे त्याच्या व्याख्येवरील विगमनाने मिळते.
+म्हणून पूर्ण विकासानेही मुक्त चरे वाढत नाहीत. खाली आवश्यक
+तेथे प्रतिनिधींची बद्ध नावे सर्व संबंधित सांत मुक्त-चर
+संचांपासून वेगळी निवडू.
+पदाच्या रचनेवर पुढील दोन दावे एकत्र सिद्ध करू:
+\begin{enumerate}
+\item मुख्य दावा: $M\beredpar M'$ असल्यास
+$M'\beredpar\becd{M}$.
+\item सहाय्यक दावा: $A=\lambd[x][B]$, $A\beredpar A'$
+आणि $S\beredpar T$ असल्यास
+$A'S\beredpar\Subst{\becd{B}}{T}{x}$.
+\end{enumerate}
+सहाय्यक दावा अमूर्तीकरणांपुरताच आहे. तो प्रथम पाहू.
+$A\beredpar A'$ ची शेवटची पायरी अमूर्तीकरणाचा नियम
+असेल, तर $A'=\lambd[x][B']$ आणि $B\beredpar B'$.
+लहान पदासाठीच्या मुख्य विगमन दाव्याने
+$B'\beredpar\becd{B}$ मिळते. याला $S\beredpar T$
+जोडून बीटा समांतर नियमाने सहाय्यक निष्कर्ष मिळतो.
+शेवटची पायरी इटा नियमाची असेल, तर $B=Hx$,
+$x\notin\FV{H}$, $A'=H'$ आणि $H\beredpar H'$.
+$H$ अमूर्तीकरण नसेल, तर लहान पदासाठीच्या मुख्य दाव्याने
+$H'\beredpar\becd{H}$ मिळते. उपयोजनाच्या नियमाने
+$H'S\beredpar\becd{H}T$; ही उजवी बाजू
+$\Subst{\becd{(Hx)}}{T}{x}$ आहे.
+$H=\lambd[y][L]$ असेल, तर लहान अमूर्तीकरणासाठीचा
+सहाय्यक विगमन दावा
+$H'S\beredpar\Subst{\becd{L}}{T}{y}$ देतो.
+येथे $y$ हे $x$ पासून आणि $T$ च्या मुक्त चरांपासून
+वेगळे निवडले आहे. पूर्ण विकासाच्या चौथ्या नियमाने
+$\becd{(Hx)}=\Subst{\becd{L}}{x}{y}$; तसेच $x$
+हे $L$ मध्ये किंवा त्याच्या पूर्ण विकासात मुक्त नाही.
+\ref{lam:cr:pb:lem:comp} च्या सिद्धतेत दिलेल्या आदेशनसूत्राने
+\[\Subst{\Subst{\becd{L}}{x}{y}}{T}{x}
+=\Subst{\becd{L}}{T}{y}.
+\]
+म्हणून या प्रकरणातही सहाय्यक दावा सिद्ध होतो.
+
+आता मुख्य दावा सिद्ध करू. चरासाठी तो परावर्तितेने मिळतो.
+$M=PQ$ अमूर्तीकरण नसलेल्या फलनस्थानील पदासह असेल,
+तर समांतर उपयोजनाचाच नियम लागू होतो. दोन्ही उपपदांना
+मुख्य विगमन दावा लावून $P'Q'\beredpar\becd{P}\becd{Q}$
+मिळते; उजवी बाजू $\becd{M}$ आहे.
+$M=(\lambd[x][N])Q$ असेल आणि शेवटची पायरी बीटा
+नियमाची असेल, तर $M'=\Subst{N'}{Q'}{x}$,
+$N\beredpar N'$ आणि $Q\beredpar Q'$.
+दोन्ही मुख्य विगमन दावे आणि \ref{lam:cr:pbe:lem:comp} यांनी
+$M'\beredpar\Subst{\becd{N}}{\becd{Q}}{x}=\becd{M}$
+मिळते. शेवटची पायरी उपयोजनाची असेल, तर
+$M'=P'Q'$, $\lambd[x][N]\beredpar P'$ आणि
+$Q\beredpar Q'$. मुख्य विगमन दाव्याने
+$Q'\beredpar\becd{Q}$. मग लहान फलनस्थानील
+अमूर्तीकरणासाठीचा सहाय्यक दावा तोच आवश्यक निष्कर्ष देतो;
+यात $P'$ अजून अमूर्तीकरण असणे गृहीत धरलेले नाही.
+शेवटी $M=\lambd[x][N]$ पाहू. शेवटची पायरी इटा
+नियमाची असेल, तर $N=Hx$, $x\notin\FV{H}$ आणि
+$M'=H'$ जेथे $H\beredpar H'$. मुख्य विगमन दाव्याने
+$H'\beredpar\becd{H}=\becd{M}$.
+शेवटची पायरी अमूर्तीकरणाच्या नियमाची असेल, तर
+$M'=\lambd[x][N']$ जेथे $N\beredpar N'$.
+$M$ इटा रेडेक्स नसेल, तर मुख्य विगमन दावा आणि
+अमूर्तीकरणाचा नियम थेट निष्कर्ष देतात.
+इटा रेडेक्स असेल, तर $N=Hx$ आणि $x\notin\FV{H}$.
+$Hx\beredpar N'$ ची शेवटची पायरी उपयोजनाची असेल,
+तर $N'=H'x$, $H\beredpar H'$; मुख्य विगमन दाव्याने
+$H'\beredpar\becd{H}$ आणि इटा नियमाने
+$\lambd[x][H'x]\beredpar\becd{H}=\becd{M}$.
+ही पायरी बीटाची असेल, तर $H=\lambd[y][L]$,
+$L\beredpar L'$ आणि $N'=\Subst{L'}{x}{y}$.
+नवीन मुक्त चरे निर्माण होत नसल्याने $x\notin\FV{L'}$,
+आणि $x\ne y$ अशी नावांची निवड आहे. म्हणून
+$\lambd[x][\Subst{L'}{x}{y}]$ हे $\lambd[y][L']$
+याच वर्गपदाचे दुसरे रूप आहे. अमूर्तीकरणाच्या नियमाने
+$H\beredpar\lambd[y][L']$, आणि लहान पद $H$ साठीचा
+मुख्य विगमन दावा
+$\lambd[y][L']\beredpar\becd{H}=\becd{M}$ देतो.
+ही सर्व शक्य प्रकरणे आहेत. प्रत्येक वापरलेल्या विगमन
+दाव्याचे मूलपद सध्याच्या पदाचे योग्य उपपद आहे,
+म्हणून एकत्र विगमन पूर्ण झाले.
+\end{proof}
+
+\begin{thm}\label{lam:cr:pbe:thm:cr}
+  $\beredpar$ ला चर्च–रॉसर गुणधर्म आहे.
+\end{thm}
+
+\begin{proof}
+  \ref{lam:cr:pbe:lem:cont} वरून लगेच मिळते.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{$\beta\eta$-न्यूनीकरण}\label{lam:cr:be:sec}
+
+$\beta\eta$-न्यूनीकरणाला ($\bered$) चर्च–रॉसर
+गुणधर्म आहे.
+
+\begin{lem}\label{lam:cr:be:lem:one-par}
+  $M \beredone M'$ असेल, तर $M \beredpar M'$.
+\end{lem}
+
+\begin{proof}
+  $M \beredone M'$ च्या निष्पत्ती वर विगमन करू.
+  $M \eredone M'$ हे $\eta$-परिवर्तनाचे प्रकरण
+  असेल (म्हणजे \ref{lam:syn:eta:defn:beredone}),
+  तर समांतर इटा-नियमासाठी \ref{lam:cr:pbe:thm:refl}
+  वापरू. इतर प्रकरणे \ref{lam:cr:b:lem:one-par}
+  प्रमाणेच आहेत.
+\end{proof}
+
+\begin{lem}\label{lam:cr:be:lem:par-red}
+  $M \beredpar M'$ असेल, तर $M \bered M'$.
+\end{lem}
+
+\begin{proof} $M \beredpar M'$ च्या निष्पत्ती वर विगमन करू.
+
+  पहिली चार प्रकरणे समांतर बीटा-न्यूनीकरणाच्या
+  संबंधित प्रकरणांप्रमाणे हाताळता येतात. अखेरचा नियम
+  \ref{lam:cr:pbe:defn:beredpar5} असेल, तर काही $x$, $N$,
+  $N'$ साठी $M$ हे $\lambd[x][Nx]$ आणि $M'$ हे $N'$
+  आहे, जेथे $x \notin FV(N)$ आणि $N \beredpar N'$.
+  म्हणून आधी $\lambd[x][Nx]$ चे $N$ मध्ये
+  $\eta$-परिवर्तनाने न्यूनीकरण करू आणि मग विगमन
+  गृहीतकानुसार $N \bered N'$ दाखवणाऱ्या $\beredone$
+  पायऱ्या घेऊ.
+\end{proof}
+
+\begin{lem}\label{lam:cr:be:lem:str}
+  $\beredpar$ समाविष्ट करणारा सर्वांत लहान संक्रमक
+  संबंध $\bered$ आहे.
+\end{lem}
+
+\begin{proof}
+  \ref{lam:cr:b:lem:str} प्रमाणे.
+\end{proof}
+
+\begin{thm}\label{lam:cr:be:thm:cr}
+  $\bered$ ला चर्च–रॉसर गुणधर्म आहे.
+\end{thm}
+
+\begin{proof}
+  \ref{lam:cr:dap:thm:str}, \ref{lam:cr:pbe:thm:cr} आणि
+  \ref{lam:cr:be:lem:str} वरून मिळते.
+\end{proof}
+
+

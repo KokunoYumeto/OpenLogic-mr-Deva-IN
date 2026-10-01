@@ -1,6 +1,7 @@
 % Part: normal-modal-logic
 % Chapter: completeness
 % Section: modalities-ccs
+%READERNOTE{SOL6-A165: Canonical accessibility चे iff आणि शून्य गृहीतकांचा boxing lemma. Diamond branch मधील explanatory clause ने R खरे होण्यासाठी sufficient अट दिली होती; अपेक्षित implication साठी R ते condition ही दिशा आवश्यक आहे. औपचारिक पुढील definition प्रमाणे iff स्पष्ट केला. Boxing lemma च्या k=0 प्रकरणात RK नव्हे तर NEC थेट लागू केला; k>=1 साठी मूळ RK proof जपला. Modal equivalence च्या वाक्यात missing शी जोडले. पूर्वीचे k/n आणि system-subscript repairs योग्य.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -58,8 +59,8 @@ $!A \in \Delta$ हे सिद्ध करण्यासाठी हे व
   $!A$ आणि $\Delta'$ साठी $!A \in \Delta'$ असेल,
   तर $\Diamond!A \in \Delta$ असे ती सांगते.
   प्रत्येक $!A \in \Delta'$ साठी $\Diamond!A \in
-  \Delta$ असताना $R^\Sigma\Delta\Delta'$ खरा
-  ठरतो अशी अट ठेवल्यास हे खरे ठरते. या
+  \Delta$ असेल तेव्हा आणि तेव्हाच $R^\Sigma\Delta\Delta'$
+  खरा ठरतो अशी अट ठेवल्यास हे खरे ठरते. या
   द्विसशर्ताच्या उजव्या बाजूची अट संक्षिप्तपणे
   $\Setabs{\Diamond!A}{!A \in \Delta'} \subseteq \Delta$
   अशी लिहिता येते.}
@@ -108,7 +109,10 @@ $\Box$ काढून टाकला जातो. ही व्याख्�
 \begin{proof}
   $\Gamma \Proves[\Sigma] !A$ असेल, तर
   $!B_1$, \dots, $!B_k \in \Gamma$ अशी सूत्रे
-  असतात की $\Sigma \Proves !B_1 \lif (!B_2 \lif \cdots
+  असतात. $k=0$ असेल, तर $\Sigma \Proves !A$;
+  \Nec{} ने $\Sigma \Proves \Box!A$ मिळते आणि
+  शून्य गृहीतकांच्या प्रकरणानुसार $\Box\Gamma \Proves[\Sigma] \Box!A$.
+  आता $k\geq1$ असे समजा. मग $\Sigma \Proves !B_1 \lif (!B_2 \lif \cdots
   (!B_k \lif !A)\cdots)$. $\Sigma$ सामान्य असल्याने
   \RK{} नियमानुसार $\Sigma \Proves \Box!B_1 \lif
   (\Box!B_2 \lif \cdots (\Box!B_k \lif \Box!A)\cdots)$;
@@ -258,7 +262,7 @@ $\Box$ काढून टाकला जातो. ही व्याख्�
   $\Diamond\lnot!A \in \Gamma$.
   पण सामान्य मोडल तर्कशास्त्रात
   $\Diamond\lnot!A$ हे
-  $\lnot\Box !A$ समतुल्य आहे;
+  $\lnot\Box !A$ शी समतुल्य आहे;
   आणि दुसरे सूत्र~$\Gamma$ मध्ये
   असेल, तर सुसंगततेमुळे
   $\Box!A \notin\Gamma$,

@@ -1,0 +1,25 @@
+{
+  "id": "COUNTERFACTUAL_PRIMARY_CHECK_212_214",
+  "date": "2026-09-30",
+  "consultations": [
+    {
+      "work": "Stalnaker, A Theory of Conditionals (1968), section II",
+      "url": "https://www.scribd.com/doc/57120427/1968-Stalnaker-A-Theory-of-Conditionals",
+      "scope": "Actual web primary-text extraction for original printed pages 103-105, selection function and absurd-world special case. University PDF fetch returned403; screenshot returned metadata without accessible image, no image inspection claim."
+    },
+    {
+      "work": "Lewis, Counterfactuals (1973), section1.3",
+      "url": "https://fitelson.org/piksi/piksi_18/lewis_counterfactuals.pdf",
+      "pdf_sha256": "19128baebb097a6f93a3b818088d34c243516816f7c29968259b673e5c65b24f",
+      "scope": "Actual inspected page images: printed8,15,16,18,20,23; central truth conditions printed16, closure/empty sphere15, no Limit Assumption20. Poppler used for printed15,16,20; read-only fitz for8,18,23."
+    },
+    {
+      "work": "Lewis, Counterfactuals and Comparative Possibility (1973), sections1,2.3",
+      "url": "https://paperzz.com/doc/7162530/counterfactuals-and-comparative-possibility",
+      "scope": "Actual primary-paper extraction: printed420-425 and427-428 uniqueness, ties, Limit Assumption and sphere truth conditions. OCR bars defective; book images control exact negations."
+    }
+  ],
+  "canon_consultation_claimed": false,
+  "full_works_read_claimed": false,
+  "historical_event_verification_claimed": false
+}

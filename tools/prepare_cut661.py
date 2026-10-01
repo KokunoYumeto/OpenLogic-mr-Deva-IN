@@ -52,8 +52,8 @@ def reference(match, parts):
 chunks = [
     r"\chapter{कट-निर्मूलन}\label{pt:cut:chap}",
     r"\begin{editorial}हे पूर्ण अनुवादित पूरक प्रकरण स्थानिक निदानासाठी मांडले आहे. "
-    r"मूळ माएहारा-सिद्धतेतील चर-पदाचा प्रसंग स्वतंत्रपणे दिलेला नाही; "
-    r"हा उघडा स्रोत-दोष OLINC-344 मध्ये नोंदला आहे.\end{editorial}",
+    r"मूळ माएहारा-सिद्धतेतील गाळलेला चर-पदाचा प्रसंग SOL6-A296 मध्ये "
+    r"भाषा-सीमेच्या आधारे पूर्ण केला आहे; OLINC-344 ही ऐतिहासिक स्रोत-नोंद आहे.\end{editorial}",
 ]
 for name, path, raw, parts, prefix in files:
     content = helpers["ns"]["strip_wrapper"](raw)

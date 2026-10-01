@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-30",
+  "reviewer_model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "status": "passed",
+  "complement_countermodel": {
+    "domain": [
+      0
+    ],
+    "X": [],
+    "Y": [],
+    "disjoint": true,
+    "forall_X_iff_not_Y": false
+  },
+  "fresh_conjunction_truth_assignments_checked": 4,
+  "capture_countermodel": {
+    "domain": [
+      0
+    ],
+    "outer_X": [
+      0
+    ],
+    "A": "X(0)",
+    "B": "true",
+    "A_and_B_at_outer_assignment": true,
+    "universally_captured_encoding": false
+  },
+  "successor_closure_countermodel": {
+    "n": 2,
+    "Y": "N minus {1}",
+    "tail_inclusion_general_argument_mr": "प्रत्येक k≥2 साठी k≠1 असल्याने k हा Y मध्ये आहे. ही सर्व natural numbers वरील थेट argument आहे; खालील सांत spot checks तिचा पर्याय नाहीत.",
+    "spot_check_range": [
+      2,
+      11
+    ],
+    "closure_failure_witness": {
+      "member": 0,
+      "missing_successor": 1
+    },
+    "B_2_Y": false
+  },
+  "corrected_order_argument_mr": "n पासून उत्तराधिकारी क्रियेने मिळणाऱ्या सर्व घटकांचा tail हा B पूर्ण करतो. प्रत्येक B-संचात विगमनाने तो tail समाविष्ट होतो. म्हणून सर्व B-संचांत y असणे नेमके n≤y आहे.",
+  "current_target_bindings": {
+    "mr/content/second-order-logic/syntax-and-semantics/satisfaction.tex": "ecd08b2185129fece8b8efa24211e1ce50f9b86294c323f493a07914ea586f21",
+    "mr/content/second-order-logic/metatheory/second-order-arithmetic.tex": "2eb4789e8808b11cb08e8f9f5be19eae652d043481cea7cc8755c837bf963558"
+  },
+  "checker_sha256": "da864fce607ceafe1df0334542aad4f8aa6b3fe9086b89156133756a73151901",
+  "limitations_mr": "तीन specific semantic countermodels आणि freshness अंतर्गत चार propositional valuations तपासल्या. ही arbitrary second-order structures ची exhaustive executable तपासणी किंवा स्वतंत्र मानवी review नाही."
+}

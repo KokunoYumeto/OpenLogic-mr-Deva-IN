@@ -1,6 +1,7 @@
 % Part: normal-modal-logic
 % Chapter: completeness
 % Section: canonical-models
+%READERNOTE{SOL6-A166: Canonical model चा nonempty domain आणि valuation ची world व्याप्ती. Normal logic च्या आधीच्या definition मध्ये inconsistent full logic वगळलेली नाही. अशा Sigma साठी complete consistent sets नसतात आणि W रिकामा होतो, जे basic model definition शी विसंगत आहे. Canonical model construction consistent normal systems साठी केली आणि Lindenbaum ने W nonempty दाखवले. Valuation truth set स्पष्टपणे Delta in W पुरता केला. Inconsistent systems साठी completeness चा explosion case स्वतंत्र हाताळता येतो; रिकामा set एक वैध Kripke model असल्याचा दावा नाही.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -10,7 +11,7 @@
 
 \olsection{कॅनॉनिकल प्रतिमाने}
 
-मोडल प्रणाली~$\Sigma$ साठीचे \emph{कॅनॉनिकल प्रतिमान}
+सुसंगत मोडल प्रणाली~$\Sigma$ साठीचे \emph{कॅनॉनिकल प्रतिमान}
 हे विशिष्ट प्रतिमान~$\mModel{M^\Sigma}$ आहे; त्याची
 जगे म्हणजे सर्व संपूर्ण $\Sigma$-सुसंगत संच.
 त्याचा प्राप्यता संबंध~$R^\Sigma$ आणि
@@ -20,7 +21,8 @@
 असलेली !!{formula}s असतात.
 
 \begin{defn}
-  $\Sigma$ हे सामान्य मोडल तर्कशास्त्र असू द्या.
+  $\Sigma$ हे सुसंगत सामान्य मोडल तर्कशास्त्र असू द्या,
+  म्हणजे $\Sigma \Proves/ \lfalse$.
   $\Sigma$ साठीचे \emph{कॅनॉनिकल प्रतिमान}
   म्हणजे $\mModel{M}^\Sigma = \tuple{W^\Sigma, R^\Sigma,
     V^\Sigma}$, जेथे:
@@ -30,8 +32,11 @@
   \item $R^\Sigma \Delta\Delta'$ असेल तेव्हा आणि
     तेव्हाच \iftag{prvBox}{$\Box^{-1}\Delta \subseteq
       \Delta'$}{$\Diamond\Delta' \subseteq \Delta$}.
-  \item $V^\Sigma(p) = \Setabs{\Delta}{p \in \Delta}$.
+  \item $V^\Sigma(p) = \Setabs{\Delta \in W^\Sigma}{p \in \Delta}$.
   \end{enumerate}
+  सुसंगततेमुळे रिकामा संच $\Sigma$-सुसंगत आहे.
+  \olref[lin]{thm:lindenbaum} नुसार त्याचा संपूर्ण
+  $\Sigma$-सुसंगत विस्तार मिळतो; म्हणून $W^\Sigma$ रिकामा नाही.
 \end{defn}
 
 

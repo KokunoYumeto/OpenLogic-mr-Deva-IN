@@ -1,6 +1,7 @@
 % Part: proof-theory
 % Chapter: natural-deduction
 % Section: translation-N2i
+%READERNOTE{SOL6-A302: अभिजात असत्यता नियमातून अंतिम सूत्र असत्य असल्यास आणखी कट वापरून रिकामा उत्तरपक्ष मिळवला आहे; कोणतेही गृहीतक मुक्त न होणाऱ्या प्रसंगाचाही अपेक्षित निष्कर्ष स्पष्ट केला आहे.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -189,6 +190,14 @@ $\lfalse \Sequent \ $ स्वयंसिद्धक आहे.
   \BinaryInf$\Gamma' \fCenter !A$
   \DisplayProof
   \]
+  $!A\ident\lfalse$ असेल, तर या शेवटच्या क्रमवर्तीचा
+  उत्तरपक्षही रिकामा हवा. त्यासाठी वरील सिद्धतेला
+  $\lfalse\Sequent\ $ या स्वयंसिद्धकासह आणखी एक
+  $\Cut$ लावून $\Gamma'\Sequent\ $ मिळवायचे.
+  $\FalseCl$ मध्ये कोणतेही गृहीतक मुक्त होत नसेल,
+  तर आधाराची सिद्धता विगमनाने थेट
+  $\Gamma'\Sequent\ $ देते; $!A\not\ident\lfalse$
+  असल्यासच उजवीकडील दुर्बलीकरणाने $!A$ जोडायचे.
 \end{enumerate}
 फक्त~\FalseCl{} च्या
 रूपांतरातून मिळणाऱ्या

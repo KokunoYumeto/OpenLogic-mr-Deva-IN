@@ -70,14 +70,14 @@ chunks = [
     r"\chapter{संचांची क्रमिक संकल्पना}\label{sth:story:chap}"
 ]
 cites = {
-    r"\citet[pp.~124--8]{Heijenoort1967}": "van Heijenoort (1967, pp.~124--8)",
-    r"\citep[p.~37]{WhiteheadRussell1910}": "(Whitehead आणि Russell, 1910, p.~37)",
+    r"\citet[pp.~124--8]{Heijenoort1967}": "van Heijenoort (1967, पृ.~124--8)",
+    r"\citep[p.~37]{WhiteheadRussell1910}": "(Whitehead आणि Russell, 1910, पृ.~37)",
     r"\citeauthor{Ramsey1925}": "रॅम्झी",
     r"\citep{Ramsey1925}": "(Ramsey, 1925)",
     r"\citet{Linnebo2010}": "Linnebo (2010)",
-    r"\citep[p.~323]{Shoenfield:AST}": "(Shoenfield, 1977, p.~323)",
-    r"\citep[p.~8]{Kunen1980}": "(Kunen, 1980, p.~8)",
-    r"\citet[pp.\ 8--9]{Heck2012}": "Heck (2012, pp.~8--9)",
+    r"\citep[p.~323]{Shoenfield:AST}": "(Shoenfield, 1977, पृ.~323)",
+    r"\citep[p.~8]{Kunen1980}": "(Kunen, 1980, पृ.~8)",
+    r"\citet[pp.\ 8--9]{Heck2012}": "Heck (2012, पृ.~8--9)",
 }
 for name, raw, parts, prefix in files:
     content = strip_wrapper(raw)
@@ -102,7 +102,7 @@ for name, raw, parts, prefix in files:
         content = content.replace(original, projection)
     content = re.sub(
         r"\\citealt\[pp\.~vi,\s*24,\s*50--1\]\{Potter2004\}",
-        "Potter (2004, pp.~vi, 24, 50--1)", content
+        "Potter (2004, पृ.~vi, 24, 50--1)", content
     )
     assert not re.search(r"\\cite(?:p|t|alt|author|year)?(?:\[[^]]*\])?\{", content)
     assert "!!" not in content, (name, re.findall(r"!!.{0,35}", content)[:8])

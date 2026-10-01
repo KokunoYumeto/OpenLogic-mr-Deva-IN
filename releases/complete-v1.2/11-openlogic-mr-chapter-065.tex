@@ -1,0 +1,529 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 65: संचांकांचे अंकगणित
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{संचांकांचे अंकगणित}\label{sth:card-arithmetic:chap}
+
+
+
+
+\section{मूलभूत क्रियांची व्याख्या}\label{sth:card-arithmetic:opps:sec}
+
+येथे क्रम लक्षात ठेवण्याची गरज नाही; म्हणून संचांकांचे अंकगणित परिभाषित करणे क्रमसूचक अंकगणितापेक्षा सोपे आहे. बेरीज, गुणाकार आणि घातांकन या तिन्ही क्रियांची व्याख्या एकाच वेळी करू.
+
+\begin{defn}
+$\cardfont{a}$ आणि $\cardfont{b}$ हे संचांक असतील, तर:
+\begin{align*}
+  \cardfont{a} \cardplus \cardfont{b} &\defis
+  \card{\cardfont{a} \disjointsum \cardfont{b}}\\
+  \cardfont{a} \cardtimes \cardfont{b} &\defis
+  \card{\cardfont{a} \times \cardfont{b}}\\
+  \cardexpo{\cardfont{a}}{\cardfont{b}} &\defis
+  \card{\funfromto{\cardfont{b}}{\cardfont{a}}}
+\end{align*}
+येथे $\funfromto{X}{Y} = \Setabs{f}{f \text{ हे फलन आहे } X \to Y}$. (कोणत्याही संच $X$ आणि $Y$ साठी $\funfromto{X}{Y}$ अस्तित्वात असतो, हे दाखवणे सोपे आहे; तो सरावासाठी सोडतो.)
+\end{defn}
+
+\begin{prob}
+कोणत्याही संच $X$ आणि~$Y$ साठी $\funfromto{X}{Y}$ अस्तित्वात असतो, हे $\Zminus$ मध्ये सिद्ध करा. $\ZF$ मध्ये काम करून, \ref{sth:ord-arithmetic:using-addition:rankcomputation} च्या धर्तीवर $\setrank{X}$ आणि $\setrank{Y}$ यांवरून $\setrank{\funfromto{X}{Y}}$ मोजा.
+\end{prob}
+
+या व्याख्येचे स्पष्टीकरण उपयोगी ठरेल. बेरीजेसाठी आपण \ref{sth:ord-arithmetic:add:defdissum} मध्ये परिभाषित केलेली विभक्त बेरीज $\disjointsum$ वापरतो; सांत प्रकरणांत या व्याख्येतून योग्य उत्तर मिळते, हे सहज दिसते. गुणाकारासाठी, \ref{sfr:set:pai:cardnmprod} सांगते की $A$ मध्ये $n$ आणि $B$ मध्ये $m$ घटक असतील, तर $A \times B$ मध्ये $n \cdot m$ घटक असतात; म्हणून आपली व्याख्या ही कल्पना अनंतपार गुणाकारापर्यंत विस्तारते. घातांकनाची बाबही तशीच: सांत प्रकरणातील कल्पना अनंतपार प्रकरणात नेतो. खरे तर काही बाबतींत अनंतपार संचांकांचे अंकगणित हे अनंतपार क्रमसूचक अंकगणितापेक्षा “सामान्य” अंकगणिताशी अधिक जुळते:
+
+\begin{prop}\label{sth:card-arithmetic:opps:cardplustimescommute}
+$\cardplus$ आणि $\cardtimes$ या क्रिया क्रमनिरपेक्ष व सहयोगी आहेत.
+\end{prop}
+
+\begin{proof}
+क्रमनिरपेक्षतेसाठी \ref{sth:cardinals:cardsasords:lem:CardinalsBehaveRight} नुसार
+$\cardeq{(\cardfont{a} \disjointsum
+\cardfont{b})}{(\cardfont{b} \disjointsum \cardfont{a})}$ आणि
+$\cardeq{(\cardfont{a} \times \cardfont{b})}{(\cardfont{b} \times
+\cardfont{a})}$ एवढे पाहिले की पुरे. सहयोगित्व सरावासाठी सोडतो.
+\end{proof}
+
+\begin{prob}
+$\cardplus$ आणि $\cardtimes$ या क्रिया सहयोगी आहेत, हे सिद्ध करा.
+\end{prob}
+
+\begin{prop}
+$A$ अनंत असेल तेव्हा आणि केवळ तेव्हाच जेव्हा $\card{A} \cardplus 1 = 1 \cardplus \card{A} = \card{A}$.
+\end{prop}
+
+\begin{proof}
+\ref{sth:ord-arithmetic:using-addition:ordinfinitycharacter} आणि
+\ref{sth:cardinals:cardsasords:lem:CardinalsBehaveRight} यांवरून,
+\ref{sth:cardinals:classing:generalinfinitycharacter} प्रमाणे.
+\end{proof}
+
+यावरून क्रमसूचक आणि संचांक बेरीज/गुणाकारासाठी वेगवेगळी चिन्हे का वापरावी लागतात हे स्पष्ट होते: या क्रिया खरोखर \emph{भिन्न} आहेत. पुढील दोन निष्कर्ष क्रमसूचक आणि संचांक घातांकनही भिन्न क्रिया आहेत हे दाखवतात. (\ref{sth:z:infinity-again:defnomega} नुसार $2 = \{0,
+1\}$ हे आठवा):
+
+\begin{lem}\label{sth:card-arithmetic:opps:lem:SizePowerset2Exp}
+कोणत्याही $A$ साठी $\card{\Pow{A}} = \cardexpo{2}{\card{A}}$.
+\end{lem}
+
+\begin{proof}
+प्रत्येक उपसंच $B \subseteq A$ साठी $\chi_B \in \funfromto{A}{2}$ असे पुढीलप्रमाणे ठरवा:
+\begin{align*}
+  \chi_{B}(x) &\defis
+  \begin{cases}
+    1 & \text{जर }x\in B\\
+    0 & \text{अन्यथा.}
+  \end{cases}
+\end{align*}
+आता $f(B) = \chi_B$ असे ठेवा; यातून $f \colon \Pow{A}
+\to \funfromto{A}{2}$ हे एकास-एक आच्छादन मिळते. म्हणून $\cardeq{\Pow{A}}{\funfromto{A}{2}}$. त्यामुळे
+$\cardeq{\Pow{A}}{\funfromto{\card{A}}{2}}$; आणि म्हणून
+$\card{\Pow{A}} = \card{\funfromto{\card{A}}{2}} =
+\cardexpo{2}{\card{A}}$.
+\end{proof}
+
+या संक्षिप्त पुराव्यात \ref{sfr:siz:red-alt:sec} मधील चर्चा बहुतांशी सामावली आहे. तेथे आपण $\Pow{\omega}$ ची अगणनीयता अनंत द्विमान चिन्हमालांच्या संचाच्या, म्हणजे $\Bin^\omega$ च्या, अगणनीयतेकडे कशी “न्यून” करता येते ते दाखवले. प्रत्यक्षात $\Bin^{\omega}$ म्हणजेच $\funfromto{\omega}{2}$; आणि आधीच्या पुराव्यावरून \ref{sfr:siz:red-alt:sec} मधील युक्तिवाद~$\omega$ ऐवजी कोणताही संच~$A$ वापरून करता येतो. यावरून संचांक घातांकनाविषयीही एक झटपट निष्कर्ष मिळतो:
+
+\begin{cor}\label{sth:card-arithmetic:opps:cantorcor}
+कोणत्याही संचांक~$\cardfont{a}$ साठी $\cardfont{a} < \cardexpo{2}{\cardfont{a}}$.
+\end{cor}
+
+\begin{proof}
+कँटरचे प्रमेय (\ref{sfr:siz:car:thm:cantor}) आणि
+\ref{sth:card-arithmetic:opps:lem:SizePowerset2Exp} यांवरून.
+\end{proof}
+\noindent
+म्हणून $\omega < \cardexpo{2}{\omega}$. पण लक्षात घ्या: हा निष्कर्ष \emph{संचांक} घातांकनाबद्दल आहे. त्याची \emph{क्रमसूचक} घातांकनाशी तुलना केली पाहिजे; त्या बाबतीत $\omega =
+\ordexpo{2}{\omega}$ असते (\ref{sth:ord-arithmetic:expo:sec} पाहा).
+
+संचांक घातांकनाच्या चर्चेत असतानाच $\Real$ हा नेमक्या कोणत्या “अर्थाने” अगणनीय आहे, हेही अधिक स्पष्ट सांगता येईल.
+
+\begin{thm}\label{sth:card-arithmetic:opps:continuumis2aleph0}
+$\card{\Real} = \cardexpo{2}{\omega}$
+\end{thm}
+
+\begin{proof}[पुराव्याची रूपरेषा]
+हे सिद्ध करण्याचे अनेक मार्ग आहेत. सर्वांत सरळ म्हणजे $\cardle{\Pow{\omega}}{\Real}$ आणि
+$\cardle{\Real}{\Pow{\omega}}$ दाखवणे; मग श्रेडर--बर्नस्टाइन वापरून
+$\cardeq{\Real}{\Pow{\omega}}$ मिळते, आणि
+\ref{sth:card-arithmetic:opps:lem:SizePowerset2Exp} वरून
+$\card{\Real} = \cardexpo{2}{\omega}$ मिळते. $f \colon
+\Pow{\omega} \to \Real$ आणि $g \colon \Real \to \Pow{\omega}$ ही एकास-एक फलने परिभाषित करण्याचा (बोधप्रद) सराव आपण सोडतो.
+\end{proof}
+
+\begin{prob}
+$\cardle{\Pow{\omega}}{\Real}$ आणि
+$\cardle{\Real}{\Pow{\omega}}$ दाखवून \ref{sth:card-arithmetic:opps:continuumis2aleph0} चा पुरावा पूर्ण करा.
+\end{prob}
+
+
+
+
+
+
+
+\section{बेरीज आणि गुणाकार सुलभ करणे}\label{sth:card-arithmetic:simp:sec}
+
+अनंतपार संचांक बेरीज आणि गुणाकार \emph{फारच} सोपे ठरतात. कारण संचांक या (काही विशिष्ट) क्रमसूचक संख्या आहेत; म्हणून त्या सुक्रमित आहेत आणि त्यांच्यावर एका विशिष्ट पद्धतीने काम करता येते. पण हे दाखवणे \emph{तितके} सोपे नाही. सुरुवातीला एक कल्पक व्याख्या हवी:
+
+\begin{defn}
+क्रमसूचक संख्यांच्या जोड्यांवरील \emph{कॅनॉनिकल क्रम} $\canonord$ पुढीलप्रमाणे परिभाषित करू: $\tuple{\alpha_1, \alpha_2} \canonord
+\tuple{\beta_1, \beta_2}$ तेव्हा आणि केवळ तेव्हाच जेव्हा पुढीलपैकी एक अट पूर्ण होते:
+\begin{enumerate}
+  \item $\max(\alpha_1, \alpha_2) < \max(\beta_1, \beta_2)$; किंवा
+  \item $\max(\alpha_1, \alpha_2) = \max(\beta_1, \beta_2)$ आणि
+  $\alpha_1 < \beta_1$; किंवा
+  \item $\max(\alpha_1, \alpha_2) = \max(\beta_1, \beta_2)$ आणि
+  $\alpha_1 = \beta_1$ आणि $\alpha_2 < \beta_2$.
+\end{enumerate}
+\end{defn}
+
+\begin{lem}
+कोणत्याही क्रमसूचक संख्या $\alpha$ साठी $\tuple{\alpha \times \alpha, \canonord}$ हे सुक्रमण आहे.
+\end{lem}
+
+\begin{proof}
+$\alpha \times \alpha$ वर $\canonord$ हा क्रम तुलनीय आहे, हे स्पष्ट आहे. समजा $\tuple{\alpha_1, \alpha_2}$ आणि $\tuple{\beta_1,
+\beta_2}$ यांपैकी कोणतीही जोडी दुसरीपेक्षा $\canonord$-लहान नाही. मग $\max(\alpha_1,
+\alpha_2) = \max(\beta_1, \beta_2)$ आणि $\alpha_1 = \beta_1$ आणि
+$\alpha_2 = \beta_2$; म्हणून $\tuple{\alpha_1, \alpha_2} =
+\tuple{\beta_1,  \beta_2}$.
+
+सुक्रमण सिद्ध करण्यासाठी रिकामा नसलेला $X \subseteq \alpha\times\alpha$ घ्या. $\alpha$ क्रमसूचक संख्या असल्यामुळे
+$\Setabs{\max(\gamma_1, \gamma_2)}{\tuple{\gamma_1,
+\gamma_2} \in X}$ या संचाचा लघुतम सदस्य एखादा $\delta$ असतो. आता
+$\Setabs{\tuple{\gamma_1,\gamma_2} \in X}{\max(\gamma_1, \gamma_2) =
+\delta}$ मधून पहिला निर्देशांक लघुतम नसलेल्या सर्व जोड्या काढून टाका; उरलेल्यांपैकी दुसरा निर्देशांक लघुतम असलेली जोडी हा $X$ चा $\canonord$-लघुतम सदस्य आहे.
+\end{proof}
+\noindent
+आता एक अगदी छोटे आणि सोपे निरीक्षण:
+
+\begin{prop}\label{sth:card-arithmetic:simp:simplecardproduct}
+$\cardeq{\alpha}{\beta}$ असेल, तर $\cardeq{\alpha \times \alpha}{\beta
+\times \beta}$.
+\end{prop}
+
+\begin{proof}
+$f \colon \alpha \to \beta$ वरून $\tuple{\gamma_1,
+\gamma_2} \mapsto \tuple{f(\gamma_1), f(\gamma_2)}$ हे फलन मिळते.
+\end{proof}
+\noindent
+आता एका महत्त्वाच्या सहायक प्रमेयासाठी ही सगळी निरीक्षणे वापरू:
+\begin{lem}\label{sth:card-arithmetic:simp:alphatimesalpha}
+कोणत्याही अनंत क्रमसूचक संख्या $\alpha$ साठी $\cardeq{\alpha}{\alpha \times \alpha}$.
+\end{lem}
+
+\begin{proof}
+विसंगतीने सिद्ध करण्यासाठी, हे विधान खोटे ठरते अशी लघुतम अनंत क्रमसूचक संख्या $\alpha$ घ्या. \ref{sfr:siz:zigzag:natsquaredenumerable} नुसार
+$\cardeq{\omega}{\omega\times\omega}$, म्हणून $\omega \in \alpha$.
+याशिवाय $\alpha$ हा संचांक आहे: नसल्याचे गृहीत धरू; मग
+$\card{\alpha} \in \alpha$ आणि विगमन-गृहीतकानुसार
+$\cardeq{\card{\alpha}}{\card{\alpha} \times \card{\alpha}}$.
+व्याख्येनुसार $\cardeq{\card{\alpha}}{\alpha}$; त्यामुळे
+\ref{sth:card-arithmetic:simp:simplecardproduct} नुसार $\cardeq{\alpha}{\alpha\times\alpha}$, ही विसंगती आहे.
+
+आता प्रत्येक $\tuple{\gamma_1, \gamma_2} \in \alpha \times \alpha$ साठी पुढील आरंभीचा खंड पाहा:
+\begin{align*}
+  \text{Seg}(\gamma_1, \gamma_2) &= \Setabs{\tuple{\delta_1, \delta_2} \in \alpha \times \alpha}{\tuple{\delta_1, \delta_2} \canonord \tuple{\gamma_1, \gamma_2}}
+\end{align*}
+$\gamma = \max(\gamma_1, \gamma_2)$ असे ठेवा; मग $\tuple{\gamma_1, \gamma_2} \canonord \tuple{\gamma+1, \gamma + 1}$. म्हणून $\gamma$ अनंत असेल तेव्हा:
+\begin{align*}
+  \text{Seg}(\gamma_1, \gamma_2) &
+  \precsim ((\gamma \ordplus 1)\ordtimes (\gamma \ordplus 1))\\
+  &\approx (\gamma \ordtimes \gamma)
+  \text{, \ref{sth:ord-arithmetic:using-addition:ordinfinitycharacter} आणि
+  \ref{sth:card-arithmetic:simp:simplecardproduct} नुसार}\\
+  &\approx \gamma \text{, विगमन-गृहीतकानुसार}\\
+  & \prec \alpha\text{, कारण $\alpha$ संचांक आहे}
+\end{align*}
+निर्देशांकातील मोठी संख्या सांत असेल तर हा खंडही सांत असतो; त्यामुळे तो दिलेल्या अनंत संचांकापेक्षा लहान आहे. म्हणून $\ordtype{\alpha\times \alpha, \canonord} \leq \alpha$, आणि त्यामुळे
+$\cardle{\alpha \times \alpha}{\alpha}$. अर्थातच
+$\cardle{\alpha}{\alpha \times \alpha}$ असल्याने श्रेडर--बर्नस्टाइननुसार अपेक्षित निष्कर्ष मिळतो.
+\end{proof}
+
+अखेरीस, सुलभीकरणाचा आपला निष्कर्ष मिळतो:
+
+\begin{thm}\label{sth:card-arithmetic:simp:cardplustimesmax}
+$\cardfont{a}, \cardfont{b}$ हे अनंत संचांक असतील, तर:
+\[
+  \cardfont{a}
+\cardtimes \cardfont{b} = \cardfont{a} \cardplus \cardfont{b} =
+\text{max}(\cardfont{a}, \cardfont{b}).
+\]
+\end{thm}
+
+\begin{proof}
+व्यापकता न गमावता $\cardfont{a} = \max(\cardfont{a},
+\cardfont{b})$ असे समजा. मग \ref{sth:card-arithmetic:simp:alphatimesalpha} वापरून
+$\cardfont{a}\cardtimes\cardfont{a} = \cardfont{a} \leq \cardfont{a}
+\cardplus \cardfont{b} \leq \cardfont{a} \cardplus \cardfont{a} \leq
+\cardfont{a} \cardtimes \cardfont{a}$ मिळते. \end{proof}\noindent त्याचप्रमाणे,
+$\cardfont{a}$ अनंत असेल, तर $\leq\cardfont{a}$ आकारमानाच्या $\cardfont{a}$ इतक्या संचांच्या संयोगाचे आकारमानही $\leq\cardfont{a}$ असते:
+
+\begin{prop}\label{sth:card-arithmetic:simp:kappaunionkappasize}
+$\cardfont{a}$ हा अनंत संचांक असू द्या. प्रत्येक क्रमसूचक संख्या $\beta
+\in \cardfont{a}$ साठी $X_\beta$ हा $\card{X_\beta} \leq
+\cardfont{a}$ असलेला संच असू द्या. मग $\card{\bigcup_{\beta \in \cardfont{a}} X_\beta}
+\leq \cardfont{a}$.
+\end{prop}
+
+\begin{proof}
+प्रत्येक $\beta \in \cardfont{a}$ साठी $f_\beta \colon
+X_\beta \to \cardfont{a}$ हे एकास-एक फलन निश्चित करा.\footnote{ही फलने “निश्चित” कशी केली? \ref{sth:choice:countablechoice:sec} पाहा.} आता $g \colon
+\bigcup_{\beta \in \cardfont{a}} X_\beta \to \cardfont{a} \times
+\cardfont{a}$ हे एकास-एक फलन पुढीलप्रमाणे ठरवा: $g(v) = \tuple{\beta, f_\beta(v)}$, येथे $v \in
+X_\beta$ आणि कोणत्याही $\gamma \in \beta$ साठी $v \notin X_\gamma$. मग
+\ref{sth:card-arithmetic:simp:cardplustimesmax} नुसार
+$\bigcup_{\beta \in \cardfont{a}} X_\beta \preceq \cardfont{a} \times
+\cardfont{a} \approx \cardfont{a}$.
+\end{proof}
+
+
+
+
+
+
+
+\section{संचांक घातांकनाची काही सुलभीकरणे}\label{sth:card-arithmetic:expotough:sec}
+
+$\canonord$ ची व्याख्या थोडी गुंतागुंतीची होती; पण त्यातून संचांक बेरीज आणि गुणाकाराविषयी \ref{sth:card-arithmetic:simp:cardplustimesmax} हा उपयोगी निष्कर्ष मिळाला. अनंतपार घातांकन मात्र इतक्या सरळ रीतीने सुलभ करता येत नाही. असे का, हे समजावण्यासाठी सांत प्रकरणातील परिचित नमुन्याचा विस्तार करणाऱ्या निष्कर्षापासून सुरुवात करू (त्याचा पुरावा मात्र बऱ्याच अमूर्त पातळीवर आहे):
+
+\begin{prop}\label{sth:card-arithmetic:expotough:simplecardexpo}
+कोणत्याही संचांक $\cardfont{a}, \cardfont{b}, \cardfont{c}$ साठी
+$\cardexpo{\cardfont{a}}{\cardfont{b} \cardplus \cardfont{c}} =
+\cardexpo{\cardfont{a}}{\cardfont{b}} \cardtimes
+\cardexpo{\cardfont{a}}{\cardfont{c}}$ आणि
+$\cardexpo{(\cardexpo{\cardfont{a}}{\cardfont{b}})}{\cardfont{c}} =
+\cardexpo{\cardfont{a}}{\cardfont{b} \cardtimes \cardfont{c}}$.
+\end{prop}
+
+\begin{proof}
+पहिल्या विधानासाठी $f \colon
+(\cardfont{b}\disjointsum\cardfont{c}) \to \cardfont{a}$ हे फलन पाहा. प्रत्येक
+$\beta \in \cardfont{b}$ साठी $f_\cardfont{b}(\beta) = f(\beta, 0)$ आणि प्रत्येक
+$\gamma \in \cardfont{c}$ साठी $f_\cardfont{c}(\gamma) = f(\gamma, 1)$ ठरवून त्याचे दोन भाग करा. मग $f \mapsto
+\tuple{f_{\cardfont{b}}, f_{\cardfont{c}}}$ हे
+$\funfromto{\cardfont{b} \disjointsum \cardfont{c}}{\cardfont{a}} \to
+(\funfromto{\cardfont{b}}{\cardfont{a}} \times
+\funfromto{\cardfont{c}}{\cardfont{a}})$ यांतील एकास-एक आच्छादन आहे.
+
+दुसऱ्या विधानासाठी $f \colon \cardfont{c} \to
+(\funfromto{\cardfont{b}}{\cardfont{a}})$ हे फलन पाहा; म्हणजे प्रत्येक $\gamma \in
+\cardfont{c}$ साठी $f(\gamma) \colon \cardfont{b} \to
+\cardfont{a}$ हे फलन मिळते. आता प्रत्येक $\tuple{\beta, \gamma} \in \cardfont{b} \times \cardfont{c}$ साठी $f^*(\beta, \gamma) = (f(\gamma))(\beta)$ ठरवा.
+मग $f \mapsto f^*$ हे
+$\funfromto{\cardfont{c}}{(\funfromto{\cardfont{b}}{\cardfont{a}})}
+\to \funfromto{\cardfont{b} \times \cardfont{c}}{\cardfont{a}}$ यांतील एकास-एक आच्छादन आहे. येथे प्रांत प्रत्यक्ष कार्तीय गुणाकार आहे; त्या प्रांताच्या संचांकानेच संचांक गुणाकार परिभाषित होतो.
+\end{proof}
+
+अनंत संचांकांच्या बाबतीत $\cardexpo{\cardfont{a}}{\cardfont{b}}$ सहज मोजता यावा, असे आपल्याला \emph{हवे} आहे. या दिशेने पुढील पाऊल उपयोगी आहे:
+
+\begin{prop}\label{sth:card-arithmetic:expotough:cardexpo2reduct}
+$2 \leq \cardfont{a} \leq \cardfont{b}$ आणि $\cardfont{b}$ अनंत असेल, तर $\cardexpo{\cardfont{a}}{\cardfont{b}} =
+\cardexpo{2}{\cardfont{b}}$.
+\end{prop}
+
+\begin{proof}
+\begin{align*}
+  \cardexpo{2}{\cardfont{b}} &\leq
+  \cardexpo{\cardfont{a}}{\cardfont{b}}\text{, कारण $2 \leq \cardfont{a}$}\\
+  &\leq \cardexpo{(\cardexpo{2}{\cardfont{a}})}{\cardfont{b}}
+  \text{, \ref{sth:card-arithmetic:opps:lem:SizePowerset2Exp} नुसार}\\
+  &= \cardexpo{2}{\cardfont{a} \cardtimes \cardfont{b}}
+  \text{, \ref{sth:card-arithmetic:expotough:simplecardexpo} नुसार} \\
+  &= \cardexpo{2}{\cardfont{b}}
+  \text{, \ref{sth:card-arithmetic:simp:cardplustimesmax} नुसार}
+\end{align*}
+\end{proof}
+
+यापुढे आणखी सुलभीकरण मिळेल अशी फारशी अपेक्षा ठेवू नये: \ref{sth:card-arithmetic:opps:lem:SizePowerset2Exp} नुसार $\cardfont{b} < \cardexpo{2}{\cardfont{b}}$. पण $\cardfont{b} <
+\cardfont{a}$ असेल, तर $\cardexpo{\cardfont{a}}{\cardfont{b}}$ बद्दल काय सांगावे, हे यावरून ठरत नाही. अर्थात $\cardfont{b}$ \emph{सांत} असेल, तर काय करायचे ते माहीत आहे.
+
+\begin{prop}
+$\cardfont{a}$ अनंत असेल आणि $n \in \omega$ शून्येतर असेल, तर
+$\cardexpo{\cardfont{a}}{n} = \cardfont{a}$.
+\end{prop}
+
+\begin{proof}
+$\cardexpo{\cardfont{a}}{n} = \cardfont{a} \cardtimes \cardfont{a}
+\cardtimes \ldots \cardtimes \cardfont{a} = \cardfont{a}$, हे \ref{sth:card-arithmetic:simp:cardplustimesmax} नुसार.
+\end{proof}
+\noindent
+याशिवाय, आणखी काही प्रकरणांत $\cardexpo{\cardfont{a}}{\cardfont{b}}$ चे आकारमान ठरवता येते:
+
+\begin{prop}
+$2 \leq \cardfont{b} < \cardfont{a} \leq
+\cardexpo{2}{\cardfont{b}}$ आणि $\cardfont{b}$ अनंत असेल, तर
+$\cardexpo{\cardfont{a}}{\cardfont{b}} = \cardexpo{2}{\cardfont{b}}$.
+\end{prop}
+
+\begin{proof}
+$\cardexpo{2}{\cardfont{b}}\leq \cardexpo{\cardfont{a}}{\cardfont{b}}
+\leq \cardexpo{(\cardexpo{2}{\cardfont{b}})}{\cardfont{b}} =
+\cardexpo{2}{\cardfont{b}\cardtimes\cardfont{b}} =
+\cardexpo{2}{\cardfont{b}}$; युक्तिवाद \ref{sth:card-arithmetic:expotough:cardexpo2reduct} प्रमाणे.
+\end{proof}
+\noindent
+पण यापुढे गोष्टी अधिक सूक्ष्म होतात.
+
+
+
+
+
+
+
+
+\section{सांतत्य गृहीतक}\label{sth:card-arithmetic:ch:sec}
+
+मागील निष्कर्ष योग्यच सूचित करतो की अनंत संचांकांचा $2$ च्या घातांशी, म्हणजे (\ref{sth:card-arithmetic:opps:lem:SizePowerset2Exp} नुसार) घातसंच घेण्याशी, संबंध सरळ असेल, तर संचांक घातांकन अगदी \emph{सोपे} होईल. पण अनंत संचांकांचा घातसंचांशी असा सरळ संबंध \emph{असतोच}, असे आपण गृहीत धरू शकत नाही.
+
+हे उलगडण्यास सुरुवात करण्यासाठी काही सोयीची संकेतरचना मांडू.
+
+\begin{defn}
+$\cardsucc{\cardfont{a}}$ हा $\cardfont{a}$ पेक्षा काटेकोरपणे मोठा असलेला लघुतम संचांक, म्हणजे त्याचा उत्तरवर्ती संचांक, असू द्या. पुढील दोन अनंत अनुक्रम परिभाषित करू:
+\begin{align*}
+	\aleph_{0} &\defis \omega &
+	\beth_{0} &\defis \omega\\
+	\aleph_{\alpha \ordplus 1} &\defis \cardsucc{(\aleph_{\alpha})} &
+	\beth_{\alpha+1} &\defis \cardexpo{2}{\beth_{\alpha}}\\
+	\aleph_{\alpha} &\defis \bigcup_{\beta< \alpha} \aleph_{\beta} &
+	\beth_{\alpha} &\defis \bigcup_{\beta < \alpha}\beth_{\beta} & \text{जेव्हा $\alpha$ सीमा क्रमसूचक संख्या असते}.
+	\end{align*}
+\end{defn}
+
+$\cardsucc{\cardfont{a}}$ ची व्याख्या योग्य आहे. कारण \ref{sth:cardinals:classing:lem:NoLargestCardinal} नुसार प्रत्येक संचांक $\cardfont{a}$ साठी $\cardfont{a}$ पेक्षा मोठा संचांक असतो, आणि अनंतपार विगमनामुळे $\cardfont{a}$ पेक्षा मोठा असा \emph{लघुतम} संचांक असल्याची खात्री मिळते. $\cardfont{a}$ यांसारखे संचांक देणाऱ्या या दोन अनुक्रमांची उर्वरित व्याख्या अनंतपार पुनरावर्तनाने मिळते.
+
+कँटरने “$\aleph$” ही संकेतरचना आणली. हे \emph{अलेफ} आहे: हिब्रू वर्णमालेतील पहिले अक्षर आणि हिब्रू भाषेतील “अनंत” या शब्दाचेही पहिले अक्षर. पर्सने “$\beth$” ही संकेतरचना आणली. हे \emph{बेथ} आहे: हिब्रू वर्णमालेतील दुसरे अक्षर.\footnote{डिसेंबर 1900 मध्ये कँटरला लिहिलेल्या पत्रात पर्सने ही संकेतरचना वापरली. दुर्दैवाने त्याच पत्रात $\alpha \geq \omega$ साठी $\beth_\alpha$ अस्तित्वात नसल्याचा चुकीचा युक्तिवादही त्याने दिला.} या संकेतरचना आपल्याला अनंत संचांक देतात.
+
+\begin{prop}
+प्रत्येक क्रमसूचक संख्या $\alpha$ साठी $\aleph_\alpha$ आणि $\beth_\alpha$ हे संचांक आहेत.
+\end{prop}
+
+\begin{proof}
+दोन्ही निष्कर्ष साध्या अनंतपार विगमनाने मिळतात. \ref{sth:cardinals:classing:omegaisacardinal} नुसार $\aleph_0 =
+\beth_0 = \omega$ हा संचांक आहे. $\aleph_\alpha$ आणि $\beth_\alpha$ हे दोन्ही संचांक आहेत असे गृहीत धरल्यास, $\aleph_{\alpha+1}$ आणि $\beth_{\alpha+1}$ हे व्याख्येनुसारच संचांक आहेत. शिवाय \ref{sth:cardinals:classing:unioncardinalscardinal} नुसार संचांकांच्या संचाचे युतीकरण हा संचांक असतो.
+\end{proof}
+\noindent
+तसेच प्रत्येक अनंत संचांक हा $\aleph$ च्या स्वरूपाचा असतो:
+
+\begin{prop}
+$\cardfont{a}$ हा अनंत संचांक असेल, तर एकमेव $\gamma$ साठी $\cardfont{a} =
+\aleph_\gamma$.
+\end{prop}
+
+\begin{proof}
+अनंत संचांकांवर अनंतपार विगमन वापरू. अलेफ-शून्याच्या व्याख्येमुळे लघुतम अनंत संचांकाचे आधारप्रकरण मिळते. पुढील विगमनात $\cardfont{b} < \cardfont{a}$ असलेल्या प्रत्येक अनंत संचांकासाठी $\cardfont{b} =
+\aleph_{\gamma_\cardfont{b}}$ असे गृहीत धरा; खालील युतीकरणांतही अशाच अनंत संचांकांचा विचार केला आहे. एखाद्या $\cardfont{b}$ साठी $\cardfont{a} =
+\cardsucc{\cardfont{b}}$ असल्यास $\cardfont{a} =
+\cardsucc{(\aleph_{\gamma_\cardfont{b}})}=
+\aleph_{\gamma_\cardfont{b}+1}$. जर $\cardfont{a}$ हा कोणत्याही संचांकाचा उत्तरवर्ती नसेल, तर संचांक या क्रमसूचक संख्या असल्यामुळे $\cardfont{a} = \bigcup_{\cardfont{b} < \cardfont{a}} \cardfont{b} =
+\bigcup_{\cardfont{b} < \cardfont{a}}{\aleph_{\gamma_\cardfont{b}}}$.
+म्हणून $\gamma =
+\bigcup_{\cardfont{b} < \cardfont{a}}\gamma_\cardfont{b}$ घेतल्यास $\cardfont{a} = \aleph_\gamma$.
+\end{proof}
+
+प्रत्येक अनंत संचांक हा $\aleph$ च्या स्वरूपाचा असल्यामुळे पुढील प्रश्न पडतो: प्रत्येक अनंत संचांक हा $\beth$ च्याही स्वरूपाचा असतो का? असे \emph{असते}, तर अनंत संचांकांचा घातसंच घेण्याच्या क्रियेशी सरळ संबंध असता. खरे तर पुढील विधान मिळाले असते:
+
+\begin{defish}
+\emph{सामान्यीकृत सांतत्य गृहीतक} (GCH). प्रत्येक $\alpha$ साठी $\aleph_\alpha = \beth_\alpha$.
+\end{defish}
+
+तसेच GCH खरे असेल, तर संचांक घातांकनात बरीच सुलभीकरणे करता येतील. विशेषतः अनंत आधार आणि शून्येतर घातांकांच्या बाबतीत, $\cardfont{b} < \cardfont{a}$ असताना $\cardexpo{\cardfont{a}}{\cardfont{b}}$ चे मूल्य
+$\cardfont{a}\leq \cardexpo{\cardfont{a}}{\cardfont{b}} \leq
+\cardsucc{\cardfont{a}}$ या मर्यादांत असल्याचे दाखवता येईल. त्यानंतर या दोन शक्यतांपैकी कोणती घडते (म्हणजे $\cardfont{a} = \cardexpo{\cardfont{a}}{\cardfont{b}}$ की $\cardexpo{\cardfont{a}}{\cardfont{b}} =
+\cardsucc{\cardfont{a}}$), हे ठरवणाऱ्या नेमक्या अटीही देता येतील.\footnote{ही अट \emph{सहअंतिमतेवर} ठरते.}
+
+पण GCH हे \emph{गृहीतक} आहे, \emph{प्रमेय} नाही. खरे तर गोडेल (1938) यांनी असे सिद्ध केले की $\ZFC$ सुसंगत असेल, तर $\ZFC + \text{GCH}$ सुद्धा सुसंगत आहे. पण नंतर असेही आढळले की $\ZFC$ मध्ये $\lnot$GCH तितक्याच रीतीने जोडता येते. यासाठी GCH चे सर्वांत सोपे, क्षुल्लक नसलेले \emph{विशेषप्रकरण} पाहा:
+
+\begin{defish}
+\emph{सांतत्य गृहीतक} (CH). $\aleph_1 = \beth_1$.
+\end{defish}
+
+कोहेन (1963) यांनी असे सिद्ध केले की $\ZFC$ सुसंगत असेल, तर $\ZFC
++ \lnot\text{CH}$ सुद्धा सुसंगत आहे. म्हणून सांतत्य गृहीतक हे $\ZFC$ पासून स्वतंत्र आहे.
+
+सांतत्य गृहीतकाला हे नाव पडण्याचे कारण असे की “सांतत्य” हे वास्तव संख्यारेषा $\Real$ हिचे दुसरे नाव आहे. \ref{sth:card-arithmetic:opps:continuumis2aleph0} नुसार $\card{\Real} =
+\beth_1$. म्हणून सांतत्य गृहीतक असे सांगते की नैसर्गिक संख्यांचा संचांक $\aleph_0 = \beth_0$ आणि सांतत्याचा संचांक $\beth_1$ यांच्या दरम्यान कोणताही संचांक नाही.
+
+(G)CH हे $\ZFC$ पासून \emph{स्वतंत्र} असल्यामुळे त्यांच्या \emph{सत्यतेविषयी} काय म्हणावे? याविषयी \emph{बरेच} काही सांगता येते. संच उपपत्तीतील अलीकडील अनेक फलदायी संशोधनांचा रोख या प्रश्नांच्या तपासाकडे आहे. पण येथे दोन मुद्दे थोडक्यात अधोरेखित करू.
+
+पहिला मुद्दा: या औपचारिक स्वातंत्र्यनिष्कर्षांवरून GCH किंवा CH यांचे सत्यमूल्य \emph{अनिर्धारित} आहे, असा निष्कर्ष \emph{लगेच} मिळत नाही. अखेर, आपल्याला स्वाभाविक वाटणारी आणखी स्वयंसिद्धके जोडल्यावर हा प्रश्न एका किंवा दुसऱ्या बाजूने सुटू शकेल. खुद्द गोडेल यांनीही हा योग्य प्रतिसाद असल्याचे सुचवले होते.
+
+दुसरा मुद्दा: CH हे $\ZFC$ पासून स्वतंत्र असणे नक्कीच \emph{लक्षणीय} आहे; पण ते शब्दशः \emph{अविश्वसनीय} नाही. मुद्दा एवढाच की $\ZFC$ आपल्याला जे सांगते त्यानुसार संचांकापासून त्याच्या उत्तरवर्ती संचांकाकडे जाण्यासाठी, केवळ घातसंच घेण्यापेक्षा अधिक सूक्ष्म साधन लागू शकते.
+
+
+
+
+हे दोन मुद्दे मांडल्यानंतर, आणखी जाणून घ्यायचे असल्यास या चर्चेत आपापली भूमिका मांडणाऱ्या विविध तत्त्वज्ञ आणि गणितज्ञांच्या लेखनाचा आधार घ्यावा लागेल.\footnote{तरी सुरुवात पॉटर (2004, \S15.6) यांच्या विवेचनापासून करणे उपयुक्त ठरेल.}
+
+
+
+
+
+
+
+\section{$\aleph$-स्थिरबिंदू}\label{sth:card-arithmetic:fix:sec}
+
+\ref{sth:spine:chap} मध्ये आपण असे सुचवले होते की प्रतिस्थापनाला समर्थनाची गरज आहे, कारण त्याच्यामुळे श्रेणीची उंची बरीच मोठी असावी लागते. संचांकांचे काही अंकगणित केल्यानंतर या उंचीचे एक छोटे उदाहरण देता येईल.
+
+स्पष्टच $0 < \aleph_0$, $1 < \aleph_1$, $2 < \aleph_2$\ldots आणि प्रत्येक पावलागणिक आकारमानातील फरक आणखी \emph{वाढतो}. म्हणून प्रत्येक क्रमसूचक संख्या $\kappa$ साठी $\kappa< \aleph_\kappa$ असा तर्क करण्याचा मोह होतो.
+
+पण $\ZFC$ स्वीकारल्यास हा तर्क \emph{खोटा} ठरतो. खरे तर \emph{$\aleph$-स्थिरबिंदू} अस्तित्वात असल्याचे सिद्ध करता येते; म्हणजे $\kappa=\aleph_\kappa$ असलेले संचांक $\kappa$ आहेत.
+
+\begin{prop}\label{sth:card-arithmetic:fix:alephfixed}
+एक $\aleph$-स्थिरबिंदू अस्तित्वात आहे.
+\end{prop}
+
+\begin{proof}
+पुनरावर्तनाने पुढील व्याख्या करा:
+\begin{align*}
+	\kappa_0 &= 0\\
+	\kappa_{n+1} &= \aleph_{\kappa_n}\\
+	\kappa&= \bigcup_{n < \omega}\kappa_n
+\end{align*}
+\ref{sth:cardinals:classing:unioncardinalscardinal} नुसार $\kappa$ हा संचांक आहे. आता:
+\[
+	\kappa= \bigcup_{n < \omega} \kappa_{n+1} =
+	\bigcup_{n < \omega}\aleph_{\kappa_n} =
+	\bigcup_{\alpha < \kappa}\aleph_\alpha = \aleph_\kappa
+\]
+
+
+
+
+
+
+\end{proof}
+
+आत्ताच रचलेल्या नेमक्या $\aleph$-स्थिरबिंदूविषयी बूलोस यांनी एक लेख लिहिला होता. लेखाच्या सुरुवातीला $\kappa$ चे अस्तित्व नोंदवल्यावर ते म्हणाले:
+\begin{quote}
+	संच उपपत्तीशी यापूर्वी परिचय नसलेल्यांच्या दृष्टीने [$\kappa$ ही] \emph{बरीच मोठी} संख्या आहे. ती इतकी मोठी आहे की, निदान $\kappa$ वस्तू आहेत असे ज्यातील एखादे विधान सांगते, अशा कोणत्याही उपपत्तीच्या सत्यतेविषयी प्रश्न उपस्थित करावा असे मला वाटते.
+	(बूलोस 2000, पृ.~257)
+\end{quote}
+आणि शेवटी त्यांनी आपला लेख पुढील प्रश्नाने संपवला:
+\begin{quote}
+	कथेच्या सुरुवातीला काहीही असले, तरी इथवर येईपर्यंत चाके नुसतीच फिरत आहेत आणि प्रत्यक्षात जे काही आहे त्याचे वर्णन आपण आता ऐकतच नाही, अशी शंका आपल्याला येते का?
+	(बूलोस 2000, पृ.~268)
+\end{quote}
+प्रत्यक्षात “जे काही आहे” त्याच्या पलीकडे आपण गेलो असू, तर दोषाचे बोट थेट प्रतिस्थापनाकडे दाखवावे लागेल. कारण आपला पुरावा याच स्वयंसिद्धकामुळे चालतो. असे असल्यास, काही दशकांपूर्वी केलेल्या प्रतिस्थापनाचे “कोणतेही अनिष्ट” परिणाम नाहीत या दाव्याचा बूलोस यांना पुनर्विचार करावा लागेल (पाहा \ref{sth:replacement:extrinsic:sec}).
+
+पण $\kappa$ चे अस्तित्व इतके वाईट आहे का? येथे रसेलचा \emph{ट्रिस्ट्रम शॅंडी विरोधाभास} पाहणे उपयुक्त ठरेल. ट्रिस्ट्रम शॅंडी आपल्या जीवनाची नोंद दैनंदिनीत करतो, पण एका दिवसाची नोंद करायला त्याला एक वर्ष लागते. प्रत्येक वर्षागणिक तो अधिकाधिक मागे पडतो: एका वर्षानंतर त्याने केवळ एका दिवसाची नोंद केली आहे आणि नोंद न झालेले 364 दिवस जगला आहे; दोन वर्षांनंतर केवळ दोन दिवसांची नोंद केली आहे आणि नोंद न झालेले 728 दिवस जगला आहे; तीन वर्षांनंतर केवळ तीन दिवसांची नोंद केली आहे आणि नोंद न झालेले 1092 दिवस जगला आहे \dots\footnote{येथे लीप वर्षांचा विचार केलेला नाही.} तरी ट्रिस्ट्रम \emph{अमर} असेल, तर तो प्रत्येक दिवसाची नोंद करू शकेल, कारण आपल्या आयुष्याच्या $n$ व्या वर्षी तो $n$ व्या दिवसाची नोंद करेल. म्हणून “काळाच्या अखेरीस” त्याची दैनंदिनी पूर्ण असेल.
+
+आता, $\kappa$ येईपर्यंत $\alpha$ हा $\aleph_\alpha$ पेक्षा लहान असतो---आणि वाढत्या प्रमाणात, अगदी हतबल करणाऱ्या प्रमाणात लहान असतो---पण त्या बिंदूवर आपण गाठतो आणि $\kappa
+= \aleph_\kappa$ मिळते, या विचारापेक्षा वरील गोष्ट इतकी वेगळी का आहे?
+
+हा प्रश्न बाजूला ठेवून, आणि $\ZFC$ स्वीकारतो असे गृहीत धरून, स्थिरबिंदू रचनांविषयीच्या आणखी काही रंजक गोष्टींनी हे प्रकरण संपवू. पुढील तीन निष्कर्षांचा सहज अर्थ असा की श्रेणीची उंची आणि रुंदी समान असलेला एक क्षुल्लक नसलेला टप्पा आहे:
+
+\begin{prop}\label{sth:card-arithmetic:fix:bethfixed}
+एक $\beth$-स्थिरबिंदू अस्तित्वात आहे; म्हणजे $\kappa=
+\beth_\kappa$ असलेला $\kappa$ आहे.
+\end{prop}
+
+\begin{proof}
+\ref{sth:card-arithmetic:fix:alephfixed} प्रमाणे, “$\aleph$” ऐवजी “$\beth$” वापरा.
+\end{proof}
+
+\begin{prop}\label{sth:card-arithmetic:fix:stagesize}
+$\card{V_{\omega+\alpha}} = \beth_{\alpha}$. जर $\omega \ordtimes
+\omega \leq \alpha$ असेल, तर $\card{V_\alpha} = \beth_\alpha$.
+\end{prop}
+
+\begin{proof}
+पहिला दावा साध्या अनंतपार विगमनाने मिळतो. दुसरा दावा यावरून मिळतो की $\omega \ordtimes \omega \leq \alpha$ असेल, तर $\omega + \alpha = \alpha$. हे सिद्ध करण्यासाठी \ref{sth:ord-arithmetic:chap} मधील क्रमसूचक अंकगणिताची तथ्ये वापरू. आधी पाहा की $\omega \ordtimes \omega = \omega \ordtimes (1 \ordplus \omega) =
+(\omega \ordtimes 1) \ordplus (\omega\ordtimes\omega) = \omega
+\ordplus (\omega \ordtimes \omega)$. आता $\omega \ordtimes \omega
+\leq \alpha$ असल्यास, म्हणजे एखाद्या $\beta$ साठी $\alpha = (\omega\ordtimes\omega) \ordplus \beta$ असल्यास, $\omega \ordplus \alpha = \omega \ordplus
+((\omega \ordtimes \omega) \ordplus \beta) = (\omega \ordplus (\omega
+\ordtimes \omega)) \ordplus \beta = (\omega \ordtimes \omega) \ordplus
+\beta = \alpha$.
+\end{proof}
+
+\begin{cor}
+$\card{V_\kappa} = \kappa$ असलेला $\kappa$ अस्तित्वात आहे.
+\end{cor}
+
+\begin{proof}
+\ref{sth:card-arithmetic:fix:bethfixed} नुसार $\kappa$ हा एक $\beth$-स्थिरबिंदू असू द्या. स्पष्टच $\omega \ordtimes \omega < \kappa$. म्हणून \ref{sth:card-arithmetic:fix:stagesize} नुसार $\card{V_\kappa} =
+\beth_\kappa= \kappa$.
+\end{proof}
+
+$V_\kappa$ च्या खाली जितके टप्पे आहेत, तितकेच घटक $V_\kappa$ मध्ये आहेत. त्यामुळे सहज अर्थाने $V_\kappa$ ची रुंदी त्याच्या उंचीइतकी आहे. हे ट्रिस्ट्रम शॅंडीच्या गोष्टीसारखेच आहे: \emph{घातसंच} घेऊन आपण एका टप्प्यापासून पुढच्या टप्प्यावर जातो, आणि प्रत्येक पावलावर श्रेणी \emph{खूप} मोठी होते. पण “अखेरीस”, म्हणजे $\kappa$ टप्प्यावर, श्रेणीची रुंदी तिच्या उंचीला गाठते.
+
+प्रश्न पडू शकतो: \emph{श्रेणीची रुंदी तिच्या उंचीशी किती वेळा जुळते?} उत्तर असे: \emph{जितक्या क्रमसूचक संख्या आहेत, तितक्या वेळा.} पण याचे थोडे स्पष्टीकरण हवे.
+
+पुढीलप्रमाणे $\tau$ हे पद परिभाषित करू. कोणत्याही $A$ साठी:
+\begin{align*}
+	\tau_0(A) & \defis \cardsucc{\card{A}}\\
+	\tau_{n+1}(A) & \defis \beth_{\tau_n(A)}\\
+	\tau(A) & \defis \bigcup_{n < \omega}\tau_n(A)
+\intertext{\ref{sth:card-arithmetic:fix:bethfixed} प्रमाणे, कोणत्याही $A$ साठी $\tau(A)$ हा
+$\beth$-स्थिरबिंदू आहे. सुरुवात उत्तरवर्ती संचांकापासून केल्यामुळे $\card{A} < \tau(A)$ मिळते. म्हणून पुढील पुनरावर्ती व्याख्या पाहा:}
+	W_0 &\defis 0\\
+	W_{\alpha + 1} & \defis \tau(W_\alpha)\\
+	W_\alpha & \defis \bigcup_{\beta < \alpha} W_\beta
+	\text{, जेव्हा $\alpha$ सीमा क्रमसूचक संख्या असते}
+\end{align*}
+ही रचना सर्व क्रमसूचक संख्यांसाठी परिभाषित आहे. सहज अर्थाने $W$ हे क्रमसूचक संख्यांपासून $\beth$-स्थिरबिंदूंकडे जाणारे “एकास-एक फलन” आहे; यातील शून्यव्या मूल्याचा अपवाद स्पष्ट ठेवावा. आणि आधीप्रमाणेच प्रत्येक $\alpha$ साठी $V_{W_\alpha}$ ची रुंदी त्याच्या उंचीइतकी आहे. शून्यव्या टप्प्यावर दोन्ही आकार शून्य आहेत; पुढील टप्प्यांवर हे बेथ-स्थिरबिंदूंच्या गुणधर्मामुळे मिळते.
+
+
+

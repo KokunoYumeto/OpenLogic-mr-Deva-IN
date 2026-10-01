@@ -1,6 +1,7 @@
 % Part: first-order-logic
 % Chapter: axiomatic-deduction
 % Section: provability
+%READERNOTE{SOL6-A285: निषेधाच्या गुणधर्माची सिद्धता आता त्याच्या स्वतःच्या गृहीतकापासून not-A काढते. बद्ध चर बदलातील सार्विक संख्यापक फक्त अभिव्यंजनाच्या पूर्वांगावर आहे; मूळ संपूर्ण अभिव्यंजनावरील व्याप्ती योग्य आदेशन-स्वयंसिद्धक नव्हती.}
 
 % संपूर्णता प्रकरणातील कमाल सुसंगत संचांसाठी आवश्यक असलेल्या सिद्धतायोग्यतेच्या गुणधर्मांची पडताळणी.
 
@@ -72,15 +73,15 @@ $\Gamma \Proves !B$.}{}
 कारण $\Gamma_0 \subseteq \Gamma$ आणि $\Gamma_1 \subseteq \Gamma$,
 $\Gamma_0 \cup \Gamma_1 \subseteq \Gamma$; म्हणून $\Gamma \Proves \lfalse$.
 
-\item $\Gamma_0 \cup\{\lnot !A\} \Proves \lfalse$ असे गृहीत धरा.
+\item $\Gamma_0 \cup\{!A\} \Proves \lfalse$ असे गृहीत धरा.
 
 \begin{derivation}
-1. & $\Gamma_0 \cup\{\lnot !A\} \Proves \lfalse$ & गृहीत \\
-2. & $\Gamma_0 \Proves \lnot !A \lif \lfalse$ & निगमन प्रमेय\\
-3. & $\Gamma_0 \Proves (\lnot !A \lif \lfalse) \lif !A$ & Ax0\\
-4. & $\Gamma_0 \Proves !A$ & MP 2, 3 \\
+1. & $\Gamma_0 \cup\{!A\} \Proves \lfalse$ & गृहीत \\
+2. & $\Gamma_0 \Proves !A \lif \lfalse$ & निगमन प्रमेय\\
+3. & $\Gamma_0 \Proves (!A \lif \lfalse) \lif \lnot !A$ & Ax0\\
+4. & $\Gamma_0 \Proves \lnot !A$ & MP 2, 3 \\
 \end{derivation}
-%READERNOTE{OLINC-321: हा हिशोब आधीच्या विधानाची उलट दिशा सिद्ध करतो; येथे दिलेल्या निषेधाच्या विधानाची सिद्धता नाही.}
+%READERNOTE{OLINC-321: मूळ हिशोब निषेधाच्या विधानाऐवजी आधीच्या समतुल्यतेची उलट दिशा सिद्ध करत होता. SOL6-A285 मध्ये A या अतिरिक्त गृहीतकापासून असत्य मिळते या आधारावर not-A काढला आहे.}
 
 \item $\Gamma_0 \cup \{ !A \} \Proves \lfalse$ आणि
 $\Gamma_1 \cup \{\lnot !A \} \Proves \lfalse$ असे गृहीत धरा.
@@ -174,12 +175,12 @@ $\Gamma \Proves !B$ यासाठीही सिद्धता याचप�
 तर $\Gamma \Proves \lforall[x][!A]$.
 \end{thm}
 
-\begin{proof} $\mathsf{Thm}_\Gamma$ वर आगमन वापरा: जर $!A$ स्वयंसिद्धक
+\begin{proof} $\mathsf{Thm}_\Gamma$ वर विगमन वापरा: जर $!A$ स्वयंसिद्धक
 असेल, तर $\lforall[x][!A]$ हेसुद्धा स्वयंसिद्धक असते. जर $!A\in \Gamma$
 असेल, तर $x$ हे $!A$ मध्ये मुक्त नसते. म्हणून $!A \lif \lforall[x][!A]$
 हे स्वयंसिद्धक (\textbf{Ax3}) आहे आणि विध्यात्मक अनुमानाने $\Gamma
 \Proves \lforall[x][!A]$. आता $\Gamma \Proves !B$ आणि $\Gamma \Proves
-!B \lif !A$ यांमुळे विध्यात्मक अनुमानाने $!A$ मिळते असे माना. आगमन
+!B \lif !A$ यांमुळे विध्यात्मक अनुमानाने $!A$ मिळते असे माना. विगमन
 गृहीतकानुसार $\Gamma \Proves \lforall[x][!B]$ आणि $\Gamma \Proves
 \lforall[x][( !B \lif !A)]$. परंतु \textbf{Ax2} मुळे पुढीलही मिळते:
 \[ \Gamma \Proves
@@ -254,7 +255,7 @@ $\Proves \lforall[x][\Subst{!A}{x}{c}] \equiv
 आहे आणि $x$ हा $!A$ मध्ये मुक्त नाही. म्हणून मागील
 \olref{lem:free-for} वरून $y$ हा $\Subst{!A}{x}{c}$ मध्ये $x$ च्या
 जागी बसवण्यासाठी !!{free for} आहे. त्यामुळे
-$\lforall[x][\Subst{!A}{x}{c} \lif \Subst{!A}{x}{c} \Subst{}{y}{x}]$
+$\lforall[x][\Subst{!A}{x}{c}] \lif \Subst{!A}{x}{c} \Subst{}{y}{x}$
 हे स्वयंसिद्धक (\textbf{Ax1}) आहे. $x$ हा $!A$ मध्ये मुक्त नसल्यामुळे
 $\Subst{!A}{x}{c} \Subst{}{y}{x} = \Subst{!A}{y}{c}$; म्हणून
 \[

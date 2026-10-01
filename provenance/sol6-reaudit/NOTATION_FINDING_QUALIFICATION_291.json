@@ -1,0 +1,23 @@
+{
+  "id": "SOL6-A291",
+  "record_kind": "workflow_repair",
+  "source_choice": false,
+  "finding": "OLINC331 treated a function-with-variable-argument notation as a definite source error, although its intended family mapping is readable.",
+  "repair": "Qualify the current comment/index as notation clarification; retain source body, formulas, valid satisfaction-macro correction and exercises.",
+  "historical_localized_row": {
+    "issue_id": "OLINC-331",
+    "rationale_mr": "OLINC-331: स्रोतामध्ये Prop(M,A) या एका मूल्याला संपूर्ण सूत्रांवरील फलनाचे नाव दिले आहे; येथे स्रोताचे चिन्ह जतन केले असून आशय A पासून जगांचा संच देणारा नकाशा असा वाचावा.",
+    "derivation": "मराठी स्रोतफाइलमधील आधीची स्पष्ट READERNOTE; नवा स्रोतदोष दावा नाही"
+  },
+  "before_target_sha256": "0e595d252affc8379f2895dab668732d7f4533093b2a336a892d748270f6df25",
+  "after_target_sha256": "f5a9d91c8f44cc0c67d4caeea37c5a0efbe0551cf94adc40355975ceba0b6006",
+  "before_localized_index_sha256": "dc9be9d77faada9e05e0b62a777dab5d3a6e221402ef9f95468b53528f3d9686",
+  "after_localized_index_sha256": "2788dd65e48002a8c9bd4435267e463ad2c5f2af4e0b83e3ee8d088b31f55cc8",
+  "source_body_formulas_changed": false,
+  "original_receipts_changed": false,
+  "source_history_sha256": "c015a22ae11cf8f9da72509aa787424599e3611b46412a32a4f219377f8b11f9",
+  "status": "current notation finding qualified; refreshed reader/review pending",
+  "date": "2026-10-01",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra"
+}

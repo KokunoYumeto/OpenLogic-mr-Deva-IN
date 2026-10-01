@@ -1,0 +1,31 @@
+{
+  "finding_id": "SOL6-A062",
+  "record_kind": "reader_note_workflow_repair",
+  "rationale_mr": "स्रोतांतील अनेक दुरुस्ती-सूचना पूर्ण वाचकग्रंथातून गाळल्या जात होत्या. सर्व सक्रिय READERNOTE मजकूर TeX-सुरक्षित projection करून विद्यमान unnumbered संपादकीय टिपणांत जोडला. Static QA प्रत्येक स्रोत, projected सूचना व reader hash तपासते; staging आणि cold reproduction त्याच कसोटीची पुनर्तपासणी करतात.",
+  "status": "current_static_coverage_and_guarded_compilation_passed; selected_visual_and_notes_navigation_passed; final_staging_pending",
+  "source_notes": 346,
+  "coverage_records": 346,
+  "reader_sha256": "f793f2b144cc8f15013bb68008c2302643c90d64bc6a1f922e9f03a4598d48f3",
+  "represented_source_units": 722,
+  "chapters": 79,
+  "numbered_sections": 613,
+  "input_hashes": {
+    "tools/complete_reader_notes.py": "272f7cff091f60f5f6287ad3b23d60b6e212bb5ece109152c11b9479ecfc3779",
+    "tools/prepare_complete.py": "4cb986e5d6aa8765005545767ad8b5a9a8da3a2d8982528f5af0b39e521049ab",
+    "tools/qa_complete_reader.py": "125cef14470c783e21cfd5c0369c540cd77aa06e6faebe7c80f80d1004974f5d",
+    "tools/stage_complete_release.py": "54bbb11d571d42e0e97aa4ea3e58b966c7ccd69a007184bf46a3bc1c0afbbab4",
+    "tools/reproduce_complete_release.py": "14914d308cffc219ca5961e4e8b812d0b2e0e9105ce83960e8add7aa47389267",
+    "build/full/READER_NOTE_QA.json": "08fbb3c1354805182e1ee977e387945860054d8ced5391b2ef49c326d4009aa6",
+    "build/full/STATIC_QA.json": "c5d714ec831885cd6d6ff99b06d5e1291987524600c42a2c57c89868cf7a1be2",
+    "build/full/openlogic-mr-full.tex": "f793f2b144cc8f15013bb68008c2302643c90d64bc6a1f922e9f03a4598d48f3"
+  },
+  "limitations_mr": "फक्त दाखवलेल्या पानांची प्रत्यक्ष दृश्यतपासणी झाली. सर्व PDF पानांची दृश्य किंवा अर्थतपासणी, स्वतंत्र मानवी पुनरावलोकन, अंतिम staging, cold reproduction किंवा successor publication झाल्याचा दावा नाही.",
+  "pdf_sha256": "3ee7fe70d38346b3ffc7cd635aaa285e54a00e81e5cfe254467be7cc696306f9",
+  "selected_visual_checkpoint": "provenance/sol6-reaudit/READER_NOTE_VISUAL_CHECKPOINT.json",
+  "notes_chapter_navigation": {
+    "compiled_toc_page": 915,
+    "pdf_bookmark_page": 915,
+    "opening_page_actually_viewed": 915,
+    "status": "passed"
+  }
+}

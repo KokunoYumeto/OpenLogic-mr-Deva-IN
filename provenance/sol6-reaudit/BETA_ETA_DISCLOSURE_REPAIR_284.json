@@ -1,0 +1,45 @@
+{
+  "id": "SOL6-A284",
+  "record_kind": "workflow_repair",
+  "source_choice": false,
+  "finding": "The core372 wrapper/current OLINC112 explanation still called the beta-eta complete-development overlap open after A126. Two newest history source disclosures retained avoidable English prose.",
+  "repair": "Acknowledge A126 in the wrapper/current localized row and localize the A281/A282 disclosure prose. Rebind current hashes; source bodies/formulas and original dated receipts remain intact.",
+  "before_tool_sha256": "1f07418849182dfae7f99000b56b06d71397c72a85c740785b4d33b4d32f885b",
+  "after_tool_sha256": "1a9e948e6dda173b41f279de8030872859d88404b40be1ed56a32831a48d465d",
+  "historical_localized_row": {
+    "issue_id": "OLINC-112",
+    "rationale_mr": "βη-विकासाच्या सिद्धतेत पहिली चार विगमन-प्रकरणे फक्त β च्या सिद्धतेसारखी आहेत असे म्हटले आहे. η-redex ला पाचव्या प्राधान्य-अटीने हाताळल्यावर abstraction प्रकरण η-redex पासून सुरू होऊन सामान्य abstraction नियमाने संपुष्टात येऊ शकते. फक्त β चा युक्तिवाद η ला प्राधान्य देणाऱ्या विकासमूल्यापर्यंत एक-पायरीचा मार्ग स्वतः सिद्ध करत नाही. मूळ संक्षिप्त दावा भाषांतरात राखला आणि हा आच्छादन-प्रसंग पुढील गणितीय पुनरावलोकनासाठी नोंदला; स्वतंत्र पूर्ण सिद्धतेचा दावा केलेला नाही.",
+    "review_question_mr": "η-redex आणि सामान्य abstraction नियमाचा आच्छादन-प्रसंग पूर्ण-विकासाच्या पूर्वप्रमेयात स्वतंत्रपणे सिद्ध करणे आवश्यक आहे का?"
+  },
+  "before_localized_index_sha256": "e808413a6b405921f56433ab68d9908ac067e7c99a6557f3d4ebfa5b3b7978fe",
+  "after_localized_index_sha256": "f613196816f1fe51c3b6909f7d2b9c897884d5cbd876a5c313f032b772347957",
+  "target_note_changes": [
+    {
+      "unit_id": "OLP-0638",
+      "repair_id": "SOL6-A281",
+      "before_sha256": "780c3ef9a8eac35f666b6db6e821129c496e0daa4447e99b505bb137c19b93fe",
+      "after_sha256": "17cbddd9aba59477a6b55569b4b5aaad43b4e92e3e1f28a61e63b5aebce0477e",
+      "previous_note": "%READERNOTE{SOL6-A281: एकच द्विमान निरूपण-पद्धत वापरून injection ची अंक-एकमेवपणाची अट पूर्ण केली आहे. मूळ missing-value उदाहरण [0,1] वर मिळते; खरे प्रतिउदाहरण 5/6 दिले आहे. हा आधुनिक द्विमान युक्तिवाद मूळ दशमान पत्रातील शब्दशः सिद्धता म्हणून मांडलेला नाही.}",
+      "current_note": "%READERNOTE{SOL6-A281: एकच द्विमान निरूपण-पद्धत वापरून एकास-एक फलनाच्या सिद्धतेतील अंक-एकमेवपणाची अट पूर्ण केली आहे. मूळ प्रतिमेबाहेरील संख्येचे उदाहरण [0,1] वर प्रतिमेतच मिळते; खरे प्रतिउदाहरण 5/6 दिले आहे. हा आधुनिक द्विमान युक्तिवाद मूळ दशमान पत्रातील शब्दशः सिद्धता म्हणून मांडलेला नाही.}"
+    },
+    {
+      "unit_id": "OLP-0639",
+      "repair_id": "SOL6-A282",
+      "before_sha256": "d4d566099f460351527351db5c45a457ba3cf548cee0e3e960527f5d59f3080c",
+      "after_sha256": "d877b0fed2f346a02f7a5aa46dd9b32c289fdaec22f16c24fe8f58415b46b643",
+      "previous_note": "%READERNOTE{SOL6-A282: मूळ चित्रे जपली आहेत. समान प्राचल-अंतरालांवरील जाळी-घरांचे refinement स्पष्ट केल्याने सीमा समसमान असल्याचे आणि प्रतिमा पूर्ण चौरस असल्याचे सिद्ध होते; सातत्याची अट प्रत्येक input बिंदूवर पूर्ण केली आहे.}",
+      "current_note": "%READERNOTE{SOL6-A282: मूळ चित्रे जपली आहेत. समान प्राचल-अंतरालांवरील जाळी-घरांची सुसंगत विभागणी स्पष्ट केल्याने सीमा समसमान असल्याचे आणि प्रतिमा पूर्ण चौरस असल्याचे सिद्ध होते; सातत्याची अट प्रत्येक आदान बिंदूवर पूर्ण केली आहे.}"
+    }
+  ],
+  "source_body_formulas_changed": false,
+  "original_receipts_changed": false,
+  "source_choice_evidence": {
+    "id": "SOL6-A126",
+    "receipt_sha256": "fe346dfe91c85eac7e9f86468ffa1dd853db3a182ffccc1a14c3e582cd0fe90c"
+  },
+  "source_history_sha256": "c015a22ae11cf8f9da72509aa787424599e3611b46412a32a4f219377f8b11f9",
+  "status": "local disclosure and comment bindings corrected; refreshed reader/review checkpoint pending",
+  "date": "2026-10-01",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra"
+}

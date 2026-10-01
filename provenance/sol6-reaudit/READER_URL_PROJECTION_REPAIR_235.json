@@ -1,0 +1,22 @@
+{
+  "id": "SOL6-A235",
+  "kind": "translation_local_reader_tool_fix",
+  "date": "2026-09-30",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "file": "tools/complete_reader_notes.py",
+  "file_sha256": "272f7cff091f60f5f6287ad3b23d60b6e212bb5ece109152c11b9479ecfc3779",
+  "observed_defect": "Compiled-222 page 929 prints explicit URL commands literally in two editorial notes.",
+  "change": "Preserve only validated HTTPS URL commands in protected fragments; continue escaping arbitrary prose TeX. Existing href and math handling retained.",
+  "current_raw_notes_projected": 285,
+  "targeted_checks_passed": 5,
+  "status": "actual full-reader compilation, live PDF URL annotations and rendered page 929 checked at coherent checkpoint 231",
+  "limitations": "No new compilation, rendered PDF or web checkpoint is claimed by these projection checks.",
+  "validated_checkpoint": {
+    "corrective_source_decisions": 231,
+    "reader_sha256": "4c16a376174f2273c40e30caa16e514e81a1497cc59d8122e70feaa7983bc818",
+    "pdf_sha256": "1eebf7bdd818c1562bac658bc4dc101da9f2a7e4cd1bb5a8805fcf1874979659",
+    "url_page_actually_viewed": 929,
+    "live_url_annotations": 2
+  }
+}

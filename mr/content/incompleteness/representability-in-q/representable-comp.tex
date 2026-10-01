@@ -19,7 +19,7 @@ $\Th{Q}$ मध्ये निरूपणीय असलेले प्र�
   असे !!a{formula}~$!A_f(x_0, \dots, x_k, y)$ असते की
   \[
   \Th{Q} \Proves !A_f(\num{n_0}, \dots, \num{n_k}, \num{m})
-  \quad\text{iff}\quad m = f(n_0, \dots, n_k).
+  \quad\text{तेव्हा आणि केवळ तेव्हाच}\quad m = f(n_0, \dots, n_k).
   \]
 \end{lem}
 
@@ -32,7 +32,7 @@ $l = f(n_0, \dots, n_k)$ असे धरू.
 \olref[int]{defn:representable-fn}\olref[int]{defn:rep:a} नुसार $\Th{Q}
 \Proves !A_f(\num{n_0}, \dots, \num{n_k}, \num{l})$.
 \olref[int]{defn:representable-fn}\olref[int]{defn:rep:b} नुसार
-$\lforall[y][(!A_f(\num{n_0}, \dots, \num{n_k}, y) \lif \num{l} =
+$\Th{Q} \Proves \lforall[y][(!A_f(\num{n_0}, \dots, \num{n_k}, y) \lif \num{l} =
 y)]$. तर्कशास्त्र वापरून आणि $\Th{Q} \Proves
 !A_f(\num{n_0}, \dots, \num{n_k}, \num{m})$ या गृहीतकावरून
 $\Th{Q} \Proves \eq[\num{l}][\num{m}]$ मिळते. दुसरीकडे,
@@ -77,7 +77,7 @@ $\Prf[\Th{Q}](d,y)$ हा संबंध (आदिम) पुनरावर�
 नैसर्गिक निगमनातील थेट निष्पत्ती-संकेतांकाचा अर्थ घेतल्यास,
 $d$ ही $\Th{Q}$ च्या स्वयंसिद्धकांपासून $y$ ही गोडेल संख्या
 असलेल्या !!{formula} च्या !!a{derivation} ची गोडेल संख्या
-असेल तेव्हाच हा संबंध खरा असतो. आपल्याला आणखी लागणारी आदिम
+असेल, तर आणि तरच हा संबंध खरा असतो. आपल्याला आणखी लागणारी आदिम
 पुनरावर्ती फलने म्हणजे $\fn{num}$
 (\olref[art][trm]{prop:num-primrec}) आणि $\fn{Subst}$
 (\olref[art][sub]{prop:subst-primrec}). यांपासून लघुतमीकरणाने
@@ -99,7 +99,7 @@ $!A_f(\num{n_0}, \dots, \num{n_k}, \num{(s)_1})$ च्या
 $\Th{Q}$ पासूनच्या !!a{derivation} ची गोडेल संख्या असेल
 तेव्हा हा संबंध खरा असतो:
 \[
-R(n_0, \dots, n_k, s) \quad\text{iff}\quad \Prf[\Th{Q}]((s)_0, A(n_0,
+R(n_0, \dots, n_k, s) \quad\text{तेव्हा आणि केवळ तेव्हाच}\quad \Prf[\Th{Q}]((s)_0, A(n_0,
 \dots, n_k, (s)_1))
 \]
 $R(n_0, \dots, n_k, s)$ खरा असणारा एखादा $s$ मिळाला,
@@ -111,7 +111,7 @@ $m$ ही जोडी शोधण्यासारखे आहे. अस�
 फलन नियमित लघुतमीकरणाने परिभाषित करता येते. लक्षात घ्या,
 $R$ साठी हा शोध नियमित आहे: प्रत्येक $n_0$, \dots, $n_k$
 साठी $\Th{Q} \Proves !A_f(\num{n_0}, \dots,
-\num{n_k}, \num{f(n_0, \dots, n_k)})$ ची !!a{derivation}~$\delta$
+\num{n_k}, \num{f(n_0, \dots, n_k)})$ हे सिद्ध करणारी !!a{derivation}~$\delta$
 असते. म्हणून $s = \tuple{\Gn{\delta}, f(n_0, \dots, n_k)}$
 घेतल्यास $R(n_0, \dots, n_k, s)$ खरा असतो. त्यामुळे $f$
 पुढीलप्रमाणे लिहिता येते:

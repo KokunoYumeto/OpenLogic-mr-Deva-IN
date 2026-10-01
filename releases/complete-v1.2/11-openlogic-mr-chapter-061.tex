@@ -1,0 +1,403 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 61: टप्पे आणि प्रतांक
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{टप्पे आणि प्रतांक}\label{sth:spine:chap}
+
+
+
+
+
+\section{टप्प्यांची $V_\alpha$ या रूपात व्याख्या}\label{sth:spine:valpha:sec}
+
+\ref{sth:ordinals:chap} मध्ये आपण सुक्रमणे आणि (फोन न्यूमन यांच्या) क्रमसूचक संख्या परिभाषित केल्या. या प्रकरणात त्यांचा वापर करून संचांच्या पदानुक्रमाचे \emph{स्वतःचे} वर्णन करू. यासाठी \ref{sth:ordinals:opps:sec} मधील उत्तरवर्ती आणि सीमा क्रमसूचक संख्यांच्या संकल्पना आठवू. पुढील व्याख्येत त्या वापरल्या आहेत:
+
+\begin{defn}\label{sth:spine:valpha:defValphas}
+	\begin{align*}
+	V_\emptyset &\defis \emptyset\\
+	V_{\ordsucc{\alpha}} &\defis \Pow{V_\alpha} & &
+	\text{प्रत्येक क्रमसूचक संख्या }\alpha\\
+	V_{\alpha} &\defis \bigcup_{\gamma < \alpha} V_\gamma & &
+	\text{जेव्हा }\alpha\text{ ही सीमा क्रमसूचक संख्या असते}
+\end{align*}
+\end{defn}
+\noindent
+ही क्रमसूचक संख्यांवरील \emph{अनंतपार पुनरावर्तनाने} केलेली व्याख्या ठरेल. तिची तुलना नैसर्गिक संख्यांवरील फलनांच्या पुनरावर्ती व्याख्यांशी करावी.\footnote{\ref{sfr:infinite:dedekind:sec} मधील बेरीज, गुणाकार आणि घातांकनाच्या व्याख्या पाहा.} नैसर्गिक संख्यांच्या बाबतीत आधारप्रकरण आणि उत्तरवर्ती प्रकरणे परिभाषित करतो; पण क्रमसूचक संख्यांच्या बाबतीत \emph{सीमा} प्रकरणांतील वर्तनही सांगावे लागते.
+
+$V_\alpha$ ची ही व्याख्या एक महत्त्वाचा टप्पा ठरेल. संचांची रचना \emph{टप्प्याटप्प्याने} होते, या कल्पनेने आपण संचांच्या पदानुक्रमाचे अनौपचारिक समर्थन केले. $V_\alpha$ हे प्रत्यक्षात तेच टप्पे आहेत. पण येथे महत्त्वाची बाब म्हणजे टप्प्यांचे हे \emph{आंतरिक} वर्णन आहे. उपपत्तीचे एखादे संभाव्य \emph{प्रतिमान} सुचवण्याऐवजी आपण टप्पे आपल्या संच उपपत्तीच्या \emph{आतच} परिभाषित करू.
+
+
+
+
+
+
+
+\section{अनंतपार पुनरावर्तनाची प्रमेये}\label{sth:spine:recursion:sec}
+
+मात्र आधी \ref{sth:spine:valpha:defValphas} ही यशस्वी व्याख्या आहे, हे निश्चित करावे लागेल. अधिक सर्वसाधारणपणे, अनंतपार पुनरावर्तनाने व्याख्या करण्याचा कोणताही प्रयत्न यशस्वी होतो, हे सिद्ध करणे गरजेचे आहे. हाच या विभागाचा उद्देश आहे.
+
+\emph{सूचना: येथील विषय अवघड आहे}. तरी मुख्य मुद्दा सोपा आहे: अनंतपार विगमन आणि प्रतिस्थापन मिळून अनंतपार पुनरावर्तनाच्या (अनेक रूपांच्या) वैधतेची हमी देतात.\footnote{आठवण: स्पष्टपणे अन्यथा सांगितले नसेल, तर सर्व सूत्रे आणि पदे यांत प्राचले असू शकतात.}
+
+\begin{defn}
+	$\tau(x)$ हे पद, $f$ हे फलन आणि $\alpha$ ही क्रमसूचक संख्या मानू. $\dom{f} = \alpha$ आणि $(\forall \beta \in \alpha)f(\beta) = \tau(\funrestrictionto{f}{\beta})$ या दोन्ही अटी पूर्ण होत असतील तेव्हा आणि केवळ तेव्हाच $f$ हे $\tau$ साठी \emph{$\alpha$-निकटन} आहे असे म्हणू.
+\end{defn}
+
+\begin{lem}[परिबद्ध पुनरावर्तन]\label{sth:spine:recursion:transrecursionfun}
+कोणत्याही पद $\tau(x)$ आणि कोणत्याही क्रमसूचक संख्या $\alpha$ साठी $\tau$ चे एकमेव $\alpha$-निकटन असते.
+\end{lem}
+\begin{proof}
+कोणत्याही $\gamma \leq \alpha$ साठी एकमेव $\gamma$-निकटन असते, हे दाखवू.
+
+आधी एकमेवता सिद्ध करू. अनुक्रमे $g$ आणि $h$ ही $\gamma$- आणि $\delta$-निकटने असू द्या. त्यांच्या आदानांवरील अनंतपार विगमनाने $\beta \in \dom{g} \cap \dom{h} =
+\gamma \cap \delta = \min(\gamma, \delta)$ असेल, तर $g(\beta) = h(\beta)$ मिळते. म्हणून निकटने अस्तित्वात असतील, तर ती एकमेव असतात आणि सर्व सामायिक मूल्यांवर जुळतात.
+
+अस्तित्व सिद्ध करण्यासाठी आता $\delta \leq \alpha$ या क्रमसूचक संख्यांवर सुलभ अनंतपार विगमन (\ref{sth:ordinals:opps:simpletransrecursion}) वापरू.
+
+रिकामे फलन स्पष्टपणे $\emptyset$-निकटन असते.
+
+$g$ हे $\gamma$-निकटन असेल, तर $g \cup
+\{\tuple{\gamma, \tau(g)}\}$ हे $\ordsucc{\gamma}$-निकटन असते.
+
+$\gamma$ ही सीमा क्रमसूचक संख्या असेल आणि प्रत्येक $\delta < \gamma$ साठी $g_\delta$ हे $\delta$-निकटन असेल, तर $g = \bigcup_{\delta \in \gamma} g_\delta$ ठेवू. विविध $g_\delta$ सर्व मूल्यांवर जुळत असल्याने हे फलन आहे. तसेच $\delta \in \gamma$ असेल, तर $g(\delta) = g_{\ordsucc{\delta}}(\delta) =
+\tau(\funrestrictionto{g_{\ordsucc{\delta}}}{\delta}) =
+\tau(\funrestrictionto{g}{\delta})$.
+
+याने अनंतपार विगमनाचा पुरावा पूर्ण होतो.
+\end{proof}
+
+फलनाऐवजी \emph{पद} परिभाषित करण्याची मुभा घेतली, तर मागील निष्कर्षातील $\alpha$ ही मर्यादा काढून टाकता येते. पुढील निष्कर्षाचे विधान आणि पुरावा यांत $\sigma$ हे पद असताना $\funrestrictionto{\sigma}{\alpha} = \Setabs{\tuple{\beta,
+\sigma(\beta)}}{\beta \in \alpha}$ असे मानू.
+
+\begin{thm}[सामान्य पुनरावर्तन]\label{sth:spine:recursion:transrecursionschema}
+कोणत्याही पद $\tau(x)$ साठी $\sigma(x)$ हे पद स्पष्टपणे परिभाषित करता येते, असे की कोणत्याही क्रमसूचक संख्या~$\alpha$ साठी $\sigma(\alpha) = \tau(\funrestrictionto{\sigma}{\alpha})$.
+\end{thm}
+
+\begin{proof}
+प्रत्येक $\alpha$ साठी \ref{sth:spine:recursion:transrecursionfun} वरून $\tau$ चे एकमेव $\alpha$-निकटन $f_\alpha$ असते. $\sigma(\alpha)$ ची व्याख्या $f_{\ordsucc{\alpha}}(\alpha)$ अशी करू. आता:
+	\begin{align*}
+		\sigma(\alpha) &=
+		f_{\ordsucc{\alpha}}(\alpha) \\&=
+		\tau(\funrestrictionto{f_{\ordsucc{\alpha}}}{\alpha}) \\&=
+		\tau(\Setabs{\tuple{\beta, f_{\ordsucc{\alpha}}(\beta)}}{\beta \in \alpha}) \\&=
+		\tau(\Setabs{\tuple{\beta, f_{\ordsucc{\beta}}(\beta)}}{\beta \in \alpha})\\&=
+		\tau(\funrestrictionto{\sigma}{\alpha})
+	\end{align*}
+येथे \ref{sth:spine:recursion:transrecursionfun} प्रमाणे सर्व $\beta < \alpha$ साठी $f_{\ordsucc{\beta}}(\beta) = f_{\ordsucc{\alpha}}(\beta)$, हे वापरले आहे.
+\end{proof}
+\noindent
+\ref{sth:spine:recursion:transrecursionschema} हा एक \emph{रूपबंध} आहे, हे लक्षात घ्या. $\sigma$ ने फलन, म्हणजे विशिष्ट प्रकारचा \emph{संच}, परिभाषित व्हावा अशी अपेक्षा करता येत नाही. तसे असेल, तर $\dom{\sigma}$ हा सर्व क्रमसूचक संख्यांचा संच ठरेल; हे बुराली-फोर्ती विरोधापत्तीशी (\ref{sth:ordinals:basic:buraliforti}) विसंगत आहे.
+
+तरी \ref{sth:spine:recursion:transrecursionschema} आपली $V_\alpha$ ची व्याख्या योग्य ठरवतो, हे अजून दाखवायचे आहे. हे लगेच स्पष्ट होणार नाही; पण अनंतपार पुनरावर्तनाचे शेवटचे, सोपे रूप पाहिल्यावर ते उघड होईल.
+
+\begin{thm}[सुलभ पुनरावर्तन]\label{sth:spine:recursion:simplerecursionschema}
+कोणतीही पदे $\tau(x)$ आणि $\theta(x)$ तसेच कोणताही संच $A$ दिल्यास, पुढील अटी पूर्ण करणारे पद $\sigma(x)$ स्पष्टपणे परिभाषित करता येते:
+\begin{align*}
+	\sigma(\emptyset) &= A\\
+	\sigma(\ordsucc{\alpha}) &= \tau(\sigma(\alpha)) &&
+		\text{प्रत्येक क्रमसूचक संख्या }\alpha\\
+	\sigma(\alpha) &= \theta(\ran{\funrestrictionto{\sigma}{\alpha}})&&
+	\text{जेव्हा }\alpha\text{ ही सीमा क्रमसूचक संख्या असते}
+\end{align*}
+\end{thm}
+
+\begin{proof}
+आधी $\xi(x)$ हे पद पुढीलप्रमाणे परिभाषित करू:
+
+
+\[
+	\xi(x) =
+	\begin{cases}
+			A &\text{जर $x$ क्रमसूचक प्रांताचे फलन नसेल, किंवा}\\
+			&\hspace{1em}\text{त्याचा प्रांत रिकामा असेल; अन्यथा:}\\
+			\tau(x(\alpha)) & \text{जर $\dom{x} = \ordsucc{\alpha}$}\\
+			\theta(\ran{x}) & \text{जर $\dom{x}$ सीमा क्रमसूचक संख्या असेल}
+	\end{cases}
+\]
+\ref{sth:spine:recursion:transrecursionschema} वरून प्रत्येक क्रमसूचक संख्या $\alpha$ साठी $\sigma(\alpha) = \xi(\funrestrictionto{\sigma}{\alpha})$ असे पद $\sigma(x)$ मिळते. शिवाय $\funrestrictionto{\sigma}{\alpha}$ हे $\alpha$ प्रांताचे फलन आहे. सुलभ अनंतपार विगमनाने (\ref{sth:ordinals:opps:simpletransrecursion}) $\sigma$ मध्ये अपेक्षित गुणधर्म आहेत हे दाखवू.
+
+प्रथम, $\sigma(\emptyset) = \xi(\emptyset) = A$.
+
+पुढे, $\sigma(\ordsucc{\alpha}) = \xi(\funrestrictionto{\sigma}{\ordsucc{\alpha}}) = \tau(\funrestrictionto{\sigma}{\ordsucc{\alpha}}(\alpha)) = \tau(\sigma(\alpha))$.
+
+शेवटी, $\alpha$ ही सीमा क्रमसूचक संख्या असल्यास $\sigma(\alpha) = \xi(\funrestrictionto{\sigma}{\alpha}) = \theta(\ran{\funrestrictionto{\sigma}{\alpha}})$.
+\end{proof}
+\noindent
+आता \ref{sth:spine:valpha:defValphas} योग्य ठरवण्यासाठी $A
+= \emptyset$, $\tau(x) = \Pow{x}$ आणि $\theta(x) = \bigcup x$ एवढेच घ्यावे लागते. अखेर यामुळे $V_\alpha$ ची व्याख्या सिद्ध होते!{}
+
+
+
+
+
+
+
+\section{टप्प्यांचे मूलभूत गुणधर्म}\label{sth:spine:Valphabasic:sec}
+
+$V_\alpha$ च्या व्याख्येचे पायाभूत महत्त्व स्पष्ट करण्यासाठी त्यांच्याविषयी काही मूलभूत निष्कर्ष मांडू. आधी एक व्याख्या:\footnote{``उपसंच-समावेशक'' यासाठी प्रस्थापित संज्ञा नाही; मूळ इंग्रजीत Button (2021) यांनी वापरलेले ``potent'' हे नाव आहे.}
+\begin{defn}
+	$\forall x((\exists y \in A)x \subseteq y \lif x \in A)$ असेल तेव्हा आणि केवळ तेव्हाच संच $A$ \emph{उपसंच-समावेशक} आहे असे म्हणू.
+\end{defn}
+\begin{lem}\label{sth:spine:Valphabasic:Valphabasicprops}
+प्रत्येक क्रमसूचक संख्या $\alpha$ साठी:
+\begin{enumerate}
+	\item\label{sth:spine:Valphabasic:Valphatrans} प्रत्येक $V_\alpha$ संक्रमक असतो.
+	\item\label{sth:spine:Valphabasic:Valphapotent} प्रत्येक $V_\alpha$ उपसंच-समावेशक असतो.
+	\item\label{sth:spine:Valphabasic:Valphacum} $\gamma \in \alpha$ असेल, तर $V_\gamma
+	\in V_\alpha$ (आणि म्हणून \ref{sth:spine:Valphabasic:Valphatrans} वरून $V_\gamma \subseteq V_\alpha$ सुद्धा).
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+हे (एकसामयिक) अनंतपार विगमनाने सिद्ध करू. विगमनासाठी प्रत्येक क्रमसूचक संख्या $\beta < \alpha$ साठी \ref{sth:spine:Valphabasic:Valphatrans}--\ref{sth:spine:Valphabasic:Valphacum} लागू आहेत असे मानू.
+
+$\alpha = \emptyset$ हे प्रकरण उघड आहे.
+
+$\alpha = \ordsucc{\beta}$ मानू. \ref{sth:spine:Valphabasic:Valphacum} साठी, $\gamma \in \alpha$ असेल, तर गृहीतकावरून $V_\gamma \subseteq V_\beta$; म्हणून $V_\gamma \in \Pow{V_\beta} = V_\alpha$. \ref{sth:spine:Valphabasic:Valphapotent} साठी $A \subseteq B \in V_\alpha$, म्हणजे $A
+\subseteq B \subseteq V_\beta$, असे मानू. मग $A \subseteq V_\beta$ आणि म्हणून $A \in V_\alpha$. \ref{sth:spine:Valphabasic:Valphatrans} साठी, $x \in A \in
+V_\alpha$ असेल, तर $A \subseteq V_\beta$ आणि म्हणून $x \in V_\beta$. गृहीतकानुसार $V_\beta$ संक्रमक असल्याने $x \subseteq V_\beta$; म्हणून $x \in V_\alpha$.
+
+$\alpha$ ही सीमा क्रमसूचक संख्या मानू. \ref{sth:spine:Valphabasic:Valphacum} साठी, $\gamma \in \alpha$ असेल, तर $\gamma \in \ordsucc{\gamma} \in \alpha$; म्हणून गृहीतकावरून $V_\gamma \in V_{\ordsucc{\gamma}}$ आणि त्यामुळे $V_\gamma \in \bigcup_{\beta \in \alpha} V_\beta = V_\alpha$. \ref{sth:spine:Valphabasic:Valphatrans} आणि \ref{sth:spine:Valphabasic:Valphapotent} साठी एवढेच पाहणे पुरेसे आहे की संक्रमक (अनुक्रमे उपसंच-समावेशक) संचांचा संयोग संक्रमक (अनुक्रमे उपसंच-समावेशक) असतो.
+\end{proof}
+
+\begin{lem}\label{sth:spine:Valphabasic:Valphanotref}
+प्रत्येक क्रमसूचक संख्या $\alpha$ साठी $V_\alpha \notin V_\alpha$.
+\end{lem}
+
+\begin{proof}
+अनंतपार विगमन वापरू. $V_\emptyset \notin V_\emptyset$ हे उघड आहे.
+
+$V_{\ordsucc{\alpha}} \in V_{\ordsucc{\alpha}} = \Pow{V_\alpha}$ असेल, तर $V_{\ordsucc{\alpha}} \subseteq V_\alpha$. तसेच \ref{sth:spine:Valphabasic:Valphabasicprops} वरून $V_\alpha
+\in V_{\ordsucc{\alpha}}$; म्हणून $V_\alpha \in V_\alpha$. व्यत्यस्त रूपाने, $V_\alpha \notin V_\alpha$ असेल, तर $V_{\ordsucc{\alpha}} \notin V_{\ordsucc{\alpha}}$.
+
+$\alpha$ ही सीमा क्रमसूचक संख्या असून $V_\alpha \in V_\alpha = \bigcup_{\beta \in
+\alpha}V_\beta$ असेल, तर एखाद्या $\beta \in \alpha$ साठी $V_\alpha \in V_\beta$. पण मग $V_\beta \in V_\alpha$ सुद्धा; म्हणून \ref{sth:spine:Valphabasic:Valphabasicprops} दोनदा वापरून $V_\beta \in V_\beta$ मिळते. व्यत्यस्त रूपाने, सर्व $\beta \in \alpha$ साठी $V_\beta \notin V_\beta$ असेल, तर $V_\alpha \notin
+V_\alpha$.
+\end{proof}
+
+\begin{cor}
+कोणत्याही क्रमसूचक संख्या $\alpha, \beta$ साठी: $\alpha \in \beta$ तेव्हा आणि केवळ तेव्हाच $V_\alpha \in V_\beta$.
+\end{cor}
+
+\begin{proof}
+\ref{sth:spine:Valphabasic:Valphabasicprops} वरून एक दिशा मिळते. उलट, $V_\alpha \in V_\beta$ मानू. \ref{sth:spine:Valphabasic:Valphanotref} वरून $\alpha \neq \beta$. तसेच $\beta \notin \alpha$; कारण अन्यथा $V_\beta \in V_\alpha$ मिळेल आणि मग \ref{sth:spine:Valphabasic:Valphabasicprops} दोनदा वापरून $V_\beta \in V_\beta$ मिळेल, हे \ref{sth:spine:Valphabasic:Valphanotref} शी विसंगत आहे. म्हणून त्रिपर्यायावरून $\alpha \in \beta$.
+\end{proof}
+\noindent
+या सर्वांवरून प्रत्येक $V_\alpha$ हा पदानुक्रमातील $\alpha$ वा टप्पा आहे असे मानता येते. का ते पाहू.
+
+आपले $V_\alpha$ \emph{क्रमिक} प्रक्रियेत तयार होतात असे नक्कीच मानता येते; कारण क्रमसूचक संख्यांचा वापर पुनरावृत्तीच्या संकल्पनेशी जुळतो. शिवाय, एक टप्पा दुसऱ्याआधी तयार होतो, म्हणजे $V_\beta \in V_\alpha$, म्हणजे $\beta \in \alpha$, असेल, तर $V_\beta \subseteq V_\alpha$ असल्यामुळे रचना \emph{संचयी} असते. शेवटी, आधीच्या कोणत्याही टप्प्यावर उपलब्ध असलेल्या संचांचे \emph{सर्व} संभाव्य संग्रह आपण प्रत्यक्ष तयार करतो; कारण प्रत्येक उत्तरवर्ती टप्पा $V_{\ordsucc{\alpha}}$ हा त्याच्या पूर्ववर्ती $V_\alpha$ चा घातसंच असतो.
+
+म्हणजे $\ZFminus$ मिळाल्यावर संचांच्या संचयी-क्रमिक पदानुक्रमाची आपली संकल्पना मांडण्याचे काम \emph{जवळजवळ} पूर्ण झाले आहे. (अर्थात प्रतिस्थापनाचे समर्थन अजून करायचे आहे.)
+
+
+
+
+
+
+
+
+\section{पायाभूतता}\label{sth:spine:foundation:sec}
+
+आपले काम फक्त \emph{जवळजवळ} पूर्ण झाले आहे, \emph{पूर्णपणे} नाही. कारण $\ZFminus$ मधील कोणत्याही तत्त्वावरून \emph{प्रत्येक} संच कोणत्या तरी $V_\alpha$ मध्ये आहे, म्हणजे प्रत्येक संच कोणत्या तरी टप्प्यावर तयार होतो, याची खात्री मिळत नाही.
+
+पदानुक्रमाबाहेर काही संच आहेत की नाहीत, याची आपल्याला गणिती दृष्टीने \emph{पर्वा नाही} असा एक सरळ अर्थ आहे: तसे संच असतील, तर त्यांच्याकडे दुर्लक्ष करता येईल. पण \emph{संचाची संकल्पना} मांडताना प्रत्येक संच कोणत्या तरी टप्प्यावर तयार होतो, हीच कल्पना आपण वापरली आहे (\ref{sth:z:story:sec} मधील \stageshier{} पाहा). म्हणून पदानुक्रमाबाहेर संच असण्याची शक्यता आपल्याला वगळायची आहे. त्यासाठी प्रत्येक संच पदानुक्रमात कुठे तरी येतो याची हमी देणारे नवे स्वयंसिद्धक घालावे लागेल.
+
+$V_\alpha$ हेच आपले टप्पे असल्यामुळे पुढील विधान थेट स्वयंसिद्धक म्हणून घेता येईल:
+
+\begin{defish}
+\emph{नियमितता.} $\forall A \exists \alpha\, A \subseteq V_\alpha$
+\end{defish}
+
+ही पद्धत पूर्णपणे योग्य ठरेल. मात्र पुढील विभागात स्पष्ट होणाऱ्या कारणांमुळे आपण याऐवजी दुसरे स्वयंसिद्धक स्वीकारू:
+
+\begin{axiom}[पायाभूतता]
+$(\forall A \neq \emptyset)(\exists B \in A)A \cap B = \emptyset$.
+\end{axiom}
+
+काही प्रयत्नांनंतर $\ZFminus$ मध्ये पायाभूततेवरून नियमितता मिळते, हे दाखवता येते:
+\begin{defn}
+प्रत्येक संच $A$ साठी पुढीलप्रमाणे ठेवू:
+\begin{align*}
+	\text{cl}_0(A) &= A,\\
+	\text{cl}_{n+1}(A) &= \bigcup \text{cl}_n(A),\\
+	\text{trcl}(A) &= \bigcup_{n < \omega} \text{cl}_{n}(A).
+\end{align*}
+$\text{trcl}(A)$ ला $A$ चे \emph{संक्रमक आवरण} म्हणू.
+\end{defn}
+\noindent
+``संक्रमक आवरण'' हे नाव योग्य आहे:
+\begin{prop}\label{sth:spine:foundation:subsetoftrcl}
+$A \subseteq \trcl{A}$ आणि $\trcl{A}$ हा संक्रमक संच आहे.
+\end{prop}
+
+\begin{proof}
+$A = \text{cl}_0(A) \subseteq \text{trcl}(A)$ हे उघड आहे. आणि $x
+\in b \in \trcl{A}$ असेल, तर एखाद्या $n$ साठी $b \in \text{cl}_n(A)$; म्हणून $x
+\in \text{cl}_{n+1}(A) \subseteq \text{trcl}(A)$.
+\end{proof}
+
+\begin{lem}\label{sth:spine:foundation:lem:TransitiveWellFounded}
+$A$ हा संक्रमक संच असेल, तर $A \subseteq V_\alpha$ असेल अशी काही $\alpha$ अस्तित्वात असते.
+\end{lem}
+
+\begin{proof}
+\ref{sth:ordinals:opps:defsupstrict} मधील ``$\supstrict(X)$'' ची व्याख्या आठवून पुढील दोन संच परिभाषित करू:
+\begin{align*}
+	D  &= \Setabs{x \in A}{\forall \delta\ x \nsubseteq V_\delta}\\
+	\alpha &= \supstrict\Setabs{\delta}{(\exists x \in A)
+	(x \subseteq V_\delta \land (\forall \gamma \in \delta)x \nsubseteq V_\gamma)}
+\end{align*}
+$D = \emptyset$ मानू. मग $x \in A$ असेल, तर $x \subseteq V_\delta$ असेल अशी काही $\delta$ असते. क्रमसूचक संख्या सुक्रमित असल्याने $(\forall \gamma \in \delta)x \nsubseteq V_\gamma$ ही अटही पूर्ण करणारी सर्वांत लहान अशी संख्या निवडता येते. म्हणून $\delta \in \alpha$; त्यामुळे \ref{sth:spine:Valphabasic:Valphabasicprops} वरून $x \in V_\alpha$. यावरून अपेक्षेप्रमाणे $A \subseteq
+V_{\alpha}$.
+
+म्हणून $D = \emptyset$ हे दाखवणे पुरेसे आहे. विसंगतीसाठी तसे नाही असे मानू. पायाभूततेवरून $B \in D \subseteq A$ असा सदस्य मिळतो की $D \cap B
+= \emptyset$. $x \in B$ असेल, तर $A$ संक्रमक असल्याने $x \in A$; आणि $x \notin D$ असल्याने $\exists \delta\ x \subseteq
+V_\delta$. आता
+\[
+	\beta = \supstrict\Setabs{\delta}{(\exists x \in B)(x \subseteq V_\delta \land (\forall \gamma < \delta)x \nsubseteq V_\gamma)}.
+\]
+असे ठेवू. पूर्वीप्रमाणे $B \subseteq V_\beta$ मिळते; पण ते $B \in
+D$ या विधानाशी विसंगत आहे.
+\end{proof}
+
+\begin{thm}\label{sth:spine:foundation:zfentailsregularity}
+नियमितता लागू आहे.
+\end{thm}
+
+\begin{proof}
+$A$ निश्चित करू. \ref{sth:spine:foundation:subsetoftrcl} वरून $A \subseteq \trcl{A}$ आणि हा आवरण-संच संक्रमक आहे. म्हणून \ref{sth:spine:foundation:lem:TransitiveWellFounded} वरून $A \subseteq \trcl{A} \subseteq V_\alpha$ असेल अशी काही $\alpha$ असते.
+\end{proof}
+
+या निष्कर्षांवरून $\ZFminus$ मध्ये $\emph{पायाभूतता}\Rightarrow\emph{नियमितता}$ हे सशर्त विधान सिद्ध होते. \ref{sth:spine:rank:zfminusregularityfoundation} मध्ये $\ZFminus$ मध्ये $\emph{नियमितता}\Rightarrow\emph{पायाभूतता}$ हेही सिद्ध होते असे दाखवू. म्हणून $\ZFminus$ च्या संदर्भात पायाभूतता आणि नियमितता \emph{समतुल्य} आहेत. याचा अर्थ, $\ZFminus$ दिल्यावर नियमिततेशी असलेल्या समतुल्यतेवरून पायाभूततेचे समर्थन करता येते. आणि \stageshier{} च्या आधारे नियमिततेचे समर्थन लगेच करता येते.
+
+
+
+
+
+
+
+\section{$\Z$ आणि $\ZF$: एक महत्त्वाचा टप्पा}\label{sth:spine:zf:sec}
+
+पायाभूततेमुळे आपण आणखी एक महत्त्वाचा टप्पा गाठतो. आपण $\Zminus$ आणि $\ZFminus$ या उपपत्ती पाहिल्या; त्यांतून एक विशिष्ट गोष्ट ``वगळलेली'' आहे असे म्हटले होते. ती गोष्ट म्हणजे पायाभूतता. म्हणून:
+
+\begin{defn}
+$\Zminus$ मध्ये पायाभूतता जोडली की $\Z$ ही उपपत्ती मिळते. म्हणून तिची स्वयंसिद्धके विस्तारात्मकता, संयोग, जोड्या, घातसंच, अनंतता, पायाभूतता आणि विभक्तीकरण-रूपबंधातील सर्व स्वयंसिद्धके ही आहेत.
+
+$\ZFminus$ मध्ये पायाभूतता जोडली की $\ZF$ ही उपपत्ती मिळते. दुसऱ्या शब्दांत, $\Z$ मध्ये प्रतिस्थापनाची सर्व स्वयंसिद्धके जोडली की $\ZF$ मिळते.
+\end{defn}
+
+तरी एक प्रश्न पडू शकतो: $\ZFminus$ मध्ये नियमितता पायाभूततेशी समतुल्य आहे आणि नियमिततेचे समर्थन स्पष्ट आहे, तर थेट नियमिततेला मूलभूत स्वयंसिद्धक म्हणून न घेता पायाभूततेचा आडमार्ग का घ्यावा?
+
+ऐतिहासिक कारणे (कोणी कोणते तत्त्व कधी मांडले, ही) बाजूला ठेवली, तर मुख्य कारण असे: $V_\alpha$ च्या व्याख्येचा वापर न करता पायाभूतता मांडता येते. पण त्या व्याख्येसाठी \ref{sth:spine:recursion:sec} मधील सर्व काम आवश्यक होते: ती व्याख्या योग्य आहे हे दाखवण्यासाठी अनंतपार पुनरावर्तन सिद्ध करावे लागले. आणि त्या पुराव्यात \emph{प्रतिस्थापन} वापरले. म्हणून $\ZFminus$ च्या संदर्भात पायाभूतता आणि नियमितता समतुल्य असल्या, तरी $\Zminus$ च्या संदर्भात त्या समतुल्य नाहीत.
+
+खरे तर प्रश्न या साध्या निरीक्षणापेक्षा अधिक गंभीर आहे. या पुस्तकाच्या व्याप्तीपलीकडील निष्कर्ष असा की $\Zminus$ आणि $\Z$ या दोन्ही उपपत्ती $V_\alpha$ परिभाषित करण्यास अपुऱ्या आहेत. म्हणून फक्त $\Z$ मध्ये काम करत असाल, तर आपण मांडलेल्या रूपातील नियमिततेला \emph{अर्थच} नाही. म्हणून नियमिततेऐवजी पायाभूतता हेच आपले अधिकृत स्वयंसिद्धक आहे.
+
+यापुढे अन्यथा सांगितले नसेल, तर आपण अधिक काही न सांगता $\ZF$ मध्ये काम करू.
+
+
+
+
+
+
+
+\section{प्रतांक}\label{sth:spine:rank:sec}
+
+आता टप्पे $V_\alpha$ यांच्या रूपात परिभाषित केले आहेत आणि प्रत्येक संच कोणत्या तरी टप्प्याचा उपसंच असतो हे आपल्याला माहीत आहे. त्यामुळे संचाचा \emph{प्रतांक} परिभाषित करता येतो. सहज अर्थाने, $A$ चा प्रतांक म्हणजे $A$ ज्या पहिल्या क्षणी तयार होतो तो क्षण. अधिक नेमकेपणाने:
+
+\begin{defn}\label{sth:spine:rank:defnsetrank}
+प्रत्येक संच $A$ साठी $\setrank{A}$ ही $A
+\subseteq V_\alpha$ पूर्ण करणारी लघुतम क्रमसूचक संख्या $\alpha$ असते.
+\end{defn}
+\begin{prop}\label{sth:spine:rank:ranksexist}
+	कोणत्याही $A$ साठी $\setrank{A}$ अस्तित्वात असतो.
+\end{prop}
+\begin{proof}
+	हा पुरावा सरावासाठी सोडला आहे.
+\end{proof}
+\begin{prob}
+	\ref{sth:spine:rank:ranksexist} सिद्ध करा.
+\end{prob}
+\noindent
+प्रतांकांचे सुक्रमण आपल्याला काही महत्त्वाचे निष्कर्ष सिद्ध करू देते:
+\begin{prop}\label{sth:spine:rank:valphalowerrank}
+कोणत्याही क्रमसूचक संख्या $\alpha$ साठी $V_\alpha = \Setabs{x}{\setrank{x} \in \alpha}$.
+\end{prop}
+
+\begin{proof}
+$\setrank{x} \in \alpha$ असेल, तर $x \subseteq V_{\setrank{x}} \in
+V_\alpha$; म्हणून $V_\alpha$ उपसंच-समावेशक असल्याने $x \in V_\alpha$ (येथे \ref{sth:spine:Valphabasic:Valphabasicprops} अनेकदा वापरले आहे). उलट, $x \in V_\alpha$ असेल, तर $x \subseteq V_\alpha$ आणि त्यामुळे $\setrank{x} \leq \alpha$. आता सुलभ अनंतपार विगमनाने समतेची शक्यता नाकारता येते: समता असेल, तर $x \notin V_\alpha$.
+\end{proof}
+\begin{prob}
+	\ref{sth:spine:rank:valphalowerrank} मध्ये उल्लेखलेले सुलभ अनंतपार विगमन पूर्ण करा.
+\end{prob}
+
+\begin{prop}\label{sth:spine:rank:rankmemberslower}
+$B \in A$ असेल, तर $\setrank{B} \in \setrank{A}$.
+\end{prop}
+
+\begin{proof}
+\ref{sth:spine:rank:valphalowerrank} वरून $A \subseteq V_{\setrank{A}} = \Setabs{x}{\setrank{x} \in
+\setrank{A}}$.
+\end{proof}
+\noindent
+याचा वापर करून \emph{सर्व संचांविषयी} विगमनाच्या एका प्रकाराने निष्कर्ष सिद्ध करता येतो:
+
+\begin{thm}[$\in$-विगमन रूपबंध]
+कोणत्याही सूत्र $\phi$ साठी:
+\[
+	\forall A((\forall x \in A)\phi(x) \lif \phi(A)) \lif \forall A \phi(A).
+\]
+\end{thm}
+
+\begin{proof}
+व्यत्यस्त रूप सिद्ध करू. $\lnot \forall A
+\phi(A)$ असे मानू. अनंतपार विगमनाने (\ref{sth:ordinals:basic:ordinductionschema}) $\phi$ पूर्ण न करणारा लघुतम संभाव्य प्रतांकाचा संच मिळतो; म्हणजे $\lnot \phi(A)$ आणि $\forall x(\setrank{x} \in \setrank{A}
+\lif \phi(x))$ पूर्ण करणारा एखादा $A$. आता $x \in A$ असेल, तर \ref{sth:spine:rank:rankmemberslower} वरून $\setrank{x} \in
+\setrank{A}$; म्हणून $\phi(x)$. म्हणजे $(\forall x \in
+A)\phi(x) \land \lnot \phi(A)$.
+\end{proof}\noindent या सामर्थ्यवान निष्कर्षाचा अनौपचारिक अर्थ असा सांगता येईल: $\phi$ हा गुणधर्म \emph{आनुवंशिक} असतो तेव्हा आणि केवळ तेव्हाच, जेव्हा कोणत्याही संचाचा प्रत्येक घटक $\phi$ पूर्ण करत असेल, तर तो संचही $\phi$ पूर्ण करतो. मग $\in$-विगमन सांगते: $\phi$ आनुवंशिक असेल, तर प्रत्येक संच $\phi$ पूर्ण करतो.
+
+प्रतांकांवरील चर्चा (सध्या तरी) पूर्ण करण्यासाठी याआधी सूचित केलेले काही दावे सिद्ध करू.
+
+\begin{prop}\label{sth:spine:rank:ranksupstrict}
+$\setrank{A} = \supstrict_{x \in A}\setrank{x}$.
+\end{prop}
+
+\begin{proof}
+$\alpha = \supstrict_{x \in A}\setrank{x}$ ठेवू. \ref{sth:spine:rank:rankmemberslower} वरून $\alpha \leq \setrank{A}$. पण $x \in A$ असेल, तर $\setrank{x} \in \alpha$; म्हणून \ref{sth:spine:rank:valphalowerrank} वरून $x \in V_\alpha$. त्यामुळे $A
+\subseteq V_\alpha$, म्हणजे $\setrank{A} \leq \alpha$. म्हणून $\setrank{A} = \alpha$.
+\end{proof}
+
+\begin{cor}\label{sth:spine:rank:ordsetrankalpha}
+कोणत्याही क्रमसूचक संख्या $\alpha$ साठी $\setrank{\alpha} = \alpha$.
+\end{cor}
+
+\begin{proof}
+अनंतपार विगमनासाठी सर्व $\beta \in \alpha$ साठी $\setrank{\beta} = \beta$ असे मानू. आता \ref{sth:spine:rank:ranksupstrict} वरून $\setrank{\alpha} = \supstrict_{\beta \in
+\alpha}\setrank{\beta} = \supstrict_{\beta \in \alpha}\beta = \alpha$.
+
+
+
+
+
+
+
+
+
+
+
+\end{proof}
+
+शेवटी, \ref{sth:spine:foundation:sec} च्या अखेरीस सांगितलेला निष्कर्ष झटपट सिद्ध करू: $\ZFminus$ मध्ये $\emph{नियमितता} \Rightarrow \emph{पायाभूतता}$ हे सशर्त विधान सिद्ध होते. (या पुराव्यात ``प्रतांक'' ही संकल्पना आणि \ref{sth:spine:rank:rankmemberslower} वापरता येतात. कारण विभागाच्या सुरुवातीला म्हटल्याप्रमाणे, ते $\ZFminus + \text{नियमितता}$ मध्ये मांडता येतात.)
+
+\begin{prop}[$\ZFminus + \text{नियमितता}$ मध्ये काम करताना]\label{sth:spine:rank:zfminusregularityfoundation} पायाभूतता लागू आहे.
+\end{prop}
+
+\begin{proof}
+$A \neq \emptyset$ निश्चित करू आणि त्या संचातील लघुतम संभाव्य प्रतांकाचा सदस्य $B \in A$ घेऊ. $c \in B$ असेल, तर \ref{sth:spine:rank:rankmemberslower} वरून $\setrank{c} \in \setrank{B}$; म्हणून $B$ च्या निवडीवरून $c \notin A$.
+\end{proof}
+
+
+

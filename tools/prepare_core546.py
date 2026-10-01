@@ -89,8 +89,8 @@ for name, raw, parts, prefix in files:
     for original, projection in cites.items():
         content = content.replace(original, projection)
     content = re.sub(
-        r"\\citet\[Appendix\s+A\]\{Potter2004\}",
-        "Potter (2004, Appendix A)", content
+        r"\\citet\[(?:Appendix|परिशिष्ट)\s+A\]\{Potter2004\}",
+        "पॉटर (2004, परिशिष्ट A)", content
     )
     assert not re.search(r"\\cite(?:p|t|alt|author|year)?(?:\[[^]]*\])?\{", content)
     assert "!!" not in content, (name, re.findall(r"!!.{0,35}", content)[:8])

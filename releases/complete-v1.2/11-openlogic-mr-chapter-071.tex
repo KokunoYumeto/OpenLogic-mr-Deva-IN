@@ -1,0 +1,1898 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 71: सामान्यरूपीकरण
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{सामान्यरूपीकरण}\label{pt:nor:chap}
+
+
+
+
+
+
+
+
+
+
+\section{परिचय}\label{pt:nor:int:sec}
+
+~$A \lif B$ ही शर्त तुम्ही
+सिद्ध केली असेल, तर
+\Elim{\lif} वापरून~$B$ ची
+सिद्धता करताना तिचा उपयोग
+होऊ शकतो. अर्थात त्यासाठी~$A$
+ची सिद्धता~$\delta_1$ ही हवीच.
+~$A \lif B$ ची तुमची
+सिद्धता~$\delta_3$ बहुधा
+\Intro{\lif} ने संपते;
+तो नियम उघड्या गृहीतक~$A$
+पासून~$B$ ची
+सिद्धता~$\delta_2$
+घेऊन~$A \lif B$
+ची सिद्धता बनवतो.
+तसे असल्यास तुमची अंतिम
+सिद्धता पुढील रूपाची असते:
+\[
+\AxiomC{$\Discharge{A}{x}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$A \lif B$}
+\AxiomC{}
+\RightLabel{$\delta_1$}
+\DeduceC{$A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$B$}
+\DisplayProof
+\]
+आधीच मिळालेली
+$A \lif B$ ची सिद्धता
+पुन्हा वापरली म्हणून
+तुमची पद्धत कार्यक्षम असली,
+तरी सिद्धता स्वतः
+कार्यक्षम नाही.
+$A \lif B$ आणून लगेच
+निरसित करण्याचा हा
+वळसा वाटतो. ~$B$
+सिद्ध करण्याचा अधिक
+थेट मार्ग असायला हवा.
+
+तसा मार्ग नेहमीच असतो.
+अशा “वळशांना”—परिचय
+नियमाच्या लगेच नंतर
+निरसन नियम लावल्यास
+तयार होणाऱ्या रचनांना—
+नैसर्गिक निगमनाच्या
+सिद्धता मधून नेहमी
+काढून टाकता येते.
+याला \emph{सामान्यरूपीकरण}
+म्हणतात; परिणामी मिळणारी
+सिद्धता ही \emph{सामान्यरूप}
+असते (किंवा ती सिद्धता
+\emph{सामान्य रूपात} आहे
+असे म्हणतात).
+
+या निष्कर्षाची सिद्धता
+क्रमवर्ती कलनातील
+कट-निर्मूलन प्रमेयाप्रमाणेच
+काहीशी गुंतागुंतीची आहे;
+तिच्यात अनेक प्रसंग
+पाहावे लागतात.
+अंतःप्रज्ञावादी~\Log{N1i}
+पेक्षा अभिजात~\Log{N1c}
+साठी ती सिद्ध करणे
+अधिक कठीण असते.
+क्रमवर्ती कलनात~\Cut{}
+नियम वापरल्यामुळे विना-कट
+सिद्ध करता येत नाही असे
+अधिक काही सिद्ध करता येत
+नाही, हे कट-निर्मूलन दाखवते.
+त्याचप्रमाणे वळसे टाळून
+मिळू शकत नाहीत असे
+अधिक निष्कर्ष वळसे वापरूनही
+मिळत नाहीत, हे
+सामान्यरूपीकरण दाखवते.
+इतर साम्येही आहेत:
+एखाद्या निष्कर्षाची
+वळसांसह सर्वात लहान
+सिद्धता जितकी असेल,
+त्याच निष्कर्षाची
+सामान्यरूप सिद्धता
+त्याहून खूप मोठी असू शकते.
+तसेच क्रमवर्ती कलनात
+विना-कट सर्वात लहान
+सिद्धता पेक्षा
+कट असलेली सिद्धता
+खूप लहान असू शकतात.
+उप-सूत्र गुणधर्मही
+यातून मिळतो: नैसर्गिक
+निगमनाच्या सिद्धता मध्ये
+निष्कर्ष आणि उघडी गृहीतके
+यांच्या उप-सूत्रे, संख्यापकांमुळे लागणारी
+त्यांची पद-आदेशनाची उदाहरणे आणि आवश्यक असत्य
+वापरून निष्कर्ष नेहमी
+सिद्ध करता येतो.
+क्रमवर्ती कलनात हा गुणधर्म
+कट-निर्मूलनातून मिळतो,
+तसाच येथे तो
+सामान्यरूपीकरणातून मिळतो.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{खंड आणि कट}\label{pt:nor:seg:sec}
+
+परिचय नियमाच्या
+नंतर निरसन नियम
+येणे हा सिद्धता मधला
+वळसा असतो; सिद्धता
+सामान्यरूप करणे म्हणजे
+असे वळसे काढणे.
+पण~\Elim{\lor} आणि
+\Elim{\lexists} मुळे
+“काढायचा वळसा” याची
+व्याख्याही थोडी
+गुंतागुंतीची होते.
+अडचण अशी: वळशात
+निरसन नियम
+परिचय नियमाच्या
+\emph{लगेच} नंतर येईलच
+असे नाही. त्यांच्यामध्ये
+\Elim{\lor} किंवा
+\Elim{\lexists} असू
+शकतो; उदाहरणार्थ:
+\[
+\AxiomC{}
+\DeduceC{$\lexists[x][C(x)]$}
+\AxiomC{$\Discharge{A}{x}$}
+\DeduceC{$B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$A \lif B$}
+\DischargeRule{\Elim{\lexists}}{y}
+\BinaryInfC{$A \lif B$}
+\AxiomC{}
+\DeduceC{$A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$B$}
+\DisplayProof
+\]
+इतकेच नव्हे,~\Intro{\lif}
+आणि~\Elim{\lif} यांच्या
+मध्ये कितीही
+\Elim{\lor} किंवा
+\Elim{\lexists} अनुमाने
+असू शकतात; उदाहरणार्थ:
+\[
+\AxiomC{}
+\DeduceC{$\lexists[x][C(x)]$}
+\AxiomC{}
+\DeduceC{$D \lor E$}
+\AxiomC{$\Discharge{A}{x}$}
+\DeduceC{$B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$A \lif B$}
+\AxiomC{$\Discharge{A}{x}$}
+\DeduceC{$B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$A \lif B$}
+\RightLabel{\Elim{\lor}}
+\TrinaryInfC{$A \lif B$}
+\DischargeRule{\Elim{\lexists}}{y}
+\BinaryInfC{$A \lif B$}
+\AxiomC{}
+\DeduceC{$A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$B$}
+\DisplayProof
+\]
+या उदाहरणात तोच
+\Elim{\lif} एकाहून
+अधिक वळशांत भाग
+घेतो: त्याच्या आधी
+एकाहून अधिक~\Intro{\lif}
+आहेत. अशा सर्व
+शक्यता सामावण्यासाठी
+~\Log{N1i}-सिद्धतेतील
+सूत्र आस्थितींच्या
+विशिष्ट अनुक्रमांनी
+वळसे परिभाषित करतो;
+त्यांना \emph{खंड}
+म्हणतात. येथे त्या
+~$A \lif B$
+च्या आस्थितींच्या
+अनुक्रमिका आहेत:
+$\Elim{\lor}$ किंवा
+$\Elim{\lexists}$
+च्या गौण आधारविधानानंतर
+त्याच अनुमानाचा
+निष्कर्ष येतो.
+या उदाहरणात असे
+दोन खंड आहेत;
+प्रत्येकात~$A \lif B$
+च्या तीन आस्थिती
+आहेत. आता औपचारिक
+व्याख्या पाहू.
+
+\begin{defn}
+~\Log{N1i} मधील
+सिद्धता~$\delta$
+मध्ये एकाच सूत्र~$A$
+च्या $A_1$, \dots,
+$A_n$ या~$\delta$
+मधील आस्थितींचा
+अनुक्रम पुढील अटी
+पूर्ण करत असेल,
+तर तो \emph{खंड} आहे:
+\begin{enumerate}
+  \item $A_1$ हा
+  \Elim{\lor} किंवा
+  \Elim{\lexists}
+  चा निष्कर्ष नसतो;
+  \item $A_n$ हे
+  \Elim{\lor} किंवा
+  \Elim{\lexists}
+  चे गौण आधारविधान नसते;
+  \item $i = 1$, \dots,~$n-1$
+  साठी~$A_i$ हे
+  \Elim{\lor} किंवा
+  \Elim{\lexists}
+  चे गौण आधारविधान
+  असते, आणि~$A_{i+1}$
+  हा त्याच अनुमानाचा
+  निष्कर्ष असतो.
+\end{enumerate}
+त्या खंडाची
+\emph{लांबी}~$n$ आहे.
+\end{defn}
+
+प्रत्येक खंड काढून
+टाकण्याजोगा वळसा
+असतोच असे नाही.
+अशा वळशांना
+\emph{कट} म्हणतात.
+
+\begin{defn}
+एखाद्या खंडातील
+$A_n$ हे
+निरसन अनुमानाचे
+प्रमुख आधारविधान असेल,
+आणि पुढीलपैकी एक
+अट पूर्ण होत असेल,
+तर तो \emph{कट} आहे:
+$n=1$ असून
+$A_1 = A_n$ हे
+परिचय अनुमानाचा
+किंवा~\FalseInt चा
+निष्कर्ष असेल;
+किंवा~$n>1$ असेल.
+\end{defn}
+
+कट-खंडाची सुरुवात
+परिचय नियमाच्या
+निष्कर्षाने व्हावीच
+लागते असे नाही.
+तो निरसन
+नियमाच्या प्रमुख
+आधारविधानात संपणे
+हीच आवश्यक अट आहे.
+मात्र लांबी~$1$
+असलेला खंड कट
+म्हणून मोजायचा असेल,
+तर तो परिचय
+नियमाचा किंवा~\FalseInt
+चा निष्कर्ष असणेही
+आवश्यक आहे.
+
+\begin{defn}
+कटाची \emph{कोटी}
+ही~$\depth{A}$
+असते. सिद्धता~$\delta$
+ची \emph{कट-कोटी}
+$\cutrank{\delta}$
+म्हणजे~$\delta$
+मधील कटांच्या
+कोटींपैकी महत्तम कोटी.
+कटाची कोटी
+$\cutrank{\delta}$
+इतकी असेल, म्हणजे
+ती महत्तम असेल,
+तर तो~$\delta$
+मधील \emph{महत्तम} कट.
+~$\delta$ ची
+\emph{कट-लांबी}
+म्हणजे तिच्यातील
+सर्व महत्तम कटांच्या
+लांबींची बेरीज.
+\end{defn}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{क्रमपरिवर्तन रूपांतरणे}\label{pt:nor:per:sec}
+
+~\Log{N1i} मधील कट
+हे निरसन नियमाच्या
+प्रमुख आधारविधानात संपणारे
+खंड असतात. सामान्यरूपीकरण
+सिद्धतेतील एक प्रसंग म्हणजे
+महत्तम कटांची लांबी आणि
+त्याबरोबर सिद्धता ची
+कट-लांबी कमी करणे.
+$>1$ लांबीचा कट
+अनेक प्रकारे संपू शकतो:
+कटमधील~$A$ ची शेवटची
+सूत्र आस्थिती
+(\Elim{\lor} किंवा
+\Elim{\lexists}) चा
+निष्कर्ष आहे का, आणि
+ती कोणत्या निरसन
+अनुमानाचे प्रमुख आधारविधान
+आहे, यांवर ते अवलंबून असते.
+
+उदाहरणार्थ, संबंधित
+अनुमाने~\Elim{\lor} आणि
+\Elim{\land} असतील,
+$A \ident B \land C$
+असेल, आणि~$\delta_1$
+ही उप-सिद्धता पुढील
+रूपात संपत असेल:
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$D \lor E$}
+\AxiomC{$\Discharge{D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$B \land C$}
+\AxiomC{$\Discharge{E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$B \land C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$B \land C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$B$}
+\DisplayProof
+\]
+तर या कटमधील शेवटची
+सूत्र आस्थिती~$A_n$
+ही~\Elim{\lor} चा
+निष्कर्ष, म्हणजे खालचे
+$B \land C$, आहे.
+त्याआधीची सूत्र
+आस्थिती~$A_{n-1}$
+ही~\Elim{\lor}
+च्या गौण आधारविधानांपैकी
+एक आहे.
+
+या कटाची लांबी
+कमी करण्यासाठी
+\Elim{\lor} आणि
+\Elim{\land} अनुमानांचा
+क्रम बदलू (“क्रमपरिवर्तन”
+करू) शकतो. म्हणजे~$\delta$
+मधील उपसिद्धता~$\delta_1$
+पुढील रचनेने बदलतो:
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$D \lor E$}
+\AxiomC{$\Discharge{D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$B \land C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$B$}
+\AxiomC{$\Discharge{E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$B \land C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$B$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$B$}
+\DisplayProof
+\]
+आधी~\Elim{\lor} च्या
+खाली~\Elim{\land}
+च्या आधारविधानात संपणारे
+कट आता~\Elim{\lor}
+च्या गौण आधारविधानांच्या
+वर असलेल्या~\Elim{\land}
+अनुमानांपैकी एका
+आधारविधानात संपतात.
+म्हणजे प्रत्येकाची लांबी
+~$1$ ने कमी झाली.
+
+याखेरीज~$\delta_2$,
+$\delta_3$ किंवा~$\delta_4$
+यांपैकी एखाद्यात पूर्णपणे
+असलेला कट, किंवा~$\delta$
+मधील~$\delta_1$
+बाहेर पूर्णपणे असलेला कट,
+बदलत नाही. त्यात तीच
+सूत्रे आणि तीच
+अनुमाने असतात; म्हणून
+विशेषतः त्याची कोटी व
+लांबी~$\delta$ मधील
+अनुरूप कटाइतकीच असते.
+त्यामुळे नव्या सिद्धता
+ची कट-कोटी वाढत नाही,
+आणि नव्या सिद्धता
+ची कट-लांबी
+जुन्या सिद्धता च्या
+कट-लांबीपेक्षा कमी होते.
+
+\begin{prob}
+क्रमपरिवर्तन रूपांतरणानंतर
+किमान एका कटाची लांबी~$1$
+ने कमी होते.
+\Elim{\land} ला
+एखाद्या~\Elim{\lor}
+च्या पलीकडे हलवले,
+तर प्रत्यक्षात दोन
+कट-खंडांची लांबी कमी
+होते; त्यामुळे या
+प्रसंगी सिद्धता ची
+कट-लांबी किमान~$2$
+ने कमी होते.
+अशा एकाच क्रमपरिवर्तनाने
+सिद्धता ची कट-लांबी
+$2$ पेक्षा अधिक कमी
+होऊ शकते का?
+कटाची \emph{कोटी}
+कमी होऊ शकते का?
+\end{prob}
+
+निरसन नियम
+\Elim{\lor} किंवा
+\Elim{\lexists} नियमाच्या
+वर हलवण्याच्या प्रक्रियेला
+\emph{क्रमपरिवर्तन रूपांतरण}
+म्हणतात. काही नियम-जोड्यांचे
+नमुने~\ref{pt:nor:per:tab:permutation-conversions}
+मध्ये दिले आहेत.
+(उरलेले सरावासाठी सोडले आहेत.)
+हे नमुने वापरण्यापूर्वी मुक्ती-नियमांच्या बद्ध खुणा आणि
+त्यांना बांधलेली गृहीतके एकत्र नवी नावे द्यायची,
+जेणेकरून हलवलेल्या आधारसिद्धतेची उघडी गृहीतके
+त्या नियमांनी अनवधानाने मुक्त होणार नाहीत.
+उपसिद्धतेच्या अनेक प्रती लागल्यास प्रत्येक प्रतीतील
+आयगेन स्थिरांक आणि त्यांच्याशी संबंधित बद्ध खुणा
+स्वतंत्र नवी नावे देऊन पुन्हा नियमित सिद्धता मिळवायची;
+उघडी गृहीतके आणि अंतिम सूत्रे जपायची.
+या नावबदलांमुळे कटांची कोटी किंवा लांबी बदलत नाही.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{\small
+\begin{longtable}{@{}l@{}}
+\AxiomC{$D \lor E$}
+\AxiomC{$\Discharge{D}{x}$}
+\shortDeduce
+\DeduceC{$B \land C$}
+\AxiomC{$\Discharge{E}{y}$}
+\shortDeduce
+\DeduceC{$B \land C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$B \land C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$B$}
+\DisplayProof
+$\longrightarrow$\\[6ex]
+\quad\AxiomC{$D \lor E$}
+\AxiomC{$\Discharge{D}{x}$}
+\shortDeduce
+\DeduceC{$B \land C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$B$}
+\AxiomC{$\Discharge{E}{y}$}
+\shortDeduce
+\DeduceC{$B \land C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$B$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$B$}
+\DisplayProof
+\\[10ex]
+\AxiomC{$D \lor E$}
+\AxiomC{$\Discharge{D}{x}$}
+\shortDeduce
+\DeduceC{$B \lif C$}
+\AxiomC{$\Discharge{E}{y}$}
+\shortDeduce
+\DeduceC{$B \lif C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$B \lif C$}
+\AxiomC{$B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$C$}
+\DisplayProof
+$\longrightarrow$\\[6ex]
+\AxiomC{$D \lor E$}
+\AxiomC{$\Discharge{D}{x}$}
+\shortDeduce
+\DeduceC{$B \lif C$}
+\AxiomC{$B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$C$}
+\AxiomC{$\Discharge{E}{y}$}
+\shortDeduce
+\DeduceC{$B \lif C$}
+\AxiomC{$B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$C$}
+\DisplayProof
+\\[10ex]
+\AxiomC{$D \lor E$}
+\AxiomC{$\Discharge{D}{x}$}
+\shortDeduce
+\DeduceC{$B \lif C$}
+\AxiomC{$\Discharge{E}{y}$}
+\shortDeduce
+\DeduceC{$B \lif C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$B \lif C$}
+\AxiomC{$B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$C$}
+\DisplayProof
+$\longrightarrow$\\[6ex]
+\AxiomC{$D \lor E$}
+\AxiomC{$\Discharge{D}{x}$}
+\shortDeduce
+\DeduceC{$B \lif C$}
+\AxiomC{$B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$C$}
+\AxiomC{$\Discharge{E}{y}$}
+\shortDeduce
+\DeduceC{$B \lif C$}
+\AxiomC{$B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$C$}
+\DisplayProof
+\\[10ex]
+\AxiomC{$D \lor E$}
+\AxiomC{$\Discharge{D}{x}$}
+\shortDeduce
+\DeduceC{$\lforall[x][B(x)]$}
+\AxiomC{$\Discharge{E}{y}$}
+\shortDeduce
+\DeduceC{$\lforall[x][B(x)]$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$\lforall[x][B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$B(t)$}
+\DisplayProof
+\quad$\longrightarrow$\\[8ex]
+\quad\AxiomC{$D \lor E$}
+\AxiomC{$\Discharge{D}{x}$}
+\shortDeduce
+\DeduceC{$\lforall[x][B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$B(t)$}
+\AxiomC{$\Discharge{E}{y}$}
+\shortDeduce
+\DeduceC{$\lforall[x][B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$B(t)$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$B(t)$}
+\DisplayProof
+\\
+\caption{\Log{N1i} साठी काही क्रमपरिवर्तन रूपांतरणे.}
+\label{pt:nor:per:tab:permutation-conversions}
+\end{longtable}
+}
+
+\begin{prob}
+\Elim{\lor} नंतर
+\Elim{\lor} किंवा
+\Elim{\lnot} येत असेल,
+तर क्रमपरिवर्तन
+रूपांतरणे द्या.
+\end{prob}
+
+\begin{prob}
+\Elim{\lexists} नंतर
+\Elim{\lexists} येत असेल,
+तर क्रमपरिवर्तन
+रूपांतरणे द्या.
+दुसऱ्या प्रसंगी
+आयगेन चराची कोणतीही
+अट का मोडत नाही,
+हे स्पष्ट करा.
+\end{prob}
+
+क्रमपरिवर्तन रूपांतरण
+लावताना आयगेन चराची
+अट मोडत नाही ना,
+हे तपासले पाहिजे.
+पुढील उदाहरण घ्या:
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$D \lor E$}
+\AxiomC{$\Discharge{D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$\lexists[x][B(x)]$}
+\AxiomC{$\Discharge{E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$\lexists[x][B(x)]$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$\lexists[x][B(x)]$}
+\AxiomC{$\Discharge{B(c)}{z}$}
+\RightLabel{$\delta_5$}
+\DeduceC{$C$}
+\DischargeRule{\Elim{\lexists}}{z}
+\BinaryInfC{$C$}
+\DisplayProof
+\]
+याच्या जागी पुढील
+रचना बसवली, तर
+\[
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$D \lor E$}
+\AxiomC{$\Discharge{D}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$\lexists[x][B(x)]$}
+\AxiomC{$\Discharge{B(c)}{z}$}
+\RightLabel{$\delta_5$}
+\DeduceC{$C$}
+\DischargeRule{\Elim{\lexists}}{z}
+\BinaryInfC{$C$}
+\AxiomC{$\Discharge{E}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$\lexists[x][B(x)]$}
+\AxiomC{$\Discharge{B(c)}{z}$}
+\RightLabel{$\delta_5$}
+\DeduceC{$C$}
+\DischargeRule{\Elim{\lexists}}{z}
+\BinaryInfC{$C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$C$}
+\DisplayProof
+\]
+आयगेन चर~$c$ हा,
+उदाहरणार्थ,~$D$
+मध्ये येईल का,
+अशी शंका येऊ शकते.
+मूळ सिद्धता मध्ये
+गृहीतक~$D$ हे
+मूळ~$\Elim{\lexists}$
+च्या वर मुक्त होते.
+म्हणून ते
+\Elim{\lexists}
+अनुमानाच्या प्रमुख
+आधारविधानाच्या वर
+उघड्या गृहीतकात
+येत नाही; त्यामुळे
+तेथे आयगेन चराची अट
+पूर्ण होते. पण नव्या
+सिद्धता मध्ये~$D$
+हे~\Elim{\lexists}
+अनुमानांनंतरच मुक्त
+होते, म्हणून ती अट
+मोडेल असे वाटते.
+तथापि, आपल्या
+सिद्धता नियमित
+आहेत हे लक्षात घ्या:
+प्रत्येक आयगेन चर
+एकाच अनुमानाचा
+आयगेन चर असतो आणि
+तो सिद्धता मध्ये
+फक्त~\Elim{\lexists}
+च्या गौण आधारविधानाच्या
+वरच येतो. विशेषतः
+$c$ हा~$\delta_3$
+किंवा~$\delta_4$
+मध्ये येऊ शकत नाही.
+दाखवलेल्या दोन प्रतींतील $c$ हे एकच आयगेन स्थिरांक
+दोन अनुमानांत वापरल्याचे अंतिम रूप मानायचे नाही:
+वरच्या नियमानुसार प्रत्येक प्रतीला स्वतंत्र नवा स्थिरांक
+आणि त्याच्या बद्ध गृहीतकांना सुसंगत नव्या खुणा द्यायच्या.
+
+या उदाहरणातून आणखी
+एक गोष्ट दिसते.
+नव्या सिद्धता
+मध्ये~$\delta_5$
+च्या दोन प्रती आहेत.
+म्हणून~$\delta_5$
+मध्ये महत्तम कट असेल,
+तर आपण कट-लांबी
+\emph{कमी केलेली नाही}!
+त्यामुळे~$\delta_5$
+मध्ये महत्तम कट नाही
+हे माहीत असेल तेव्हाच
+क्रमपरिवर्तन रूपांतरण
+लावण्याची काळजी
+घ्यावी लागते.
+नेहमी \emph{सर्वात वरचा}
+महत्तम कट निवडून
+हे साधतो: म्हणजे असा
+महत्तम कट की त्याच्या
+उप-सिद्धता मध्ये
+(येथे~$\delta_1$)
+उप-सिद्धता च्या
+शेवटच्या अनुमानाच्या
+वर संपणारा दुसरा
+महत्तम कट नसतो.
+यामुळे~$\delta_5$
+मध्ये, किंबहुना
+$\delta_2$, $\delta_3$
+किंवा~$\delta_4$
+मध्येही, इतर महत्तम
+कट असण्याची शक्यता
+नाहीशी होते.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{न्यूनीकरण रूपांतरणे}\label{pt:nor:red:sec}
+
+~\Log{N1i} मधील
+सिद्धता मध्ये एखाद्या
+कटाची लांबी~$1$ असेल,
+तर तो एका सूत्र
+आस्थितीचा खंड असतो.
+तीच सूत्र आस्थिती
+परिचय अनुमानाचा किंवा~\FalseInt
+चा निष्कर्ष आणि
+निरसन अनुमानाचे
+प्रमुख आधारविधान असते.
+सामान्यरूपीकरणाच्या
+सिद्धतेत अशा कटांचे
+“न्यूनीकरण” करतात:
+अशा परिचय/निरसन
+जोडीत संपणारी उप-सिद्धता
+त्या दोन्ही अनुमानांशिवाय
+असलेल्या नव्या सिद्धता
+ने बदलतात. याने नवे
+कट निर्माण होऊ शकतात.
+पण त्या नव्या कटांची
+कोटी न्यूनीकृत कटाच्या
+कोटीपेक्षा कमी असते.
+त्यामुळे नव्या सिद्धता
+ची कट-लांबी कमी होते
+(कारण लांबी~$1$
+असलेला महत्तम कट
+निघून गेला), किंवा
+सिद्धता ची कट-कोटी
+कमी होते (संबंधित
+महत्तम कट एकटाच
+महत्तम कट असल्यास).
+
+उदाहरणार्थ, संबंधित
+अनुमाने~\Intro{\lif}
+आणि~\Elim{\lif} असतील,
+$A \ident B \lif C$
+असेल, आणि~$\delta_1$
+ही उप-सिद्धता
+पुढीलप्रमाणे संपत असेल:
+\[
+\AxiomC{$\Discharge{B}{x}$}
+\RightLabel{$\delta_2$}
+\DeduceC{$C$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$B \lif C$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\DeduceC{$B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$C$}
+\DisplayProof
+\]
+हा कट काढण्यासाठी
+~$\delta$ मधील
+उपसिद्धता~$\delta_1$
+पुढील रचनेने बदलतो:
+\[
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\DeduceC{$B$}
+\RightLabel{$\Subst{\delta_2}{\delta_3}{B^x}$}
+\DeduceC{$C$}
+\DisplayProof
+\]
+~$\Subst{\delta_2}{\delta_3}{B^x}$
+म्हणजे~$\delta_2$
+मधील~$x$ खूण असलेल्या
+प्रत्येक गृहीतक~$B$
+च्या जागी संपूर्ण
+सिद्धता~$\delta_3$
+ठेवून मिळणारी सिद्धता.
+कलम-संयोजनापूर्वी $\delta_2$ च्या बद्ध मुक्ती-खुणा
+आणि त्यांना बांधलेली गृहीतके एकत्र नवी नावे देऊन
+$\delta_3$ च्या उघड्या खुणांपासून वेगळी ठेवायची.
+त्यानंतर नव्या सिद्धतेची उघडी गृहीतके म्हणजे
+$\delta_2$ मधील बसवलेल्या $B^x$ आस्थितींव्यतिरिक्त
+उरलेली उघडी गृहीतके, आणि प्रत्यक्ष बसवलेल्या
+$\delta_3$ च्या प्रतींची उघडी गृहीतके.
+$\delta_3$ मध्ये स्वतः $B^x$ उघडे असू शकते;
+म्हणून नव्या सिद्धतेत खूण $x$ अजिबात उरत नाही
+असे म्हणता येत नाही. तसेच मुक्ती निष्फळ असेल किंवा
+एखादी शाखा काढली गेली असेल, तर मूळची काही
+उघडी गृहीतके गळू शकतात. आवश्यक निष्कर्ष असा की
+नवी उघडी गृहीतके मूळ $\delta_1$ च्या उघड्या
+गृहीतकांच्या पलीकडे जात नाहीत.
+$\delta_2$ मधील मुक्ती-नियम आता आत बसवलेल्या
+उघड्या गृहीतकांना अनवधानाने मुक्त करत नाहीत.
+आणि~$\delta_3$
+मधील गृहीतके मुक्त
+करणारी अनुमाने अनेक
+प्रतींमध्ये येऊ शकतात;
+त्या प्रती
+~$\Subst{\delta_2}{\delta_3}{B^x}$
+मधील संबंधित गृहीतके
+मुक्त करतात.
+सर्व न्यूनीकरण नमुन्यांत हीच सुरक्षित कलम-संयोजनाची
+अट वापरायची. अनेक प्रतींतील आयगेन स्थिरांक आणि
+त्यांच्याशी संबंधित बद्ध खुणा स्वतंत्र नवी नावे देऊन
+नियमितता जपायची. संख्यापकांच्या नमुन्यांतील $t$ हे
+घोषित बंद पदे वापरण्याच्या संकेतानुसार बंद पद आहे.
+
+~$\delta_2$ किंवा
+$\delta_3$ यांच्या
+आतमध्ये पूर्णपणे असलेला
+कट, किंवा~$\delta$
+मध्ये~$\delta_1$
+बाहेर पूर्णपणे असलेला
+कट, बदलत नाही.
+त्यात तीच सूत्रे
+आणि तीच अनुमाने
+असतात; त्यामुळे त्याची
+कोटी आणि लांबी
+~$\delta$ मधील
+अनुरूप कटासारखीच
+राहते. आपण लांबी~$1$
+असलेला महत्तम कट
+काढला आहे; म्हणून
+कट-लांबी कमी झाली,
+किंवा~$\delta$
+ची कट-लांबी~$1$
+असून हा एकटाच महत्तम
+कट होता, तर कट-कोटी
+कमी झाली.
+
+तथापि, दोन गोष्टी
+घडू शकतात:
+\begin{enumerate}
+  \item सर्व~$B^x$
+  गृहीतकांच्या जागी
+  $\delta_3$ ठेवल्याने
+  ~$\delta_3$ मधील
+  सर्व कटांच्या प्रती
+  वाढतात. त्यांपैकी
+  काही महत्तम कट
+  असतील, तर नव्या
+  सिद्धता ची कट-लांबी
+  जुन्या सिद्धता
+  पेक्षा अधिक होऊ
+  शकते. हे होणार
+  नाही याची खात्री
+  हवी. म्हणून न्यूनीकरण
+  रूपांतरणे फक्त
+  \emph{सर्वात उजव्या}
+  महत्तम कटांनाच
+  लावतो: न्यूनीकृत
+  होत असलेल्या कटाच्या
+  उजवीकडे~$\delta$
+  मधील कोणत्याही
+  शाखेवर दुसरा महत्तम
+  कट नसतो. ~$\delta_3$
+  मध्ये महत्तम कट असता, तर
+  तो येथे न्यूनीकृत
+  होणाऱ्या कटाच्या
+  उजवीकडे असता;
+  म्हणून हा सर्वात
+  उजवा कट नसता.
+  सर्वात उजवे कट
+  निवडल्याने सिद्धता
+  ची कट-लांबी किंवा
+  अगदी कट-कोटीही
+  कमी होते.
+  \item ~$\delta_2$
+  मधील एखादे गृहीतक~$B^x$
+  निरसन अनुमानाचे
+  प्रमुख आधारविधान
+  असेल, आणि~$\delta_3$
+  चे अंतिम अनुमान
+  \Elim{\lor}, \Elim{\lexists}
+  किंवा परिचय
+  अनुमान असेल, तर
+  त्या गृहीतकावर
+  ~$\delta_3$ चे
+  कलम-संयोजन केल्यामुळे
+  नवा कट तयार होतो.
+  ~$\delta_2$ मध्ये
+  जे केवळ गृहीतक
+  होते, ते आता लांबी~$1$
+  असलेला कट
+  (परिचय
+  अनुमानाचा निष्कर्ष आणि
+  निरसन अनुमानाचे
+  प्रमुख आधारविधान)
+  किंवा कट-खंडाची
+  शेवटची सूत्र
+  आस्थिती
+  (निरसन
+  अनुमानाचे प्रमुख
+  आधारविधान आणि
+  \Elim{\lor}
+  किंवा~\Elim{\lexists}
+  चा निष्कर्ष)
+  होते. $B^x$ हे
+  \Elim{\lor}
+  किंवा~\Elim{\lexists}
+  चे गौण आधारविधान
+  असेल, तर ते आधीच
+  एखाद्या खंडाची,
+  कदाचित कट-खंडाचीही,
+  पहिली सूत्र
+  आस्थिती होती.
+  नव्या सिद्धता
+  मध्ये तो खंड
+  आता अधिक लांब
+  होऊ शकतो. पण
+  या नव्या कटाचे
+  किंवा विद्यमान
+  कट-खंडाचे सूत्र
+  हे~$B$ आहे, आणि
+  $\depth{B} < \depth{B \lif C}$.
+  म्हणून नवे कट
+  आले किंवा काही
+  कटांची लांबी
+  वाढली, तरी त्यांपैकी
+  कोणताही महत्तम कट
+  नसतो. अशा रीतीने
+  कट-कोटी कमी होते,
+  किंवा समान कोटीचे
+  कट उरले असतील
+  तर कट-लांबी कमी
+  होते.
+\end{enumerate}
+
+लांबी~$1$ असलेला
+कट कमी करण्याच्या
+प्रक्रियेला
+\emph{न्यूनीकरण रूपांतरण}
+(किंवा
+\emph{वळसा रूपांतरण})
+म्हणतात. काही
+नियम-जोड्यांचे नमुने
+~\ref{pt:nor:red:tab:reduction-conversions}
+मध्ये दिले आहेत.
+(उरलेले सरावासाठी
+सोडले आहेत.)
+
+\begin{table}
+\begin{multline*}
+\bottomAlignProof
+\AxiomC{$\Discharge{B}{x}$}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$C$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$B \lif C$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$C$}
+\DisplayProof
+\quad \longrightarrow\quad
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$B$}
+\RightLabel{$\Subst{\delta_2}{\delta_3}{B^x}$}
+\shortDeduce
+\DeduceC{$C$}
+\DisplayProof}
+\\[4ex]
+\shoveleft{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$B$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$C$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$B \land C$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$B$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$B$}
+\DisplayProof}\qquad
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$B$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$C$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$B \land C$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$C$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$C$}
+\DisplayProof}
+\\[4ex]
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$B$}
+\RightLabel{\Intro{\lor}[1]}
+\UnaryInfC{$B \lor C$}
+\AxiomC{$\Discharge{B}{x}$}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$D$}
+\AxiomC{$\Discharge{C}{y}$}
+\RightLabel{$\delta_4$}
+\shortDeduce
+\DeduceC{$D$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$D$}
+\DisplayProof
+\quad \longrightarrow\quad
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$B$}
+\RightLabel{$\Subst{\delta_3}{\delta_2}{B^x}$}
+\shortDeduce
+\DeduceC{$D$}
+\DisplayProof}
+\\[2ex]
+\shoveleft{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$B(c)$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[x][B(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$B(t)$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\Subst{\delta_2}{t}{c}$}
+\shortDeduce
+\DeduceC{$B(t)$}
+\DisplayProof}
+\\[4ex]
+\shoveright{\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$B(t)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][B(x)]$}
+\AxiomC{$\Discharge{B(c)}{x}$}
+\RightLabel{$\delta_3$}
+\shortDeduce
+\DeduceC{$D$}
+\DischargeRule{\Elim{\lexists}}{x}
+\BinaryInfC{$D$}
+\DisplayProof
+\quad \longrightarrow\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\shortDeduce
+\DeduceC{$B(t)$}
+\RightLabel{$\Subst{\Subst{\delta_3}{t}{c}}{\delta_2}{B(t)^x}$}
+\shortDeduce
+\DeduceC{$D$}
+\DisplayProof}
+\end{multline*}
+\caption{\Log{N1i} साठी काही न्यूनीकरण रूपांतरणे.}
+\label{pt:nor:red:tab:reduction-conversions}
+\end{table}
+
+\begin{prob}
+\Intro{\lnot} नंतर
+\Elim{\lnot} येत
+असेल, तर न्यूनीकरण
+रूपांतरण द्या.
+\end{prob}
+
+आणखी एक प्रसंग
+पाहावा लागतो. कटाच्या
+व्याख्येत असा प्रसंग
+येऊ शकतो की कटाची
+लांबी~$1$ आहे,
+आणि~$A$ हे
+\FalseInt{} चा निष्कर्ष
+तसेच निरसन
+अनुमानाचे प्रमुख
+आधारविधान आहे.
+$A$ हा
+परिचय
+नियमाचा निष्कर्ष
+असताना करतो तसेच
+येथेही करू. उदाहरणार्थ,
+पुढील बदल करा:
+\[
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\UnaryInfC{$B \lif C$}
+\AxiomC{}
+\RightLabel{$\delta_3$}
+\DeduceC{$B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$C$}
+\DisplayProof
+\quad\text{ऐवजी}\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\UnaryInfC{$C$}
+\DisplayProof
+\]
+~$A \ident (B \lor
+C)$ किंवा
+$A \ident \lexists[x][B(x)]$
+असेल, तर थोडी काळजी
+हवी. उदाहरणार्थ,
+पुढील रचनेच्या जागी
+\[
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$B \lor C$}
+\AxiomC{$\Discharge{B}{x}$}
+\RightLabel{$\delta_3$}
+\DeduceC{$D$}
+\AxiomC{$\Discharge{C}{y}$}
+\RightLabel{$\delta_4$}
+\DeduceC{$D$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$D$}
+\DisplayProof
+\quad\text{ऐवजी}\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$D$}
+\DisplayProof
+\]
+असा बदल केला,
+तर कट-सूत्र~$D$
+असलेला नवा कट
+निर्माण होऊ शकतो.
+पण
+$\depth{D} < \depth{B \lor C}$
+असेलच याची हमी नाही!{}
+म्हणून~\Intro{\lor}/\Elim{\lor}
+न्यूनीकरणात जसे
+केले, तसेच येथेही
+करावे आणि पुढील
+रचनेने बदलावे:
+\[
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$B$}
+\RightLabel{$\delta_3$}
+\DeduceC{$D$}
+\DisplayProof
+\quad\text{किंवा}\quad
+\bottomAlignProof
+\AxiomC{}
+\RightLabel{$\delta_2$}
+\DeduceC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$C$}
+\RightLabel{$\delta_4$}
+\DeduceC{$D$}
+\DisplayProof
+\]
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सामान्यरूपीकरण प्रमेय}\label{pt:nor:thm:sec}
+
+एखाद्या सिद्धता मध्ये
+कट-खंड नसतील, तर ती
+\emph{सामान्य} रूपात असते.
+म्हणजे तिच्यावर क्रमपरिवर्तन
+रूपांतरण किंवा न्यूनीकरण
+रूपांतरण यांपैकी कोणतेही
+लावता येत नाही; आणि
+हेच या स्थितीचे लक्षण आहे.
+एखादी सिद्धता
+\emph{सामान्यरूप करणे}
+म्हणजे कट शिल्लक
+राहणार नाहीत तोपर्यंत
+क्रमपरिवर्तन आणि न्यूनीकरण
+रूपांतरणे लावून तिला
+सामान्यरूप सिद्धतेत
+बदलणे. हे नेहमी शक्य
+असते, हाच
+\emph{सामान्यरूपीकरण प्रमेय}.
+
+\begin{thm}\label{pt:nor:thm:thm:normalization}
+कोणतीही~\Log{N1i}-सिद्धता
+$\delta$ सामान्यरूप करता
+येते; म्हणजे तिचे कट
+नसलेल्या सिद्धता~$\delta'$
+मध्ये रूपांतर करता येते.
+\end{thm}
+
+\begin{proof}
+  ~$\delta$ ची कट-कोटी
+  आणि कट-लांबी यांवर
+  विगमन करू. विगमन
+  गृहीतक असे: कोणतीही
+  सिद्धता जिची
+  कट-कोटी कमी असेल,
+  किंवा कट-कोटी समान
+  पण कट-लांबी कमी असेल,
+  सामान्यरूप करता येते.
+
+  कट-लांबी~$0$
+  असेल, तर कट नसतात
+  आणि~$\delta$ आधीच
+  सामान्यरूप असते.
+  म्हणून~$\delta$ ची
+  कट-कोटी आणि कट-लांबी
+  दोन्ही~$>0$ आहेत असे
+  समजू. सर्वात वरचा
+  आणि सर्वात उजवा
+  महत्तम कट-खंड निवडा.
+  त्या कट-खंडाची लांबी
+  $>1$ असेल, तर
+  क्रमपरिवर्तन रूपांतरण
+  लावा. लांबी~$1$
+  असेल, तर संबंधित
+  न्यूनीकरण रूपांतरण लावा.
+  याने मिळणाऱ्या नव्या
+  सिद्धता ची कट-कोटी
+  तीच राहून कट-लांबी
+  कमी होते, किंवा
+  कट-कोटीच कमी होते;
+  म्हणून विगमन गृहीतक
+  लागू होते.
+\end{proof}
+
+वरील सिद्धतेतील
+पद्धत—नेहमी सर्वात
+वरचा आणि सर्वात
+उजवा महत्तम कट
+हाताळणे—सामान्यरूप
+सिद्धता मिळवण्यासाठी
+रूपांतरणे एका ठरावीक
+क्रमाने लावावी लागतात
+असे सुचवते. पण आश्चर्य
+म्हणजे क्रम महत्त्वाचा
+नसतो. क्रमपरिवर्तन आणि
+न्यूनीकरण रूपांतरणे
+कोणत्याही क्रमाने
+लावली तरी शेवटी
+सामान्यरूप सिद्धता
+मिळते.
+
+खंड आणि कट यांच्या
+व्याख्या~\Log{N2i}
+साठीही सहज देता येतात;
+आणि~\Log{N1i} मधील
+क्रमपरिवर्तन व न्यूनीकरण
+रूपांतरणे थेट~\Log{N2i}
+मध्ये रूपांतरित होतात.
+त्यामुळे सामान्यरूपीकरण
+प्रमेय~\Log{N2i} साठीही
+खरे आहे.
+
+\begin{thm}\label{pt:nor:thm:thm:normalization-N2i}
+कोणतीही~\Log{N2i}-सिद्धता
+$\delta$ सामान्यरूप करता
+येते; म्हणजे तिचे कट
+नसलेल्या सिद्धता~$\delta'$
+मध्ये रूपांतर करता येते.
+\end{thm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सामान्यरूप \Log{N2i}-सिद्धता आणि \Log{G2i} यांतील रूपांतरे}\label{pt:nor:tr:sec}
+
+\Log{N2i} मधील सिद्धता चे \Log{G2i} मधील सिद्धता मध्ये
+आणि उलट दिशेने रूपांतर करता येते. प्रथम,
+कट-विरहित \Log{G2i} सिद्धता चे रूपांतर केल्यावर
+सामान्यरूप \Log{N2i}-सिद्धता मिळतात.
+
+हा निष्कर्ष मांडण्यासाठी~\Log{N2i} आणि~\Log{G2i}
+यांतील क्रमवर्तींचे पूर्वपक्ष जोडणारी काही परिभाषा हवी.
+खूण लावलेल्या सूत्रांचा संच~$\Gamma'$ हा खूण नसलेल्या
+सूत्रांच्या बहुसंच~$\Gamma$ शी \emph{अनुरूप} असतो,
+जर प्रत्येक सूत्र~$A$ साठी~$\Gamma'$ मधील
+$x : A$ या रूपातील घटक ची संख्या ही~$\Gamma$
+मधील~$A$ च्या प्रतींच्या संख्येहून जास्त नसेल.
+
+\begin{cor}
+$\Log{G2i} \Proves \Gamma \Sequent \Delta$ असेल, तर
+$\Gamma' \Sequent C$ ची सामान्यरूप
+\Log{N2i}-सिद्धता~$\delta$ असते; येथे खूण लावलेल्या
+सूत्रांचा संच~$\Gamma'$ हा बहुसंच~$\Gamma$ शी अनुरूप असतो.
+$\Delta=\emptyset$ असल्यास~$C\ident\lfalse$,
+आणि अन्यथा~$\Delta=\{C\}$ असते.
+म्हणजे, प्रत्येक सूत्र~$A$ साठी~$\Gamma'$ मधील
+$x : A$ या रूपातील घटक ची संख्या ही~$\Gamma$
+मधील~$A$ च्या प्रतींच्या संख्येहून (म्हणजे~$A$ च्या
+पुनरावृत्तींच्या संख्येहून) जास्त नसते.
+\end{cor}
+
+\begin{proof}
+\ref{pt:nat:tgi:prop:G2i-to-N2i} च्या सिद्धतेतील
+रचनेकडे पाहिल्यास दिसते: परिचय नियम
+सिद्धता च्या शेवटी, तर निरसन नियम
+फक्त सिद्धता च्या सुरुवातीला जोडतो.
+म्हणून निरसन नियमाच्या वर परिचय
+नियम कधी येत नाही.
+\end{proof}
+
+मात्र~\ref{pt:nat:tgi:prop:G2i-to-N2i} मधील
+\Cut{} नियमाचे रूपांतर~\Log{N2i}-सिद्धता~$\delta$ मध्ये
+कट निर्माण करू शकते. एखादी~\Log{G2i} सिद्धता
+शेवटी~\Cut{} ने संपत असेल, आणि तिच्या तत्काळ उप-सिद्धता
+$\pi_1$ व~$\pi_2$ अनुक्रमे~$\Gamma_1 \Sequent A$
+आणि~$A, \Gamma_2 \Sequent \Delta_2$ यांच्या असतील,
+तर~$\pi_1$ चे रूपांतर~$\delta_1$ हे~$\pi_2$ च्या
+रूपांतर~$\delta_2$ मधील $x:A \Sequent A$
+स्वयंसिद्धकांवर कलम-संयोजित करतो. जर~$\delta_1$
+मुख्य सूत्र~$A$ असलेल्या परिचय
+नियमाने संपत असेल आणि~$\delta_2$ मधील
+$x:A \Sequent A$ स्वयंसिद्धक हे निरसन
+नियमाचे प्रमुख आधारविधान असेल, तर परिणामी~$\delta$
+मध्ये कट तयार होतो.
+
+\Log{N2i} मधील सिद्धता चे~\Log{G2i} मधील
+सिद्धता मध्येही रूपांतर करता येते.
+\ref{pt:nat:tni:prop:N2-to-G2} च्या सिद्धतेत
+\Elim{\land}, \Elim{\lif}, \Elim{\lnot},
+\Elim{\lforall} यांचे रूपांतर परिणामी~\Log{G2i}
+सिद्धता मध्ये~\Cut{} अनुमाने निर्माण करते.
+पण सुरुवातीची~\Log{N2i}-सिद्धता सामान्यरूप असेल,
+तर असे कट टाळता येतात.
+
+~\Log{N2i}-सिद्धता~$\delta$ मधील
+क्रमवर्तींच्या आस्थितींच्या $S_1$, \dots,~$S_n$
+या यादीला \emph{शाखा} म्हणू, जर~$S_1$ स्वयंसिद्धक
+असेल आणि~$S_i$ जेव्हा एखाद्या अनुमानाचे प्रमुख
+आधारविधान असेल तेव्हा~$S_{i+1}$ हा त्याचा निष्कर्ष
+असेल. दुसऱ्या शब्दांत, शाखा स्वयंसिद्धकापासून
+~$\delta$ मध्ये खाली जात क्रमवर्तींचा मागोवा घेते;
+पण निरसन नियमांच्या गौण आधारविधानांवर थांबते.
+जिचा~$S_n$ अंतिम क्रमवर्ती असतो ती~$\delta$ ची
+\emph{मुख्य शाखा}. प्रत्येक सिद्धता~$\delta$ ला
+किमान एक मुख्य शाखा असते, कारण प्रत्येक नियमाला
+किमान एक प्रमुख आधारविधान असते (फक्त~\Intro{\land}
+ला दोन असतात).
+
+\begin{prop}\label{pt:nor:tr:prop:normal-N2i-to-G2i}
+~$\delta$ ही~$\Gamma \Sequent A$ ची सामान्यरूप
+$\Log{N2c}$ किंवा~$\Log{N2i}$-सिद्धता असेल,
+तर~$\Gamma' \Sequent \Delta$ ची कट-विरहित
+$\Log{G2c}$-सिद्धता (अनुक्रमे~$\Log{G2i}$-सिद्धता)~$\pi$
+असते. येथे~$\Gamma$ मधील खुणा काढून मिळणारा
+सूत्रांचा बहुसंच~$\Gamma'$ आहे;
+$A$ हा~$\lfalse$ नसेल तर~$\Delta = \{A\}$,
+आणि असेल तर~$\Delta = \emptyset$.
+\end{prop}
+
+\begin{proof}
+यावेळी~$\Gamma \Sequent A$ च्या सिद्धता~$\delta$
+मधील अनुमानांच्या संख्येवर विगमन करतो.
+~$\delta$ मध्ये अनुमान नसेल, तर ती
+$x:A \Sequent A$ हा स्वयंसिद्धक आहे;
+तेव्हा~$\pi$ हा अनुरूप~$A \Sequent A$
+स्वयंसिद्धक आहे, किंवा~$A \ident \lfalse$
+असेल तर~$\lfalse \Sequent \ $ स्वयंसिद्धक आहे.
+
+~$\delta$ चा शेवट अनुमाननियमात होत असेल,
+तर पुढील प्रसंग वेगळे पाहू:
+\begin{enumerate}
+  \item $R$ हा परिचय नियम किंवा~\FalseInt
+  असेल, तर रूपांतर~\ref{pt:nat:tni:prop:N2-to-G2}
+  च्या सिद्धतेप्रमाणेच होते आणि~\Cut लागत नाही.
+
+  \item ~$\delta$ चा शेवटचा नियम~$R$ हा निरसन नियम
+  असेल, तर पुढील बाबी लक्षात घ्या:
+  \begin{enumerate}
+    \item ~$\delta$ ची मुख्य शाखा कोणत्याही
+    परिचय नियमातून जात नाही; अन्यथा त्या
+    शाखेवर परिचय नियम किंवा~\FalseInt{}
+    यानंतर निरसन नियम येईल आणि~$\delta$
+    सामान्यरूप राहणार नाही.
+    \item ~$\delta$ च्या मुख्य शाखांवर
+    परिचय नियम नसल्याने एकच मुख्य शाखा
+    असते. (फक्त~\Intro{\land} ला दोन प्रमुख
+    आधारविधाने आहेत; म्हणून अनेक मुख्य शाखा असतील,
+    तर त्या~\Intro{\land} च्या आधारविधानांतून जाव्या लागतील.)
+    \item मुख्य शाखेत~\Elim{\lor} किंवा~\Elim{\lexists}
+    चे प्रमुख आधारविधान असेल, तर असा एकच नियम
+    असतो आणि तो शेवटचा नियम~$R$ असतो. (नसल्यास
+    शाखेत~\Elim{\lor} किंवा~\Elim{\lexists}
+    चा निष्कर्ष पुढील निरसन नियमाचे प्रमुख
+    आधारविधान होईल; क्रमपरिवर्तन रूपांतरण शक्य असल्यामुळे
+    सिद्धता सामान्यरूप राहणार नाही.)
+  \item \Elim{\lor} आणि~\Elim{\lexists} यांखेरीज
+  कोणताही निरसन नियम गृहीतके निरस्त करत नाही,
+  म्हणजे क्रमवर्तींचा डावा संदर्भ बदलत नाही.
+  \Elim{\lor} आणि~\Elim{\lexists} हे दोन्ही नियम
+  फक्त गौण आधारविधानाच्या वरची
+  गृहीतके निरस्त करतात; म्हणजे फक्त गौण
+  आधारविधानांचे डावे संदर्भ बदलतात.
+  त्यामुळे~$\delta$ च्या मुख्य शाखेवरील
+  क्रमवर्ती~$S_i$ चा संदर्भ~$\Gamma_1$ असेल,
+  तर~$S_i$ हे प्रमुख आधारविधान असलेल्या अनुमानाच्या
+  निष्कर्ष~$S_{i+1}$ चा संदर्भ~$\Gamma_1' \supseteq \Gamma_1$
+  असतो.
+  \item म्हणून मुख्य शाखेतील सर्वांत वरचा
+  क्रमवर्ती~$S_1$ हा~$x: C \Sequent C$
+  असेल, तर~$x:C \in \Gamma$.
+  \end{enumerate}
+  आता~$C$ च्या रूपानुसार प्रसंग वेगळे पाहू.
+  मुख्य शाखेवरील प्रत्येक~$S_i$ हे निरसन
+  नियमाचे प्रमुख आधारविधान असल्याने
+  $x:C \Sequent C$ बद्दलही तेच खरे आहे.
+
+  \item $C \ident D \land E$ असेल, तर~$\delta$
+  चे रूप असे आहे:
+  \[
+  \Axiom$x:D \land E \fCenter D \land E$
+  \RightLabel{\Elim{\land}[1]}
+  \UnaryInf$x:D \land E \fCenter D$
+  \Deduce$x:D \land E, \Gamma_1 \fCenter A$
+  \DisplayProof
+  \]
+  मुख्य शाखेत~$x:D \land E \Sequent D$ आहे.
+  त्या शाखेत~\Intro{\lif}, \Intro{\lnot} यांचे
+  प्रमुख आधारविधान किंवा~\Elim{\lor}, \Elim{\lexists}
+  यांचे गौण आधारविधान येत नाही; म्हणून
+  $x:D \land E$ मधील संदर्भ-सूत्रे
+  मुख्य शाखेवर बदलत नाहीत. त्यामुळे अंतिम
+  क्रमवर्तीच्या संदर्भात~$x:D \land E$ असलेच पाहिजे.
+  शिवाय,~\Elim{\land} ने संपणाऱ्या उप-सिद्धता
+  ऐवजी~$w:D \Sequent D$ ठेवून, आणि मुख्य
+  शाखेवरील प्रत्येक क्रमवर्तीच्या संदर्भात
+  $x:D \land E$ ऐवजी~$w:D$ ठेवून,
+  सिद्धता~$\delta$ चे सिद्धता~$\delta_1$
+  मध्ये रूपांतर करता येते; म्हणजे:
+  \[
+  \bottomAlignProof
+  \Axiom$x:D \land E \fCenter D \land E$
+  \RightLabel{\Elim{\land}[1]}
+  \UnaryInf$x:D \land E \fCenter D$
+  \Deduce$x:D \land E, \Gamma_1 \fCenter A$
+  \DisplayProof
+  \quad\text{ यात }\quad
+  \bottomAlignProof
+  \Axiom$w:D \fCenter D$
+  \Deduce$w:D, \Gamma_1 \fCenter A$
+  \DisplayProof
+  \]
+  विगमन गृहीतक~$\delta_1$ ला लागू होते,
+  कारण~$\delta$ मधील अनुमानांची संख्या ही
+  $\delta_1$ मधील अनुमानांच्या संख्येपेक्षा~$1$
+  ने अधिक आहे.
+येथे $w$ ही संपूर्ण $\delta$ मध्ये न येणारी नवी खूण
+घ्यायची. संदर्भ हे प्रत्येक नियमाच्या आधारसंदर्भांपासून
+पुन्हा मोजायचे; इतर शाखेतले $x:D\land E$ किंवा
+इतर गृहीतक काढायचे नाही. $\Gamma_1$ मध्ये त्या
+इतर शाखांतून राहणारी सर्व गृहीतके समाविष्ट आहेत.
+
+  विगमन गृहीतकानुसार,
+  $D, \Gamma_1' \Sequent \Delta$ ची
+  \Log{G2i}-सिद्धता~$\pi_1$ असते.
+  \LeftR{\land} लावून~सिद्धता~$\pi$ मिळते:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$D, \Gamma_1' \fCenter \Delta$
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$D \land E, \Gamma_1' \fCenter \Delta$
+  \DisplayProof
+  \]
+  $A \ident \lfalse$ असेल, तर उत्तरपक्ष रिकामाच
+  ठेवतो; उजवीकडील दुर्बलीकरण लागत नाही:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$D, \Gamma_1' \fCenter $
+  \RightLabel{\LeftR{\land}}
+  \UnaryInf$D \land E, \Gamma_1' \fCenter $
+  \DisplayProof
+  \]
+  \item $C \ident D \lor E$ असेल,
+  तर ते~\Elim{\lor} चे प्रमुख आधारविधान असले
+  पाहिजे आणि हे अनुमान मुख्य शाखेवरील शेवटचे
+  अनुमान~$R$ असले पाहिजे. म्हणजे~$\delta$ चे
+  रूप असे आहे:
+  \[
+  \Axiom$x:D \lor E \fCenter D \lor E$
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$y:D, \Gamma_1 \fCenter A$
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \Deduce$z:E, \Gamma_2 \fCenter A$
+  \RightLabel{\Elim{\lor}}
+  \TrinaryInf$x:D \lor E, \Gamma_1, \Gamma_2 \fCenter A$
+  \DisplayProof
+  \]
+  विगमन गृहीतक~सिद्धता $\delta_1$ आणि~$\delta_2$
+  यांना लागू होते; त्यामुळे अनुक्रमे
+  $D, \Gamma_1' \Sequent \Delta$ आणि
+  $E, \Gamma_2' \Sequent \Delta$ यांच्या
+  \Log{G2i}-सिद्धता $\pi_1$ व~$\pi_2$ मिळतात.
+  त्यांच्यावर~$\LeftR{\lor}$ लावून~$\pi$ मिळते:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$D, \Gamma_1' \fCenter \Delta$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$E, \Gamma_2' \fCenter \Delta$
+  \RightLabel{\LeftR{\lor}}
+  \BinaryInf$D \lor E, \Gamma_1', \Gamma_2' \fCenter \Delta$
+  \DisplayProof
+  \]
+  $\Elim{\lor}$ ने~$y: D$ किंवा~$z: E$
+  निरस्त केले नसेल (म्हणजे ही गृहीतके गौण
+  आधारविधानांच्या संदर्भात नसतील), तर ती आवश्यक
+  \LeftR{\Weakening} ने जोडायची. $A\ident\lfalse$
+  असेल, तर उत्तरपक्ष रिकामाच ठेवायचा; त्यात असत्य
+  जोडायचे नाही.
+  उदाहरणार्थ:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter $
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$D, \Gamma_1' \fCenter $
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$\Gamma_2' \fCenter $
+  \RightLabel{\LeftR{\Weakening}}
+  \UnaryInf$E, \Gamma_2' \fCenter $
+  \RightLabel{\LeftR{\lor}}
+  \BinaryInf$D \lor E, \Gamma_1', \Gamma_2' \fCenter $
+  \DisplayProof
+  \]
+
+  \item $C \ident D \lif E$ असेल,
+  तर~$\delta$ चे रूप असे आहे:
+  \[
+  \Axiom$x:D \lif E \fCenter D \lif E$
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma_1 \fCenter D$
+  \RightLabel{\Elim{\lif}}
+  \BinaryInf$x:D \lif E, \Gamma_1 \fCenter E$
+  \RightLabel{$\delta_2$}
+  \Deduce$x:D \lif E, \Gamma_1, \Gamma_2 \fCenter A$
+  \DisplayProof
+  \]
+  येथे~$x:D \lif E, \Gamma_1 \Sequent E$
+  समाविष्ट करणाऱ्या मुख्य शाखेत~\Intro{\lif},
+  \Intro{\lnot} यांचे प्रमुख आधारविधान किंवा
+  \Elim{\lor}, \Elim{\lexists} यांचे गौण
+  आधारविधान नसते. त्यामुळे~$x:D \lif E, \Gamma_1$
+  मधील संदर्भ-सूत्रे मुख्य शाखेवर बदलत
+  नाहीत. म्हणून अंतिम क्रमवर्तीच्या संदर्भात
+  $x:D \lif E, \Gamma_1$ असले पाहिजे.
+  शिवाय,~\Elim{\lif} ने संपणाऱ्या उप-सिद्धता
+  ऐवजी~$w:E \Sequent E$ ठेवून आणि मुख्य
+  शाखेवरील प्रत्येक क्रमवर्तीच्या संदर्भात
+  $x:D \lif E, \Gamma_1$ ऐवजी~$w:E$
+  ठेवून,~सिद्धता च्या~$\delta_2$ या भागाचे
+  योग्य सिद्धता~$\delta_2'$ मध्ये रूपांतर
+  करता येते; म्हणजे:
+  \[
+  \bottomAlignProof
+  \Axiom$x:D \lif E, \Gamma_1 \fCenter E$
+  \RightLabel{$\delta_2$}
+  \Deduce$x:D \lif E, \Gamma_1, \Gamma_2 \fCenter A$
+  \DisplayProof
+  \quad\text{ यात }\quad
+  \bottomAlignProof
+  \Axiom$w:E \fCenter E$
+  \RightLabel{$\delta_2'$}
+  \Deduce$w:E, \Gamma_2 \fCenter A$
+  \DisplayProof
+  \]
+  विगमन गृहीतक~$\delta_1$ आणि~$\delta_2'$
+  यांना लागू होते; कारण~$\delta$ मधील
+  अनुमानांची संख्या ही~$\delta_1$ व~$\delta_2$
+  मधील अनुमानांच्या संख्यांची बेरीज अधिक~$1$
+  इतकी आहे. हा एक अधिकचा टप्पा मुख्य शाखेच्या सुरुवातीच्या
+  \Elim{\lif} अनुमानासाठी आहे. (तेच अनुमान
+  $\delta$ मधील शेवटचे अनुमान~$R$ असेल,
+  तर~$\delta_2$ मध्ये~$0$ अनुमाने असतात.)
+याही प्रसंगी $w$ ही $\delta$ मधील सर्व खुणांपासून
+वेगळी नवी खूण असावी. मुख्य शाखेवरील संदर्भ नियमांनुसार
+पुन्हा मोजताना इतर शाखांची गृहीतके जपायची;
+$\Gamma_2$ मध्ये ती सर्व राहणारी गृहीतके येतात.
+मूळ $\Gamma_1$ शी सामाईक असलेली गृहीतके नुसती
+वजा करून त्या शाखांतून काढायची नाहीत.
+
+  विगमन गृहीतकानुसार $\pi_1$ ही
+  $\Gamma_1'\Sequent\Delta_D$ ची आणि $\pi_2$ ही
+  $E,\Gamma_2'\Sequent\Delta$ ची \Log{G2i}-सिद्धता आहे;
+  येथे $D\ident\lfalse$ असेल तर $\Delta_D=\emptyset$,
+  अन्यथा $\Delta_D=\{D\}$ आहे. आवश्यक असल्यास
+  पहिल्या सिद्धतेला उजवीकडील दुर्बलीकरण जोडून
+  $\Gamma_1'\Sequent D$ ची $\pi_1'$ मिळते.
+  \LeftR{\lif} लावून~सिद्धता~$\pi$ मिळते:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$\Gamma_1' \fCenter D$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$E, \Gamma_2' \fCenter \Delta$
+  \RightLabel{\LeftR{\lif}}
+  \BinaryInf$D \lif E, \Gamma_1', \Gamma_2' \fCenter \Delta$
+  \DisplayProof
+  \]
+  $D \ident \lfalse$ असेल, तर पहिल्या आधाराच्या
+  रिकाम्या उत्तरपक्षात~$D$ जोडण्यासाठी एक
+  \RightR{\Weakening} लावतो. $A \ident \lfalse$
+  असेल, तर दुसऱ्या आधाराचा आणि अंतिम क्रमवर्तीचा
+  उत्तरपक्ष रिकामाच ठेवतो. दोन्ही असत्य असताना नमुना असा:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter $
+  \RightLabel{\RightR{\Weakening}}
+  \UnaryInf$\Gamma_1' \fCenter D$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$E, \Gamma_2' \fCenter $
+  \RightLabel{\LeftR{\lif}}
+  \BinaryInf$D \lif E, \Gamma_1', \Gamma_2' \fCenter $
+  \DisplayProof
+  \]
+
+सामाईक खुणांची गृहीतके दोन आधारसंदर्भांत आली असल्यास
+त्यांच्या खुणा काढल्यावर बहुसंचात जादा प्रती येऊ शकतात.
+आवश्यक $\LeftR{\Contraction}$ लावून मूळ संचाच्या
+खुणा काढून मिळणारा नेमका बहुसंच ठेवायचा.
+\end{enumerate}
+उरलेले प्रसंग याच प्रकारे हाताळता येतात;
+ते सरावासाठी ठेवले आहेत.
+\end{proof}
+
+\begin{cor}
+सामान्यरूप~\Log{N1i}-सिद्धता मध्ये येणारे प्रत्येक
+सूत्र हे $\lfalse$ असते किंवा अंतिम सूत्राच्या
+अथवा उघड्या गृहीतकाच्या एखाद्या उप-सूत्राचे
+उदाहरण असते. सामान्यरूप~\Log{N2i}-सिद्धता साठी
+अंतिम क्रमवर्तीतील सर्व सूत्रे घ्यायची.
+येथे संख्यापकांमुळे उपसूत्रात मुक्त झालेल्या चलांच्या
+जागी पदे बसवून मिळणारी उदाहरणेही समाविष्ट आहेत.
+विधानीय प्रकरणात आदेशनाची ही अट लागत नाही.
+\end{cor}
+
+\begin{proof}
+  \ref{pt:nor:tr:prop:normal-N2i-to-G2i} मधील अंतःप्रज्ञावादी
+  रचना सामान्यरूप~\Log{N2i}-सिद्धता चे कट-विरहित
+  \Log{G2i}-सिद्धता मध्ये रूपांतर करते.
+  या रचनेत प्रत्येक असत्याव्यतिरिक्त सूत्र अनुरूप
+  क्रमवर्तीच्या सिद्धतेत राहते. असत्य मात्र रिकाम्या
+  उत्तरपक्षाने दर्शवले जाऊ शकते.
+  कट-विरहित क्रमवर्ती नियम उलट तपासल्यास विधानीय
+  आधारसूत्रे ही निष्कर्षातील सूत्रांची उपसूत्रे असतात;
+  संख्यापक नियमांत त्यांच्या पद-आदेशनाची उदाहरणे येतात.
+  त्यामुळे उपसूत्रांचा येथे सांगितलेला गुणधर्म मिळतो.
+  \Log{N1i} चे~\Log{N2i} मध्ये आधीचे रूपांतर सूत्रे
+  आणि उघडी गृहीतके जपते, म्हणून त्यालाही हा निष्कर्ष लागू होतो.
+\end{proof}
+
+
+

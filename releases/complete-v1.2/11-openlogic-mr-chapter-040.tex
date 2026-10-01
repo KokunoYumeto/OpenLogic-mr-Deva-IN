@@ -1,0 +1,840 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 40: त्रिमूल्य तर्कशास्त्रे
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{त्रिमूल्य तर्कशास्त्रे}\label{mvl:thr:chap}
+
+
+
+
+
+
+
+
+
+\section{परिचय}\label{mvl:thr:int:sec}
+
+$\True$ आणि $\False$ या मूल्यांच्या जोडीला आणखी एक मूल्य~$\Undef$
+जोडले, तर त्रिमूल्य तर्कशास्त्र मिळते. हे एकच अतिरिक्त
+सत्यतामूल्य असले, तरी $\lnot$, $\land$, $\lor$ आणि $\lif$
+यांसाठी सत्यता-फलने परिभाषित करण्याचे अनेक पर्याय असतात.
+मग एखादे तर्कशास्त्र या सत्यता-फलनांचा कोणताही संयोग वापरू
+शकते; तसेच फक्त $\True$ ला निर्दिष्ट मानायचे की $\True$
+आणि~$\Undef$ या दोन्हींना, हाही पर्याय असतो.
+
+येथे आपण सर्वाधिक परिचित त्रिमूल्य तर्कशास्त्रांपैकी काही,
+त्यांमागील प्रेरणा आणि त्यांचे काही गुणधर्म मांडतो.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{\L ukasiewicz यांचे तर्कशास्त्र}\label{mvl:thr:luk:sec}
+
+बहुमूल्य तर्कशास्त्राचे प्रकाशित झालेले आणि सविस्तर मांडलेले
+सर्वांत आरंभीच्या प्रस्तावांपैकी एक पोलिश तत्त्वज्ञ Jan \L ukasiewicz
+यांनी 1920 मध्ये मांडला.\footnote{Jan \L ukasiewicz,
+``O logice trójwartościowej, \emph{Ruch Filozoficzny} 5
+(1920), पृ. 170--171; 19 जून 1920 च्या व्याख्यानाचा वृत्तांत.
+मूळ अंकाचा स्कॅन: \url{https://kpbc.umk.pl/Content/247342/PDF/EOD_OPEN_006_12_nr_09.pdf}.} अरिस्टॉटलच्या सागरी युद्धाच्या समस्येतून
+\L ukasiewicz यांना प्रेरणा मिळाली: \emph{आज} ``उद्या सागरी युद्ध
+होईल'' हे विधान सत्यही नाही आणि असत्यही नाही असे दिसते; त्याचे
+सत्यतामूल्य अजून निश्चित झालेले नाही. अशा ``भविष्यातील
+परिस्थितीवश'' विधानांसाठी \L ukasiewicz यांनी तिसरे सत्यतामूल्य
+आणण्याचा प्रस्ताव मांडला.
+\begin{quote}
+पुढील वर्षी एखाद्या ठराविक क्षणी, उदाहरणार्थ 21 डिसेंबरला दुपारी बारा वाजता,
+मी वॉर्सामध्ये असेन, हे सध्या होकारार्थी किंवा नकारार्थी अशा
+कोणत्याही प्रकारे निश्चित झालेले नाही, असे मी विरोधाभासाशिवाय
+गृहीत धरू शकतो. म्हणून त्या वेळी मी वॉर्सामध्ये असेन हे संभाव्य
+आहे, पण अनिवार्य नाही. या गृहितकावर ``पुढील वर्षी 21 डिसेंबरला
+दुपारी बारा वाजता मी वॉर्सामध्ये असेन'' हे विधान सध्या सत्यही नाही आणि
+असत्यही नाही. कारण ते आताच सत्य असेल, तर भविष्यात मी
+वॉर्सामध्ये असणे अनिवार्य ठरेल; हे गृहितकाशी विसंगत आहे.
+दुसरीकडे ते आताच असत्य असेल, तर भविष्यात मी वॉर्सामध्ये असणे
+अशक्य ठरेल; हेही गृहितकाशी विसंगत आहे. म्हणून विचाराधीन
+विधान या क्षणी सत्यही नाही आणि असत्यही नाही; त्याला ``0''
+म्हणजे असत्यता आणि ``1'' म्हणजे सत्यता यांपेक्षा वेगळे तिसरे
+मूल्य असले पाहिजे. या मूल्याला आपण ``$\frac{1}{2}$.'' असे
+दर्शवू शकतो. ते ``संभाव्य'' याचे प्रतिनिधित्व करते आणि
+``सत्य'' व ``असत्य'' यांच्याबरोबर तिसरे मूल्य म्हणून सामील होते.
+\end{quote}
+\L ukasiewicz यांच्या तिसऱ्या सत्यतामूल्यासाठी आपण $\Undef$
+वापरू.\footnote{\L ukasiewicz येथे ``संभाव्य'' हा शब्द आज रूढ
+नसलेल्या अर्थाने, म्हणजे संभाव्य पण अनिवार्य नाही, या अर्थाने
+वापरतात.}
+
+या अर्थानुसार $\lnot$, $\land$ आणि $\lor$ या संयोजकांची
+सत्यता-फलने ठरवणे सोपे आहे: भविष्यातील परिस्थितीवश विधानाचे
+निषेधनही भविष्यातील परिस्थितीवश विधान असते; म्हणून
+$\tf{\lnot}(\Undef) = \Undef$. संधीमधील एक घटक अनिर्धारित
+असेल आणि दुसरा सत्य असेल, तर ती संधीही अनिर्धारित असते.
+कारण परिस्थितीवश घटक पुढे कसा ठरतो त्यानुसार संधी सत्यही
+ठरू शकते आणि असत्यही ठरू शकते. म्हणून \[    \tf{\land}(\True, \Undef) =
+\tf{\land}(\Undef, \True) =
+\Undef.
+\]
+पण दुसरा घटक असत्य असेल, तर संधी सत्य ठरू शकत नाही;
+म्हणून \[\tf{\land}(\False, \Undef) =
+\tf{\land}(\Undef, \False) = \False.\]
+दोन्ही निविष्टे $\True$ किंवा $\False$ ही निश्चित सत्यतामूल्ये
+असतील, तर उरलेली फलनमूल्ये अभिजात तर्कशास्त्राप्रमाणेच असतात.
+
+सशर्त विधानाच्या बाबतीत परिस्थिती थोडी अधिक गुंतागुंतीची आहे.
+$q$ हे भविष्यातील परिस्थितीवश विधान आहे असे समजा. $p$ असत्य
+असेल, तर $q$ पुढे कसेही ठरले तरी $p \lif q$ सत्य असेल; म्हणून
+$\tf{\lif}(\False, \Undef) = \True$ असे ठेवावे. तसेच $p$
+सत्य असेल, तर $q$ पुढे कसेही ठरले तरी $q \lif p$ सत्य असेल;
+म्हणून $\tf{\lif}(\Undef, \True) = \True$. $p$ सत्य असेल,
+तर $p \lif q$ सत्य किंवा असत्य ठरू शकते; म्हणून
+$\tf{\lif}(\True, \Undef) = \Undef$. त्याचप्रमाणे $p$
+असत्य असेल, तर $q \lif p$ सत्य किंवा असत्य ठरू शकते;
+म्हणून $\tf{\lif}(\Undef, \False) = \Undef$. आता $p$
+आणि $q$ दोन्ही भविष्यातील परिस्थितीवश विधाने असण्याचे
+प्रकरण उरते. मूळ प्रेरणेनुसार या प्रकरणात खरे तर $\Undef$
+हेच मूल्य द्यायला हवे. मात्र तसे केल्यास $\varphi \lif \varphi$
+हे \emph{सर्वतः सत्य सूत्र राहणार नाही}. $\varphi \lor \lnot \varphi$
+आणि $\lnot(\varphi \land \lnot \varphi)$ यांचा त्याग करायला
+\L ukasiewicz यांना अडचण वाटली नाही; पण $\varphi \lif \varphi$
+चा त्याग करणे त्यांना मान्य नव्हते. म्हणून त्यांनी
+$\tf{\lif}(\Undef, \Undef) = \True$ असे ठरवले.
+
+\begin{defn}\label{mvl:thr:luk:def:lukasiewicz}
+त्रिमूल्य \L ukasiewicz तर्कशास्त्र पुढील मॅट्रिक्सने परिभाषित होते:
+\begin{enumerate}
+  \item मानक विधानीय भाषा $\Lang L_0$ चा केवळ
+  $\lnot$, $\land$, $\lor$, $\lif$ हे संयोजक असलेला खंड.
+  \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
+  \item $\True$ हेच एकमेव निर्दिष्ट मूल्य आहे, म्हणजे $V^+ = \{\True\}$.
+  \item सत्यता-फलने पुढील कोष्टकांनी दिली आहेत:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\False$\\
+      $\False$ & $\False$ & $\False$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\True$ & $\True$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogLuk[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\True$ & $\True$ & $\Undef$  \\
+      $\False$ & $\True$ & $\True$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+सहज लक्षात येते की केवळ $\lnot$, $\land$ आणि $\lor$
+असलेल्या कोणत्याही सूत्र~$\varphi$ मधील सर्व
+विधानीय चले ना $\Undef$ नेमले, तर त्या
+सूत्राचे सत्यतामूल्य~$\Undef$ असेल. म्हणून, उदाहरणार्थ,
+अभिजात तर्कशास्त्रातील $p \lor \lnot p$ आणि $\lnot(p
+\land \lnot p)$ ही सर्वतः सत्य सूत्रे $\LogLuk[3]$
+मध्ये सर्वतः सत्य नाहीत; कारण $\pAssign v(p) = \Undef$
+असताना $\pValue{v}(\varphi) = \Undef$.
+संबंधित प्रत्येक विधानीय चलासाठी $\pAssign v(p) = \True$ किंवा
+$\False$ असलेल्या सत्य-मूल्यांकने मध्ये $\pValue v(\varphi)$
+हे त्या सूत्राच्या अभिजात सत्यतामूल्याशी जुळते.
+\begin{prop}
+  $\varphi$ मधील प्रत्येक $p$ साठी $\pAssign v(p) \in \{\True, \False\}$ असेल, तर
+  $\pValue v(\varphi)[\LogLuk[3]] = \pValue v(\varphi)[\LogCL]$.
+\end{prop}
+\begin{prob}\label{mvl:thr:luk:prob:luk-iff} असे समजा की आपण
+  $\pValue v(\varphi \liff \psi) = \pValue v((\varphi \lif \psi) \land (\psi \lif
+  \varphi))$ अशी $\LogLuk[3]$ मध्ये व्याख्या करतो. मग $\liff$
+  चे सत्यताकोष्टक कसे असेल?
+\end{prob}
+अभिजात तर्कशास्त्रातील अनेक सर्वतः सत्य सूत्रे \LogLuk[3]
+मध्येही \emph{सर्वतः सत्य आहेत}; उदाहरणार्थ,
+$\lnot p \lif (p \lif q)$. अभिजात तर्कशास्त्राप्रमाणेच
+हे सत्यताकोष्टकाने पडताळता येते:
+\begin{center}
+\begin{tabular}{cc|cccccc}
+  $p$ & $q$ & $\lnot$ & $p$ & $\lif$ & $\smash{(}p$ & $\lif$ & $q\smash{)}$ \\ \hline
+  \True & \True & \False & \True & \True & \True & \True & \True \\
+  \True & \Undef & \False & \True & \True & \True & \Undef & \Undef \\
+  \True & \False & \False & \True & \True & \True & \False & \False \\
+  \Undef & \True & \Undef & \Undef & \True & \Undef & \True & \True \\
+  \Undef & \Undef & \Undef & \Undef & \True & \Undef & \True & \Undef \\
+  \Undef & \False & \Undef & \Undef & \True & \Undef & \Undef & \False \\
+  \False & \True & \True & \False & \True & \False & \True & \True \\
+  \False & \Undef & \True & \False & \True & \False & \True & \Undef \\
+  \False & \False & \True & \False & \True & \False & \True & \False \\
+\end{tabular}
+\end{center}
+\begin{prob}
+  पुढील सूत्रे \LogLuk[3] मध्ये सर्वतः सत्य आहेत हे दाखवा:
+  \begin{enumerate}
+    \item $p \lif (q \lif p)$
+    \item\label{mvl:thr:luk:prob:luk-taut-2} $\lnot(p \land q) \liff (\lnot p \lor \lnot q)$
+    \item\label{mvl:thr:luk:prob:luk-taut-3} $\lnot(p \lor q) \liff (\lnot p \land \lnot q)$
+  \end{enumerate}
+  (\ref{mvl:thr:luk:prob:luk-taut-2} आणि
+  \ref{mvl:thr:luk:prob:luk-taut-3} मध्ये $\varphi \liff \psi$
+  हा $(\varphi \lif \psi) \land (\psi \lif \varphi)$ चा संक्षेप माना किंवा
+  \ref{mvl:thr:luk:prob:luk-iff} साठीचे तुमचे उत्तर वापरा.)
+\end{prob}
+\begin{prob}
+  पुढील अभिजात सर्वतः सत्य सूत्रे \LogLuk[3] मध्ये सर्वतः सत्य
+  नाहीत हे दाखवा:
+  \begin{enumerate}
+    \item $(\lnot p \land p) \lif q$
+    \item $((p \lif q) \lif p) \lif p$
+    \item $(p \lif (p \lif q)) \lif (p \lif q)$
+  \end{enumerate}
+\end{prob}
+त्यामुळे अभिजात तर्कशास्त्रातील सर्व सर्वतः सत्य सूत्रे
+$\LogLuk[3]$ मध्ये सर्वतः सत्य नसली, तरी प्रत्येक
+सत्य-मूल्यांकन मध्ये त्यांना निदान $\True$ किंवा $\Undef$
+यांपैकी एक मूल्य मिळेल, असे वाटू शकते. पण तसे नाही.
+पुढील सूत्र हे प्रतिउदाहरण आहे:
+\[
+  \lnot(p \lif \lnot p) \lor \lnot(\lnot p \lif p)
+\]
+$p$ चे मूल्य~$\Undef$ असेल, तर या सूत्राचे मूल्य $\False$ येते.
+
+\begin{prob}
+  पुढीलपैकी कोणते संबंध \L ukasiewicz तर्कशास्त्रात खरे ठरतात?
+  प्रत्येकासाठी सत्यताकोष्टक द्या.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $\lnot\lnot p \Entails p$
+    \item $p \land q \Entails p$
+    \item $p \Entails p \land p$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+\L ukasiewicz यांना आपल्या त्रिमूल्य पद्धतीच्या आधारे
+संभाव्यतेचे तर्कशास्त्र उभारायचे होते. त्यासाठी त्यांनी ``$\varphi$
+संभाव्य आहे'' याकरिता एकस्थानी संयोजक $\Diamond \varphi$ आणि
+``$\varphi$ अनिवार्य आहे'' याकरिता त्याला अनुरूप $\Box \varphi$ घेतले:
+\begin{center}
+  \begin{tabular}{c|c}
+    $\tf{\Diamond}$ & \\
+    \hline
+    $\True$ & $\True$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$
+  \end{tabular}
+  \quad
+  \begin{tabular}{c|c}
+    $\tf{\Box}$ & \\
+    \hline
+    $\True$ & $\True$ \\
+    $\Undef$ & $\False$ \\
+    $\False$ & $\False$
+  \end{tabular}
+\end{center}
+म्हणजे $p$ संभाव्य आहे, जर आणि फक्त जर ते असत्य असल्याचे
+आधीच निश्चित झालेले नसेल; आणि $p$ अनिवार्य आहे, जर आणि
+फक्त जर ते सत्य असल्याचे आधीच निश्चित झालेले असेल.
+
+\begin{prob}
+  $\Box$ आणि~$\Diamond$ यांची सत्यताकोष्टके जोडून विस्तारलेल्या
+  \LogLuk[3] मध्ये $\Box p \liff \lnot\Diamond \lnot p$ आणि
+  $\Diamond p \liff \lnot \Box \lnot p$ ही सर्वतः सत्य सूत्रे
+  आहेत हे दाखवा.
+\end{prob}
+
+पण या प्रस्तावित मोडल तर्कशास्त्राच्या मर्यादा लवकरच स्पष्ट
+झाल्या: पुढे काहीही घडले तरी $p \land \lnot p$ कधीच सत्य
+ठरू शकत नाही. म्हणून सध्या त्याचे मूल्य निश्चित नसले
+(आणि त्यामुळे ते अनिर्धारित असले), तरी ते अशक्य मानायला
+हवे; म्हणजे $\lnot \Diamond(p \land \lnot p)$ हे सर्वतः सत्य
+सूत्र असायला हवे. तथापि, $\pAssign v(p) = \Undef$ असेल,
+तर $\pValue v(\lnot \Diamond(p \land \lnot p)) = \False$.
+कारण या वेळी $p \land \lnot p$ चे मूल्य $\Undef$,
+त्याच्या $\Diamond$ चे मूल्य $\True$, आणि शेवटच्या निषेधनाचे
+मूल्य $\False$ असते.
+संभाव्यता आणि अनिवार्यता यांसारखे मोडल भेद व्यक्त करण्यासाठी
+दोन सत्यतामूल्ये पुरेशी नाहीत, हा \L ukasiewicz यांचा निष्कर्ष
+बरोबर होता; पण तिसरे सत्यतामूल्य जोडणेही पुरेसे नाही.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{क्लिनी तर्कशास्त्रे}\label{mvl:thr:skl:sec}
+
+Stephen Kleene यांनी संगणन प्रक्रियांच्या परिणामांच्या दृष्टीने
+सत्यतामूल्यांचा विचार करणाऱ्या तर्कशास्त्रातून प्रेरित होऊन दोन
+त्रिमूल्य तर्कशास्त्रे मांडली: एखादी प्रक्रिया $\True$ किंवा
+$\False$ हा परिणाम देऊ शकते; पण ती समाप्तही होणार नाही असे
+घडू शकते. त्या वेळी संबंधित सत्यतामूल्य अपरिभाषित असते;
+ते सत्यतामूल्य~$\Undef$ ने दर्शवले जाते.
+
+विधान~$\varphi$ चे निषेधन संगणित करण्यासाठी आधी~$\varphi$ चे मूल्य
+काढायचे आणि मग त्याच्या विरुद्ध मूल्याचा परिणाम द्यायचा.
+$\varphi$ चे संगणन समाप्त होत नसेल, तर ही संपूर्ण प्रक्रियाही
+समाप्त होत नाही; म्हणून $\Undef$ चे निषेधन $\Undef$ आहे.
+
+संधी $\varphi \land \psi$ संगणित करण्याचे दोन मार्ग आहेत: आधी~$\varphi$
+आणि नंतर $\psi$ संगणित करता येईल. दोन्हींचा परिणाम~$\True$
+असेल तर संधीचा परिणाम $\True$, अन्यथा $\False$ असेल.
+दोन्हींपैकी कोणतेही संगणन थांबले नाही, तर संपूर्ण प्रक्रियाही
+थांबत नाही. त्यामुळे या पद्धतीत संधीचा एक घटक अपरिभाषित
+असेल, तर संधीही अपरिभाषित असते. विसंधीबाबतही हेच लागू होते.
+
+पण $\varphi$ आणि $\psi$ यांचे मूल्यांकन समांतरपणे करता आले, तर
+अधिक चांगले करता येते. दोन प्रक्रियांपैकी एक थांबून $\False$
+हा परिणाम देताच आपण थांबू शकतो, कारण संधी असत्य असलीच
+पाहिजे. म्हणून या पद्धतीत एक घटक असत्य असेल, तर दुसरा
+अपरिभाषित असला तरी संधी असत्य असते. त्याचप्रमाणे विसंधीचे
+समांतर संगणन करताना दोन घटकांपैकी एक सत्य परिणाम देताच
+थांबता येते; विसंधी सत्य असलीच पाहिजे. त्यामुळे संयुक्त
+विधानाचा एक घटक अपरिभाषित असला तरी त्याचा परिणाम कळू
+शकतो. या अर्थानुसार $\Undef$ ला ``अपरिभाषित'' याऐवजी
+``अज्ञात'' असे वाचता येईल.
+
+या दोन अर्थांमधून क्लिनी यांची प्रबळ आणि दुर्बल तर्कशास्त्रे
+मिळतात. सशर्त विधानाची व्याख्या $\lnot \varphi \lor \psi$ शी
+समतुल्य अशी केली जाते.
+
+\begin{defn}
+\emph{प्रबळ क्लिनी तर्कशास्त्र}~$\LogKs$ पुढील मॅट्रिक्सने
+परिभाषित होते:
+\begin{enumerate}
+  \item मानक विधानीय भाषा $\Lang L_0$ चा केवळ
+  $\lnot$, $\land$, $\lor$, $\lif$ हे संयोजक असलेला खंड.
+  \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
+  \item $\True$ हेच एकमेव निर्दिष्ट मूल्य आहे, म्हणजे $V^+ = \{\True\}$.
+  \item सत्यता-फलने पुढील कोष्टकांनी दिली आहेत:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\False$\\
+      $\False$ & $\False$ & $\False$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\True$ & $\True$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogKs]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$  \\
+      $\False$ & $\True$ & $\True$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+\begin{defn}
+\emph{दुर्बल क्लिनी तर्कशास्त्र}~$\LogKw$ पुढील मॅट्रिक्सने
+परिभाषित होते:
+\begin{enumerate}
+  \item मानक विधानीय भाषा $\Lang L_0$ चा केवळ
+  $\lnot$, $\land$, $\lor$, $\lif$ हे संयोजक असलेला खंड.
+  \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
+  \item $\True$ हेच एकमेव निर्दिष्ट मूल्य आहे, म्हणजे $V^+ = \{\True\}$.
+  \item सत्यता-फलने पुढील कोष्टकांनी दिली आहेत:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$\\
+      $\False$ & $\False$ & $\Undef$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\True$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogKw]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\Undef$  \\
+      $\False$ & $\True$ & $\Undef$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+\begin{prop}
+  $\LogKs$ आणि $\LogKw$ यांत कोणतेही सर्वतः सत्य सूत्र नाही.
+\end{prop}
+\begin{proof}
+  सर्व विधानीय चले~$p$ साठी
+  $\pAssign v(p) = \Undef$ असेल, तर कोणत्याही
+  सूत्र~$\varphi$ चे सत्यतामूल्य~$\pValue v(\varphi) =
+  \Undef$ असेल; कारण दोन्ही तर्कशास्त्रांत
+  \[
+    \tf{\lnot}(\Undef) = \tf{\lor}(\Undef, \Undef) = \tf{\land}(\Undef,
+  \Undef) = \tf{\lif}(\Undef, \Undef) = \Undef
+  \]
+  असे आहे. $\LogKs$ आणि $\LogKw$ या दोन्हींमध्ये
+  $\Undef \notin V^+$ असल्यामुळे या सत्य-मूल्यांकन मध्ये
+  $\varphi$ चे सत्यतामूल्य निर्दिष्ट नसेल.
+\end{proof}
+
+दुर्बल आणि प्रबळ क्लिनी तर्कशास्त्रांत सर्वतः सत्य सूत्रे
+नसली, तरी त्यांचे तार्किक निष्पन्नता संबंध अतुच्छ आहेत.
+
+\begin{prob}
+  पुढीलपैकी कोणते संबंध (a) प्रबळ आणि (b) दुर्बल क्लिनी
+  तर्कशास्त्रात खरे ठरतात? प्रत्येकासाठी सत्यताकोष्टक द्या.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $p \land q \Entails p$
+    \item $p \Entails p \land p$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+Dmitry Bochvar यांनी $\Undef$ चा अर्थ ``अर्थहीन'' असा घेतला
+आणि विरोधाभास निर्माण करणाऱ्या विधानांना~$\Undef$ हे मूल्य
+देऊन खोटारड्याच्या विरोधाभासासारखे विरोधाभास सोडवण्याचा
+प्रयत्न केला. त्यांनी मूलतः दुर्बल क्लिनी तर्कशास्त्राला
+अतिरिक्त संयोजके जोडून तयार होणारे तर्कशास्त्र मांडले.
+त्यांतील दोन संयोजके ``बाह्य निषेधन'' आणि ``अपरिभाषित
+आहे'' हा परिकर्मी अशी आहेत:
+\begin{center}
+  \begin{tabular}{c|c}
+    $\tf{\sim}$ & \\
+    \hline
+    $\True$ & $\False$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\True$
+  \end{tabular}
+\quad
+  \begin{tabular}{c|c}
+    $\tf{+}$ & \\
+    \hline
+    $\True$ & $\False$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$
+  \end{tabular}
+\end{center}
+
+\begin{prob}
+  Bochvar यांच्या तर्कशास्त्रात $\lnot$ आणि~$+$ यांच्या
+  साहाय्याने $\sim$ ची व्याख्या करता येते का? म्हणजे, फक्त
+  विधानीय चल~$p$ असलेले, $\sim$ नसलेले
+  आणि नेहमी~$\mathord{\sim}p$ इतकेच सत्यतामूल्य घेणारे
+  सूत्र शोधा. तुमचे उत्तर योग्य आहे हे
+  सत्यताकोष्टकाने दाखवा.
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{G\"odel तर्कशास्त्रे}\label{mvl:thr:god:sec}
+
+Kurt G\"odel यांनी $n$-मूल्य तर्कशास्त्रांची एक क्रमिका
+मांडली. त्यांतील प्रत्येकात अंतःप्रज्ञावादी तर्कशास्त्रात
+वैध असलेली सर्व सूत्रे येतात आणि प्रत्येक अभिजात
+तर्कशास्त्राचे उपतर्कशास्त्र आहे. त्यांपैकी पहिले
+लक्षवेधी तर्कशास्त्र पुढीलप्रमाणे आहे:
+
+\begin{defn}\label{mvl:thr:god:defn:goedel}
+\emph{$3$-मूल्य G\"odel तर्कशास्त्र}~$\LogGod$ पुढील
+मॅट्रिक्सने परिभाषित होते:
+\begin{enumerate}
+  \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$ असलेली मानक विधानीय भाषा $\Lang L_0$.
+  \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
+  \item $\True$ हेच एकमेव निर्दिष्ट मूल्य आहे, म्हणजे $V^+ = \{\True\}$.
+  \item $\lfalse$ साठी $\tf{\lfalse} = \False$. उरलेल्या
+  संयोजकांची सत्यता-फलने पुढील कोष्टकांनी दिली आहेत:
+  \begin{center}
+    \begin{tabular}{c|c}
+      $\tf{\lnot}[\LogGod]$ & \\
+      \hline
+      $\True$ & $\False$ \\
+      $\Undef$ & $\False$ \\
+      $\False$ & $\True$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\land}[\LogGod]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\Undef$ & $\Undef$ & $\False$\\
+      $\False$ & $\False$ & $\False$ & $\False$
+    \end{tabular}
+    \\[2ex]
+    \begin{tabular}{c|ccc}
+      $\tf{\lor}[\LogGod]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\True$ & $\True$ \\
+      $\Undef$ & $\True$ & $\Undef$ & $\Undef$ \\
+      $\False$ & $\True$ & $\Undef$ & $\False$
+    \end{tabular}
+    \quad
+    \begin{tabular}{c|ccc}
+      $\tf{\lif}[\LogGod]$ & $\True$ & $\Undef$ & $\False$ \\
+      \hline
+      $\True$ & $\True$ & $\Undef$ & $\False$ \\
+      $\Undef$ & $\True$ & $\True$ & $\False$  \\
+      $\False$ & $\True$ & $\True$ & $\True$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+$\land$ आणि~$\lor$ यांची सत्यताकोष्टके \L ukasiewicz
+आणि प्रबळ क्लिनी तर्कशास्त्रांप्रमाणेच आहेत, हे लक्षात येईल;
+पण $\lnot$ आणि~$\lif$ यांच्या कोष्टकांत फरक आहे.
+G\"odel तर्कशास्त्रात $\tf{\lnot}(\Undef) = \False$.
+\L ukasiewicz आणि क्लिनी तर्कशास्त्रांच्या विपरीत,
+$\tf{\lif}(\Undef, \False) = \False$; तर क्लिनी
+तर्कशास्त्राच्या विपरीत (पण \L ukasiewicz तर्कशास्त्राप्रमाणे)
+$\tf{\lif}(\Undef, \Undef) = \True$.
+वर सूचित केलेल्या अंतःप्रज्ञावादी तर्कशास्त्राशी असलेल्या
+संबंधावरून अपेक्षित आहे त्याप्रमाणे $\LogGod[3]$ हे
+अंतःप्रज्ञावादी तर्कशास्त्राच्या जवळचे आहे. त्या तर्कशास्त्रात
+वैध असलेली सर्व सूत्रे $\LogGod[3]$ मध्ये सर्वतः सत्य
+असतात; आणि अंतःप्रज्ञावादी तर्कशास्त्रात वैध नसलेली अनेक
+अभिजात सर्वतः सत्य सूत्रे $\LogGod[3]$ मध्येही सर्वतः
+सत्य नसतात. उदाहरणार्थ, पुढील सूत्रे सर्वतः सत्य नाहीत:
+\begin{align*}
+  & p \lor \lnot p && (p \lif q) \lif (\lnot p \lor q) \\
+  & \lnot\lnot p \lif p && \lnot(\lnot p \land \lnot q) \lif (p \lor q) \\
+  & ((p \lif q) \lif p) \lif p && \lnot(p \lif q) \lif (p \land \lnot q)
+\end{align*}
+मात्र $\LogGod[3]$ मधील प्रत्येक सर्वतः सत्य सूत्र
+अंतःप्रज्ञावादी तर्कशास्त्रातही वैध असेलच असे नाही;
+उदाहरणार्थ, $\lnot\lnot p \lor \lnot p$ किंवा $(p
+\lif q) \lor (q \lif p)$.
+\begin{prob}
+  पुढील सूत्रे $\LogGod[3]$ मध्ये सर्वतः सत्य आहेत हे
+  सत्यताकोष्टकांनी दाखवा:
+  \begin{align*}
+    & \lnot\lnot p \lor \lnot p\\
+    & (p \lif q) \lor (q \lif p) \\
+    & \lnot(p \land q) \lif (\lnot p \lor \lnot q) \\
+    & (p \lif q) \lor (q \lif r) \lor (r \lif s)
+  \end{align*}
+\end{prob}
+\begin{prob}
+  पुढील सूत्रे $\LogGod[3]$ मध्ये सर्वतः सत्य नाहीत हे
+  सत्यताकोष्टकांनी दाखवा:
+  \begin{align*}
+    & (p \lif q) \lif (\lnot p \lor q) \\
+    & \lnot(\lnot p \land \lnot q) \lif (p \lor q) \\
+    & ((p \lif q) \lif p) \lif p \\
+    & \lnot(p \lif q) \lif (p \land \lnot q)
+  \end{align*}
+\end{prob}
+\begin{prob}
+  पुढीलपैकी कोणते संबंध G\"odel तर्कशास्त्रात खरे ठरतात?
+  प्रत्येकासाठी सत्यताकोष्टक द्या.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $p \land q \Entails p$
+    \item $p \Entails p \land p$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+\section[इतर सत्यतामूल्येही निर्दिष्ट करणे]{$\True$ व्यतिरिक्तही मूल्य निर्दिष्ट करणे}\label{mvl:thr:mul:sec}
+आतापर्यंत पाहिलेल्या सर्व तर्कशास्त्रांत निर्दिष्ट
+सत्यतामूल्यांचा संच $V^+ = \{\True\}$ होता; म्हणजे एखाद्या
+विधान निर्दिष्ट मानले जाई, जर आणि फक्त जर त्याचे
+सत्यतामूल्य~$\True$ असेल.
+पण एखादे विधान फक्त~$\False$ नसले, तरी ते सत्य मानता येईल.
+अशा वेळी, उदाहरणार्थ, मॅट्रिक्समध्ये
+$V^+ = \{\True, \Undef\}$ असे ठरवून तर्कशास्त्र मिळेल.
+\begin{defn}
+\emph{विरोधापत्तीचे तर्कशास्त्र}~$\LogLP$ पुढील मॅट्रिक्सने
+परिभाषित होते:
+\begin{enumerate}
+  \item मानक विधानीय भाषा $\Lang L_0$ चा केवळ
+  $\lnot$, $\land$, $\lor$, $\lif$ हे संयोजक असलेला खंड.
+  \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
+  \item $\True$ आणि $\Undef$ निर्दिष्ट आहेत, म्हणजे $V^+ = \{\True, \Undef\}$.
+  \item सत्यता-फलने प्रबळ क्लिनी तर्कशास्त्रातील फलनांसारखीच आहेत.
+\end{enumerate}
+\end{defn}
+\begin{defn}
+Halld\'en यांचे \emph{निरर्थकतेचे तर्कशास्त्र}~$\LogHal$
+पुढील मॅट्रिक्सने परिभाषित होते:
+\begin{enumerate}
+  \item मानक विधानीय भाषा $\Lang L_0$ च्या
+  $\lnot$, $\land$, $\lor$, $\lif$ या संयोजकांच्या खंडाचा
+  $1$-स्थानी संयोजक~$+$ जोडून केलेला विस्तार.
+  \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
+  \item $\True$ आणि $\Undef$ निर्दिष्ट आहेत, म्हणजे $V^+ = \{\True, \Undef\}$.
+  \item सत्यता-फलने दुर्बल क्लिनी तर्कशास्त्रातील फलनांसारखीच
+  आहेत; त्याखेरीज ``अर्थहीन आहे'' हा परिकर्मी आहे:
+  \begin{center}
+    \begin{tabular}{c|c}
+    $\tf{+}$ & \\
+    \hline
+    $\True$ & $\False$ \\
+    $\Undef$ & $\True$ \\
+    $\False$ & $\False$
+    \end{tabular}
+  \end{center}
+\end{enumerate}
+\end{defn}
+यांची सत्यताकोष्टके क्लिनी तर्कशास्त्रांशी जुळतात; पण
+त्यांच्या विपरीत यांत सर्वतः सत्य सूत्रे \emph{आहेत}.
+\begin{prop}\label{mvl:thr:mul:prop:LP-taut-CL} $\LogLP$ मधील सर्वतः सत्य
+  सूत्रे आणि अभिजात विधानीय तर्कशास्त्रातील सर्वतः सत्य सूत्रे
+  एकच आहेत.
+\end{prop}
+\begin{proof}
+  \ref{mvl:syn:sub:prop:mvl-cl} नुसार $\Entails[\LogLP] \varphi$
+  असेल, तर $\Entails[\LogCL] \varphi$. उलट दिशा दाखवण्यासाठी
+  आपण सिद्ध करू की $\pValue v(\varphi)[\LogKs] = \False$ असेल असे
+  सत्य-मूल्यांकन~$\pAssign v\colon \PVar \to \{\False, \True,
+  \Undef\}$ असल्यास $\pValue {v'}(\varphi)[\LogCL] = \False$
+  असे सत्य-मूल्यांकन~$\pAssign {v'}\colon \PVar \to \{\False, \True\}$
+  असते. यावरून $\LogLP$ साठी अपेक्षित निष्कर्ष मिळतो. कारण
+  $\LogKs$ आणि $\LogLP$ यांची वैशिष्ट्यपूर्ण सत्यता-फलने
+  सारखीच आहेत आणि $\LogLP$ मध्ये फक्त $\False$ हेच मूल्य
+  निर्दिष्ट नाही ($\LogLP$ आणि~$\LogKs$ यांतील तोच एक फरक
+  आहे). म्हणून $\Entails/[\LogLP] \varphi$ असेल, तर कोणत्यातरी
+  सत्य-मूल्यांकन~$\pAssign v$ साठी $\pValue v(\varphi)[\LogLP] = \pValue
+  v[\LogKs](\varphi) = \False$. सिद्ध करावयाच्या विधानानुसार
+  $\pValue{v'}[\LogCL](\varphi) = \False$, म्हणजे $\Entails/[\LogCL] \varphi$.
+  हे सिद्ध करण्यासाठी आधी $\pAssign {v'}$ ची व्याख्या अशी करू:
+  \[
+    \pAssign {v'}(p) =
+    \begin{cases}
+    \True & \text{जर } \pAssign {v}(p) \in \{\True, \Undef\}\\
+    \False & \text{इतर वेळी}
+  \end{cases}
+  \]
+  आता $\varphi$ वरील विगमनाने दाखवू की (a)~$\pValue v(\varphi)[\LogKs]
+  = \False$ असेल, तर $\pValue {v'}(\varphi)[\LogCL] = \False$;
+  आणि (b)~$\pValue v(\varphi)[\LogKs] = \True$ असेल, तर
+  $\pValue {v'}(\varphi)[\LogCL] = \True$.
+  \begin{enumerate}
+    \item विगमनाचा आधार: $\varphi \ident p$. (a) किंवा (b) चा
+    पूर्वपक्ष लागू असेल, तेव्हा मूळ मूल्य अनुक्रमे असत्य किंवा
+    सत्य असते; त्या प्रकरणांतच
+    \ref{mvl:syn:val:defn:pValue} नुसार $\pValue v(\varphi)[\LogKs]
+    = \pAssign v(p) = \pValue {v'}(\varphi)[\LogCL]$ ही समानता
+    मिळते, आणि त्यावरून (a) व~(b) दोन्ही सिद्ध होतात.
+
+    विगमनाच्या पायरीसाठी पुढील प्रकरणे पाहू:
+    \item $\varphi \ident \lnot \psi$.
+    \begin{enumerate}
+      \item $\pValue v(\lnot\psi)[\LogKs] = \False$ असे समजा.
+      $\tf{\lnot}[\LogKs]$ च्या व्याख्येनुसार
+      $\pValue v(\psi)[\LogKs]  = \True$. विगमन गृहितकातील
+      प्रकरण~(b) नुसार $\pValue {v'}(\psi)[\LogCL]  = \True$;
+      म्हणून $\pValue {v'}(\lnot \psi)[\LogCL] = \False$.
+      \item $\pValue v(\lnot\psi)[\LogKs] = \True$ असे समजा.
+      $\tf{\lnot}[\LogKs]$ च्या व्याख्येनुसार
+      $\pValue v(\psi)[\LogKs]  = \False$. विगमन गृहितकातील
+      प्रकरण~(a) नुसार $\pValue {v'}(\psi)[\LogCL]  = \False$;
+      म्हणून $\pValue {v'}(\lnot \psi)[\LogCL] = \True$.
+    \end{enumerate}
+
+    \item $\varphi \ident (\psi \land \chi)$.
+    \begin{enumerate}
+      \item $\pValue v(\psi \land \chi)[\LogKs] = \False$ असे समजा.
+      $\tf{\land}[\LogKs]$ च्या व्याख्येनुसार
+      $\pValue v(\psi)[\LogKs]  = \False$ किंवा
+      $\pValue v(\chi)[\LogKs]  = \False$. विगमन गृहितकातील
+      प्रकरण~(a) नुसार $\pValue {v'}(\psi)[\LogCL]  = \False$
+      किंवा $\pValue {v'}(\chi)[\LogCL]  = \False$;
+      म्हणून $\pValue {v'}(\psi \land \chi)[\LogCL] = \False$.
+      \item $\pValue v(\psi \land \chi)[\LogKs] = \True$ असे समजा.
+      $\tf{\land}[\LogKs]$ च्या व्याख्येनुसार
+      $\pValue v(\psi)[\LogKs]  = \True$ आणि
+      $\pValue v(\chi)[\LogKs]  = \True$. विगमन गृहितकातील
+      प्रकरण~(b) नुसार $\pValue {v'}(\psi)[\LogCL]  = \True$
+      आणि $\pValue {v'}(\chi)[\LogCL]  = \True$;
+      म्हणून $\pValue {v'}(\psi \land \chi)[\LogCL] = \True$.
+    \end{enumerate}
+  \end{enumerate}
+
+  उरलेली दोन प्रकरणे याच प्रकारची आहेत आणि सरावासाठी
+  सोडली आहेत. दुसरा मार्ग असा: वरील पुराव्याने फक्त $\lnot$
+  आणि~$\land$ असलेल्या सर्व सूत्रे साठी निष्कर्ष
+  सिद्ध केला आहे. आता $\LogKs$ आणि $\LogCL$ या दोन्हींमध्ये
+  कोणत्याही $\pAssign v$ साठी $\pValue v(\psi \lor
+  \chi) = \pValue v(\lnot(\lnot\psi \land \lnot \chi))$ आणि $\pValue v(\psi \lif
+  \chi) = \pValue v(\lnot(\psi \land \lnot \chi))$ या समानता
+  वापरता येतात.
+\end{proof}
+
+\begin{prob}
+  \ref{mvl:thr:mul:prop:LP-taut-CL} चा पुरावा पूर्ण
+  करा; म्हणजे $\varphi \ident (\psi \lor \chi)$ आणि
+  $\varphi \ident (\psi \lif \chi)$ या प्रकरणांसाठी (a) व~(b)
+  सिद्ध करा.
+\end{prob}
+
+\begin{prob}
+प्रत्येक अभिजात सर्वतः सत्य सूत्र $\LogHal$ मध्येही
+सर्वतः सत्य आहे हे सिद्ध करा.
+\end{prob}
+
+दोन्ही तर्कशास्त्रांच्या समान चार-संयोजकीय भाषाखंडात त्यांची
+सर्वतः सत्य सूत्रे अभिजात तर्कशास्त्रासारखीच असली, तरी त्यांचे
+तार्किक निष्पन्नता संबंध वेगळे आहेत. Halld\'en यांच्या अतिरिक्त
+संयोजकाचा समावेश असलेल्या सूत्रांसाठी हे समानतेचे विधान नाही. उदाहरणार्थ,
+$\LogLP$ हे \emph{व्याघातसहिष्णु} आहे: त्यात
+$\lnot p, p \Entails/ q$. म्हणून
+$\lnot \varphi, \varphi \Entails \psi$ हे स्फोटाचे तत्त्व सर्वसाधारणपणे
+लागू होत नाही. ($\varphi$ आणि $\psi$ यांच्या काही प्रकरणांत
+ते लागू होते; उदाहरणार्थ, $\psi$~हे सर्वतः सत्य सूत्र असेल तर.)
+
+\begin{prob}
+  पुढीलपैकी कोणते संबंध (a)~$\LogLP$ आणि (b)~$\LogHal$
+  मध्ये खरे ठरतात? प्रत्येकासाठी सत्यताकोष्टक द्या.
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $\lnot q, p \lif q \Entails \lnot p$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $\lnot p, p \Entails q$
+    \item $p \Entails p \lor q$
+    \item $p \lif q, q\lif r \Entails p \lif r$
+  \end{enumerate}
+\end{prob}
+
+$\LogLuk[3]$ मध्ये $\Undef$ हे मूल्यही निर्दिष्ट मानल्यास
+काय होईल?
+केवळ निर्दिष्ट मूल्यांचा हा बदल केल्याने पुढील R-Mingle
+मॅट्रिक्स मिळत नाही; त्यासाठी सशर्त विधानाचे सत्यता-फलनही बदलते.
+
+\begin{defn}
+  \emph{त्रिमूल्य R-Mingle}~$\LogRM[3]$ चा असत्यता-स्थिरासह
+  विस्तार पुढील मॅट्रिक्सने परिभाषित होतो:
+  \begin{enumerate}
+    \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$ असलेली मानक विधानीय भाषा $\Lang L_0$.
+    \item सत्यतामूल्यांचा संच $V = \{\True, \Undef, \False\}$.
+    \item $\True$ आणि $\Undef$ निर्दिष्ट आहेत, म्हणजे $V^+ = \{\True, \Undef\}$.
+    \item $\tf{\lfalse}=\False$. $\lnot$, $\land$ आणि $\lor$
+    यांची सत्यता-फलने \L ukasiewicz तर्कशास्त्र~$\LogLuk[3]$
+    मधील फलनांसारखीच आहेत. सशर्त विधानाचे सत्यताकोष्टक असे आहे:
+    \begin{center}
+      \begin{tabular}{c|ccc}
+        $\tf{\lif}[\LogRM[3]]$ & $\True$ & $\Undef$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\False$ & $\False$ \\
+        $\Undef$ & $\True$ & $\Undef$ & $\False$ \\
+        $\False$ & $\True$ & $\True$ & $\True$
+      \end{tabular}
+    \end{center}
+  \end{enumerate}
+  येथे $\Undef$ हे मधले मूल्य सत्य आणि असत्य दोन्ही असल्याचे
+  दर्शवते. सशर्त विधानाचे कोष्टक \L ukasiewicz यांच्या कोष्टकापेक्षा
+  वेगळे आहे.\footnote{Barteld Kooi आणि Allard Tamminga,
+  ``Completeness via Correspondence for Extensions of the Logic of
+  Paradox,'' (2012), प्रथम ऑनलाइन आवृत्ती पृ. 10, विभाग 4;
+  \url{https://doi.org/10.1017/S1755020312000196}.}
+\end{defn}
+
+\begin{prob}
+  पुढीलपैकी कोणते संबंध $\LogRM[3]$ मध्ये खरे ठरतात?
+  \begin{enumerate}
+    \item $p, p \lif q \Entails q$
+    \item $p \lor q, \lnot p \Entails q$
+    \item $\lnot p, p \Entails q$
+    \item $p \Entails p \lor q$
+  \end{enumerate}
+\end{prob}
+
+निर्दिष्ट मूल्ये बदलल्यामुळे वेगवेगळी सत्यताकोष्टके कधी कधी
+एकच तर्कशास्त्र, म्हणजे एकच तार्किक निष्पन्नता संबंध, देऊ
+शकतात. उदाहरणार्थ, G\"odel तर्कशास्त्रात~$\{\True\}$ ऐवजी
+$V^+ = \{\True, \Undef\}$ घेतल्यास असे घडते.
+
+\begin{prop}\label{mvl:thr:mul:prop:gl-udes}
+  $V = \{\False, \Undef,\True\}$,
+  $V^+=\{\True, \Undef\}$ आणि $3$-मूल्य G\"odel
+  तर्कशास्त्राची सत्यता-फलने असलेला मॅट्रिक्स अभिजात
+  तर्कशास्त्र परिभाषित करतो.
+\end{prop}
+
+\begin{proof}
+  सराव.
+\end{proof}
+
+\begin{prob}
+  G\"odel तर्कशास्त्राप्रमाणेच पण
+  $V^+=\{\True,\Undef\}$ घेऊन परिभाषित केलेल्या
+  तर्कशास्त्र~$\Log L$ साठी $\Gamma \Entails/[\Log L] \psi$
+  असेल, तर $\Gamma \Entails/[\LogCL] \psi$ हे दाखवून
+  \ref{mvl:thr:mul:prop:gl-udes} सिद्ध करा.
+  \ref{mvl:thr:mul:prop:LP-taut-CL} मधील कल्पना
+  वापरा; मात्र गुणधर्म (a) आणि~(b) सिद्ध करण्याऐवजी
+  $\pValue v(\varphi)[\LogGod] = \False$ जर आणि फक्त जर
+  $\pValue {v'}(\varphi)[\LogCL] = \False$ हे दाखवा (आणि म्हणून
+  $\pValue v(\varphi)[\LogGod] \in \{\True,\Undef\}$ जर आणि
+  फक्त जर $\pValue {v'}(\varphi)[\LogCL] = \True$).
+  यावरून विधान का सिद्ध होते ते स्पष्ट करा.
+\end{prob}
+
+
+

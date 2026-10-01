@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-legacy-inline-note-workflow-repair/1",
+  "id": "SOL6-A204",
+  "status": "current-full-assembly-and-static-note-binding-passed",
+  "date": "2026-09-30",
+  "review_model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "tools": [
+    {
+      "path": "tools/prepare_core510.py",
+      "before_sha256": "ecbc00bd857f76ad980bda88ff243ddf1534357f3212784bf868e802b1407643",
+      "after_sha256": "e56efdf6283bc6e8f46b8c533ddf1fafcf32c1fd85ccf4e9925e5ce6640cf626",
+      "review_scope": "Full prepare_core510.py read; the inline-note rendering/import/count and corresponding gate portions of prepare_core515.py and prepare_core521.py directly read. Remaining portions of those two tools are not claimed fully audited."
+    },
+    {
+      "path": "tools/prepare_core515.py",
+      "before_sha256": "34d5e0243aa83ff64f41848b69c3c7feed4119f28593bd4ddb25858511a3726e",
+      "after_sha256": "8bcabd8f67610c7f334f4d6ef7cae8232b92a59122843f9b5debf2be95ad3931",
+      "review_scope": "Full prepare_core510.py read; the inline-note rendering/import/count and corresponding gate portions of prepare_core515.py and prepare_core521.py directly read. Remaining portions of those two tools are not claimed fully audited."
+    },
+    {
+      "path": "tools/prepare_core521.py",
+      "before_sha256": "a3a7c3038a683543ffb500e2ced75bf20cfb60939d380852f861621fd97e45cb",
+      "after_sha256": "8b3bdca12679f09580184a947ea05356e0a78d7618e3406a76527a568e641814",
+      "review_scope": "Full prepare_core510.py read; the inline-note rendering/import/count and corresponding gate portions of prepare_core515.py and prepare_core521.py directly read. Remaining portions of those two tools are not claimed fully audited."
+    }
+  ],
+  "finding": "The full assembler invokes legacy chapter assemblers. A second note in decidability hit a hardcoded OLINC-226-only assertion, preventing assembly. Three equivalent paths assumed exactly one selected-unit note and used unescaped note prose.",
+  "repair": "Use the shared safe note projection on every imported unit and compare rendered count with actual current source notes; keep historical source-issue IDs, adapt the current filtration description, and preserve historical receipts.",
+  "limitations": "No future or hypothetical source branch is reported as runtime-tested. Successful current-source full assembly and static note binding must be recorded separately.",
+  "actual_validation": {
+    "reader_sha256": "91b109b251e41e2d4493b793cbfa54917f9cc244a2479fca1ad1a9f0ac64ddb2",
+    "source_units": 722,
+    "source_reader_notes": 272,
+    "source_note_inventory_replayed": true,
+    "tex_compilation_claimed": false,
+    "new_decidability_notes_and_other_current_chapter_notes": "rendered with shared safe projection; full-reader coverage verified"
+  }
+}

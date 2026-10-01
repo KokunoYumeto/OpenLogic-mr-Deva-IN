@@ -1,0 +1,25 @@
+{
+  "id": "SOL6-A215",
+  "kind": "local_workflow_repair",
+  "date": "2026-09-30",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "files": {
+    "tools/prepare_core515.py": "bcec204113592b55132eb5cab6b0576085a9bb964858560f19c6684f89122bb0",
+    "tools/prepare_core521.py": "08360f0dcfdea6e66c080ab8f59a1432b4e5834a8d3131bb6f151a3feba734ec"
+  },
+  "review_scope": "Both complete assembler files directly read in this audit turn. Their legacy reader-note summaries now describe the repaired all-prefix definition and distinct Stalnaker/Lewis conditions.",
+  "status": "full-reader checkpoint 214 assembled and compiled successfully; standalone legacy PDFs not compiled",
+  "historical_issue_ids_retained": [
+    "OLINC-233",
+    "OLINC-238"
+  ],
+  "limitation": "No standalone legacy PDF compilation claimed.",
+  "validated_full_reader_checkpoint": {
+    "corrective_source_decisions": 214,
+    "tex_sha256": "efcd0ed6a44bfec641fcef3c91babde088cd2cc39c173a458d8b31c0b4b60051",
+    "pdf_sha256": "9a67edfe2ca6e5da03aff91369587235814c126fb4fa735fea95e5171170416e",
+    "reader_notes": 277,
+    "result": "built-log-clean"
+  }
+}

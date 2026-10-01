@@ -54,12 +54,31 @@ for name in NAMES:
     (OUT / name).write_text(serialized, encoding="utf-8", newline="\n")
 
 retrospective = ROOT / "provenance/complete-v1.1/CANON_RECHECK_101.json"
+historical_canon_binding = None
 if retrospective.is_file():
     audit = json.loads(retrospective.read_text(encoding="utf-8"))
     assert len(audit["records"]) == 101 and audit["date"] == "2026-09-29"
-    for name, expected_hash in audit["source_files_sha256"].items():
-        assert sha(STATE / name) == expected_hash
+    # This dated record describes the published v1.1 state, not future edits.
+    # Compare its individual segment bindings with the current ledger without
+    # requiring all working files to retain the old whole-file hashes.
+    current_segments = {row["segment_id"]: row for row in data["SEGMENT_CANON_USE.jsonl"]}
+    retained, revised = [], []
+    for record in audit["records"]:
+        current = current_segments[record["segment_id"]]
+        assert current["source_segment_sha256"] == record["source_segment_sha256"]
+        (retained if current["translation_segment_sha256"] == record["translation_segment_sha256"]
+         else revised).append(record["segment_id"])
+    historical_canon_binding = {
+        "date": audit["date"], "record_sha256": sha(retrospective),
+        "original_state_files_sha256": audit["source_files_sha256"],
+        "current_state_files_sha256": {name: sha(STATE / name) for name in audit["source_files_sha256"]},
+        "unchanged_segment_bindings": retained, "revised_segment_bindings": revised,
+        "limitation_mr": "मूळ दिनांकाचा संदर्भ-अभ्यास ऐतिहासिक आहे. बदललेल्या मराठी खंडांसाठी तो नव्या पुनरावलोकनाचा पुरावा नाही.",
+    }
     (OUT / "CANON_RECHECK_101.json").write_bytes(retrospective.read_bytes())
+    (OUT / "HISTORICAL_CANON_BINDING.json").write_text(
+        json.dumps(historical_canon_binding, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
 
 manifest = data["SOURCE_MANIFEST.jsonl"]
 segments = data["SEGMENT_CANON_USE.jsonl"]
@@ -82,6 +101,7 @@ assert {row["source_id"] for row in passages} <= source_ids
 assert {passage_id for row in terms for passage_id in row.get("passages", [])} <= passage_ids
 
 checked_files = {}
+aligned_blocks = {}
 for row in segments:
     unit = by_unit[row["unit_id"]]
     source_path = row["source_path"].replace("\\", "/")
@@ -100,11 +120,23 @@ for row in segments:
             "source": row["source_unit_sha256"],
             "target": row["translation_unit_sha256"],
         }
+        aligned_blocks[row["unit_id"]] = (
+            # Hash the preserved segment bytes, including original CRLF.
+            # read_text's universal-newline conversion would falsely reject
+            # the 84 frozen upstream files whose recorded blocks retain CRLF.
+            re.split(r"\n\s*\n", original.read_bytes().decode("utf-8").strip()),
+            re.split(r"\n\s*\n", target.read_bytes().decode("utf-8").strip()),
+        )
     else:
         assert checked_files[row["unit_id"]] == {
             "source": row["source_unit_sha256"],
             "target": row["translation_unit_sha256"],
         }
+    source_blocks, target_blocks = aligned_blocks[row["unit_id"]]
+    index = row["block_index"] - 1
+    assert 0 <= index < len(source_blocks) and index < len(target_blocks), row["segment_id"]
+    assert hashlib.sha256(source_blocks[index].encode("utf-8")).hexdigest() == row["source_segment_sha256"], row["segment_id"]
+    assert hashlib.sha256(target_blocks[index].encode("utf-8")).hexdigest() == row["translation_segment_sha256"], row["segment_id"]
 
 # The root file is the current full-scope derived review surface. The frozen
 # historical detailed review was preserved separately before that expansion.
@@ -131,6 +163,7 @@ receipt = {
     "detailed_review_units": len(review_units),
     "detailed_review_occurrences": len(review_rows),
     "detailed_review_scope": [min(review_units), max(review_units)],
+    "historical_canon_binding": historical_canon_binding,
     "files": [
         {"name": name, "bytes": (OUT / name).stat().st_size, "sha256": sha(OUT / name)}
         for name in NAMES

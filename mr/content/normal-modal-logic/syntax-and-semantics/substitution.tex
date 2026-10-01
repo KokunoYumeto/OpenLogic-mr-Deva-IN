@@ -1,6 +1,7 @@
 % Part: normal-modal-logic
 % Chapter: syntax-and-semantics
 % Section: substitution
+%READERNOTE{SOL6-A146: क्रमाने केलेल्या आदेशनाच्या दोन्ही मध्यवर्ती displays मध्ये संपूर्ण सूत्र दुसऱ्या आदेशनाच्या आत घेतले. पूर्वपक्षातील चलही बदलले पाहिजेत; केवळ उत्तरपक्ष बदलणे अपुरे आहे. अंतिम विस्तारित सूत्रे मूळातच योग्य होती.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -92,12 +93,15 @@ $!A$ चा \emph{दृष्टांत} असतो. वैधता आण
       उदाहरणार्थ, वरील
       $\SSubst{!A}{\subst{!D_1}{p_1}, \subst{!D_2}{p_2}}$ ची
       $\Subst{(\Subst{!A}{!D_1}{p_1})}{!D_2}{p_2}$ शी तुलना करा; नंतरचे असे आहे:}
-    \Diamond(p_2 \lif p_3) & \Subst{\lif \Box(\Diamond(p_2 \lif p_3) \land p_2)}{\lnot\Box p_1}{p_2}, \text{ म्हणजे}\\
+    & \Subst{(\Diamond(p_2 \lif p_3) \lif
+      \Box(\Diamond(p_2 \lif p_3) \land p_2))}{\lnot\Box p_1}{p_2},
+      \text{ म्हणजे}\\
     \Diamond(\lnot\Box p_1 \lif p_3) &
     \lif \Box(\Diamond(\lnot\Box p_1
     \lif p_3) \land \lnot\Box p_1)\\
     \intertext{आणि $\Subst{(\Subst{!A}{!D_2}{p_2})}{!D_1}{p_1}$ शीही तुलना करा:}
-    p_1 & \lif \Subst{\Box(p_1 \land \lnot\Box p_1)}{\Diamond(p_2 \lif p_3)}{p_1}, \text{ म्हणजे}\\
+    & \Subst{(p_1 \lif \Box(p_1 \land \lnot\Box p_1))}
+      {\Diamond(p_2 \lif p_3)}{p_1}, \text{ म्हणजे}\\
     \Diamond(p_2 \lif p_3) &
     \lif \Box(\Diamond(p_2
     \lif p_3) \land \lnot\Box\Diamond(p_2 \lif p_3)).

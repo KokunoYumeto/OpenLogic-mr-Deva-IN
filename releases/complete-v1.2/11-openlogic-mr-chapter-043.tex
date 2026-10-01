@@ -1,0 +1,1073 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 43: विन्यासमीमांसा आणि चिन्हार्थमीमांसा
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{विन्यासमीमांसा आणि चिन्हार्थमीमांसा}\label{nml:syn:chap}
+\section{परिचय}\label{nml:syn:int:sec}
+मोडल तर्कशास्त्र \emph{मोडल विधाने} आणि त्यांच्यातील तार्किक
+निष्पन्नता-संबंध यांचा अभ्यास करते. मोडल विधानांची पुढील
+उदाहरणे पाहा:
+\begin{enumerate}
+\item $2+2=4$ हे अनिवार्य आहे.
+\item उद्या पाऊस पडणे अनिवार्यपणे संभाव्य आहे.
+\item जर~$\varphi$ अनिवार्यपणे संभाव्य असेल, तर~$\varphi$ संभाव्य आहे.
+\end{enumerate}
+संभाव्यता आणि अनिवार्यता या एकमेव मोडलता नाहीत: इतर एकस्थानी
+संयोजकही मोडलता मानले जातात. उदाहरणार्थ, ``$\varphi$ असे असायला हवे,''
+``पुढे~$\varphi$ घडेल,'' ``Dana ला~$\varphi$ माहीत आहे,'' किंवा
+``Dana चा~$\varphi$ वर विश्वास आहे.''
+मोडल तर्कशास्त्र प्रथम अरिस्टॉटल यांच्या \emph{De
+  Interpretatione} मध्ये दिसते. अनिवार्य असल्यास संभाव्य असते,
+पण उलट नाही; संभाव्यता आणि अनिवार्यता एकमेकींच्या साहाय्याने
+परिभाषित करता येतात; $\varphi \land \psi$ संभाव्यतः सत्य असेल तर
+$\varphi$ संभाव्यतः सत्य असते आणि $\psi$ संभाव्यतः सत्य असते,
+पण उलट नाही; तसेच $\varphi \to \psi$ अनिवार्य असेल, तर $\varphi$
+अनिवार्य असताना $\psi$ ही अनिवार्य असते, या गोष्टी प्रथम
+त्यांच्या लक्षात आल्या.
+मोडल तर्कशास्त्राकडे पाहण्याचा पहिला आधुनिक दृष्टिकोन
+C.~I. Lewis यांच्या कार्यातून पुढे आला. Lewis आणि Langford
+यांच्या \emph{Symbolic Logic} (1932) या ग्रंथात या कार्याची
+परिणती झाली. वास्तविक अभिव्यंजन वापरून अभिव्यंजनाचे प्रतिनिधित्व
+करण्याबाबत Lewis आणि Langford समाधानी नव्हते: $\varphi \lif \psi$
+हे ``$\varphi$ पासून $\psi$ निष्पन्न होते'' याचे अपुरे प्रतिनिधित्व आहे.
+त्याऐवजी ``अनिवार्यतः, जर $\varphi$ तर $\psi$'' असे अभिव्यंजनाचे
+लक्षण मांडून त्यांनी ते $\varphi \strictif \psi$ असे दर्शवले.
+या विविध गुणधर्मांची मांडणी करताना Lewis यांनी पाच भिन्न
+मोडल प्रणाली ओळखल्या: \Log{S1}, \ldots, \Log{S4}, \Log{S5};
+त्यांतील शेवटच्या दोन अजूनही वापरात आहेत.
+Lewis आणि Langford यांचा दृष्टिकोन पूर्णतः \emph{विन्यासमीमांसक}
+होता: त्यांनी योग्य वाटणारी स्वयंसिद्धके व नियम निवडले आणि
+त्यांच्या साहाय्याने काय सिद्ध करता येते याचा अभ्यास केला.
+चिन्हार्थमीमांसक दृष्टिकोन बराच काळ उपलब्ध नव्हता.
+नंतर Rudolf Carnap यांनी \emph{Meaning and Necessity} (1947)
+मध्ये \emph{अवस्था-वर्णन} ही संकल्पना वापरून पहिला प्रयत्न केला.
+अवस्था-वर्णन म्हणजे त्या वर्णनात ``सत्य'' असलेल्या आण्विक
+वाक्यांचा संग्रह. कोणत्याही वाक्य~$\varphi$ साठी सत्यतेची व्याख्या
+विस्तारित केल्यानंतर, $\varphi$ सर्व अवस्था-वर्णनांत सत्य असेल
+तर ते \emph{अनिवार्यतः सत्य} आहे, अशी Carnap यांची व्याख्या आहे.
+मात्र त्यांचा दृष्टिकोन \emph{पुनरावृत्त} मोडलता हाताळू शकत
+नव्हता: ``संभाव्यतः अनिवार्यतः \ldots संभाव्यतः $\varphi$''
+या रूपाची वाक्ये नेहमी सर्वांत आतील मोडलतेपुरती सीमित होत.
+मोडल चिन्हार्थमीमांसेतील मोठी प्रगती Saul Kripke यांच्या
+``A Completeness Theorem in Modal Logic'' (JSL 1959) या
+लेखामुळे झाली. एखादे विधान ``सर्व संभाव्य जगांत'' सत्य
+असेल तर ते अनिवार्यतः सत्य असते, या लाइब्निझ यांच्या कल्पनेवर
+Kripke यांनी आपले कार्य आधारले. परंतु त्या साध्या अर्थलक्षणातही
+Carnap यांच्या दृष्टिकोनासारखीच अडचण आहे: जग~$w$ येथे एखादे
+विधान अनिवार्यतः सत्य आहे की नाही, हे $w$ च्या निवडीवर
+(किंवा अवस्था-वर्णन~$s$ वर) मुळीच अवलंबून नसते.
+म्हणून Kripke यांनी जगे \emph{प्राप्यता संबंध}~$R$ ने
+संबंधित आहेत असे मानले; आणि ``अनिवार्यतः $\varphi$'' या रूपाचे
+विधान जग~$w$ येथे तेव्हा आणि केवळ तेव्हाच सत्य असते,
+जेव्हा $w$ पासून \emph{प्राप्य असलेल्या} प्रत्येक जग~$w'$
+येथे $\varphi$ सत्य असते. या दृष्टिकोनाचे कोणतेही रूप वापरणाऱ्या
+चिन्हार्थमीमांसेला क्रिप्के चिन्हार्थमीमांसा म्हणतात;
+तिच्यामुळे मोडल तर्कशास्त्रांचा, अनेकवचनात, झपाट्याने विकास
+होऊ शकला.
+क्रिप्के चिन्हार्थमीमांसेनुसार अर्थ लावल्यास, मोडल तर्कशास्त्र
+\emph{संबंधी रचना} ``आतून'' कशा दिसतात हे दाखवते. संबंधी
+रचना म्हणजे द्विस्थानी संबंध असलेला संच; उदाहरणार्थ,
+वर्गातील विद्यार्थ्यांचा सामाजिक सुरक्षा क्रमांकानुसार
+लावलेला संच ही संबंधी रचना आहे. पण संबंधी रचना अनेक
+क्षेत्रांत आढळतात. जगाच्या अवस्थांमधील सापेक्ष संभाव्यतेखेरीज,
+एखाद्या व्यक्तीच्या ज्ञानाच्या अवस्था ज्ञानविषयक संभाव्यतेने
+संबंधित असू शकतात किंवा गतिशील प्रणालीच्या अवस्थांमध्ये
+स्थित्यंतरे असू शकतात. या सर्वांचे प्रतिरूपण मोडल तर्कशास्त्राने
+करता येते: पहिल्या प्रकारातून नेहमीचे सत्यविषयक मोडल तर्कशास्त्र,
+तर इतर प्रकारांतून ज्ञानविषयक तर्कशास्त्र, गतिशील तर्कशास्त्र
+इत्यादी मिळतात.
+मोडल तर्कशास्त्रज्ञ ``अनुरूपता सिद्धांत'' म्हणतात त्या एका
+विशिष्ट दृष्टीकोनावर आपण लक्ष केंद्रित करतो. Kripke यांच्या
+आरंभीच्या महत्त्वाच्या निष्कर्षांपैकी एक असा की प्राप्यता
+संबंध~$R$ चे अनेक गुणधर्म, उदाहरणार्थ संक्रमणशीलता किंवा
+सममिती, योग्य ``मोडल रूपबंधां''च्या साहाय्याने
+\emph{मोडल भाषेतच} व्यक्त करता येतात. उदाहरणार्थ,
+$R$ ची परावर्तिता ``जर अनिवार्यतः~$\varphi$, तर~$\varphi$'' या
+रूपबंधाशी ``अनुरूप'' आहे, असे मोडल तर्कशास्त्रज्ञ म्हणतात.
+\Ax{D}, \Ax{T}, \Ax{B}, \Ax{4} आणि~\Ax{5} हे रूपबंध
+एकत्र करून मिळणाऱ्या अभिजात मोडल तर्कशास्त्रांपैकी
+काहींच्या, उदाहरणार्थ \Log{S4} आणि \Log{S5}, अनुरूपता
+सिद्धांताचा आपण मुख्यतः अभ्यास करू.
+\section{मूलभूत मोडल तर्कशास्त्राची भाषा}\label{nml:syn:lan:sec}
+\begin{defn}
+मोडल तर्कशास्त्राच्या मूलभूत भाषेत पुढील गोष्टी असतात:
+\begin{enumerate}
+  \item असत्यता साठीचा विधानीय स्थिरांक~$\lfalse$.
+  \item सत्यता साठीचा विधानीय स्थिरांक~$\ltrue$.
+  \item विधानीय चलांचा गणनीय अनंत संच: $\Obj
+    p_0$, $\Obj p_1$, $\Obj p_2$, \dots
+  \item विधानीय संयोजक: \startycommalist
+  \ycomma $\lnot$ (निषेधन)
+  \ycomma $\land$ (संधी)
+  \ycomma $\lor$ (विकल्प)
+  \ycomma $\lif$ (शर्त)
+  \ycomma $\liff$ (द्विशर्त).
+  \item मोडल परिकर्मी $\Box$.
+  \item मोडल परिकर्मी $\Diamond$.
+\end{enumerate}
+\end{defn}
+\begin{defn}
+मूलभूत मोडल भाषेतील \emph{सूत्रे} पुढीलप्रमाणे
+  विगमनाने परिभाषित होतात:
+\begin{enumerate}
+\item $\lfalse$ हे आण्विक सूत्र आहे.
+\item $\ltrue$ हे आण्विक सूत्र आहे.
+\item प्रत्येक विधानीय चल $\Obj p_i$ हे (आण्विक) सूत्र आहे.
+\item $\varphi$ हे सूत्र असेल, तर $\lnot \varphi$
+  हे सूत्र आहे.
+\item $\varphi$ आणि $\psi$ ही सूत्रे असतील, तर $(\varphi \land
+  \psi)$ हे सूत्र आहे.
+\item $\varphi$ आणि $\psi$ ही सूत्रे असतील, तर $(\varphi \lor \psi)$
+  हे सूत्र आहे.
+\item $\varphi$ आणि $\psi$ ही सूत्रे असतील, तर $(\varphi \lif \psi)$
+  हे सूत्र आहे.
+\item $\varphi$ आणि $\psi$ ही सूत्रे असतील, तर $(\varphi \liff \psi)$
+  हे सूत्र आहे.
+\item $\varphi$ हे सूत्र असेल, तर $\Box \varphi$
+  हे सूत्र आहे.
+\item $\varphi$ हे सूत्र असेल, तर $\Diamond \varphi$
+  हे सूत्र आहे.
+\item यांशिवाय दुसरे काहीही सूत्र नाही.
+\end{enumerate}
+\end{defn}
+सूत्र~$\varphi$ मध्ये $\Box$ किंवा $\Diamond$ नसेल,
+तर त्याला \emph{मोडलतारहित} म्हणतो.
+\section{एकाच वेळी केलेले आदेशन}\label{nml:syn:sub:sec}
+सूत्र~$\varphi$ मधील विधानीय चल च्या सर्व
+आस्थितींच्या जागी दुसरे सूत्र घालून मिळणारे सूत्र हा
+$\varphi$ चा \emph{दृष्टांत} असतो. वैधता आणि निष्पन्नता
+यांवर चर्चा करताना सूत्रांच्या दृष्टांतांचा वारंवार
+उल्लेख करावा लागेल. म्हणून ही संकल्पना नेमकी परिभाषित
+करणे उपयुक्त आहे.
+\begin{defn}\label{nml:syn:sub:def:subst-inst}
+  $\varphi$ हे असे मोडल सूत्र असू द्या की त्यातील सर्व
+  विधानीय चले ही $p_1$, \dots, $p_n$ यांपैकीच
+  आहेत; तसेच $\theta_1$, \dots, $\theta_n$ हीदेखील मोडल सूत्रे
+  असू द्या. मग
+  $\SSubst{\varphi}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}}$
+  म्हणजे $\varphi$ मध्ये प्रत्येक $p_i$ च्या जागी $\theta_i$ चे
+  एकाच वेळी आदेशन करून मिळणारे सूत्र, अशी व्याख्या करतो.
+  औपचारिकरीत्या ही $\varphi$ वरील विगमनाने केलेली व्याख्या आहे:
+  \begin{enumerate}
+    \item \indcase{\varphi}{\lfalse}{
+        $\SSubst{\indfrm}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}$ हे $\lfalse$ असते.}
+    \item \indcase{\varphi}{\ltrue}{
+        $\SSubst{\indfrm}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}$ हे $\ltrue$ असते.}
+    \item \indcase{\varphi}{q}{$\SSubst{\indfrm}{\subst{\theta_1}{p_1}, \dots,
+        \subst{\theta_n}{p_n}}$ हे $q$ असते, जर $i
+      = 1$, \dots,~$n$ साठी $q \not\ident p_i$ असेल.}
+    \item \indcase{\varphi}{p_i}{$\SSubst{\indfrm}{\subst{\theta_1}{p_1},
+        \dots, \subst{\theta_n}{p_n}}$ हे $\theta_i$ असते.}
+    \item \indcase{\varphi}{\lnot \psi}{
+        $\SSubst{\indfrm}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}}$ हे
+        $\lnot \SSubst{\psi}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}}$ असते.}
+    \item \indcase{\varphi}{(\psi \land
+        \chi)}{$\SSubst{\indfrm}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}$ हे पुढील सूत्र असते:
+        \[(\SSubst{\psi}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}} \land
+          \SSubst{\chi}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}}).\]}
+    \item \indcase{\varphi}{(\psi \lor
+          \chi)}{$\SSubst{\indfrm}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}$ हे पुढील सूत्र असते:
+        \[(\SSubst{\psi}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}} \lor
+          \SSubst{\chi}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}}).\]}
+    \item \indcase{\varphi}{(\psi \lif
+          \chi)}{$\SSubst{\indfrm}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}$ हे पुढील सूत्र असते:
+        \[(\SSubst{\psi}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}} \lif
+          \SSubst{\chi}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}}).\]}
+    \item \indcase{\varphi}{(\psi \liff
+          \chi)}{$\SSubst{\indfrm}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}$ हे पुढील सूत्र असते:
+        \[(\SSubst{\psi}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}} \liff
+          \SSubst{\chi}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}}).\]}
+    \item \indcase{\varphi}{\Box \psi}{
+        $\SSubst{\indfrm}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}}$ म्हणजे
+        $\Box
+        \SSubst{\psi}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}}.$}
+    \item \indcase{\varphi}{\Diamond \psi}{
+        $\SSubst{\indfrm}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}}$ म्हणजे
+        $\Diamond
+        \SSubst{\psi}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}}.$}
+  \end{enumerate}
+  सूत्र $\SSubst{\varphi}{\subst{\theta_1}{p_1}, \dots,
+    \subst{\theta_n}{p_n}}$ याला $\varphi$ चा \emph{आदेशन-दृष्टांत}
+  म्हणतात.
+\end{defn}
+
+\begin{ex}
+  समजा $\varphi$ हे $p_1 \lif \Box(p_1 \land p_2)$,
+  $\theta_1$ हे $\Diamond(p_2 \lif p_3)$ आणि $\theta_2$ हे
+  $\lnot\Box p_1$ आहे. मग
+  $\SSubst{\varphi}{\subst{\theta_1}{p_1}, \subst{\theta_2}{p_2}}$ म्हणजे
+  \begin{align*}
+    \Diamond(p_2 \lif p_3) &
+    \lif \Box(\Diamond(p_2 \lif p_3) \land \lnot\Box p_1)
+    \intertext{तर $\SSubst{\varphi}{\subst{\theta_2}{p_1}, \subst{\theta_1}{p_2}}$ म्हणजे}
+    \lnot\Box p_1 &
+    \lif \Box(\lnot\Box p_1 \land \Diamond(p_2 \lif p_3))
+    \intertext{लक्षात घ्या: एकाच वेळी केलेले आदेशन
+      सर्वसाधारणपणे क्रमाने केलेल्या आदेशनासारखे नसते.
+      उदाहरणार्थ, वरील
+      $\SSubst{\varphi}{\subst{\theta_1}{p_1}, \subst{\theta_2}{p_2}}$ ची
+      $\Subst{(\Subst{\varphi}{\theta_1}{p_1})}{\theta_2}{p_2}$ शी तुलना करा; नंतरचे असे आहे:}
+    & \Subst{(\Diamond(p_2 \lif p_3) \lif
+      \Box(\Diamond(p_2 \lif p_3) \land p_2))}{\lnot\Box p_1}{p_2},
+      \text{ म्हणजे}\\
+    \Diamond(\lnot\Box p_1 \lif p_3) &
+    \lif \Box(\Diamond(\lnot\Box p_1
+    \lif p_3) \land \lnot\Box p_1)\\
+    \intertext{आणि $\Subst{(\Subst{\varphi}{\theta_2}{p_2})}{\theta_1}{p_1}$ शीही तुलना करा:}
+    & \Subst{(p_1 \lif \Box(p_1 \land \lnot\Box p_1))}
+      {\Diamond(p_2 \lif p_3)}{p_1}, \text{ म्हणजे}\\
+    \Diamond(p_2 \lif p_3) &
+    \lif \Box(\Diamond(p_2
+    \lif p_3) \land \lnot\Box\Diamond(p_2 \lif p_3)).
+  \end{align*}
+\end{ex}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{संबंधी प्रतिमाने}\label{nml:syn:rel:sec}
+
+सामान्य मोडल तर्कशास्त्रांच्या चिन्हार्थमीमांसेची मूलभूत संकल्पना
+म्हणजे \emph{संबंधी प्रतिमान}. त्यात द्विस्थानी ``प्राप्यता संबंधाने''
+संबंधित जगांचा संच आणि कोणते विधानीय चले कोणत्या
+जगांत ``सत्य'' मानायची हे ठरवणारे मूल्यांकन असते.
+
+\begin{defn}
+  मूलभूत मोडल भाषेचे \emph{प्रतिमान} म्हणजे त्रिकूट $\mModel{M}
+  = \tuple{W, R, V}$; येथे
+  \begin{enumerate}
+  \item $W$ हा ``जगांचा'' रिकामा नसलेला संच आहे,
+  \item $R$ हा~$W$ वरील द्विस्थानी प्राप्यता संबंध आहे, आणि
+  \item $V$ हे प्रत्येक विधानीय चल~$p$ ला संभाव्य जगांचा संच~$V(p)$ नेमून देणारे फलन आहे.
+  \end{enumerate}
+  $Rww'$ असेल तेव्हा $w'$ हे~$w$ पासून \emph{प्राप्य}
+  आहे असे म्हणतो. $w \in V(p)$ असेल तेव्हा $p$ हे~$w$ येथे
+  \emph{सत्य} आहे असे म्हणतो.
+\end{defn}
+
+संबंधी चिन्हार्थमीमांसेचा मोठा फायदा असा की प्रतिमाने
+\ref{nml:syn:rel:fig:simple} मधील साध्या आकृतीसारख्या आकृत्यांनी दाखवता
+येतात. जगांसाठी गाठी वापरतात; $w$ पासून~$w'$ कडे बाण
+असेल तेव्हा आणि केवळ तेव्हाच जग~$w'$ हे~$w$ पासून प्राप्य
+असते. शिवाय $w \in V(p)$ असेल तर गाठीला (जगाला)~$\mTrue{p}$,
+अन्यथा~\mFalse{p} अशी खूण करतो. \ref{nml:syn:rel:fig:simple} मध्ये
+$W = \{w_1, w_2, w_3\}$, $R = \{\tuple{w_1, w_2},\tuple{w_1,
+  w_3}\}$, $V(p) = \{w_1, w_2\}$ आणि $V(q) = \{w_2\}$
+असलेले प्रतिमान दाखवले आहे.
+
+\begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]right:\mTrue{p}\\ \mFalse{q}}]{$w_1$};
+      \node[world] (w2) [label={[align=right]right:\mTrue{p}\\ \mTrue{q}},
+        above right=of w1]{$w_2$};
+      \node[world] (w3) [label={[align=right]right:\mFalse{p}\\ \mFalse{q}},
+        below right=of w1] {$w_3$};
+      \draw[->] (w1) to (w2);
+      \draw[->] (w1) to (w3);
+    \end{tikzpicture}
+  \end{center}
+  \caption{साधे प्रतिमान.}
+  \label{nml:syn:rel:fig:simple}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{एखाद्या जगात सत्य असणे}\label{nml:syn:trw:sec}
+
+प्रत्येक मोडल प्रतिमान त्यातील कोणती मोडल सूत्रे कोणत्या
+जगांत सत्य मानायची हे ठरवते. ``प्रतिमान~$\mModel{M}$ मध्ये
+सूत्र~$\varphi$ जग~$w$ येथे सत्य आहे'' हा संबंधी
+चिन्हार्थमीमांसेतील मूलभूत संबंध आहे. हा संबंध विगमनाने
+परिभाषित केला जातो; मोडल नसलेल्या परिकर्मींसाठी तो
+सत्यताकोष्टकांनी दिलेल्या नेहमीच्या लक्षणाशी जुळतो.
+
+\begin{defn}\label{nml:syn:trw:defn:mmodels}
+  प्रतिमान~$\mModel M$ मध्ये \emph{सूत्र~$\varphi$ हे~$w$ येथे
+  सत्य असणे}, म्हणजे $\mSat{M}{\varphi}[w]$, पुढीलप्रमाणे
+  विगमनाने परिभाषित करतो:
+  \begin{enumerate}
+  \item \indcase{\varphi}{\lfalse}{$\mSat{M}{\lfalse}[w]$ कधीच नसते}.
+  \item \indcase{\varphi}{\ltrue}{$\mSat{M}{\ltrue}[w]$ नेहमी असते}.
+  \item $\mSat{M}{p}[w]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $w \in V(p)$.
+  \item \indcase{\varphi}{\lnot \psi}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat/{M}{\psi}[w]$}.
+  \item \indcase{\varphi}{(\psi \land \chi)}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat{M}{\psi}[w]$ आणि
+    $\mSat{M}{\chi}[w]$}.
+  \item \indcase{\varphi}{(\psi \lor \chi)}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat{M}{\psi}[w]$ किंवा
+    $\mSat{M}{\chi}[w]$} (किंवा दोन्ही).
+  \item \indcase{\varphi}{(\psi \lif \chi)}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat/{M}{\psi}[w]$ किंवा
+    $\mSat{M}{\chi}[w]$}.
+  \item \indcase{\varphi}{(\psi \liff \chi)}{$\mSat{M}{\indfrm}[w]$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat{M}{\psi}[w]$ आणि
+    $\mSat{M}{\chi}[w]$ ही दोन्ही असतात, किंवा
+    $\mSat{M}{\psi}[w]$ आणि $\mSat{M}{\chi}[w]$ यांपैकी कोणतेही नसते}.
+  \item\label{nml:syn:trw:defn:sub:mmodels-box}
+    \indcase{\varphi}{\Box \psi}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा $Rww'$ असलेल्या प्रत्येक $w' \in W$
+    साठी $\mSat{M}{\psi}[w']$.}
+  \item\label{nml:syn:trw:defn:sub:mmodels-diamond}
+    \indcase{\varphi}{\Diamond \psi}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि
+    केवळ तेव्हाच, जेव्हा $Rww'$ असलेल्या किमान एका $w' \in W$
+    साठी $\mSat{M}{\psi}[w']$.}
+  \end{enumerate}
+\end{defn}
+
+\ref{nml:syn:trw:defn:sub:mmodels-box} या खंडानुसार, $Rww'$ असलेले
+एकही~$w'$ नसेल तेव्हा सूत्र~$\Box \psi$ हे~$w$ येथे
+सत्य असते, हे लक्षात घ्या. अशा वेळी $\Box \psi$ हे~$w$ येथे
+\emph{रिक्तपणे} सत्य असते. शिवाय $\psi$ सत्य नसतानाही
+$\Box \psi$ ची~$w$ येथे पूर्ति होऊ शकते. $\psi$ हे~$w$ येथे
+सत्य असल्यामुळेच $\Diamond \psi$ हेही~$w$ येथे सत्य असेल
+असे नाही. मात्र $Rww$ असेल, उदाहरणार्थ $R$ परावर्ती असेल,
+तर ते खरे ठरते. $Rww'$ असलेले $w'$ मुळीच नसेल, तर कोणत्याही
+$\varphi$ साठी $\mSat/{M}{\Diamond \varphi}[w]$ असते.
+
+\begin{prob}
+  \ref{nml:syn:rel:fig:simple} मधील प्रतिमान पाहा. पुढीलपैकी
+  कोणती विधाने खरी आहेत?
+    \begin{enumerate}
+    \item $\mSat{M}{q}[w_1]$;
+    \item $\mSat{M}{\lnot q}[w_3]$;
+    \item $\mSat{M}{p \lor q}[w_1]$;
+    \item $\mSat{M}{\Box (p \lor q)}[w_1]$;
+    \item $\mSat{M}{\Box q}[w_3]$;
+    \item $\mSat{M}{\Box \bot}[w_3]$;
+    \item $\mSat{M}{\Diamond q}[w_1]$;
+    \item $\mSat{M}{\Box q}[w_1]$;
+    \item $\mSat{M}{\lnot \Box\Box \lnot q}[w_1]$.
+    \end{enumerate}
+\end{prob}
+
+
+
+\begin{prop}\label{nml:syn:trw:prop:dual}
+  \begin{enumerate}
+  \item $\mSat{M}{\Box \varphi}[w]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat{M}{\lnot\Diamond\lnot \varphi}[w]$.
+  \item $\mSat{M}{\Diamond \varphi}[w]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\mSat{M}{\lnot\Box\lnot \varphi}[w]$.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+    \item $\mSat{M}{\lnot\Diamond\lnot \varphi}[w]$ तेव्हा आणि केवळ
+      तेव्हाच, जेव्हा $\mSat/{M}{\Diamond\lnot \varphi}[w]$;
+      हे $\mSat{M}{}[w]$ च्या व्याख्येवरून मिळते.
+      $\mSat{M}{\Diamond\lnot \varphi}[w]$ तेव्हा आणि केवळ तेव्हाच,
+      जेव्हा $Rww'$ असलेल्या एखाद्या $w'$ साठी
+      $\mSat{M}{\lnot \varphi}[w']$. म्हणून
+      $\mSat/{M}{\Diamond\lnot \varphi}[w]$ तेव्हा आणि केवळ तेव्हाच,
+      जेव्हा $Rww'$ असलेल्या प्रत्येक $w'$ साठी
+      $\mSat/{M}{\lnot \varphi}[w']$. तसेच
+      $\mSat/{M}{\lnot \varphi}[w']$ तेव्हा आणि केवळ तेव्हाच,
+      जेव्हा $\mSat{M}{\varphi}[w']$. मिळून,
+      $\mSat{M}{\lnot\Diamond\lnot \varphi}[w]$ तेव्हा आणि केवळ
+      तेव्हाच, जेव्हा $Rww'$ असलेल्या प्रत्येक $w'$ साठी
+      $\mSat{M}{\varphi}[w']$. $\mSat{M}{}[w]$ च्या व्याख्येवरून
+      ही अट तेव्हा आणि केवळ तेव्हाच असते, जेव्हा
+      $\mSat{M}{\Box \varphi}[w]$.
+    \item $\mSat{M}{\lnot\Box\lnot \varphi}[w]$
+      तेव्हा आणि केवळ तेव्हाच, जेव्हा
+      $\mSat/{M}{\Box\lnot \varphi}[w]$.
+      $\mSat{M}{\Box\lnot \varphi}[w]$ तेव्हा आणि केवळ तेव्हाच,
+      जेव्हा $Rww'$ असलेल्या प्रत्येक $w'$ साठी
+      $\mSat{M}{\lnot \varphi}[w']$. म्हणून
+      $\mSat/{M}{\Box\lnot \varphi}[w]$ तेव्हा आणि केवळ तेव्हाच,
+      जेव्हा $Rww'$ असलेल्या एखाद्या $w'$ साठी
+      $\mSat/{M}{\lnot \varphi}[w']$. तसेच
+      $\mSat/{M}{\lnot \varphi}[w']$ तेव्हा आणि केवळ तेव्हाच,
+      जेव्हा $\mSat{M}{\varphi}[w']$. मिळून,
+      $\mSat{M}{\lnot\Box\lnot \varphi}[w]$ तेव्हा आणि केवळ
+      तेव्हाच, जेव्हा $Rww'$ असलेल्या एखाद्या~$w'$ साठी
+      $\mSat{M}{\varphi}[w']$. पुन्हा $\mSat{M}{}[w]$ च्या
+      व्याख्येवरून ही अट तेव्हा आणि केवळ तेव्हाच असते,
+      जेव्हा $\mSat{M}{\Diamond \varphi}[w]$.
+  \end{enumerate}
+\end{proof}
+
+
+
+
+\begin{prob}
+  $\mModel{M} = \tuple{W, R, V}$ हे प्रतिमान असू द्या आणि
+  $w_1, w_2 \in W$ साठी पुढील अटी पूर्ण होतात असे समजा:
+  \begin{enumerate}
+  \item प्रत्येक विधानीय चल~$p$ साठी $w_1 \in V(p)$
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा $w_2 \in V(p)$; आणि
+  \item प्रत्येक $w \in W$ साठी: $Rw_1w$ तेव्हा आणि केवळ
+    तेव्हाच, जेव्हा $Rw_2w$.
+  \end{enumerate}
+  सूत्रे वर विगमन करून दाखवा की सर्व सूत्रे~$\varphi$
+  साठी $\mSat{M}{\varphi}[w_1]$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\mSat{M}{\varphi}[w_2]$.
+\end{prob}
+
+\begin{prob}
+  $\mModel{M} = \tuple{W, R, V}$ असू द्या. दाखवा की
+  $\mSat{M}{\lnot\Diamond \varphi}[w]$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\mSat{M}{\Box\lnot\varphi}[w]$.
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+\section{प्रतिमानात सत्य असणे}\label{nml:syn:tru:sec}
+
+कधीकधी दिलेल्या प्रतिमानातील प्रत्येक जगात कोणती सूत्रे सत्य
+आहेत, हे जाणून घ्यायचे असते. यासाठी एक संकेतन देऊ.
+
+\begin{defn}
+  सूत्र~$\varphi$ हे $M = \tuple{W, R,
+    V}$ या \emph{प्रतिमानात सत्य आहे}, म्हणजे $\mSat{M}{\varphi}$,
+  तेव्हा आणि केवळ तेव्हाच, जेव्हा प्रत्येक $w \in W$ साठी
+  $\mSat{M}{\varphi}[w]$.
+\end{defn}
+
+\begin{prop}\label{nml:syn:tru:prop:truthfacts}
+  \begin{enumerate}
+  \item $\mSat{M}{\varphi}$ असेल, तर $\mSat/{M}{\lnot \varphi}$;
+    पण याचा \emph{व्यत्यास नाही}.
+  \item $\mSat{M}{\varphi \lif \psi}$ असेल, तर $\mSat{M}{\varphi}$
+    फक्त $\mSat{M}{\psi}$ असेल तरच; पण याचा \emph{व्यत्यास नाही}.
+  \end{enumerate}
+\end{prop}
+
+\begin{proof}
+  \begin{enumerate}
+  \item $\mSat{M}{\varphi}$ असेल, तर $\varphi$ हे $W$ मधील सर्व
+    जगांत सत्य आहे. $W \neq \emptyset$ असल्यामुळे
+    $\mSat{M}{\lnot\varphi}$ असू शकत नाही; तसे असल्यास
+    एखाद्या जगात $\varphi$ सत्यही आणि असत्यही असावे लागेल.
+
+    दुसरीकडे, $\mSat/{M}{\lnot \varphi}$ असेल, तर एखाद्या
+    $w \in W$ येथे $\varphi$ सत्य आहे. यावरून \emph{प्रत्येक}
+    $w \in W$ साठी $\mSat{M}{\varphi}[w]$ मिळत नाही. उदाहरणार्थ,
+    \ref{nml:syn:rel:fig:simple} मधील प्रतिमानात $\mSat/{M}{\lnot p}$
+    आणि $\mSat/{M}{p}$ ही दोन्ही आहेत.
+  \item $\mSat{M}{\varphi \lif \psi}$ आणि $\mSat{M}{\varphi}$ असे समजा.
+    $\mSat{M}{\psi}$ दाखवण्यासाठी कोणतेही $w \in W$ घ्या.
+    मग $\mSat{M}{\varphi \lif \psi}[w]$ आणि $\mSat{M}{\varphi}[w]$;
+    म्हणून $\mSat{M}{\psi}[w]$. $w$ कोणतेही असल्यामुळे
+    $\mSat{M}{\psi}$.
+
+    व्यत्यास असत्य ठरवण्यासाठी असे प्रतिमान $\mModel{M}$
+    शोधावे लागेल की $\mSat{M}{\varphi}$ हे फक्त $\mSat{M}{\psi}$
+    असेल तरच, पण $\mSat/{M}{\varphi \lif \psi}$. पुन्हा
+    \ref{nml:syn:rel:fig:simple} मधील प्रतिमान पाहा: $\mSat/{M}{p}$,
+    आणि म्हणून $\mSat{M}{p}$ हे फक्त $\mSat{M}{q}$ असेल
+    तरच, हे रिक्तपणे खरे आहे. मात्र $w_1$ येथे $p$ सत्य
+    आणि $q$ असत्य असल्यामुळे $\mSat/{M}{p \lif
+      q}$.
+  \end{enumerate}
+\end{proof}
+
+\begin{prob}
+  $p_1$, $p_2$, $p_3$ हीच विधानीय चले असलेल्या
+  भाषेसाठी पुढील प्रतिमान $\mModel{M}$ पाहा:
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label={[align=right]left:\mTrue{p_1}\\\mFalse{p_2}\\\mFalse{p_3}}]
+            {$w_1$} ;
+      \node[world] (w2) [label={[align=right]right:\mTrue{p_1}\\\mTrue{p_2}\\\mFalse{p_3}},
+        below right=of w1]  {$w_2$};
+      \node[world] (w3) [label={[align=right]right:\mTrue{p_1}\\\mTrue{p_2}\\\mTrue{p_3}},
+        above right=of w2] {$w_3$};
+      \draw[reflexive above] (w3) to (w3);
+      \draw[->] (w1) to (w2);
+      \draw[->] (w2) to (w3);
+      \draw[->] (w1) to (w3);
+    \end{tikzpicture}
+  \end{center}
+  पुढील सूत्रे आणि रूपबंध $\mModel{M}$ या प्रतिमानात,
+  म्हणजे $\mModel{M}$ मधील प्रत्येक जगात, सत्य आहेत का? स्पष्ट करा.
+  \begin{enumerate}
+  \item $p\lif \Diamond p$ ($p$ अणुरूप असेल तेव्हा);
+  \item $\varphi\lif \Diamond \varphi$ ($\varphi$ कोणतेही असेल तेव्हा);
+  \item $\Box p \lif p$ ($p$ अणुरूप असेल तेव्हा);
+  \item $\lnot p \lif \Diamond \Box p$ ($p$ अणुरूप असेल तेव्हा);
+  \item $\Diamond \Box \varphi$ ($\varphi$ कोणतेही असेल तेव्हा);
+  \item $\Box \Diamond p$ ($p$ अणुरूप असेल तेव्हा).
+  \end{enumerate}
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{वैधता}\label{nml:syn:val:sec}
+
+\begin{explain}
+  सर्व प्रतिमानांत, म्हणजे प्रत्येक प्रतिमानातील प्रत्येक जगात, सत्य
+  असणारी सूत्रे विशेष महत्त्वाची आहेत. संभाव्य जगांवरील
+  एखाद्या प्राप्यता संबंधापासून अर्थलक्षण मिळते, या अर्थाने
+  $\Box$ आणि $\Diamond$ यांचे अर्थलक्षण ``सामान्य'' असेल,
+  तर ते कोणतेही असो, सत्य असणारी मोडल विधाने ही सूत्रे व्यक्त
+  करतात. अशा सूत्रे ना आपण \emph{वैध} म्हणतो. उदाहरणार्थ,
+  $\Box(p \land q) \lif \Box p$ हे वैध आहे. मात्र $\Box$
+  च्या अनिवार्यतेशी संबंधित अर्थावरून वैध वाटणारी काही
+  सूत्रे, उदाहरणार्थ $\Box p \lif p$, वैध नसतात.
+  संबंधी प्रतिमानांचे एक महत्त्व असे की, वेगवेगळ्या प्रकारच्या
+  प्राप्यता संबंधांनी $\Box$ आणि $\Diamond$ यांचे वेगवेगळे
+  अर्थलक्षण व्यक्त करता येते. त्यामुळे वैधता केवळ \emph{सर्व}
+  प्रतिमानांच्या संदर्भात नव्हे, तर \emph{विशिष्ट प्रकारच्या}
+  सर्व प्रतिमानांच्या संदर्भातही परिभाषित करावी. उदाहरणार्थ,
+  ज्या प्रतिमानांत प्रत्येक जग स्वतःलाच प्राप्य आहे, म्हणजे
+  $R$ परावर्ती आहे, त्या सर्व प्रतिमानांत $\Box p \lif p$
+  सत्य आहे, हे पुढे दिसेल. प्रतिमानांच्या वर्गांच्या संदर्भात
+  वैधता परिभाषित केल्यास हे थोडक्यात सांगता येते:
+  $\Box p \lif p$ हे परावर्ती प्रतिमानांच्या वर्गात वैध आहे.
+\end{explain}
+
+\begin{defn}
+  सूत्र~$\varphi$ हे प्रतिमानांच्या $\mClass{C}$ या वर्गात
+  \emph{वैध} आहे, जर ते $\mClass{C}$ मधील प्रत्येक प्रतिमानात
+  सत्य असेल (म्हणजे $\mClass{C}$ मधील प्रत्येक प्रतिमानातील
+  प्रत्येक जगात सत्य असेल). $\varphi$ हे $\mClass{C}$ मध्ये वैध
+  असेल, तर $\mClass{C} \Entails \varphi$ असे लिहितो; आणि $\varphi$
+  हे \emph{सर्व} प्रतिमानांच्या वर्गात वैध असेल, तर
+  $\Entails \varphi$ असे लिहितो.
+\end{defn}
+
+\begin{prop}\label{nml:syn:val:prop:subset-class}
+  $\varphi$ हे $\mClass{C}$ मध्ये वैध असेल, तर प्रत्येक
+  $\mClass{C}' \subseteq \mClass{C}$ या वर्गातही ते वैध असते.
+\end{prop}
+
+\begin{prop}\label{nml:syn:val:prop:Nec-rule}
+  $\varphi$ वैध असेल, तर $\Box\varphi$ देखील वैध असते.
+\end{prop}
+
+\begin{proof}
+  $\Entails \varphi$ असे समजा. $\Entails \Box\varphi$ दाखवण्यासाठी
+  कोणतेही प्रतिमान $\mModel{M} = \tuple{W, R, V}$ आणि
+  $w \in W$ घ्या. $Rww'$ असेल, तर $\varphi$ वैध असल्यामुळे
+  $\mSat{M}{\varphi}[w']$; म्हणून $\mSat{M}{\Box\varphi}[w]$ देखील.
+  $\mModel{M}$ आणि $w$ कोणतेही असल्यामुळे
+  $\Entails \Box\varphi$.
+\end{proof}
+
+\begin{prob}
+  पुढील सूत्रे वैध आहेत हे दाखवा:
+  \begin{enumerate}
+  \item $\Box p \lif \Box (q \lif p)$;
+  \item $\Box \lnot \lfalse$;
+  \item $\Box p \lif (\Box q \lif \Box p)$.
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  $W = \{w\}$ असलेल्या $\mModel{M} = \tuple{W, R, V}$
+  प्रतिमानांच्या $\mClass{C}$ या वर्गात $\varphi \lif \Box\varphi$
+  वैध आहे, हे दाखवा. तसेच $R = \emptyset$ असलेल्या
+  $\mModel{M} = \tuple{W, R, V}$ प्रतिमानांच्या वर्गात
+  $\psi \lif \Box \varphi$ आणि $\Diamond \varphi \lif \psi$ वैध
+  आहेत, हे दाखवा.
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सर्वतः सत्य सूत्रांचे आदेशन-दृष्टांत}\label{nml:syn:tau:sec}
+
+\begin{explain}
+मोडल परिकर्मी नसलेले सूत्र प्रत्येक सत्यतामूल्य-नियुक्तीखाली
+सत्य असेल, तर ते सर्वतः सत्य सूत्र असते. असे प्रत्येक सूत्र
+प्रत्येक प्रतिमानातील प्रत्येक जगात सत्य असते, हे स्पष्ट आहे.
+पण $\Box$ आणि~$\Diamond$ असलेल्या सूत्रे साठी
+सर्वतः सत्य असण्याची संकल्पना परिभाषित केलेली नाही.
+उदाहरणार्थ, विमध्य सिद्धांताचे दृष्टांत सूत्र असलेले
+$\Box p \lor \lnot \Box p$ वैध आहे का? येथे
+\emph{सर्वतः सत्य सूत्राचा आदेशन-दृष्टांत} ही
+संकल्पना उपयोगी पडते: ते मोडल नसलेल्या सर्वतः सत्य
+सूत्रात आदेशन करून मिळणारे सूत्र असते. असे
+प्रत्येक आदेशन-दृष्टांत सूत्र वैध असणे अपेक्षित आहे;
+तरीही ते सिद्ध करावे लागते.
+\end{explain}
+
+\begin{defn}
+  मोडल सूत्र~$\psi$ हे \emph{सर्वतः सत्य सूत्राचा
+  आदेशन-दृष्टांत} तेव्हा आणि केवळ तेव्हाच असते,
+  जेव्हा $p_1$, \dots,~$p_n$ ही विधानीय चले असलेले मोडल नसलेले सर्वतः सत्य सूत्र~$\varphi$
+  आणि सूत्रे $\theta_1$, \dots,~$\theta_n$ अशी अस्तित्वात
+  असतात की $\psi \ident \SSubst{\varphi}{\subst{\theta_1}{p_1},
+    \dots, \subst{\theta_n}{p_n}}$.
+\end{defn}
+
+\begin{lem}\label{nml:syn:tau:lem:valid-taut}
+  $\varphi$ हे मोडल नसलेले सूत्र असून त्यातील
+  विधानीय चले $p_1$, \dots, $p_n$ आहेत,
+  आणि $\theta_1$, \dots, $\theta_n$ ही मोडल सूत्रे आहेत असे
+  समजा. मग कोणतीही नियुक्ती $\pAssign{v}$, कोणतेही प्रतिमान
+  $\mModel{M} = \tuple{W, R, V}$, आणि असे कोणतेही $w \in W$
+  घ्या की $\pAssign{v}(p_i) = \True$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\mSat{M}{\theta_i}[w]$. अशा वेळी $\pSat{v}{\varphi}$
+  तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\mSat{M}{\SSubst{\varphi}{\subst{\theta_1}{p_1}, \dots,
+      \subst{\theta_n}{p_n}}}[w]$.
+\end{lem}
+
+\begin{proof}
+  $\varphi$ वर विगमन करू.
+  \begin{enumerate}
+  \item \indcase{\varphi}{\lfalse}{$\pSat/{v}{\lfalse}$
+      आणि $\mSat/{M}{\lfalse}[w]$ ही दोन्ही असतात}.
+  \item \indcase{\varphi}{\ltrue}{$\pSat{v}{\ltrue}$
+      आणि $\mSat{M}{\ltrue}[w]$ ही दोन्ही असतात}.
+  \item \indcase{\varphi}{p_i}{
+    \begin{align*}
+      \pSat{v}{p_i} \Leftrightarrow {} & \pAssign{v}(p_i) = \True \\
+      & \qquad \text{$\pSat{v}{p_i}$ च्या व्याख्येवरून}\\
+      \Leftrightarrow {} & \mSat{M}{\theta_i}[w] \\
+      &\qquad \text{गृहीतकावरून}\\
+      \Leftrightarrow {} & \mSat{M}{\SSubst{p_i}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}}[w]\\
+      &\qquad \text{$\SSubst{p_i}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}} \ident \theta_i$ असल्यामुळे}.
+      \end{align*}}
+  \item \indcase{\varphi}{\lnot \psi}{
+      \begin{align*}
+        \pSat{v}{\lnot \psi} \Leftrightarrow {} & \pSat/{v}{\psi}\\
+        &\qquad \text{$\pSat{v}{}$ च्या व्याख्येवरून};\\
+        \Leftrightarrow {} & \mSat/{M}{\SSubst{\psi}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}}[w]\\
+        &\qquad \text{विगमन गृहीतकावरून}\\
+        \Leftrightarrow {} &
+        \mSat{M}{\SSubst{\lnot \psi}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}}[w]\\
+        &\qquad \text{मोडल पूर्तिच्या $\mSat{M}{}[w]$ व्याख्येवरून}.
+      \end{align*}}
+  \item \indcase{\varphi}{(\psi \land \chi)}{
+      \begin{align*}
+        \pSat{v}{\psi \land \chi} \Leftrightarrow {} &
+        \pSat{v}{\psi} \text{ आणि } \pSat{v}{\chi}\\
+        &\qquad \text{$\pSat{v}{}$ च्या व्याख्येवरून}\\
+        \Leftrightarrow {} &
+        \mSat{M}{\SSubst{\psi}{\subst{\theta_1}{p_1}, \dots,
+            \subst{\theta_n}{p_n}}}[w] \text{ आणि } \\
+        & \mSat{M}{\SSubst{\chi}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}}[w]\\
+        &\qquad \text{विगमन गृहीतकावरून}\\
+        \Leftrightarrow{} &
+        \mSat{M}{\SSubst{(\psi \land \chi)}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ च्या व्याख्येवरून}.
+      \end{align*}}
+  \item \indcase{\varphi}{(\psi \lor \chi)}{
+      \begin{align*}
+        \pSat{v}{\psi \lor \chi} \Leftrightarrow{} &
+        \pSat{v}{\psi} \text{ किंवा } \pSat{v}{\chi}\\
+        &\qquad \text{$\pSat{v}{}$ च्या व्याख्येवरून};\\
+        \Leftrightarrow{} & \mSat{M}{\SSubst{\psi}{\subst{\theta_1}{p_1}, \dots,
+            \subst{\theta_n}{p_n}}}[w] \text{ किंवा }\\
+        & \mSat{M}{\SSubst{\chi}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}}[w]\\
+        &\qquad \text{विगमन गृहीतकावरून}\\
+        \Leftrightarrow{} &
+        \mSat{M}{\SSubst{(\psi \lor \chi)}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ च्या व्याख्येवरून}.
+      \end{align*}}
+  \item \indcase{\varphi}{(\psi \lif \chi)}{
+      \begin{align*}
+        \pSat{v}{\psi \lif \chi} \Leftrightarrow{} &
+        \pSat/{v}{\psi} \text{ किंवा } \pSat{v}{\chi}\\
+        &\qquad \text{$\pSat{v}{}$ च्या व्याख्येवरून}\\
+        \Leftrightarrow{} &
+        \mSat/{M}{\SSubst{\psi}{\subst{\theta_1}{p_1}, \dots,
+            \subst{\theta_n}{p_n}}}[w] \text{ किंवा }\\
+        & \mSat{M}{\SSubst{\chi}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}}[w]\\
+        &\qquad \text{विगमन गृहीतकावरून}\\
+        \Leftrightarrow{} &
+        \mSat{M}{\SSubst{(\psi \lif \chi)}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ च्या व्याख्येवरून}.
+      \end{align*}}
+  \item \indcase{\varphi}{(\psi \liff \chi)}{
+      \begin{align*}
+        \pSat{v}{\psi \liff \chi} \Leftrightarrow {} &
+        \text{एकतर } \pSat{v}{\psi} \text{ आणि } \pSat{v}{\chi}\\
+        & \text{किंवा } \pSat/{v}{\psi} \text{ आणि } \pSat/{v}{\chi}\\
+        &\qquad \text{$\pSat{v}{}$ च्या व्याख्येवरून}\\
+        \Leftrightarrow {} &
+        \text{एकतर } \mSat{M}{\SSubst{\psi}{\subst{\theta_1}{p_1}, \dots,
+            \subst{\theta_n}{p_n}}}[w] \text{ आणि }\\
+        & \qquad \mSat{M}{\SSubst{\chi}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}}[w]\\
+        &  \text{ किंवा } \mSat/{M}{\SSubst{\psi}{\subst{\theta_1}{p_1}, \dots,
+            \subst{\theta_n}{p_n}}}[w] \text{ आणि }\\
+        & \qquad \mSat/{M}{\SSubst{\chi}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}}[w]\\
+        &\qquad\text{विगमन गृहीतकावरून}\\
+        \Leftrightarrow {} &
+        \mSat{M}{\SSubst{(\psi \liff \chi)}{\subst{\theta_1}{p_1}, \dots,
+          \subst{\theta_n}{p_n}}}[w]\\
+        &\qquad \text{$\mSat{M}{}[w]$ च्या व्याख्येवरून}.
+      \end{align*}}
+  \end{enumerate}
+  \end{proof}
+
+\begin{prop}\label{nml:syn:tau:prop:valid-taut}
+  सर्वतः सत्य सूत्रांचे सर्व आदेशन-दृष्टांत वैध असतात.
+\end{prop}
+
+\begin{proof}
+  प्रतिपरिवर्तनाने सिद्ध करू. काही प्रतिमान $\mModel{M}$ आणि जग~$w$
+  यांसाठी पुढील अट असलेले $\varphi$ आहे असे समजा:
+  $\mSat/{M}{\SSubst{\varphi}{\subst{\theta_1}{p_1}, \dots,
+  \subst{\theta_n}{p_n}}}[w]$.
+  $\pAssign{v}(p_i) = \True$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\mSat{M}{\theta_i}[w]$, अशी नियुक्ती $\pAssign{v}$
+  परिभाषित करा ($q \notin \{p_1, \dots, p_n \}$ या
+  चलांना $\pAssign{v}$ कोणतीही मूल्ये देते). मग
+  \ref{nml:syn:tau:lem:valid-taut} वरून $\pSat/{v}{\varphi}$; म्हणून
+  $\varphi$ सर्वतः सत्य सूत्र नाही.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{रूपबंध आणि वैधता}\label{nml:syn:sch:sec}
+
+\begin{defn}
+  \emph{रूपबंध} म्हणजे एखाद्या मोडल सूत्र~$\chi$ चे
+  नेमके सर्व आदेशन-दृष्टांत मिळून बनलेला सूत्रांचा संच; म्हणजे
+  \[  \Setabs{\psi}{\lexists[\theta_1], \dots, \lexists[\theta_n] \left(\psi =
+  \SSubst{\chi}{\subst{\theta_1}{p_1}, \dots, \subst{\theta_n}{p_n}} \right) }.
+  \]
+  सूत्र~$\chi$ याला रूपबंधाचे \emph{वैशिष्ट्यदर्शक} सूत्र
+  म्हणतात. विधानीय चलांची नावे बदलण्याचा फरक सोडल्यास ते एकमेव असते.
+  सूत्र~$\varphi$ हे त्या संचाचा घटक असेल, तर तो
+  रूपबंधाचा \emph{दृष्टांत} असतो.
+\end{defn}
+
+रूपबंध दर्शवण्यासाठी $\chi$ मधील विधानीय चलांच्या जागी
+`$\varphi$', `$\psi$',~\dots ही चिन्हे बसवून मिळणारी
+अधिभाषेतील अभिव्यक्ती वापरणे सोयीचे असते. तार्किक स्थिरांक बदलत नाहीत. उदाहरणार्थ,
+`$\varphi$', `$\varphi \lif \Box\varphi$', `$\varphi \lif (\psi \lif \varphi)$'
+ही रूपबंध दर्शवतात. त्यांची वैशिष्ट्यदर्शक सूत्रे
+अनुक्रमे $p$, $p \lif \Box p$, $p \lif (q
+\lif p)$ आहेत. `$\varphi$' हा रूपबंध \emph{सर्व}
+सूत्रांचा संच दर्शवतो.
+
+\begin{defn}
+  रूपबंधाचे सर्व दृष्टांत एखाद्या प्रतिमानात सत्य असतील तेव्हा
+  आणि केवळ तेव्हाच तो रूपबंध त्या प्रतिमानात \emph{सत्य}
+  असतो; आणि प्रत्येक प्रतिमानात सत्य असेल तेव्हा आणि केवळ
+  तेव्हाच तो \emph{वैध} असतो.
+\end{defn}
+
+\begin{prop}\label{nml:syn:sch:prop:Kvalid}
+  पुढील \Ax{K} हा रूपबंध वैध आहे:
+  \begin{equation*}
+  \Box(\varphi \lif \psi) \lif (\Box \varphi \lif \Box \psi). \tag{\Ax{K}}
+  \end{equation*}
+\end{prop}
+
+\begin{proof}
+  या रूपबंधाचा प्रत्येक दृष्टांत प्रत्येक प्रतिमानातील प्रत्येक
+  जगात सत्य आहे, हे दाखवायचे आहे. म्हणून कोणतेही
+  $\mModel{M} = \tuple{W,R,V}$ आणि $w \in W$ घ्या.
+  एखादे अभिव्यंजन एखाद्या जगात सत्य असल्याचे दाखवताना,
+  त्याचे पूर्वांग सत्य मानून उत्तरांगही सत्य आहे हे दाखवतो.
+  येथे $\mSat{M}{\Box(\varphi \lif \psi)}[w]$ आणि
+  $\mSat{M}{\Box \varphi}[w]$ असू द्या. आता
+  $\mSat{M}{\Box \psi}[w]$ दाखवायचे आहे. म्हणून $Rww'$
+  असलेले कोणतेही $w'$ घ्या. पहिल्या गृहीतकावरून
+  $\mSat{M}{\varphi \lif \psi}[w']$ आणि दुसऱ्यावरून
+  $\mSat{M}{\varphi}[w']$. त्यामुळे $\mSat{M}{\psi}[w']$.
+  $w'$ कोणतेही असल्यामुळे $\mSat{M}{\Box \psi}[w]$.
+\end{proof}
+
+\begin{prop}\label{nml:syn:sch:prop:Dual-valid}
+  पुढील \Dual{} हा रूपबंध वैध आहे:
+  \begin{equation*}
+  \Diamond \varphi \liff \lnot\Box\lnot \varphi. \tag{\Dual}
+  \end{equation*}
+\end{prop}
+
+\begin{proof}
+  सराव.
+\end{proof}
+
+\begin{prob}
+  \ref{nml:syn:sch:prop:Dual-valid} सिद्ध करा.
+\end{prob}
+
+\begin{prop}\label{nml:syn:sch:prop:soundMP}
+  प्रतिमानातील एखाद्या जगात $\varphi$ आणि $\varphi \lif \psi$ सत्य
+  असतील, तर $\psi$ देखील सत्य असते. म्हणून वैध सूत्रे
+  विध्यात्मक अनुमानाखाली बंद असतात.
+\end{prop}
+
+\begin{prop}\label{nml:syn:sch:prop:valid-instances}
+  सूत्र~$\varphi$ तेव्हा आणि केवळ तेव्हाच वैध असते,
+  जेव्हा त्याचे सर्व आदेशन-दृष्टांत वैध असतात. दुसऱ्या शब्दांत,
+  रूपबंध तेव्हा आणि केवळ तेव्हाच वैध असतो, जेव्हा त्याचे
+  वैशिष्ट्यदर्शक सूत्र वैध असते.
+\end{prop}
+
+\begin{proof}
+  ``जर'' ही दिशा स्पष्ट आहे, कारण $\varphi$ स्वतःचाच
+  आदेशन-दृष्टांत आहे.
+
+  ``फक्त तरच'' ही दिशा सिद्ध करण्यासाठी पुढील दावा दाखवू.
+  $\mModel{M} = \tuple{W, R, V}$ हे मोडल प्रतिमान असू द्या,
+  आणि $\psi \ident
+  \SSubst{\varphi}{\subst{\theta_1}{p_1},\dots,\subst{\theta_n}{p_n}}$ हा
+  $\varphi$ चा आदेशन-दृष्टांत असू द्या. $1 \leq i \leq n$ साठी
+  $V'(p_i) = \Setabs{w \in W}{\mSat{M}{\theta_i}[w]}$ ठेवा;
+  इतर प्रत्येक विधानीय चल~$q \notin \{p_1,\dots,p_n\}$
+  साठी $V'(q)=V(q)$ ठेवा. या सर्व चलांवरील नियुक्तीने
+  $\mModel{M'} = \tuple{W, R,V'}$ परिभाषित करा.
+  मग कोणत्याही~$w \in W$ साठी
+  $\mSat{M}{\psi}[w]$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\mSat{M'}{\varphi}[w]$. (याची सिद्धता सरावासाठी ठेवली आहे.)
+  आता $\varphi$ वैध आहे, पण $\varphi$ चा एखादा आदेशन-दृष्टांत
+  $\psi$ वैध नाही, असे समजा. मग काही
+  $\mModel{M} = \tuple{W, R, V}$ आणि काही $w \in W$
+  साठी $\mSat/{M}{\psi}[w]$. पण दाव्यावरून
+  $\mSat/{M'}{\varphi}[w]$; म्हणजे $\varphi$ वैध नाही. हा विरोधाभास.
+\end{proof}
+
+\begin{prob}
+  \ref{nml:syn:sch:prop:valid-instances} च्या सिद्धतेतील
+  ``फक्त तरच'' भागातला दावा सिद्ध करा. (सूचना:
+  $\varphi$ वर विगमन करा.)
+\end{prob}
+
+मात्र एखादा रूपबंध प्रतिमानात सत्य असणे आणि त्याचे
+वैशिष्ट्यदर्शक सूत्र त्या प्रतिमानात सत्य असणे या सममूल्य
+अटी नाहीत, हे लक्षात घ्या. ``फक्त तरच'' ही दिशा खरी आहे:
+$\varphi$ चा प्रत्येक दृष्टांत~$\mModel{M}$ मध्ये सत्य असेल,
+तर $\varphi$~स्वतःही~$\mModel{M}$ मध्ये सत्य असते. पण
+$\varphi$ हे~$\mModel{M}$ मध्ये सत्य असूनही $\varphi$ चा एखादा
+दृष्टांत~$\mModel{M}$ मधील काही जगात असत्य असू शकतो.
+अगदी साध्या प्रतिदृष्टांतासाठी~$p$ घेऊन एकच जग~$w$ असलेले आणि
+$V(p) = \{w\}$ असलेले प्रतिमान घ्या. तेथे~$p$ हे~$w$
+येथे सत्य आहे. पण $\lfalse$ हा~$p$ चा दृष्टांत असून
+तो~$w$ येथे सत्य नाही.
+
+\begin{prob}
+  पुढीलपैकी कोणतेही सूत्रे वैध नाही, हे दाखवा:
+  \begin{enumerate}
+    \item[\Ax{D}:] \quad $\Box p \lif \Diamond p$;
+    \item[\Ax{T}:] \quad $\Box p \lif p$;
+    \item[\Ax{B}:] \quad $p \lif \Box\Diamond p$;
+    \item[\Ax{4}:] \quad $\Box p \lif \Box \Box p$;
+    \item[\Ax{5}:] \quad $\Diamond p \lif \Box \Diamond
+      p$.
+  \end{enumerate}
+\end{prob}
+
+\begin{table}[t]
+    \centering
+    \begin{tabular}{| l || l |}
+      \hline
+      {\emph{वैध रूपबंध}} & {\emph{अवैध रूपबंध}} \\
+      \hline\hline
+      $\Box(\varphi \lif \psi) \lif (\Diamond \varphi \lif \Diamond \psi)$
+      & $\Box (\varphi \lor \psi) \lif (\Box \varphi \lor \Box \psi)$ \\
+      $\Diamond (\varphi \lif \psi) \lif (\Box \varphi \lif \Diamond
+      \psi)$
+      & $(\Diamond \varphi \land \Diamond \psi) \lif \Diamond (\varphi
+      \land \psi)$\\
+      $\Box (\varphi \land \psi) \liff (\Box \varphi \land \Box \psi)$
+      & $\varphi \lif \Box \varphi$ \\
+      $\Box \varphi \lif \Box (\psi \lif \varphi)$
+      & $\Box \Diamond \varphi \lif \psi$ \\
+      $\lnot \Diamond \varphi \lif \Box (\varphi \lif \psi)$
+      & $\Box \Box \varphi \lif \Box \varphi$ \\
+      $\Diamond (\varphi \lor \psi) \liff (\Diamond \varphi \lor
+      \Diamond \psi)$
+      & $\Box \Diamond \varphi \lif \Diamond \Box \varphi$. \\
+      \hline
+    \end{tabular}
+    \caption{वैध आणि अवैध रूपबंध.}
+    \label{nml:syn:sch:tab:valid-invalidSchemas}
+\end{table}
+
+\begin{prob}
+  \ref{nml:syn:sch:tab:valid-invalidSchemas} च्या
+  पहिल्या स्तंभातील रूपबंध वैध आहेत, आणि दुसऱ्या
+  स्तंभातील रूपबंध वैध नाहीत, हे सिद्ध करा.
+\end{prob}
+
+\begin{prob}
+  पुढील रूपबंध वैध आहेत की अवैध, ते ठरवा:
+  \begin{enumerate}
+  \item $(\Diamond \varphi \lif \Box \psi) \lif (\Box \varphi \lif \Box
+    \psi)$;
+  \item $\Diamond(\varphi \lif \psi) \lor \Box(\psi \lif \varphi)$.
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+  पुढील प्रत्येक रूपबंधासाठी असे प्रतिमान $\mModel{M}$ शोधा की
+  त्या सूत्राचा प्रत्येक दृष्टांत $\mModel{M}$ मध्ये सत्य आहे:
+  \begin{enumerate}
+  \item $p \lif \Diamond\Diamond p$;
+  \item $\Diamond p \lif \Box p$.
+  \end{enumerate}
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{तार्किक निष्पन्नता}\label{nml:syn:ent:sec}
+
+\begin{explain}
+  एखाद्या जगात सत्य असण्याच्या व्याख्येने सूत्रे मधील
+  तार्किक निष्पन्नतेचा संबंध परिभाषित करता येतो.
+  सूत्र~$\psi$ पासून~$\varphi$ तार्किकरीत्या निष्पन्न
+  होते तेव्हा आणि केवळ तेव्हाच, जेव्हा $\psi$ सत्य असेल
+  तेव्हा $\varphi$ देखील सत्य असते. येथे ``तेव्हा'' म्हणताना
+  कोणतेही प्रतिमान आणि त्यातील कोणतेही जग अभिप्रेत आहे.
+\end{explain}
+
+\begin{defn}
+  $\Gamma$ हा सूत्रांचा संच आणि $\varphi$ हे सूत्र
+  असेल, तर $\Gamma$ पासून~$\varphi$ \emph{तार्किकरीत्या
+  निष्पन्न होते}, म्हणजे $\Gamma \Entails \varphi$, तेव्हा आणि
+  केवळ तेव्हाच, जेव्हा प्रत्येक प्रतिमान
+  $\mModel{M} = \tuple{W, R, V}$ आणि प्रत्येक $w \in W$
+  साठी, सर्व $\psi \in \Gamma$ बाबत $\mSat{M}{\psi}[w]$
+  असेल तर $\mSat{M}{\varphi}[w]$ असते. $\Gamma$ मध्ये
+  एकच सूत्र~$\psi$ असेल, तर $\psi \Entails \varphi$ लिहितो.
+\end{defn}
+
+\begin{ex}
+  एका सूत्र पासून दुसरे तार्किकरीत्या निष्पन्न होते हे
+  दाखवण्यासाठी $\mSat{M}{}[w]$ ची व्याख्या वापरून सर्व
+  प्रतिमानांबद्दल विचार करावा लागतो. उदाहरणार्थ,
+  $p \lif \Diamond p \Entails \Box\lnot p \lif \lnot p$
+  दाखवण्यासाठी असा युक्तिवाद करता येईल: प्रतिमान
+  $\mModel{M} = \tuple{W, R,
+    V}$ आणि $w \in W$ घ्या, आणि $\mSat{M}{p \lif \Diamond
+    p}[w]$ असे समजा. $\mSat{M}{\Box\lnot p \lif \lnot
+    p}[w]$ दाखवायचे आहे. तसे नाही असे समजा. मग
+  $\mSat{M}{\Box\lnot p}[w]$ आणि $\mSat/{M}{\lnot p}[w]$.
+  $\mSat/{M}{\lnot p}[w]$ असल्यामुळे $\mSat{M}{
+    p}[w]$. गृहीतकावरून $\mSat{M}{p \lif \Diamond p}[w]$;
+  म्हणून $\mSat{M}{\Diamond p}[w]$.
+  $\mSat{M}{\Diamond
+    p}[w]$ च्या व्याख्येवरून $Rww'$ असलेले असे $w'$
+  आहे की $\mSat{M}{p}[w']$. पण $\mSat{M}{\Box \lnot p}[w]$
+  देखील असल्यामुळे $\mSat{M}{\lnot p}[w']$; हा विरोधाभास.
+
+  सूत्र~$\psi$ पासून दुसरे~$\varphi$ तार्किकरीत्या
+  निष्पन्न होत नाही हे दाखवण्यासाठी प्रतिदृष्टांत द्यावा
+  लागतो: असे प्रतिमान $\mModel{M} = \tuple{W, R,
+    V}$ की त्यातील एखाद्या जगात~$w \in W$ येथे
+  $\mSat{M}{\psi}[w]$, पण $\mSat/{M}{\varphi}[w]$.
+  $p \lif \Diamond p \Entails/
+  \Box p \lif p$ हे दाखवू. \ref{nml:syn:ent:fig:counterex} मधील
+  प्रतिमान पाहा. येथे $\mSat{M}{\Diamond p}[w_1]$
+  आणि म्हणून $\mSat{M}{p \lif
+    \Diamond p}[w_1]$. मात्र $\mSat{M}{\Box p}[w_1]$
+  असूनही $\mSat/{M}{p}[w_1]$ असल्यामुळे
+  $\mSat/{M}{\Box p \lif p}[w_1]$.
+  \begin{figure}
+  \begin{center}
+    \begin{tikzpicture}[modal]
+      \node[world] (w1) [label=right:\mFalse{p}]{$w_1$};
+      \node[world] (w2) [label=right:\mTrue{p}, above left=of w1]{$w_2$};
+      \node[world] (w3) [label=right:\mTrue{p}, above right=of w1] {$w_3$};
+      \draw[->] (w1) to (w2);
+      \draw[->] (w1) to (w3);
+    \end{tikzpicture}
+  \end{center}
+  \caption{$p \lif \Diamond p
+  \Entails \Box p \lif p$ याचा प्रतिदृष्टांत.}
+  \label{nml:syn:ent:fig:counterex}
+  \end{figure}
+
+  अनेकदा अगदी साधे प्रतिदृष्टांत पुरेसे असतात.
+  $W' = \{w\}$, $R' = \emptyset$, आणि $V'(p) =
+  \emptyset$ असलेले प्रतिमान $\mModel{M'} =
+  \tuple{W', R', V'}$ हाही प्रतिदृष्टांत आहे:
+  $\mSat/{M'}{p}[w]$ असल्यामुळे
+  $\mSat{M'}{p \lif \Diamond p}[w]$. $w$ पासून एकही
+  जग प्राप्य नसल्यामुळे $\mSat{M'}{\Box p}[w]$; म्हणून
+  $\mSat/{M'}{\Box p
+    \lif p}[w]$.
+\end{ex}
+
+\begin{prob}
+  $\Box (\varphi \land \psi) \Entails \Box \varphi$ हे दाखवा.
+\end{prob}
+
+\begin{prob}
+  $\Box (p \lif q) \Entails/ p \lif \Box q$ आणि $p \lif \Box
+  q \Entails/\Box (p \lif q)$ हे दाखवा.
+\end{prob}
+
+
+

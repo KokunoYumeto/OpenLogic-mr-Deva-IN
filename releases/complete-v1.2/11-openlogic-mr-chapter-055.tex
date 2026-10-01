@@ -1,0 +1,733 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 55: अंतःप्रज्ञावादी टॅब्लो
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{अंतःप्रज्ञावादी टॅब्लो}\label{int:tab:chap}
+\begin{editorial}
+  अंतःप्रज्ञावादी तर्कशास्त्रातील पूर्वचिन्हयुक्त
+  टॅब्लोंविषयी हे मसुदा प्रकरण आहे.
+  अधिक उदाहरणे, संपूर्णतेच्या सिद्धता,
+  आणि बंद टॅब्लो शोधण्याचा प्रयत्न
+  अयशस्वी झाल्यावर प्रतिप्रतिमाने कशी
+  मिळवता येतात याची चर्चा हवी आहे.
+\end{editorial}
+
+
+
+
+
+
+
+
+
+\section{प्रस्तावना}\label{int:tab:int:sec}
+
+अभिजात तर्कशास्त्रातील टॅब्लो म्हणजे चिन्हांकित सूत्रांचे (खाली शाखा फुटणारे) काही वृक्ष.
+चिन्हांकित सूत्र म्हणजे सत्यतामूल्याचे चिन्ह
+($\True$ किंवा $\False$) आणि वाक्य
+यांची जोडी:
+\[
+\sFmla{\True}{\varphi} \text{किंवा} \sFmla{\False}{\varphi}.
+\]
+टॅब्लोची सुरुवात काही
+\emph{गृहीतकां}पासून होते. पुढील प्रत्येक
+चिन्हांकित सूत्र हे अनुमानाचा एखादा
+नियम लावून मिळते. काही अनुमान-नियम
+वृक्षाच्या टोकावर एक किंवा अधिक
+चिन्हांकित सूत्रे जोडतात; इतर
+नियम दोन नवी टोके जोडून दोन शाखा
+तयार करतात. नियम लावल्यावर मिळणाऱ्या
+चिन्हांकित सूत्रे मधील
+सूत्र, नियम ज्या
+चिन्हांकित सूत्राला लावला
+त्यातील सूत्रापेक्षा कमी गुंतागुंतीचे असते.
+एखाद्या शाखेत
+$\sFmla{\True}{\varphi}$ आणि
+$\sFmla{\False}{\varphi}$ ही दोन्ही
+असतील, तर ती शाखा \emph{बंद}
+आहे असे म्हणतो. टॅब्लो
+मधील प्रत्येक शाखा बंद असेल,
+तर संपूर्ण टॅब्लो बंद असतो.
+बंद टॅब्लो ही अशी
+निष्पत्ती असते की तिच्यावरून
+त्या टॅब्लोची सुरुवात ज्या
+चिन्हांकित सूत्रांनी केली तो
+संच अपूर्ततायोग्य आहे हे दिसते.
+यावरून $\Proves$ संबंधाची व्याख्या
+करता येते: $\Gamma \Proves \varphi$
+तेव्हा आणि केवळ तेव्हाच
+$\Gamma_0 = \{\psi_1,
+\dots, \psi_n\} \subseteq \Gamma$
+असा एखादा सांत संच असतो की
+पुढील गृहीतकांसाठी बंद
+टॅब्लो मिळतो:
+\[
+\{\sFmla{\False}{\varphi}, \sFmla{\True}{\psi_1}, \dots, \sFmla{\True}{\psi_n}\}.
+\]
+
+अंतःप्रज्ञावादी तर्कशास्त्रासाठी
+चिन्हांकित सूत्र ही संकल्पना
+विस्तारित करावी लागते आणि
+तार्किक कारकांचे नियम बदलावे लागतात.
+चिन्हाबरोबर ($\True$ किंवा
+$\False$) अंतःप्रज्ञावादी
+टॅब्लो मधील सूत्रे ना
+\emph{पूर्वचिन्हे}~$\sigma$ ही असतात.
+ही पूर्वचिन्हे धन पूर्णांकांच्या
+रिकाम्या नसलेल्या क्रमिका असतात;
+म्हणजे $\sigma \in
+(\PosInt)^* \setminus \{\emptyseq\}$.
+अशी पूर्वचिन्हे लिहिताना
+भोवतालचे $\tuple{\ }$ वगळतो
+आणि वेगवेगळ्या घटक मध्ये
+$,$ ऐवजी $.$ वापरतो.
+$\sigma$ हे पूर्वचिन्ह असेल,
+तर $\sigma.n$ म्हणजे
+$\sigma \concat \tuple{n}$;
+उदाहरणार्थ $\sigma = 1.2.1$
+असेल, तर $\sigma.3$ म्हणजे
+$1.2.1.3$. म्हणून उदाहरणार्थ,
+\[
+\sFmla{\True}{\varphi \lif (\psi \lif \chi)}[1.2]
+\]
+हे \emph{पूर्वचिन्हयुक्त
+चिन्हांकित सूत्र} (किंवा संक्षेपाने
+\emph{पूर्वचिन्हयुक्त सूत्र})
+आहे.
+
+सहज अर्थाने, टॅब्लोच्या
+एखाद्या शाखेवरील सूत्रे
+पूर्ण करू शकेल अशा प्रतिमानातील
+जगाचे नाव पूर्वचिन्ह देते.
+आणि $\sigma$ हे एखाद्या जगाचे
+नाव असेल, तर $\sigma.n$ हे
+म्हणजे~$\sigma$ ने दर्शवलेल्या
+जगापासून प्राप्य असलेल्या
+जगाचे नाव देते.
+
+अंतःप्रज्ञावादी प्रतिमानांमध्ये
+प्राप्यता संबंध परावर्ती आणि
+संक्रमक असतो. पूर्वचिन्हांच्या
+भाषेत याचा अर्थ असा की
+$\sigma$ हा स्वतः~$\sigma$ पासून प्राप्य
+असतो; आणि~$\sigma$ चा कोणताही
+विस्तार, म्हणजे
+$\sigma.n_1.\cdots.n_k$
+या रूपातील पूर्वचिन्हसुद्धा,
+त्यापासून प्राप्य असते.
+$\sigma$ आणि त्याचा कोणताही
+विस्तार दर्शवण्यासाठी
+$\sigma.*$ ही संज्ञा वापरू.
+म्हणजे $\sigma.*$ ही पूर्वचिन्हे
+नेमकी~$\sigma$ पासून प्राप्य
+असलेली सर्व पूर्वचिन्हे आहेत.
+
+
+
+
+
+
+\begin{quote}\small\textbf{स्रोतनोंद.} SOL6-A206: उलट चिन्हांची जोडी आणि संपूर्ण शाखेची बंदता यांचे scopes वेगळे केले. नवे साक्षी-पूर्वचिन्ह किंवा त्याचा विस्तार शाखेवर आधी नसावा अशी अट स्पष्ट केली, जेणेकरून आधीच्या जगांचे अर्थनिर्धारण जपता येते.\end{quote}
+
+
+
+
+
+
+\section{अंतःप्रज्ञावादी तर्कशास्त्रासाठीचे नियम}\label{int:tab:rul:sec}
+
+$\land$ आणि $\lor$ या कारकांचे नियम नेहमीच्या विधानीय
+चिन्हांकित टॅब्लो मधील नियमांसारखेच आहेत;
+फक्त त्यांना पूर्वचिन्हे जोडली जातात. प्रत्येक वेळी,
+$\sFmla{S}{\varphi}[\sigma]$ या चिन्हांकित सूत्र
+ला नियम लावल्याने मिळणाऱ्या नव्या सूत्रे
+वरही~$\sigma$ हेच पूर्वचिन्ह असते. हे सहज लक्षात
+येते: उदाहरणार्थ, $\varphi \land \psi$ हे~$\sigma$ ने
+नाव दिलेल्या जगात सत्य असेल, तर $\varphi$ आणि $\psi$
+ही दोन्ही~$\sigma$ येथे सत्य असतात (आणि त्या
+जगापासून प्राप्य असलेल्या प्रत्येक जगातही सत्य
+असतात). $\land$ आणि $\lor$ यांचे नियम
+\ref{int:tab:rul:tab:prop-rules} मध्ये दिले आहेत.
+
+\begin{table}
+  \[\def\arraystretch{3}\begin{array}{|c|c|}
+    \hline
+    \AxiomC{\sFmla{\True}{\varphi \land \psi}[\sigma]}
+    \RightLabel{\TRule{\True}{\land}}
+    \UnaryInfC{\sFmla{\True}{\varphi}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\True}{\psi}[\sigma]}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{\varphi \land \psi}[\sigma]}
+    \RightLabel{\TRule{\False}{\land}}
+    \UnaryInfC{$\sFmla{\False}{\varphi}[\sigma] \quad \mid \quad
+      \sFmla{\False}{\psi}[\sigma]$}
+    \DisplayProof
+    \\[2ex]
+    \hline
+    \AxiomC{\sFmla{\True}{\varphi \lor \psi}[\sigma]}
+    \RightLabel{\TRule{\True}{\lor}}
+    \UnaryInfC{$\sFmla{\True}{\varphi}[\sigma] \quad \mid \quad
+      \sFmla{\True}{\psi}[\sigma]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{\varphi \lor \psi}[\sigma]}
+    \RightLabel{\TRule{\False}{\lor}}
+    \UnaryInfC{\sFmla{\False}{\varphi}[\sigma]}
+    \noLine
+    \UnaryInfC{\sFmla{\False}{\psi}[\sigma]}
+    \DisplayProof
+    \\[2ex]
+    \hline
+  \end{array}\]
+  \caption{$\land$ आणि $\lor$ साठीचे पूर्वचिन्हयुक्त
+    टॅब्लो नियम}
+  \label{int:tab:rul:tab:prop-rules}
+\end{table}
+
+शाखा बंद होण्याची अट नेहमीच्या टॅब्लो
+प्रमाणेच आहे; पण येथे सूत्रे बरोबर त्यांची
+पूर्वचिन्हेही जुळली पाहिजेत. खरे तर ही अट
+थोडी शिथिल करता येते: अंतःप्रज्ञावादी प्रतिमानात
+सूत्रे एकदा सत्य झाली की पुढेही सत्य राहतात.
+म्हणून $\varphi$ हे~$\sigma$ येथे सत्य असताना
+ते~$\sigma.{*}$ या प्राप्य पूर्वचिन्हावर असत्य
+असू शकत नाही. म्हणून एखाद्या शाखेत पुढील
+दोन्ही असतील, तर ती बंद असते:
+\[
+\sFmla{\True}{\varphi}[\sigma] \quad\text{आणि}\quad \sFmla{\False}{\varphi}[\sigma.{*}]
+\]
+येथे $\sigma$ हे एखादे पूर्वचिन्ह आणि $\varphi$ हे
+सूत्र आहे. उलट चिन्हे असतील, म्हणजे
+शाखेत पुढील दोन्ही असतील,
+\[
+\sFmla{\False}{\varphi}[\sigma] \quad\text{आणि}\quad \sFmla{\True}{\varphi}[\sigma.{*}]
+\]
+तर सदर सूत्र-जुळणीची अट या उलट चिन्हांच्या जोडीला
+तेव्हा आणि केवळ तेव्हाच लागू होते, जेव्हा $*$ ही
+रिकामी क्रमिका असते. शाखा इतर कोणत्या बंदतेच्या
+अटीमुळे बंद होऊ शकते, हे याने नाकारलेले नाही.
+
+तसेच, एखाद्या शाखेत~$\sFmla{\True}{\bot}[\sigma]$
+असेल, तरी ती बंद असते.
+
+गृहीतके मांडण्याचे नियमही नेहमीच्या टॅब्लो
+प्रमाणेच आहेत; मात्र गृहीतकांसाठी आपण नेहमी
+$1$ हे पूर्वचिन्ह वापरतो. (सर्व गृहीतकांसाठी
+एकच पूर्वचिन्ह वापरले, तर नेमके कोणते
+पूर्वचिन्ह वापरले याने फरक पडत नाही.)
+म्हणून, उदाहरणार्थ,
+\[
+\psi_1, \dots, \psi_n \Proves \varphi
+\]
+असे तेव्हा आणि केवळ तेव्हाच म्हणतो जेव्हा पुढील
+गृहीतकांसाठी बंद टॅब्लो असतो:
+\[
+\sFmla{\True}{\psi_1}[1], \dots, \sFmla{\True}{\psi_n}[1],
+\sFmla{\False}{\varphi}[1].
+\]
+
+शर्त~$\lif$ साठीचे नियम अभिजात आणि मोडल
+प्रकरणांपेक्षा वेगळे आहेत. $\TRule{\True}{\lif}$
+हा नियम $\sFmla{\True}{\varphi \lif \psi}[\sigma]$
+असलेल्या शाखेतून दोन वेगळ्या शाखा काढतो:
+एकीवर $\sFmla{\False}{\varphi}[\sigma.{*}]$ आणि
+दुसरीवर $\sFmla{\True}{\psi}[\sigma.{*}]$ जोडतो.
+हा नियम लावताना $\sigma.{*}$ हे पूर्वचिन्ह
+संबंधित शाखेत \emph{आधीपासूनच} आलेले
+असले पाहिजे. अशा पूर्वचिन्हाला त्या शाखेवर
+‘वापरलेले’ म्हणू. ($\sigma.{*}$ मध्ये
+$\sigma$ स्वतःही येत असल्याने, वेगवेगळ्या
+शाखांवर $\sFmla{\False}{\varphi}[\sigma]$ आणि
+$\sFmla{\True}{\psi}[\sigma]$ जोडून हा नियम
+नेहमी लावता येतो.)
+
+$\TRule{\False}{\lif}$ हा नियम
+$\sFmla{\False}{\varphi \lif \psi}[\sigma]$
+असलेल्या शाखेवर
+$\sFmla{\True}{\varphi}[\sigma.n]$ आणि
+$\sFmla{\False}{\psi}[\sigma.n]$ ही दोन्ही
+सूत्रे जोडतो; येथे $\sigma.n$ हे त्या
+शाखेसाठी नवे पूर्वचिन्ह असते: ते किंवा त्याचा कोणताही
+विस्तार त्या शाखेवर आधी आलेला नसतो. पुढील नकरणाच्या
+नियमांतही ‘नवे’ याच अर्थाने वापरतो.
+
+$\lnot$ साठीचे नियम याच धर्तीवर व्याख्यायित
+केले आहेत ($\lnot \varphi$ म्हणजे
+$\varphi \lif \lfalse$ ही व्याख्या वापरून).
+
+हे नियम \ref{int:tab:rul:tab:rules-lif-lnot} मध्ये दिले आहेत.
+
+\begin{table}
+  \[\def\arraystretch{3}\begin{array}{|c|c|}
+    \hline
+    \AxiomC{\sFmla{\True}{\lnot \varphi}[\sigma]}
+    \RightLabel{\TRule{\True}{\lnot}}
+    \UnaryInfC{$\sFmla{\False}{\varphi}[\sigma.{*}]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{\lnot \varphi}[\sigma]}
+    \RightLabel{\TRule{\False}{\lnot}}
+    \UnaryInfC{\sFmla{\True}{\varphi}[\sigma.n]}
+    \DisplayProof
+    \\[1ex]
+    \text{$\sigma.{*}$ वापरलेले आहे} & \text{$\sigma.n$ नवे आहे}\\
+    \hline
+    \AxiomC{\sFmla{\True}{\varphi \lif \psi}[\sigma]}
+    \RightLabel{\TRule{\True}{\lif}}
+    \UnaryInfC{$\sFmla{\False}{\varphi}[\sigma.{*}] \quad \mid \quad
+      \sFmla{\True}{\psi}[\sigma.{*}]$}
+    \DisplayProof
+    &
+    \AxiomC{\sFmla{\False}{\varphi \lif \psi}[\sigma]}
+    \RightLabel{\TRule{\False}{\lif}}
+    \UnaryInfC{\sFmla{\True}{\varphi}[\sigma.n]}
+    \noLine
+    \UnaryInfC{\sFmla{\False}{\psi}[\sigma.n]}
+    \DisplayProof
+    \\[1ex]
+    \text{$\sigma.{*}$ वापरलेले आहे} & \text{$\sigma.n$ नवे आहे}\\
+    \hline
+  \end{array}\]
+  \caption{$\lnot$ आणि $\lif$ साठीचे
+    पूर्वचिन्हयुक्त टॅब्लो नियम}
+  \label{int:tab:rul:tab:rules-lif-lnot}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{अंतःप्रज्ञावादी तर्कशास्त्रासाठीचे टॅब्लो}\label{int:tab:prf:sec}
+
+\begin{ex}
+  $(\varphi \land \psi) \lif \chi \Proves
+  \varphi \lif (\psi \lif \chi)$ हे दाखवणारा
+  बंद टॅब्लो पुढे दिला आहे.
+  \begin{oltableau}
+    [\pFmla{\True}{(\formula{A} \land \formula{B}) \lif \formula{C}}{1},
+      just =\TAss
+      [\pFmla{\False}{\formula{A} \lif (\formula{B} \lif \formula{C})}{1},
+        just =\TAss
+        [\pFmla{\True}{\formula{A}}{1.1},
+          just = {\TRule{\False}{\lif}[2]}
+          [\pFmla{\False}{\formula{B} \lif \formula{C}}{1.1},
+            just = {\TRule{\False}{\lif}[2]}
+            [\pFmla{\True}{\formula{B}}{1.1.1},
+              just = {\TRule{\False}{\lif}[4]}
+              [\pFmla{\False}{\formula{C}}{1.1.1},
+                just = {\TRule{\False}{\lif}[4]}
+                [\pFmla{\False}{\formula{A} \land \formula{B}}{1.1.1},
+                  just = {\TRule{\True}{\lif}[1]}
+                  [\pFmla{\False}{\formula{A}}{1.1.1},
+                    just= {\TRule{\False}{\land}[7]}, close]
+                  [\pFmla{\False}{\formula{B}}{1.1.1},
+                    just= {\TRule{\False}{\land}[7]}, close]]
+                [\pFmla{\True}{\formula{C}}{1.1.1},
+                  just = {\TRule{\True}{\lif}[1]}, close]]
+            ]
+          ]
+        ]
+      ]
+    ]
+  \end{oltableau}
+\end{ex}
+
+
+
+\begin{prob}
+  पुढील निष्कर्ष दाखवण्यासाठी बंद अंतःप्रज्ञावादी
+  टॅब्लो शोधा:
+  \begin{enumerate}
+    \item $\Proves \varphi \lif (\psi \lif \varphi)$
+    \item $\Proves \lnot(\varphi \land \lnot \varphi)$
+    \item $\varphi \lif (\psi \lif \chi) \Proves (\varphi \land \psi) \lif \chi$
+    \item $\lnot \varphi \lor \lnot \psi \Proves \lnot(\varphi \land \psi)$
+  \end{enumerate}
+\end{prob}
+
+
+
+
+
+
+\begin{quote}\small\textbf{स्रोतनोंद.} SOL6-A207: मूळ adjacent-only अर्थनिर्धारणातील gap दुरुस्त करून सर्व वापरलेल्या पूर्वचिन्ह-विस्तारांसाठी प्राप्यता आवश्यक केली. नवा witness prefix घेताना सर्व जुने ancestors आणि जगांचे अर्थनिर्धारण जपले जाते हे सिद्ध केले; OLINC-233 ही ऐतिहासिक स्रोतदोषाची नोंद जपली.\end{quote}
+
+
+
+
+
+
+\section{अंतःप्रज्ञावादी टॅब्लोची निर्दोषता}\label{int:tab:sou:sec}
+
+\begin{explain}
+  अंतःप्रज्ञावादी टॅब्लो निर्दोष आहेत हे
+  दाखवण्यासाठी पुढील गृहीतकांना
+  \[
+  \sFmla{\True}{\psi_1}[1], \dots, \sFmla{\True}{\psi_n}[1], \sFmla{\False}{\varphi}[1]
+  \]
+  बंद टॅब्लो असेल, तर $\psi_1, \dots, \psi_n \Entails \varphi$
+  हे दाखवावे लागेल. व्यत्यस्त रूप सिद्ध करणे सोपे आहे:
+  एखाद्या $\mModel{M}$ प्रतिमानात आणि जगात~$w$,
+  सर्व $i=1$, \dots,~$n$ साठी
+  $\mSat{M}{\psi_i}[w]$ असेल, पण
+  $\mSat/{M}{\varphi}[w]$ असेल, तर कोणताही
+  टॅब्लो बंद होऊ शकत नाही. असे
+  प्रतिप्रतिमान टॅब्लोची सुरुवातीची
+  गृहीतके पूर्ततायोग्य असल्याचे दाखवते.
+  पुराव्याची युक्ती अशी: टॅब्लो
+  च्या शाखेवरील सर्व पूर्वचिन्हयुक्त
+  सूत्रे पूर्ततायोग्य असतील, तर
+  कोणताही नियम लावल्यानंतर मिळणाऱ्या
+  विस्तारित शाखांपैकी किमान एक शाखा
+  पूर्ततायोग्य असते. बंद शाखा अपूर्ततायोग्य
+  असल्याने, पूर्ततायोग्य पूर्वचिन्हयुक्त
+  सूत्रांच्या संचावरील कोणत्याही
+  टॅब्लोमध्ये किमान एक खुली शाखा
+  असलीच पाहिजे.
+
+  ही युक्ती अंतःप्रज्ञावादी प्रकरणात
+  वापरण्यासाठी ‘पूर्ततायोग्य’ या संकल्पनेची
+  व्याख्या प्राप्यता-संबंध आणि पूर्वचिन्हे
+  यांना सामावून घेईल अशी वाढवावी लागते.
+  त्यानंतर पुरावा सरळ आहे.
+\end{explain}
+
+\begin{defn}
+  $P$ हा पूर्वचिन्हांचा एखादा संच असू द्या,
+  म्हणजे $P \subseteq (\PosInt)^*
+  \setminus \{\emptyseq\}$; तसेच
+  $\mModel{M}$ हे प्रतिमान असू द्या.
+  $f\colon P\to W$ हे फलन $\mModel{M}$ मधील
+  $P$ चे \emph{अर्थनिर्धारण} असते तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा प्रत्येक $\sigma,\tau\in P$ साठी $\sigma$ हा
+  $\tau$ चा आरंभीचा खंड असेल, तर $Rf(\sigma)f(\tau)$.
+  ही अट सर्व विस्तारांसाठी आहे; मधली पूर्वचिन्हे
+  $P$ मध्ये असणे आवश्यक नाही.
+
+  पूर्वचिन्हे~$P$ यांच्या अर्थनिर्धारणाच्या
+  संदर्भात पुढील व्याख्या करता येतात:
+  \begin{enumerate}
+  \item $\mModel{M}$ हे $\sFmla{\True}{\varphi}[\sigma]$
+    पूर्ण करते तेव्हा आणि केवळ तेव्हाच
+    $\mSat{M}{\varphi}[f(\sigma)]$.
+  \item $\mModel{M}$ हे $\sFmla{\False}{\varphi}[\sigma]$
+    पूर्ण करते तेव्हा आणि केवळ तेव्हाच
+    $\mSat/{M}{\varphi}[f(\sigma)]$.
+  \end{enumerate}
+\end{defn}
+
+\begin{quote}\small\textbf{स्रोतनोंद.} OLINC-233: मूळ adjacent-prefix व्याख्येमुळे मधली पूर्वचिन्हे नसताना दीर्घ विस्तारापर्यंत प्राप्यता मिळत नव्हती. सध्याच्या मराठी व्याख्येत सर्व पूर्वचिन्ह-विस्तारांसाठी प्राप्यता थेट आवश्यक केली आहे; खालील बंदता-सिद्धतेला आता ती अट उपलब्ध आहे.\end{quote}
+या व्याख्येनुसार $\sigma$ आणि $\sigma.{*}$ ही दोन्ही
+पूर्वचिन्हे वापरलेली असतील, तर $Rf(\sigma)f(\sigma.{*})$.
+रिकाम्या विस्तारासाठी हे $R$ च्या परावर्तितेनेही मिळते.
+
+\begin{defn}
+  $\Gamma$ हा पूर्वचिन्हयुक्त सूत्रे
+  चा संच असू द्या आणि त्यात आलेल्या
+  पूर्वचिन्हांचा संच $P(\Gamma)$ असू द्या.
+  $f$ ही $P(\Gamma)$ ची
+  $\mModel{M}$ मधील अर्थनिर्धारण
+  असेल, तर $\mModel{M}$ हे
+  $f$ च्या संदर्भात $\Gamma$
+  पूर्ण करते, म्हणजे
+  $\mSat{M}{\Gamma}[f]$, असे
+  तेव्हा म्हणतो जेव्हा
+  $\mModel{M}$ हे $\Gamma$ मधील
+  प्रत्येक पूर्वचिन्हयुक्त
+  सूत्र हे~$f$ च्या संदर्भात
+  पूर्ण करते. $\mModel{M}$ असे
+  प्रतिमान आणि $P(\Gamma)$ ची
+  $f$ असे अर्थनिर्धारण अस्तित्वात
+  असतील की $\mSat{M}{\Gamma}[f]$,
+  तेव्हा आणि केवळ तेव्हाच $\Gamma$ \emph{पूर्ततायोग्य}
+  आहे.
+\end{defn}
+
+\begin{prop}
+  $\Gamma$ मध्ये एखाद्या
+  सूत्र~$\varphi$ आणि पूर्वचिन्ह~$\sigma$
+  साठी $\sFmla{\True}{\varphi}[\sigma]$ आणि
+  $\sFmla{\False}{\varphi}[\sigma.{*}]$
+  ही दोन्ही असतील, किंवा
+  $\sFmla{\True}{\lfalse}[\sigma]$
+  असेल, तर $\Gamma$ अपूर्ततायोग्य आहे.
+\end{prop}
+
+\begin{proof}
+  नेहमीच $\mSat/{M}{\lfalse}[f(\sigma)]$
+  असल्याने, $\sFmla{\True}{\lfalse}$
+  असलेला $\Gamma$ अपूर्ततायोग्य असतो.
+
+  आता दोन्ही चिन्हांकित सूत्रे पूर्ण
+  करणारे $\mModel{M}$ प्रतिमान आणि
+  $P(\Gamma)$ चे $f$ अर्थनिर्धारण
+  असू शकत नाहीत. कारण
+  $\mSat{M}{\varphi}[f(\sigma)]$
+  असेल, तर
+  \ref{int:sem:rel:prop:true-monotonic}
+  आणि $Rf(\sigma)f(\sigma.{*})$
+  यांवरून
+  $\mSat{M}{\varphi}[f(\sigma.{*})]$
+  मिळते. म्हणून
+  $\mSat{M}{\varphi}[f(\sigma)]$ आणि
+  $\mSat/{M}{\varphi}[f(\sigma.{*})]$
+  ही दोन्ही एकत्र असू शकत नाहीत.
+\end{proof}
+
+\begin{thm}[निर्दोषता]
+  \label{int:tab:sou:thm:tableau-soundness}
+  $\Gamma$ ला बंद टॅब्लो
+  असेल, तर $\Gamma$ अपूर्ततायोग्य
+  आहे.
+\end{thm}
+
+\begin{proof}
+टॅब्लोच्या एखाद्या शाखेवरील
+चिन्हांकित सूत्रांचा संच
+पूर्ततायोग्य असेल, तर ती शाखा
+पूर्ततायोग्य म्हणू. किमान एक
+पूर्ततायोग्य शाखा असलेला
+टॅब्लो पूर्ततायोग्य म्हणू.
+
+आपण पुढील विधान दाखवू:
+पूर्ततायोग्य टॅब्लो ला अनुमानाचा
+कोणताही एक नियम लावल्यावरही
+पूर्ततायोग्य टॅब्लो मिळतो.
+यावरून प्रमेय सिद्ध होते: कोणताही
+बंद टॅब्लो हा~$\Gamma$
+मधील गृहीतके एवढीच असलेल्या
+टॅब्लो ला नियम लावून मिळतो.
+म्हणून $\Gamma$ पूर्ततायोग्य
+असेल, तर त्यावरील प्रत्येक
+टॅब्लो पूर्ततायोग्य असेल.
+पण बंद टॅब्लो पूर्ततायोग्य
+नसतो, कारण त्याच्या सर्व शाखा
+बंद असतात आणि बंद शाखा
+अपूर्ततायोग्य असतात.
+
+आता पूर्ततायोग्य टॅब्लो,
+म्हणजे किमान एक पूर्ततायोग्य शाखा
+असलेला टॅब्लो, घेऊ.
+नियम लावताना एखाद्या शाखेला
+चिन्हांकित सूत्रे जोडली जातात
+किंवा तिचे दोन शाखांत विभाजन
+होते. नियम न लावलेली एखादी
+पूर्ततायोग्य शाखा आधीपासून
+असेल, तर ती विस्तारित
+टॅब्लोमध्येही तशीच
+राहते आणि विस्तारित टॅब्लो
+पूर्ततायोग्य असतो. म्हणून
+पूर्ततायोग्य शाखेलाच नियम
+लावल्याचे प्रकरण पाहणे पुरेसे आहे.
+
+त्या शाखेवरील चिन्हांकित सूत्रे
+चा संच $\Gamma$ असू द्या आणि
+नियम ज्या चिन्हांकित सूत्र
+ला लावतो ते
+$\sFmla{S}{\varphi}[\sigma] \in \Gamma$
+असू द्या. नियमामुळे शाखा फुटत
+नसेल, तर नियमाच्या निष्कर्षांसह
+$\Gamma$ असलेली विस्तारित शाखा
+अजूनही पूर्ततायोग्य आहे हे
+दाखवावे लागते. शाखा फुटत
+असेल, तर मिळणाऱ्या दोन शाखांपैकी
+किमान एक पूर्ततायोग्य आहे हे
+दाखवावे लागते.
+\begin{enumerate}
+\item $\sFmla{\True}{\lnot \psi}[\sigma] \in \Gamma$
+  याला $\TRule{\True}{\lnot}$ लावून
+  शाखा वाढवू. मग विस्तारित
+  शाखेत $\Gamma \cup
+  \{\sFmla{\False}{\psi}[\sigma.{*}]\}$
+  ही चिन्हांकित सूत्रे असतात.
+  $\mSat{M}{\Gamma}[f]$ असे समजा.
+  विशेषतः
+  $\mSat{M}{\lnot \psi}[f(\sigma)]$.
+  म्हणून $Rf(\sigma)w$ असलेल्या
+  प्रत्येक $w$ साठी
+  $\mSat/{M}{\psi}[w]$; यात
+  $f(\sigma.{*})$ सुद्धा येते.
+  त्यामुळे $\mModel{M}$ हे
+  $\sFmla{\False}{\psi}[\sigma.{*}]$
+  $f$ च्या संदर्भात पूर्ण करते.
+\item $\sFmla{\False}{\lnot \psi}[\sigma] \in \Gamma$
+  याला $\TRule{\False}{\lnot}$
+  लावून शाखा वाढवण्याचे प्रकरण:
+  सरावासाठी.
+\item $\sFmla{\True}{\psi \land \chi}[\sigma] \in \Gamma$
+  याला $\TRule{\True}{\land}$
+  लावल्यावर त्याच शाखेत
+  $\sFmla{\True}{\psi}[\sigma]$
+  आणि $\sFmla{\True}{\chi}[\sigma]$
+  ही दोन नवी चिन्हांकित सूत्रे
+  मिळतात. $\mSat{M}{\Gamma}[f]$
+  असे समजा; विशेषतः
+  $\mSat{M}{\psi \land
+    \chi}[f(\sigma)]$. मग
+  $\mSat{M}{\psi}[f(\sigma)]$
+  आणि $\mSat{M}{\chi}[f(\sigma)]$.
+  म्हणजे $\mModel{M}$ हे
+  $\sFmla{\True}{\psi}[\sigma]$
+  आणि $\sFmla{\True}{\chi}[\sigma]$
+  दोन्ही~$f$ च्या संदर्भात
+  पूर्ण करते.
+\item $\sFmla{\False}{\psi \lor \chi}[\sigma] \in \Gamma$
+  याला $\TRule{\False}{\lor}$
+  लावण्याचे प्रकरण: सरावासाठी.
+\item $\sFmla{\False}{\psi \lif \chi}[\sigma] \in \Gamma$
+  याला $\TRule{\False}{\lif}$
+  लावल्यावर शाखेत
+  $\sFmla{\True}{\psi}[\sigma.n]$
+  आणि $\sFmla{\False}{\chi}[\sigma.n]$
+  ही दोन नवी चिन्हांकित सूत्रे
+  मिळतात. येथे $\sigma.n$
+  हे शाखेसाठी नवे पूर्वचिन्ह आहे: $\sigma.n\notin P(\Gamma)$,
+  आणि त्याचा कोणताही विस्तारही $P(\Gamma)$ मध्ये नाही.
+
+  $\Gamma$ पूर्ततायोग्य असल्याने,
+  $\mSat{M}{\Gamma}[f]$ असेल
+  असे $\mModel{M}$ प्रतिमान
+  आणि $P(\Gamma)$ ची~$f$
+  अर्थनिर्धारण आहेत. विशेषतः
+  $\mSat/{M}{\psi \lif \chi}[f(\sigma)]$.
+  पुढील संच पूर्ततायोग्य आहे हे
+  दाखवावे लागेल:
+  $\Gamma \cup
+  \{\sFmla{\True}{\psi}[\sigma.n],
+  \sFmla{\False}{\chi}[\sigma.n]\}$.
+  त्यासाठी $P(\Gamma)
+  \cup \{\sigma.n\}$
+  याचे अर्थनिर्धारण पुढीलप्रमाणे
+  ठरवू:
+
+  $\mSat/{M}{\psi \lif \chi}[f(\sigma)]$
+  असल्याने $Rf(\sigma)w$,
+  $\mSat{M}{\psi}[w]$ आणि
+  $\mSat/{M}{\chi}[w]$
+  असा $w \in W$ असतो.
+  $f'$ हे $f$ सारखेच, फक्त
+  $f'(\sigma.n) = w$
+  असे ठरवू. $f'(\sigma) = f(\sigma)$
+  आणि $Rf(\sigma)w$ असल्याने $Rf'(\sigma)f'(\sigma.n)$.
+  जुन्या संचातील $\tau$ हा $\sigma.n$ चा आरंभीचा खंड
+  असेल, तर तो $\sigma$ चाही आरंभीचा खंड आहे.
+  म्हणून जुन्या अर्थनिर्धारणाने $Rf(\tau)f(\sigma)$,
+  आणि संक्रमणामुळे $Rf'(\tau)f'(\sigma.n)$.
+  नव्या पूर्वचिन्हाचा कोणताही विस्तार जुन्या संचात नाही;
+  त्यामुळे त्यापासून जुन्या विस्ताराकडे अतिरिक्त अट येत नाही.
+  नव्या पूर्वचिन्हाची स्वतःशी अट परावर्तितेने मिळते.
+  म्हणून $f'$ हे $P(\Gamma)\cup\{\sigma.n\}$ चे
+  सर्व पूर्वचिन्ह-विस्तारांसाठी अर्थनिर्धारण आहे.
+  तसेच $\mSat{M}{\psi}[f'(\sigma.n)]$
+  आणि $\mSat/{M}{\chi}[f'(\sigma.n)]$.
+  सर्व पूर्वचिन्हे
+  $\sigma' \in P(\Gamma)$ साठी
+  $f(\sigma') = f'(\sigma')$
+  असल्याने
+  $\mSat{M}{\Gamma}[f']$.
+  म्हणून $\mModel{M}, f'$ हे
+  $\Gamma \cup
+  \{\sFmla{\True}{\psi}[\sigma.n],
+  \sFmla{\False}{\chi}[\sigma.n]\}$
+  पूर्ण करते.
+\end{enumerate}
+आता दोन शाखा निर्माण करणारे
+नियम पाहू.
+\begin{enumerate}
+\item $\sFmla{\False}{\psi \land \chi}[\sigma] \in \Gamma$
+  याला $\TRule{\False}{\land}$
+  लावल्यावर दोन शाखा मिळतात:
+  डावीकडील शाखेत
+  $\sFmla{\False}{\psi}[\sigma]$
+  आणि उजवीकडील शाखेत
+  $\sFmla{\False}{\chi}[\sigma]$.
+  $\mSat{M}{\Gamma}[f]$
+  असे समजा; विशेषतः
+  $\mSat/{M}{\psi \land \chi}[f(\sigma)]$.
+  मग $\mSat/{M}{\psi}[f(\sigma)]$
+  किंवा $\mSat/{M}{\chi}[f(\sigma)]$.
+  पहिल्या प्रकरणात
+  $\mModel{M}, f$ हे
+  $\sFmla{\False}{\psi}[\sigma]$
+  पूर्ण करते; म्हणजे डावी
+  शाखा पूर्ततायोग्य आहे.
+  दुसऱ्या प्रकरणात
+  $\mModel{M}, f$ हे
+  $\sFmla{\False}{\chi}[\sigma]$
+  पूर्ण करते; म्हणजे उजवी
+  शाखा पूर्ततायोग्य आहे.
+\item $\sFmla{\True}{\psi \lor \chi}[\sigma] \in \Gamma$
+  याला $\TRule{\True}{\lor}$
+  लावण्याचे प्रकरण: सरावासाठी.
+\item $\sFmla{\True}{\psi \lif \chi}[\sigma] \in \Gamma$
+  याला $\TRule{\True}{\lif}$
+  लावण्याचे प्रकरण: सरावासाठी.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+\ref{int:tab:sou:thm:tableau-soundness}
+या प्रमेयाचा पुरावा पूर्ण करा.
+\end{prob}
+
+\begin{cor}
+\label{int:tab:sou:cor:entailment-soundness}
+$\Gamma \Proves \varphi$ असेल,
+तर $\Gamma \Entails \varphi$.
+\end{cor}
+
+\begin{proof}
+  $\Gamma \Proves \varphi$ असेल,
+  तर काही
+  $\psi_1$, \dots, $\psi_n \in
+  \Gamma$ साठी
+  $\Delta = \{\sFmla{\False}{\varphi}[1], \sFmla{\True}{\psi_1}[1],
+  \dots, \sFmla{\True}{\psi_n}[1]\}$
+  याला बंद टॅब्लो असतो.
+  $\Gamma \Entails \varphi$
+  हे दाखवायचे आहे. तसे नाही
+  असे समजा. मग एखाद्या
+  $\mModel{M}$ प्रतिमानात
+  आणि जगात~$w$,
+  $i=1$, \dots,~$n$ साठी
+  $\mSat{M}{\psi_i}[w]$,
+  पण $\mSat/{M}{\varphi}[w]$.
+  $f(1) = w$ असे ठरवू;
+  मग $f$ ही
+  $P(\Delta)$ ची
+  $\mModel{M}$ मधील
+  अर्थनिर्धारण आहे आणि
+  $\mModel{M}$ हे
+  $\Delta$ ला~$f$ च्या
+  संदर्भात पूर्ण करते.
+  पण \ref{int:tab:sou:thm:tableau-soundness}
+  नुसार, बंद टॅब्लो
+  असल्याने $\Delta$
+  अपूर्ततायोग्य आहे; ही
+  विसंगती आहे. म्हणून
+  $\Gamma \Entails \varphi$
+  हेच मिळते.
+\end{proof}
+
+\begin{cor}
+\label{int:tab:sou:cor:weak-soundness}
+$\Proves \varphi$ असेल, तर
+$\varphi$ हे सर्व प्रतिमानांत
+सत्य असते.
+\end{cor}
+
+
+
+\part{प्रतिवास्तविक विधाने}\label{cnt:part}

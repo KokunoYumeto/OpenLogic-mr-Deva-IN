@@ -1,0 +1,11 @@
+{
+  "schema": "openlogic-scoped-canon-reconsultation/1",
+  "date": "2026-09-30",
+  "passage_id": "MR-P080",
+  "source_id": "MR-C061",
+  "url": "https://vishwakosh.marathi.gov.in/21278/",
+  "scope_actually_read": "Current official-page extraction: article heading, mathematical-induction terminology and base/step discussion; terminology evidence only.",
+  "observed_term": "गणितीय विगमन",
+  "application": "Reuse विगमन for the mathematical structural/recursive induction in these three directly reviewed units.",
+  "limitations": "No endorsement of every mathematical/historical claim in the encyclopedia article. The official glossary URL returned 502 and was not treated as freshly consulted."
+}

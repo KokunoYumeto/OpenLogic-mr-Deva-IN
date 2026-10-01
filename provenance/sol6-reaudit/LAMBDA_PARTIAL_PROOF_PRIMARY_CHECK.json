@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-30",
+  "reviewer_model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "reference": {
+    "author": "Andrew D. Ker",
+    "title": "Lambda Calculus and Types",
+    "url": "https://www.cs.ox.ac.uk/andrew.ker/docs/lambdacalculus-lecture-notes-ht2009.pdf",
+    "sha256": "030606678fb9af8863b23ed6cdedbd30b8d18901e1340e837d0b5a8afced2439",
+    "pdf_pages_actually_viewed": [
+      47,
+      61
+    ],
+    "printed_pages": [
+      35,
+      49
+    ],
+    "locators": [
+      "Theorems 3.2.2 and 3.2.3",
+      "strong lambda definability; strict composition; Theorem 4.4.1"
+    ],
+    "limitation": "Only these two saved page images and the preceding bounded web extracts were read; no complete reference-book review claimed."
+  },
+  "derivation": "Total primitive-recursive constructions plus minimization of total zero predicates; force the resulting nonterminating search before total output extraction. General partial closure uses the completed equivalence and earlier computability closure."
+}

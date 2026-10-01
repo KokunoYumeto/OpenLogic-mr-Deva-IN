@@ -1,0 +1,26 @@
+{
+  "id": "SOL6-A247",
+  "record_kind": "workflow_repair",
+  "source_choice": false,
+  "tool": "tools/prepare_core573.py",
+  "tool_sha256": "b419b98dc541f07d8e67556c2b51a93e174c4acd1387c843b732d6ede7844c07",
+  "finding": "The legacy wrapper lacked the localized citation keys and retained a stale separation editorial note after the source defect was repaired.",
+  "repair": "Accept the two exact Marathi citation locators alongside the historical English keys; describe the current transitive-and-potent separation repair and retain the unsolved exercise.",
+  "validation": {
+    "full_assembly_and_static_qa": "passed",
+    "guarded_tex": "three clean passes; acquired once at the validated checkpoint",
+    "checkpoint": "corrected-239",
+    "pdf_sha256": "b7b56ecc977b7ccb661dec4cd053f3a1f48ee932d7057a85258d34e65e42014e",
+    "pages_actually_viewed": [
+      701,
+      702,
+      703,
+      929
+    ],
+    "visual_scope": "Both localized citations, the repaired proof and exercise, and current editorial disclosures were inspected in the matching PDF."
+  },
+  "limitations": "No source choice is added for this tool repair. Full corpus review, final staging, cold source reproduction and publication remain pending.",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "date": "2026-09-30"
+}

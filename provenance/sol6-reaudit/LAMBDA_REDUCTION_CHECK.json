@@ -1,0 +1,355 @@
+{
+  "schema": "sol6-lambda-reduction-check/1",
+  "date": "2026-09-30",
+  "status": "passed",
+  "numeric_cases": 61,
+  "max_beta_steps": 232,
+  "cases": [
+    {
+      "case": "unary_zero_0",
+      "expected_number": 0,
+      "beta_steps": 1
+    },
+    {
+      "case": "successor_0",
+      "expected_number": 1,
+      "beta_steps": 3
+    },
+    {
+      "case": "unary_zero_1",
+      "expected_number": 0,
+      "beta_steps": 1
+    },
+    {
+      "case": "successor_1",
+      "expected_number": 2,
+      "beta_steps": 3
+    },
+    {
+      "case": "unary_zero_2",
+      "expected_number": 0,
+      "beta_steps": 1
+    },
+    {
+      "case": "successor_2",
+      "expected_number": 3,
+      "beta_steps": 3
+    },
+    {
+      "case": "unary_zero_3",
+      "expected_number": 0,
+      "beta_steps": 1
+    },
+    {
+      "case": "successor_3",
+      "expected_number": 4,
+      "beta_steps": 3
+    },
+    {
+      "case": "unary_zero_4",
+      "expected_number": 0,
+      "beta_steps": 1
+    },
+    {
+      "case": "successor_4",
+      "expected_number": 5,
+      "beta_steps": 3
+    },
+    {
+      "case": "unary_zero_5",
+      "expected_number": 0,
+      "beta_steps": 1
+    },
+    {
+      "case": "successor_5",
+      "expected_number": 6,
+      "beta_steps": 3
+    },
+    {
+      "case": "selector_0",
+      "expected_number": 2,
+      "beta_steps": 5
+    },
+    {
+      "case": "selector_1",
+      "expected_number": 3,
+      "beta_steps": 7
+    },
+    {
+      "case": "selector_2",
+      "expected_number": 3,
+      "beta_steps": 7
+    },
+    {
+      "case": "selector_3",
+      "expected_number": 3,
+      "beta_steps": 7
+    },
+    {
+      "case": "selector_4",
+      "expected_number": 3,
+      "beta_steps": 7
+    },
+    {
+      "case": "selector_5",
+      "expected_number": 3,
+      "beta_steps": 7
+    },
+    {
+      "case": "parameter_recursion_0_0",
+      "expected_number": 0,
+      "beta_steps": 11
+    },
+    {
+      "case": "parameter_recursion_0_1",
+      "expected_number": 1,
+      "beta_steps": 11
+    },
+    {
+      "case": "parameter_recursion_0_2",
+      "expected_number": 2,
+      "beta_steps": 11
+    },
+    {
+      "case": "parameter_recursion_0_3",
+      "expected_number": 3,
+      "beta_steps": 11
+    },
+    {
+      "case": "parameter_recursion_1_0",
+      "expected_number": 0,
+      "beta_steps": 31
+    },
+    {
+      "case": "parameter_recursion_1_1",
+      "expected_number": 2,
+      "beta_steps": 31
+    },
+    {
+      "case": "parameter_recursion_1_2",
+      "expected_number": 4,
+      "beta_steps": 31
+    },
+    {
+      "case": "parameter_recursion_1_3",
+      "expected_number": 6,
+      "beta_steps": 31
+    },
+    {
+      "case": "parameter_recursion_2_0",
+      "expected_number": 0,
+      "beta_steps": 51
+    },
+    {
+      "case": "parameter_recursion_2_1",
+      "expected_number": 3,
+      "beta_steps": 51
+    },
+    {
+      "case": "parameter_recursion_2_2",
+      "expected_number": 6,
+      "beta_steps": 51
+    },
+    {
+      "case": "parameter_recursion_2_3",
+      "expected_number": 9,
+      "beta_steps": 51
+    },
+    {
+      "case": "parameter_recursion_3_0",
+      "expected_number": 0,
+      "beta_steps": 71
+    },
+    {
+      "case": "parameter_recursion_3_1",
+      "expected_number": 4,
+      "beta_steps": 71
+    },
+    {
+      "case": "parameter_recursion_3_2",
+      "expected_number": 8,
+      "beta_steps": 71
+    },
+    {
+      "case": "parameter_recursion_3_3",
+      "expected_number": 12,
+      "beta_steps": 71
+    },
+    {
+      "case": "old_partial_composition_returns_zero",
+      "expected_number": 0,
+      "beta_steps": 1
+    },
+    {
+      "case": "forced_total_extractor_0",
+      "expected_number": 0,
+      "beta_steps": 4
+    },
+    {
+      "case": "forced_total_extractor_1",
+      "expected_number": 0,
+      "beta_steps": 5
+    },
+    {
+      "case": "forced_total_extractor_2",
+      "expected_number": 0,
+      "beta_steps": 6
+    },
+    {
+      "case": "forced_total_extractor_3",
+      "expected_number": 0,
+      "beta_steps": 7
+    },
+    {
+      "case": "forced_total_extractor_4",
+      "expected_number": 0,
+      "beta_steps": 8
+    },
+    {
+      "case": "forced_total_extractor_5",
+      "expected_number": 0,
+      "beta_steps": 9
+    },
+    {
+      "case": "truncated_subtraction_0_0",
+      "expected_number": 0,
+      "beta_steps": 4
+    },
+    {
+      "case": "truncated_subtraction_0_1",
+      "expected_number": 0,
+      "beta_steps": 12
+    },
+    {
+      "case": "truncated_subtraction_0_2",
+      "expected_number": 0,
+      "beta_steps": 20
+    },
+    {
+      "case": "truncated_subtraction_0_3",
+      "expected_number": 0,
+      "beta_steps": 28
+    },
+    {
+      "case": "truncated_subtraction_1_0",
+      "expected_number": 1,
+      "beta_steps": 4
+    },
+    {
+      "case": "truncated_subtraction_1_1",
+      "expected_number": 0,
+      "beta_steps": 20
+    },
+    {
+      "case": "truncated_subtraction_1_2",
+      "expected_number": 0,
+      "beta_steps": 28
+    },
+    {
+      "case": "truncated_subtraction_1_3",
+      "expected_number": 0,
+      "beta_steps": 36
+    },
+    {
+      "case": "truncated_subtraction_2_0",
+      "expected_number": 2,
+      "beta_steps": 4
+    },
+    {
+      "case": "truncated_subtraction_2_1",
+      "expected_number": 1,
+      "beta_steps": 31
+    },
+    {
+      "case": "truncated_subtraction_2_2",
+      "expected_number": 0,
+      "beta_steps": 47
+    },
+    {
+      "case": "truncated_subtraction_2_3",
+      "expected_number": 0,
+      "beta_steps": 55
+    },
+    {
+      "case": "truncated_subtraction_3_0",
+      "expected_number": 3,
+      "beta_steps": 4
+    },
+    {
+      "case": "truncated_subtraction_3_1",
+      "expected_number": 2,
+      "beta_steps": 42
+    },
+    {
+      "case": "truncated_subtraction_3_2",
+      "expected_number": 1,
+      "beta_steps": 69
+    },
+    {
+      "case": "truncated_subtraction_3_3",
+      "expected_number": 0,
+      "beta_steps": 85
+    },
+    {
+      "case": "minimization_first_zero_0",
+      "expected_number": 0,
+      "beta_steps": 14
+    },
+    {
+      "case": "minimization_first_zero_1",
+      "expected_number": 1,
+      "beta_steps": 51
+    },
+    {
+      "case": "minimization_first_zero_2",
+      "expected_number": 2,
+      "beta_steps": 120
+    },
+    {
+      "case": "minimization_first_zero_3",
+      "expected_number": 3,
+      "beta_steps": 232
+    }
+  ],
+  "bindings": [
+    {
+      "unit_id": "OLP-0347",
+      "target_path": "mr/content/lambda-calculus/introduction/currying.tex",
+      "target_sha256": "1735d35fbcee04a5791cefe7dcd997d258cacb470350b4668141f278c3de19e9",
+      "verified_expression": "\\Subst{\\Subst{N}{M_1}{x_1}\\ldots}{M_n}{x_n}"
+    },
+    {
+      "unit_id": "OLP-0351",
+      "target_path": "mr/content/lambda-calculus/introduction/basic-pr-lambda.tex",
+      "target_sha256": "81fc6e80d69349c45f58781066b8723b145c7c2997af3814ee297823847582a0",
+      "verified_expression": "\\lambd[w][\\lambd[x][\\lambd[y][y]]]"
+    },
+    {
+      "unit_id": "OLP-0352",
+      "target_path": "mr/content/lambda-calculus/introduction/composition.tex",
+      "target_sha256": "15d16355219dc5a2d34aab2a262da5b7c3bbc30ec2efd1c5683c0a0d31029e60",
+      "verified_expression": "F(x_0, \\dots, x_{l-1}) = H(G_0(x_0, \\dots, x_{l-1}),"
+    },
+    {
+      "unit_id": "OLP-0353",
+      "target_path": "mr/content/lambda-calculus/introduction/primitive-recursion.tex",
+      "target_sha256": "4d65292d70f7818733a6efb17e58f0c7e0bd4220afc79b5c53fbc4be3ba2e948",
+      "verified_expression": "H(u,v) & = \\lambd[\\vec z][H'(u,v(\\vec z),\\vec z)]."
+    },
+    {
+      "unit_id": "OLP-0355",
+      "target_path": "mr/content/lambda-calculus/introduction/minimization.tex",
+      "target_sha256": "c4be2a24178d365293af3bc1e3ef40cf075f43051b58de451fea6f054ca03045",
+      "verified_expression": "F(\\vec x)=(\\lambd[v][v\\,I\\,(E v)])\\,W(\\vec x)"
+    }
+  ],
+  "counterexamples": {
+    "old_unary_zero_returns_identity": true,
+    "capture_changes_free_y_to_a": true,
+    "extra_recursion_argument_fails_n1_z2": true,
+    "naive_partial_composition_erases_divergence": true,
+    "guarded_Omega_has_exact_repeated_head_state": 2
+  },
+  "mathematical_divergence_argument": "For the repaired total-test minimizer, each positive test unfolds the next head search. If no zero witness exists, this persists indefinitely. Standardization rules out a normal form. The final guard keeps this search in function position; a numeral instead iterates I finitely and then evaluates E.",
+  "limitations_mr": "ही printed constructions ची स्वतंत्र de-Bruijn पुनर्मांडणी आणि सांत numeric तपासणी आहे; TeX parser, संपूर्ण formal PA proof किंवा arbitrary divergent terms चा exhaustive test नाही. Head cycle ने तपासलेले Omega प्रकरण exact आहे; general minimizer divergence स्वतंत्र गणितीय argument ने दिले आहे."
+}

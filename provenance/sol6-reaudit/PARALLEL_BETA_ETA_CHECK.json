@@ -1,0 +1,11 @@
+{
+  "schema": "parallel-beta-eta-inspection/1",
+  "status": "bounded-checks-passed",
+  "triangle_terms_checked_nodes_1_through_9": 9419,
+  "abstraction_application_auxiliary_cases": 14300,
+  "auxiliary_bounds": "abstractions of 2..7 nodes, parameter source of 1..4 nodes, all one-step parallel choices; free symbol a and scoped de Bruijn indices",
+  "source_target_path": "C:\\interlanguage-production\\openlogic-mr-Deva-IN\\repo\\mr\\content\\lambda-calculus\\church-rosser\\parallel-beta-eta-reduction.tex",
+  "target_sha256": "e8eaeadb82f352fb215ff11de408391f88fc125979d18f489b4ec6d276c8c4d3",
+  "complete_development_triangle_counterexample": null,
+  "limitations_mr": "Printed five-rule parallel relation आणि eta-priority complete development यांची स्वतंत्र de-Bruijn पुनर्मांडणी केली. ही सांत triangle व auxiliary-application तपासणी आहे; arbitrary terms ची exhaustive तपासणी किंवा proof-assistant certification नाही. General result reader मधील स्वतंत्र simultaneous structural induction ने सिद्ध केला आहे."
+}

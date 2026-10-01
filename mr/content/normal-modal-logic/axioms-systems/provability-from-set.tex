@@ -1,6 +1,7 @@
 % Part: normal-modal-logic
 % Chapter: axioms-systems
 % Section: provability-from-set
+%READERNOTE{SOL6-A160: प्रणालीतील derivability च्या व्याख्येचा संदर्भ त्याच्या योग्य विभागाकडे वळवला. गृहीतकांची संख्या शून्य असू शकते हे स्पष्ट केले; रिकाम्या premise set साठी कोणतीही गृहीतके न वापरणारी सिद्धता मूळ प्रणालीतील सिद्धताच असते.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -10,7 +11,7 @@
 
 \olsection{संचातील \usetoken{P}{formula} गृहीत धरून \usetoken{S}{derivability}}
 
-\olref[prf][prs]{sec} मध्ये प्रणाली~$\Sigma$ मधील
+\olref[prf][prf]{sec} मध्ये प्रणाली~$\Sigma$ मधील
 !!a{formula} च्या सिद्धतेची संकल्पना परिभाषित केली.
 आता संच~$\Gamma$ मधील !!{formula}s पासून
 $\Sigma$ मध्ये सिद्धतेसाठी ती विस्तारित करू.
@@ -20,10 +21,12 @@ $\Sigma$ मध्ये सिद्धतेसाठी ती विस्�
   प्रणाली~$\Sigma$ मध्ये !!^a{formula}~$!A$
   हे !!{derivable} आहे, असे तेव्हा आणि तेव्हाच
   म्हणतो व $\Gamma \Proves[\Sigma] !A$ असे लिहितो,
-  जेव्हा $!B_1$, \dots, $!B_n \in \Gamma$ अशी
+  जेव्हा $n \geq 0$ आणि $!B_1$, \dots, $!B_n \in \Gamma$ अशी
   सूत्रे असतात की
   $\Sigma \Proves !B_1 \lif (!B_2 \lif \cdots (!B_n \lif !A)
   \cdots)$.
+येथे $n=0$ असताना ही implication मालिका फक्त $!A$ असते;
+म्हणून कोणतीही गृहीतके न वापरता $\Sigma \Proves !A$ मिळते.
 \end{defn}
 
 \end{document}

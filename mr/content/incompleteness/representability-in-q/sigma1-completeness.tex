@@ -26,7 +26,7 @@ $\Th{Q} \Proves !A$, हे आपण दाखवू
 \ollabel{defn:bd-quant}
 \emph{परिबद्ध अस्तित्ववाची !!{formula}} हे
 $\lexists[x][(x < t \land !A(x))]$ या रूपाचे असते; येथे $t$
-हे संबंधित संख्यापकाचे चल नसलेले कोणतेही पद आहे. परंपरेने ते
+हे असे कोणतेही पद आहे की त्यात संबंधित संख्यापकाचे चल येत नाही. परंपरेने ते
 $\bexists{x < t}{!A(x)}$ असे लिहितो.
 %
 \emph{परिबद्ध वैश्विक !!{formula}} हे
@@ -183,9 +183,9 @@ $!Q_2$ मुळे पुन्हा विरोधाभास मिळत�
 समजा $!A$ हे !!a{formula}, $t$ हे बंद पद, आणि
 $k=\Value{t}{N}$. तर
 \begin{enumerate}
-\item $\Th{Q} \Proves \bforall{x<t}{!A(x)}$ तेव्हाच आणि तरच $\Th{Q} \Proves
+\item $\Th{Q} \Proves \bforall{x<t}{!A(x)}$ तर आणि तरच $\Th{Q} \Proves
     !A(\num 0) \land \dots \land !A(\num{k-1})$.
-\item $\Th{Q} \Proves \bexists{x<t}{!A(x)}$ तेव्हाच आणि तरच $\Th{Q} \Proves
+\item $\Th{Q} \Proves \bexists{x<t}{!A(x)}$ तर आणि तरच $\Th{Q} \Proves
     !A(\num 0) \lor \dots \lor !A(\num{k-1})$.
 \end{enumerate}
 \end{lem}
@@ -357,7 +357,7 @@ $\lexists[x][!A(x)]$ हे $\Struct{N}$ मध्ये
 $\Sat{N}{!A(x)}[s]$.
 पूर्ति-संबंधाच्या नेहमीच्या गुणधर्मांनुसार
 $\Sat{N}{!A(\num n)}$.
-परंतु $!A(\num n)$ हे $\Delta_0$ !!{formula}
+परंतु $!A(\num n)$ हे बंद $\Delta_0$ !!{formula}
 आहे; म्हणून \olref{lem:delta0-completeness} ने
 $\Th{Q} \Proves !A(\num n)$.
 मग तर्कनियमांनी

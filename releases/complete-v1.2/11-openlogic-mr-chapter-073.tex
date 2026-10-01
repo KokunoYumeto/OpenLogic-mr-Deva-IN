@@ -1,0 +1,1488 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 73: विधाने म्हणजे प्रकार
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{विधाने म्हणजे प्रकार}\label{int:pty:chap}
+\begin{editorial}
+  करी--हॉवर्ड अनुरूपतेवरील या प्रकरणाचा हा \emph{अतिशय प्रायोगिक}
+  मसुदा आहे. याला अधिक स्पष्टीकरण आणि प्रेरणा हवी; यात चुका
+  व गाळलेले भागही असण्याची शक्यता आहे. सामान्यीकरणाची सिद्धता
+  तपासून विस्तारित केली पाहिजे. गुणाकार-प्रकाराची उदाहरणे नाहीत.
+  क्रमपरिवर्तन आणि सरलीकरण रूपांतरणांचा समावेश केलेला नाही.
+  येथे मूलतः गृहीत धरलेल्या (प्रकारयुक्त) लॅम्डा कलनाविषयीही
+  साहित्य आल्यावर हे प्रकरण अधिक समजेल. अत्यंत सावधगिरीने वापरा.
+\end{editorial}
+
+
+
+
+
+
+
+
+
+\section{परिचय}\label{int:pty:int:sec}
+
+लॅम्डा कलन हे संगणनाचे एक साधे प्रतिमान आहे. ते चरांपासून
+बनलेल्या पदांवर कार्य करते. $N$ आणि $M$ ही पदे असतील, तर
+$(NM)$ हेही एक पद आहे (``$N$ चे~$M$ वर उपयोजन''). $N$ हे पद
+असेल, तर $\lambd[x][N]$ हेही पद आहे. $N$ मध्ये~$x$ हे चर
+असेल, तर $\lambd[x][N]$ मधील~$x$ ची संबंधित स्थाने
+$\lambd[x]$ या संकारकाने बद्ध होतात; त्यामुळे ती मुक्त राहत
+नाहीत. $(\lambd[x][N]M)$ या रूपातील पदाचे
+$\Subst{N}{M}{x}$ मध्ये $\beta$-संकुचन होते असे म्हणतात
+(म्हणजे~$N$ मधील~$x$ ची प्रत्येक मुक्त आस्थिती~$M$ ने
+बदलल्यावर मिळणारे पद). $N$ मधील एखाद्या उपपदाचे
+$\beta$-संकुचन करून~$N'$ मिळत असेल, तर~$N$ चे~$N'$ मध्ये
+$\beta$-परिवर्तन होते, आणि आपण $N \redone N'$ असे लिहितो.
+$\lambd$-कलनातील संगणन म्हणजे
+$N \redone N_1 \redone N_2 \redone \dots$ असा क्रम.
+हा क्रम~$N_k$ या अशा पदावर संपला की त्याच्या कोणत्याही
+उपपदाचे $\beta$-संकुचन होऊ शकत नाही, तर त्या पदाला
+\emph{सामान्य} किंवा~$N$ चे सामान्य रूप म्हणतात.
+$\lambd$-कलनातील संगणनाचा विचार अशा क्रमांच्या रूपात करा.
+सामान्य रूप मिळाल्यास संगणन थांबते, आणि ते सामान्य रूपच
+संगणनाचे फल असते. हे साधे संगणन-प्रतिमान ट्यूरिंग-संपूर्ण
+ठरते: प्रत्येक आंशिक पुनरावर्ती फलनाची गणना
+$\lambd$-कलनातील एका पदाने करता येते.
+
+हास्केल करी आणि विल्यम हॉवर्ड यांनी स्वतंत्रपणे नैसर्गिक
+निगमन आणि $\lambd$-कलन यांतील जवळचे साम्य शोधले.
+सहज अर्थाने $\lambd[x][N]$ हे पद एक फलन आहे: $x$ हा त्याचा
+आर्ग्युमेंट, आणि~$x$ दिल्यावर मूल्य कसे मोजायचे हे~$N$
+सांगते. म्हणून $(\lambd[x][N]M)$ म्हणजे
+$\lambd[x][N]$ हे फलन~$M$ या आर्ग्युमेंटवर लावणे;
+$\beta$-संकुचनाने त्याचे मूल्यांकन कसे करायचे ते कळते:
+$N$ मध्ये~$x$ ऐवजी~$M$ ठेवायचे (आणि मिळालेल्या पदाचे
+मूल्यांकन पुढे चालू ठेवायचे).
+आता या फलनांना निश्चित प्रांत आणि मूल्यसंच आहेत असे समजा.
+$\lambd[x][N]$ चा प्रांत~$A$ आणि मूल्यसंच~$B$ असेल, तर
+$x$ ला फक्त~$A$ मधील आर्ग्युमेंट घेता येतील आणि~$N$ ने
+$B$ मधील मूल्ये द्यावीत. त्यामुळे $\lambd[x][N]$ हे
+$A \to B$ असे फलन आणि $M \in A$ असेल, तेव्हाच
+$(\lambd[x][N]M)$ ला अर्थ असावा. ही माहिती
+$\lambd$-कलनात घातली की \emph{प्रकारयुक्त} $\lambd$-कलन
+मिळते. प्रकारयुक्त $\lambd$-कलनात प्रत्येक
+$(\lambd[x][N]M)$ अभिव्यक्ती ग्राह्य नसते;
+$\lambd[x][N]$ आणि~$M$ यांचे ``प्रकार'' जुळतात,
+म्हणजे $\lambd[x][N]$ चा प्रकार $A \lif B$ आणि~$M$ चा
+प्रकार~$A$ असतो, तेव्हाच ती ग्राह्य असते.
+$x$ चा प्रकार~$A$ आणि~$N$ चा प्रकार~$B$ असेल,
+तेव्हाच $\lambd[x][N]$ चा प्रकार $A \to B$ असतो.
+सर्वसाधारणपणे प्रत्येक $(M_1M_2)$ अभिव्यक्ती ग्राह्य नसते.
+$(M_1M_2)$ हे पद ग्राह्य होण्यासाठी~$M_1$ चा प्रकार $A \to B$
+आणि~$M_2$ चा प्रकार~$A$ असावा;
+अशा वेळी $(M_1M_2)$ चा प्रकार~$B$ असतो.
+
+हे प्रकार-नियम आता नैसर्गिक निगमनातील
+निष्पत्ती शी स्पष्टपणे जुळतात: प्रकारांना
+सूत्रे, आणि निष्पत्ती ना $\lambd$-पदे
+अनुरूप असतात. उदाहरणार्थ, $A \lif B$ ची
+निष्पत्ती $\lambd[\typeof{x}{A}][N]$
+या पदाशी जुळते; त्याचा फलन-प्रकार $A \lif B$ आहे.
+नैसर्गिक निगमनाचे अनुमान-नियम प्रकारयुक्त लॅम्डा कलनातील
+प्रकार-नियमांशी जुळतात; उदाहरणार्थ,
+\begin{prooftree}
+  \AxiomC{$\Discharge{A}{x}$}
+  \DeduceC{$B$}
+  \DischargeRule{\Intro\lif}{x}
+  \UnaryInfC{$A \lif B$}
+  \DisplayProof\bottomAlignProof
+  \quad\text{याला अनुरूप आहे}\quad
+  \Axiom$x: A \fCenter N: B$
+  \UnaryInf$ \fCenter \lambd[\typeof{x}{A}][N] : A \lif B$
+\end{prooftree}
+उजवीकडील नियमाचा अर्थ असा की~$x$ चा प्रकार~$A$ आणि
+$N$ चा प्रकार~$B$ असेल, तर
+$\lambd[\typeof{x}{A}][N]$ चा प्रकार~$A \lif B$ असतो.
+
+$\Elim\lif$ हा नियम संयुक्त पदांसाठीच्या प्रकार-नियमाशी
+जुळतो; म्हणजे,
+\[
+  \AxiomC{$A \lif B$}
+  \AxiomC{$A$}
+  \RightLabel{\Elim\lif}
+  \BinaryInfC{$B$}
+  \DisplayProof
+  \quad\text{याला अनुरूप आहे}\quad
+  \Axiom$\fCenter M_1: A \lif B$
+  \Axiom$\fCenter M_2: A$
+  \BinaryInf$ \fCenter (M_1M_2) : B$
+  \DisplayProof
+\]
+\Intro\lif{} या नियमानंतर लगेच \Elim\lif{} नियम
+आला, तर निष्पत्ती सोपी करता येते:
+\begin{gather*}
+  \AxiomC{$\Discharge{A}{x}$}
+  \DeduceC{$B$}
+  \DischargeRule{\Intro\lif}{x}
+  \UnaryInfC{$A \lif B$}
+  \AxiomC{}
+  \DeduceC{$A$}
+  \RightLabel{\Elim\lif}
+  \BinaryInfC{$B$}
+  \DisplayProof
+  \quad\redone\quad
+  \AxiomC{}
+  \DeduceC{$A$}
+  \DeduceC{$B$}
+  \DisplayProof
+\end{gather*}
+हे लॅम्डा पदांच्या $\beta$-संकुचनाशी जुळते:
+\[
+(\lambd[\typeof{x}{A}][N]M) \quad\redone\quad
+\Subst{N}{M}{x}.
+\]
+
+अशीच अनुरूपता $\land$ च्या नियमांचा ``गुणाकार''
+प्रकारांशी आणि $\lor$ च्या नियमांचा ``बेरीज'' प्रकारांशीही आहे.
+
+साध्या प्रकारयुक्त लॅम्डा कलनातील पदे आणि नैसर्गिक निगमनातील
+निष्पत्ती यांतील या अनुरूपतेला ``करी--हॉवर्ड'',
+``सिद्धता म्हणजे कार्यक्रम'', किंवा ``विधाने म्हणजे प्रकार''
+अनुरूपता म्हणतात. सूत्रे (विधाने) प्रकारांशी आणि
+सिद्धता पदांशी जुळतात; त्याशिवाय इतर अनुरूपता पुढीलप्रमाणे:
+\begin{center}
+  \begin{tabular}{c c c}
+    तर्कशास्त्र & कार्यक्रम \\
+    \hline
+    विधान/सूत्र & प्रकार \\
+    सिद्धता & पद \\
+    गृहीतक & चर \\
+    निरसित गृहीतक & बद्ध चर \\
+    अनिरसित गृहीतक & मुक्त चर \\
+    $A \lif B$ & फलन-प्रकार \\
+    $A \land B$ & गुणाकार-प्रकार \\
+    $A \lor B$ & बेरीज-प्रकार \\
+    $\lfalse$ & रिक्त प्रकार \\
+    \hline
+  \end{tabular}
+\end{center}
+
+करी--हॉवर्ड अनुरूपता ही स्वयंचलित सिद्धता-साहाय्यकांची आणि
+कार्यक्रमांसाठीच्या प्रकार-तपासकांची एक आधारभूत कल्पना आहे.
+कारण एखादे विधान सिद्ध करणारी सिद्धता तपासणे (जसे आपण वर केले)
+म्हणजे एखाद्या कार्यक्रमाला (पदाला) जाहीर केलेला प्रकार आहे का
+हे तपासणे होय.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सिद्धता-पदे}\label{int:pty:ter:sec}
+
+\Log{N1i} मध्ये गृहीतकांना निरसन-खुणा म्हणून चलांची
+चिन्हे देतो (उदा., $A^x$). \Log{N2i} मध्ये प्रत्येक
+$\Gamma \Sequent A$ क्रमवर्तीच्या डावीकडील संदर्भ~$\Gamma$
+हा सुसंगत चल–सूत्र जोड्यांचा संच असतो. त्यामुळे
+\Log{N2i} मधील सिद्धता च्या प्रत्येक क्रमवर्तीवर
+आतापर्यंतच्या सिद्धता ने काय सिद्ध केले आहे
+(म्हणजे~$A$) एवढीच नव्हे, तर त्या टप्प्यावर कोणती
+गृहीतके खुली आहेत (म्हणजे~$\Gamma$) ही माहितीही असते.
+$A$ \emph{कसे} सिद्ध झाले याची माहितीही प्रत्येक
+क्रमवर्तीत घातली तर? त्यासाठी \emph{पद-चिन्हांकित}
+\Log{tN2i} पद्धती परिभाषित करता येते; तिच्या
+क्रमवर्तींचे रूप $\Gamma \Sequent N : A$ असते.
+$\Gamma$ आणि~$A$ यांचे अर्थ आधीप्रमाणेच आहेत:
+$x: B$ या रूपातील जोड्यांचा संच, आणि क्रमवर्तीवर
+संपणाऱ्या उप-सिद्धता ने~$\Gamma$ मधील गृहीतकांवरून
+निष्पन्न होते असे दाखवलेले सूत्र. ~$N$ हे त्या
+क्रमवर्तीवर संपणाऱ्या सिद्धता चे सांकेतिकीकरण करणारे
+विशिष्ट पद असेल.
+
+प्रत्येक क्रमवर्तीला देण्यात येणारी पदे $x$, $y$,
+\dots या चलांपासून आणि आतापर्यंत झालेल्या अनुमानांचे
+सांकेतिकीकरण करणाऱ्या फलन-चिन्हांपासून बनतात.
+प्रत्येक अनुमान-नियमासाठी स्वतंत्र फलन-चिन्ह लागते.
+परिचय नियमांना अनुरूप फलन-चिन्हांना
+``रचनाकार'' आणि निरसन नियमांना अनुरूप चिन्हांना
+``विघटक'' म्हणतात. नियमाची जितकी आधारविधाने, तितके
+प्रत्येक फलन-चिन्हाचे आर्ग्युमेंट असतात. उदाहरणार्थ,
+\Intro{\land} आणि \Elim{\land}[1] साठी अनुक्रमे
+$c^\land$ (दोन-स्थानी) आणि $d^\land_1$ (एक-स्थानी)
+ही फलन-चिन्हे वापरता येतील. \Log{tN2i} मध्ये हे
+नियम असे होतील:
+\[
+\Axiom$\Gamma_1 \fCenter N: A$
+\Axiom$\Gamma_2 \fCenter M: B$
+\RightLabel{\Intro{\land}}
+\BinaryInf$\Gamma_1, \Gamma_2 \fCenter c^\land(N, M) : A \land B $
+\DisplayProof
+\quad
+\Axiom$\Gamma \fCenter N: A \land B$
+\RightLabel{\Elim{\land}[1]}
+\UnaryInf$\Gamma \fCenter d^\land_1(N) : A$
+\DisplayProof
+\]
+अनुमान-नियम एखादे गृहीतक निरसित करत असेल,
+म्हणजे आधारविधानात असलेले खुणित सूत्र~$x:A$
+निष्कर्षाच्या संदर्भात नसेल, तर ते सिद्धता-पदातही
+दर्शवावे लागते. अशा नियमांशी संबंधित फलन-चिन्हे
+त्या चलांना \emph{बद्ध} करतात. उदाहरणार्थ,
+\Intro{\lif} नियम $x:A, \Gamma \Sequent B$ या
+आधारविधानापासून $\Gamma \Sequent A \lif B$
+या निष्कर्षापर्यंत जातो. रचनाकार~$c^{\lif}$ एक
+आर्ग्युमेंट घेतो, पण चल~$x$ बद्ध होतो हेही त्याने
+दर्शवले पाहिजे. खूण~$x$ असलेले गृहीतक निरसित
+झाले आहे हे सिद्धता-पद अशा प्रकारे व्यक्त करते.
+उदाहरणार्थ, आधारविधानाचे सिद्धता-पद~$N$ असेल,
+तर निष्कर्षाचे सिद्धता-पद $c^{\lif}([x]N)$ आणि
+नियम असा लिहिता येईल:
+\[
+\Axiom$x:A, \Gamma \fCenter N: B$
+\RightLabel{\Intro{\lif}}
+\UnaryInf$\Gamma \fCenter c^{\lif}([x]N) : A \lif B$
+\DisplayProof
+\]
+
+सिद्धता पूर्णपणे पुन्हा उभारण्यासाठी आणखी
+काही माहिती लागते. नियमाच्या आधारविधानांतील
+सूत्रे वरून निष्कर्षातील सूत्र पूर्णपणे
+ठरत नसेल, तर ती माहिती पदात जोडली पाहिजे.
+\Intro{\lif} मध्ये असे होते; म्हणून आपण
+$c^{\lif}([x:A]N)$ असे लिहू. \Intro{\lor}
+आणि~\FalseInt मध्येही असेच होते; म्हणून ती
+माहिती वाहून नेणारी फलन-चिन्हे वापरू, उदाहरणार्थ:
+\[
+\Axiom$\Gamma \fCenter N:A$
+\RightLabel{\Intro{\lor}[1]}
+\UnaryInf$\Gamma \fCenter c^{\lor{B}}_1(N):A \lor B$
+\DisplayProof
+\quad
+\Axiom$\Gamma \fCenter N:\lfalse$
+\RightLabel{\FalseInt}
+\UnaryInf$\Gamma \fCenter d^\lfalse_{A}(N):A$
+\DisplayProof
+\]
+
+या कल्पनांवरून क्रमवर्ती-शैलीतील नैसर्गिक निगमनाची
+अशी पद्धती बांधता येते की प्रत्येक क्रमवर्तीचे रूप
+$\Gamma \Sequent N : A$ असते आणि~$N$ हे
+\emph{सिद्धता-पद} असते.
+
+अशी सिद्धता-पदे आणि तथाकथित \emph{प्रकारयुक्त लॅम्डा कलन}
+यातील पदे यांचा जवळचा संबंध आहे. तो लक्षात घेऊन वरची
+सर्वसाधारण रचनाकार-विघटक चिन्हे न वापरता लॅम्डा
+कलनाच्या साहित्यातील चिन्हे वापरू. उदाहरणार्थ,
+$c^{\lif}([x:A]N)$ ऐवजी $\lambd[\typeof{x}{A}][N]$,
+$d^{\lif}(N,M)$ ऐवजी $(NM)$,
+$c^\land(N,M)$ ऐवजी $\pair{N}{M}$, आणि
+$d^\land_i(N)$ ऐवजी~$\proj{i}{N}$ लिहू.
+
+\begin{defn}
+  सिद्धता-पदे पुढील नियमांनी विगमनाने तयार होतात:
+  \begin{enumerate}
+  \item प्रत्येक चर~$x$ हे सिद्धता-पद आहे (स्वयंसिद्धके).
+  \item $x$ हे चर, $A$ हे सूत्र, आणि~$N$ हे
+    सिद्धता-पद असेल, तर $\lambd[\typeof{x}{A}][N]$
+    हेही सिद्धता-पद आहे~(\Intro\lif).
+  \item $N$ आणि~$M$ ही सिद्धता-पदे असतील, तर $(NM)$
+    हेही सिद्धता-पद आहे~(\Elim\lif).
+  \item $N$ आणि~$M$ ही सिद्धता-पदे असतील, तर
+    $\pair{N}{M}$ हे सिद्धता-पद आहे~(\Intro\land).
+  \item $N$ हे सिद्धता-पद असेल, तर $\proj{i}{N}$
+    हेही सिद्धता-पद आहे; येथे~$i$ हे~$1$ किंवा~$2$
+    असते~(\Elim\land[i]).
+  \item $N$ हे सिद्धता-पद आणि~$A$ हे सूत्र असेल,
+    तर $\inj[A]{i}{N}$ हे सिद्धता-पद आहे; येथे~$i$
+    हे~$1$ किंवा~$2$ असते~(\Intro\lor[i]).
+  \item $M$, $N_1$, $N_2$ ही सिद्धता-पदे आणि~$x_1$,
+    $x_2$ ही चले असतील, तर
+    $\dcase{M}{x_1}{N_1}{x_2}{N_2}$ हे सिद्धता-पद
+    आहे~(\Elim\lor).
+  \item $N$ हे सिद्धता-पद आणि~$A$ हे सूत्र
+    असेल, तर $\abort{A}{N}$ हे सिद्धता-पद आहे~(\FalseInt).
+  \end{enumerate}
+\end{defn}
+
+प्रत्येक सिद्धता-पद हे एखाद्या सिद्धता चे
+सिद्धता-पद असेलच असे नाही. उदाहरणार्थ,
+$\pair{N}{M}$ हे पद~\Intro{\land} अनुमानावर
+संपणाऱ्या सिद्धतेचे सांकेतिकीकरण करते; म्हणून तिचे
+अंतिम सूत्र $A \land B$ हे संयोगसूत्र असते.
+हे~\Elim{\lif} नियमाचे मुख्य आधारविधान होऊ शकत
+नाही; त्यामुळे $(\pair{N}{M}P)$ हे योग्य सिद्धतेचे
+सिद्धता-पद होऊ शकत नाही. \Log{tN2ip} च्या नियमांचे
+पालन करणारी सिद्धता-पदेच \emph{योग्य} सिद्धता-पदे
+आहेत. हे नियम \ref{int:pty:ter:tab:tN2ip} मध्ये दिले आहेत.
+
+
+
+
+
+
+
+
+\begin{table}
+\begin{tabular}{@{}c@{}c@{}}
+\multicolumn{2}{l}{\textbf{स्वयंसिद्धके:}}\\
+\multicolumn{2}{c}{$x:A \Sequent x:A$}\\[3ex]
+\multicolumn{2}{l}{\textbf{अनुमान-नियम:}}\\[3ex]
+\multicolumn{2}{c}{\Axiom$x: A, \Gamma \fCenter N:B$
+\RightLabel{\Intro{\lif}}
+\UnaryInf$\Gamma \fCenter \lambd[\typeof{x}{A}][N] : A \lif B $
+\DisplayProof}
+\\[4ex]
+\multicolumn{2}{c}{\Axiom$\Gamma_1 \fCenter N:A \lif B$
+\Axiom$\Gamma_2 \fCenter M:A$
+\RightLabel{\Elim{\lif}}
+\BinaryInf$\Gamma_1, \Gamma_2 \fCenter (NM) : B$
+\DisplayProof}
+\\[4ex]
+\multicolumn{2}{c}{\Axiom$\Gamma_1 \fCenter N_1 : A$
+\Axiom$\Gamma_2 \fCenter N_2 : B$
+\RightLabel{\Intro{\land}}
+\BinaryInf$\Gamma_1, \Gamma_2 \fCenter \pair{N_1}{N_2} : A \land B $
+\DisplayProof}
+\\[4ex]
+\Axiom$\Gamma \fCenter N: A \land B$
+\RightLabel{\Elim{\land}[1]}
+\UnaryInf$\Gamma \fCenter \proj{1}{N} : A$
+\DisplayProof
+&
+\Axiom$\Gamma \fCenter N:A \land B$
+\RightLabel{\Elim{\land}[2]}
+\UnaryInf$\Gamma \fCenter \proj{2}{N} : B$
+\DisplayProof\\[3ex]
+\\[4ex]
+\Axiom$\Gamma \fCenter N: A$
+\RightLabel{\Intro{\lor}[1]}
+\UnaryInf$\Gamma \fCenter \inj[B]{1}{N} : A \lor B$
+\DisplayProof
+&
+\Axiom$ \Gamma \fCenter N : B$
+\RightLabel{\Intro{\lor}[2]}
+\UnaryInf$\Gamma \fCenter \inj[A]{2}{N} : A \lor B$
+\DisplayProof\\[3ex]
+\multicolumn{2}{c}{
+\begin{tabular}[b]{@{}l@{}}
+\Axiom$\Gamma_1 \fCenter M : A \lor B$
+\Axiom$x:A, \Gamma_2 \fCenter N_1 : C$
+\Axiom$y:B, \Gamma_3 \fCenter N_2: C$
+\RightLabel{\Elim{\lor}}
+\TrinaryInf$\Gamma_1, \Gamma_2, \Gamma_3 \fCenter
+\dcase{M}{x}{N_1}{y}{N_2} : C$
+\DisplayProof
+\end{tabular}
+}
+\\[4ex]
+\multicolumn{2}{c}{\Axiom$\Gamma \fCenter N: \lfalse$
+\RightLabel{\FalseInt}
+\UnaryInf$\Gamma \fCenter \abort{A}{N} : A$
+\DisplayProof}
+\end{tabular}
+\caption{विधानीय पद-चिन्हांकित अंतःप्रज्ञावादी नैसर्गिक निगमन
+पद्धतीचे नियम \Log{tN2ip}.}
+\label{int:pty:ter:tab:tN2ip}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{निष्पत्तीचे सिद्धता-पदांत रूपांतर}\label{int:pty:pt:sec}
+
+विधानीय नैसर्गिक निगमनातील सिद्धता चे सिद्धता-पदांत रूपांतर,
+म्हणजे~\Log{N2i} मधील सिद्धता चे~\Log{tN2i}
+मधील सिद्धता मध्ये भाषांतर, अगदी सरळ आहे.
+निष्पत्तीमधील प्रत्येक क्रमवर्तीच्या उजव्या
+बाजूच्या सूत्राच्या डावीकडे सिद्धता-पद लिहायचे;
+म्हणजे $\Gamma \Sequent M : A$ या रूपातील
+क्रमवर्ती मिळतात. मग संदर्भ~$\Gamma$ मध्ये~$M$ हे
+$A$ ची \emph{साक्ष देते} असे म्हणू. कोणते सिद्धता-पद
+लिहायचे हे पूर्णपणे \Log{tN2i} च्या नियमांनी ठरते.
+
+\begin{prop}
+विधानीय \Log{N2i} मधील $\Gamma \Sequent A$ ची प्रत्येक
+सिद्धता~$\delta$ ही~\Log{tN2i} मधील
+$\Gamma \Sequent N : A$ च्या सिद्धता~$\delta'$ शी
+अनुरूप असते. सिद्धता-पद~$N$ हे~$\delta$ वरून
+एकमेवपणे ठरते.
+\end{prop}
+
+\begin{proof}
+~$\delta$ च्या उंचीवर विगमन करू. $\delta$ हे
+$x:A \Sequent A$ हे स्वयंसिद्धक असेल, तर
+$\delta'$ हे~$x:A \Sequent x:A$ हे स्वयंसिद्धक आहे.
+$\delta$ एखाद्या अनुमान-नियमावर संपत असेल, तर
+विगमन-गृहीतक प्रत्येक आधारविधानासाठी सिद्धता-पद आणि
+ते पद असलेल्या क्रमवर्तीची \Log{tN2i}-सिद्धता देते.
+मग \Log{tN2i} चा अनुरूप नियम लावतो;
+\Log{tN2i} चा अनुमान-नियमच अनुरूप सिद्धता-पद निश्चित करतो.
+\end{proof}
+येथे दिलेल्या पद-नियमांची व्याप्ती विधानीय आहे;
+संख्यापकांचे स्वतंत्र पद-संकारक परिभाषित केलेले नाहीत.
+
+\begin{ex}
+  \Log{N1i} मधील $(A \land B) \lif (B \land A)$
+  ची पुढील अगदी साधी सिद्धता घ्या:
+  \[
+  \AxiomC{$\Discharge{A\land B}{x}$}
+  \RightLabel{\Elim\land[2]}
+  \UnaryInfC{$B$}
+  \AxiomC{$\Discharge{A\land B}{x}$}
+  \RightLabel{\Elim\land[1]}
+  \UnaryInfC{$A$}
+  \RightLabel{\Intro\land}
+  \BinaryInfC{$B \land A$}
+  \DischargeRule{\Intro\lif}{x}
+  \UnaryInfC{$(A \land B) \lif (B \land A)$}
+  \DisplayProof
+  \]
+  \Log{N2i} मध्ये ती अशी दिसते:
+  \[
+  \Axiom$x : A\land B \fCenter A\land B$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : A\land B \fCenter B$
+  \Axiom$x : A\land B \fCenter A\land B$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : A\land B \fCenter A$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : A\land B \fCenter B \land A$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter (A \land B) \lif (B \land A)$
+  \DisplayProof
+  \]
+  सिद्धता-पदे वरपासून खाली देऊ. स्वयंसिद्धकांची
+  सिद्धता-पदे ही संदर्भातील~$x$ या चलासारखीच आहेत.
+  मग $\Elim\land[i]$ शी संबंधित सिद्धता-पदे अनुक्रमे
+  $\proj{2}{x}$ आणि~$\proj{1}{x}$ अशी ठरतात.
+  \Intro{\land} लावताना ही दोन सिद्धता-पदे एकत्र करतो:
+  $\pair{\proj{2}{x}}{\proj{1}{x}}$.
+  शेवटी \Intro{\lif} नियमाने $\lambd$-अमूर्तीकरण
+  केले जाते; त्यामुळे~$x$ बद्ध होतो आणि~$x$ ही खूण
+  $A \land B$ या गृहीतकाला होती हे नोंदले जाते:
+  $\lambd[\typeof{x}{A \land
+  B}][\pair{\proj{2}{x}}{\proj{1}{x}}]$.
+  मग \Log{tN2i} मधील सिद्धता अशी आहे:
+  \[
+  \Axiom$x : A\land B \fCenter x: A\land B$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : A\land B \fCenter \proj{2}{x} : B$
+  \Axiom$x : A\land B \fCenter x: A\land B$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : A\land B \fCenter \proj{1}{x} : A$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : A\land B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} :
+    B \land A$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{A \land
+  B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (A \land B) \lif (B \land A)$
+  \DisplayProof
+  \]
+\end{ex}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सिद्धता-पदांवरून निष्पत्ती पुन्हा मिळवणे}\label{int:pty:tp:sec}
+
+आता उलट दिशा पाहू: सिद्धता-पद~$N$ वरून
+\Log{N2i} मधील सिद्धता पुन्हा मिळवणे.
+सर्वसाधारणपणे हे दिलेल्या सिद्धता-पदात मुक्त असलेल्या
+प्रत्येक चल~$x$ साठी $x : A$ अशी जोडी धरणाऱ्या
+संदर्भाच्या सापेक्षच करता येते. पण आधी मुक्त चले
+नसलेले उदाहरण घेऊ, म्हणजे हे पद:
+\[
+\lambd[\typeof{x}{A \land
+  B}][\pair{\proj{2}{x}}{\proj{1}{x}}]
+\]
+याचे रूप $\lambd[\typeof{x}{A \land B}][N_1]$ आहे.
+अशा रूपाचे पद निर्माण करणारा \Log{tN2i} चा
+एकमेव नियम~\Intro{\lif} असल्यामुळे~$N$ ने
+सांकेतिक केलेली सिद्धता~\Intro{\lif} वर संपली
+पाहिजे, म्हणजे तिचा शेवट असा आहे:
+\[
+  \Axiom$x : A\land B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} :
+    C$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{A \land
+  B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (A \land B) \lif C$
+  \DisplayProof
+  \]
+$C$ काय आहे हे अद्याप माहीत नाही; पण पूर्वांग
+$A \land B$ आहे, आणि आधारविधानाच्या संदर्भात
+$x:A \land B$ असलेच पाहिजे हे माहीत आहे.
+
+आता आधारविधानाशी संबंधित सिद्धता-पद निश्चित झाले आहे:
+$\pair{\proj{2}{x}}{\proj{1}{x}}$.
+\emph{त्याने} सांकेतिक केलेली सिद्धता~\Intro{\land}
+वर संपली पाहिजे. ~$C$ काय आहे हे अजून माहीत
+नाही; पण तो~\Intro{\land} चा निष्कर्ष असल्यामुळे
+संयोग असलाच पाहिजे, म्हणजे
+$C \ident (C_1 \land C_2)$. पुनर्रचना पुढे चालू ठेवू:
+\[
+  \Axiom$x : A\land B \fCenter \proj{2}{x} : C_1$
+  \Axiom$x : A\land B \fCenter \proj{1}{x} : C_2$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : A\land B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} :
+    C_1 \land C_2$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{A \land
+  B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (A \land B) \lif (C_1 \land C_2)$
+  \DisplayProof
+  \]
+$\pi_2(x)$ हे सिद्धता-पद सांगते की डावीकडील वरची
+क्रमवर्ती~\Elim{\land}[2] ने मिळाली; म्हणजे तिचे
+आधारविधान $D \land C_1$ या रूपाचे आहे. उजवीकडे
+$C_2$ कडे नेणारे अनुमान~\Elim{\land}[1] असले
+पाहिजे आणि त्याचे आधारविधान $C_2 \land E$ या
+रूपाचे असले पाहिजे, हे ठरवता येते.
+\[
+  \Axiom$x : A\land B \fCenter x: D\land C_1$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : A\land B \fCenter \proj{2}{x} : C_1$
+  \Axiom$x : A\land B \fCenter x: C_2\land E$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : A\land B \fCenter \proj{1}{x} : C_2$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : A\land B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} :
+    C_1 \land C_2$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{A \land
+  B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (A \land B) \lif (C_1 \land C_2)$
+  \DisplayProof
+  \]
+सर्वांत वरच्या क्रमवर्तींची सिद्धता-पदे आता चले
+असल्यामुळे त्या स्वयंसिद्धकेच असल्या पाहिजेत.
+त्यावरून $C_1$, $C_2$, $D$, आणि $E$ ठरतात:
+$D \ident A$ आणि $C_1 \ident B$ नसतील,
+तर डावी क्रमवर्ती स्वयंसिद्धक नाही; तसेच
+$C_2 \ident A$ आणि $E \ident B$ नसतील,
+तर उजवी क्रमवर्तीही स्वयंसिद्धक नाही.
+अशा रीतीने संपूर्ण सिद्धता पुन्हा मिळाली:
+\[
+  \Axiom$x : A\land B \fCenter x: A\land B$
+  \RightLabel{\Elim\land[2]}
+  \UnaryInf$x : A\land B \fCenter \proj{2}{x} : B$
+  \Axiom$x : A\land B \fCenter x: A\land B$
+  \RightLabel{\Elim\land[1]}
+  \UnaryInf$x : A\land B \fCenter \proj{1}{x} : A$
+  \RightLabel{\Intro\land}
+  \BinaryInf$x : A\land B \fCenter \pair{\proj{2}{x}}{\proj{1}{x}} :
+    B \land A$
+  \RightLabel{\Intro\lif}
+  \UnaryInf$\fCenter \lambd[\typeof{x}{A \land
+  B}][\pair{\proj{2}{x}}{\proj{1}{x}}] : (A \land B) \lif (B \land A)$
+  \DisplayProof
+  \]
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{प्रकार}\label{int:pty:typ:sec}
+
+$(MN)$ सारखे सिद्धता-पद स्वतःहून कोणत्या सिद्धतेचे
+सिद्धता-पद आहे हे एकमेवपणे ठरवत नाही. कारण मुक्त चले,
+म्हणजे स्वयंसिद्धकांची सिद्धता-पदे, संबंधित स्वयंसिद्धकांतील
+सूत्रे सांगत नाहीत. पण ती सुसंगत संदर्भ~$\Gamma$ मध्ये
+दिली आणि पद योग्य प्रकाराचे असेल, तर सिद्धता \emph{एकमेवपणे} ठरते.
+
+\begin{defn}
+सिद्धता-पद~$N$ साठी \emph{संदर्भ} म्हणजे प्रकार-खुणांचा
+सुसंगत संच~$\Gamma$: कोणत्याही चलाला दोन वेगळे प्रकार
+देता येत नाहीत, आणि~$N$ च्या प्रत्येक मुक्त चलासाठी
+$\Gamma$ मध्ये $x:A$ अशी नेमकी एक जोडी असते.
+\end{defn}
+
+या व्याख्येनुसार~$\Gamma$ मध्ये $x:A$ ही जोडी
+\emph{फक्त}~$N$ च्या मुक्त चलांसाठीच असावी अशी अट नाही.
+उदाहरणार्थ, $\Gamma = \{x:A, y:B, z:C\}$ हा
+$\pair{x}{y}$ साठी संदर्भ आहे.
+
+\begin{defn}\label{int:pty:typ:defn:type}
+  ~$\Gamma$ हा~$N$ साठी संदर्भ आहे असे माना.
+  ~$\Gamma$ च्या सापेक्ष~$N$ चा \emph{प्रकार}
+  पुढीलप्रमाणे विगमनाने परिभाषित करतो:
+  \begin{enumerate}
+  \item $x:A \in \Gamma$ असेल तेव्हाच~$x$ चा प्रकार~$A$ असतो.
+  \item $x:A, \Gamma$ च्या सापेक्ष~$N$ चा प्रकार~$B$
+    असेल, तर $\lambd[\typeof{x}{A}][N]$ चा प्रकार
+    $A \lif B$ असतो.
+  \item $N$ चा प्रकार $A \lif B$ आणि~$M$ चा प्रकार~$A$
+    असेल, तर $(NM)$ चा प्रकार~$B$ असतो.
+  \item $N$ चा प्रकार~$A$ आणि~$M$ चा प्रकार~$B$
+    असेल, तर $\pair{N}{M}$ चा प्रकार $A \land B$ असतो.
+  \item $N$ चा प्रकार~$A_1 \land A_2$ असेल, तर
+    $\proj{i}{N}$ चा प्रकार~$A_i$ असतो.
+  \item $N$ चा प्रकार~$A$ असेल, तर
+    $\inj[B]{i}{N}$ चा प्रकार $i=1$ असताना
+    $A \lor B$ आणि $i=2$ असताना $B \lor A$ असतो.
+  \item $M$ चा प्रकार $A \lor B$, तसेच
+    $x_1:A, \Gamma$ च्या सापेक्ष~$N_1$ चा प्रकार~$C$
+    आणि $x_2:B, \Gamma$ च्या सापेक्ष~$N_2$ चा
+    प्रकार~$C$ असेल, तर
+    $\dcase{M}{x_1}{N_1}{x_2}{N_2}$ चा प्रकार~$C$ असतो.
+  \item $N$ चा प्रकार~$\lfalse$ असेल, तर
+    $\abort{A}{N}$ चा प्रकार~$A$ असतो.
+  \end{enumerate}
+\end{defn}
+या नियमांत न बसणाऱ्या पदाला प्रकार नाही. अमूर्तीकरणाच्या
+आणि प्रकरण-विभाजनाच्या बद्ध चलांना संदर्भातील चलांपासून वेगळी
+नवी नावे देऊन वरील संदर्भ-वाढ करायची.
+
+\begin{prop}
+सिद्धता-पद~$N$ साठीच्या सुसंगत संदर्भ~$\Gamma$ च्या
+सापेक्ष~$N$ ला जास्तीत जास्त एक प्रकार असतो. प्रकार
+अस्तित्वात असेल, तर तो एकमेव असतो; प्रत्येक कच्च्या
+सिद्धता-पदाला प्रकार मिळतोच असे नाही.
+\end{prop}
+
+\begin{proof}
+  ~$N$ वर विगमनाने.
+\end{proof}
+
+संदर्भ~$\Gamma$ च्या सापेक्ष~$N$ चा प्रकार~$A$
+असेल, तर $\Gamma \Sequent N : A$ असे लिहितो.
+\ref{int:pty:typ:defn:type} मधील उपवाक्ये परिचित वाटली पाहिजेत:
+त्यात एक लहानसा फरक वगळता \Log{tN2i} चेच नियम
+आहेत—संदर्भ~$\Gamma$ सर्वत्र तोच राहतो. ही
+व्याख्या \Log{tN3i} या कलनाच्या रूपात मांडता येते;
+त्याचे नियम \ref{int:pty:typ:tab:tN3ip} मध्ये दिले आहेत.
+
+
+
+
+
+
+
+
+
+\begin{table}
+\begin{tabular}{@{}c@{}c@{}}
+\multicolumn{2}{l}{\textbf{स्वयंसिद्धके:}}\\
+\multicolumn{2}{c}{$\Gamma \Sequent x:A$ जेव्हा $x:A \in \Gamma$}\\[3ex]
+\multicolumn{2}{l}{\textbf{अनुमान-नियम:}}\\[3ex]
+\multicolumn{2}{c}{\Axiom$x: A, \Gamma \fCenter N:B$
+\RightLabel{\Intro{\lif}}
+\UnaryInf$\Gamma \fCenter \lambd[\typeof{x}{A}][N] : A \lif B $
+\DisplayProof}
+\\[4ex]
+\multicolumn{2}{c}{\Axiom$\Gamma \fCenter N:A \lif B$
+\Axiom$\Gamma \fCenter M:A$
+\RightLabel{\Elim{\lif}}
+\BinaryInf$\Gamma \fCenter (NM) : B$
+\DisplayProof}
+\\[4ex]
+\multicolumn{2}{c}{\Axiom$\Gamma \fCenter N_1 : A$
+\Axiom$\Gamma \fCenter N_2 : B$
+\RightLabel{\Intro{\land}}
+\BinaryInf$\Gamma \fCenter \pair{N_1}{N_2} : A \land B $
+\DisplayProof}
+\\[4ex]
+\Axiom$\Gamma \fCenter N: A \land B$
+\RightLabel{\Elim{\land}[1]}
+\UnaryInf$\Gamma \fCenter \proj{1}{N} : A$
+\DisplayProof
+&
+\Axiom$\Gamma \fCenter N:A \land B$
+\RightLabel{\Elim{\land}[2]}
+\UnaryInf$\Gamma \fCenter \proj{2}{N} : B$
+\DisplayProof\\[3ex]
+\\[4ex]
+\Axiom$\Gamma \fCenter N: A$
+\RightLabel{\Intro{\lor}[1]}
+\UnaryInf$\Gamma \fCenter \inj[B]{1}{N} : A \lor B$
+\DisplayProof
+&
+\Axiom$ \Gamma \fCenter N : A$
+\RightLabel{\Intro{\lor}[2]}
+\UnaryInf$\Gamma \fCenter \inj[B]{2}{N} : B \lor A$
+\DisplayProof\\[3ex]
+\multicolumn{2}{c}{
+\begin{tabular}[b]{@{}l@{}}
+\Axiom$\Gamma \fCenter M : A \lor B$
+\Axiom$x:A, \Gamma \fCenter N_1 : C$
+\Axiom$y:B, \Gamma \fCenter N_2: C$
+\RightLabel{\Elim{\lor}}
+\TrinaryInf$\Gamma \fCenter
+\dcase{M}{x}{N_1}{y}{N_2} : C$
+\DisplayProof
+\end{tabular}
+}
+\\[4ex]
+\multicolumn{2}{c}{\Axiom$\Gamma \fCenter N: \lfalse$
+\RightLabel{\FalseInt}
+\UnaryInf$\Gamma \fCenter \abort{A}{N} : A$
+\DisplayProof}
+\end{tabular}
+\caption{प्रकार-निर्देशन पद्धती म्हणून वापरल्या जाणाऱ्या
+\Log{tN3ip} या विधानीय पद-चिन्हांकित अंतःप्रज्ञावादी
+नैसर्गिक निगमन पद्धतीचे नियम.}
+\label{int:pty:typ:tab:tN3ip}
+\end{table}
+
+
+
+
+सिद्धता-पदे ही $\lambd$-कलनाच्या एका आवृत्तीतील
+पदे आहेत: \emph{गुणाकार, बेरीज आणि रिक्त प्रकार
+असलेले प्रकारयुक्त $\lambd$-कलन}. पारंपरिक
+$\lambd$-कलनात फक्त चलांपासून बनलेली पदे,
+\emph{$\lambd$-अमूर्तीकरणे}~$\lambd[x][N]$, आणि
+उपयोजन $(MN)$ असते; त्यात प्रकारयुक्त
+$\lambd$-अमूर्तीकरण~$\lambd[\typeof{x}{A}][N]$
+यातील~$A$ हे प्रकार-चिन्ह नसते. ~$\lambd$-कलन
+हे ट्यूरिंग-संपूर्ण संगणन-प्रतिमान आहे (म्हणजे प्रत्येक
+आंशिक संगणनीय फलन त्यातील पदाने दर्शवता येते).
+सिद्धता-पदे आणि प्रकार-नियम देतात ती~$\lambd$-कलनाची
+आवृत्ती निर्बंधित संगणन-प्रतिमान आहे; पण तिच्या मूलभूत
+कल्पना त्याच आहेत. हे निर्बंध प्रकार-निर्देशनातून येतात:
+फक्त \emph{योग्य प्रकाराची} पदे, म्हणजे
+संदर्भ~$\Gamma$ च्या सापेक्ष प्रकार असलेली
+सिद्धता-पदे, ग्राह्य असतात. उदाहरणार्थ,
+$\lambd[x][(xx)]$ हे पारंपरिक प्रकारविरहित
+$\lambd$-कलनात ग्राह्य पद आहे; पण
+$\lambd[\typeof{x}{A}][(xx)]$ हे कोणत्याही~$A$
+साठी योग्य प्रकाराचे नाही. कारण $(xx)$ ला प्रकार
+असण्यासाठी पहिल्या~$x$ चा प्रकार $A \lif B$
+आणि दुसऱ्या~$x$ चा प्रकार~$A$ असावा लागेल.
+पण~$A$ हे $A \lif B$ चे योग्य उप-सूत्र
+असल्यामुळे हे अशक्य आहे.
+
+एखाद्या प्रकाराचे पद ज्या वस्तूला नाव देते, तिचा
+प्रकार म्हणून प्रकारांकडे सहजपणे पाहता येते. म्हणून
+$A \land B$ या प्रकाराचे पद पहिला घटक~$A$
+आणि दुसरा~$B$ या प्रकाराचा असलेली जोडी निवडते;
+म्हणजे गुणाकार~$A \times B$ मधील घटक.
+$A \lif B$ या प्रकाराचे पद प्रकार~$A$ च्या
+वस्तूंपासून प्रकार~$B$ च्या वस्तूंकडे जाणारे फलन आहे.
+$A \lor B$ या प्रकारचे पद हे प्रकार~$A$ किंवा
+प्रकार~$B$ ची वस्तू असते; तसेच ती दोहोंपैकी कोणत्या
+प्रकाराची आहे ही माहिती त्यात असते. हे~$A$ आणि~$B$
+या दोन संचांच्या असंयुक्त संघासारखे आहे:
+$\{\tuple{i,x} : i = 1 \text{ किंवा } 2, x \in A
+\text{ जर } i = 1, x \in B \text{ जर } i=2\}$.
+$\lfalse$ हा प्रकार रिक्त संच आहे; म्हणजे त्या प्रकाराचे
+पद कोणत्याही वस्तूला नाव देऊ शकत नाही.
+नैसर्गिक निगमन (\Log{tN3i} सह) सुसंगत असल्यामुळे
+खुली गृहीतके नसताना~$\lfalse$ ची सिद्धता नसते.
+म्हणून~$\lfalse$ प्रकाराचे बंद सिद्धता-पद
+(मुक्त चले नसलेले पद) नसते.
+
+प्रकारयुक्त $\lambd$-कलनाचे संकारक योग्य प्रकाराच्या
+वस्तूंना सहजपणे नाव देणारी पदे तयार करतात, अर्थात
+त्यांना लावलेली पदेही ठरावीक प्रकारच्या वस्तूंना नाव
+देत असतील तर. उदाहरणार्थ, ``$N_1 : A$ आणि
+$N_2 : B$ असतील, तर
+$\pair{N_1}{N_2} : A \land B$'' याचा अर्थ:
+$N_1$ ने प्रकार~$A$ च्या वस्तूला आणि~$N_2$ ने
+प्रकार~$B$ च्या वस्तूला नाव दिले, तर
+$\pair{N_1}{N_2}$ हे प्रकार $A \land B$ च्या
+वस्तूला नाव देते.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{न्यूनीकरण}\label{int:pty:red:sec}
+
+नैसर्गिक निगमनाच्या निष्पत्तीमध्ये
+परिचय नियमापाठोपाठ निरसन नियम
+आला, तर तो वळसा ``न्यूनीत'' करता येतो. उदाहरणार्थ,
+$\Intro{\land}$ नंतर $\Elim{\land}$ आले, तर ते
+``एकमेकांना रद्द'' करतात: $\Elim{\land}$ चा निष्कर्ष
+नेहमीच \Intro{\land} ने तयार केलेल्या संयोगातील
+एका घटकासारखा असतो, आणि $\Intro{\land}$ ची दोन्ही
+आधारविधाने तेच संयोगघटक असतात. म्हणून एखाद्या
+संयोगघटकाची निष्पत्ती हवी असेल, तर संयोग
+प्रस्तुत करून त्याचे निरसन न करता तीच निष्पत्ती
+थेट वापरता येते. आपल्याला असे मिळते:
+\begin{gather*}
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$A_1$}
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$A_2$}
+  \RightLabel{$\Intro{\land}$}
+  \BinaryInfC{$A_1 \land A_2$}
+  \RightLabel{$\Elim{\land}_i$}
+  \UnaryInfC{$A_i$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \quad
+  \AxiomC{}
+  \RightLabel{$\delta_i$}
+  \DeduceC{$A_i$}
+  \DisplayProof
+\end{gather*}
+
+या सोपीकरणातून संबंधित सिद्धता-पदांवरील तसाच
+न्यूनीकरण-संबंध दिसतो. ~$N_1$ हे~$\delta_1$ चे
+आणि~$N_2$ हे~$\delta_2$ चे सिद्धता-पद असेल,
+तर डावीकडील सिद्धतेचे सिद्धता-पद एका पायरीत
+उजवीकडील सिद्धतेच्या सिद्धता-पदात न्यूनीत होते:
+\[
+  \proj{i}{\pair{N_1}{N_2}} \redone N_i
+\]
+प्रकारयुक्त लॅम्डा कलनात हा गुणाकार-प्रकाराचा
+\emph{बीटा-न्यूनीकरण} नियम आहे.
+
+नैसर्गिक निगमनात \Intro{\land} नंतर
+\Elim{\land} अशी अनुमानांची जोडी, म्हणजे न्यूनीकरण
+लागू होणारी जोडी, हिला \emph{कट} म्हणतात. प्रकारयुक्त
+लॅम्डा कलनात $\redone$ च्या डावीकडील पदाला
+\emph{रेडेक्स}, तर उजवीकडील पदाला \emph{संकुचनफल}
+म्हणतात. प्रकारविरहित लॅम्डा कलनात फक्त
+$(\lambd[x][N])Q$ यालाच रेडेक्स मानतात; पण
+प्रकारयुक्त लॅम्डा कलनात $\pair{N}{M}$,
+$\proj{i}{N}$, $\inj[A]{i}{N}$,
+$\dcase{N}{x_1}{M_1}{x_2}{M_2}$, आणि
+$\abort{A}{N}$ यांसारखी पदेही विन्यासात येतात,
+आणि त्यांना अनुरूप रेडेक्सही असतात.
+
+त्याचप्रमाणे वियोगासाठीही न्यूनीकरण आहे:
+\begin{gather*}
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$A_i$}
+  \RightLabel{$\Intro{\lor}$}
+  \UnaryInfC{$A_1 \lor A_2$}
+  \AxiomC{$\Discharge{A_1}{x_1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$C$}
+  \AxiomC{$\Discharge{A_2}{x_2}$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$C$}
+  \DischargeRule{$\Elim{\lor}$}{x_1,x_2}
+  \TrinaryInfC{$C$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \quad
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$A_i$}
+  \RightLabel{$\delta_i$}
+  \DeduceC{$C$}
+  \DisplayProof
+\end{gather*}
+याला अनुरूप सिद्धता-पदांवरील न्यूनीकरण असे आहे:
+\begin{gather*}
+  \dcase{\inj[A_{3-i}]{i}{M}}{x_1}{N_1}{x_2}{N_2} \redone \Subst{N_i}{M}{x_i}
+\end{gather*}
+येथे~$M$ हे~$\delta$ चे, आणि~$N_i$ हे~$\delta_i$
+चे सिद्धता-पद आहे. हा बेरीज-प्रकारांसाठीचा
+बीटा-न्यूनीकरण नियम आहे. येथे
+$\Subst{M}{N_i}{x}$ म्हणजे~$M$ मधील~$x$ या
+चराची सर्व मुक्त स्थाने~$N_i$ ने बदलणे.
+हे मुक्त-चल प्रतिस्थापन बद्ध-चल ग्रहण होऊ न देता
+करायचे; आवश्यक बद्ध चलांना आधी नवी नावे द्यायची.
+विन्यासातील प्रत्येक संकारकालाच रेडेक्स म्हणत नाही:
+मुख्य बीटा-रेडेक्स हे वरच्या गुणाकाराच्या आणि पुढच्या
+बेरीज व फलनाच्या विशिष्ट रूपांचे असतात.
+
+फलन-प्रकाराचे न्यूनीकरण म्हणजे $\Intro\lif$ नंतर
+$\Elim\lif$ आल्याने झालेला वळसा काढणे:
+\begin{gather*}
+  \bottomAlignProof
+  \AxiomC{$\Discharge{A}{x}$}
+  \RightLabel{$\delta$}
+  \DeduceC{$B$}
+  \DischargeRule{$\Intro{\lif}$}{x}
+  \UnaryInfC{$A \lif B$}
+  \AxiomC{}
+  \RightLabel{$\delta'$}
+  \DeduceC{$A$}
+  \RightLabel{$\Elim{\lif}$}
+  \BinaryInfC{$B$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \quad
+  \AxiomC{}
+  \RightLabel{$\delta'$}
+  \DeduceC{$A$}
+  \RightLabel{$\delta$}
+  \DeduceC{$B$}
+  \DisplayProof
+\end{gather*}
+सिद्धता-पदांसाठी हे नेहमीचे बीटा-न्यूनीकरण आहे:
+\begin{gather*}
+  (\lambd[\typeof{x}{A}][N]M)
+  \redone \Subst{N}{M}{x}
+\end{gather*}
+
+सिद्धता वरील न्यूनीकरण रूपांतरणांखेरीज
+क्रमपरिवर्तन रूपांतरणांचाही विचार करता येतो.
+ती \Elim{\lor} नंतर दुसरा निरसन नियम
+असलेल्या (उप-)सिद्धता वर लागू होतात, उदाहरणार्थ:
+\begin{multline*}
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$A_i$}
+  \RightLabel{$\Intro{\lor}$}
+  \UnaryInfC{$A_1 \lor A_2$}
+  \AxiomC{$\Discharge{A_1}{x_1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$C_1 \land C_2$}
+  \AxiomC{$\Discharge{A_2}{x_2}$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$C_1 \land C_2$}
+  \DischargeRule{$\Elim{\lor}$}{x_1,x_2}
+  \TrinaryInfC{$C_1 \land C_2$}
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInfC{$C_i$}
+  \DisplayProof\bottomAlignProof
+  \quad
+  \redone
+  \\
+  \AxiomC{}
+  \RightLabel{$\delta$}
+  \DeduceC{$A_i$}
+  \RightLabel{$\Intro{\lor}$}
+  \UnaryInfC{$A_1 \lor A_2$}
+  \AxiomC{$\Discharge{A_1}{x_1}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$C_1 \land C_2$}
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInfC{$C_i$}
+  \AxiomC{$\Discharge{A_2}{x_2}$}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$C_1 \land C_2$}
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInfC{$C_i$}
+  \DischargeRule{$\Elim{\lor}$}{x_1,x_2}
+  \TrinaryInfC{$C_i$}
+  \DisplayProof
+\end{multline*}
+~$\delta$, $\delta_1$, आणि~$\delta_2$ यांची
+सिद्धता-पदे अनुक्रमे~$M$, $N_1$, आणि~$N_2$
+असतील, तर सिद्धता-पदांसाठी, म्हणजेच~$\lambd$
+पदांसाठी, अनुरूप न्यूनीकरण नियम असा आहे:
+\[
+  \proj{i}{\dcase{M}{x_1}{N_1}{x_2}{N_2}} \redone
+\dcase{M}{x_1}{\proj{i}{N_1}}{x_2}{\proj{i}{N_2}}
+\]
+इतर निरसनांसाठीही वियोग-निरसनाच्या निष्कर्षावरील
+निरसन दोन्ही शाखांच्या निष्कर्षांवर हलवायचे. बाहेरील
+आदान किंवा उपपद आत जाताना~$x_1,x_2$ यांनी त्याचे
+मुक्त चल पकडू नयेत म्हणून या बद्ध चलांना आधी नवी
+नावे द्यायची. असत्याच्या सरलीकरणांसाठी नैसर्गिक
+निगमनाच्या सामान्यरूपीकरण प्रकरणातील अनुरूप
+रूपांतरणे वापरायची.
+
+अर्थात, वळसे केवळ सिद्धता च्या शेवटीच नव्हे,
+तर सिद्धता च्या आतही काढता येतात: वळशावर संपणाऱ्या
+उप-सिद्धता ला न्यूनीकरण रूपांतरण लावायचे.
+तसेच $\lambd$-पदांच्या उपपदांवर $\beta$-न्यूनीकरण
+लागू होते. $N$ हे~$M$ चे उपपद असेल आणि
+$N \redone N'$ असेल, तर~$M$ मधील उपपद~$N$ हे~$N'$ ने
+बदलून~$M'$ मिळवता येते. अशा वेळीही $M \redone M'$
+असे लिहितो. $M = M_1 \redone M_2 \redone M_3
+\redone \dots \redone M_k = M'$ असा क्रम असेल
+(यात $k=1$, म्हणजे $M = M'$ ही बाबही येते),
+तर $M \red M'$ असे लिहितो.
+
+ज्या सिद्धता च्या कोणत्याही उप-सिद्धता वर
+रूपांतरण लागू होत नाही, तिला \emph{सामान्य} म्हणतात.
+तसेच ज्या $\lambd$-पदावर (त्याच्या कोणत्याही उपपदावर)
+रूपांतरण लागू होत नाही, त्याला \emph{सामान्य} म्हणतात.
+सामान्य $\lambd$-पदाला \emph{सामान्य रूप} असेही म्हणतात.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{प्रकार-संरक्षण}\label{int:pty:tpr:sec}
+
+विचारात घेतलेली न्यूनीकरण आणि क्रमपरिवर्तन रूपांतरणे
+\Log{tN2i} आणि \Log{tN3i} या पद्धतींसाठीही थेट
+परिभाषित करता येतात. \Log{tN3i} पद्धत संदर्भ~$\Gamma$
+च्या सापेक्ष $\lambd$-पद~$N$ चा प्रकार असे
+सूत्र~$A$ म्हणून परिभाषित करते की
+$\Gamma \Sequent N : A$ ची \Log{tN3i} मध्ये
+सिद्धता आहे. $\lambd$-पदांसाठीची
+पद-रूपांतरणे सिद्धता ची न्यूनीकरण
+आणि क्रमपरिवर्तन रूपांतरणे तंतोतंत प्रतिबिंबित करतात.
+त्याचा महत्त्वाचा परिणाम म्हणजे संदर्भ~$\Gamma$ च्या
+सापेक्ष $\lambd$-पदाचा प्रकार अनुरूप रूपांतरणानंतरही
+तोच राहतो. या गुणधर्माला \emph{प्रकार-संरक्षण} म्हणतात.
+
+\begin{prop}
+संदर्भ~$\Gamma$ च्या सापेक्ष $N$ चा प्रकार~$A$
+असेल आणि $N \redone N'$ असेल, तर~$\Gamma$ च्याच
+सापेक्ष $N'$ चा प्रकारही~$A$ असतो.
+\end{prop}
+
+\begin{proof}
+  ~$N$ वर आणि $\Gamma \Sequent N : A$ च्या
+  सिद्धता~$\delta$ च्या उंचीवर विगमन करून पुढील
+  गोष्ट सहज सिद्ध करता येते:~$M$ हे~$N$ चे उपपद
+  असेल, तर~$\delta$ मध्ये $\Gamma' \Sequent M : B$
+  वर संपणारी उप-सिद्धता~$\delta_1$ असते.
+  $M$ हा रेडेक्स असेल, तर~$\delta_1$ वर रूपांतरण
+  लागू होते. ~$\delta_1$ ला न्यूनीकरण लावल्यावर
+  $\Gamma' \Sequent M' : B$ ची सिद्धता~$\delta_1'$
+  मिळते. \Log{tN3i} च्या रूपांतरणांची तपासणी केली,
+  तर~$M'$ हे~$M$ चे संकुचनफल आहे. ~$\delta$ मध्ये
+  $\delta_1$ च्या जागी~$\delta_1'$ ठेवल्यावर
+  $\Gamma \Sequent N' : A$ ची सिद्धता~$\delta'$
+  मिळते; येथे~$N$ मधील उपपद~$M$ च्या जागी~$M'$
+  ठेवल्यावर~$N'$ मिळते.
+
+  उदाहरणार्थ, \Intro{\land} नंतर
+  \Elim{\land} यासाठीचे न्यूनीकरण रूपांतरण घ्या:
+  \[
+  \bottomAlignProof
+  \AxiomC{}
+  \Deduce$\Gamma \fCenter N_1 : B_1$
+  \AxiomC{}
+  \Deduce$\Gamma \fCenter N_2 : B_2$
+  \RightLabel{\Intro{\land}}
+  \BinaryInf$\Gamma \fCenter \pair{N_1}{N_2} : B_1 \land B_2$
+  \RightLabel{\Elim{\land}[i]}
+  \UnaryInf$\Gamma \fCenter \proj{i}{\pair{N_1}{N_2}} : B_i$
+  \DisplayProof
+  \quad\redone\quad
+  \bottomAlignProof
+  \AxiomC{}
+  \Deduce$\Gamma \fCenter N_i : B_i$
+  \DisplayProof
+  \]
+  उजवीकडील सिद्धता चे सिद्धता-पद, म्हणजे~$\delta_1'$
+  हे~$N_i$ आहे. डावीकडील~($\delta_1$) सिद्धता
+  च्या $\proj{i}{\pair{N_1}{N_2}}$ या सिद्धता-पदावर
+  $\beta$-परिवर्तन लावल्यावर मिळणारे हेच फल आहे.
+
+  किंवा \Intro{\lif} नंतर \Elim{\lif} येणारे
+  अनुमान आणि त्यावर लागू होणारे न्यूनीकरण रूपांतरण घ्या:
+  \begin{multline*}
+  \bottomAlignProof
+  \AxiomC{$\delta_2$}
+  \Deduce$x: B_1, \Gamma \fCenter N : B_2$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter \lambd[\typeof{x}{B_1}][N] : B_1 \lif B_2$
+  \AxiomC{}
+  \RightLabel{$\delta_3$}
+  \Deduce$\Gamma \fCenter M : B_1$
+  \RightLabel{\Elim{\lif}}
+  \BinaryInf$\Gamma \fCenter (\lambd[\typeof{x}{B_1}][N] M) : B_2$
+  \DisplayProof
+  \quad\redone\\
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_3$}
+  \Deduce$\Gamma \fCenter M : B_1$
+  \RightLabel{$\Subst{\delta_2}{\delta_3}{x:B_1}$}
+  \Deduce$\Gamma \fCenter \Subst{N}{M}{x} : B_2$
+  \DisplayProof
+  \end{multline*}
+  पुन्हा उजवीकडील सिद्धता चे सिद्धता-पद हे
+  डावीकडील सिद्धता च्या सिद्धता-पदाचे
+  $\beta$-न्यूनीकरण केल्यावर मिळणारेच फल आहे.
+  अर्थात, ~$\delta_2$ च्या उंचीवर विगमन करून पुढील
+  गोष्ट काळजीपूर्वक तपासावी लागेल:~$\delta_2$
+  मधील $\Gamma' \Sequent x:B_1$ या रूपातील सर्व
+  स्वयंसिद्धकांच्या जागी $\Gamma \Sequent M:B_1$
+  ची सिद्धता~$\delta_3$ ठेवल्यास खरोखर
+  $\Gamma \Sequent \Subst{N}{M}{x} : B_2$
+  ची सिद्धता~$\Subst{\delta_2}{\delta_3}{x:B_1}$
+  मिळते.
+\end{proof}
+हे प्रतिस्थापन करताना बद्ध चलांना आधी सुरक्षित नवी
+नावे द्यायची आणि संबंधित खुणांनी बांधलेली स्वयंसिद्धकेच
+बदलायची. येथे संदर्भ वाढवता येणारी \Log{tN3ip}
+पद्धत वापरतो. \Log{tN2ip} मध्ये वापरलेल्या गृहीतकांचा
+अचूक संच नोंदतो; शाखा किंवा न वापरलेले आदान गळल्यास
+तो संच कमी होऊ शकतो, म्हणून तिथे तोच अचूक संदर्भ
+राहतो असा दावा नाही.
+
+सिद्धता आणि $\lambd$-पदे यांतील निकटच्या
+अनुरूपतेचा आणखी एक परिणाम आहे. संदर्भ~$\Gamma$
+च्या सापेक्ष~$A$ या प्रकाराचे $\lambd$-पद~$N$
+मध्ये रेडेक्स~$M$ असेल (म्हणजे ते सामान्य रूपात
+नसेल), तर $\Gamma \Sequent N : A$ ची अनुरूप
+\Log{tN3i} सिद्धता~$\delta$ यात
+$\Gamma' \Sequent M: B$ वर संपणारी अशी
+उप-सिद्धता असते की तिच्यावर रूपांतरण लागू होते.
+संकुचनफलाने~$M$ बदलून $N \redone N'$ होत असेल,
+तर~$\delta$ ला न्यूनीकरण लावून
+$\Gamma \Sequent N' : A$ ची सिद्धता मिळते.
+म्हणून सामान्य रूपात नसलेले प्रत्येक $\lambd$-पद
+दुसऱ्या पदात अनुरूप रूपांतरणाने न्यूनीत होते. या गुणधर्माला
+\emph{प्रगती} म्हणतात.
+येथील ‘सामान्य’ याचा अर्थ घोषित रूपांतरण लागू
+नसलेले पद असा आहे. खुले सामान्य पद हे मूल्याच्या
+नेहमीच्या संगणकीय रूपात असतेच, किंवा प्रत्येक टप्प्यावर
+फक्त मुख्य बीटा-पायरी लागू होतेच, असा दावा नाही.
+
+प्रगती आणि प्रकार-संरक्षण मिळून $\lambd$-पदांचे
+घोषित पद-न्यूनीकरण ``अडकत'' नाही याची खात्री देतात:
+एखादे पद योग्य प्रकाराचे असेल आणि सामान्य रूपात
+नसेल, तर ते दुसऱ्या योग्य प्रकाराच्या पदात न्यूनीत
+होते (आणि त्या पदाचा प्रकारही तोच असतो).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सामान्यीकरण}\label{int:pty:nor:sec}
+
+या विभागात योग्य प्रकाराच्या सिद्धता-पदांना सामान्य रूप
+मिळते हे दाखवू. यासाठी आधी सिद्ध केलेले नैसर्गिक
+निगमनाचे सामान्यरूपीकरण प्रमेय आणि विधाने-हे-प्रकार
+अनुरूपता वापरू. येथे पूर्ण सामान्यरूपीकरणासाठी
+न्यूनीकरणासह आवश्यक क्रमपरिवर्तन आणि असत्याच्या
+सरलीकरणाचे अनुरूप पद-रूपांतरणही धरतो; फक्त तीन
+मुख्य $\beta$-नियम पुरेसे असल्याचा दावा नाही.
+
+प्रथम पदांची गुंतागुंत मोजणारी काही फलने परिभाषित करू.
+सूत्रांची \emph{लांबी}~$\len{A}$ पुढीलप्रमाणे:
+\begin{align*}
+  \len{p} &= 0\\
+  \len{A \land B} &= \len{A} + \len{B} + 1\\
+  \len{A \lor B} &= \len{A} + \len{B} + 1 \\
+  \len{A \lif B} &= \len{A} + \len{B} + 1.
+\end{align*}
+मुख्य $\beta$-रेडेक्स~$M$ ची गुंतागुंत त्याच्या \emph{कट-कोटी}ने,
+म्हणजे~$\cutrank{M}$ ने मोजतो:
+\begin{align*}
+  \cutrank{(\lambd[\typeof{x}{A}][\typeof{N}{B}])Q} &=
+  \len{A} + \len{B} + 1 \\
+  \cutrank{\ande{i}{\andi{\typeof{M}{A}}{\typeof{N}{B}}}} &=
+  \len{A} + \len{B} + 1 \\
+  \cutrank{\ore{\inj[A_{3-i}]{i}{\typeof{M}{A_i}}}
+    {\typeof{x_1}{A_1}}{\typeof{N_1}{C}}
+    {\typeof{x_2}{A_2}}{\typeof{N_2}{C}}} &=
+  \len{A_1} + \len{A_2} + 1
+\end{align*}
+या तीन मुख्य बीटा-प्रकारांसाठी सिद्धता-पदाची
+गुंतागुंत त्यातील सर्वाधिक गुंतागुंतीच्या रेडेक्सने मोजतो;
+असे रेडेक्स नसतील, तर ती~$0$ असते. हा मापदंड
+क्रमपरिवर्तन किंवा असत्याच्या सरलीकरणाचे मोजमाप नाही:
+\[
+  \maxrank{M} = \max \{\cutrank{N} | N \text{ हे उपपद आहे } M \text{ आणि रेडेक्स आहे}\}
+\]
+अणुरूप प्रकार आणि~$\lfalse$ यांची लांबी~$0$ धरतो.
+वरील महत्तम मूल्य घेण्यासाठीचा संच रिकामा असेल, तर व्याख्येने
+$\maxrank{M}=0$ घेतो.
+बेरीज-प्रकाराच्या पदात~$\inj[A_{3-i}]{i}{M}$ वापरतो:
+$M$ चा प्रकार~$A_i$ आहे आणि वरची प्रकार-खूण
+निवडला न गेलेला दुसरा प्रकार सांगते. त्यामुळे पूर्ण
+प्रकार~$A_1\lor A_2$ मिळतो, प्रकार-तक्त्याप्रमाणे.
+
+\begin{lem}\label{int:pty:nor:lem:subst}
+  $\Subst{M}{\typeof{N}{A}}{\typeof{x}{A}}$ हा मुख्य बीटा-रेडेक्स असेल
+  आणि $M \not\ident x$ असेल, तर पुढीलपैकी एक शक्यता असते:
+  \begin{enumerate}
+  \item $M$ स्वतः रेडेक्स आहे; किंवा
+  \item $M$ चे रूप $\ande{i}{x}$ आणि $N$ चे रूप
+    $\andi{P_1}{P_2}$ आहे;
+  \item $M$ चे रूप $\ore{x}{x_1}{P_1}{x_2}{P_2}$ आणि $N$ चे
+    रूप $\inj{i}{Q}$ आहे;
+  \item $M$ चे रूप $x Q$ आणि $N$ चे रूप
+    $\lambd[x][P]$ आहे.
+  \end{enumerate}
+  पहिल्या बाबतीत $\cutrank{\Subst{M}{N}{x}} = \cutrank{M}$;
+  इतर बाबतींत $\cutrank{\Subst{M}{N}{x}} = \len{A}$.
+\end{lem}
+\begin{proof}
+  ~$M$ वर विगमनाने सिद्ध करू.
+  \begin{enumerate}
+  \item $M$ हे एकच चर $y$ असेल आणि $y \not\ident x$ असेल,
+    तर $\Subst{y}{N}{x}$ हे $y$ आहे; म्हणून ते रेडेक्स नाही.
+  \item $M$ चे रूप $\andi{N_1}{N_2}$, किंवा $\lambd[x][N]$,
+    किंवा $\ori{i}{A}{N}$ असेल, तर
+    $\Subst{M}{\typeof{N}{A}}{\typeof{x}{A}}$ चेही तेच
+    रूप असते; म्हणून ते रेडेक्स नसते.
+  \item $M$ चे रूप $\ande{i}{P}$ असेल, तर दोन बाबी पाहू.
+    \begin{enumerate}
+      \item $P$ चे रूप $\andi{P_1}{P_2}$ असेल, तर
+        $M \ident \ande{i}{\andi{P_1}{P_2}}$ हा रेडेक्स आहे;
+        आणि स्पष्टच,
+        \[
+        \Subst{M}{N}{x} \ident
+        \ande{i}{\andi{\Subst{P_1}{N}{x}}{\Subst{P_2}{N}{x}}}
+        \]
+        हाही रेडेक्स आहे. दोघांच्या कट-कोटी समान आहेत.
+      \item $P$ एकच चर असेल, तर प्रतिस्थापनाने रेडेक्स
+        मिळण्यासाठी तो~$x$ असलाच पाहिजे, आणि~$N$ चे रूप
+        $\andi{P_1}{P_2}$ असले पाहिजे. आता
+        \[
+        \Subst{M}{N}{x} \ident \Subst{\ande{i}{x}}{\andi{P_1}{P_2}}{x},
+        \]
+        विचारात घ्या. हे $\ande{i}{\andi{P_1}{P_2}}$ आहे.
+        त्याची कट-कोटी $\cutrank{\ande{i}{\andi{P_1}{P_2}}}$
+        म्हणजेच $\len{A}$ आहे.
+    \end{enumerate}
+  \end{enumerate}
+  $\ore{N}{x_1}{N_1}{x_2}{N_2}$ आणि $P Q$ या बाबीही
+  अशाच प्रकारच्या आहेत.
+\end{proof}
+येथील प्रतिस्थापन मुक्त चलांना बद्ध होऊ न देता करायचे;
+आवश्यकतेनुसार बद्ध चलांना आधी नवी नावे द्यायची.
+नवीन रेडेक्सच्या वर्गीकरणात बदललेल्या पदाच्या
+मुळाशी असलेला रेडेक्स विचारात घेतला आहे, सर्व
+आतील रेडेक्स नव्हेत. $\abort{B}{P}$ चे मूळ
+तीन मुख्य बीटा-रेडेक्सपैकी कोणतेही नसते.
+
+\begin{lem}
+  $M$ या मुख्य बीटा-रेडेक्सचे $M'$ मध्ये संकुचन होत असेल आणि~$M$ च्या प्रत्येक
+  योग्य रेडेक्स उपपद~$N$ साठी
+  $\cutrank{M} > \cutrank{N}$ असेल, तर
+  $\cutrank{M} > \maxrank{M'}$.
+\end{lem}
+
+\begin{proof}
+  बाबींनुसार सिद्ध करू.
+  \begin{enumerate}
+  \item $M$ चे रूप $\ande{i}{\andi{M_1}{M_2}}$ असेल, तर
+    $M'$ हे $M_i$ आहे. $M_i$ चे कोणतेही उपपद हे~$M$ चे
+    योग्य उपपदही असल्यामुळे दावा सिद्ध होतो.
+  \item $M$ चे रूप
+    $(\lambd[\typeof{x}{A}][N])\typeof{Q}{A}$ असेल,
+    तर $M'$ हे $\Subst{N}{\typeof{Q}{A}}{\typeof{x}{A}}$
+    आहे. $M'$ मधील रेडेक्स घ्या. एकतर तो~$Q$ च्या बसवलेल्या प्रतीत आहे; अशा वेळी
+    त्याची कट-कोटी गृहीतकामुळे मूळ~$M$ पेक्षा कमी आहे.
+    अन्यथा~$N$ मध्ये त्याला
+    अनुरूप व समान कट-कोटीचा रेडेक्स आहे; गृहीतकामुळे ती
+    कट-कोटी $\cutrank{M}$ पेक्षा कमी आहे. अन्यथा त्याची
+    कट-कोटी $\len{A}$ आहे; व्याख्येनुसार ती
+    $\cutrank{(\lambd[x^{A}][N])Q}$ पेक्षा कमी आहे.
+  \item $M$ चे रूप
+    \[
+    \ore{\inj[A_{3-i}]{i}{\typeof{N}{A_i}}}
+        {\typeof{x_1}{A_1}}{\typeof{N_1}{C}}
+        {\typeof{x_2}{A_2}}{\typeof{N_2}{C}},
+    \]
+    असेल, तर $M' \ident \Subst{N_i}{N}{\typeof{x_i}{A_i}}$.
+    ~$M'$ मधील रेडेक्स घ्या. एकतर तो बसवलेल्या~$N$ च्या प्रतीत आहे; अशा वेळी
+    गृहीतकामुळे त्याची कट-कोटी मूळ~$M$ पेक्षा कमी आहे.
+    अन्यथा~$N_i$ मध्ये त्याला
+    अनुरूप व समान कट-कोटीचा रेडेक्स आहे; गृहीतकामुळे ती
+    कट-कोटी $\cutrank{M}$ पेक्षा कमी आहे. अन्यथा त्याची
+    कट-कोटी $\len{A_i}$ आहे; व्याख्येनुसार ती
+    $\cutrank{\ore{\inj[A_{3-i}]{i}{\typeof{N}{A_i}}}
+      {\typeof{x_1}{A_1}}{\typeof{N_1}{C}}
+      {\typeof{x_2}{A_2}}{\typeof{N_2}{C}}}$ पेक्षा कमी आहे.
+  \end{enumerate}
+\end{proof}
+
+\begin{thm}
+  प्रत्येक योग्य प्रकाराचे सिद्धता-पद पूर्ण सामान्यरूपीकरणाच्या
+  अनुरूप पद-रूपांतरणांनी सामान्य रूपात न्यूनीत करता येते;
+  प्रत्येक अंतःप्रज्ञावादी निष्पत्ती सामान्य निष्पत्तीमध्ये न्यूनीत करता येते.
+\end{thm}
+
+\begin{proof}
+  नैसर्गिक निगमनाच्या सामान्यरूपीकरण प्रकरणातील
+  \ref{pt:nor:thm:thm:normalization-N2i} वापरू.
+  योग्य प्रकाराच्या~$M$ साठी त्याची प्रकार-सिद्धता घ्या.
+  अनावश्यक संदर्भ-गृहीतके काढून आणि बद्ध चलांची नावे
+  सुरक्षित ठेवून तिच्याशी अनुरूप \Log{N2i}-सिद्धता
+  मिळते. तिचे सामान्यरूप करा.
+
+  प्रत्येक रूपांतरणाला पुन्हा सिद्धता-पदे द्या. मुख्य
+  रूपांतरणे म्हणजे येथे दिलेले फलन, गुणाकार आणि बेरीज
+  प्रकारांचे बीटा-नियम. वियोग-निरसनापुढील निरसन आत
+  हलवणे हे संबंधित क्रमपरिवर्तन आहे; त्यात बद्ध चल
+  आत हलवलेल्या पदांच्या मुक्त चलांपासून नवे ठेवायचे.
+  \FalseInt{} च्या सरलीकरणासाठीही त्या प्रकरणातील
+  रूपांतरणाची अनुरूप पद-आवृत्ती घ्यायची. यामुळे मूळ
+  पदापासून सामान्य सिद्धतेच्या पदापर्यंत सांत क्रम मिळतो.
+  अंतिम पदात लागू होणारे रूपांतरण असते, तर अंतिम
+  सिद्धता सामान्य नसती. आवश्यकतेनुसार उरलेला संदर्भ
+  पुन्हा वाढवून \Log{tN3ip} मध्ये मूळ प्रकार जपता येतो.
+
+  म्हणून दोन्ही दावे मिळतात. वरचा रेडेक्स-मापदंड
+  एकटाच संपूर्ण सिद्धता देत नाही: एका उपपदाचे संकुचन
+  बाहेरच्या संदर्भात नवा रेडेक्स उघडू शकते; विशेषतः
+  वियोग-निरसनाच्या निष्कर्षाचा प्रकार त्याच्या वियोगाच्या
+  प्रकारापेक्षा मोठा असू शकतो. म्हणून नुसती महत्तम
+  कट-कोटीच्या रेडेक्सांची संख्या घटते असे गृहीत धरलेले नाही.
+\end{proof}
+
+प्रकारयुक्त $\lambd$-पदांचे सामान्यीकरण होते याचा अर्थ
+अशा प्रत्येक पदाला \emph{सामान्य रूप मिळते}. $\lambd$-पदांचे
+सामान्य रूपापर्यंत $\beta$-न्यूनीकरण करणे म्हणजे संगणन चालवणे,
+आणि सामान्य रूप म्हणजे त्याचे मूल्य, असे मानल्यास वरच्या पूर्ण सामान्यरूपीकरणाच्या पद्धतीने प्रत्येक
+योग्य प्रकाराचे पद अखेरीस सामान्य रूपात पोहोचते.
+शिवाय प्रकार-संरक्षणामुळे त्या मूल्याचा प्रकार योग्य असतो.
+उदाहरणार्थ,~$N$ चा प्रकार $A \lif B$ असेल
+(म्हणजे ते प्रकार~$A$ च्या आर्ग्युमेंटवर चालणारे आणि
+प्रकार~$B$ चे मूल्य देणारे फलन असेल) आणि प्रकार~$A$
+च्या~$M$ या पदावर (निवेशावर) ते लावले, तर $(NM)$ चे
+$N'$ या पदात (निर्गमात) न्यूनीकरण होते आणि त्या निर्गमाचा
+प्रकार~$B$ असेल याची हमी मिळते.
+
+मुख्य बीटा-न्यूनीकरणासाठी प्रकारयुक्त $\lambd$-कलनाचा
+आणखी एक गुणधर्म खरा आहे: बीटा-पायऱ्या कोणत्याही क्रमाने
+लावल्या तरी योग्य प्रकाराच्या पदातून अनंत क्रम मिळत नाही.
+याला \emph{प्रबळ सामान्यीकरण} म्हणतात. हा अधिक बलवान
+परिणाम येथे स्वतंत्रपणे सिद्ध केलेला नाही; वरचे प्रमेय
+एका पूर्ण सामान्यरूपीकरण-क्रमाचे अस्तित्व देते.
+खालील संगमशीलतेचा विचार मुख्य बीटा-न्यूनीकरणाचा आहे;
+सर्व वाढीव क्रमपरिवर्तनांचे स्वतंत्र संगमशीलता-प्रमाणपत्र नाही.
+
+संगणन चालवण्याच्या वेगवेगळ्या पद्धतींनी \emph{तेच}
+मूल्य मिळते हे कसे कळते? आतापर्यंत (प्रकार-संरक्षणामुळे)
+एवढेच माहीत आहे की मिळालेल्या सर्व मूल्यांचा प्रकार एकच
+असतो. प्रकारयुक्त $\lambd$-कलनाला आणखी एक महत्त्वाचा
+गुणधर्म आहे: ते \emph{संगमशील}, म्हणजे त्याला
+\emph{चर्च–रॉसर गुणधर्म} आहे. $N \red N_1$ आणि
+$N \red N_2$ असतील, तर एखादे पद~$N'$ असे असते की
+$N_1 \red N'$ आणि $N_2 \red N'$. लक्षात ठेवा की
+$N \red N'$ याचा अर्थ $\redone$-न्यूनीकरणाच्या
+शून्य किंवा अधिक पायऱ्यांनी~$N'$ मिळते.
+$N_1$ सामान्य रूपात असेल, तर $N_1 \red N'$ असणारे
+एकमेव पद~$N'$ म्हणजे~$N_1$ स्वतःच (शून्य
+$\redone$-न्यूनीकरण पायऱ्यांनी). त्यामुळे~$N_1$ आणि
+$N_2$ दोन्ही सामान्य रूपात असतील, तर $N_1 = N' = N_2$.
+दुसऱ्या शब्दांत, $\redone$ प्रबळ सामान्यीकारी असल्यामुळे
+पद न्यूनीत करण्याची प्रत्येक पद्धत अखेरीस सामान्य रूप देते.
+$\red$ ला चर्च–रॉसर गुणधर्म असल्यामुळे कोणतीही दोन
+सामान्य रूपे समान असतात. म्हणून प्रकारयुक्त
+$\lambd$-कलनातील संगणन नेहमी थांबते आणि ते कसेही
+चालवले तरी मिळणारे मूल्य (सामान्य रूप) तेच असते.
+
+संबंध संगमशील आहे हे सिद्ध करणे सहसा अवघड असते.
+तथापि, पुढील दुर्बल अट सहज सिद्ध करता येते:
+
+\begin{prop}[दुर्बल चर्च–रॉसर गुणधर्म]
+$N \redone N_1$ आणि $N \redone N_2$ असतील, तर एखादे
+पद~$N'$ असे असते की $N_1 \red N'$ आणि $N_2 \red N'$.
+\end{prop}
+
+\begin{proof}
+  $N$ मधील रेडेक्स~$M_1$ किंवा~$M_2$ त्याच्या संकुचनफलाने
+  बदलल्यास अनुक्रमे~$N_1$ किंवा~$N_2$ मिळतात.
+  $M_1$ आणि~$M_2$ हे~$N$ चे उपपद असल्याने त्यांचे
+  अंशतः छेदन होऊ शकत नाही. म्हणजे एक रेडेक्स दुसऱ्याचे
+  उपपद असेल, किंवा ते~$N$ मधील वेगवेगळ्या न छेदणाऱ्या
+  स्थानी असतील. दुसरी बाब घ्या:~$N$ चे रूप $N(M_1,M_2)$
+  आहे. $M_1$ च्या जागी त्याचे संकुचनफल~$M_1'$ ठेवल्यास
+  $N(M_1',M_2)$ हे~$N_1$ मिळते; $M_2$ च्या जागी त्याचे
+  संकुचनफल~$M_2'$ ठेवल्यास $N(M_1,M_2')$ हे~$N_2$
+  मिळते. दोघांचेही $N(M_1',M_2')$ मध्ये न्यूनीकरण होते.
+  दुसऱ्या बाबतीत~$M_2$ हे~$M_1$ चे उपपद आहे असे माना
+  (उलट बाब सममित आहे), आणि~$M_1$ कोणत्या प्रकारचा
+  रेडेक्स आहे यानुसार बाबी वेगळ्या करा. उदाहरणार्थ,
+  $M_1 \ident \proj{1}{\pair{O_1}{O_2}}$ असेल, तर त्याचे
+  $O_1$ मध्ये न्यूनीकरण होते. $M_2$ हे~$O_1$ चे उपपद
+  असेल, तर~$M_2$ चे परिवर्तन केल्यावर~$O_1'$ मिळते.
+  म्हणून आधी~$M_1$ आणि नंतर~$M_2$ चे परिवर्तन केल्यावर
+  $O_1'$ मिळते. पण आधी~$M_2$ चे परिवर्तन केल्यावर
+  $\proj{1}{\pair{O_1'}{O_2}}$ मिळते, आणि त्याचेही
+  $O_1'$ मध्ये न्यूनीकरण होते.
+\end{proof}
+दोन्ही निवडी तोच रेडेक्स असतील, तर निष्कर्ष तत्काळ
+मिळतो. वरील गुणाकार उदाहरणात~$M_2$ हे~$O_2$ मध्ये
+असेल, तर दोन्ही क्रम~$O_1$ येथे मिळतात. फलनाच्या
+बीटा-रेडेक्समध्ये आतील पायरी देहात असेल, तर
+प्रतिस्थापनानंतर ती अनुरूप स्थानी लावायची; ती आदानात
+असेल, तर बसवलेल्या सर्व प्रतींत लावायची, किंवा आदान
+वापरले नसेल, तर शून्य पायऱ्या घ्यायच्या. बेरीज-प्रकारात
+निवडलेल्या शाखेसाठी हाच युक्तिवाद लागू होतो; टाकलेल्या
+शाखेतील पायरीची गरज उरत नाही. सुरक्षित प्रतिस्थापन
+आणि बद्ध चलांची सुसंगत नावे वापरल्याने सामायिक पद
+मिळते. पदांची समानता येथे बद्ध-चल नावबदलापर्यंत आहे.
+
+\begin{lem}[न्यूमनची प्रमेयिका]
+$\redone$ प्रबळ सामान्यीकारी असेल आणि त्याला दुर्बल
+चर्च–रॉसर गुणधर्म असेल, तर त्याचा शून्य किंवा अधिक पायऱ्यांचा संबंध~$\red$ संगमशील आहे.
+\end{lem}
+
+\begin{proof}
+  $\redone$ प्रबळ सामान्यीकारी असल्यामुळे प्रत्येक पूर्ण
+  न्यूनीकरण-क्रम सामान्य रूपात संपतो. सामान्य रूपे एकमेव असणे आणि
+  $\red$ संगमशील असणे या सममूल्य अटी आहेत. म्हणून एखाद्या
+  पद~$N$ ला~$N'$ आणि~$N''$ ही दोन वेगळी सामान्य रूपे
+  आहेत असे माना; ती पुढील न्यूनीकरण-क्रमांनी मिळतात:
+  \begin{align*}
+  N & \redone N_1' \redone N_2' \redone \dots \redone N_k' = N' \text{ आणि}\\
+  N & \redone N_1'' \redone N_2'' \redone \dots \redone N_l'' = N''
+  \end{align*}
+  (न्यूनीकरण-क्रमाची लांबी $>0$ असलीच पाहिजे, अन्यथा
+  $N$ आधीच सामान्य रूपात असेल.)
+
+  $N_1' = N_1''$ असेल, तर त्याला दोन वेगळी सामान्य रूपे
+  ($N'$ आणि $N''$) आहेत. $N_1' \neq N_1''$ असेल, तर
+  दुर्बल चर्च–रॉसर गुणधर्मामुळे एखादे~$N'''$ असे आहे की
+  $N_1' \red N'''$ आणि $N_1'' \red N'''$.
+  $N' \neq N''$ असल्यामुळे $N''' \neq N'$ किंवा
+  $N''' \neq N''$ यांपैकी किमान एक अट खरी आहे.
+  निर्णायक मुद्दा असा: प्रबळ सामान्यीकरणामुळे या सामायिक
+  पदाला एक सामान्य रूप मिळते. ते मूळ दोन वेगळ्या सामान्य
+  रूपांपैकी किमान एकापेक्षा वेगळे असते. त्यामुळे~$N_1'$
+  किंवा~$N_1''$ यांपैकी एकाला दोन वेगळी
+  सामान्य रूपे आहेत. आपण दाखवले की~$N$ ला दोन वेगळी
+  सामान्य रूपे असतील, तर एखादे~$N_1$ असे आहे की
+  $N \redone N_1$ आणि~$N_1$ लाही दोन वेगळी सामान्य रूपे
+  आहेत. ही प्रक्रिया पुढे चालू ठेवून
+  $N \redone N_1 \redone N_2 \redone \dots$ असा क्रम
+  मिळेल; पण $\redone$ प्रबळ सामान्यीकारी असल्यामुळे
+  हे अशक्य आहे.
+\end{proof}
+
+
+

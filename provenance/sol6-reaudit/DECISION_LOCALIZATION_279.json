@@ -1,0 +1,163 @@
+{
+  "id": "SOL6-A279",
+  "record_kind": "workflow_repair",
+  "source_choice": false,
+  "finding": "Current rationale_mr records250–274 remained English; three new, uncompiled biography disclosure comments had joined words/date spacing.",
+  "repair": "Localize the24 directly inspected current rationales and copyedit only the three disclosure comments. Rebind actual target and segment hashes; preserve original dated receipts and prior public journal/target witnesses.",
+  "rationale_changes": [
+    {
+      "id": "SOL6-A250",
+      "previous_rationale": "Complete the remaining Marathi iff in the recalled equinumerosity definition. All formulas, definitions, historical qualifications and the Cantor principle remain unchanged; no optional proof expansion.",
+      "current_rationale_mr": "समान संख्याबलाच्या पुन्हा दिलेल्या व्याख्येतील उरलेले तेव्हा आणि केवळ तेव्हाच हे द्विपक्षीय शब्दरूप पूर्ण केले. सूत्रे, व्याख्या, ऐतिहासिक मर्यादा आणि कांटोरचे तत्त्व जपले; वैध सिद्धतेत ऐच्छिक विस्तार घातला नाही."
+    },
+    {
+      "id": "SOL6-A251",
+      "previous_rationale": "Complete two Marathi iff locutions for initial ordinal cardinal and inherited membership order. The explicit Well-Ordering assumption, least-ordinal construction and concise valid proofs are retained. No extra bridge or exercise solution is introduced.",
+      "current_rationale_mr": "आरंभीचे क्रमसूचक म्हणून संख्याबल आणि सदस्यत्वाचा वारशाने मिळालेला क्रम यांच्या दोन व्याख्यांतील द्विपक्षीय शब्दरूप पूर्ण केले. स्पष्ट सुक्रमण गृहीतक, किमान क्रमसूचकाची रचना आणि वैध संक्षिप्त सिद्धता जपली; अतिरिक्त सिद्धतादुवा किंवा सरावाचे उत्तर दिले नाही."
+    },
+    {
+      "id": "SOL6-A252",
+      "previous_rationale": "Complete five Marathi iff locutions. Retain the required prior correction from A is not a natural number to A is not finite. Finite/infinite, union-of-cardinals and no-largest-cardinal arguments are valid under the explicit ZFC background; no optional expansion.",
+      "current_rationale_mr": "पाच द्विपक्षीय शब्दरूपे पूर्ण केली. A नैसर्गिक संख्या नाही या चुकीच्या मूळ विधानाऐवजी A सांत नाही ही आवश्यक आधीची दुरुस्ती जपली. स्पष्ट ZFC पार्श्वभूमीत सांत/असांत भेद, संख्याबलांचा संघ आणि सर्वाधिक संख्याबल नसण्याचे तर्क योग्य आहेत; ऐच्छिक विस्तार नाही."
+    },
+    {
+      "id": "SOL6-A253",
+      "previous_rationale": "Complete the one remaining prose iff, translate in effect as वस्तुतः rather than of course, and localize the same part/book/section citation locator. The source numbers/order are preserved. Type distinction, impredicative scope, formulas and finite-object construction remain unchanged; no new historical or consistency certification.",
+      "current_rationale_mr": "उरलेले द्विपक्षीय शब्दरूप पूर्ण केले, in effect यासाठी अर्थातच ऐवजी वस्तुतः वापरले आणि तेच भाग/पुस्तक/विभाग निर्देशांक मराठीत दिले. मूळ क्रमांक व क्रम जपले. प्रकारभेद, impredicative व्याप्ती, सूत्रे आणि सांत वस्तूंची रचना बदललेली नाही; नवीन ऐतिहासिक किंवा सुसंगतता प्रमाणीकरण नाही."
+    },
+    {
+      "id": "SOL6-A254",
+      "previous_rationale": "Correct only 1 August 1995 to 11 August 1995, independently confirmed in Enderton, In Memoriam: Alonzo Church 1903-1995, BSL1(4), printed488 first paragraph, DOI10.1017/S1079898600008040. Preserve all other biography text and citations. The current reading paragraph already distinguishes lambda calculus, Church thesis and the decision problem; OLI-HIST-CHURCH-THESIS-LABEL / OLINC-308 is retained as already correct, not rewritten. Frozen English witness remains unchanged.",
+      "current_rationale_mr": "फक्त 1 ऑगस्ट 1995 हा दिनांक 11 ऑगस्ट 1995 केला. Enderton यांच्या चर्च स्मृतिलेखातील छापील पृष्ठ488च्या पहिल्या परिच्छेदात हा दिनांक स्वतंत्रपणे पडताळला; DOI10.1017/S1079898600008040. इतर चरित्रमजकूर व संदर्भ जपले. विद्यमान वाचनपरिच्छेद लॅम्डा कलन, चर्च यांचा सिद्धांत आणि निर्णय समस्या वेगळे सांगतो; OLINC-308 आधीच योग्य असल्याने पुन्हा लिहिला नाही. गोठवलेला इंग्रजी साक्षी बदललेला नाही."
+    },
+    {
+      "id": "SOL6-A255",
+      "previous_rationale": "Complete the remaining iff in infinite-cardinal absorption by one. The basic disjoint-sum, Cartesian-product and function-space definitions, characteristic-function proof, earlier cardinal-power notation repair and intended exercises are retained.",
+      "current_rationale_mr": "असांत संख्याबलात एक शोषले जाण्याच्या विधानातील उरलेले द्विपक्षीय शब्दरूप पूर्ण केले. विच्छिन्न बेरीज, कार्तीय गुणाकार व फलनावकाशाच्या व्याख्या, अभिलक्षणी फलनाची सिद्धता, आधीची संख्याबल-घाताची संकेतदुरुस्ती आणि नियोजित सराव जपले."
+    },
+    {
+      "id": "SOL6-A257",
+      "previous_rationale": "Complete the one canonical-order iff. The max/first/second-coordinate order, least-counterexample cardinal-square proof and cardinal union estimate are valid. The existing finite-segment case and explicit Choice footnote are retained without a new proof expansion.",
+      "current_rationale_mr": "मानक क्रमाच्या व्याख्येतील एक द्विपक्षीय शब्दरूप पूर्ण केले. अधिकतम/पहिला/दुसरा घटक यांचा क्रम, किमान प्रतिउदाहरणावर आधारित संख्याबल-वर्गाची सिद्धता आणि संख्याबल-संघाची मर्यादा योग्य आहेत. आधीचे सांत खंडाचे प्रकरण व स्पष्ट निवडीची तळटीप जपली; नवीन सिद्धताविस्तार नाही."
+    },
+    {
+      "id": "SOL6-A258",
+      "previous_rationale": "Remove the optional added explanation of strict growth and index uniqueness: the original normal-sequence definitions already support the concise valid argument. Retain the necessary omega base case and restriction of the induction/union to infinite cardinals, and the earlier nonzero-exponent GCH qualification. No source theorem is retracted and no exercise is solved.",
+      "current_rationale_mr": "काटेकोर वाढ आणि निर्देशांकाची एकमेवता यांचा ऐच्छिक अतिरिक्त खुलासा काढला; मूळ सामान्य अनुक्रमाच्या व्याख्यांवरून वैध संक्षिप्त तर्क आधीच उपलब्ध आहे. आवश्यक omega आधारप्रकरण, विगमन/संघाची असांत संख्याबलापुरती व्याप्ती आणि GCH मधील अशून्य घाताची आधीची अट जपली. मूळ प्रमेय मागे घेतले नाही; सराव सोडवला नाही."
+    },
+    {
+      "id": "SOL6-A259",
+      "previous_rationale": "Remove the optional cofinality sentence added to an already valid displayed normal-function continuity argument. Localize the two unchanged Boolos page locators. Preserve the necessary successor-cardinal seed repair preventing constant iteration, the zero-index range exception and the exact stage-cardinality arguments. No new proof exposition or historical certification.",
+      "current_rationale_mr": "सामान्य फलनाच्या सातत्याच्या आधीच वैध असलेल्या प्रदर्शित तर्कातील ऐच्छिक सहअंत्यता वाक्य काढले. Boolosचे तेच दोन पृष्ठनिर्देश मराठीत दिले. पुनरावर्तन स्थिर होऊ नये म्हणून आवश्यक पुढील-संख्याबल बीज, शून्य निर्देशांकाची अपवादअट आणि टप्प्यांच्या संख्याबलांचे नेमके तर्क जपले; नवीन सिद्धताविस्तार किंवा ऐतिहासिक प्रमाणीकरण नाही."
+    },
+    {
+      "id": "SOL6-A260",
+      "previous_rationale": "Correct parameters from परिमिती to प्राचल, and localize the identical Potter chapters9--12 locator. The minimum-rank Scott construction, nonempty-base exception and explicitly restated representative comparison stay unchanged; no optional proof expansion.",
+      "current_rationale_mr": "parameters साठी चुकीचे परिमिती ऐवजी प्राचल वापरले आणि Potterचे तेच प्रकरण9–12 निर्देश मराठीत दिले. किमान कोटीची स्कॉट रचना, आधारसंच रिकामा नसण्याचा अपवाद आणि प्रतिनिधींची स्पष्टपणे पुन्हा मांडलेली तुलना जपली; ऐच्छिक सिद्धताविस्तार नाही."
+    },
+    {
+      "id": "SOL6-A261",
+      "previous_rationale": "Complete both choice-function iff statements, localize the identical Potter page243 locator and place the set x in its grammatical Marathi least-member expression. Retain the necessary nonempty-base, stopping-direction, pre-stop injectivity and actual Hartogs-bound repairs. No new proof step or historical certification.",
+      "current_rationale_mr": "निवडीच्या फलनाची दोन्ही द्विपक्षीय शब्दरूपे पूर्ण केली, Potterचा तोच पृष्ठ243 निर्देश मराठीत दिला आणि x संचाच्या किमान सदस्याच्या मराठी वाक्यात योग्य विभक्तिरूप केले. आवश्यक अरिक्त आधार, थांबण्याची योग्य दिशा, थांबण्यापूर्वीचे एकास-एकपण आणि प्रत्यक्ष हार्टॉग्स मर्यादेच्या दुरुस्त्या जपल्या; नवीन सिद्धतापायरी किंवा ऐतिहासिक प्रमाणीकरण नाही."
+    },
+    {
+      "id": "SOL6-A262",
+      "previous_rationale": "Withdraw optional empty-family and reindexing explanations from the already valid finite-choice and WLOG countable-union arguments. Preserve distinct finite members, corrected union subscript, needed zero-index counting case and the proved sufficiency rather than a converse. Localize identical Cohen/Russell page locators. Exact pre-withdrawal target bytes remain archived.",
+      "current_rationale_mr": "आधीच वैध असलेल्या सांत निवड आणि सर्वसाधारणता न गमावणाऱ्या गणनीय संघाच्या तर्कांमधील ऐच्छिक रिक्त-कुटुंब/पुनर्निर्देशांकन खुलासे काढले. वेगळे सांत सदस्य, संघाचा दुरुस्त अधोलिखित निर्देशांक, आवश्यक शून्य निर्देशांकाचे मोजणीप्रकरण आणि सिद्ध केलेली पर्याप्तता जपली; उलटी दिशा दावा केली नाही. Cohen/Russellचे तेच पृष्ठनिर्देश मराठीत दिले. काढण्यापूर्वीचे नेमके लक्ष्यबाइट्स जतन आहेत."
+    },
+    {
+      "id": "SOL6-A263",
+      "previous_rationale": "The source uses beth1 for the choiceless countable-union example after defining cardinal numbers as initial ordinals and beth1 via cardinal exponentiation under ZFC. In the cited Feferman-Levy example the reals need not be well-orderable, so that local ordinal-based notation is unavailable. Replace it with the actual primary relative-consistency statement about the real set, without changing either countable-union proof or asserting a converse to Countable Choice. General choiceless cardinal notation is not declared invalid.",
+      "current_rationale_mr": "स्थानिक व्याख्यांत संख्याबले आरंभीचे क्रमसूचक आहेत आणि beth1चे संख्याबल-घातांकन ZFC मध्ये केले आहे. निवड नसलेल्या गणनीय संघाच्या Feferman–Levy उदाहरणात वास्तविक संख्यांचा संच सुक्रमणयोग्य असेलच असे नाही; म्हणून त्या स्थानिक क्रमसूचक-आधारित संकेताचा वापर उपलब्ध नाही. त्याऐवजी प्राथमिक स्रोतातील वास्तविक संख्यांच्या संचाविषयीचे प्रत्यक्ष सापेक्ष-सुसंगतता विधान दिले. गणनीय संघाच्या दोन्ही सिद्धता बदलल्या नाहीत किंवा गणनीय निवडीची उलटी दिशा दावा केली नाही. सामान्य निवडरहित संख्याबल संकेत सर्वथा अवैध ठरवलेला नाही."
+    },
+    {
+      "id": "SOL6-A264",
+      "previous_rationale": "Localize only the identical Potter pages242--3 locator. Preserve the unsolved choice-set equivalence exercise, required outside-union exception in its range description, and the explicitly philosophical attempted justification.",
+      "current_rationale_mr": "फक्त Potterचा तोच पृष्ठ242–3 निर्देश मराठीत दिला. निवड-संच समतुल्यतेचा न सोडवलेला सराव, त्याच्या फलनप्राप्ती वर्णनातील आवश्यक संघाबाहेरील अपवाद आणि स्पष्टपणे तात्त्विक असलेला समर्थनप्रयत्न जपला."
+    },
+    {
+      "id": "SOL6-A265",
+      "previous_rationale": "Localize only the same Wagon theorem3.12 and pages66--7 locators. Retain the required three-dimensional positive-radius ball qualification and corrected tangent parentheses. The source discussion and historical attributions are translated; no fresh full Banach-Tarski or history certification.",
+      "current_rationale_mr": "फक्त Wagonचे तेच प्रमेय3.12 व पृष्ठ66–7 निर्देश मराठीत दिले. आवश्यक त्रिमितीय, धन त्रिज्येच्या चेंडूची अट आणि स्पर्शरेषेचे दुरुस्त कंस जपले. मूळ चर्चा व ऐतिहासिक श्रेयाचे भाषांतर आहे; नवीन संपूर्ण Banach–Tarski किंवा इतिहास प्रमाणीकरण नाही."
+    },
+    {
+      "id": "SOL6-A266",
+      "previous_rationale": "Complete three iff locutions in the orbit relation and sphere sketch and localize four identical theorem/page locators. All group formulas, orbit partition, countable equidecomposition and measure argument remain. No new exercise answer or proof expansion.",
+      "current_rationale_mr": "कक्षा-संबंध व गोलकाच्या आराखड्यातील तीन द्विपक्षीय शब्दरूपे पूर्ण केली आणि तेच चार प्रमेय/पृष्ठनिर्देश मराठीत दिले. गटाची सर्व सूत्रे, कक्षांचे विभाजन, गणनीय समानखंड-विभाजन आणि मापाचा तर्क जपला; नवीन सरावउत्तर किंवा सिद्धताविस्तार नाही."
+    },
+    {
+      "id": "SOL6-A267",
+      "previous_rationale": "Withdraw six optional explanations of rotation closure, doubled angles, action freeness, disjoint images and the final contradiction from valid concise source arguments. Retain required rational-turn rather than rational-radian group definition, zero-inverse exception, generating-set terminology, correct rotation index, finite nonnegative measure scope and fixed-measure meaning of unmeasurable. Retain the necessary two-generator restriction and warning that the sphere sketch omits fixed-point treatment; no full new sphere proof is inserted. Exact pre-withdrawal target bytes are archived.",
+      "current_rationale_mr": "मूळाच्या वैध संक्षिप्त तर्कांमध्ये घातलेले आवर्तन-बंदता, दुप्पट कोन, मुक्त क्रिया, विच्छिन्न प्रतिमा आणि अंतिम विरोधाभास यांविषयीचे सहा ऐच्छिक खुलासे काढले. गटाच्या व्याख्येत आवश्यक परिमेय फेरी विरुद्ध परिमेय रेडियन भेद, शून्य व्युत्क्रमाचा अपवाद, जनक-संचाचा शब्द, योग्य आवर्तन निर्देशांक, सांत ऋणेतर मापाची व्याप्ती आणि निश्चित मापाच्या संदर्भातील अमोजनीय अर्थ जपले. आवश्यक दोन जनकांची व्याप्ती आणि गोलकाच्या आराखड्यात स्थिर बिंदूंचे विवेचन गाळले असल्याची नोंद जपली; संपूर्ण नवीन गोलकसिद्धता घातली नाही. पूर्वीचे नेमके लक्ष्यबाइट्स जतन आहेत."
+    },
+    {
+      "id": "SOL6-A270",
+      "previous_rationale": "An operation takes mathematical input objects; its arguments are आदाने, not logical वितर्क. Remove the duplicated locative in the bracket-count proposition. Preserve all formulas, the necessary nonempty-prefix qualification, the compact structural proof and unsolved exercises. No optional proof expansion or fresh external/canon certification.",
+      "current_rationale_mr": "गणितीय क्रियेच्या arguments म्हणजे आदाने; तार्किक वितर्क नव्हेत. कंससंख्येच्या प्रतिज्ञेतील दुहेरी अधिकरणरूप काढले. सर्व सूत्रे, आवश्यक अरिक्त पूर्वखंडाची अट, संक्षिप्त रचनात्मक सिद्धता आणि न सोडवलेले सराव जपले. ऐच्छिक सिद्धताविस्तार किंवा नवीन बाह्य/मराठी कोश प्रमाणीकरण नाही."
+    },
+    {
+      "id": "SOL6-A272",
+      "previous_rationale": "The frozen biography says hospitalization began1894. The directly retrieved author chronology in Oliver Deiser, Einführung in die Mengenlehre, printed218, records a sanatorium stay in May1884. The Leopoldina member biography independently dates illness/repeated medical treatment from1884, and the Dauben1979 excerpt relates the first serious breakdown to a letter afterMay20,1884. Correct only this date in the body; retain the source-attributed causal narrative without adding a diagnosis or claiming complete medical-record review.",
+      "current_rationale_mr": "गोठवलेल्या चरित्रात रुग्णालयीन उपचारांची सुरुवात1894मध्ये म्हटली आहे. Oliver Deiser यांच्या थेट मिळवलेल्या कालक्रमात May1884मधील sanatoriumवास नोंदला आहे. Leopoldinaचा चरित्रपरिच्छेद1884पासून आजार/पुनरावर्ती उपचार सांगतो; Dauben1979चा उतारा May20,1884नंतरच्या पत्राशी मानसिक प्रकृती पहिल्यांदा गंभीररीत्या बिघडल्याची नोंद जोडतो, पण स्वतः रुग्णालयप्रवेश सिद्ध करत नाही. मुख्य मजकुरातील फक्त वर्ष दुरुस्त केले. स्रोताला श्रेय दिलेले कारणवर्णन जपले; नवीन निदान किंवा संपूर्ण वैद्यकीय नोंदींच्या पुनरावलोकनाचा दावा नाही."
+    },
+    {
+      "id": "SOL6-A273",
+      "previous_rationale": "The source ties the development of the two systems in these papers to1934. The publisher metadata for both original papers says receivedJuly21,1933 and published1935. Replace the unsupported1934 creation-year clause with the verified1935 publication statement. Preserve the1934 assistant appointment, titles, citation keys and1936 consistency statement; do not assign a new exact invention date or certify all biography claims.",
+      "current_rationale_mr": "मूळात दोन्ही निगमनपद्धतींच्या विकासाला1934शी जोडले आहे. दोन्ही मूळ लेखांच्या प्रकाशकनोंदीत प्राप्तिदिनांक21July1933 आणि प्रकाशनवर्ष1935आहे. अप्रमाणित1934निर्मितीवर्ष सांगण्याऐवजी निश्चित1935प्रकाशनवर्ष दिले.1934सहाय्यक नेमणूक, शीर्षके, संदर्भकिल्ल्या आणि1936सुसंगतता विधान जपले; नवीन नेमके शोधवर्ष ठरवले नाही किंवा संपूर्ण चरित्राचे प्रमाणीकरण केले नाही."
+    },
+    {
+      "id": "SOL6-A274",
+      "previous_rationale": "The source1929 doctoral-studies wording became a target statement that reads as completion of the doctorate itself. The University of Vienna history records the completed1929 dissertation, while its biographical entry and IAS degree record say PhD1930. Distinguish the two events and explicitly anchor the following one-year incompleteness chronology to the dissertation, preserving discovery1930/publication1931 rather than shifting the discovery to1931. No broader clinical or biographical certification.",
+      "current_rationale_mr": "मूळातील1929च्या doctoral studies पूर्ण करण्याचे संदिग्ध शब्द मराठीत डॉक्टरेट पदवी पूर्ण झाली असा अर्थ देत होते. व्हिएन्ना विद्यापीठाचे इतिहासवर्णन1929मध्ये प्रबंध पूर्ण झाल्याचे, तर IASची पदवीनोंद1930मध्ये PhDमिळाल्याचे सांगते. दोन्ही घटना वेगळ्या केल्या आणि पुढील एका वर्षात अपूर्णतेचा निष्कर्ष मिळाल्याचा निर्देश प्रबंधाशीच जोडला. शोध1930आणि प्रकाशन1931हा क्रम जपला; शोध1931मध्ये ढकलला नाही. व्यापक वैद्यकीय किंवा चरित्रात्मक प्रमाणीकरण नाही."
+    },
+    {
+      "id": "SOL6-A275",
+      "previous_rationale": "सहा महिन्यांची शिक्षा आणि प्रत्यक्ष तुरुंगात राहिलेला कालावधी यांचा भेद जपला. McMasterच्या Brixton पत्रसंग्रहात प्रवेश1May1918 आणि सुटका14September1918 नोंदली आहे; म्हणून सहा महिने प्रत्यक्ष ठेवले असा मराठी दावा मागे घेतला. आयुष्यभर सर्व युद्धांना विरोध असा सार्वत्रिक दावा रसेल यांच्या1961 पत्राच्या सार्वजनिक archival excerptशी विसंगत आहे. त्यांचे शांततेसाठीचे कार्य आणि1961 तुरुंगवास जपून सर्व परिस्थितींमध्ये युद्धविरोध नव्हता हे स्पष्ट केले. इतर चरित्रकथनाचे संपूर्ण ऐतिहासिक प्रमाणीकरण केलेले नाही.",
+      "current_rationale_mr": "सहा महिन्यांची शिक्षा आणि प्रत्यक्ष तुरुंगात राहिलेला कालावधी वेगळे केले. मॅकमास्टरच्या ब्रिक्स्टन पत्रसंग्रहात प्रवेश1मे1918आणि सुटका14सप्टेंबर1918नोंदली आहे; म्हणून सहा महिने प्रत्यक्ष ठेवले असा मराठी दावा मागे घेतला. सर्व युद्धांविरुद्ध आयुष्यभर बिनशर्त भूमिका हा सार्वत्रिक दावा रसेल यांच्या1961पत्राच्या सार्वजनिक अभिलेखीय उताऱ्याशी विसंगत आहे. शांततेसाठीचे कार्य आणि1961तुरुंगवास जपून सर्व परिस्थितींमध्ये युद्धविरोध नव्हता हे स्पष्ट केले; संपूर्ण मूळ पत्र किंवा इतर चरित्राचे ऐतिहासिक प्रमाणीकरण नाही."
+    },
+    {
+      "id": "SOL6-A276",
+      "previous_rationale": "GCHQच्या JoanClarkeविषयक थेट वाचलेल्या परिच्छेदात साखरपुडा spring1941 आणि त्याच वर्षी तो मोडल्याची नोंद आहे; म्हणून1942ऐवजी1941 केले. TNMOCच्या reconstructedBombeच्या इतिहासात मूळ यंत्र electro-mechanical म्हणून स्पष्ट केले आहे; त्याच्या निर्मितीस इलेक्ट्रॉनिक तंत्र म्हणून मांडण्याऐवजी विद्युत् आणि यांत्रिक तंत्र वापरले. इलेक्ट्रॉनिकColossusचा वेगळा उल्लेख, त्याच्यावरील source-attributed influence claim आणि इतर चरित्रकथन जपले. स्रोताच्या संपूर्ण संगणक/वैद्यकीय/कायदेशीर इतिहासाची स्वतंत्र पडताळणी असा दावा नाही.",
+      "current_rationale_mr": "GCHQच्या जोन क्लार्कविषयक थेट वाचलेल्या परिच्छेदात साखरपुडा1941च्या वसंतात आणि तो त्याच वर्षी मोडल्याची नोंद आहे; म्हणून1942ऐवजी1941केले. TNMOCच्या बॉम्ब उपकरणाच्या इतिहासात मूळ यंत्र विद्युत्-यांत्रिक होते असे स्पष्ट केले आहे; त्याच्या निर्मितीला इलेक्ट्रॉनिक तंत्र म्हणून मांडण्याऐवजी विद्युत् आणि यांत्रिक तंत्र दिले. इलेक्ट्रॉनिक कोलॉससचा वेगळा उल्लेख आणि अप्रत्यक्ष प्रभावाविषयीचे स्रोताचे कथन जपले; त्याचे निश्चित खंडन केले नाही. संपूर्ण संगणक/वैद्यकीय/कायदेशीर इतिहासाच्या स्वतंत्र पडताळणीचा दावा नाही."
+    },
+    {
+      "id": "SOL6-A277",
+      "previous_rationale": "फ्रायबुर्ग संस्थेच्या स्वतःच्या इतिहासानुसार गॉटिंगेनमध्ये1905प्राध्यापक नेमणूक होती;1910ही झुरिकमधील वेतन मिळणाऱ्या पदाची तारीख आहे. म्हणून1899नंतर अकरा वर्षांनीच कोणतेही पद मिळाले असा दावा वेतन मिळणाऱ्या पदापुरता केला. फ्रायबुर्गची मानद नेमणूक1926मध्ये होती,1921मध्ये नाही. संस्थेचा इतिहास आणि मूळ राजीनामापत्राचा विश्वविद्यालयीन प्रदर्शक1935मध्ये Hitler saluteनाकारल्यावर तक्रारीनंतर राजीनामा द्यावा लागल्याचे सांगतात; dismissal/unpopularityया अपुर्‍या कारणवर्णनाऐवजी नेमका प्रसंग दिला आणि पुढील परिच्छेद जुळवला. Frozen1899habilitationवर्ष जपले: सध्याच्या संस्थात्मक संक्षेपात1897येते, परंतु Ebbinghausच्या indexedauthor textमध्ये1899आहे; अस्पष्ट नव्या बदलासाठी ते वापरले नाही.",
+      "current_rationale_mr": "फ्रायबुर्ग संस्थेच्या इतिहासानुसार गॉटिंगेनमध्ये1905प्राध्यापक नेमणूक होती;1910ही झुरिकमधील वेतन मिळणाऱ्या पदाची तारीख आहे. त्यामुळे1899नंतर अकरा वर्षांनीच कोणतेही पद मिळाले हा दावा वेतन मिळणाऱ्या पदापुरता केला. फ्रायबुर्गची मानद नेमणूक1926मध्ये होती. संस्थेचा इतिहास व राजीनामापत्राचे विश्वविद्यालयीन प्रदर्शन1935मध्ये हिटलरला अभिवादन नाकारल्यावर तक्रारीनंतर राजीनामा द्यावा लागल्याचे सांगतात; पदावरून काढणे/लोकप्रियता नसणे या अपुऱ्या कारणवर्णनाऐवजी नेमका प्रसंग दिला व पुढील परिच्छेद जुळवला. गोठवलेले1899पात्रतावर्ष जपले: सध्याच्या संस्थात्मक संक्षेपात1897असले तरी Ebbinghausच्या अनुक्रमित मजकुरात1899आहे; संदिग्ध नवीन बदलासाठी त्याचा वापर केला नाही."
+    }
+  ],
+  "target_comment_changes": [
+    {
+      "unit_id": "OLP-0629",
+      "repair_id": "SOL6-A275",
+      "before_sha256": "1ca6503ba7dd49574341784d81e430f33af2fdf499fab2c74179f2200b60b18e",
+      "after_sha256": "db34f7d0bea3c98942eda0ca2fa2ffb03469aabd1d1699a38e7b283ea34a6c09",
+      "previous_note": "%READERNOTE{SOL6-A275: मूळातील सहा महिन्यांच्या उल्लेखाचा अर्थ शिक्षा असा स्पष्ट केला आहे; प्रत्यक्ष सुटका14September1918 रोजी झाली. तसेच आयुष्यभर बिनशर्त शांततावाद हा दावा मागे घेतला: McMasterच्या30909 या पत्रनोंदीतील रसेल यांच्या स्वतःच्या विधानात काही परिस्थितींमध्ये बलप्रयोग समर्थनीय मानला आहे. स्रोत: https://russell-letters.mcmaster.ca/chronology आणि https://bracers.mcmaster.ca/30909.}",
+      "current_note": "%READERNOTE{SOL6-A275: मूळातील सहा महिन्यांचा उल्लेख शिक्षेचा आहे; प्रत्यक्ष सुटका १४ सप्टेंबर १९१८ रोजी झाली. तसेच आयुष्यभर बिनशर्त शांततावाद हा दावा मागे घेतला: मॅकमास्टरच्या 30909 या पत्रनोंदीतील रसेल यांच्या स्वतःच्या विधानात काही परिस्थितींमध्ये बलप्रयोग समर्थनीय मानला आहे. स्रोत: https://russell-letters.mcmaster.ca/chronology आणि https://bracers.mcmaster.ca/30909.}"
+    },
+    {
+      "unit_id": "OLP-0631",
+      "repair_id": "SOL6-A276",
+      "before_sha256": "948cbc64505446777f6b1f74a4f700b9e4cb4fefea9ad7706bd93039e61d53bc",
+      "after_sha256": "f2c4ebeb88d01a68976a5fb6cb1e84a95dcc35edc343b1e9ab55cb3ab6bf066a",
+      "previous_note": "%READERNOTE{SOL6-A276: GCHQच्या नोंदीनुसार जोन क्लार्क आणि ट्यूरिंग यांचा साखरपुडा1941मध्ये झाला. बॉम्ब यंत्र विद्युत् आणि यांत्रिक तंत्रावर चालत होते, असे TheNationalMuseumofComputingस्पष्ट करते; ते इलेक्ट्रॉनिकColossusपेक्षा वेगळे होते. स्रोत: https://www.gchq.gov.uk/information/joan-clarke आणि https://www.tnmoc.org/bombe.}",
+      "current_note": "%READERNOTE{SOL6-A276: GCHQच्या नोंदीनुसार जोन क्लार्क आणि ट्यूरिंग यांचा साखरपुडा १९४१ मध्ये झाला. बॉम्ब यंत्र विद्युत् आणि यांत्रिक तंत्रावर चालत होते, असे The National Museum of Computing स्पष्ट करते; ते इलेक्ट्रॉनिक कोलॉससपेक्षा वेगळे होते. स्रोत: https://www.gchq.gov.uk/information/joan-clarke आणि https://www.tnmoc.org/bombe.}"
+    },
+    {
+      "unit_id": "OLP-0632",
+      "repair_id": "SOL6-A277",
+      "before_sha256": "d88d1095d9db50739bf70f923b773752b25dab6e867d3a71c53aa5358c5189fb",
+      "after_sha256": "7e49edafe083f26d54e0a24a72311c371c8742654a0e4c48870c7b33e43622e9",
+      "previous_note": "%READERNOTE{SOL6-A277: झुरिकमधील1910पद वेतन मिळणारे होते; त्यापूर्वीची गॉटिंगेनमधील1905प्राध्यापक नेमणूक त्यामुळे नाकारली जात नाही. फ्रायबुर्गची मानद नेमणूक1926मध्ये होती. हिटलरला अभिवादन करण्यास नकार दिल्यामुळे तक्रार झाल्यानंतर1935मध्ये राजीनामा द्यावा लागला, अशी विद्यापीठाची नोंद आहे. स्रोत: https://uni-freiburg.de/math/geschichte-i/ आणि https://home.mathematik.uni-freiburg.de/mildenberger/freiburg2014/zermelo.html.}",
+      "current_note": "%READERNOTE{SOL6-A277: झुरिकमधील १९१० चे पद वेतन मिळणारे होते; त्यामुळे त्यापूर्वीची गॉटिंगेनमधील १९०५ ची प्राध्यापक नेमणूक नाकारली जात नाही. फ्रायबुर्गची मानद नेमणूक १९२६ मध्ये झाली. हिटलरला अभिवादन करण्यास नकार दिल्यामुळे तक्रार झाल्यानंतर १९३५ मध्ये राजीनामा द्यावा लागला, अशी विद्यापीठाची नोंद आहे. स्रोत: https://uni-freiburg.de/math/geschichte-i/ आणि https://home.mathematik.uni-freiburg.de/mildenberger/freiburg2014/zermelo.html.}"
+    }
+  ],
+  "before_public_journal_sha256": "29e39527749085b7df82823a499741cfecf3bf963d4a3a61b2dcf36c66ae097b",
+  "after_public_journal_sha256": "4846f008b1980e1c7660274023ac7fb1c620424ab8033f1dd4204aa8a8820dab",
+  "source_body_formulas_changed": false,
+  "original_receipts_changed": false,
+  "status": "current source/ledger copyedit bound; new assembly/review checkpoint pending",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "date": "2026-09-30"
+}

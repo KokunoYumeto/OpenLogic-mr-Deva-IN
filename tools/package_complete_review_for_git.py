@@ -18,6 +18,8 @@ def read(path):
     return json.loads(path.read_text(encoding="utf-8-sig"))
 
 qa = read(SOURCE / "translation-decisions/TRANSLATION_DECISION_QA.json")
+tag = qa["release_tag"]
+assert tag in {"complete-v1.0", "complete-v1.1", "complete-v1.2"}
 assert qa["status"] == "ready" and qa["source_units"] == 722
 assert not qa["missing_localization"] and not qa["pending"]
 assert qa["localized_term_decisions"] == 638 and qa["localized_source_issues"] == 655
@@ -27,6 +29,7 @@ assert len(bindings["units"]) == 722
 pdf_hash = sha(BUILD / "openlogic-mr-full.pdf")
 receipt = read(BUILD / "TEX_BUILD_RECEIPT.json")
 assert receipt["result"] == "built-log-clean" and receipt["pdf"]["sha256"] == pdf_hash
+assert qa["reader_pdf_sha256"] == pdf_hash
 
 # Preserve pre-existing local bytes before synchronizing these exact surfaces.
 # The raw JSON remains on disk for validators and in the published ZIPs.
@@ -59,8 +62,8 @@ data = {
     "uncompressed_file": "DECISIONS.json", "uncompressed_bytes": canonical.stat().st_size,
     "uncompressed_sha256": sha(canonical), "reader_pdf_sha256": pdf_hash,
     "schema_sha256": sha(TARGET / "translation-decisions/translation-decision.schema.json"),
-    "review_bundle_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.0/05-openlogic-mr-complete-review.zip",
-    "source_bundle_url": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.0/03-openlogic-mr-complete-editable-sources.zip",
+    "review_bundle_url": f"https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/{tag}/05-openlogic-mr-complete-review.zip",
+    "source_bundle_url": f"https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/{tag}/03-openlogic-mr-complete-editable-sources.zip",
 }
 index.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 notes = TARGET / "translation-decisions/CANONICAL_JSON_DOWNLOAD.md"

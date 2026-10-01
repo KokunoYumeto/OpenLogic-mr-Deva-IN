@@ -144,6 +144,7 @@ $u$ यांसाठीही
 \end{defn}
 
 \begin{defn}
+  %READERNOTE{SOL6-A091: पर्याय मूल्यांकन निश्चित x, X किंवा u वर बदलते; त्याचे कोणत्याही y वरील मूल्य डाव्या बाजूला दाखवले आहे. पूरक संचासाठी disjointness बरोबर पूर्ण आधारक्षेत्र झाकणे आवश्यक आहे. Conjunction encoding मधील X मुक्त नसण्याची अट capture टाळते.}
   $s$ हे !!a{structure}~$\Struct M$
   साठी !!a{variable}
   मूल्यांकन
@@ -154,9 +155,9 @@ $u$ यांसाठीही
   परिभाषित केलेले
   !!{variable}
   मूल्यांकन आहे:
-  \[\Subst{s}{m}{y} = \begin{cases}
-    m & \text{if } y \ident x\\
-    s(y) & \text{otherwise},
+  \[\Subst{s}{m}{x}(y) = \begin{cases}
+    m & \text{जर } y \ident x\\
+    s(y) & \text{अन्यथा},
   \end{cases}\]
   $X$ हे $n$-स्थानी
   संबंध-!!{variable}
@@ -168,9 +169,9 @@ $u$ यांसाठीही
   परिभाषित केलेले
   !!{variable}
   मूल्यांकन आहे:
-  \[\Subst{s}{M}{y} = \begin{cases}
-    M & \text{if } y \ident X\\
-    s(y) & \text{otherwise}.
+  \[\Subst{s}{M}{X}(y) = \begin{cases}
+    M & \text{जर } y \ident X\\
+    s(y) & \text{अन्यथा}.
   \end{cases}\]
   $u$ हे $n$-स्थानी
   फलन-!!{variable}
@@ -182,9 +183,9 @@ $u$ यांसाठीही
   परिभाषित केलेले
   !!{variable}
   मूल्यांकन आहे:
-  \[\Subst{s}{f}{y} = \begin{cases}
-    f & \text{if } y \ident u\\
-    s(y) & \text{otherwise}.
+  \[\Subst{s}{f}{u}(y) = \begin{cases}
+    f & \text{जर } y \ident u\\
+    s(y) & \text{अन्यथा}.
   \end{cases}\]
   प्रत्येक बाबतीत
   $y$ हे कोणतेही
@@ -248,13 +249,11 @@ $u$ यांसाठीही
   !!{sentence}
   $\lforall[z][(\Atom{P}{z} \liff \lnot \Atom{R}{z})]$
   असे म्हणते की
-  $P$ च्या
-  अर्थनिर्धारणात
-  येणारी कोणतीही
-  वस्तू $R$ च्या
-  अर्थनिर्धारणात
-  येत नाही
-  आणि उलटही.
+  आधारक्षेत्रातील प्रत्येक वस्तू
+  $P$ आणि $R$ यांच्या
+  अर्थनिर्धारणांपैकी नेमक्या एकात येते:
+  ती पहिल्यात येते, तर आणि तरच
+  ती दुसऱ्यात येत नाही.
   !!a{structure}
   मध्ये
   !!a{predicate}~$P$
@@ -289,12 +288,10 @@ $u$ यांसाठीही
 
   $\Sat{M}{\lforall[z][(\Atom{X}{z} \liff \lnot \Atom{Y}{z})]}[s]$
   हे $s(X)$ मधील
-  !!{element}s
-  हे $s(Y)$ मधील
-  !!{element}s
-  नसतील आणि
-  उलटही असेल
-  तेव्हा, म्हणजे
+  !!{element}s आणि $s(Y)$ मधील
+  !!{element}s एकमेकांपासून वेगळे असतील
+  आणि दोन्ही संच मिळून संपूर्ण आधारक्षेत्र झाकतील,
+  तर आणि तरच खरे असते; म्हणजे
   $s(Y) = \Domain{M} \setminus s(X)$
   असेल तर आणि
   तरच खरे असते.
@@ -481,7 +478,8 @@ $u$ यांसाठीही
   करता येतात
   हे दाखवा:
   \begin{enumerate}
-    \item द्वितीय-क्रम तर्कशास्त्रात $!A \land !B$ हे
+    \item येथे X हे संयोजित करावयाच्या दोन्ही सूत्रांमध्ये मुक्त नसलेले
+    एकस्थानी विधेय चल निवडा. द्वितीय-क्रम तर्कशास्त्रात $!A \land !B$ हे
     $\lforall[X][(!A \lif (!B \lif \lforall[x][X(x)])\lif
     \lforall[x][X(x)])]$ शी सममूल्य आहे हे सिद्ध करा.
     \item फक्त $\lforall$ आणि $\lif$ वापरून

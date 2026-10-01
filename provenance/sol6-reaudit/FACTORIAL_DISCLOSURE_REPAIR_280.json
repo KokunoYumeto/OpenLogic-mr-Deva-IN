@@ -1,0 +1,26 @@
+{
+  "id": "SOL6-A280",
+  "record_kind": "workflow_repair",
+  "source_choice": false,
+  "finding": "The core382 reader note still called the factorial self-substitution display open after the directly reviewed A132 source repair; its arity wording also used logical-argument Marathi.",
+  "repair": "Acknowledge A132 and the preserved Fac self-reference, use input count for arity, and reconcile the localized current index. Frozen source and historical issue ledger remain intact.",
+  "before_tool_sha256": "71867d12d6d1db1ad9379aac65ba43bf4a33e585d7a0f4fa82b544dff1da0369",
+  "after_tool_sha256": "ad2df940ae0e412d37beac84fca188c38b4f478a5b47eb30dd1de5384d48eafc",
+  "before_tool_witness": "C:\\interlanguage-task-state\\openlogic-mr-Deva-IN\\work\\sol6-audit\\BEFORE_TOOL_SOL6-A280.py",
+  "before_localized_index_sha256": "df3e7433573fe343c8c418189f9f5de2a39592910ec9997fb655ad514b848686",
+  "after_localized_index_sha256": "956cd87e89fd0c56cc36f084e387b1f331a03087e7987bdf92b7ce5ca959ff18",
+  "historical_localized_row": {
+    "issue_id": "OLINC-126",
+    "rationale_mr": "क्रमगुणिताची स्वतःची व्याख्या प्रतिष्ठापित करणाऱ्या मूळ प्रदर्शनात बाह्य लॅम्डा शरीर सत्य शाखेनंतर बंद होते आणि गुणाकाराची पुनरावर्ती शाखा दुसऱ्या ओळीवर बाहेर पडते. अपेक्षित IsZero च्या दोन्ही शाखा व Fac चा उरलेला स्वसंदर्भ शेजारच्या सूत्रांत स्पष्ट आहेत. संरेखित प्रदर्शन मूळाशी जतन आहे. संपूर्ण वाचकात नेमक्या एका प्रदर्शनाच्या दोन्ही ओळींना व्यापणारे कंस दाखवून दोन्ही शाखा एकाच बाह्य शरीरात आणल्या आहेत; आतील Fac चा स्वसंदर्भ जपला आहे. मराठी स्रोतदुरुस्ती-नोंद व नियंत्रित प्रदर्शनाचे पूर्वीचे आणि नंतरचे हॅश या बदलाचे स्पष्टीकरण देतात.",
+    "review_question_mr": "दुरुस्त वाचक-प्रदर्शनात IsZero च्या दोन्ही शाखा एकाच बाह्य लॅम्डा शरीरात असून पुनरावर्ती Fac उपस्थिती व स्वसंदर्भाचे स्पष्टीकरण स्पष्ट आहेत का?"
+  },
+  "source_choice_evidence": {
+    "id": "SOL6-A132",
+    "receipt_sha256": "dc32fbaf9a26abcbeed4a2ab3af0853b7b2b4725584769c944e0a6baa3942efd"
+  },
+  "source_history_sha256": "c015a22ae11cf8f9da72509aa787424599e3611b46412a32a4f219377f8b11f9",
+  "status": "local current disclosure repaired; refreshed assembled reader and visual verification pending",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "date": "2026-09-30"
+}

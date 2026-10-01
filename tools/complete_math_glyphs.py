@@ -1,4 +1,4 @@
-"""Extract the reader's two custom mathematical symbols as exact SVG outlines."""
+"""Extract the reader's three custom mathematical symbols as exact SVG outlines."""
 
 import hashlib
 from io import BytesIO
@@ -51,6 +51,7 @@ def extract_symbols(pdf_path, output_dir):
                 })
                 break
         assert suffix in parsed_fonts, f"The PDF lacks the {suffix} symbols"
+    document.close()
     glyphs = []
     for name, (suffix, filename, alt) in SYMBOLS.items():
         font = parsed_fonts[suffix]

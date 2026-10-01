@@ -1,0 +1,315 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 64: संचांक
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{संचांक}\label{sth:cardinals:chap}
+
+
+
+
+\section{कँटरचे तत्त्व}\label{sth:cardinals:cp:sec}
+
+मागे \ref{sth:ordinals:vn:sec} कडे मन वळवा. आपण सुक्रमित संचांविषयी चर्चा करत होतो आणि सुक्रमणांचे प्रतिनिधित्व करणाऱ्या वस्तू असाव्यात, असे सुचवले होते. या उद्देशाने आपण क्रमसूचक संख्या मांडल्या; नंतर \ref{sth:ordinals:ordtype:ordtypesworklikeyouwant} मध्ये दाखवले की त्यांचे गुणधर्म अपेक्षेप्रमाणे आहेत, म्हणजे:
+\[
+  \ordtype{A, <} = \ordtype{B, \lessdot}
+  \text{ तेव्हा आणि केवळ तेव्हाच } \tuple{A, <} \isomorphic \tuple{B, \lessdot}.
+\]
+आता आणखी मागे, \ref{sfr:siz:equ:sec} कडे वळा. तेथे संचाच्या “आकारमाना”ची कल्पना आपण सहजरीत्या मांडली होती. विशेषतः, दोन संच तुल्यबल आहेत, म्हणजे $\cardeq{A}{B}$, असे आपण तेव्हा आणि केवळ तेव्हाच म्हणालो जेव्हा $f \colon A \to
+B$ हे एकास-एक आच्छादन असते. सुक्रमणाच्या कल्पनेपेक्षा ही स्वभावतः सोपी कल्पना आहे: आपल्याला फक्त एकास-एक आच्छादन महत्त्वाची आहेत; क्रम-समरूपणांच्या बाबतीत जसे पाहतो तसे, ती एकास-एक आच्छादन कोणतीही रचना जतन करतात का, हे येथे पाहायचे नाही.
+
+यावरून एक स्वाभाविक विचार सुचतो. सुक्रमणांचे मोजमाप करण्यासाठी जशा काही वस्तू, म्हणजे \emph{क्रमसूचक संख्या}, आपण मांडल्या, तशाच आकारमानाचे मोजमाप करण्यासाठी \emph{संचांक} मांडू शकतो. हेच या प्रकरणाचे उद्दिष्ट आहे.
+
+हे संचांक नेमके काय असतील ते सांगण्याआधी, त्यांनी पूर्ण करायला हवे असे एक तत्त्व मांडू. संच $X$ चा संचांक $\card{X}$ असा लिहू; मग पुढील अट अपेक्षित आहे:
+\[
+  \card{A} = \card{B} \text{ तेव्हा आणि केवळ तेव्हाच } \cardeq{A}{B}.
+\]
+याला आपण \emph{कँटरचे} तत्त्व म्हणू, कारण ही कल्पना कँटर यांच्या मनात बहुधा सर्वप्रथम अगदी स्पष्टपणे होती. (तिचा \emph{ह्यूमच्या} तत्त्वाशी संबंध काय आहे, याविषयी \ref{sth:cardinals:hp:sec} मध्ये आणखी सांगू.) म्हणून प्रत्येक $X$ साठी $\card{X}$ ची अशी व्याख्या करणे हे आपले उद्दिष्ट आहे की कँटरचे तत्त्व सिद्ध होईल.
+
+
+
+
+
+
+
+\section{क्रमसूचक संख्या म्हणून संचांक}\label{sth:cardinals:cardsasords:sec}
+
+प्रत्यक्षात, संचांकांची आपली उपपत्ती क्रमसूचक संख्यांच्या उपपत्तीचाच (बिनदिक्कत) आधार घेईल. म्हणजे काही विशिष्ट क्रमसूचक संख्यांनाच आपण संचांक म्हणून परिभाषित करू. नेमकी व्याख्या अशी:
+
+\begin{defn}\label{sth:cardinals:cardsasords:defcardinalasordinal}
+$A$ ला सुक्रमित करता येत असेल, तर $\cardeq{A}{\gamma}$ असेल अशी लघुतम क्रमसूचक संख्या $\gamma$ म्हणजे $\card{A}$. कोणत्याही क्रमसूचक संख्या $\gamma$ साठी, $\gamma$ ला $\gamma = \card{\gamma}$ असेल तेव्हा आणि केवळ तेव्हाच \emph{संचांक} म्हणू.
+\end{defn}
+
+आत्ताच आपण “$A$ ला सुक्रमित करता येते” असा शब्दप्रयोग केला. गणितात बहुतेक वेळा घडते तसे, येथे शक्यतादर्शक भाषा हा अस्तित्वाच्या दाव्याचा अनौपचारिक पर्याय आहे: “$A$ ला सुक्रमित करता येते” याचा अर्थ फक्त “$A$ ला सुक्रमित करणारा संबंध अस्तित्वात आहे” असा आहे.
+
+पण \ref{sth:cardinals:cardsasords:defcardinalasordinal} मध्ये एक अडचण आहे. \emph{प्रत्येक} संचाला आकारमान असावे, म्हणजे प्रत्येक~$A$ साठी $\card{A}$ अस्तित्वात असावा, अशी आपली इच्छा आहे. मात्र नुकतीच दिलेली व्याख्या अटीने सुरू होते: “$A$ ला सुक्रमित करता येत \emph{असेल}, तर\ldots”. एखादा संच $A$ सुक्रमित करता येत नसेल, तर ही व्याख्या $\card{A}$ ही वस्तू निश्चितच करणार नाही.
+
+म्हणून \ref{sth:cardinals:cardsasords:defcardinalasordinal} वापरायची असेल, तर प्रत्येक संच सुक्रमित करता येतो याची खात्री हवी. दुर्दैवाने, ही खात्री~$\ZF$ मध्ये उपलब्ध नाही. त्यामुळे \ref{sth:cardinals:cardsasords:defcardinalasordinal} वापरायची असल्यास पुढीलसारखे नवे स्वयंसिद्धक जोडावे लागेल:
+\begin{axiom}[सुक्रमण]
+प्रत्येक संच सुक्रमित करता येतो.
+\end{axiom}
+सुक्रमणाचे स्वयंसिद्धक स्वीकारण्याजोगे आहे का, याची चर्चा \ref{sth:choice:chap} मध्ये करू. पण आतापासून आपण ते गृहीत धरू. ते वापरल्यावर \ref{sth:cardinals:cardsasords:defcardinalasordinal} प्रमाणे परिभाषित केलेले संचांक अस्तित्वात असतात आणि अपेक्षित गुणधर्म दाखवतात, हे सहज सिद्ध होते:
+
+\begin{lem}\label{sth:cardinals:cardsasords:lem:CardinalsExist}
+प्रत्येक संच $A$ साठी:
+\begin{enumerate}
+  \item\label{sth:cardinals:cardsasords:cardaexists} $\card{A}$ अस्तित्वात असतो आणि एकमेव असतो;
+  \item\label{sth:cardinals:cardsasords:cardaapprox} $\cardeq{\card{A}}{A}$;
+  \item\label{sth:cardinals:cardsasords:cardaidem} $\card{A}$ हा संचांक असतो, म्हणजे
+  $\card{A} = \card{\card{A}}$;
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+$A$ निश्चित करा. सुक्रमणाच्या स्वयंसिद्धकानुसार $\tuple{A, R}$ हे सुक्रमण आहे. \ref{sth:ordinals:ordtype:thmOrdinalRepresentation} नुसार $\tuple{A,
+R}$ हे एकमेव क्रमसूचक संख्या $\beta$ शी क्रम-समरूपी आहे. म्हणून $\cardeq{A}{\beta}$. अनंतपार विगमनानुसार $\cardeq{A}{\gamma}$ असेल अशी एकमेव लघुतम क्रमसूचक संख्या $\gamma$ आहे. म्हणून $\card{A}
+= \gamma$; यावरून \ref{sth:cardinals:cardsasords:cardaexists} आणि \ref{sth:cardinals:cardsasords:cardaapprox} सिद्ध होतात.
+\ref{sth:cardinals:cardsasords:cardaidem} साठी लक्षात घ्या की $\delta \in \gamma$ असेल, तर $\gamma$ लघुतम निवडल्यामुळे
+$\cardless{\delta}{A}$; आणि तुल्यबलता हा समतुल्य संबंध असल्याने (\ref{sfr:siz:equ:equinumerosityisequi}) $\cardless{\delta}{\gamma}$ सुद्धा. म्हणून $\gamma =
+\card{\gamma}$.
+
+\end{proof}
+
+पुढील निष्कर्ष कँटरच्या तत्त्वाची, आणि त्याहून अधिक गोष्टींची, खात्री देतो. (संचांकांना त्यांचा क्रम क्रमसूचक संख्यांकडूनच मिळतो; म्हणजे $\cardfont{a} < \cardfont{b}$ तेव्हा आणि केवळ तेव्हाच जेव्हा $\cardfont{a} \in \cardfont{b}$. संचांक असल्याचे माहीत असलेल्या वस्तूंसाठी आपण फ्राक्तूर अक्षरे वापरू. ही पद्धत बरीच रूढ आहे. दुसरी रूढ पद्धत म्हणजे संचांक क्रमसूचक संख्याच असल्यामुळे त्यांसाठी ग्रीक अक्षरे वापरणे, पण वर्णमालेच्या मधल्या भागातील अक्षरे निवडणे; उदा. $\kappa, \lambda$.):
+\begin{lem}\label{sth:cardinals:cardsasords:lem:CardinalsBehaveRight}
+कोणत्याही संच $A$ आणि $B$ साठी:
+\begin{align*}
+  \cardeq{A}{B} &\text{ तेव्हा आणि केवळ तेव्हाच } \card{A} = \card{B}\\
+  \cardle{A}{B} &\text{ तेव्हा आणि केवळ तेव्हाच } \card{A} \leq \card{B}\\
+  \cardless{A}{B}&\text{ तेव्हा आणि केवळ तेव्हाच } \card{A} < \card{B}
+\end{align*}
+\end{lem}
+
+\begin{proof}
+दुसऱ्या विधानातील डावीकडून उजवीकडे जाणारी दिशा सिद्ध करू (इतर प्रकरणे सारखीच आहेत आणि सरावासाठी सोडली आहेत). पुढील आकृती पाहा:
+\begin{center}
+  \begin{tikzpicture}
+  \node (nodea) {$A$};
+  \node[right = 6em of nodea] (nodeb) {$B$};
+  \node[below = 2em of nodea] (nodecarda) {$\card{A}$};
+  \node[below = 2em of nodeb] (nodecardb) {$\card{B}$};
+  \draw[->] (nodea)--(nodeb);
+  \draw[<->] (nodea)--(nodecarda);
+  \draw[<->] (nodeb)--(nodecardb);
+  \draw[->, dashed] (nodecarda)--(nodecardb);
+\end{tikzpicture}
+\end{center}
+दुतोंडी बाण एकास-एक आच्छादन दाखवतात; त्यांचे अस्तित्व \ref{sth:cardinals:cardsasords:lem:CardinalsExist} मुळे मिळते. $\cardle{A}{B}$ गृहीत धरल्यावर $A\to B$ हे एकास-एक फलन असते. आता $\card{A}$ पासून $A$, तेथून $B$, आणि तेथून $\card{B}$ असा बाणांचा पाठपुरावा केल्यास $\card{A} \to \card{B}$ हे एकास-एक फलन मिळते (आकृतीतील तुटक बाण).
+\end{proof}\noindent \ref{sth:cardinals:cardsasords:lem:CardinalsBehaveRight} वापरून श्रेडर--बर्नस्टाइन प्रमेय पुन्हा सिद्ध करता येते. त्याचे विधान असे: $\cardle{A}{B}$ आणि $\cardle{B}{A}$ असतील, तर $\cardeq{A}{B}$. हे विधान आपण \ref{sfr:siz:sb:thm:schroder-bernstein} म्हणून मांडले; पण आधी \ref{sfr:infinite:card-sb:sec} मध्ये ते सिद्ध करण्यासाठी बरीच मेहनत घेतली. आता पाहा:
+
+\begin{proof}[श्रेडर--बर्नस्टाइनची नवी सिद्धता]
+$\cardle{A}{B}$ आणि $\cardle{B}{A}$ असतील, तर \ref{sth:cardinals:cardsasords:lem:CardinalsBehaveRight} नुसार $\card{A} \leq \card{B}$ आणि $\card{B} \leq \card{A}$. म्हणून त्रिपर्याय आणि \ref{sth:cardinals:cardsasords:lem:CardinalsBehaveRight} नुसार $\card{A} = \card{B}$ आणि $\cardeq{A}{B}$.
+\end{proof}
+\noindent
+ही सिद्धता फार सोपी असली, तरी तिच्यामागे प्रतिस्थापन (\ref{sth:ordinals:ordtype:thmOrdinalRepresentation} मिळवण्यासाठी) आणि सुक्रमण (\ref{sth:cardinals:cardsasords:lem:CardinalsBehaveRight} निश्चित करण्यासाठी) ही दोन्ही गृहीतके अप्रत्यक्षपणे आहेत. याउलट, \ref{sfr:infinite:card-sb:sec} मधील सिद्धता अधिक स्वयंपूर्ण होती (खरे तर ती~$\Zminus$ मध्येही करता येते).
+
+
+
+
+
+
+
+\section{$\ZFC$: एक महत्त्वाचा टप्पा}\label{sth:cardinals:zfc:sec}
+
+सुक्रमण जोडल्यावर आपण उपपत्तीचा अंतिम महत्त्वाचा टप्पा गाठला आहे. आता~$\ZFC$ साठी आवश्यक असलेली सर्व स्वयंसिद्धके आपल्याकडे आहेत. सविस्तर यादी अशी:
+
+\begin{defn}
+$\ZFC$ उपपत्तीत पुढील स्वयंसिद्धके आहेत: विस्तारात्मकता, संयोग, जोड्या, घातसंच, अनंतता, पायाभूतता, सुक्रमण आणि विभक्तीकरण व प्रतिस्थापन या रूपबंधांतील सर्व स्वयंसिद्धके. दुसऱ्या शब्दांत, $\ZF$ मध्ये सुक्रमण जोडले की $\ZFC$ मिळते.
+\end{defn}
+
+$\ZFC$ म्हणजे \emph{झर्मेलो--फ्रेंकेल} संच उपपत्ती, \emph{निवडीच्या स्वयंसिद्धकासह}. आपण जोडलेल्या स्वयंसिद्धकाला “निवड” नव्हे तर “सुक्रमण” म्हटले, म्हणून हे थोडे विचित्र वाटू शकते. पण पुढे आपण {निवडीचे स्वयंसिद्धक} मांडल्यावर, सुक्रमण आणि निवड ही $\ZF$ गृहीत धरल्यास समतुल्य आहेत हे दिसेल (\ref{sth:choice:woproblem:thmwochoice} पाहा). त्यामुळे यांपैकी कोणते “मूलभूत” स्वयंसिद्धक मानायचे, याने फरक पडत नाही. आणि “$\ZFC$” हे नाव साहित्यात सर्वमान्य आहे.
+
+
+
+
+
+
+
+\section{सांत, गणनीय, अगणनीय}\label{sth:cardinals:classing:sec}
+
+आता संचांकांची ओळख झाली आहे; म्हणून त्यांच्या विविध प्रकारांविषयी थोडी चर्चा करू. विशेषतः सांत, गणनीय आणि अगणनीय संचांक पाहू.
+
+पहिल्या दोन निष्कर्षांवरून सांत संचांक हे नेमके सांत क्रमसूचक संख्याच असतील; त्यांची व्याख्या आपण मागे \ref{sth:z:infinity-again:defnomega} मध्ये आपल्या \emph{नैसर्गिक संख्या} म्हणून केली होती:
+
+\begin{prop}\label{sth:cardinals:classing:finitecardisoequal}
+$n, m \in \omega$ असू द्या. मग $n = m$ तेव्हा आणि केवळ तेव्हाच जेव्हा $\cardeq{n}{m}$.
+\end{prop}
+
+\begin{proof}
+\emph{डावीकडून उजवीकडे} हे उघड आहे. \emph{उजवीकडून डावीकडे} सिद्ध करण्यासाठी, $n \neq m$ असूनही $\cardeq{n}{m}$ असे गृहीत धरा. त्रिपर्यायानुसार $n \in m$ किंवा $m \in n$; व्यापकता न गमावता $n \in m$ असे समजू. मग $n \subsetneq m$ आणि $f \colon m \to n$ हे एकास-एक आच्छादन असते; म्हणून $m$ डेडेकिंड-अनंत ठरतो. हे \ref{sth:z:infinity-again:naturalnumbersarentinfinite} शी विसंगत आहे.
+\end{proof}
+
+\begin{cor}\label{sth:cardinals:classing:naturalsarecardinals}
+$n \in \omega$ असेल, तर $n$ हा संचांक आहे.
+\end{cor}
+
+\begin{proof}
+हे लगेच मिळते.
+\end{proof}
+\noindent
+यावरून संचांक “सांत” किंवा “अनंत” असण्याच्या अनेक स्वाभाविक कल्पना एकाच ठरतात:
+\begin{thm}\label{sth:cardinals:classing:generalinfinitycharacter}कोणत्याही संच $A$ साठी पुढील विधाने समतुल्य आहेत:
+\begin{enumerate}
+  \item\label{sth:cardinals:classing:card:notinomega} $\card{A} \notin \omega$; म्हणजे
+  $A$ सांत नाही;
+  \item\label{sth:cardinals:classing:card:omegaplus} $\omega \leq \card{A}$;
+  \item\label{sth:cardinals:classing:card:infinite} $A$ डेडेकिंड-अनंत आहे.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+\ref{sth:ord-arithmetic:using-addition:ordinfinitycharacter},
+\ref{sth:cardinals:cardsasords:lem:CardinalsBehaveRight} आणि
+\ref{sth:cardinals:classing:naturalsarecardinals} यांवरून.
+\end{proof}
+
+म्हणून \ref{sfr:::part} मध्ये काहीशा अनौपचारिकपणे वापरलेल्या कल्पनांची पुढील \emph{व्याख्या} करता येते:
+
+\begin{defn}\label{sth:cardinals:classing:defnfinite}
+$\card{A}$ ही नैसर्गिक संख्या, म्हणजे $\card{A} \in \omega$, असेल तेव्हा आणि केवळ तेव्हाच $A$ ला \emph{सांत} म्हणू. अन्यथा $A$ ला \emph{अनंत} म्हणू.
+\end{defn}
+\noindent
+पण ही व्याख्या $\ZFC$ च्या पार्श्वभूमीवर दिली आहे, हे लक्षात ठेवा. शेवटी, प्रत्येक संचाला संचांक असतो याची खात्री मिळवण्यासाठी सुक्रमणाचे स्वयंसिद्धक लागले होते. खरे तर सुक्रमणाशिवाय सांतही नाही आणि डेडेकिंड-अनंतही नाही असा संच असू शकतो. या प्रकारच्या प्रश्नाकडे \ref{sth:choice:chap} मध्ये परत येऊ. सध्या सुक्रमण गृहीत धरून पुढे जाऊ.
+
+आता सांत संचांकांवरून अनंत संचांकांकडे वळू. दोन प्राथमिक निरीक्षणे अशी:
+
+\begin{cor}\label{sth:cardinals:classing:omegaisacardinal}
+$\omega$ हा लघुतम अनंत संचांक आहे.
+\end{cor}
+
+\begin{proof}
+$\omega$ हा संचांक आहे: कारण $\omega$ डेडेकिंड-अनंत आहे; आणि कोणत्याही $n \in \omega$ साठी $\cardeq{\omega}{n}$ असेल, तर $n$ डेडेकिंड-अनंत ठरेल, जे \ref{sth:z:infinity-again:naturalnumbersarentinfinite} शी विसंगत आहे. आता व्याख्येनुसार $\omega$ हा लघुतम अनंत संचांक आहे.
+\end{proof}
+
+\begin{cor}
+प्रत्येक अनंत संचांक ही सीमा क्रमसूचक संख्या असते.
+\end{cor}
+
+\begin{proof}
+$\alpha$ ही अनंत उत्तरवर्ती क्रमसूचक संख्या असू द्या; म्हणजे काही $\beta$ साठी $\alpha = \beta
+\ordplus 1$. पूर्ववर्ती सांत असती तर दिलेली उत्तरवर्ती सुद्धा सांत असती; म्हणून $\beta$ अनंत आहे (\ref{sth:cardinals:classing:finitecardisoequal} मधील सांत प्रकरण लक्षात घ्या). त्यामुळे \ref{sth:ord-arithmetic:using-addition:ordinfinitycharacter} नुसार $\cardeq{\beta}{\beta \ordplus 1}$. आता
+\ref{sth:cardinals:cardsasords:lem:CardinalsBehaveRight} नुसार
+$\card{\beta} = \card{\beta\ordplus 1} = \card{\alpha}$; म्हणून
+$\alpha \neq \card{\alpha}$.
+\end{proof}
+
+मागे \ref{sfr:siz:enm-alt:defn:enumerable} मध्येच आपण गणनीय आणि अगणनीय अनंत संच वेगळे ओळखता येतात, हे दाखवले होते. त्या व्याख्येवरून पुढील निष्कर्ष स्वाभाविकपणे मिळतो:
+
+\begin{prop}
+$A$ हा गणनीय असेल तेव्हा आणि केवळ तेव्हाच जेव्हा $\card{A} \leq \omega$; तसेच $A$ हा अगणनीय असेल तेव्हा आणि केवळ तेव्हाच जेव्हा $\omega < \card{A}$.
+\end{prop}
+
+\begin{proof}
+त्रिपर्यायानुसार ही दोन विधाने समतुल्य आहेत; म्हणून $A$ हा गणनीय तेव्हा आणि केवळ तेव्हाच जेव्हा $\card{A} \leq \omega$, एवढेच सिद्ध करणे पुरेसे आहे. \emph{उजवीकडून डावीकडे}: $\card{A} \leq \omega$ असेल, तर
+\ref{sth:cardinals:cardsasords:lem:CardinalsBehaveRight} आणि
+\ref{sth:cardinals:classing:omegaisacardinal} नुसार $\cardle{A}{\omega}$. \emph{डावीकडून उजवीकडे}: $A$ हा गणनीय असेल, तर \ref{sfr:siz:enm-alt:defn:enumerable} नुसार पुढील तीन प्रकरणांपैकी एक घडते:
+\begin{enumerate}
+  \item $A = \emptyset$ असेल, तर \ref{sth:cardinals:classing:naturalsarecardinals} आणि
+  \ref{sth:cardinals:cardsasords:lem:CardinalsBehaveRight} नुसार $\card{A} = 0 \in \omega$.
+  \item $\cardeq{n}{A}$ असेल, तर \ref{sth:cardinals:classing:naturalsarecardinals} आणि
+  \ref{sth:cardinals:cardsasords:lem:CardinalsBehaveRight} नुसार $\card{A} = n \in \omega$.
+  \item $\cardeq{\omega}{A}$ असेल, तर \ref{sth:cardinals:classing:omegaisacardinal} नुसार $\card{A} = \omega$.
+\end{enumerate}
+म्हणून तिन्ही प्रकरणांत $\card{A} \leq \omega$.
+\end{proof}
+\noindent
+खरे तर $\omega$ चे स्थान विशेष आहे. गणनीय क्रमसूचक संख्या अनेक असल्या तरी:
+
+\begin{cor}
+$\omega$ हा एकमेव गणनीय अनंत संचांक आहे.
+\end{cor}
+
+\begin{proof}
+$\cardfont{a}$ हा गणनीय अनंत संचांक असू द्या. $\cardfont{a}$ अनंत असल्यामुळे $\omega \leq \cardfont{a}$. तसेच $\cardfont{a}$ हा गणनीय संचांक असल्यामुळे $\cardfont{a} =
+\card{\cardfont{a}} \leq \omega$. म्हणून त्रिपर्यायानुसार $\cardfont{a} = \omega$. \end{proof}
+
+अर्थात, संचांक अनंत संख्येने आहेत. म्हणून प्रश्न पडेल: \emph{एकूण संचांक किती आहेत?} पुढील निष्कर्षांवरून या प्रश्नाचा पुनर्विचार करावा लागेल.
+
+\begin{prop}\label{sth:cardinals:classing:unioncardinalscardinal}
+$X$ चा प्रत्येक सदस्य संचांक असेल, तर $\bigcup X$ हाही संचांक आहे.
+\end{prop}
+
+\begin{proof}
+$\bigcup X$ ही क्रमसूचक संख्या आहे, हे तपासणे सोपे आहे. $\alpha \in
+\bigcup X$ ही क्रमसूचक संख्या असू द्या; मग काही संचांक $\cardfont{b}$ साठी $\alpha \in \cardfont{b} \in X$. $\cardfont{b}$ संचांक असल्यामुळे
+$\cardless{\alpha}{\cardfont{b}}$. तसेच $\cardfont{b} \subseteq
+\bigcup X$ असल्यामुळे $\cardle{\cardfont{b}}{\bigcup X}$; म्हणून
+$\cardneq{\alpha}{\bigcup X}$. हा निष्कर्ष सर्वत्र लागू केल्यावर $\bigcup X$ हा संचांक ठरतो.
+\end{proof}
+
+\begin{thm}\label{sth:cardinals:classing:lem:NoLargestCardinal}
+सर्वांत मोठा संचांक नाही.
+\end{thm}
+
+\begin{proof}
+कोणत्याही संचांक $\cardfont{a}$ साठी कँटरचे प्रमेय
+(\ref{sfr:siz:car:thm:cantor}) आणि
+\ref{sth:cardinals:cardsasords:lem:CardinalsExist} यांवरून
+$\cardfont{a} < \card{\Pow{\cardfont{a}}}$ मिळते.
+\end{proof}
+
+\begin{thm}
+सर्व संचांकांचा संच अस्तित्वात नाही.
+\end{thm}
+
+\begin{proof}
+विसंगतीने सिद्ध करण्यासाठी $C = \Setabs{\cardfont{a}}{\cardfont{a} \text{
+संचांक आहे}}$ असे समजा. आता \ref{sth:cardinals:classing:unioncardinalscardinal} नुसार $\bigcup C$ हा संचांक आहे; म्हणून \ref{sth:cardinals:classing:lem:NoLargestCardinal} नुसार $\cardfont{b} > \bigcup C$ असा संचांक आहे. व्याख्येनुसार
+$\cardfont{b} \in C$; म्हणून $\cardfont{b} \subseteq \bigcup{C}$ आणि त्यामुळे
+$\cardfont{b} \leq \bigcup C$; ही विसंगती आहे.
+\end{proof}
+
+याची रसेलचा विरोधाभास आणि बुराली-फॉर्ती निष्कर्ष या दोन्हींशी तुलना करा.
+
+
+
+
+
+
+
+\section{परिशिष्ट: ह्यूमचे तत्त्व}\label{sth:cardinals:hp:sec}
+
+\ref{sth:cardinals:cp:sec} मध्ये आपण कँटरचे तत्त्व मांडले. ते असे:
+\begin{align*}
+  \card{A} = \card{B} & \text{ तेव्हा आणि केवळ तेव्हाच } A \approx B.
+\intertext{आज ज्याला \emph{ह्यूमचे तत्त्व} म्हणतात त्याच्याशी हे खूप मिळतेजुळते आहे. ह्यूमचे तत्त्व असे:}
+  \fregenum{x} {F(x)} = \fregenum{x}{G(x)} & \text{ तेव्हा आणि केवळ तेव्हाच } F \sim G
+\end{align*}
+येथे ‘$F \sim G$’ याचा अर्थ $F$ पूर्ण करणाऱ्या आणि $G$ पूर्ण करणाऱ्या वस्तूंची संख्या नेमकी समान आहे; म्हणजे $F$ पूर्ण करणाऱ्या व $G$ पूर्ण करणाऱ्या वस्तूंमध्ये द्विएक संबंध लावता येतो; म्हणजेच:
+\begin{align*}
+  \exists R(&\forall v\forall y(Rvy \lif (Fv \land Gy)) \land {}\\
+    &\forall v(Fv \lif \lexists![y][Rvy]) \land {}\\
+    &\forall y(Gy \lif \lexists![v][Rvy]))
+\end{align*}
+पण ह्यूमचे तत्त्व आणि कँटरचे तत्त्व यांत प्रकारभेद आहे. कँटरच्या तत्त्वातील चल “$A$” आणि “$B$” ही \emph{संच} दर्शवणारी प्रथम-क्रमाची पदे आहेत. ह्यूमच्या तत्त्वातील “$F$”, “$G$” आणि “$R$” ही प्रथम-क्रमाची पदे \emph{नाहीत}; ती \emph{विधेयस्थानी} येतात. (कदाचित ती \emph{गुणधर्म} दर्शवत असतील.) म्हणून ह्यूमचे तत्त्व साध्या भाषेत असे सांगता येईल: $F$ पूर्ण करणाऱ्या आणि $G$ पूर्ण करणाऱ्या वस्तूंची संख्या समान असते तेव्हा आणि केवळ तेव्हाच जेव्हा $F$ पूर्ण करणाऱ्या व $G$ पूर्ण करणाऱ्या वस्तूंमध्ये द्विएक संबंध असतो. याला \emph{ह्यूमचे तत्त्व} म्हणतात, कारण ह्यूम यांनी एकदा असे लिहिले:
+\begin{quote}
+  दोन संख्या अशा रीतीने जोडलेल्या असतील की एकीतील प्रत्येक एककाला दुसरीतील नेहमी एक एकक जुळते, तर आपण त्या समान आहेत असे म्हणतो.
+  (ह्यूम 1740, भाग III, पुस्तक 1, \S1)
+\end{quote}
+फ्रेगे यांनी फ्रेगे (1884, \S63) मध्ये ह्यूम यांचा हा उतारा उद्धृत केला आणि नंतर (वस्तुतः) आपण ज्याला ह्यूमचे तत्त्व म्हटले आहे त्याची रूपरेषा मांडली; त्यामुळे आधुनिक गणितीय तर्कशास्त्रात या तत्त्वाला महत्त्व प्राप्त झाले.
+
+ह्यूमचे तत्त्व आणि मूलनियम पाच यांतील रचनात्मक साम्य लक्षात घ्या. \ref{sth:story:blv:sec} मध्ये आपण मूलनियम पाच असे मांडले होते:
+\[
+  \fregeext{x}{F(x)} = \fregeext{x}{G(x)} \text{तेव्हा आणि केवळ तेव्हाच } \lforall[x][(F(x) \liff G(x))].
+\]
+या टप्प्यावर थोडे स्पष्टीकरण आणि तुलना उपयोगी ठरेल.
+
+ह्यूमचे तत्त्व किंवा मूलनियम पाच यांसारख्या तत्त्वांचा अर्थ दोन प्रकारे घेता येतो: \emph{स्वसमावेशरहित} किंवा \emph{स्वसमावेशक} (\ref{sth:story:predicative:sec} आठवा). मूलनियम पाचच्या स्वसमावेशक अर्थानुसार, प्रत्येक~$F$ साठी $\fregeext{x}{F(x)}$ ही वस्तू, मूलनियम पाच मांडताना आपण ज्यावर संख्यापन केले त्याच प्रांतात येते. त्याचप्रमाणे ह्यूमच्या तत्त्वाच्या स्वसमावेशक अर्थानुसार, प्रत्येक~$F$ साठी $\fregenum{x}{F(x)}$ ही वस्तू, ह्यूमचे तत्त्व मांडताना ज्यावर संख्यापन केले त्याच प्रांतात येते. याउलट, \emph{स्वसमावेशरहित} अर्थानुसार $\fregeext{x}{F(x)}$ आणि~$\fregenum{x}{F(x)}$ या वस्तू एखाद्या \emph{वेगळ्या} प्रांतातील असतील.
+
+मूलनियम पाचचा स्वसमावेशक अर्थ घेतल्यास सहज गुणधर्माधारित संचरचनेमुळे विसंगती निर्माण होते (तपशीलांसाठी \ref{sth:story:blv:sec} पाहा). सहज गुणधर्माधारित संचरचनेप्रमाणेच, त्याचा \emph{स्वसमावेशरहित} अर्थ घेतल्यास तो सुसंगत करता येतो. पण मग त्याच्याकडून अपेक्षित सर्व काही बहुधा साध्य होणार नाही.
+
+ह्यूमचे तत्त्व मात्र सुसंगतपणे स्वसमावेशक अर्थाने घेता \emph{येते}. असा अर्थ घेतल्यावर ते बरेच सामर्थ्यवान ठरते.
+
+उदाहरणार्थ, “$x \neq x$” हे विधेय पाहा; स्पष्टच कोणतीही वस्तू ते पूर्ण करत नाही. ह्यूमच्या तत्त्वावरून आता $\# x( x\neq
+x)$ ही वस्तू मिळते. तिला आपण~$0$ ही संख्या मानू शकतो. आता \emph{स्वसमावेशक} अर्थानुसार—पण \emph{फक्त} त्याच अर्थानुसार—ही वस्तू $0$ आपल्या मूळ संख्यापन-प्रांतात येते. म्हणून “$x = 0$” या विधेयाला ह्यूमचे तत्त्व लावून $\#x (x =
+0)$ ही वस्तू मिळवता येते. तिला आपण~$1$ ही संख्या मानू शकतो. शिवाय ह्यूमच्या तत्त्वावरून $0 \neq 1$ मिळते, कारण स्वतःशी असमान वस्तू आणि $0$ शी समान वस्तू यांच्यात द्विएक संबंध असू शकत नाही (पहिल्या प्रकारची एकही नाही, दुसऱ्या प्रकारची एक आहे). आता पुन्हा स्वसमावेशक अर्थाने $1$ आपल्या मूळ संख्यापन-प्रांतात येतो. म्हणून “$(x = 0 \lor x = 1)$” या विधेयाला ह्यूमचे तत्त्व लावून $\#x(x = 0 \lor
+x = 1)$ ही वस्तू मिळते. तिला आपण~$2$ ही संख्या मानू शकतो; मग $0\neq 2$ आणि $1 \neq 2$ वगैरे दाखवता येते.
+
+थोडक्यात, ह्यूमचे तत्त्व स्वसमावेशक अर्थाने घेतल्यास \emph{अनंत संख्येने वस्तू आहेत} हे त्यावरून मिळते. त्यामुळे \emph{नव-फ्रेगेवादी तर्कमीमांसावाद्यांना} अंकगणिताचा पाया म्हणून ह्यूमचे तत्त्व घ्यावेसे वाटले आहे.
+
+पण फ्रेगे यांनी \emph{स्वतः} ह्यूमचे तत्त्व अंकगणिताचा पाया म्हणून घेतले नाही. उलट, एका स्पष्ट व्याख्येवरून त्यांनी ह्यूमचे तत्त्व सिद्ध केले: $\fregenum{x}{F(x)}$ ची व्याख्या $F \sim \Phi$ या संकल्पनेचा विस्तार अशी केली जाते. आधुनिक संज्ञेत हे $\fregenum{x}{F(x)} = \Setabs{G}{F \sim G}$ असे मांडण्याचा प्रयत्न करता येईल; पण मग सहज गुणधर्माधारित संचरचनेतील अडचणी पुन्हा उभ्या राहतील.
+
+
+

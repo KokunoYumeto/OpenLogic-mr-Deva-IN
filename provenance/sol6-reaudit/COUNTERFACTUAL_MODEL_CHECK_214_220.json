@@ -1,0 +1,104 @@
+{
+  "status": "passed",
+  "date": "2026-09-30",
+  "source_bound_countermodels": {
+    "antecedent_strengthening": [
+      true,
+      false
+    ],
+    "transitivity": [
+      true,
+      true,
+      false
+    ],
+    "contraposition": [
+      true,
+      false
+    ]
+  },
+  "centered_finite_sphere_systems": 35,
+  "truth_condition_comparisons": 7076,
+  "empty_sphere_invariance_checks": 7076,
+  "S5_world_valuation_cases": 7944,
+  "S5_exercise_counterexamples": {
+    "not_p": {
+      "n": 2,
+      "classes": [
+        0,
+        0
+      ],
+      "p": [
+        false,
+        true
+      ],
+      "q": [
+        false,
+        false
+      ],
+      "world": 0
+    },
+    "q": {
+      "n": 2,
+      "classes": [
+        0,
+        0
+      ],
+      "p": [
+        false,
+        true
+      ],
+      "q": [
+        true,
+        false
+      ],
+      "world": 0
+    },
+    "not_strict": {
+      "n": 2,
+      "classes": [
+        0,
+        0
+      ],
+      "p": [
+        false,
+        true
+      ],
+      "q": [
+        false,
+        false
+      ],
+      "world": 0
+    },
+    "comparability": {
+      "n": 2,
+      "classes": [
+        0,
+        0
+      ],
+      "p": [
+        false,
+        true
+      ],
+      "q": [
+        true,
+        false
+      ],
+      "world": 0
+    }
+  },
+  "infinite_example_consequent_cases": {
+    "all_u_j_satisfy_C": true,
+    "no_u_j_satisfies_C": false,
+    "C_holds_exactly_for_j_at_least_5": true,
+    "C_holds_only_at_even_j": false
+  },
+  "infinite_example_validation": "Direct mathematical proof: unions use minimum tail index; bounded-index intersections use maximum, unbounded-index intersections or families containing singleton give {w}. Every admitting S_n has smaller admitting S_(n+1). No finite experiment is claimed to certify the infinite model.",
+  "target_hashes": {
+    "OLP-0520": "4dd4fb758d490e1fa44408f95a9c0eabc4f341939fe5310a96e5cb53634b9812",
+    "OLP-0524": "be824223e71a9cf96ee5772ed79e893204fbf3b06a2a8806d5acf59a5bb13647",
+    "OLP-0526": "4ed85ac363ac6ca622361324fc163fba10619a7ce1a3a84aab0cc6be23b94f89",
+    "OLP-0527": "658b1f437ef54a797cab9a59dcec4cbe046b3e316d7f81b8c86da405c8484a95",
+    "OLP-0528": "411a9622e9a5bd5292792f7e1c45938fa78aa89547afe7605a32a21240c88851"
+  },
+  "limitations": "Bounded replay and direct analysis of the stated infinite example, not a certification of all counterfactual formulas, all models, diagrams, or historical claims."
+}

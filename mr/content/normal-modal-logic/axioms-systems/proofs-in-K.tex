@@ -1,6 +1,7 @@
 % Part: normal-modal-logic
 % Chapter: axioms-systems
 % Section: proofs-in-K
+%READERNOTE{SOL6-A156: दहा ओळींच्या K-सिद्धतेत ओळ 6 मधील implication चे बाह्य कोष्ठक उघडले आणि ओळी 8 व 9 मधील प्रत्येकी एक जादा बंद कोष्ठक काढले. ओळी 3 व 5 चे K-दृष्टांत आणि सर्व inference references आधीच योग्य होते; ते जपले.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -70,12 +71,12 @@
     4. & $\Box!A \lif \Box(!B \lif (!A \land !B))$ & \MP, 2, 3\\
     5. & $\Box(!B \lif (!A \land !B)) \lif (\Box!B \lif \Box(!A \land !B))$ & \Ax{K} \\
     6. & $(\Box!A \lif \Box(!B \lif (!A \land !B))) \lif {}$ \\
-    & \qquad $(\Box(!B \lif (!A \land !B)) \lif (\Box!B \lif \Box(!A \land !B))) \lif {}$\\
+    & \qquad $((\Box(!B \lif (!A \land !B)) \lif (\Box!B \lif \Box(!A \land !B))) \lif {}$\\
     & \qquad $(\Box!A \lif (\Box !B \lif \Box(!A \land !B))))$ & \Taut\\
     7. & $(\Box(!B \lif (!A \land !B)) \lif (\Box!B \lif \Box(!A \land !B))) \lif {}$\\
     & \qquad $(\Box!A \lif (\Box !B \lif \Box(!A \land !B)))$ & \MP, 4, 6\\
-    8. & $\Box!A \lif (\Box !B \lif \Box(!A \land !B)))$ & \MP, 5, 7\\
-    9. & $(\Box!A \lif (\Box !B \lif \Box(!A \land !B)))) \lif {}$\\
+    8. & $\Box!A \lif (\Box !B \lif \Box(!A \land !B))$ & \MP, 5, 7\\
+    9. & $(\Box!A \lif (\Box !B \lif \Box(!A \land !B))) \lif {}$\\
     & \qquad $((\Box!A \land \Box!B) \lif \Box(!A \land !B))$ & \Taut\\
     10. & $(\Box!A \land \Box!B) \lif \Box(!A \land !B)$ & \MP, 8, 9
   \end{derivation}

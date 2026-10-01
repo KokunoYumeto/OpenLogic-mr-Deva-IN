@@ -1,0 +1,745 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 7: विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा}\label{pl:syn::chap}
+\begin{editorial}
+  या भागात अभिजात विधानीय तर्कशास्त्रावरील सामग्री आहे. पहिले
+  प्रकरण तुलनेने प्राथमिक स्वरूपाचे आहे आणि त्यात केवळ व्याख्या
+  व निष्पत्त्या दिल्या आहेत; अनेक सिद्धता पूर्ण केलेल्या नसून त्या
+  सरावासाठी सोडल्या आहेत. सिद्धता-पद्धतींवरील आणि संपूर्णता
+  प्रमेयावरील सामग्री प्रथम-क्रम तर्कशास्त्राच्या भागातून, ``FOL''
+  हा टॅग false असा ठेवून, समाविष्ट केली आहे. त्यामुळे विधेये,
+  पदे आणि संख्यापक यांच्याशी संबंधित सर्व मजकूर वगळला जातो;
+  तसेच संरचना~$\Struct{M}$ या संरचनांविषयीच्या चर्चेऐवजी
+  सत्य-मूल्यांकने~$\pAssign{v}$ या सत्य-मूल्यांकनांविषयी चर्चा येते.
+
+  या भागात अधिक तपशील समाविष्ट करण्यासाठी त्याचा विस्तार करणे,
+  आणि सत्यता-फलनात्मक संपूर्णतेसारखे पुढील विषय व निष्पत्त्या जोडणे,
+  असे नियोजन आहे.
+\end{editorial}
+\begin{editorial}
+  हा केवळ व्याख्यांचा अतिशय संक्षिप्त आढावा आहे. सूत्रांवरील
+  विगमनाने सिद्धता करण्याचा सुलभ परिचय आणि आणखी बरीच उदाहरणे
+  देऊन त्याचा विस्तार करायला हवा.
+\end{editorial}
+
+
+
+
+
+
+\section{परिचय}\label{pl:syn:int:sec}
+
+विधानीय तर्कशास्त्रात विधानीय संयोजके
+$\lnot$, $\land$, $\lor$, $\lif$ आणि $\liff$ वापरून
+विधानीय चलांपासून बनवलेल्या सूत्रांचा विचार
+केला जातो. अंतःप्रेरणेने पाहता, विधानीय चल~$p$
+हे सत्य किंवा असत्य असलेल्या एखाद्या वाक्याच्या किंवा विधानाच्या
+जागी येते. सूत्र मधील विधानीय चलाचे
+``सत्यतामूल्य'' ठरले की, विधानीय संयोजके वापरून त्यांच्यापासून
+बनवलेल्या कोणत्याही सूत्रांचे सत्यतामूल्यही ठरते. विधानीय
+तर्कशास्त्राला आपण \emph{सत्यता-फलनात्मक} म्हणतो, कारण त्याची
+चिन्हार्थमीमांसा सत्यतामूल्यांच्या फलनांनी दिली जाते. विशेषतः,
+विधानीय तर्कशास्त्रात सत्य आणि असत्य यांचे पुढील प्रकारचे निर्धारण
+आपण विचारात घेत नाही: उदाहरणार्थ, एखादी गोष्ट केवळ परिस्थितीवश
+सत्य असण्याऐवजी अनिवार्यपणे सत्य आहे का, ती सत्य आहे हे ज्ञात आहे
+का, किंवा ती आत्ता सत्य आहे की पूर्वी सत्य होती अथवा पुढे सत्य
+असेल. आपण फक्त सत्य ($\True$) आणि असत्य ($\False$) ही दोन
+सत्यतामूल्ये विचारात घेतो. म्हणून एखादे विधान सत्यही नसते व
+असत्यही नसते, किंवा ते केवळ अर्धसत्य असते, ही शक्यता चर्चेतून
+वगळतो. तसेच, ज्यांच्यापासून बनवलेल्या सूत्राचे सत्यतामूल्य
+त्याच्या भागांच्या सत्यतामूल्यांनी पूर्णपणे ठरते (त्याच्या अर्थाने,
+उदाहरणार्थ, ठरत नाही), अशाच संयोजकांवर आपण लक्ष केंद्रित करतो.
+विशेषतः, इंग्रजीतील सशर्त विधानांचे सत्यतामूल्य या अर्थाने
+सत्यता-फलनात्मक असते की नाही, हा वादग्रस्त प्रश्न आहे. वास्तविक
+अभिव्यंजन~$\lif$ सत्यता-फलनात्मक आहे; सत्यता-फलनात्मक नसलेल्या सशर्त
+विधानांचा विचार इतर तर्कपद्धती करतात.
+
+सत्यता-फलनात्मक विधानीय तर्कशास्त्राची उपपत्ती आणि अधिउपपत्ती
+विकसित करण्यासाठी, आपण प्रथम त्याच्या व्यंजकांची विन्यासमीमांसा
+आणि चिन्हार्थमीमांसा परिभाषित केली पाहिजे. संयोजके वापरून
+विधानीय चलांपासून सूत्रे तयार करण्याची एक
+पद्धत आपण वर्णन करू. पर्यायी व्याख्या शक्य आहेत. इतर पद्धती वेगळी
+चिन्हे निवडतील, संयोजकांचे वेगळे संच मूलभूत म्हणून निवडतील आणि
+कंसांचा वेगळ्या रीतीने वापर करतील (किंवा तथाकथित पोलिश
+संकेतपद्धतीप्रमाणे कंस अजिबात वापरणार नाहीत). तरी सर्व दृष्टिकोनांत
+सामाईक बाब ही की रचनानियम सूत्रांचा संच \emph{विगमनाने}
+परिभाषित करतात. हे योग्य रीतीने केल्यास, रचनानियमांनुसार प्रत्येक
+व्यंजक मूलतः एकाच रीतीने तयार होऊ शकते. त्यामुळे तयार होणारी
+व्यंजके \emph{एकमेव रीतीने वाचनीय} असतात. परिणामी, त्यांची ही
+विगमनाधारित व्याख्या आपल्याला त्याच पद्धतीने---विगमनाधारित
+व्याख्येने---त्या व्यंजकांना अर्थ देता येतो, याची खात्री देते.
+
+व्यंजकांना अर्थ देणे हा चिन्हार्थमीमांसेचा विषय आहे. विधानीय
+तर्कशास्त्राच्या चिन्हार्थमीमांसेतील मध्यवर्ती संकल्पना म्हणजे
+सत्य-मूल्यांकन मधील पूर्ति. सत्य-मूल्यांकन~$\pAssign{v}$ हे
+विधानीय चलांना $\True$, $\False$ ही सत्यतामूल्ये
+नेमून देते. कोणतेही सत्य-मूल्यांकन कोणत्याही सूत्र~$\varphi$
+साठी $\pValue{v}(\varphi)$ हे सत्यतामूल्य ठरवते. सूत्राची
+सत्य-मूल्यांकन~$\pAssign{v}$ मध्ये पूर्ति तेव्हा आणि केवळ तेव्हाच
+होते जेव्हा $\pValue{v}(\varphi) = \True$; हे आपण $\pSat{v}{\varphi}$ असे
+लिहितो. तार्किक संयोजकांची सत्यता-फलने वापरून, उदाहरणार्थ
+$\varphi \land \psi$ ची पूर्ति $\varphi$ आणि~$\psi$ यांची पूर्ति होते (किंवा
+होत नाही) यावरून परिभाषित करून, हा संबंधही~$\varphi$ च्या रचनेवरील
+विगमनाने परिभाषित करता येतो.
+
+वाक्यांसाठी असलेल्या $\pSat{v}{\varphi}$ या पूर्ति-संबंधाच्या आधारे
+आपण सर्वतः सत्यता, तार्किक निष्पन्नता आणि पूर्ततायोग्यता या मूलभूत
+चिन्हार्थविषयक संकल्पना परिभाषित करू शकतो. सूत्र हे सर्वतः
+सत्य सूत्र, $\Entails \varphi$, असते, जर प्रत्येक सत्य-मूल्यांकन त्याची
+पूर्ति करत असेल, म्हणजे कोणत्याही~$\pAssign{v}$ साठी
+$\pValue{v}(\varphi) = \True$ असेल. सूत्रांच्या एखाद्या संचापासून,
+$\Gamma \Entails \varphi$, ते तार्किकरीत्या निष्पन्न होते, जर~$\Gamma$
+मधील सर्व सूत्रांची पूर्ति करणारे प्रत्येक सत्य-मूल्यांकन
+~$\varphi$ चीही पूर्ति करत असेल. तसेच, सूत्रांचा एखादा संच
+पूर्ततायोग्य असतो, जर एखादे सत्य-मूल्यांकन त्यातील सर्व सूत्रांची एकाच वेळी पूर्ति करत असेल. सूत्रे विगमनाने
+परिभाषित केलेली असल्यामुळे, आणि पूर्तिही सूत्रांच्या रचनेवरील
+विगमनाने परिभाषित केलेली असल्यामुळे, आपल्या चिन्हार्थमीमांसेचे
+गुणधर्म सिद्ध करण्यासाठी आणि परिभाषित केलेल्या चिन्हार्थविषयक
+संकल्पनांचा परस्परसंबंध दाखवण्यासाठी आपण विगमन वापरू शकतो.
+
+
+
+
+
+
+
+
+
+\section{विधानीय सूत्र}\label{pl:syn:fml:sec}
+
+विधानीय तर्कशास्त्रातील सूत्रे ही
+\emph{विधानीय चले}, विधानीय
+  स्थिर~$\lfalse$
+    आणि विधानीय स्थिर~$\ltrue$ यांपासून \emph{तार्किक
+  संयोजके} वापरून तयार होतात.
+
+\begin{enumerate}
+\item प्रगणनीय संच~$\PVar$: त्यातील विधानीय चले
+  $\Obj p_0$, $\Obj p_1$, \dots
+\item असत्यता साठीचे विधानीय स्थिर~$\lfalse$.
+\item सत्यता साठीचे विधानीय स्थिर~$\ltrue$.
+\item तार्किक संयोजके:
+  \startycommalist
+  \ycomma $\lnot$ (नकरण)%
+  \ycomma $\land$ (संधियोग)%
+  \ycomma $\lor$ (विकल्पयोग)%
+  \ycomma $\lif$ (शर्त)%
+  \ycomma $\liff$ (द्विशर्त)%
+\item विरामचिन्हे: (, ), आणि स्वल्पविराम.
+\end{enumerate}
+
+विधानीय तर्कशास्त्राची ही भाषा आपण $\Lang L_0$ ने दर्शवतो.
+
+.
+
+
+
+
+\begin{intro}
+वर आपण वापरलेल्या संज्ञांपेक्षा आणि चिन्हांपेक्षा वेगळ्या संज्ञा व
+चिन्हे तुम्हाला परिचित असू शकतात. तर्कशास्त्राच्या ग्रंथांत (आणि
+अध्यापनात) ``नकरण'' यासाठी सामान्यतः $\sim$, $\neg$, आणि~!\ यांपैकी
+एखादे, तर ``संधियोग'' यासाठी $\wedge$, $\cdot$, आणि $\&$ यांपैकी
+एखादे चिन्ह वापरतात. ``सशर्त (संकेतार्थक)'' किंवा ``अभिव्यंजन'' यांसाठी
+$\rightarrow$, $\Rightarrow$, आणि $\supset$ ही चिन्हे सामान्यतः
+वापरली जातात.
+``द्विसशर्त'', ``द्वि-अभिव्यंजन'' किंवा
+  ``(वास्तविक) सममूल्यता'' यांसाठी $\leftrightarrow$,
+  $\Leftrightarrow$, आणि $\equiv$ ही चिन्हे वापरतात.
+$\lfalse$ या चिन्हाला वेगवेगळ्या ठिकाणी
+  ``असत्यता'', ``फाल्सम'', ``विसंगती'' किंवा ``तळ'' म्हणतात.
+$\ltrue$ या चिन्हाला वेगवेगळ्या ठिकाणी
+  ``सत्यता'', ``वेरम'' किंवा ``शिखर'' म्हणतात.
+\end{intro}
+
+\begin{defn}[सूत्र]
+\label{pl:syn:fml:defn:formulas}
+विधानीय तर्कशास्त्रातील \emph{सूत्रे} चा संच~$\Frm[L_0]$
+पुढीलप्रमाणे विगमनाने परिभाषित केला जातो:
+\begin{enumerate}
+\item $\lfalse$ हे आण्विक सूत्र आहे.
+
+\item $\ltrue$ हे आण्विक सूत्र आहे.
+
+\item प्रत्येक विधानीय चल~$\Obj p_i$ हे आण्विक
+  सूत्र आहे.
+
+\item $\varphi$ हे सूत्र असेल, तर $\lnot \varphi$ हे
+  सूत्र आहे.
+
+\item $\varphi$ आणि $\psi$ ही सूत्रे असतील, तर $(\varphi \land
+  \psi)$ हे सूत्र आहे.
+
+\item $\varphi$ आणि $\psi$ ही सूत्रे असतील, तर $(\varphi \lor \psi)$
+  हे सूत्र आहे.
+
+\item $\varphi$ आणि $\psi$ ही सूत्रे असतील, तर $(\varphi \lif \psi)$
+  हे सूत्र आहे.
+
+\item $\varphi$ आणि $\psi$ ही सूत्रे असतील, तर $(\varphi \liff \psi)$
+  हे सूत्र आहे.
+
+\item इतर काहीही सूत्र नाही.
+\end{enumerate}
+\end{defn}
+
+\begin{explain}
+सूत्रांची ही व्याख्या \emph{विगमनाधारित व्याख्या} आहे. मूलतः,
+आपण सूत्रांचा संच अनंतपणे अनेक टप्प्यांत तयार करतो. आरंभीच्या
+टप्प्यात आपण सर्व आण्विक सूत्रांना सूत्रे घोषित करतो; हे व्याख्येतील
+पहिल्या काही बाबींशी, म्हणजे
+$\ltrue$, %
+$\lfalse$, %
+$\Obj p_i$ यांच्या बाबींशी जुळते. म्हणून ``आण्विक सूत्र''
+म्हणजे या रूपातील कोणतेही सूत्र.
+
+व्याख्येतील इतर बाबी आधीच तयार केलेल्या सूत्रांपासून नवी
+सूत्रे तयार करण्याचे नियम देतात. दुसऱ्या टप्प्यात या नियमांनी
+आण्विक सूत्रांपासून सूत्रे तयार करता येतात. तिसऱ्या
+टप्प्यात आण्विक सूत्रे आणि दुसऱ्या टप्प्यात मिळालेली सूत्रे यांपासून
+नवी सूत्रे तयार करतो, आणि ही प्रक्रिया पुढे चालू राहते. अशा एखाद्या
+टप्प्यात शेवटी तयार होणारी प्रत्येक गोष्ट सूत्र असते; इतर
+काहीही सूत्र नसते.
+\end{explain}
+
+द्विस्थानी संयोजक~$\ast$ वापरून $\psi$, $\chi$ पासून तयार केलेले
+सूत्र $(\psi \ast \chi)$ लिहिताना आपण अनेकदा सर्वांत बाहेरची कंसांची
+जोडी वगळून केवळ~$\psi \ast \chi$ असे लिहू.
+
+
+
+\begin{defn}[विन्यासात्मक अनन्यता]
+$\ident$ हे चिन्ह चिन्हमालांमधील विन्यासात्मक अनन्यता व्यक्त करते;
+म्हणजे $\varphi \ident \psi$ तेव्हा आणि केवळ तेव्हाच, जेव्हा $\varphi$ आणि $\psi$
+या समान लांबीच्या चिन्हमाला असतात आणि प्रत्येक स्थानी त्यांच्यात तेच
+चिन्ह असते.
+\end{defn}
+
+$\ident$ या चिन्हाच्या दोन्ही बाजूंना जोडणीने मिळालेल्या चिन्हमाला
+येऊ शकतात. उदाहरणार्थ, $\varphi \ident (\psi \lor \chi)$ याचा अर्थ असा:
+आरंभीचा कंस, चिन्हमाला~$\psi$, $\lor$ हे चिन्ह, चिन्हमाला~$\chi$ आणि
+शेवटचा कंस या क्रमाने जोडून मिळणारी चिन्हमाला आणि चिन्हमाला~$\varphi$
+या एकच आहेत. असे असेल, तर $\varphi$ चे पहिले चिन्ह आरंभीचा कंस आहे;
+$\varphi$ मध्ये दुसऱ्या चिन्हापासून सुरू होणारी $\psi$ ही उपचिन्हमाला आहे;
+तिच्यानंतर $\lor$ येते; इत्यादी बाबी आपल्याला माहीत होतात.
+
+
+
+
+
+
+
+
+
+\section{पूर्वतयारी}\label{pl:syn:pre:sec}
+
+\begin{thm}[\emph{सूत्रांवरील विगमनाचे तत्त्व}]
+  \label{pl:syn:pre:thm:induction}
+  एखादा गुणधर्म~$P$ सर्व आण्विक सूत्रांसाठी लागू होत असेल आणि
+  पुढील अटी पूर्ण करत असेल:
+  \begin{enumerate}
+    \item तो~$\varphi$ साठी लागू असताना $\lnot \varphi$ साठीही
+      लागू होतो;
+    \item तो~$\varphi$ आणि~$\psi$ यांच्यासाठी लागू असताना
+      $(\varphi \land \psi)$ साठीही लागू होतो;
+    \item तो~$\varphi$ आणि~$\psi$ यांच्यासाठी लागू असताना
+      $(\varphi \lor \psi)$ साठीही लागू होतो;
+    \item तो~$\varphi$ आणि~$\psi$ यांच्यासाठी लागू असताना
+      $(\varphi \lif \psi)$ साठीही लागू होतो;
+    \item तो~$\varphi$ आणि~$\psi$ यांच्यासाठी लागू असताना
+      $(\varphi \liff \psi)$ साठीही लागू होतो;
+  \end{enumerate}
+  तर $P$ सर्व सूत्रांसाठी लागू होतो.
+\end{thm}
+
+\begin{proof}
+  गुणधर्म~$P$ असलेल्या सर्व सूत्रांचा संग्रह~$S$ असू द्या.
+  स्पष्टपणे $S \subseteq \Frm[L_0]$. \ref{pl:syn:fml:defn:formulas} मधील
+  सर्व अटी $S$~पूर्ण करतो: त्यात सर्व आण्विक सूत्रे आहेत आणि
+  तो संकारकांखाली बंद आहे.  $\Frm[L_0]$ हा असा सर्वांत लहान
+  वर्ग आहे; म्हणून $\Frm[L_0] \subseteq S$. त्यामुळे $\Frm[L_0] = S$,
+  आणि प्रत्येक सूत्राला गुणधर्म~$P$ आहे.
+\end{proof}
+
+\begin{prop}\label{pl:syn:pre:prop:balanced}
+   $\Frm[L_0]$ मधील प्रत्येक सूत्र \emph{संतुलित} आहे; म्हणजे
+   त्यात जेवढे डावे कंस आहेत तेवढेच उजवे कंस आहेत.
+\end{prop}
+
+\begin{prob}
+\ref{pl:syn:pre:prop:balanced} सिद्ध करा.
+\end{prob}
+
+\begin{prop} \label{pl:syn:pre:prop:noinit}
+कोणत्याही सूत्राचा कोणताही उचित आरंभीचा खंड सूत्र नसतो.
+\end{prop}
+
+\begin{prob}
+  \ref{pl:syn:pre:prop:noinit} सिद्ध करा.
+\end{prob}
+
+\begin{prop}[एकमेव वाचनीयता]
+$ \Frm[L_0]$ मधील कोणत्याही सूत्र~$\varphi$ चे पुढीलपैकी नेमक्या एका
+रूपात रचनाविश्लेषण करता येते:
+\begin{enumerate}
+\item $\lfalse$.
+
+\item $\ltrue$.
+
+\item एखाद्या $\Obj p_n \in  \PVar$ साठी $\Obj p_n$.
+
+\item एखाद्या सूत्र~$\psi$ साठी $\lnot \psi$.
+
+\item काही सूत्रे $\psi$ आणि~$\chi$ यांच्यासाठी
+  $(\psi \land \chi)$.
+
+\item काही सूत्रे $\psi$ आणि~$\chi$ यांच्यासाठी
+  $(\psi \lor \chi)$.
+
+\item काही सूत्रे $\psi$ आणि~$\chi$ यांच्यासाठी
+  $(\psi \lif \chi)$.
+
+\item काही सूत्रे $\psi$ आणि~$\chi$ यांच्यासाठी
+  $(\psi \liff \chi)$.
+\end{enumerate}
+शिवाय, हे रचनाविश्लेषण \emph{एकमेव} असते.
+\end{prop}
+
+\begin{proof}
+$\varphi$ वरील विगमनाने सिद्ध करू. उदाहरणार्थ, $\varphi$ चे $(\psi \lif \chi)$ आणि
+$(\psi' \lif \chi')$ अशी दोन भिन्न रचनाविश्लेषणे आहेत असे समजा. मग $\psi$
+आणि $\psi'$ एकच असले पाहिजेत (अन्यथा त्यांपैकी एक हा दुसऱ्याचा उचित
+आरंभीचा खंड असेल); म्हणून $\varphi$ ची ही दोन रचनाविश्लेषणे भिन्न असतील,
+तर त्याचे कारण असेच असले पाहिजे की $\chi$ आणि $\chi'$ ही एकाच
+चिन्हमालेची भिन्न रचनाविश्लेषणे आहेत; पण विगमन गृहीतकानुसार ते अशक्य
+आहे.
+\end{proof}
+
+
+\begin{defn}[एकरूप आदेशन]
+$\varphi$ आणि $\psi$ ही सूत्रे असतील आणि $\Obj p_i$ हे विधानीय चल असेल, तर $\varphi$ मधील $\Obj p_i$ ची प्रत्येक
+आस्थिति $\psi$ च्या एका आस्थितीने बदलल्यावर मिळणारा परिणाम
+$\Subst{\varphi}{\psi}{\Obj p_i}$ ने दर्शवला जातो; त्याचप्रमाणे,
+$\Obj p_1$, \dots,~$\Obj p_n$ यांची सूत्रे $\psi_1$,
+\dots,~$\psi_n$ यांनी एकाच वेळी केलेले आदेशन
+$\SSubst{\varphi}{\subst{\psi_1}{\Obj p_1},\dots,\subst{\psi_n}{\Obj p_n}}$
+ने दर्शवले जाते.
+\end{defn}
+
+\begin{prob} खालील पाच सूत्रांपैकी प्रत्येकासाठी, ते
+ सूत्र \( \Subst{\varphi}{\psi}{\Obj p_i} \) या आदेशनाच्या रूपात व्यक्त
+ करता येते का ते ठरवा; येथे \( \varphi \) हे अनुक्रमे (i) \( \Obj p_0 \);
+ (ii) \( ( \lnot \Obj p_0 \land \Obj p_1) \); आणि (iii)
+ \( ( ( \lnot \Obj p_0 \lif \Obj p_1 ) \land \Obj p_2 ) \) आहे.
+ प्रत्येक बाबतीत संबद्ध आदेशन स्पष्ट करा.
+  \begin{enumerate}
+    \item \( \Obj p_1 \)
+    \item \( ( \lnot \Obj p_0 \land \Obj p_0 ) \)
+    \item \( ( ( \Obj p_0 \lor \Obj p_1 ) \land \Obj p_2 )  \)
+    \item \( \lnot ( ( \Obj p_0 \lif \Obj p_1 ) \land \Obj p_2 ) \)
+    \item \( (( \lnot ( \Obj p_0 \lif \Obj p_1 ) \lif ( \Obj p_0 \lor \Obj p_1 )) \land \lnot ( \Obj p_0 \land \Obj p_1 )) \)
+  \end{enumerate}
+\end{prob}
+
+\begin{prob}
+$\Subst{\varphi}{\psi}{p}$ ची विगमनाधारित, गणितीयदृष्ट्या काटेकोर व्याख्या
+द्या.
+\end{prob}
+
+
+
+
+
+
+
+
+
+\section{रचनाक्रमिका}\label{pl:syn:fseq:sec}
+
+सूत्रांची विगमनाधारित व्याख्या देणे आणि त्याला पूरक तंत्र म्हणून
+सूत्रांचे गुणधर्म विगमनाने सिद्ध करणे हा सुबक व कार्यक्षम
+दृष्टिकोन आहे. तथापि, सूत्रांच्या रचनेचा तळापासून वर जाणारा,
+टप्प्याटप्प्याचा दृष्टिकोनही उपयुक्त ठरू शकतो; येथे आपण तो
+\emph{रचनाक्रमिका} या संकल्पनेच्या साहाय्याने मांडतो.
+
+\begin{defn}[सूत्रांसाठी रचनाक्रमिका]
+\label{pl:syn:fseq:defn:fseq-frm}
+भाषा~$\Lang L_0$ मधील चिन्हांपासून बनलेल्या चिन्हमालांची सांत क्रमिका
+$\tuple{\varphi_0,\dotsc,\varphi_n}$ ही $\varphi$ साठी \emph{रचनाक्रमिका} असते, जर
+$\varphi \ident \varphi_n$ आणि प्रत्येक $i \leq n$ साठी एकतर $\varphi_i$ हे आण्विक
+सूत्र असेल किंवा पुढीलपैकी एखादी अट पूर्ण करणारे $j,k < i$ अस्तित्वात
+असतील:
+\begin{enumerate}
+    \item $\varphi_i \ident \lnot \varphi_j$.%
+    \item $\varphi_i \ident (\varphi_j \land \varphi_k)$.%
+    \item $\varphi_i \ident (\varphi_j \lor \varphi_k)$.%
+    \item $\varphi_i \ident (\varphi_j \lif \varphi_k)$.%
+    \item $\varphi_i \ident (\varphi_j \liff \varphi_k)$.%
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+\[\tuple{
+    \Obj p_0,
+    \Obj p_1,
+    (\Obj p_1 \land \Obj p_0),
+    \lnot (\Obj p_1 \land \Obj p_0)
+}
+\]
+ही $\lnot (\Obj p_1 \land \Obj p_0)$ ची एक रचनाक्रमिका आहे; तसेच
+पुढील क्रमिकाही तिची रचनाक्रमिका आहे:
+\[\tuple{
+    \Obj p_0,
+    \Obj p_1,
+    \Obj p_0,
+    (\Obj p_1 \land \Obj p_0),
+    (\Obj p_0 \lif \Obj p_1),
+    \lnot (\Obj p_1 \land \Obj p_0)
+}.
+\]
+दुसऱ्या उदाहरणावरून दिसते की रचनाक्रमिकेत `अडगळ' असू शकते: अनावश्यक
+असलेली किंवा रचनेत काहीही हातभार न लावणारी सूत्रे.
+\end{ex}
+
+\begin{prop}
+\label{pl:syn:fseq:prop:formed}
+$\Frm[L_0]$ मधील प्रत्येक सूत्र~$\varphi$ ला एक रचनाक्रमिका असते.
+\end{prop}
+
+\begin{proof}
+$\varphi$ आण्विक आहे असे समजा. मग क्रमिका~$\tuple{\varphi}$ ही $\varphi$ साठी
+रचनाक्रमिका आहे.
+आता $\psi$ आणि~$\chi$ यांना अनुक्रमे $\tuple{\psi_0,\dotsc,\psi_n}$ आणि
+$\tuple{\chi_0,\dotsc,\chi_m}$ या रचनाक्रमिका आहेत असे समजा.
+\begin{enumerate}
+  \item जर $\varphi \ident \lnot \psi$, तर
+      $\tuple{\psi_0,\dotsc,\psi_n,\lnot \psi_n}$ ही $\varphi$ साठी
+      रचनाक्रमिका आहे.
+  \item जर $\varphi \ident (\psi \land \chi)$, तर
+      $\tuple{\psi_0,\dotsc,\psi_n,\chi_0,\dotsc,\chi_m,(\psi_n \land \chi_m)}$
+      ही $\varphi$ साठी रचनाक्रमिका आहे.
+  \item जर $\varphi \ident (\psi \lor \chi)$, तर
+      $\tuple{\psi_0,\dotsc,\psi_n,\chi_0,\dotsc,\chi_m,(\psi_n \lor \chi_m)}$
+      ही $\varphi$ साठी रचनाक्रमिका आहे.
+  \item जर $\varphi \ident (\psi \lif \chi)$, तर
+      $\tuple{\psi_0,\dotsc,\psi_n,\chi_0,\dotsc,\chi_m,(\psi_n \lif \chi_m)}$
+      ही $\varphi$ साठी रचनाक्रमिका आहे.
+  \item जर $\varphi \ident (\psi \liff \chi)$, तर
+      $\tuple{\psi_0,\dotsc,\psi_n,\chi_0,\dotsc,\chi_m,(\psi_n \liff \chi_m)}$
+      ही $\varphi$ साठी रचनाक्रमिका आहे.
+\end{enumerate}
+सूत्रांवरील विगमनाच्या तत्त्वानुसार प्रत्येक सूत्राला एक
+रचनाक्रमिका असते.
+\end{proof}
+
+याचे उलट विधानही आपण सिद्ध करू शकतो. ते महत्त्वाचे आहे, कारण त्यामुळे
+सूत्रे परिभाषित करण्याच्या आपल्या दोन्ही पद्धती सममूल्य आहेत, म्हणजे
+त्या समान परिणाम देतात, हे दिसते. तसेच रचनाक्रमिकांच्या लांबीवर साधे
+विगमन वापरून सूत्रांविषयीची प्रमेये सिद्ध करता येतात.
+
+\begin{lem}
+\label{pl:syn:fseq:lem:fseq-init}
+$\tuple{\varphi_0,\dotsc,\varphi_n}$ ही $\varphi_n$ साठी रचनाक्रमिका आहे आणि
+$k \leq n$ असे समजा. मग $\tuple{\varphi_0,\dotsc,\varphi_k}$ ही $\varphi_k$ साठी
+रचनाक्रमिका आहे.
+\end{lem}
+
+\begin{proof}
+अभ्यासप्रश्न.
+\end{proof}
+
+\begin{thm}
+\label{pl:syn:fseq:thm:fseq-frm-equiv}
+$\Frm[L_0]$ हा भाषा~$\Lang L_0$ मधील ज्या सर्व चिन्हमालांना
+रचनाक्रमिका आहे, त्यांचा संच आहे.
+\end{thm}
+
+\begin{proof}
+भाषा~$\Lang L_0$ मधील ज्या सर्व चिन्हमालांना रचनाक्रमिका आहे, त्यांचा
+संच~$F$ असू द्या. $\Frm[L_0] \subseteq F$ हे
+\ref{pl:syn:fseq:prop:formed} मध्ये आपण पाहिले आहे; म्हणून आता उलट
+समावेश सिद्ध करू.
+
+$\varphi$ ला $\tuple{\varphi_0,\dotsc,\varphi_n}$ ही रचनाक्रमिका आहे असे समजा.
+$n$ वरील प्रबल विगमनाने $\varphi \in \Frm[L_0]$ हे सिद्ध करू. लांबी
+$m < n$ असलेली रचनाक्रमिका ज्या प्रत्येक चिन्हमालेला आहे, ती
+$\Frm[L_0]$ मध्ये आहे, हे आपले विगमन गृहीतक आहे. रचनाक्रमिकेच्या
+व्याख्येनुसार एकतर $\varphi_n$ आण्विक आहे किंवा पुढीलपैकी एखादी अट पूर्ण
+करणारे $j,k < n$ अस्तित्वात असले पाहिजेत:
+\begin{enumerate}
+    \item $\varphi_n \ident \lnot \varphi_j$.%
+    \item $\varphi_n \ident (\varphi_j \land \varphi_k)$.%
+    \item $\varphi_n \ident (\varphi_j \lor \varphi_k)$.%
+    \item $\varphi_n \ident (\varphi_j \lif \varphi_k)$.%
+    \item $\varphi_n \ident (\varphi_j \liff \varphi_k)$.%
+\end{enumerate}
+आता प्रत्येक शक्यतेचा स्वतंत्र विचार करू. $\varphi_n$ आण्विक असेल, तर
+$\varphi_n \in \Frm[L_0]$. त्याऐवजी $\varphi \ident
+(\varphi_j \land \varphi_k)$ असे समजा.
+\begin{quote}\small\textbf{स्रोतदुरुस्ती.} MRPL-002: गोठवलेल्या इंग्रजीत या एकाच शक्यतेत विन्यासात्मक अनन्यता-चिन्हाऐवजी पर्यायी सममूल्यता-चिन्ह आले आहे. आधीची स्पष्ट व्याख्या आणि इतर सर्व रचना-बाबी यांच्याशी जुळण्यासाठी येथे विन्यासात्मक अनन्यता वापरली आहे.\end{quote}
+\ref{pl:syn:fseq:lem:fseq-init} नुसार
+$\tuple{\varphi_0,\dotsc,\varphi_j}$ आणि $\tuple{\varphi_0,\dotsc,\varphi_k}$ या अनुक्रमे
+$\varphi_j$ आणि~$\varphi_k$ साठी रचनाक्रमिका आहेत. या $\varphi$ च्या
+रचनाक्रमिकेच्या उचित आरंभीच्या उपक्रमिका असल्यामुळे दोन्हींची लांबी
+$n$ पेक्षा कमी आहे. म्हणून विगमन गृहीतकानुसार $\varphi_j$ आणि~$\varphi_k$ ही
+$\Frm[L_0]$ मध्ये आहेत; त्यामुळे सूत्राच्या व्याख्येनुसार
+$(\varphi_j \land \varphi_k)$ हेही त्यात आहे. इतर शक्यता समांतर युक्तिवादाने
+सिद्ध होतात.
+\end{proof}
+
+
+
+
+
+
+
+
+
+\section{सत्य-मूल्यांकन आणि पूर्ति}\label{pl:syn:val:sec}
+
+\begin{defn}[सत्य-मूल्यांकने]
+``सत्य'' आणि ``असत्य'' ही दोन सत्यतामूल्ये असलेला संच
+$\{\True, \False\}$ असू द्या. $\Lang{L_0}$ साठीचे
+\emph{सत्य-मूल्यांकन} म्हणजे भाषेतील विधानीय चलांना
+$\True$ किंवा $\False$ यांपैकी एक मूल्य देणारे फलन~$\pAssign{v}$;
+म्हणजेच $\pAssign{v} \colon \PVar \to \{\True, \False \}$.
+\end{defn}
+
+\begin{defn}
+  दिलेले सत्य-मूल्यांकन~$\pAssign{v}$ असताना, मूल्यन फलन
+  $\pValue{v} \colon \Frm[L_0] \to \{\True, \False \}$ पुढीलप्रमाणे
+  विगमनाने परिभाषित करू:
+  \begin{align*}
+    \pValue{v}(\lfalse) & = \False; \\
+    \pValue{v}(\ltrue) & = \True; \\
+    \pValue{v}(\Obj p_n) & = \pAssign{v}(\Obj p_n); \\
+    \pValue{v}(\lnot \varphi) & = \begin{cases}
+        \True & \text{जर } \pValue{v}(\varphi) = \False;\\
+        \False & \text{अन्यथा.}
+      \end{cases} \\
+    \pValue{v}(\varphi \land \psi) & = \begin{cases}
+        \True &
+        \text{जर $\pValue{v}(\varphi) = \True$ आणि $\pValue{v}(\psi) = \True$;}\\
+        \False &
+        \text{जर $\pValue{v}(\varphi) = \False$ किंवा $\pValue{v}(\psi) = \False$}.
+      \end{cases}\\
+    \pValue{v}(\varphi \lor \psi) & = \begin{cases}
+        \True &
+        \text{जर $\pValue{v}(\varphi) = \True$ किंवा $\pValue{v}(\psi) = \True$;}\\
+        \False &
+        \text{जर $\pValue{v}(\varphi) = \False$ आणि $\pValue{v}(\psi) = \False$}.
+      \end{cases}\\
+    \pValue{v}(\varphi \lif \psi) & = \begin{cases}
+        \True &
+        \text{जर $\pValue{v}(\varphi) = \False$ किंवा $\pValue{v}(\psi) = \True$;}\\
+        \False &
+        \text{जर $\pValue{v}(\varphi) = \True$ आणि $\pValue{v}(\psi) = \False$}.
+      \end{cases}\\
+    \pValue{v}(\varphi \liff \psi) & = \begin{cases}
+        \True &
+        \text{जर $\pValue{v}(\varphi) = \pValue{v}(\psi)$;}\\
+        \False &
+        \text{जर $\pValue{v}(\varphi) \neq \pValue{v}(\psi)$}.
+      \end{cases}
+\end{align*}
+\end{defn}
+
+\begin{explain}
+या बाबींना पुढील सत्यताकोष्टके अनुरूप आहेत:
+\begin{center}
+
+  \begin{tabular}{|c||c|} \hline
+    $\varphi$ & $ \lnot \varphi$ \\
+    \hline \hline
+    $\True$ & $\False$ \\
+    $\False$ & $\True$ \\
+    \hline
+  \end{tabular}
+
+
+  \begin{tabular}{|cc||c|} \hline
+    $\varphi$ & $\psi$ & $\varphi \land \psi$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\False$ \\
+    $\False$ & $\True$ & $\False$ \\
+    $\False$ & $\False$ & $\False$ \\
+    \hline
+  \end{tabular}
+
+
+  \begin{tabular}{|cc||c|} \hline
+    $\varphi$ & $\psi$ & $\varphi \lor \psi$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\True$ \\
+    $\False$ & $\True$ & $\True$ \\
+    $\False$ & $\False$ & $\False$ \\
+    \hline
+  \end{tabular}
+%
+\\[1em]
+  \begin{tabular}{|cc||c|} \hline
+    $\varphi$ & $\psi$ & $\varphi \lif \psi$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\False$ \\
+    $\False$ & $\True$ & $\True$ \\
+    $\False$ & $\False$ & $\True$ \\
+    \hline
+  \end{tabular}
+  \begin{tabular}{|cc||c|} \hline
+    $\varphi$ & $\psi$ & $\varphi \liff \psi$ \\
+    \hline \hline
+    $\True$ & $\True$ & $\True$ \\
+    $\True$ & $\False$ & $\False$ \\
+    $\False$ & $\True$ & $\False$ \\
+    $\False$ & $\False$ & $\True$ \\
+    \hline
+  \end{tabular}
+\end{center}
+\end{explain}
+\begin{prob}
+$\Lang{L_0}$ मध्ये $\diamondsuit$ हा त्रिस्थानी संयोजक वाढवण्याचा विचार
+करा; त्याचे मूल्यन पुढीलप्रमाणे दिले आहे:
+\begin{gather*}
+  \pValue{v}(\diamondsuit( \varphi , \psi , \chi ) ) = \begin{cases}
+    \pValue{v}( \psi ) &
+    \text{जर $\pValue{v}(\varphi) = \True$;}\\
+    \pValue{v}( \chi ) &
+    \text{जर $\pValue{v}(\varphi) = \False $}.
+  \end{cases}
+\end{gather*}
+या संयोजकाचे सत्यताकोष्टक लिहा.
+\end{prob}
+\begin{thm}[स्थानिक निर्धारण]
+\label{pl:syn:val:thm:LocalDetermination} $\pAssign{v_1}$ आणि
+$\pAssign{v_2}$ ही अशी सत्य-मूल्यांकने आहेत की $\varphi$ मध्ये आस्थित असलेल्या
+विधानीय चलांना ती समान मूल्ये देतात; म्हणजे, एखादे $\Obj p_n$ हे
+सूत्र~$\varphi$ मध्ये आस्थित असेल तेव्हा $\pAssign{v_1}(\Obj p_n) =
+\pAssign{v_2}(\Obj p_n)$. मग $\pValue{v_1}$ आणि $\pValue{v_2}$ हीही
+$\varphi$ वर एकमत असतात; म्हणजे $\pValue{v_1}(\varphi) = \pValue{v_2}(\varphi)$.
+\end{thm}
+\begin{proof}
+$\varphi$ वरील विगमनाने.
+\end{proof}
+\begin{defn}[पूर्ति]
+\label{pl:syn:val:defn:satisfaction} आपण
+  \emph{सत्य-मूल्यांकन~$\pAssign{v}$ कडून सूत्र~$\varphi$ ची पूर्ति},
+  $\pSat{v}{\varphi}$, ही संकल्पना पुढीलप्रमाणे विगमनाने परिभाषित करू शकतो.
+  (``$\pSat{v}{\varphi}$ नाही'' हे दर्शवण्यासाठी आपण $\pSat/{v}{\varphi}$ लिहितो.)
+\begin{enumerate}
+\item %
+  \indcase{\varphi}{\lfalse}{$\pSat/{v}{\indfrm}$.}
+\item %
+  \indcase{\varphi}{\ltrue}{$\pSat{v}{\indfrm}$.}
+\item \indcase{\varphi}{\Obj p_i}{$\pSat{v}{\indfrm}$ तेव्हा आणि केवळ
+  तेव्हाच, जेव्हा $\pAssign{v}(\Obj p_i) = \True$.}
+\item %
+  \indcase{\varphi}{\lnot \psi}{$\pSat{v}{\indfrm}$ तेव्हा आणि केवळ
+    तेव्हाच, जेव्हा $\pSat/{v}{\psi}$.}
+\item %
+  \indcase{\varphi}{(\psi \land \chi)}{$\pSat{v}{\indfrm}$ तेव्हा आणि केवळ
+    तेव्हाच, जेव्हा $\pSat{v}{\psi}$ आणि $\pSat{v}{\chi}$.}
+\item %
+  \indcase{\varphi}{(\psi \lor \chi)}{$\pSat{v}{\indfrm}$ तेव्हा आणि केवळ
+    तेव्हाच, जेव्हा $\pSat{v}{\psi}$ किंवा $\pSat{v}{\chi}$ (किंवा दोन्ही).}
+\item %
+  \indcase{\varphi}{(\psi \lif \chi)}{$\pSat{v}{\indfrm}$ तेव्हा आणि केवळ
+    तेव्हाच, जेव्हा $\pSat/{v}{\psi}$ किंवा $\pSat{v}{\chi}$ (किंवा दोन्ही).}
+\item %
+  \indcase{\varphi}{(\psi \liff \chi)}{$\pSat{v}{\indfrm}$ तेव्हा आणि केवळ
+    तेव्हाच, जेव्हा $\pSat{v}{\psi}$ आणि $\pSat{v}{\chi}$ ही दोन्ही, किंवा
+    $\pSat{v}{\psi}$ आणि $\pSat{v}{\chi}$ यांपैकी कोणतेही नाही.}
+\end{enumerate}
+$\Gamma$ हा सूत्रांचा संच असेल, तर $\pSat{v}{\Gamma}$ तेव्हा आणि
+केवळ तेव्हाच, जेव्हा प्रत्येक~$\varphi \in \Gamma$ साठी $\pSat{v}{\varphi}$.
+\end{defn}
+\begin{prop}\label{pl:syn:val:prop:sat-value}
+  $\pSat{v}{\varphi}$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\pValue{v}(\varphi) = \True$.
+\end{prop}
+\begin{proof}
+  $\varphi$ वरील विगमनाने.
+\end{proof}
+\begin{prob}
+  \ref{pl:syn:val:prop:sat-value} सिद्ध करा.
+\end{prob}
+\section{चिन्हार्थविषयक संकल्पना}\label{pl:syn:sem:sec}
+पुढील चिन्हार्थविषयक संकल्पना परिभाषित करू:
+\begin{defn}
+\begin{enumerate}
+\item सूत्र~$\varphi$ हे \emph{पूर्ततायोग्य} असते, जर एखाद्या
+  $\pAssign{v}$ साठी $\pSat{v}{\varphi}$; आणि कोणत्याही $\pAssign{v}$ साठी
+  $\pSat{v}{\varphi}$ नसल्यास ते \emph{अपूर्ततायोग्य} असते;
+\item सर्व सत्य-मूल्यांकने~$\pAssign{v}$ साठी $\pSat{v}{\varphi}$ असेल, तर
+  सूत्र~$\varphi$ हे \emph{सर्वतः सत्य सूत्र} असते;
+\item सूत्र~$\varphi$ हे पूर्ततायोग्य असेल, पण सर्वतः सत्य सूत्र नसेल,
+  तर ते \emph{परिस्थितीवश} असते;
+\item $\Gamma$ हा सूत्रांचा संच असेल, तर $\Gamma \Entails \varphi$
+  (``$\Gamma$ पासून $\varphi$ तार्किकरीत्या निष्पन्न होते'') तेव्हा आणि केवळ
+  तेव्हाच, जेव्हा $\pSat{v}{\Gamma}$ असलेल्या प्रत्येक
+  सत्य-मूल्यांकन~$\pAssign{v}$ साठी $\pSat{v}{\varphi}$.
+\item $\Gamma$ हा सूत्रांचा संच असेल, तर एखाद्या
+  सत्य-मूल्यांकन~$\pAssign{v}$ साठी $\pSat{v}{\Gamma}$ असल्यास $\Gamma$
+  हा \emph{पूर्ततायोग्य} असतो; अन्यथा $\Gamma$ हा
+  \emph{अपूर्ततायोग्य} असतो.
+\end{enumerate}
+\end{defn}
+\begin{prob}
+ पुढील चार सूत्रांपैकी प्रत्येक सूत्र (a)~पूर्ततायोग्य,
+ (b)~सर्वतः सत्य सूत्र आणि (c)~परिस्थितीवश आहे की नाही ते ठरवा.
+\begin{enumerate}
+  \item \( ( \Obj p_0 \lif ( \lnot \Obj p_1 \lif \lnot \Obj p_0 ) ) \).
+  \item \( ( ( \Obj p_0 \land \lnot \Obj p_1 ) \lif ( \lnot \Obj p_0 \land \Obj p_2 )) \liff ( ( \Obj p_2 \lif \Obj p_0 ) \lif ( \Obj p_0 \lif \Obj p_1 )) \).
+  \item \( ( \Obj p_0 \liff \Obj p_1 ) \lif ( \Obj p_2 \liff \lnot \Obj p_1 ) \).
+  \item \( (( \Obj p_0 \liff ( \lnot \Obj p_1 \land \Obj p_2 )) \lor ( \Obj p_2 \lif ( \Obj p_0 \liff \Obj p_1 ))) \).
+\end{enumerate}
+\end{prob}
+\begin{prop}
+\label{pl:syn:sem:prop:semanticalfacts}
+\begin{enumerate}
+\item $\varphi$ हे सर्वतः सत्य सूत्र तेव्हा आणि केवळ तेव्हाच असते, जेव्हा
+  $\emptyset \Entails \varphi$;
+\item $\Gamma \Entails \varphi$ आणि $\Gamma \Entails \varphi \lif \psi$ असल्यास
+  $\Gamma \Entails \psi$;
+\item $\Gamma$ पूर्ततायोग्य असेल, तर $\Gamma$ चा प्रत्येक सांत उपसंचही
+  पूर्ततायोग्य असतो;
+\item \label{pl:syn:sem:def:monotonicity} एकस्वनिकता: $\Gamma \subseteq \Delta$
+  आणि $\Gamma \Entails \varphi$ असल्यास $\Delta \Entails \varphi$ हेही असते;
+\item \label{pl:syn:sem:def:Cut} संक्रमकता: $\Gamma \Entails \varphi$ आणि
+  $\Delta \cup \{ \varphi\} \Entails \psi$ असल्यास $\Gamma \cup \Delta \Entails
+  \psi$.
+\end{enumerate}
+\end{prop}
+\begin{proof}
+सरावासाठी.
+\end{proof}
+\begin{prob}
+\ref{pl:syn:sem:prop:semanticalfacts} सिद्ध करा.
+\end{prob}
+\begin{prop}\label{pl:syn:sem:prop:entails-unsat}
+  $\Gamma \Entails \varphi$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+  $\Gamma \cup \{\lnot \varphi\}$ अपूर्ततायोग्य असतो.
+\end{prop}
+\begin{proof}
+सरावासाठी.
+\end{proof}
+\begin{prob}
+\ref{pl:syn:sem:prop:entails-unsat} सिद्ध करा.
+\end{prob}
+\begin{thm}[चिन्हार्थविषयक निगमन प्रमेय]
+  \label{pl:syn:sem:thm:sem-deduction} $\Gamma \Entails \varphi \lif \psi$ तेव्हा आणि केवळ
+  तेव्हाच, जेव्हा $\Gamma \cup \{\varphi\} \Entails \psi$.
+\end{thm}
+\begin{proof}
+सरावासाठी.
+\end{proof}
+\begin{prob}
+\ref{pl:syn:sem:thm:sem-deduction} सिद्ध करा.
+\end{prob}

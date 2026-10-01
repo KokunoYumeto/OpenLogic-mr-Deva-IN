@@ -1,0 +1,492 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 39: विन्यासमीमांसा आणि चिन्हार्थमीमांसा
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{विन्यासमीमांसा आणि चिन्हार्थमीमांसा}\label{mvl:syn:chap}
+
+
+
+
+
+
+
+
+
+\section{परिचय}\label{mvl:syn:int:sec}
+
+अभिजात तर्कशास्त्रात $\lnot$, $\land$, $\lor$, $\lif$ आणि
+$\liff$ ही विधानीय संयोजके वापरून विधानीय चले पासून
+घडवलेल्या सूत्रांचा विचार करतो. अभिजात तर्कशास्त्राची
+चिन्हार्थमीमांसा परिभाषित करताना आपण $\True$ आणि $\False$ ही दोन
+सत्यतामूल्ये वापरतो. सत्य-मूल्यांकन~$\pAssign{v}$ मध्ये
+विधानीय चले ना अर्थ देतो; ते विधानीय चले ना $\True$ आणि
+$\False$ ही सत्यतामूल्ये नेमून देते. मग कोणतेही सत्य-मूल्यांकन
+कोणत्याही सूत्र~$\varphi$ चे $\pValue{v}(\varphi)$ हे सत्यतामूल्य
+ठरवते; आणि सूत्राची सत्य-मूल्यांकन~$\pAssign{v}$ मध्ये
+पूर्ति होते, $\pSat{v}{\varphi}$, जर आणि फक्त जर
+$\pValue{v}(\varphi) = \True$.
+
+बहुमूल्य तर्कशास्त्रे $\True$ आणि $\False$ यांपलीकडील
+सत्यतामूल्यांना परवानगी देऊन अभिजात द्विमूल्य तर्कशास्त्राचे
+सामान्यीकरण करतात. म्हणून बहुमूल्य तर्कशास्त्रात
+सत्य-मूल्यांकन~$\pAssign{v}$ हे प्रत्येक विधानीय चल~$p$
+ला संभाव्य सत्यतामूल्यांपैकी एक मूल्य नेमून देणारे फलन असते.
+अनुमत सत्यतामूल्यांच्या संचाला आपण साधारणपणे~$V$ म्हणू.
+$V = \{\True, \False\}$ असलेले अभिजात तर्कशास्त्र हेही
+बहुमूल्य तर्कशास्त्र आहे; त्यात $\pValue{v}(\varphi)$ हे सत्यतामूल्य
+संयोजकांच्या परिचित वैशिष्ट्यपूर्ण सत्यताकोष्टकांनुसार ठरते.
+
+अधिक सत्यतामूल्ये समाविष्ट केल्यावर ``आणि,'' ``किंवा,'' ``नाही,''
+आणि ``जर---तर'' असे वाचत असलेल्या संयोजकांसाठी
+$\pValue{v}(\varphi)$ कसे काढायचे, याचे एकाहून अधिक स्वाभाविक
+पर्याय असतात. म्हणून बहुमूल्य तर्कशास्त्र केवळ सत्यतामूल्यांच्या
+संचानेच नव्हे, तर प्रत्येक संयोजकासाठी निवडलेल्या
+\emph{सत्यता-फलनांनी}ही निश्चित होते. तथापि, तर्कशास्त्र~$\Log L$
+साठी ही निवड झाल्यावर, अभिजात तर्कशास्त्राप्रमाणेच
+$\pValue{v}(\varphi)[\Log L]$ हे सत्यतामूल्य त्या सत्य-मूल्यांकनाने
+एकमेव रीतीने ठरते. अभिजात तर्कशास्त्राप्रमाणे बहुमूल्य
+तर्कशास्त्रेही \emph{सत्यता-फलनात्मक} आहेत.
+
+हे चिन्हार्थविषयक पायाभूत घटक मिळाल्यावर सर्वतः सत्यता,
+तार्किक निष्पन्नता आणि पूर्ततायोग्यता यांच्या समकक्ष
+चिन्हार्थविषयक संकल्पना परिभाषित करता येतात. अभिजात
+तर्कशास्त्रात सूत्र सर्वतः सत्य असते, जर
+कोणत्याही~$\pAssign{v}$ साठी त्याचे सत्यतामूल्य
+$\pValue{v}(\varphi) = \True$ असेल. बहुमूल्य तर्कशास्त्रात ही
+संकल्पना थोडी व्यापक करावी लागते. प्रथम, सत्यतामूल्यांच्या~$V$
+संचात $\True$ असणे आवश्यक नाही. उदाहरणार्थ,
+काही बहुमूल्य तर्कशास्त्रे $0$ आणि~$1$ यांदरम्यानच्या सर्व
+परिमेय संख्या सत्यतामूल्ये म्हणून वापरतात. अशा वेळी $1$
+सहसा $\True$ ची भूमिका बजावते. इतर तर्कशास्त्रांत
+एकच नव्हे, तर अनेक सत्यतामूल्ये ती भूमिका बजावतात.
+म्हणून प्रत्येक बहुमूल्य तर्कशास्त्रात \emph{निर्दिष्ट
+सत्यतामूल्यां}चा संच~$V^+$ असावा अशी अट घालतो.
+मग सूत्राची सत्य-मूल्यांकन~$\pAssign{v}$ मध्ये
+पूर्ति होते, $\pSat{v}{\varphi}[\Log L]$, जर आणि फक्त जर
+$\pValue{v}(\varphi)[\Log L] \in V^+$. सूत्र~$\varphi$
+हे त्या तर्कशास्त्रातील सर्वतः सत्य सूत्र असते,
+$\Entails[\Log L] \varphi$, जर आणि फक्त जर
+कोणत्याही~$\pAssign{v}$ साठी $\pValue{v}(\varphi) \in V^+$.
+शेवटी, सूत्रांच्या संचापासून $\varphi$ निष्पन्न होते,
+$\Gamma \Entails[\Log L] \varphi$, जर~$\Gamma$ मधील सर्व
+सूत्रांची पूर्ति करणारे प्रत्येक सत्य-मूल्यांकन~$\varphi$
+चीही पूर्ति करत असेल.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{भाषा आणि संयोजके}\label{mvl:syn:con:sec}
+
+अभिजात विधानीय तर्कशास्त्रात आणि इतर अनेक तर्कशास्त्रांत
+\emph{विधानीय स्थिर} व \emph{संयोजक} यांचा संच वापरला जातो.
+उदाहरणार्थ, पुढील चिन्हे आपण आदिम मानतो:
+\begin{enumerate}
+\item असत्यता दर्शवणारा विधानीय स्थिर~$\lfalse$.
+\item सत्यता दर्शवणारा विधानीय स्थिर~$\ltrue$.
+\item तार्किक संयोजके:
+  \startycommalist
+  \ycomma $\lnot$ (नकारण)
+  \ycomma $\land$ (संधियोग)
+  \ycomma $\lor$ (विकल्पयोग)
+  \ycomma $\lif$ (शर्त)
+  \ycomma $\liff$ (द्विशर्त)
+\end{enumerate}
+
+
+बहुमूल्य तर्कशास्त्रांतही हीच संयोजके वापरली जातात. तथापि,
+उदाहरणार्थ संधियोगाच्या वेगवेगळ्या आवृत्त्या एकाच तर्कशास्त्रात
+असणे अनेकदा उपयुक्त ठरते; त्या आवृत्त्या वेगळ्या दाखवण्यासाठी
+भिन्न चिन्हे लागतात. काही बहुमूल्य तर्कशास्त्रांत अभिजात
+तर्कशास्त्रात समतुल्य संयोजक नसलेली संयोजकेही असतात.
+म्हणून आपण नेहमीपेक्षा थोडी अधिक सामान्य चौकट घेऊ.
+
+\begin{defn}
+  \emph{विधानीय भाषा} ही \emph{संयोजकां}च्या $\Lang L$
+  या संचाने बनते. प्रत्येक संयोजक~$\star$ ची \emph{स्थानसंख्या}
+  असते; स्थानसंख्या~$n$ असलेला संयोजक \emph{$n$-स्थानी}
+  म्हणतात. स्थानसंख्या~$0$ असलेल्या संयोजकांना
+  \emph{स्थिर} असेही म्हणतात; स्थानसंख्या~$1$ असलेल्या
+  संयोजकांना \emph{एकस्थानी}, आणि स्थानसंख्या~$2$ असलेल्या
+  संयोजकांना \emph{द्विस्थानी} म्हणतात.
+\end{defn}
+
+\begin{ex}
+  विधानीय तर्कशास्त्राच्या मानक भाषेत~$\Lang L_0$ पुढील
+  संयोजके (त्यांच्या स्थानसंख्यांसह) असतात:
+  $\lfalse$~($0$),
+  $\lnot$~($1$),
+  $\land$~($2$),
+  $\lor$~($2$),
+  $\lif$~($2$). आपण विचारात घेणारी बहुतेक तर्कशास्त्रे
+  ही भाषा वापरतात. काही तर्कशास्त्रे प्रस्थापित संकेतांनुसार
+  काही संयोजकांसाठी वेगळी चिन्हे वापरतात. उदाहरणार्थ,
+  गुणाकार तर्कशास्त्रात संधियोगाचे चिन्ह $\land$ ऐवजी
+  अनेकदा~$\odot$ असते. कधी नवीन कारक जोडणेही सोयीचे
+  ठरते; उदाहरणार्थ, $\triangle$ हा निश्चितता कारक
+  ($1$-स्थानी).
+\end{ex}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सूत्र}\label{mvl:syn:fml:sec}
+
+\begin{defn}[सूत्र]
+\label{mvl:syn:fml:defn:formulas}
+विधानीय भाषा~$\Lang L$ मधील \emph{सूत्रे} चा संच~$\Frm[L]$
+पुढीलप्रमाणे विगमनाने परिभाषित करतो:
+\begin{enumerate}
+\item प्रत्येक विधानीय चल~$\Obj p_i$ हे आण्विक
+  सूत्र असते.
+\item $\Lang L$ मधील प्रत्येक $0$-स्थानी संयोजक (विधानीय स्थिर)
+  हे आण्विक सूत्र असते.
+\item $\star$ हा $\Lang L$ मधील सकारात्मक स्थानसंख्येचा
+  $n$-स्थानी संयोजक असेल आणि
+  $\varphi_1$, \dots, $\varphi_n$ ही सूत्रे असतील, तर
+  $\star(\varphi_1, \dots, \varphi_n)$ हे सूत्र असते.
+\item यांखेरीज काहीही सूत्र नाही.
+\end{enumerate}
+$\star$ $1$-स्थानी असेल, तर $\star(\varphi_1)$ हे अनेकदा फक्त
+$\star \varphi_1$ असे लिहितात. $\star$ $2$-स्थानी असेल, तर
+$\star(\varphi_1,\varphi_2)$ हे अनेकदा $(\varphi_1 \star \varphi_2)$ असे लिहितात.
+\end{defn}
+
+नेहमीप्रमाणे, सर्वांत बाहेरचे कंस आपण अनेकदा न सांगता वगळू.
+
+\begin{ex}
+  मानक भाषेत~$\Lang{L_0}$,
+  $\Obj p_1 \lif (\Obj p_1 \land \lnot \Obj p_2)$ हे सूत्र आहे.
+  गुणाकार तर्कशास्त्राच्या भाषेत ते याऐवजी
+  $\Obj p_1 \lif (\Obj p_1 \odot \lnot \Obj p_2)$ असे लिहितात.
+  भाषेत $1$-स्थानी $\triangle$ जोडल्यास,
+  $\triangle (\Obj p_1 \land \Obj p_2) \lif (\triangle \Obj p_1 \land \triangle \Obj p_2)$
+  यांसारखी सूत्रेही मिळतात.
+\end{ex}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{मॅट्रिक्स}\label{mvl:syn:mat:sec}
+
+बहुमूल्य तर्कशास्त्र त्याची भाषा, सत्यतामूल्यांचा~$V$ संच,
+निर्दिष्ट सत्यतामूल्यांचा उपसंच आणि त्याच्या संयोजकांसाठीची
+सत्यता-फलने यांवरून परिभाषित होते. या घटकांना एकत्रितपणे
+\emph{मॅट्रिक्स} म्हणतात.
+
+\begin{defn}[मॅट्रिक्स]
+\label{mvl:syn:mat:defn:matrix}
+तर्कशास्त्र~$\Log L$ साठीच्या \emph{मॅट्रिक्स} मध्ये पुढील घटक असतात:
+\begin{enumerate}
+\item भाषा~$\Lang L$ बनवणारा संयोजकांचा संच;
+\item सत्यतामूल्यांचा $V \neq \emptyset$ संच;
+\item निर्दिष्ट सत्यतामूल्यांचा $V^+ \subseteq V$ संच;
+\item $\Lang L$ मधील प्रत्येक $n$-स्थानी संयोजक~$\star$ साठी
+  सत्यता-फलन~$\tf{\star} : V^n \to V$. $n = 0$ असल्यास
+  $\tf{\star}$ हे फक्त~$V$ मधील एक मूल्य असते.
+\end{enumerate}
+\end{defn}
+
+\begin{ex}
+अभिजात तर्कशास्त्र~\LogCL{} साठीच्या मॅट्रिक्समध्ये पुढील घटक असतात:
+\begin{enumerate}
+  \item $\lfalse$, $\lnot$, $\land$, $\lor$, $\lif$ असलेली
+  मानक विधानीय भाषा~$\Lang L_0$.
+  \item सत्यतामूल्यांचा संच $V = \{\True, \False\}$.
+  \item $\True$ हेच एकमेव निर्दिष्ट मूल्य, म्हणजे $V^+ = \{\True\}$.
+  \item $\lfalse$ साठी $\tf{\lfalse} = \False$. इतर सत्यता-फलने
+  नेहमीच्या सत्यताकोष्टकांनी दिली आहेत (पहा
+  \ref{mvl:syn:mat:fig:tf-CL}).
+\end{enumerate}
+\begin{figure}
+  \begin{center}
+      \begin{tabular}{c|c}
+        $\tf{\lnot}$ & \\
+        \hline
+        $\True$ & $\False$ \\
+        $\False$ & $\True$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\land}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\False$ \\
+        $\False$ & $\False$ & $\False$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\lor}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\True$ \\
+        $\False$ & $\True$ & $\False$
+      \end{tabular}
+      \quad
+      \begin{tabular}{c|cc}
+        $\tf{\lif}$ & $\True$ & $\False$ \\
+        \hline
+        $\True$ & $\True$ & $\False$ \\
+        $\False$ & $\True$ & $\True$
+      \end{tabular}
+    \end{center}
+    \caption{अभिजात तर्कशास्त्र~$\LogCL$ साठीची सत्यता-फलने.}
+    \label{mvl:syn:mat:fig:tf-CL}
+  \end{figure}
+\end{ex}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सत्य-मूल्यांकन आणि पूर्ति}\label{mvl:syn:val:sec}
+
+\begin{defn}[सत्य-मूल्यांकने]
+$V$ हा सत्यतामूल्यांचा संच असू द्या. $\Lang{L}$ साठी~$V$
+मध्ये जाणारे \emph{सत्य-मूल्यांकन} म्हणजे भाषेतील
+विधानीय चले ना~$V$ मधील घटक नेमून
+देणारे फलन~$\pAssign{v}$ होय; म्हणजेच
+$\pAssign{v} \colon \PVar \to V$.
+\end{defn}
+
+\begin{defn}\label{mvl:syn:val:defn:pValue}
+  बहुमूल्य तर्कशास्त्र~$\Log L$ च्या सत्यतामूल्यांच्या~$V$
+  संचात जाणारे सत्य-मूल्यांकन~$\pAssign{v}$ दिले असता,
+  मूल्यन फलन $\pValue{v} \colon \Frm[L] \to V$
+  पुढीलप्रमाणे विगमनाने परिभाषित करतो:
+  \begin{enumerate}
+    \item $\pValue{v}(\Obj p_n) = \pAssign{v}(\Obj p_n)$;
+    \item $\star$ हा $0$-स्थानी संयोजक असेल, तर
+    $\pValue{v}(\star)  = \tf{\star}[\Log L]$;
+    \item $\star$ हा सकारात्मक स्थानसंख्येचा
+    $n$-स्थानी संयोजक असेल, तर
+    \[      \pValue{v}(\star(\varphi_1, \dots, \varphi_n)) = \tf{\star}[\Log L]
+      (\pValue{v}(\varphi_1), \dots, \pValue{v}(\varphi_n)).
+    \]
+  \end{enumerate}
+\end{defn}
+
+\begin{defn}[पूर्ति]
+\label{mvl:syn:val:defn:satisfaction} सूत्र~$\varphi$ ची
+  सत्य-मूल्यांकन~$\pAssign{v}$ ने \emph{पूर्ति होते},
+  $\pSat{v}{\varphi}[\Log L]$, जर आणि फक्त जर
+  $\pValue{v}(\varphi)[\Log L] \in V^+$; येथे $V^+$ हा
+  तर्कशास्त्र~$\Log L$ मधील निर्दिष्ट सत्यतामूल्यांचा संच आहे.
+
+  ``$\pSat{v}{\varphi}[\Log L]$ नाही'' हे दर्शवण्यासाठी आपण
+  $\pSat/{v}{\varphi}[\Log L]$ असे लिहितो. $\Gamma$ हा
+  सूत्रांचा संच असेल, तर $\pSat{v}{\Gamma}[\Log L]$
+  जर आणि फक्त जर प्रत्येक~$\varphi \in \Gamma$ साठी
+  $\pSat{v}{\varphi}[\Log L]$.
+\end{defn}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{चिन्हार्थविषयक संकल्पना}\label{mvl:syn:sem:sec}
+
+बहुमूल्य तर्कशास्त्र~$\Log L$ एखाद्या मॅट्रिक्सने दिलेले
+आहे असे समजू. मग~$\Log L$ साठी नेहमीच्या चिन्हार्थविषयक
+संकल्पना परिभाषित करता येतात.
+
+\begin{defn}
+\begin{enumerate}
+\item सूत्र~$\varphi$ \emph{पूर्ततायोग्य} असते, जर
+  एखाद्या~$\pAssign{v}$ साठी $\pSat{v}{\varphi}$;
+  कोणत्याही $\pAssign{v}$ साठी $\pSat{v}{\varphi}$ नसेल, तर ते
+  \emph{अपूर्ततायोग्य} असते;
+\item सूत्र~$\varphi$ हे \emph{सर्वतः सत्य सूत्र}
+  असते, जर सर्व सत्य-मूल्यांकने~$v$ साठी $\pSat{v}{\varphi}$;
+\item $\Gamma$ हा सूत्रांचा संच असेल, तर
+  $\Gamma \Entails \varphi$ (``$\Gamma$ पासून $\varphi$
+  निष्पन्न होते'') जर आणि फक्त जर
+  $\pSat{v}{\Gamma}$ असलेल्या प्रत्येक
+  सत्य-मूल्यांकन~$\pAssign{v}$ साठी $\pSat{v}{\varphi}$;
+\item $\Gamma$ हा सूत्रांचा संच असेल, तर
+  $\pSat{v}{\Gamma}$ असलेले सत्य-मूल्यांकन~$\pAssign{v}$
+  अस्तित्वात असल्यास $\Gamma$ \emph{पूर्ततायोग्य} असतो;
+  अन्यथा $\Gamma$ \emph{अपूर्ततायोग्य} असतो.
+\end{enumerate}
+\end{defn}
+
+अभिजात तर्कशास्त्रात जशी काही तथ्ये या संकल्पनांसाठी
+लागू होतात, तशीच ती येथेही लागू होतात:
+
+\begin{prop}
+\label{mvl:syn:sem:prop:semanticalfacts}
+\begin{enumerate}
+\item $\varphi$ हे सर्वतः सत्य सूत्र असते, जर आणि फक्त जर
+  $\emptyset \Entails \varphi$;
+\item $\Gamma$ पूर्ततायोग्य असेल, तर $\Gamma$ चा प्रत्येक सांत
+  उपसंचही पूर्ततायोग्य असतो;
+\item\label{mvl:syn:sem:def:monotonicity}
+एकस्वनिकता: $\Gamma \subseteq \Delta$ आणि
+  $\Gamma \Entails \varphi$ असल्यास $\Delta \Entails \varphi$ देखील;
+\item\label{mvl:syn:sem:def:Cut}
+संक्रमकता: $\Gamma \Entails \varphi$ आणि
+  $\Delta \cup \{ \varphi\} \Entails \psi$ असल्यास
+  $\Gamma \cup \Delta \Entails \psi$;
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+सराव.
+\end{proof}
+
+\begin{prob}
+\ref{mvl:syn:sem:prop:semanticalfacts} सिद्ध करा.
+\end{prob}
+
+अभिजात तर्कशास्त्रात निष्पन्नता आणि सशर्त संयोजक यांचा संबंध
+जोडता येतो. उदाहरणार्थ, \emph{विध्यात्मक अनुमान} वैध असते:
+जर $\Gamma \Entails \varphi$ आणि $\Gamma \Entails \varphi \lif \psi$
+असेल, तर $\Gamma \Entails \psi$. अभिजात तर्कशास्त्रात
+$\Entails$ आणि $\lif$ यांच्यातील दुसरा महत्त्वाचा संबंध म्हणजे
+चिन्हार्थविषयक निगमन प्रमेय: $\Gamma \Entails \varphi \lif \psi$
+जर आणि फक्त जर $\Gamma \cup \{\varphi\} \Entails \psi$.
+हे निष्कर्ष बहुमूल्य तर्कशास्त्रांत \emph{नेहमीच लागू होतात असे नाही}.
+ते लागू होणे $\tf{\lif}$ या सत्यता-फलनावर अवलंबून असते.
+
+
+
+
+
+
+
+
+
+
+
+
+\section[अभिजात तर्कशास्त्राची उपतर्कशास्त्रे]{अभिजात तर्कशास्त्र~$\LogCL$ ची उपतर्कशास्त्रे म्हणून बहुमूल्य तर्कशास्त्रे}\label{mvl:syn:sub:sec}
+
+नेहमीची बहुमूल्य तर्कशास्त्रे अशा मॅट्रिक्सांनी परिभाषित होतात की
+$\{\True, \False\}$ मधील आदानांवर त्यांच्या सत्यता-फलनांची मूल्ये
+अभिजात सत्यता-फलनांशी जुळतात. नेमके म्हणजे, या तर्कशास्त्रांत
+$x \in \{\True, \False\}$ असल्यास $\tf{\lnot}[\Log L](x) =
+\tf{\lnot}[\LogCL](x)$; आणि $\star$ हे $\land$, $\lor$,
+$\lif$ यांपैकी कोणतेही असेल व $x, y \in \{\True, \False\}$
+असतील, तर $\tf{\star}[\Log L](x,y) =
+\tf{\star}[\LogCL](x,y)$. दुसऱ्या शब्दांत,
+$\lnot$, $\land$, $\lor$, $\lif$ यांची सत्यता-फलने
+$\{\True,\False\}$ वर मर्यादित केली असता ती नेमकी
+अभिजात सत्यता-फलनेच असतात.
+
+\begin{prop}\label{mvl:syn:sub:prop:mvl-cl}
+  बहुमूल्य तर्कशास्त्र~$\Log L$ च्या भाषेत
+  $\lnot$, $\land$, $\lor$, $\lif$ ही संयोजके आहेत,
+  $\True, \False \in V$ आहेत आणि त्याची सत्यता-फलने
+  पुढील अटी पूर्ण करतात असे समजा:
+  \begin{enumerate}
+    \item\label{mvl:syn:sub:prop:not} $x = \True$ किंवा $x = \False$
+    असल्यास $\tf{\lnot}[\Log L](x) = \tf{\lnot}[\LogCL](x)$;
+    \item\label{mvl:syn:sub:prop:land} $\tf{\land}[\Log L](x,y) = \tf{\land}[\LogCL](x,y)$,
+    \item\label{mvl:syn:sub:prop:lor} $\tf{\lor}[\Log L](x,y) = \tf{\lor}[\LogCL](x,y)$,
+    \item\label{mvl:syn:sub:prop:lif} $\tf{\lif}[\Log L](x,y) = \tf{\lif}[\LogCL](x,y)$,
+    जेव्हा $x, y \in \{\True, \False\}$.
+  \end{enumerate}
+  मग $V$ मध्ये जाणाऱ्या कोणत्याही सत्य-मूल्यांकन~$\pAssign v$
+  साठी, प्रत्येक विधानीय चलाबाबत $\pAssign
+  v(p) \in \{\True,\False\}$ असल्यास,
+  या चार संयोजकांनी आणि विधानीय चलांनीच बनलेल्या प्रत्येक
+  सूत्रासाठी $\pValue v[\Log L](\varphi) = \pValue
+  v[\LogCL](\varphi)$.
+\end{prop}
+
+\begin{proof}
+  $\varphi$ वरील विगमनाने.
+  \begin{enumerate}
+  \item $\varphi \ident p$ हे आण्विक असेल, तर
+  $\pValue v[\Log L](\varphi) = \pAssign v(p) = \pValue
+  v[\LogCL](\varphi)$.
+  \item $\varphi \ident \lnot B$ असेल, तर
+  \begin{align*}
+    \pValue v[\Log L](\varphi) & = \tf{\lnot}[\Log L](\pValue v[\Log L](\psi)) & &\text{\ref{mvl:syn:val:defn:pValue} नुसार}\\
+    & = \tf{\lnot}[\Log L](\pValue v[\LogCL](\psi)) && \text{विगमन-गृहीतकानुसार}\\
+    & = \tf{\lnot}[\LogCL](\pValue v[\LogCL](\psi))
+&&\text{\ref{mvl:syn:sub:prop:not} या गृहीतकानुसार,}\\
+&&&\text{कारण $\pValue v[\LogCL](\psi) \in \{\True, \False\}$,}\\
+& = \pValue v[\LogCL](\varphi) &&\text{\ref{mvl:syn:val:defn:pValue} नुसार}.
+\end{align*}
+\item $\varphi \ident (\psi \land \chi)$ असेल, तर
+\begin{align*}
+  \pValue v[\Log L](\varphi) & = \tf{\land}[\Log L](\pValue v[\Log L](\psi), \pValue v[\Log L](\chi)) & &\text{\ref{mvl:syn:val:defn:pValue} नुसार}\\
+  & = \tf{\land}[\Log L](\pValue v[\LogCL](\psi),\pValue v[\LogCL](\chi)) && \text{विगमन-गृहीतकानुसार}\\
+  & = \tf{\land}[\LogCL](\pValue v[\LogCL](\psi),\pValue v[\LogCL](\chi))
+&&\text{\ref{mvl:syn:sub:prop:land} या गृहीतकानुसार,}\\
+&&&\text{कारण $\pValue v[\LogCL](\psi),\pValue v[\LogCL](\chi) \in \{\True, \False\}$,}\\
+& = \pValue v[\LogCL](\varphi) &&\text{\ref{mvl:syn:val:defn:pValue} नुसार}.
+\end{align*}
+\end{enumerate}
+$\varphi \ident (\psi \lor \chi)$ आणि $\varphi \ident (\psi \lif \chi)$
+ही प्रकरणेही यांसारखीच आहेत.
+\end{proof}
+
+\begin{cor}
+  या समान चार-संयोजक खंडातील सूत्रेच विचारात घेतली असता,
+  बहुमूल्य तर्कशास्त्राने \ref{mvl:syn:sub:prop:mvl-cl} च्या अटी पूर्ण केल्या,
+  $\True \in V^+$ आणि $\False \notin V^+$ असेल, तर
+  ${\Entails[\Log L]} \subseteq {\Entails[\LogCL]}$;
+  म्हणजे $\Gamma \Entails[\Log L] \psi$ असल्यास
+  $\Gamma \Entails[\LogCL] \psi$. विशेषतः $\Log L$ मधील
+  या खंडातील प्रत्येक सर्वतः सत्य सूत्र अभिजात तर्कशास्त्रातही
+  सर्वतः सत्य असते.
+\end{cor}
+
+\begin{proof}
+  व्यत्यय-विधान सिद्ध करू. $\Gamma \Entails/[\LogCL] \psi$
+  असे समजा. मग असे सत्य-मूल्यांकन~$\pAssign v\colon \PVar \to
+  \{\True, \False\}$ अस्तित्वात असते की सर्व
+  $\varphi \in \Gamma$ साठी $\pValue v[\LogCL](\varphi) = \True$
+  आणि $\pValue v[\LogCL](\psi) = \False$.
+  $\True, \False \in V$ असल्याने सत्य-मूल्यांकन~$\pAssign v$
+  हे~$\Log L$ साठीही सत्य-मूल्यांकन आहे.
+  \ref{mvl:syn:sub:prop:mvl-cl} नुसार सर्व $\varphi \in \Gamma$ साठी
+  $\pValue v[\Log L](\varphi) = \True$ आणि
+  $\pValue v[\Log L](\psi) = \False$.
+  $\True \in V^+$ आणि $\False \notin V^+$ असल्याने
+  $\pSat{v}{\Gamma}[\Log L]$ आणि
+  $\pSat/{v}{\psi}[\Log L]$; म्हणजे
+  $\Gamma \Entails/[\Log L] \psi$.
+\end{proof}
+
+

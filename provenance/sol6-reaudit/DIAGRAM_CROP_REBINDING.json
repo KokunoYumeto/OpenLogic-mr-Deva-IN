@@ -1,0 +1,1094 @@
+{
+  "schema": "openlogic-current-diagram-crop-rebinding/1",
+  "baseline_pdf_sha256": "d39eabb7b6b496960b15c8354628e0512970d795ca4e69451b96a11432c8bdb7",
+  "current_pdf_sha256": "3ee7fe70d38346b3ffc7cd635aaa285e54a00e81e5cfe254467be7cc696306f9",
+  "reader_sha256": "f793f2b144cc8f15013bb68008c2302643c90d64bc6a1f922e9f03a4598d48f3",
+  "status": "all_unique_matches_and_crop_boundaries_passed",
+  "matches": [
+    {
+      "name": "turing-machine",
+      "baseline_crop": [
+        335,
+        175,
+        65,
+        420,
+        240
+      ],
+      "current_crop": [
+        335,
+        178.017,
+        68.821,
+        416.106,
+        229.746
+      ],
+      "matched_vector_paths": 69,
+      "matched_text_spans": 0
+    },
+    {
+      "name": "tikz-015",
+      "baseline_crop": [
+        279,
+        200,
+        641,
+        395,
+        738
+      ],
+      "current_crop": [
+        279,
+        210.5,
+        643.26,
+        384.777,
+        732.497
+      ],
+      "matched_vector_paths": 4,
+      "matched_text_spans": 5
+    },
+    {
+      "name": "tikz-016",
+      "baseline_crop": [
+        287,
+        175,
+        550,
+        420,
+        675
+      ],
+      "current_crop": [
+        287,
+        182.153,
+        552.836,
+        413.125,
+        670.421
+      ],
+      "matched_vector_paths": 8,
+      "matched_text_spans": 8
+    },
+    {
+      "name": "tikz-017",
+      "baseline_crop": [
+        336,
+        195,
+        164,
+        390,
+        216
+      ],
+      "current_crop": [
+        336,
+        218.141,
+        172.865,
+        380.472,
+        205.081
+      ],
+      "matched_vector_paths": 6,
+      "matched_text_spans": 9
+    },
+    {
+      "name": "tikz-018",
+      "baseline_crop": [
+        336,
+        205,
+        315,
+        390,
+        400
+      ],
+      "current_crop": [
+        336,
+        216.048,
+        306.691,
+        379.125,
+        383.849
+      ],
+      "matched_vector_paths": 10,
+      "matched_text_spans": 17
+    },
+    {
+      "name": "tikz-019",
+      "baseline_crop": [
+        337,
+        205,
+        492,
+        390,
+        580
+      ],
+      "current_crop": [
+        337,
+        216.048,
+        493.671,
+        379.125,
+        570.829
+      ],
+      "matched_vector_paths": 12,
+      "matched_text_spans": 21
+    },
+    {
+      "name": "tikz-020",
+      "baseline_crop": [
+        338,
+        160,
+        565,
+        435,
+        733
+      ],
+      "current_crop": [
+        338,
+        167.152,
+        563.022,
+        428.022,
+        734.268
+      ],
+      "matched_vector_paths": 30,
+      "matched_text_spans": 57
+    },
+    {
+      "name": "tikz-021",
+      "baseline_crop": [
+        341,
+        175,
+        675,
+        435,
+        743
+      ],
+      "current_crop": [
+        341,
+        175.966,
+        675.462,
+        418.101,
+        737.439
+      ],
+      "matched_vector_paths": 15,
+      "matched_text_spans": 27
+    },
+    {
+      "name": "tikz-022",
+      "baseline_crop": [
+        342,
+        160,
+        100,
+        435,
+        353
+      ],
+      "current_crop": [
+        342,
+        163.101,
+        101.054,
+        430.966,
+        351.672
+      ],
+      "matched_vector_paths": 41,
+      "matched_text_spans": 79
+    },
+    {
+      "name": "tikz-023",
+      "baseline_crop": [
+        342,
+        150,
+        450,
+        450,
+        715
+      ],
+      "current_crop": [
+        342,
+        152.743,
+        455.121,
+        442.513,
+        705.738
+      ],
+      "matched_vector_paths": 39,
+      "matched_text_spans": 73
+    },
+    {
+      "name": "tikz-024",
+      "baseline_crop": [
+        343,
+        170,
+        630,
+        395,
+        778
+      ],
+      "current_crop": [
+        343,
+        216.048,
+        631.376,
+        379.125,
+        772.725
+      ],
+      "matched_vector_paths": 13,
+      "matched_text_spans": 22
+    },
+    {
+      "name": "tikz-025",
+      "baseline_crop": [
+        344,
+        170,
+        115,
+        395,
+        247
+      ],
+      "current_crop": [
+        344,
+        206.043,
+        113.85,
+        388.023,
+        240.483
+      ],
+      "matched_vector_paths": 14,
+      "matched_text_spans": 23
+    },
+    {
+      "name": "tikz-026",
+      "baseline_crop": [
+        345,
+        175,
+        65,
+        425,
+        224
+      ],
+      "current_crop": [
+        345,
+        190.08,
+        72.428,
+        408.535,
+        217.028
+      ],
+      "matched_vector_paths": 21,
+      "matched_text_spans": 35
+    },
+    {
+      "name": "tikz-027",
+      "baseline_crop": [
+        346,
+        170,
+        235,
+        435,
+        301
+      ],
+      "current_crop": [
+        346,
+        175.966,
+        235.954,
+        418.101,
+        297.931
+      ],
+      "matched_vector_paths": 15,
+      "matched_text_spans": 27
+    },
+    {
+      "name": "tikz-028",
+      "baseline_crop": [
+        346,
+        170,
+        372,
+        435,
+        550
+      ],
+      "current_crop": [
+        346,
+        178.456,
+        372.643,
+        420.158,
+        546.868
+      ],
+      "matched_vector_paths": 21,
+      "matched_text_spans": 36
+    },
+    {
+      "name": "tikz-029",
+      "baseline_crop": [
+        347,
+        140,
+        72,
+        455,
+        358
+      ],
+      "current_crop": [
+        347,
+        143.905,
+        72.428,
+        451.27,
+        355.922
+      ],
+      "matched_vector_paths": 48,
+      "matched_text_spans": 90
+    },
+    {
+      "name": "tikz-030",
+      "baseline_crop": [
+        351,
+        190,
+        70,
+        390,
+        152
+      ],
+      "current_crop": [
+        351,
+        216.048,
+        71.431,
+        379.125,
+        148.589
+      ],
+      "matched_vector_paths": 10,
+      "matched_text_spans": 17
+    },
+    {
+      "name": "tikz-031",
+      "baseline_crop": [
+        351,
+        200,
+        150,
+        390,
+        232
+      ],
+      "current_crop": [
+        351,
+        216.048,
+        151.526,
+        379.125,
+        228.684
+      ],
+      "matched_vector_paths": 10,
+      "matched_text_spans": 9
+    },
+    {
+      "name": "tikz-032",
+      "baseline_crop": [
+        351,
+        200,
+        283,
+        390,
+        365
+      ],
+      "current_crop": [
+        351,
+        216.048,
+        284.02,
+        379.125,
+        361.178
+      ],
+      "matched_vector_paths": 10,
+      "matched_text_spans": 15
+    },
+    {
+      "name": "tikz-033",
+      "baseline_crop": [
+        525,
+        240,
+        60,
+        345,
+        200
+      ],
+      "current_crop": [
+        530,
+        252.349,
+        65.953,
+        343.225,
+        192.179
+      ],
+      "matched_vector_paths": 7,
+      "matched_text_spans": 15
+    },
+    {
+      "name": "tikz-034",
+      "baseline_crop": [
+        527,
+        215,
+        205,
+        400,
+        325
+      ],
+      "current_crop": [
+        532,
+        219.684,
+        214.772,
+        375.093,
+        326.7
+      ],
+      "matched_vector_paths": 11,
+      "matched_text_spans": 27
+    },
+    {
+      "name": "tikz-035",
+      "baseline_crop": [
+        532,
+        215,
+        645,
+        370,
+        740
+      ],
+      "current_crop": [
+        538,
+        232.241,
+        362.707,
+        363.332,
+        438.233
+      ],
+      "matched_vector_paths": 7,
+      "matched_text_spans": 10
+    },
+    {
+      "name": "tikz-036",
+      "baseline_crop": [
+        534,
+        245,
+        665,
+        360,
+        718
+      ],
+      "current_crop": [
+        540,
+        249.426,
+        676.409,
+        348.881,
+        719.59
+      ],
+      "matched_vector_paths": 6,
+      "matched_text_spans": 7
+    },
+    {
+      "name": "tikz-037",
+      "baseline_crop": [
+        541,
+        200,
+        60,
+        400,
+        193
+      ],
+      "current_crop": [
+        547,
+        210.3,
+        68.567,
+        384.977,
+        186.55
+      ],
+      "matched_vector_paths": 4,
+      "matched_text_spans": 12
+    },
+    {
+      "name": "tikz-038",
+      "baseline_crop": [
+        555,
+        235,
+        367,
+        360,
+        441
+      ],
+      "current_crop": [
+        561,
+        249.013,
+        367.5,
+        349.292,
+        437.49
+      ],
+      "matched_vector_paths": 6,
+      "matched_text_spans": 15
+    },
+    {
+      "name": "tikz-039",
+      "baseline_crop": [
+        555,
+        190,
+        598,
+        405,
+        714
+      ],
+      "current_crop": [
+        561,
+        203.459,
+        611.182,
+        392.115,
+        711.49
+      ],
+      "matched_vector_paths": 17,
+      "matched_text_spans": 26
+    },
+    {
+      "name": "tikz-040",
+      "baseline_crop": [
+        557,
+        195,
+        60,
+        400,
+        235
+      ],
+      "current_crop": [
+        563,
+        208.362,
+        69.165,
+        386.914,
+        232.473
+      ],
+      "matched_vector_paths": 26,
+      "matched_text_spans": 20
+    },
+    {
+      "name": "tikz-041",
+      "baseline_crop": [
+        573,
+        165,
+        635,
+        430,
+        676
+      ],
+      "current_crop": [
+        579,
+        170.716,
+        644.687,
+        422.569,
+        676.025
+      ],
+      "matched_vector_paths": 11,
+      "matched_text_spans": 10
+    },
+    {
+      "name": "tikz-042",
+      "baseline_crop": [
+        573,
+        165,
+        676,
+        430,
+        745
+      ],
+      "current_crop": [
+        579,
+        172.757,
+        676.06,
+        422.522,
+        744.476
+      ],
+      "matched_vector_paths": 14,
+      "matched_text_spans": 10
+    },
+    {
+      "name": "tikz-043",
+      "baseline_crop": [
+        573,
+        185,
+        394,
+        415,
+        605
+      ],
+      "current_crop": [
+        580,
+        192.64,
+        69.731,
+        400.666,
+        274.166
+      ],
+      "matched_vector_paths": 27,
+      "matched_text_spans": 28
+    },
+    {
+      "name": "tikz-044",
+      "baseline_crop": [
+        577,
+        190,
+        211,
+        405,
+        349
+      ],
+      "current_crop": [
+        583,
+        201.11,
+        513.027,
+        394.165,
+        648.517
+      ],
+      "matched_vector_paths": 19,
+      "matched_text_spans": 30
+    },
+    {
+      "name": "tikz-045",
+      "baseline_crop": [
+        577,
+        187,
+        388,
+        415,
+        564
+      ],
+      "current_crop": [
+        584,
+        189.856,
+        69.165,
+        405.42,
+        238.369
+      ],
+      "matched_vector_paths": 18,
+      "matched_text_spans": 39
+    },
+    {
+      "name": "tikz-046",
+      "baseline_crop": [
+        593,
+        220,
+        355,
+        385,
+        445
+      ],
+      "current_crop": [
+        599,
+        229.199,
+        654.959,
+        366.374,
+        732.335
+      ],
+      "matched_vector_paths": 7,
+      "matched_text_spans": 17
+    },
+    {
+      "name": "tikz-047",
+      "baseline_crop": [
+        609,
+        232,
+        70,
+        370,
+        252
+      ],
+      "current_crop": [
+        616,
+        237.256,
+        71.552,
+        361.653,
+        251.62
+      ],
+      "matched_vector_paths": 15,
+      "matched_text_spans": 20
+    },
+    {
+      "name": "tikz-048",
+      "baseline_crop": [
+        611,
+        175,
+        60,
+        420,
+        219
+      ],
+      "current_crop": [
+        618,
+        185.119,
+        584.815,
+        410.158,
+        730.821
+      ],
+      "matched_vector_paths": 27,
+      "matched_text_spans": 18
+    },
+    {
+      "name": "tikz-049",
+      "baseline_crop": [
+        614,
+        150,
+        306,
+        450,
+        495
+      ],
+      "current_crop": [
+        621,
+        153.91,
+        308.364,
+        440.97,
+        491.504
+      ],
+      "matched_vector_paths": 25,
+      "matched_text_spans": 38
+    },
+    {
+      "name": "tikz-050",
+      "baseline_crop": [
+        648,
+        230,
+        62,
+        365,
+        188
+      ],
+      "current_crop": [
+        657,
+        239.727,
+        71.508,
+        354.425,
+        177.93
+      ],
+      "matched_vector_paths": 8,
+      "matched_text_spans": 3
+    },
+    {
+      "name": "tikz-051",
+      "baseline_crop": [
+        649,
+        210,
+        60,
+        385,
+        215
+      ],
+      "current_crop": [
+        658,
+        218.383,
+        69.165,
+        376.892,
+        205.629
+      ],
+      "matched_vector_paths": 13,
+      "matched_text_spans": 16
+    },
+    {
+      "name": "tikz-052",
+      "baseline_crop": [
+        650,
+        230,
+        72,
+        365,
+        199
+      ],
+      "current_crop": [
+        659,
+        239.727,
+        71.508,
+        354.425,
+        177.93
+      ],
+      "matched_vector_paths": 8,
+      "matched_text_spans": 3
+    },
+    {
+      "name": "tikz-053",
+      "baseline_crop": [
+        650,
+        230,
+        250,
+        365,
+        378
+      ],
+      "current_crop": [
+        659,
+        239.231,
+        255.975,
+        353.929,
+        362.397
+      ],
+      "matched_vector_paths": 7,
+      "matched_text_spans": 3
+    },
+    {
+      "name": "tikz-054",
+      "baseline_crop": [
+        650,
+        230,
+        426,
+        365,
+        555
+      ],
+      "current_crop": [
+        659,
+        239.727,
+        625.024,
+        354.425,
+        731.96
+      ],
+      "matched_vector_paths": 8,
+      "matched_text_spans": 3
+    },
+    {
+      "name": "tikz-055",
+      "baseline_crop": [
+        650,
+        230,
+        603,
+        365,
+        732
+      ],
+      "current_crop": [
+        660,
+        239.727,
+        70.994,
+        354.425,
+        177.93
+      ],
+      "matched_vector_paths": 8,
+      "matched_text_spans": 3
+    },
+    {
+      "name": "tikz-056",
+      "baseline_crop": [
+        651,
+        215,
+        60,
+        380,
+        215
+      ],
+      "current_crop": [
+        660,
+        226.004,
+        231.477,
+        369.271,
+        364.001
+      ],
+      "matched_vector_paths": 15,
+      "matched_text_spans": 4
+    },
+    {
+      "name": "tikz-057",
+      "baseline_crop": [
+        651,
+        210,
+        575,
+        385,
+        741
+      ],
+      "current_crop": [
+        661,
+        220.214,
+        69.166,
+        375.062,
+        215.834
+      ],
+      "matched_vector_paths": 11,
+      "matched_text_spans": 8
+    },
+    {
+      "name": "tikz-058",
+      "baseline_crop": [
+        653,
+        220,
+        565,
+        380,
+        741
+      ],
+      "current_crop": [
+        662,
+        229.406,
+        574.906,
+        368.904,
+        731.96
+      ],
+      "matched_vector_paths": 10,
+      "matched_text_spans": 11
+    },
+    {
+      "name": "tikz-059",
+      "baseline_crop": [
+        658,
+        215,
+        180,
+        375,
+        337
+      ],
+      "current_crop": [
+        667,
+        224.594,
+        266.482,
+        367.243,
+        416.13
+      ],
+      "matched_vector_paths": 9,
+      "matched_text_spans": 7
+    },
+    {
+      "name": "tikz-060",
+      "baseline_crop": [
+        659,
+        195,
+        60,
+        390,
+        219
+      ],
+      "current_crop": [
+        668,
+        207.586,
+        232.561,
+        384.252,
+        382.209
+      ],
+      "matched_vector_paths": 9,
+      "matched_text_spans": 7
+    },
+    {
+      "name": "tikz-061",
+      "baseline_crop": [
+        669,
+        202,
+        525,
+        395,
+        546
+      ],
+      "current_crop": [
+        678,
+        206.747,
+        526.666,
+        388.503,
+        542.713
+      ],
+      "matched_vector_paths": 0,
+      "matched_text_spans": 25
+    },
+    {
+      "name": "tikz-062",
+      "baseline_crop": [
+        669,
+        202,
+        597,
+        395,
+        620
+      ],
+      "current_crop": [
+        678,
+        208.408,
+        599.165,
+        386.87,
+        615.211
+      ],
+      "matched_vector_paths": 0,
+      "matched_text_spans": 25
+    },
+    {
+      "name": "tikz-063",
+      "baseline_crop": [
+        669,
+        202,
+        704,
+        395,
+        727
+      ],
+      "current_crop": [
+        678,
+        206.748,
+        706.893,
+        388.504,
+        722.94
+      ],
+      "matched_vector_paths": 0,
+      "matched_text_spans": 25
+    },
+    {
+      "name": "tikz-064",
+      "baseline_crop": [
+        703,
+        242,
+        710,
+        355,
+        773
+      ],
+      "current_crop": [
+        712,
+        247.644,
+        716.565,
+        347.624,
+        768.944
+      ],
+      "matched_vector_paths": 10,
+      "matched_text_spans": 8
+    },
+    {
+      "name": "tikz-065",
+      "baseline_crop": [
+        859,
+        195,
+        435,
+        385,
+        625
+      ],
+      "current_crop": [
+        871,
+        214.476,
+        440.189,
+        377.558,
+        623.536
+      ],
+      "matched_vector_paths": 17,
+      "matched_text_spans": 14
+    },
+    {
+      "name": "tikz-066",
+      "baseline_crop": [
+        861,
+        205,
+        248,
+        380,
+        359
+      ],
+      "current_crop": [
+        873,
+        218.018,
+        255.189,
+        374.014,
+        360.785
+      ],
+      "matched_vector_paths": 11,
+      "matched_text_spans": 12
+    },
+    {
+      "name": "tikz-067",
+      "baseline_crop": [
+        862,
+        145,
+        490,
+        450,
+        695
+      ],
+      "current_crop": [
+        874,
+        156.262,
+        500.024,
+        439.018,
+        683.152
+      ],
+      "matched_vector_paths": 12,
+      "matched_text_spans": 0
+    },
+    {
+      "name": "tikz-068",
+      "baseline_crop": [
+        865,
+        245,
+        60,
+        350,
+        165
+      ],
+      "current_crop": [
+        877,
+        255.688,
+        169.333,
+        339.588,
+        253.233
+      ],
+      "matched_vector_paths": 5,
+      "matched_text_spans": 0
+    },
+    {
+      "name": "tikz-069",
+      "baseline_crop": [
+        865,
+        245,
+        217,
+        350,
+        322
+      ],
+      "current_crop": [
+        877,
+        255.688,
+        325.662,
+        339.588,
+        409.562
+      ],
+      "matched_vector_paths": 11,
+      "matched_text_spans": 0
+    },
+    {
+      "name": "tikz-070",
+      "baseline_crop": [
+        865,
+        245,
+        433,
+        350,
+        534
+      ],
+      "current_crop": [
+        877,
+        255.688,
+        534.872,
+        339.588,
+        618.771
+      ],
+      "matched_vector_paths": 12,
+      "matched_text_spans": 0
+    }
+  ],
+  "failures": [],
+  "limitations": "Geometry and label matching establishes crop identity; actual rendered inspection and semantic diagram review remain separate."
+}

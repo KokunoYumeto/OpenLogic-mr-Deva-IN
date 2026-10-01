@@ -9,34 +9,38 @@
 भाग आहे.
 
 संपूर्ण आवृत्तीचे वाचन आणि डाउनलोड
-[`complete-v1.1`](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.1)
-मधून करा. [संपूर्ण PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.1/01-openlogic-mr-complete.pdf)
+[`complete-v1.2`](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.2)
+मधून करा. [संपूर्ण PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.2/01-openlogic-mr-complete.pdf)
 ही थेट वाचनाची प्रत आहे. त्यानंतर
-[संपूर्ण संचयी TeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.1/02-openlogic-mr-complete.tex),
-[सर्व संपादनयोग्य स्रोत](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.1/03-openlogic-mr-complete-editable-sources.zip),
-[ऑफलाइन HTML](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.1/04-openlogic-mr-complete-html.zip),
-[पुनरावलोकन-संग्रह](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.1/05-openlogic-mr-complete-review.zip)
-आणि [संपूर्ण EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.1/06-openlogic-mr-complete.epub)
+[संपूर्ण संचयी TeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.2/02-openlogic-mr-complete.tex),
+[सर्व संपादनयोग्य स्रोत](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.2/03-openlogic-mr-complete-editable-sources.zip),
+[ऑफलाइन HTML](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.2/04-openlogic-mr-complete-html.zip),
+[पुनरावलोकन-संग्रह](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.2/05-openlogic-mr-complete-review.zip)
+आणि [संपूर्ण EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.2/06-openlogic-mr-complete.epub)
 या क्रमाने फाइल्स दिल्या आहेत. HTML संग्रह उघडून `index.html` वाचा;
 त्यासाठी इंटरनेट जोडणी लागत नाही. प्रत्येक प्रकरणाचा TeX स्रोतखंडही
 स्वतंत्रपणे दिला आहे. या आवृत्तीची जतन-मालिका
 [मराठी OpenLogic Zenodo DOI](https://doi.org/10.5281/zenodo.22307960) आहे.
-मागील [complete-v1.0 प्रकाशन](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.0) जतन केले आहे.
+मागील [complete-v1.1 प्रकाशन](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.1)
+आणि [complete-v1.0 प्रकाशन](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.0) जतन आहेत.
+Zenodo वर संपूर्ण संच आहे; GitHub वर न बदललेल्या प्रकरण-स्रोतांसाठी मागील आवृत्त्यांचे निर्देश वापरा.
 
 ## भाषांतर आणि पुनरावलोकन
 
 सर्व 722 भाषांतरित एकके 6,644 मूळ व मराठी मजकूरखंडांशी जुळवली आहेत.
 संपूर्ण नोंदवहीत स्रोताचे हॅश, नेमके भाषांतरित खंड, प्रत्यक्ष पाहिलेले
 संदर्भग्रंथातील उतारे आणि शब्दनिर्णय आहेत. अधिक तपशीलवार निर्णय व
-त्यांच्या उपस्थितींचे पुनरावलोकन सध्या 281 एकके आणि 14,221 उपस्थितींना
+त्यांच्या उपस्थितींचे ऐतिहासिक पुनरावलोकन 281 एकके आणि 14,221 उपस्थितींना
 व्यापते; त्या अधिक सखोल पुनरावलोकनाचा दावा उर्वरित ग्रंथासाठी नाही.
 पूर्ण वाचकग्रंथात भाषांतरित प्रस्तावना, मुख्य प्रकरणे, आकारिक सिद्धता
 आणि मुख्य वाचनमार्गाबाहेरील स्रोत-एकके प्रकरणांची पुनरावृत्ती न करता
 एकत्र दिली आहेत.
 
 यंत्रानुवाद, दुरुस्ती आणि तपासणी OpenAI Codex — GPT-5.6 Sol आणि GPT-6 Sol,
-दोन्ही Ultra effort — यांच्या साहाय्याने झाली. पूरक यांत्रिक पुनरावलोकन
-GPT-6 Astra, Ultra effort, यांनी केले. मूळ स्रोताशी तुलना,
+दोन्ही Ultra effort — यांच्या साहाय्याने झाली. पुढील दुरुस्ती-पुनरावलोकन
+GPT-6.1 Sol, Ultra effort, यांच्या साहाय्याने झाले आहे. पूर्वी दिलेले
+GPT-6 Astra पुनरावलोकनाचे श्रेय या संभाषणाच्या मॉडेल-नोंदींशी जुळत
+नसल्यामुळे मागे घेतले आहे. मूळ स्रोताशी तुलना,
 संज्ञांचे संशोधन आणि यांत्रिक तपासण्या केल्या आहेत. स्वतंत्र मानवी किंवा
 मातृभाषिक भाषिक-पुनरावलोकनाचा दावा नाही. विशेष संज्ञांचे निर्णय
 दुरुस्तीसाठी खुले आहेत. मूळ निर्माते Open Logic Project आहेत; त्यांनी या
@@ -47,9 +51,12 @@ GPT-6 Astra, Ultra effort, यांनी केले. मूळ स्रो�
 स्रोताशी जुळतात. स्रोत-सूची आणि पुनरावलोकनाच्या नोंदी
 [`provenance/`](provenance/) मध्ये, तर संकलन व तपासणीची साधने
 [`tools/`](tools/) मध्ये आहेत. संपूर्ण प्रकाशनात सर्व 722 एककांच्या
-नोंदवहीची स्वतंत्र आवृत्ती दिली आहे. तिच्यात 638 शब्दनिर्णय आणि
-स्रोताच्या हाताळणीचे 655 निर्णय, एकूण 1,293 निर्णय व 25,425
-संदर्भ-निर्देश आहेत. सर्व कारणे मराठीत आहेत. संदर्भखंडाचे निर्देश
+नोंदवहीची स्वतंत्र आवृत्ती दिली आहे. तिच्यात 638 शब्दनिर्णय,
+स्रोताच्या हाताळणीचे 655 निर्णय आणि 328 नव्या दुरुस्ती-निवडी,
+एकूण 1,621 निर्णय व 26,364 संदर्भ-निर्देश आहेत. मागील GPT-6 Sol
+कामातील सर्व 519 प्रभावित मराठी एकके मूळ इंग्रजीशी नव्याने प्रत्यक्ष
+वाचली आहेत; हा सर्व 722 एककांच्या नव्या अर्थपुनर्वाचनाचा दावा नाही.
+सर्व कारणे मराठीत आहेत. संदर्भखंडाचे निर्देश
 प्रत्येक शब्दाच्या अक्षरशः उपस्थितीचे किंवा स्वतंत्र तज्ज्ञ स्वीकृतीचे
 प्रमाणपत्र नाहीत. संपूर्ण निर्णय-JSON ची अचूक संकुचित प्रत आणि ती
 उघडण्याची पद्धत [निर्णय-JSON डाउनलोड मार्गदर्शकात](provenance/translation-decisions/CANONICAL_JSON_DOWNLOAD.md)

@@ -1,0 +1,12 @@
+{
+  "schema": "openlogic-mvl-sequent-rule-check/1",
+  "status": "passed",
+  "rules_checked": 20,
+  "local_truth_cases": 300,
+  "rule_check": "Each actual printed premise conjunction iff actual conclusion, every operand truth value and both values of the common-context satisfaction flag.",
+  "example_proof_nodes_checked": 21,
+  "example_check": "Actual Bussproofs stack; literal initial sequents, one-formula front weakening, adjacent exchange and exact Lukasiewicz rule instantiations. Every resulting node also valid on all nine operand valuations.",
+  "target_path": "mr/content/many-valued-logic/sequent-calculus/propositional-rules.tex",
+  "target_sha256": "9be966a6d79d8ca1c3ddafa639d40c91833a920d203cdf6556904048b790def7",
+  "limitations_mr": "या मुद्रित 20 finite-matrix rules आणि एका actual proof tree ची स्वतंत्र तपासणी आहे. Arbitrary derivations ची completeness, cut elimination किंवा formal proof-assistant certification दावा नाही."
+}

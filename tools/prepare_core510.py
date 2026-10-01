@@ -5,6 +5,7 @@ import json
 import re
 import runpy
 from pathlib import Path
+from complete_reader_notes import NOTE, project_note
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -70,23 +71,20 @@ assert imports == [
 available.add("int:sc:chap")
 files = []
 reader_note_count = 0
+expected_reader_notes = 0
 for name in imports:
     path = folder / (name + ".tex")
     raw = path.read_text(encoding="utf-8")
-    if name == "decidability":
-        note_pattern = r"(?m)^[ \t]*%READERNOTE\{(.*)\}$"
+    # SOL6-A204: later source repairs may add notes to any imported unit.
+    expected_reader_notes += len(NOTE.findall(raw))
 
-        def render_reader_note(match):
-            global reader_note_count
-            reader_note_count += 1
-            assert match.group(1).startswith("OLINC-226:")
-            return (
-                r"\begin{quote}\small\textbf{स्रोतसिद्धतेची मर्यादा.} "
-                + match.group(1)
-                + r"\end{quote}"
-            )
+    def render_reader_note(match):
+        global reader_note_count
+        reader_note_count += 1
+        return (r"\begin{quote}\small\textbf{स्रोतनोंद.} "
+                + project_note(match.group(1)) + r"\end{quote}")
 
-        raw = re.sub(note_pattern, render_reader_note, raw)
+    raw = NOTE.sub(render_reader_note, raw)
     content = selected_modal(raw)
     file_id = re.search(r"\\olfileid\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}", content)
     assert file_id and list(file_id.groups())[:2] == ["int", "sc"], path
@@ -96,7 +94,7 @@ for name in imports:
     available.update(prefix + ":" + item for item in re.findall(r"\\ollabel\{([^}]+)\}", content))
     available.update(re.findall(r"\\label\{([^}]+)\}", content))
     files.append((name, content, parts, prefix))
-assert reader_note_count == 1
+assert reader_note_count == expected_reader_notes
 external.difference_update(available)
 
 chunks = [
@@ -159,7 +157,7 @@ new_notes = r"""
 रचनेतील निवडीसाठी परिमित आधीच्या
 निर्देशांकांचा युक्तिवाद स्पष्ट केला आहे;
 कॅनॉनिकल प्रतिमानातील एकस्वनिकतेसाठी
-आगमनाचा विस्तार-लांबी हा निर्देशांक
+विगमनाचा विस्तार-लांबी हा निर्देशांक
 स्पष्ट केला आहे.
 \item \textbf{OLINC-225}: सत्यता पूर्वप्रमेयाच्या
 प्रस्तावनेत प्रारंभीच्या \(\Delta\) ऐवजी
@@ -175,8 +173,9 @@ new_notes = r"""
 सूत्राची सत्यता जपत नाही. मूळ दोन
 जगे असंबद्ध असताना नव्या उपसंच-क्रमाने
 त्यांत प्राप्यता निर्माण होऊ शकते.
-विभागात दिसणारी टीप हा पुराव्यातील
-दोष स्पष्ट करते; प्रमेय खोटे ठरवत नाही.
+स्रोतदोषाची नोंद जपली आहे; सध्याच्या
+मराठी विभागात योग्य उपसूत्र-गाळणी व
+तिची सिद्धता दिली आहे. प्रमेय बदललेले नाही.
 मूळ इंग्रजी बाइट्स बदललेले नाहीत.
 """
 assert notes.count(r"\end{enumerate}") >= 1
@@ -240,7 +239,7 @@ assert len(inputs) == 507 and inputs[-1]["unit_id"] == "OLP-0510"
 assert out.count(r"\chapter{") == 54
 assert len(re.findall(r"\\section(?:\[[^]]*\])?\{", out)) == 441
 assert "507 स्रोत-एकके आणि 441 वाचक-विभाग" in out
-assert "स्रोतसिद्धतेची मर्यादा" in out
+assert "OLINC-226" in out
 assert "!!" not in out and not re.search(r"![A-Z]", out)
 labels = re.findall(r"\\label\{([^}]+)\}", out)
 assert len(labels) == len(set(labels)), "Cumulative reader labels must be unique"

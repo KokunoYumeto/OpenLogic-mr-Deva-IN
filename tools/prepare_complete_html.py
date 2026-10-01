@@ -9,16 +9,17 @@ import json
 import re
 import shutil
 import subprocess
-from bisect import bisect_right
 from copy import deepcopy
 from pathlib import Path
 
 from bs4 import BeautifulSoup, NavigableString
 from complete_math_glyphs import extract_symbols
+from complete_diagram_inventory import current_inventory
 from core_html_proofs import (
     _replace_args,
     _replace_optional_math_command,
     _generic_proof_spec,
+    expand_derivability_macro,
     expand_reader_math_macros,
     strip_proof_environments,
 )
@@ -124,7 +125,7 @@ def expand_model_class_macro(body):
 def expand_complete_math_macros(body, preamble):
     """Project later-chapter xparse notation to equivalent plain TeX."""
     body = body.replace(r"\bottomAlignProof", "")
-    body = body.replace(r"\Proves", r"\vdash")
+    body = expand_derivability_macro(body)
     body = body.replace(r"\sFmlaWide", r"\sFmla")
     body = body.replace(r"\pto", r"\rightharpoonup")
     for command, glyph in (
@@ -809,32 +810,14 @@ report["html_sha256"] = sha(OUTPUT / "index.html")
 (BUILD / "HTML_PROVISIONAL_REPORT.json").write_text(
     json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
 )
-original_tex = source.read_text(encoding="utf-8")
-original_assets = list(asset_pattern.finditer(original_tex))
-original_tikz = list(tikz_pattern.finditer(original_tex))
-assert len(original_assets) == 9 and len(original_tikz) == 61
-figure_starts = [match.start() for match in re.finditer(r"\\begin\{figure\}(?:\[[^]]+\])?", original_tex)]
-figure_ends = [match.start() for match in re.finditer(r"\\end\{figure\}", original_tex)]
-for kind, matches in (("source-asset", original_assets), ("inline-tikz", original_tikz)):
-    entries = [entry for entry in diagrams if entry["kind"] == kind]
-    assert len(entries) == len(matches)
-    for entry, match in zip(entries, matches):
-        assert kind == "source-asset" or entry["source_sha256"] == hashlib.sha256(
-            match.group().encode("utf-8")
-        ).hexdigest()
-        entry["source_line"] = original_tex.count("\n", 0, match.start()) + 1
-        figure_start_index = bisect_right(figure_starts, match.start()) - 1
-        figure_end_index = bisect_right(figure_ends, match.start()) - 1
-        figure_start = figure_starts[figure_start_index] if figure_start_index >= 0 else -1
-        figure_end_before = figure_ends[figure_end_index] if figure_end_index >= 0 else -1
-        if figure_start > figure_end_before:
-            figure_end = original_tex.index(r"\end{figure}", match.end())
-            figure = original_tex[figure_start:figure_end]
-            caption_match = re.search(r"\\caption(?:\[[^]]+\])?\{", figure)
-            if caption_match:
-                caption, _ = read_group(figure, caption_match.end() - 1, "{", "}")
-                entry["caption_tex"] = caption
-            entry["figure_labels"] = re.findall(r"\\label\{([^}]+)\}", figure)
+current_diagrams = current_inventory(source.read_text(encoding="utf-8"))
+assert [(entry['name'], entry['kind']) for entry in current_diagrams] == [
+    (entry['name'], entry['kind']) for entry in diagrams
+]
+for entry, current in zip(diagrams, current_diagrams):
+    if entry['kind'] == 'inline-tikz':
+        assert entry['source_sha256'] == current['source_sha256']
+diagrams = current_diagrams
 (BUILD / "HTML_DIAGRAM_INVENTORY.json").write_text(
     json.dumps(diagrams, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
 )

@@ -1,0 +1,225 @@
+{
+  "schema": "openlogic-three-valued-table-check/1",
+  "status": "passed",
+  "tables": [
+    {
+      "unit_id": "OLP-0394",
+      "logic": "luk",
+      "operator": "not",
+      "entries_checked": 3
+    },
+    {
+      "unit_id": "OLP-0394",
+      "logic": "luk",
+      "operator": "and",
+      "entries_checked": 9
+    },
+    {
+      "unit_id": "OLP-0394",
+      "logic": "luk",
+      "operator": "or",
+      "entries_checked": 9
+    },
+    {
+      "unit_id": "OLP-0394",
+      "logic": "luk",
+      "operator": "if",
+      "entries_checked": 9
+    },
+    {
+      "unit_id": "OLP-0394",
+      "logic": "luk",
+      "operator": "Diamond",
+      "entries_checked": 3
+    },
+    {
+      "unit_id": "OLP-0394",
+      "logic": "luk",
+      "operator": "Box",
+      "entries_checked": 3
+    },
+    {
+      "unit_id": "OLP-0395",
+      "logic": "strong",
+      "operator": "not",
+      "entries_checked": 3
+    },
+    {
+      "unit_id": "OLP-0395",
+      "logic": "strong",
+      "operator": "and",
+      "entries_checked": 9
+    },
+    {
+      "unit_id": "OLP-0395",
+      "logic": "strong",
+      "operator": "or",
+      "entries_checked": 9
+    },
+    {
+      "unit_id": "OLP-0395",
+      "logic": "strong",
+      "operator": "if",
+      "entries_checked": 9
+    },
+    {
+      "unit_id": "OLP-0395",
+      "logic": "strong",
+      "operator": "not",
+      "entries_checked": 3
+    },
+    {
+      "unit_id": "OLP-0395",
+      "logic": "weak",
+      "operator": "and",
+      "entries_checked": 9
+    },
+    {
+      "unit_id": "OLP-0395",
+      "logic": "weak",
+      "operator": "or",
+      "entries_checked": 9
+    },
+    {
+      "unit_id": "OLP-0395",
+      "logic": "weak",
+      "operator": "if",
+      "entries_checked": 9
+    },
+    {
+      "unit_id": "OLP-0395",
+      "logic": "strong",
+      "operator": "sim",
+      "entries_checked": 3
+    },
+    {
+      "unit_id": "OLP-0395",
+      "logic": "strong",
+      "operator": "+",
+      "entries_checked": 3
+    },
+    {
+      "unit_id": "OLP-0396",
+      "logic": "god",
+      "operator": "not",
+      "entries_checked": 3
+    },
+    {
+      "unit_id": "OLP-0396",
+      "logic": "god",
+      "operator": "and",
+      "entries_checked": 9
+    },
+    {
+      "unit_id": "OLP-0396",
+      "logic": "god",
+      "operator": "or",
+      "entries_checked": 9
+    },
+    {
+      "unit_id": "OLP-0396",
+      "logic": "god",
+      "operator": "if",
+      "entries_checked": 9
+    },
+    {
+      "unit_id": "OLP-0397",
+      "logic": "strong",
+      "operator": "+",
+      "entries_checked": 3
+    },
+    {
+      "unit_id": "OLP-0397",
+      "logic": "rm",
+      "operator": "if",
+      "entries_checked": 9
+    }
+  ],
+  "table_cells_checked": 144,
+  "modal_counterexample_value": "False",
+  "rm3_modus_ponens_cases": [
+    {
+      "p": 0,
+      "q": 0,
+      "conditional": 2
+    },
+    {
+      "p": 0,
+      "q": 1,
+      "conditional": 2
+    },
+    {
+      "p": 0,
+      "q": 2,
+      "conditional": 2
+    },
+    {
+      "p": 1,
+      "q": 0,
+      "conditional": 0
+    },
+    {
+      "p": 1,
+      "q": 1,
+      "conditional": 1
+    },
+    {
+      "p": 1,
+      "q": 2,
+      "conditional": 2
+    },
+    {
+      "p": 2,
+      "q": 0,
+      "conditional": 0
+    },
+    {
+      "p": 2,
+      "q": 1,
+      "conditional": 0
+    },
+    {
+      "p": 2,
+      "q": 2,
+      "conditional": 2
+    }
+  ],
+  "three_conditional_entries_distinguishing_rm3_from_lukasiewicz": [
+    "U,F: F rather than U",
+    "T,U: F rather than U",
+    "U,U: U rather than T"
+  ],
+  "source_bindings": [
+    {
+      "unit_id": "OLP-0394",
+      "target_path": "mr/content/many-valued-logic/three-valued-logics/lukasiewicz.tex",
+      "target_sha256": "0423fe514de225e722778e8dfc87d0274bc09d43eee95c91118977a7165bae3b"
+    },
+    {
+      "unit_id": "OLP-0395",
+      "target_path": "mr/content/many-valued-logic/three-valued-logics/kleene.tex",
+      "target_sha256": "474ff198d18959713075fef9e2248e14a9cf240c590f4a32b18d1d5fae652dbf"
+    },
+    {
+      "unit_id": "OLP-0396",
+      "target_path": "mr/content/many-valued-logic/three-valued-logics/goedel.tex",
+      "target_sha256": "3478b6f3c234c6fca4ecec05971587f6cc08f3a2a00959ffc1a4b649acb4b863"
+    },
+    {
+      "unit_id": "OLP-0397",
+      "target_path": "mr/content/many-valued-logic/three-valued-logics/multiple-designation.tex",
+      "target_sha256": "0baa988ddf284f892017bae846d3a255034c0f4ac6a58c6c98fa4e9a0e8a882e"
+    }
+  ],
+  "primary_scopes": [
+    {
+      "url": "https://logic.pku.edu.cn/attachments/e985bf9841164a13809243fbd04372cd.pdf",
+      "read": "Publication/title page, section 2 LP designation/value labels, section 4 page 10 RM3 table and adjacent discussion."
+    },
+    {
+      "url": "https://kpbc.umk.pl/Content/247342/PDF/EOD_OPEN_006_12_nr_09.pdf",
+      "read": "Extracted printed pages 170--171: June 19 1920 author lecture report; catalogue separately gives publication year 1920."
+    }
+  ],
+  "limitations_mr": "प्रत्यक्ष TeX tables मधील सर्व 144 cells स्वतंत्र integer truth functions शी तपासले. हे finite matrices आणि मोडल/RM3 गणनांचे validation आहे; arbitrary formula theorems, historical whole issue किंवा proof-assistant certification दावा नाही."
+}

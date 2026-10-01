@@ -74,7 +74,8 @@ for name, raw, parts, prefix in files:
         lambda m: " आणि ".join(r"\ref{" + x.strip() + "}" for x in m.group(1).split(",")), content)
     content = re.sub(r"\\tagrefs\{((?:[^{}]|\{[^{}]*\})*)\}",
         tag_references, content, flags=re.S)
-    content = content.replace(r"\citep[p.~199]{Potter2004}", "(पॉटर 2004, पृ.~199)")
+    for locator in (r"\citep[p.~199]{Potter2004}", r"\citep[पृ.~199]{Potter2004}"):
+        content = content.replace(locator, "(पॉटर 2004, पृ.~199)")
     assert "!!" not in content, (name, re.findall(r"!!.{0,35}", content)[:8])
     leftover = re.search(
         r"\\(?:iftag|tagitem|tagblock|tagenumerate|tagprob|tagendprob|"
@@ -107,8 +108,8 @@ editorial = (
     "मराठी व्याख्या आणि सरावात घातांकावरून आधाराकडे जाणारी, केवळ सांत "
     "ठिकाणी अशून्य असणारी फलने घेतली आहेत. शून्य आधार आणि $\\omega$ घातांकासाठी मात्र "
     "मूळ सीमा-सूत्रात शून्य घातांकाचे मूल्य $1$ संघटित होते, तर "
-    "फलनसंच रिकामा असतो. त्यामुळे सराव शून्येतर आधारापुरता केला आहे; "
-    "मूळ पुनरावर्तन सूत्राच्या सार्वत्रिक रूपाची दुरुस्ती अद्याप बाकी आहे.\n"
+    "फलनसंच रिकामा असतो. त्यामुळे मुख्य दोन्ही व्याख्या आणि सराव "
+    "शून्येतर आधारापुरते केले आहेत; सरावाची सिद्धता दिलेली नाही.\n"
 )
 out = before + "\n".join(chunks) + "\n" + marker + notes + editorial
 for original, projection in prior["reader_symbol_projections"].items():

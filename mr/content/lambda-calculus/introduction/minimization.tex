@@ -19,7 +19,8 @@ g(x) \simeq \umin{y}{f(x,y)}.
 \end{lem}
 
 \begin{proof}
-मुख्य कल्पना साधारण अशी आहे. $x$ दिले असता,
+%READERNOTE{SOL6-A112: Displayed selector-search construction प्रथम total numeric test साठी सिद्ध केली आहे. Search थांबत नसल्यास त्याचे head computationही थांबत नाही. क्लिनी प्रमाण रूपातील अंतिम extractor आधी search force केल्याने general computability theorem पूर्ण होते; arbitrary partial test चे closure त्यानंतर घेतले आहे.}
+प्रथम $f$ सर्वत्र परिभाषित आहे असे घ्या. मुख्य कल्पना साधारण अशी आहे. $x$ दिले असता,
 ~$n$ पासून सुरू करून~$y$ शोधणारे फलन $h_x(n)$
 परिभाषित करण्यासाठी स्थिरबिंदू लॅम्डा पद $Y$ वापरू;
 मग $g(x)$ म्हणजे $h_x(0)$. फलन~$h_x$ हे
@@ -28,12 +29,12 @@ g(x) \simeq \umin{y}{f(x,y)}.
 h_x(n) \simeq
 \begin{cases}
 n & \text{जर $f(x,n) = 0$ असेल} \\
-h_x(n+1) & \text{अन्यथा.}
+h_x(n+1) & \text{जर $f(x,n)>0$ असेल.}
 \end{cases}
 \]
 
-तपशील असे आहेत. $f$ हे लॅम्डा-परिभाष्य असल्याने
-कोणते तरी पद $F$ त्याला !!{lambda defined} करते.
+या total प्रकरणाचे तपशील असे आहेत. $f$ हे लॅम्डा-परिभाष्य असल्याने
+कोणते तरी बंद पद $F$ त्याला !!{lambda defined} करते.
 $D(M, N, \bar{0}) \red M$ आणि $D(M, N, \bar{1})
 \red N$ असे असणारे लॅम्डा पद~$D$ आपल्याकडे आहे,
 हे लक्षात ठेवा. क्षणभर $x$ स्थिर धरू. $h_x$ ला
@@ -73,7 +74,52 @@ $\lambd[x][H(\num 0)]$ असू द्या. मग $G$
 हे~$g$ ला !!{lambda define}s; म्हणजेच प्रत्येक~$m$
 साठी $g(m)$ परिभाषित असेल तर $G(\num m)$ चे
 न्यूनीकरण होऊन~$\overline {g(m)}$ मिळते;
-अन्यथा त्याला सामान्य रूप नसते.
+Zero witness मिळाल्यास आधीच्या सांत positive tests नंतर
+तोच अंक मिळतो. Witness नसल्यास प्रत्येक total test
+positive असल्याने search पुढच्या candidate ला जात राहते.
+सर्वांत डाव्या redex चे न्यूनीकरण या बाह्य search ला अखंड
+उलगडते; बाह्य function position मधील search संपत नाही.
+त्याला सामान्य रूप असते, तर normalizing leftmost strategy
+ते सांत पायऱ्यांत शोधली असती. यासाठी
+\href{https://www.cs.ox.ac.uk/andrew.ker/docs/lambdacalculus-lecture-notes-ht2009.pdf}{Andrew D. Ker, \emph{Lambda Calculus and Types}, प्रमेय 3.2.3,
+मुद्रित पृष्ठ 35} मधील standardization परिणाम वापरला आहे.
+या search ला बाहेरून अधिक पदे उपयोजली तरी ते बाह्य
+function position मध्येच राहते; अनंत search टाकून दिले जात नाही.
+आता आधीच्या \olref[lrp]{thm:computable-lambda} ची सिद्धता
+पूर्ण करू. क्लिनी प्रमाण रूपानुसार
+\[
+ f(\vec x)\simeq e(\umin{n}{r(\vec x,n)}),
+\]
+येथे $e$ आणि $r$ सर्वत्र परिभाषित आदिम पुनरावर्ती फलने
+आहेत; zero test मान्य halting record ओळखते. त्यांची बंद
+प्रतिनिधी पदे $E$ आणि $R$ आधीच्या total constructions ने
+मिळतात. वरील search construction मध्ये अनेक निविष्ट प्राचले
+तशीच राखून त्याच्या लघुतमीकरणाचा प्रतिनिधी $W$ मिळतो.
+मग $I=\lambd[t][t]$ घेऊन
+\[
+ F(\vec x)=(\lambd[v][v\,I\,(E v)])\,W(\vec x)
+\]
+असे घ्या; आवश्यक बद्ध चरे ताजी निवडली आहेत. Search
+ने $s$ हा अंक दिल्यास
+\[
+ (\lambd[v][v\,I\,(E v)])\,\num{s}
+ \red \num{s}\,I\,(E\,\num{s})
+ \red E\,\num{s}.
+\]
+कारण ओळख फलनाचे कितीही पुनरावर्तन केले तरी value बदलत
+नाही. शेवटचे पद योग्य output अंक देते. Search अखंड चालत
+असेल, तर ते बाह्य function position मध्ये force होत राहते;
+ते टाकून देणाऱ्या extractor पर्यंत पोहोचत नाही आणि सामान्य
+रूप नसते. याने \olref[lrp]{thm:computable-lambda} स्वतंत्रपणे
+सिद्ध झाले.
+शेवटी प्रारंभीच्या उपपत्तीत $f$ आंशिक असण्याची सामान्य
+शक्यता घ्या. \olref[cmp]{thm:lambda-computable} ने ते आंशिक
+संगणनक्षम आहे. Strict अपरिबद्ध लघुतमीकरणातील प्रत्येक
+पूर्वीचे value परिभाषित व positive असावे लागते; हा शोध
+आंशिक संगणनक्षम आहे. पूर्ण झालेल्या
+\olref[lrp]{thm:computable-lambda} ने त्याला बंद लॅम्डा
+प्रतिनिधी मिळतो. Arbitrary आंशिक प्रतिनिधीला थेट वरील
+selector मध्ये बसवणे पुरेसे आहे असे गृहीत घेतलेले नाही.
 \end{proof}
 
 \end{document}

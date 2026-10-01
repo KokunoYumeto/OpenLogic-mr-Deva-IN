@@ -1,0 +1,340 @@
+{
+  "schema": "church-boundary-repair-check/1",
+  "status": "passed",
+  "cases": [
+    {
+      "construction": "beta_expansion",
+      "base": 0,
+      "exponent": 0,
+      "value": 1,
+      "beta_steps": 4
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 0,
+      "exponent": 0,
+      "value": 1,
+      "beta_steps": 4
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 0,
+      "exponent": 1,
+      "value": 0,
+      "beta_steps": 6
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 0,
+      "exponent": 1,
+      "value": 0,
+      "beta_steps": 8
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 0,
+      "exponent": 2,
+      "value": 0,
+      "beta_steps": 6
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 0,
+      "exponent": 2,
+      "value": 0,
+      "beta_steps": 8
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 0,
+      "exponent": 3,
+      "value": 0,
+      "beta_steps": 6
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 0,
+      "exponent": 3,
+      "value": 0,
+      "beta_steps": 8
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 0,
+      "exponent": 4,
+      "value": 0,
+      "beta_steps": 6
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 0,
+      "exponent": 4,
+      "value": 0,
+      "beta_steps": 8
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 1,
+      "exponent": 0,
+      "value": 1,
+      "beta_steps": 4
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 1,
+      "exponent": 0,
+      "value": 1,
+      "beta_steps": 4
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 1,
+      "exponent": 1,
+      "value": 1,
+      "beta_steps": 6
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 1,
+      "exponent": 1,
+      "value": 1,
+      "beta_steps": 10
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 1,
+      "exponent": 2,
+      "value": 1,
+      "beta_steps": 8
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 1,
+      "exponent": 2,
+      "value": 1,
+      "beta_steps": 16
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 1,
+      "exponent": 3,
+      "value": 1,
+      "beta_steps": 10
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 1,
+      "exponent": 3,
+      "value": 1,
+      "beta_steps": 22
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 1,
+      "exponent": 4,
+      "value": 1,
+      "beta_steps": 12
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 1,
+      "exponent": 4,
+      "value": 1,
+      "beta_steps": 28
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 2,
+      "exponent": 0,
+      "value": 1,
+      "beta_steps": 4
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 2,
+      "exponent": 0,
+      "value": 1,
+      "beta_steps": 4
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 2,
+      "exponent": 1,
+      "value": 2,
+      "beta_steps": 6
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 2,
+      "exponent": 1,
+      "value": 2,
+      "beta_steps": 12
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 2,
+      "exponent": 2,
+      "value": 4,
+      "beta_steps": 10
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 2,
+      "exponent": 2,
+      "value": 4,
+      "beta_steps": 28
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 2,
+      "exponent": 3,
+      "value": 8,
+      "beta_steps": 18
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 2,
+      "exponent": 3,
+      "value": 8,
+      "beta_steps": 60
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 2,
+      "exponent": 4,
+      "value": 16,
+      "beta_steps": 34
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 2,
+      "exponent": 4,
+      "value": 16,
+      "beta_steps": 124
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 3,
+      "exponent": 0,
+      "value": 1,
+      "beta_steps": 4
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 3,
+      "exponent": 0,
+      "value": 1,
+      "beta_steps": 4
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 3,
+      "exponent": 1,
+      "value": 3,
+      "beta_steps": 6
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 3,
+      "exponent": 1,
+      "value": 3,
+      "beta_steps": 14
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 3,
+      "exponent": 2,
+      "value": 9,
+      "beta_steps": 12
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 3,
+      "exponent": 2,
+      "value": 9,
+      "beta_steps": 44
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 3,
+      "exponent": 3,
+      "value": 27,
+      "beta_steps": 30
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 3,
+      "exponent": 3,
+      "value": 27,
+      "beta_steps": 134
+    },
+    {
+      "construction": "beta_expansion",
+      "base": 3,
+      "exponent": 4,
+      "value": 81,
+      "beta_steps": 84
+    },
+    {
+      "construction": "iterated_multiplication",
+      "base": 3,
+      "exponent": 4,
+      "value": 81,
+      "beta_steps": 404
+    },
+    {
+      "construction": "pair_predecessor",
+      "input": 0,
+      "value": 0,
+      "beta_steps": 9
+    },
+    {
+      "construction": "pair_predecessor",
+      "input": 1,
+      "value": 0,
+      "beta_steps": 16
+    },
+    {
+      "construction": "pair_predecessor",
+      "input": 2,
+      "value": 1,
+      "beta_steps": 26
+    },
+    {
+      "construction": "pair_predecessor",
+      "input": 3,
+      "value": 2,
+      "beta_steps": 36
+    },
+    {
+      "construction": "pair_predecessor",
+      "input": 4,
+      "value": 3,
+      "beta_steps": 46
+    },
+    {
+      "construction": "pair_predecessor",
+      "input": 5,
+      "value": 4,
+      "beta_steps": 56
+    }
+  ],
+  "case_count": 46,
+  "bindings": [
+    {
+      "target_path": "mr/content/lambda-calculus/lambda-definability/arithmetical-functions.tex",
+      "target_sha256": "7042dec0680873fc80d61eec49f764a63535b728bb4bc438fee4a165ee326fd5",
+      "exact_anchor": "\\lambd[be][\\lambd[fx][e b f x]]"
+    },
+    {
+      "target_path": "mr/content/lambda-calculus/lambda-definability/pairs.tex",
+      "target_sha256": "9545d9b47a97bc42c381399871b10d002103bd5d92a2217c20e3d8646ed63541",
+      "exact_anchor": "$x$ ही $\\tuple{\\num{0},\\num{0}}$"
+    }
+  ],
+  "exact_counterexamples": {
+    "old_zero_exponent_is_identity_not_church_one": true,
+    "nonfresh_pair_binder_changes_free_f_to_first_selector": true
+  },
+  "limitations_mr": "ही exact beta-normalization ची स्वतंत्र de-Bruijn पुनर्मांडणी व सांत input तपासणी आहे. Arbitrary terms ची exhaustive तपासणी किंवा संपूर्ण proof-assistant certification नाही; pair capture आणि exponent-zero counterexamples मात्र नेमके आहेत."
+}

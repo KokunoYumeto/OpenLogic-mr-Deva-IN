@@ -1,0 +1,120 @@
+{
+  "status": "passed",
+  "repair_ids": [
+    "SOL6-A065",
+    "SOL6-A066",
+    "SOL6-A067"
+  ],
+  "method": "Exact small integer decoding and symbolic integer inequalities; no execution of textbook recursive proof predicates.",
+  "sequence_cases": [
+    {
+      "code": 0,
+      "decoded": [],
+      "canonical": true
+    },
+    {
+      "code": 1,
+      "decoded": [],
+      "canonical": true
+    },
+    {
+      "code": 2,
+      "decoded": [
+        0
+      ],
+      "canonical": true
+    },
+    {
+      "code": 6,
+      "decoded": [
+        0,
+        0
+      ],
+      "canonical": true
+    },
+    {
+      "code": 30,
+      "decoded": [
+        0,
+        0,
+        0
+      ],
+      "canonical": true
+    },
+    {
+      "code": 42,
+      "decoded": [
+        0,
+        0
+      ],
+      "canonical": false
+    },
+    {
+      "code": 10,
+      "decoded": [
+        0
+      ],
+      "canonical": false
+    },
+    {
+      "code": 5,
+      "decoded": [],
+      "canonical": false
+    },
+    {
+      "code": 210,
+      "decoded": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "canonical": true
+    }
+  ],
+  "finite_canonical_code_range": [
+    0,
+    4096
+  ],
+  "canonical_codes_in_range": 105,
+  "malformed_sequent": {
+    "code": 42,
+    "decoded_fields": [
+      0,
+      0
+    ],
+    "old_length_guard": true,
+    "new_reconstruction_guard": false
+  },
+  "extra_node_field_witnesses": {
+    "lk_initial_schematic": 6,
+    "lk_extra_field_schematic": 30,
+    "nd_assumption_schematic": 30,
+    "nd_extra_fields_schematic": 2310,
+    "limitation": "Small fields demonstrate shape only; these numbers are not claimed to contain genuine sentence or sequent codes."
+  },
+  "axiomatic_noncanonical_witness": {
+    "general_code": "5*2^(a+1), with a the code of a genuine axiom",
+    "decoded_sequence": "[a]",
+    "old_Deriv": true,
+    "new_Seq_guard": false
+  },
+  "one_assumption_counterexample": {
+    "sentence_code": "a = Gn(A), for any sentence A",
+    "derivation_code": "D = <0,a,0> = 2*3^(a+1)*5",
+    "subtree_sequence_code": "S = <D> = 2^(D+1)",
+    "only_path_code": "s = S",
+    "old_strict_bound": "s<S is false; OpenAssum(a,D) is false",
+    "new_bound": "s<1+sequenceBound(D,D) is true",
+    "new_open_assumption": true,
+    "old_empty_theory_Prfgamma": "The old open-assumption test accepts D as a proof from the empty theory, including when A is not a theorem.",
+    "new_empty_theory_Prfgamma": false
+  },
+  "general_path_bound": "Every genuine child code is smaller than its positive parent code. A root-to-leaf path therefore has at most D nodes, each at most D. Canonical tuple reconstruction gives s<=p_(D-1)^(D*(D+1))=sequenceBound(D,D), including the singleton path.",
+  "input_hashes": {
+    "mr/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex": "600c7bead88d4e2b981c45336c15ad5e335bb699eb59c1b352057526d55aaa87",
+    "mr/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex": "41a09fd5745e2f4f708fd730210f5874d499f30faf9908d63847c339843409f8",
+    "mr/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex": "b5681f5f49ac2f37075560c3f5eebc5e2cb4f24ebe1567ae7bdf41efc962ba7b"
+  },
+  "scope_limitations": "Checks address the stated counterexamples and general path bound. Rule soundness, a formal implementation of all proof predicates, full corpus semantics and independent human review are not claimed."
+}

@@ -1,6 +1,9 @@
 % Part: proof-theory
 % Chapter: normalization
 % Section: translations
+%READERNOTE{SOL6-A306: मुख्य शाखेतील नवे गृहीतक नवी खूण वापरते. असत्य निष्कर्षासाठी रिकामा उत्तरपक्ष जपला आहे. उपसूत्राच्या गुणधर्मात उघडी गृहीतके, संख्यापकांची उदाहरणे आणि असत्य यांचा नेमका अपवाद स्पष्ट केला आहे.}
+%READERNOTE{SOL6-A308: संकुचनाचा नियम योग्य मुद्रण-संकेताने दिला आहे. असत्य आधारासाठी मूळ रिकामा उत्तरपक्ष आणि दुर्बलीकरणाने मिळणारा आधार यांना स्वतंत्र सिद्धता-नावे दिली आहेत.}
+%READERNOTE{SOL6-A310: नव्या अटींतील सूत्रे, सिद्धता-नावे आणि नियमांची नावे योग्य TeX संकेतांनी पुनर्स्थापित केली आहेत.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -168,9 +171,9 @@ $x:!A \Sequent !A$ हा स्वयंसिद्धक आहे;
   मुख्य शाखेवर बदलत नाहीत. त्यामुळे अंतिम
   क्रमवर्तीच्या संदर्भात~$x:!D \land !E$ असलेच पाहिजे.
   शिवाय,~\Elim{\land} ने संपणाऱ्या उप-!!{proof}
-  ऐवजी~$x:!D \Sequent !D$ ठेवून, आणि मुख्य
+  ऐवजी~$w:!D \Sequent !D$ ठेवून, आणि मुख्य
   शाखेवरील प्रत्येक क्रमवर्तीच्या संदर्भात
-  $x:!D \land !E$ ऐवजी~$x:!D$ ठेवून,
+  $x:!D \land !E$ ऐवजी~$w:!D$ ठेवून,
   !!{proof}~$\delta$ चे !!{proof}~$\delta_1$
   मध्ये रूपांतर करता येते; म्हणजे:
   \[
@@ -182,37 +185,40 @@ $x:!A \Sequent !A$ हा स्वयंसिद्धक आहे;
   \DisplayProof
   \quad\text{ यात }\quad
   \bottomAlignProof
-  \Axiom$x:!D \fCenter !D$
-  \Deduce$x:!D, \Gamma_1 \fCenter !A$
+  \Axiom$w:!D \fCenter !D$
+  \Deduce$w:!D, \Gamma_1 \fCenter !A$
   \DisplayProof
   \]
   विगमन गृहीतक~$\delta_1$ ला लागू होते,
   कारण~$\delta$ मधील अनुमानांची संख्या ही
   $\delta_1$ मधील अनुमानांच्या संख्येपेक्षा~$1$
   ने अधिक आहे.
+येथे $w$ ही संपूर्ण $\delta$ मध्ये न येणारी नवी खूण
+घ्यायची. संदर्भ हे प्रत्येक नियमाच्या आधारसंदर्भांपासून
+पुन्हा मोजायचे; इतर शाखेतले $x:!D\land!E$ किंवा
+इतर गृहीतक काढायचे नाही. $\Gamma_1$ मध्ये त्या
+इतर शाखांतून राहणारी सर्व गृहीतके समाविष्ट आहेत.
 
   विगमन गृहीतकानुसार,
-  $!D, \Gamma_1' \Sequent !A$ ची
+  $!D, \Gamma_1' \Sequent \Delta$ ची
   \Log{G2i}-!!{proof}~$\pi_1$ असते.
   \LeftR{\land} लावून~!!{proof}~$\pi$ मिळते:
   \[
   \AxiomC{}
   \RightLabel{$\pi_1$}
-  \Deduce$!D, \Gamma_1' \fCenter !A$
+  \Deduce$!D, \Gamma_1' \fCenter \Delta$
   \RightLabel{\LeftR{\land}}
-  \UnaryInf$!D \land !E, \Gamma_1' \fCenter !A$
+  \UnaryInf$!D \land !E, \Gamma_1' \fCenter \Delta$
   \DisplayProof
   \]
-  $!A \ident \lfalse$ असेल, तर उदाहरणार्थ
-  एक~\RightR{\Weakening} जोडतो:
+  $!A \ident \lfalse$ असेल, तर उत्तरपक्ष रिकामाच
+  ठेवतो; उजवीकडील दुर्बलीकरण लागत नाही:
   \[
   \AxiomC{}
   \RightLabel{$\pi_1$}
   \Deduce$!D, \Gamma_1' \fCenter $
   \RightLabel{\LeftR{\land}}
   \UnaryInf$!D \land !E, \Gamma_1' \fCenter $
-  \RightLabel{\RightR{\Weakening}}
-  \UnaryInf$!D \land !E, \Gamma_1' \fCenter !A$
   \DisplayProof
   \]
   \item $!C \ident !D \lor !E$ असेल,
@@ -234,26 +240,27 @@ $x:!A \Sequent !A$ हा स्वयंसिद्धक आहे;
   \]
   विगमन गृहीतक~!!{proof}s $\delta_1$ आणि~$\delta_2$
   यांना लागू होते; त्यामुळे अनुक्रमे
-  $!D, \Gamma_1' \Sequent !A$ आणि
-  $!E, \Gamma_2' \Sequent !A$ यांच्या
+  $!D, \Gamma_1' \Sequent \Delta$ आणि
+  $!E, \Gamma_2' \Sequent \Delta$ यांच्या
   \Log{G2i}-!!{proof}s $\pi_1$ व~$\pi_2$ मिळतात.
   त्यांच्यावर~$\LeftR{\lor}$ लावून~$\pi$ मिळते:
   \[
   \AxiomC{}
   \RightLabel{$\pi_1$}
-  \Deduce$!D, \Gamma_1' \fCenter !A$
+  \Deduce$!D, \Gamma_1' \fCenter \Delta$
   \AxiomC{}
   \RightLabel{$\pi_2$}
-  \Deduce$!E, \Gamma_2' \fCenter !A$
+  \Deduce$!E, \Gamma_2' \fCenter \Delta$
   \RightLabel{\LeftR{\lor}}
-  \BinaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \BinaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter \Delta$
   \DisplayProof
   \]
   $\Elim{\lor}$ ने~$y: !D$ किंवा~$z: !E$
   निरस्त केले नसेल (म्हणजे ही गृहीतके गौण
-  आधारविधानांच्या संदर्भात नसतील), किंवा~$!A$
-  हे~$\lfalse$ असेल, तर काही~\LeftR{\Weakening}
-  आणि~\RightR{\Weakening} अनुमाने जोडावी लागतात.
+  आधारविधानांच्या संदर्भात नसतील), तर ती आवश्यक
+  \LeftR{\Weakening} ने जोडायची. $!A\ident\lfalse$
+  असेल, तर उत्तरपक्ष रिकामाच ठेवायचा; त्यात असत्य
+  जोडायचे नाही.
   उदाहरणार्थ:
   \[
   \AxiomC{}
@@ -268,8 +275,6 @@ $x:!A \Sequent !A$ हा स्वयंसिद्धक आहे;
   \UnaryInf$!E, \Gamma_2' \fCenter $
   \RightLabel{\LeftR{\lor}}
   \BinaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter $
-  \RightLabel{\RightR{\Weakening}}
-  \UnaryInf$!D \lor !E, \Gamma_1', \Gamma_2' \fCenter !A$
   \DisplayProof
   \]
 
@@ -295,9 +300,9 @@ $x:!A \Sequent !A$ हा स्वयंसिद्धक आहे;
   नाहीत. म्हणून अंतिम क्रमवर्तीच्या संदर्भात
   $x:!D \lif !E, \Gamma_1$ असले पाहिजे.
   शिवाय,~\Elim{\lif} ने संपणाऱ्या उप-!!{proof}
-  ऐवजी~$x:!E \Sequent !E$ ठेवून आणि मुख्य
+  ऐवजी~$w:!E \Sequent !E$ ठेवून आणि मुख्य
   शाखेवरील प्रत्येक क्रमवर्तीच्या संदर्भात
-  $x:!D \lif !E, \Gamma_1$ ऐवजी~$x:!E$
+  $x:!D \lif !E, \Gamma_1$ ऐवजी~$w:!E$
   ठेवून,~!!{proof} च्या~$\delta_2$ या भागाचे
   योग्य !!{proof}~$\delta_2'$ मध्ये रूपांतर
   करता येते; म्हणजे:
@@ -309,9 +314,9 @@ $x:!A \Sequent !A$ हा स्वयंसिद्धक आहे;
   \DisplayProof
   \quad\text{ यात }\quad
   \bottomAlignProof
-  \Axiom$x:!E \fCenter !E$
+  \Axiom$w:!E \fCenter !E$
   \RightLabel{$\delta_2'$}
-  \Deduce$x:!E, \Gamma_2 \fCenter !A$
+  \Deduce$w:!E, \Gamma_2 \fCenter !A$
   \DisplayProof
   \]
   विगमन गृहीतक~$\delta_1$ आणि~$\delta_2'$
@@ -322,26 +327,37 @@ $x:!A \Sequent !A$ हा स्वयंसिद्धक आहे;
   \Elim{\lif} अनुमानासाठी आहे. (तेच अनुमान
   $\delta$ मधील शेवटचे अनुमान~$R$ असेल,
   तर~$\delta_2$ मध्ये~$0$ अनुमाने असतात.)
+याही प्रसंगी $w$ ही $\delta$ मधील सर्व खुणांपासून
+वेगळी नवी खूण असावी. मुख्य शाखेवरील संदर्भ नियमांनुसार
+पुन्हा मोजताना इतर शाखांची गृहीतके जपायची;
+$\Gamma_2$ मध्ये ती सर्व राहणारी गृहीतके येतात.
+मूळ $\Gamma_1$ शी सामाईक असलेली गृहीतके नुसती
+वजा करून त्या शाखांतून काढायची नाहीत.
 
-  विगमन गृहीतकानुसार,
-  \Log{G2i}-!!{proof}s मिळतात:
-  $\Gamma_1' \Sequent !D$ ची~$\pi_1$
-  आणि~$!E, \Gamma_2' \Sequent !A$ ची~$\pi_2$.
+  विगमन गृहीतकानुसार $\pi_1$ ही
+  $\Gamma_1'\Sequent\Delta_D$ ची आणि $\pi_2$ ही
+  $!E,\Gamma_2'\Sequent\Delta$ ची \Log{G2i}-!!{proof} आहे;
+  येथे $!D\ident\lfalse$ असेल तर $\Delta_D=\emptyset$,
+  अन्यथा $\Delta_D=\{!D\}$ आहे. आवश्यक असल्यास
+  पहिल्या सिद्धतेला उजवीकडील दुर्बलीकरण जोडून
+  $\Gamma_1'\Sequent !D$ ची $\pi_1'$ मिळते.
   \LeftR{\lif} लावून~!!{proof}~$\pi$ मिळते:
   \[
   \AxiomC{}
-  \RightLabel{$\pi_1$}
+  \RightLabel{$\pi_1'$}
   \Deduce$\Gamma_1' \fCenter !D$
   \AxiomC{}
   \RightLabel{$\pi_2$}
-  \Deduce$!E, \Gamma_2' \fCenter !A$
+  \Deduce$!E, \Gamma_2' \fCenter \Delta$
   \RightLabel{\LeftR{\lif}}
-  \BinaryInf$!D \lif !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \BinaryInf$!D \lif !E, \Gamma_1', \Gamma_2' \fCenter \Delta$
   \DisplayProof
   \]
-  $!D$ आणि/किंवा~$!A \ident \lfalse$ असेल,
-  तर एक किंवा दोन~\RightR{\Weakening}
-  अनुमाने जोडतो; उदाहरणार्थ:
+  $!D \ident \lfalse$ असेल, तर पहिल्या आधाराच्या
+  रिकाम्या उत्तरपक्षात~$!D$ जोडण्यासाठी एक
+  \RightR{\Weakening} लावतो. $!A \ident \lfalse$
+  असेल, तर दुसऱ्या आधाराचा आणि अंतिम क्रमवर्तीचा
+  उत्तरपक्ष रिकामाच ठेवतो. दोन्ही असत्य असताना नमुना असा:
   \[
   \AxiomC{}
   \RightLabel{$\pi_1$}
@@ -351,33 +367,44 @@ $x:!A \Sequent !A$ हा स्वयंसिद्धक आहे;
   \AxiomC{}
   \RightLabel{$\pi_2$}
   \Deduce$!E, \Gamma_2' \fCenter $
-  \RightLabel{\RightR{\Weakening}}
-  \UnaryInf$!E, \Gamma_2' \fCenter !A$
   \RightLabel{\LeftR{\lif}}
-  \BinaryInf$!D \lif !E, \Gamma_1', \Gamma_2' \fCenter !A$
+  \BinaryInf$!D \lif !E, \Gamma_1', \Gamma_2' \fCenter $
   \DisplayProof
   \]
 
+सामाईक खुणांची गृहीतके दोन आधारसंदर्भांत आली असल्यास
+त्यांच्या खुणा काढल्यावर बहुसंचात जादा प्रती येऊ शकतात.
+आवश्यक $\LeftR{\Contraction}$ लावून मूळ संचाच्या
+खुणा काढून मिळणारा नेमका बहुसंच ठेवायचा.
 \end{enumerate}
 उरलेले प्रसंग याच प्रकारे हाताळता येतात;
 ते सरावासाठी ठेवले आहेत.
 \end{proof}
 
 \begin{cor}
-सामान्यरूप~\Log{N1i} किंवा~\Log{N2i}-!!{proof}
-मध्ये येणारे प्रत्येक !!{formula} हे अंतिम
-!!{formula} किंवा अंतिम क्रमवर्ती यांचे उप-!!{formula}
-असते.
+सामान्यरूप~\Log{N1i}-!!{proof} मध्ये येणारे प्रत्येक
+!!{formula} हे $\lfalse$ असते किंवा अंतिम सूत्राच्या
+अथवा उघड्या गृहीतकाच्या एखाद्या उप-!!{formula} चे
+उदाहरण असते. सामान्यरूप~\Log{N2i}-!!{proof} साठी
+अंतिम क्रमवर्तीतील सर्व सूत्रे घ्यायची.
+येथे संख्यापकांमुळे उपसूत्रात मुक्त झालेल्या चलांच्या
+जागी पदे बसवून मिळणारी उदाहरणेही समाविष्ट आहेत.
+विधानीय प्रकरणात आदेशनाची ही अट लागत नाही.
 \end{cor}
 
 \begin{proof}
-  \olref{prop:normal-N2i-to-G2i} नुसार प्रत्येक
-  सामान्यरूप~\Log{N2i}-!!{proof} चे~\Log{G2i}-!!{proof}
-  मध्ये रूपांतर करता येते. सिद्धतेकडे पाहिल्यास
-  \Log{N2i}-!!{proof} मध्ये येणारे प्रत्येक !!{formula}
-  \Log{G2i}-!!{proof} मध्येही येते. \Log{G2i}
-  मध्ये~\Cut{} नियम नसल्याने त्याला उप-!!{formula}
-  गुणधर्म आहे.
+  \olref{prop:normal-N2i-to-G2i} मधील अंतःप्रज्ञावादी
+  रचना सामान्यरूप~\Log{N2i}-!!{proof} चे कट-विरहित
+  \Log{G2i}-!!{proof} मध्ये रूपांतर करते.
+  या रचनेत प्रत्येक असत्याव्यतिरिक्त सूत्र अनुरूप
+  क्रमवर्तीच्या सिद्धतेत राहते. असत्य मात्र रिकाम्या
+  उत्तरपक्षाने दर्शवले जाऊ शकते.
+  कट-विरहित क्रमवर्ती नियम उलट तपासल्यास विधानीय
+  आधारसूत्रे ही निष्कर्षातील सूत्रांची उपसूत्रे असतात;
+  संख्यापक नियमांत त्यांच्या पद-आदेशनाची उदाहरणे येतात.
+  त्यामुळे उपसूत्रांचा येथे सांगितलेला गुणधर्म मिळतो.
+  \Log{N1i} चे~\Log{N2i} मध्ये आधीचे रूपांतर सूत्रे
+  आणि उघडी गृहीतके जपते, म्हणून त्यालाही हा निष्कर्ष लागू होतो.
 \end{proof}
 
 \end{document}

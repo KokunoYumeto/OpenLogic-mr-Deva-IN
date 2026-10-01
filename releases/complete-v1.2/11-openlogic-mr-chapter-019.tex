@@ -1,0 +1,679 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 19: प्रतिमान उपपत्तीची मूलतत्त्वे
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{प्रतिमान उपपत्तीची मूलतत्त्वे}\label{mod:bas::chap}
+
+
+
+
+
+
+
+
+\section{न्यूनीकृत आणि विस्तारित रचना}\label{mod:bas:red:sec}
+
+ज्या भाषांत काही चिन्हे समान आहेत अशा भाषांची, तसेच त्या भाषांसाठीच्या
+संरचनेची, तुलना करणे अनेकदा उपयुक्त किंवा आवश्यक असते. सर्वांत
+नेहमीचे प्रकरण असे असते की भाषा~$\Lang{L}$ मधील सर्व चिन्हे
+भाषा~$\Lang{L'}$ मध्येही असतात, म्हणजे $\Lang{L} \subseteq
+\Lang{L'}$. मग अतिरिक्त चिन्हांची अर्थनिर्धारणे जोडून आणि समान चिन्हांची
+अर्थनिर्धारणे तशीच ठेवून $\Lang{L}$-संरचना~$\Struct{M}$ चा विस्तार
+नेहमीच $\Lang{L'}$-संरचनांमध्ये करता येतो. दुसरीकडे,
+$\Lang{L}$ मध्ये नसलेल्या चिन्हांची अर्थनिर्धारणे केवळ ``विसरून''
+$\Lang{L'}$-रचना~$\Struct{M'}$ पासून $\Lang{L}$-रचना मिळवता येते.
+
+\begin{defn}
+\label{mod:bas:red:defn:reduct}
+समजा $\Lang L \subseteq \Lang L'$, $\Struct M$ ही
+$\Lang L$-संरचना आणि $\Struct M'$ ही $\Lang L'$-संरचना आहे.
+$\Struct M$ ही $\Struct M'$ ची $\Lang L$ पर्यंतची \emph{न्यूनीकृत रचना}
+आणि $\Struct M'$ ही $\Struct M$ ची $\Lang L'$ पर्यंतची
+\emph{विस्तारित रचना} असेल तेव्हा आणि केवळ तेव्हाच पुढील अटी पूर्ण होतात:
+\begin{enumerate}
+\item $\Domain{M} = \Domain{M'}$
+\item प्रत्येक स्थिरांक~$c \in \Lang L$ साठी $\Assign{c}{M} =
+  \Assign{c}{M'}$.
+\item प्रत्येक फलन~$f \in \Lang L$ साठी $\Assign{f}{M} =
+  \Assign{f}{M'}$.
+\item प्रत्येक विधेय~$P \in \Lang L$ साठी $\Assign{P}{M} =
+  \Assign{P}{M'}$.
+\end{enumerate}
+\end{defn}
+
+\begin{prop}
+\label{mod:bas:red:prop:reduct}
+एखादी $\Lang{L}$-संरचना~$\Struct{M}$ ही एखाद्या
+$\Lang{L'}$-संरचना~$\Struct{M'}$ ची न्यूनीकृत रचना असेल, तर सर्व
+$\Lang{L}$-वाक्ये~$\varphi$ साठी,
+\[\Sat{M}{\varphi} \text{ तेव्हा आणि केवळ तेव्हाच } \Sat{M'}{\varphi}.
+\]
+\end{prop}
+
+\begin{proof}
+  सराव.
+\end{proof}
+
+\begin{prob}
+\ref{mod:bas:red:prop:reduct} सिद्ध करा.
+\end{prob}
+
+\begin{defn}
+आपल्याकडे $\Lang{L}$-रचना $\Struct{M}$ असेल, एका $n$-स्थानी
+विधेय~$P$ ची भर घालून मिळालेला $\Lang{L}$ चा विस्तार
+$\Lang{L'} = \Lang{L} \cup \{P\}$ असेल, आणि $R \subseteq \Domain{M}^n$
+हा $n$-स्थानी संबंध असेल, तर $\Assign{P}{M'} = R$ असलेली
+$\Struct{M}$ ची विस्तारित रचना~$\Struct{M'}$ दर्शवण्यासाठी आपण
+$\Expan{M}{R}$ असे लिहितो.
+\end{defn}
+
+
+
+
+
+
+
+
+
+
+
+\section{उपसंरचना}\label{mod:bas:sub:sec}
+
+एखाद्या संरचना~$\Struct{M}$ चा प्रांत हा दुसऱ्या
+$\Struct{M'}$ चा उपसंच असू शकतो. पण $\Struct{M}$ हा $\Struct{M'}$ चा
+``भाग'' आहे असे आपण अर्थातच फक्त तेव्हाच मानावे, जेव्हा $\Domain{M}
+\subseteq \Domain{M'}$ असण्याबरोबरच भाषेतील चिन्हांचे अर्थनिर्धारण करताना
+$\Struct{M}$ आणि $\Struct{M'}$ किमान सामाईक भाग~$\Domain{M}$ वर
+``सहमत'' असतात.
+
+\begin{defn}
+\label{mod:bas:sub:defn:substructure}
+त्याच भाषेसाठी~$\Lang L$ संरचना $\Struct M$ आणि
+$\Struct M'$ दिल्या असता, $\Struct M$ ही $\Struct M'$ ची
+\emph{उपसंरचना} आणि $\Struct M'$ ही $\Struct M$ ची
+\emph{वर्धित रचना} आहे, असे आपण म्हणतो; $\Struct M \substruct \Struct M'$
+असे लिहितो; आणि तेव्हा आणि केवळ तेव्हाच पुढील अटी पूर्ण होतात:
+\begin{enumerate}
+\item $\Domain{M} \subseteq \Domain{M'}$,
+\item प्रत्येक स्थिर $c \in \Lang L$ साठी $\Assign{c}{M} =
+    \Assign{c}{M'}$;
+\item प्रत्येक $n$-स्थानी फलन $f \in \Lang L$ साठी
+  सर्व $a_1$, \dots, $a_n \in \Domain{M}$ यांकरिता
+  $\Assign{f}{M}(a_1, \dots, a_n) = \Assign{f}{M'}(a_1, \dots, a_n)$.
+\item प्रत्येक $n$-स्थानी विधेय $R \in \Lang L$ साठी, सर्व
+  $a_1$, \dots, $a_n \in \Domain{M}$ यांकरिता $\langle
+  a_1, \dots, a_n\rangle \in \Assign{R}{M}$ तेव्हा आणि केवळ तेव्हाच,
+  जेव्हा $\langle a_1, \dots, a_n\rangle \in \Assign{R}{M'}$.
+\end{enumerate}
+\end{defn}
+
+\begin{rem}
+\label{mod:bas:sub:rem:substructure}
+भाषेत एकही स्थिर किंवा फलने नसतील, तर कोणताही $N
+\subseteq \Domain{M}$ हा $\Assign{R}{N} = \Assign{R}{M} \cap N^n$
+असे ठेवून $\Struct M$ ची, प्रांत~$\Domain{N} = N$ असलेली,
+उपसंरचना~$\Struct{N}$ निश्चित करतो.
+\end{rem}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सांत मर्यादेपलीकडील प्रसरण}\label{mod:bas:ove:sec}
+
+\begin{thm}
+\label{mod:bas:ove:overspill} वाक्यांचा एखादा संच $\Gamma$ याला हवे तितके मोठे
+सांत प्रतिमान असतील, तर त्याला एक अनंत प्रतिमान असते.
+\end{thm}
+
+\begin{proof}
+$c_0$, $c_1$, \dots ही गणनीय इतकी नवीन स्थिरे जोडून $\Gamma$ च्या भाषेचा
+विस्तार करा आणि $\Gamma \cup \{c_i \neq c_j : i \neq j\}$ हा संच विचारात
+घ्या. $\Gamma$ ला हवे तितके मोठे सांत प्रतिमान आहेत, याचा अर्थ प्रत्येक
+$m >0$ साठी असा $n\ge m$ असतो की $\Gamma$ ला आकारमान~$n$ चे प्रतिमान
+असते. यावरून $\Gamma \cup \{c_i \neq c_j : i \neq j\}$ सांततः
+पूर्ततायोग्य आहे. संहततेनुसार $\Gamma \cup \{c_i \neq c_j : i \neq j\}$
+याला प्रतिमान $\Struct M$ असते; त्याचा प्रांत अनंत असलाच पाहिजे, कारण ते
+$c_i \neq c_j$ या सर्व असमानतांची पूर्ति करते.
+\end{proof}
+
+\begin{prop}
+\label{mod:bas:ove:inf-not-fo}
+कोणत्याही प्रथम-क्रम भाषेत असे कोणतेही वाक्य $\varphi$ नाही की ते
+संरचना~$\Struct M$ मध्ये तेव्हा आणि केवळ तेव्हाच सत्य असते, जेव्हा
+त्या संरचनेचा प्रांत $\Domain{M}$ अनंत असतो.
+\end{prop}
+
+\begin{proof}
+असे एखादे $\varphi$ असते, तर त्याचे नकरण $\lnot \varphi$ सर्व आणि फक्त सांत
+संरचनांमध्ये सत्य असते. म्हणून त्याला हवे तितके मोठे सांत प्रतिमान
+असतात, पण अनंत प्रतिमान नसते; हे \ref{mod:bas:ove:overspill} शी विसंगत आहे.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+\section{समरूपी रचना}\label{mod:bas:iso:sec}
+
+प्रथम-क्रमाच्या संरचना दोन प्रकारे एकसारख्या असू शकतात. त्यांच्या
+सारखेपणाचा एक प्रकार असा की त्या तीच वाक्ये सत्य ठरवतात. अशा
+संरचना ना आपण \emph{प्राथमिक सममूल्य} म्हणतो. परंतु रचना अतिशय
+भिन्न असूनही तीच वाक्ये सत्य ठरवू शकतात---उदाहरणार्थ, एक रचना
+गणनीय असू शकते आणि दुसरी नसू शकते. याचे कारण असे की
+संरचनेची पुष्कळ वैशिष्ट्ये प्रथम-क्रम भाषांमध्ये व्यक्त करता येत
+नाहीत: कधी भाषा पुरेशी समृद्ध नसते, तर कधी लोव्हेनहाइम--स्कोलेम
+प्रमेयासारख्या प्रथम-क्रम तर्कशास्त्राच्या मूलभूत मर्यादा आड येतात. म्हणून
+संरचनेच्या सारखेपणाचा दुसरा, अधिक काटेकोर प्रकार असा की त्या
+मूलतः एकच असतात: त्यांना घडवणाऱ्या वस्तू वेगळ्या असतात, पण त्यांची
+रचनात्मक वैशिष्ट्ये वेगळी नसतात. \emph{समरूपते} च्या संकल्पनेने हे नेमके
+मांडता येते.
+
+\begin{defn}
+\label{mod:bas:iso:defn:elem-equiv}
+एकाच भाषा~$\Lang{L}$ साठीच्या दोन संरचना $\Struct{M}$ आणि
+$\Struct M'$ दिलेल्या असताना, $\Lang{L}$ मधील प्रत्येक वाक्य~$\varphi$
+साठी $\Sat{M}{\varphi}$ तेव्हा आणि केवळ तेव्हाच जेव्हा $\Sat{M'}{\varphi}$ असेल,
+तर $\Struct{M}$ ही $\Struct M'$ शी \emph{प्राथमिक सममूल्य} आहे असे म्हणतो
+आणि $\Struct{M} \equiv \Struct M'$ असे लिहितो.
+\end{defn}
+
+\begin{defn}
+\label{mod:bas:iso:defn:isomorphism} एकाच भाषा~$\Lang L$ साठीच्या दोन
+संरचना $\Struct{M}$ आणि $\Struct M'$ दिलेल्या असताना, पुढील अटी
+पूर्ण करणारे $h \colon \Domain{M} \to \Domain{M'}$ फलन असेल, तर
+$\Struct{M}$ ही~$\Struct M'$ शी \emph{समरूपी} आहे असे म्हणतो आणि
+$\Struct{M} \simeq \Struct M'$ असे लिहितो:
+\begin{enumerate}
+\item $h$ हे एकास-एक आहे: $h(x) =
+  h(y)$ असेल, तर $x = y$;
+\item $h$ हे आच्छादक आहे: प्रत्येक $y \in \Domain{M'}$ साठी
+  $h(x) = y$ असा $x \in \Domain{M}$ असतो;
+\item \label{mod:bas:iso:defn:iso-const}प्रत्येक स्थिरांक $c$ साठी:
+  $h(\Assign{c}{M}) = \Assign{c}{M'}$;
+\item \label{mod:bas:iso:defn:iso-pred}प्रत्येक $n$-स्थानी विधेय~$P$ साठी:
+  \[  \tuple{a_1, \dots, a_n}\in \Assign{P}{M} \quad\text{तेव्हा आणि केवळ तेव्हाच जेव्हा}\quad
+  \tuple{h(a_1), \dots, h(a_n)} \in \Assign{P}{M'};
+  \]
+\item \label{mod:bas:iso:defn:iso-func}प्रत्येक $n$-स्थानी फलन $f$ साठी:
+  \[  h(\Assign{f}{M}(a_1, \dots, a_n)) =
+  \Assign{f}{M'}(h(a_1), \dots, h(a_n)).
+  \]
+\end{enumerate}
+\end{defn}
+
+\begin{thm}
+\label{mod:bas:iso:thm:isom}
+$\Struct{M} \iso \Struct M'$ असेल, तर $\Struct{M} \elemequiv
+\Struct{M'}$.
+\end{thm}
+
+\begin{proof}
+$h$ हे $\Struct{M}$ पासून $\Struct M'$ वरचे समरूपण असू द्या. कोणत्याही
+मूल्यांकन~$s$ साठी $h \circ s$ हे $h$ आणि $s$ यांचे संयोजन असते, म्हणजे
+ते $\Struct{M'}$ मधील असे मूल्यांकन आहे की $(h \circ s)(x) = h(s(x))$.
+$t$ आणि $\varphi$ यांवरील विगमनाने पुढील अधिक सबळ दावे सिद्ध करता येतात:
+\begin{enumerate}
+  \item[a.] $h(\Value{t}{M}[s]) = \Value{t}{M'}[h\circ s]$.
+  \item[b.] $\Sat{M}{\varphi}[s]$ तेव्हा आणि केवळ तेव्हाच जेव्हा $\Sat{M'}{\varphi}[h \circ s]$.
+\end{enumerate}
+पहिला दावा~$t$ च्या गुंतागुंतीवरील विगमनाने सिद्ध होतो.
+\begin{enumerate}
+\item $t \ident c$ असेल, तर $\Value{c}{M}[s] = \Assign{c}{M}$ आणि
+  $\Value{c}{M'}[h \circ s] = \Assign{c}{M'}$. म्हणून
+  $h(\Value{t}{M}[s]) = h(\Assign{c}{M}) = \Assign{c}{M'}$
+  (\ref{mod:bas:iso:defn:isomorphism} मधील \ref{mod:bas:iso:defn:iso-const} नुसार) $=
+  \Value{t}{M'}[h \circ s]$.
+\item $t \ident x$ असेल, तर $\Value{x}{M}[s] = s(x)$ आणि
+  $\Value{x}{M'}[h \circ s] = h(s(x))$. म्हणून $h(\Value{x}{M}[s]) =
+  h(s(x)) = \Value{x}{M'}[h \circ s]$.
+\item $t \ident f(t_1, \dots, t_n)$ असेल, तर
+  \begin{align*}
+    \Value{t}{M}[s] & = \Assign{f}{M}(\Value{t_1}{M}[s], \dots, \Value{t_n}{M}[s]) \quad\text{आणि}\\
+  \Value{t}{M'}[h \circ s] & = \Assign{f}{M'}(\Value{t_1}{M'}[h \circ
+    s], \dots, \Value{t_n}{M'}[h \circ s]).
+  \end{align*}
+
+  प्रत्येक $i$ साठी $h(\Value{t_i}{M}[s])
+  = \Value{t_i}{M'}[h\circ s]$ हे विगमन गृहीतक आहे. म्हणून
+  \begin{align}
+    h(\Value{t}{M}[s])
+    & = h(\Assign{f}{M}(\Value{t_1}{M}[s], \dots, \Value{t_n}{M}[s]) \notag\\
+    & = \Assign{f}{M'}(h(\Value{t_1}{M}[s]), \dots,
+    h(\Value{t_n}{M}[s])) \label{mod:bas:iso:iso-1}\\
+    & = \Assign{f}{M'}(\Value{t_1}{M'}[h \circ s], \dots,
+    \Value{t_n}{M'}[h \circ s]) \label{mod:bas:iso:iso-2}\\
+    & = \Value{t}{M'}[h\circ s] \notag
+  \end{align}
+  येथे \ref{mod:bas:iso:iso-1} हे \ref{mod:bas:iso:defn:isomorphism} मधील
+  \ref{mod:bas:iso:defn:iso-func} वरून, तर \ref{mod:bas:iso:iso-2} हे विगमन गृहीतकावरून मिळते.
+\end{enumerate}
+(b) भागाचा पुरावा सरावासाठी सोडला आहे.
+
+$\varphi$ हे वाक्य असेल, तर मूल्यांकने~$s$ आणि $h \circ s$ महत्त्वाची राहत
+नाहीत; म्हणून $\Sat{M}{\varphi}$ तेव्हा आणि केवळ तेव्हाच जेव्हा
+$\Sat{M'}{\varphi}$.
+\end{proof}
+
+\begin{prob}
+\ref{mod:bas:iso:thm:isom} मधील (b) चा पुरावा सविस्तर पूर्ण करा.
+\ref{mod:bas:iso:defn:isomorphism} मध्ये समरूपणाचे वैशिष्ट्य ठरवणाऱ्या
+पाचही गुणधर्मांपैकी प्रत्येक गुणधर्म कुठे वापरला आहे, ते नोंदवण्याची
+खात्री करा.
+\end{prob}
+
+\begin{defn}
+रचना $\Struct{M}$ ची \emph{स्वयंरूपता} म्हणजे $\Struct{M}$ पासून
+त्याच रचनेवर असलेले समरूपण होय.
+\end{defn}
+
+\begin{prob}
+कोणतीही रचना $\Struct{M}$ असू द्या. जर $X$ हा $\Struct{M}$ चा परिभाष्य
+उपसंच असेल आणि $h$ ही $\Struct{M}$ ची स्वयंरूपता असेल, तर $X
+= \Setabs{h(x)}{x \in X}$ हे दाखवा (म्हणजे $h$ अंतर्गत $X$ अपरिवर्तित
+राहतो).
+\end{prob}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{संरचनेची उपपत्ती}\label{mod:bas:thm:sec}
+
+प्रत्येक संरचना~$\Struct{M}$ काही वाक्ये सत्य ठरवते आणि
+काही असत्य ठरवते. ती सत्य ठरवत असलेल्या सर्व वाक्यांच्या संचाला
+तिची \emph{उपपत्ती} म्हणतात. तो संच खरोखरच एक उपपत्ती असतो, कारण
+त्याच्यापासून तार्किकरीत्या निष्पन्न होणारे काहीही त्याच्या सर्व
+प्रतिमानांमध्ये, आणि त्यांत~$\Struct{M}$ चाही समावेश होतो, सत्य असले
+पाहिजे.
+
+\begin{defn}
+  संरचना~$\Struct M$ दिलेली असताना, $\Struct{M}$ ची
+  \emph{उपपत्ती} म्हणजे $\Struct{M}$ मध्ये सत्य असलेल्या वाक्ये
+  चा संच $\Theory{M}$ होय; म्हणजे, $\Theory{M} =
+  \Setabs{\varphi}{\Sat{M}{\varphi}}$.
+\end{defn}
+
+अभिप्रेत अर्थनिर्धारण असलेल्या वाक्यांच्या संचांसाठीही आपण
+``उपपत्ती'' हा शब्द अनौपचारिकपणे वापरतो, मग ते संच निगामीदृष्ट्या बंद
+असोत किंवा नसोत.
+
+\begin{prop}
+कोणत्याही $\Struct{M}$ साठी $\Theory{M}$ संपूर्ण असते.
+\end{prop}
+
+\begin{proof}
+कोणत्याही वाक्य~$\varphi$ साठी एकतर $\Sat{M}{\varphi}$ किंवा
+$\Sat{M}{\lnot \varphi}$; म्हणून एकतर $\varphi \in \Theory{M}$ किंवा
+$\lnot \varphi \in \Theory{M}$.
+\end{proof}
+
+\begin{prop}\label{mod:bas:thm:prop:equiv}
+  प्रत्येक $\varphi \in \Theory{M}$ साठी $\Struct{N} \models \varphi$ असेल,
+  तर $\Struct{M} \elemequiv \Struct{N}$.
+\end{prop}
+
+\begin{proof}
+सर्व $\varphi \in \Theory{M}$ साठी $\Sat{N}{\varphi}$ असल्यामुळे
+$\Theory{M} \subseteq \Theory{N}$. जर $\Sat{N}{\varphi}$, तर
+$\Sat/{N}{\lnot \varphi}$; म्हणून $\lnot \varphi \notin \Theory{M}$.
+$\Theory{M}$ संपूर्ण असल्यामुळे $\varphi \in \Theory{M}$. म्हणून
+$\Theory{N} \subseteq \Theory{M}$ आणि आपल्याला
+$\Struct{M} \elemequiv \Struct{N}$ मिळते.
+\end{proof}
+
+\begin{rem}\label{mod:bas:thm:remark:R}
+  $\Struct{R} = \langle\Real, <\rangle$ विचारात घ्या. या
+  संरचनेचा प्रांत म्हणजे वास्तव संख्यांचा संच~$\Real$ असून,
+  ती फक्त एक 2-स्थानी विधेय असलेल्या भाषा साठीची रचना
+  आहे; त्या विधेयाचे अर्थनिर्धारण वास्तव संख्यांवरील $<$ संबंध असे केले
+  आहे. स्पष्टपणे $\Struct{R}$ ही अगणनीय आहे; पण
+  $\Theory{R}$ उघडपणे सुसंगत असल्यामुळे लोव्हेनहाइम--स्कोलेम प्रमेयाने
+  तिला एक गणनीय प्रतिमान असते, त्याला $\Struct{S}$ म्हणू.
+  \ref{mod:bas:thm:prop:equiv} नुसार $\Struct{R} \equiv \Struct{S}$. शिवाय,
+  $\Struct{R}$ आणि $\Struct{S}$ या समरूपी नसल्यामुळे यावरून
+  \ref{mod:bas:iso:thm:isom} चा उलट दावा सर्वसाधारणपणे खोटा ठरतो.
+\end{rem}
+
+
+
+
+
+
+
+
+
+
+
+\section{आंशिक समरूपणे}\label{mod:bas:pis:sec}
+
+\begin{defn}
+  दोन संरचना $\Struct{M}$ आणि $\Struct{N}$ दिलेल्या असताना,
+  $\Struct{M}$ पासून $\Struct{N}$ कडेचे \emph{आंशिक समरूपण} म्हणजे
+  $\Domain M$ मधील घटक आदान म्हणून घेऊन $\Domain N$ मध्ये मूल्ये देणारे
+  असे सांत अंशतः फलन $p$, जे आपल्या प्रांतावर
+  \ref{mod:bas:iso:defn:isomorphism} मधील समरूपणाच्या अटी पूर्ण करते:
+  \begin{enumerate}
+  \item $p$ हे एकास-एक आहे;
+  \item प्रत्येक स्थिरांक~$c$ साठी: $p(\Assign{c}{M})$ परिभाषित
+    असेल, तर $p(\Assign{c}{M}) = \Assign{c}{N}$;
+  \item प्रत्येक $n$-स्थानी विधेय $P$ साठी: $a_1$, \dots, $a_n$
+    हे $p$ च्या प्रांतात असतील, तर $\langle a_1, \dots, a_n\rangle \in
+    \Assign P M$ तेव्हा आणि केवळ तेव्हाच जेव्हा $\langle p(a_1), \dots, p(a_n) \rangle
+    \in \Assign P N$;
+  \item प्रत्येक $n$-स्थानी फलन $f$ साठी: $a_1$, \dots, $a_n$
+    हे $p$ च्या प्रांतात असतील, तर
+    \begin{multline*}
+    p(\Assign f M (a_1, \dots,a_n))\\
+    = \Assign f N (p(a_1), \dots, p(a_n)).
+    \end{multline*}
+  \end{enumerate}
+  $p$ सांत असण्याचा अर्थ $\dom{p}$ सांत असतो.
+\end{defn}
+
+लक्षात घ्या की रिक्त फलन~$\emptyset$ हे कोणत्याही दोन संरचना
+मधील आंशिक समरूपण नेहमीच असते.
+
+\begin{defn}\label{mod:bas:pis:defn:partialisom}
+  दोन संरचना $\Struct{M}$ आणि $\Struct{N}$ यांना
+  \emph{आंशिकरीत्या समरूपी} म्हणतात आणि $\Struct{M} \iso[p]
+  \Struct{N}$ असे लिहितात, तेव्हा आणि केवळ तेव्हाच जेव्हा
+  $\Struct{M}$ आणि $\Struct{N}$ यांमधील आंशिक समरूपणांचा अरिक्त संच $I$
+  पुढील \emph{पुढे-मागे} गुणधर्म पूर्ण करतो:
+  \begin{enumerate}
+  \item (\emph{पुढे}) प्रत्येक $p \in I$ आणि $a \in \Domain M$ साठी असा
+    $q \in I$ असतो की $p \subseteq q$ आणि $a$ हा $q$ च्या प्रांतात
+    असतो;
+  \item (\emph{मागे}) प्रत्येक $p \in I$ आणि $b \in \Domain N$ साठी असा
+    $q \in I$ असतो की $p \subseteq q$ आणि $b$ हा $q$ च्या व्याप्तीत
+    असतो.
+  \end{enumerate}
+\end{defn}
+
+\begin{thm}\label{mod:bas:pis:thm:p-isom1}
+  $\Struct{M} \iso[p] \Struct{N}$ असून $\Struct{M}$ आणि
+  $\Struct{N}$ या गणनीय असतील, तर $\Struct{M} \iso
+  \Struct{N}$.
+\end{thm}
+
+\begin{proof}
+  $\Struct{M}$ आणि $\Struct{N}$ या गणनीय असल्यामुळे
+  $\Domain{M} = \{a_0, a_1, \ldots \}$ आणि $\Domain{N} = \{b_0, b_1,
+  \ldots \}$ असे मानू. मनमाना $p_0 \in I$ घेऊन सुरुवात करून, आंशिक
+  समरूपणांची वाढती क्रमिका $p_0 \subseteq p_1 \subseteq p_2
+  \subseteq \cdots$ पुढीलप्रमाणे परिभाषित करतो:
+  \begin{enumerate}
+  \item $n+1$ विषम असेल, म्हणजे $n = 2r$ असेल, तर पुढे गुणधर्म वापरून
+    असा $p_{n+1} \in I$ शोधा की $p_n \subseteq p_{n+1}$
+    आणि $a_r$ हा $p_{n+1}$ च्या प्रांतात असेल;
+  \item $n+1$ सम असेल, म्हणजे $n+1 =2r$ असेल, तर मागे गुणधर्म वापरून
+    असा $p_{n+1} \in I$ शोधा की $p_n \subseteq p_{n+1}$
+    आणि $b_r$ हा $p_{n+1}$ च्या व्याप्तीत असेल.
+  \end{enumerate}
+आता
+\[p = \bigcup_{n\ge 0} p_n,
+\]
+असे ठेवले, तर $p$ हे $\Struct{M}$ आणि $\Struct{N}$ यांमधील समरूपण
+असते.
+\end{proof}
+
+\begin{prob}
+  \ref{mod:bas:pis:thm:p-isom1} मध्ये परिभाषित केलेले $p$ खरोखरच
+  समरूपण आहे, हे सविस्तर दाखवा.
+\end{prob}
+
+\begin{thm}\label{mod:bas:pis:thm:p-isom2}
+  $\Struct{M}$ आणि $\Struct{N}$ या निव्वळ संबंधात्मक भाषा
+  साठीच्या संरचना आहेत असे समजा (म्हणजे फक्त विधेये
+  असलेली आणि फलने किंवा स्थिरे नसलेली भाषा). मग
+  $\Struct{M} \iso[p] \Struct{N}$ असेल, तर
+  $\Struct{M} \elemequiv \Struct{N}$ सुद्धा असते.
+\end{thm}
+
+\begin{proof}
+  सूत्रे वरील विगमनाने पुढील गोष्ट दाखवता येते. $a_1$, \dots,
+  $a_n$ आणि $b_1$, \dots, $b_n$ यांसाठी प्रत्येक $a_i$ ला $b_i$ कडे
+  नेणारे आंशिक समरूपण $p$ असेल, तसेच $s_1(x_i) =a_i$ आणि $s_2(x_i) =b_i$
+  ($i =1$, \dots,~$n$ साठी) असेल, तर $\Sat{M}{\varphi}[s_1]$ तेव्हा आणि
+  केवळ तेव्हाच जेव्हा $\Sat{N}{\varphi}[s_2]$. $n=0$ चे प्रकरण
+  $\Struct{M} \elemequiv \Struct{N}$ देते.
+\end{proof}
+
+\begin{rem}
+फलने उपस्थित असतील, तरी मागील निष्कर्ष सत्य असतो; पण $a_1$,
+\dots, $a_n$ यांनी निर्मित $\Struct{M}$ च्या subसंरचना आणि
+$b_1$, \dots, $b_n$ यांनी निर्मित $\Struct{N}$ च्या
+subसंरचना यांमध्ये $p$ ने प्रेरित केलेले समरूपण विचारात घ्यावे
+लागते.
+\end{rem}
+
+मागील निष्कर्षाचे टप्प्यांत ``विघटन'' करता येते: सूत्रामध्ये
+एकमेकांत अंतर्भूत संख्यापकांची संख्या आणि संबंधित आंशिक समरूपणांचा
+किती वेळा विस्तार करता येतो यांचा संबंध प्रस्थापित करावा लागतो.
+
+\begin{defn}
+  कोणतेही सूत्र~$\varphi$ दिले असता, $\varphi$ चा
+  \emph{संख्यापक-प्रतांक}, $\QuantRank{\varphi} \in \Nat$, म्हणजे $\varphi$ मध्ये एकमेकांत अंतर्भूत
+  संख्यापकांची कमाल संख्या; तो पुनरावर्ती रीतीने परिभाषित केला जातो.
+  दोन संरचना $\Struct{M}$ आणि $\Struct{N}$ यांना
+  \emph{$n$-सममूल्य} म्हणतात आणि $\Struct{M} \elemequiv[n] \Struct{N}$
+  असे लिहितात, जर संख्यापक-प्रतांक जास्तीत जास्त~$n$ असलेल्या सर्व
+  वाक्यांबाबत त्या एकमत असतील.
+\end{defn}
+
+\begin{prop}\label{mod:bas:pis:prop:qr-finite}
+  $\Lang{L}$ ही सांत निव्वळ संबंधात्मक भाषा असू द्या, म्हणजे
+  सांत इतकी विधेये आणि स्थिरांक असलेली, पण फलने
+  नसलेली भाषा. मग प्रत्येक $n \in \Nat$ साठी, तार्किक
+  सममूल्यतेपर्यंत, भाषा $\Lang{L}$ मध्ये संख्यापक-प्रतांक
+  जास्तीत जास्त $n$ असलेली प्रथम-क्रम वाक्ये सांत इतकीच असतात.
+\end{prop}
+
+\begin{proof}
+  $n$ वरील विगमनाने.
+\end{proof}
+
+\begin{defn}
+  संरचना~$\Struct{M}$ दिलेली असताना, $\Domain M^{<\omega}$ हा
+  $\Domain{M}$ वरील सर्व सांत क्रमिकांचा संच असू द्या. घटकांच्या सांत
+  क्रमिकांवर $\mathbf{a}, \mathbf{b}, \mathbf{c}, \ldots$ ही चले वापरतो.
+  जर $\mathbf{a} \in \Domain{M}^{<\omega}$ आणि $a \in \Domain{M}$,
+  तर $\mathbf{a}a$ हे $\mathbf{a}$ आणि $a$ यांची \emph{जोडणी} दर्शवते.
+\end{defn}
+
+\begin{defn}
+  संरचना $\Struct{M}$ आणि $\Struct{N}$ दिलेल्या असताना, समान
+  लांबीच्या क्रमिकांमधील संबंध $I_n \subseteq \Domain M^{<\omega}
+  \times \Domain N^{<\omega}$ हे $n$ वरील पुनरावर्तनाने पुढीलप्रमाणे
+  परिभाषित करतो:
+   \begin{enumerate}
+   \item $I_0(\mathbf{a},\mathbf{b})$ तेव्हा आणि केवळ तेव्हाच जेव्हा
+     $\mathbf{a}$ आणि $\mathbf{b}$ या अनुक्रमे $\Struct{M}$ आणि
+     $\Struct{N}$ मध्ये तीच आण्विक सूत्रे पूर्ण करतात; म्हणजे,
+     त्या क्रमिकांची समान लांबी k असेल, $s_1(x_i) = a_i$ आणि $s_2(x_i) =
+     b_i$ असेल आणि $\varphi$ हे आण्विक असून त्यातील सर्व चले
+     $x_1$, \dots,~$x_k$ यांपैकी असतील, तर $\Sat{M}{\varphi}[s_1]$ तेव्हा आणि
+     केवळ तेव्हाच जेव्हा~$\Sat{N}{\varphi}[s_2]$.
+
+   \item $I_{n+1} (\mathbf{a},\mathbf{b})$ तेव्हा आणि केवळ तेव्हाच
+     जेव्हा प्रत्येक $a\in \Domain M$ साठी असा $b\in \Domain N$ असतो की
+     $I_n (\mathbf{a}a,\mathbf{b}b)$, आणि उलटही.
+   \end{enumerate}
+\end{defn}
+
+
+\begin{defn}
+  $\Struct{M}$ आणि $\Struct{N}$ यांच्यासाठी
+  $I_n(\emptyseq,\emptyseq)$ खरे असेल, तर $\Struct{M} \approx_n
+  \Struct{N}$ असे लिहितो (येथे $\emptyseq$ ही रिक्त क्रमिका आहे).
+\end{defn}
+
+\begin{thm}\label{mod:bas:pis:thm:b-n-f}
+  $\Lang{L}$ ही निव्वळ संबंधात्मक भाषा असू द्या. मग
+  $I_n (\mathbf{a},\mathbf{b})$ असल्यास, $\QuantRank{\varphi} \le n$ असलेल्या
+  प्रत्येक $\varphi$ साठी $\Sat{M}{\varphi}[\mathbf{a}]$ तेव्हा आणि केवळ तेव्हाच
+  जेव्हा $\Sat{N}{\varphi}[\mathbf{b}]$ (येथे पुन्हा, $s(x_i) = a_i$ असणारे
+  कोणतेही $s$ जर $\varphi$ पूर्ण करत असेल, तर $\mathbf{a}$ हे $\varphi$ पूर्ण
+  करते). शिवाय, $\Lang{L}$ सांत असेल, तर उलट दावाही खरा असतो.
+\end{thm}
+
+\begin{proof}
+  $I_n(\mathbf{a},\mathbf{b})$ यावरून $\mathbf{a}$ आणि $\mathbf{b}$
+  संख्यापक-प्रतांक जास्तीत जास्त $n$ असलेली तीच सूत्रे पूर्ण करतात,
+  हा पुरावा $\varphi$ वरील सोप्या विगमनाने मिळतो. उलट दाव्यासाठी आपण $n$
+  वरील विगमन करतो आणि \ref{mod:bas:pis:prop:qr-finite} वापरतो; त्यावरून प्रत्येक
+  $n$ साठी त्या संख्यापक-प्रतांकाची परस्पर तार्किकदृष्ट्या असममूल्य
+  सूत्रे जास्तीत जास्त सांत इतकी असतात.
+
+  $n=0$ साठी, $\mathbf{a}$ आणि $\mathbf{b}$ ही तीच संख्यापकमुक्त
+  सूत्रे पूर्ण करतात या गृहीतकावरून ती तीच आण्विक सूत्रे पूर्ण करतात;
+  म्हणून $I_0(\mathbf{a},\mathbf{b})$.
+
+  $n+1$ च्या प्रकरणासाठी, $\mathbf{a}$ आणि $\mathbf{b}$ ही
+  संख्यापक-प्रतांक जास्तीत जास्त $n+1$ असलेली तीच सूत्रे पूर्ण
+  करतात असे समजा. $I_{n+1}(\mathbf{a},\mathbf{b})$ दाखवण्यासाठी प्रत्येक
+  $a \in \Domain M$ साठी असा $b \in \Domain N$ असतो की
+  $I_n(\mathbf{a}a,\mathbf{b}b)$, एवढे दाखवणे पुरेसे आहे; आणि विगमन
+  गृहीतकाने प्रत्येक $a \in \Domain M$ साठी असा $b \in \Domain N$ असतो
+  की $\mathbf{a}a$ आणि $\mathbf{b}b$ ही संख्यापक-प्रतांक जास्तीत जास्त
+  $n$ असलेली तीच सूत्रे पूर्ण करतात, एवढे दाखवणे पुन्हा पुरेसे आहे.
+
+  $a \in \Domain M$ दिलेला असताना, $\Struct{M}$ मध्ये $\mathbf{a}a$ ने
+  पूर्ण केलेल्या, प्रतांक जास्तीत जास्त $n$ असलेल्या
+  $\psi(x,\mathbf{y})$ या सूत्रांचा संच $\mathsf{T}^a_n$ असू द्या.
+  $\mathsf{T}^a_n$ सांत आहे, म्हणून त्यातील सूत्रांचा संयोग असलेले एकच प्रथम-क्रम
+  सूत्र म्हणून त्याचा विचार करू शकतो. यावरून $\mathbf{a}$ हे
+  $\lexists[x][\mathsf{T}^a_n(x,\mathbf{y})]$ पूर्ण करते; या सूत्राचा
+  संख्यापक-प्रतांक जास्तीत जास्त $n+1$ आहे. गृहीतकानुसार $\mathbf{b}$ हे
+  $\Struct{N}$ मध्ये तेच सूत्र पूर्ण करते; म्हणून असा $b \in
+  \Domain N$ असतो की $\mathbf{b}b$ हे $\mathsf{T}^a_n$ पूर्ण करते. विशेषतः,
+  $\mathbf{b}b$ ही $\mathbf{a}a$ प्रमाणेच संख्यापक-प्रतांक जास्तीत जास्त
+  $n$ असलेली सर्व सूत्रे पूर्ण करते. त्याचप्रमाणे, प्रत्येक $b \in
+  \Domain N$ साठी असा $a\in \Domain M$ असतो की $\mathbf{a}a$ आणि
+  $\mathbf{b}b$ ही संख्यापक-प्रतांक जास्तीत जास्त $n$ असलेली तीच
+  सूत्रे पूर्ण करतात, हे दाखवता येते; त्यामुळे पुरावा पूर्ण होतो.
+\end{proof}
+
+\begin{cor}\label{mod:bas:pis:cor:b-n-f}
+  $\Struct{M}$ आणि $\Struct{N}$ या सांत भाषा मधील निव्वळ
+  संबंधात्मक संरचना असतील, तर $\Struct{M} \approx_n\Struct{N}$
+  तेव्हा आणि केवळ तेव्हाच जेव्हा $\Struct{M} \elemequiv[n] \Struct{N}$.
+  विशेषतः, $\Struct{M} \elemequiv \Struct{N}$ तेव्हा आणि केवळ तेव्हाच
+  जेव्हा प्रत्येक $n$ साठी $\Struct{M} \approx_n \Struct{N}$.
+\end{cor}
+
+
+
+
+
+
+
+
+
+
+
+\section{सघन रेषीय क्रम}\label{mod:bas:dlo:sec}
+
+\begin{defn}
+  \emph{अंतबिंदुविरहित सघन रेषीय क्रम} म्हणजे एकच 2-स्थानी
+  विधेय~$<$ असलेल्या भाषा साठीची आणि पुढील वाक्ये पूर्ण
+  करणारी संरचना~$\Struct{M}$ होय:
+  \begin{enumerate}
+  \item $\lforall[x][\lnot x < x]$;
+  \item $\lforall[x][\lforall[y][\lforall[z][(x < y \lif (y < z \lif x
+    <z ))]]]$;
+  \item $\lforall[x][\lforall[y][(x< y \lor \eq[x][y] \lor y < x)]]$;
+  \item $\lforall[x][\lexists[y][x < y]]$;
+  \item $\lforall[x][\lexists[y][y < x]]$;
+  \item $\lforall[x][\lforall[y][(x < y \lif \lexists[z][(x < z \land
+        z < y))]]]$.
+ \end{enumerate}
+\end{defn}
+
+\begin{thm}\label{mod:bas:dlo:thm:cantorQ}
+  कोणतेही दोन गणनीय अंतबिंदुविरहित सघन रेषीय क्रम समरूपी
+  असतात.
+\end{thm}
+
+\begin{proof}
+  $\Struct{M_1}$ आणि $\Struct{M_2}$ हे गणनीय अंतबिंदुविरहित
+  सघन रेषीय क्रम असू द्या, जेथे ${<_1} = \Assign{<}{M_1}$ आणि ${<_2} =
+  \Assign{<}{M_2}$; तसेच $\PIso{I}$ हा त्यांच्यामधील सर्व आंशिक
+  समरूपणांचा संच असू द्या. किमान $\emptyset \in \PIso{I}$ असल्यामुळे
+  $\PIso{I}$ रिक्त नाही. $\PIso{I}$ हा पुढे-मागे गुणधर्म पूर्ण करतो हे
+  आपण दाखवतो. मग $\Struct{M_1} \iso[p] \Struct{M_2}$; आणि
+  \ref{mod:bas:pis:thm:p-isom1} नुसार प्रमेय सिद्ध होते.
+
+  $\PIso{I}$ हा पुढे गुणधर्म पूर्ण करतो हे दाखवण्यासाठी $p \in
+  \PIso{I}$ असू द्या, $i = 1$, \dots,~$n$ साठी $p(a_i) = b_i$ असू द्या
+  आणि सर्वसाधारणतेला बाधा न आणता $a_1 <_1 a_2 <_1 \cdots <_1 a_n$
+  असे समजा. $a \in \Domain{M_1}$ दिलेला असताना, तो आधीच त्या नकाशाच्या
+  प्रांतात असेल, तर तोच नकाशा अपेक्षित विस्तार आहे. नकाशा रिक्त असेल,
+  तर दुसऱ्या रचनेच्या अरिक्त प्रांतातील कोणताही घटक प्रतिमा म्हणून
+  निवडून त्याची दिलेल्या घटकाबरोबरची जोडी त्या नकाशात घालता येते.
+  उरलेल्या प्रकरणांत
+  पुढीलप्रमाणे $b \in \Domain{M_2}$ शोधा:
+
+  \begin{enumerate}
+  \item जर $a <_1 a_1$, तर $b <_2 b_1$ असेल असा $b \in
+    \Domain{M_2}$ घ्या;
+  \item जर $a_n <_1 a$, तर $b_n <_2 b$ असेल असा $b \in \Domain{M_2}$ घ्या;
+ \item एखाद्या $i$ साठी $a_i <_1 a <_1 a_{i+1}$ असेल, तर $b_i <_2 b
+   <_2 b_{i+1}$ असेल असा $b \in \Domain{M_2}$ घ्या.
+  \end{enumerate}
+  $\Struct{M_2}$ हा अंतबिंदुविरहित सघन रेषीय क्रम असल्यामुळे अपेक्षित
+  गुणधर्म असलेला $b$ नेहमी शोधता येतो. $q = p \cup \{ \langle a, b
+  \rangle \}$ असे परिभाषित करा; मग $q \in \PIso{I}$ हा $p$ चा अपेक्षित
+  विस्तार आहे. यावरून पुढे गुणधर्म प्रस्थापित होतो. मागे गुणधर्मही
+  याचप्रमाणे सिद्ध होतो. म्हणून $\Struct{M_1} \iso[p]
+  \Struct{M_2}$; \ref{mod:bas:pis:thm:p-isom1} नुसार $\Struct{M_1} \iso
+  \Struct{M_2}$.
+\end{proof}
+
+\begin{prob}
+  $\PIso{I}$ हा मागे गुणधर्म पूर्ण करतो, हे तपासून
+  \ref{mod:bas:dlo:thm:cantorQ} चा पुरावा पूर्ण करा.
+\end{prob}
+
+\begin{rem}
+  $\Struct{S}$ हा कोणताही गणनीय अंतबिंदुविरहित सघन रेषीय क्रम
+  असू द्या. मग (\ref{mod:bas:dlo:thm:cantorQ} नुसार) $\Struct{S} \iso
+  \Struct{Q}$, जेथे $\Struct{Q} = (\Rat, <)$ हा परिमेय संख्यांचा संच
+  $\Rat$ प्रांत म्हणून असलेला गणनीय सघन रेषीय क्रम आहे. आता
+  \ref{mod:bas:thm:remark:R} मधील संरचना~$\Struct{R} = (\Real, <)$
+  पुन्हा विचारात घ्या. असा गणनीय संरचना~$\Struct{S}$
+  आहे की $\Struct{R} \elemequiv \Struct{S}$, हे आपण पाहिले. पण
+  $\Struct{S}$ हा गणनीय अंतबिंदुविरहित सघन रेषीय क्रम आहे;
+  म्हणून तो संरचना~$\Struct{Q}$ शी समरूपी (आणि म्हणून प्राथमिक
+  सममूल्य) आहे. प्राथमिक सममूल्यतेच्या संक्रमणकतेने $\Struct{R}
+  \elemequiv \Struct{Q}$. (हाच पुढे-मागे युक्तिवाद वापरून
+  $\Struct{R} \iso[p] \Struct{Q}$ प्रस्थापित करून आपण हे थेटही दाखवू
+  शकलो असतो.)
+\end{rem}
+
+

@@ -1,6 +1,7 @@
 % Part: normal-modal-logic
 % Chapter: completeness
 % Section: complete-consistent-sets
+%READERNOTE{SOL6-A163: Complete consistent sets मधील disjunction आणि joint scope. Disjunction membership च्या iff proof मध्ये मूळाने फक्त forward direction दिली होती. दोन्ही classical introduction tautologies व deductive closure ने reverse direction जोडली. Biconditional च्या reverse proof मधील दोन्ही नसतील या Marathi wording मुळे not-both आणि both-not यांची गल्लत होत होती; दोन्ही statements एकत्र true असण्याच्या प्रत्येक शक्यतेचा निषेध स्पष्ट केला. आधीचे negation आणि biconditional-antecedent repairs जपले.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -132,7 +133,11 @@ $\Sigma$ पासून~$!A_1 \lif (!A_2 \lif \cdots (!A_n \lif
       कारण $\lnot !A \lif (\lnot !B \lif \lnot (!A \lor !B))$
       हा सर्वतः-सत्य दृष्टांत आहे. त्यामुळे
       $\Gamma$ हा $\Sigma$-विसंगत ठरेल,
-      हा व्याघात आहे.}}{}
+      हा व्याघात आहे. उलट $!A \in \Gamma$ असेल,
+      तर $!A \lif (!A \lor !B)$ हा सर्वतः-सत्य दृष्टांत
+      आणि निगामी बंदता यांवरून $!A \lor !B \in \Gamma$.
+      तसेच $!B \in \Gamma$ असेल, तर
+      $!B \lif (!A \lor !B)$ वापरून तोच निष्कर्ष मिळतो.}}{}
 
   \tagitem{prvIf}{\iftag{probIf}{सराव.}{$!A \lif !B \in
       \Gamma$ आणि $!A \in \Gamma$ असे समजा.
@@ -173,11 +178,10 @@ $\Sigma$ पासून~$!A_1 \lif (!A_2 \lif \cdots (!A_n \lif
       $\Sigma$-सुसंगत असल्याने $!B \notin
       \Gamma$. तसेच $!B \in \Gamma$
       असेल, तर $!A \notin \Gamma$.
-      म्हणून $!A \in \Gamma$ आणि
-      $!B \in \Gamma$ दोन्ही नसतील,
-      तसेच $!A \notin
-      \Gamma$ आणि $!B \notin \Gamma$
-      दोन्हीही नसतील.}}{}
+      म्हणून $!A \in \Gamma$ आणि $!B \in \Gamma$
+      ही दोन्ही विधाने एकत्र खरी असण्याची शक्यता नाही;
+      तसेच $!A \notin \Gamma$ आणि $!B \notin \Gamma$
+      ही दोन्ही विधाने एकत्र खरी असण्याचीही शक्यता नाही.}}{}
   \end{enumerate}
 \end{proof}
 

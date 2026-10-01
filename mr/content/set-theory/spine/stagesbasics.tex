@@ -7,7 +7,7 @@
 
 $V_\alpha$ च्या व्याख्येचे पायाभूत महत्त्व स्पष्ट करण्यासाठी त्यांच्याविषयी काही मूलभूत निष्कर्ष मांडू. आधी एक व्याख्या:\footnote{``उपसंच-समावेशक'' यासाठी प्रस्थापित संज्ञा नाही; मूळ इंग्रजीत \citet{ButtonLT1} यांनी वापरलेले ``potent'' हे नाव आहे.}
 \begin{defn}
-	$\forall x((\exists y \in A)x \subseteq y \lif x \in A)$ असेल तेव्हाच आणि तेव्हाच संच $A$ \emph{उपसंच-समावेशक} आहे असे म्हणू.
+	$\forall x((\exists y \in A)x \subseteq y \lif x \in A)$ असेल तेव्हा आणि केवळ तेव्हाच संच $A$ \emph{उपसंच-समावेशक} आहे असे म्हणू.
 \end{defn}
 \begin{lem}\ollabel{Valphabasicprops}
 प्रत्येक क्रमसूचक संख्या $\alpha$ साठी:
@@ -39,15 +39,15 @@ $\alpha$ ही सीमा क्रमसूचक संख्या मा�
 अनंतपार विगमन वापरू. $V_\emptyset \notin V_\emptyset$ हे उघड आहे.
 
 $V_{\ordsucc{\alpha}} \in V_{\ordsucc{\alpha}} = \Pow{V_\alpha}$ असेल, तर $V_{\ordsucc{\alpha}} \subseteq V_\alpha$. तसेच \olref{Valphabasicprops} वरून $V_\alpha
-\in V_{\ordsucc{\alpha}}$; म्हणून $V_\alpha \in V_\alpha$. प्रतिपक्षाने, $V_\alpha \notin V_\alpha$ असेल, तर $V_{\ordsucc{\alpha}} \notin V_{\ordsucc{\alpha}}$.
+\in V_{\ordsucc{\alpha}}$; म्हणून $V_\alpha \in V_\alpha$. व्यत्यस्त रूपाने, $V_\alpha \notin V_\alpha$ असेल, तर $V_{\ordsucc{\alpha}} \notin V_{\ordsucc{\alpha}}$.
 
 $\alpha$ ही सीमा क्रमसूचक संख्या असून $V_\alpha \in V_\alpha = \bigcup_{\beta \in
-\alpha}V_\beta$ असेल, तर एखाद्या $\beta \in \alpha$ साठी $V_\alpha \in V_\beta$. पण मग $V_\beta \in V_\alpha$ सुद्धा; म्हणून \olref{Valphabasicprops} दोनदा वापरून $V_\beta \in V_\beta$ मिळते. प्रतिपक्षाने, सर्व $\beta \in \alpha$ साठी $V_\beta \notin V_\beta$ असेल, तर $V_\alpha \notin
+\alpha}V_\beta$ असेल, तर एखाद्या $\beta \in \alpha$ साठी $V_\alpha \in V_\beta$. पण मग $V_\beta \in V_\alpha$ सुद्धा; म्हणून \olref{Valphabasicprops} दोनदा वापरून $V_\beta \in V_\beta$ मिळते. व्यत्यस्त रूपाने, सर्व $\beta \in \alpha$ साठी $V_\beta \notin V_\beta$ असेल, तर $V_\alpha \notin
 V_\alpha$.
 \end{proof}
 
 \begin{cor}
-कोणत्याही क्रमसूचक संख्या $\alpha, \beta$ साठी: $\alpha \in \beta$ तेव्हाच आणि तेव्हाच $V_\alpha \in V_\beta$.
+कोणत्याही क्रमसूचक संख्या $\alpha, \beta$ साठी: $\alpha \in \beta$ तेव्हा आणि केवळ तेव्हाच $V_\alpha \in V_\beta$.
 \end{cor}
 
 \begin{proof}

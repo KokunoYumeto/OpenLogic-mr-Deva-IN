@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-30",
+  "reviewer_model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "scope": "Propositional consequences used in OLP-0319 and the final inference references in OLP-0320",
+  "status": "passed",
+  "Lob_valuations_checked": 8,
+  "old_L8_L12_counterexamples": [
+    {
+      "ProvD": true,
+      "ProvA": false,
+      "A": false
+    }
+  ],
+  "corrected_L9_L12_result_mr": "Prov(D) → A आणि Prov(D) यांपासून A मिळते. जुनी L-8/L-12 जोडी सर्व valuations मध्ये हा निष्कर्ष देत नाही.",
+  "implication_chain_valuations_checked": 8,
+  "fixed_point_consequence_valuations_checked": 8,
+  "G2_result_mr": "x → (y → z), x → y यांच्या implication chain आणि contraposition योग्य. G ↔ ¬p व p → contradiction असल्यास consistency → G हा propositional निष्कर्ष योग्य.",
+  "current_target_bindings": {
+    "mr/content/incompleteness/incompleteness-provability/second-incompleteness-thm.tex": "1e5c05a4316383640ef620d97fd642f02f04edf2a3a453f0cd3fe678f364f482",
+    "mr/content/incompleteness/incompleteness-provability/lob-thm.tex": "a541702baf71b6745d94c9b3310917128e06cd57e6e8e96badbad37ec9723c4a"
+  },
+  "checker_sha256": "bbae707e120cb718e4ec849723dc07ee54d72de544702b53bcf0c1643bfe32bc",
+  "limitations_mr": "ही नामांकित propositional inference ची सांत तपासणी आहे. P1–P3 चे PA मध्ये पूर्ण formalization, अंकगणितीय proof predicates ची संपूर्ण पडताळणी किंवा स्वतंत्र मानवी पुनरावलोकन दावा नाही."
+}

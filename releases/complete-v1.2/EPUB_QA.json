@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-mr-complete-epub-qa/1",
+  "status": "passed",
+  "checks": 232035,
+  "epub_sha256": "f657419cb7963b9061261e950d26bb85a2c0e72ccfce341269faeefacdc1adeb",
+  "reader_html_sha256": "d7f347d6fe026777547656e211580f5755cb9d8a8c2e9394f3631c6bb4d4a9e3",
+  "metrics": {
+    "reading_documents": 98,
+    "mathml_roots": 38988,
+    "raw_mathml_roots_exact": 38943,
+    "mathml_roots_with_declared_glyph_projection": 45,
+    "mathml_glyphs": 70,
+    "tex_annotations": 38988,
+    "h1": 16,
+    "h2": 83,
+    "h3": 614,
+    "img": 70,
+    "proof_formula_rows": 2524,
+    "fragment_links": 96002,
+    "local_links": 96339,
+    "external_links": 63,
+    "toc_links": 711
+  },
+  "failures": [],
+  "epubcheck_exit": 0,
+  "epubcheck_report_sha256": "ae4e581f9e3ca4c5bb8396fd18eccbe2133b859ee7710c23576301f4bc9735eb",
+  "scope": {
+    "source_units": 722,
+    "aligned_segments": 6644,
+    "main_chapters": 79,
+    "reader_sections": 613,
+    "reader_section_headings_including_notes": 614
+  },
+  "preservation_mr": "संपूर्ण मजकूर, TeX annotations, सूत्रक्रम, सिद्धता, संसाधने आणि संदर्भ जतन आहेत. 70 HTML glyph-images चे घोषित MathML mglyph रूपांतर आहे; उर्वरित MathML मध्ये बदल नाही.",
+  "limitations_mr": [
+    "दृश्य नमुन्यांची तपासणी स्वतंत्र नोंदीत आहे.",
+    "वाचन-प्रणालीनुसार MathML आधार बदलतो; स्वतंत्र मानवी भाषिक किंवा सुलभता-प्रमाणपत्राचा दावा नाही."
+  ]
+}

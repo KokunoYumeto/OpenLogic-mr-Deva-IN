@@ -1,0 +1,39 @@
+{
+  "schema": "openlogic-existing-owner-bounded-fix-receipt/1",
+  "owner": "01a06ccd-37ac-77c0-9f86-c33e28ce6b04",
+  "edition": "Marathi",
+  "date": "2026-09-30",
+  "shared_fix_id": "OLI-HIST-CHURCH-DEATH-DATE",
+  "local_choice_id": "SOL6-A254",
+  "applicability": "applied minimal date repair",
+  "unit_id": "OLP-0623",
+  "target_path": "mr/content/history/biographies/alonzo-church.tex",
+  "source_path": "upstream/content/history/biographies/alonzo-church.tex",
+  "exact_before": "१ ऑगस्ट १९९५",
+  "exact_after": "११ ऑगस्ट १९९५",
+  "before_bytes": 5483,
+  "before_sha256": "5b41f0189854485039b503f57d9037b57a695865df35c9cad4f2458bfb9bea54",
+  "after_bytes": 5486,
+  "after_sha256": "8ccf67fe36d618a1be65a091620f75573e239e297bdb4a5d8b428930c5b7b99b",
+  "frozen_source_sha256": "4ddf4dbe8cb1049a23e149abf11a8d1ab46dacfbc3a8351b90bb954c8133119e",
+  "only_requested_date_bytes_changed": true,
+  "existing_citations_and_unrelated_text_preserved": true,
+  "localized_rationale_mr": "Correct only 1 August 1995 to 11 August 1995, independently confirmed in Enderton, In Memoriam: Alonzo Church 1903-1995, BSL1(4), printed488 first paragraph, DOI10.1017/S1079898600008040. Preserve all other biography text and citations. The current reading paragraph already distinguishes lambda calculus, Church thesis and the decision problem; OLI-HIST-CHURCH-THESIS-LABEL / OLINC-308 is retained as already correct, not rewritten. Frozen English witness remains unchanged.",
+  "source_evidence": [
+    {
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/EDB7DCE04575AF06CCC94E95B3DD0F72/S1079898600008040a.pdf/div-class-title-in-memoriam-alonzo-church-1903-1995-div.pdf",
+      "doi": "10.1017/S1079898600008040",
+      "scope": "Text of printed486 Church thesis/theorem distinction and printed488 first paragraph, plus surrounding short obituary text. No rendered PDF inspection or independent verification of every biography detail claimed."
+    }
+  ],
+  "thesis_label": {
+    "id": "OLI-HIST-CHURCH-THESIS-LABEL",
+    "alias": "OLINC-308",
+    "status": "already_correct_in_live_target; retained; no rewrite"
+  },
+  "local_status": "source_and_live_segment_ledger_corrected; structural QA passed; next coherent reader checkpoint pending",
+  "public_status": "existing complete-v1.1 bytes retained; successor publication pending",
+  "no_new_session_upstream_post_isolated_build_or_micro_release": true,
+  "model": "gpt-6.1-sol",
+  "effort": "ultra"
+}

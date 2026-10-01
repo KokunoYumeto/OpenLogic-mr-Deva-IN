@@ -5,6 +5,7 @@ import json
 import re
 import runpy
 from pathlib import Path
+from complete_reader_notes import NOTE, project_note
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -45,23 +46,20 @@ assert imports == ["introduction", "rules", "proofs", "soundness"]
 available.add("int:tab:chap")
 files = []
 reader_note_count = 0
+expected_reader_notes = 0
 for name in imports:
     path = folder / (name + ".tex")
     raw = path.read_text(encoding="utf-8")
-    if name == "soundness":
-        note_pattern = r"(?m)^[ \t]*%READERNOTE\{(.*)\}$"
+    # SOL6-A204: later source repairs may add notes to any imported unit.
+    expected_reader_notes += len(NOTE.findall(raw))
 
-        def render_reader_note(match):
-            global reader_note_count
-            reader_note_count += 1
-            assert match.group(1).startswith("OLINC-233:")
-            return (
-                r"\begin{quote}\small\textbf{स्रोतसिद्धतेची मर्यादा.} "
-                + match.group(1)
-                + r"\end{quote}"
-            )
+    def render_reader_note(match):
+        global reader_note_count
+        reader_note_count += 1
+        return (r"\begin{quote}\small\textbf{स्रोतनोंद.} "
+                + project_note(match.group(1)) + r"\end{quote}")
 
-        raw = re.sub(note_pattern, render_reader_note, raw)
+    raw = NOTE.sub(render_reader_note, raw)
     content = selected(raw)
     file_id = re.search(r"\\olfileid\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}", content)
     assert file_id and list(file_id.groups())[:2] == ["int", "tab"], path
@@ -71,7 +69,7 @@ for name in imports:
     available.update(prefix + ":" + label for label in re.findall(r"\\ollabel\{([^}]+)\}", content))
     available.update(re.findall(r"\\label\{([^}]+)\}", content))
     files.append((name, content, parts, prefix))
-assert reader_note_count == 1
+assert reader_note_count == expected_reader_notes
 external.difference_update(available)
 
 title = replace_tokens(r"अंतःप्रज्ञावादी \usetoken{P}{tableau}")
@@ -136,10 +134,13 @@ new_notes = r"""
 तार्किक निष्पन्नता यांतील चुका
 दुरुस्त केल्या आहेत. \textbf{OLINC-233}
 मधील मनमानी पूर्वचिन्ह-संचाविषयीची
-व्याख्यात्मक उणीव अजून उघडी आहे;
-तिची विभागात दिसणारी टीप
-सर्वसाधारण पुरावा पूर्ण असल्याचा
-दावा करत नाही. मूळ इंग्रजी बाइट्स
+व्याख्यात्मक उणीव दुरुस्त केली आहे:
+सर्व वापरलेल्या पूर्वचिन्ह-विस्तारांसाठी
+प्राप्यता आवश्यक आहे. नवे साक्षी-पूर्वचिन्ह
+किंवा त्याचा विस्तार आधी वापरलेला नसावा,
+या अटीने जुने अर्थनिर्धारण जपले जाते.
+इतर नियमांच्या सिद्धता मूळप्रमाणे
+स्वाध्याय आहेत. मूळ इंग्रजी बाइट्स
 बदललेले नाहीत.
 """
 assert notes.count(r"\end{enumerate}") >= 1
@@ -172,7 +173,7 @@ assert len(inputs) == 512 and inputs[-1]["unit_id"] == "OLP-0515"
 assert out.count(r"\chapter{") == 55
 assert len(re.findall(r"\\section(?:\[[^]]*\])?\{", out)) == 445
 assert "512 स्रोत-एकके आणि 445 वाचक-विभाग" in out
-assert "स्रोतसिद्धतेची मर्यादा" in out
+assert "OLINC-233" in out
 assert "!!" not in out and not re.search(r"![A-Z]", out)
 labels = re.findall(r"\\label\{([^}]+)\}", out)
 assert len(labels) == len(set(labels)), "Cumulative reader labels must be unique"

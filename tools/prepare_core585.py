@@ -80,9 +80,9 @@ for name, raw, parts, prefix in files:
         lambda m: " आणि ".join(r"\ref{" + x.strip() + "}" for x in m.group(1).split(",")), content)
     content = re.sub(r"\\tagrefs\{((?:[^{}]|\{[^{}]*\})*)\}",
         tag_references, content, flags=re.S)
-    content = content.replace(
-        r"\citep[Pt.III Bk.1 \S1]{Hume1740}",
-        r"(ह्यूम 1740, भाग III, पुस्तक 1, \S1)")
+    for locator in (r"\citep[Pt.III Bk.1 \S1]{Hume1740}",
+                    r"\citep[भाग III, पुस्तक 1, \S1]{Hume1740}"):
+        content = content.replace(locator, r"(ह्यूम 1740, भाग III, पुस्तक 1, \S1)")
     content = content.replace(
         r"\citet[\S63]{Frege1884}", r"फ्रेगे (1884, \S63)")
     assert "!!" not in content, (name, re.findall(r"!!.{0,35}", content)[:8])

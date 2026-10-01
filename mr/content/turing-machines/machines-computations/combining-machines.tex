@@ -23,8 +23,8 @@
 
 $M = \tuple{Q, \Sigma, q_0, \delta}$ आणि
 ~$M' = \tuple{Q', \Sigma', q_0', \delta'}$ ही ट्यूरिंग यंत्रे
-कशी जोडायची? $M$~थांबल्यानंतर फितीचे जे स्थितिवर्णन असते तेच
-यंत्र~$M'$ च्या धावेचे प्रारंभिक स्थितिवर्णन म्हणून वापरू.
+कशी जोडायची? $M$~थांबल्यानंतर त्याच फितीवर
+यंत्र~$M'$ ची धाव सुरू करू; फितीवरील मजकूर आणि शीर्षाची जागा कायम राहील.
 असे करणारे एकच ट्यूरिंग यंत्र $M \frown M'$ मिळवण्यासाठी पुढील
 पायऱ्या घ्या:
 \begin{enumerate}
@@ -74,7 +74,7 @@ $\TMstroke$ चिन्हांचे दोन खंड आदान म्�
   \node[state]         (C) [right of=B] {$q_2$};
 
   \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
-            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A)
         (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
             edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
         (C) edge [loop above] node {\TMtrans{\TMstroke}{\TMblank}{\TMstay}} (C);
@@ -97,7 +97,7 @@ $\TMstroke$ चिन्हांचे दोन खंड आदान म्�
   \node[state]         (E) [below left of=D] {$q_4$};
 
   \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
-            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A)
         (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
             edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
         (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
@@ -128,7 +128,7 @@ $\TMstroke$ चिन्हांचे दोन खंड आदान म्�
   \node[state]         (6) [left of=5]  {$q_9$};
 
   \path (A) edge node {\TMtrans{\TMblank}{\TMstroke}{\TMstay}} (B)
-            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
+            edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (A)
         (B) edge [loop above] node {\TMtrans{\TMstroke}{\TMstroke}{\TMright}} (B)
             edge node {\TMtrans{\TMblank}{\TMblank}{\TMleft}} (C)
         (C) edge node {\TMtrans{\TMstroke}{\TMblank}{\TMleft}} (D)
@@ -148,6 +148,7 @@ $\TMstroke$ चिन्हांचे दोन खंड आदान म्�
 \end{tikzpicture}
 \]
 \caption{बेरीज-यंत्र आणि दुप्पट करणारे यंत्र यांचे संयोजन}
+%READERNOTE{SOL6-A043 — या विभागातील तिन्ही addition diagrams मध्ये पहिला stroke-loop चुकीने दुसऱ्या अवस्थेकडे होता; पहिला input block पार करताना प्रारंभिक अवस्थेत राहणारा loop केला. अंतिम combined machine रेघांचा एक दुप्पट सलग खंड ठेवते, पण त्याच्या डावीकडे blanks उरतात. म्हणून ते रेघांचा खंड दुप्पट करते एवढेच उदाहरण सांगते; unary numerical-output व्याख्येनुसार फलन संगणित करण्यासाठी आधीच्या mover प्रमाणे output फितीच्या आरंभी आणावे लागेल.}
 \ollabel{fig:combined}
 \end{figure}
 \end{ex}

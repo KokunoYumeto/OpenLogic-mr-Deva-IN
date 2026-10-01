@@ -56,7 +56,13 @@ source_matches_receipt = (
     receipt.get("texInputSha256") == inputs["reader_sha256"]
     and receipt.get("pdf", {}).get("sha256") == pdf_hash
 )
+stale_targets = [row["unit_id"] for row in inputs.get("input_units", [])
+                 if sha(ROOT / row["target_path"]) != row["target_sha256"]]
 problems = []
+if len(inputs.get("input_units", [])) != 722:
+    problems.append("reader lacks per-unit source/target build bindings")
+if stale_targets:
+    problems.append("source translations changed after reader assembly: " + ", ".join(stale_targets))
 if not source_matches_receipt:
     problems.append("PDF does not match the current reader source and build receipt")
 if receipt["result"] != "built-log-clean":

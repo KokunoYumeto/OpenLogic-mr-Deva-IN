@@ -1,0 +1,2344 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 70: नैसर्गिक निगमन
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{नैसर्गिक निगमन}\label{pt:nat:chap}
+
+
+
+
+
+
+
+
+
+\section{परिचय}\label{pt:nat:int:sec}
+
+नैसर्गिक निगमन हा सिद्धता
+पद्धतींचा एक परिवार आहे.
+त्यात प्रत्येक तार्किक संयोजकासाठी
+किंवा संख्यापकासाठी दोन
+अनुमाने असतात: एक संकारकाचे
+“प्रवेशन” करणारे
+(परिचय नियम)
+आणि दुसरे त्याचे “विलोपन”
+करणारे (निरसन नियम).
+उदाहरणार्थ, \Intro{\lif}
+च्या निष्कर्षात
+$A \lif B$ या रूपाची
+सूत्रे असतात,
+तर \Elim{\lif} च्या
+आधारविधानांत
+$A \lif B$ या रूपाची
+सूत्रे असतात.
+
+नैसर्गिक निगमनाच्या
+पहिल्या दोन आवृत्त्या
+१९३० च्या दशकात गरहार्ड
+गेंटझेन आणि स्टॅनिस्लॉ
+यास्कोव्हस्की यांनी मांडल्या.
+सिद्धता-उपपत्तीचे अभ्यासक
+बहुधा गेंट्सेनच्या पद्धतीची
+चर्चा करतात; अध्यापनात
+सर्वाधिक वापरल्या जाणाऱ्या
+पद्धतींचा उगम याश्कोव्स्कीच्या
+पद्धतीत आहे. दोन्हीत
+\emph{गृहीतकांपासून} सुरुवात
+करता येते: अशी सूत्रे
+की ज्यांना सिद्ध करावे
+लागत नाही, पण इतर
+सूत्रे सिद्ध करणे
+करताना वापरता येते.
+संपूर्ण सिद्धता अशा
+गृहीतकांवर अवलंबून असू शकते.
+ही गृहीतके असिद्ध असल्यामुळे
+ती सिद्धता तिचा निष्कर्ष
+(तिचे \emph{अंतिम-सूत्र})
+सिद्ध करत नाही; निष्कर्ष
+गृहीतकांपासून निष्पन्न होतो,
+एवढेच ती दाखवते.
+
+काही अनुमान नियमांचा
+निष्कर्ष काही गृहीतकांवर
+आता अवलंबून राहत नाही:
+असे नियम गृहीतके “मुक्त”
+करतात. उदाहरणार्थ,
+\Intro{\lif} नियम
+गृहीतक~$A$ पासून
+निष्कर्ष~$B$ ची
+सिद्धता घेऊन
+$A \lif B$ हा
+निष्कर्ष देतो.
+$A \lif B$ मध्ये
+संपणारी सिद्धता
+आता~$A$ वर अवलंबून
+नसते: ते गृहीतक
+मुक्त झालेले असते.
+गेंट्सेनच्या पद्धतीत
+सिद्धता हे
+सूत्रांचे वृक्ष
+असतात; गृहीतके सर्वात
+वरची सूत्रे असतात,
+आणि \Intro{\lif}
+सारख्या नियमांवरील खुणा
+कोणती गृहीतके मुक्त होतात
+ते दाखवतात.
+याश्कोव्स्कीच्या पद्धतीत
+एखाद्या गृहीतकावर अवलंबून
+असलेले सिद्धता चे भाग
+वेगळे दाखवतात: उदाहरणार्थ,
+उभी रेषा लावून आत सरकवलेले
+किंवा चौकटीत बंद केलेले.
+त्या चौकटीची पहिली ओळ
+गृहीतक~$A$ असते;
+अंतिम ओळ सोपाधिक विधानाचे
+उत्तरांग $B$ असते;
+$A$ मुक्त केले जाते;
+आणि \Intro{\lif} चा
+निष्कर्ष~$A \lif B$
+चौकटीबाहेर असतो.
+
+या पद्धती “नैसर्गिक”
+आहेत, कारण त्यांचे अनुमान
+नियम आपण (निदान गणितज्ञ)
+सहजपणे जसे युक्तिवाद करतो
+त्याशी जुळतात. एखादे
+सोपाधिक विधान सिद्ध
+करण्यासाठी त्याचे पूर्वांग
+गृहीत धरून त्यावरून उत्तरांग
+सिद्ध करतो: तो \Intro{\lif}.
+सोपाधिक विधान $A \lif B$
+आणि त्याचे पूर्वांग~$A$
+माहीत असेल, तर~$B$
+निष्पन्न करतो: तो
+\Elim{\lif}.
+विकल्पयोग~$A \lor B$
+गृहीत धरून काही निष्कर्ष
+दाखवण्यासाठी प्रकरणांनुसार
+सिद्धता वापरतो: तो
+\Elim{\lor}.
+सार्वत्रिक विधान
+$\lforall[x][A(x)]$
+सिद्ध करण्यासाठी
+कोणताही~$c$ घेऊन
+$A(c)$ सिद्ध करतो:
+तो \Intro{\lforall}.
+अशाच प्रकारे पुढे जाता येते.
+
+उदाहरणार्थ, गेंट्सेन-पद्धतीच्या
+नैसर्गिक निगमनात
+$A \lif (A \lor B)$
+ची ही सोपी सिद्धता पाहा:
+\[
+\AxiomC{$\Discharge{A}{x}$}
+\RightLabel{\Intro{\lor}}
+\UnaryInfC{$A \lor B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$A \lif (A \lor B)$}
+\DisplayProof
+\]
+ती गृहीतक~$A$ पासून
+सुरू होते; \Intro{\lor}
+वापरून~$A \lor B$
+निष्पन्न करते; मग
+\Intro{\lif} वापरून
+$A \lif (A \lor B)$
+निष्पन्न करते.
+\Intro{\lif} अनुमान
+गृहीतक~$A$ मुक्त करते;
+खूण~$x$ ते दर्शवते.
+
+सिद्धता-उपपत्तीचे अभ्यासक
+सूत्रांच्या वृक्षांवर
+काम करणाऱ्या गेंट्सेनच्या
+मूळ पद्धती पसंत करतात;
+तरी एक रूपांतरही
+सिद्धता-उपपत्तीत महत्त्वाचे आहे.
+गृहीतके~$\Gamma$ यांपासून
+$A$ ची सिद्धता
+म्हणजे $A$ हे~$\Gamma$
+पासून निष्पन्न होते,
+अर्थात $\Gamma \Entails A$,
+हे दाखवते.
+नैसर्गिक निगमनाचे अनुमान
+नियम अशा निष्पन्नतेबद्दल
+विधान करतात असेही
+स्वाभाविकपणे वाचता येते.
+उदाहरणार्थ, \Intro{\lif}
+म्हणतो की जर $\Gamma + A
+\Entails B$, तर
+$\Gamma \Entails A \lif B$.
+म्हणून नियम थेट गृहीतके
+आणि त्यांपासून निष्पन्न
+होणारा निष्कर्ष या दोहोंवर
+लागू होतील असे त्यांचे
+रूप देता येते: म्हणजे
+ते $\Gamma \Sequent A$
+या क्रमवर्तींवर काम करतात.
+वरील सोपी सिद्धता अशा
+पद्धतीत पुढीलप्रमाणे दिसेल:
+\[
+\Axiom$x:A \fCenter A$
+\RightLabel{\Intro{\lor}}
+\UnaryInf$x:A \fCenter A \lor B$
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInf$\fCenter A \lif (A \lor B)$
+\DisplayProof
+\]
+येथे नियम तेच आहेत:
+ते~$\Sequent$ च्या
+उजवीकडील सूत्र
+वर काम करतात;
+डावीकडील सूत्रे
+प्रत्येक टप्प्यावर कोणत्या
+गृहीतकांवर अवलंबित्व आहे
+ते फक्त दाखवतात.
+
+परिचय/निरसन
+या नियम-जोड्यांचा पूर्ण संच
+स्वतःहून अभिजात तर्कशास्त्रासाठी
+पूर्ण नसतो. त्यात~$\lfalse$
+शी संबंधित आणखी दोन
+नियम जोडावे लागतात.
+पहिला “अंतःप्रज्ञावादी
+असत्यता नियम”~\FalseInt,
+म्हणजे “स्फोट”:
+$\lfalse$ पासून काहीही
+निष्पन्न करता येते.
+दुसरा अप्रत्यक्ष सिद्धतेचा
+अभिजात सिद्धांत~\FalseCl{}
+(किंवा “अभिजात असत्यता नियम”):
+$\lnot A$ पासून
+$\lfalse$ सिद्ध
+करता येत असेल, तर
+$A$ सिद्ध झाले.
+\FalseCl वगळल्यास
+अंतःप्रज्ञावादी तर्कशास्त्राला
+योग्य अशी पद्धत मिळते.
+दोन्ही नियम वगळल्यास
+“किमान तर्कशास्त्र”
+मिळते.
+
+अभिजात आणि
+अंतःप्रज्ञावादी तर्कशास्त्रासाठी
+गेंट्सेन-पद्धतीच्या
+नैसर्गिक निगमनाची आपण
+चर्चा करू. या
+\Log{N1c} आणि \Log{N1i}
+पद्धती आहेत.
+\Log{N2c} आणि \Log{N2i}
+या संबंधित पद्धती
+केवळ सूत्रे~$A$
+यांवर काम करण्याऐवजी
+$\Gamma \Sequent A$
+या क्रमवर्तींवर काम करतात.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{नियम आणि सिद्धता}\label{pt:nat:rp:sec}
+
+प्रथम काही व्याख्या करू
+आणि संज्ञा निश्चित करू.
+
+~\Log{N1c} आणि~\Log{N1i}
+मधील $A \lif B$
+उल्लेखणारे दोन नियम पाहू:
+\[
+\bottomAlignProof
+\AxiomC{$\Discharge{A}{x}$}
+\shortDeduce
+\DeduceC{$B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$A \lif B$}
+\DisplayProof
+\qquad
+\bottomAlignProof
+\AxiomC{$A \lif B$}
+\AxiomC{$A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$B$}
+\DisplayProof
+\]
+\Elim{\lif} नियम सोपा आहे.
+रेषेच्या वरची सूत्रे
+ही \emph{आधारविधाने} होत.
+डावीकडील सूत्र
+हे \emph{मुख्य}
+सूत्र~$A \lif B$
+आहे. सर्व निरसन
+नियमांत असे एक आधारविधान
+असते आणि ते नेहमी
+सर्वात डावीकडे असते.
+त्याला अनुमानाचे
+\emph{प्रमुख} आधारविधान
+म्हणतात. या उदाहरणाप्रमाणे
+इतर आधारविधाने असतील,
+तर त्यांना \emph{गौण}
+आधारविधाने म्हणतात.
+परिचय नियमांची
+आधारविधानेही प्रमुख
+आधारविधाने म्हणतात.
+रेषेखालील सूत्र
+हा \emph{निष्कर्ष} आहे.
+
+\Intro{\lif} नियमाला
+एकच आधारविधान असते;
+येथे निष्कर्ष हे
+मुख्य सूत्र~$A \lif B$
+असते. सर्व परिचय
+नियम असेच असतात:
+निष्कर्ष हे मुख्य सूत्र
+असते, आणि त्याचा
+मुख्य संकारकच “प्रवेशित”
+केला जातो.
+
+~$\Discharge{A}{x}$
+या लेखनाचा अर्थ पुढीलप्रमाणे.
+एखाद्या सिद्धता मध्ये
+\Intro{\lif} अनुमान
+आधारविधान म्हणून
+सूत्र~$B$
+वर लावतात.
+~$B$ मध्ये संपणाऱ्या
+उप-सिद्धता च्या
+सुरुवातीला काही
+सूत्रे असतात;
+त्यांना \emph{गृहीतके}
+म्हणतात. ~$A$
+रूपाची एक किंवा अधिक
+गृहीतके धरून $B$
+ची सिद्धता म्हणजे
+$A$ वरून~$B$
+निष्पन्न होते हे दाखवणारी
+सिद्धता होय.
+\Intro{\lif} लावल्यावर
+$A \lif B$
+निष्पन्न होते; आता
+निष्कर्ष गृहीतक~$A$
+वर अवलंबून राहत नाही.
+हे दाखवण्यासाठी,
+\Intro{\lif} असलेल्या
+सिद्धता मधील
+$A$ रूपाची संबंधित
+गृहीतके \emph{मुक्त}
+किंवा \emph{बंद} केली
+जातात. कोणती गृहीतके
+मुक्त करता येतात, हे
+नियम सांगतो.
+$A \lif B$ निष्कर्ष
+असलेल्या \Intro{\lif}
+मध्ये ती $A$ रूपाची,
+म्हणजे सोपाधिक विधानाच्या
+पूर्वांगाशी जुळणारी
+गृहीतके असतात.
+कोणत्या नियमाने कोणती
+गृहीतके मुक्त होतात हे
+दाखवणे कधी महत्त्वाचे
+असते; त्यासाठी मुक्तीची
+खूण~$x$ वापरतात.
+मात्र गृहीतके मुक्त
+करणाऱ्या नियमाने योग्य
+रूपाची \emph{सर्वच}
+गृहीतके, किंवा एकही
+गृहीतक, मुक्त करणे
+\emph{बंधनकारक नाही}.
+उदाहरणार्थ, पहिल्या
+\Intro{\lif} ने एकही
+गृहीतक मुक्त केलेले
+नसले तरी पुढील सिद्धता
+योग्य आहे:
+\[
+\AxiomC{$\Discharge{A}{y}$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$B \lif A$}
+\DischargeRule{\Intro{\lif}}{y}
+\UnaryInfC{$A \lif (B \lif A)$}
+\DisplayProof
+\]
+नियमाने एकही गृहीतक
+मुक्त केले नाही, तर
+मुक्तीची खूण वगळतो
+(येथेही तसे केले आहे).
+
+पुढील सिद्धता पाहा:
+\[
+\AxiomC{$\Discharge{A}{x}$}
+\AxiomC{$\Discharge{A}{y}$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$A \land A$}
+\RightLabel{\Elim{\land}}
+\UnaryInfC{$A$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$A \lif A$}
+\DischargeRule{\Intro{\lif}}{y}
+\UnaryInfC{$A \lif (A \lif A)$}
+\DisplayProof
+\]
+पहिले \Intro{\lif}
+अनुमान डावीकडील
+गृहीतक~$A^x$ मुक्त करते;
+दुसरे उजवीकडील
+गृहीतक~$A^y$ मुक्त करते.
+म्हणजे खूण~$x$ असलेली
+सर्व गृहीतके खूण~$x$
+असलेल्या \Intro{\lif}
+ने, आणि खूण~$y$
+असलेली सर्व गृहीतके
+खूण~$y$ असलेल्या
+त्या अनुमानाने
+मुक्त होतात.
+यासाठी एकाच खूणेची
+सर्व गृहीतके तेच
+सूत्र असणे
+महत्त्वाचे आहे.
+
+संख्यापकांचे नियम
+किंचित अधिक गुंतागुंतीचे आहेत.
+उदाहरणार्थ,~\Log{N1i}
+मध्ये $\lexists$
+साठीचे नियम असे:
+\[
+\bottomAlignProof
+\AxiomC{$A(t)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][A(x)]$}
+\DisplayProof
+\qquad
+\bottomAlignProof
+\AxiomC{$\lexists[x][A(x)]$}
+\AxiomC{$\Discharge{A(c)}{x}$}
+\shortDeduce
+\DeduceC{$B$}
+\DischargeRule{\Elim{\lexists}}{x}
+\BinaryInfC{$B$} \DisplayProof
+\bottomAlignProof
+\]
+\Intro{\lexists} मध्ये
+आधारविधान~$A(t)$ असते;
+येथे $t$ हे बंद पद,
+म्हणजे चल नसलेले पद आहे.
+असे अनुमान योग्य,
+म्हणजे \Intro{\lexists}
+या नियम-रूपबंधाचे उदाहरण,
+तेव्हाच असते जेव्हा
+एखादे सूत्र~$A$,
+चल~$x$ आणि बंद पद~$t$
+असते ज्यामुळे निष्कर्ष
+$\lexists[x][A]$
+आणि आधारविधान
+~$\Subst{A}{t}{x}$
+असते. \Elim{\lexists}
+नियमाने $A(c)$
+रूपाची गृहीतके मुक्त
+करता येतात: प्रत्येक
+अनुमानासाठी असा एखादा
+स्थिरांक~$c$ असतो
+की $\Subst{A}{c}{x}$
+रूपाची गृहीतके मुक्त
+होतात. एका अनुमानाने
+मुक्त होणाऱ्या सर्व
+गृहीतकांत तोच~$c$
+वापरला पाहिजे.
+या स्थिरांकाला
+\Elim{\lexists}
+अनुमानाचे
+\emph{आयगेन चर} म्हणतात.
+~$c$ हे मुक्त होणाऱ्या
+~$A(c)$ व्यतिरिक्त
+इतर उघड्या गृहीतकात,
+~$B$ मध्ये किंवा
+~$A$ मध्ये येत
+नसेल तेव्हाच अनुमान
+योग्य असते. याला
+\emph{आयगेन चराची अट}
+म्हणतात.
+
+~\Log{N1c} आणि~\Log{N1i}
+मधील सिद्धता म्हणजे
+नियम वापरून स्वयंसिद्धकांपासून
+विगमनाने तयार होणारे
+सूत्रांचे सांत वृक्ष.
+प्रत्येक पान हे मुक्तीच्या
+खुणेसह किंवा तिच्याविना
+असलेले गृहीतक असते;
+इतर प्रत्येक सूत्र
+त्याच्या लगत वरच्या
+सूत्रांपासून
+पद्धतीच्या अनुमान नियमाने
+निष्पन्न होते.
+अनुमानाच्या वरच्या
+वृक्षातील गृहीतक म्हणून
+आलेले एखादे सूत्र
+त्या अनुमानापर्यंत मुक्त
+झालेले नसेल, तर त्याला
+(त्या अनुमानाशी संबंधित)
+\emph{उघडे} म्हणतात.
+
+\begin{defn}\label{pt:nat:rp:defn:proof}
+~\Log{N1c} आणि~\Log{N1i}
+मधील \emph{सिद्धता}
+हे पुढीलप्रमाणे विगमनाने
+परिभाषित सूत्रे
+चे सांत वृक्ष आहेत:
+\begin{enumerate}
+  \item\label{pt:nat:rp:defn:prf:assumption}
+  मुक्तीची $x$ किंवा $y$
+  सारखी खूण असलेले
+  प्रत्येक सूत्र
+  स्वतःच सिद्धता असते.
+  एकाच सूत्र
+  ची सिद्धता असेल,
+  तर ते सूत्र
+  उघडे गृहीतक मानतात.
+  \item\label{pt:nat:rp:defn:prf:one-prem}
+  $R$ हा एक, दोन किंवा
+  तीन आधारविधाने
+  $A_1$, $A_2$, $A_3$
+  आणि निष्कर्ष~$A$
+  असलेला नियम असू द्या.
+  $\delta_1$, $\delta_2$,
+  $\delta_3$ या अनुक्रमे
+  $A_1$, $A_2$,
+  $A_3$ मध्ये संपणाऱ्या
+  सिद्धता असतील, तर
+  पुढीलपैकी योग्य रचना
+  अनुक्रमे सिद्धता असते:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$A_1$}
+  \RightLabel{$R$}
+  \UnaryInfC{$A$}
+  \DisplayProof
+\qquad
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$A_1$}
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$A_2$}
+  \RightLabel{$R$}
+  \BinaryInfC{$A$}
+  \DisplayProof
+\qquad
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$A_1$}
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \DeduceC{$A_2$}
+  \AxiomC{}
+  \RightLabel{$\delta_3$}
+  \DeduceC{$A_3$}
+  \RightLabel{$R$}
+  \TrinaryInfC{$A$}
+  \DisplayProof
+  \]
+  मात्र त्या सिद्धता
+  मधील गृहीतक-खुणा
+  सुसंगत असल्या पाहिजेत
+  (दोन भिन्न
+  सूत्रे ना
+  तीच मुक्तीची खूण
+  नसावी), आणि ही
+  अनुमाने~$R$ चे
+  योग्य उपयोग असले पाहिजेत.
+  \item नव्या सिद्धता
+  मधील सर्वात वरची
+  सूत्र उदाहरणे
+  ही त्या सिद्धता
+  ची \emph{उघडी गृहीतके}
+  मानली जातात, जर ती
+  $\delta_1$, $\delta_2$
+  किंवा~$\delta_3$
+  मधील उघडी गृहीतके
+  असतील आणि नियमाने
+  मुक्त केलेली नसतील.
+  नियमावर खूण~$x$
+  (किंवा $x\, y$)
+  असेल, तर \Intro{\lif}
+  आणि~\Intro{\lnot}
+  साठी $\delta_1$
+  मधील खूण~$x$
+  असलेली सर्व उघडी
+  गृहीतके मुक्त होतात;
+  \Elim{\lexists}
+  साठी $\delta_2$
+  मधील खूण~$x$
+  असलेली सर्व उघडी
+  गृहीतके मुक्त होतात;
+  \Elim{\lor} साठी
+  $\delta_2$ मधील
+  खूण~$x$ असलेली
+  आणि~$\delta_3$ मधील
+  खूण~$y$ असलेली
+  सर्व उघडी गृहीतके
+  मुक्त होतात.
+\end{enumerate}
+\end{defn}
+
+सिद्धता ची
+विगमनात्मक रचना करताना
+वापरलेल्या सिद्धता ना
+तिच्या \emph{उप-सिद्धता}
+म्हणतात. अनुमानाच्या
+आधारविधानांत संपणाऱ्या
+उप-सिद्धता ना त्या
+अनुमानाच्या \emph{निकटच्या
+उप-सिद्धता} म्हणतात.
+\Log{N1c} आणि \Log{N1i}
+यांचे नियम
+\ref{pt:nat:rp:tab:N1} मध्ये आहेत.
+
+
+
+
+
+
+
+
+\begin{table}
+\begin{center}
+\begin{tabular}[t]{@{}cc@{}}
+\bottomAlignProof
+\AxiomC{$\Discharge{A}{x}$}
+\shortDeduce
+\DeduceC{$B$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$A \lif B$}
+\DisplayProof
+&
+\bottomAlignProof
+\AxiomC{$A \lif B$}
+\AxiomC{$A$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$B$}
+\DisplayProof
+\\[4ex]
+\bottomAlignProof
+\AxiomC{$A$}
+\AxiomC{$B$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$A \land B$}
+\DisplayProof
+&
+\begin{tabular}[b]{@{}l@{}}
+\AxiomC{$A \land B$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$A$}
+\DisplayProof
+\\[3ex]
+\bottomAlignProof
+\AxiomC{$A \land B$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$B$}
+\DisplayProof
+\end{tabular}
+\\[4ex]
+\begin{tabular}{@{}l@{}}
+\AxiomC{$A$}
+\RightLabel{\Intro{\lor}[1]}
+\UnaryInfC{$A \lor B$}
+\DisplayProof
+\\[3ex]
+\AxiomC{$B$}
+\RightLabel{\Intro{\lor}[2]}
+\UnaryInfC{$A \lor B$}
+\DisplayProof
+\end{tabular}
+&
+\AxiomC{$A \lor B$}
+\AxiomC{$\Discharge{A}{x}$}
+\shortDeduce
+\DeduceC{$C$}
+\AxiomC{$\Discharge{B}{y}$}
+\shortDeduce
+\DeduceC{$C$}
+\DischargeRule{\Elim{\lor}}{x\,y}
+\TrinaryInfC{$C$}
+\DisplayProof
+\bottomAlignProof
+\\[6ex]
+\bottomAlignProof
+\AxiomC{$\Discharge{A}{x}$}
+\shortDeduce
+\DeduceC{$\lfalse$}
+\DischargeRule{\Intro{\lnot}}{x}
+\UnaryInfC{$\lnot A$}
+\DisplayProof
+&
+\bottomAlignProof
+\AxiomC{$\lnot A$}
+\AxiomC{$A$}
+\RightLabel{\Elim{\lnot}}
+\BinaryInfC{$\lfalse$}
+\DisplayProof
+\\[4ex]
+\bottomAlignProof
+\AxiomC{$A(a)$}
+\RightLabel{\Intro{\lforall}}
+\UnaryInfC{$\lforall[x][A(x)]$}
+\DisplayProof
+&
+\bottomAlignProof
+\AxiomC{$\lforall[x][A(x)]$}
+\RightLabel{\Elim{\lforall}}
+\UnaryInfC{$A(t)$}
+\DisplayProof
+\\[4ex]
+\bottomAlignProof
+\AxiomC{$A(t)$}
+\RightLabel{\Intro{\lexists}}
+\UnaryInfC{$\lexists[x][A(x)]$}
+\DisplayProof
+&
+\bottomAlignProof
+\AxiomC{$\lexists[x][A(x)]$}
+\AxiomC{$\Discharge{A(a)}{x}$}
+\shortDeduce
+\DeduceC{$C$}
+\DischargeRule{\Elim{\lexists}}{x}
+\BinaryInfC{$C$}
+\DisplayProof
+\\[4ex]
+\bottomAlignProof
+\AxiomC{$\lfalse$}
+\RightLabel{\FalseInt}
+\UnaryInfC{$A$}
+\DisplayProof
+&
+\bottomAlignProof
+\AxiomC{$\Discharge{\lnot A}{x}$}
+\shortDeduce
+\DeduceC{$\lfalse$}
+\DischargeRule{\FalseCl}{x}
+\UnaryInfC{$A$}
+\DisplayProof
+\end{tabular}
+\end{center}
+\caption{\Log{N1i} आणि \Log{N1c}
+यांचे नियम. $\Intro{\lforall}$
+मध्ये स्थिरांक~$a$
+निष्कर्षात किंवा उघड्या
+गृहीतकात येता कामा नये.
+$\Elim{\lexists}$ मध्ये
+$a$ दोन्ही आधारविधानांच्या
+निष्कर्षांत किंवा अनुमानानंतर
+उरलेल्या उघड्या गृहीतकांत
+येता कामा नये.
+\Log{N1i} मध्ये \FalseCl
+नसतो.}
+\label{pt:nat:rp:tab:N1}
+\end{table}
+
+
+
+
+\begin{defn}
+सिद्धता~$\delta$ ची
+\emph{उंची}~
+$\pheight{\delta}$
+पुढीलप्रमाणे विगमनाने
+परिभाषित करतात.
+\begin{enumerate}
+  \item $\delta$ केवळ
+  गृहीतकाची असेल, तर
+  $\pheight{\delta} = 0$.
+  \item $\delta$ चा शेवट
+  एका आधारविधानाच्या
+  अनुमानात होत असेल
+  आणि निकटची
+  उप-सिद्धता~$\delta_1$
+  असेल, तर
+  $\pheight{\delta} =
+  \pheight{\delta_1} + 1$.
+  \item $\delta$ चा शेवट
+  दोन आधारविधानांच्या
+  अनुमानात होत असेल
+  आणि निकटच्या
+  उप-सिद्धता~$\delta_1$
+  आणि~$\delta_2$ असतील,
+  तर $\pheight{\delta} =
+  \max(\pheight{\delta_1},
+  \pheight{\delta_2}) + 1$.
+  \item $\delta$ चा शेवट
+  \Elim{\lor} मध्ये होत
+  असेल आणि निकटच्या
+  उप-सिद्धता~$\delta_1$,
+  $\delta_2$ आणि~$\delta_3$
+  असतील, तर
+  $\pheight{\delta} =
+  \max(\pheight{\delta_1},
+  \pheight{\delta_2},
+  \pheight{\delta_3}) + 1$.
+\end{enumerate}
+क्रमवर्ती~$S$ ची उंची
+$\le n$ असलेली
+सिद्धता असेल,
+तर $ \Proves[n] S$
+असे लिहितो.
+\end{defn}
+
+\begin{ex}
+~\Log{N1i} मध्ये कोणतेही
+सूत्र हे स्वतःपासून
+उघडे गृहीतक घेऊन
+सिद्धता असते.
+म्हणून
+\[
+A \land B^x
+\]
+ही सिद्धता~$\delta_1$
+आहे; तिची उंची~$0$.
+~$\delta_1$ वर
+~\Elim{\land} च्या
+दोनपैकी एक आवृत्ती
+लावून सिद्धता~$\delta_2$
+आणि~$\delta_3$ मिळतात:
+\[
+\AxiomC{$A \land B^x$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$B$}
+\DisplayProof
+\qquad
+\AxiomC{$A \land B^x$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$A$}
+\DisplayProof
+\]
+~$\delta_2$ आणि
+~$\delta_3$ मधील
+अंतिम अनुमानांच्या निकटच्या
+उप-सिद्धता सारख्याच:
+$A \land B$ या
+गृहीतकापासून तयार झालेल्या.
+दोन्ही सिद्धता मध्ये
+$A\land B$ हे
+उघडे गृहीतक म्हणून येते.
+आपल्याला
+$\pheight{\delta_2} =
+\pheight{\delta_3} = 1$
+मिळते.
+
+~\Intro{\land} नियमात
+$B$ आणि $A$
+या रूपाची दोन
+आधारविधाने असतील,
+तर $B \land A$
+या रूपाचा निष्कर्ष
+निघतो. त्यामुळे
+पुढील सिद्धता~$\delta_4$
+आहे:
+\[
+\AxiomC{$A \land B^x$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$B$}
+\LeftSubproofLabel{$\delta_2$}
+\AxiomC{$A \land B^x$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$A$}
+\RightSubproofLabel{$\delta_3$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$B \land A$}
+\DisplayProof
+\]
+तिची उंची
+$\pheight{\delta_4} =
+\max(\pheight{\delta_2},
+\pheight{\delta_3})+1
+= \max(1,1) + 1 = 2$.
+तिच्यात $A \land B$
+या गृहीतकाची दोन
+उदाहरणे आहेत; दोन्ही
+उघडी आहेत.
+
+शेवटी~\Intro{\lif}
+लावून $\delta_5$
+मिळवू:
+\[
+\AxiomC{$\Discharge{A \land B}{x}$}
+\RightLabel{\Elim{\land}[2]}
+\UnaryInfC{$B$}
+\LeftSubproofLabel{$\delta_2$}
+\AxiomC{$\Discharge{A \land B}{x}$}
+\RightLabel{\Elim{\land}[1]}
+\UnaryInfC{$A$}
+\RightSubproofLabel{$\delta_3$}
+\RightLabel{\Intro{\land}}
+\BinaryInfC{$B \land A$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$(A \land B) \lif (B \land A)$}
+\DisplayProof
+\]
+तिची उंची
+$\pheight{\delta_4} + 1 = 3$.
+\Intro{\lif} अनुमान
+$A \land B$
+या रूपाची, खूण~$x$
+असलेली सर्व गृहीतके
+मुक्त करते; म्हणजे
+निकटच्या उपसिद्धतेतील
+आधी उघडी असलेली
+दोन्ही गृहीतके.
+~$\delta_5$ ची
+तीच दोन गृहीतके असल्याने
+तिच्यात उघडे गृहीतक
+उरत नाही; म्हणून ती
+तिच्या अंतिम-सूत्र
+$(A \land B)
+\lif (B \land A)$
+\emph{ची} सिद्धता
+आहे.
+\end{ex}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{क्रमवर्तींसह नैसर्गिक निगमन: \Log{N2c} आणि~\Log{N2i}}\label{pt:nat:seq:sec}
+
+~\Log{N1c} किंवा
+\Log{N1i} मधील
+सिद्धता~$\delta$
+तिचे अंतिम-सूत्र~$A$
+हे तिच्या उघड्या गृहीतकांपासून
+निष्पन्न होते हे दाखवते.
+~$\delta$ मध्ये $B^x$
+हे उघडे गृहीतक असलेल्या
+सूत्रे~$B$
+यांचा संच~$\Gamma$
+असेल, तर हे
+$\delta \Proves \Gamma
+\Sequent A$ असे
+लिहिता येते.
+यावरून क्रमवर्तींसाठीही
+नैसर्गिक निगमन पद्धत
+बांधता येईल असे दिसते.
+अशा पद्धतीत प्रत्येक
+क्रमवर्ती तिच्या उजवीकडील
+सूत्र कोणत्या
+उघड्या गृहीतकांवर अवलंबून
+आहे, म्हणजे त्या
+क्रमवर्तीत संपणाऱ्या
+उप-सिद्धता मध्ये
+कोणती गृहीतके उघडी
+आहेत, हे सांगते.
+यालाच क्रमवर्तींसह,
+किंवा “क्रमवर्ती-पद्धतीचे”
+नैसर्गिक निगमन म्हणतो.
+मिळणाऱ्या पद्धती
+\Log{N2c} आणि~\Log{N2i}
+अशा आहेत.
+
+~\Log{N1} आणि
+\Log{N2} यांतील
+संबंध अधिक निकट करण्यासाठी
+डावीकडील संच~$\Gamma$
+हे खूण लावलेल्या
+सूत्रे~$x:B$
+यांचे धरू. ~\Log{N1}
+चे नियम केवळ
+आधारविधानांतील
+सूत्रे वर,
+म्हणजे निकटच्या
+उप-सिद्धता च्या
+अंतिम-सूत्रे वर
+लागतात. त्यामुळे
+\Log{N2} चे नियम
+क्रमवर्तीच्या उजव्या
+भागावरच लागतात.
+क्रमवर्तींच्या डावीकडील
+खूण लावलेल्या सूत्रांना
+म्हणून फक्त संदर्भ
+म्हणता येते.
+
+~\Log{N2} सिद्धतांत
+गृहीतकांच्या जागी
+सर्वात वर अशा रूपाची
+स्वयंसिद्धक-क्रमवर्ती असते:
+\[x:A \Sequent A.\]
+नियम~\Log{N1}
+च्या नियमांशी तंतोतंत
+जुळतात; ते
+\ref{pt:nat:seq:tab:N2} मध्ये आहेत.
+
+
+
+
+
+
+
+
+\begin{table}
+\begin{tabular}{@{}c@{}c@{}}
+\Axiom$x: A, \Gamma \fCenter B$
+\RightLabel{\Intro{\lif}}
+\UnaryInf$\Gamma \fCenter A \lif B $
+\DisplayProof
+&
+\Axiom$\Gamma_1 \fCenter A \lif B$
+\Axiom$\Gamma_2 \fCenter A$
+\RightLabel{\Elim{\lif}}
+\BinaryInf$\Gamma_1, \Gamma_2 \fCenter B$
+\DisplayProof
+\\[4ex]
+\Axiom$\Gamma_1 \fCenter A$
+\Axiom$\Gamma_2 \fCenter B$
+\RightLabel{\Intro{\land}}
+\BinaryInf$\Gamma_1, \Gamma_2 \fCenter A \land B $
+\DisplayProof
+&
+\begin{tabular}[b]{@{}l@{}}
+\Axiom$\Gamma \fCenter A \land B$
+\RightLabel{\Elim{\land}[1]}
+\UnaryInf$\Gamma \fCenter A$
+\DisplayProof
+\\[3ex]
+\Axiom$\Gamma \fCenter A \land B$
+\RightLabel{\Elim{\land}[2]}
+\UnaryInf$\Gamma \fCenter B$
+\DisplayProof\\[3ex]
+\end{tabular}
+\\[4ex]
+\Axiom$\Gamma \fCenter A$
+\RightLabel{\Intro{\lor}[1]}
+\UnaryInf$\Gamma \fCenter A \lor B$
+\DisplayProof
+&
+\Axiom$ \Gamma \fCenter B$
+\RightLabel{\Intro{\lor}[2]}
+\UnaryInf$\Gamma \fCenter A \lor B$
+\DisplayProof\\[3ex]
+\multicolumn{2}{c}{
+\begin{tabular}[b]{@{}l@{}}
+\Axiom$\Gamma_1 \fCenter A \lor B$
+\Axiom$x:A, \Gamma_2 \fCenter C$
+\Axiom$y:B, \Gamma_3 \fCenter C$
+\RightLabel{\Elim{\lor}}
+\TrinaryInf$\Gamma_1, \Gamma_2, \Gamma_3 \fCenter C$
+\DisplayProof
+\end{tabular}
+}
+\\[4ex]
+\Axiom$x:A, \Gamma \fCenter \lfalse$
+\RightLabel{\Intro{\lnot}}
+\UnaryInf$ \Gamma \fCenter \lnot A $
+\DisplayProof
+&
+\Axiom$\Gamma_1 \fCenter \lnot A $
+\Axiom$\Gamma_2 \fCenter A $
+\RightLabel{\Elim{\lnot}}
+\BinaryInf$\Gamma_1, \Gamma_2 \fCenter \lfalse$
+\DisplayProof
+\\[4ex]
+\Axiom$\Gamma \fCenter A(a) $
+\RightLabel{\Intro{\lforall}}
+\UnaryInf$\Gamma \fCenter \lforall[x][A(x)]$
+\DisplayProof
+&
+\Axiom$\Gamma \fCenter \lforall[x][A(x)]$
+\RightLabel{\Elim{\lforall}}
+\UnaryInf$\Gamma \fCenter A(t)$
+\DisplayProof
+\\[4ex]
+\Axiom$\Gamma \fCenter A(t) $
+\RightLabel{\Intro{\lexists}}
+\UnaryInf$\Gamma \fCenter \lexists[x][A(x)]$
+\DisplayProof
+&
+\Axiom$\Gamma_1 \fCenter  \lexists[x][A(x)]$
+\Axiom$x: A(a), \Gamma_2 \fCenter C$
+\RightLabel{\Elim{\lexists}}
+\BinaryInf$\Gamma_1, \Gamma_2 \fCenter C$
+\DisplayProof
+\\[4ex]
+\Axiom$\Gamma \fCenter \lfalse$
+\RightLabel{\FalseInt}
+\UnaryInf$\Gamma \fCenter A$
+\DisplayProof
+&
+\Axiom$x: \lnot A, \Gamma \fCenter \lfalse$
+\RightLabel{\FalseCl}
+\UnaryInf$\Gamma \fCenter A$
+\DisplayProof
+\end{tabular}
+\caption{\Log{N2c} आणि \Log{N2i}
+यांचे नियम. $\Intro{\forall}$
+आणि $\Elim{\exists}$ मध्ये
+स्थिरांक~$a$
+निष्कर्ष-क्रमवर्तीमध्ये
+येता कामा नये.
+$\Gamma_i$ हे खूण
+लावलेल्या सूत्रे~$x :
+A$ चे संच आहेत.
+\Intro{\lforall} आणि
+\Elim{\lexists} नियमांसाठी
+आयगेन चराची अट पूर्ण
+झाली पाहिजे:
+$a$ निष्कर्ष-क्रमवर्तीमध्ये
+येता कामा नये.
+\Log{N2i} मध्ये \FalseCl
+नसतो.}
+\label{pt:nat:seq:tab:N2}
+\end{table}
+
+
+
+
+~\Log{N1c} आणि
+\Log{N1i} मध्ये
+\Intro{\lif},
+\Intro{\lnot},
+\Elim{\lor} आणि
+\Elim{\lexists} हे
+नियम गृहीतके मुक्त करू
+शकतात, पण तसे करणे
+बंधनकारक नाही.
+म्हणून~\Log{N2c}
+आणि~\Log{N2i}
+मध्येही संबंधित आधारविधानाच्या
+संदर्भात अपेक्षित
+सूत्रे $A$,
+$B$ आणि $A(a)$
+नसली तरी त्या
+नियमांचा योग्य उपयोग
+मान्य करतो.
+
+\begin{prop}
+$\delta$ ही~\Log{N1c}
+किंवा \Log{N1i}
+मध्ये~$A$ ची
+सिद्धता असेल,
+तर~\Log{N2c}
+(\Log{N2i}) मध्ये
+$\Gamma \Sequent A$
+ची सिद्धता~$\delta'$
+असते. येथे~$\Gamma$
+हा असा सर्व~$x:B$
+यांचा संच आहे की
+$B^x$ हे~$\delta$
+चे उघडे गृहीतक असते.
+\end{prop}
+
+\begin{proof}
+  $n=\pheight{\delta}$
+  वर विगमन करू.
+  $n=0$ असेल, तर
+  $\delta$ ही एकच
+  उघडे गृहीतक~$A^x$.
+  मग $\Gamma = \{x:A\}$
+  आणि $\Gamma
+  \Sequent A$ हे
+  \Log{N2c} किंवा
+  ~\Log{N2i} चे
+  स्वयंसिद्धक आहे.
+
+  $n>0$ असेल, तर
+  ~$\delta$ मधील अंतिम
+  अनुमानानुसार प्रसंग
+  पाडू. येथे एकच प्रसंग
+  पाहू; उरलेले सरावासाठी.
+
+  अंतिम अनुमान
+  $\Intro{\lif}$ असल्याचे
+  समजा. मग~$\delta$
+  चा शेवट असा होतो:
+  \[
+  \AxiomC{$\Discharge{B}{x}$}
+  \RightLabel{$\delta_1$}
+  \DeduceC{$C$}
+  \DischargeRule{\Intro{\lif}}{x}
+  \UnaryInfC{$B \lif C$}
+  \DisplayProof
+  \]
+  विगमन गृहीतकानुसार
+  ~\Log{N2c} (\Log{N2i})
+  मध्ये
+  $\Gamma' \Sequent C$
+  ची सिद्धता~$\delta_1'$
+  आहे; $\Gamma'$ म्हणजे
+  ~$\delta_1$ मधील
+  खूण लावलेली उघडी
+  गृहीतके. $B^x$
+  हे $\delta_1$
+  चे उघडे गृहीतक असेल,
+  तर \Intro{\lif}
+  अनुमानात ते मुक्त होते,
+  आणि~$\delta$ ची
+  उघडी गृहीतके
+  $\Gamma =
+  \Gamma' \setminus \{x:B\}$
+  होतात. म्हणजे
+  ~$\delta_1'$ ही
+  $x:B, \Gamma \Sequent C$
+  ची सिद्धता
+  असते; मग
+  $\delta'$ पुढीलप्रमाणे
+  घेता येते:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1'$}
+  \Deduce$x:B, \Gamma \fCenter C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter B \lif C$
+  \DisplayProof
+  \]
+  $B^x$ हे~$\delta_1$
+  चे उघडे गृहीतक
+  नसेल, तर
+  \Intro{\lif}
+  कोणतेही गृहीतक
+  मुक्त करत नाही;
+  ~$\delta$ आणि
+  $\delta_1$ यांची
+  उघडी गृहीतके तीच
+  राहतात. ~\Log{N2c}
+  आणि~\Log{N2i}
+  मध्ये \Intro{\lif}
+  च्या आधारविधानाच्या
+  संदर्भात $x:B$
+  असणे आवश्यक नसल्याने
+  $\delta'$ पुढीलप्रमाणे
+  घेता येते:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1'$}
+  \Deduce$\Gamma \fCenter C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter B \lif C$
+  \DisplayProof
+  \]
+
+  ~$\delta$ चा शेवट
+  इतर नियमांत होणारे
+  प्रसंगही असेच आहेत.
+\end{proof}
+
+\begin{prop}
+$\delta$ ही \Log{N2c}
+किंवा \Log{N2i} मध्ये
+$\Gamma \Sequent A$
+ची सिद्धता असेल,
+तर~\Log{N1c}
+(\Log{N1i}) मध्ये
+अंतिम-सूत्र~$A$
+आणि प्रत्येक
+$x:B \in \Gamma$
+साठी उघडे गृहीतक~$B^x$
+असलेली सिद्धता~$\delta'$
+मिळते.
+\end{prop}
+
+\begin{proof}
+  पुन्हा~$\delta$
+  ची उंची~$n$
+  यावर विगमन करू.
+  $n=0$ असेल, तर
+  $\delta$ हे
+  $x:A \Sequent A$
+  स्वयंसिद्धक असते.
+  सिद्धता~$\delta'$
+  म्हणजे गृहीतक~$A^x$.
+
+  $n>0$ असेल,
+  तर~$\delta$ मधील
+  अंतिम अनुमानानुसार
+  प्रसंग पाडू.
+  उदाहरणार्थ, ते
+  ~$\Intro{\lif}$
+  असेल, तर~$\delta$
+  चा शेवट असा:
+  \[
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$x:B, \Gamma \fCenter C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter B \lif C$
+  \DisplayProof
+  \quad\text{ किंवा }\quad
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma \fCenter C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter B \lif C$
+  \DisplayProof
+  \]
+  विगमन गृहीतकानुसार
+  ~\Log{N1c} (\Log{N1i})
+  मध्ये~$C$ ची
+  सिद्धता मिळते.
+  पहिल्या प्रसंगी
+  $B^x$ हे~$\delta_1'$
+  चे उघडे गृहीतक असते;
+  दुसऱ्या प्रसंगी नसते.
+  मग सिद्धता~$\delta'$
+  अनुक्रमे पुढीलप्रमाणे
+  घेता येते:
+  \[
+  \bottomAlignProof
+  \AxiomC{$\Discharge{B}{x}$}
+  \RightLabel{$\delta_1'$}
+  \DeduceC{$C$}
+  \DischargeRule{\Intro{\lif}}{x}
+  \UnaryInfC{$B \lif C$}
+  \DisplayProof
+  \quad\text{ किंवा }\quad
+  \bottomAlignProof
+  \AxiomC{}
+  \RightLabel{$\delta_1'$}
+  \DeduceC{$C$}
+  \RightLabel{\Intro{\lif}}
+  \UnaryInfC{$B \lif C$}
+  \DisplayProof
+  \]
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{नियमित सिद्धता आणि आदेशन}\label{pt:nat:qua:sec}
+
+संख्यापकांच्या नियमांमध्ये
+~\Elim{\lexists} आणि
+~\Intro{\lforall} यांना
+लागणाऱ्या “आयगेन चराच्या
+अटींमुळे” काही गुंतागुंत येते.
+या अनुमानांतील
+स्थिरांक~$c$ पुन्हा
+वापरला जाणार नाही याची
+खात्री केल्यास बहुतांश
+गुंतागुंत हाताळता येते.
+पुढील व्याख्या करू.
+
+\begin{defn}
+नैसर्गिक निगमनातील
+सिद्धता~$\delta$
+\emph{नियमित} असते, जर
+\begin{enumerate}
+  \item कोणतेही आयगेन
+  चर~$a$ एकाहून अधिक
+  \Elim{\lexists} किंवा
+  ~\Intro{\lforall} अनुमानांचे
+  आयगेन चर म्हणून वापरलेले
+  नसेल; आणि
+  \item $a$ हे
+  \Elim{\lexists} किंवा
+  ~\Intro{\lforall} अनुमानाचे
+  आयगेन चर असेल, तर ते
+  अनुक्रमे गौण आधारविधानाकडे
+  किंवा आधारविधानाकडे
+  जाणाऱ्या निकटच्या
+  उप-सिद्धता मध्येच
+  येत असेल.
+\end{enumerate}
+\end{defn}
+
+\begin{lem}\label{pt:nat:qua:lem:subst-regular}
+$\delta$ ही $C$ मध्ये
+संपणारी नियमित सिद्धता असू द्या.
+$c$ हा~$\delta$ मध्ये
+आयगेन चर म्हणून न वापरलेला
+स्थिरांक असू द्या;
+आणि~$t$ हे $\delta$
+चे कोणतेही आयगेन चर नसलेले
+बंद पद असू द्या. या प्रकरणातील संख्यापक-नियमांत
+वापरलेल्या बंद-पदाच्या अटीनुसार ही मर्यादा ठेवली आहे. मग~$\delta$
+मधील $c$ च्या प्रत्येक
+उपस्थितीच्या जागी $t$
+बसवून मिळणारी
+$\Subst{\delta}{t}{c}$
+ही नियमित सिद्धता आहे.
+$\Subst{\delta}{t}{c}$
+चे अंतिम-सूत्र
+$\Subst{C}{t}{c}$ असते.
+$A^x$ हे~$\delta$
+चे उघडे गृहीतक असेल,
+तर $\Subst{A}{t}{c}^x$
+हे $\Subst{\delta}{t}{c}$
+चे उघडे गृहीतक असते.
+\end{lem}
+
+\begin{proof}
+  $\pheight{\delta}$ वर
+  विगमन करू.
+  $\pheight{\delta} = 0$
+  असेल, तर सिद्धतेत केवळ
+  गृहीतक~$A^x$ असते.
+  म्हणून $\Subst{\delta}{t}{c}$
+  हीच~$\Subst{A}{t}{c}^x$
+  असते.
+
+  $\pheight{\delta} > 0$
+  असेल, तर~$\delta$
+  मधील अंतिम अनुमानानुसार
+  प्रसंग पाडू.
+  विधानीय संयोजकांच्या
+  नियमांचे प्रसंग सोपे
+  असून सरावासाठी ठेवले आहेत.
+  $\delta$ चा शेवट
+  संख्यापक अनुमानात होतो
+  ते प्रसंग पाहू.
+  \begin{enumerate}
+    \item अंतिम अनुमान
+    $\Intro{\lforall}$
+    असेल, तर~$\delta$
+    चे रूप असे आहे:
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta'$}
+    \DeduceC{$A(a,c)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][A(x,c)]$}
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार
+    $\Subst{\delta'}{t}{c}$
+    ही $A(a,t)$ ची
+    नियमित सिद्धता आहे.
+    $a$ हे~$\delta$
+    चे आयगेन चर असल्याने
+    $a$ हे~$t$ मध्ये येत नाही.
+    म्हणून
+    $\Subst{\delta}{t}{c}$
+    मधील अंतिम अनुमान
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta'}{t}{c}$}
+    \DeduceC{$A(a,t)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][A(x,t)]$}
+    \DisplayProof
+    \]
+    योग्य आहे: $t$
+    मध्ये~$a$ नसल्याने
+    निष्कर्षात किंवा कोणत्याही
+    उघड्या गृहीतकात~$a$
+    येत नाही.
+    \item अंतिम अनुमान
+    $\Elim{\lforall}$
+    असेल, तर~$\delta$
+    चे रूप असे आहे:
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta'$}
+    \DeduceC{$\lforall[x][A(x,c)]$}
+    \RightLabel{\Elim{\lforall}}
+    \UnaryInfC{$A(s(c),c)$}
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार
+    $\Subst{\delta'}{t}{c}$
+    ही $\lforall[x][A(x,t)]$
+    ची नियमित सिद्धता
+    आहे. (निष्कर्षातील
+    पद~$s(c)$ मध्ये~$c$
+    असूही शकतो किंवा नसूही
+    शकतो.) आता
+    $\Subst{\delta}{t}{c}$
+    मधील अंतिम अनुमान
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta'}{t}{c}$}
+    \DeduceC{$\lforall[x][A(x,t)]$}
+    \RightLabel{\Elim{\lforall}}
+    \UnaryInfC{$A(s(t),t)$}
+    \DisplayProof
+    \]
+    योग्य आहे, आणि
+    $A(s(t),t) \ident
+    \Subst{A(s(c),c)}{t}{c}$.
+    \Intro{\lexists} चा
+    प्रसंगही असाच आहे.
+  \item अंतिम अनुमान
+    $\Elim{\lexists}$
+    असेल, तर~$\delta$
+    चे रूप असे आहे:
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta_1'$}
+    \DeduceC{$\lexists[x][A(x,c)]$}
+    \AxiomC{$\Discharge{A(a,c)}{x}$}
+    \RightLabel{$\delta_2'$}
+    \DeduceC{$C$}
+    \DischargeRule{\Elim{\lexists}}{x}
+    \BinaryInfC{$C$}
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार
+    $\Subst{\delta_1'}{t}{c}$
+    आणि
+    $\Subst{\delta_2'}{t}{c}$
+    या अनुक्रमे
+    $\lexists[x][A(x,t)]$
+    ची आणि उघड्या
+    गृहीतक~$A(a,t)$ पासून
+    $\Subst{C}{t}{c}$
+    ची नियमित सिद्धता
+    आहेत. $a$ हे~$\delta$
+    चे आयगेन चर असल्याने
+    $a$ हे~$t$ मध्ये येत नाही.
+    म्हणून
+    $\Subst{\delta}{t}{c}$
+    मधील अंतिम अनुमान
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta_1'}{t}{c}$}
+    \DeduceC{$\lexists[x][A(x,t)]$}
+    \AxiomC{$\Discharge{A(a,t)}{x}$}
+    \RightLabel{$\Subst{\delta_2'}{t}{c}$}
+    \DeduceC{$\Subst{C}{t}{c}$}
+    \DischargeRule{\Elim{\lexists}}{x}
+    \BinaryInfC{$\Subst{C}{t}{c}$}
+    \DisplayProof
+    \]
+    योग्य आहे:
+    $\Subst{A(x,t)}{a}{x}
+    \ident \Subst{A(a,c)}{t}{c}$;
+    निष्कर्ष~$\Subst{C}{t}{c}$
+    किंवा कोणत्याही उघड्या
+    गृहीतकात~$a$ येत नाही.
+  \end{enumerate}
+\end{proof}
+
+\begin{prop}\label{pt:nat:qua:prop:regular}
+$\delta$ ही \Log{N1c}
+किंवा \Log{N1i} मधील
+सिद्धता असेल,
+तर त्याच रचनेची
+(विशेषतः त्याच
+उंची ची)
+नियमित सिद्धता~$\delta'$
+असते; ती~$\delta$
+पेक्षा आयगेन चरांची आणि आवश्यक असल्यास
+बद्ध गृहीतक-खुणांची नावे बदलल्यामुळे भिन्न असते;
+उघडी गृहीतके आणि त्यांची नावे जपली जातात.
+\end{prop}
+
+\begin{proof}
+या सिद्धतेपुरते,
+~$\delta$ मधील एखादे
+आयगेन-चर अनुमान
+\emph{स्वच्छ} म्हणू,
+जर त्याचे आयगेन चर
+इतर कोणत्याही अनुमानाचे
+आयगेन चर नसेल आणि
+त्या अनुमानाच्या निकटच्या
+उप-सिद्धता व्यतिरिक्त
+~$\delta$ मध्ये
+कुठेही येत नसेल;
+अन्यथा ते \emph{अस्वच्छ}
+म्हणू. ~$n$ ही~$\delta$
+मधील अस्वच्छ आयगेन-चर
+अनुमानांची संख्या असू द्या.
+~$n$ वर विगमन करून
+~$\delta$ चे अपेक्षित
+नियमित सिद्धता~$\delta'$
+मध्ये रूपांतर करता येते,
+हे दाखवू. $n=0$ असेल,
+तर~$\delta$ मधील सर्व
+आयगेन-चर अनुमाने स्वच्छ
+आहेत; म्हणून~$\delta$
+नियमित आहे आणि आणखी
+काही सिद्ध करायचे नाही.
+अन्यथा सर्वात वरचे
+अस्वच्छ आयगेन-चर अनुमान
+निवडा; उदाहरणार्थ
+\Intro{\lforall}.
+त्यात संपणारी~$\delta$
+ची उप-सिद्धता~$\delta_1$
+या रूपाची आहे:
+    \[
+    \AxiomC{}
+    \RightLabel{$\delta_2$}
+    \DeduceC{$A(c)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][A(x)]$}
+    \DisplayProof
+    \]
+~$c$ हे आयगेन चर असल्याने
+ते~$\lforall[x][A(x)]$
+मध्ये किंवा उघड्या गृहीतकात
+येत नाही. ~$\delta_2$
+नियमित आहे: निवडलेल्या
+अनुमानाच्या वर असलेली
+सर्व आयगेन-चर अनुमाने
+स्वच्छ आहेत. ~$a$ हा
+~$\delta$ मध्ये कुठेही
+न येणारा स्थिरांक
+असू द्या. आदेशनापूर्वी $\delta_2$ मधील
+बद्ध गृहीतक-खुणा व त्यांना बांधलेली गृहीतके एकत्र
+नवी नावे देऊन उर्वरित $\delta$ च्या खुणांपासून
+वेगळी करा; उघड्या गृहीतकांच्या खुणा बदलू नका.
+त्यामुळे आदेशनाने बदललेले एखादे अंतर्गत गृहीतक
+बाहेरच्या वेगळ्या सूत्राबरोबर तीच खूण वापरणार नाही.
+\ref{pt:nat:qua:lem:subst-regular}
+नुसार
+$\Subst{\delta_2}{a}{c}$
+ही $A(a)$ ची नियमित
+सिद्धता आहे.
+आयगेन चराच्या अटीने
+~$\delta_2$ च्या कोणत्याही
+उघड्या गृहीतकात~$c$
+नसतो; म्हणून
+~$\Subst{\delta_2}{a}{c}$
+च्या उघड्या गृहीतकात
+~$a$ नसतो. त्यामुळे
+~$\Intro{\lforall}$
+लावता येतो.
+~$\delta$ मधील
+$\delta_1$ च्या जागी
+पुढील सिद्धता~$\delta_1'$
+ठेवा:
+    \[
+    \AxiomC{}
+    \RightLabel{$\Subst{\delta_2}{a}{c}$}
+    \DeduceC{$A(a)$}
+    \RightLabel{\Intro{\lforall}}
+    \UnaryInfC{$\lforall[x][A(x)]$}
+    \DisplayProof
+    \]
+यात एक अस्वच्छ आयगेन-चर
+अनुमान स्वच्छ केले आहे,
+आयगेन चर~$c$ च्या जागी~$a$ आले आहे,
+आणि आवश्यक बद्ध गृहीतक-खुणा नवी नावे देऊन जपल्या आहेत.
+परिणामी सिद्धतेत
+जास्तीत जास्त $n-1$ अस्वच्छ आयगेन-चर
+अनुमाने राहतात; जुने चर इतरत्र न उरल्यास
+आणखी अनुमानेही स्वच्छ होऊ शकतात. म्हणून
+विगमन गृहीतकाने अपेक्षित
+निष्कर्ष मिळतो.
+\end{proof}
+
+\begin{prob}
+\ref{pt:nat:qua:prop:regular} च्या
+सिद्धतेत सर्वात वरचे
+आयगेन-चर अनुमान
+~\Elim{\lexists} असते
+तो प्रसंग वर्णन करा.
+\end{prob}
+
+नुकतेच सिद्ध केलेले
+विधान आपण पुढे स्पष्टपणे
+वापरणार नाही; पण चर्चेतील
+सर्व सिद्धता नियमित
+आहेत असे मानू.
+तसे नसल्यास आयगेन
+चरांची नावे बदलून त्या
+नियमित करता येतात.
+
+\ref{pt:nat:qua:lem:subst-regular}
+आणि \ref{pt:nat:qua:prop:regular}
+ही विधाने \Log{N2c}
+आणि~\Log{N2i}
+यांनाही लागू होतात.
+त्यांच्या सिद्धता
+सरावासाठी ठेवतो.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सिद्धता यांचे कलम-संयोजन}\label{pt:nat:gra:sec}
+
+~\Log{N1c} आणि~\Log{N1i}
+मधील सिद्धता म्हणजे
+गृहीतके~$B$ यांपासून
+सूत्रे~$A$ यांच्या
+सिद्धता होत. आता $B$
+चीही सिद्धता आहे असे समजा.
+$B$ ची सिद्धता आणि
+$B$ पासून $A$ ची सिद्धता
+एकत्र करून, $B$ हे गृहीतक
+न वापरणारी $A$ ची
+सिद्धता कशी मिळवता येईल?
+
+एक मार्ग म्हणजे
+~\Intro{\lif} लावून $A$
+च्या सिद्धता मधील
+$B$ हे गृहीतक काढून टाकणे.
+मग मिळालेली $B \lif A$
+ची सिद्धता आणि $B$
+ची सिद्धता एकत्र
+केल्यास पुढील सिद्धता मिळते:
+\[
+\AxiomC{$\Discharge{B}{x}$}
+\DeduceC{$A$}
+\DischargeRule{\Intro{\lif}}{x}
+\UnaryInfC{$B \lif A$}
+\AxiomC{}
+\DeduceC{$B$}
+\RightLabel{\Elim{\lif}}
+\BinaryInfC{$A$}
+\DisplayProof
+\]
+हे सरळ आहे, पण काहीसे
+अनावश्यक वळण घेते:
+$\lif$ आणून लगेच त्याचे
+निराकरण का करावे?
+$B \lif A$ मधून जाणारा
+असा “वळसा” टाळता यायला हवा.
+(असे वळसे नेहमी टाळता
+येतात, हाच प्रत्यक्षात
+सामान्यरूपीकरण प्रमेयाचा आशय आहे.)
+
+~\Log{N1c} आणि~\Log{N1i}
+मध्ये या प्रसंगी तो वळसा
+सहज टाळता येतो: $B^x$
+या गृहीतकांच्या जागी $B$
+ची संपूर्ण सिद्धता बसवता येते.
+इतर सिद्धतांच्या गृहीतकांवर
+सिद्धता चे असे
+“कलम-संयोजन” उपयुक्त आहे;
+म्हणून त्याची व्याख्या नोंदवू.
+
+\begin{defn}
+समजा $\delta_1$ ही उघडे
+गृहीतक~$B^x$ यापासून
+$A$ ची \Log{N1c}-सिद्धता
+(किंवा \Log{N1i}-सिद्धता) आहे,
+आणि $\delta_2$ ही $B$
+ची \Log{N1c}-सिद्धता
+(\Log{N1i}-सिद्धता) आहे.
+मग $\delta_1$ मधील
+$B^x$ च्या प्रत्येक
+निरसन न झालेल्या उदाहरणाच्या
+जागी $\delta_2$ बसवून
+मिळणारा परिणाम म्हणजे
+$\Subst{\delta_1}{\delta_2}{B^x}$.
+\end{defn}
+
+~$\delta_1$ आणि $\delta_2$
+मध्ये एकाच खूणेची, पण वेगवेगळी
+गृहीतक-सूत्रे नसतील,
+आणि $\delta_2$ च्या कोणत्याही
+उघड्या गृहीतकात $\delta_1$
+चे आयगेन चर येत नसेल,
+आणि $\delta_2$ च्या उघड्या गृहीतकाची कोणतीही खूण
+$\delta_1$ मधील मुक्ती-नियमाची खूण नसेल,
+तर परिणामी
+$\Subst{\delta_1}{\delta_2}{B^x}$
+ही योग्य सिद्धता आहे.
+तिची उघडी गृहीतके म्हणजे
+$\delta_1$ मधील बसवलेल्या
+उदाहरणांव्यतिरिक्त
+उरलेली उघडी गृहीतके,
+आणि $\delta_2$ मधील
+उघडी गृहीतके.
+सिद्धता चे कलम-संयोजन
+करताना या अटी सहसा पूर्ण होतात.
+~$\delta_1$ आणि $\delta_2$
+या मोठ्या सिद्धता
+च्या उपसिद्धता असतील,
+तर पहिली अट पूर्ण होते.
+दुसरी अट पूर्ण नसेल,
+तर $\delta_1$ ची आयगेन चरे
+पुन्हा नाव देऊन ती पूर्ण
+करता येते.
+ही खुणांची नवी अटही आवश्यक आहे: दोन्हीकडे तेच सूत्र
+असले तरी आत बसवलेले उघडे गृहीतक बाहेरच्या मुक्ती-नियमाने
+अनवधानाने मुक्त होता कामा नये. कलम-संयोजनापूर्वी
+$\delta_1$ मधील मुक्ती-खुणा आणि त्यांना बांधलेली गृहीतके
+एकत्र नवी नावे देऊन, $\delta_2$ च्या खुणांपासून वेगळी
+करता येतात; मूळ उघड्या गृहीतकांची नावे जपायची.
+
+तशीच व्याख्या
+\Log{N2c} आणि~\Log{N2i}
+यांनाही लागू होते.
+
+\begin{defn}
+समजा $\delta_1$ ही
+$x:B, \Gamma_1 \Sequent A$
+ची \Log{N2c}-सिद्धता
+(किंवा \Log{N2i}-सिद्धता) आहे;
+आणि $\delta_2$ ही
+$\Gamma_2 \Sequent B$
+ची \Log{N2c}-सिद्धता
+(\Log{N2i}-सिद्धता) आहे.
+मग $\delta_1$ मधील
+अंतिम क्रमवर्तीपर्यंत मुक्त न झालेल्या
+$x:B$ शी संबंधित प्रत्येक $x:B \Sequent B$
+स्वयंसिद्धकाच्या जागी $\delta_2$ बसवून,
+त्याखालील प्रत्येक क्रमवर्तीच्या संदर्भातील
+संबंधित $x:B$ काढून त्याऐवजी $\Gamma_2$ जोडून
+मिळणारा परिणाम म्हणजे
+$\Subst{\delta_1}{\delta_2}{x:B}$.
+\end{defn}
+
+\begin{prop}
+जर $\delta_1 \Proves
+x:B, \Gamma_1 \Sequent
+A$ आणि $\delta_2 \Proves
+\Gamma_2 \Sequent B$,
+तर $\Subst{\delta_1}{\delta_2}{x:B}
+\Proves \Gamma_1, \Gamma_2 \Sequent
+A$, मात्र दोन्ही सिद्धतांतील गृहीतक-खुणा सुसंगत असाव्यात,
+$\Gamma_2$ मधील कोणतीही खूण $\delta_1$ मधील
+मुक्ती-नियमाची खूण नसावी आणि $\delta_1$ चे
+कोणतेही आयगेन चर $\Gamma_2$ मध्ये येता कामा नये.
+\end{prop}
+
+\begin{proof}
+  $\pheight{\delta_1}$ वर
+  विगमन करून.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{\Log{G2i} पासून \Log{N2i} मध्ये रूपांतर}\label{pt:nat:tgi:sec}
+
+~\Log{G2i} मधील क्रमवर्तींचे पूर्वपक्ष हे
+सूत्रे यांचे बहुसंच~$\Gamma$ असतात; तर
+\Log{N2i} मधील क्रमवर्तींचे पूर्वपक्ष हे
+खूण लावलेल्या सूत्रांचे संच~$\Gamma'$ असतात.
+त्यांतील प्रत्येक खूण फक्त एकदाच येते.
+खूण लावलेल्या सूत्रांचा संच~$\Gamma'$
+हा बहुसंच~$\Gamma$ शी \emph{अनुरूप आहे} असे
+तेव्हाच म्हणू, जेव्हा प्रत्येक सूत्र~$A$
+साठी $x : A$ या रूपातील~$\Gamma'$ चे
+घटक जितके आहेत तितकी संख्या
+~$\Gamma$ मध्ये~$A$ जितक्या वेळा येते
+(म्हणजे~$A$ च्या प्रती जितक्या आहेत) त्या
+संख्येपेक्षा अधिक नसते.
+
+\begin{prop}\label{pt:nat:tgi:prop:G2i-to-N2i}
+$\Log{G2i} + \Cut \Proves \Gamma \Sequent \Delta$
+असेल, तर
+$\Log{N2i} \Proves \Gamma' \Sequent C$.
+येथे~$\Delta$ रिकामा असेल तर
+$C \ident \lfalse$; अन्यथा
+$\Delta = \{A\}$ आणि $C \ident A$.
+तसेच~$\Gamma'$ हा~$\Gamma$ शी अनुरूप आहे.
+\end{prop}
+
+\begin{proof}
+  ~$\pi$ ही~\Log{G2i} + \Cut मध्ये
+  $\Gamma \Sequent \Delta$ ची
+  सिद्धता असेल, तर~$\Gamma$
+  शी अनुरूप असा~$\Gamma'$ आणि
+  ~\Log{N2i} मध्ये
+  ~$\Gamma' \Sequent C$ ची
+  सिद्धता~$\delta$ मिळते,
+  हे दाखवू. त्यासाठी
+  $n = \pheight{\pi}$
+  यावर विगमन करू.
+
+  $n = 0$ असेल, तर~$\pi$
+  हे स्वयंसिद्धक आहे.
+  ते $\lfalse \Sequent \quad$
+  असे असेल, तर~$\delta$
+  हे $x:\lfalse \Sequent \lfalse$
+  स्वयंसिद्धक; म्हणजे
+  $\Gamma' = \{x:\lfalse\}$
+  आणि $C \ident \lfalse$.
+  ~$\pi$ हे $A \Sequent A$
+  या रूपाचे स्वयंसिद्धक असेल,
+  तर~$\delta$ हे
+  $x: A \Sequent A$.
+
+  $n>0$ असेल, तर~$\pi$
+  चा शेवट~$R$ या नियमात होतो.
+  विगमन गृहीतकानुसार त्या नियमाच्या
+  आधारविधानांशी अनुरूप क्रमवर्तींच्या
+  सिद्धता ~\Log{N2i} मध्ये मिळतात.
+  या सिद्धतांतील सर्व मुक्तीच्या खुणा
+  वेगवेगळ्या आहेत, आणि एखादी खूण~$x$
+  मुक्त होत असेल तर तिला मुक्त करणाऱ्या
+  अनुमानाच्या वरच येते, असे गृहीत धरू
+  शकतो; गरज पडल्यास खुणा बदलू शकतो.
+  या सिद्धता एकत्र करून योग्य
+  $\Gamma' \Sequent C$ ची सिद्धता
+  कशी मिळते ते आता~$R$ नुसार पाहू.
+
+  \begin{enumerate}
+    \item $R$ हा \RightR{\Weakening} असेल,
+    तर~$\pi$ चा शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma \fCenter$
+    \RightLabel{\RightR{\Weakening}}
+    \UnaryInf$\Gamma \fCenter A$
+    \DisplayProof
+    \]
+    ~$\pi_1$ वर विगमन गृहीतक लावल्यास
+    $\Gamma' \Sequent \lfalse$ ची
+    सिद्धता मिळते. तिला~$\FalseInt$
+    लावून $\Gamma' \Sequent A$ ची
+    सिद्धता मिळते.
+    \item $R$ हा \LeftR{\Weakening} असेल,
+    तर~$\pi$ चा शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\Weakening}}
+    \UnaryInf$A, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \]
+    ~$\pi_1$ वर विगमन गृहीतक लावल्यास
+    $\Gamma' \Sequent C$ ची
+    सिद्धता मिळते; तीच~$\delta$ घेऊ.
+    ~$\Gamma'$ हा~$\Gamma$ शी अनुरूप असेल,
+    तर तो $A, \Gamma$ शीही अनुरूप असतो.
+    कारण~$\Gamma'$ मधील $x : A$ ची संख्या
+    ही~$\Gamma$ मधील~$A$ च्या प्रतींपेक्षा
+    अधिक नाही; त्यामुळे ती
+    $A, \Gamma$ मधील~$A$
+    च्या प्रतींपेक्षाही अधिक नाही.
+    \item $R$ हा \LeftR{\Contraction} असेल,
+    तर~$\pi$ चा शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$A, A, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\Contraction}}
+    \UnaryInf$A, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \]
+    ~$\pi_1$ वर विगमन गृहीतक लावल्यास
+    $\Pi, \Gamma' \Sequent C$ ची
+    सिद्धता~$\delta_1$ मिळते;
+    येथे $\Pi \subseteq \{x : A,
+    y:A\}$. $\Pi = \{x : A, y:A\}$
+    असेल, तर~$\delta_1$ मधील
+    सर्व खूण लावलेली सूत्रे~$y:A$
+    ही~$x:A$ ने बदला.
+    ~$\delta_1$ च्या अंतिम क्रमवर्तीच्या
+    संदर्भात~$x$ असल्यामुळे
+    ~$\delta_1$ मधील कोणतेही अनुमान
+    $x:B$ या रूपाचे सूत्र
+    मुक्त करत नाही, असे धरता येते;
+    म्हणजे~$\delta_1$ मधील
+    कोणत्याही क्रमवर्तीच्या डाव्या बाजूवरील
+    $x:B$ सक्रिय नसते.
+    म्हणून बदललेली सिद्धता अजूनही
+    ~\Log{N2i} मधील सिद्धता असते.
+    \item $R$ हा $\RightR{\lif}$ असेल,
+    तर~$\pi$ चा शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$A, \Gamma \fCenter B$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\Gamma \fCenter A \lif B$
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार
+    $x: A, \Gamma' \Sequent B$
+    किंवा $\Gamma' \Sequent B$
+    ची सिद्धता~$\delta_1$ मिळते;
+    येथे~$\Gamma'$ हा~$\Gamma$ शी
+    अनुरूप आहे. ~$\delta_1$ ला
+    \Intro{\lif} चे एक अनुमान जोडून
+    मिळणारी सिद्धता~$\delta$ घेऊ.
+    \item $R$ हा \LeftR{\lif} असेल,
+    तर~$\pi$ चा शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma_1 \fCenter A$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$B, \Gamma_2 \fCenter \Delta$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$A \lif B, \Gamma_1, \Gamma_2 \fCenter \Delta$
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार सिद्धता मिळतात:
+    $\delta_1$ ही $\Gamma_1' \Sequent A$ ची;
+    आणि~$\delta_2$ ही
+    $x: B, \Gamma_2' \Sequent C$
+    किंवा $\Gamma_2' \Sequent C$ ची.
+    ~$\delta_2$ दुसऱ्या रूपात असेल,
+    तर~$\delta_2$ हीच~$\delta$ घेऊ.
+    अन्यथा~$\delta_1$ मधील
+    सर्व सूत्रांच्या आणि मुक्तीच्या खुणा
+    बदलून~$\delta_1$ व~$\delta_2$
+    यांत कोणतीही खूण समान नसल्याची
+    खात्री करू शकतो. मग
+    $\Gamma_1' \cup \Gamma_2'$ हा
+    $\Gamma_1 \cup \Gamma_2$ शी अनुरूप आहे.
+    ~$\delta_2$ च्या अंतिम क्रमवर्तीत
+    $x:B$ असल्यामुळे
+    ~$\delta_2$ मधील~$x$ या
+    मुक्ती-खुणेच्या कोणत्याही अनुमानात
+    $x:B$ सक्रिय नसते.
+    ~$\delta_2$ मधील प्रत्येक
+    $x:B \Sequent B$ स्वयंसिद्धकाच्या
+    जागी पुढील सिद्धता~$\delta_3$ ठेवा:
+    \[
+    \Axiom$x: A \lif B \fCenter A \lif B$
+    \AxiomC{}
+    \RightLabel{$\delta_1$}
+    \Deduce$\Gamma_1' \fCenter A$
+    \RightLabel{\Elim{\lif}}
+    \BinaryInf$x: A \lif B, \Gamma_1' \fCenter B$
+    \DisplayProof
+    \]
+    आणि~$\delta_2$ मधील प्रत्येक
+    $x:B$ च्या जागी $x:A \lif B$
+    ठेवा. परिणामी
+    $\Subst{\delta_2}{\delta_3}{x:B}$
+    ही $x:A \lif B, \Gamma_1', \Gamma_2' \Sequent C$
+    ची सिद्धता आहे.
+    \item $R$ हा \RightR{\land} असेल,
+    तर~$\pi$ चा शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma_1 \fCenter A$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\Gamma_2 \fCenter B$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\Gamma_1, \Gamma_2 \fCenter A \land B$
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार
+    $\Gamma_1' \Sequent A$ ची
+    सिद्धता~$\delta_1$ आणि
+    $\Gamma_2' \Sequent B$ ची
+    सिद्धता~$\delta_2$ मिळते.
+    ~$\delta_2$ मधील सर्व सूत्रांच्या
+    आणि मुक्तीच्या खुणा बदलून
+    ~$\delta_1$ व~$\delta_2$ यांत
+    कोणतीही खूण समान नसल्याची
+    खात्री करता येते. मग
+    $\Gamma_1' \cup \Gamma_2'$ हा
+    $\Gamma_1 \cup \Gamma_2$ शी अनुरूप आहे.
+    ~$\delta_1$ आणि~$\delta_2$
+    यांच्या अंतिम क्रमवर्तींना
+    $\Intro{\land}$ लावून
+    सिद्धता~$\delta$ मिळते.
+    \item $R$ हा $\LeftR{\land}$ असेल,
+    तर, उदाहरणार्थ, ~$\pi$ चा
+    शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$A, \Gamma \fCenter \Delta$
+    \RightLabel{\LeftR{\land}}
+    \UnaryInf$A \land B, \Gamma \fCenter \Delta$
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार
+    $x: A, \Gamma' \Sequent C$
+    किंवा $\Gamma' \Sequent C$
+    ची सिद्धता~$\delta_1$ मिळते;
+    येथे~$\Gamma'$ हा~$\Gamma$ शी
+    अनुरूप आहे. दुसऱ्या प्रसंगी
+    ~$\delta_1$ हीच~$\delta$ घेऊ.
+    पहिल्या प्रसंगी~$x:A$
+    अंतिम क्रमवर्तीत असल्यामुळे
+    ~$\delta_1$ मधील~$x$ या
+    मुक्ती-खुणेच्या कोणत्याही अनुमानात
+    $x:A$ सक्रिय नसते.
+    प्रत्येक $x:A \Sequent A$
+    स्वयंसिद्धकाच्या जागी
+    पुढील सिद्धता~$\delta_2$ ठेवा:
+    \[
+    \Axiom$x: A \land B \fCenter A \land B$
+    \RightLabel{\Elim{\land}}
+    \UnaryInf$x: A \land B \fCenter A$
+    \DisplayProof
+    \]
+    आणि प्रत्येक~$x:A$ च्या जागी
+    $x:A \land B$ ठेवा; म्हणजे
+    $\Subst{\delta_1}{\delta_2}{x:A}$
+    घ्या. ही $x:A \land B, \Gamma' \Sequent C$
+    ची सिद्धता आहे.
+    \item $R$ हा \Cut असेल,
+    तर~$\pi$ चा शेवट असा होतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\Gamma_1 \fCenter A$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$A, \Gamma_2 \fCenter \Delta$
+    \RightLabel{\Cut}
+    \BinaryInf$\Gamma_1, \Gamma_2 \fCenter \Delta$
+    \DisplayProof
+    \]
+    विगमन गृहीतकानुसार
+    $\Gamma_1' \Sequent A$ ची
+    सिद्धता~$\delta_1$ आणि
+    $x:A, \Gamma_2' \Sequent C$
+    किंवा $\Gamma_2' \Sequent C$
+    ची सिद्धता~$\delta_2$ मिळते.
+    दुसऱ्या प्रसंगी~$\delta$
+    म्हणून~$\delta_2$ घ्या.
+    अन्यथा, गरज असल्यास
+    ~$\delta_1$ मधील खुणा बदलून
+    दोन सिद्धतांच्या खुणा वेगळ्या करा.
+    ~$\delta_2$ मधील प्रत्येक
+    $x:A \Sequent A$ स्वयंसिद्धकाच्या
+    जागी~$\delta_1$ ठेवून
+    $\Subst{\delta_2}{\delta_1}{x:A}$
+    ही $\Gamma_1', \Gamma_2' \Sequent C$
+    ची सिद्धता~$\delta$ मिळते.
+  \end{enumerate}
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{\Log{N2} पासून \Log{G2} मध्ये रूपांतर}\label{pt:nat:tni:sec}
+
+\begin{prop}\label{pt:nat:tni:prop:N2-to-G2}
+$\Log{N2c}\ (\Log{N2i}) \Proves
+\Gamma \Sequent A$ असेल, तर
+$\Log{G2c}\ (\Log{G2i}) + \Cut \Proves \Gamma'
+\Sequent \Delta$. येथे~$\Gamma$ मधील
+खुणा काढून मिळणारा सूत्रांचा
+बहुसंच~$\Gamma'$ आहे; तसेच~$A$
+हा~$\lfalse$ नसेल तर
+$\Delta = \{A\}$, आणि असेल तर
+$\Delta = \emptyset$.
+\end{prop}
+
+\begin{proof}
+पुन्हा~$\Gamma \Sequent A$ च्या
+सिद्धता~$\delta$ च्या उंचीवर
+विगमन करू. ~$\delta$ हे
+$x:A \Sequent A$ स्वयंसिद्धक
+असेल, तर~$\pi$ हे अनुरूप
+$A \Sequent A$ स्वयंसिद्धक
+आहे; किंवा~$A \ident \lfalse$
+असेल तर
+$\lfalse \Sequent \ $ स्वयंसिद्धक आहे.
+
+~$\delta$ चा शेवट
+अनुमाननियमात होत असेल, तर
+पुढील प्रसंग वेगळे पाहू:
+\begin{enumerate}
+  \item $R$ हा
+  मुख्य सूत्र~$B \lif C$
+  असलेला~\Intro{\lif} नियम असेल,
+  आणि~$x:B$ हे आधारविधानाच्या
+  संदर्भात असेल पण निष्कर्षाच्या
+  संदर्भात नसेल, तर~$\delta$
+  चा शेवट असा होतो:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$x:B, \Gamma \fCenter C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter B \lif C$
+  \DisplayProof
+  \]
+  विगमन गृहीतकानुसार
+  $B, \Gamma' \Sequent C$
+  ची सिद्धता~$\pi_1$
+  मिळते; $C \ident \lfalse$
+  असेल तर तिचे रूप
+  $B, \Gamma' \Sequent \ $
+  असते. त्यावर~\RightR{\lif}
+  लावून~$\pi$ मिळते;
+  $C \ident \lfalse$ असताना
+  त्याआधी~\RightR{\Weakening}
+  लावावे लागते.
+  \item $R$ हा~\Intro{\lif}
+  असेल, पण~$x:B$
+  आधारविधानाच्या संदर्भात नसेल,
+  तर~$\delta$ चा शेवट असा होतो:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma \fCenter C$
+  \RightLabel{\Intro{\lif}}
+  \UnaryInf$\Gamma \fCenter B \lif C$
+  \DisplayProof
+  \]
+  विगमन गृहीतकानुसार
+  निष्पन्न सूत्र असत्य
+  नसेल तेव्हा~$\Gamma' \Sequent C$
+  ची सिद्धता~$\pi_1$ मिळते;
+  असत्याच्या प्रसंगी तिचा
+  उत्तरपक्ष रिकामा असतो.
+  गरज असल्यास आधी
+  उजवीकडील दुर्बलीकरणाने
+  असत्य उजवीकडे आणा.
+  मग~$B$ साठी
+  \LeftR{\Weakening}
+  आणि त्यानंतर
+  \RightR{\lif} लावून~$\pi$
+  मिळते.
+  \item $R$ हा~\Elim{\lif}
+  असेल, तर~$\delta$ चा
+  शेवट असा होतो:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$\Gamma_1 \fCenter B \lif A$
+  \AxiomC{}
+  \RightLabel{$\delta_2$}
+  \Deduce$\Gamma_2 \fCenter B$
+  \RightLabel{\Elim{\lif}}
+  \BinaryInf$\Gamma_1, \Gamma_2 \fCenter A$
+  \DisplayProof
+  \]
+  येथे~$\Gamma = \Gamma_1 \cup \Gamma_2$.
+  विगमन गृहीतकानुसार
+  सिद्धता मिळतात:
+  $\pi_1$ ही
+  $\Gamma_1' \Sequent B \lif A$
+  ची आणि~$\pi_2$ ही
+  $\Gamma_2' \Sequent B$ ची.
+  दुसऱ्या निष्कर्षसूत्राचा असत्य
+  हा प्रसंग असेल, तर दुसरी
+  सिद्धता मिळवण्यासाठी
+  विगमनातून आलेल्या रिकाम्या
+  उत्तरपक्षाच्या सिद्धतेवर
+  उजवीकडील दुर्बलीकरण लावा.
+  पुढीलप्रमाणे सिद्धता~$\pi$
+  मिळते:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\Gamma_1' \fCenter B \lif A$
+  \AxiomC{}
+  \RightLabel{$\pi_2$}
+  \Deduce$\Gamma_2' \fCenter B$
+  \Axiom$A \fCenter A$
+  \RightLabel{\LeftR{\lif}}
+  \BinaryInf$B \lif A, \Gamma_2' \fCenter A$
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma_1', \Gamma_2' \fCenter A$
+  \DisplayProof
+  \]
+  बहुसंच~$\Gamma_1' \cup \Gamma_2'$
+  हा $\Gamma' =
+  (\Gamma_1 \cup \Gamma_2)'$
+  याच्याशी समान असेलच असे नाही.
+  उदाहरणार्थ,~$\Gamma_1$
+  आणि~$\Gamma_2$ दोन्हींमध्ये
+  $x:C$ असेल, तर
+  $\Gamma_1' \cup \Gamma_2'$
+  मध्ये~$C$ च्या दोन प्रती
+  असतात; पण
+  $(\Gamma_1 \cup \Gamma_2)'$
+  मध्ये एकच प्रत असते.
+  योग्य~\LeftR{\Contraction}
+  अनुमाने जोडून हे दुरुस्त करता येते.
+
+  $A \ident \lfalse$
+  असेल, तर~$\delta_2$
+  वरून विगमनाने मिळणारी
+  सिद्धता एकटी रिकामा
+  उत्तरपक्ष देत नाही.
+  वरच्या रचनेत
+  $A$ च्या ओळख-स्वयंसिद्धकाऐवजी
+  रिकामा उत्तरपक्ष असलेले
+  असत्य-स्वयंसिद्धक वापरा.
+  डाव्या अभिव्यंजन-नियमापुढे
+  कट लावल्यावर
+  $\Gamma_1', \Gamma_2' \Sequent \ $
+  ची सिद्धता~$\pi$ मिळते.
+  त्यामुळे यासाठी
+  \LeftR{\Weakening} किंवा
+  \RightR{\Weakening}
+  लावण्याची गरज नाही.
+\item $R$ हा~\FalseCl असेल,
+तर~$\delta$ चा शेवट असा:
+  \[
+  \AxiomC{}
+  \RightLabel{$\delta_1$}
+  \Deduce$x: \lnot A, \Gamma \fCenter \lfalse$
+  \RightLabel{\FalseCl}
+  \UnaryInf$\Gamma \fCenter A$
+  \DisplayProof
+  \]
+  विगमन गृहीतकानुसार
+  $\lnot A, \Gamma' \Sequent \ $
+  ची सिद्धता~$\pi_1$
+  आहे. पुढील सिद्धता~$\pi$ घेऊ:
+  \[
+  \Axiom$A \fCenter A$
+  \RightLabel{\RightR{\lnot}}
+  \UnaryInf$\fCenter A, \lnot A$
+  \AxiomC{}
+  \RightLabel{$\pi_1$}
+  \Deduce$\lnot A, \Gamma' \fCenter $
+  \RightLabel{\Cut}
+  \BinaryInf$\Gamma' \fCenter A$
+  \DisplayProof
+  \]
+  $A\ident\lfalse$ असेल, तर या शेवटच्या क्रमवर्तीचा
+  उत्तरपक्षही रिकामा हवा. त्यासाठी वरील सिद्धतेला
+  $\lfalse\Sequent\ $ या स्वयंसिद्धकासह आणखी एक
+  $\Cut$ लावून $\Gamma'\Sequent\ $ मिळवायचे.
+  $\FalseCl$ मध्ये कोणतेही गृहीतक मुक्त होत नसेल,
+  तर आधाराची सिद्धता विगमनाने थेट
+  $\Gamma'\Sequent\ $ देते; $A\not\ident\lfalse$
+  असल्यासच उजवीकडील दुर्बलीकरणाने $A$ जोडायचे.
+\end{enumerate}
+फक्त~\FalseCl{} च्या
+रूपांतरातून मिळणाऱ्या
+सिद्धता~$\pi$ मध्ये
+एखाद्या क्रमवर्तीच्या उजव्या बाजूस
+एकापेक्षा अधिक सूत्र
+येऊ शकते. म्हणजे
+~\Log{N2i} मधील सिद्धता
+रूपांतरित केल्यास
+\Log{G2i} मधील सिद्धता मिळते.
+\end{proof}
+
+
+

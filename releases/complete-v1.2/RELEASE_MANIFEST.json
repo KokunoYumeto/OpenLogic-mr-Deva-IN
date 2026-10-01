@@ -1,0 +1,1139 @@
+{
+  "schema": "openlogic-release-manifest/1",
+  "release": "complete-v1.2",
+  "description": "मुक्त तर्कशास्त्राची संपूर्ण मराठी आवृत्ती: PDF, संपादनयोग्य TeX, ऑफलाइन HTML आणि EPUB.",
+  "ai_translation_correction_and_checks": {
+    "models": [
+      "gpt-5.6-sol",
+      "gpt-6-sol",
+      "gpt-6.1-sol"
+    ],
+    "effort": "ultra",
+    "reader_notice": "यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex — GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort; दुरुस्ती-पुनरावलोकन GPT-6.1 Sol, Ultra effort."
+  },
+  "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+  "upstream_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+  "coverage": {
+    "translated_source_units": 722,
+    "total_source_units": 722,
+    "aligned_segments": 6644,
+    "reader_chapters": 79,
+    "reader_sections": 613,
+    "detailed_review_units": 281,
+    "detailed_review_occurrences": 14221
+  },
+  "reader": {
+    "pdf_pages": 957,
+    "native_mathml": 38988,
+    "semantic_proof_figures": 466,
+    "diagrams": 70
+  },
+  "assets": [
+    {
+      "filename": "01-openlogic-mr-complete.pdf",
+      "bytes": 3936473,
+      "sha256": "3ee7fe70d38346b3ffc7cd635aaa285e54a00e81e5cfe254467be7cc696306f9"
+    },
+    {
+      "filename": "02-openlogic-mr-complete.tex",
+      "bytes": 5619228,
+      "sha256": "f793f2b144cc8f15013bb68008c2302643c90d64bc6a1f922e9f03a4598d48f3"
+    },
+    {
+      "filename": "03-openlogic-mr-complete-editable-sources.zip",
+      "bytes": 34510609,
+      "sha256": "cd41c8b055fe108f2f2e71df57075d9a4344b848d5b2c1ea294fbf6a5f979057"
+    },
+    {
+      "filename": "04-openlogic-mr-complete-html.zip",
+      "bytes": 7524764,
+      "sha256": "759ee75fc90d5c4384720e8aac8906266af452afc8bd6831b066f699581e24f5"
+    },
+    {
+      "filename": "05-openlogic-mr-complete-review.zip",
+      "bytes": 25162703,
+      "sha256": "fd568b3c2a8478b3686acbb722219a6ab587d162eed6007c209b5a89bbd0d11c"
+    },
+    {
+      "filename": "RELEASE_QA.json",
+      "bytes": 2834,
+      "sha256": "d47f282737f0159dd49ceb3315534640c2f2194849dd227684f74994cd40bd4e"
+    },
+    {
+      "filename": "SOURCE_PACKAGE_README.md",
+      "bytes": 3147,
+      "sha256": "6f220950f6445f2030106bf7da1b96b318aaa5ebcd40dece0b9244d1c74b2e5a"
+    },
+    {
+      "filename": "RELEASE_NOTES.md",
+      "bytes": 6826,
+      "sha256": "a0fef95b4105a23ace903299cc6ab1a2f8361fecb61de5af752e2de74f1af231"
+    },
+    {
+      "filename": "RELEASE_CONSISTENCY.json",
+      "bytes": 1382,
+      "sha256": "7ef651e5e9ad27c2415ccbd59376497b9ceb076ee6d87125e6e44e8545c379d6"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-001.tex",
+      "bytes": 46034,
+      "sha256": "b8c0edecfb205f65f3e029e556edf7d2fe9261f3f96e0113cf7f8586604509b0"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-002.tex",
+      "bytes": 59670,
+      "sha256": "ad0bef3ce1f8323f05b34534d02837e7568624d990e7e34e569693a88feee555"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-003.tex",
+      "bytes": 51382,
+      "sha256": "5e9fd08b7538f021ac62858e814eb0e711cdd68408226c4279bbc0f78b595f41"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-004.tex",
+      "bytes": 136560,
+      "sha256": "74843e1ca2559c38a2b6532fdbbb0602c46b286cb4656f447610c844873145f6"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-005.tex",
+      "bytes": 89077,
+      "sha256": "3921844cba5fdfb302ab851e37e43baab2b638102476b2b696d5c6cbaf9e81e6"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-006.tex",
+      "bytes": 42300,
+      "sha256": "ad827d8a03055107803b6ba195308b67981972bdce6fe74eeb05670554fff71f"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-007.tex",
+      "bytes": 50968,
+      "sha256": "0f4565b5dca4b424f20dbe3eacb08912a14e021004a7402d60fa96532212778c"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-008.tex",
+      "bytes": 47098,
+      "sha256": "58dc089e56b56820bb4526508d570ccf23f51f406e9ae51c0ca0098a34edc061"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-009.tex",
+      "bytes": 108687,
+      "sha256": "cde5f9a0edaee029d3fdd44c6985f442bff955808ee85d293838658138340559"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-010.tex",
+      "bytes": 102851,
+      "sha256": "623f4ff695dbd2d5aeddb95761f34f48218be799fbcac5fd4122772a76886dd6"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-011.tex",
+      "bytes": 114458,
+      "sha256": "cf5acea83735ff1d86179cfab8a564b1b7fb781e48a416a81f76ca0adb713d9a"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-012.tex",
+      "bytes": 64496,
+      "sha256": "d97096f4a5e0ac7da8f80fc0ab61d0bf7e08f4ee9cbb28fd0694a2ddc01005e1"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-013.tex",
+      "bytes": 119550,
+      "sha256": "1ff7d497c7b1b0a740b4304a1a289f6e01491010d57414ca5cb41d93207cc0e0"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-014.tex",
+      "bytes": 69854,
+      "sha256": "1c2d0f5a86c5256401407b153bb2c3bcf4521d9786c6b23b98c9a08b0e07d3e7"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-015.tex",
+      "bytes": 83012,
+      "sha256": "ec9cc8ae4bfef90dba23fa546c9d092f115defae2e6939eb1531c7e4daa7b494"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-016.tex",
+      "bytes": 84801,
+      "sha256": "a30d213d22bfcdd3d91629ab6817533e3480cafd0e00ff1c28cf6c4d3b97b51b"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-017.tex",
+      "bytes": 59907,
+      "sha256": "908803fc4bed9d8137bdbad6c2f6ad2e2917e2ddb1dfbbcef5776c62a5542b3a"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-018.tex",
+      "bytes": 92863,
+      "sha256": "61e5dd3281bcf9c204490bb8fdab1d45c02132a5a29c2950265524750f2297d7"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-019.tex",
+      "bytes": 45404,
+      "sha256": "b5232c4c84852b558d8642310304ff5d854c8b3bc656498b6c2dfd3a0b6a2bd2"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-020.tex",
+      "bytes": 66403,
+      "sha256": "8cbcd40e2317c79fd030abe3f6ff1fb91eaeb62af2665df0380e76fb77ab2bd5"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-021.tex",
+      "bytes": 36201,
+      "sha256": "5bc7a4e5255da967c3441da130e7fb2ea629e2d3dfba74aeaaa9f65e60a82c32"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-022.tex",
+      "bytes": 35869,
+      "sha256": "05a7fb9bb127a010f27b07d41422121a3d0af302385487b0983a272a209412fa"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-023.tex",
+      "bytes": 131861,
+      "sha256": "2a61eb3a8883995b6af3693c26d46db35dc97c96835b9cfdb43cf378c343a6a0"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-024.tex",
+      "bytes": 128277,
+      "sha256": "7026af99b15fc28ee42b6c9d426f1ec9279d9b54f4c895810d22679c02b1b0af"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-025.tex",
+      "bytes": 105529,
+      "sha256": "5dc4acefdbcade1985ccf40dc36c4cf07c22db8e57b0a31301dcbb770103acf7"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-026.tex",
+      "bytes": 128743,
+      "sha256": "f259ac669f013f7245e857f2e9550ad9bc82e00cd248e4811752429b319e7fc2"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-027.tex",
+      "bytes": 86391,
+      "sha256": "ada8611a55612052951d5c62f640e248c863f82bf7a147145ad2b2a44fff17a8"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-028.tex",
+      "bytes": 102016,
+      "sha256": "d3e522d70f49cda1029e0ea9c7ead3fa60bb92e7316cd1bbca43f1fc6be1d00e"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-029.tex",
+      "bytes": 110525,
+      "sha256": "50abb997c82f05fede259b6171842d7748eebea3fa222eac43e0b3d28c285b10"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-030.tex",
+      "bytes": 43227,
+      "sha256": "829606749612c6870363f66f2b332348c9c5dd0f1c63a1db29d3f8fa07d9e555"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-031.tex",
+      "bytes": 88880,
+      "sha256": "8e97b215b3170c0006c4f504180b19b7f933d49260ddecc2b0e37213816cec04"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-032.tex",
+      "bytes": 48955,
+      "sha256": "ecd6959ba09a69ebde40cd1a8181a528949e8c05d3df8c4b42b517324f4b8aad"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-033.tex",
+      "bytes": 26694,
+      "sha256": "ba101971190e5a3e50ea8555c9198b19dcb6515685c8feca76f91f67450a5bdc"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-034.tex",
+      "bytes": 28527,
+      "sha256": "f3155d060441a8b37ed0264d42722ffff08b63aadebedbede9998cf3bc5f6bd9"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-035.tex",
+      "bytes": 60861,
+      "sha256": "e45ada93db92703464e289e144cffe23c571b4b9a32966bfab9d575d09507c9d"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-036.tex",
+      "bytes": 78319,
+      "sha256": "c46140d0fc58420310c35eaddcd36f93fe48755a3532fcb9baa1e963ec48d213"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-037.tex",
+      "bytes": 37857,
+      "sha256": "7eaae9783adab9343192a1b39dfb135bffcde138ae6eaa63e2a2293f0716cdd1"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-038.tex",
+      "bytes": 61349,
+      "sha256": "76085172c81616f174696325e36d3c1c41a8094e49677ef0ec20abeed59f06a8"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-039.tex",
+      "bytes": 30593,
+      "sha256": "e5b03fe7d8298a0a9145a97206ddc7bba7a8d10af03dc459c77c59668aaecd05"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-040.tex",
+      "bytes": 54489,
+      "sha256": "9a75282394c0eb4f24b0892623aea9dc35e5c8af88289511d13605813232247b"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-041.tex",
+      "bytes": 13352,
+      "sha256": "ea27648069fabbd663cb768d1a074045e5b5d151e1744e38bddc78ae10ca0e81"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-042.tex",
+      "bytes": 25436,
+      "sha256": "695dcfe61bf306c7bd0eee9e9e33b181e6a85a4025e59d4502449b9cc2ef7b0a"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-043.tex",
+      "bytes": 70724,
+      "sha256": "426c313f24378f7aca18622abfd62f8373bd275a55f15603cf7f0eb0f1c853a4"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-044.tex",
+      "bytes": 67571,
+      "sha256": "9ea07fc82d091a8645bc4c37d18c778b382fe192fe94275188299e38ccb552ed"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-045.tex",
+      "bytes": 73414,
+      "sha256": "f2cddf54b65b70acf8687f2b015470f5f6fc75dfee0ea5f0fd44ba0d61052eeb"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-046.tex",
+      "bytes": 76163,
+      "sha256": "7b27bd6b341bb10f3b15c6639ae78b69a4c3194f4790828ef7762010fe960d48"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-047.tex",
+      "bytes": 81785,
+      "sha256": "750e9d0252b4b0d19d1cb790847dea62fc82e71468cc2fb71cde493a503bfff1"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-048.tex",
+      "bytes": 95840,
+      "sha256": "7e46c479a279f9067aa059f8df70573fb60df941bb7a5efc87bd88c77925f039"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-049.tex",
+      "bytes": 20855,
+      "sha256": "643fae96769187adb36bc8106ebe540738fd5081542b2d75c73826b543bd4a25"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-050.tex",
+      "bytes": 29310,
+      "sha256": "67551dbe6c7b1bb0a443e4a0338707b37e67beee85306aacf617aaad656c5475"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-051.tex",
+      "bytes": 57746,
+      "sha256": "30145c44ec61aba79e5393462a7abb022a7bbb81249ea2eb4463c31e48da4066"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-052.tex",
+      "bytes": 44629,
+      "sha256": "07b0e4e928bacef3e8a8f89de954b9f76e21155233abff5656b16260176f560c"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-053.tex",
+      "bytes": 27659,
+      "sha256": "93bc2d0eff17215a9ca867336bc1c635d3df889e2286141c8dcc4d8ed76fd761"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-054.tex",
+      "bytes": 50957,
+      "sha256": "5da791fbba47e95f04bd658a3df9f7e3f7d462b74bb7c938004c6238cc35bf2e"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-055.tex",
+      "bytes": 39717,
+      "sha256": "524f0e89a82c71a4a6baf83b9227dc68b633a884ba5dca379df9c655c1a30200"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-056.tex",
+      "bytes": 32762,
+      "sha256": "4969a1309c90a4b411778f23b4915a09685770d39d4ff24af9a7bb1a493898ea"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-057.tex",
+      "bytes": 42414,
+      "sha256": "370f79545d5bf7e348e48d09e028c7be925176dc744c857becd6d2890069fd6c"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-058.tex",
+      "bytes": 45320,
+      "sha256": "00411d3ad32a57036fba58730a37f52a8865b64dc12cd4b72c0d9b1a94103f6e"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-059.tex",
+      "bytes": 50129,
+      "sha256": "927ba5b1979d2f170d2bd45aa98e9a39f68f7afdc8ab7e8581ecc0afe8ac3dea"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-060.tex",
+      "bytes": 64001,
+      "sha256": "59af40a8581f2e881ad02936a84491d0b022658ec7e0c9e304b16c3db5138842"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-061.tex",
+      "bytes": 41023,
+      "sha256": "f7dc8c498e21a232cc2ab63c4352944e628fd8537d13cbf04b00947f0c0a0545"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-062.tex",
+      "bytes": 65961,
+      "sha256": "ee56f555444e4ccfe076561e153d11fbec6f74f7450c23d93f893cbcaf36bcfd"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-063.tex",
+      "bytes": 37054,
+      "sha256": "9289b29c89bd495800f4610e901dea1c8eb9115ee54ddc684f0d02805eb7fea3"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-064.tex",
+      "bytes": 40342,
+      "sha256": "96f7e1243060a5882d53f0aab905b0475246718ff22652be0c9914b7c0f895cc"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-065.tex",
+      "bytes": 51263,
+      "sha256": "4d834d1e4d41844bd7f087d739e9a4db5a6e438313fbd2620977c5eee44cbef6"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-066.tex",
+      "bytes": 76989,
+      "sha256": "691cf8739d2eb21311647af3ceba362eb9a3477b667f9f43556315f60091a642"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-067.tex",
+      "bytes": 119044,
+      "sha256": "be2b326a07e8219777c73d0f55a2dea99a7a344c5324be4cb963cc6ab4f193ac"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-068.tex",
+      "bytes": 58987,
+      "sha256": "d5203a67f3ea6c9c6c061df690b0e6bd7db9d2c3096567d2fa3854ee084a509c"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-069.tex",
+      "bytes": 140814,
+      "sha256": "9d4521143392d8c6bd3968f449ef0b691abae1eb9a38a945378e5dc576f7688a"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-070.tex",
+      "bytes": 87083,
+      "sha256": "08b9e4d61ba485b49c81c0e8fe2827637a4bf23ea2b602f4d7f297c3d144dc9d"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-071.tex",
+      "bytes": 73317,
+      "sha256": "133d38a4cdef8c577f802e9a3eead774889de17de6ca284b073177dda28abd12"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-072.tex",
+      "bytes": 63563,
+      "sha256": "405dea3f56f5aeb742fdda3ad7b1f337551d2b93ddae086bd6166eb6cc4875aa"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-073.tex",
+      "bytes": 93553,
+      "sha256": "a6a75436684d791eab1f45a8c44540ecf3c66ad604a45c1c317375a01fc601a1"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-074.tex",
+      "bytes": 132943,
+      "sha256": "cc2cd1196956496cf99df9c378638ca3c602f9ea74424f803e94580b12ff9d96"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-075.tex",
+      "bytes": 84205,
+      "sha256": "189af83e5f49e38e479b5567e324c8884cf50184bf70ea042bee9ed8c8b9605d"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-076.tex",
+      "bytes": 55127,
+      "sha256": "07c0e6bd20b9771d5d26c21b2ee10930292aab809fe6ee4619e21e135f6ba92c"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-077.tex",
+      "bytes": 1947,
+      "sha256": "176b64047bce765ba04af7ffd663dde6424c6afa930d26af8864d164e3fc19b3"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-078.tex",
+      "bytes": 2323,
+      "sha256": "bcc6f213c37925ff061f92fb5a7d28e1f28ebe22d15b12f66586c6615e91ebbc"
+    },
+    {
+      "filename": "11-openlogic-mr-chapter-079.tex",
+      "bytes": 465159,
+      "sha256": "1d535ef4e62456906dd86f2d1315fb41194d6a99fb87ea6f0cb79584d5215033"
+    },
+    {
+      "filename": "06-openlogic-mr-complete.epub",
+      "bytes": 7785377,
+      "sha256": "f657419cb7963b9061261e950d26bb85a2c0e72ccfce341269faeefacdc1adeb"
+    },
+    {
+      "filename": "EPUB_QA.json",
+      "bytes": 1773,
+      "sha256": "39c7c94c05f6b7a11ed10bb2e6cfeadfddd920d599f480f9c0f6d5bdf8daacac"
+    },
+    {
+      "filename": "CANON_RECHECK_101.json",
+      "bytes": 180319,
+      "sha256": "de35c794bf1fc92700e552c8ff6e0ea7913413681c35106407cfcedfb42f5af8"
+    }
+  ],
+  "individual_chapter_sources": [
+    {
+      "chapter": 1,
+      "title_tex": "संच",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-001.tex",
+      "bytes": 46034,
+      "sha256": "b8c0edecfb205f65f3e029e556edf7d2fe9261f3f96e0113cf7f8586604509b0"
+    },
+    {
+      "chapter": 2,
+      "title_tex": "संबंध",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-002.tex",
+      "bytes": 59670,
+      "sha256": "ad0bef3ce1f8323f05b34534d02837e7568624d990e7e34e569693a88feee555"
+    },
+    {
+      "chapter": 3,
+      "title_tex": "फलने",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-003.tex",
+      "bytes": 51382,
+      "sha256": "5e9fd08b7538f021ac62858e814eb0e711cdd68408226c4279bbc0f78b595f41"
+    },
+    {
+      "chapter": 4,
+      "title_tex": "संचांचे आकारमान",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-004.tex",
+      "bytes": 136560,
+      "sha256": "74843e1ca2559c38a2b6532fdbbb0602c46b286cb4656f447610c844873145f6"
+    },
+    {
+      "chapter": 5,
+      "title_tex": "अंकगणितीकरण",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-005.tex",
+      "bytes": 89077,
+      "sha256": "3921844cba5fdfb302ab851e37e43baab2b638102476b2b696d5c6cbaf9e81e6"
+    },
+    {
+      "chapter": 6,
+      "title_tex": "अनंत संच",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-006.tex",
+      "bytes": 42300,
+      "sha256": "ad827d8a03055107803b6ba195308b67981972bdce6fe74eeb05670554fff71f"
+    },
+    {
+      "chapter": 7,
+      "title_tex": "विधानीय तर्कशास्त्र: विन्यासमीमांसा आणि चिन्हार्थमीमांसा",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-007.tex",
+      "bytes": 50968,
+      "sha256": "0f4565b5dca4b424f20dbe3eacb08912a14e021004a7402d60fa96532212778c"
+    },
+    {
+      "chapter": 8,
+      "title_tex": "सिद्धता-पद्धती",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-008.tex",
+      "bytes": 47098,
+      "sha256": "58dc089e56b56820bb4526508d570ccf23f51f406e9ae51c0ca0098a34edc061"
+    },
+    {
+      "chapter": 9,
+      "title_tex": "क्रमवर्ती कलन",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-009.tex",
+      "bytes": 108687,
+      "sha256": "cde5f9a0edaee029d3fdd44c6985f442bff955808ee85d293838658138340559"
+    },
+    {
+      "chapter": 10,
+      "title_tex": "नैसर्गिक निगमन",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-010.tex",
+      "bytes": 102851,
+      "sha256": "623f4ff695dbd2d5aeddb95761f34f48218be799fbcac5fd4122772a76886dd6"
+    },
+    {
+      "chapter": 11,
+      "title_tex": "टॅब्लो",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-011.tex",
+      "bytes": 114458,
+      "sha256": "cf5acea83735ff1d86179cfab8a564b1b7fb781e48a416a81f76ca0adb713d9a"
+    },
+    {
+      "chapter": 12,
+      "title_tex": "स्वयंसिद्धकीय निष्पत्ती",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-012.tex",
+      "bytes": 64496,
+      "sha256": "d97096f4a5e0ac7da8f80fc0ab61d0bf7e08f4ee9cbb28fd0694a2ddc01005e1"
+    },
+    {
+      "chapter": 13,
+      "title_tex": "संपूर्णता प्रमेय",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-013.tex",
+      "bytes": 119550,
+      "sha256": "1ff7d497c7b1b0a740b4304a1a289f6e01491010d57414ca5cb41d93207cc0e0"
+    },
+    {
+      "chapter": 14,
+      "title_tex": "प्रथम-क्रम तर्कशास्त्राचा परिचय",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-014.tex",
+      "bytes": 69854,
+      "sha256": "1c2d0f5a86c5256401407b153bb2c3bcf4521d9786c6b23b98c9a08b0e07d3e7"
+    },
+    {
+      "chapter": 15,
+      "title_tex": "प्रथम-क्रम तर्कशास्त्राची विन्यासमीमांसा",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-015.tex",
+      "bytes": 83012,
+      "sha256": "ec9cc8ae4bfef90dba23fa546c9d092f115defae2e6939eb1531c7e4daa7b494"
+    },
+    {
+      "chapter": 16,
+      "title_tex": "प्रथम-क्रम तर्कशास्त्राची चिन्हार्थमीमांसा",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-016.tex",
+      "bytes": 84801,
+      "sha256": "a30d213d22bfcdd3d91629ab6817533e3480cafd0e00ff1c28cf6c4d3b97b51b"
+    },
+    {
+      "chapter": 17,
+      "title_tex": "उपपत्ती आणि त्यांची प्रतिमाने",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-017.tex",
+      "bytes": 59907,
+      "sha256": "908803fc4bed9d8137bdbad6c2f6ad2e2917e2ddb1dfbbcef5776c62a5542b3a"
+    },
+    {
+      "chapter": 18,
+      "title_tex": "प्रथम-क्रम तर्कशास्त्रापलीकडे",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-018.tex",
+      "bytes": 92863,
+      "sha256": "61e5dd3281bcf9c204490bb8fdab1d45c02132a5a29c2950265524750f2297d7"
+    },
+    {
+      "chapter": 19,
+      "title_tex": "प्रतिमान उपपत्तीची मूलतत्त्वे",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-019.tex",
+      "bytes": 45404,
+      "sha256": "b5232c4c84852b558d8642310304ff5d854c8b3bc656498b6c2dfd3a0b6a2bd2"
+    },
+    {
+      "chapter": 20,
+      "title_tex": "अंकगणिताची प्रतिमाने",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-020.tex",
+      "bytes": 66403,
+      "sha256": "8cbcd40e2317c79fd030abe3f6ff1fb91eaeb62af2665df0380e76fb77ab2bd5"
+    },
+    {
+      "chapter": 21,
+      "title_tex": "अंतर्वेशन प्रमेय",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-021.tex",
+      "bytes": 36201,
+      "sha256": "5bc7a4e5255da967c3441da130e7fb2ea629e2d3dfba74aeaaa9f65e60a82c32"
+    },
+    {
+      "chapter": 22,
+      "title_tex": "लिंडस्ट्रॉमचे प्रमेय",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-022.tex",
+      "bytes": 35869,
+      "sha256": "05a7fb9bb127a010f27b07d41422121a3d0af302385487b0983a272a209412fa"
+    },
+    {
+      "chapter": 23,
+      "title_tex": "पुनरावर्ती फलने",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-023.tex",
+      "bytes": 131861,
+      "sha256": "2a61eb3a8883995b6af3693c26d46db35dc97c96835b9cfdb43cf378c343a6a0"
+    },
+    {
+      "chapter": 24,
+      "title_tex": "संगणनक्षमतेचा सिद्धांत",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-024.tex",
+      "bytes": 128277,
+      "sha256": "7026af99b15fc28ee42b6c9d426f1ec9279d9b54f4c895810d22679c02b1b0af"
+    },
+    {
+      "chapter": 25,
+      "title_tex": "ट्यूरिंग यंत्रांवरील संगणने",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-025.tex",
+      "bytes": 105529,
+      "sha256": "5dc4acefdbcade1985ccf40dc36c4cf07c22db8e57b0a31301dcbb770103acf7"
+    },
+    {
+      "chapter": 26,
+      "title_tex": "अनिर्णेयता",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-026.tex",
+      "bytes": 128743,
+      "sha256": "f259ac669f013f7245e857f2e9550ad9bc82e00cd248e4811752429b319e7fc2"
+    },
+    {
+      "chapter": 27,
+      "title_tex": "अपूर्णतेचा परिचय",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-027.tex",
+      "bytes": 86391,
+      "sha256": "ada8611a55612052951d5c62f640e248c863f82bf7a147145ad2b2a44fff17a8"
+    },
+    {
+      "chapter": 28,
+      "title_tex": "विन्यासमीमांसेचे अंकगणितीकरण",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-028.tex",
+      "bytes": 102016,
+      "sha256": "d3e522d70f49cda1029e0ea9c7ead3fa60bb92e7316cd1bbca43f1fc6be1d00e"
+    },
+    {
+      "chapter": 29,
+      "title_tex": "$\\Th{Q}$ मधील निरूपणीयता",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-029.tex",
+      "bytes": 110525,
+      "sha256": "50abb997c82f05fede259b6171842d7748eebea3fa222eac43e0b3d28c285b10"
+    },
+    {
+      "chapter": 30,
+      "title_tex": "उपपत्ती आणि संगणनक्षमता",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-030.tex",
+      "bytes": 43227,
+      "sha256": "829606749612c6870363f66f2b332348c9c5dd0f1c63a1db29d3f8fa07d9e555"
+    },
+    {
+      "chapter": 31,
+      "title_tex": "अपूर्णता आणि सिद्धतायोग्यता",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-031.tex",
+      "bytes": 88880,
+      "sha256": "8e97b215b3170c0006c4f504180b19b7f933d49260ddecc2b0e37213816cec04"
+    },
+    {
+      "chapter": 32,
+      "title_tex": "विन्यासमीमांसा आणि चिन्हार्थमीमांसा",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-032.tex",
+      "bytes": 48955,
+      "sha256": "ecd6959ba09a69ebde40cd1a8181a528949e8c05d3df8c4b42b517324f4b8aad"
+    },
+    {
+      "chapter": 33,
+      "title_tex": "द्वितीय-क्रम तर्कशास्त्राची अधिउपपत्ती",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-033.tex",
+      "bytes": 26694,
+      "sha256": "ba101971190e5a3e50ea8555c9198b19dcb6515685c8feca76f91f67450a5bdc"
+    },
+    {
+      "chapter": 34,
+      "title_tex": "द्वितीय-क्रम तर्कशास्त्र आणि संचसिद्धान्त",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-034.tex",
+      "bytes": 28527,
+      "sha256": "f3155d060441a8b37ed0264d42722ffff08b63aadebedbede9998cf3bc5f6bd9"
+    },
+    {
+      "chapter": 35,
+      "title_tex": "परिचय",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-035.tex",
+      "bytes": 60861,
+      "sha256": "e45ada93db92703464e289e144cffe23c571b4b9a32966bfab9d575d09507c9d"
+    },
+    {
+      "chapter": 36,
+      "title_tex": "विन्यासमीमांसा",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-036.tex",
+      "bytes": 78319,
+      "sha256": "c46140d0fc58420310c35eaddcd36f93fe48755a3532fcb9baa1e963ec48d213"
+    },
+    {
+      "chapter": 37,
+      "title_tex": "चर्च–रॉसर गुणधर्म",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-037.tex",
+      "bytes": 37857,
+      "sha256": "7eaae9783adab9343192a1b39dfb135bffcde138ae6eaa63e2a2293f0716cdd1"
+    },
+    {
+      "chapter": 38,
+      "title_tex": "लॅम्डा-परिभाष्यता",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-038.tex",
+      "bytes": 61349,
+      "sha256": "76085172c81616f174696325e36d3c1c41a8094e49677ef0ec20abeed59f06a8"
+    },
+    {
+      "chapter": 39,
+      "title_tex": "विन्यासमीमांसा आणि चिन्हार्थमीमांसा",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-039.tex",
+      "bytes": 30593,
+      "sha256": "e5b03fe7d8298a0a9145a97206ddc7bba7a8d10af03dc459c77c59668aaecd05"
+    },
+    {
+      "chapter": 40,
+      "title_tex": "त्रिमूल्य तर्कशास्त्रे",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-040.tex",
+      "bytes": 54489,
+      "sha256": "9a75282394c0eb4f24b0892623aea9dc35e5c8af88289511d13605813232247b"
+    },
+    {
+      "chapter": 41,
+      "title_tex": "अनंतमूल्य तर्कशास्त्रे",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-041.tex",
+      "bytes": 13352,
+      "sha256": "ea27648069fabbd663cb768d1a074045e5b5d151e1744e38bddc78ae10ca0e81"
+    },
+    {
+      "chapter": 42,
+      "title_tex": "क्रमवर्ती कलन",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-042.tex",
+      "bytes": 25436,
+      "sha256": "695dcfe61bf306c7bd0eee9e9e33b181e6a85a4025e59d4502449b9cc2ef7b0a"
+    },
+    {
+      "chapter": 43,
+      "title_tex": "विन्यासमीमांसा आणि चिन्हार्थमीमांसा",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-043.tex",
+      "bytes": 70724,
+      "sha256": "426c313f24378f7aca18622abfd62f8373bd275a55f15603cf7f0eb0f1c853a4"
+    },
+    {
+      "chapter": 44,
+      "title_tex": "मोडल चौकटींची परिभाष्यता",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-044.tex",
+      "bytes": 67571,
+      "sha256": "9ea07fc82d091a8645bc4c37d18c778b382fe192fe94275188299e38ccb552ed"
+    },
+    {
+      "chapter": 45,
+      "title_tex": "स्वयंसिद्धकीय निष्पत्ती",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-045.tex",
+      "bytes": 73414,
+      "sha256": "f2cddf54b65b70acf8687f2b015470f5f6fc75dfee0ea5f0fd44ba0d61052eeb"
+    },
+    {
+      "chapter": 46,
+      "title_tex": "संपूर्णता आणि कॅनॉनिकल प्रतिमाने",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-046.tex",
+      "bytes": 76163,
+      "sha256": "7b27bd6b341bb10f3b15c6639ae78b69a4c3194f4790828ef7762010fe960d48"
+    },
+    {
+      "chapter": 47,
+      "title_tex": "निस्यंदने आणि निर्णेयता",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-047.tex",
+      "bytes": 81785,
+      "sha256": "750e9d0252b4b0d19d1cb790847dea62fc82e71468cc2fb71cde493a503bfff1"
+    },
+    {
+      "chapter": 48,
+      "title_tex": "मोडल टॅब्लो",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-048.tex",
+      "bytes": 95840,
+      "sha256": "7e46c479a279f9067aa059f8df70573fb60df941bb7a5efc87bd88c77925f039"
+    },
+    {
+      "chapter": 49,
+      "title_tex": "मोडल क्रमवर्ती कलन",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-049.tex",
+      "bytes": 20855,
+      "sha256": "643fae96769187adb36bc8106ebe540738fd5081542b2d75c73826b543bd4a25"
+    },
+    {
+      "chapter": 50,
+      "title_tex": "कालिक तर्कशास्त्रे",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-050.tex",
+      "bytes": 29310,
+      "sha256": "67551dbe6c7b1bb0a443e4a0338707b37e67beee85306aacf617aaad656c5475"
+    },
+    {
+      "chapter": 51,
+      "title_tex": "ज्ञानविषयक तर्कशास्त्रे",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-051.tex",
+      "bytes": 57746,
+      "sha256": "30145c44ec61aba79e5393462a7abb022a7bbb81249ea2eb4463c31e48da4066"
+    },
+    {
+      "chapter": 52,
+      "title_tex": "प्रस्तावना",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-052.tex",
+      "bytes": 44629,
+      "sha256": "07b0e4e928bacef3e8a8f89de954b9f76e21155233abff5656b16260176f560c"
+    },
+    {
+      "chapter": 53,
+      "title_tex": "चिन्हार्थमीमांसा",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-053.tex",
+      "bytes": 27659,
+      "sha256": "93bc2d0eff17215a9ca867336bc1c635d3df889e2286141c8dcc4d8ed76fd761"
+    },
+    {
+      "chapter": 54,
+      "title_tex": "निर्दोषता आणि संपूर्णता",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-054.tex",
+      "bytes": 50957,
+      "sha256": "5da791fbba47e95f04bd658a3df9f7e3f7d462b74bb7c938004c6238cc35bf2e"
+    },
+    {
+      "chapter": 55,
+      "title_tex": "अंतःप्रज्ञावादी टॅब्लो",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-055.tex",
+      "bytes": 39717,
+      "sha256": "524f0e89a82c71a4a6baf83b9227dc68b633a884ba5dca379df9c655c1a30200"
+    },
+    {
+      "chapter": 56,
+      "title_tex": "प्रस्तावना",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-056.tex",
+      "bytes": 32762,
+      "sha256": "4969a1309c90a4b411778f23b4915a09685770d39d4ff24af9a7bb1a493898ea"
+    },
+    {
+      "chapter": 57,
+      "title_tex": "किमान बदलाची चिन्हार्थमीमांसा",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-057.tex",
+      "bytes": 42414,
+      "sha256": "370f79545d5bf7e348e48d09e028c7be925176dc744c857becd6d2890069fd6c"
+    },
+    {
+      "chapter": 58,
+      "title_tex": "संचांची क्रमिक संकल्पना",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-058.tex",
+      "bytes": 45320,
+      "sha256": "00411d3ad32a57036fba58730a37f52a8865b64dc12cd4b72c0d9b1a94103f6e"
+    },
+    {
+      "chapter": 59,
+      "title_tex": "$\\Z$ कडे वाटचाल",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-059.tex",
+      "bytes": 50129,
+      "sha256": "927ba5b1979d2f170d2bd45aa98e9a39f68f7afdc8ab7e8581ecc0afe8ac3dea"
+    },
+    {
+      "chapter": 60,
+      "title_tex": "क्रमसूचक संख्या",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-060.tex",
+      "bytes": 64001,
+      "sha256": "59af40a8581f2e881ad02936a84491d0b022658ec7e0c9e304b16c3db5138842"
+    },
+    {
+      "chapter": 61,
+      "title_tex": "टप्पे आणि प्रतांक",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-061.tex",
+      "bytes": 41023,
+      "sha256": "f7dc8c498e21a232cc2ab63c4352944e628fd8537d13cbf04b00947f0c0a0545"
+    },
+    {
+      "chapter": 62,
+      "title_tex": "प्रतिस्थापन",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-062.tex",
+      "bytes": 65961,
+      "sha256": "ee56f555444e4ccfe076561e153d11fbec6f74f7450c23d93f893cbcaf36bcfd"
+    },
+    {
+      "chapter": 63,
+      "title_tex": "क्रमसूचक अंकगणित",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-063.tex",
+      "bytes": 37054,
+      "sha256": "9289b29c89bd495800f4610e901dea1c8eb9115ee54ddc684f0d02805eb7fea3"
+    },
+    {
+      "chapter": 64,
+      "title_tex": "संचांक",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-064.tex",
+      "bytes": 40342,
+      "sha256": "96f7e1243060a5882d53f0aab905b0475246718ff22652be0c9914b7c0f895cc"
+    },
+    {
+      "chapter": 65,
+      "title_tex": "संचांकांचे अंकगणित",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-065.tex",
+      "bytes": 51263,
+      "sha256": "4d834d1e4d41844bd7f087d739e9a4db5a6e438313fbd2620977c5eee44cbef6"
+    },
+    {
+      "chapter": 66,
+      "title_tex": "निवड",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-066.tex",
+      "bytes": 76989,
+      "sha256": "691cf8739d2eb21311647af3ceba362eb9a3477b667f9f43556315f60091a642"
+    },
+    {
+      "chapter": 67,
+      "title_tex": "सिद्धता",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-067.tex",
+      "bytes": 119044,
+      "sha256": "be2b326a07e8219777c73d0f55a2dea99a7a344c5324be4cb963cc6ab4f193ac"
+    },
+    {
+      "chapter": 68,
+      "title_tex": "विगमन",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-068.tex",
+      "bytes": 58987,
+      "sha256": "d5203a67f3ea6c9c6c061df690b0e6bd7db9d2c3096567d2fa3854ee084a509c"
+    },
+    {
+      "chapter": 69,
+      "title_tex": "कट-निर्मूलन",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-069.tex",
+      "bytes": 140814,
+      "sha256": "9d4521143392d8c6bd3968f449ef0b691abae1eb9a38a945378e5dc576f7688a"
+    },
+    {
+      "chapter": 70,
+      "title_tex": "नैसर्गिक निगमन",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-070.tex",
+      "bytes": 87083,
+      "sha256": "08b9e4d61ba485b49c81c0e8fe2827637a4bf23ea2b602f4d7f297c3d144dc9d"
+    },
+    {
+      "chapter": 71,
+      "title_tex": "सामान्यरूपीकरण",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-071.tex",
+      "bytes": 73317,
+      "sha256": "133d38a4cdef8c577f802e9a3eead774889de17de6ca284b073177dda28abd12"
+    },
+    {
+      "chapter": 72,
+      "title_tex": "सिद्धता-शोध",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-072.tex",
+      "bytes": 63563,
+      "sha256": "405dea3f56f5aeb742fdda3ad7b1f337551d2b93ddae086bd6166eb6cc4875aa"
+    },
+    {
+      "chapter": 73,
+      "title_tex": "विधाने म्हणजे प्रकार",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-073.tex",
+      "bytes": 93553,
+      "sha256": "a6a75436684d791eab1f45a8c44540ecf3c66ad604a45c1c317375a01fc601a1"
+    },
+    {
+      "chapter": 74,
+      "title_tex": "क्रमवर्ती कलन",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-074.tex",
+      "bytes": 132943,
+      "sha256": "cc2cd1196956496cf99df9c378638ca3c602f9ea74424f803e94580b12ff9d96"
+    },
+    {
+      "chapter": 75,
+      "title_tex": "चरित्रे",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-075.tex",
+      "bytes": 84205,
+      "sha256": "189af83e5f49e38e479b5567e324c8884cf50184bf70ea042bee9ed8c8b9605d"
+    },
+    {
+      "chapter": 76,
+      "title_tex": "संच उपपत्तीचा इतिहास आणि दंतकथा",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-076.tex",
+      "bytes": 55127,
+      "sha256": "07c0e6bd20b9771d5d26c21b2ee10930292aab809fe6ee4619e21e135f6ba92c"
+    },
+    {
+      "chapter": 77,
+      "title_tex": "ग्रीक वर्णमाला",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-077.tex",
+      "bytes": 1947,
+      "sha256": "176b64047bce765ba04af7ffd663dde6424c6afa930d26af8864d164e3fc19b3"
+    },
+    {
+      "chapter": 78,
+      "title_tex": "फ्राक्टूर वर्णमाला",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-078.tex",
+      "bytes": 2323,
+      "sha256": "bcc6f213c37925ff061f92fb5a7d28e1f28ebe22d15b12f66586c6615e91ebbc"
+    },
+    {
+      "chapter": 79,
+      "title_tex": "मूळ संकलनमार्गाबाहेरील विभाग",
+      "source_kind_mr": "संचयी ग्रंथाचा प्रकरण-स्रोतखंड",
+      "filename": "11-openlogic-mr-chapter-079.tex",
+      "bytes": 465159,
+      "sha256": "1d535ef4e62456906dd86f2d1315fb41194d6a99fb87ea6f0cb79584d5215033"
+    }
+  ],
+  "full_edition_complete": true,
+  "release_reproduction_verified": false,
+  "epub": {
+    "source_units": 722,
+    "reading_documents": 98,
+    "mathml_roots": 38988,
+    "epubcheck_version": "5.3.0",
+    "qa_sha256": "39c7c94c05f6b7a11ed10bb2e6cfeadfddd920d599f480f9c0f6d5bdf8daacac",
+    "visual_qa_sha256": "3d8e8f660948d9eef282ce3bf2e3b097b1729f9812919b7877634d19228866a1"
+  },
+  "retrospective_canon_recheck": {
+    "date": "2026-09-29",
+    "contexts": 101,
+    "canon_sources": 124,
+    "canon_passages": 181,
+    "sha256": "de35c794bf1fc92700e552c8ff6e0ea7913413681c35106407cfcedfb42f5af8"
+  }
+}

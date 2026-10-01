@@ -1,6 +1,7 @@
 % Part: normal-modal-logic
 % Chapter: sequent-calculus
 % Section: more-rules
+%READERNOTE{SOL6-A185: मोडल क्रमवर्ती प्रणाल्यांच्या तक्त्यात मूळ नियमांची नावे primitive Box/Diamond निवडीनुसार केली; दोन्ही primitive असताना दोन्ही नियम दाखवले. Diamond-only कट-सिद्धतेतील डाव्या सूत्रांच्या अदलाबदलीचे चुकीचे उजवे नियम-नाव डावे केले. कटविना असंपूर्णतेचा दावा या विभागातील विशिष्ट कलनापुरता स्पष्ट केला.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -173,21 +174,25 @@
       \hline
       तर्कशास्त्र & $R$ हा \dots आहे & नियम\\
       \hline
-      $\Log{T} = \Log{KT}$ & परावर्ती & $\Box$,
+      $\Log{T} = \Log{KT}$ & परावर्ती & \iftag{prvBox}{$\Box$\iftag{prvDiamond}{, }{}}{}%
+      \iftag{prvDiamond}{$\Diamond$}{},
       \iftag{prvBox}{T$\Box$}{}%
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{T$\Diamond$}{}
       \\ \hline
-      $\Log{D} = \Log{KD}$ & सर्वत्र उत्तरवर्ती & $\Box$,
+      $\Log{D} = \Log{KD}$ & सर्वत्र उत्तरवर्ती & \iftag{prvBox}{$\Box$\iftag{prvDiamond}{, }{}}{}%
+      \iftag{prvDiamond}{$\Diamond$}{},
       \iftag{prvBox}{%
         \iftag{prvDiamond}{D}{D$\Box$}}{D$\Diamond$}
       \\ \hline
-      $\Log{K4}$ & संक्रमक & $\Box$,
+      $\Log{K4}$ & संक्रमक & \iftag{prvBox}{$\Box$\iftag{prvDiamond}{, }{}}{}%
+      \iftag{prvDiamond}{$\Diamond$}{},
       \iftag{prvBox}{4$\Box$}{}%
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{4$\Diamond$}{}
       \\ \hline
-      $\Log{B} = \Log{KTB}$ & परावर्ती, & $\Box$,
+      $\Log{B} = \Log{KTB}$ & परावर्ती, & \iftag{prvBox}{$\Box$\iftag{prvDiamond}{, }{}}{}%
+      \iftag{prvDiamond}{$\Diamond$}{},
       \iftag{prvBox}{T$\Box$}{}%
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{T$\Diamond$}{}\\
@@ -196,7 +201,8 @@
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{B$\Diamond$}{}
       \\ \hline
-      $\Log{S4} = \Log{KT4}$ & परावर्ती, & $\Box$,
+      $\Log{S4} = \Log{KT4}$ & परावर्ती, & \iftag{prvBox}{$\Box$\iftag{prvDiamond}{, }{}}{}%
+      \iftag{prvDiamond}{$\Diamond$}{},
       \iftag{prvBox}{T$\Box$}{}%
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{T$\Diamond$}{}\\
@@ -205,7 +211,8 @@
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{4$\Diamond$}{}
       \\ \hline
-      $\Log{S5} = \Log{KT5}$ & परावर्ती, & $\Box$,
+      $\Log{S5} = \Log{KT5}$ & परावर्ती, & \iftag{prvBox}{$\Box$\iftag{prvDiamond}{, }{}}{}%
+      \iftag{prvDiamond}{$\Diamond$}{},
       \iftag{prvBox}{T$\Box$}{}%
       \iftag{notprvBox,notprvDiamond}{}{, }%
       \iftag{prvDiamond}{T$\Diamond$}{}\\
@@ -298,7 +305,7 @@
 \end{ex}
 }
 \begin{ex}
-\Log{S5} साठीचे क्रमवर्ती कलन \Cut{} नियमाशिवाय
+या विभागात दिलेले \Log{S5} साठीचे क्रमवर्ती कलन \Cut{} नियमाशिवाय
 संपूर्ण नाही; उदा., \iftag{prvBox}{$\Diamond\Box !A \lif !A$}{$!A \lif
 \Box\Diamond !A$} हे~$\Log{S5}$ मध्ये वैध असलेले
 सूत्र~\Cut शिवाय सिद्ध करता येत नाही. पुढे~\Cut
@@ -344,7 +351,7 @@
 \UnaryInf$\lnot\Diamond!A , \Diamond!A \fCenter$
 \RightLabel{5$\Diamond$}
 \UnaryInf$\Diamond\lnot\Diamond!A , \Diamond!A\fCenter$
-\RightLabel{\RightR{\Exchange}}
+\RightLabel{\LeftR{\Exchange}}
 \UnaryInf$\Diamond!A, \Diamond\lnot\Diamond!A\fCenter $
 
 \RightLabel{\Cut}

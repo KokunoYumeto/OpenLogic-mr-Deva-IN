@@ -1,0 +1,2893 @@
+% संपूर्ण मराठी ग्रंथातील प्रकरण 69: कट-निर्मूलन
+% हा संपादनयोग्य स्रोतखंड आहे. संकलनासाठी संपूर्ण स्रोतसंग्रहातील
+% अक्षररूपे, पूर्वभाग, चिन्हव्याख्या आणि आकृती-स्रोत आवश्यक आहेत.
+% मूळ: Open Logic Project; मजकूर आणि रूपांतर CC BY 4.0.
+% यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
+% GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.
+% दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.
+\chapter{कट-निर्मूलन}\label{pt:cut:chap}
+\begin{editorial}हे पूर्ण अनुवादित पूरक प्रकरण स्थानिक निदानासाठी मांडले आहे. मूळ माएहारा-सिद्धतेतील गाळलेला चर-पदाचा प्रसंग SOL6-A296 मध्ये भाषा-सीमेच्या आधारे पूर्ण केला आहे; OLINC-344 ही ऐतिहासिक स्रोत-नोंद आहे.\end{editorial}
+
+
+
+
+
+
+
+
+
+
+\section{परिचय}\label{pt:cut:int:sec}
+
+\Cut{} नियम असा आहे:
+\[
+\Axiom$\Gamma \fCenter \Delta, A$
+\Axiom$A, \Pi \fCenter \Lambda$
+\RightLabel{\Cut}
+\BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda$
+\DisplayProof
+\]
+(सूत्र~$A$ याला
+\emph{कट-सूत्र} म्हणतात.)
+
+\Cut{} हा नियम गेंटझेन यांच्या
+मूळ क्रमवर्ती कलनात~\Log{LK} होता.
+गेंटझेन यांचे \emph{Hauptsatz}
+(“मुख्य प्रमेय”) असे सांगते की
+~\Log{LK} मध्ये सिद्धतायोग्य असलेली
+प्रत्येक क्रमवर्ती \Cut{} न वापरताही
+सिद्धतायोग्य आहे; म्हणजे
+~\Log{LK} मधील सिद्धतांतून
+\Cut{} “काढून टाकता” येतो.
+आपल्या \Log{G1c} आणि \Log{G3c}
+पद्धतींत \Cut{} नाही; तरी त्यांच्याबाबतही
+प्रश्न पडतो: \Cut{} आणि
+~\Log{G1c} चे (किंवा \Log{G3c} चे)
+इतर नियम वापरणाऱ्या सिद्धता मधून
+\Cut{} काढून टाकता येईल का?
+आपल्या आधी निश्चित केलेल्या
+परिभाषेत हाच प्रश्न असा आहे:
+\Cut{} हा \Log{G1c} चा
+(किंवा \Log{G3c} चा)
+ग्राह्य नियम आहे का?
+
+कट-निर्मूलन प्रमेय हा सिद्धता
+उपपत्तीतील कदाचित सर्वाधिक महत्त्वाचा
+आणि प्रसिद्ध निष्कर्ष आहे.
+सुरुवातीला आवश्यक वाटू शकणारा
+नियम \Log{G1c} आणि \Log{G3c}
+यांना प्रत्यक्षात लागत नाही, हे
+तो दाखवतो. कारण प्रत्यक्ष सिद्धता
+औपचारिक करताना उपप्रमेयांचा
+वापर कसा दाखवायचा हा प्रश्न
+पडतो. गणितज्ञ प्रथम एक निष्कर्ष
+सिद्ध करतात आणि मग दुसऱ्या
+निष्कर्षाच्या सिद्धतेत त्याचा
+आधार घेतात. म्हणून उपप्रमेय
+$L$ ची सिद्धता प्रथम
+$\Sequent L$ या क्रमवर्तीच्या
+सिद्धता म्हणून औपचारिक करता येईल.
+मग $L$ वापरणाऱ्या दुसऱ्या
+निष्कर्ष~$R$ ची सिद्धता
+$L \Sequent
+R$ या क्रमवर्तीच्या
+सिद्धता म्हणून औपचारिक करू.
+केवळ $R$ ची, म्हणजे
+$\Sequent R$ ची
+सिद्धता आहे, हे कसे ठरवायचे?
+त्या दोन सिद्धता जोडण्याचा
+मार्ग हवा; \Cut{} नियमाने
+ते करता येईल.
+
+\Log{G1c} आणि \Log{G3c}
+संपूर्ण आहेत, असे आपण सांगितले:
+म्हणून सिद्ध होण्याची अपेक्षा
+असलेल्या सर्व वैध क्रमवर्ती
+ते सिद्ध करतात. हे थेटही
+सिद्ध करता येते. पण गेंटझेन
+लिहीत होते तेव्हा केवळ स्वयंसिद्धकीय
+निष्पत्ती-पद्धती संपूर्ण आहेत,
+हे ज्ञात होते. \Log{LK} ची
+संपूर्णता दाखवण्यासाठी गेंटझेन
+यांनी स्वयंसिद्धकीय पद्धतीतील
+निष्पत्तीचे
+~\Log{LK} मधील सिद्धता मध्ये
+भाषांतर दिले; त्यात
+\Cut{} अत्यावश्यक होता.
+कट-निर्मूलन केवळ अभिजात
+तर्कशास्त्रापुरते महत्त्वाचे नाही:
+इतर अनेक तर्कशास्त्रांनाही
+क्रमवर्ती कलने आहेत. काहींसाठी
+त्या कलनांची संपूर्णता थेट
+सिद्ध करणे कठीण किंवा अशक्य
+असते; त्यामुळे इतर पद्धतींमधून
+\Cut{} वापरून केलेले भाषांतर
+हाच संपूर्णता दाखवण्याचा मार्ग असतो.
+मग \Cut{} अनावश्यक आहे आणि
+\Cut{} नसलेली पद्धतही संपूर्ण
+आहे, हे स्थापित करण्यासाठी
+सिद्धता-उपपत्तीय कट-निर्मूलन
+सिद्ध करणे आवश्यक ठरते.
+
+कट-निर्मूलनाचा उपयोग इतर
+स्वतंत्रपणे महत्त्वाचे निष्कर्ष
+मिळवण्यासाठीही होतो. त्यांपैकी
+क्रेगचे अंतर्वेशन उपप्रमेय आणि
+एरब्राँचे प्रमेय ही दोन उदाहरणे
+आपण पाहू.
+
+कट-निर्मूलनाच्या सिद्धतेत
+बहुधा \Cut{} वापरणाऱ्या
+सिद्धता चे त्याविना
+सिद्धतेत रूपांतर कसे करावे,
+हे दाखवले जाते. ही रूपांतरे
+सहसा “स्थानिक” असतात:
+सिद्धतेचा एक भाग
+(साधारणपणे \Cut{} अनुमानाने
+संपणारी उप-सिद्धता)
+घेऊन त्याच्या जागी
+त्याच क्रमवर्तीची दुसरी
+उप-सिद्धता ठेवतो;
+तिच्यातील \Cut{} अनुमान
+काढलेले किंवा इतर
+अनुमानांनी बदललेले असते.
+अशा युक्तिवादांनी \Cut{}
+असलेल्या सिद्धता चे
+त्याविना सिद्धतांत रूपांतर
+करणारी पायरी-पायरीची
+अल्गोरिदम मिळते. उपयोगांत
+कट-निर्मूलन प्रक्रिया वापरताना
+यातून अधिक माहिती मिळते.
+उदाहरणार्थ, अंतर्वेशन उपप्रमेयाची
+अशी प्रतिमान-उपपत्तीय सिद्धता
+आहे की “$A \lif B$”
+वैध असेल, तर अंतर्वेशक अस्तित्वात
+असतो (आत्ता अंतर्वेशक म्हणजे
+काय याकडे दुर्लक्ष करा).
+कट-निर्मूलन वापरणारा
+सिद्धता-उपपत्तीय युक्तिवाद
+$A
+\lif B$ ची सिद्धता
+घेऊन अंतर्वेशक देणारी
+अल्गोरिदम पुरवतो. प्रतिमान
+उपपत्तीच्या युक्तिवादाच्या
+तुलनेत ही सिद्धता-उपपत्तीय
+पद्धत \emph{रचनात्मक} आहे.
+
+कट-निर्मूलन प्रमेय सिद्ध
+करण्याच्या दोन प्रचलित पद्धती
+आहेत. पहिली, गेंटझेनपासून
+आलेली, सिद्धतेतील सर्वोच्च
+स्थानी असलेले कट काढता
+येतात हे दाखवते आणि मग
+असे कट संपेपर्यंत काढत जाते.
+दुसरी, मूळची श्यूटे आणि
+टेट यांची, सिद्धता मधील
+सर्वाधिक गुंतागुंतीच्या कटांवर
+लक्ष केंद्रित करते; इतर
+कोणत्याही कटच्या सूत्र
+ची खोली अधिक नाही, या
+अर्थाने महत्तम असलेले
+कट ती एकामागोमाग काढते.
+दोन्ही पद्धतींचे फायदे
+आणि मर्यादा आहेत. काही
+पद्धतींमध्ये एक मार्ग
+चालतो, तर दुसरा अवघड
+किंवा अशक्य असतो.
+म्हणून आपण दोन्ही मार्ग
+वर्णन करू. ~\Log{G3c}
+साठी कट-निर्मूलन सिद्ध करू.
+खरे तर नेहमीचा \Cut{}
+नव्हे, तर \emph{संदर्भ-सामायिक कट}~\CutCS:
+\[
+\Axiom$\Gamma \fCenter \Delta, A$
+\Axiom$A, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+एखाद्या क्रमवर्ती कलनात
+दुर्बलीकरण आणि आकुंचन
+हे प्रत्यक्ष नियम म्हणून
+(जसे \Log{G1c} मध्ये)
+किंवा ग्राह्य नियम म्हणून
+(जसे \Log{G3c} मध्ये)
+असतील, तर \Cut{} द्वारे
+\CutCS चे अनुकरण करता
+येते, आणि उलटही.
+आपण \Cut ऐवजी \CutCS{}
+निवडतो, कारण पहिली
+कट-निर्मूलन पद्धत \CutCS साठी
+वर्णन करणे सोपे आहे,
+आणि दुसरी पद्धत केवळ
+\CutCS साठीच चालते.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सर्वोच्च स्थानी असलेले कट काढणे}\label{pt:cut:top:sec}
+
+\begin{defn}
+एका \CutCS{} नियमाने संपणारी सिद्धता~$\pi$
+विचारात घ्या:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$A, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+तिच्यात अन्य \CutCS{} अनुमाने नसावीत.
+$\pi$ ची \emph{कट-उंची} म्हणजे
+$\cheight{\pi} = \pheight{\pi_1} + \pheight{\pi_2}$.
+$\pi$ ची \emph{कट-कोटी} म्हणजे
+$\cutrank{\pi} = \depth{A}$.
+\end{defn}
+
+\begin{lem}\label{pt:cut:top:lem:cut-adm-G3c}
+\CutCS{} नियम~\Log{G3c} मध्ये ग्राह्य आहे.
+दुसऱ्या शब्दांत, सिद्धता~$\pi$ ही एका
+\CutCS{} ने संपत असेल आणि इतरत्र
+फक्त~$\Log{G3c}$ चे नियम वापरत असेल,
+तर त्याच अंतिम क्रमवर्तीची
+\Log{G3c} मधील सिद्धता~$\pi'$ असते.
+\end{lem}
+
+\begin{proof}
+कटची उंची आणि कोटी यांवरील
+दुहेरी विगमनाने सिद्धता करू.
+सिद्धता~$\pi$ चा शेवट असा आहे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$A, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+
+विगमनाचा आधार: $\cheight{\pi} = 0$
+आणि $\cutrank{\pi} = 0$.
+$\cheight{\pi} = \pheight{\pi_1}
++ \pheight{\pi_2} = 0$ असल्याने
+$\Gamma \Sequent \Delta, A$ आणि
+$A, \Gamma \Sequent \Delta$
+ही दोन्ही स्वयंसिद्धके आहेत.
+दोन प्रसंग आहेत: (a)~$A$ हा
+त्यांपैकी एखाद्यात मुख्य नाही,
+किंवा (b)~$A$ हा दोन्हींत मुख्य आहे.
+खाली दोन्ही प्रसंगांत
+$\Gamma \Sequent \Delta$ हे स्वयंसिद्धक
+असलेच पाहिजे हे दाखवू
+(त्यासाठी विगमन गृहीतक लागत नाही).
+
+आता $\pi_1$ आणि $\pi_2$ स्वयंसिद्धके
+आहेत की अनुमानाने संपतात, तसेच त्या
+अनुमानात~$A$ मुख्य आहे की नाही,
+यावरून प्रसंग वेगळे करू. प्रसंग A व~B
+विगमनाचा आधार समाविष्ट करतात.
+विगमन पायरीत $\cheight{\pi} > 0$
+किंवा $\cutrank{\pi} > 0$
+(किंवा दोन्ही) असे मानतो. विगमन
+गृहीतकानुसार, एका \CutCS{} ने
+संपणाऱ्या सिद्धता मधील अंतिम
+\CutCS{} काढता येतो, जर तिची
+कट-कोटी $= \cutrank{\pi}$ आणि
+कटची उंची $< \cheight{\pi}$
+असेल, किंवा तिची कट-कोटी
+$< \cutrank{\pi}$ असेल.
+$\cheight{\pi} = 0$ चा प्रसंग
+(दोन्ही आधार स्वयंसिद्धके) A व~B
+मध्ये येतो. $\cheight{\pi} > 0$
+चे प्रसंग C--D मध्ये येतात.
+
+\paragraph{प्रसंग A:}
+काही $B$ हे $\Gamma$ आणि~$\Delta$
+या दोन्हींत येते. $B$ अणुसूत्र
+असेल, तर $\Gamma \Sequent \Delta$
+हे स्वयंसिद्धक असते; अन्यथा
+\ref{pt:seq:ex:prop:G3c-axioms} नुसार
+त्याची \Log{G3c} मधील \CutCS{}
+विरहित सिद्धता~$\pi'$ असते.
+यात विगमन आधाराचा प्रसंग~(a) येतो:
+$\Gamma \Sequent \Delta, A$
+किंवा $A, \Gamma \Sequent \Delta$
+हे स्वयंसिद्धक असून त्यात $A$
+मुख्य नसेल, तर अन्य अणुसूत्र~$B$
+हे $\Gamma$ आणि~$\Delta$ या
+दोन्हींत असते. विगमन पायरीतही
+एखादा आधार स्वयंसिद्धक असून त्यात
+$A$ मुख्य नसेल, तर हा प्रसंग
+लागू होतो; दुसरा आधार नियमाचा
+निष्कर्ष असला तरी चालते.
+
+\paragraph{प्रसंग B:}
+दोन्ही आधार स्वयंसिद्धके आहेत
+आणि $A$ मुख्य, म्हणून अणुसूत्र,
+आहे. डावा आधार
+$\Gamma \Sequent \Delta, A$
+पाहा. या $\Gamma \Sequent \Delta, A$
+मध्ये $A$ मुख्य असल्यामुळे ते
+$\Gamma$ मध्ये असलेच पाहिजे
+(नसते तर ही क्रमवर्ती स्वयंसिद्धक
+ठरली नसती). त्याचप्रमाणे,
+$A$ हे $\Delta$ मध्येही असलेच
+पाहिजे; अन्यथा
+$A, \Gamma \Sequent \Delta$
+स्वयंसिद्धक ठरणार नाही.
+त्यामुळे $A$ अणुसूत्र असून
+$\Gamma$ आणि $\Delta$ या
+दोन्हींत येते; म्हणजे
+$\Gamma \Sequent \Delta$
+हे स्वयंसिद्धक आहे. हा
+विगमन आधाराचा प्रसंग~(b) आहे.
+
+\begin{center}
+प्रसंग A आणि B चे पर्यायी रूप
+\end{center}
+
+\paragraph{प्रसंग A:}
+कटच्या आधारांपैकी एक
+$C, \Gamma' \Sequent \Delta', C$
+या रूपाचे स्वयंसिद्धक आहे,
+जेथे $C$ अणुसूत्र आहे.
+$C$ हे कटचे सूत्र~$A$
+नसेल, तर $C$ हे $\Gamma$
+आणि~$\Delta$ या दोन्हींत
+असलेच पाहिजे. मग
+$\Gamma \Sequent \Delta$
+हे स्वयंसिद्धक असून तेच~$\pi'$
+घेता येते. $C \ident A$
+कटचे सूत्र असेल, तर
+डावा आधार स्वयंसिद्धक असल्यास
+$A \in \Gamma$ आणि
+$\Gamma = \Gamma', A$;
+उजवा आधार स्वयंसिद्धक असल्यास
+$A \in \Delta$ आणि
+$\Delta = \Delta', A$.
+पहिल्या प्रसंगात $\pi_2$
+ही $A, A, \Gamma' \Sequent \Delta$
+ची सिद्धता असते;
+\LeftR{\Contraction} ची ग्राह्यता
+(\ref{pt:seq:inv:prop:G3c-cont-adm})
+वापरून $\Gamma \Sequent \Delta$
+ची सिद्धता मिळते.
+दुसऱ्या प्रसंगात $\pi_1$
+ही $\Gamma \Sequent \Delta', A, A$
+ची सिद्धता असते;
+\RightR{\Contraction} ची ग्राह्यता
+वापरून $\Gamma \Sequent \Delta$
+ची सिद्धता मिळते.
+
+
+\paragraph{प्रसंग B:}
+एखादा आधार
+$\lfalse, \Gamma' \Sequent \Delta'$
+या रूपाचा स्वयंसिद्धक आहे.
+डावा आधार असा असेल, तर
+$\lfalse \in \Gamma$ आणि
+$\Gamma \Sequent \Delta$
+हेही स्वयंसिद्धक आहे. उजवा
+आधार असा असेल, तर
+$\lfalse \in \Gamma$
+(मग पुन्हा $\Gamma \Sequent \Delta$
+स्वयंसिद्धक असते) किंवा
+$A \ident \lfalse$.
+दुसऱ्या उपप्रसंगात $\pi_1$
+ही $\Gamma \Sequent \Delta, \lfalse$
+ची सिद्धता आहे. $\pi_1$
+मधील प्रत्येक क्रमवर्तीच्या
+उत्तरांगातून $\lfalse$ ची
+एक प्रत काढून
+$\Gamma \Sequent \Delta$
+ची सिद्धता मिळते.
+(सराव: $\pheight{\pi_1}$
+वरील विगमनाने हे तपासा.)
+
+आता प्रसंग~A किंवा B लागू
+होत नाही असे समजा. उर्वरित
+प्रसंगांत $\cheight{\pi} > 0$;
+म्हणजे किमान एका आधाराचा
+शेवट नियमाच्या अनुमानाने होतो.
+
+\paragraph{प्रसंग C आणि D: कटचे स्थान बदलणे.}
+प्रसंग~C आणि~D मधील सर्व शक्यतांत
+एक सामाईक नमुना आहे. सुरुवातीला
+\CutCS{} ने संपणारी सिद्धता असते;
+तिच्या एका आधाराचा निष्कर्ष नियम~$R$
+ने मिळतो, पण कटचे सूत्र~$A$
+त्या नियमात मुख्य नसते (काही अन्य
+सूत्र~$D$ मुख्य असते).
+या सिद्धता मध्ये \CutCS{}
+हा नियम~$R$ नंतर येतो; तिचे
+योजनात्मक रूप असे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta', D, A$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$A, \Gamma, \Pi \fCenter \Delta', \Lambda$
+\RightLabel{$R$}
+\UnaryInf$A, \Gamma \fCenter \Delta', D$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta', D$
+\DisplayProof
+\]
+हे रूप फक्त त्या प्रसंगाचे आहे
+जेथे $R$ हा एक-आधाराचा उजवा
+नियम आहे, $A$ हे $R$ चे
+मुख्य सूत्र नाही, आणि
+\emph{मुख्य} असलेले सूत्र~$D$
+हे \CutCS{} च्या उजव्या
+आधाराच्या उत्तरांगात आहे.
+$D$ पूर्वांगात असेल (म्हणजे
+$R$ डावा नियम असेल) किंवा
+\CutCS{} च्या डाव्या आधारात
+असेल, तर रूप अर्थातच बदलेल.
+$\Pi$ आणि~$\Lambda$ मधील
+सूत्रे या नियम~$R$
+च्या सक्रिय सूत्रे दर्शवतात.
+
+आता हा क्रम उलटून
+$R$ हा~\CutCS{} नंतर येणारी
+सिद्धता विचारात घ्या:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma, \Pi \fCenter \Delta', D, \Lambda, A$
+\AxiomC{}
+\RightLabel{$\pi_3'$}
+\Deduce$A, \Gamma, \Pi \fCenter \Delta', D, \Lambda$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma, \Pi \fCenter \Delta', D, \Lambda$
+\RightLabel{$R$}
+\UnaryInf$\Gamma, \fCenter \Delta', D, D$
+\DisplayProof
+\]
+$\pi_1$ आणि $\pi_3$ यांवर
+उंची न वाढवणारे दुर्बलीकरण
+लावून अनुक्रमे $\pi_1'$ आणि
+$\pi_3'$ मिळवतो.
+
+\CutCS{} आणि~$R$ यांचा क्रम
+बदलत असल्यामुळे याला
+“कटला~$R$ च्या वर नेणे” म्हणतात.
+याने \CutCS{} च्या उजव्या
+आधारावर संपणाऱ्या सिद्धता
+ची उंची कमी होते; म्हणून कटची
+उंची कमी होते. म्हणजे
+नव्या \CutCS{} वरील
+उप-सिद्धता ची उंची
+$\pi_1$ आणि $\pi_3$ यांच्या
+उंचीपेक्षा मोठी नसते, म्हणून
+कटची उंची कमी होते
+(उजवीकडील एक अनुमान काढले आहे).
+आता विगमन गृहीतक लावून \CutCS{}
+अनुमान काढता येते. शेवटी
+$\RightR{\Contraction}$ ची ग्राह्यता
+वापरून~$D$ ची अतिरिक्त
+प्रत काढतो.
+
+\paragraph{प्रसंग C:}
+$\pi_1$ आणि $\pi_2$ यांपैकी
+किमान एकाचा शेवट एक-आधाराच्या
+नियम~$R$ ने होतो, आणि त्यात
+$A$ मुख्य नसते. एकूण 18 प्रसंग
+आहेत: \CutCS{} च्या डाव्या की
+उजव्या आधारात $A$ मुख्य नाही
+आणि नऊ एक-आधाराच्या नियमांपैकी
+(\LeftR{\lnot}, \RightR{\lnot},
+\RightR{\lor}, \LeftR{\land},
+\RightR{\lif}, आणि चार संख्यक नियम)
+$R$ कोणता आहे, यावर ते अवलंबून
+असतात. आपण फक्त दोन उदाहरणे
+पाहू: $\pi_2$ च्या अंतिम
+अनुमानात $A$ मुख्य नाही आणि ते
+अनुमान $\RightR{\lif}$ किंवा
+\LeftR{\lexists} आहे.
+इतर प्रसंग यांसारखेच असून
+सरावासाठी ठेवतो.
+
+समजा $\pi$ चा शेवट असा आहे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta', B \lif C, A$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$A, B, \Gamma \fCenter \Delta', C$
+\RightLabel{$\RightR{\lif}$}
+\UnaryInf$A, \Gamma \fCenter \Delta', B \lif C$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta', B \lif C$
+\DisplayProof
+\]
+येथे $\Delta = \Delta', B \lif C$.
+$\pi_1$ ला उंची न वाढवणारे
+दुर्बलीकरण
+(\ref{pt:seq:adm:prop:weak-G3c-adm})
+लावून $B, \Gamma \fCenter
+\Delta', B \lif C, C, A$
+ची सिद्धता $\pi_1'$ मिळवतो
+(डावीकडे $B$ आणि उजवीकडे
+$C$ घालतो). त्याचप्रमाणे
+\ref{pt:seq:adm:prop:weak-G3c-adm}
+हे~$\pi_3$ ला लावून
+$A, B, \Gamma \fCenter
+\Delta', B \lif C, C$
+ची सिद्धता~$\pi_3'$ मिळते
+(उजवीकडे $B \lif C$ घालतो).
+विगमन गृहीतक पुढील सिद्धतेला
+लागू होते:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$B, \Gamma \fCenter \Delta', B \lif C, C, A$
+\AxiomC{}
+\RightLabel{$\pi_3'$}
+\Deduce$A, B, \Gamma \fCenter \Delta', B \lif C, C$
+\RightLabel{\CutCS}
+\BinaryInf$B, \Gamma \fCenter \Delta', B \lif C, C$
+\DisplayProof
+\]
+यातील कटचे सूत्र~$A$
+आहे: या सिद्धता ची कट-कोटी
+$\pi$ इतकीच, पण कटची उंची
+कमी आहे. त्यामुळे \CutCS{}
+विरहित \Log{G3c} मधील
+$B, \Gamma \fCenter
+\Delta', B \lif C, C$
+ची सिद्धता~$\pi_4$ मिळते.
+$\RightR{\lif}$ लावून
+$\Gamma \fCenter \Delta',
+B \lif C, B \lif C$
+ची सिद्धता मिळते:
+\[
+\AxiomC{}
+\RightLabel{$\pi_4$}
+\Deduce$B, \Gamma \fCenter \Delta', B \lif C, C$
+\RightLabel{$\RightR{\lif}$}
+\UnaryInf$\Gamma \fCenter \Delta', B \lif C, B \lif C$
+\DisplayProof
+\]
+$\Gamma \Sequent \Delta$,
+म्हणजे $\Gamma \fCenter
+\Delta', B \lif C$,
+याची सिद्धता~$\pi'$
+मिळवण्यासाठी
+\ref{pt:seq:inv:prop:G3c-cont-adm},
+म्हणजे आकुंचनाची ग्राह्यता,
+वापरा.
+
+आता $\pi$ चा शेवट
+पुढीलप्रमाणे आहे असे समजा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\lexists[x][B(x)], \Gamma' \fCenter \Delta, A$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$A, B(c), \Gamma' \fCenter \Delta$
+\RightLabel{$\LeftR{\lexists}$}
+\UnaryInf$A, \lexists[x][B(x)], \Gamma' \fCenter \Delta$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\lexists[x][B(x)], \Gamma' \fCenter \Delta$
+\DisplayProof
+\]
+पुन्हा पुढील सिद्धतेला
+विगमन गृहीतक लावू:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1[B(c) \Sequent {}]$}
+\Deduce$\lexists[x][B(x)], B(c), \Gamma' \fCenter \Delta, A$
+\AxiomC{}
+\LeftLabel{$\pi_3[\lexists[x][B(x)] \Sequent {}]$}
+\Deduce$A, \lexists[x][B(x)], B(c), \Gamma' \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\lexists[x][B(x)], B(c), \Gamma' \fCenter \Delta$
+\RightLabel{\LeftR{\lexists}}
+\UnaryInf$\lexists[x][B(x)], \lexists[x][B(x)], \Gamma' \fCenter \Delta$
+\DisplayProof
+\]
+येथे आयगेन चराची अट पूर्ण होते.
+कारण $\pi_2$ मधील
+\LeftR{\lexists} वरील
+आयगेन चराच्या अटीनुसार
+$c$ हे $\lexists[x][B(x)]$,
+$\Gamma'$ किंवा~$\Delta$
+यांत येत नाही. शेवटी
+\ref{pt:seq:inv:prop:G3c-cont-adm}
+लावा.
+
+\paragraph{प्रसंग D:}
+$\pi_1$ आणि $\pi_2$ यांपैकी
+किमान एकाचा शेवट दोन-आधारांच्या
+नियम~$R$ ने होतो आणि त्यात
+$A$ मुख्य नसते. असे सहा
+प्रसंग आहेत. $\pi_2$ चा
+शेवट~$\RightR{\land}$ ने होत
+असताना त्याच्या अंतिम अनुमानात
+$A$ मुख्य नसतो हा प्रसंग
+पाहू; इतर तसेच आहेत.
+
+समजा $\pi$ चा शेवट असा आहे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta', B \land C, A$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$A, \Gamma \fCenter \Delta', B$
+\AxiomC{}
+\RightLabel{$\pi_4$}
+\Deduce$A, \Gamma \fCenter \Delta', C$
+\RightLabel{$\RightR{\land}$}
+\BinaryInf$A, \Gamma \fCenter \Delta', B \land C$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+विगमन गृहीतक पुढील
+सिद्धता ना लागू होते:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta', B \land C, B, A$
+\AxiomC{}
+\RightLabel{$\pi_3'$}
+\Deduce$A, \Gamma \fCenter \Delta', B \land C, B$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta', B \land C, B$
+\DisplayProof
+\]
+आणि
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$\Gamma \fCenter \Delta', B \land C, C, A$
+\AxiomC{}
+\RightLabel{$\pi_4'$}
+\Deduce$A, \Gamma \fCenter \Delta', B \land C, C$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta', B \land C, C$
+\DisplayProof
+\]
+येथे \Log{G3c} मधील
+सिद्धता $\pi_1'$ आणि
+$\pi_1''$ या $\pi_1$
+पासून उंची न वाढवणाऱ्या
+दुर्बलीकरणाने
+(\ref{pt:seq:adm:prop:weak-G3c-adm})
+मिळतात: एकदा उजवीकडे $B$
+आणि एकदा $C$ घालून.
+सिद्धता $\pi_3'$ आणि
+$\pi_4'$ या अनुक्रमे $\pi_3$
+आणि $\pi_4$ पासून
+उंची न वाढवणाऱ्या
+दुर्बलीकरणाने मिळतात:
+यात $\pi_3$ व $\pi_4$ यांची
+उंची टिकवून उजवीकडे $B \land C$
+घालून.
+
+
+विगमन गृहीतकानुसार
+\Log{G3c} मधील
+$\Gamma \fCenter \Delta', B \land C, B$
+आणि
+$\Gamma \fCenter \Delta', B \land C, C$
+यांच्या सिद्धता~$\pi_5$ आणि~$\pi_6$
+मिळतात. $\RightR{\land}$
+नियमाने त्यांना जोडून
+$\Gamma \Sequent \Delta',
+B \land C, B \land C$
+ची सिद्धता मिळते:
+\[
+\AxiomC{}
+\RightLabel{$\pi_5$}
+\Deduce$\Gamma \fCenter \Delta', B \land C, B$
+\AxiomC{}
+\RightLabel{$\pi_6$}
+\Deduce$\Gamma \fCenter \Delta', B \land C, C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma \fCenter \Delta', B \land C, B \land C$
+\DisplayProof
+\]
+$\Gamma \Sequent \Delta$,
+म्हणजे $\Gamma \fCenter
+\Delta', B \land C$,
+याची सिद्धता मिळवण्यासाठी
+\ref{pt:seq:inv:prop:G3c-cont-adm},
+म्हणजे आकुंचनाची ग्राह्यता,
+लावा.
+
+
+\paragraph{प्रसंग E: कटची कोटी कमी करणे.}
+शेवटचा प्रसंग असा की $\pi_1$
+आणि $\pi_2$ दोन्हींचा शेवट
+अशा अनुमानांनी होतो ज्यांत
+$A$ मुख्य असते. $A$ च्या
+संभाव्य मुख्य संकारक नुसार
+सहा प्रसंग होतात.
+
+प्रत्येक प्रसंगात कटचे
+सूत्र~$A$ असलेले
+\CutCS{} अनुमान आपण $A$
+च्या उप-सूत्रे वरील
+एक किंवा अधिक कटांत बदलतो;
+म्हणजे ज्या अनुमानांत $A$
+हे मुख्य सूत्र असते,
+त्यांच्या सक्रिय सूत्रे
+वर कट करतो. म्हणून या
+प्रसंगांना कट-अनुमानाचे
+“न्यूनीकरण” किंवा “परिवर्तन”
+म्हणतात.
+
+\begin{enumerate}
+\item $A \ident \lnot B$
+असेल, तर $\pi$ चा शेवट असा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$B, \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\lnot}}
+\UnaryInf$\Gamma \fCenter \Delta, \lnot B$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta, B$
+\RightLabel{\LeftR{\lnot}}
+\UnaryInf$\lnot B, \Gamma \fCenter \Delta$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+विगमन गृहीतकानुसार पुढील
+सिद्धतेतून \CutCS{} काढता येतो:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta, B$
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$B, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+
+\item
+$A \ident (B \lor C)$ असेल,
+तर $\pi$ चा शेवट असा आहे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta, B, C$
+\RightLabel{\RightR{\lor}}
+\UnaryInf$\Gamma \fCenter \Delta, B \lor C$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$B, \Gamma \fCenter \Delta$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$C, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$B \lor C, \Gamma \fCenter \Delta$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+\CutCS{} ने संपणारी पुढील
+सिद्धता विचारात घ्या:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta, B, C$
+\AxiomC{}
+\RightLabel{$\pi_2'''$}
+\Deduce$C, \Gamma \fCenter \Delta, B$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta, B$
+\DisplayProof
+\]
+येथे $\pi_2'''$ ही $\pi_2''$
+पासून उंची न वाढवणारे
+दुर्बलीकरण लावून मिळते.
+$\depth{C} < \depth{B \lor C}$
+असल्यामुळे तिची कट-कोटी
+$< \cutr{\pi}$ आहे.
+विगमन गृहीतकानुसार
+$\Gamma \fCenter \Delta, B$
+ची \Log{G3c} मधील
+सिद्धता~$\pi_1''$ मिळते.
+आता \CutCS{} ने संपणारी
+पुढील सिद्धता पाहा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$\Gamma \fCenter \Delta, B$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$B, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+हिची कट-कोटी
+$= \depth{B} < \depth{B \lor C}$
+असल्यामुळे विगमन गृहीतक
+पुन्हा लागू होते. त्यातून
+$\Gamma \fCenter \Delta$
+ची सिद्धता $\pi'$ मिळते.
+
+\item $A \ident (B \land C)$.
+हा प्रसंग सरावासाठी आहे.
+
+\item $A \ident (B \lif C)$
+असेल, तर $\pi$ चा शेवट असा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$B, \Gamma \fCenter \Delta, C$
+\RightLabel{\RightR{\lif}}
+\UnaryInf$\Gamma \fCenter \Delta, B \lif C$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta, B$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$C, \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$B \lif C, \Gamma \fCenter \Delta$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+$\pi_2''$ च्या पूर्वांगात $B$ घालून मिळालेल्या
+सिद्धतेला $\pi_2'''$ लिहू. आता दोन्ही आधारांचा सामायिक
+संदर्भ $B,\Gamma$ आहे. \CutCS{} ने संपणाऱ्या
+पुढील सिद्धता ची कट-कोटी $\pi$ पेक्षा कमी आहे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$B, \Gamma \fCenter \Delta, C$
+\AxiomC{}
+\RightLabel{$\pi_2'''$}
+\Deduce$C, B, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$B, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+विगमन गृहीतकानुसार
+$B, \Gamma \fCenter \Delta$
+ची सिद्धता~$\pi_1''$ मिळते.
+आता \CutCS{} ने संपणारी
+पुढील सिद्धता पाहा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta, B$
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$B, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+तिची कट-कोटीही $\pi$
+च्या कट-कोटीपेक्षा कमी आहे.
+म्हणून विगमन गृहीतकानुसार
+$\Gamma \fCenter \Delta$
+ची \Log{G3c}-सिद्धता~$\pi'$
+मिळते.
+\item $A \ident \lforall[x][B(x)]$
+असेल, तर $\pi$ चा शेवट असा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$\Gamma \fCenter \Delta, B(c)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$\Gamma \fCenter \Delta, \lforall[x][B(x)]$
+\LeftSubproofLabel{$\pi_1$}
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$B(t), \lforall[x][B(x)], \Gamma \fCenter \Delta$
+\RightLabel{\LeftR{\lforall}}
+\UnaryInf$\lforall[x][B(x)], \Gamma \fCenter \Delta$
+\RightSubproofLabel{$\pi_2$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+विगमन गृहीतकानुसार
+पुढील सिद्धतेतून \CutCS{}
+काढता येतो:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1''$}
+\Deduce$B(t), \Gamma \fCenter \Delta, \lforall[x][B(x)]$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$B(t), \lforall[x][B(x)], \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$B(t), \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+येथे $\pi_1''$ ही $\pi_1$
+पासून (फक्त~$\pi_1'$ पासून
+नव्हे!) उंची न वाढवणारे
+दुर्बलीकरण लावून मिळते.
+(या सिद्धता ची कट-कोटी
+तेवढीच, पण कटची उंची
+कमी आहे.) त्यामुळे
+$B(t), \Gamma \fCenter \Delta$
+ची सिद्धता~$\pi_2''$ मिळते.
+
+सिद्धता~$\pi_1'$ ची
+अंतिम क्रमवर्ती
+$\Gamma \Sequent \Delta, B(c)$
+आहे, जेथे $c$ हा
+$\RightR{\lforall}$ अनुमानाचा
+आयगेन चर आहे. म्हणून $c$ हे
+$B(x)$, $\Gamma$ किंवा~$\Delta$
+यांत येत नाही. सिद्धता~$\pi$
+नियमित आहे असे मानू; त्यामुळे
+$c$ हा फक्त पुढील
+$\RightR{\lforall}$ अनुमानाचा
+आयगेन चर आहे आणि फक्त त्याच्या
+वर येतो. म्हणजे तो फक्त~$\pi_1'$
+मध्ये येतो आणि $\pi_1'$ मधील
+कोणत्याही अनुमानाचा आयगेन चर
+नसतो. $c$ हे $\pi_2$ मध्ये
+येत नसल्यामुळे $t$ मध्येही
+येत नाही.
+\ref{pt:seq:qua:lem:subst-regular}
+नुसार सिद्धता~$\Subst{\pi_1'}{t}{c}$
+ही $\Gamma \Sequent \Delta, B(t)$
+ची सिद्धता आहे. आता पुढील
+सिद्धता ला विगमन गृहीतक लावू:
+\[
+\AxiomC{}
+\RightLabel{$\Subst{\pi_1'}{t}{c}$}
+\Deduce$\Gamma \fCenter \Delta, B(t)$
+\AxiomC{}
+\RightLabel{$\pi_2''$}
+\Deduce$B(t), \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+(कटचे सूत्र~$B(t)$
+असल्यामुळे विगमन गृहीतक
+लागू होते; या सिद्धता ची
+कट-कोटी $\pi$ पेक्षा कमी आहे.)
+\item $A \ident \lexists[x][B(x)]$
+हा प्रसंग सरावासाठी ठेवतो.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+\ref{pt:cut:top:lem:cut-adm-G3c} च्या
+सिद्धतेतील प्रसंग~D चा
+पुढील उपप्रसंग तपासा:
+$\pi_1$ चा शेवट
+$\LeftR{\lif}$ ने होतो,
+पण त्याच्या अंतिम अनुमानात
+$A$ मुख्य नसते.
+(टीप: येथे नेमके काय सिद्ध
+करायचे, म्हणजे या प्रसंगात
+$\pi$ चे रूप काय, हे स्पष्ट
+मांडणेही सरावाचा भाग आहे.)
+\end{prob}
+
+\begin{prob}
+\ref{pt:cut:top:lem:cut-adm-G3c} च्या
+सिद्धतेतील प्रसंग~D चा
+पुढील उपप्रसंग तपासा:
+$\pi_1$ चा शेवट
+$\LeftR{\lforall}$ ने होतो,
+पण त्याच्या अंतिम अनुमानात
+$A$ मुख्य नसते.
+\end{prob}
+
+\begin{prob}
+\ref{pt:cut:top:lem:cut-adm-G3c} च्या
+सिद्धतेतील प्रसंग~E चा
+पुढील उपप्रसंग तपासा:
+$\pi_1$ आणि $\pi_2$
+या दोन्हींच्या अंतिम अनुमानात
+$A$ मुख्य आहे आणि
+$A \ident (B \land C)$.
+\end{prob}
+
+\begin{prob}
+\ref{pt:cut:top:lem:cut-adm-G3c} च्या
+सिद्धतेतील प्रसंग~E चा
+पुढील उपप्रसंग तपासा:
+$\pi_1$ आणि $\pi_2$
+या दोन्हींच्या अंतिम अनुमानात
+$A$ मुख्य आहे आणि
+$A \ident \lexists[x][B(x)]$.
+\end{prob}
+
+प्रसंग~E मध्ये विगमन
+गृहीतक ज्या \CutCS{} ने
+संपणाऱ्या सिद्धता वर
+लावतो, तिची कटची उंची
+मूळ सिद्धतेच्या कटच्या
+उंची पेक्षा मोठी
+असू शकते. उदाहरणार्थ,
+$A \ident (B \lif C)$
+असताना $\pi$ चे दोन
+\CutCS{} अनुमाने असणाऱ्या
+सिद्धता मध्ये रूपांतर
+केले:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma \fCenter \Delta, B$
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$B, \Gamma \fCenter \Delta, C$
+\AxiomC{}
+\RightLabel{$\pi_2'''$}
+\Deduce$C, B, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$B, \Gamma \fCenter \Delta$
+\RightSubproofLabel{$\pi_1''$}
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+वरचा \CutCS{}, जो
+$\pi_1'$ आणि $\pi_2''$
+यांच्यामध्ये आहे, त्याची
+कट-कोटी आणि कटची उंची
+दोन्ही $\pi$ पेक्षा कमी आहेत.
+पण विगमन गृहीतक लावल्याने
+मिळालेली सिद्धता~$\pi_1''$
+हिची कटची उंची आता
+$\pi$ पेक्षा कमी असण्याची
+गरज नाही. तरी खालच्या
+\CutCS{} चे कटचे सूत्र
+$B$ असल्यामुळे त्याची
+\emph{कोटी} $\pi$ च्या
+कट-कोटीपेक्षा कमी आहे.
+येथे $\pi_2'''$ हे आधीप्रमाणे $\pi_2''$ चे
+दुर्बलीकरण आहे; त्यामुळे वरच्या कटाच्या दोन्ही आधारांत
+$B,\Gamma$ हा सामायिक संदर्भ आहे. खालचा कट $B$
+काढतो; त्याचा निष्कर्ष $\Gamma\Sequent\Delta$ आहे.
+
+\ref{pt:cut:top:lem:cut-adm-G3c} नुसार
+सिद्धता मधील एक सर्वोच्च
+\CutCS{} अनुमान काढता येते.
+हे उपप्रमेय सर्वोच्च~\CutCS{}
+ने संपणाऱ्या उप-सिद्धता
+वर एकामागोमाग लावून
+सिद्धता मधील कितीही
+\CutCS{} अनुमाने काढता
+येतात.
+
+\begin{thm}\label{pt:cut:top:thm:cut-elim-G3c-topmost}
+$\Log{G3c} + \CutCS$ मधील
+कोणतीही सिद्धता $\pi$
+ही~\Log{G3c} मधील
+सिद्धता मध्ये रूपांतरित
+करता येते.
+\end{thm}
+
+\begin{proof}
+  $\pi$ मधील \CutCS{}
+  अनुमानांची संख्या~$n$
+  हिच्यावर विगमन करू.
+  $n=0$ असेल, तर काही
+  करायचे नाही: $\pi$
+  ही आधीच~\Log{G3c}
+  मधील सिद्धता आहे.
+  अन्यथा, सर्वोच्च
+  \CutCS{} अनुमानावर
+  संपणारी उप-सिद्धता~$\pi'$
+  विचारात घ्या. तिचे
+  एकमेव \CutCS{} अंतिम
+  अनुमान असते.
+  \ref{pt:cut:top:lem:cut-adm-G3c}
+  लावून तिचे \CutCS{}
+  विरहित सिद्धता~$\pi''$
+  मध्ये रूपांतर करा आणि
+  मूळ सिद्धतेत
+  उप-सिद्धता~$\pi'$
+  च्या जागी~$\pi''$ ठेवा.
+  मिळालेल्या सिद्धता
+  मध्ये $n-1$ \CutCS{}
+  अनुमाने उरतात; म्हणून
+  विगमन गृहीतक लागू होते.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{सर्वोच्च कोटीचे कट काढून टाकणे}\label{pt:cut:inv:sec}
+
+\ref{pt:seq:inv:lem:G3c-invert} च्या सिद्धतेत दिसले
+की \Log{G3c} ने एखाद्या तार्किक नियमाचा निष्कर्ष
+(तो नियम \RightR{\lexists} किंवा \LeftR{\lforall}
+नसेल तर) सिद्ध केला, तर त्या नियमाची प्रत्येक
+आधार-क्रमवर्तीसुद्धा सिद्धतेची उंची न वाढवता
+सिद्ध करता येते. याहून अधिक दाखवता येते:
+हेच $\Log{G3c} + \CutCS$ साठीही लागू होते.
+
+आधीप्रमाणे, \CutCS{} अनुमानाची \emph{कट-कोटी}
+म्हणजे त्यातील कटच्या सूत्राची खोली.
+
+\begin{lem}\label{pt:cut:inv:lem:inv-G3c-cut}
+$\Log{G3c} + \CutCS$ मध्ये \RightR{\lexists}
+किंवा \LeftR{\lforall} सोडून अन्य तार्किक नियम~$R$
+चा निष्कर्ष सिद्धता~$\pi$ ने सिद्ध होत असेल,
+तर त्या नियमाची प्रत्येक आधार-क्रमवर्ती
+सिद्धता~$\pi'$ ने (किंवा नियमाला दोन आधार
+असल्यास सिद्धता~$\pi'$, $\pi''$ यांनी)
+सिद्ध करता येते. शिवाय,
+(a)~$\pheight{\pi'}\le\pheight{\pi}$ (आणि
+$\pheight{\pi''}\le\pheight{\pi}$);
+तसेच (b)~प्रत्येक कोटीसाठी $\pi'$ मधील
+(आणि स्वतंत्रपणे $\pi''$ मधील) त्या कोटीच्या
+\CutCS{} अनुमानांची संख्या $\pi$ मधील संख्येपेक्षा
+मोठी नसते.
+\end{lem}
+
+\begin{proof}
+पूर्वप्रमेय~\ref{pt:seq:inv:lem:G3c-invert} आणि~\ref{pt:seq:inv:lem:invert-quant}
+यांच्या सिद्धता तपासल्यास हा दावा मिळतो. ती
+सिद्धता~$\pheight{\pi}$ वरील विगमनाने होती.
+आधार प्रसंगात एक स्वयंसिद्धक दुसऱ्या
+स्वयंसिद्धकाने बदलले होते; म्हणून (a) आणि (b)
+लगेच मिळतात. $\pi$ चा शेवटचा नियम~$R$
+असेल, तर त्याच्या तत्काळ उप-सिद्धता या
+आपल्याला हव्या असलेल्या सिद्धता~$\pi_i$
+आहेत; त्यांची उंची लहान असते आणि प्रत्येक कोटीच्या
+कटांची संख्या संपूर्ण $\pi$ मधील संख्येपेक्षा मोठी नसते.
+दोन आधारांच्या नियमात एक आधार निवडल्यास दुसऱ्या
+शाखेतील कट राहतीलच असे नाही; (b) साठी समानता नको,
+ही वरची सीमाच आवश्यक आहे.
+इतर प्रसंगांत $\pi$ च्या तत्काळ उप-सिद्धता वर,
+म्हणजे शेवटच्या अनुमान~$R$ च्या आधारांकडे
+नेणाऱ्या सिद्धतांवर, विगमन गृहीतक लावून
+परिणामांवर तोच नियम $R$ लावला होता.
+नव्या सिद्धतेच्या तत्काळ उप-सिद्धता साठी
+(a) व (b) खऱ्या असल्याने संपूर्ण
+सिद्धतेसाठीही त्या खऱ्या आहेत. शेवटचे
+अनुमान~\CutCS{} असेल तो प्रसंग तपासणे
+उरते. पुन्हा फक्त एक उदाहरण पाहू:
+$\pi$ ही \LeftR{\land} च्या
+$B \land C, \Gamma \Sequent \Delta$
+या निष्कर्षाची सिद्धता असून
+\CutCS{} ने संपते असे समजा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$B \land C, \Gamma \fCenter \Delta, A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$A, B \land C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$B \land C, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+विगमन गृहीतक $\pi_1$ आणि~$\pi_2$
+यांना लागू होते; त्या दोन्ही
+$\LeftR{\land}$ च्या निष्कर्षाच्या
+उदाहरणांच्या सिद्धता आहेत.
+त्यातून अनुक्रमे $B, C, \Gamma \fCenter
+\Delta, A$ आणि $A, B, C, \Gamma \fCenter \Delta$
+यांच्या सिद्धता $\pi_1'$ आणि~$\pi_2'$
+मिळतात. \CutCS{} वापरून त्यांना जोडल्यास
+पुढील~$\pi'$ मिळते:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1'$}
+\Deduce$B, C, \Gamma \fCenter \Delta, A$
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$A, B, C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$B, C, \Gamma \fCenter \Delta$
+\DisplayProof
+\]
+येथे (a) आणि (b) स्पष्टपणे पूर्ण होतात.
+\end{proof}
+
+\CutCS{} ऐवजी \Cut{} वापरला असता ही
+पद्धत चालली नसती: शेवटच्या सिद्धता
+च्या निष्कर्षातील पूर्वांगात
+$B, C, \Gamma$ च्या दोन प्रती आणि
+उत्तरांगात $\Delta$ च्या दोन प्रती आल्या
+असत्या. मग आकुंचनाची ग्राह्यता वापरावी
+लागली असती; पण
+\ref{pt:seq:inv:prop:G3c-cont-adm}
+ची सिद्धता या उलटवण्याच्या उपप्रमेयावरच
+आधारित आहे. त्यामुळे युक्तिवाद चक्रीय ठरला असता.
+या उलटवण्याच्या उपप्रमेयानंतर दुर्बलीकरण आणि आकुंचनाची
+ग्राह्यताही $\Log{G3c}+\CutCS$ पर्यंत वाढवता येते;
+त्यामुळे पुढील सिद्धतेत कमी कोटीचे कट असतानाही आकुंचन
+वापरता येते. आधीच्या उंचीवरील विगमनात एवढाच नवा प्रसंग
+आहे: अंतिम नियम $\CutCS$ असेल, तर दोन्ही आधारांतील
+सामायिक संदर्भावर विगमन गृहीतक लावून तोच कट पुन्हा
+जोडायचा. कट-सूत्र आणि त्याची कोटी बदलत नाहीत. इतर
+नियमांसाठी आधीची सिद्धता वापरायची; आकुंचनाच्या मुख्य
+प्रसंगांत आता वरील विस्तारित उलटवणे वापरायचे. त्यातून
+उंची आणि कटांच्या सर्वोच्च कोटीत वाढ होत नाही.
+संख्यक नियमांच्या आयगेन चरांची नावे आवश्यकतेनुसार आधी
+बदलून नव्या संदर्भाच्या चरांपासून वेगळी ठेवायची.
+
+पूर्वप्रमेय~\ref{pt:cut:inv:lem:inv-G3c-cut} वापरून
+कट-निर्मूलनाची पर्यायी सिद्धता देता येते.
+या सिद्धतेत आपण सर्वोच्च स्थानी असलेली
+\CutCS{} अनुमाने एकामागोमाग काढत नाही;
+त्याऐवजी सर्वोच्च कोटीची \CutCS{}
+अनुमाने काढतो. म्हणजे
+$\Log{G3c} + \CutCS$ मधील सिद्धता~$\pi$
+घेऊन तिच्यातील कोणताही कट काढतो
+(कदाचित त्याजागी कमी कोटीचे कट येतील)
+आणि एकही कट उरेपर्यंत असेच करत राहतो.
+अट एवढीच की निवडलेल्या कटच्या वर
+त्याच किंवा त्याहून मोठ्या कोटीचे
+कट नसावेत.
+
+\begin{lem}\label{pt:cut:inv:lem:max-cut-red-G3c}
+$\Log{G3c}+\CutCS$ मधील सिद्धता~$\pi$
+ही $n$ कोटीच्या \CutCS{} अनुमानाने
+संपत असेल आणि इतरत्र फक्त
+$\Log{G3c}$ चे नियम व $<n$ कोटीची
+\CutCS{} अनुमाने वापरत असेल, तर
+$\Log{G3c} + \CutCS$ मध्ये
+त्याच अंतिम क्रमवर्तीची अशी सिद्धता~$\pi'$
+असते की तिच्यातील प्रत्येक \CutCS{}
+अनुमानाची कोटी~$<n$ असते.
+\end{lem}
+
+\begin{proof}
+सिद्धता~$\pi$ चा शेवट पुढीलप्रमाणे असतो:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, A$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$A, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+आता~$A$ च्या रूपानुसार प्रसंग वेगळे करू.
+
+$A$ हे अणुसूत्र आहे असे समजा. $\pi_1$
+आणि $\pi_2$ मधील सर्व \CutCS{} अनुमानांची कोटी
+$< \depth{A} = 0$ असली पाहिजे; म्हणून त्यांपैकी
+कोणत्याही सिद्धतेत \CutCS{} अनुमान असू शकत नाही.
+म्हणून $\pi_1$ आणि $\pi_2$ दोन्ही कटविरहित आहेत.
+$\pheight{\pi_2}$ वरील विगमनाने
+$\Gamma \Sequent \Delta$ ची कटविरहित सिद्धता
+आहे हे दाखवू. $\pheight{\pi_2} = 0$ असेल,
+तर $A, \Gamma \Sequent \Delta$ हे स्वयंसिद्धक आहे.
+$\lfalse$ हे $\Gamma$ मध्ये असेल, तर निष्कर्ष स्वतःच
+असत्य-स्वयंसिद्धक आहे. अन्यथा $A$ मुख्य नसेल, तर
+काही अणुसूत्र $C$ हे $\Gamma$ आणि $\Delta$ या दोन्हींत
+घटक असते; म्हणून
+$\Gamma \Sequent \Delta$ हे स्वतःच स्वयंसिद्धक
+आहे. $A\ident\lfalse$ असल्याचा प्रसंग
+\ref{pt:cut:top:lem:cut-adm-G3c} च्या सिद्धतेतील प्रसंग B प्रमाणे
+हाताळता येतो: कटविरहित $\pi_1$ च्या उत्तरांगातील कटासाठीची
+असत्याची प्रत काढल्यास हवी ती सिद्धता मिळते.
+उरलेल्या मुख्य अणुसूत्राच्या प्रसंगात
+$\Delta = \Delta', A$. या प्रसंगात $\pi_1$
+चा शेवट $\Gamma \Sequent \Delta', A, A$
+असा असतो. \ref{pt:seq:inv:prop:G3c-cont-adm},
+म्हणजे आकुंचनाची ग्राह्यता, लावल्यास
+$\Gamma \Sequent \Delta', A$ ची
+कटविरहित सिद्धता मिळते.
+$\pheight{\pi_2} > 0$ असेल, तर
+सिद्धता नियम~$R$ ने संपते. त्या नियमाची
+एक आधार-क्रमवर्ती घ्या: तिचे रूप
+$A, \Gamma', \Pi \Sequent \Delta', \Lambda$
+असते, जेथे $\Pi$ व $\Lambda$ ही
+$R$ ची सक्रिय सूत्रे आहेत.
+\ref{pt:seq:adm:prop:weak-G3c-adm}
+हे $\pi_1$ आणि निवडलेल्या आधारावर संपणाऱ्या
+$\pi_2$ च्या तत्काळ उपसिद्धतेला लावल्यास
+$\Gamma, \Gamma', \Pi \Sequent
+\Delta, \Delta', \Lambda, A$ आणि
+$A, \Gamma, \Gamma', \Pi \Sequent
+\Delta, \Delta', \Lambda$ यांच्या
+सिद्धता मिळतात. दुसरी सिद्धता $\pi_2$ पेक्षा
+कमी उंचीची राहते; म्हणून त्यांना विगमन गृहीतक लागू होते. त्यामुळे~$R$ च्या प्रत्येक
+आधारासाठी $\Gamma, \Gamma', \Pi \Sequent
+\Delta, \Delta', \Lambda$ ची सिद्धता
+मिळते. $R$ लावल्यास
+$\Gamma, \Gamma \Sequent \Delta, \Delta$
+मिळते; आणि \ref{pt:seq:inv:prop:G3c-cont-adm}
+मुळे $\Gamma \Sequent \Delta$ ची
+कटविरहित सिद्धता मिळते.
+
+
+$A$ अणुसूत्र नसेल, तर त्याच्या मुख्य संकारक नुसार प्रसंग पाहू. येथे $A$ हाच
+कट-सूत्र आहे. प्रत्येक प्रसंगात
+\ref{pt:cut:inv:lem:inv-G3c-cut} वापरून $A$ मुख्य सूत्र
+असलेल्या डाव्या व उजव्या नियमांच्या आधारांच्या
+सिद्धता मिळवू. त्यानंतर
+\ref{pt:cut:top:lem:cut-adm-G3c} च्या सिद्धतेतील
+प्रसंग~E प्रमाणे पुढे जाऊ.
+\begin{enumerate}
+  \item $A \ident \lnot B$. सिद्धता $\pi_1$
+  आणि $\pi_2$ यांचे शेवट अनुक्रमे
+  $\Gamma \Sequent \Delta, \lnot B$ आणि
+  $\lnot B, \Gamma \Sequent \Delta$ असे आहेत.
+  \ref{pt:cut:inv:lem:inv-G3c-cut} नुसार
+  $B, \Gamma \Sequent \Delta$ आणि
+  $\Gamma \Sequent \Delta, B$ यांच्या
+  सिद्धता $\pi_1'$ आणि $\pi_2'$ मिळतात.
+  सिद्धता~$\pi'$ पुढीलप्रमाणे आहे:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$\Gamma \fCenter \Delta, B$
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  \item $A \ident (B \lor C)$.
+  सिद्धता $\pi_1$ आणि $\pi_2$
+  यांचे शेवट
+  $\Gamma \Sequent \Delta, B \lor C$ आणि
+  $B \lor C, \Gamma \Sequent \Delta$ असे आहेत.
+  $\pi_1$ ला \RightR{\lor} चे उलटवणे
+  लावून \ref{pt:cut:inv:lem:inv-G3c-cut} नुसार
+  $\Gamma \Sequent \Delta, B, C$
+  ची सिद्धता $\pi_1'$ मिळते.
+  $\pi_2$ ला \LeftR{\lor} चे उलटवणे
+  लावून \ref{pt:cut:inv:lem:inv-G3c-cut} नुसार
+  $B, \Gamma \Sequent \Delta$ ची
+  सिद्धता $\pi_2'$ आणि
+  $C, \Gamma \Sequent \Delta$ ची
+  सिद्धता $\pi_2''$ मिळते.
+  \ref{pt:seq:adm:prop:weak-G3c-adm}
+  हे $\pi_2''$ ला लावल्यास
+  $C, \Gamma \Sequent \Delta, B$
+  ची सिद्धता~$\pi_2'''$ मिळते.
+  सिद्धता~$\pi'$ पुढीलप्रमाणे आहे:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$\Gamma \fCenter \Delta, B, C$
+  \AxiomC{}
+  \RightLabel{$\pi_2'''$}
+  \Deduce$C, \Gamma \fCenter \Delta, B$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta, B$
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  \item $A \ident (B \land C)$.
+  हा प्रसंग सरावासाठी आहे.
+  \item $A \ident (B \lif C)$.
+  सिद्धता $\pi_1$ आणि $\pi_2$
+  यांचे शेवट
+  $\Gamma \Sequent \Delta, B \lif C$ आणि
+  $B \lif C, \Gamma \Sequent \Delta$ असे आहेत.
+  $\pi_1$ ला \RightR{\lif} चे उलटवणे
+  लावून \ref{pt:cut:inv:lem:inv-G3c-cut} नुसार
+  $B, \Gamma \Sequent \Delta, C$
+  ची सिद्धता $\pi_1'$ मिळते.
+  $\pi_2$ ला \LeftR{\lif} चे उलटवणे
+  लावून \ref{pt:cut:inv:lem:inv-G3c-cut} नुसार
+  $\Gamma \Sequent \Delta, B$ ची
+  सिद्धता $\pi_2'$ आणि
+  $C, \Gamma \Sequent \Delta$ ची
+  सिद्धता $\pi_2''$ मिळते.
+  \ref{pt:seq:adm:prop:weak-G3c-adm}
+  हे $\pi_2''$ ला लावल्यास
+  $C, B, \Gamma \Sequent \Delta$
+  ची सिद्धता~$\pi_2'''$ मिळते.
+  सिद्धता~$\pi'$ पुढीलप्रमाणे आहे:
+  \[
+  \AxiomC{}
+  \RightLabel{$\pi_2'$}
+  \Deduce$\Gamma \fCenter \Delta, B$
+  \AxiomC{}
+  \RightLabel{$\pi_1'$}
+  \Deduce$B, \Gamma \fCenter \Delta, C$
+  \AxiomC{}
+  \RightLabel{$\pi_2'''$}
+  \Deduce$C, B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$B, \Gamma \fCenter \Delta$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma \fCenter \Delta$
+  \DisplayProof
+  \]
+  \item $A \ident \lforall[x][B(x)]$.
+  सिद्धता $\pi_1$ आणि $\pi_2$
+  यांचे शेवट
+  $\Gamma \Sequent \Delta, \lforall[x][B(x)]$
+  आणि $\lforall[x][B(x)], \Gamma \Sequent \Delta$
+  असे आहेत. \ref{pt:cut:inv:lem:inv-G3c-cut} नुसार
+  $\Gamma \Sequent \Delta, B(c)$ ची
+  सिद्धता~$\pi_1'$ मिळते.
+
+आता सिद्धता~$\pi_2$ पाहू. तिचा शेवट
+$\lforall[x][B(x)], \Gamma \Sequent \Delta$
+असा आहे. $\pi_2$ च्या अंतिम क्रमवर्तीपासून
+वर जाताना, डाव्या बाजूला आलेली
+$\lforall[x][B(x)]$ ची अशी प्रत्येक आस्थिती
+चिन्हांकित करा की ती अंतिम क्रमवर्तीतील
+$\lforall[x][B(x)]$ च्या आस्थितीपर्यंत
+“पोहोचते”. म्हणजे:
+(a)~$\pi_2$ च्या अंतिम क्रमवर्तीतील
+$\lforall[x][B(x)]$ चिन्हांकित करा.
+(b)~एखाद्या नियमाच्या निष्कर्षाच्या
+संदर्भात $\lforall[x][B(x)]$ चिन्हांकित
+असेल, तर त्या नियमाच्या आधारात किंवा
+आधारांत तिच्याशी अनुरूप आस्थिती चिन्हांकित
+करा. (c)~\LeftR{\lforall} नियमाच्या
+निष्कर्षात $\lforall[x][B(x)]$ हे मुख्य
+सूत्र असून चिन्हांकित असेल, तर त्याच्या
+आधारातील $\lforall[x][B(x)]$ आणि
+$B(t)$ यांच्या अनुरूप सक्रिय आस्थिती
+चिन्हांकित करा. हा मागोवा $\pi_2$
+च्या सिद्धतावृक्षावरच घेतला आहे.
+
+आता $\lforall[x][B(x)]$ च्या
+या सर्व चिन्हांकित आस्थिती पाहू. त्यांपैकी
+कोणतीही \LeftR{\lforall} व्यतिरिक्त
+अन्य नियमात सक्रिय नसते
+(फक्त \LeftR{\lforall} ची सक्रिय
+सूत्रे चिन्हांकित होतात).
+$\pi_2$ मधील $\lforall[x][B(x)]$
+च्या सर्व चिन्हांकित आस्थिती काढून टाका.
+यातून योग्य सिद्धता मिळाली, तर तिचा शेवट
+$\Gamma \Sequent \Delta$ असा आहे आणि
+ती $\pi$ च्या जागी ठेवता येते.
+याने सर्वोच्च कोटीचा एक कट काढला.
+
+अन्यथा मिळालेली सिद्धता योग्य नाही:
+काही \LeftR{\lforall} अनुमानांत सक्रिय
+असलेली $\lforall[x][B(x)]$ ही
+सूत्रे आपण काढून टाकली आहेत.
+त्यामुळे पुढील रूपाची “अनुमाने” मिळाली:
+\[
+  \AxiomC{}
+  \RightLabel{$\pi_t$}
+  \Deduce$B(t), \Pi \fCenter \Lambda$
+  \RightLabel{\LeftR{\lforall}}
+  \UnaryInf$\Pi \fCenter \Lambda$
+  \DisplayProof
+  \]
+अशा प्रत्येक सर्वोच्च “अनुमाना”च्या जागी
+पुढील सिद्धता ठेवा:
+\[
+  \AxiomC{}
+  \RightLabel{$\Subst{\pi_1'}{t}{c}[\Pi \Sequent \Lambda]$}
+  \Deduce$\Gamma, \Pi \fCenter \Delta, \Lambda, B(t)$
+  \AxiomC{}
+  \RightLabel{$\pi_t[\Gamma \Sequent \Delta]$}
+  \Deduce$B(t), \Gamma, \Pi \fCenter \Delta, \Lambda$
+  \RightLabel{\CutCS}
+  \BinaryInf$\Gamma, \Pi \fCenter \Delta, \Lambda$
+  \DisplayProof
+  \]
+तिच्या खालील प्रत्येक क्रमवर्तीच्या
+डावीकडे $\Gamma$ आणि उजवीकडे
+$\Delta$ घाला. आधारात चिन्हांकित
+$B(t)$ असलेली सर्व
+\LeftR{\lforall} “अनुमाने”
+काही~$B(t)$ वरील \CutCS{}
+अनुमानाने बदलेपर्यंत हे पुन्हा करा.
+मिळालेल्या सिद्धता ची अंतिम क्रमवर्ती
+(आता ती खरोखर योग्य सिद्धता आहे)
+$\Gamma, \dots, \Gamma \Sequent
+\Delta, \dots, \Delta$ या रूपाची असते.
+आकुंचनाची ग्राह्यता लावून तिचे
+$\Gamma \Sequent \Delta$ वरील
+सिद्धता मध्ये रूपांतर करा आणि
+ती $\pi$ च्या जागी ठेवा. आपण
+$\lforall[x][B(x)]$ वरील एक कट
+$B(t)$ वरील (कदाचित अनेक) कटांनी
+बदलला आहे; पण या सर्व कटांची कोटी
+कमी आहे. $\pi_1$ किंवा $\pi_2$ मधील उरलेल्या किंवा प्रत करून
+वापरलेल्या कटांची कोटीही कमीच आहे. पुढील आकुंचनासाठी
+वर सिद्ध केलेली, सर्वोच्च कट-कोटी न वाढवणारी विस्तारित
+ग्राह्यता वापरली आहे.
+\end{enumerate}
+\end{proof}
+
+\begin{prob}
+\ref{pt:cut:inv:lem:max-cut-red-G3c} च्या सिद्धतेतील
+$A \ident (B \land C)$ हा प्रसंग तपासा.
+म्हणजे, दोन उपसिद्धतांसह पुढीलप्रमाणे संपणारी
+सिद्धता~$\pi$ असेल:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$\Gamma \fCenter \Delta, B \land C$
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$B \land C, \Gamma \fCenter \Delta$
+\RightLabel{\CutCS}
+\BinaryInf$\Gamma \fCenter \Delta$
+\DisplayProof
+\]
+आणि $\pi_1$ व $\pi_2$ यांतील
+सर्व कटांची कोटी $<\depth{B
+\land C}$ असेल, तर
+$\Gamma \Sequent \Delta$ ची
+फक्त $<\depth{B \land C}$
+कोटीचे कट असलेली सिद्धता~$\pi'$
+असते हे दाखवा.
+\end{prob}
+
+
+
+
+
+
+\ref{pt:cut:inv:lem:max-cut-red-G3c} नुसार
+सिद्धता मधील सर्वोच्च कोटीचे
+\CutCS{} अनुमान कमी कोटीच्या
+\CutCS{} अनुमानांनी बदलता येते.
+हे उपप्रमेय पुन्हा वापरून,
+सर्वोच्च~\CutCS{} ने संपणाऱ्या
+सर्वोच्च उप-सिद्धता वर ते एकामागोमाग
+लावल्यास कोणत्याही सिद्धता मधून कितीही
+\CutCS{} अनुमाने काढता येतात.
+
+
+\begin{thm}\label{pt:cut:inv:thm:cut-elim-G3c-largest}
+$\Log{G3c} + \CutCS$ मधील कोणतीही
+सिद्धता $\pi$ ही~\Log{G3c} मधील
+सिद्धतेत रूपांतरित करता येते.
+\end{thm}
+
+\begin{proof}
+  प्रथम $\pi$ मधील सर्वोच्च कोटीचे
+  सर्व कट काढता येतात हे सिद्ध करू.
+  $d$ ही $\pi$ मधील कटांची सर्वोच्च
+  कोटी आणि $n$ ही $d$ कोटीच्या कटांची
+  संख्या असू द्या. $n$ वरील विगमनाने
+  सिद्धता करू. $n=0$ असेल, तर
+  सिद्ध करायचे काही नाही. $n>0$
+  असेल, तर $d$ कोटीचा सर्वोच्च कट
+  निवडा आणि त्यावर संपणारी उप-सिद्धता
+  $\pi_1$ असू द्या.
+  \ref{pt:cut:inv:lem:max-cut-red-G3c} नुसार
+  त्याच अंतिम क्रमवर्तीची, फक्त
+  $<d$ कोटीचे कट असलेली,
+  सिद्धता~$\pi_1'$ आहे.
+  $\pi$ मध्ये $\pi_1$ च्या जागी
+  $\pi_1'$ ठेवा. मिळालेल्या
+  सिद्धता मध्ये $d$ कोटीचे
+  $n-1$ कट असतात; म्हणून
+  विगमन गृहीतक लागू होते.
+
+आता $d$ वरील विगमनाने निष्कर्ष
+मिळतो. $d=0$ असेल, तर सर्व कट
+अणुसूत्रांवरील आहेत आणि मागील
+निष्कर्षाने ते सर्व काढता येतात.
+$d>0$ असेल, तर मागील निष्कर्षाने
+$d$ कोटीचे सर्व कट $<d$ कोटीच्या
+कटांनी बदललेली सिद्धता मिळते.
+$\pi$ मधील कटांची सर्वोच्च कोटी
+$d$ असल्यामुळे नव्या सिद्धतेतील
+कटांची सर्वोच्च कोटी $<d$ होते;
+म्हणून विगमन गृहीतक लागू होते.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{मध्य-क्रमवर्ती प्रमेय आणि एरब्राँचे प्रमेय}\label{pt:cut:mid:sec}
+
+कट-निर्मूलन प्रमेयाचा एक महत्त्वाचा
+परिणाम म्हणजे मध्य-क्रमवर्ती प्रमेय.
+त्यात असे म्हटले आहे: सर्व सूत्र
+अग्र-संख्यापक रूपातील असलेल्या
+$\Gamma \Sequent \Delta$ ची
+सिद्धता~$\pi$ असेल, तर अशी
+सिद्धता~$\pi'$ असते की तिच्यात
+$S \ident \Pi \Sequent
+\Lambda$ ही क्रमवर्ती येते
+(तिला \emph{मध्य-क्रमवर्ती} म्हणतात)
+आणि~$\pi'$ मध्ये $S$ च्या
+वरची सर्व अनुमाने विधानीय,
+तर $S$ च्या खालची सर्व अनुमाने
+संख्यापकांची असतात.
+(सूत्र~$A$ हे
+\emph{अग्र-संख्यापक} (किंवा
+\emph{अग्र-संख्यापक रूपातील}) असते,
+जर ते पुढील रूपात असेल:
+\[\mathsf{Q}_1x_1\dots\mathsf{Q}_nx_n\,B(x_1,\dots,x_n)\]
+येथे प्रत्येक~$\mathsf{Q}_i$
+हा $\lforall$ किंवा~$\lexists$
+असतो आणि $B$ संख्यापकविरहित असते.) मध्य-क्रमवर्ती प्रमेयाचा
+एक महत्त्वाचा परिणाम म्हणजे
+एरब्राँचे प्रमेय. त्याचे व्यापक
+रूप थोडे कठीण आहे; साधारणतः
+ते असे सांगते: प्रथम-क्रम
+तर्कशास्त्रातील प्रत्येक
+सिद्धतायोग्य वाक्य~$A$
+साठी असे विधानीय
+सर्वतः सत्य सूत्र~$A'$
+असते की त्यावरून $A$
+सिद्ध करता येते.
+$B$ संख्यापकविरहित
+असताना $\lexists[x][B(x)]$
+या रूपातील वाक्ये साठी
+पुढील विधान आहे:
+
+\begin{thm}[एरब्राँचे प्रमेय]
+$B(x)$ संख्यापकविरहित असू द्या
+आणि $\Proves
+\lexists[x][B(x)]$ असे समजा.
+मग अशी पदे~$t_1$, \dots, $t_n$
+असतात की
+$\Proves B(t_1) \lor \dots \lor B(t_n)$.
+\end{thm}
+
+$B(t_1) \lor \dots \lor B(t_n)$
+या सूत्राला
+$\lexists[x][B(x)]$ चा
+\emph{एरब्राँचा विकल्पयोग} म्हणतात.
+$B$ संख्यापकविरहित असल्याने
+हा विकल्पयोगही संख्यापकविरहित आहे.
+म्हणून तो सिद्धतायोग्य असेल,
+तर कटविरहित सिद्धतेने तो
+सिद्धतायोग्य आहे; परिणामी,
+केवळ विधानीय अनुमाने
+वापरणारी सिद्धता आहे.
+म्हणून तो सर्वतः सत्य आहे.
+
+एरब्राँच्या प्रमेयातील कठीण
+भाग म्हणजे प्रत्येक
+सिद्धतायोग्य
+सूत्र~$\lexists[x][B(x)]$
+साठी एरब्राँचा विकल्पयोग
+अस्तित्वात आहे हे दाखवणे.
+उलट दिशा सोपी आहे:
+$\lexists[x][B(x)]$ चा
+एरब्राँचा विकल्पयोग असेल,
+तर हे सूत्र सिद्धतायोग्य आहे.
+कारण एरब्राँचा विकल्पयोग
+$\lexists[x][B(x)]$
+ला निष्पन्न करतो. उदाहरणार्थ,
+$n=2$ असताना~$\Log{G3c}$
+मधील ही सिद्धता पाहा:
+\[
+\Axiom$B(t_1) \fCenter \lexists[x][B(x)], B(t_1), B(t_2)$
+\Axiom$B(t_2) \fCenter \lexists[x][B(x)], B(t_1), B(t_2)$
+\RightLabel{\LeftR{\lor}}
+\BinaryInf$B(t_1) \lor B(t_2) \fCenter \lexists[x][B(x)], B(t_1), B(t_2)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$B(t_1) \lor B(t_2) \fCenter \lexists[x][B(x)], B(t_2)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$B(t_1) \lor B(t_2) \fCenter \lexists[x][B(x)]$
+\DisplayProof
+\]
+
+$\Sequent
+\lexists[x][B(x)]$ ची
+सिद्धता~$\pi$ दिली असता
+त्यातून एरब्राँचा विकल्पयोग
+मिळवण्यासाठी, कटविरहित
+सिद्धता~$\pi$ मधील सर्व
+$\RightR{\lexists}$
+अनुमाने शेवटी सलग येतात
+हा प्रसंग पाहा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_1$}
+\Deduce$ \fCenter \lexists[x][B(x)], B(t_1), \dots, B(t_n)$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$ \fCenter \lexists[x][B(x)], B(t_2), \dots, B(t_n)$
+\RightLabel{$(n-1) \times \RightR{\lexists}$}
+\Deduce$ \fCenter \lexists[x][B(x)]$
+\DisplayProof
+\]
+~$\pi$ मध्ये
+$\lexists[x][B(x)]$
+सक्रिय असलेली हीच सर्व
+$\RightR{\lexists}$ अनुमाने
+असतील, तर~$\pi_1$
+मध्ये इतर संख्यापक अनुमाने
+नसतात. कारण $B(x)$
+मध्ये अन्य संख्यापक नाहीत
+आणि अंतिम क्रमवर्तीच्या
+डावीकडे सूत्रे नाहीत.
+म्हणजे $ \fCenter \lexists[x][B(x)], B(t_1),
+\dots, B(t_n)$ ही~$\pi$
+ची मध्य-क्रमवर्ती आहे.
+शिवाय मध्य-क्रमवर्तीच्या
+वर संख्यापक अनुमाने
+नसल्यामुळे तिच्या वरच्या
+सर्व क्रमवर्तींत
+$\lexists[x][B(x)]$
+असते, पण ते सक्रिय किंवा
+मुख्य नसते. म्हणून
+~$\pi_1$ या सिद्धता
+मधून ते काढून टाकता येते
+आणि $\fCenter B(t_1), \dots, B(t_n)$
+याची सिद्धता मिळते.
+मग $\RightR{\lor}$ चा
+$n-1$ वेळा उपयोग करून
+एरब्राँच्या विकल्पयोगाची
+सिद्धता,
+$\Sequent B(t_1) \lor \dots \lor B(t_n)$,
+मिळते.
+
+अडचण अशी की
+$\Sequent \lexists[x][B(x)]$
+ची कटविरहित सिद्धता
+असली तरी तिची सर्व
+\RightR{\lexists} अनुमाने
+शेवटी एका सलग गटात
+येतात असे गृहीत धरता येत
+नाही. त्या \RightR{\lexists}
+अनुमानांमध्ये एखादे
+$B(t_i)$ मुख्य असलेली
+अनुमाने येऊ शकतात.
+म्हणून मध्य-क्रमवर्ती
+प्रमेयाची गरज आहे.
+
+\begin{thm}[मध्य-क्रमवर्ती प्रमेय]\label{pt:cut:mid:thm:midsequent}
+$\Gamma \Sequent \Delta$ ची
+~\Log{G3c} मधील
+सिद्धता~$\pi$ असेल आणि
+$\Gamma$ व $\Delta$ मधील
+सर्व सूत्रे
+अग्र-संख्यापक असतील,
+तर अशी सिद्धता~$\pi'$
+असते की तिच्यात
+$\Pi \Sequent \Lambda$
+ही क्रमवर्ती येते;
+तिच्या खालची सर्व
+अनुमाने संख्यापकांची,
+आणि वरची सर्व अनुमाने
+विधानीय असतात.
+\end{thm}
+
+\begin{proof}
+  ~$\pi$ मधील प्रत्येक संख्यापक
+  अनुमानाचे \emph{क्रममान} म्हणजे
+  त्याच्या खालच्या विधानीय
+  अनुमानांची संख्या असे
+  परिभाषित करू; आणि
+  $\pi$ चे क्रममान~$o(\pi)$
+  म्हणजे त्यातील सर्व
+  संख्यापक अनुमानांच्या
+  क्रममानांची बेरीज.
+  $o(\pi) = 0$ असेल, तर
+  कोणत्याही संख्यापक
+  अनुमानाच्या खाली विधानीय
+  अनुमान नसते आणि काम संपते:
+  संख्यापक अनुमानच नसल्यास
+  अंतिम क्रमवर्ती मध्य-क्रमवर्ती
+  घेता येते. अन्यथा सर्व
+  संख्यापक अनुमानांना एकच
+  आधारक्रमवर्ती असल्याने
+  एक सर्वोच्च संख्यापक
+  अनुमान असते; त्याची
+  आधारक्रमवर्ती मध्य-क्रमवर्ती असते.
+
+  $o(\pi) > 0$ असेल, तर
+  क्रममान $>0$ असलेले सर्वात
+  खालचे संख्यापक अनुमान
+  निवडा. त्याचे क्रममान $>0$
+  असल्याने त्याच्या खाली
+  विधानीय अनुमान असलेच पाहिजे.
+  ते अशा अनुमानांपैकी
+  सर्वात खालचे असल्याने
+  त्याचा निष्कर्ष दुसऱ्या
+  संख्यापक अनुमानाची
+  आधारक्रमवर्ती असू शकत
+  नाही: तसे असेल, तर
+  त्या दुसऱ्या, अधिक
+  खालच्या संख्यापक अनुमानाच्या
+  खालीही विधानीय अनुमान
+  आले असते. कोणते
+  संख्यापक अनुमान आणि
+  त्याखाली कोणते विधानीय
+  अनुमान आहे, यानुसार
+  (अनेक!) प्रसंग ठरतात.
+  अंतिम क्रमवर्तीमध्ये
+  केवळ अग्र-संख्यापक
+  सूत्रे असल्यामुळे,
+  संख्यापक अनुमानाचे
+  मुख्य सूत्र पुढील
+  विधानीय अनुमानात
+  सक्रिय असू शकत नाही.
+  अन्यथा त्या अनुमानाच्या
+  मुख्य सूत्रात विधानीय
+  संयोजकाच्या व्याप्तीत
+  संख्यापक आला असता.
+  उप-सूत्र गुणधर्मामुळे
+  ते अंतिम क्रमवर्तीतील
+  एखाद्या सूत्राचे
+  उप-सूत्र असावे लागले
+  असते. म्हणून संख्यापक
+  अनुमानाचे मुख्य
+  सूत्र हे खालच्या
+  विधानीय अनुमानाच्या
+  संदर्भातील घटक आहे.
+
+  पुढील दोन उदाहरणे पाहू:
+
+प्रथम $\RightR{\lforall}$
+हे $\LeftR{\lif}$ च्या
+उजव्या आधारक्रमवर्तीमध्ये
+संपते असे समजा. मग
+~$\pi$ ची संबंधित
+उप-सिद्धता
+ही उप-सिद्धता~$\pi_1$
+मध्ये संपते:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma' \fCenter \Delta', \lforall[x][A(x)], B$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$C, \Gamma' \fCenter \Delta', A(c)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$C, \Gamma' \fCenter \Delta', \lforall[x][A(x)]$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$B \lif C, \Gamma' \fCenter \Delta', \lforall[x][A(x)]$
+\DisplayProof
+\]
+~$\pi$ नियमित आहे असे
+मानता येते; म्हणून
+आयगेन चर~$c$ हे~$\pi_3$
+च्या बाहेर येत नाही.
+विशेषतः ते $B
+\lif C$ मध्ये किंवा
+~$\pi_2$ मध्ये येत नाही.
+आता सिद्धता~$\pi_1'$ पाहा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2'$}
+\Deduce$\Gamma' \fCenter \Delta', \lforall[x][A(x)], A(c), B$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$C, \Gamma' \fCenter \Delta', \lforall[x][A(x)], A(c)$
+\RightLabel{\LeftR{\lif}}
+\BinaryInf$B \lif C, \Gamma' \fCenter \Delta', \lforall[x][A(x)], A(c)$
+\RightLabel{\RightR{\lforall}}
+\UnaryInf$B \lif C, \Gamma' \fCenter \Delta', \lforall[x][A(x)], \lforall[x][A(x)]$
+\DisplayProof
+\]
+येथे~$\pi_2'$ ही
+~$\pi_2$ च्या उजवीकडे
+~$A(c)$ जोडून दुर्बलीकरणाने
+मिळते. (त्यामुळे नवीन
+अनुमाने, विशेषतः क्रममानावर
+परिणाम करू शकणारी
+संख्यापक अनुमाने, जोडली जात
+नाहीत. ~$\pi_2$ मध्ये
+आयगेन चरे म्हणून
+वापरलेले स्थिरांक~$A(c)$
+मध्ये नसल्याने~$\pi_2$
+मधील आयगेन चरांच्या
+अटीही मोडत नाहीत.)
+दुसऱ्या शाखेला आवश्यक
+संदर्भ जोडण्यासाठीही
+दुर्बलीकरण वापरता येते.
+\RightR{\lforall} ची
+आयगेन चराची अट अजूनही
+पूर्ण आहे, कारण $c$
+हे~$B \lif C$
+मध्ये येत नाही.
+
+आकुंचनाची ग्राह्यता वापरून
+$B \lif C, \Gamma' \fCenter \Delta',
+\lforall[x][A(x)]$ याची
+सिद्धता~$\pi_1''$
+मिळवतो. $\lforall[x][A(x)]$
+साठी $\RightR{\Contraction}$
+ची ग्राह्यता सिद्ध करताना
+आणि त्या सिद्धतेत वापरलेल्या
+$\RightR{\lforall}$ च्या
+व्युत्क्रमणीयतेच्या सिद्धतेत
+अनुमानांची क्रममाने वाढत नाहीत:
+अनुमाने काढली जाऊ शकतात, म्हणून संबंधित
+उरलेल्या अनुमानांच्या खालील विधानीय
+अनुमानांची संख्या कमीही होऊ शकते.
+म्हणून~$\pi_1''$ मध्ये
+~$\pi_1$ पेक्षा अधिक
+संख्यापक अनुमाने नाहीत,
+आणि~$\pi_1''$ मधील
+प्रत्येक संख्यापक अनुमानाच्या
+खाली त्याच्या~$\pi_1$
+मधील संबंधित अनुमानापेक्षा अधिक
+विधानीय अनुमाने नाहीत.
+अपवाद फक्त अंतिम
+\RightR{\lforall} चा:
+त्याच्या खाली~$\pi$
+मध्ये \LeftR{\lif} होते,
+ते आपण~$\pi_1''$ मध्ये
+त्याच्या वर हलवले आहे.
+~$\pi$ मधील $\pi_1$
+च्या जागी $\pi_1''$ ठेवा.
+मिळालेल्या सिद्धता
+चे क्रममान कमी आहे, कारण
+किमान $\RightR{\lforall}$
+अनुमानाचे क्रममान (किमान)~$1$
+ने कमी झाले. आता
+विगमन गृहीतक लावा.
+
+संख्यापक अनुमान
+\RightR{\lexists} असल्याचे
+प्रसंग आणखी सोपे आहेत:
+आकुंचन लागत नाही आणि
+आयगेन चराच्या अटीची
+काळजीही करावी लागत नाही.
+उदाहरणार्थ,
+$\RightR{\lexists}$
+नंतर $\RightR{\land}$
+येतो असे समजा
+(यावेळी डाव्या आधारक्रमवर्तीमध्ये).
+संबंधित उप-सिद्धता
+ही $\pi_1$ आहे:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][A(x)], A(t), B$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$\Gamma' \fCenter \Delta', \lexists[x][A(x)], B$
+\AxiomC{}
+\RightLabel{$\pi_3$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][A(x)], C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma' \fCenter \Delta', \lexists[x][A(x)], B \land C$
+\DisplayProof
+\]
+~$\pi$ मधील $\pi_1$
+च्या जागी $\pi_1'$ ठेवा:
+\[
+\AxiomC{}
+\RightLabel{$\pi_2$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][A(x)], A(t), B$
+\AxiomC{}
+\RightLabel{$\pi_3'$}
+\Deduce$\Gamma' \fCenter \Delta', \lexists[x][A(x)], A(t), C$
+\RightLabel{\RightR{\land}}
+\BinaryInf$\Gamma' \fCenter \Delta', \lexists[x][A(x)], A(t), B \land C$
+\RightLabel{\RightR{\lexists}}
+\UnaryInf$\Gamma' \fCenter \Delta', \lexists[x][A(x)], B \land C$
+\DisplayProof
+\]
+येथे $\pi_3'$ ही
+$\pi_3$ च्या उजवीकडे
+~$A(t)$ जोडून
+दुर्बलीकरणाने मिळते.
+या दुर्बलीकरणात
+~$\pi_3$ मधील
+प्रत्येक क्रमवर्तीच्या
+उजवीकडे केवळ $A(t)$
+जोडले जाते; म्हणून
+कोणत्याही संख्यापक
+अनुमानाचे क्रममान बदलत
+नाही. ~$\pi'$ आणि
+~$\pi$ मधील
+संख्यापक अनुमानांच्या
+क्रममाने सारखीच आहेत;
+फक्त~\RightR{\land}
+च्या वर हलवलेल्या
+\RightR{\lexists}
+अनुमानाचे क्रममान~$1$
+ने कमी होते. म्हणून
+विगमन गृहीतक लागू होते.
+\end{proof}
+
+\begin{prob}
+\ref{pt:cut:mid:thm:midsequent} च्या
+सिद्धतेतील पुढील प्रसंग
+वर्णन करा: \LeftR{\lexists}
+हे~\RightR{\lif} च्या
+आधारक्रमवर्तीमध्ये संपते;
+आणि \LeftR{\lforall}
+हे~\LeftR{\lor} च्या
+डाव्या आधारक्रमवर्तीमध्ये
+संपते.
+\end{prob}
+
+\begin{proof}[एरब्राँच्या प्रमेयाची सिद्धता]
+$\pi$ चा शेवट
+$\Sequent \lexists[x][A(x)]$
+मध्ये होतो असे समजा.
+\ref{pt:cut:mid:thm:midsequent} नुसार
+$\pi$ चे मध्य-क्रमवर्ती~$S$
+असलेल्या सिद्धता~$\pi'$
+मध्ये रूपांतर करता येते;
+तिचे रूप पुढीलप्रमाणे असले
+पाहिजे: \[\Sequent
+\lexists[x][A(x)], A(t_1), \dots, A(t_n).\]
+$S$ च्या वरची सर्व
+अनुमाने विधानीय असल्याने,
+$\lexists[x][A(x)]$
+हे $S$ च्या वरच्या
+अनुमानात मुख्य असू शकत नाही.
+ते अणुरूप नसल्याने
+स्वयंसिद्धकातही मुख्य
+असू शकत नाही. शिवाय,
+$A(x)$ संख्यापकविरहित
+आहे हे लक्षात घेतल्यास
+$\lexists[x][A(x)]$
+हे $A(t_1)$ चे
+योग्य उपसूत्र असू शकत नाही;
+म्हणून $S$ च्या वर
+ते सक्रियही नसते.
+त्यामुळे $S$ वर संपणाऱ्या
+उप-सिद्धता मधून
+$\lexists[x][A(x)]$
+काढल्यावर
+$\Sequent A(t_1), \dots, A(t_n)$
+याची योग्य सिद्धता
+मिळते. त्यातून
+$\RightR{\lor}$ ची
+$n-1$ अनुमाने लावून
+$\Sequent A(t_1) \lor \dots \lor A(t_n)$
+याची सिद्धता मिळते.
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{माएहाराचे उपप्रमेय आणि क्रेगचे अंतर्वेशन प्रमेय}\label{pt:cut:itp:sec}
+
+विल्यम क्रेग यांचे अंतर्वेशन प्रमेय असे सांगते:
+$A \Entails B$ असेल, तर असे सूत्र~$C$
+असते (त्याला \emph{अंतर्वेशक} म्हणतात) की
+$A \Entails C$ आणि $C \Entails B$.
+विशेष म्हणजे, $C$ मधील सर्व स्थिरांक आणि
+विधेये हे $A$ व $B$ या दोन्हींमध्ये येतील
+असे $C$ निवडता येते. (येथे कोणतीही फलने
+नाहीत असे गृहीत धरतो.) ही अट नसेल, तर
+$A$ आणि $B$ हेच सहजपणे अंतर्वेशक ठरतील.
+
+अंतर्वेशन प्रमेय अभिजात प्रथम-क्रम तर्कशास्त्राला लागू होते.
+त्याचा शोध प्रथम-क्रम तर्कशास्त्राचा “शेवटचा महत्त्वाचा गुणधर्म”
+शोधला गेल्याप्रमाणे वर्णिला गेला आहे.
+प्रतिमान उपपत्ती आणि स्वयंचलित तर्कपद्धती यांत त्याचे
+महत्त्वाचे उपयोग आहेत. त्यामागील मूळ प्रेरणा आणि
+उपयोग विज्ञानाच्या तत्त्वज्ञानात होता: एखाद्या उपपत्तीचे
+स्वयंसिद्धकीकरण कोणत्या मूलभूत संज्ञांनी करता येते
+किंवा येत नाही, हे तपासण्यासाठी ते वापरता येते.
+यावरून बेथचे परिभाष्यता प्रमेयही निष्पन्न होते:
+एखादी उपपत्ती संकल्पना अंतर्निहितपणे परिभाषित करू
+शकत असेल, तर ती स्पष्टपणेही परिभाषित करू शकते.
+
+गणिती तर्कशास्त्रातील अनेक निष्कर्षांप्रमाणे,
+अंतर्वेशन प्रमेयाची सिद्धता प्रतिमान उपपत्तीच्या
+तसेच सिद्धता उपपत्तीच्या पद्धतींनी करता येते.
+सिद्धता-उपपत्तीय पद्धतीचा लाभ असा की ती
+केवळ अंतर्वेशकाचे अस्तित्व दाखवत नाही, तर
+$A \Entails B$ याच्या सिद्धता पासून
+अंतर्वेशक मोजून देणारी अल्गोरिदमही देते;
+उदाहरणार्थ, $A \Sequent B$ याची~\Log{G3c}
+मधील सिद्धता वापरता येते.
+
+$A$ मधील स्थिरांक आणि विधेये
+यांचा संच $\Lang L(A)$ असू द्या आणि
+$\Lang L(\Gamma) = \bigcup \Setabs{\Lang L(A)}{A \in
+\Gamma}$ असू द्या. या संपूर्ण विभागात
+फलने नसलेली सूत्रे आपण विचारात घेतो.
+
+\begin{thm}[क्रेगचे अंतर्वेशन प्रमेय]\label{pt:cut:itp:thm:interpolation}
+$A$ ची भाषा $\Lang L(A)$ आणि
+$B$ ची $\Lang L(B)$ असू द्या.
+$\Log{G3c} \Proves A \Sequent B$ असेल, तर
+$\Lang L(C) \subseteq \Lang L(A) \cap \Lang L(B)$
+या भाषा मधील असे सूत्र~$C$ असते की
+$\Log{G3c} \Proves A \Sequent C$
+आणि $\Log{G3c} \Proves C \Sequent B$.
+\end{thm}
+
+~\Log{G3c} मधील सिद्धता च्या रचनेचा
+उपयोग करण्यासाठी आपण अंतर्वेशन प्रमेयाचे
+अधिक व्यापक विधान सिद्ध करू.
+त्यासाठी क्रमवर्तींचे पूर्वांग व उत्तरांग
+प्रत्येकी दोन भागांत विभागलेले मानू.
+$\maeh{\Gamma_1}{\Gamma_2} \Sequent
+\maeh{\Delta_1}{\Delta_2}$ या लेखनात
+$\Gamma_1$ आणि $\Delta_1$ पहिल्या भागात,
+तर $\Gamma_2$ आणि $\Delta_2$ दुसऱ्या
+भागात आहेत. पुढील उपप्रमेयावरून
+अंतर्वेशन प्रमेय लगेच मिळते.
+
+\begin{lem}[माएहाराचे उपप्रमेय]\label{pt:cut:itp:lem:maehara}
+$\Log{G3c}
+\Proves \maeh{\Gamma_1}{\Gamma_2} \Sequent \maeh{\Delta_1}{\Delta_2}$
+असेल, तर $\Lang L(C)
+\subseteq \Lang L(\Gamma_1,
+\Delta_1) \cap \Lang L(\Gamma_2, \Delta_2)$
+या भाषा मधील असे सूत्र~$C$ असते की
+$\Log{G3c}
+\Proves \Gamma_1 \Sequent \Delta_1, C$ आणि
+$\Log{G3c} \Proves C,
+\Gamma_2 \Sequent \Delta_2$.
+\end{lem}
+चारही संदर्भांतील सूत्रे वाक्ये असतील, तर अंतर्वेशकातील
+मुक्त चरे सार्वत्रिकपणे बांधून वाक्यरूप अंतर्वेशक घेता येतो.
+एका मुक्त चरासाठी पहिल्या सिद्धतेत तो चर आधी नव्या
+स्थिरांकाने बदलून $\RightR{\lforall}$ लावायचा; बंद संदर्भांमुळे
+आयगेन चराची अट पूर्ण होते. दुसऱ्या सिद्धतेत त्या चराचे
+पद वापरून $\LeftR{\lforall}$ आणि आवश्यक दुर्बलीकरण लावायचे.
+प्रत्येक मुक्त चरासाठी हे केल्याने दोन्ही क्रमवर्ती सिद्धतायोग्य
+राहतात आणि स्थिरांक-विधेयांची भाषा-सीमा बदलत नाही.
+
+\begin{proof}
+  $\pi \Proves \maeh{\Gamma_1}{\Gamma_2} \Sequent
+  \maeh{\Delta_1}{\Delta_2}$ असे गृहीत धरा.
+  $n=\pheight{\pi}$ यावर विगमन करून विधान सिद्ध करू.
+
+  $n=0$ असेल, तर
+  $\maeh{\Gamma_1}{\Gamma_2} \Sequent
+  \maeh{\Delta_1}{\Delta_2}$ हे स्वयंसिद्धक आहे
+  आणि एखादे अणुरूप सूत्र~$A$
+  हे $\Gamma_1, \Gamma_2$ आणि
+  $\Delta_1, \Delta_2$ या दोन्ही बाजूंना येते.
+  डावीकडे आणि उजवीकडे $A$ पहिल्या की
+  दुसऱ्या भागात आहे यावर चार प्रसंग ठरतात.
+  \begin{enumerate}
+    \item $A \in \Gamma_1$ आणि $A \in \Delta_1$.
+    $\Gamma_1 \Sequent \Delta_1, C$ आणि
+    $C, \Gamma_2 \Sequent \Delta_2$ या दोन्ही
+    सिद्धतायोग्य असतील असे~$C$ हवे.
+    $A$ दोन्ही बाजूंना असल्याने, $C$ काहीही
+    निवडले तरी पहिली क्रमवर्ती आधीच स्वयंसिद्धक आहे.
+    $C, \Gamma_2 \Sequent \Delta_2$ ही दुसरी
+    क्रमवर्ती सिद्धतायोग्य असण्याची खात्री
+    करण्यासाठी $C \ident \lfalse$ घ्यावे लागते.
+    \item $A \in \Gamma_1$ आणि $A \in \Delta_2$.
+    मग $\Gamma_1 \Sequent \Delta_1, A$ आणि
+    $A, \Gamma_2 \Sequent \Delta_2$ ही दोन्ही
+    स्वयंसिद्धके आहेत; म्हणून $C \ident A$ घेता येते.
+    \item $A \in \Gamma_2$ आणि $A \in \Delta_1$.
+    मग $A, \Gamma_1 \Sequent \Delta_1$ आणि
+    $\Gamma_2 \Sequent \Delta_2, A$ ही स्वयंसिद्धके
+    असतील; पण त्यांत~$A$ चुकीच्या बाजूंना आहे.
+    म्हणून $A$ अंतर्वेशक नाही.
+    तथापि $\RightR{\lnot}$ आणि $\LeftR{\lnot}$
+    वापरून $\Gamma_1
+    \Sequent \Delta_1, \lnot A$ आणि
+    $\lnot A, \Gamma_2 \Sequent
+    \Delta_2$ या क्रमवर्ती सिद्ध करता येतात.
+    \item $A \in \Gamma_2$ आणि $A \in \Delta_2$.
+    हा सरावासाठीचा प्रसंग आहे.
+  \end{enumerate}
+  $\lfalse \in \Gamma_1$ किंवा
+  $\lfalse \in \Gamma_2$ यांमुळे
+  $\maeh{\Gamma_1}{\Gamma_2} \Sequent
+  \maeh{\Delta_1}{\Delta_2}$ स्वयंसिद्धक असण्याचे
+  प्रसंगही सरावासाठी सोडले आहेत.
+
+  $n>0$ असेल, तर $\pi$ च्या शेवटी
+  तार्किक अनुमान आहे. कोणता नियम वापरला
+  आणि मुख्य सूत्र कोणत्या भागात आहे, यानुसार
+  प्रसंग वेगळे करावे लागतील. प्रत्येक प्रसंगात
+  $\pheight{\pi_1} < n$ असलेल्या सर्व
+  सिद्धता~$\pi_1$ साठी, त्यांची अंतिम
+  क्रमवर्ती कोणत्याही प्रकारे दोन भागांत
+  विभागली असली तरी, उपप्रमेय खरे आहे हे
+  विगमन गृहीतक वापरता येते. काही विशिष्ट
+  प्रसंग पाहू.
+  \begin{enumerate}
+    \item $\pi$ च्या शेवटी $\RightR{\lnot}$
+    असून मुख्य सूत्र~$\lnot
+    A$ आहे. $\lnot A$ पहिल्या की
+    दुसऱ्या भागात आहे, यानुसार $\pi$ चा
+    शेवट पुढीलपैकी एक असतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{A, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lnot A}{\Delta_2}$
+    \DisplayProof
+    \]
+    किंवा
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{A, \Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \RightLabel{\RightR{\lnot}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, \lnot A}$
+    \DisplayProof
+    \]
+    मुख्य सूत्र~$\lnot A$ पहिल्या
+    भागात असेल, तर आधारक्रमवर्तीतील सक्रिय
+    सूत्र~$A$ देखील आपण पहिल्या
+    भागातच ठेवले आहे. ही निवड आपल्याला
+    करता येते. सक्रिय सूत्र दुसऱ्या भागात
+    ठेवले तरी $\pi_1$ च्या
+    अंतिम क्रमवर्तीला विगमन गृहीतक लागू होईल;
+    मात्र मग अंतर्वेशक शोधता येणार नाही
+    (हे करून पाहा).
+
+    आधी $\lnot A$ पहिल्या भागात
+    असलेला प्रसंग पाहू. विगमन गृहीतकानुसार
+    $\pi_1$ च्या अंतिम क्रमवर्तीला
+    अंतर्वेशक असतो, म्हणजे असे
+    सूत्र~$C_1$ असते की पुढील दोन्ही
+    क्रमवर्ती
+    \begin{align*}
+    A, \Gamma_1 & \Sequent \Delta_1, C_1 &&\text{आणि} &
+    C_1, \Gamma_2 & \Sequent \Delta_2
+    \intertext{सिद्ध करता येतात. आता आपल्याला असे सूत्र~$C$ हवे की
+    पुढील दोन्ही सिद्धतायोग्य असतील:}
+    \Gamma_1 & \Sequent \Delta_1, \lnot A, C &&\text{आणि} &
+    C, \Gamma_2 & \Sequent \Delta_2
+    \end{align*}
+    स्पष्टपणे $C \ident C_1$ घेता येते:
+    उजवीकडील क्रमवर्ती सिद्धतायोग्य आहे
+    हे विगमन गृहीतकाने आधीच मिळते, आणि
+    डावीकडील क्रमवर्ती विगमन गृहीतकातून
+    मिळालेल्या क्रमवर्तीवर~$\RightR{\lnot}$
+    लावून मिळते. विगमन गृहीतकाने
+    $\Lang L(C_1) \subseteq \Lang L(A, \Gamma_1,
+    \Delta_1) \cap \Lang L(\Gamma_2, \Delta_2)$
+    हेदेखील मिळते. $\Lang L(\lnot
+    A) = \Lang L(A)$ आणि
+    $\Lang L(C) = \Lang L(C_1)$ असल्याने
+    $\Lang L(C_1) \subseteq \Lang L(\Gamma_1, \Delta_1, \lnot A) \cap \Lang
+    L(\Gamma_2, \Delta_2)$.
+
+    दुसऱ्या प्रसंगात $\lnot A$
+    दुसऱ्या भागात असल्याने स्थिती थोडी
+    वेगळी आहे. आधारक्रमवर्तीतील सक्रिय
+    सूत्र देखील दुसऱ्या भागात
+    ठेवून विगमन गृहीतक लावतो; त्यातून
+    \begin{align*}
+    \Gamma_1 & \Sequent \Delta_1, C_1 &&\text{आणि} &
+    C_1, A, \Gamma_2 & \Sequent \Delta_2
+    \intertext{सिद्ध करता येतात. यांतील दुसऱ्या क्रमवर्तीवर पुन्हा \RightR{\lnot} लावल्यास पुढील सिद्धता मिळतात:}
+    \Gamma_1 & \Sequent \Delta_1, C_1 &&\text{आणि} &
+    C_1, \Gamma_2 & \Sequent \Delta_2, \lnot A
+    \end{align*}
+    $C_1$ अंतर्वेशक असेल तर नेमक्या
+    याच क्रमवर्ती सिद्धतायोग्य हव्या होत्या;
+    म्हणून पुन्हा $C \ident C_1$ घेऊ.
+    पूर्वीप्रमाणे $\Lang
+    L(C_1) \subseteq \Lang L(\Gamma_1, \Delta_1) \cap \Lang L(\Gamma_2,
+    \Delta_2, \lnot A)$.
+    \item $\pi$ च्या शेवटी $\RightR{\lif}$
+    असून मुख्य सूत्र~$A
+    \lif B$ आहे. $A \lif
+    B$ पहिल्या की दुसऱ्या भागात आहे
+    यावर पुन्हा दोन प्रसंग मिळतात.
+    सिद्धता~$\pi$ चा शेवट असा असतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{A, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, B}{\Delta_2}$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, A \lif B}{\Delta_2}$
+    \DisplayProof
+    \]
+    किंवा
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{A, \Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, B}$
+    \RightLabel{\RightR{\lif}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, A \lif B}$
+    \DisplayProof
+    \]
+    येथेही आधारक्रमवर्तीतील सक्रिय
+    सूत्रे निष्कर्षातील मुख्य
+    सूत्राच्याच भागात ठेवली आहेत.
+    पहिल्या प्रसंगात विगमन गृहीतकाने
+    पुढील सिद्धता मिळतात:
+    \begin{align*}
+    A, \Gamma_1 & \Sequent \Delta_1, B, C_1 &&\text{आणि} & C_1, \Gamma_2 & \Sequent \Delta_2
+    \intertext{डावीकडील क्रमवर्ती \RightR{\lif} साठी योग्य आधारक्रमवर्ती आहे. म्हणून पुढील क्रमवर्ती सिद्धतायोग्य आहेत:}
+    \Gamma_1 & \Sequent \Delta_1, A \lif B, C_1 &&\text{आणि} & C_1, \Gamma_2 & \Sequent \Delta_2
+    \end{align*}
+    म्हणून $C_1$ हा $\pi$ च्या
+    अंतिम क्रमवर्तीचाही अंतर्वेशक आहे;
+    पुन्हा $C \ident C_1$ घेता येते.
+
+    दुसरा प्रसंगही याच प्रकारे हाताळता येतो.
+    \item $\pi$ च्या शेवटी $\LeftR{\lif}$
+    असून मुख्य सूत्र~$A
+    \lif B$ आहे. $A \lif B$
+    पहिल्या भागात असेल, तर
+    सिद्धता~$\pi$ चा शेवट असा असतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, A}{\Delta_2}$
+    \AxiomC{}
+    \RightLabel{$\pi_2$}
+    \Deduce$\maeh{B, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \BinaryInf$\maeh{A \lif B, \Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2}$
+    \DisplayProof
+    \]
+    विगमन गृहीतकाने आता चार
+    सिद्धतायोग्य क्रमवर्ती मिळतात:
+    डाव्या आधारक्रमवर्तीच्या
+    अंतर्वेशक~$C_1$ साठी दोन आणि
+    दुसऱ्या आधारक्रमवर्तीच्या
+    अंतर्वेशक~$C_2$ साठी दोन:
+    \begin{align*}
+    \Gamma_1 & \Sequent \Delta_1, A, C_1 &&\text{(1)} &
+    C_1, \Gamma_2 & \Sequent \Delta_2 && \text{(2)}\\
+    B, \Gamma_1 & \Sequent \Delta_1, C_2 &&\text{(3)} &
+    C_2, \Gamma_2 & \Sequent \Delta_2 && \text{(4)}
+    \end{align*}
+    दुर्बलीकरण लावून (1) च्या
+    उजवीकडे~$C_2$ आणि (3) च्या
+    उजवीकडे~$C_1$ जोडल्यास
+    (1) आणि (3) या क्रमवर्ती
+    \LeftR{\lif} च्या आधारक्रमवर्ती
+    म्हणून वापरता येतात:
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter \Delta_1, A, C_1, C_2$
+    \AxiomC{}
+    \Deduce$B, \Gamma_1 \fCenter \Delta_1, C_1, C_2$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$A \lif B, \Gamma_1 \fCenter \Delta_1, C_1, C_2$
+    \DisplayProof
+    \]
+    $\RightR{\lor}$ लावल्याने पुढील
+    क्रमवर्ती मिळते:
+    \[
+    A \lif B, \Gamma_1 \fCenter \Delta_1, C_1 \lor C_2
+    \]
+    त्यामुळे या प्रसंगात
+    $C_1 \lor C_2$ अंतर्वेशक असू
+    शकतो असे सुचते. उरलेल्या
+    (2) आणि~(4) क्रमवर्ती वापरून
+    आवश्यक दुसरी क्रमवर्तीही
+    सिद्ध करता येते:
+    \[
+    \AxiomC{}
+    \Deduce$C_1, \Gamma_2 \fCenter \Delta_2$
+    \AxiomC{}
+    \Deduce$C_2, \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lor}}
+    \BinaryInf$C_1 \lor C_2, \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    $C_1 \lor C_2$ योग्य
+    भाषेत आहे हे तपासणे उरते.
+    विगमन गृहीतकानुसार
+    \begin{align*}
+    \Lang L(C_1) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, A) \cap \Lang L(\Gamma_2, \Delta_2) &\text{आणि}\\
+    \Lang L(C_2) & \subseteq
+    \Lang L(B, \Gamma_1, \Delta_1) \cap \Lang L(\Gamma_2, \Delta_2)
+    \intertext{कारण}
+    \Lang L(A) & \subseteq \Lang L(A \lif B) &\text{आणि}\\
+    \Lang L(B) & \subseteq \Lang L(A \lif B)
+    \intertext{म्हणून या दोन्ही अटी मिळतात}
+    \Lang L(C_1) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, A \lif B) \cap \Lang L(\Gamma_2, \Delta_2) &\text{आणि}\\
+    \Lang L(C_2) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, A \lif B) \cap \Lang L(\Gamma_2, \Delta_2)
+    \intertext{आणि परिणामी, $\Lang L (C_1 \lor C_2) = {}$}
+    \Lang L(C_1) \cup \Lang L(C_2) & \subseteq
+    \Lang L(\Gamma_1, \Delta_1, A \lif B) \cap \Lang L(\Gamma_2, \Delta_2),
+    \end{align*}
+    आणि हेच अपेक्षित आहे.
+
+    $A \lif B$ दुसऱ्या
+    भागात असण्याचा प्रसंग
+    वेगळा आहे, पण तशाच
+    पद्धतीने हाताळता येतो.
+    विगमन गृहीतकाने पुन्हा
+    चार सिद्धतायोग्य क्रमवर्ती मिळतात:
+    \begin{align*}
+    \Gamma_1 & \Sequent \Delta_1, C_1 &&\text{(1)} &
+    C_1, \Gamma_2 & \Sequent \Delta_2, A && \text{(2)}\\
+    \Gamma_1 & \Sequent \Delta_1, C_2 &&\text{(3)} &
+    C_2, B, \Gamma_2 & \Sequent \Delta_2 && \text{(4)}
+    \end{align*}
+    आता (2) आणि (4) या क्रमवर्ती,
+    काही सूत्रे दुर्बल करून
+    जोडल्यावर,~\LeftR{\lif}
+    च्या आधारक्रमवर्ती ठरतात:
+    \[
+    \AxiomC{}
+    \Deduce$C_1, C_2, \Gamma_2 \fCenter \Delta_2, A$
+    \AxiomC{}
+    \Deduce$B, C_1, C_2, \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lif}}
+    \BinaryInf$A \lif B, C_1, C_2, \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    यांतून $C_1$ आणि $C_2$
+    वापरून बनलेले एकच सूत्र
+    असणारी क्रमवर्ती हवी आहे;
+    पण यावेळी ते पूर्वांगात हवे
+    (कारण आता दुसऱ्या भागाशी
+    संबंध आहे). $\LeftR{\land}$
+    लावल्याने ते साधते; म्हणून
+    $C \ident
+    (C_1 \land C_2)$ अंतर्वेशक घेऊ.
+    उरलेल्या (1) आणि (3)
+    क्रमवर्ती वापरून पहिल्या
+    भागाची संबंधित क्रमवर्तीही
+    सिद्ध करता येते:
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter \Delta_1, C_1$
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter \Delta_1, C_2$
+    \RightLabel{\RightR{\land}}
+    \BinaryInf$\Gamma_1 \fCenter \Delta_1, C_1 \land C_2$
+    \DisplayProof
+    \]
+    पूर्वीप्रमाणे
+    $\Lang L(C_1 \land C_2) \subseteq \Lang
+    L(\Gamma_1, \Delta_1) \cap \Lang L(\Gamma_2, \Delta_2, A \lif
+    B)$ मिळते.
+
+    \item $\pi$ च्या शेवटी $\RightR{\lforall}$
+    असून मुख्य सूत्र~$\lforall[x][A(x)]$ आहे:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+    \maeh{\Delta_1, A(c)}{\Delta_2}$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lforall[x][A(x)]}{\Delta_2}$
+    \DisplayProof
+    \]
+    किंवा
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, A(c)}$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1}{\Delta_2, \lforall[x][A(x)]}$
+    \DisplayProof
+    \]
+    पहिल्या प्रसंगात विगमन गृहीतकाने
+    $\Gamma_1 \Sequent \Delta_1, A(c), C_1$
+    आणि $C_1, \Gamma_2
+    \Sequent \Delta_2$ यांच्या सिद्धता मिळतात.
+    पहिल्या क्रमवर्तीवर $\RightR{\lforall}$
+    लावून $\Gamma_1 \Sequent \Delta_1, \lforall[x][A(x)], C_1$
+    मिळते. ($\pi$ च्या अंतिम
+    \RightR{\lforall} अनुमानात आयगेन चराची
+    अट आधीच पूर्ण असल्याने येथेही ती पूर्ण आहे.)
+    $\Lang
+    L(C_1) \subseteq \Lang L(\Gamma_1, \Delta_1, \lforall[x][A(x)])
+    \cap \Lang L(\Gamma_2, \Delta_2)$
+    ही अट पूर्ण असेल, तर $C_1$ अंतर्वेशक ठरेल.
+    विगमन गृहीतकाने
+    $\Lang L(C_1) \subseteq \Lang L(\Gamma_1,
+    \Delta_1, A(c)) \cap \Lang L(\Gamma_2, \Delta_2)$
+    मिळते. म्हणून~$c$ ची काळजी घ्यावी लागते:
+    $C_1$ मध्ये $c$ येऊ शकतो का? येऊ शकत नाही.
+    $C_1$ मध्ये $c$ आल्यास
+    $c \in \Lang L(\Gamma_1, \Delta_1,
+    A(c))$ (जे खरे आहे) आणि
+    $c \in \Lang L(\Gamma_2,
+    \Delta_2)$ हेही दोन्ही खरे ठरतील.
+    पण मग $\pi$ मधील
+    $\RightR{\lforall}$ अनुमानाच्या
+    निष्कर्षात $c$ येईल आणि
+    आयगेन चराची अट मोडेल.
+
+    दुसरा प्रसंगही यासारखाच आहे.
+
+    \item $\pi$ च्या शेवटी
+    $\RightR{\lexists}$ असून मुख्य
+    सूत्र~$\lexists[x][A(x)]$ आहे.
+    येथेही दोन प्रसंग आहेत.
+    $\lexists[x][A(x)]$ पहिल्या
+    भागात असलेला प्रसंग पाहू;
+    दुसरा सरावासाठी सोडला आहे.
+
+    पहिल्या प्रसंगात $\pi$ चा
+    शेवट असा असतो:
+    \[
+    \AxiomC{}
+    \RightLabel{$\pi_1$}
+    \Deduce$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lexists[x][A(x)], A(t)}{\Delta_2}$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\maeh{\Gamma_1}{\Gamma_2} \fCenter
+      \maeh{\Delta_1, \lexists[x][A(x)]}{\Delta_2}$
+    \DisplayProof
+    \]
+    \begingroup\sloppy
+    विगमन गृहीतकाने
+    $\Gamma_1 \Sequent
+    \Delta_1, \lexists[x][A(x)], A(t), C_1$
+    आणि $C_1, \Gamma_2
+    \Sequent \Delta_2$ यांच्या सिद्धता मिळतात.
+    पहिल्या क्रमवर्तीवर $\RightR{\lexists}$
+    लावल्याने $\Gamma_1 \Sequent \Delta_1, \lexists[x][A(x)], C_1$
+    मिळते. म्हणून
+    $\Lang L(C_1) \subseteq \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][A(x)]) \cap \Lang L(\Gamma_2, \Delta_2)$
+    ही अट पूर्ण असल्यास $C_1$ पुन्हा
+    अंतर्वेशक ठरेल. येथे विगमन गृहीतकाने
+    $\Lang L(C_1)
+    \subseteq \Lang L(\Gamma_1, \Delta_1, \lexists[x][A(x)], A(t))
+    \cap \Lang L(\Gamma_2, \Delta_2)$
+    मिळते. आपण फलने नाहीत असे
+    गृहीत धरले आहे, हे लक्षात घ्या.
+    म्हणून पद~$t$ हे चर किंवा स्थिरांक असते.
+    $t$ चर असेल, तर त्याच्या प्रतिस्थापनाने नवीन
+    स्थिरांक किंवा विधेय-चिन्ह येत नाही:
+    $\Lang L(A(t))\subseteq\Lang L(A(x))$.
+    त्यामुळे वरील विगमन गृहीतकातील भाषा-सीमा
+    अंतिम क्रमवर्तीच्या दोन भागांच्या भाषांच्या
+    छेदातच राहते आणि $C\ident C_1$ घेता येते.
+    $\RightR{\lexists}$ साठी आयगेन चराची अट नाही.
+    आता $t$ हे स्थिरांक असल्याचा प्रसंग,
+    म्हणजे $t\ident b$, पाहू.
+    $b \notin \Lang L(C_1)$ असेल,
+    किंवा $b \in \Lang L(\Gamma_1, \Delta_1, \lexists[x][A(x)]) \cap
+    \Lang L(\Gamma_2, \Delta_2)$ असेल,
+    तर अडचण नाही: $C_1$ अंतर्वेशक घेता येते.
+    पण $b \in \Lang
+    L(C_1)$ आणि $b \notin \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][A(x)]) \cap \Lang L(\Gamma_2, \Delta_2)$
+    असेल तर? प्रथम~$C_1$ मधील
+    $b$ ची प्रत्येक उपस्थिती
+    $C_1$ मध्ये न येणारा नवा चल~$y$
+    निवडून त्याने बदलल्यावर
+    $C_1 \ident \Subst{C_1'}{b}{y}$
+    असे लिहिता येते; येथे $C_1'$
+    मध्ये~$b$ येत नाही. शिवाय,
+    $b \notin
+    \Lang L(\Gamma_1, \Delta_1, \lexists[x][A(x)])$
+    किंवा $b \notin
+    \Lang L(\Gamma_2, \Delta_2)$.
+    त्यानुसार $C \ident
+    \lforall[y][C_1'(y)]$ किंवा
+    $C \ident \lexists[y][C_1'(y)]$
+    घेता येते. पहिल्या प्रसंगात:\par\endgroup
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][A(x)], A(b), C_1'(b)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\Gamma_1 \fCenter \Delta_1, \lexists[x][A(x)], C_1'(b)$
+    \RightLabel{\RightR{\lforall}}
+    \UnaryInf$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][A(x)], \lforall[y][C_1'(y)]$
+    \DisplayProof
+    \]
+    आणि
+    \[
+    \AxiomC{}
+    \Deduce$C_1'(b), \lforall[y][C_1'(y)], \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lforall}}
+    \UnaryInf$\lforall[y][C_1'(y)], \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    सर्वात वरच्या क्रमवर्तींच्या
+    सिद्धता विगमन गृहीतकातून मिळतात
+    (दुसऱ्या सिद्धतेत पूर्वांगात
+    $\lforall[y][C_1'(y)]$ जोडण्यासाठी
+    दुर्बलीकरणाची ग्राह्यता वापरतो).
+    पहिल्या सिद्धता मधील
+    \RightR{\lforall} साठी आयगेन चराची
+    अट पूर्ण आहे, कारण
+    $b \notin \Lang L(\Gamma_1, \Delta_1,
+    \lexists[x][A(x)])$ आणि
+    $C_1'$ मध्ये~$b$ येत नाही,
+    अशीच त्याची व्याख्या केली आहे.
+
+    दुसऱ्या प्रसंगात, विगमन गृहीतक
+    आणि $\lexists[y][C_1'(y)]$
+    जोडणाऱ्या दुर्बलीकरणाच्या
+    ग्राह्यतेने पुढील मिळते:
+    \[
+    \AxiomC{}
+    \Deduce$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][A(x)], A(b), \lexists[y][C_1'(y)], C_1'(b)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][A(x)], \lexists[y][C_1'(y)], C_1'(b)$
+    \RightLabel{\RightR{\lexists}}
+    \UnaryInf$\Gamma_1 \fCenter
+      \Delta_1, \lexists[x][A(x)], \lexists[y][C_1'(y)]$
+    \DisplayProof
+    \]
+    आणि
+    \[
+    \AxiomC{}
+    \Deduce$C_1'(b), \Gamma_2 \fCenter \Delta_2$
+    \RightLabel{\LeftR{\lexists}}
+    \UnaryInf$\lexists[y][C_1'(y)], \Gamma_2 \fCenter \Delta_2$
+    \DisplayProof
+    \]
+    दुसऱ्या सिद्धता मधील
+    \LeftR{\lexists} साठी आयगेन चराची
+    अट पूर्ण आहे, कारण
+    $b \notin \Lang L(\Gamma_2,
+    \Delta_2)$ आणि $C_1'$ मध्ये~$b$
+    येत नाही, अशीच त्याची व्याख्या केली आहे.
+  \end{enumerate}
+  उरलेले प्रसंगही यांसारखे आहेत;
+  ते सरावासाठी सोडले आहेत.
+\end{proof}
+
+\begin{prob}
+$\lnand$ हा संयोजक पुढील नियमांसह
+आपल्याकडे आहे असे समजा:
+\[
+\Axiom$\Gamma \fCenter \Delta, A$
+\Axiom$\Gamma \fCenter \Delta, B$
+\RightLabel{\LeftR{\lnand}}
+\BinaryInf$A \lnand B, \Gamma \fCenter \Delta$
+\DisplayProof
+\quad
+\Axiom$A, B, \Gamma \fCenter \Delta$
+\RightLabel{\RightR{\lnand}}
+\UnaryInf$\Gamma \fCenter \Delta, A \lnand B$
+\DisplayProof
+\]
+ज्या प्रसंगात $\pi$ चा शेवट
+यांपैकी एखाद्या नियमाने होतो,
+ते \ref{pt:cut:itp:lem:maehara} च्या सिद्धतेत
+पूर्ण करून माएहाराचे उपप्रमेय
+अजूनही खरे आहे हे दाखवा.
+\end{prob}
+
+माएहाराचे उपप्रमेय सिद्ध झाल्यावर
+त्यावरून क्रेगचे अंतर्वेशन प्रमेय
+सिद्ध करता येते.
+
+\begin{proof}[\ref{pt:cut:itp:thm:interpolation} ची सिद्धता]
+  $A \Sequent B$ सिद्धतायोग्य आहे असे
+  समजा. $\maeh{A}{\ } \Sequent \maeh{\ }{B}$
+  याला \ref{pt:cut:itp:lem:maehara} लावून
+  अंतर्वेशक~$C$ मिळवा. मग
+  $\Proves A \Sequent C$ आणि
+  $\Proves C
+  \Sequent B$.
+\end{proof}
+
+$\Gamma$ ही वाक्यांचा संच असलेली
+उपपत्ती, भाषा~$\Lang L$ मध्ये आहे
+आणि त्यात $n$-स्थानी {विधेय}~$R$ आहे
+असे समजा. पुढील अट पूर्ण असेल, तेव्हा
+आणि केवळ तेव्हाच, $\Gamma$ ही
+$R$ ला \emph{अंतर्निहितपणे परिभाषित करते}:
+\begin{align*}
+\Gamma, \Gamma'
+& \Entails \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff
+R'(x_1, \dots, x_n))]],
+\intertext{येथे $\Gamma'$ म्हणजे $\Gamma$ मध्ये $R$ ची प्रत्येक उपस्थिती
+$R' \notin \Lang L$ ने बदलल्यावर मिळणारी उपपत्ती. $\Gamma$ ही $R$ ला
+\emph{स्पष्टपणे परिभाषित करते}, तेव्हा आणि केवळ तेव्हाच, $R$ नसलेले असे
+$A(x_1, \dots, x_n)$ असते की}
+\Gamma &\Entails
+\lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff A(x_1,
+\dots, x_n))]].
+\end{align*}
+स्पष्टपणे, $\Gamma$ ही $R$ ला
+स्पष्टपणे परिभाषित करत असेल, तर
+ती $R$ ला अंतर्निहितपणेही परिभाषित करते.
+उलट विधान लगेच स्पष्ट होत नसले,
+तरी ते खरे आहे:
+
+\begin{lem}[बेथचे परिभाष्यता प्रमेय]
+  $\Gamma$ ही $R$ ला अंतर्निहितपणे
+  परिभाषित करत असेल, तर ती त्याला
+  स्पष्टपणेही परिभाषित करते.
+\end{lem}
+
+\begin{proof}
+  $\Gamma$ ही $R$ ला अंतर्निहितपणे
+  परिभाषित करते असे समजा. वरीलप्रमाणे
+  $R'$ आणि $\Gamma'$ घ्या;
+  $\Lang L' = \Lang L(\Gamma') = \Lang L \setminus \{R\}
+  \cup \{R'\}$ असू द्या. गृहीतकानुसार
+  \begin{align*}
+    \Gamma, \Gamma' &
+    \Sequent \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n)
+    \liff R'(x_1, \dots, x_n))]]
+  \intertext{$c_1$, \dots,~$c_n$ हे $\Gamma$ मध्ये न येणारे स्थिरांक असू द्या. व्युत्क्रमणीयतेच्या उपप्रमेयाने मिळते:}
+    \Gamma, \Gamma', R(c_1,\dots,c_n) & \Sequent  R'(c_1, \dots, c_n)
+  \intertext{माएहाराचे उपप्रमेय पुढील क्रमवर्तीला लावा:}
+    \maeh{\Gamma, R(c_1,\dots,c_n)}{\Gamma'} & \Sequent
+      \maeh{\ }{R'(c_1, \dots, c_n)}
+  \intertext{या बंद संदर्भांसाठी आवश्यक मुक्त चरे सार्वत्रिकपणे बांधून वाक्यरूप अंतर्वेशक निवडा. मग नव्या स्थिरांकांच्या जागी संबंधित चरे ठेवून असे~$A \ident A(x_1, \dots, x_n)$ मिळते की}
+    \Gamma, R(c_1,\dots,c_n) & \Sequent A(c_1, \dots, c_n) \\
+    A(c_1, \dots, c_n), \Gamma' & \Sequent R'(c_1, \dots, c_n)
+  \intertext{यांच्या सिद्धता असतात. $\Lang L(A) \subseteq
+  (\Lang L(\Gamma) \setminus \{R\}) \cup \{c_1,\dots,c_n\}$ असल्याने $A$ मध्ये~$R$ नसतो.
+  दुसऱ्या क्रमवर्तीच्या सिद्धता मध्ये सर्वत्र $R'$ च्या जागी~$R$ ठेवून
+  पुढील सिद्धता मिळते:}
+    A(c_1, \dots, c_n), \Gamma & \Sequent R(c_1, \dots, c_n)
+  \end{align*}
+  येथील नव्या स्थिरांकांच्या जागी
+  संबंधित चरे ठेवता येतात.
+  \RightR{\lif} आणि
+  \RightR{\lforall} लावून पुढील
+  सिद्धता मिळते:
+  \[
+    \Gamma \Sequent \lforall[x_1][\dots\lforall[x_n][(R(x_1,\dots,x_n) \liff A(x_1, \dots, x_n))]].
+  \]
+  म्हणून $A(x_1, \dots, x_n)$ हे
+  $\Gamma$ मध्ये $R$ ला स्पष्टपणे
+  परिभाषित करते.
+\end{proof}
+
+अंतर्वेशनाशी समतुल्य असलेला
+आणि त्याप्रमाणेच माएहाराचे उपप्रमेय वापरून
+सिद्ध करता येणारा तिसरा निष्कर्ष असा:
+दोन सुसंगत उपपत्ती~$\Gamma_1$ आणि
+$\Gamma_2$ यांत $\Lang L(\Gamma) = \Lang L(\Gamma_1)
+\cap \Lang L(\Gamma_2)$ या भाषेतील
+पूर्ण उपपत्ती~$\Gamma$ समाविष्ट असेल,
+तर $\Gamma_1 \cup \Gamma_2$ सुसंगत असते.
+
+पूर्ण उपपत्ती म्हणजे तिच्या भाषेतील
+प्रत्येक वाक्य~$A$ साठी
+$\Gamma \Proves A$ किंवा
+$\Gamma \Proves \lnot A$ सिद्ध होणारी उपपत्ती,
+हे आठवा. $\Gamma_1$ आणि~$\Gamma_2$
+या $\Gamma$ च्या सुसंगत विस्तारे
+असल्याने $\Gamma$ सुसंगतच असली पाहिजे.
+म्हणून $A$ हे
+$\Lang L(\Gamma_1) \cap \Lang
+L(\Gamma_2)$ या भाषेतील
+वाक्य असेल, तर
+$\Gamma_1 \Entails A$ आणि
+$\Gamma_2
+\Entails \lnot A$ दोन्ही शक्य नाहीत.
+तसे एखादे~$A$ आहे असे समजा.
+$\Gamma_1 \Entails A$ असेल, तर
+$\Gamma \Entails A$.
+अन्यथा, $\Gamma$ पूर्ण असल्याने
+$\Gamma \Entails \lnot A$;
+आणि $\Gamma \subseteq \Gamma_1$
+असल्याने $\Gamma_1 \Entails \lnot A$,
+म्हणजे $\Gamma_1$ विसंगत ठरेल.
+म्हणून $\Gamma \Entails A$;
+आता $\Gamma
+\subseteq \Gamma_2$ असल्याने
+$\Gamma_2 \Entails A$.
+त्यामुळे $\Gamma \Entails/
+\lnot A$; अन्यथा $\Gamma_2$
+विसंगत ठरेल.
+
+संयुक्त भाषा~
+$\Lang L(\Gamma_1) \cap \Lang L(\Gamma_2)$
+मधील असे वाक्य~$A$
+नसणे की $\Gamma_1
+\Entails A$ आणि
+$\Gamma_2 \Entails \lnot A$,
+हेच सिद्धतेसाठी पुरेसे आहे.
+आता माएहाराचे उपप्रमेय वापरून
+ही सिद्धता सिद्धता-उपपत्तीय
+पद्धतीने देऊ.
+
+\begin{thm}[रॉबिन्सनचे संयुक्त सुसंगतता प्रमेय]
+$\Gamma_1$ आणि $\Gamma_2$
+या सुसंगत उपपत्ती असू द्या.
+$\Lang L(\Gamma_1) \cap \Lang L(\Gamma_2)$
+या भाषा मधील कोणत्याही~$A$
+साठी $\Gamma_1 \Entails A$
+आणि $\Gamma_2 \Entails \lnot A$
+दोन्ही होत नसतील, तर
+$\Gamma_1 \cup \Gamma_2$ सुसंगत असते.
+\end{thm}
+
+\begin{proof}
+  उलट, $\Gamma_1 \cup \Gamma_2$
+  विसंगत आहे असे समजा.
+  मग $\Gamma_1, \Gamma_2 \Sequent \ $
+  या क्रमवर्तीची सिद्धता आहे.
+  $\maeh{\Gamma_1}{\Gamma_2}
+  \Sequent \maeh{\ }{\ }$ याला
+  माएहाराचे उपप्रमेय लावून, आवश्यक असल्यास वर
+  सांगितल्याप्रमाणे अंतर्वेशकातील मुक्त चरे बांधल्याने,
+  $\Lang L(\Gamma_1) \cap \Lang L(\Gamma_2)$
+  या भाषा मधील असे
+  वाक्य~$A$ मिळते की
+  $\Proves \Gamma_1 \Sequent A$
+  आणि $\Proves A, \Gamma_2 \Sequent
+  \quad$. दुसऱ्या क्रमवर्तीवरून
+  $\Proves \Gamma_2 \Sequent \lnot A$
+  मिळते. पण असे वाक्य
+  अस्तित्वात नाही, हेच आपण
+  गृहीत धरले होते.
+\end{proof}
+
+वर आपण उपपत्ती $\Gamma$,
+$\Gamma_1$ आणि $\Gamma_2$
+सांत आहेत असे नकळत गृहीत धरले.
+संहततेमुळे हे निष्कर्ष
+अनंत उपपत्तींनाही लागू होतात.
+
+
+

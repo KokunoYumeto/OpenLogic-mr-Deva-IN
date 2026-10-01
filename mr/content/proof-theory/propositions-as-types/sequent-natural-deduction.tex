@@ -1,6 +1,7 @@
 % part: intuitionistic-logic
 % chapter: propositions-as-types
 % section: sequent-natural-deduction
+%READERNOTE{SOL6-A325: अंतिम उदाहरणातील संदर्भात चुकून आलेले अपूर्ण अभिव्यंजन-चिन्ह व कंस काढले; दिलेला B चा अर्थ आणि सिद्धतेचा निष्कर्ष जपला.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -125,11 +126,11 @@ $\Gamma \Sequent !A \lif !B$.
   \Axiom$!A \fCenter !A$
   \UnaryInf $!A \fCenter !A \lor (!A \lif \lfalse)$
   \Axiom $!B \fCenter !B$
-  \BinaryInf$!A, !B\lif \fCenter \lfalse$
-  \UnaryInf$(!B \fCenter !A \lif \lfalse$
-  \UnaryInf$( !B \fCenter !A \lor (!A \lif \lfalse)$
-  \Axiom$(!B \fCenter !B$
-  \BinaryInf$(!B \fCenter \lfalse$
+  \BinaryInf$!A, !B \fCenter \lfalse$
+  \UnaryInf$!B \fCenter !A \lif \lfalse$
+  \UnaryInf$!B \fCenter !A \lor (!A \lif \lfalse)$
+  \Axiom$!B \fCenter !B$
+  \BinaryInf$!B \fCenter \lfalse$
   \UnaryInf$\fCenter !B \lif \lfalse$
 \end{prooftree}
 येथे~$!B$ हे $(!A \lor (!A \lif \lfalse))\lif \lfalse$

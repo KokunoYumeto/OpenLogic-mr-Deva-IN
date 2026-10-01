@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-30",
+  "reviewer_model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "status": "passed",
+  "finite_executable_scope": {
+    "nonempty_domain_sizes": [
+      1,
+      2,
+      3
+    ],
+    "all_subsets_and_all_total_functions_enumerated": true,
+    "cardinal_comparison_subset_pairs": 84,
+    "countable_subset_cases": 14,
+    "Inf_subset_function_cases": 234
+  },
+  "finite_results_mr": "प्रत्येक finite subset साठी Count खरे, Inf खोटे, cardinal-le नेमके size inequality आणि cardeq नेमके size equality मिळाली. रिकामा subset या तपासणीत आहे; रिकामा domain हा book convention च्या बाहेर आहे.",
+  "infinite_global_injectivity_counterexample_mr": "M=N, X=N मधून शून्य काढलेला संच, Y=N. X वरील bijection k↦k−1 सर्व Y झाकते. पूर्ण M वर injective extension असल्यास शून्याची image आधीच X च्या image मध्ये असावी लागते, म्हणून contradiction. कोणत्याही globally injective u साठी u(X)=M हीच contradiction मिळते. नवीन formula X वरच injectivity मागते आणि X बाहेर arbitrary value घेते.",
+  "corrected_count_general_argument_mr": "अरिक्त X साठी z व f घेतल्यास z पासूनचा orbit हा X मधील closed subset आहे; शेवटच्या universal clause ने तो X इतकाच असतो. त्यामुळे X गणनीय आहे. उलट repetition-free countable enumeration मधील successor function, finite शेवटच्या घटकावर self-loop, X बाहेर arbitrary extension आणि z पहिले element घेतल्यास प्रत्येक closed subset containing z हे X असते. Empty branch रिकामा X घेते.",
+  "aleph_one_general_argument_mr": "निवडीसह प्रत्येक अगणनीय cardinal किमान aleph-one असतो. X चे आकारमान aleph-one असल्यास त्यापेक्षा strictly लहान cardinality चे प्रत्येक subset finite किंवा aleph-zero असते. आकारमान मोठे असल्यास X मध्ये aleph-one आकारमानाचा, X शी equinumerous नसलेला अगणनीय subset असतो; त्यामुळे नवीन formula खोटे होते.",
+  "old_domain_continuum_countermodel_mr": "Domain M हा (P(N)×{0}) union (P(P(N))×{1}) हा disjoint tagged संच घ्या. X={(n,0):n∈N}, Y={(A,0):A⊆N} आणि R((A,0),(n,0)) iff n∈A घ्या; n हा finite ordinal म्हणून P(N) मध्ये आहे. Y हा X चा powerset uniquely code करतो. जुन्या domain formula मधील u=id globally injective असून प्रत्येक Y-element त्याच्या range मध्ये आहे. त्यामुळे ती formula खरे होते; पण M मध्ये P(P(N)) ची tagged प्रत असल्याने Cantor ने त्याचे आकारमान continuum पेक्षा मोठे असते. नवीन full-domain Y आणि Cont(Y) ही चुकीची equivalence स्वीकारत नाही.",
+  "corrected_continuum_argument_mr": "Pow सर्व subsets चे codes देते; Cont मधील अंतिम conjunct एकाच subset साठी दोन वेगळे codes नाकारतो. म्हणून code-set आणि countable-X चा powerset यांची bijection मिळते. उलट continuum-size Y साठी अशी bijection निवडून membership relation R घडवता येते. Full-domain Y ची अट याच cardinality ला संपूर्ण M साठी लागू करते.",
+  "CH_NCH_argument_mr": "CH खरी असल्यास aleph-one आणि Cont predicates प्रत्येक subset वर समान असतात. उलट validity continuum-size domain मधील aleph-one subset वर लावल्यास continuum=aleph-one मिळते. CH खोटी असल्यास प्रत्येक continuum-size X मध्ये aleph-one आकारमानाचा, X पेक्षा strictly लहान अगणनीय Y मिळतो; NCH ची existential clause पूर्ण होते. CH खरी असल्यास असा Y नसतो आणि continuum-size domain countermodel देतो. Small domains मध्ये दोन्ही Cont-based implications vacuous असू शकतात; म्हणून negation-of-CH validity आणि NCH validity वेगळ्या आहेत.",
+  "current_target_bindings": {
+    "mr/content/second-order-logic/sol-and-set-theory/comparing-sets.tex": "7da50e827fa3ed08ee426dd27aeace90588222b4529ee7ff4dc095388cb8feec",
+    "mr/content/second-order-logic/sol-and-set-theory/cardinalities.tex": "e479a32873dda84496bd5282095c9b30a8109f42ed15b18c008ad5a4fa565102",
+    "mr/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex": "914cde2949c798f53f2e11ccd3c18dc52ec303900ab0dc2a854a595778bd7d9c"
+  },
+  "checker_sha256": "b418d2fa972aa372e1a754eea3ca7372e57052c189ddaa612db924836572397c",
+  "limitations_mr": "Finite exhaustive scope sizes 1–3 इतकाच आहे. Infinite sets व cardinals चे वरील counterexamples आणि equivalences थेट mathematical arguments आहेत; त्यांना executable infinite enumeration किंवा स्वतंत्र human theorem verification म्हटलेले नाही."
+}

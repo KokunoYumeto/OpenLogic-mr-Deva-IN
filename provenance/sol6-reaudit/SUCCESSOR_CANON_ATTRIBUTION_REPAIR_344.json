@@ -1,0 +1,12 @@
+{
+  "id": "SOL6-A344",
+  "date": "2026-10-01",
+  "record_kind": "workflow_attribution",
+  "historical_report": "provenance/complete-v1.1/CANON_RECHECK_101.json",
+  "historical_sha256": "31057f22f0f1d1af2c085a21d183dad84c42bab85b4bf2957afdfe21d868fb71",
+  "corrected_successor_report": "provenance/complete-v1.2/CANON_RECHECK_101.json",
+  "corrected_sha256": "de35c794bf1fc92700e552c8ff6e0ea7913413681c35106407cfcedfb42f5af8",
+  "scope_and_observations_unchanged": true,
+  "source_choices_added": 0,
+  "scope": "Corrected successor canon attribution and tag-specific staging route; historical v1.1 report preserved."
+}

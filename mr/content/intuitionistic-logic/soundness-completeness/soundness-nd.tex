@@ -24,7 +24,7 @@
 \begin{proof}
   $\Gamma \Proves !A$ असेल, तर $\Gamma \Entails !A$,
   हे सिद्ध करू. $\Gamma$ पासून~$!A$ च्या
-  !!{derivation} वर आगमनाने सिद्धता करतो.
+  !!{derivation} वर विगमनाने सिद्धता करतो.
 
   \begin{enumerate}
   \item !!{derivation} मध्ये केवळ गृहीतक~$!A$ असेल,
@@ -39,7 +39,7 @@
       गृहीतके~$\Delta$ यांपासून असलेल्या
       !!{derivation}s वरून $\Gamma \Proves
       !B$ आणि $\Delta \Proves !C$ हे मिळते.
-      आगमन-गृहीतकानुसार $\Gamma \Entails !B$
+      विगमन-गृहीतकानुसार $\Gamma \Entails !B$
       आणि $\Delta \Entails !C$. संपूर्ण
       !!{derivation} ची !!{undischarged} गृहीतके
       $\Gamma$ व $\Delta$ मिळून असल्यामुळे
@@ -57,7 +57,7 @@
         \land !C$ ची !!{undischarged} गृहीतके
         $\Gamma$ यांपासून असलेली !!{derivation}
         $\Gamma \Proves !B \land !C$ हे दाखवते.
-        आगमन-गृहीतकानुसार
+        विगमन-गृहीतकानुसार
         $\Gamma \Entails !B \land !C$.
         $\Gamma \Entails !B$ हे दाखवायचे आहे.
         म्हणून $\mSat{M}{\Gamma}[w]$ असे समजा.
@@ -72,7 +72,7 @@
       आणि~$!B$ येथे संपणाऱ्या !!{derivation} ची
       !!{undischarged} गृहीतके $\Gamma$ आहेत,
       असे समजा. मग $\Gamma \Proves !B$;
-      आगमन-गृहीतकानुसार $\Gamma \Entails !B$.
+      विगमन-गृहीतकानुसार $\Gamma \Entails !B$.
       $\Gamma \Entails !B \lor !C$ हे दाखवायचे आहे.
       $\mSat{M}{\Gamma}[w]$ असे समजा.
       $\Gamma \Entails !B$ असल्याने
@@ -92,7 +92,7 @@
       म्हणून $\Gamma \Proves !B \lor !C$,
       $\Delta_1 \cup \{!B\} \Proves !D$,
       आणि $\Delta_2 \cup \{!C\} \Proves !D$.
-      आगमन-गृहीतकानुसार
+      विगमन-गृहीतकानुसार
       $\Gamma \Entails !B \lor !C$,
       $\Delta_1 \cup \{!B\} \Entails !D$,
       आणि $\Delta_2 \cup \{!C\} \Entails !D$.
@@ -124,7 +124,7 @@
     !!{undischarged} गृहीतके~$\Gamma \cup
     \{!B\}$ आहेत. म्हणून
     $\Gamma \cup \{!B\} \Proves !C$;
-    आगमन-गृहीतकानुसार
+    विगमन-गृहीतकानुसार
     $\Gamma \cup \{!B\} \Entails !C$.
     $\Gamma \Entails !B \lif !C$ हे दाखवायचे आहे.
 
@@ -148,7 +148,7 @@
     $\Delta$ यांपासून आहेत. म्हणून
     $\Gamma \Proves !B \lif !C$ आणि
     $\Delta \Proves !B$.
-    आगमन-गृहीतकानुसार
+    विगमन-गृहीतकानुसार
     $\Gamma \Entails !B \lif !C$
     आणि $\Delta \Entails !B$.
     $\Gamma \cup \Delta \Entails !C$
@@ -177,7 +177,7 @@
     !!{undischarged} गृहीतकांपासून आहे,
     ती~$\Gamma$ आहेत. मग
     $\Gamma \Proves \lfalse$.
-    आगमन-गृहीतकानुसार
+    विगमन-गृहीतकानुसार
     $\Gamma \Entails \lfalse$.
     $\Gamma \Entails !A$ हे दाखवायचे आहे.
 

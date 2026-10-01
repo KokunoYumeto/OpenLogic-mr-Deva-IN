@@ -1,0 +1,13 @@
+{
+  "id": "SOL6-A358",
+  "date": "2026-10-01",
+  "record_kind": "workflow_visual",
+  "source_choices_added": 0,
+  "problem": "The reused MuPDF document font cache dropped shaped glyphs in raster samples; fresh page351 and actual Chromium SVGs showed intact source labels.",
+  "correction": "Open a fresh PDF document for each distinct physical page before full-page rasterization and pixel cropping. All five refreshed raster sheets and five actual SVG sheets inspected.",
+  "renderer": "tools/render_complete_diagram_crops.py",
+  "renderer_sha256": "a122a8bf77169a8f4bdbc64df6203ac665fe0fbd7059ee39cdbff61ac7621a25",
+  "pdf_sha256": "3ee7fe70d38346b3ffc7cd635aaa285e54a00e81e5cfe254467be7cc696306f9",
+  "diagram_visual_receipt_sha256": "2282d60404f4625569e9b0576fb96989d978ea93b97f3212ad387c06d27e37ff",
+  "source_pdf_and_svg_assets_changed": false
+}

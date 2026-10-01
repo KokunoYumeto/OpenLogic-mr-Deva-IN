@@ -1,6 +1,7 @@
 % Part: normal-modal-logic
 % Chapter: completeness
 % Section: completeness-K
+%READERNOTE{SOL6-A168: Determination theorem च्या hypotheses आणि canonical proof पद्धतीचा scope. Canonical model अस्तित्वासाठी consistent normal Sigma ही hypothesis determination theorem मध्ये स्पष्ट केली. K ची consistency पूर्वीच्या soundness आणि falsity च्या nonvalidity वरून मिळते, म्हणून K-completeness proof ला ही अट लागू होते. Arbitrary class completeness साठी canonical model membership नेहमी आवश्यक असे नाही; ही अट या canonical-model proof पद्धतीसाठी आवश्यक असल्याचे शब्दांकन केले. Determination iff आणि K corollary ची दोन्ही directions जपल्या.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -28,6 +29,7 @@
 \end{defn}
 
 \begin{thm}[निर्धारण]\ollabel{thm:determination}
+   $\Sigma$ हे सुसंगत सामान्य मोडल तर्कशास्त्र असू द्या. मग
    $\mSat{M^\Sigma}{!A}$ असेल तेव्हा
    आणि तेव्हाच $\Sigma \Proves !A$.
 \end{thm}
@@ -53,6 +55,7 @@
   म्हणजे $\mSat{M^\Sigma}{!A}$.
 \end{proof}
 
+निर्दोषतेनुसार \Log{K} सुसंगत आहे, कारण असत्य सूत्र वैध नाही.
 \Log{K} साठीचे कॅनॉनिकल प्रतिमान~\Log{K}
 चे निर्धारण करत असल्याने
 \Log{K} ची संपूर्णता लगेच निष्पन्नतेने मिळते:
@@ -79,8 +82,8 @@ $\Entails !A$ असेल, तर $\Log{K}
 \Log{KTB4} ची परावर्ती, सममित आणि
 संक्रमक प्रतिमानांच्या वर्गाच्या सापेक्ष
 संपूर्णता विचारात घ्या. प्रणाली~$\Sigma$
-साठीचे कॅनॉनिकल प्रतिमान त्या वर्गातील
-सदस्य आहे हेही दाखवावे लागते.
+साठीच्या कॅनॉनिकल प्रतिमानातून ही संपूर्णता सिद्ध करायची असेल,
+तर ते प्रतिमान त्या वर्गातील सदस्य आहे हेही दाखवावे लागते.
 कॅनॉनिकल प्रतिमानाच्या रचनेवरून हे
 स्पष्टपणे मिळत नाही---काही वेळा
 तर ते खरेही नसते!

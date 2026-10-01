@@ -1,0 +1,52 @@
+{
+  "schema": "openlogic-mr-complete-release-qa/1",
+  "release": "complete-v1.2",
+  "coverage": {
+    "translated_source_units": 722,
+    "total_source_units": 722,
+    "aligned_segments": 6644,
+    "reader_chapters": 79,
+    "reader_sections": 613,
+    "detailed_review_units": 281,
+    "detailed_review_occurrences": 14221
+  },
+  "pdf_pages": 957,
+  "pdf_log_clean": true,
+  "pdf_all_pages_structurally_checked": true,
+  "html_ready": true,
+  "desktop_and_mobile_browser_passed": true,
+  "diagram_assets": 70,
+  "mathml_nodes": 38988,
+  "semantic_proof_tables": 466,
+  "source_hashes_verified": 722,
+  "review_context_occurrences": 24770,
+  "review_total_occurrences": 26364,
+  "corrective_decisions": 328,
+  "corrective_occurrences": 939,
+  "localized_term_decisions": 638,
+  "localized_source_issues": 655,
+  "final_reader_projection_qa_sha256": "b2b80b9d126449d942952df0336bbf9596a41b650b5c42c5e1c49d56248fd904",
+  "source_reader_notes": 346,
+  "reader_note_qa_sha256": "08fbb3c1354805182e1ee977e387945860054d8ced5391b2ef49c326d4009aa6",
+  "reader_notice_mr": "सर्व 722 स्रोत-एककांची जुळवणी तपासली आहे. संदर्भ-निर्देश स्वतंत्र तज्ज्ञ स्वीकृतीची प्रमाणपत्रे नाहीत. ऐतिहासिक तपशीलवार पुनरावलोकन 281 एककांपुरते आहे.",
+  "provenance_report_sha256": "0c6c0142628aca89e1126040a1a7fc771c1f88da330d15caefeeddd97d90905c",
+  "sol6_reaudit": {
+    "affected_units_directly_read": 519,
+    "additional_control_units": 2,
+    "original_affected_tools_directly_read": 82,
+    "supporting_paths_checked": 126,
+    "corrective_choices": 328,
+    "pdf_pages_actually_viewed": 23,
+    "current_svg_diagrams_actually_viewed": 57,
+    "scope_notice_mr": "सर्व519 प्रभावित स्रोत-एककांचे प्रत्यक्ष पुनर्वाचन; सर्व722 एककांच्या नव्या अर्थपुनर्वाचनाचा दावा नाही. दृश्यतपासणी निवडक PDF/HTML/EPUB नमुने आणि सर्व57 नव्या SVG आकृत्यांपुरती आहे. स्वतंत्र मानवी स्वीकृती नाही."
+  },
+  "retrospective_canon_recheck": {
+    "contexts": 101,
+    "sha256": "de35c794bf1fc92700e552c8ff6e0ea7913413681c35106407cfcedfb42f5af8"
+  },
+  "complete_epub": {
+    "sha256": "f657419cb7963b9061261e950d26bb85a2c0e72ccfce341269faeefacdc1adeb",
+    "qa_sha256": "39c7c94c05f6b7a11ed10bb2e6cfeadfddd920d599f480f9c0f6d5bdf8daacac",
+    "mathml_roots": 38988
+  }
+}

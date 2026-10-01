@@ -1,6 +1,7 @@
 % Part: normal-modal-logic
 % Chapter: tableaux
 % Section: rules-for-K
+%READERNOTE{SOL6-A175: नव्या पूर्वचिन्हाच्या अटीचे प्रतिउदाहरण दाखवणाऱ्या केवळ Box-पर्यायात असत्य Box सूत्रावर लागू होणाऱ्या नियमाचे लेबल असत्य Box असे दुरुस्त केले. उदाहरणातील जाणीवपूर्वक शिथिल केलेली नवेपणाची अट बदललेली नाही.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -241,7 +242,7 @@ $\sigma.n$ असते. पण कोणता $n$ चालेल हे
   \begin{oltableau}
     [\pFmla{\True}{\lnot\Box\lnot \formula{A}}{1}, just = \TAss
       [\pFmla{\False}{\Box \formula{A}}{1}, just = \TAss
-        [\pFmla{\False}{\formula{A}}{1.1}, just = {\TRule{\True}{\Box}[2]}
+        [\pFmla{\False}{\formula{A}}{1.1}, just = {\TRule{\False}{\Box}[2]}
           [\pFmla{\False}{\Box\lnot\formula{A}}{1},
             just ={\TRule{\True}{\lnot}[1]}
             [\pFmla{\False}{\lnot\formula{A}}{1.1},

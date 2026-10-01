@@ -1,0 +1,44 @@
+{
+  "id": "SOL6-A269",
+  "record_kind": "workflow_repair",
+  "source_choice": false,
+  "source_unit": "OLP-0502",
+  "finding": "The historical note called the two subset symbols strict/proper inclusion without establishing that convention. The frozen elementary definition uses subseteq for subsets and subsetneq for proper subsets; the topological section mixes subset and subseteq.",
+  "disposition": "Withdraw the definite source-error attribution. Retain explicit equality-permitting subseteq as a notation clarification, the existing reverse projections, the frozen English and immutable historical issue ledger.",
+  "source_evidence": [
+    {
+      "path": "upstream/content/sets-functions-relations/sets/subsets.tex",
+      "sha256": "63d819c246577b3bfd8ba2a933f114b58c6549bdc4fa6ea8ffa8ab07c7fed4b7",
+      "scope": "entire frozen unit directly read during this disposition"
+    },
+    {
+      "path": "upstream/content/intuitionistic-logic/semantics/topological-semantics.tex",
+      "sha256": "a279eb8cdd1aa2accf342003edd769868f134f178ef6c29b3807bda16ae95f21",
+      "scope": "entire frozen unit directly read during this disposition"
+    }
+  ],
+  "historical_localized_row": {
+    "issue_id": "OLINC-219",
+    "rationale_mr": "साध्यता आणि सशर्ताच्या खुल्या संचासाठी मूळ दोन सूत्रे खरे उपसंच-चिन्ह वापरतात. A मधून A ची साध्यता आणि संच-समानतेची प्रकरणे मात्र समानता मान्य करणारे समावेशन मागतात. मराठी दोन्ही सूत्रांत ⊆ वापरले आहे; दोन मर्यादित उलट प्रक्षेपणे नोंदवून स्रोत जतन केला आहे.",
+    "review_question_mr": "दोन्ही समावेशने आता समानता मान्य करतात का, जशी A मधून A ची साध्यता आणि सशर्ताची सत्य-अट मागतात?"
+  },
+  "localized_index_before_sha256": "eabeb2a88907f7b348a7a8a0872afa74e788526fe8e826d21c1c371ab968f747",
+  "localized_index_after_sha256": "66eb3519de30f268a2a1134891365e6f6cef3e5428cc608dfda771763f1a0a21",
+  "unchanged_source_history_sha256": "c015a22ae11cf8f9da72509aa787424599e3611b46412a32a4f219377f8b11f9",
+  "unchanged_target_sha256": "b8043e55ef9f0c134f1957c39f19456d7b664f1dbd6ff0ee9cb7b39f11b881ce",
+  "tools": [
+    {
+      "path": "tools/prepare_core502.py",
+      "sha256": "5e9b0934f38756759e0225387909e7c91c5ef0ce5e2e9301ecca0ff46efef3df"
+    },
+    {
+      "path": "tools/complete_review_source_issues.py",
+      "sha256": "d928417c097ab92cb4d4bbc4072c5f22e34677e025d498770fbf31f5de7af205"
+    }
+  ],
+  "validation": "Local disclosure/index repaired. Next assembly, compiled reader, regenerated review and matching visual inspection pending. No new source mutation or source choice.",
+  "upstream_action": "none; historical issue436 not altered",
+  "model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "date": "2026-09-30"
+}

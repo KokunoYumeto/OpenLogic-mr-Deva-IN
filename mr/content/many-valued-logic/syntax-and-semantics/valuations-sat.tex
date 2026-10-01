@@ -27,7 +27,8 @@ $\pAssign{v} \colon \PVar \to V$.
     \item $\pValue{v}(\Obj p_n) = \pAssign{v}(\Obj p_n)$;
     \item $\star$ हा $0$-स्थानी संयोजक असेल, तर
     $\pValue{v}(\star)  = \tf{\star}[\Log L]$;
-    \item $\star$ हा $n$-स्थानी संयोजक असेल, तर
+    \item $\star$ हा सकारात्मक स्थानसंख्येचा
+    $n$-स्थानी संयोजक असेल, तर
     \[
       \pValue{v}(\star(!A_1, \dots, !A_n)) = \tf{\star}[\Log L]
       (\pValue{v}(!A_1), \dots, \pValue{v}(!A_n)).
@@ -38,14 +39,14 @@ $\pAssign{v} \colon \PVar \to V$.
 \begin{defn}[पूर्ति]
 \ollabel{defn:satisfaction} !!{formula}~$!A$ ची
   !!a{valuation}~$\pAssign{v}$ ने \emph{पूर्ति होते},
-  $\pSat{v}{!A}[\Log L]$, तेव्हा आणि तेव्हाच जेव्हा
+  $\pSat{v}{!A}[\Log L]$, जर आणि फक्त जर
   $\pValue{v}(!A)[\Log L] \in V^+$; येथे $V^+$ हा
   तर्कशास्त्र~$\Log L$ मधील निर्दिष्ट सत्यतामूल्यांचा संच आहे.
 
   ``$\pSat{v}{!A}[\Log L]$ नाही'' हे दर्शवण्यासाठी आपण
   $\pSat/{v}{!A}[\Log L]$ असे लिहितो. $\Gamma$ हा
   !!{formula}s चा संच असेल, तर $\pSat{v}{\Gamma}[\Log L]$
-  तेव्हा आणि तेव्हाच जेव्हा प्रत्येक~$!A \in \Gamma$ साठी
+  जर आणि फक्त जर प्रत्येक~$!A \in \Gamma$ साठी
   $\pSat{v}{!A}[\Log L]$.
 \end{defn}
 

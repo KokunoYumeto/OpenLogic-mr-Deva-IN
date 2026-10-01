@@ -1,6 +1,7 @@
 % Part: propositional-logic
 % Chapter: propositional-logic
 % Section: completeness
+%READERNOTE{SOL6-A338: द्विदिशा दर्शवणारा वाक्प्रयोग आणि विगमनाची संज्ञा सुसंगत केली; संक्षिप्त सिद्धता आणि सराव जपले.}
 
 \documentclass[../../../include/open-logic-section]{subfiles}
 
@@ -21,10 +22,10 @@
   \ollabel{lem:truth}
 $\Gamma$ महत्तम सुसंगत असू द्या; मग:
 \begin{enumerate}
-\item \ollabel{lem:truth-1} $!A \in \Gamma$ तेव्हाच आणि तेव्हाच $\lnot !A
+\item \ollabel{lem:truth-1} $!A \in \Gamma$ तेव्हा आणि केवळ तेव्हा $\lnot !A
   \notin \Gamma$;
-\item \ollabel{lem:truth-2} $\Gamma \Proves !A$ तेव्हाच आणि तेव्हाच $!A \in \Gamma$;
-\item \ollabel{lem:truth-3} $!A \lif !B \in \Gamma$ तेव्हाच आणि तेव्हाच
+\item \ollabel{lem:truth-2} $\Gamma \Proves !A$ तेव्हा आणि केवळ तेव्हा $!A \in \Gamma$;
+\item \ollabel{lem:truth-3} $!A \lif !B \in \Gamma$ तेव्हा आणि केवळ तेव्हा
   $!A \notin \Gamma$ किंवा $!B \in \Gamma$.
 \end{enumerate}
 \end{lem}
@@ -79,15 +80,15 @@ $\Gamma_0$, $\Gamma_1$,~\dots ही वाढती क्रमिका
 आता क्रमाने पुढील तथ्ये सिद्ध करायची आहेत:
 \begin{enumerate}
 \item प्रत्येक $n$ साठी $\Gamma_n$ हा संच सुसंगत आहे
-  ($n$ वर आगमनाने, \olref[axd]{prop:phi} वापरून);
+  ($n$ वर विगमनाने, \olref[axd]{prop:phi} वापरून);
 \item $\Gamma^*$ सुसंगत आहे;
 \item $\Gamma^*$ महत्तम आहे.
 \end{enumerate}
 मग $p_i \in \Gamma^*$ असेल तेव्हाच $v(p_i) = \True$
-असे ठरवून सत्य-मूल्यांकन~$v$ परिभाषित करू. $!A$ वर आगमन
+असे ठरवून सत्य-मूल्यांकन~$v$ परिभाषित करू. $!A$ वर विगमन
 केल्यास अधिक गुंतागुंतीच्या !!{sentence}s साठीही
 $\Gamma^*$ मधील सदस्यत्व आणि $v$ नुसार सत्यता जुळतात,
-हे दिसते: $\overline{v}(!A) = \True$ तेव्हाच आणि तेव्हाच
+हे दिसते: $\overline{v}(!A) = \True$ तेव्हा आणि केवळ तेव्हा
 $!A \in \Gamma^*$. विशेषतः, $v$ हे $\Gamma^*$ ची पूर्तता
 करते. $\Gamma \subseteq \Gamma^*$ असल्याने $\Gamma$
 सुद्धा पूर्ततायोग्य आहे, हेच सिद्ध करायचे होते.
@@ -106,19 +107,19 @@ $\Gamma \cup \{\lnot !A\}$ सुसंगत आहे. म्हणून स�
 
 \begin{prop}[संहतता प्रमेय]
 \ollabel{prop:compactness}
-$\Gamma$ पूर्ततायोग्य असेल तेव्हाच आणि तेव्हाच $\Gamma$ चा प्रत्येक
+$\Gamma$ पूर्ततायोग्य असेल तेव्हा आणि केवळ तेव्हा $\Gamma$ चा प्रत्येक
 \emph{सान्त} उपसंच~$\Gamma_0$ पूर्ततायोग्य असेल.
 \end{prop}
 
 \begin{proof}
-$\Gamma$ अपूर्ततायोग्य असेल तेव्हाच आणि तेव्हाच तो विसंगत असेल;
-तेव्हाच आणि तेव्हाच $\Gamma$ चा एखादा सान्त उपसंच~$\Gamma_0$
-विसंगत असेल; आणि तेव्हाच आणि तेव्हाच $\Gamma$ चा एखादा सान्त
+$\Gamma$ अपूर्ततायोग्य असेल तेव्हा आणि केवळ तेव्हा तो विसंगत असेल;
+तेव्हा आणि केवळ तेव्हा $\Gamma$ चा एखादा सान्त उपसंच~$\Gamma_0$
+विसंगत असेल; आणि तेव्हा आणि केवळ तेव्हा $\Gamma$ चा एखादा सान्त
 उपसंच~$\Gamma_0$ अपूर्ततायोग्य असेल.
 \end{proof}
 
 \begin{cor}
-$\Gamma \Entails !A$ असेल तेव्हाच आणि तेव्हाच $\Gamma$ च्या
+$\Gamma \Entails !A$ असेल तेव्हा आणि केवळ तेव्हा $\Gamma$ च्या
 एखाद्या सान्त उपसंच~$\Gamma_0$ साठी $\Gamma_0 \Entails !A$ असेल.
 \end{cor}
 
