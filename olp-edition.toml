@@ -1,0 +1,34 @@
+locale = "mr"
+language_tag = "mr-Deva-IN"
+script = "Deva"
+babel = "marathi"
+engine = "xelatex"
+repository = "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN"
+schema_version = 1
+products = ["olp-complete", "slc-screen-pdf"]
+engine_reason = "Retain the published pilot engine until a different engine passes the same content and layout gates."
+
+[paths]
+content = "mr/content"
+source_content = "upstream/content"
+
+[conversion]
+source_manifest = "provenance/SOURCE_MANIFEST.jsonl"
+source_manifest_sha256 = "f243d399ca5d8a572a58de7e9b0ad0d7243283a8f92983b1058bfe01ade39c3b"
+attribution_policy = "preserve-recorded-else-unresolved"
+
+[pins.olp]
+repository = "https://github.com/OpenLogicProject/OpenLogic"
+commit = "9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
+
+[pins.slc]
+repository = "https://github.com/rzach/sets-logic-computation"
+commit = "6178f32f61645f3b62ef621b4c5a88f8e67778ad"
+
+[pins.portraits]
+repository = "https://github.com/OpenLogicProject/portraits"
+commit = "1a92d54a0bf964d35b5300f45f1830749c462544"
+
+[pins.photos]
+repository = "https://github.com/OpenLogicProject/photos"
+commit = "81c1990df896568410b452fea68b81cbb6ce46fa"
