@@ -16,6 +16,7 @@ from bs4 import BeautifulSoup, NavigableString
 from complete_math_glyphs import extract_symbols
 from complete_diagram_inventory import current_inventory
 from core_html_proofs import (
+    _balanced,
     _replace_args,
     _replace_optional_math_command,
     _generic_proof_spec,
@@ -48,6 +49,45 @@ def read_group(value, start, opening, closing):
             depth -= 1
         cursor += 1
     return value[start + 1:cursor - 1], cursor
+
+
+def expand_induction_cases(body):
+    """Project the complete reader's xparse case commands before Pandoc."""
+    case_command = re.compile(r"(?<!\\)\\indcase([*!]*)(?![A-Za-z@])")
+    case_reference = re.compile(r"\\(indfrmp?|indcomplex)(?![A-Za-z@])")
+    output = []
+    previous = 0
+    count = 0
+    for match in case_command.finditer(body):
+        if match.start() < previous:
+            raise ValueError("Nested induction cases require explicit scoping")
+        modifier = match[1]
+        if modifier not in {"", "*", "!", "*!"}:
+            raise ValueError(f"Unsupported induction-case modifier {modifier!r}")
+        position = match.end()
+        arguments = []
+        for _ in range(3):
+            while position < len(body) and body[position].isspace():
+                position += 1
+            if position == len(body) or body[position] != "{":
+                raise ValueError(f"Missing induction-case argument at offset {position}")
+            argument, position = _balanced(body, position)
+            arguments.append(argument)
+        form, complexity, explanation = arguments
+        bindings = {"indfrm": form, "indfrmp": form, "indcomplex": complexity}
+        explanation = ("सराव." if "!" in modifier else
+                       case_reference.sub(lambda reference: bindings[reference[1]], explanation))
+        heading = (f"${form}$ हे आण्विक सूत्र आहे: " if "*" in modifier else
+                   f"${form} \\ident {complexity}$: ")
+        count += 1
+        anchor = rf"\hypertarget{{induction-case-{count:03d}}}{{}}"
+        output.extend((body[previous:match.start()], anchor, heading, explanation))
+        previous = position
+    output.append(body[previous:])
+    expanded = "".join(output)
+    if case_reference.search(expanded):
+        raise ValueError("Unbound induction-case reference in the HTML source")
+    return expanded, count
 
 
 def expand_bare_assignment_macros(body):
@@ -476,6 +516,7 @@ assert centered_table_count == 1, centered_table_count
 
 head, marker, body = tex.partition(r"\begin{document}")
 assert marker
+body, induction_case_count = expand_induction_cases(body)
 wide_definition = r"\NewDocumentCommand{\sFmlaWide}{m m o}"
 wide_at = body.index(wide_definition)
 wide_argument = body.index("{", wide_at + len(wide_definition))
@@ -784,6 +825,7 @@ report = {
     "html_sha256": None,
     "source_units": inputs["represented_unit_count"],
     "proof_representations": len(proofs),
+    "induction_cases": induction_case_count,
     "display_proof_representations": len(extra_proofs),
     "localized_proof_headings": localized_proof_headings,
     "diagram_count": len(diagrams),

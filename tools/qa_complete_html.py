@@ -2,6 +2,7 @@
 
 import hashlib
 import json
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -64,6 +65,12 @@ if (len(doc.select("header#title-block-header h1.title")) != 1
     blockers.append("generated title or contents heading")
 if len(doc.select("figure.proof")) != build["proof_representations"]:
     blockers.append("proof-table coverage")
+source_body = reader.read_text(encoding="utf-8").partition(r"\begin{document}")[2]
+source_cases = len(re.findall(r"(?<!\\)\\indcase[*!]*(?![A-Za-z@])", source_body))
+case_anchors = [node["id"] for node in doc.select('[id^="induction-case-"]')]
+expected_case_anchors = [f"induction-case-{i:03d}" for i in range(1, source_cases + 1)]
+if build.get("induction_cases") != source_cases or case_anchors != expected_case_anchors:
+    blockers.append("induction case coverage")
 if len(images) != build["diagram_count"]:
     blockers.append("diagram placement")
 if build["missing_diagram_assets"] or bad_images:
@@ -138,6 +145,7 @@ report = {
     "chapters": len(doc.select("h2")),
     "sections": len(doc.select("h3")),
     "proof_tables": len(doc.select("figure.proof")),
+    "induction_cases": len(case_anchors),
     "mathml_nodes": len(formulae),
     "mathml_without_tex_annotation": len(unannotated),
     "diagrams": len(images),
