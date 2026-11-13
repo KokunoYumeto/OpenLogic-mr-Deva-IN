@@ -15,6 +15,7 @@ public static class SlcTexTree {
  [DllImport("kernel32.dll",CharSet=CharSet.Unicode,SetLastError=true)] static extern bool CreateProcess(string app,StringBuilder cmd,IntPtr pa,IntPtr ta,bool inherit,uint flags,IntPtr env,string cwd,ref STARTUPINFO si,out PI pi);
  [DllImport("kernel32.dll",CharSet=CharSet.Unicode)] static extern IntPtr CreateJobObject(IntPtr a,string name);
  [DllImport("kernel32.dll")] static extern bool SetInformationJobObject(IntPtr job,int c,ref EXT info,int size);
+ [DllImport("kernel32.dll",SetLastError=true)] static extern bool QueryInformationJobObject(IntPtr job,int c,out EXT info,int size,IntPtr n);
  [DllImport("kernel32.dll")] static extern bool AssignProcessToJobObject(IntPtr j,IntPtr p);
  [DllImport("kernel32.dll")] static extern uint ResumeThread(IntPtr h);
  [DllImport("kernel32.dll")] static extern bool QueryInformationJobObject(IntPtr j,int c,out ACCOUNT info,int size,IntPtr n);
@@ -24,11 +25,13 @@ public static class SlcTexTree {
  [DllImport("kernel32.dll")] static extern bool CloseHandle(IntPtr h);
  public static int Run(string app,string args,string cwd,string log,int timeout) {
   IntPtr job=CreateJobObject(IntPtr.Zero,null); if(job==IntPtr.Zero)throw new Exception("CreateJobObject failed");
-  EXT limit=new EXT();limit.basic.flags=0x2000;
+  EXT limit=new EXT();limit.basic.flags=0x2200;limit.jobMemory=new UIntPtr(5000000000UL);
   PI pi=new PI();bool created=false,assigned=false;
   IntPtr output=new IntPtr(-1), input=new IntPtr(-1);
   try {
    if(!SetInformationJobObject(job,9,ref limit,Marshal.SizeOf(typeof(EXT))))throw new Exception("Job limit setup failed");
+   EXT actual; var pageSize=(ulong)Environment.SystemPageSize;
+   if(!QueryInformationJobObject(job,9,out actual,Marshal.SizeOf(typeof(EXT)),IntPtr.Zero)||(actual.basic.flags&0x2200)!=0x2200||actual.jobMemory.ToUInt64()!=5000000000UL/pageSize*pageSize)throw new Exception("Job memory cap verification failed");
    SA handles=new SA{length=Marshal.SizeOf(typeof(SA)),inherit=1};
    output=CreateFile(log,0x40000000,1,ref handles,2,0,IntPtr.Zero);
    if(output==new IntPtr(-1))throw new Win32Exception(Marshal.GetLastWin32Error(),"Cannot open tool log");

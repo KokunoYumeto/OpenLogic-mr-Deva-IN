@@ -12,6 +12,7 @@ if (-not $buildPath.StartsWith($repoPath + [IO.Path]::DirectorySeparatorChar)) {
 $receiptPath = Join-Path $buildPath 'TEX_BUILD_RECEIPT.json'
 $receiptHistory = Join-Path $buildPath ('TEX_BUILD_' + [DateTime]::UtcNow.ToString('yyyyMMddTHHmmssfff') + '.json')
 $receipt = [ordered]@{schema='guarded-tex-build/1';mutex='Global\InterlanguageTeXSlotV1';acquired=$false;abandonedRecovery=$false;passes=@();result='not-started'}
+$receipt['maxJobMemoryBytes']=5000000000
 $receipt['slotTimeoutMilliseconds']=$SlotTimeoutMilliseconds
 $receipt['passTimeoutMilliseconds']=$PassTimeoutMilliseconds
 Add-Type -TypeDefinition @'
@@ -28,6 +29,7 @@ public static class EditionTexTree {
  [DllImport("kernel32.dll",CharSet=CharSet.Unicode,SetLastError=true)] static extern bool CreateProcess(string app,string cmd,IntPtr pa,IntPtr ta,bool inherit,uint flags,IntPtr env,string cwd,ref STARTUPINFO si,out PI pi);
  [DllImport("kernel32.dll",CharSet=CharSet.Unicode)] static extern IntPtr CreateJobObject(IntPtr a,string name);
  [DllImport("kernel32.dll")] static extern bool SetInformationJobObject(IntPtr job,int c,ref EXT info,int size);
+ [DllImport("kernel32.dll",SetLastError=true)] static extern bool QueryInformationJobObject(IntPtr job,int c,out EXT info,int size,IntPtr n);
  [DllImport("kernel32.dll")] static extern bool AssignProcessToJobObject(IntPtr j,IntPtr p);
  [DllImport("kernel32.dll")] static extern uint ResumeThread(IntPtr h);
  [DllImport("kernel32.dll")] static extern bool QueryInformationJobObject(IntPtr j,int c,out ACCOUNT info,int size,IntPtr n);
@@ -37,10 +39,12 @@ public static class EditionTexTree {
  [DllImport("kernel32.dll")] static extern bool CloseHandle(IntPtr h);
  public static int Run(string app,string args,string cwd,int timeout) {
   IntPtr job=CreateJobObject(IntPtr.Zero,null); if(job==IntPtr.Zero)throw new Exception("CreateJobObject failed");
-  EXT limit=new EXT();limit.basic.flags=0x2000;
+  EXT limit=new EXT();limit.basic.flags=0x2200;limit.jobMemory=new UIntPtr(5000000000UL);
   PI pi=new PI();bool created=false,assigned=false;
   try {
    if(!SetInformationJobObject(job,9,ref limit,Marshal.SizeOf(typeof(EXT))))throw new Exception("Job limit setup failed");
+   EXT actual; var pageSize=(ulong)Environment.SystemPageSize;
+   if(!QueryInformationJobObject(job,9,out actual,Marshal.SizeOf(typeof(EXT)),IntPtr.Zero)||(actual.basic.flags&0x2200)!=0x2200||actual.jobMemory.ToUInt64()!=5000000000UL/pageSize*pageSize)throw new Exception("Job memory cap verification failed");
    STARTUPINFO si=new STARTUPINFO();si.cb=Marshal.SizeOf(typeof(STARTUPINFO));si.flags=1;si.show=0;
    if(!CreateProcess(app,"\""+app+"\" "+args,IntPtr.Zero,IntPtr.Zero,false,0x08000004,IntPtr.Zero,cwd,ref si,out pi))throw new Exception("CreateProcess failed "+Marshal.GetLastWin32Error());
    created=true;
