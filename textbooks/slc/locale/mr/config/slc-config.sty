@@ -1,0 +1,14 @@
+% Mathematical and exercise choices of the source SLC textbook.
+\ollatinformulas
+\DeclareMathAlphabet{\mathbi}{OT1}{pplx}{b}{it}
+\DeclareDocumentCommand\Struct{m}{\applytofirst{\mathbi}{#1}}
+\DeclareDocumentMacro\TMblank{\sqcup}
+\DeclareDocumentMacro\TMstroke{I}
+
+\tagtrue{defIff,defTrue}
+\tagfalse{prvIff,prvTrue}
+\tagtrue{probAnd,probIf,probAll}
+\tagtrue{prfND,prfSC}
+\tagfalse{prfAX,prfTab}
+
+\input{locale/mr/locale/slc-token-overrides.sty}

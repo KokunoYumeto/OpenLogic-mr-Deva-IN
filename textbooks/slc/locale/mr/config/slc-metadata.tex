@@ -1,0 +1,18 @@
+\setOLPbooktitle[संच,\protect\\ तर्कशास्त्र,\protect\\ संगणन]{संच, तर्कशास्त्र, संगणन}
+\setOLPbooksubtitle[अधितर्कशास्त्राची\protect\\ मुक्त ओळख]{अधितर्कशास्त्राची मुक्त ओळख}
+\setOLPauthor{Richard Zach}
+\setOLPbookversion{मराठी आवृत्ती}{मराठी}
+\patchcmd{\OLPfrontmatter}{\textsc{\OLPbookversion}}{\textbf{\OLPbookversion}}{}{%
+  \PackageError{slc}{The pinned title-page version format was not found}{}%
+}
+\setOLPsourcelink{https://slc.openlogicproject.org/}
+\setOLPauthorlink{https://richardzach.org/}
+% Keep both lines of the Marathi subtitle in the white title area.
+\patchcmd{\OLPscreencover}{\vspace*{1.7cm}}{\vspace*{1.55cm}}{}{%
+  \PackageError{slc}{The screen-cover top spacing was not found}{}%
+}
+\patchcmd{\OLPscreencover}{\vspace*{1cm}}{\vspace*{.2cm}}{}{%
+  \PackageError{slc}{The screen-cover subtitle spacing was not found}{}%
+}
+\renewcommand*{\OLPtitlecoverfont}{\fontsize{39pt}{45pt}\sffamily\bfseries}
+\renewcommand*{\OLPsubtitlecoverfont}{\fontsize{21pt}{25pt}\sffamily\bfseries}
