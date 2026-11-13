@@ -112,6 +112,7 @@
       "text_license": "CC BY 4.0"
     },
     "marathi_open_logic": {
+      "role": "Inherited Marathi Open Logic translation",
       "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
       "edition": "complete-v1.2",
       "commit": "ff4b3e295d6f79c1337893adcf1e2286ab22bbbe",
@@ -130,13 +131,29 @@
     }
   },
   "marathi_textbook_source": {
+    "role": "First Marathi textbook edition",
     "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
     "commit": "f8722cc37b93350e2f1b2e59d1b3fb783744e717",
     "path": "textbooks/slc"
   },
+  "current_canonical_marathi_units": {
+    "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
+    "content_commit": "9f74d151b6f503f89da85818342f9d8c258cba45",
+    "path": "mr/content",
+    "git_tree": "925c1156d99f868f8f5073a9fddab0ae4114dc77",
+    "course_units": 176,
+    "imports_lock_sha256": "8c7df75ce4923af1e4626958c02a57485d976cdd98ff9134589973e43d9f8923"
+  },
   "translation": {
-    "authorship": "AI-translated and typeset by OpenAI Codex",
-    "model": "GPT-6.1 Sol",
+    "authorship": "OpenAI Codex",
+    "inherited_open_logic_translation": {
+      "description": "AI-translated",
+      "models": ["GPT-5.6 Sol", "GPT-6 Sol"]
+    },
+    "marathi_textbook": {
+      "description": "AI-translated textbook material and AI-produced corrections and typesetting",
+      "model": "GPT-6.1 Sol"
+    },
     "reasoning_effort": "Ultra"
   },
   "component_credits": "ASSET-CREDITS.md",
