@@ -1,0 +1,98 @@
+% Driver for the text of Sets, Logic, Computation.
+\newif\ifslcChapterSummaries
+\slcChapterSummariestrue
+\preto\OLEndChapterHook{%
+  \ifslcChapterSummaries
+  \edef\slcSummaryFile{include/summary-\number\value{chapter}.tex}%
+  \IfFileExists{\slcSummaryFile}{%
+    \section*{सारांश}\addcontentsline{toc}{section}{सारांश}%
+    {\let\emph\textbf\input{\slcSummaryFile}}}{}%
+  \fi
+}
+
+\problemsperchapter
+
+\frontmatter
+\OLPfrontmatter
+
+\cleartoverso
+\thispagestyle{empty}
+\ \vfill
+\noindent\includegraphics[width=\textwidth]{illustrations/SkolemChapter}
+\vfill
+
+\input{include/preface}
+\cleartoverso
+
+\thispagestyle{empty}
+\ \vfill
+\noindent\includegraphics[width=\textwidth]{illustrations/CantorChapter}
+\vfill
+
+\mainmatter
+
+\olimport*[sets-functions-relations]{sets-functions-relations}
+\cleartoverso
+\ifodd\value{page}\stepcounter{page}\fi
+\thispagestyle{empty}
+\ \vfill
+\noindent\includegraphics[width=\textwidth]{illustrations/GodelChapter}
+\vfill
+
+\olimport*[first-order-logic]{first-order-logic}
+\cleartoverso
+\ifodd\value{page}\stepcounter{page}\fi
+\thispagestyle{empty}
+\ \vfill
+\noindent\includegraphics[width=\textwidth]{illustrations/TuringChapter}
+\vfill
+
+\olimport*[turing-machines]{turing-machines}
+
+\cleartoverso
+\ifodd\value{page}\stepcounter{page}\fi
+\thispagestyle{empty}
+\ \vfill
+\noindent\includegraphics[width=\textwidth]{illustrations/NoetherChapter}
+\vfill
+
+% The SLC summary files belong to the numbered chapters.
+\slcChapterSummariesfalse
+\appendix
+
+\olimport*[methods/proofs]{proofs}
+
+\olimport*[methods/induction]{induction}
+
+\stopproblems
+\def\ifproblems#1{}
+
+\setlength{\olphotowidth}{.45\textwidth}
+
+\chapter{चरित्रे}
+
+\olimport*[history/biographies]{georg-cantor}
+\olimport*[history/biographies]{alonzo-church}
+\olimport*[history/biographies]{gerhard-gentzen}
+\olimport*[history/biographies]{kurt-goedel}
+\olimport*[history/biographies]{emmy-noether}
+\olimport*[history/biographies]{bertrand-russell}
+\olimport*[history/biographies]{alfred-tarski}
+\olimport*[history/biographies]{alan-turing}
+\olimport*[history/biographies]{ernst-zermelo}
+\olimport*[reference/greek-alphabet]{greek-alphabet}
+
+\glsaddall
+\printglossary[style=index,title=शब्दसूची,toctitle=शब्दसूची]
+
+\clearpage
+\photocredits
+
+\bibliographystyle{natbib-oup}
+\bibliography{\olpath/bib/open-logic}
+
+{% The two-line Marathi heading leaves less room for the About text.
+\addtolength{\beforechapskip}{-\baselineskip}%
+\addtolength{\afterchapskip}{-\baselineskip}%
+\AddToHookNext{cmd/memchapstarinfo/after}{\markboth{ओपन लॉजिक प्रकल्पाविषयी}{ओपन लॉजिक प्रकल्पाविषयी}}%
+\olimport*{\olpath/locale/\ollangid/content/open-logic-about}\par}

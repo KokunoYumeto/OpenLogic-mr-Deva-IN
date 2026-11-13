@@ -7,8 +7,8 @@
 \begin{document}
 
 \iftag{FOL}
-      {\olfileid{fol}{ntd}{sou}}
-      {\olfileid{pl}{ntd}{sou}}
+      {\olfileid[mr]{fol}{ntd}{sou}}
+      {\olfileid[mr]{pl}{ntd}{sou}}
 
 \olsection{निर्दोषता}
 
@@ -22,7 +22,7 @@
 \item प्रत्येक !!{derivable} !!{sentence} हे \iftag{FOL}{वैध}{सर्वतः सत्य सूत्र} असते;
 \item एखादे !!a{sentence} इतर काही वाक्यांपासून !!{derivable} असेल, तर ते
   त्यांचा तार्किक परिणामही असते;
-\item !!{sentence}s चा संच विसंगत असेल, तर तो अपूर्ततायोग्य असतो.
+\item \printtoken{oblique plural}{sentence}चा संच विसंगत असेल, तर तो अपूर्ततायोग्य असतो.
 \end{enumerate}
 हे !!a{derivation} पद्धतीचे महत्त्वाचे गुणधर्म आहेत. यांपैकी एखादा गुणधर्म
 खरा नसेल, तर !!{derivation} पद्धतीत दोष आहे---ती खूप जास्त गोष्टी
@@ -43,7 +43,7 @@ $\delta$ ही $!A$ ची !!a{derivation} असू द्या. $\delta$ म
 विगमनाच्या आधारपायरीसाठी अनुमानांची संख्या~$0$ असेल तेव्हा दावा सिद्ध करू.
 या प्रकरणात $\delta$ मध्ये फक्त एकच !!{sentence}~$!A$, म्हणजे एक गृहीतक,
 असते. ते गृहीतक !!{undischarged} असते, कारण गृहीतके फक्त अनुमानांद्वारे
-!!{discharged} होऊ शकतात आणि येथे कोणतेही अनुमान नाही. म्हणून सिद्धतेतील
+!!{discharge} होऊ शकतात आणि येथे कोणतेही अनुमान नाही. म्हणून सिद्धतेतील
 सर्व !!{undischarged} गृहीतके पूर्ण करणारी कोणतीही
 \iftag{FOL}{!!{structure}~$\Struct{M}$}{!!{valuation}~$\pAssign{v}$}
 $!A$ हेदेखील पूर्ण करते.
@@ -52,7 +52,7 @@ $!A$ हेदेखील पूर्ण करते.
 खालच्या अनुमानाची आधारविधाने अशा उप-!!{derivation}s वापरून !!{derive} केली
 आहेत की प्रत्येकामध्ये $n$ पेक्षा कमी अनुमाने आहेत. विगमन गृहीतक असे धरू:
 सर्वांत खालच्या अनुमानाची आधारविधाने, त्या आधारविधानांवर संपणाऱ्या
-उप-!!{derivation}s च्या !!{undischarged} गृहीतकांपासून निष्पन्न होतात. संपूर्ण
+उप-\printtoken{oblique plural}{derivation}च्या !!{undischarged} गृहीतकांपासून निष्पन्न होतात. संपूर्ण
 सिद्धतेच्या !!{undischarged} गृहीतकांपासून निष्कर्ष~$!A$ निष्पन्न होतो, हे
 आपल्याला दाखवायचे आहे.
 
@@ -60,7 +60,7 @@ $!A$ हेदेखील पूर्ण करते.
 आधारविधान असलेली संभाव्य अनुमाने पाहू.
 
 \begin{enumerate}
-\item शेवटचे अनुमान \Intro{\lnot} आहे असे समजा: !!{derivation} चे रूप
+\item शेवटचे अनुमान \Intro{\lnot} आहे असे समजा: \printtoken{oblique}{derivation}चे रूप
   पुढीलप्रमाणे आहे:
   \begin{prooftree}
     \AxiomC{$\Gamma, \Discharge{!A}{n}$}
@@ -69,8 +69,9 @@ $!A$ हेदेखील पूर्ण करते.
     \DischargeRule{\Intro{\lnot}}{n}
     \UnaryInfC{$\lnot !A$}
   \end{prooftree}
-  विगमन गृहीतकानुसार $\lfalse$ हे $\delta_1$ च्या !!{undischarged}
-  गृहीतकांपासून~$\Gamma \cup \{!A\}$ निष्पन्न होते. एखादी
+  विगमन गृहीतकानुसार $\Gamma \cup \{!A\} \Entails \lfalse$.
+  येथे $\Gamma \cup \{!A\}$ हा $\delta_1$ ची !!{undischarged}
+  गृहीतके असलेला संच आहे. एखादी
   \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
   विचारात घ्या. जर $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$, तर
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\lnot !A}$, हे दाखवायचे आहे.
@@ -92,8 +93,8 @@ $!A$ हेदेखील पूर्ण करते.
     \RightLabel{\Elim{\land}}
     \UnaryInfC{$!A$}
   \end{prooftree}
-  विगमन गृहीतकानुसार $!A \land !B$ हे $\delta_1$ च्या
-  !!{undischarged} गृहीतकांपासून~$\Gamma$ निष्पन्न होते. एखादी
+  विगमन गृहीतकानुसार $\Gamma \Entails !A \land !B$.
+  येथे $\Gamma$ हा $\delta_1$ ची !!{undischarged} गृहीतके असलेला संच आहे. एखादी
   !!a{structure}~\iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} विचारात घ्या.
   जर $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$, तर
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$, हे दाखवायचे आहे.
@@ -107,7 +108,7 @@ $!A$ हेदेखील पूर्ण करते.
 
 \item शेवटचे अनुमान \Intro{\lor} आहे. याचे दोन प्रकार आहेत: $!A$ या
   आधारविधानापासून किंवा $!B$ या आधारविधानापासून $!A \lor !B$ निष्पन्न
-  केले जाऊ शकते. पहिले प्रकरण पाहू. !!{derivation} चे रूप पुढीलप्रमाणे आहे:
+  केले जाऊ शकते. पहिले प्रकरण पाहू. \printtoken{oblique}{derivation}चे रूप पुढीलप्रमाणे आहे:
   \begin{prooftree}
     \AxiomC{$\Gamma$}
     \RightLabel{$\delta_1$}
@@ -115,8 +116,8 @@ $!A$ हेदेखील पूर्ण करते.
     \RightLabel{\Intro{\lor}}
     \UnaryInfC{$!A \lor !B$}
   \end{prooftree}
-  विगमन गृहीतकानुसार $!A$ हे $\delta_1$ च्या !!{undischarged}
-  गृहीतकांपासून~$\Gamma$ निष्पन्न होते. एखादी
+  विगमन गृहीतकानुसार $\Gamma \Entails !A$.
+  येथे $\Gamma$ हा $\delta_1$ ची !!{undischarged} गृहीतके असलेला संच आहे. एखादी
   \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
   विचारात घ्या. जर $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma}$, तर
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A \lor !B}$, हे दाखवायचे आहे.
@@ -179,13 +180,14 @@ $!A$ हेदेखील पूर्ण करते.
     \RightLabel{\Intro{\lforall}}
     \UnaryInfC{$\lforall[x][!A(x)]$}
   \end{prooftree}
-  विगमन गृहीतकानुसार आधारविधान~$!A(a)$ हे !!{undischarged}
-  गृहीतके~$\Gamma$ यांचा तार्किक परिणाम आहे.
+  विगमन गृहीतकानुसार $\Gamma \Entails !A(a)$.
+  येथे $\Gamma$ या संचात !!{undischarged} गृहीतके आहेत.
   $\Sat{M}{\Gamma}$ अशी एखादी रचना~$\Struct{M}$ विचारात घ्या. आपल्याला
   $\Sat{M}{\lforall[x][!A(x)]}$ हे दाखवायचे आहे.
-  $\lforall[x][!A(x)]$ हे !!a{sentence} असल्यामुळे याचा अर्थ प्रत्येक
-  चल-विन्यास~$s$ साठी $\Sat{M}{!A(x)}[s]$ दाखवायचे आहे
-  (\olref[syn][ass]{prop:sat-quant}). $\Gamma$ मध्ये केवळ वाक्ये असल्यामुळे
+  $\lforall[x][!A(x)]$ हे !!a{sentence} असल्यामुळे
+  \olref[syn][sat]{defn:satisfaction} मधील सर्ववाची संख्यापकाच्या
+  पूर्ति-अटीनुसार प्रत्येक चर-मूल्यांकन~$s$ साठी
+  $\Sat{M}{!A(x)}[s]$ दाखवायचे आहे. $\Gamma$ मध्ये केवळ वाक्ये असल्यामुळे
   \olref[syn][sat]{defn:satisfaction} नुसार प्रत्येक $!B \in \Gamma$ साठी
   $\Sat{M}{!B}[s]$. $\Struct{M'}$ ही $\Struct{M}$ सारखीच रचना असू द्या,
   फक्त $\Assign{a}{M'} = s(x)$. $a$ हे $\Gamma$ मध्ये येत नसल्यामुळे
@@ -198,7 +200,7 @@ $!A$ हेदेखील पूर्ण करते.
   $\Sat{M'}{!A(a)}$ (लक्षात घ्या की $!A(a)$ म्हणजे
   $\Subst{!A(x)}{a}{x}$). म्हणून $\Sat{M'}{!A(x)}[s]$. $a$ हे $!A(x)$
   मध्ये येत नसल्यामुळे \olref[syn][ext]{prop:extensionality} नुसार
-  $\Sat{M}{!A(x)}[s]$. पण $s$ हा स्वेच्छ चल-विन्यास होता, म्हणून
+  $\Sat{M}{!A(x)}[s]$. पण $s$ हे स्वेच्छ चर-मूल्यांकन होते, म्हणून
   $\Sat{M}{\lforall[x][!A(x)]}$.
 
 \item शेवटचे अनुमान \Intro{\lexists} आहे: सराव.
@@ -224,9 +226,9 @@ $!A$ हेदेखील पूर्ण करते.
     \RightLabel{\Intro{\land}}
     \BinaryInfC{$!A \land !B$}
   \end{prooftree}
-  विगमन गृहीतकानुसार $!A$ हे $\delta_1$ च्या !!{undischarged}
-  गृहीतकांपासून~$\Gamma_1$ निष्पन्न होते आणि $!B$ हे $\delta_2$ च्या
-  !!{undischarged} गृहीतकांपासून~$\Gamma_2$ निष्पन्न होते. $\delta$ ची
+  विगमन गृहीतकानुसार $\Gamma_1 \Entails !A$ आणि
+  $\Gamma_2 \Entails !B$. येथे $\Gamma_1$ आणि $\Gamma_2$ या संचांत
+  अनुक्रमे $\delta_1$ आणि $\delta_2$ यांची !!{undischarged} गृहीतके आहेत. $\delta$ ची
   !!{undischarged} गृहीतके $\Gamma_1 \cup \Gamma_2$ आहेत; म्हणून
   $\Gamma_1 \cup \Gamma_2 \Entails !A \land !B$ हे दाखवायचे आहे.
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1 \cup \Gamma_2}$ असलेली एखादी
@@ -254,9 +256,9 @@ $!A$ हेदेखील पूर्ण करते.
     \RightLabel{\Elim{\lif}}
     \BinaryInfC{$!B$}
   \end{prooftree}
-  विगमन गृहीतकानुसार $!A \lif !B$ हे $\delta_1$ च्या
-  !!{undischarged} गृहीतकांपासून~$\Gamma_1$ निष्पन्न होते आणि $!A$ हे
-  $\delta_2$ च्या !!{undischarged} गृहीतकांपासून~$\Gamma_2$ निष्पन्न होते.
+  विगमन गृहीतकानुसार $\Gamma_1 \Entails !A \lif !B$ आणि
+  $\Gamma_2 \Entails !A$. येथे $\Gamma_1$ आणि $\Gamma_2$ या संचांत
+  अनुक्रमे $\delta_1$ आणि $\delta_2$ यांची !!{undischarged} गृहीतके आहेत.
   एखादी
   \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
   विचारात घ्या. जर $\iftag{FOL}{\Sat{M}}{\pSat{v}}{\Gamma_1 \cup
@@ -301,7 +303,7 @@ $!A$ हेदेखील पूर्ण करते.
 \end{cor}
 
 \begin{proof}
-प्रतिलोम विधान सिद्ध करू. $\Gamma$ सुसंगत नाही असे समजा. मग
+प्रतिपरिवर्तनाने सिद्ध करू. $\Gamma$ सुसंगत नाही असे समजा. मग
 $\Gamma \Proves \lfalse$, म्हणजे $\Gamma$ मधील !!{undischarged}
 गृहीतकांपासून $\lfalse$ ची !!a{derivation} आहे. \olref{thm:soundness}
 नुसार $\Gamma$ पूर्ण करणारी कोणतीही

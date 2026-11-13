@@ -6,7 +6,7 @@
 
 \begin{document}
 
-\olfileid{fol}{com}{ide}
+\olfileid[mr]{fol}{com}{ide}
 \olsection{एकरूपता}
 
 \begin{explain}
@@ -64,8 +64,12 @@ $\Gamma^*$ सुसंगत आणि !!{complete} असल्यामुळ
   \eq[t'][t'']$ असेल, तर $\Gamma^* \Proves \eq[t][t'']$.
 \item $\Gamma^* \Proves \eq[t][t']$ असेल, तर
 \[
-\Gamma^* \Proves
-\eq[\Atom{f}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n}][\Atom{f}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}]
+\ifdefined\OLProvableEqualityDisplay\else
+  \def\OLProvableEqualityDisplay#1#2#3{#1 \eq[#2][#3]}%
+\fi
+\OLProvableEqualityDisplay{\Gamma^* \Proves}%
+  {\Atom{f}{t_1,\dots,t_{i-1},t,t_{i+1},\dots,t_n}}%
+  {\Atom{f}{t_1,\dots,t_{i-1},t',t_{i+1},\dots,t_n}}
 \]
 प्रत्येक $n$-स्थानी !!{function}~$f$ आणि बंद पदे $t_1$, \dots,
 $t_{i-1}$, $t_{i+1}$, \dots,~$t_n$ यांच्यासाठी.
@@ -199,7 +203,7 @@ $\equivrep{t}{\approx}$ असे फक्त सांत अनेक वर�
 आहे, कारण~$\Gamma$ मध्ये अशी !!{sentence}s असू शकतात की ती सत्य असणारी
 कोणतीही !!{structure} सांत असणे आवश्यक असते. उदाहरणार्थ,
 $\lforall[x][\lforall[y][x = y]]$ हे सुसंगत !!{sentence} आहे, पण ज्याच्या
-!!a{domain} मध्ये नेमका एकच !!{element} आहे अशाच !!{structure}s मध्ये
+\printtoken{oblique}{domain}मध्ये नेमका एकच !!{element} आहे अशाच \printtoken{oblique plural}{structure}मध्ये
 त्याची पूर्ति होते.
 \end{digress}
 

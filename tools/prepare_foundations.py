@@ -1,6 +1,7 @@
 """Prepare the cumulative sets-and-relations reader. Never launches TeX."""
 import ast,re,json,hashlib
 from pathlib import Path
+from marathi_reader_source import read_source
 P=Path(__file__).resolve().parents[1];B=P/'build/foundations';B.mkdir(parents=True,exist_ok=True)
 recipe=ast.parse((P/'tools/prepare_sets.py').read_text(encoding='utf-8'))
 preamble=next(ast.literal_eval(n.value) for n in recipe.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='preamble' for t in n.targets))
@@ -37,7 +38,7 @@ chunks=[];inputs=[]
 for chapter,names in chapters:
     if chapter=='relations':chunks.append('\\chapter{संबंध}\\label{sfr:rel::chap}')
     for name in names:
-        p=P/'mr/content/sets-functions-relations'/chapter/(name+'.tex');t=p.read_text(encoding='utf-8');inputs.append({'path':p.relative_to(P).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
+        p=P/'mr/content/sets-functions-relations'/chapter/(name+'.tex');t=read_source(p);inputs.append({'path':p.relative_to(P).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
         t=re.sub(r'(?m)^%.*$','',t);t=re.sub(r'\\documentclass[^\n]*\n','',t)
         t=t.replace('\\begin{document}','').replace('\\end{document}','')
         m=re.search(r'\\olfileid\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}',t);prefix=list(m.groups());t=t[:m.start()]+t[m.end():]

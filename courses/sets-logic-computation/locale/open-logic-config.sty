@@ -1,0 +1,148 @@
+% Marathi text tokens. The OLP token and variant keys are stable.
+% Marathi does not distinguish upper and lower case or use an indefinite article.
+\newcommand*{\mrsettexttoken}[3]{%
+  \settexttoken{#1}{#2}{#3}[#2][#3]%
+  \definetoken{a}{#1}{}%
+  \definetoken{A}{#1}{}}
+\newcommand*{\mrsettokenoblique}[3]{%
+  \definetoken{oblique}{#1}{#2}%
+  \definetoken{oblique plural}{#1}{#3}}
+
+\mrsettexttoken{language}{भाषा}{भाषा}
+\mrsettexttoken{formula}{सूत्र}{सूत्रे}
+\mrsettexttoken{subformula}{उपसूत्र}{उपसूत्रे}
+\mrsettexttoken{sentence}{वाक्य}{वाक्ये}
+\mrsettexttoken{variable}{चर}{चरे}
+\mrsettexttoken{propositional variable}{विधानीय चल}{विधानीय चले}
+\mrsettexttoken{constant}{स्थिरांक}{स्थिरांक}
+\mrsettexttoken{predicate}{विधेय}{विधेये}
+\mrsettexttoken{function}{फलन}{फलने}
+\mrsettexttoken{operator}{संकारक}{संकारक}
+\mrsettexttoken{main operator}{मुख्य संकारक}{मुख्य संकारक}
+\mrsettexttoken{free for}{आदेशनासाठी मुक्त}{आदेशनासाठी मुक्त}
+\mrsettexttoken{identity}{एकरूपता}{एकरूपता}
+\mrsettexttoken{conditional}{शर्त}{शर्ती}
+\mrsettexttoken{biconditional}{द्विशर्त}{द्विशर्ती}
+\mrsettexttoken{falsity}{असत्यता}{असत्यता}
+\mrsettexttoken{truth}{सत्यता}{सत्यता}
+\mrsettexttoken{structure}{रचना}{रचना}
+\mrsettexttoken{valuation}{सत्य-मूल्यांकन}{सत्य-मूल्यांकने}
+\mrsettexttoken{domain}{प्रांत}{प्रांत}
+\mrsettexttoken{value}{मूल्य}{मूल्ये}
+\mrsettexttoken{relational model}{संबंधी प्रतिमान}{संबंधी प्रतिमाने}
+\mrsettexttoken{derivation}{निष्पत्ती}{निष्पत्त्या}
+\mrsettexttoken{derive}{निष्पन्न}{निष्पन्न}
+\mrsettexttoken{derivable}{निष्पन्न करता येण्याजोगे}{निष्पन्न करता येण्याजोगी}
+\mrsettexttoken{derivability}{निष्पन्नता}{निष्पन्नता}
+\mrsettexttoken{nonderivability}{अनिष्पन्नता}{अनिष्पन्नता}
+\mrsettexttoken{proof}{निष्पत्ती}{निष्पत्त्या}
+\mrsettexttoken{prove}{निष्पन्न}{निष्पन्न}
+\mrsettexttoken{proving}{निष्पन्न करणे}{निष्पन्न करणे}
+\mrsettexttoken{provable}{निष्पन्न करता येण्याजोगे}{निष्पन्न करता येण्याजोगी}
+\mrsettexttoken{provability}{निष्पन्नता}{निष्पन्नता}
+\mrsettexttoken{nonprovability}{अनिष्पन्नता}{अनिष्पन्नता}
+\mrsettexttoken{introduction}{प्रवेशन}{प्रवेशन}
+\mrsettexttoken{elimination}{विलोपन}{विलोपन}
+\mrsettexttoken{tableau}{टॅब्लो}{टॅब्लो}
+\mrsettexttoken{signed formula}{चिन्हांकित सूत्र}{चिन्हांकित सूत्रे}
+\mrsettexttoken{complete}{संपूर्ण}{संपूर्ण}
+\mrsettexttoken{axiomatizable}{निर्णेय स्वयंसिद्धकसंचाने निरूपणयोग्य}{निर्णेय स्वयंसिद्धकसंचाने निरूपणयोग्य}
+\mrsettexttoken{axiomatized}{स्वयंसिद्धकांद्वारे निरूपित}{स्वयंसिद्धकांद्वारे निरूपित}
+\mrsettexttoken{axiomatizability}{निर्णेय स्वयंसिद्धकसंचाने निरूपणयोग्यता}{निर्णेय स्वयंसिद्धकसंचाने निरूपणयोग्यता}
+\mrsettexttoken{represents}{निरूपण}{निरूपण}
+\mrsettexttoken{representable}{निरूपणीय}{निरूपणीय}
+\mrsettexttoken{discharge}{मुक्त}{मुक्त}
+\mrsettexttoken{discharged}{मुक्त केलेले}{मुक्त केलेली}
+\mrsettexttoken{undischarged}{मुक्त न केलेले}{मुक्त न केलेली}
+\mrsettexttoken{enumerable}{गणनीय}{गणनीय}
+\mrsettexttoken{nonenumerable}{अगणनीय}{अगणनीय}
+\mrsettexttoken{denumerable}{गणनीय अनंत}{गणनीय अनंत}
+\mrsettexttoken{element}{घटक}{घटक}
+\mrsettexttoken{injective}{एकास-एक}{एकास-एक}
+\mrsettexttoken{injection}{एकास-एक फलन}{एकास-एक फलने}
+\mrsettexttoken{surjective}{आच्छादक}{आच्छादक}
+\mrsettexttoken{surjection}{आच्छादन}{आच्छादने}
+\mrsettexttoken{bijective}{एकास-एक व आच्छादक}{एकास-एक व आच्छादक}
+\mrsettexttoken{bijection}{एकास-एक आच्छादन}{एकास-एक आच्छादने}
+\mrsettexttoken{decidable}{निर्णेय}{निर्णेय}
+\mrsettexttoken{computably enumerable}{संगणनक्षमपणे प्रगणनीय}{संगणनक्षमपणे प्रगणनीय}
+\mrsettexttoken{c.e.}{संगणनक्षमपणे प्रगणनीय}{संगणनक्षमपणे प्रगणनीय}
+\mrsettexttoken{argument}{फलसाधक}{फलसाधक}
+\mrsettexttoken{parameter}{प्राचल}{प्राचले}
+\mrsettexttoken{lambda define}{लॅम्डा-परिभाषित}{लॅम्डा-परिभाषित}
+\mrsettexttoken{lambda defined}{लॅम्डा-परिभाषित}{लॅम्डा-परिभाषित}
+\mrsettexttoken{lambda definable}{लॅम्डा-परिभाष्य}{लॅम्डा-परिभाष्य}
+\mrsettexttoken{height}{उंची}{उंची}
+\mrsettexttoken{hp}{उंची}{उंची}
+\mrsettexttoken{depth}{खोली}{खोली}
+\mrsettexttoken{colorC}{लाल}{लाल}
+\mrsettexttoken{colorD}{निळा}{निळे}
+\mrsettexttoken{colorE}{हिरवा}{हिरवे}
+
+% Cases selected explicitly by modules where a postposition needs an oblique stem.
+\mrsettokenoblique{language}{भाषे}{भाषां}
+\mrsettokenoblique{formula}{सूत्रा}{सूत्रां}
+\mrsettokenoblique{subformula}{उपसूत्रा}{उपसूत्रां}
+\mrsettokenoblique{sentence}{वाक्या}{वाक्यां}
+\mrsettokenoblique{variable}{चरा}{चरां}
+\mrsettokenoblique{propositional variable}{विधानीय चला}{विधानीय चलां}
+\mrsettokenoblique{constant}{स्थिरांका}{स्थिरांकां}
+\mrsettokenoblique{predicate}{विधेया}{विधेयां}
+\mrsettokenoblique{function}{फलना}{फलनां}
+\mrsettokenoblique{operator}{संकारका}{संकारकां}
+\mrsettokenoblique{main operator}{मुख्य संकारका}{मुख्य संकारकां}
+\mrsettokenoblique{structure}{रचने}{रचनां}
+\mrsettokenoblique{valuation}{सत्य-मूल्यांकना}{सत्य-मूल्यांकनां}
+\mrsettokenoblique{domain}{प्रांता}{प्रांतां}
+\mrsettokenoblique{value}{मूल्या}{मूल्यां}
+\mrsettokenoblique{derivation}{निष्पत्ती}{निष्पत्त्यां}
+\mrsettokenoblique{proof}{निष्पत्ती}{निष्पत्त्यां}
+\mrsettokenoblique{element}{घटका}{घटकां}
+\mrsettokenoblique{tableau}{टॅब्लो}{टॅब्लों}
+\mrsettokenoblique{signed formula}{चिन्हांकित सूत्रा}{चिन्हांकित सूत्रां}
+\mrsettokenoblique{injection}{एकास-एक फलना}{एकास-एक फलनां}
+\mrsettokenoblique{surjection}{आच्छादना}{आच्छादनां}
+\mrsettokenoblique{bijection}{एकास-एक आच्छादना}{एकास-एक आच्छादनां}
+\mrsettokenoblique{argument}{फलसाधका}{फलसाधकां}
+\mrsettokenoblique{parameter}{प्राचला}{प्राचलां}
+
+% Historical English past-verb forms are represented by d/D.
+\definetoken{d}{derive}{निष्पन्न}
+\definetoken{D}{derive}{निष्पन्न}
+\definetoken{d}{prove}{निष्पन्न}
+\definetoken{D}{prove}{निष्पन्न}
+\definetoken{d}{lambda define}{लॅम्डा-परिभाषित}
+\definetoken{D}{lambda define}{लॅम्डा-परिभाषित}
+
+\renewcommand*{\article}[1]{}
+\renewcommand*{\Article}[1]{}
+% Keep the two OLP switches, and leave whitespace or a Marathi suffix to the module.
+\expandafter\RenewDocumentCommand\csname @printtoken\endcsname{t^ ta m !ts !td}{%
+  \IfBooleanTF{#5}
+    {\IfBooleanTF{#1}{\printtoken{D}{#3}}{\printtoken{d}{#3}}}
+    {\IfBooleanTF{#1}
+       {\IfBooleanTF{#4}{\printtoken{P}{#3}}{\printtoken{S}{#3}}}
+       {\IfBooleanTF{#4}{\printtoken{p}{#3}}{\printtoken{s}{#3}}}}}
+
+% Text labels in proof diagrams. The operators and optional indices stay in math.
+\RenewDocumentCommand \Intro { m o }{%
+  \ensuremath{{#1}\,\text{प्र.}\IfNoValueF{#2}{_{#2}}}}
+\RenewDocumentCommand \Elim { m o }{%
+  \ensuremath{{#1}\,\text{वि.}\IfNoValueF{#2}{_{#2}}}}
+\RenewDocumentCommand \LeftR { m }{\ensuremath{{#1}\,\text{डा.}}}
+\RenewDocumentCommand \RightR { m }{\ensuremath{{#1}\,\text{उ.}}}
+\DeclareDocumentMacro \Weakening {\ensuremath{\text{दु.}}}
+\DeclareDocumentMacro \Contraction {\ensuremath{\text{आ.}}}
+\DeclareDocumentMacro \Exchange {\ensuremath{\text{अ.}}}
+\DeclareDocumentMacro \Cut {\ensuremath{\text{कट}}}
+\DeclareDocumentMacro \Hyp {\ensuremath{\text{गृहीतक}}}
+\DeclareDocumentMacro \TAss {\text{गृहीतक}}
+
+\RenewDocumentCommand \indcase { s t{!} m m +m }{%
+  \DeclareDocumentMacro \indfrm {#3}%
+  \DeclareDocumentMacro \indfrmp {#3}%
+  \DeclareDocumentMacro \indcomplex {#4}%
+  \IfBooleanTF{#1}{$#3$ हे अणुसूत्र आहे. }{$#3 \ident #4$: }%
+  \IfBooleanTF{#2}{हा भाग सरावासाठी.}{#5}}
+
+\tikzset{initial text=प्रारंभ}

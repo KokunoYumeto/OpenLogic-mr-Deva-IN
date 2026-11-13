@@ -6,56 +6,57 @@
 
 \begin{document}
 
-\olfileid{fol}{syn}{sat}
+\olfileid[mr]{fol}{syn}{sat}
 
-\olsection{\article{structure} \printtoken{S}{structure} मधील
-  \article{formula} \printtoken{S}{formula} ची पूर्ति}
+\olsection{\printtoken{oblique}{structure}मधील
+  \printtoken{oblique}{formula}ची पूर्ति}
 
 \begin{explain}
 एकीकडे पदे आणि !!{formula}s यांसारख्या अभिव्यक्ती आणि दुसरीकडे
 !!{structure}s यांना जोडणाऱ्या मूलभूत संकल्पना म्हणजे पदाचे
-\emph{!!{value}} आणि !!a{formula} ची \emph{पूर्ति}. अनौपचारिकपणे,
-पदाचे !!{value} म्हणजे !!a{structure} मधील !!{element} असतो---पद
-नुसते स्थिरचिन्ह असेल, तर त्या स्थिरचिन्हाला !!{structure} ने नेमून
+\emph{!!{value}} आणि \printtoken{oblique}{formula}ची \emph{पूर्ति}. अनौपचारिकपणे,
+पदाचे !!{value} म्हणजे \printtoken{oblique}{structure}मधील !!{element} असतो---पद
+नुसते स्थिरचिन्ह असेल, तर त्या स्थिरचिन्हाला \printtoken{oblique}{structure}ने नेमून
 दिलेली वस्तू हे त्याचे !!{value} असते; आणि ते !!{function}s वापरून
 बनवलेले असेल, तर पदातील स्थिरचिन्हांची !!{value}s आणि फलनचिन्हांना
 नेमून दिलेली फलने यांपासून त्याचे !!{value} काढले जाते. विधेयांना
-दिलेल्या अर्थनिर्धारणामुळे !!{structure} च्या प्रांतात !!{formula} सत्य
-होत असेल, तर !!^a{formula} ची त्या !!a{structure} मध्ये \emph{पूर्ति
+दिलेल्या अर्थनिर्धारणामुळे \printtoken{oblique}{structure}च्या प्रांतात !!{formula} सत्य
+होत असेल, तर \printtoken{oblique}{formula}ची त्या \printtoken{oblique}{structure}त \emph{पूर्ति
 होते}. पूर्तिची ही संकल्पना विगमनाधारित रीतीने विनिर्दिष्ट केली जाते:
-आण्विक !!{formula}s ची पूर्ति केव्हा होते हे !!{structure} चे
-विनिर्देशन थेट सांगते; आणि एखाद्या जटिल !!{formula} ची पूर्ति केव्हा
+आण्विक \printtoken{oblique plural}{formula}ची पूर्ति केव्हा होते हे \printtoken{oblique}{structure}चे
+विनिर्देशन थेट सांगते; आणि एखाद्या जटिल \printtoken{oblique}{formula}ची पूर्ति केव्हा
 होते हे आपण तिचा मुख्य संयोजक किंवा संख्यापक आणि तिच्या तात्काळ
-!!{subformula}s ची पूर्ति होते की नाही यांवरून परिभाषित करतो.
+\printtoken{oblique plural}{subformula}ची पूर्ति होते की नाही यांवरून परिभाषित करतो.
 
-इथे संख्यापकांची स्थिती थोडी अवघड आहे, कारण संख्यकीकृत !!{formula}
-च्या तात्काळ !!{subformula} मध्ये एक मुक्त !!{variable} असते आणि
-!!{structure}s ही !!{variable}s ची !!{value}s विनिर्दिष्ट करत नाहीत.
+इथे संख्यापकांची स्थिती थोडी अवघड आहे. संख्यकीकृत
+\printtoken{oblique}{formula}त संख्यापक ज्या \printtoken{oblique}{variable}ला बांधतो,
+तो !!{variable} तात्काळ \printtoken{oblique}{subformula}त मुक्तपणे येऊ शकतो.
+!!{structure}s ही \printtoken{oblique plural}{variable}ची !!{value}s विनिर्दिष्ट करत नाहीत.
 ही अडचण हाताळण्यासाठी आपण \emph{चर-मूल्यांकने} ही आणतो आणि पूर्तिची
-व्याख्या केवळ !!a{structure} च्या सापेक्ष न देता, !!a{structure} आणि
-!!a{variable} चे मूल्यांकन या दोहोंच्या सापेक्ष देतो.
+व्याख्या केवळ \printtoken{oblique}{structure}च्या सापेक्ष न देता, !!a{structure} आणि
+\printtoken{oblique}{variable}चे मूल्यांकन या दोहोंच्या सापेक्ष देतो.
 \end{explain}
 
 \begin{defn}[चर-मूल्यांकन]
 !!a{structure}~$\Struct{M}$ हिच्यासाठीचे \emph{चर-मूल्यांकन}~$s$
-म्हणजे प्रत्येक !!{variable} चे~$\Domain M$ मधील !!a{element} कडे
+म्हणजे प्रत्येक \printtoken{oblique}{variable}चे~$\Domain M$ मधील \printtoken{oblique}{element}कडे
 प्रतिचित्रण करणारे फलन; म्हणजेच, $s\colon \Var \to \Domain M$.
 \end{defn}
 
 \begin{explain}
-!!^a{structure} प्रत्येक !!{constant} ला !!a{value} नेमून देते, तर
+!!^a{structure} प्रत्येक \printtoken{oblique}{constant}ला !!a{value} नेमून देते, तर
 चर-मूल्यांकन प्रत्येक चराला मूल्य नेमून देते. पण त्यांच्यापासून बनलेली
-पदेही !!{domain} मधील !!{element}s ना नावे देण्यासाठी वापरायची आहेत.
+पदेही \printtoken{oblique}{domain}मधील \printtoken{oblique plural}{element}ना नावे देण्यासाठी वापरायची आहेत.
 त्यासाठी आपण पदांचे !!{value} विगमनाधारित रीतीने परिभाषित करतो.
 !!{constant}s आणि चरांसाठी मूल्य अनुक्रमे !!{structure} किंवा
 चर-मूल्यांकन विनिर्दिष्ट करते तेच असते; अधिक जटिल पदांसाठी ते
-!!{structure} ने !!{function}s ना नेमून दिलेली फलने वापरून पुनरावर्ती
+\printtoken{oblique}{structure}ने \printtoken{oblique plural}{function}ना नेमून दिलेली फलने वापरून पुनरावर्ती
 रीतीने काढले जाते.
 \end{explain}
 
 \begin{defn}[पदांचे !!^{value}]
 $t$ हे भाषा~$\Lang L$ हिचे पद, $\Struct M$ ही~$\Lang L$ साठीची
-!!{structure} आणि $s$ हे~$\Struct M$ साठीचे !!a{variable} चे
+!!{structure} आणि $s$ हे~$\Struct M$ साठीचे \printtoken{oblique}{variable}चे
 मूल्यांकन असेल, तर \emph{!!{value}}~$\Value{t}{M}[s]$ पुढीलप्रमाणे
 परिभाषित केले जाते:
 \begin{enumerate}
@@ -70,9 +71,9 @@ $t$ हे भाषा~$\Lang L$ हिचे पद, $\Struct M$ ही~$\Lang
 \end{defn}
 
 \begin{defn}[$x$-पर्याय]
-$s$ हे !!a{structure}~$\Struct M$ साठीचे !!a{variable} चे मूल्यांकन
+$s$ हे !!a{structure}~$\Struct M$ साठीचे \printtoken{oblique}{variable}चे मूल्यांकन
 असेल, तर~$s$ पासून फार तर~$x$ ला नेमून दिलेल्या मूल्यातच भिन्न असणारे
-$\Struct M$ साठीचे कोणतेही !!{variable} चे मूल्यांकन~$s'$ याला~$s$ चा
+$\Struct M$ साठीचे कोणतेही \printtoken{oblique}{variable}चे मूल्यांकन~$s'$ याला~$s$ चा
 \emph{$x$-पर्याय} म्हणतात. $s'$ हा~$s$ चा $x$-पर्याय असेल, तर आपण
 $\varAssign{s'}{s}{x}$ असे लिहितो.
 \end{defn}
@@ -84,7 +85,7 @@ $\varAssign{s'}{s}{x}$ असे लिहितो.
 \end{explain}
 
 \begin{defn}
-  $s$ हे !!a{structure}~$\Struct M$ साठीचे !!a{variable} चे मूल्यांकन
+  $s$ हे !!a{structure}~$\Struct M$ साठीचे \printtoken{oblique}{variable}चे मूल्यांकन
   आणि $m \in \Domain{M}$ असेल, तर मूल्यांकन~$\Subst{s}{m}{x}$ हे पुढील
   रीतीने परिभाषित केलेले चर-मूल्यांकन आहे:
   \[\Subst{s}{m}{x}(y) = \begin{cases}
@@ -95,11 +96,11 @@ $\varAssign{s'}{s}{x}$ असे लिहितो.
 
 दुसऱ्या शब्दांत, $\Subst{s}{m}{x}$ हा~$s$ चा असा विशिष्ट $x$-पर्याय
 आहे, जो प्रांतातील !!{element}~$m$ हे~$x$ ला नेमून देतो आणि~$x$ शिवाय
-इतर !!{variable}s ना~$s$ ने नेमून दिलेल्याच गोष्टी नेमून देतो.
+इतर \printtoken{oblique plural}{variable}ना~$s$ ने नेमून दिलेल्याच गोष्टी नेमून देतो.
 
 \begin{defn}[पूर्ति]
 \ollabel{defn:satisfaction}
-!!a{structure}~$\Struct M$ मध्ये !!a{variable} चे मूल्यांकन~$s$ याच्या
+!!a{structure}~$\Struct M$ मध्ये \printtoken{oblique}{variable}चे मूल्यांकन~$s$ याच्या
 सापेक्ष !!a{formula}~$!A$ ची पूर्ति, संकेतांत $\Sat{M}{!A}[s]$, पुढीलप्रमाणे
 पुनरावर्ती रीतीने परिभाषित केली जाते. (``$\Sat{M}{!A}[s]$ नाही'' या
 अर्थाने आपण $\Sat/{M}{!A}[s]$ असे लिहितो.)
@@ -161,15 +162,15 @@ $\lforall[x][!B(x)]$ ची पूर्ति परिभाषित कर�
 असे म्हणून आपण $\lexists[x][!B(x)]$ ची पूर्ति परिभाषित करू शकत नाही.}{}
 कारण $m \in \Domain M$ असेल, तर ते भाषेचे चिन्ह नसते आणि म्हणून
 $!B(m)$ हे !!a{formula} नसते (म्हणजे $\Subst{!B}{m}{x}$ अपरिभाषित
-असते).~$\Struct{M}$ मधील प्रत्येक !!{element} चे नाव देणारी
+असते).~$\Struct{M}$ मधील प्रत्येक \printtoken{oblique}{element}चे नाव देणारी
 !!{constant}s किंवा पदे
 आपल्याजवळ उपलब्ध आहेत असेही गृहीत धरता येत नाही, कारण !!{structure}s
-च्या व्याख्येत तशी कोणतीही अट नाही. प्रमाण भाषेतील !!{constant}s चा
+च्या व्याख्येत तशी कोणतीही अट नाही. प्रमाण भाषेतील \printtoken{oblique plural}{constant}चा
 संच !!{denumerable} आहे; म्हणून $\Domain{M}$ हा !!{enumerable} नसेल,
 तर प्रत्येक वस्तूला नाव देण्यासाठी पुरेशी !!{constant}s सुद्धा नसतात.
 
-ही अडचण सोडवण्यासाठी आपण !!{variable} ची मूल्यांकने आणतो; त्यांमुळे
-चरे प्रांतातील !!{element}s शी थेट जोडता येतात. मग, उदाहरणार्थ,
+ही अडचण सोडवण्यासाठी आपण \printtoken{oblique}{variable}ची मूल्यांकने आणतो; त्यांमुळे
+चरे प्रांतातील \printtoken{oblique plural}{element}शी थेट जोडता येतात. मग, उदाहरणार्थ,
 \iftag{prvEx}{$\lexists[x][!B(x)]$}{$\lforall[x][!B(x)]$} ची~$\Struct M$
 मध्ये पूर्ति तेव्हा आणि केवळ तेव्हाच होते, जेव्हा
 \iftag{prvEx}{किमान एका $m \in \Domain{M}$ साठी $\Sat{M}{!B(m)}$}{प्रत्येक
@@ -192,7 +193,7 @@ $\Lang{L} = \{a, b, f, R\}$ असू द्या, जिथे $a$ आणि $
 \item $x+y \le 3$ असेल तर $\Assign{f}{M}(x, y) = x+y$, अन्यथा $= 3$.
 \item $\Assign{R}{M} = \{\tuple{1, 1}, \tuple{1, 2}, \tuple{2, 3}, \tuple{2, 4}\}$
 \end{enumerate}
-प्रत्येक !!{variable} ला $1 \in \Domain{M}$ नेमून देणारे फलन
+प्रत्येक \printtoken{oblique}{variable}ला $1 \in \Domain{M}$ नेमून देणारे फलन
 $s(x) = 1$ हे~$\Struct{M}$ साठीचे चर-मूल्यांकन आहे.
 
 मग
@@ -203,11 +204,11 @@ $s(x) = 1$ हे~$\Struct{M}$ साठीचे चर-मूल्यां�
 \Value{f(a,b)}{M}[s] & = \Assign{f}{M}(1, 2) = 1+2 = 3.
 \intertext{$f(f(a,b),a)$ चे मूल्य काढण्यासाठी पुढील अभिव्यक्ती विचारात घ्यावी लागते:}
 \Value{f(f(a,b),a)}{M}[s] & = \Assign{f}{M}(\Value{f(a, b)}{M}[s],
-\Value{a}{M}[s]) = \Assign{f}{M}(3, 1) = 3,
+\Value{a}{M}[s])\olmrdisplaybreak{}= \Assign{f}{M}(3, 1) = 3,
 \intertext{कारण $3+1 > 3$. $s(x) = 1$ आणि $\Value{x}{M}[s] =
   s(x)$ असल्यामुळे आपल्याकडे पुढील समीकरणही आहे:}
 \Value{f(f(a,b),x)}{M}[s] & = \Assign{f}{M}(\Value{f(a, b)}{M}[s],
-\Value{x}{M}[s]) = \Assign{f}{M}(3, 1) = 3,
+\Value{x}{M}[s])\olmrdisplaybreak{}= \Assign{f}{M}(3, 1) = 3,
 \end{align*}
 
 आण्विक !!{formula}~$R(t_1, t_2)$ च्या फलसाधकांच्या मूल्यांची क्रमित
@@ -237,7 +238,7 @@ $R(a, a) \lif (R(b, x) \lor R(x, b))$ मधील मुख्य संयो�
 
 आठवा, $s$ चा $x$-पर्याय म्हणजे~$s$ पासून फार तर~$x$ ला नेमून
 दिलेल्या मूल्यातच भिन्न असणारे चर-मूल्यांकन. $\Domain{M}$ च्या प्रत्येक
-!!{element} साठी~$s$ चा एक $x$-पर्याय आहे:
+\printtoken{oblique}{element}साठी~$s$ चा एक $x$-पर्याय आहे:
 \begin{align*}
   s_1 & = \Subst{s}{1}{x}, &
   s_2 & = \Subst{s}{2}{x},\\
@@ -350,7 +351,7 @@ $\tuple{1,1} \in \Assign{R}{M}$ असल्यामुळे उत्तर �
 %READERNOTE{OLFOL-016: गोठवलेल्या इंग्रजी मजकुरात दुसऱ्या रंजक प्रकरणातील चलाचे m हे नाव गाळले आहे. संदर्भ आणि लगेच पुढील गणना यांनुसार ते मराठीत पुनःस्थापित केले आहे.}
 
 $\Sat{M}{\lexists[y][R(x,y)]}[\Subst{s}{2}{x}]$ आहे का हे ठरवण्यासाठी
-आपल्याला !!{variable} ची मूल्यांकने
+आपल्याला \printtoken{oblique}{variable}ची मूल्यांकने
 $\Subst{\Subst{s}{2}{x}}{n}{y}$ तपासावी लागतात. इथे $n = 1$ साठी हे
 मूल्यांकन $s_2 = \Subst{s}{2}{x}$ आहे आणि ते $R(x,y)$ ची पूर्ति करत
 नाही ($s_2(x) = 2$, $s_2(y) = 1$ आणि
@@ -436,8 +437,8 @@ $\Sat{M}{\lforall[x][!B(x)]}[s]$ तेव्हा आणि केवळ त�
 \]
 तुमचे उत्तर का योग्य आहे ते स्पष्ट करा.
 
-(b) ज्यात या !!{formula} ची पूर्ति होत नाही अशी वेगळी रचना आणि
-!!{variable} चे मूल्यांकन द्या.
+(b) ज्यात या \printtoken{oblique}{formula}ची पूर्ति होत नाही अशी वेगळी रचना आणि
+\printtoken{oblique}{variable}चे मूल्यांकन द्या.
 \end{prob}
 
 \end{document}

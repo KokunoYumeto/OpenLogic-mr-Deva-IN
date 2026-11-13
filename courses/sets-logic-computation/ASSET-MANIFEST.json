@@ -1,0 +1,358 @@
+{
+  "sources": {
+    "slc": {
+      "repository": "https://github.com/rzach/sets-logic-computation",
+      "commit": "6178f32f61645f3b62ef621b4c5a88f8e67778ad"
+    },
+    "portraits": {
+      "repository": "https://github.com/OpenLogicProject/portraits",
+      "commit": "1a92d54a0bf964d35b5300f45f1830749c462544"
+    },
+    "photos": {
+      "repository": "https://github.com/OpenLogicProject/photos",
+      "commit": "81c1990df896568410b452fea68b81cbb6ce46fa"
+    }
+  },
+  "illustrations": {
+    "source": "slc",
+    "files": [
+      "illustrations/SkolemChapter.png",
+      "illustrations/CantorChapter.png",
+      "illustrations/GodelChapter.png",
+      "illustrations/TuringChapter.png",
+      "illustrations/NoetherChapter.png"
+    ],
+    "credit": "Open Logic Portraits by Matthew Leadbeater, © 2016",
+    "license": "CC BY-NC 4.0",
+    "source_of_artwork": "https://richardzach.org/2016/08/line-art-portraits-of-logicians/"
+  },
+  "portraits": {
+    "source": "portraits",
+    "files": [
+      "cantor-circle.pdf",
+      "goedel-circle.pdf",
+      "turing-circle.pdf",
+      "skolem-circle.pdf",
+      "noether-circle.pdf"
+    ],
+    "credit": "Open Logic Portraits by Matthew Leadbeater, © 2016",
+    "license": "CC BY-NC 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/"
+  },
+  "photos": {
+    "source": "photos",
+    "terms": "Use in non-commercial teaching materials derived from the Open Logic Project text, with full attribution. See the pinned photo README and each photo's credit for specific terms.",
+    "subject_specific_terms": {
+      "cantor-georg": "Credit to Otto Zeth and the Universitätsarchiv, Martin-Luther Universität Halle–Wittenberg. No standalone licence stated in the individual credit.",
+      "church-alonzo": "© Princeton University. Permission reported for non-commercial OLP-derived materials. Any other use requires permission from Princeton University.",
+      "gentzen-gerhard": "Courtesy of Ekhart Mentzler-Trott. No standalone licence stated in the individual credit.",
+      "goedel-kurt": "Permission reported from the Archives Center, Institute for Advanced Study, for non-commercial OLP-derived materials. Any other use requires permission from the Archives Center.",
+      "noether-emmy": "Courtesy of the Göttingen library and restoration by Joel Fuller. No standalone licence stated in the individual credit.",
+      "russell-bertrand": "Courtesy of McMaster University Library. No standalone licence stated in the individual credit.",
+      "tarski-alfred": "Permission reported for non-commercial OLP-derived materials. Any other use requires permission from Bancroft Library. Cropping and restoration by Joel Fuller.",
+      "turing-alan": "© National Portrait Gallery, London. CC BY-NC-ND 3.0. https://creativecommons.org/licenses/by-nc-nd/3.0/.",
+      "zermelo-ernst": "Courtesy of the Göttingen library. No standalone licence stated in the individual credit."
+    }
+  },
+  "files": {
+    "ASSET-CREDITS.md": {
+      "language": "mr",
+      "bytes": 7959,
+      "sha256": "3633f0fe78d63c445501d3ef2b36fe5c87cea5d3afbb79ff26acdd35a3ae9d27"
+    },
+    "illustrations/CantorChapter.png": {
+      "source": "slc",
+      "source_path": "illustrations/CantorChapter.png",
+      "bytes": 112660,
+      "sha256": "d7271522700bf222f6a7618d36630753c0ba0ff8224097817b3694e0b8a41dc0"
+    },
+    "illustrations/GodelChapter.png": {
+      "source": "slc",
+      "source_path": "illustrations/GodelChapter.png",
+      "bytes": 103992,
+      "sha256": "766d57f88c263b51a82d5557cbf05b4d5b1481ec791a17dbd387ba2a69556ed3"
+    },
+    "illustrations/NoetherChapter.png": {
+      "source": "slc",
+      "source_path": "illustrations/NoetherChapter.png",
+      "bytes": 104855,
+      "sha256": "18b892188e7e512dbf358fa99bce08bcc9290cae6453f7f4b8142f90779121b2"
+    },
+    "illustrations/SkolemChapter.png": {
+      "source": "slc",
+      "source_path": "illustrations/SkolemChapter.png",
+      "bytes": 106596,
+      "sha256": "a60e50fc747e58b0baa0af56a77e65065fd48d3951aa2fd2e3df199e8cf7d83e"
+    },
+    "illustrations/TuringChapter.png": {
+      "source": "slc",
+      "source_path": "illustrations/TuringChapter.png",
+      "bytes": 111949,
+      "sha256": "b6bc553fc022939436e4aef07bee3016ec902c2eb06be85c22a0ca6a1d2cc098"
+    },
+    "locale/mr/photocredits/cantor-georg-credit.tex": {
+      "language": "mr",
+      "translation_of": "open-logic/assets/photos/cantor-georg/cantor-georg-credit.tex",
+      "bytes": 348,
+      "sha256": "fd1b574739dd9fa7ed68fd92f5bcdcdc35b401ac16679821c666368bea3ab571"
+    },
+    "locale/mr/photocredits/church-alonzo-credit.tex": {
+      "language": "mr",
+      "translation_of": "open-logic/assets/photos/church-alonzo/church-alonzo-credit.tex",
+      "bytes": 859,
+      "sha256": "2cd4931676031b2ce5caffe5263990494f74caaaef250e7f8ffeed929e938d3b"
+    },
+    "locale/mr/photocredits/gentzen-gerhard-credit.tex": {
+      "language": "mr",
+      "translation_of": "open-logic/assets/photos/gentzen-gerhard/gentzen-gerhard-credit.tex",
+      "bytes": 213,
+      "sha256": "1e050c74164c4902b5b7de57126979d201fcac23767e7a9ed94001fdb024df6f"
+    },
+    "locale/mr/photocredits/goedel-kurt-credit.tex": {
+      "language": "mr",
+      "translation_of": "open-logic/assets/photos/goedel-kurt/goedel-kurt-credit.tex",
+      "bytes": 1151,
+      "sha256": "d48cdbc337a73f163537caef4a37e550b19d6906f993092dfce6523e92656aee"
+    },
+    "locale/mr/photocredits/noether-emmy-credit.tex": {
+      "language": "mr",
+      "translation_of": "open-logic/assets/photos/noether-emmy/noether-emmy-credit.tex",
+      "bytes": 528,
+      "sha256": "850b36245223bd8cad5b85052b3adc604569951e6ae5c3d05b9f1796348749a6"
+    },
+    "locale/mr/photocredits/russell-bertrand-credit.tex": {
+      "language": "mr",
+      "translation_of": "open-logic/assets/photos/russell-bertrand/russell-bertrand-credit.tex",
+      "bytes": 333,
+      "sha256": "d01c9a356f357fdc6c65d0100435359e359f18e6113eb159f494ea04612e4a52"
+    },
+    "locale/mr/photocredits/tarski-alfred-credit.tex": {
+      "language": "mr",
+      "translation_of": "open-logic/assets/photos/tarski-alfred/tarski-alfred-credit.tex",
+      "bytes": 1045,
+      "sha256": "8797df382883bb7dd8d834e0354bea14f736badc43e0bce43aa62e46564aadb1"
+    },
+    "locale/mr/photocredits/turing-alan-credit.tex": {
+      "language": "mr",
+      "translation_of": "open-logic/assets/photos/turing-alan/turing-alan-credit.tex",
+      "bytes": 506,
+      "sha256": "8ca24ede81d07c47a25ca675c6d1b21ac54adbc56e419213cd7f8077d309b349"
+    },
+    "locale/mr/photocredits/zermelo-ernst-credit.tex": {
+      "language": "mr",
+      "translation_of": "open-logic/assets/photos/zermelo-ernst/zermelo-ernst-credit.tex",
+      "bytes": 403,
+      "sha256": "960b165cb3ae8f79c0e93d43f22c3b13b44e4d662736114c679a8da39d5ba5e5"
+    },
+    "open-logic/assets/photos/README.md": {
+      "source": "photos",
+      "source_path": "README.md",
+      "bytes": 1351,
+      "sha256": "8c24a313830fe66d4bf010c26f0e5e8fd149ace67d036bff0030e20de52393c1"
+    },
+    "open-logic/assets/photos/cantor-georg/cantor-georg-credit.tex": {
+      "source": "photos",
+      "source_path": "cantor-georg/cantor-georg-credit.tex",
+      "bytes": 196,
+      "sha256": "56bf0d795187692806afcfbb1232e01159b6ecb92c0e092713b5879d9fd3ae44"
+    },
+    "open-logic/assets/photos/cantor-georg/cantor-georg-large.png": {
+      "source": "photos",
+      "source_path": "cantor-georg/cantor-georg-large.png",
+      "bytes": 415275,
+      "sha256": "4b883398c2121f31feded13228b3ff22bbbefb97c1bee3f59df19c2009d4d4e2"
+    },
+    "open-logic/assets/photos/cantor-georg/cantor-georg-small.png": {
+      "source": "photos",
+      "source_path": "cantor-georg/cantor-georg-small.png",
+      "bytes": 77681,
+      "sha256": "fcf2d6e515dad4fdec9adab876fdf46532af5234931cd105520ac80cf951fce8"
+    },
+    "open-logic/assets/photos/church-alonzo/church-alonzo-credit.tex": {
+      "source": "photos",
+      "source_path": "church-alonzo/church-alonzo-credit.tex",
+      "bytes": 508,
+      "sha256": "b1f035bc45c7b40b7ee9c602ff82c07586e50dd1aa8a3339171e5fc9e8d7870e"
+    },
+    "open-logic/assets/photos/church-alonzo/church-alonzo-large.png": {
+      "source": "photos",
+      "source_path": "church-alonzo/church-alonzo-large.png",
+      "bytes": 618615,
+      "sha256": "d810d4962253f8068fba85723b644c6d18481aaa231600e8a130f2663e49aa61"
+    },
+    "open-logic/assets/photos/church-alonzo/church-alonzo-small.png": {
+      "source": "photos",
+      "source_path": "church-alonzo/church-alonzo-small.png",
+      "bytes": 56666,
+      "sha256": "41a708886ccdfdac8e84ddaaef2216e1bd5de312b13dd4cf398bfd3122e94144"
+    },
+    "open-logic/assets/photos/gentzen-gerhard/gentzen-gerhard-credit.tex": {
+      "source": "photos",
+      "source_path": "gentzen-gerhard/gentzen-gerhard-credit.tex",
+      "bytes": 80,
+      "sha256": "913f32e3c521c3e72a7016725f6dd87b4845d4e8a69356f49189af1245482f6d"
+    },
+    "open-logic/assets/photos/gentzen-gerhard/gentzen-gerhard-large.png": {
+      "source": "photos",
+      "source_path": "gentzen-gerhard/gentzen-gerhard-large.png",
+      "bytes": 419479,
+      "sha256": "1ee39542a56bcf6b72ca4fa9c18fa4871f1a163de1b573c7ae41968bfbb1723a"
+    },
+    "open-logic/assets/photos/gentzen-gerhard/gentzen-gerhard-small.png": {
+      "source": "photos",
+      "source_path": "gentzen-gerhard/gentzen-gerhard-small.png",
+      "bytes": 47868,
+      "sha256": "07d24ee7434628022d6493ded9ed72ffb7de82f8ff7051508e6630a77cc19d13"
+    },
+    "open-logic/assets/photos/goedel-kurt/goedel-kurt-credit.tex": {
+      "source": "photos",
+      "source_path": "goedel-kurt/goedel-kurt-credit.tex",
+      "bytes": 656,
+      "sha256": "c90a039e10829f9d85e0a17d985f411a5bf8efd0e7861bc1103f63becb7321a9"
+    },
+    "open-logic/assets/photos/goedel-kurt/goedel-kurt-large.png": {
+      "source": "photos",
+      "source_path": "goedel-kurt/goedel-kurt-large.png",
+      "bytes": 881707,
+      "sha256": "b3399afe71e30f67828ffb9e456bda42068d8648df04e94e64384c8c84c13ea4"
+    },
+    "open-logic/assets/photos/goedel-kurt/goedel-kurt-small.png": {
+      "source": "photos",
+      "source_path": "goedel-kurt/goedel-kurt-small.png",
+      "bytes": 81226,
+      "sha256": "5fb344771a18ba62b9b77d9a0478afe364c6758f961c5f2d2852f9a6cec34e4e"
+    },
+    "open-logic/assets/photos/noether-emmy/noether-emmy-credit.tex": {
+      "source": "photos",
+      "source_path": "noether-emmy/noether-emmy-credit.tex",
+      "bytes": 408,
+      "sha256": "0d73a266dd1d12e6afe7c970a86c3d5f939652610348ff0c50eba2f5df9777b0"
+    },
+    "open-logic/assets/photos/noether-emmy/noether-emmy-large.png": {
+      "source": "photos",
+      "source_path": "noether-emmy/noether-emmy-large.png",
+      "bytes": 520249,
+      "sha256": "e5286b0a1840854ba1708ecce3895fa4d91dd09cf3b8e2e5189e8eb49a34ecd9"
+    },
+    "open-logic/assets/photos/noether-emmy/noether-emmy-small.png": {
+      "source": "photos",
+      "source_path": "noether-emmy/noether-emmy-small.png",
+      "bytes": 66783,
+      "sha256": "024677f0d153f8151b3b61d3587ffe5e46eb823b2148a70dc2eb297a72de3bff"
+    },
+    "open-logic/assets/photos/russell-bertrand/russell-bertrand-credit.tex": {
+      "source": "photos",
+      "source_path": "russell-bertrand/russell-bertrand-credit.tex",
+      "bytes": 238,
+      "sha256": "e3a94c92dd793a7af81d0605c67a9f62596fa5fa6761c93e518ed5eb4a0687c0"
+    },
+    "open-logic/assets/photos/russell-bertrand/russell-bertrand-large.png": {
+      "source": "photos",
+      "source_path": "russell-bertrand/russell-bertrand-large.png",
+      "bytes": 705436,
+      "sha256": "423814a0701ba0e0c60757e291540706326122aaf11cd5a39b6cefabc6c9deac"
+    },
+    "open-logic/assets/photos/russell-bertrand/russell-bertrand-small.png": {
+      "source": "photos",
+      "source_path": "russell-bertrand/russell-bertrand-small.png",
+      "bytes": 65629,
+      "sha256": "9a8a753a5b39e1cce4676134971f9c07aaee1b805e4b263fd64217053d7080a6"
+    },
+    "open-logic/assets/photos/tarski-alfred/tarski-alfred-credit.tex": {
+      "source": "photos",
+      "source_path": "tarski-alfred/tarski-alfred-credit.tex",
+      "bytes": 471,
+      "sha256": "f33a0851891e4d4e4690aad4757225f70395d3014d07c441189a1d3b71bafede"
+    },
+    "open-logic/assets/photos/tarski-alfred/tarski-alfred-large.png": {
+      "source": "photos",
+      "source_path": "tarski-alfred/tarski-alfred-large.png",
+      "bytes": 619047,
+      "sha256": "0387d5fc13950cd34aec6c0de766c8bfee3bcb4ee58b6e1911fd9c418dc46453"
+    },
+    "open-logic/assets/photos/tarski-alfred/tarski-alfred-small.png": {
+      "source": "photos",
+      "source_path": "tarski-alfred/tarski-alfred-small.png",
+      "bytes": 65037,
+      "sha256": "68bfa6a270f1e95ead76c667bf2ac39f4a6ab446206026ae6dda41f31ab0ad77"
+    },
+    "open-logic/assets/photos/turing-alan/turing-alan-credit.tex": {
+      "source": "photos",
+      "source_path": "turing-alan/turing-alan-credit.tex",
+      "bytes": 325,
+      "sha256": "07a38ecb47dfd20f6a62d2bb9318e024deb3804fe7d249ba0f8fb2c5f80f9928"
+    },
+    "open-logic/assets/photos/turing-alan/turing-alan-large.png": {
+      "source": "photos",
+      "source_path": "turing-alan/turing-alan-large.png",
+      "bytes": 254797,
+      "sha256": "e724109a38dcb1785e2b503b3059e209b45f79b2770e6fbedf78cdb0b421c213"
+    },
+    "open-logic/assets/photos/turing-alan/turing-alan-small.png": {
+      "source": "photos",
+      "source_path": "turing-alan/turing-alan-small.png",
+      "bytes": 64966,
+      "sha256": "a59dc606caa27c4614d40151e736f356017c656e241e3c63098b06fb9fe83e56"
+    },
+    "open-logic/assets/photos/zermelo-ernst/zermelo-ernst-credit.tex": {
+      "source": "photos",
+      "source_path": "zermelo-ernst/zermelo-ernst-credit.tex",
+      "bytes": 361,
+      "sha256": "b996e8f70e635feee7289d541b4d6389d72ae0baa295e91a4572090ad0713616"
+    },
+    "open-logic/assets/photos/zermelo-ernst/zermelo-ernst-large.png": {
+      "source": "photos",
+      "source_path": "zermelo-ernst/zermelo-ernst-large.png",
+      "bytes": 627711,
+      "sha256": "ceecb2f1eb18a60c3a9bf8e284b89e7a79bd14c35fe3fae2b2bca80921abae51"
+    },
+    "open-logic/assets/photos/zermelo-ernst/zermelo-ernst-small.png": {
+      "source": "photos",
+      "source_path": "zermelo-ernst/zermelo-ernst-small.png",
+      "bytes": 73183,
+      "sha256": "cd83b5a8ca694fee7d3f77aa01b8a428279226d5084dd34f6f4a0be34ec0a6cc"
+    },
+    "open-logic/assets/portraits/LICENSE.md": {
+      "source": "portraits",
+      "source_path": "LICENSE.md",
+      "bytes": 591,
+      "sha256": "b81f750dff1e0e95f740a119dcae0f70bcb79b5888554c544f9956dcacf187f4"
+    },
+    "open-logic/assets/portraits/README.md": {
+      "source": "portraits",
+      "source_path": "README.md",
+      "bytes": 1860,
+      "sha256": "519b9325566f44d69e40a2f580cefe707e044330aaa0f2835cf2ee62e7cf4aca"
+    },
+    "open-logic/assets/portraits/cantor-circle.pdf": {
+      "source": "portraits",
+      "source_path": "cantor-circle.pdf",
+      "bytes": 422747,
+      "sha256": "fa571a4b9cbbe5e9926dd4f1da82a1f0d4a23567ce9c47ad805403dc7836762e"
+    },
+    "open-logic/assets/portraits/goedel-circle.pdf": {
+      "source": "portraits",
+      "source_path": "goedel-circle.pdf",
+      "bytes": 418998,
+      "sha256": "c4eb7e2c8d974c8f8b08532c09072c2c86f0dd35c5c72d4a97cb86f2290b94b6"
+    },
+    "open-logic/assets/portraits/noether-circle.pdf": {
+      "source": "portraits",
+      "source_path": "noether-circle.pdf",
+      "bytes": 418334,
+      "sha256": "03e7a5be0b89e68dc6cd5abe3002db857af8fff4eca727c9d8749a50df32209e"
+    },
+    "open-logic/assets/portraits/skolem-circle.pdf": {
+      "source": "portraits",
+      "source_path": "skolem-circle.pdf",
+      "bytes": 418101,
+      "sha256": "637f3df3470a275313c22123ccaf96bb033cc2c041644ab30221ee7188a6df6d"
+    },
+    "open-logic/assets/portraits/turing-circle.pdf": {
+      "source": "portraits",
+      "source_path": "turing-circle.pdf",
+      "bytes": 420140,
+      "sha256": "9044863e5efe19abacd8097e9dfb3266d45797626945082333acb65897ea0b6c"
+    }
+  }
+}

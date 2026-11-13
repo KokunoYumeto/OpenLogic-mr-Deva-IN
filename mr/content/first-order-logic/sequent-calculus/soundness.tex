@@ -7,8 +7,8 @@
 \begin{document}
 
 \iftag{FOL}
-      {\olfileid{fol}{seq}{sou}}
-      {\olfileid{pl}{seq}{sou}}
+      {\olfileid[mr]{fol}{seq}{sou}}
+      {\olfileid[mr]{pl}{seq}{sou}}
 
 \olsection{निर्दोषता}
 
@@ -22,15 +22,15 @@
 \item प्रत्येक !!{derivable}~$!A$ हे \iftag{FOL}{वैध}{सर्वतः सत्य सूत्र} असते;
 \item एखादे !!a{sentence} इतर काही वाक्यांपासून !!{derivable} असेल, तर ते
   त्यांचे तार्किक परिणामही असते;
-\item !!{sentence}s चा संच विसंगत असेल, तर तो अपूर्ततायोग्य असतो.
+\item \printtoken{oblique plural}{sentence}चा संच विसंगत असेल, तर तो अपूर्ततायोग्य असतो.
 \end{enumerate}
 हे !!a{derivation} पद्धतीचे महत्त्वाचे गुणधर्म आहेत. यांपैकी एखादा गुणधर्म
 खरा नसेल, तर !!{derivation} पद्धतीत दोष आहे—ती खूप जास्त निष्पत्ती
 !!{derive} करेल. म्हणून !!{derivation} पद्धतीची निर्दोषता सिद्ध करणे अत्यंत
 महत्त्वाचे आहे.
 
-वरील सर्व सिद्धता-उपपत्तीय गुणधर्म क्रमवर्ती कलनातील ठरावीक क्रमवर्तींच्या
-!!{derivability} द्वारे परिभाषित केलेले असल्याने, (1)--(3) सिद्ध करण्यासाठी
+वरील सर्व सिद्धता-उपपत्तीय गुणधर्मांच्या व्याख्या क्रमवर्ती कलनातील ठरावीक
+क्रमवर्तींच्या !!{derivability}वर आधारलेल्या आहेत. त्यामुळे (1)--(3) सिद्ध करण्यासाठी
 !!{derivable} क्रमवर्तींच्या चिन्हार्थविषयक गुणधर्मांबद्दल काहीतरी सिद्ध करावे
 लागते. प्रथम क्रमवर्ती \emph{वैध} असणे म्हणजे काय ते परिभाषित करू आणि मग
 प्रत्येक !!{derivable} क्रमवर्ती वैध असते हे दाखवू. त्यानंतर (1)--(3) या
@@ -59,14 +59,20 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ हे एखाद्या $!A \in \Delta
 अनुमानांची संख्या~$n$ यावर विगमनाने पुढे जाऊ.
 
 अनुमानांची संख्या~$0$ असेल, तर $\pi$ मध्ये फक्त आरंभीची क्रमवर्ती असते.
-प्रत्येक आरंभीची क्रमवर्ती $!A \Sequent !A$ स्पष्टपणे वैध असते, कारण प्रत्येक
+$!A \Sequent !A$ या रूपाची प्रत्येक आरंभीची क्रमवर्ती वैध असते, कारण प्रत्येक
 \iftag{FOL}{$\Struct M$}{$\pAssign{v}$} साठी एकतर
   $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A}$ किंवा
 $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
+\iftag{prvFalse}{$\lfalse \Sequent \quad$ ही आरंभीची क्रमवर्तीही वैध
+असते, कारण \iftag{FOL}{कोणतीही रचना}{कोणतेही सत्य-मूल्यांकन}~$\lfalse$
+पूर्ण करत नाही.}{}
+\iftag{prvTrue}{$\quad \Sequent \ltrue$ ही आरंभीची क्रमवर्तीही वैध
+असते, कारण प्रत्येक \iftag{FOL}{रचना}{सत्य-मूल्यांकन}~$\ltrue$
+पूर्ण करते.}{}
 
   अनुमानांची संख्या~0 पेक्षा जास्त असेल, तर सर्वांत खालच्या अनुमानाच्या
 प्रकारानुसार प्रकरणे वेगळी करू. विगमन गृहीतकानुसार त्या अनुमानाची आधारविधाने
-वैध आहेत असे गृहीत धरू, कारण कोणत्याही आधारविधानाच्या !!{derivation} मधील
+वैध आहेत असे गृहीत धरू, कारण कोणत्याही आधारविधानाच्या \printtoken{oblique}{derivation}मधील
 अनुमानांची संख्या~$n$ पेक्षा कमी असते.
 
 प्रथम, एकच आधारविधान असलेली संभाव्य अनुमाने पाहू.
@@ -93,10 +99,10 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   \Delta$ असे आहे की $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$.
   
   जर $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$ हे एखाद्या $!C \in \Gamma$ साठी
-  असेल, तर $\Theta = !A, \Gamma$ असल्याने $!C \in \Theta$ देखील आहे आणि
+  असेल, तर $\Gamma$ मधील सर्व वाक्ये~$\Theta$ मध्येही असल्याने $!C \in \Theta$ आणि
   म्हणून $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$ हे एखाद्या $!C \in \Theta$ साठी
   आहे. त्याचप्रमाणे, जर $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$ हे एखाद्या
-  $!C \in \Delta$ साठी असेल, तर $!C \in \Xi$ आणि
+  $!C \in \Delta$ साठी असेल, तर $\Delta$ मधील सर्व वाक्ये~$\Xi$ मध्येही असल्याने $!C \in \Xi$ आणि
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$ हे एखाद्या $!C \in \Xi$ साठी आहे.
   म्हणून $\Theta \Sequent \Xi$ वैध आहे.
 \item शेवटचे अनुमान \LeftR{\lnot} आहे. मग त्याचे आधारविधान
@@ -155,7 +161,7 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   \iftag{FOL}{$\Struct
     M$}{$\pAssign{v}$} $!A \land !B, \Gamma \Sequent
   \Delta$ पूर्ण करते. \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} स्वेच्छ
-  असल्याने $\Gamma \Sequent \Delta$ वैध आहे. $!A \land !B$ हे $!B$ पासून
+  असल्याने $!A \land !B, \Gamma \Sequent \Delta$ वैध आहे. $!A \land !B$ हे $!B$ पासून
   निष्पन्न होण्याचे प्रकरणही असेच हाताळता येते; फक्त $!A$ ऐवजी $!B$ घ्या.
 \item शेवटचे अनुमान \RightR{\lor} आहे. याचे दोन प्रकार आहेत: आधारविधानाच्या
   उजव्या बाजूला असलेल्या $!A$ किंवा $!B$ पासून $!A
@@ -217,9 +223,15 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   आधारविधान $!A(t), \Gamma \Sequent \Delta$ वैध असल्याने, (a)
   $\Sat/{M}{!A(t)}$, (b) $\Sat/{M}{!C}$ हे एखाद्या $!C \in \Gamma$ साठी, किंवा
   (c)~$\Sat{M}{!C}$ हे एखाद्या $!C \in \Delta$ साठी असते. (a) प्रकरणात,
-  \olref[syn][sem]{prop:quant-terms} नुसार, जर
-  $\Sat{M}{\lforall[x][!A(x)]}$ असेल, तर $\Sat{M}{!A(t)}$. म्हणून
-  $\Sat/{M}{!A(t)}$ असल्याने $\Sat/{M}{\lforall[x][!A(x)]}$. (b) आणि
+  जर $!A(x)$ मध्ये $x$ मुक्त असेल, तर
+  \olref[syn][sem]{prop:quant-terms} नुसार
+  $\Sat{M}{\lforall[x][!A(x)]}$ असल्यास $\Sat{M}{!A(t)}$.
+  जर $x$ मुक्त नसेल, तर $!A(t)$ आणि $!A(x)$ हे एकच वाक्य आहे.
+  त्या वाक्याची सत्यता चर-मूल्यांकनावर अवलंबून नसल्याने आणि
+  रचनेचा प्रांत अरिक्त असल्याने, या प्रकरणातही
+  $\Sat{M}{\lforall[x][!A(x)]}$ असल्यास $\Sat{M}{!A(t)}$.
+  म्हणून $\Sat/{M}{!A(t)}$ असल्याने $\Sat/{M}{\lforall[x][!A(x)]}$ आणि
+  त्यामुळे निष्कर्ष-क्रमवर्ती पूर्ण होते. (b) आणि
   (c) प्रकरणांत $\Struct{M}$ देखील $\lforall[x][!A(x)], \Gamma
   \Sequent \Delta$ पूर्ण करते. $\Struct M$ स्वेच्छ असल्याने,
   $\lforall[x][!A(x)], \Gamma \Sequent \Delta$ वैध आहे.
@@ -244,8 +256,9 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   काम झाले; म्हणून दोन्ही लागू नाहीत असे गृहीत धरा: प्रत्येक $!C \in
   \Gamma$ साठी $\Sat{M}{!C}$ आणि प्रत्येक $!C \in \Delta$ साठी
   $\Sat/{M}{!C}$. आता (a), म्हणजेच $\Sat{M}{\lforall[x][!A(x)]}$, हे दाखवायचे
-  आहे. \olref[syn][ass]{prop:sat-quant} नुसार सर्व चल-विन्यास~$s$ साठी
-  $\Sat{M}{!A(x)}[s]$ दाखवणे पुरेसे आहे. म्हणून $s$ हा स्वेच्छ चल-विन्यास घ्या.
+  आहे. \olref[syn][sat]{defn:satisfaction} मधील सर्ववाची संख्यापकाच्या
+  पूर्ति-अटीनुसार प्रत्येक चर-मूल्यांकन~$s$ साठी $\Sat{M}{!A(x)}[s]$
+  दाखवणे पुरेसे आहे. म्हणून कोणतेही चर-मूल्यांकन~$s$ घ्या.
   $\Struct{M'}$ ही $\Struct{M}$ सारखीच रचना घ्या, फक्त
   $\Assign{a}{M'} = s(x)$ असेल. \olref[syn][ext]{cor:extensionality-sent}
   नुसार प्रत्येक $!C \in \Gamma$ साठी $a$ हे $\Gamma$ मध्ये येत नसल्यामुळे
@@ -257,7 +270,7 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   \olref[syn][ext]{prop:ext-formulas} लागू होते आणि $\Sat{M'}{!A(x)}[s]$
   मिळते. $a$ हे $!A(x)$ मध्ये येत नसल्याने
   \olref[syn][ext]{prop:extensionality} नुसार $\Sat{M}{!A(x)}[s]$.
-  $s$ स्वेच्छ असल्याने सर्व चल-विन्यासांसाठी $\Sat{M}{!A(x)}[s]$ सिद्ध झाले.
+  $s$ स्वेच्छ असल्याने सर्व चर-मूल्यांकनांसाठी $\Sat{M}{!A(x)}[s]$ सिद्ध झाले.
 \item शेवटचे अनुमान \LeftR{\lexists} आहे: सरावासाठी.
 }{}
 \end{enumerate}
@@ -280,7 +293,7 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   करण्यासाठी \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} ने
   $\Gamma \Sequent \Delta$ पूर्ण केले पाहिजे; मग ते निष्कर्षही पूर्ण करते.
   (b) प्रकरणात उजवे आधारविधान पूर्ण करण्यासाठी
-  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} ने $\Pi \setminus \Lambda$ पूर्ण
+  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} ने $\Pi \Sequent \Lambda$ पूर्ण
   केले पाहिजे. पुन्हा, \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} निष्कर्ष पूर्ण करते.
 \item शेवटचे अनुमान \RightR{\land} आहे. मग $\pi$ पुढील रूपात संपते:
   \begin{prooftree}
@@ -294,7 +307,7 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   \iftag{FOL}{!!a{structure}~$\Struct
     M$}{!!a{valuation}~$\pAssign{v}$} घ्या. \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$}
   ने $\Gamma \Sequent \Delta$ पूर्ण केले तर काम झाले. तसे नसल्याचे गृहीत धरा.
-  विगमन गृहीतकानुसार $\Gamma \fCenter
+  विगमन गृहीतकानुसार $\Gamma \Sequent
   \Delta, !A$ वैध असल्याने,
   $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$. त्याचप्रमाणे, कारण $\Gamma
   \Sequent \Delta, !B$ वैध असल्याने,
@@ -310,9 +323,8 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
     \RightLabel{\LeftR{\lif}}
     \BinaryInf$!A \lif !B, \Gamma, \Pi \fCenter \Delta, \Lambda$
   \end{prooftree}
-  पुन्हा,
   \iftag{FOL}{!!a{structure}~$\Struct{M}$}{!!a{valuation}~$\pAssign{v}$}
-  \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} ने $\Gamma, \Pi \Sequent
+  घ्या. \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} ने $\Gamma, \Pi \Sequent
   \Delta, \Lambda$ पूर्ण केलेले नाही असे गृहीत धरा. आपल्याला
   $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!A \lif !B}$ दाखवायचे आहे.
   \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} ने $\Gamma,
@@ -363,7 +375,7 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$ देखील असेल.
 \end{cor}
 
 \begin{proof}
-प्रतिलोम विधान सिद्ध करू. $\Gamma$ सुसंगत नाही असे गृहीत धरा. मग
+प्रतिपरिवर्तनाने सिद्ध करू. $\Gamma$ सुसंगत नाही असे गृहीत धरा. मग
 $\Gamma_0 \subseteq \Gamma$ असा काही मर्यादित संच आणि
 $\Gamma_0 \Sequent \quad$ ची !!a{derivation} असते. \olref{thm:sequent-soundness}
 नुसार $\Gamma_0 \Sequent \quad$ वैध आहे. दुसऱ्या शब्दांत, प्रत्येक

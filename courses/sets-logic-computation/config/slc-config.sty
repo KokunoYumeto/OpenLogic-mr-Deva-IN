@@ -1,0 +1,78 @@
+% Mathematical and exercise choices of the source SLC textbook.
+\ollatinformulas
+\DeclareMathAlphabet{\mathbi}{OT1}{pplx}{b}{it}
+\DeclareDocumentCommand\Struct{m}{\applytofirst{\mathbi}{#1}}
+\DeclareDocumentMacro\TMblank{\sqcup}
+\DeclareDocumentMacro\TMstroke{I}
+
+\tagtrue{defIff,defTrue}
+\tagfalse{prvIff,prvTrue}
+\tagtrue{probAnd,probIf,probAll}
+\tagtrue{prfND,prfSC}
+\tagfalse{prfAX,prfTab}
+
+\input{locale/mr/locale/slc-token-overrides.sty}
+
+\newcommand*{\SLCPairingArrayLayout}[1]{\setlength{\arraycolsep}{#1}}
+\input{locale/mr/config/slc-fol-layout.tex}
+
+% Course layout hooks run before the native section command and its label.
+\providecommand*{\SLCBeforeOLSection}{}
+\NewCommandCopy{\SLCOriginalOLSection}{\olsection}
+\RenewDocumentCommand{\olsection}{o m}{%
+  \SLCBeforeOLSection
+  \IfNoValueTF{#1}{\SLCOriginalOLSection{#2}}{\SLCOriginalOLSection[#1]{#2}}%
+}
+
+% The pilot reserves space before the complete-consistent-sets heading.
+\appto\SLCBeforeOLSection{%
+  \ifdefstring{\theolchapter}{com}{%
+    \ifdefstring{\theolsection}{ccs}{\Needspace{7\baselineskip}}{}%
+  }{}%
+}
+
+% Keep the pilot's column alignment in the function congruence display.
+\newcommand*{\OLProvableEqualityDisplay}[3]{%
+  \begin{aligned}
+  #1 #2
+   & {}\eq{} \\
+   & #3
+  \end{aligned}%
+}
+
+\input{locale/mr/config/slc-fol-display-layout.tex}
+
+% Keep the course's machine displays and final partial-function frame readable.
+\newcommand*{\OLMarathiTMCondition}[2]{%
+  \begin{aligned}[t]
+    &\text{#1}\\
+    &\text{#2}
+  \end{aligned}%
+}
+\newcommand*{\SLCCombinedMachineLayout}{\tikzset{node distance=2.6cm}}
+\newcommand*{\OLMarathiVerificationEntailment}[2]{\[#1#2\]}
+
+\newcommand*{\SLCContextWhenSection}[2]{%
+  \edef\SLCContextSectionID{\theolpart:\theolchapter:\theolsection}%
+  \ifdefstring{\SLCContextSectionID}{#1}{#2}{}%
+}
+
+\newcount\SLCUnaryDefinitionOrdinal
+\AddToHook{env/defn/before}[slc-unary-definition-ordinal]{%
+  \SLCContextWhenSection{tur:mac:una}{%
+    \advance\SLCUnaryDefinitionOrdinal by 1\relax
+  }%
+}
+\AddToHook{env/defn/begin}[slc-unary-definition-frame]{%
+  \SLCContextWhenSection{tur:mac:una}{%
+    \ifnum\SLCUnaryDefinitionOrdinal=2\relax
+      \mdfsetup{nobreak=true}%
+    \fi
+  }%
+}
+
+% Keep the heading with the first lines of Gentzen's biography.
+\providecommand*{\SLCBeforeOLSection}{}
+\appto\SLCBeforeOLSection{%
+  \SLCContextWhenSection{his:bio:gen}{\Needspace{4\baselineskip}}%
+}

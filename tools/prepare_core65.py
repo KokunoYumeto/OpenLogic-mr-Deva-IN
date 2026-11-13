@@ -5,6 +5,7 @@ import json
 import re
 import runpy
 from pathlib import Path
+from marathi_reader_source import read_source
 
 
 P = Path(__file__).resolve().parents[1]
@@ -77,6 +78,7 @@ def token_replace(match):
         "signed formula": "चिन्हांकित सूत्र",
         "structure": "संरचना",
         "tableau": "टॅब्लो",
+        "subformula": "उपसूत्र",
         "undischarged": "मुक्त न केलेली",
     }
     plurals = {
@@ -84,6 +86,7 @@ def token_replace(match):
         "formula": "सूत्रे",
         "sentence": "वाक्ये",
         "signed formula": "चिन्हांकित सूत्रे",
+        "subformula": "उपसूत्रे",
         "structure": "संरचना",
         "tableau": "टॅब्लो",
     }
@@ -215,7 +218,7 @@ for name, text in zip(names, raw):
 
 
 def editorial(path):
-    text = path.read_text(encoding="utf-8")
+    text = read_source(path)
     match = re.search(r"\\begin\{editorial\}.*?\\end\{editorial\}", text, re.S)
     assert match
     return replace_tokens(match.group())
@@ -268,8 +271,12 @@ proof_note = r"""\item \textbf{MRPRF-001}: गोठवलेल्या इं
 assert r"\end{enumerate}" in notes
 notes = notes.replace(r"\end{enumerate}", proof_note + r"\end{enumerate}", 1)
 out = before + "\n".join(chunks) + "\n" + notes
-assert out.count(r"\TRule{\True}{\lif}[2]") == 2
-out = out.replace(r"\TRule{\True}{\lif}[2]", r"\TRule{\True}{\land}[2]")
+old_rule = r"\TRule{\True}{\lif}[2]"
+correct_rule = r"\TRule{\True}{\land}[2]"
+old_count = out.count(old_rule)
+assert old_count == 2 or (old_count == 0 and out.count(correct_rule) >= 2)
+if old_count:
+    out = out.replace(old_rule, correct_rule)
 out = (
     out.replace(r"\formula{A}", r"\varphi")
     .replace(r"\formula{B}", r"\psi")

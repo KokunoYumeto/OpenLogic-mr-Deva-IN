@@ -5,6 +5,7 @@ import json
 import re
 import runpy
 from pathlib import Path
+from marathi_reader_source import read_source
 
 
 P = Path(__file__).resolve().parents[1]
@@ -42,7 +43,7 @@ true_tags = ns["true_tags"]
 available = set(ns["available"])
 
 chapter_dir = P / "mr" / "content" / "first-order-logic" / "tableaux"
-driver = selected((chapter_dir / "tableaux.tex").read_text(encoding="utf-8"))
+driver = selected(read_source(chapter_dir / "tableaux.tex"))
 editorial = re.search(r"\\begin\{editorial\}.*?\\end\{editorial\}", driver, re.S)
 assert editorial
 imports = re.findall(r"\\olimport\{([^}]+)\}", driver)
@@ -59,7 +60,7 @@ available.add(chapter_label)
 file_texts = {}
 prefixes = {}
 for name in imports:
-    text = selected((chapter_dir / f"{name}.tex").read_text(encoding="utf-8"))
+    text = selected(read_source(chapter_dir / f"{name}.tex"))
     file_id = re.search(r"\\olfileid\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}", text)
     assert file_id and file_id.groups()[:2] == ("fol", "tab"), name
     prefix = ":".join(file_id.groups())

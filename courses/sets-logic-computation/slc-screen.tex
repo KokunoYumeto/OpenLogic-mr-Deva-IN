@@ -1,0 +1,45 @@
+% Generated from upstream slc-screen.tex at 6178f32f61645f3b62ef621b4c5a88f8e67778ad.
+% Localized settings are loaded from the accompanying preamble files.
+% slc-screen.tex
+
+% driver file slc-screen.tex to produce the Sets, Logic, Computation
+% textbook on with same type block as in printed version, but but with
+% on-screen features (color, links, etc).
+
+\input{olpkit-before-class}
+\documentclass[screen]{../../../../sty/open-logic-book}
+
+\usepackage[all]{nowidow}
+\input{locale/mr/config/slc-fonts}
+
+\definecolor{OLPcolor}{RGB}{248,154,14}
+\definecolor{OLPdkcolor}{RGB}{104,65,6}
+\definecolor{OLPltcolor}{RGB}{248,203,137}
+
+\def\oljobname{slc}
+\newcommand{\olpath}{../../../..}
+\input{olpkit-before-olp}
+\input{\olpath/sty/open-logic.sty}
+\input{olpkit-after-olp}
+
+\begin{document}
+\raggedbottom
+
+\OLPscreencover{%
+  \hfill\hspace{.29\textwidth}\includegraphics[width=.29\textwidth]{\olpath/assets/portraits/cantor-circle.pdf}\hfill{}
+
+  \hfill{}
+  \includegraphics[width=.29\textwidth]{\olpath/assets/portraits/goedel-circle.pdf}
+  \hfil\includegraphics[width=.29\textwidth]{\olpath/assets/portraits/turing-circle.pdf}\hfil{}
+  \includegraphics[width=.29\textwidth]{\olpath/assets/portraits/skolem-circle.pdf}
+  \hfill{}
+
+  \hfill{}
+  \includegraphics[width=.29\textwidth]{\olpath/assets/portraits/noether-circle.pdf}\hspace{.29\textwidth}\hfill{}
+}
+
+% Now load the actual text
+
+\input{slc}
+
+\end{document}

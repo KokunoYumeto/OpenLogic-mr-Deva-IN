@@ -6,8 +6,9 @@
 
 \begin{document}
 
-\olfileid{tur}{mac}{cmb}
+\olfileid[mr]{tur}{mac}{cmb}
 \olsection{ट्यूरिंग यंत्रांचे संयोजन}
+\providecommand*{\OLMarathiTMCondition}[2]{\text{#1 #2}}
 
 \begin{explain}
 आतापर्यंत पाहिलेली ट्यूरिंग यंत्रांची उदाहरणे बरीच सोपी आहेत.
@@ -37,13 +38,14 @@ $M = \tuple{Q, \Sigma, q_0, \delta}$ आणि
     \item संक्रमण फलन पुढील $\delta''$ असेल:
     \[\delta''(q,\sigma) =
     \begin{cases}
-      \delta(q,\sigma) & \text{$q \in Q$ आणि $\delta(q,\sigma)$ परिभाषित असेल तर}\\
+      \delta(q,\sigma) & \OLMarathiTMCondition{$q \in Q$ आणि}%
+        {$\delta(q,\sigma)$ परिभाषित असेल तर}\\
       \delta'(q,\sigma) & \text{$q \in Q'$ असेल तर}\\
-      \tuple{q_0', \sigma, \TMstay} & \text{$q \in Q$ असेल आणि
-      $\delta(q,\sigma)$ अपरिभाषित असेल तर}
+      \tuple{q_0', \sigma, \TMstay} & \OLMarathiTMCondition{$q \in Q$ असेल आणि}%
+        {$\delta(q,\sigma)$ अपरिभाषित असेल तर}
     \end{cases}\]
 \end{enumerate}
-%READERNOTE{OLTUR-007 — गोठवलेल्या इंग्रजीतील संक्रमण फलनाच्या पहिल्या शाखेत फक्त अवस्था Q मध्ये असणे ही अट आहे; त्यामुळे तिसऱ्या, अपरिभाषित-संक्रमण शाखेशी ती छेदते. येथे पहिली शाखा δ परिभाषित असतानाच लागू होईल असे स्पष्ट केले आहे. सर्व चिन्हे आणि इतर शाखा जतन आहेत.}
+%
 मिळालेले यंत्र $q \in Q$ अवस्थेत असताना~$M$ च्या सूचना,
 तर $q \in Q'$ अवस्थेत असताना~$M'$ च्या सूचना वापरते.
 $q \in Q$ अवस्थेत~$\sigma$ चिन्ह वाचताना $M$ मध्ये त्यासाठी
@@ -115,6 +117,7 @@ $\TMstroke$ चिन्हांचे दोन खंड आदान म्�
 \[
 \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
                     semithick]
+  \ifdefined\SLCCombinedMachineLayout\SLCCombinedMachineLayout\fi
   \tikzstyle{every state}=[fill=none,draw=black,text=black]
   \node[initial,state] (A)              {$q_0$};
   \node[state]         (B) [right of=A] {$q_1$};
@@ -148,7 +151,7 @@ $\TMstroke$ चिन्हांचे दोन खंड आदान म्�
 \end{tikzpicture}
 \]
 \caption{बेरीज-यंत्र आणि दुप्पट करणारे यंत्र यांचे संयोजन}
-%READERNOTE{SOL6-A043 — या विभागातील तिन्ही addition diagrams मध्ये पहिला stroke-loop चुकीने दुसऱ्या अवस्थेकडे होता; पहिला input block पार करताना प्रारंभिक अवस्थेत राहणारा loop केला. अंतिम combined machine रेघांचा एक दुप्पट सलग खंड ठेवते, पण त्याच्या डावीकडे blanks उरतात. म्हणून ते रेघांचा खंड दुप्पट करते एवढेच उदाहरण सांगते; unary numerical-output व्याख्येनुसार फलन संगणित करण्यासाठी आधीच्या mover प्रमाणे output फितीच्या आरंभी आणावे लागेल.}
+%
 \ollabel{fig:combined}
 \end{figure}
 \end{ex}

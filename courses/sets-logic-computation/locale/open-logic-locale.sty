@@ -1,0 +1,126 @@
+% Marathi locale for the Open Logic Project.
+
+\setlocalecaption{marathi}{preface}{प्रस्तावना}
+\setlocalecaption{marathi}{contents}{अनुक्रमणिका}
+\setlocalecaption{marathi}{chapter}{प्रकरण}
+\setlocalecaption{marathi}{part}{भाग}
+\setlocalecaption{marathi}{appendix}{परिशिष्ट}
+\setlocalecaption{marathi}{appendices}{परिशिष्टे}
+\setlocalecaption{marathi}{figure}{आकृती}
+\setlocalecaption{marathi}{table}{तक्ता}
+\setlocalecaption{marathi}{proof}{सिद्धता}
+\setlocalecaption{marathi}{bib}{संदर्भसूची}
+\setlocalecaption{marathi}{ref}{संदर्भ}
+\setlocalecaption{marathi}{index}{विषयसूची}
+\setlocalecaption{marathi}{listfigure}{आकृत्यांची सूची}
+\setlocalecaption{marathi}{listtable}{तक्त्यांची सूची}
+\setlocalecaption{marathi}{glossary}{संज्ञासूची}
+\setlocalecaption{marathi}{photocredits}{छायाचित्रांचे श्रेय}
+\setlocalecaption{marathi}{history}{ऐतिहासिक टिपणे}
+\setlocalecaption{marathi}{reading}{अधिक वाचन}
+
+\setlocalecaption{marathi}{theorem}{प्रमेय}
+\setlocalecaption{marathi}{example}{उदाहरण}
+\setlocalecaption{marathi}{definition}{व्याख्या}
+\setlocalecaption{marathi}{lemma}{पूर्वप्रमेय}
+\setlocalecaption{marathi}{proposition}{विधान}
+\setlocalecaption{marathi}{corollary}{अनुप्रमेय}
+\setlocalecaption{marathi}{problem}{सराव}
+\setlocalecaption{marathi}{problems}{सरावप्रश्न}
+\setlocalecaption{marathi}{remark}{टीप}
+\setlocalecaption{marathi}{axiom}{स्वयंसिद्धक}
+\setlocalecaption{marathi}{note}{टीप}
+\setlocalecaption{marathi}{case}{प्रसंग}
+\setlocalecaption{marathi}{convention}{संकेतनरूढी}
+
+\setlocalecaption{marathi}{OLP}{Open Logic Project}
+\setlocalecaption{marathi}{OLT}{The Open Logic Text}
+\setlocalecaption{marathi}{OLTlink}{https://github.com/OpenLogicProject/OpenLogic}
+\setlocalecaption{marathi}{license}{क्रिएटिव्ह कॉमन्स श्रेय ४.० आंतरराष्ट्रीय परवाना}
+\setlocalecaption{marathi}{instigator}{प्रवर्तक}
+\setlocalecaption{marathi}{editorialboard}{संपादक मंडळ}
+\setlocalecaption{marathi}{contributors}{योगदानकर्ते}
+\setlocalecaption{marathi}{listtheorem}{प्रमेयांची सूची}
+
+% The theorem and photo-list declarations can read these captions in the preamble.
+\captionsmarathi
+
+% Set both forms explicitly because Marathi has no letter case.
+\newcommand*{\mrcrefname}[3]{%
+  \crefname{#1}{#2}{#3}%
+  \Crefname{#1}{#2}{#3}}
+\newcommand*{\mrreferences}{%
+  \mrcrefname{page}{पृ.}{पृ.}%
+  \mrcrefname{equation}{समीकरण}{समीकरणे}%
+  \mrcrefname{part}{भाग}{भाग}%
+  \mrcrefname{chapter}{प्रकरण}{प्रकरणे}%
+  \mrcrefname{section}{विभाग}{विभाग}%
+  \mrcrefname{subsection}{उपविभाग}{उपविभाग}%
+  \mrcrefname{subsubsection}{उपविभाग}{उपविभाग}%
+  \mrcrefname{appendix}{परिशिष्ट}{परिशिष्टे}%
+  \mrcrefname{figure}{आकृती}{आकृत्या}%
+  \mrcrefname{table}{तक्ता}{तक्ते}%
+  \mrcrefname{footnote}{तळटीप}{तळटिपा}%
+  \mrcrefname{enumi}{मुद्दा}{मुद्दे}%
+  \mrcrefname{thm}{प्रमेय}{प्रमेये}%
+  \mrcrefname{theorem}{प्रमेय}{प्रमेये}%
+  \mrcrefname{ex}{उदाहरण}{उदाहरणे}%
+  \mrcrefname{example}{उदाहरण}{उदाहरणे}%
+  \mrcrefname{defn}{व्याख्या}{व्याख्या}%
+  \mrcrefname{definition}{व्याख्या}{व्याख्या}%
+  \mrcrefname{lem}{पूर्वप्रमेय}{पूर्वप्रमेये}%
+  \mrcrefname{lemma}{पूर्वप्रमेय}{पूर्वप्रमेये}%
+  \mrcrefname{prop}{विधान}{विधाने}%
+  \mrcrefname{proposition}{विधान}{विधाने}%
+  \mrcrefname{prob}{सराव}{सरावप्रश्न}%
+  \mrcrefname{probd}{सराव}{सरावप्रश्न}%
+  \mrcrefname{rem}{टीप}{टिपा}%
+  \mrcrefname{remark}{टीप}{टिपा}%
+  \mrcrefname{cor}{अनुप्रमेय}{अनुप्रमेये}%
+  \mrcrefname{corollary}{अनुप्रमेय}{अनुप्रमेये}%
+  \mrcrefname{axiom}{स्वयंसिद्धक}{स्वयंसिद्धके}%
+  \mrcrefname{note}{टीप}{टिपा}%
+  \mrcrefname{case}{प्रसंग}{प्रसंग}%
+  \mrcrefname{conv}{संकेतनरूढी}{संकेतनरूढी}%
+  \def\crefrangeconjunction{ ते\nobreakspace}%
+  \def\crefpairconjunction{ आणि\nobreakspace}%
+  \def\crefmiddleconjunction{, }%
+  \def\creflastconjunction{ आणि\nobreakspace}%
+  \def\crefpairgroupconjunction{ आणि\nobreakspace}%
+  \def\crefmiddlegroupconjunction{, }%
+  \def\creflastgroupconjunction{ आणि\nobreakspace}%
+}
+% Babel's initial selection can precede cleveref's begin-document setup.
+\addto\extrasmarathi{\mrreferences}
+\AddToHook{begindocument/end}{\mrreferences}
+
+\renewcommand*{\ollicensetext}[3]{%
+  #2 यांच्या \textit{#1} या ग्रंथाचा मजकूर पुढील परवान्याखाली उपलब्ध आहे.
+  #3.}
+\renewcommand*{\olshortlicensetext}[1]{%
+  \textit{\href{\OLTlinkname}{\jobname}} \ifgitinfo\ 
+  (#1), \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}.}
+\renewcommand*{\oluselicensetext}{%
+  हा ग्रंथ \href{https://openlogicproject.org/}{\OLPname} यांच्या
+  \textit{\href{\OLTlinkname}{\OLTname}} या ग्रंथावर आधारलेला आहे.
+  त्याचा मजकूर \href{https://creativecommons.org/licenses/by/4.0/}{\licensename}
+  या परवान्याअंतर्गत वापरला आहे.}
+\renewcommand*{\olshortuselicensetext}[2]{%
+  \textit{#1} (#2).
+  \href{https://openlogicproject.org/}{Open Logic Project} यांच्या ग्रंथावर आधारित.
+  \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}.}
+\renewcommand*{\olremixedby}{रूपांतर \OLPauthor}
+\renewcommand*{\olacknowledgements}{%
+  कॅलगरी विद्यापीठाच्या
+  \href{https://taylorinstitute.ucalgary.ca/}{Taylor Institute of Teaching and Learning}
+  आणि अल्बर्टा सरकारच्या निधीतून चालणाऱ्या Alberta Open Educational Resources
+  (ABOER) उपक्रमाचे उदार साहाय्य लाभल्याबद्दल Open Logic Project आभारी आहे.}
+\renewcommand*{\olillustrations}{%
+  मुखपृष्ठावरील चित्रे \href{http://mattleadbeater.com}{Matthew Leadbeater} यांची आहेत.
+  ती \href{https://creativecommons.org/licenses/by-nc/4.0/}{%
+  क्रिएटिव्ह कॉमन्स श्रेय–अव्यावसायिक ४.० आंतरराष्ट्रीय परवान्याअंतर्गत} वापरली आहेत.}
+\renewcommand*{\olcolophon}{मराठी मजकुराची अक्षरजुळणी \LaTeX{} मध्ये केली आहे.}
+\renewcommand*{\olbookrevision}{%
+  \emph{\OLPbooktitle} या ग्रंथाची ही \gitAbbrevHash{} (\gitAuthorDate) आवृत्ती
+  \emph{Open Logic Text} च्या \OLPrevision{} आवृत्तीवर आधारित आहे.
+  प्रत विनामूल्य उतरवण्यासाठी \url{\OLPsourcelink} पाहा.}

@@ -1,0 +1,17 @@
+%!PS-Adobe-3.0 Resource-CMap
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo << /Registry (Adobe) /Ordering (UCS) /Supplement 0 >> def
+/CMapName /SLC-txexas-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<00> <FF>
+endcodespacerange
+1 beginbfchar
+<20> <200B>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end

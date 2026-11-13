@@ -1,0 +1,598 @@
+\newglossaryentry{dtheorem}{
+  name={निगमन प्रमेय},
+  sort={mr030},
+  description={गृहीतकावरून एखादे वाक्य तार्किकरीत्या निष्पन्न होणे किंवा
+    सिद्धतायोग्य असणे आणि त्याच्याशी संगत सशर्त वाक्य तार्किकरीत्या
+    निष्पन्न होणे किंवा सिद्धतायोग्य असणे यांचा संबंध हे प्रमेय सांगते.
+    चिन्हार्थविषयक रूपात (\olref[fol][syn][sem]{thm:sem-deduction}),
+    $\Gamma \cup \{!A\} \Entails !B$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $\Gamma \Entails !A \lif !B$. सिद्धता-उपपत्तीय रूपात,
+    $\Gamma \cup \{!A\} \Proves !B$ तेव्हा आणि केवळ तेव्हाच, जेव्हा
+    $\Gamma \Proves !A \lif !B$}}
+
+\newglossaryentry{set-extensionality}{
+  name={विस्तारात्मकता (संचांची)},
+  sort={mr059},
+  description={संच $A$ आणि~$B$ एकच असतात, म्हणजे $A = B$, तेव्हा
+    आणि केवळ तेव्हाच, जेव्हा~$A$ मधील प्रत्येक घटक~$B$ चा घटक
+    असतो आणि याउलटही तसेच असते (\olref[sfr][set][bas]{sec} पाहा)}}
+
+\newglossaryentry{sat-extensionality}{
+  name={विस्तारात्मकता (पूर्तिची)},
+  sort={mr058},
+  description={समान प्रांत असलेल्या दोन रचना सूत्र~$!A$ मध्ये प्रत्यक्ष
+    येणाऱ्या अतार्किक चिन्हांच्या अर्थनिर्धारणांवर एकमत असतील आणि
+    संबंधित चर-मूल्यांकने~$!A$ मधील सर्व मुक्त चरांवर एकमत असतील,
+    तर एका रचनेत तिच्या चर-मूल्यांकनाच्या सापेक्ष~$!A$ ची पूर्ति होते
+    तेव्हा आणि केवळ तेव्हाच, जेव्हा दुसऱ्या रचनेत तिच्या
+    चर-मूल्यांकनाच्या सापेक्ष~$!A$ ची पूर्ति होते
+    (\olref[fol][syn][ext]{prop:extensionality} आणि
+    \olref[fol][syn][ass]{prop:satindep} पाहा)}}
+
+\newglossaryentry{set}{
+  name={संच},
+  sort={mr066},
+  description={वस्तूंचा संग्रह. तो कसा निर्दिष्ट केला आहे, त्यातील
+    वस्तू कोणत्या क्रमाने दिल्या आहेत किंवा प्रत्येक वस्तू कितीदा
+    आली आहे, यांपासून स्वतंत्रपणे हा संग्रह विचारात घेतला जातो
+    (\olref[sfr][set][bas]{sec} पाहा)}}
+
+\newglossaryentry{symmetric}{
+  name={सममित},
+  sort={mr075},
+  description={जेव्हा जेव्हा $Rxy$ तेव्हा तेव्हा $Ryx$ असेल, तर आणि
+    तरच $R$ सममित असतो (\olref[sfr][rel][prp]{sec} पाहा)}}
+
+\newglossaryentry{cp}{
+  name={कार्तीय गुणाकार},
+  sort={mr017},
+  symbol={\ensuremath{A \times B}},
+  description={$A$ मधील एक {घटक} व $B$ मधील एक {घटक} यांच्या सर्व
+    क्रमित जोड्यांचा संच.
+    $A \times B = \Setabs{\tuple{x, y}}{x \in A \text{ आणि } y \in B}$
+    (\olref[sfr][set][pai]{sec} पाहा)}}
+
+\newglossaryentry{subset}{
+  name={उपसंच},
+  sort={mr011},
+  plural={उपसंच},
+  symbol={\ensuremath{A \subseteq B}},
+  description={ज्या संचाचा प्रत्येक {घटक} दिलेल्या संच~$B$ चा {घटक}
+    असतो, तो संच (\olref[sfr][set][sub]{sec} पाहा)}}
+
+\newglossaryentry{finsequence}{
+  name={अनुक्रम (सांत)},
+  sort={mr004},
+  symbol={\ensuremath{A^*}},
+  description={संच~$A$ मधील {घटकांची} सांत मालिका. म्हणजेच, एखाद्या
+    $n$ साठी $A^n$ चा {घटक} (\olref[sfr][set][imp]{sec} पाहा)}}
+
+\newglossaryentry{infsequence}{
+  name={अनुक्रम (अनंत)},
+  sort={mr003},
+  symbol={\ensuremath{A^\omega}},
+  description={संच~$A$ मधील {घटकांचा} मध्ये कोणतेही स्थान न सुटलेला
+    आणि कधीही न संपणारा अनुक्रम. औपचारिकपणे, $s\colon \PosInt \to A$ असे
+    फलन (\olref[sfr][set][imp]{sec} पाहा)}}
+
+\newglossaryentry{ps}{
+  name={घातसंच},
+  sort={mr020},
+  symbol={\ensuremath{\Pow{A}}},
+  description={संच~$A$ चे सर्व \glspl{subset} मिळून होणारा संच.
+    $\Pow{A} = \Setabs{x}{x \subseteq A}$ (\olref[sfr][set][sub]{sec}
+    पाहा)}}
+
+\newglossaryentry{union}{
+  name={संयोग},
+  sort={mr071},
+  symbol={\ensuremath{A \cup B}},
+  description={$A$ आणि $B$ यांतील सर्व {घटक} एकत्र घेतल्याने मिळणारा
+    संच. $A \cup B = \Setabs{x}{x \in A \lor x\in B}$
+    (\olref[sfr][set][uni]{sec} पाहा)}}
+
+\newglossaryentry{intersection}{
+  name={छेद},
+  sort={mr024},
+  symbol={\ensuremath{A \cap B}},
+  description={$A$ आणि~$B$ या दोन्ही संचांचे {घटक} असलेल्या सर्व
+    वस्तूंचा संच. $A \cap B = \Setabs{x}{x \in A \land x\in B}$
+    (\olref[sfr][set][uni]{sec} पाहा)}}
+
+\newglossaryentry{difference}{
+  name={संचांचा फरक},
+  sort={mr067},
+  symbol={\ensuremath{A \setminus B}},
+  description={$A$ चे जे {घटक}~$B$ चे {घटक} नाहीत, त्या सर्वांचा संच.
+    $A \setminus B = \Setabs{x}{x \in A \text{ आणि } x \notin B}$
+    (\olref[sfr][set][uni]{sec} पाहा)}}
+
+\newglossaryentry{disjoint}{
+  name={विभक्त},
+  sort={mr056},
+  description={एकही {घटक} सामाईक नसलेले दोन संच
+    (\olref[sfr][set][uni]{sec} पाहा)}}
+
+\newglossaryentry{composition}{
+  name={संयोजन},
+  sort={mr072},
+  symbol={\ensuremath{g \circ f}},
+  description={$f$ आणि $g$ यांची “साखळी जोडून” मिळणारे फलन.
+    $(g \circ f)(x) = g(f(x))$ (\olref[sfr][fun][cmp]{sec} पाहा)}}
+
+\newglossaryentry{function}{
+  name={फलन},
+  sort={mr045},
+  symbol={\ensuremath{f \colon A \to B}},
+  description={\gls{fdomain}~$A$ मधील प्रत्येक घटकाची सहप्रांत~$B$ मधील
+    एका घटकाशी संगती (\olref[sfr][fun][bas]{sec} पाहा)}}
+
+\newglossaryentry{fdomain}{
+  name={प्रांत (फलनाचा)},
+  sort={mr043},
+  text={प्रांत},
+  symbol={\ensuremath{\dom{f}}},
+  description={ज्या वस्तूंसाठी (अंशतः) फलन परिभाषित असते त्यांचा संच
+    (\olref[sfr][fun][bas]{sec} पाहा)}}
+
+\newglossaryentry{range}{
+  name={व्याप्ती},
+  sort={mr061},
+  symbol={\ensuremath{\ran{f}}},
+  description={सहप्रांतातील जे घटक~$f$ चे प्रत्यक्ष प्रदान आहेत,
+    त्यांचा उपसंच. $\ran{f} = \Setabs{y \in B}{f(x) = y \text{ काही
+    $x \in A$ साठी}}$ (\olref[sfr][fun][bas]{sec} पाहा)}}
+
+\newglossaryentry{graph}{
+  name={आलेख (फलनाचा)},
+  sort={mr010},
+  description={$R_f \subseteq A \times B$ हा संबंध, जिथे
+    $R_f = \Setabs{\tuple{x,y}}{f(x) = y}$ आणि $f\colon A \pto B$
+    (\olref[sfr][fun][par]{sec} पाहा)}}
+
+\newglossaryentry{inverse}{
+  name={व्युत्क्रम फलन},
+  sort={mr062},
+  description={$f\colon A \to B$ हे \gls{bijection} असेल, तर
+    $f^{-1} \colon B \to A$ हे असे फलन आहे की $f^{-1}(y) =$ असा
+    एकमेव $x \in A$, ज्यासाठी $f(x) = y$ (\olref[sfr][fun][inv]{sec}
+    पाहा)}}
+
+\newglossaryentry{pf}{
+  name={अंशतः फलन},
+  sort={mr002},
+  symbol={\ensuremath{f \colon A \pto B}},
+  description={अंशतः फलन ही अशी संगती आहे की ती~$A$ मधील प्रत्येक
+    {घटकाशी}~$B$ मधील जास्तीत जास्त एक {घटक} जोडते. जर $f$ ने
+    $x \in A$ शी~$B$ मधील एखादा घटक जोडला, तर $f(x)$ परिभाषित
+    असते. अन्यथा ते अपरिभाषित असते (\olref[sfr][fun][par]{sec} पाहा)}}
+
+\newglossaryentry{tc}{
+  name={संक्रमक संवरण},
+  sort={mr065},
+  symbol={\ensuremath{R^+}},
+  description={संबंध~$R$ समाविष्ट करणारा सर्वांत लहान \gls{transitive}
+    संबंध (\olref[sfr][rel][ops]{sec} पाहा)}}
+
+\newglossaryentry{ir}{
+  name={व्युत्क्रम संबंध},
+  sort={mr063},
+  symbol={\ensuremath{R^{-1}}},
+  description={संबंध $R$ मधील प्रत्येक क्रमित जोडीचे दोन घटक
+    उलट क्रमाने घेऊन मिळणारा संबंध. $R^{-1} = \Setabs{\tuple{y, x}}{\tuple{x, y} \in R}$
+    (\olref[sfr][rel][ops]{sec} पाहा)}}
+
+\newglossaryentry{preorder}{
+  name={पूर्वक्रम},
+  sort={mr038},
+  description={\gls{reflexive} आणि \gls{transitive} असलेला संबंध
+    (\olref[sfr][rel][ord]{sec} पाहा)}}
+
+\newglossaryentry{po}{
+  name={अंशतः क्रम},
+  sort={mr001},
+  description={\gls{reflexive}, \gls{anti-symmetric} आणि
+    \gls{transitive} असलेला संबंध (\olref[sfr][rel][ord]{sec} पाहा)}}
+
+\newglossaryentry{to}{
+  name={पूर्ण क्रम},
+  sort={mr036},
+  description={\gls{lo} पाहा}}
+
+\newglossaryentry{irreflexive}{
+  name={अपरावर्ती},
+  sort={mr005},
+  description={कोणत्याही $x \in A$ साठी $Rxx$ लागू होत नसेल, तर
+    $R$ अपरावर्ती असतो (\olref[sfr][rel][ord]{sec} पाहा)}}
+
+\newglossaryentry{asymmetric}{
+  name={असममित},
+  sort={mr006},
+  description={एकही अशी जोडी $x,y\in A$ नसेल की तिच्यासाठी $Rxy$
+    आणि $Ryx$ दोन्ही लागू होतात, तर $R$ असममित असतो
+    (\olref[sfr][rel][ord]{sec} पाहा)}}
+
+\newglossaryentry{so}{
+  name={काटेकोर क्रम},
+  sort={mr015},
+  description={\gls{irreflexive}, \gls{asymmetric} आणि
+    \gls{transitive} असलेला संबंध (\olref[sfr][rel][ord]{sec} पाहा)}}
+
+\newglossaryentry{slo}{
+  name={काटेकोर रेषीय क्रम},
+  sort={mr016},
+  description={संयोजित \gls{so} (\olref[sfr][rel][ord]{sec} पाहा)}}
+
+\newglossaryentry{lo}{
+  name={रेषीय क्रम},
+  sort={mr053},
+  description={संयोजित \gls{po} (\olref[sfr][rel][ord]{sec} पाहा)}}
+
+\newglossaryentry{br}{
+  name={द्विपदी संबंध},
+  sort={mr029},
+  description={$A^{2}$ चा उपसंच. $\tuple{x, y} \in R$ यासाठी आपण
+    $Rxy$ (किंवा $xRy$) असे लिहितो (\olref[sfr][rel][set]{sec} पाहा)}}
+
+\newglossaryentry{reflexive}{
+  name={परावर्ती},
+  sort={mr034},
+  description={प्रत्येक $x \in A$ साठी $Rxx$ असेल, तर आणि तरच
+    $R$ परावर्ती असतो (\olref[sfr][rel][prp]{sec} पाहा)}}
+
+\newglossaryentry{transitive}{
+  name={संक्रमक},
+  sort={mr064},
+  description={जेव्हा जेव्हा $Rxy$ आणि $Ryz$ तेव्हा तेव्हा $Rxz$
+    असेल, तर आणि तरच $R$ संक्रमक असतो (\olref[sfr][rel][prp]{sec}
+    पाहा)}}
+
+\newglossaryentry{anti-symmetric}{
+  name={प्रतिसममित},
+  sort={mr041},
+  description={जेव्हा जेव्हा $Rxy$ आणि $Ryx$ दोन्ही, तेव्हा तेव्हा
+    $x=y$ असेल, तर आणि तरच $R$ प्रतिसममित असतो. दुसऱ्या शब्दांत,
+    $x\neq y$ असेल, तर $Rxy$ किंवा $Ryx$ यांपैकी किमान एक लागू होत
+    नाही (\olref[sfr][rel][prp]{sec} पाहा)}}
+
+\newglossaryentry{connected}{
+  name={संयोजित},
+  sort={mr073},
+  description={$x \neq y$ असलेल्या सर्व $x, y\in A$ साठी $Rxy$
+    व~$Ryx$ यांपैकी किमान एक लागू होत असेल, तर $R$ संयोजित
+    असतो (\olref[sfr][rel][prp]{sec} पाहा)}}
+
+\newglossaryentry{er}{
+  name={तुल्यता संबंध},
+  sort={mr026},
+  description={परावर्ती, सममित आणि संक्रमक असा संबंध
+    (\olref[sfr][rel][prp]{sec} पाहा)}}
+
+\newglossaryentry{sf}{
+  name={आच्छादक},
+  sort={mr007},
+  description={फलन~$f$ ची व्याप्ती म्हणजे संपूर्ण~$B$ संच असेल, तर
+    आणि तरच $f \colon A \to B$ हे {आच्छादक} असते. म्हणजेच, प्रत्येक
+    $y \in B$ साठी किमान एक $x \in A$ असा असतो की~$f(x) = y$
+    (\olref[sfr][fun][kin]{sec} पाहा)}}
+
+\newglossaryentry{if}{
+  name={एकास-एक},
+  sort={mr013},
+  description={$f \colon A \to B$ हे {एकास-एक} असते तेव्हा आणि केवळ
+    तेव्हाच, जेव्हा प्रत्येक $y \in B$ साठी जास्तीत जास्त एक $x \in A$
+    असा असतो की~$f(x) = y$. समतुल्य रीतीने, जेव्हा जेव्हा $x \neq x'$
+    तेव्हा तेव्हा $f(x) \neq f(x')$ (\olref[sfr][fun][kin]{sec} पाहा)}}
+
+\newglossaryentry{bijection}{
+  name={एकास-एक आच्छादन},
+  sort={mr014},
+  description={{आच्छादक} आणि {एकास-एक} असे दोन्ही गुणधर्म असलेले फलन
+    (\olref[sfr][fun][kin]{sec} पाहा)}}
+
+\newglossaryentry{enumeration}{
+  name={प्रगणन},
+  sort={mr039},
+  description={संच~$A$ मधील सर्व {घटकांची} यादी. ती अनंतही असू शकते.
+    $A$ अरिक्त असेल, तर औपचारिकपणे प्रगणन म्हणजे
+    $f\colon \Nat \to A$ असे आच्छादक फलन. रिक्त संचाचे प्रगणन
+    म्हणजे रिकामी यादी (\olref[sfr][siz][enm]{sec} पाहा)}}
+
+\newglossaryentry{equinumerous}{
+  name={तुल्यबल},
+  sort={mr027},
+  description={$A$ पासून $B$ कडे जाणारे सर्वत्र परिभाषित एकास-एक
+    आच्छादन अस्तित्वात असेल, तर आणि तरच $A$ आणि $B$ तुल्यबल
+    असतात (\olref[sfr][siz][equ]{sec} पाहा)}}
+
+\newglossaryentry{finitely satisfiable}{
+  name={सांततः पूर्ततायोग्य},
+  sort={mr076},
+  description={प्रत्येक सांत $\Gamma_0 \subseteq \Gamma$ पूर्ततायोग्य
+    असेल, तर आणि तरच $\Gamma$ सांततः पूर्ततायोग्य असतो
+    (\olref[fol][com][com]{sec} पाहा)}}
+
+\newglossaryentry{mcs}{
+  name={संपूर्ण सुसंगत संच},
+  sort={mr068},
+  description={एखादा संच सुसंगत असेल आणि प्रत्येक {वाक्य}~$!A$ साठी
+    $!A$ किंवा $\lnot !A$ यांपैकी एक त्या संचात असेल, तर आणि तरच
+    तो {वाक्यांचा} संच संपूर्ण आणि सुसंगत असतो
+    (\olref[fol][com][ccs]{sec} पाहा)}}
+
+\newglossaryentry{mos}{
+  name={प्रतिमान},
+  sort={mr040},
+  description={ज्या {रचनेत}~$\Gamma$ मधील प्रत्येक {वाक्य} सत्य असते,
+    ती रचना~$\Gamma$ चे प्रतिमान असते (\olref[fol][mat][exs]{sec} पाहा)}}
+
+\newglossaryentry{closed}{
+  name={बंद},
+  sort={mr046},
+  description={जेव्हा जेव्हा $\Gamma \Entails !A$ तेव्हा तेव्हा
+    $!A \in \Gamma$ असेल, तर आणि तरच {वाक्यांचा} संच~$\Gamma$ बंद
+    असतो. $\Setabs{!A}{\Gamma \Entails !A}$ हा संच~$\Gamma$ चे
+    संवरण आहे (\olref[fol][mat][int]{sec} पाहा)}}
+
+\newglossaryentry{derivability}{
+  name={सिद्धतायोग्यता},
+  sort={mr077},
+  symbol={\ensuremath{\Gamma \Proves !A}},
+  description={क्रमवर्ती कलनात $!A$ हे~$\Gamma$ पासून {सिद्धतायोग्य}
+    असते, जर $\Gamma_0 \Sequent !A$ या \gls{sequent} साठी
+    \gls{derivation} अस्तित्वात असेल आणि पूर्वांग~$\Gamma_0$ ही अशी सांत
+    क्रमिका असेल की तिच्यातील प्रत्येक वाक्य~$\Gamma$ मध्ये आहे
+    (\olref[fol][seq][ptn]{sec} पाहा). नैसर्गिक निगमनात $!A$
+    हे~$\Gamma$ पासून {सिद्धतायोग्य} असते, जर अंतिम {सूत्र}~$!A$
+    असलेली अशी {निष्पत्ती} अस्तित्वात असेल की तिच्यातील प्रत्येक
+    गृहीतक एकतर {मुक्त केलेले} आहे किंवा~$\Gamma$ मध्ये आहे
+    (\olref[fol][ntd][ptn]{sec} पाहा)}}
+
+\newglossaryentry{theorem}{
+  name={प्रमेय},
+  sort={mr042},
+  symbol={\ensuremath{\Proves !A}},
+  description={क्रमवर्ती कलनात {सूत्र}~$!A$ हे (तर्कशास्त्राचे) प्रमेय
+    असते, जर $\Sequent !A$ या क्रमवर्तीची {निष्पत्ती} अस्तित्वात असेल
+    (\olref[fol][seq][ptn]{sec} पाहा). नैसर्गिक निगमनात {सूत्र}~$!A$
+    हे प्रमेय असते, जर $!A$ ची अशी {निष्पत्ती} असेल की तिच्यात प्रत्येक
+    गृहीतक \gls{discharged} आहे (\olref[fol][ntd][ptn]{sec} पाहा).
+    $!A$ हे उपपत्ती~$\Gamma$ चे प्रमेय आहे असेही आपण म्हणतो, जर
+    $\Gamma \Proves !A$}}
+
+\newglossaryentry{consistent}{
+  name={सुसंगत},
+  sort={mr078},
+  description={क्रमवर्ती कलनात वाक्यांचा संच~$\Gamma$ तेव्हा आणि
+    केवळ तेव्हाच सुसंगत असतो, जेव्हा
+    सांत पूर्वांग~$\Gamma_0$ मधील प्रत्येक वाक्य~$\Gamma$ मध्ये
+    असेल अशा कोणत्याही $\Gamma_0 \Sequent \quad$ या
+    \gls{sequent} ची \gls{derivation} नसते
+    (\olref[fol][seq][ptn]{sec} पाहा). नैसर्गिक निगमनात $\Gamma$
+    तेव्हा आणि केवळ तेव्हाच सुसंगत असतो, जेव्हा $\Gamma \Proves/ \lfalse$
+    (\olref[fol][ntd][ptn]{sec} पाहा). $\Gamma$ सुसंगत नसेल,
+    तर तो विसंगत असतो.}}
+
+\newglossaryentry{inconsistent}{
+  name={विसंगत},
+  sort={mr057},
+  description={\gls{consistent} पाहा}}
+
+\newglossaryentry{derivation}{
+  name={निष्पत्ती},
+  sort={mr033},
+  description={क्रमवर्ती कलनातील निष्पत्ती म्हणजे क्रमवर्तींचा असा वृक्ष
+    असतो की त्यातील प्रत्येक क्रमवर्ती एकतर आरंभीची क्रमवर्ती असते
+    किंवा तिच्या लगेच वरच्या क्रमवर्तींपासून एखाद्या निगमन नियमानुसार
+    येते (\olref[fol][seq][rul]{sec} पाहा). नैसर्गिक निगमनातील निष्पत्ती
+    म्हणजे सूत्रांचा असा वृक्ष असतो की त्यातील प्रत्येक सूत्र एकतर गृहीतक
+    असते किंवा त्याच्या लगेच वरच्या सूत्रांपासून एखाद्या निगमन
+    नियमानुसार येते (\olref[fol][ntd][rul]{sec} पाहा)}}
+
+\newglossaryentry{eigenvariable}{
+  name={आयगेन चर},
+  sort={mr009},
+  description={संख्यापकाच्या नियमानुसार अनुमानात वापरलेले विशेष
+    स्थिरचिन्ह~$a$. क्रमवर्ती कलनात $\LeftR{\lexists}$ आणि
+    $\RightR{\lforall}$ या दोन्ही नियमांत ते निष्कर्षात येता कामा नये
+    (\olref[fol][seq][qrl]{sec} पाहा). नैसर्गिक निगमनात
+    $\Intro{\lforall}$ या नियमात ते निष्कर्षात किंवा आधारविधानाच्या
+    निष्पत्तीतील कोणत्याही \gls{undischarged} गृहीतकात येता कामा नये.
+    $\Elim{\lexists}$ या नियमात $a$ हे स्थिरचिन्ह अस्तित्ववाची
+    आधारविधान~$\lexists[x][!A(x)]$, निष्कर्ष किंवा दोन्ही आधारविधानांच्या
+    निष्पत्त्यांतील मुक्त न केलेली गृहीतके यांपैकी कशातही येता कामा नये. या नियमाने मुक्त केलेली $!A(a)$
+    ही गृहीतके याला अपवाद आहेत (\olref[fol][ntd][qrl]{sec} पाहा)}}
+
+\newglossaryentry{discharged}{
+  name={मुक्त केलेले},
+  sort={mr050},
+  description={!!a{derivation} मधील \gls{assumption} त्याच्या खालील
+    एखाद्या निगमन नियमाने मुक्त करता येते. तेव्हा नियमाला आणि
+    गृहीतकाला एकच खूण दिली जाते, उदा., $[!A]^2$. गृहीतक मुक्त
+    केले नसेल, तर त्याला मुक्त न केलेले गृहीतक म्हणतात
+    (\olref[fol][ntd][rul]{sec} पाहा)}}
+
+\newglossaryentry{undischarged}{
+  name={मुक्त न केलेले},
+  sort={mr051},
+  description={\gls{discharged} पाहा}}
+
+\newglossaryentry{assumption}{
+  name={गृहीतक},
+  sort={mr019},
+  description={!!a{derivation} मध्ये सर्वांत वर असलेले सूत्र. त्याला
+    आरंभीचे सूत्र असेही म्हणतात. ते \gls{discharged} किंवा मुक्त न
+    केलेले असू शकते (\olref[fol][ntd][rul]{sec} पाहा)}}
+
+\newglossaryentry{soundness}{
+  name={निर्दोषता},
+  sort={mr032},
+  description={!!a{derivation} पद्धतीचा गुणधर्म. जेव्हा जेव्हा
+    $\Gamma \Proves !A$ तेव्हा तेव्हा $\Gamma \Entails !A$ असेल, तर
+    ती पद्धती निर्दोष असते (\olref[fol][seq][sou]{sec} आणि
+    \olref[fol][ntd][sou]{sec} पाहा)}}
+
+\newglossaryentry{sequent}{
+  name={क्रमवर्ती},
+  sort={mr018},
+  description={$\Gamma \Sequent \Delta$ या रूपाची अभिव्यक्ती, जिथे
+    $\Gamma$ आणि $\Delta$ या वाक्यांच्या सांत क्रमिका आहेत
+    (\olref[fol][seq][rul]{sec} पाहा)}}
+
+\newglossaryentry{sentence}{
+  name={वाक्य},
+  sort={mr055},
+  description={एकही \gls{free} चर नसलेले {सूत्र}
+    (\olref[fol][syn][fvs]{sec} पाहा)}}
+
+\newglossaryentry{variable assignment}{
+  name={चर-मूल्यांकन},
+  sort={mr021},
+  plural={चर-मूल्यांकने},
+  description={प्रत्येक {चराची}~$\Domain M$ मधील एका घटकाशी संगती
+    लावणारे \gls{function} (\olref[fol][syn][sat]{sec} पाहा)}}
+
+\newglossaryentry{$x$-variant}{
+  name={$x$-पर्याय},
+  sort={mr035},
+  description={दोन \glspl{variable assignment} एकमेकांचे $x$-पर्याय
+    असतात, $s \sim_x s'$, जर फार तर~$x$ ला नेमलेल्या मूल्याबाबत
+    ती भिन्न असतील (\olref[fol][syn][sat]{sec} पाहा)}}
+
+\newglossaryentry{valid}{
+  name={वैध},
+  sort={mr060},
+  symbol={\ensuremath{\Entails !A}},
+  description={वाक्य $!A$ तेव्हा आणि केवळ तेव्हाच \emph{वैध} असते,
+    जेव्हा प्रत्येक \gls{structure}~$\Struct M$ साठी $\Sat{M}{!A}$
+    (\olref[fol][syn][sem]{sec} पाहा)}}
+
+\newglossaryentry{entailment}{
+  name={तार्किक निष्पन्नता},
+  sort={mr025},
+  symbol={\ensuremath{\Gamma \Entails !A}},
+  description={वाक्यांच्या संच~$\Gamma$ मधून वाक्य~$!A$ तेव्हा आणि
+    केवळ तेव्हाच तार्किकरीत्या निष्पन्न होते, जेव्हा
+    $\Sat{M}{\Gamma}$ असलेल्या प्रत्येक \gls{structure}~$\Struct M$
+    साठी $\Sat{M}{!A}$ (\olref[fol][syn][sem]{sec} पाहा)}}
+
+\newglossaryentry{satisfiable}{
+  name={पूर्ततायोग्य},
+  sort={mr037},
+  description={वाक्यांचा संच~$\Gamma$ पूर्ततायोग्य असतो, जर
+    एखाद्या \gls{structure}~$\Struct M$ साठी $\Sat{M}{\Gamma}$ असेल.
+    अन्यथा तो अपूर्ततायोग्य असतो (\olref[fol][syn][sem]{sec} पाहा)}}
+
+\newglossaryentry{cs}{
+  name={बंद पदांनी आच्छादित रचना},
+  sort={mr047},
+  description={जिच्या प्रांतातील प्रत्येक घटक एखाद्या बंद पदाचे
+    {मूल्य} असतो अशी \gls{structure} (\olref[fol][syn][cov]{sec} पाहा)}}
+
+\newglossaryentry{subformula}{
+  name={उपसूत्र},
+  sort={mr012},
+  description={सूत्राचा असा भाग जो स्वतःही एक सूत्र असतो
+    (\olref[fol][syn][sbf]{sec} पाहा)}}
+
+\newglossaryentry{free for}{
+  name={आदेशनासाठी मुक्त},
+  sort={mr008},
+  description={पद~$t$ हे $x$ च्या {आदेशनासाठी} $!A$ मध्ये {मुक्त}
+    असते, जर $!A$ मधील~$x$ ची कोणतीही \gls{free} आस्थिती~$t$ मधील
+    एखादा चर बद्ध करणाऱ्या संख्यापकाच्या व्याप्तीत येत नसेल
+    (\olref[fol][syn][sub]{sec} पाहा)}}
+
+\newglossaryentry{church-turing thesis}{
+  name={चर्च--ट्यूरिंग प्रबंध},
+  sort={mr022},
+  description={प्रभावी प्रक्रियेने जे काही संगणित करता येते, ते
+    ट्यूरिंग यंत्रानेही संगणित करता येते, असे हा प्रबंध सांगतो
+    (\olref[tur][mac][ctt]{sec} पाहा)}}
+
+\newglossaryentry{completeness}{
+  name={संपूर्णता},
+  sort={mr069},
+  description={!!a{derivation} पद्धतीचा गुणधर्म. जेव्हा जेव्हा $\Gamma$
+    मधून $!A$ तार्किकरीत्या निष्पन्न होते, तेव्हा तेव्हा
+    $\Gamma \Proves !A$ प्रस्थापित करणारी {निष्पत्ती} असेल, तर ती
+    पद्धती संपूर्ण असते. समतुल्य रीतीने, प्रत्येक \gls{consistent}
+    वाक्यसंच \gls{satisfiable} असेल, तर आणि तरच ती पद्धती संपूर्ण
+    असते (\olref[fol][com][int]{sec} पाहा)}}
+
+\newglossaryentry{formula}{
+  name={सूत्र},
+  sort={mr079},
+  description={प्रथम-क्रम भाषा~$\Lang L$ मधील अशा अभिव्यक्ती ज्या
+    संबंध किंवा गुणधर्म व्यक्त करतात, किंवा सत्य किंवा असत्य असतात
+    (\olref[fol][syn][frm]{sec} पाहा)}}
+
+\newglossaryentry{structure}{
+  name={रचना},
+  sort={mr052},
+  symbol={\ensuremath{\Struct{M}}},
+  description={प्रथम-क्रम भाषेचे अर्थनिर्धारण. यात एक \gls{sdomain}
+    आणि भाषेतील स्थिर, विधेय आणि फलन चिन्हांना केलेल्या नेमणुका
+    असतात (\olref[fol][syn][str]{sec} पाहा)}}
+
+\newglossaryentry{sdomain}{
+  name={प्रांत (रचनेचा)},
+  sort={mr044},
+  text={प्रांत},
+  symbol={\ensuremath{\Domain{M}}},
+  description={\gls{structure} च्या स्थिरचिन्हांची मूल्ये आणि
+    चर-मूल्यांकनाने नेमलेली {चरांची} मूल्ये ज्या अरिक्त संचाचे घटक
+    असतात, तो संच (\olref[fol][syn][str]{sec} आणि
+    \olref[fol][syn][sat]{sec} पाहा)}}
+
+\newglossaryentry{halting problem}{
+  name={थांबण्याची समस्या},
+  sort={mr028},
+  description={कोणतेही $e$, $n$ दिले असता, ट्यूरिंग यंत्र~$M_e$
+    हे~$n$ रेघांच्या आदानावर थांबते की नाही हे ठरवण्याची समस्या
+    (\olref[tur][und][hal]{sec} पाहा)}}
+
+\newglossaryentry{bound}{
+  name={बद्ध},
+  sort={mr048},
+  description={एखाद्या चराची आस्थिती, जी तोच चर वापरणाऱ्या
+    संख्यापकाच्या व्याप्तीत येते (\olref[fol][syn][fvs]{sec} पाहा)}}
+
+\newglossaryentry{free}{
+  name={मुक्त},
+  sort={mr049},
+  description={चराची \gls{bound} नसलेली आस्थिती
+    (\olref[fol][syn][fvs]{sec} पाहा)}}
+
+\newglossaryentry{compactness theorem}{
+  name={संहतता प्रमेय},
+  sort={mr074},
+  description={प्रत्येक \gls{finitely satisfiable} वाक्यसंच पूर्ततायोग्य
+    असतो, असे हे प्रमेय सांगते (\olref[fol][com][com]{sec} पाहा)}}
+
+\newglossaryentry{ls}{
+  name={लोव्हेनहाइम--स्कोलेम प्रमेय},
+  sort={mr054},
+  description={गणनीय प्रथम-क्रम भाषेतील प्रत्येक पूर्ततायोग्य
+    वाक्यसंचाचे गणनीय प्रतिमान असते, असे हे प्रमेय सांगते
+    (\olref[fol][com][dls]{thm:downward-ls} पाहा)}}
+
+\newglossaryentry{Church-Turing Theorem}{
+  name={चर्च--ट्यूरिंग प्रमेय},
+  sort={mr023},
+  description={प्रथम-क्रम तर्कशास्त्रातील दिलेले वाक्य \gls{valid} आहे
+    की नाही हे ठरवणारे कोणतेही ट्यूरिंग यंत्र अस्तित्वात नाही, असे
+    हे प्रमेय सांगते (\olref[tur][und][uns]{sec} पाहा)}}
+
+\newglossaryentry{decision problem}{
+  name={निर्णय समस्या},
+  sort={mr031},
+  description={प्रथम-क्रम तर्कशास्त्रातील दिलेले वाक्य \gls{valid} आहे
+    की नाही हे ठरवण्याची समस्या (\gls{Church-Turing Theorem} पाहा)}}
+
+\newglossaryentry{completeness-theorem}{
+  name={संपूर्णता प्रमेय},
+  sort={mr070},
+  description={प्रथम-क्रम तर्कशास्त्र संपूर्ण आहे, म्हणजे प्रत्येक
+    \gls{consistent} वाक्यसंच \gls{satisfiable} असतो, असे हे प्रमेय
+    सांगते}}

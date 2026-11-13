@@ -1,6 +1,7 @@
 """Prepare the completed six-chapter reader through OLP-0054 without launching TeX."""
 import hashlib,json,re,subprocess,sys
 from pathlib import Path
+from marathi_reader_source import read_source
 P=Path(__file__).resolve().parents[1];B=P/'build/core';B.mkdir(parents=True,exist_ok=True)
 subprocess.run([sys.executable,str(P/'tools/prepare_foundations.py')],check=True,capture_output=True)
 base=(P/'build/foundations/openlogic-mr-foundations.tex').read_text(encoding='utf-8')
@@ -55,7 +56,7 @@ groups=[
 ]
 raw=[]
 for _,_,directory,names,_ in groups:
-    raw.extend((directory/(name+'.tex')).read_text(encoding='utf-8') for name in names)
+    raw.extend(read_source(directory/(name+'.tex')) for name in names)
 available=set(re.findall(r'\\label\{([^}]+)\}',before))
 available.update(chapter_label for _,chapter_label,_,_,_ in groups)
 for t in raw:
@@ -85,7 +86,7 @@ raw_index=0
 for chapter,chapter_label,directory,names,preface in groups:
     chunks.append('\\chapter{'+chapter+'}\\label{'+chapter_label+'}')
     if preface:
-        driver=(directory/(preface+'.tex')).read_text(encoding='utf-8')
+        driver=read_source(directory/(preface+'.tex'))
         driver_preface=re.search(r'\\begin\{editorial\}.*?\\end\{editorial\}',driver,re.S)
         assert driver_preface
         chunks.append(driver_preface.group())
@@ -99,6 +100,7 @@ for chapter,chapter_label,directory,names,preface in groups:
         t=t.replace(r'\[\small',r'\[')
         t=t.replace(r'\citep[\S70]{Frege1884}',r'(Frege, 1884, \S70)')
         t=t.replace(r'\citet[pp.~165--6]{Potter2004}',r'Potter (2004, pp.~165--6)')
+        t=t.replace(r'\citet[पृ.~165--6]{Potter2004}',r'Potter (2004, पृ.~165--6)')
         t=t.replace(r'\citet{Cantor1892}',r'Cantor (1892)')
         t=t.replace(r'\cite{Conway2006}',r'Conway (2006)')
         t=t.replace(r'\citealt{Benacerraf1965}',r'Benacerraf (1965)')

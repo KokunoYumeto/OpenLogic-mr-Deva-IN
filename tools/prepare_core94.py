@@ -5,6 +5,7 @@ import json
 import re
 import runpy
 from pathlib import Path
+from marathi_reader_source import read_source
 
 
 P = Path(__file__).resolve().parents[1]
@@ -131,6 +132,9 @@ def replace_extra_match(match):
 
 def replace_tokens(text):
     replacements = {
+        r"\printtoken{S}{identity}": "एकरूपता",
+        r"\printtoken{s}{identity}": "एकरूपता",
+        r"\printtoken{P}{derivation}": "निष्पत्त्या",
         r"\usetoken{S}{identity}": "एकरूपता",
         r"\usetoken{P}{identity}": "एकरूपता",
         r"\usetoken{S}{derivability}": "निष्पन्नता",
@@ -230,12 +234,12 @@ available = set(re.findall(r"\\label\{([^}]+)\}", before))
 for chapter in chapters:
     available.add(chapter["label"])
     driver_text = selected(
-        (chapter["directory"] / chapter["driver"]).read_text(encoding="utf-8")
+        read_source(chapter["directory"] / chapter["driver"])
     )
     imports = re.findall(r"\\olimport\{([^}]+)\}", driver_text)
     assert imports == chapter["imports"], (chapter["key"], imports)
     for name in imports:
-        text = selected((chapter["directory"] / f"{name}.tex").read_text(encoding="utf-8"))
+        text = selected(read_source(chapter["directory"] / f"{name}.tex"))
         file_id = re.search(r"\\olfileid\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}", text)
         assert file_id and file_id.groups()[:2] == ("fol", chapter["key"]), name
         prefix = ":".join(file_id.groups())
@@ -270,12 +274,12 @@ chunks = []
 processed_ids = []
 for chapter in chapters:
     chunks.append(r"\chapter{" + chapter["title"] + r"}\label{" + chapter["label"] + "}")
-    driver_text = (chapter["directory"] / chapter["driver"]).read_text(encoding="utf-8")
+    driver_text = read_source(chapter["directory"] / chapter["driver"])
     editorial = re.search(r"\\begin\{editorial\}.*?\\end\{editorial\}", driver_text, re.S)
     assert editorial
     chunks.append(replace_tokens(editorial.group()))
     for name in chapter["imports"]:
-        text = strip_wrapper((chapter["directory"] / f"{name}.tex").read_text(encoding="utf-8"))
+        text = strip_wrapper(read_source(chapter["directory"] / f"{name}.tex"))
         text = selected(text)
         file_id = re.search(r"\\olfileid\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}", text)
         assert file_id and file_id.groups()[:2] == ("fol", chapter["key"]), name

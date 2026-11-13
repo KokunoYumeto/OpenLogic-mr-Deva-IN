@@ -1,0 +1,440 @@
+{
+  "open-logic/assets/diagrams/bijective.tikz": {
+    "source": "olp",
+    "path": "assets/diagrams/bijective.tikz",
+    "pinned_sha256": "c6b3bf38943e8a2ecef195c57cbe77a2e016610ebd853fca1eba044a9c6789d5",
+    "output_sha256": "c6b3bf38943e8a2ecef195c57cbe77a2e016610ebd853fca1eba044a9c6789d5"
+  },
+  "open-logic/assets/diagrams/composition.tikz": {
+    "source": "olp",
+    "path": "assets/diagrams/composition.tikz",
+    "pinned_sha256": "d712231c90796b4b2987506502723cd756fa9c5b7f4111e65284d107a79d2d4b",
+    "output_sha256": "d712231c90796b4b2987506502723cd756fa9c5b7f4111e65284d107a79d2d4b"
+  },
+  "open-logic/assets/diagrams/difference.tikz": {
+    "source": "olp",
+    "path": "assets/diagrams/difference.tikz",
+    "pinned_sha256": "c4214baef02f0261773a29b793a8221144fbe1d022ef1e753054c56080e4cdfc",
+    "output_sha256": "c4214baef02f0261773a29b793a8221144fbe1d022ef1e753054c56080e4cdfc"
+  },
+  "open-logic/assets/diagrams/function.tikz": {
+    "source": "olp",
+    "path": "assets/diagrams/function.tikz",
+    "pinned_sha256": "0f9ad6d025a743c8b90509d7507bd88bfc6934e555175adc29d36c8ce93a04c9",
+    "output_sha256": "0f9ad6d025a743c8b90509d7507bd88bfc6934e555175adc29d36c8ce93a04c9"
+  },
+  "open-logic/assets/diagrams/injective.tikz": {
+    "source": "olp",
+    "path": "assets/diagrams/injective.tikz",
+    "pinned_sha256": "7e2a17dfe1cab68938c4eed21fe135a33c0af33895cfe386fb38f270829060c2",
+    "output_sha256": "7e2a17dfe1cab68938c4eed21fe135a33c0af33895cfe386fb38f270829060c2"
+  },
+  "open-logic/assets/diagrams/intersection.tikz": {
+    "source": "olp",
+    "path": "assets/diagrams/intersection.tikz",
+    "pinned_sha256": "d95d0e70278ddbdc46e76f94930b6f29aedec8b91a3550338e553ba35067464c",
+    "output_sha256": "d95d0e70278ddbdc46e76f94930b6f29aedec8b91a3550338e553ba35067464c"
+  },
+  "open-logic/assets/diagrams/surjective.tikz": {
+    "source": "olp",
+    "path": "assets/diagrams/surjective.tikz",
+    "pinned_sha256": "324e03fb275baee81614586cadb5243deaf801050d061b9ec33d7ccebd4a282d",
+    "output_sha256": "324e03fb275baee81614586cadb5243deaf801050d061b9ec33d7ccebd4a282d"
+  },
+  "open-logic/assets/diagrams/turing-machine.tikz": {
+    "source": "olp",
+    "path": "assets/diagrams/turing-machine.tikz",
+    "pinned_sha256": "9bd7deae83ae88cd03ceacaec3b17bbc00b3020660dedcbded89c6fa5c4df092",
+    "output_sha256": "9bd7deae83ae88cd03ceacaec3b17bbc00b3020660dedcbded89c6fa5c4df092"
+  },
+  "open-logic/assets/diagrams/union.tikz": {
+    "source": "olp",
+    "path": "assets/diagrams/union.tikz",
+    "pinned_sha256": "f9ca5508f0bac1f848271027572c4a59a6caba3db1f2c31bdd844f5bcea3e22e",
+    "output_sha256": "f9ca5508f0bac1f848271027572c4a59a6caba3db1f2c31bdd844f5bcea3e22e"
+  },
+  "open-logic/assets/logos/aboer-screen.png": {
+    "source": "olp",
+    "path": "assets/logos/aboer-screen.png",
+    "pinned_sha256": "7ac519ac6da7b0509b38093e28fb362b8328b64718e07788abdf5c68852bbc8c",
+    "output_sha256": "7ac519ac6da7b0509b38093e28fb362b8328b64718e07788abdf5c68852bbc8c"
+  },
+  "open-logic/assets/logos/by.pdf": {
+    "source": "olp",
+    "path": "assets/logos/by.pdf",
+    "pinned_sha256": "e006252e6556509483e13ce851f59c43569dfb77518b01e49bf9892e1f6076ea",
+    "output_sha256": "e006252e6556509483e13ce851f59c43569dfb77518b01e49bf9892e1f6076ea"
+  },
+  "open-logic/assets/logos/cc.pdf": {
+    "source": "olp",
+    "path": "assets/logos/cc.pdf",
+    "pinned_sha256": "3675e2ab61cc94de674ab418dcd0e3d6511f306abf50f90c0c6771414186885a",
+    "output_sha256": "3675e2ab61cc94de674ab418dcd0e3d6511f306abf50f90c0c6771414186885a"
+  },
+  "open-logic/assets/logos/openlogic-logo-bw.pdf": {
+    "source": "olp",
+    "path": "assets/logos/openlogic-logo-bw.pdf",
+    "pinned_sha256": "1c5933c487dbe3f804474ee439e1e189c8547e608ed4eef0edeb21f6981db8d0",
+    "output_sha256": "1c5933c487dbe3f804474ee439e1e189c8547e608ed4eef0edeb21f6981db8d0"
+  },
+  "open-logic/assets/logos/openlogic-logo-color.pdf": {
+    "source": "olp",
+    "path": "assets/logos/openlogic-logo-color.pdf",
+    "pinned_sha256": "d2b138076e393dc44b73e480bfba10b9bce68ceac53fefb1c19f6ae8981c26a2",
+    "output_sha256": "d2b138076e393dc44b73e480bfba10b9bce68ceac53fefb1c19f6ae8981c26a2"
+  },
+  "open-logic/assets/logos/openlogic-wm-bw.pdf": {
+    "source": "olp",
+    "path": "assets/logos/openlogic-wm-bw.pdf",
+    "pinned_sha256": "0a7cfdc3eb57dfbcb7f97e0573823653802b642b029de323671937febffe7de9",
+    "output_sha256": "0a7cfdc3eb57dfbcb7f97e0573823653802b642b029de323671937febffe7de9"
+  },
+  "open-logic/assets/logos/openlogic-wm-color.pdf": {
+    "source": "olp",
+    "path": "assets/logos/openlogic-wm-color.pdf",
+    "pinned_sha256": "a17e71de48145b56fa6fe78fab0fa35530f4788143b39f09f54bbf1c1c1e4087",
+    "output_sha256": "a17e71de48145b56fa6fe78fab0fa35530f4788143b39f09f54bbf1c1c1e4087"
+  },
+  "open-logic/assets/logos/remix.pdf": {
+    "source": "olp",
+    "path": "assets/logos/remix.pdf",
+    "pinned_sha256": "3ed058c675a84eda0568c4213830a1a85c9202bc4f29c731bf55adb786ab6f07",
+    "output_sha256": "3ed058c675a84eda0568c4213830a1a85c9202bc4f29c731bf55adb786ab6f07"
+  },
+  "open-logic/assets/logos/ti-screen.pdf": {
+    "source": "olp",
+    "path": "assets/logos/ti-screen.pdf",
+    "pinned_sha256": "082cd4b5f5350404327d31bdce81bbfb24c2cfa961c97b23e145bf23edf5ab92",
+    "output_sha256": "082cd4b5f5350404327d31bdce81bbfb24c2cfa961c97b23e145bf23edf5ab92"
+  },
+  "open-logic/assets/photos/cantor-georg/cantor-georg-credit.tex": {
+    "source": "photos",
+    "path": "cantor-georg/cantor-georg-credit.tex",
+    "pinned_sha256": "56bf0d795187692806afcfbb1232e01159b6ecb92c0e092713b5879d9fd3ae44",
+    "output_sha256": "56bf0d795187692806afcfbb1232e01159b6ecb92c0e092713b5879d9fd3ae44"
+  },
+  "open-logic/assets/photos/cantor-georg/cantor-georg-large.png": {
+    "source": "photos",
+    "path": "cantor-georg/cantor-georg-large.png",
+    "pinned_sha256": "4b883398c2121f31feded13228b3ff22bbbefb97c1bee3f59df19c2009d4d4e2",
+    "output_sha256": "4b883398c2121f31feded13228b3ff22bbbefb97c1bee3f59df19c2009d4d4e2"
+  },
+  "open-logic/assets/photos/cantor-georg/cantor-georg-small.png": {
+    "source": "photos",
+    "path": "cantor-georg/cantor-georg-small.png",
+    "pinned_sha256": "fcf2d6e515dad4fdec9adab876fdf46532af5234931cd105520ac80cf951fce8",
+    "output_sha256": "fcf2d6e515dad4fdec9adab876fdf46532af5234931cd105520ac80cf951fce8"
+  },
+  "open-logic/assets/photos/church-alonzo/church-alonzo-credit.tex": {
+    "source": "photos",
+    "path": "church-alonzo/church-alonzo-credit.tex",
+    "pinned_sha256": "b1f035bc45c7b40b7ee9c602ff82c07586e50dd1aa8a3339171e5fc9e8d7870e",
+    "output_sha256": "b1f035bc45c7b40b7ee9c602ff82c07586e50dd1aa8a3339171e5fc9e8d7870e"
+  },
+  "open-logic/assets/photos/church-alonzo/church-alonzo-large.png": {
+    "source": "photos",
+    "path": "church-alonzo/church-alonzo-large.png",
+    "pinned_sha256": "d810d4962253f8068fba85723b644c6d18481aaa231600e8a130f2663e49aa61",
+    "output_sha256": "d810d4962253f8068fba85723b644c6d18481aaa231600e8a130f2663e49aa61"
+  },
+  "open-logic/assets/photos/church-alonzo/church-alonzo-small.png": {
+    "source": "photos",
+    "path": "church-alonzo/church-alonzo-small.png",
+    "pinned_sha256": "41a708886ccdfdac8e84ddaaef2216e1bd5de312b13dd4cf398bfd3122e94144",
+    "output_sha256": "41a708886ccdfdac8e84ddaaef2216e1bd5de312b13dd4cf398bfd3122e94144"
+  },
+  "open-logic/assets/photos/gentzen-gerhard/gentzen-gerhard-credit.tex": {
+    "source": "photos",
+    "path": "gentzen-gerhard/gentzen-gerhard-credit.tex",
+    "pinned_sha256": "913f32e3c521c3e72a7016725f6dd87b4845d4e8a69356f49189af1245482f6d",
+    "output_sha256": "913f32e3c521c3e72a7016725f6dd87b4845d4e8a69356f49189af1245482f6d"
+  },
+  "open-logic/assets/photos/gentzen-gerhard/gentzen-gerhard-large.png": {
+    "source": "photos",
+    "path": "gentzen-gerhard/gentzen-gerhard-large.png",
+    "pinned_sha256": "1ee39542a56bcf6b72ca4fa9c18fa4871f1a163de1b573c7ae41968bfbb1723a",
+    "output_sha256": "1ee39542a56bcf6b72ca4fa9c18fa4871f1a163de1b573c7ae41968bfbb1723a"
+  },
+  "open-logic/assets/photos/gentzen-gerhard/gentzen-gerhard-small.png": {
+    "source": "photos",
+    "path": "gentzen-gerhard/gentzen-gerhard-small.png",
+    "pinned_sha256": "07d24ee7434628022d6493ded9ed72ffb7de82f8ff7051508e6630a77cc19d13",
+    "output_sha256": "07d24ee7434628022d6493ded9ed72ffb7de82f8ff7051508e6630a77cc19d13"
+  },
+  "open-logic/assets/photos/goedel-kurt/goedel-kurt-credit.tex": {
+    "source": "photos",
+    "path": "goedel-kurt/goedel-kurt-credit.tex",
+    "pinned_sha256": "c90a039e10829f9d85e0a17d985f411a5bf8efd0e7861bc1103f63becb7321a9",
+    "output_sha256": "c90a039e10829f9d85e0a17d985f411a5bf8efd0e7861bc1103f63becb7321a9"
+  },
+  "open-logic/assets/photos/goedel-kurt/goedel-kurt-large.png": {
+    "source": "photos",
+    "path": "goedel-kurt/goedel-kurt-large.png",
+    "pinned_sha256": "b3399afe71e30f67828ffb9e456bda42068d8648df04e94e64384c8c84c13ea4",
+    "output_sha256": "b3399afe71e30f67828ffb9e456bda42068d8648df04e94e64384c8c84c13ea4"
+  },
+  "open-logic/assets/photos/goedel-kurt/goedel-kurt-small.png": {
+    "source": "photos",
+    "path": "goedel-kurt/goedel-kurt-small.png",
+    "pinned_sha256": "5fb344771a18ba62b9b77d9a0478afe364c6758f961c5f2d2852f9a6cec34e4e",
+    "output_sha256": "5fb344771a18ba62b9b77d9a0478afe364c6758f961c5f2d2852f9a6cec34e4e"
+  },
+  "open-logic/assets/photos/noether-emmy/noether-emmy-credit.tex": {
+    "source": "photos",
+    "path": "noether-emmy/noether-emmy-credit.tex",
+    "pinned_sha256": "0d73a266dd1d12e6afe7c970a86c3d5f939652610348ff0c50eba2f5df9777b0",
+    "output_sha256": "0d73a266dd1d12e6afe7c970a86c3d5f939652610348ff0c50eba2f5df9777b0"
+  },
+  "open-logic/assets/photos/noether-emmy/noether-emmy-large.png": {
+    "source": "photos",
+    "path": "noether-emmy/noether-emmy-large.png",
+    "pinned_sha256": "e5286b0a1840854ba1708ecce3895fa4d91dd09cf3b8e2e5189e8eb49a34ecd9",
+    "output_sha256": "e5286b0a1840854ba1708ecce3895fa4d91dd09cf3b8e2e5189e8eb49a34ecd9"
+  },
+  "open-logic/assets/photos/noether-emmy/noether-emmy-small.png": {
+    "source": "photos",
+    "path": "noether-emmy/noether-emmy-small.png",
+    "pinned_sha256": "024677f0d153f8151b3b61d3587ffe5e46eb823b2148a70dc2eb297a72de3bff",
+    "output_sha256": "024677f0d153f8151b3b61d3587ffe5e46eb823b2148a70dc2eb297a72de3bff"
+  },
+  "open-logic/assets/photos/README.md": {
+    "source": "photos",
+    "path": "README.md",
+    "pinned_sha256": "8c24a313830fe66d4bf010c26f0e5e8fd149ace67d036bff0030e20de52393c1",
+    "output_sha256": "8c24a313830fe66d4bf010c26f0e5e8fd149ace67d036bff0030e20de52393c1"
+  },
+  "open-logic/assets/photos/russell-bertrand/russell-bertrand-credit.tex": {
+    "source": "photos",
+    "path": "russell-bertrand/russell-bertrand-credit.tex",
+    "pinned_sha256": "e3a94c92dd793a7af81d0605c67a9f62596fa5fa6761c93e518ed5eb4a0687c0",
+    "output_sha256": "e3a94c92dd793a7af81d0605c67a9f62596fa5fa6761c93e518ed5eb4a0687c0"
+  },
+  "open-logic/assets/photos/russell-bertrand/russell-bertrand-large.png": {
+    "source": "photos",
+    "path": "russell-bertrand/russell-bertrand-large.png",
+    "pinned_sha256": "423814a0701ba0e0c60757e291540706326122aaf11cd5a39b6cefabc6c9deac",
+    "output_sha256": "423814a0701ba0e0c60757e291540706326122aaf11cd5a39b6cefabc6c9deac"
+  },
+  "open-logic/assets/photos/russell-bertrand/russell-bertrand-small.png": {
+    "source": "photos",
+    "path": "russell-bertrand/russell-bertrand-small.png",
+    "pinned_sha256": "9a8a753a5b39e1cce4676134971f9c07aaee1b805e4b263fd64217053d7080a6",
+    "output_sha256": "9a8a753a5b39e1cce4676134971f9c07aaee1b805e4b263fd64217053d7080a6"
+  },
+  "open-logic/assets/photos/tarski-alfred/tarski-alfred-credit.tex": {
+    "source": "photos",
+    "path": "tarski-alfred/tarski-alfred-credit.tex",
+    "pinned_sha256": "f33a0851891e4d4e4690aad4757225f70395d3014d07c441189a1d3b71bafede",
+    "output_sha256": "f33a0851891e4d4e4690aad4757225f70395d3014d07c441189a1d3b71bafede"
+  },
+  "open-logic/assets/photos/tarski-alfred/tarski-alfred-large.png": {
+    "source": "photos",
+    "path": "tarski-alfred/tarski-alfred-large.png",
+    "pinned_sha256": "0387d5fc13950cd34aec6c0de766c8bfee3bcb4ee58b6e1911fd9c418dc46453",
+    "output_sha256": "0387d5fc13950cd34aec6c0de766c8bfee3bcb4ee58b6e1911fd9c418dc46453"
+  },
+  "open-logic/assets/photos/tarski-alfred/tarski-alfred-small.png": {
+    "source": "photos",
+    "path": "tarski-alfred/tarski-alfred-small.png",
+    "pinned_sha256": "68bfa6a270f1e95ead76c667bf2ac39f4a6ab446206026ae6dda41f31ab0ad77",
+    "output_sha256": "68bfa6a270f1e95ead76c667bf2ac39f4a6ab446206026ae6dda41f31ab0ad77"
+  },
+  "open-logic/assets/photos/turing-alan/turing-alan-credit.tex": {
+    "source": "photos",
+    "path": "turing-alan/turing-alan-credit.tex",
+    "pinned_sha256": "07a38ecb47dfd20f6a62d2bb9318e024deb3804fe7d249ba0f8fb2c5f80f9928",
+    "output_sha256": "07a38ecb47dfd20f6a62d2bb9318e024deb3804fe7d249ba0f8fb2c5f80f9928"
+  },
+  "open-logic/assets/photos/turing-alan/turing-alan-large.png": {
+    "source": "photos",
+    "path": "turing-alan/turing-alan-large.png",
+    "pinned_sha256": "e724109a38dcb1785e2b503b3059e209b45f79b2770e6fbedf78cdb0b421c213",
+    "output_sha256": "e724109a38dcb1785e2b503b3059e209b45f79b2770e6fbedf78cdb0b421c213"
+  },
+  "open-logic/assets/photos/turing-alan/turing-alan-small.png": {
+    "source": "photos",
+    "path": "turing-alan/turing-alan-small.png",
+    "pinned_sha256": "a59dc606caa27c4614d40151e736f356017c656e241e3c63098b06fb9fe83e56",
+    "output_sha256": "a59dc606caa27c4614d40151e736f356017c656e241e3c63098b06fb9fe83e56"
+  },
+  "open-logic/assets/photos/zermelo-ernst/zermelo-ernst-credit.tex": {
+    "source": "photos",
+    "path": "zermelo-ernst/zermelo-ernst-credit.tex",
+    "pinned_sha256": "b996e8f70e635feee7289d541b4d6389d72ae0baa295e91a4572090ad0713616",
+    "output_sha256": "b996e8f70e635feee7289d541b4d6389d72ae0baa295e91a4572090ad0713616"
+  },
+  "open-logic/assets/photos/zermelo-ernst/zermelo-ernst-large.png": {
+    "source": "photos",
+    "path": "zermelo-ernst/zermelo-ernst-large.png",
+    "pinned_sha256": "ceecb2f1eb18a60c3a9bf8e284b89e7a79bd14c35fe3fae2b2bca80921abae51",
+    "output_sha256": "ceecb2f1eb18a60c3a9bf8e284b89e7a79bd14c35fe3fae2b2bca80921abae51"
+  },
+  "open-logic/assets/photos/zermelo-ernst/zermelo-ernst-small.png": {
+    "source": "photos",
+    "path": "zermelo-ernst/zermelo-ernst-small.png",
+    "pinned_sha256": "cd83b5a8ca694fee7d3f77aa01b8a428279226d5084dd34f6f4a0be34ec0a6cc",
+    "output_sha256": "cd83b5a8ca694fee7d3f77aa01b8a428279226d5084dd34f6f4a0be34ec0a6cc"
+  },
+  "open-logic/assets/portraits/cantor-circle.pdf": {
+    "source": "portraits",
+    "path": "cantor-circle.pdf",
+    "pinned_sha256": "fa571a4b9cbbe5e9926dd4f1da82a1f0d4a23567ce9c47ad805403dc7836762e",
+    "output_sha256": "fa571a4b9cbbe5e9926dd4f1da82a1f0d4a23567ce9c47ad805403dc7836762e"
+  },
+  "open-logic/assets/portraits/goedel-circle.pdf": {
+    "source": "portraits",
+    "path": "goedel-circle.pdf",
+    "pinned_sha256": "c4eb7e2c8d974c8f8b08532c09072c2c86f0dd35c5c72d4a97cb86f2290b94b6",
+    "output_sha256": "c4eb7e2c8d974c8f8b08532c09072c2c86f0dd35c5c72d4a97cb86f2290b94b6"
+  },
+  "open-logic/assets/portraits/LICENSE.md": {
+    "source": "portraits",
+    "path": "LICENSE.md",
+    "pinned_sha256": "b81f750dff1e0e95f740a119dcae0f70bcb79b5888554c544f9956dcacf187f4",
+    "output_sha256": "b81f750dff1e0e95f740a119dcae0f70bcb79b5888554c544f9956dcacf187f4"
+  },
+  "open-logic/assets/portraits/noether-circle.pdf": {
+    "source": "portraits",
+    "path": "noether-circle.pdf",
+    "pinned_sha256": "03e7a5be0b89e68dc6cd5abe3002db857af8fff4eca727c9d8749a50df32209e",
+    "output_sha256": "03e7a5be0b89e68dc6cd5abe3002db857af8fff4eca727c9d8749a50df32209e"
+  },
+  "open-logic/assets/portraits/README.md": {
+    "source": "portraits",
+    "path": "README.md",
+    "pinned_sha256": "519b9325566f44d69e40a2f580cefe707e044330aaa0f2835cf2ee62e7cf4aca",
+    "output_sha256": "519b9325566f44d69e40a2f580cefe707e044330aaa0f2835cf2ee62e7cf4aca"
+  },
+  "open-logic/assets/portraits/skolem-circle.pdf": {
+    "source": "portraits",
+    "path": "skolem-circle.pdf",
+    "pinned_sha256": "637f3df3470a275313c22123ccaf96bb033cc2c041644ab30221ee7188a6df6d",
+    "output_sha256": "637f3df3470a275313c22123ccaf96bb033cc2c041644ab30221ee7188a6df6d"
+  },
+  "open-logic/assets/portraits/turing-circle.pdf": {
+    "source": "portraits",
+    "path": "turing-circle.pdf",
+    "pinned_sha256": "9044863e5efe19abacd8097e9dfb3266d45797626945082333acb65897ea0b6c",
+    "output_sha256": "9044863e5efe19abacd8097e9dfb3266d45797626945082333acb65897ea0b6c"
+  },
+  "open-logic/bib/natbib-oup.bst": {
+    "source": "olp",
+    "path": "bib/natbib-oup.bst",
+    "pinned_sha256": "4d4c270e756cf495d1ca07faa95a69b698737aa3083b976a9752336ae4a1c580",
+    "output_sha256": "fc852c8eacd91a7a802a7f1c76b0bd1012765378b2d2bf37e8c12eee664c5b3e"
+  },
+  "open-logic/include/open-logic-chapter.tex": {
+    "source": "olp",
+    "path": "include/open-logic-chapter.tex",
+    "pinned_sha256": "b7c56fcf068804920944aec3f83b9b2b76d1c3e0ce4d3536837b670425538035",
+    "output_sha256": "b7c56fcf068804920944aec3f83b9b2b76d1c3e0ce4d3536837b670425538035"
+  },
+  "open-logic/include/open-logic-part.tex": {
+    "source": "olp",
+    "path": "include/open-logic-part.tex",
+    "pinned_sha256": "159ab7dc9aba109f49dff927380416666f0a0c9f350b84145fc5e7567e9f48cd",
+    "output_sha256": "159ab7dc9aba109f49dff927380416666f0a0c9f350b84145fc5e7567e9f48cd"
+  },
+  "open-logic/include/open-logic-section.tex": {
+    "source": "olp",
+    "path": "include/open-logic-section.tex",
+    "pinned_sha256": "ec19546024e721960520d46aec3005ad4473b683700e1666c1a71f7d94de2de0",
+    "output_sha256": "ec19546024e721960520d46aec3005ad4473b683700e1666c1a71f7d94de2de0"
+  },
+  "open-logic/LICENSE.md": {
+    "source": "olp",
+    "path": "LICENSE.md",
+    "pinned_sha256": "bb5e0179a1e9bdb55634a4303784cf73c297a1dcee27b92cd546bf398075531c",
+    "output_sha256": "bb5e0179a1e9bdb55634a4303784cf73c297a1dcee27b92cd546bf398075531c"
+  },
+  "open-logic/open-logic-config.sty": {
+    "source": "olp",
+    "path": "open-logic-config.sty",
+    "pinned_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724",
+    "output_sha256": "76af3674c68139572b71de9908d690700cd7e324d221d649930ecda020935724"
+  },
+  "open-logic/open-logic-envs.sty": {
+    "source": "olp",
+    "path": "open-logic-envs.sty",
+    "pinned_sha256": "8a6b92568975935135b7a2b138a7b8dbcffc33c1553cd6bb00d953aa5a312d65",
+    "output_sha256": "8a6b92568975935135b7a2b138a7b8dbcffc33c1553cd6bb00d953aa5a312d65"
+  },
+  "open-logic/open-logic-locale.sty": {
+    "source": "olp",
+    "path": "open-logic-locale.sty",
+    "pinned_sha256": "8b5a2d82439fbadcd10f52c2509a1c7559fb507c880e8a14f4faafc0d0aa29f9",
+    "output_sha256": "8b5a2d82439fbadcd10f52c2509a1c7559fb507c880e8a14f4faafc0d0aa29f9"
+  },
+  "open-logic/sty/bpextra.sty": {
+    "source": "olp",
+    "path": "sty/bpextra.sty",
+    "pinned_sha256": "84a3738910ad1eb1960ddb70b5f7cd458f027a9ff912912a56f0c7325832e322",
+    "output_sha256": "84a3738910ad1eb1960ddb70b5f7cd458f027a9ff912912a56f0c7325832e322"
+  },
+  "open-logic/sty/bussproofs-extra.sty": {
+    "source": "olp",
+    "path": "sty/bussproofs-extra.sty",
+    "pinned_sha256": "4b678f8c9b57fdb270ed12aeac66b9da234b99956c685d4c1fd1def14575caf2",
+    "output_sha256": "4b678f8c9b57fdb270ed12aeac66b9da234b99956c685d4c1fd1def14575caf2"
+  },
+  "open-logic/sty/open-logic-book-envs.sty": {
+    "source": "olp",
+    "path": "sty/open-logic-book-envs.sty",
+    "pinned_sha256": "b3ae7d0525abebea87a05bc3501d730b6d1eadd0f4d790135c73d27458f21391",
+    "output_sha256": "b3ae7d0525abebea87a05bc3501d730b6d1eadd0f4d790135c73d27458f21391"
+  },
+  "open-logic/sty/open-logic-book.cls": {
+    "source": "olp",
+    "path": "sty/open-logic-book.cls",
+    "pinned_sha256": "d193f6cc5c4671680e7d2d0e7d47302500a589ef401e343020b1d7c684e86dd2",
+    "output_sha256": "932f4993c1d345c846eb17cf80d6b47570a6d84575cb28d0ea044eff536c1b8e"
+  },
+  "open-logic/sty/open-logic-debug.sty": {
+    "source": "olp",
+    "path": "sty/open-logic-debug.sty",
+    "pinned_sha256": "394fafe5d28498f099b8c2eb168f8b8769d2b7ad27b4fb76ecd236f214f9e073",
+    "output_sha256": "394fafe5d28498f099b8c2eb168f8b8769d2b7ad27b4fb76ecd236f214f9e073"
+  },
+  "open-logic/sty/open-logic-defer.sty": {
+    "source": "olp",
+    "path": "sty/open-logic-defer.sty",
+    "pinned_sha256": "303d1930a644e77e6a8ba2071e86b4c9ea031ab5927cff4afc21337f427099f3",
+    "output_sha256": "303d1930a644e77e6a8ba2071e86b4c9ea031ab5927cff4afc21337f427099f3"
+  },
+  "open-logic/sty/open-logic-formulas.sty": {
+    "source": "olp",
+    "path": "sty/open-logic-formulas.sty",
+    "pinned_sha256": "e423085b198e355af8bbffea36afd511528eca67089cafb88f97b224a9242011",
+    "output_sha256": "e423085b198e355af8bbffea36afd511528eca67089cafb88f97b224a9242011"
+  },
+  "open-logic/sty/open-logic-referencing.sty": {
+    "source": "olp",
+    "path": "sty/open-logic-referencing.sty",
+    "pinned_sha256": "70b8b92d71ebf121794f886d1a495a543aaf6bb732ecbad7730bfed9d4def837",
+    "output_sha256": "70b8b92d71ebf121794f886d1a495a543aaf6bb732ecbad7730bfed9d4def837"
+  },
+  "open-logic/sty/open-logic-selective.sty": {
+    "source": "olp",
+    "path": "sty/open-logic-selective.sty",
+    "pinned_sha256": "85c9d7bfe98984922692681fbb16d784e99d33da6c1ead2e44b89a5048c93503",
+    "output_sha256": "85c9d7bfe98984922692681fbb16d784e99d33da6c1ead2e44b89a5048c93503"
+  },
+  "open-logic/sty/open-logic-tokenize.sty": {
+    "source": "olp",
+    "path": "sty/open-logic-tokenize.sty",
+    "pinned_sha256": "e6b0287892308cff1effa7475894dbaef3a10dd0ed0769b7d2c768f9079387c2",
+    "output_sha256": "e6b0287892308cff1effa7475894dbaef3a10dd0ed0769b7d2c768f9079387c2"
+  },
+  "open-logic/sty/open-logic.sty": {
+    "source": "olp",
+    "path": "sty/open-logic.sty",
+    "pinned_sha256": "ee7daec60886ba3813d10ac64686646e81f50d149affb4b35596fd6366aae9ad",
+    "output_sha256": "150a7396bf6e09014b384558d9bbb57ef316b9604ded0bef93cda5d15f1fc995"
+  },
+  "open-logic/sty/ptolemaicastronomy.sty": {
+    "source": "olp",
+    "path": "sty/ptolemaicastronomy.sty",
+    "pinned_sha256": "450f79a006fbf105046f366f31d4243d6b8a4903783d8ae05717c4106c9aad85",
+    "output_sha256": "450f79a006fbf105046f366f31d4243d6b8a4903783d8ae05717c4106c9aad85"
+  }
+}

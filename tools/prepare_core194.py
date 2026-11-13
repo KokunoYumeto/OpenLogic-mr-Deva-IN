@@ -5,6 +5,8 @@ import json
 import re
 import runpy
 from pathlib import Path
+from marathi_reader_source import project_locale
+from complete_reader_context_layout import project_complete_context_layout
 
 
 P = Path(__file__).resolve().parents[1]
@@ -215,6 +217,7 @@ def normalize_two_argument_iftags(text):
 
 
 def selected(text):
+    text = project_complete_context_layout(text)
     text = strip_reader_notes_preserve_suffix(text)
     text = select_probtag(text)
     text = select_extended_tagprobs(text)
@@ -289,6 +292,7 @@ def token_word(token, suffix=""):
 
 
 def replace_reader_tokens(text):
+    text = project_locale(text)
     # In five translated undecidability files, a semantic token is sometimes
     # followed by the same Marathi noun, already inflected for its sentence.
     # Remove only that redundant token and keep the explicit noun/case form.
@@ -313,7 +317,7 @@ def replace_reader_tokens(text):
     )
     text = re.sub(
         r"\\(?:use|print)token\{[^{}]+\}\{([^{}]+)\}",
-        lambda match: token_word(match.group(1)),
+        lambda match: "टॅब्लो" if match.group(1) == "tableau" else token_word(match.group(1)),
         text,
     )
     text = re.sub(r"\\(?:Article|article)\{[^{}]+\}\s*", "", text)

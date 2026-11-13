@@ -6,7 +6,7 @@
 
 \begin{document}
 
-\olfileid{sfr}{siz}{pai-alt}
+\olfileid[mr]{sfr}{siz}{pai-alt}
 
 \olsection{एक पर्यायी जोडीकरण फलन}
 
@@ -19,12 +19,12 @@ $\tuple{n,m}$ जोड्यांनी भरत आहोत, अशी क�
 असलेल्या जोड्यांपासून (म्हणजे $\tuple{0,m}$ जोड्यांपासून) सुरुवात करा.
 पहिली जोडी (म्हणजे $\tuple{0,0}$) पहिल्या रिकाम्या जागेत ठेवा; मग एक
 रिकामी जागा सोडून दुसरी जोडी पुढील रिकाम्या जागेत ठेवा आणि पुन्हा एक
-जागा सोडा; ही प्रक्रिया अशीच पुढे चालू ठेवा. गोठवलेल्या इंग्रजी
-मजकुरात दुसरी जोडी $\tuple{0,2}$ अशी दिली आहे; परंतु खालील सारणीनुसार
-येथे 〈0,1〉 अभिप्रेत आहे. आता आपल्या प्रगणनाची (अपूर्ण) सुरुवात अशी
+जागा सोडा; ही प्रक्रिया अशीच पुढे चालू ठेवा. दुसरी जोडी
+$\tuple{0,1}$ तिसऱ्या जागेत येते. आता आपल्या प्रगणनाची (अपूर्ण) सुरुवात अशी
 दिसते:
 %READERNOTE{MRSIZ-003: गोठवलेल्या इंग्रजी मजकुरात एक रिकामी जागा सोडल्यानंतरची दुसरी जोडी 〈0,2〉 अशी दिली आहे, पण लगेचची सारणी आणि वर्णनाची क्रमवार रचना ती 〈0,1〉 असावी हे दाखवतात. सूत्र-संरचना जशीच्या तशी ठेवून मराठी मजकुरात अपेक्षित जोडी स्पष्ट केली आहे.}
-\[\small
+\[
+\ifdefined\SLCPairingArrayLayout\SLCPairingArrayLayout{3pt}\else\small\fi
 \begin{array}{@{}c c c c c c c c c c c@{}}
 \mathbf 1 & \mathbf 2 & \mathbf 3 & \mathbf 4 & \mathbf 5 & \mathbf 6 & \mathbf 7 & \mathbf 8 & \mathbf 9 & \mathbf{10} & \dots \\ \\
 \tuple{0,0} &  & \tuple{0,1} &  & \tuple{0,2} &  & \tuple{0,3} & & \tuple{0,4} &  & \dots \\
@@ -32,7 +32,8 @@ $\tuple{n,m}$ जोड्यांनी भरत आहोत, अशी क�
 \]
 अजून रिकाम्या राहिलेल्या जागांसाठी $\tuple{1,m}$ जोड्यांबाबत हीच
 प्रक्रिया पुन्हा करा; पुन्हा प्रत्येक दुसरी रिकामी जागा वगळा:
-\[\small
+\[
+\ifdefined\SLCPairingArrayLayout\SLCPairingArrayLayout{3pt}\else\small\fi
 \begin{array}{@{}c c c c c c c c c c c@{}}
 \mathbf 1 & \mathbf 2 & \mathbf 3 & \mathbf 4 & \mathbf 5 & \mathbf 6 & \mathbf 7 & \mathbf 8 & \mathbf 9 & \mathbf{10} & \dots \\ \\
 \tuple{0,0} & \tuple{1,0} & \tuple{0,1} &  & \tuple{0,2} & \tuple{1,1} & 
@@ -43,7 +44,8 @@ $\tuple{n,m}$ जोड्यांनी भरत आहोत, अशी क�
 भरा; त्यापुढेही पहिला घटक अनुक्रमे 4, 5, इत्यादी करत पुढे जायचे आहे.
 आपल्या पूर्ण प्रगणनाची सुरुवात म्हणून अशी दिसते:
 %READERNOTE{OLSIZ-003: गोठवलेल्या इंग्रजी मजकुरात “pairs 〈2,m〉, 〈2,m〉, etc.” अशी पुनरुक्ती आहे. पूर्ण सारणीतील 〈3,0〉 आणि पुढील सर्व ओळींवरून दुसऱ्या ठिकाणी 〈3,m〉 अभिप्रेत असल्याचे निश्चित होते; मराठी मजकुरात दुसरी जोडी त्यानुसार दुरुस्त केली आहे.}
-\[\small
+\[
+\ifdefined\SLCPairingArrayLayout\SLCPairingArrayLayout{2pt}\else\small\fi
 \begin{array}{@{}cc c c c c c c c c c@{}}
 \mathbf 1 & \mathbf 2 & \mathbf 3 & \mathbf 4 & \mathbf 5 & \mathbf 6 & \mathbf 7 & \mathbf 8 & \mathbf 9 & \mathbf{10} & \dots \\ \\
 \tuple{0,0} & \tuple{1,0} & \tuple{0,1} & \tuple{2,0}  & \tuple{0,2} & 

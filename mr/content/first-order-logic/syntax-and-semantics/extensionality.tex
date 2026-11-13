@@ -6,15 +6,15 @@
 
 \begin{document}
 
-\olfileid{fol}{syn}{ext}
+\olfileid[mr]{fol}{syn}{ext}
 
 \olsection{विस्तारात्मकता}
 
 \begin{explain}
 विस्तारात्मकता, जिला कधीकधी संबद्धता म्हणतात, अनौपचारिकपणे पुढीलप्रमाणे
-व्यक्त करता येते: !!a{structure}~$\Struct M$ मध्ये !!a{variable} च्या
+व्यक्त करता येते: !!a{structure}~$\Struct M$ मध्ये \printtoken{oblique}{variable}च्या
 मूल्यांकन~$s$ च्या सापेक्ष !!{formula}~$!A$ ची पूर्ति होण्यावर परिणाम
-करणारे घटक म्हणजे फक्त !!{domain} चा आकार आणि~$!A$ मध्ये प्रत्यक्ष
+करणारे घटक म्हणजे फक्त \printtoken{oblique}{domain}चा आकार आणि~$!A$ मध्ये प्रत्यक्ष
 येणाऱ्या भाषेच्या घटकांना~$\Struct M$ व~$s$ यांनी केलेल्या नेमणुका.
 
 विस्तारात्मकतेचा एक तात्काळ परिणाम असा आहे: दोन !!{structure}s
@@ -47,7 +47,7 @@ $\Struct M$ आणि~$\Struct M'$ यांचा प्रांत एकच 
 \olref[fol][syn][ext]{prop:extensionality} ची सिद्धता सविस्तर पूर्ण करा.
 \end{prob}
 
-\begin{cor}[!!^{sentence}s साठी विस्तारात्मकता]
+\begin{cor}[\printtoken{oblique plural}{sentence}साठी विस्तारात्मकता]
   \ollabel{cor:extensionality-sent}
   $!A$ हे !!a{sentence} आणि $\Struct{M_1}$, $\Struct{M_2}$ या
   \olref{prop:extensionality} मधीलप्रमाणे असू द्या. मग
@@ -59,8 +59,9 @@ $\Struct M$ आणि~$\Struct M'$ यांचा प्रांत एकच 
 हे निष्पन्न होते.
 \end{proof}
 
-शिवाय, पदाचे मूल्य आणि !!a{structure} ही !!a{formula} ची पूर्ति करते की
-नाही, हे फक्त तिच्या उपपदांच्या मूल्यांवर अवलंबून असते.
+शिवाय, दिलेल्या रचनेत एखाद्या पदाचे मूल्य त्या पदाच्या उपपदांच्या
+मूल्यांवरच अवलंबून असते. एखाद्या \printtoken{oblique}{formula}ची पूर्ति होते की
+नाही, हे त्या \printtoken{oblique}{formula}तील उपपदांच्या मूल्यांवरच अवलंबून असते.
 
 \begin{prop}\ollabel{prop:ext-terms}
 $\Struct M$ ही !!a{structure}, $t$ व~$t'$ ही पदे आणि $s$ हे
@@ -97,8 +98,7 @@ $t$ वरील विगमनाने सिद्ध करू.
 & = \Assign{f}{M}(\Value{t_1}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}], \dots,
    \Value{t_n}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}])\\
 & \qquad    \text{विगमन गृहीतकानुसार}\\
-& = \Value{t}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]
-    \text{$\Value{\Atom{f}{\dots}}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$ च्या व्याख्येनुसार}
+& = \Value{t}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]\olmrproofreasonbreak{}\text{$\Value{\Atom{f}{\dots}}{M}[\Subst{s}{\Value{t'}{M}[s]}{x}]$ च्या व्याख्येनुसार}
   \end{aligned}
 \end{multline*}
 %READERNOTE{OLFOL-022: गोठवलेल्या इंग्रजी गणनेच्या पहिल्या ओळीच्या शेवटी आणि पुढील ओळीच्या सुरुवातीला सलग दोन समानताचिन्हे दिसतात. मराठी आवृत्तीत पहिल्या ओळीचे अनावश्यक चिन्ह काढले आहे.}
@@ -126,11 +126,11 @@ $\Sat{M}{!A}[\Subst{s}{\Value{t'}{M}[s]}{x}]$.
   आशय पुढीलप्रमाणे आहे. आपल्याजवळ पद~$t$ किंवा !!a{formula}~$!A$ आणि
   दुसरे पद~$t'$ असून, $\Subst{t}{t'}{x}$ चे मूल्य किंवा
   $\Subst{!A}{t'}{x}$ ची !!a{structure}~$\Struct M$ मध्ये
-  !!a{variable} च्या मूल्यांकन~$s$ च्या सापेक्ष पूर्ति होते की नाही हे
+  \printtoken{oblique}{variable}च्या मूल्यांकन~$s$ च्या सापेक्ष पूर्ति होते की नाही हे
   जाणून घ्यायचे आहे असे समजा. मग आपण प्रथम आदेशन करून नंतर
   $\Struct{M}$ आणि~$s$ यांच्या सापेक्ष मूल्य किंवा पूर्ति विचारात घेऊ
   शकतो; किंवा प्रथम~$\Struct{M}$ मध्ये~$s$ च्या सापेक्ष~$t'$ चे
-  मूल्य~$m = \Value{t'}{M}[s]$ ठरवून, !!{variable} चे मूल्यांकन
+  मूल्य~$m = \Value{t'}{M}[s]$ ठरवून, \printtoken{oblique}{variable}चे मूल्यांकन
   बदलून~$\Subst{s}{m}{x}$ करू शकतो, आणि नंतर~$\Struct{M}$ व
   $\Subst{s}{m}{x}$ यांच्या सापेक्ष~$t$ चे मूल्य किंवा
   $\Sat{M}{!A}[\Subst{s}{m}{x}]$ आहे की नाही हे विचारात घेऊ शकतो.

@@ -6,17 +6,17 @@
 
 \begin{document}
 
-\olfileid{fol}{syn}{ass}
+\olfileid[mr]{fol}{syn}{ass}
 
 \olsection{चर-मूल्यांकने}
 
 \begin{explain}
-!!{variable} चे मूल्यांकन~$s$ हे \emph{प्रत्येक} चराला मूल्य देते---आणि
-चरे अनंत असतात. अर्थात, हे आवश्यक नाही. आपण !!{variable} च्या
-मूल्यांकनांनी सर्व !!{variable}s ना मूल्ये नेमावीत अशी अट घालतो, कारण
+\printtoken{oblique}{variable}चे मूल्यांकन~$s$ हे \emph{प्रत्येक} चराला मूल्य देते---आणि
+चरे अनंत असतात. अर्थात, हे आवश्यक नाही. आपण \printtoken{oblique}{variable}च्या
+मूल्यांकनांनी सर्व \printtoken{oblique plural}{variable}ना मूल्ये नेमावीत अशी अट घालतो, कारण
 त्यामुळे गोष्टी खूप सोप्या होतात. पद~$t$ चे मूल्य आणि !!a{formula}~$!A$
-ची !!a{structure} मध्ये~$s$ च्या सापेक्ष पूर्ति होते की नाही, हे फक्त
-$t$ मध्ये येणाऱ्या !!{variable}s ना आणि~$!A$ च्या मुक्त !!{variable}s ना
+ची \printtoken{oblique}{structure}त~$s$ च्या सापेक्ष पूर्ति होते की नाही, हे फक्त
+$t$ मध्ये येणाऱ्या \printtoken{oblique plural}{variable}ना आणि~$!A$ च्या मुक्त \printtoken{oblique plural}{variable}ना
 $s$ ने केलेल्या नेमणुकांवर अवलंबून असते. पुढील दोन विधानांचा आशय हाच
 आहे. “अवलंबून असणे” ही कल्पना नेमकी करण्यासाठी आपण दोन गोष्टी दाखवतो:
 $t$ मधील सर्व चरांवर एकमत असणारी कोणतीही दोन चर-मूल्यांकने तेच मूल्य
@@ -92,7 +92,7 @@ $\eq[t_1][t_2]$. शेवटच्या दोन बाबतींत आप
     $\langle \Value{t_1}{M}[s_2], \ldots, \Value{t_k}{M}[s_2] \rangle
     \in \Assign{R}{M}$ हेसुद्धा आहे; आणि म्हणून
     $\Sat{M}{\indfrm}[s_2]$.
-    }
+    }%
 \item
   \indcase{!A}{\eq[t_1][t_2]}{$\Sat{M}{\indfrm}[s_1]$ असे समजू.
     मग $\Value{t_1}{M}[s_1] = \Value{t_2}{M}[s_1]$. म्हणून,
@@ -197,7 +197,7 @@ $\Sat{M}{!B}[s_2]$, असे समजू. विगमन पायरी~$!A$
       $m \in \Domain{M}$ ला लागू होते, म्हणजे सर्व~$m \in \Domain{M}$
       साठी $\Sat{M}{!B}[\Subst{s_2}{m}{x}]$; म्हणून
       $\Sat{M}{\indfrm}[s_2]$.
-      }}}
+      }}}%
 \end{enumerate}
 विगमनाने आपल्याला पुढील निष्कर्ष मिळतो: $!A$ मधील मुक्त !!{variable}s
 ही $x_1$, \dots, $x_n$ यांपैकी असतील आणि $i = 1$, \dots,~$n$ साठी
@@ -210,12 +210,12 @@ $s_1(x_i)=s_2(x_i)$ असेल, तेव्हा $\Sat{M}{!A}[s_1]$ ते�
 \end{probtag}
 
 \begin{explain}
-!!^{sentence}s मध्ये मुक्त चरे नसतात; म्हणून कोणतीही दोन चर-मूल्यांकने
+\printtoken{oblique plural}{sentence}मध्ये मुक्त चरे नसतात; म्हणून कोणतीही दोन चर-मूल्यांकने
 कोणत्याही वाक्याच्या सर्व (शून्य) मुक्त चरांना त्याच गोष्टी नेमून देतात.
-आत्ताच सिद्ध केलेल्या विधानाचा अर्थ मग असा होतो की !!a{sentence} ची
+आत्ताच सिद्ध केलेल्या विधानाचा अर्थ मग असा होतो की \printtoken{oblique}{sentence}ची
 एखाद्या रचनेत चर-मूल्यांकनाच्या सापेक्ष पूर्ति होते की नाही, हे पूर्णपणे
 त्या मूल्यांकनापासून स्वतंत्र असते. हे तथ्य आपण नोंदवू. पुढे येणारी
-!!a{sentence} ची !!a{structure} मधील पूर्तिची व्याख्या (चर-मूल्यांकनाचा
+\printtoken{oblique}{sentence}ची \printtoken{oblique}{structure}मधील पूर्तिची व्याख्या (चर-मूल्यांकनाचा
 उल्लेख न करता) त्यामुळे समर्थित होते.
 \end{explain}
 
@@ -243,12 +243,12 @@ $!A$ हे !!a{sentence} असेल, तर !!a{structure}~$\Struct M$ ही
 \end{defn}
 
 $\Sat{M}{!A}$ असेल, तर आपण सरळ \emph{$!A$ हे~$\Struct{M}$ मध्ये सत्य
-आहे} असेही म्हणतो. पूर्तिची संकल्पना स्वतंत्र !!{sentence}s पासून
-!!{sentence}s च्या संचांपर्यंत स्वाभाविकपणे विस्तारते.
+आहे} असेही म्हणतो. पूर्तिची संकल्पना स्वतंत्र \printtoken{oblique plural}{sentence}पासून
+\printtoken{oblique plural}{sentence}च्या संचांपर्यंत स्वाभाविकपणे विस्तारते.
 
 \begin{defn}
 \ollabel{defn:sat}
-$\Gamma$ हा !!{sentence}s चा संच असेल, तर !!a{structure}~$\Struct M$
+$\Gamma$ हा \printtoken{oblique plural}{sentence}चा संच असेल, तर !!a{structure}~$\Struct M$
 ही~$\Gamma$ ची \emph{पूर्ति करते}, $\Sat{M}{\Gamma}$, असे आपण तेव्हा
 आणि केवळ तेव्हाच म्हणतो, जेव्हा प्रत्येक $!A \in \Gamma$ साठी
 $\Sat{M}{!A}$.

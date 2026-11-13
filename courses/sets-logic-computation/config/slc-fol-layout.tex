@@ -1,0 +1,33 @@
+% Pagination and proof sizing for the Marathi Sets, Logic, Computation reader.
+\newcount\slcFolLayoutOccurrence
+
+% Imports group the file IDs. The occurrence count must also span example
+% groups within a file, so restart it at each file ID and advance it globally.
+\AddToHook{cmd/olfileid/after}[slc-fol-layout]{%
+  \global\slcFolLayoutOccurrence=0\relax
+}
+
+\newcommand*{\slcFolLayoutAt}[1]{%
+  \ifcsdef{slcFolLayout/#1/\theolpart/\theolchapter/\theolsection}{%
+    \global\advance\slcFolLayoutOccurrence by 1\relax
+    \csuse{slcFolLayout/#1/\theolpart/\theolchapter/\theolsection}%
+  }{}%
+}
+
+\newcommand*{\slcFolLayoutOn}[4]{%
+  \csdef{slcFolLayout/#1/#2}{%
+    \ifnum\slcFolLayoutOccurrence=#3\relax
+      #4%
+    \fi
+  }%
+}
+
+\slcFolLayoutOn{subsection}{fol/seq/prl}{2}{\Needspace{4\baselineskip}}
+\slcFolLayoutOn{subsection}{fol/seq/qrl}{2}{\Needspace{4\baselineskip}}
+\slcFolLayoutOn{subsection}{fol/ntd/prl}{4}{\Needspace{6\baselineskip}}
+\slcFolLayoutOn{problem}{fol/ntd/prq}{1}{\Needspace{5\baselineskip}}
+\slcFolLayoutOn{proof}{fol/ntd/pro}{15}{\small}
+
+\AddToHook{cmd/subsection/before}[slc-fol-layout]{\slcFolLayoutAt{subsection}}
+\AddToHook{env/prob/before}[slc-fol-layout]{\slcFolLayoutAt{problem}}
+\AddToHook{env/prooftree/begin}[slc-fol-layout]{\slcFolLayoutAt{proof}}

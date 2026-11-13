@@ -1,0 +1,39 @@
+% XeLaTeX and the fonts used by the complete-v1.2 Marathi Open Logic edition.
+% Retain Open Logic's math alphabets, symbols and specialized Greek text.
+\usepackage{iftex}
+\RequireXeTeX
+% Preserve logical Unicode order in search and copied text after shaping.
+\XeTeXgenerateactualtext=1\relax
+% Supply text extraction maps for the four legacy NewTX symbol fonts.
+\AtBeginDvi{\special{pdf:mapfile fonts/slc-newtx-unicode.map}}
+\usepackage[no-math]{fontspec}
+\setmainfont{OLMarathiSerif-Regular.ttf}[
+  Path=fonts/,
+  Script=Devanagari,
+  Language=Marathi,
+  BoldFont=OLMarathiSerif-Bold.ttf,
+  ItalicFont=OLMarathiSerif-Regular.ttf,
+  BoldItalicFont=OLMarathiSerif-Bold.ttf,
+  ItalicFeatures={FakeSlant=0.15},
+  BoldItalicFeatures={FakeSlant=0.15}
+]
+\setsansfont{OLMarathiSerif-Regular.ttf}[
+  Path=fonts/,
+  Script=Devanagari,
+  Language=Marathi,
+  BoldFont=OLMarathiSerif-Bold.ttf,
+  ItalicFont=OLMarathiSerif-Regular.ttf,
+  BoldItalicFont=OLMarathiSerif-Bold.ttf,
+  ItalicFeatures={FakeSlant=0.15},
+  BoldItalicFeatures={FakeSlant=0.15}
+]
+% The screen class's Baskervaldx package changes \rmdefault at the end
+% of the preamble. Restore the Marathi text family after that hook.
+\edef\slcRomanFamily{\rmdefault}
+\AtEndPreamble{%
+  \let\rmdefault\slcRomanFamily
+  \normalfont
+}
+\linespread{1.18}
+\setlength{\emergencystretch}{3em}
+\tracinglostchars=2

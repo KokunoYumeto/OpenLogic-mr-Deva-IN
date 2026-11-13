@@ -1,0 +1,5 @@
+% Preserve the NewTX Type 1 font and its built-in encoding.
+txexs default txexs.pfb -u fonts/slc-txexs.cmap
+txexas default txexas.pfb -u fonts/slc-txexas.cmap
+txsys default txsys.pfb -u fonts/slc-txsys.cmap
+txsyc default txsyc.pfb -u fonts/slc-txsyc.cmap

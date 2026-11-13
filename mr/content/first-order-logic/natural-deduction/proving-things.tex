@@ -7,15 +7,15 @@
 \begin{document}
 
 \iftag{FOL}
-      {\olfileid{fol}{ntd}{pro}}
-      {\olfileid{pl}{ntd}{pro}}
+      {\olfileid[mr]{fol}{ntd}{pro}}
+      {\olfileid[mr]{pl}{ntd}{pro}}
 
 \olsection{\usetoken{P}{derivation}: उदाहरणे}
 
 \begin{ex}
 !!{sentence} $(!A \land !B) \lif !A$ ची !!a{derivation} देऊ.
 
-हवा असलेला निष्कर्ष !!{derivation} च्या तळाशी लिहून आपण सुरुवात करतो.
+हवा असलेला निष्कर्ष \printtoken{oblique}{derivation}च्या तळाशी लिहून आपण सुरुवात करतो.
 \begin{prooftree}
 \AxiomC{}
 \UnaryInfC{$(!A\land !B) \lif !A$}
@@ -25,7 +25,7 @@
 शोधावे लागते. निष्कर्षाचा !!{main operator} हा $\lif$ आहे; म्हणून
 \Intro{\lif} नियम वापरून निष्कर्षापर्यंत पोहोचण्याचा प्रयत्न करू. काम पुढे
 जाताना संबंधित गृहीतके लिहून ठेवणे आणि निगमन नियमांना लेबले देणे उत्तम;
-त्यामुळे सिद्धतेच्या शेवटी सर्व गृहीतके !!{discharged} झाली आहेत का हे सहज
+त्यामुळे सिद्धतेच्या शेवटी सर्व गृहीतके !!{discharge} झाली आहेत का हे सहज
 दिसते.
 \begin{prooftree}
 \AxiomC{$\Discharge{!A \land !B}{1}$}
@@ -50,14 +50,14 @@
 \begin{ex}
 आता $(\lnot !A \lor !B) \lif (!A \lif !B)$ ची !!a{derivation} देऊ.
 
-हवा असलेला निष्कर्ष !!{derivation} च्या तळाशी लिहून आपण सुरुवात करतो.
+हवा असलेला निष्कर्ष \printtoken{oblique}{derivation}च्या तळाशी लिहून आपण सुरुवात करतो.
 \begin{prooftree}
 \AxiomC{}
 \UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
 \end{prooftree}
 हा निष्कर्ष देऊ शकणारा तार्किक नियम शोधण्यासाठी निष्कर्षातील $\lnot$,
 $\lor$ आणि $\lif$ हे तार्किक संयोजक पाहतो. सध्या $\lif$ ची पहिली आस्थितीच
-महत्त्वाची आहे, कारण अंतिम क्रमवर्तीतील !!{sentence} चा तो !!{main operator}
+महत्त्वाची आहे, कारण निष्कर्ष म्हणून आलेल्या \printtoken{oblique}{sentence}चा तो !!{main operator}
 आहे; $\lnot$, $\lor$ आणि $\lif$ ची दुसरी आस्थिती दुसऱ्या संयोजकाच्या
 व्याप्तीत असल्यामुळे त्यांचा विचार नंतर करू. म्हणून आपण \Intro{\lif}
 नियमाने सुरुवात करतो. त्याचे योग्य उपयोजन पुढीलप्रमाणे असले पाहिजे:
@@ -106,7 +106,7 @@ $!A \lif !B$ या निष्कर्षाशी एकरूप असल�
 \UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
 \end{prooftree}
 
-!!{derivation} च्या उरलेल्या दोन भागांसाठी, मधल्या भागात $\lnot !A$ आणि
+\printtoken{oblique}{derivation}च्या उरलेल्या दोन भागांसाठी, मधल्या भागात $\lnot !A$ आणि
 $!A$ यांपासून, तर उजवीकडील भागात $!A$ आणि $!B$ यांपासून, $!B$ मिळवणाऱ्या
 !!{derivation}s हवी आहेत. यांपैकी पहिली आधी घेऊ. $\lnot !A$ आणि $!A$ ही
 \Elim{\lnot} ची दोन आधारविधाने आहेत:
@@ -122,7 +122,7 @@ $!A$ यांपासून, तर उजवीकडील भागात $
 \AxiomC{$\Discharge{\lnot !A \lor !B}{1}$}
 \AxiomC{$\Discharge{\lnot !A}{2}$}
 \AxiomC{$\Discharge{!A}{3}$}
-\RightLabel{\Intro{\lfalse}}
+\RightLabel{\Elim{\lnot}}
 \BinaryInfC{$\lfalse$}
 \RightLabel{\FalseInt}
 \UnaryInfC{$!B$}
@@ -139,7 +139,7 @@ $!A$ यांपासून, तर उजवीकडील भागात $
 \end{prooftree}
 
 आता सर्वांत उजवी शाखा पाहू. येथे हे लक्षात घेणे महत्त्वाचे आहे की
-!!{derivation} ची व्याख्या
+\printtoken{oblique}{derivation}ची व्याख्या
 \emph{गृहीतके मुक्त करण्याची परवानगी देते}, पण
 \emph{तसे करणे आवश्यक ठरवत नाही}. दुसऱ्या शब्दांत, $!A$ आणि $!B$ या
 गृहीतकांपैकी एकाचा उपयोग न करता दुसऱ्यापासून $!B$ निष्पन्न करता येत असेल,
@@ -164,7 +164,7 @@ $!A$ यांपासून, तर उजवीकडील भागात $
 \DischargeRule{\Intro{\lif}}{1}
 \UnaryInfC{$(\lnot !A \lor !B) \lif (!A \lif !B)$}
 \end{prooftree}
-लक्षात घ्या की पूर्ण झालेल्या !!{derivation} मध्ये सर्वांत उजवीकडील
+लक्षात घ्या की पूर्ण झालेल्या \printtoken{oblique}{derivation}मध्ये सर्वांत उजवीकडील
 \Intro{\lif} अनुमान प्रत्यक्षात कोणतेही गृहीतक मुक्त करत नाही.
 \end{ex}
 

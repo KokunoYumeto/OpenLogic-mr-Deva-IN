@@ -6,6 +6,7 @@ import re
 import subprocess
 import sys
 from pathlib import Path
+from marathi_reader_source import project_locale, read_source
 
 
 P = Path(__file__).resolve().parents[1]
@@ -108,6 +109,7 @@ def expand_tag_command(text, command):
 
 
 def select_tags(text):
+    text = project_locale(text)
     tagblock = re.compile(
         r"\\begin\{tagblock\}\{([^}]*)\}(.*?)\\end\{tagblock\}", re.S
     )
@@ -226,7 +228,7 @@ def reader_note(value):
 
 
 def editorial(path):
-    text = path.read_text(encoding="utf-8")
+    text = read_source(path)
     match = re.search(r"\\begin\{editorial\}.*?\\end\{editorial\}", text, re.S)
     assert match
     return replace_tokens(match.group())

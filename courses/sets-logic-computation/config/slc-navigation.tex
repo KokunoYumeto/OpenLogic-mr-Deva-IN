@@ -1,0 +1,43 @@
+% Keep Roman front-matter folios and A–D appendix letters. Babel supplies
+% Devanagari digits for the chapter, section and statement displays.
+\renewcommand*{\thechapter}{\marathicounter{chapter}}
+\renewcommand*{\thesection}{\thechapter.\marathicounter{section}}
+\renewcommand*{\thesubsection}{\thesection.\marathicounter{subsection}}
+\renewcommand*{\thesubsubsection}{\thesubsection.\marathicounter{subsubsection}}
+% MakeIndex expects ASCII glossary locations. Convert folio digits only
+% when printing them in the header or the table of contents.
+\newcommand*{\slcDisplayDigits}[1]{\expanded{\noexpand\marathidigits{#1}}}
+\setpnumwidth{1.8em}
+\setrmarg{2.8em}
+\newcommand*{\slcUseSharedTheoremNumber}[1]{\csdef{the#1}{\thethm}}
+\AtBeginDocument{%
+  % Set printed counters after the class and theorem package hooks.
+  \renewcommand*{\thethm}{\thechapter.\marathicounter{thm}}%
+  % The theorem backend retains separate printed forms for sibling labels.
+  \forcsvlist{\slcUseSharedTheoremNumber}{ex,lem,prop,cor,defn,conv}%
+  \renewcommand*{\theprob}{\thechapter.\marathicounter{prob}}%
+  \renewcommand*{\theprobd}{\probch.\marathicounter{probd}}%
+  \renewcommand*{\theenumi}{\marathicounter{enumi}}%
+  \renewcommand*{\thefootnote}{\marathicounter{footnote}}%
+  \makeoddfoot{plain}{}{\slcDisplayDigits{\thepage}}{}%
+  \makeevenfoot{plain}{}{\slcDisplayDigits{\thepage}}{}%
+  \makeoddhead{OLPpage}{\small\sffamily\color{OLPcolor}\leftmark}{}{%
+    \color{OLPcolor}\sffamily\bfseries\slcDisplayDigits{\thepage}}%
+  \makeevenhead{OLPpage}{\small\sffamily\color{OLPcolor}\leftmark}{}{%
+    \color{OLPcolor}\sffamily\bfseries\slcDisplayDigits{\thepage}}%
+}
+\newcommand*{\slcLocalizeContentsPage}[1]{%
+  \csletcs{slcOriginal#1Page}{cft#1formatpnum}%
+  \csdef{cft#1formatpnum}##1{%
+    \csuse{slcOriginal#1Page}{\slcDisplayDigits{##1}}}}
+\forcsvlist{\slcLocalizeContentsPage}{part,chapter,section,subsection,subsubsection}
+
+% Photo credits link to printed page numbers without changing the stored folios.
+\crefformat{page}{#2पृ.~\slcDisplayDigits{#1}#3}
+\Crefformat{page}{#2पृ.~\slcDisplayDigits{#1}#3}
+
+% Memoir resets these formats when it starts numbering main-matter floats.
+\AddToHook{cmd/@memmain@floats/after}{%
+  \renewcommand*{\thefigure}{\thechapter.\marathicounter{figure}}%
+  \renewcommand*{\thetable}{\thechapter.\marathicounter{table}}%
+}

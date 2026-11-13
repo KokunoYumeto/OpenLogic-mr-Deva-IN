@@ -1,0 +1,73 @@
+%!PS-Adobe-3.0 Resource-CMap
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo << /Registry (Adobe) /Ordering (UCS) /Supplement 0 >> def
+/CMapName /SLC-txsys-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<00> <FF>
+endcodespacerange
+57 beginbfchar
+<00> <2212>
+<01> <00B7>
+<02> <00D7>
+<03> <2217>
+<0A> <2297>
+<0E> <25E6>
+<11> <2261>
+<12> <2286>
+<13> <2287>
+<14> <2264>
+<15> <2265>
+<16> <2AAF>
+<18> <223C>
+<19> <2248>
+<1B> <2283>
+<1E> <227A>
+<21> <2192>
+<22> <2191>
+<23> <2193>
+<24> <2194>
+<29> <21D2>
+<2C> <21D4>
+<30> <2032>
+<31> <221E>
+<32> <2208>
+<36> <0338>
+<37> <21A6>
+<38> <2200>
+<39> <2203>
+<3A> <00AC>
+<3B> <2205>
+<3E> <22A4>
+<3F> <22A5>
+<5B> <222A>
+<5C> <2229>
+<5E> <2227>
+<5F> <2228>
+<60> <22A2>
+<64> <2308>
+<65> <2309>
+<66> <007B>
+<67> <007D>
+<68> <27E8>
+<69> <27E9>
+<6A> <007C>
+<6E> <005C>
+<70> <221A>
+<74> <2294>
+<76> <2291>
+<79> <2020>
+<9D> <002F>
+<AE> <20D7>
+<B8> <002B>
+<B9> <0028>
+<BA> <0029>
+<BB> <005B>
+<BC> <005D>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end

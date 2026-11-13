@@ -6,11 +6,11 @@
 
 \begin{document}
 
-\olfileid{fol}{ntd}{ide}
+\olfileid[mr]{fol}{ntd}{ide}
 
-\olsection{\usetoken{P}{derivation} सह \usetoken{S}{identity}}
+\olsection{\usetoken{S}{identity} असलेल्या \usetoken{P}{derivation}}
 
-!!{identity} असलेल्या !!^{derivation}s साठी अतिरिक्त अनुमाननियम आवश्यक असतात.
+!!{identity} असलेल्या \printtoken{oblique plural}{derivation}साठी अतिरिक्त अनुमाननियम आवश्यक असतात.
 
 \begin{defish}
 \AxiomC{}
@@ -52,8 +52,8 @@ $s$ आणि $t$ ही बंद पदे असतील, तर $!A(s), \eq
 \begin{prob}
 $=$ हे सममित आणि संक्रमक दोन्ही आहे हे सिद्ध करा; म्हणजे
 $\lforall[x][\lforall[y][(\eq[x][y] \lif
-    \eq[y][x])]]$ आणि $\lforall[x][\lforall[y][\lforall[z]((\eq[x][y]
-    \land \eq[y][z]) \lif \eq[x][z])]]$ यांच्या
+    \eq[y][x])]]$ आणि $\lforall[x][\lforall[y][\lforall[z][((\eq[x][y]
+    \land \eq[y][z]) \lif \eq[x][z])]]]$ यांच्या
 !!{derivation}s द्या.
 \end{prob}
 
@@ -61,7 +61,7 @@ $\lforall[x][\lforall[y][(\eq[x][y] \lif
 आपण पुढील !!{sentence} !!{derive} करतो:
 \begin{align*}
 & \lforall[x][\lforall[y][((!A(x) \land !A(y)) \lif \eq[x][y])]]
-\intertext{या !!{sentence} पासून:}
+\intertext{या \printtoken{oblique}{sentence}पासून:}
 & \lexists[x][\lforall[y][(!A(y) \lif \eq[y][x])]]
 \end{align*}
 !!{derivation} उलट्या दिशेने विकसित करू:
@@ -112,7 +112,7 @@ $\eq[a][b]$ !!{derive} करतो.
 \end{ex}
 
 \begin{prob}
-पुढील !!{formula}s च्या !!{derivation}s द्या:
+पुढील \printtoken{oblique plural}{formula}च्या !!{derivation}s द्या:
 \begin{enumerate}
 \item $\lforall[x][\lforall[y][((\eq[x][y] \land !A(x)) \lif !A(y))]]$
 \item $\lexists[x][!A(x)] \land \lforall[y][\lforall[z][((!A(y) \land

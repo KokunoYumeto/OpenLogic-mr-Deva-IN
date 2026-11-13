@@ -1,0 +1,9 @@
+\newcommand*{\olmrdefinitionlayout}[1]{\raggedright}
+\newcommand*{\olmrdisplaybreak}[1]{ \\ & }
+\newcommand*{\olmrproofreasonbreak}[1]{\\ & \qquad }
+\newcommand*{\olmrimplicationdisplay}[4]{%
+  \begin{aligned}
+  #1\bigl(#2 &{}\lif{}\\
+   & (#3 \lor #4)\bigr)
+  \end{aligned}%
+}

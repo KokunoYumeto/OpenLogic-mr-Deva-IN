@@ -6,7 +6,7 @@
 
 \begin{document}
 
-\olfileid{fol}{seq}{qpr}
+\olfileid[mr]{fol}{seq}{qpr}
 \olsection{\usetoken{S}{derivability} आणि संख्यापक}
 
 \begin{explain}
@@ -21,8 +21,9 @@
 \end{thm}
 
 \begin{proof}
-$\pi_0$ ही $\Gamma_0 \Sequent !A(c)$ या क्रमवर्तीची $\Log{LK}$-!!{derivation}
-असलेली एखादी सांत $\Gamma_0 \subseteq \Gamma$ घ्या.  $\RightR{\lforall}$
+असा सांत उपसंच~$\Gamma_0 \subseteq \Gamma$ घ्या की
+$\Gamma_0 \Sequent !A(c)$ या क्रमवर्तीची $\Log{LK}$-!!{derivation}~$\pi_0$
+अस्तित्वात आहे.  $\RightR{\lforall}$
 अनुमान जोडल्यावर आपल्याला $\Gamma_0 \Sequent
 \lforall[x][!A(x)]$ ची !!a{derivation} मिळते, कारण $c$ हे $\Gamma$ किंवा
 $!A(x)$ मध्ये येत नाही आणि म्हणून आयगेन चराची अट पूर्ण होते.
@@ -30,6 +31,7 @@ $!A(x)$ मध्ये येत नाही आणि म्हणून आ�
 
 \begin{prop}
 \ollabel{prop:provability-quantifiers}
+$t$ हे बंद पद असू द्या.
 \begin{tagenumerate}{prvEx,prvAll}
 \tagitem{prvEx}{$!A(t) \Proves \lexists[x][!A(x)]$.}{}
 \tagitem{prvAll}{$\lforall[x][!A(x)] \Proves !A(t)$.}{}

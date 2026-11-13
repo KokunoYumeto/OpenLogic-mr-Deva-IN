@@ -10,6 +10,7 @@ from pathlib import Path
 
 import fitz
 from complete_reader_notes import verify_reader_notes
+from marathi_reader_source import LOCALE_CONFIG
 from complete_reader_topology import heading_inventory
 
 
@@ -202,6 +203,12 @@ for tool_path in sorted((ROOT / 'tools').iterdir()):
         'tools/prepare_complete_provenance.py', 'tools/sync_release_provenance.py', 'tools/stage_complete_release.py',
     }:
         source_entries.append((name, tool_path))
+# Canonical units with explicit Marathi forms use this shared course registry.
+if LOCALE_CONFIG.is_file():
+    source_entries.append((LOCALE_CONFIG.relative_to(ROOT).as_posix(), LOCALE_CONFIG))
+citation_file = ROOT / "courses/sets-logic-computation/config/slc-source-citations.tex"
+if citation_file.is_file():
+    source_entries.append((citation_file.relative_to(ROOT).as_posix(), citation_file))
 source_entries.extend((name, ROOT / name) for name in sorted(target_paths))
 source_entries.extend((name, ROOT / name) for name in ("README.md", "LICENSE.md", ".gitignore", ".gitattributes"))
 for filename in ("SOURCE_MANIFEST.jsonl", "SEGMENT_CANON_USE.jsonl", "CANON_SOURCES.jsonl", "CANON_PASSAGES.jsonl", "TERM_DECISIONS.jsonl"):

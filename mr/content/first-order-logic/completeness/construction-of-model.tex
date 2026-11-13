@@ -7,20 +7,20 @@
 \begin{document}
 
 \iftag{FOL}
-      {\olfileid{fol}{com}{mod}}
-      {\olfileid{pl}{com}{mod}}
+      {\olfileid[mr]{fol}{com}{mod}}
+      {\olfileid[mr]{pl}{com}{mod}}
 
 \olsection{प्रतिमानाची रचना}
 
 \begin{explain}
 \iftag{FOL}{सध्या आपण~$\eq$ चा विचार करत नाही; म्हणजे~$\eq$ नसलेला
-  !!{sentence}s चा सुसंगत संच~$\Gamma$ पूर्ततायोग्य आहे एवढेच आपल्याला
+  \printtoken{oblique plural}{sentence}चा सुसंगत संच~$\Gamma$ पूर्ततायोग्य आहे एवढेच आपल्याला
   दाखवायचे आहे. प्रथम~$\Gamma$ चा विस्तार करून सुसंगत, !!{complete}
   आणि संतृप्त असा संच~$\Gamma^*$ मिळवतो. या बाबतीत
   प्रतिमान~$\Struct{M(\Gamma^*)}$ ची व्याख्या सोपी आहे: आपण~$\Lang{L'}$
-  मधील बंद पदांचा संच प्रांत म्हणून घेतो. प्रत्येक !!{constant} ला तेच
-  स्थिर नेमतो आणि, अधिक व्यापकपणे, प्रत्येक बंद पद~$t$ साठी
-  $\Value{t}{M(\Gamma^*)} = t$ याची खात्री करतो. !!{predicate}s ना
+  मधील बंद पदांचा संच प्रांत म्हणून घेतो. प्रत्येक \printtoken{oblique}{constant}ला तोच
+  !!{constant} नेमतो आणि, अधिक व्यापकपणे, प्रत्येक बंद पद~$t$ साठी
+  $\Value{t}{M(\Gamma^*)} = t$ याची खात्री करतो. \printtoken{oblique plural}{predicate}ना
   असे विस्तार नेमतो की एखादे आण्विक !!{sentence} हे
   $\Struct{M(\Gamma^*)}$ मध्ये तेव्हा आणि केवळ तेव्हाच सत्य असते, जेव्हा
   ते~$\Gamma^*$ मध्ये असते. त्यामुळे~$\Gamma^*$ मधील सर्व आण्विक
@@ -30,13 +30,13 @@
   !!a{valuation} परिभाषित करण्यास आपण तयार आहोत. त्यासाठी प्रथम
   लिंडेनबाउमचे पूर्वप्रमेय लावतो: आपल्याला संपूर्ण आणि सुसंगत असा
   $\Gamma^* \supseteq \Gamma$ मिळतो. $\Gamma^*$ मधील
-  !!{propositional variable}s कडून~$\pAssign v(\Gamma^*)$ निश्चित करू.}
+  \printtoken{oblique plural}{propositional variable}कडून~$\pAssign v(\Gamma^*)$ निश्चित करू.}
 \end{explain}
 
 \iftag{FOL}{%
 \begin{defn}[पद-प्रतिमान]
 \ollabel{defn:termmodel}
-$\Gamma^*$ हा भाषा~$\Lang L$ मधील !!{sentence}s चा !!a{complete},
+$\Gamma^*$ हा भाषा~$\Lang L$ मधील \printtoken{oblique plural}{sentence}चा !!a{complete},
 सुसंगत आणि संतृप्त संच असू द्या. $\Gamma^*$ चे
 \emph{पद-प्रतिमान}~$\Struct M(\Gamma^*)$ ही पुढीलप्रमाणे परिभाषित केलेली
 !!{structure} आहे:
@@ -62,7 +62,7 @@ $\Gamma^*$ हा भाषा~$\Lang L$ मधील !!{sentence}s चा !!a{c
 }{%
 \begin{defn}
 \ollabel{defn:termmodel}
-$\Gamma^*$ हा !!{formula}s चा संपूर्ण सुसंगत संच आहे असे समजा. मग आपण
+$\Gamma^*$ हा \printtoken{oblique plural}{formula}चा संपूर्ण सुसंगत संच आहे असे समजा. मग आपण
 पुढील व्याख्या करतो:
 \[
 \pAssign v(\Gamma^*)(p) = \begin{cases}
@@ -96,7 +96,7 @@ $\Value{t}{M(\Gamma^*)} = t$.
 \end{align*}
 आणि म्हणून विगमनाने हे प्रत्येक बंद पद~$t$ साठी लागू होते.
 \end{proof}
-}
+}{}
 
 \iftag{FOL}{%
 \begin{explain}

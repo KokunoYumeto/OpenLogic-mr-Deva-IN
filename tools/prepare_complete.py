@@ -7,6 +7,7 @@ from contextlib import redirect_stdout
 from io import StringIO
 from pathlib import Path
 from complete_wrapper_notes import preserve_notes
+from marathi_reader_source import read_source
 from complete_reader_notes import preserve_reader_notes, project_note, verify_reader_notes
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -29,6 +30,11 @@ assert len(by_unit) == 722
 core_preamble, split, core_body = core.partition(r"\begin{document}")
 proof_preamble, split_proof, proof_body = proof.partition(r"\begin{document}")
 assert split and split_proof
+if r"\olmrsourcecitation{" in core_body:
+    citation_file = ROOT / "courses/sets-logic-computation/config/slc-source-citations.tex"
+    citation_definitions = citation_file.read_text(encoding="utf-8")
+    core_preamble += "\n" + citation_definitions + "\n"
+
 proof_body, proof_end, proof_tail = proof_body.rpartition(r"\end{document}")
 assert proof_end and not proof_tail.strip()
 core_body, core_end, core_tail = core_body.rpartition(r"\end{document}")
@@ -108,7 +114,7 @@ core_body, title_count = re.subn(
     flags=re.S,
 )
 assert title_count == 1
-about = (ROOT / "mr/content/open-logic-about.tex").read_text(encoding="utf-8")
+about = read_source(ROOT / "mr/content/open-logic-about.tex")
 assert about.count(r"\chapter*") == 1
 core_body = core_body.replace(r"\tableofcontents", about + "\n" + r"\tableofcontents", 1)
 
@@ -140,7 +146,7 @@ supplement_units = [
 ]
 available = set(re.findall(r"\\label\{([^}]+)\}", core_body))
 for unit in supplement_units:
-    raw = (ROOT / "mr" / by_unit[unit]["source_path"]).read_text(encoding="utf-8")
+    raw = read_source(ROOT / "mr" / by_unit[unit]["source_path"])
     match = re.search(r"\\olfileid\{([^}]+)\}\{([^}]+)\}\{([^}]+)\}", raw)
     assert match, unit
     source_prefix = ":".join(match.groups())
@@ -154,7 +160,7 @@ def source_note(note):
 
 
 def convert_unit(unit):
-    raw = (ROOT / "mr" / by_unit[unit]["source_path"]).read_text(encoding="utf-8")
+    raw = read_source(ROOT / "mr" / by_unit[unit]["source_path"])
     notes = re.findall(r"(?m)^[ \t]*%READERNOTE\{(.*)\}[ \t]*$", raw)
     selected = helpers["selected"](raw)
     content = helpers["ns"]["strip_wrapper"](selected)
@@ -296,10 +302,14 @@ project(r"\Th{\bar Q}", r"\overline{\Th{Q}}", 9)
 project(r"\Th{\bar" + "\n" + r"T}", r"\overline{\Th{T}}", 1)
 project(r"\Th{\bar T}", r"\overline{\Th{T}}", 1)
 # Put the two inference displays on separate lines in the identity rules.
-project("एकरूपता असलेल्या निष्पत्त्या साठी अतिरिक्त अनुमाननियम आवश्यक असतात.\n"
-        r"\begin{defish}",
-        "एकरूपता असलेल्या निष्पत्त्या साठी अतिरिक्त अनुमाननियम आवश्यक असतात.\n"
-        r"\par\medskip\noindent" + "\n" + r"\begin{defish}", 1)
+identity_rule_opening = re.compile(
+    r"(एकरूपता असलेल्या निष्पत्त्य(?:ा साठी|ांसाठी) अतिरिक्त अनुमाननियम आवश्यक असतात\.[ \t]*\n\s*)"
+    r"(?=\\begin\{defish\}\s*\\AxiomC\{\}\s*\\RightLabel\{\\Intro\{\\eq\}\})"
+)
+out, identity_rule_count = identity_rule_opening.subn(
+    lambda match: match[0] + r"\par\medskip\noindent" + "\n", out
+)
+assert identity_rule_count == 1, identity_rule_count
 project(r"\UnaryInfC{$\eq[t][t]$}" + "\n" + r"\DisplayProof" + "\n" + r"\hfill" + "\n" + r"\begin{tabular}{r}",
         r"\UnaryInfC{$\eq[t][t]$}" + "\n" + r"\DisplayProof" + "\n" + r"\par\medskip\noindent" + "\n" + r"\begin{tabular}{r}", 1)
 # Table column widths must include LaTeX's padding and vertical rules.
@@ -343,6 +353,9 @@ out = re.sub(r"(?<![!\\])!([A-Z])", r"\1", out)
 assert "!!" not in out and not re.search(r"![A-Z]", out), (
     re.findall(r".{0,40}!!.{0,40}", out)[:8], re.findall(r".{0,30}![A-Z].{0,30}", out)[:8]
 )
+if r"\Needspace{" in out:
+    out = out.replace(r"\begin{document}", r"\usepackage{needspace}" + "\n"
+                      + r"\begin{document}", 1)
 out = "\n".join(line.rstrip() for line in out.splitlines()) + "\n"
 tex = BUILD / "openlogic-mr-full.tex"
 tex.write_text(out, encoding="utf-8", newline="\n")

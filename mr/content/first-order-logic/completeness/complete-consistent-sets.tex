@@ -11,13 +11,13 @@
 \begin{document}
 
 \iftag{FOL}
-      {\olfileid{fol}{com}{ccs}}
-      {\olfileid{pl}{com}{ccs}}
+      {\olfileid[mr]{fol}{com}{ccs}}
+      {\olfileid[mr]{pl}{com}{ccs}}
 
-\olsection{\usetoken{P}{sentence} चे संपूर्ण सुसंगत संच}
+\olsection{\usetoken{oblique plural}{sentence}चे संपूर्ण सुसंगत संच}
 
 \begin{defn}[संपूर्ण संच]
-\ollabel{def:complete-set} !!{sentence}s चा संच~$\Gamma$
+\ollabel{def:complete-set} \printtoken{oblique plural}{sentence}चा संच~$\Gamma$
 \emph{!!{complete}} असतो तेव्हा आणि केवळ तेव्हाच, जेव्हा कोणत्याही
 !!{sentence}~$!A$ साठी $!A \in \Gamma$ किंवा $\lnot !A \in \Gamma$.
 \end{defn}
@@ -32,15 +32,15 @@
 
 \begin{explain}
 संपूर्णतेच्या सिद्धतेत !!^{complete} सुसंगत संच महत्त्वाचे असतात, कारण
-!!{sentence}s चा प्रत्येक सुसंगत संच~$\Gamma$ हा एखाद्या !!a{complete}
+\printtoken{oblique plural}{sentence}चा प्रत्येक सुसंगत संच~$\Gamma$ हा एखाद्या !!a{complete}
 सुसंगत संच~$\Gamma^*$ मध्ये समाविष्ट असतो, याची हमी आपण देऊ शकतो.
 !!^a{complete} सुसंगत संचात प्रत्येक !!{sentence}~$!A$ साठी $!A$ किंवा
 त्याचे नकरण $\lnot !A$ यांपैकी एक असते, पण दोन्ही नसतात. हे विशेषतः
 \iftag{FOL}{आण्विक !!{sentence}s}{विधानीय चले} यांच्यासाठी खरे असते.
-म्हणून \iftag{FOL}{!!{constant}s ची योग्य भर घालून विस्तारित केलेल्या
+म्हणून \iftag{FOL}{\printtoken{oblique plural}{constant}ची योग्य भर घालून विस्तारित केलेल्या
 भाषेतील}{} !!a{complete} सुसंगत संचापासून आपण अशी
 \iftag{FOL}{!!a{structure}}{!!a{valuation}} रचू शकतो की तिच्यातील
-\iftag{FOL}{!!{predicate}s चा अर्थ}{विधानीय चलांना नेमलेले सत्यतामूल्य}
+\iftag{FOL}{\printtoken{oblique plural}{predicate}चा अर्थ}{विधानीय चलांना नेमलेले सत्यतामूल्य}
 हा~$\Gamma^*$ मध्ये कोणती \iftag{FOL}{आण्विक
 !!{sentence}s}{!!{propositional variable}s} आहेत त्यानुसार परिभाषित
 केला जातो. त्यानंतर ही \iftag{FOL}{!!{structure}}{!!{valuation}}

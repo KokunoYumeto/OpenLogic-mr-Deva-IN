@@ -3,6 +3,7 @@ No TeX process is launched here. All TeX must use build_guarded.ps1.
 """
 import re,json,hashlib
 from pathlib import Path
+from marathi_reader_source import read_source
 from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
 P=Path(__file__).resolve().parents[1]
@@ -38,7 +39,7 @@ sources=['basics','subsets','important-sets','unions-and-intersections','pairs-a
 chunks=[];receipts=[]
 for name in sources:
     p=P/'mr'/'content'/'sets-functions-relations'/'sets'/(name+'.tex')
-    t=p.read_text(encoding='utf-8')
+    t=read_source(p)
     receipts.append({'path':str(p.relative_to(P)),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
     t=re.sub(r'(?m)^%.*$','',t)
     t=re.sub(r'\\documentclass[^\n]*\n','',t)
