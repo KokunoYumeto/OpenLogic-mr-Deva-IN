@@ -9,17 +9,18 @@
 भाग आहे.
 
 संपूर्ण आवृत्तीचे वाचन आणि डाउनलोड
-[`complete-v1.3`](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.3)
+[`complete-v1.4`](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.4)
 मधून करा.
 
-- [संपूर्ण PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.3/01-openlogic-mr-complete.pdf)
-- [संपूर्ण संचयी TeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.3/02-openlogic-mr-complete.tex)
-- [सर्व संपादनयोग्य स्रोत](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.3/03-openlogic-mr-complete-editable-sources.zip)
-- [ऑफलाइन HTML](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.3/04-openlogic-mr-complete-html.zip)
-- [संपूर्ण EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.3/06-openlogic-mr-complete.epub)
+- [संपूर्ण PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.4/01-openlogic-mr-complete.pdf)
+- [संपूर्ण संचयी TeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.4/02-openlogic-mr-complete.tex)
+- [सर्व संपादनयोग्य स्रोत](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.4/03-openlogic-mr-complete-editable-sources.zip)
+- [ऑफलाइन HTML](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.4/04-openlogic-mr-complete-html.zip)
+- [संपूर्ण EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.4/06-openlogic-mr-complete.epub)
 
 HTML संग्रह उलगडून `index.html` उघडा. संपादनयोग्य स्रोतांच्या संग्रहात
 स्वतंत्र प्रकरण-स्रोत आणि संकलनासाठी लागणारी सामग्री दिली आहे.
+[complete-v1.3](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.3),
 [complete-v1.2](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.2),
 [complete-v1.1](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.1)
 आणि [complete-v1.0](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.0)

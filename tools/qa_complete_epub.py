@@ -119,6 +119,19 @@ def main():
         annotations = lambda d: [n.text for n in d.iter(f"{{{M}}}annotation") if n.get("encoding") == "application/x-tex"]
         check(annotations(source) == [a for d in content for a in annotations(d)], "मूळ TeX annotations बदलल्या")
         metrics["tex_annotations"] = sum(len(annotations(d)) for d in content)
+
+        def numbered_nodes(root, attribute):
+            return [
+                (node.get(attribute), text_with_glyph_alternatives(node))
+                for node in root.xpath(f".//*[@{attribute}]")
+            ]
+
+        for attribute in ("data-pdf-destination", "data-pdf-reference"):
+            expected = numbered_nodes(source, attribute)
+            actual = [row for doc in content for row in numbered_nodes(doc, attribute)]
+            check(expected == actual, "PDF क्रमांकन किंवा संदर्भ बदलले: " + attribute, len(expected))
+        metrics["pdf_numbered_headings_and_items"] = len(numbered_nodes(source, "data-pdf-destination"))
+        metrics["pdf_prose_references"] = len(numbered_nodes(source, "data-pdf-reference"))
         for tag, expected in (*accepted["source_heading_counts"].items(), ("img", accepted["diagrams"])):
             src = list(source.iter(f"{{{X}}}{tag}"))
             out = [n for d in content for n in d.iter(f"{{{X}}}{tag}")]

@@ -8,6 +8,7 @@ from pathlib import Path
 
 from bs4 import BeautifulSoup
 from complete_reader_topology import heading_inventory
+from complete_html_numbering import NUMBER, load_pdf_numbering
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -114,11 +115,78 @@ if (
     blockers.append("verified PDF source for diagrams")
 if build["math_fallback_warnings"] or doc.select("span.math"):
     blockers.append("math conversion")
-if build["unresolved_math_text_refs"]:
+math_text_refs = build.get("math_text_references", [])
+if (not math_text_refs or any(not row["number"] or row["key"] not in ids for row in math_text_refs)
+        or "OPENLOGICMATHREF" in text):
     blockers.append("formula prose references")
 aux_path = BUILD / "openlogic-mr-full.aux"
 if not aux_path.is_file() or build["html_aux_sha256"] != sha(aux_path):
     blockers.append("HTML auxiliary source")
+pdf_numbers, pdf_labels = load_pdf_numbering(BUILD, reader)
+numbering = build["pdf_numbering"]
+destinations = {node["data-pdf-destination"]: node for node in doc.select("[data-pdf-destination]")}
+number_failures = []
+nodes_by_id = {node["id"]: node for node in doc.select("[id]")}
+toc_by_id = {link["href"][1:]: link for link in doc.select('nav#TOC a[href^="#"]')}
+for row in numbering["headings"]:
+    node = destinations[row["destination"]]
+    number = row["number"]
+    if node.name == "div":
+        matches = NUMBER.findall(node.find("strong").get_text())
+        if matches != [number]:
+            number_failures.append(row["destination"])
+    else:
+        prefix = node.select_one(".pdf-heading-number")
+        toc_link = toc_by_id.get(row["id"])
+        toc_prefix = toc_link.select_one(".pdf-heading-number") if toc_link else None
+        if not prefix or prefix.get_text() != number or (toc_link and (
+                not toc_prefix or toc_prefix.get_text() != number)):
+            number_failures.append(row["destination"])
+if set(destinations) != {row["destination"] for row in numbering["headings"] + numbering["list_items"]}:
+    number_failures.append("heading and list destination coverage")
+for row in numbering["floats"]:
+    owner = nodes_by_id.get(row["id"])
+    prefix = owner.select_one(".float-number") if owner else None
+    if not prefix or NUMBER.findall(prefix.get_text()) != [row["number"]]:
+        number_failures.append(row["destination"])
+for row in numbering["list_items"]:
+    item = destinations[row["destination"]]
+    marker = item.select_one(":scope > p > .pdf-item-number, :scope > .pdf-item-number")
+    if marker:
+        actual = marker.get_text(strip=True).removesuffix(".")
+    else:
+        actual = str(int(item.parent.get("start", 1)) + len(item.find_previous_siblings("li")))
+    if actual != row["number"] or pdf_labels[row["id"]] != (actual, row["destination"]):
+        number_failures.append(row["destination"])
+actual_references = [
+    (link["href"][1:], link["data-pdf-reference"], link.get_text())
+    for link in doc.select("a[data-reference][data-pdf-reference]")
+]
+expected_references = [
+    (row["key"], row["destination"], row["text"]) for row in numbering["prose_references"]
+]
+if actual_references != expected_references or len(actual_references) != len(doc.select("a[data-reference]")):
+    number_failures.append("ordinary reference parity")
+if any(pdf_labels.get(row["key"]) != (row["number"], row["destination"])
+       for row in numbering["prose_references"] + math_text_refs):
+    number_failures.append("ordinary or MathML reference differs from AUX")
+equation_markup = re.compile(r"\\qquad\s*\\text\{\(([0-9]+\.[0-9]+)\)\}")
+rendered_equations = Counter()
+for formula in formulae:
+    annotation = formula.find("annotation", attrs={"encoding": "application/x-tex"})
+    numbers = equation_markup.findall(annotation.get_text()) if annotation else []
+    visible = Counter(node.get_text() for node in formula.select("mtext"))
+    for number, count in Counter(numbers).items():
+        if visible["(" + number + ")"] < count:
+            number_failures.append("missing visible equation " + number)
+    rendered_equations.update(numbers)
+if rendered_equations != Counter(row["number"] for row in numbering["equations"]):
+    number_failures.append("rendered automatic equation inventory")
+if (set(pdf_labels) - set(ids)
+        or len(pdf_labels) != numbering["aux_labels"]):
+    number_failures.append("AUX anchor coverage")
+if number_failures:
+    blockers.append("PDF number parity")
 if unannotated:
     blockers.append("MathML TeX annotations")
 if len(ids) != len(set(ids)) or any(key not in ids for key in links):
@@ -146,6 +214,16 @@ report = {
     "sections": len(doc.select("h3")),
     "proof_tables": len(doc.select("figure.proof")),
     "induction_cases": len(case_anchors),
+    "math_text_references": len(math_text_refs),
+    "pdf_numbering": {
+        "aux_labels": len(pdf_labels),
+        "headings": len(numbering["headings"]),
+        "equations": len(numbering["equations"]),
+        "floats": len(numbering["floats"]),
+        "list_items": len(numbering["list_items"]),
+        "prose_references": len(actual_references),
+        "number_failures": number_failures,
+    },
     "mathml_nodes": len(formulae),
     "mathml_without_tex_annotation": len(unannotated),
     "diagrams": len(images),
@@ -168,6 +246,10 @@ print(json.dumps({
     "proof_tables": report["proof_tables"],
     "mathml_nodes": report["mathml_nodes"],
     "diagrams": report["diagrams"],
+    "pdf_numbering": report["pdf_numbering"],
     "bad_images": len(bad_images),
     "broken_local_links": len(report["broken_local_links"]),
 }, ensure_ascii=False))
+
+if blockers:
+    raise SystemExit(1)

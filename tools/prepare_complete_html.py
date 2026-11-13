@@ -14,6 +14,11 @@ from pathlib import Path
 
 from bs4 import BeautifulSoup, NavigableString
 from complete_math_glyphs import extract_symbols
+from complete_html_equations import project_equation_source
+from complete_html_floats import preserve_table_captions, project_floats
+from complete_html_numbering import (
+    load_pdf_numbering, project_headings, project_list_labels, project_prose_references,
+)
 from complete_diagram_inventory import current_inventory
 from core_html_proofs import (
     _balanced,
@@ -281,7 +286,56 @@ def split_align_intertext(body):
     return body, count
 
 
-def normalize_math_layout(body, aux_labels, unresolved_math_text_refs):
+MATH_TEXT_REFERENCE = re.compile(r"\\(ref|cref|eqref)\*?\s*\{([^{}]+)\}")
+MATH_REFERENCE_MARKER = re.compile(r"OPENLOGICMATHREF[0-9]{4}END")
+
+
+def mark_math_text_references(text, references):
+    previous_end = None
+
+    def mark(match):
+        nonlocal previous_end
+        marker = f"OPENLOGICMATHREF{len(references) + 1:04d}END"
+        command, key = match.groups()
+        references[marker] = {
+            "key": key, "command": command, "adjacent": previous_end == match.start(),
+        }
+        previous_end = match.end()
+        return marker
+
+    return MATH_TEXT_REFERENCE.sub(mark, text)
+
+
+def resolve_math_text_references(soup, references, labels, targets):
+    marker_counts = {marker: {"mtext": 0, "annotation": 0} for marker in references}
+    for row in references.values():
+        key = row["key"]
+        number, destination = labels[key]
+        if key not in targets:
+            raise ValueError(f"Missing digital target for MathML reference {key}")
+        kind = {
+            "AMS": "equation", "Item": "item", "defn": "statement", "prob": "statement",
+        }.get(destination.split(".")[0], destination.split(".")[0])
+        row["destination"] = destination
+        row["number"] = number
+        row["kind"] = kind
+        row["text"] = f"({number})" if row["command"] == "eqref" or (row["adjacent"] and kind == "item") else number
+    for string in soup.find_all(string=MATH_REFERENCE_MARKER):
+        parent = string.parent
+        if parent.name not in {"mtext", "annotation"} or parent.find_parent("math") is None:
+            raise ValueError("Embedded reference escaped its MathML formula")
+
+        def substitute(match):
+            marker = match[0]
+            marker_counts[marker][parent.name] += 1
+            return references[marker]["text"]
+
+        string.replace_with(MATH_REFERENCE_MARKER.sub(substitute, str(string)))
+    if any(counts != {"mtext": 1, "annotation": 1} for counts in marker_counts.values()):
+        raise ValueError(f"Missing or repeated MathML reference markers: {marker_counts}")
+
+
+def normalize_math_layout(body, math_text_refs):
     for name in ("shoveleft", "shoveright", "smash"):
         pattern = re.compile(rf"\\{name}\{{")
         cursor = 0
@@ -319,14 +373,7 @@ def normalize_math_layout(body, aux_labels, unresolved_math_text_refs):
             inner,
         )
         inner = inner.replace(r"\Taut", "taut").replace(r"\PL", "pl")
-        for command, key in re.findall(r"\\(ref|cref|eqref)\{([^}]+)\}", inner):
-            if key in aux_labels:
-                number = aux_labels[key].strip("{}")
-                if command == "eqref":
-                    number = "(" + number + ")"
-                inner = inner.replace("\\" + command + "{" + key + "}", number)
-            else:
-                unresolved_math_text_refs.add(key)
+        inner = mark_math_text_references(inner, math_text_refs)
         if inner.count("$") >= 2 and inner.count("$") % 2 == 0:
             segments = inner.split("$")
             replacement = ""
@@ -412,7 +459,7 @@ for key in anchor_repairs:
     assert candidates, key
     insert_at = max(candidates)
     tex = tex[:insert_at] + r"\hypertarget{" + key + "}{}" + "\n" + tex[insert_at:]
-tex, proofs = strip_proof_environments(tex)
+tex, proofs = strip_proof_environments(preserve_table_captions(tex))
 center_balance = (tex.count(r"\begin{center}"), tex.count(r"\end{center}"))
 proof_command = re.compile(r"\\(?:AxiomC?|UnaryInfC?|BinaryInfC?|TrinaryInfC?)\b")
 display_pattern = re.compile(r"(?<!\\)\\\[.*?(?<!\\)\\\]", re.S)
@@ -544,10 +591,14 @@ body = body.replace(r"\LeftR\Weakening", r"\mathrm{W}\mathrm{L}")
 body = expand_reader_math_macros(body)
 body = expand_complete_math_macros(body, head)
 aux_path = BUILD / "openlogic-mr-full.aux"
-aux_text = aux_path.read_text(encoding="utf-8") if aux_path.exists() else ""
-aux_labels = dict(re.findall(r"\\newlabel\{([^}]+)\}\{\{([^}]+)\}", aux_text))
-unresolved_math_text_refs = set()
-body = normalize_math_layout(body, aux_labels, unresolved_math_text_refs)
+pdf_numbers, pdf_labels = load_pdf_numbering(BUILD, source)
+# These destinations have explicit PDF tags (W), (*) and (*) in the source.
+custom_equations = {"equation.44.1", "equation.59.1", "equation.62.1"}
+body, equation_numbers = project_equation_source(
+    body, [name for name in pdf_numbers["equation"] if name not in custom_equations], pdf_labels,
+)
+math_text_refs = {}
+body = normalize_math_layout(body, math_text_refs)
 body = body.replace(r"\/", "")
 body, intertext_count = split_align_intertext(body)
 body = localize_math_only_commands(body)
@@ -574,6 +625,9 @@ math[display="block"]{display:block;max-width:100%;overflow-x:auto;padding:.7rem
 math:not([display="block"]){display:inline-block;max-width:100%;overflow-x:auto;vertical-align:middle}
 math mtext{font-family:OLMarathi,serif;font-style:normal}
 .proof{border-left:3px solid #ddd;padding-left:1rem;overflow-x:auto}
+.pdf-heading-number{margin-inline-end:.35em}
+li.pdf-list-item{list-style:none}
+.pdf-item-number{display:inline-block;margin-inline-start:-2em;width:2em}
 .proof-steps{border-collapse:collapse;margin:.75rem auto}
 .proof-steps th,.proof-steps td{border-bottom:1px solid #ddd;padding:.35rem .8rem;text-align:left;vertical-align:top}
 .inline-math-symbol{display:inline-block;margin:0 .08em;vertical-align:middle;height:.58em;width:auto}
@@ -694,28 +748,6 @@ for string in list(soup.find_all(string=re.compile("[\ue001\ue002\ue003]"))):
         replacements.append(image)
     string.replace_with(*replacements)
 
-combined_references = []
-for link in list(soup.select('a[data-reference-type="ref+label"]')):
-    keys = link.get("data-reference", "").split(",")
-    if len(keys) < 2:
-        continue
-    replacement = []
-    for index, key in enumerate(keys):
-        target = soup.find(id=key)
-        assert target is not None, key
-        number = target.find("strong")
-        if number is not None:
-            visible = number.get_text(" ", strip=True)
-        else:
-            visible = "तक्ता " + key.rsplit(":", 1)[-1]
-        anchor = soup.new_tag("a", href="#" + key)
-        anchor.string = visible
-        if index:
-            replacement.append(NavigableString(" आणि "))
-        replacement.append(anchor)
-    link.replace_with(*replacement)
-    combined_references.append(keys)
-
 proof_formulae = list(dict.fromkeys(
     expand_complete_math_macros(expand_reader_math_macros(row["formula_tex"]), head)
     for spec in proofs for row in spec["rows"]
@@ -810,6 +842,15 @@ for node in soup.select("[id]"):
     seen_ids.add(new_key)
     renamed_duplicate_ids.append({"original": key, "new": new_key})
 
+heading_numbers = project_headings(soup, pdf_numbers, pdf_labels)
+float_numbers = project_floats(soup, pdf_numbers, pdf_labels)
+targets = {node["id"]: node for node in soup.select("[id]")}
+missing_labels = sorted(pdf_labels.keys() - targets.keys())
+if missing_labels:
+    raise ValueError(f"Native PDF labels without digital targets: {missing_labels}")
+list_numbers = project_list_labels(soup, pdf_labels, targets)
+prose_references = project_prose_references(soup, pdf_labels, targets)
+resolve_math_text_references(soup, math_text_refs, pdf_labels, targets)
 ids = [node["id"] for node in soup.select("[id]")]
 broken = [a["href"] for a in soup.select('a[href^="#"]') if a["href"][1:] not in ids]
 fallbacks = re.findall(r"\[WARNING\] Could not convert TeX math", result.stderr)
@@ -833,9 +874,16 @@ report = {
     "diagram_source_pdf_sha256": diagram_receipt["source_pdf_sha256"],
     "diagram_asset_count": len(diagram_assets),
     "custom_math_glyphs": glyph_receipt,
-    "combined_references_split": combined_references,
-    "html_aux_sha256": sha(aux_path) if aux_path.exists() else None,
-    "unresolved_math_text_refs": sorted(unresolved_math_text_refs),
+    "pdf_numbering": {
+        "aux_labels": len(pdf_labels),
+        "headings": heading_numbers,
+        "equations": equation_numbers,
+        "floats": float_numbers,
+        "list_items": list_numbers,
+        "prose_references": prose_references,
+    },
+    "html_aux_sha256": sha(aux_path),
+    "math_text_references": list(math_text_refs.values()),
     "centered_diagrams": centered_diagrams,
     "intertext_paragraphs": intertext_count,
     "missing_diagram_assets": missing_assets,
