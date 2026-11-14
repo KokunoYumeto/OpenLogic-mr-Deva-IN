@@ -29,6 +29,10 @@
 \input{locale/mr/config/slc-source-citations}
 \definecolor{slcReaderLink}{HTML}{533300}
 \AddToHook{begindocument/end}{\hypersetup{allcolors=slcReaderLink}}
+\makeatletter
+% Keep the separator in the citation link to its bibliography entry.
+\renewcommand*\hyper@natlinkbreak[2]{#1}
+\makeatother
 
 \begin{document}
 \raggedbottom
