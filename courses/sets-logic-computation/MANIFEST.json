@@ -138,9 +138,9 @@
   },
   "current_canonical_marathi_units": {
     "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
-    "content_commit": "9f74d151b6f503f89da85818342f9d8c258cba45",
+    "content_commit": "c1688f96a45a642c3757c557fd16cb44c379c341",
     "path": "mr/content",
-    "git_tree": "925c1156d99f868f8f5073a9fddab0ae4114dc77",
+    "git_tree": "331d5c7e0faa552c61bd8cbd9bc4e22693a609c6",
     "course_units": 176,
     "imports_lock_sha256": "8c7df75ce4923af1e4626958c02a57485d976cdd98ff9134589973e43d9f8923"
   },
