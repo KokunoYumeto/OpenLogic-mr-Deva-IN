@@ -24,14 +24,14 @@
   \IfNoValueTF{#1}{\SLCOriginalOLSection{#2}}{\SLCOriginalOLSection[#1]{#2}}%
 }
 
-% The pilot reserves space before the complete-consistent-sets heading.
+% Reserve space before the complete-consistent-sets heading.
 \appto\SLCBeforeOLSection{%
   \ifdefstring{\theolchapter}{com}{%
     \ifdefstring{\theolsection}{ccs}{\Needspace{7\baselineskip}}{}%
   }{}%
 }
 
-% Keep the pilot's column alignment in the function congruence display.
+% Align the equality in the function congruence display.
 \newcommand*{\OLProvableEqualityDisplay}[3]{%
   \begin{aligned}
   #1 #2
