@@ -34,6 +34,12 @@
 \RequirePackage{tikzscale}
 \usetikzlibrary{arrows,automata,intersections,positioning}
 
+\RequirePackage{adjustbox}
+\newenvironment{maxwidth}
+  {\begin{center}\begin{adjustbox}{max width=\textwidth}}
+  {\end{adjustbox}\end{center}}
+
+
 \RequirePackage{bussproofs}
 
 % change definition of prooftree environment to align proofs at bottom
@@ -45,7 +51,6 @@
 
 \newenvironment{oltableau}{\center\tableau{}} %wff format={anchor = base west}}}
                {\endtableau\endcenter}
-
 
 \RequirePackage{wrapfig}
 \RequirePackage{catchfile}

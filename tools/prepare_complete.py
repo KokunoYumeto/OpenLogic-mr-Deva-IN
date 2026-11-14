@@ -2,6 +2,7 @@
 import hashlib
 import json
 import re
+import tomllib
 import runpy
 from contextlib import redirect_stdout
 from io import StringIO
@@ -13,6 +14,9 @@ from complete_reader_notes import preserve_reader_notes, project_note, verify_re
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "build/full"
 BUILD.mkdir(parents=True, exist_ok=True)
+edition = tomllib.loads((ROOT / "olp-edition.toml").read_text(encoding="utf-8"))
+upstream_revision = edition["pins"]["olp"]["commit"]
+
 
 # These existing assemblers encode the reviewed source projections and keep
 # their translated sections reproducible. Neither invokes TeX.
@@ -44,6 +48,9 @@ extra_preamble = [
     r"\usepackage{longtable}",
     r"\usepackage{cleveref}",
     r"\usepackage{xurl}",
+    r"\usepackage{adjustbox}",
+    r"\newenvironment{maxwidth}{\begin{center}\begin{adjustbox}{max width=\textwidth}}"
+    r"{\end{adjustbox}\end{center}}",
     r"\tikzset{initial text=सुरुवात}",
     r"\renewcommand{\tablename}{तक्ता}",
     r"\providecommand{\gitissue}[1]{\href{https://github.com/OpenLogicProject/OpenLogic/issues/#1}{मूळ स्रोताची नोंद #1}}",
@@ -103,9 +110,12 @@ GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.\par
 हा तपशीलवार पुनरावलोकनाचा दावा संपूर्ण ग्रंथासाठी केलेला नाही.\par
 मूळ मजकूर आणि हे रूपांतर: Creative Commons Attribution 4.0.
 मूळ घटकांचे स्वतंत्र परवाने लागू राहतात.\par
-\url{https://github.com/OpenLogicProject/OpenLogic}\par
+\href{https://github.com/OpenLogicProject/OpenLogic/tree/OPENLOGICREVISION}{The Open Logic Text: OPENLOGICSHORTREVISION}\par
 \url{https://github.com/KokunoYumeto/OpenLogic-translations}
-\end{titlepage}"""
+\end{titlepage}""".replace(
+    "OPENLOGICREVISION", upstream_revision
+).replace("OPENLOGICSHORTREVISION", upstream_revision[:8])
+
 core_body, title_count = re.subn(
     r"\\begin\{titlepage\}.*?\\end\{titlepage\}",
     lambda _: titlepage,
@@ -394,7 +404,7 @@ assert sum(map(len, routes)) == len(set().union(*routes)) == 722
 assert set().union(*routes) == set(by_unit)
 receipt = {
     "schema": "openlogic-mr-full-reader-input/1",
-    "frozen_revision": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "frozen_revision": upstream_revision,
     "source_units_translated": 722,
     "input_units": [
         {"unit_id": row["unit_id"], "source_path": "upstream/" + row["source_path"],

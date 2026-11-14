@@ -428,8 +428,8 @@
   "open-logic/sty/open-logic.sty": {
     "source": "olp",
     "path": "sty/open-logic.sty",
-    "pinned_sha256": "ee7daec60886ba3813d10ac64686646e81f50d149affb4b35596fd6366aae9ad",
-    "output_sha256": "150a7396bf6e09014b384558d9bbb57ef316b9604ded0bef93cda5d15f1fc995"
+    "pinned_sha256": "93498cdeedd784d55236178b46061263b642d5016fbd9e6f95bc57c26dd4c16f",
+    "output_sha256": "48c5d5191335fbd5eb758a14ff043733fa9676a2e9687dcbf0180cb6d354acdf"
   },
   "open-logic/sty/ptolemaicastronomy.sty": {
     "source": "olp",

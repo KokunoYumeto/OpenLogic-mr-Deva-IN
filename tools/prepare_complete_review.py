@@ -11,6 +11,7 @@ from jsonschema import Draft202012Validator, FormatChecker
 from complete_review_pages import bind_units
 from complete_review_source_issues import derive as derive_source_issues
 from complete_review_repairs import derive as derive_corrective_repairs
+from segment_alignment import block_bounds, block_span
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "build/full"
@@ -78,19 +79,11 @@ def blocks(path):
     if path not in cache:
         data = (ROOT / path).read_bytes()
         text = data.decode("utf-8")
-        result, position = [], 0
-        for block in re.split(r"\n\s*\n", text.strip()):
-            start = text.find(block, position)
-            assert start >= 0
-            end = start + len(block)
-            result.append((text.count("\n", 0, start) + 1,
-                           text.count("\n", 0, end) + 1, digest(block.encode("utf-8"))))
-            position = end
-        cache[path] = (data, result)
+        cache[path] = (data, text, block_bounds(text))
     return cache[path]
 
 def locator(path, unit, start, end, term, sense, context):
-    data, _ = blocks(path)
+    data, _, _ = blocks(path)
     lines = data.splitlines(keepends=True)
     assert 1 <= start <= end <= len(lines), (path, start, end)
     byte_start = sum(map(len, lines[:start - 1]))
@@ -144,12 +137,14 @@ for term in terms:
         unit = segment["unit_id"]
         source_path = "upstream/" + segment["source_path"].replace("\\", "/")
         target_path = segment["translation_path"].replace("\\", "/")
-        source_data, source_blocks = blocks(source_path)
-        target_data, target_blocks = blocks(target_path)
+        source_data, source_text, source_bounds = blocks(source_path)
+        target_data, target_text, target_bounds = blocks(target_path)
         assert digest(source_data) == segment["source_unit_sha256"] == manifest[unit]["source_sha256"]
         assert digest(target_data) == segment["translation_unit_sha256"]
-        index = segment["block_index"] - 1
-        source_span, target_span = source_blocks[index], target_blocks[index]
+        index = segment["block_index"]
+        source_indices = segment.get("source_block_indices", (index,))
+        source_span = block_span(source_text, source_bounds, source_indices)
+        target_span = block_span(target_text, target_bounds, (index,))
         assert source_span[2] == segment["source_segment_sha256"], segment["segment_id"]
         assert target_span[2] == segment["translation_segment_sha256"], segment["segment_id"]
         choice = segment.get("choice_line_spans", {}).get(tid)

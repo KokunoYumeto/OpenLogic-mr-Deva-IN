@@ -1,0 +1,62 @@
+{
+  "original_work": "https://github.com/OpenLogicProject/OpenLogic",
+  "source_revision": "1e960beff9ed7835bf3e3f1335e21af3439cd107",
+  "marathi_edition_base": "dc7e4c0979f1d98f65ed8638618eff38f894512e",
+  "role": "AI-produced corrections to existing Marathi translation",
+  "correction_model": "GPT-6.1 Sol",
+  "reasoning_effort": "ultra",
+  "units": [
+    {
+      "unit": "OLP-0054",
+      "path": "content/sets-functions-relations/infinite/card-sb.tex",
+      "english_sha256": "a641eb99032aa5f7edb5e49889e03718470853179ab21e936b09bb1787d0773e",
+      "marathi_sha256": "f241408fc936082aedf650c2ba8d64175e1f9bcfc718ac7c8696b0321ba59d98",
+      "inherited_attribution": {
+        "date": null,
+        "effort": null,
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl",
+        "method": "inherited",
+        "model": null
+      }
+    },
+    {
+      "unit": "OLP-0187",
+      "path": "content/model-theory/basics/isomorphism.tex",
+      "english_sha256": "ff467e98c994243d77b2ffe8d8dfdf81a4c1012ae370f5e82cae21e75a5270ea",
+      "marathi_sha256": "55e29cbccec3626aabb88195140632cd779ffae9da0ef851991c38d59a967126",
+      "inherited_attribution": {
+        "date": null,
+        "effort": null,
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl",
+        "method": "inherited",
+        "model": null
+      }
+    },
+    {
+      "unit": "OLP-0684",
+      "path": "content/proof-theory/proof-search/tableaux.tex",
+      "english_sha256": "609bf2fdfd8b9474f8dd77a9b066028b9ec2889d991889e7b59bd1b43511dfa5",
+      "marathi_sha256": "12759e896c1283028bb61af5c180eaf6cbda5a620c4c8424c63c8d24fa9d4ce2",
+      "inherited_attribution": {
+        "date": null,
+        "effort": null,
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl",
+        "method": "inherited",
+        "model": null
+      }
+    },
+    {
+      "unit": "OLP-0699",
+      "path": "content/proof-theory/sequent-calculus/interpretation-rules.tex",
+      "english_sha256": "06351df029abf713514f6712c8fc445960660379d4bfde1008c68a40610ec033",
+      "marathi_sha256": "884785f3c50b4a620d075863d11243e17292fc1f5908d6a77c36ff0706d799ab",
+      "inherited_attribution": {
+        "date": null,
+        "effort": null,
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl",
+        "method": "inherited",
+        "model": null
+      }
+    }
+  ]
+}

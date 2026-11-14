@@ -5,7 +5,7 @@
 *The Open Logic Text* वर आधारित आहे. दोन्ही मूळ ग्रंथांचा मजकूर
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) अंतर्गत उपलब्ध आहेत.
 [मूळ पाठ्यपुस्तक](https://github.com/rzach/sets-logic-computation/tree/6178f32f61645f3b62ef621b4c5a88f8e67778ad) ·
-[The Open Logic Text](https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0)
+[The Open Logic Text](https://github.com/OpenLogicProject/OpenLogic/tree/1e960beff9ed7835bf3e3f1335e21af3439cd107)
 
 ## रेखाचित्रे
 

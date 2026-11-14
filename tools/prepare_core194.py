@@ -41,10 +41,11 @@ base = base.replace(old_coverage, new_coverage)
 old_scope_line = r"{\LARGE " + new_scope + r"\par}"
 assert base.count(old_scope_line) == 1
 base = base.replace(old_scope_line, r"{\Large " + new_scope + r"\par}", 1)
-assert base.count("A≈B≈C") == 1
-base = base.replace("A≈B≈C", r"$A\approx B\approx C$", 1)
-assert base.count("B≈C") == 1
-base = base.replace("B≈C", r"$B\approx C$", 1)
+if "A≈B≈C" in base:
+    assert base.count("A≈B≈C") == 1
+    base = base.replace("A≈B≈C", r"$A\approx B\approx C$", 1)
+    assert base.count("B≈C") == 1
+    base = base.replace("B≈C", r"$B\approx C$", 1)
 old_mrinf_note = r"""\item अनंत संच प्रकरणातील MRINF-001 ते MRINF-003 या तीन स्रोत-निरीक्षणांची
 नोंद ठेवली आहे. MRINF-001 मधील व्याकरणदोषाचा अभिप्रेत अर्थ थेट दिला आहे;
 MRINF-002 मधील अप्रकट आधारसंचाचे गृहीतक तज्ज्ञ-पुनरावलोकनासाठी राखले आहे;
@@ -57,6 +58,13 @@ MRINF-002 मधील अप्रकट आधारसंचाचे गृ�
 MRINF-003 मधील स्रोतदोषाचा दावा पुनर्तपासणीनंतर चुकीचा ठरून मागे घेतला आहे.
 अंतःस्थ \texttt{cardeq} रचना वैध आहे; मराठी निष्कर्ष सममूल्य केंद्रित
 मांडणी म्हणून जतन केला आहे. मूळ इंग्रजी बाइट्स बदललेले नाहीत."""
+updated_cardinality = r"\cardeq{A}{B}$ आणि $\cardeq{B}{C}" in base
+if updated_cardinality:
+    new_mrinf_note = r"""\item अनंत संच प्रकरणात MRINF-001 मधील
+अभिप्रेत अर्थ आणि MRINF-002 मधील आधारसंचाचे गृहीतक स्पष्ट केले आहे.
+श्रेडर--बर्नस्टाइनच्या साहाय्यक विधानात $A\approx B$ आणि $B\approx C$
+हे दोन्ही निष्कर्ष स्वतंत्रपणे दिले आहेत. या इंग्रजी आवृत्तीत दुसऱ्या
+निष्कर्षातील $B$ गाळला आहे; तो सिद्धतेत स्पष्ट आहे."""
 base = base.replace(old_mrinf_note, new_mrinf_note, 1)
 
 package_anchor = r"\usepackage{amsmath,amssymb,amsthm,nicefrac,graphicx,tikz}"

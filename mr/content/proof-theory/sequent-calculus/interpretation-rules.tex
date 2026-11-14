@@ -52,16 +52,17 @@ $!B \Sequent \ $ या दोन्ही सत्य असतील ते�
 पुढीलप्रमाणे देता येतील:
 \begin{align*}
 &
+\Axiom$!A, \Gamma \fCenter \Delta, !B$
+\Axiom$!B, \Gamma \fCenter \Delta, !A$
+\RightLabel{\LeftR{\oplus}}
+\BinaryInf$!A \oplus !B, \Gamma \fCenter \Delta$
+\DisplayProof
+\\
+&
 \Axiom$\Gamma \fCenter \Delta, !A, !B$
 \Axiom$!A, !B, \Gamma \fCenter \Delta$
 \RightLabel{\RightR{\oplus}}
 \BinaryInf$\Gamma \fCenter \Delta, !A \oplus !B$
-\DisplayProof
-\\
-& \Axiom$!A, \Gamma \fCenter \Delta, !B$
-\Axiom$!B, \Gamma \fCenter \Delta, !A$
-\RightLabel{\LeftR{\oplus}}
-\BinaryInf$!A \oplus !B, \Gamma \fCenter \Delta$
 \DisplayProof
 \end{align*}
 हे नियमही निर्दोष व पूर्ण असतील. त्यांचे निष्कर्ष सर्व

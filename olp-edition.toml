@@ -14,12 +14,12 @@ source_content = "upstream/content"
 
 [conversion]
 source_manifest = "provenance/SOURCE_MANIFEST.jsonl"
-source_manifest_sha256 = "f243d399ca5d8a572a58de7e9b0ad0d7243283a8f92983b1058bfe01ade39c3b"
+source_manifest_sha256 = "07155ccb6e10463c2a886e578cfe5b415025ca9a78b0e393c1974e2407825338"
 attribution_policy = "preserve-recorded-else-unresolved"
 
 [pins.olp]
 repository = "https://github.com/OpenLogicProject/OpenLogic"
-commit = "9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
+commit = "1e960beff9ed7835bf3e3f1335e21af3439cd107"
 
 [pins.slc]
 repository = "https://github.com/rzach/sets-logic-computation"

@@ -336,6 +336,13 @@ def resolve_math_text_references(soup, references, labels, targets):
 
 
 def normalize_math_layout(body, math_text_refs):
+    # The textbook's array spacing is PDF-only. Preserve every array cell.
+    body = re.sub(
+        r"\\ifdefined\\SLCPairingArrayLayout\\SLCPairingArrayLayout"
+        r"\{[23]pt\}\\else\\small\\fi",
+        "",
+        body,
+    )
     for name in ("shoveleft", "shoveright", "smash"):
         pattern = re.compile(rf"\\{name}\{{")
         cursor = 0

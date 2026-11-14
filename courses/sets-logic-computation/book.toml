@@ -28,13 +28,13 @@ source = "https://github.com/rzach/sets-logic-computation/tree/6178f32f61645f3b6
 name = "Open Logic Project contributors"
 role = "Authors and contributors to The Open Logic Text"
 license = "CC BY 4.0 (text)"
-source = "https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
+source = "https://github.com/OpenLogicProject/OpenLogic/tree/1e960beff9ed7835bf3e3f1335e21af3439cd107"
 
 [[credits]]
 name = "Jeremy Avigad"
 role = "Author of Logic and Computation, the source for the chapter on logics beyond first-order logic"
 license = "Chapter attribution in the Open Logic source"
-source = "https://github.com/OpenLogicProject/OpenLogic/blob/9620cc73f9c8e0ad003c514a5d3748f29611c4c0/content/first-order-logic/beyond/beyond.tex"
+source = "https://github.com/OpenLogicProject/OpenLogic/blob/1e960beff9ed7835bf3e3f1335e21af3439cd107/content/first-order-logic/beyond/beyond.tex"
 
 [[credits]]
 name = "Matthew Leadbeater"

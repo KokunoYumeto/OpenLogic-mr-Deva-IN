@@ -190,6 +190,8 @@ def make_tree(destination, reader, config):
         element.text = value
         if key == "identifier":
             element.set("id", "pub-id")
+    if source := config.get("upstream_source"):
+        etree.SubElement(metadata, f"{{{D}}}source").text = source
     for key, value in (("dcterms:modified", config["modified"]), ("rendition:layout", "reflowable"),
                        ("schema:accessMode", "textual"), ("schema:accessMode", "visual"),
                        ("schema:accessibilitySummary", config["accessibility_summary_mr"]),

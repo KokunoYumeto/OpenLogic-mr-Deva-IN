@@ -190,11 +190,15 @@ def adapt_prose_ensuremath(tex):
 
 def strip_proof_environments(tex):
     """Replace every proof graphic by a stable semantic-HTML placeholder."""
-    pattern = re.compile(
-        r"\\begin\{(?P<environment>prooftree|oltableau|tableau|defish)\}.*?"
-        r"\\end\{(?P=environment)\}",
-        re.S,
+    named_proof = r"\\begin\{(?P<environment>prooftree|oltableau|tableau|defish)\}.*?" \
+        r"\\end\{(?P=environment)\}"
+    bounded_proof = (
+        r"\\begin\{maxwidth\}\s*"
+        r"(?:(?P<bounded_tableau>\\begin\{tableau\}.*?\\end\{tableau\})|"
+        r"(?P<bounded_tree>\$.*?\\DisplayProof\$))"
+        r"\s*\\end\{maxwidth\}"
     )
+    pattern = re.compile(bounded_proof + "|" + named_proof, re.S)
     found = []
     pieces = []
     cursor = 0
@@ -205,6 +209,12 @@ def strip_proof_environments(tex):
         pieces.append(tex[cursor : match.start()])
         block = match.group()
         environment = match.group("environment")
+        if match.group("bounded_tableau"):
+            block = match.group("bounded_tableau")
+            environment = "tableau"
+        elif match.group("bounded_tree"):
+            block = match.group("bounded_tree")
+            environment = "prooftree"
         if environment == "defish" and not re.search(r"\\(?:Axiom|UnaryInf|BinaryInf|TrinaryInf)", block):
             pieces.append(block)
             prose_defish += 1
@@ -244,7 +254,7 @@ def strip_proof_environments(tex):
     # placeholder, with the three curated examples represented manually.
     total_environments = len(
         re.findall(r"\\begin\{(?:prooftree|oltableau|tableau|defish)\}", tex)
-    ) - prose_defish
+    ) + sum(bool(match.group("bounded_tree")) for match in pattern.finditer(tex)) - prose_defish
     assert len(found) == total_environments
     assert automatic == total_environments - len(PROOFS)
     assert not re.search(r"\\begin\{(?:prooftree|oltableau|tableau)\}", output)

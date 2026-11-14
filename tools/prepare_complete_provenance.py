@@ -10,6 +10,8 @@ import json
 import re
 from pathlib import Path
 
+from segment_alignment import block_bounds, block_span
+
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE = Path(r"C:\interlanguage-task-state\openlogic-mr-Deva-IN")
@@ -120,23 +122,23 @@ for row in segments:
             "source": row["source_unit_sha256"],
             "target": row["translation_unit_sha256"],
         }
+        # Decode raw bytes to retain CRLF inside the hashed spans.
+        source_text = original.read_bytes().decode("utf-8")
+        target_text = target.read_bytes().decode("utf-8")
         aligned_blocks[row["unit_id"]] = (
-            # Hash the preserved segment bytes, including original CRLF.
-            # read_text's universal-newline conversion would falsely reject
-            # the 84 frozen upstream files whose recorded blocks retain CRLF.
-            re.split(r"\n\s*\n", original.read_bytes().decode("utf-8").strip()),
-            re.split(r"\n\s*\n", target.read_bytes().decode("utf-8").strip()),
+            source_text, block_bounds(source_text), target_text, block_bounds(target_text),
         )
     else:
         assert checked_files[row["unit_id"]] == {
             "source": row["source_unit_sha256"],
             "target": row["translation_unit_sha256"],
         }
-    source_blocks, target_blocks = aligned_blocks[row["unit_id"]]
-    index = row["block_index"] - 1
-    assert 0 <= index < len(source_blocks) and index < len(target_blocks), row["segment_id"]
-    assert hashlib.sha256(source_blocks[index].encode("utf-8")).hexdigest() == row["source_segment_sha256"], row["segment_id"]
-    assert hashlib.sha256(target_blocks[index].encode("utf-8")).hexdigest() == row["translation_segment_sha256"], row["segment_id"]
+    source_text, source_bounds, target_text, target_bounds = aligned_blocks[row["unit_id"]]
+    index = row["block_index"]
+    source_indices = row.get("source_block_indices", (index,))
+    assert block_span(source_text, source_bounds, source_indices)[2] == row["source_segment_sha256"], row["segment_id"]
+    assert block_span(target_text, target_bounds, (index,))[2] == row["translation_segment_sha256"], row["segment_id"]
+
 
 # The root file is the current full-scope derived review surface. The frozen
 # historical detailed review was preserved separately before that expansion.

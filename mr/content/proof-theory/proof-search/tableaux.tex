@@ -63,7 +63,8 @@ $!A \lor (!B \land !C) \Sequent (!A \lor !B) \land
 $\sFmla{\True}{!A \lor (!B \land !C)}$ आणि
 $\sFmla{\False}{(!A \lor !B) \land (!A \lor !C)}$
 यांपासून सुरुवात होते:
-\begin{oltableau}
+\begin{maxwidth}
+  \begin{tableau}{}
   [\sFmla{\True}{\formula{A} \lor (\formula{B} \land \formula{C})},
     just=\TAss, checked
     [\sFmla{\False}{(\formula{A} \lor \formula{B}) \land
@@ -121,7 +122,8 @@ $\sFmla{\False}{(!A \lor !B) \land (!A \lor !C)}$
       ]
     ]
   ]
-\end{oltableau}
+\end{tableau}
+\end{maxwidth}
 
 खूणा दर्शवतात की संबंधित नियम त्या
 !!a{formula} च्या खालच्या सर्व शाखांवर लागू
@@ -213,7 +215,8 @@ $\lfalse,\Pi\Sequent\Lambda$ या स्वयंसिद्धकाचे �
 शिखरांना तीच क्रमवर्ती दिली जाईल; तिच्या
 पुनरावृत्ती काढा. उदाहरणार्थ, वरच्या टॅब्लोचे
 पुढील !!{proof} मध्ये रूपांतर होते:
-\[\small
+\begin{maxwidth}
+$
 \Axiom$!A \fCenter !A, !B$
 \RightLabel{\RightR{\lor}}
 \UnaryInf$!A \fCenter !A \lor !B$
@@ -238,7 +241,7 @@ $\lfalse,\Pi\Sequent\Lambda$ या स्वयंसिद्धकाचे �
 \RightLabel{\LeftR{\lor}}
 \BinaryInf$!A \lor (!B \land !C) \fCenter (!A \lor !B) \land
 (!A \lor !C)$
-\DisplayProof
-\]
+\DisplayProof$
+\end{maxwidth}
 
 \end{document}
