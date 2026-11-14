@@ -3,7 +3,7 @@
 12 dict begin
 begincmap
 /CIDSystemInfo << /Registry (Adobe) /Ordering (UCS) /Supplement 0 >> def
-/CMapName /SLC-txsys-UCS def
+/CMapName /SLCMathTrial-txsys-UCS def
 /CMapType 2 def
 1 begincodespacerange
 <00> <FF>

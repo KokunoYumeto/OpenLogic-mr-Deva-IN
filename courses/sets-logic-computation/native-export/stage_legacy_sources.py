@@ -68,6 +68,13 @@ def stage_inputs(course, snapshot, cache, lock, dependencies, shims):
     inputs = {}
     for name in ROOT_FILES:
         add(inputs, name, file_bytes(course, name))
+    font_lock = json.loads(file_bytes(course, "fonts/SLC-MATH-RESOURCES.json"))
+    for name, record in font_lock["resources"].items():
+        if "/" not in name:
+            data = file_bytes(course, name)
+            if digest(data) != record["sha256"] or len(data) != record["bytes"]:
+                raise ValueError(f"Changed working-root math font: {name}")
+            add(inputs, name, data)
     for source, destination in MOUNTS:
         base = course / source
         for item in sorted(base.iterdir()):

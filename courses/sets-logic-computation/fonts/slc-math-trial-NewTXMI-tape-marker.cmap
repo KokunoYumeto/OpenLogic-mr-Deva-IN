@@ -1,0 +1,57 @@
+%!PS-Adobe-3.0 Resource-CMap
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo << /Registry (Adobe) /Ordering (UCS) /Supplement 0 >> def
+/CMapName /SLCMathTrial-NewTXMI-tape-marker-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<00> <FF>
+endcodespacerange
+41 beginbfchar
+<4A> <D835DEE5>
+<4B> <D835DEE9>
+<4C> <D835DEEC>
+<4D> <D835DEEF>
+<4E> <D835DEF1>
+<4F> <D835DEF4>
+<50> <D835DEF6>
+<51> <D835DEF7>
+<52> <D835DEF9>
+<53> <D835DEFA>
+<55> <D835DEFC>
+<56> <D835DEFD>
+<57> <D835DEFE>
+<58> <D835DEFF>
+<59> <D835DF00>
+<5A> <D835DF01>
+<5B> <D835DF02>
+<5C> <D835DF03>
+<5D> <D835DF04>
+<5E> <D835DF05>
+<5F> <D835DF06>
+<60> <D835DF07>
+<61> <D835DF08>
+<62> <D835DF09>
+<63> <D835DF0B>
+<64> <D835DF0C>
+<66> <D835DF0E>
+<67> <D835DF0F>
+<68> <D835DF10>
+<69> <D835DF11>
+<6A> <D835DF12>
+<6B> <D835DF13>
+<6C> <D835DF14>
+<89> <D835DEE4>
+<95> <002E>
+<96> <002C>
+<9D> <25B7>
+<9F> <003C>
+<A1> <003E>
+<A7> <2322>
+<A8> <2118>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end

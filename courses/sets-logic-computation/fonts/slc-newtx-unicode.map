@@ -1,5 +1,7 @@
-% Preserve the NewTX Type 1 font and its built-in encoding.
-txexs default txexs.pfb -u fonts/slc-txexs.cmap
-txexas default txexas.pfb -u fonts/slc-txexas.cmap
-txsys default txsys.pfb -u fonts/slc-txsys.cmap
 txsyc default txsyc.pfb -u fonts/slc-txsyc.cmap
+txsys default SLCMathTrialtxsys.pfb -u fonts/slc-math-trial-txsys.cmap
+ntxsym default SLCMathTrialtxsym.pfb -u fonts/slc-math-trial-txsym.cmap
+txmiaX default SLCMathTrialtxmiaX.pfb -u fonts/slc-math-trial-txmiaX.cmap
+NewTXMI default SLCMathTrialNewTXMI.pfb -u fonts/slc-math-trial-NewTXMI-tape-marker.cmap
+txexs default SLCMathTrialtxexs.pfb -u fonts/slc-math-trial-txexs.cmap
+txexas default SLCMathTrialtxexas.pfb -u fonts/slc-math-trial-txexas.cmap

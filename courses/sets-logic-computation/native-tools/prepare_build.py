@@ -10,16 +10,30 @@ ROOT_FILES = ('slc-screen.tex', 'slc-screen.xmpdata', 'slc.tex', 'slc-config.sty
 ROOT_DIRS = ('fonts', 'illustrations', 'include', 'open-logic', 'locale/mr', 'vendor/nowidow')
 BUILD_SUFFIXES = {'.tex', '.sty', '.cls', '.tikz', '.xmpdata', '.ttf', '.otf', '.png', '.jpg',
                   '.jpeg', '.pdf', '.bib', '.bst', '.cfg', '.def', '.bbx', '.cbx', '.map', '.ldf'}
-FONT_MAP_INPUTS = {
-    Path('fonts/slc-newtx-unicode.map'),
-    *(Path(f'fonts/slc-{font}.cmap') for font in ('txexs', 'txexas', 'txsys', 'txsyc')),
-}
+FONT_RESOURCE_LOCK = Path("fonts/SLC-MATH-RESOURCES.json")
 
 def digest(data):
     return {'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
 
+
+def font_resources(root):
+    manifest = json.loads((root / FONT_RESOURCE_LOCK).read_bytes())
+    if manifest['schema'] != 'slc-math-driver-resources.v1':
+        raise ValueError('Unexpected math driver resource manifest')
+    resources = {Path(name): expected for name, expected in manifest['resources'].items()}
+    if not resources:
+        raise ValueError('Empty math driver resource manifest')
+    for path, expected in resources.items():
+        source = root / path
+        if (path.is_absolute() or '..' in path.parts or not source.is_file() or source.is_symlink()
+                or not source.resolve().is_relative_to(root.resolve()) or digest(source.read_bytes()) != expected):
+            raise ValueError(f'Math driver resource is missing, unsafe or altered: {path}')
+    return resources
+
+
 def copy_inputs(root, stage, selected):
     records = {}
+    resources = font_resources(root)
 
     def put(source, dest):
         if not source.is_file() or source.is_symlink():
@@ -31,6 +45,10 @@ def copy_inputs(root, stage, selected):
             raise ValueError(f'Conflicting input: {dest}')
         output.write_bytes(data)
         records[str(dest).replace('\\', '/')] = digest(data)
+
+    for path in resources:
+        if path.parts[0] != 'fonts':
+            put(root / path, path)
 
     for name in ROOT_FILES:
         source = root / name
@@ -45,7 +63,8 @@ def copy_inputs(root, stage, selected):
             raise ValueError(f'Input directory missing or symlink: {directory}')
         for source in sorted(directory.rglob('*')):
             if source.is_file() and (source.suffix.lower() in BUILD_SUFFIXES or
-                                     source.relative_to(root) in FONT_MAP_INPUTS):
+                                     source.relative_to(root) in resources or
+                                     source.relative_to(root) == FONT_RESOURCE_LOCK):
                 dest = source.relative_to(root)
                 if dest.parts[:3] == ('open-logic', 'locale', 'mr'):
                     raise ValueError('The Marathi locale must have one native source tree')
@@ -55,8 +74,11 @@ def copy_inputs(root, stage, selected):
                 if dest.parts[:3] in {('locale', 'mr', 'content'), ('locale', 'mr', 'photocredits')}:
                     put(source, Path('open-logic').joinpath(dest))
     put(root / 'vendor/nowidow/nowidow.sty', 'nowidow.sty')
-    if not all(path.as_posix() in records for path in FONT_MAP_INPUTS):
-        raise ValueError('A required NewTX Unicode font map is missing')
+    for path, expected in resources.items():
+        if records.get(path.as_posix()) != expected:
+            raise ValueError(f'Math driver resource was not staged exactly: {path}')
+    if FONT_RESOURCE_LOCK.as_posix() not in records:
+        raise ValueError('Math driver resource manifest was not staged')
     if selected == 'slc-screen-mr.tex':
         from export_cumulative import extract_cumulative, inspect_book
         records.update(extract_cumulative(stage / selected, stage, expected_paths=inspect_book(root)[0]))

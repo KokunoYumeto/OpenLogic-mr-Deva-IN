@@ -3,13 +3,31 @@
 12 dict begin
 begincmap
 /CIDSystemInfo << /Registry (Adobe) /Ordering (UCS) /Supplement 0 >> def
-/CMapName /SLC-txexas-UCS def
+/CMapName /SLCMathTrial-txsym-UCS def
 /CMapType 2 def
 1 begincodespacerange
 <00> <FF>
 endcodespacerange
-1 beginbfchar
-<20> <200B>
+19 beginbfchar
+<04> <226E>
+<28> <228A>
+<2A> <2288>
+<2D> <2224>
+<30> <22AC>
+<31> <22AE>
+<32> <22AD>
+<42> <0042>
+<46> <0046>
+<4E> <004E>
+<51> <0051>
+<52> <0052>
+<54> <0054>
+<5A> <005A>
+<83> <25A1>
+<8D> <22A9>
+<8F> <22A8>
+<96> <21BE>
+<B4> <227C>
 endbfchar
 endcmap
 CMapName currentdict /CMap defineresource pop

@@ -148,7 +148,10 @@
     "authorship": "OpenAI Codex",
     "inherited_open_logic_translation": {
       "description": "AI-translated",
-      "models": ["GPT-5.6 Sol", "GPT-6 Sol"]
+      "models": [
+        "GPT-5.6 Sol",
+        "GPT-6 Sol"
+      ]
     },
     "marathi_textbook": {
       "description": "AI-translated textbook material and AI-produced corrections and typesetting",
@@ -159,5 +162,14 @@
   "component_credits": "ASSET-CREDITS.md",
   "component_inventory": "ASSET-MANIFEST.json",
   "text_license": "LICENSE-SLC.md",
-  "font_license": "../../fonts/OFL.txt"
+  "font_license": "../../fonts/OFL.txt",
+  "font_credits": "FONT-CREDITS.md",
+  "math_font_resources": {
+    "source": "https://github.com/stipub/stixfonts",
+    "source_version": "Version 2.12 b168",
+    "source_otf_sha256": "95bc2729e41faf93b0bcae9e96c4dc4da45855067fd0581e621e30734fe8d90b",
+    "license": "SIL OFL 1.1",
+    "notice": "font-notices/STIX-Two-Math-OFL.txt",
+    "driver_resources": "fonts/SLC-MATH-RESOURCES.json"
+  }
 }

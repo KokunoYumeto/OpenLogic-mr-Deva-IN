@@ -4,7 +4,7 @@
 \RequireXeTeX
 % Preserve logical Unicode order in search and copied text after shaping.
 \XeTeXgenerateactualtext=1\relax
-% Supply text extraction maps for the four legacy NewTX symbol fonts.
+% Load the course math outlines and Unicode maps while keeping the installed TeX metrics.
 \AtBeginDvi{\special{pdf:mapfile fonts/slc-newtx-unicode.map}}
 \usepackage[no-math]{fontspec}
 \setmainfont{OLMarathiSerif-Regular.ttf}[
