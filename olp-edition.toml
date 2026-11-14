@@ -8,6 +8,20 @@ schema_version = 1
 products = ["olp-complete", "slc-screen-pdf"]
 engine_reason = "Retain the published pilot engine until a different engine passes the same content and layout gates."
 
+[public]
+title = "मुक्त तर्कशास्त्र — संपूर्ण मराठी आवृत्ती"
+description = "Open Logic Project च्या सर्व ७२२ स्रोत-एककांची देवनागरी मराठी आवृत्ती. PDF, ऑफलाइन HTML, EPUB आणि संपादनयोग्य LaTeX स्रोत उपलब्ध आहेत. Richard Zach यांचे संच, तर्कशास्त्र, संगणन हे स्वतंत्र मराठी पाठ्यपुस्तकही उपलब्ध आहे."
+limitations = [
+  "मूळाशी तुलना, संज्ञांचा अभ्यास आणि यांत्रिक तपासण्या झाल्या आहेत. स्वतंत्र मानवी भाषिक पुनरावलोकन झालेले नाही.",
+  "तपशीलवार निर्णय-संग्रहातील पृष्ठनिर्देश complete-v1.2 च्या PDF शी जोडलेले आहेत. काही विशेष संज्ञांचे निर्णय दुरुस्तीसाठी खुले आहेत.",
+]
+attribution = "मूळ ग्रंथाचे श्रेय Open Logic Project च्या लेखकांना व योगदानकर्त्यांना आणि संच, तर्कशास्त्र, संगणनचे श्रेय Richard Zach यांना. मराठी यंत्रानुवाद OpenAI Codex ने GPT-5.6 Sol आणि GPT-6 Sol वापरून केला. पाठ्यपुस्तकाच्या स्वतंत्र मजकुराचा यंत्रानुवाद, दुरुस्ती-पुनरावलोकन आणि अक्षरजुळणीसाठी GPT-6.1 Sol वापरले. सर्व मॉडेलांसाठी Ultra तर्कप्रयत्न वापरला."
+license = "मूळ मजकूर व मराठी रूपांतर CC BY 4.0 अंतर्गत आहेत. व्यक्तिचित्रे, छायाचित्रे आणि अक्षररूपांसाठी सोबतच्या स्वतंत्र परवाना व श्रेयनोंदी लागू आहेत."
+
+[public.catalogue]
+path = "publication/catalogue.json"
+sha256 = "203d25ca998954b1b196047342a20fe65c9541da9eac43c0456df5a93e539c4c"
+
 [paths]
 content = "mr/content"
 source_content = "upstream/content"
