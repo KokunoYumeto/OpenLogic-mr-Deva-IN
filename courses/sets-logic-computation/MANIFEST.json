@@ -108,7 +108,7 @@
     },
     "olp": {
       "repository": "https://github.com/OpenLogicProject/OpenLogic",
-      "commit": "1e960beff9ed7835bf3e3f1335e21af3439cd107",
+      "commit": "a216aa641a823b861974b5612579aacbf59fd015",
       "text_license": "CC BY 4.0"
     },
     "marathi_open_logic": {
@@ -138,9 +138,9 @@
   },
   "current_canonical_marathi_units": {
     "repository": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN",
-    "content_commit": "c1688f96a45a642c3757c557fd16cb44c379c341",
+    "content_commit": "1fd96e544e392a6d1f77ecde888f22d6cfc32d41",
     "path": "mr/content",
-    "git_tree": "331d5c7e0faa552c61bd8cbd9bc4e22693a609c6",
+    "git_tree": "a9f911e898a1bd75879bae126571f28832aef6ca",
     "course_units": 176,
     "imports_lock_sha256": "8c7df75ce4923af1e4626958c02a57485d976cdd98ff9134589973e43d9f8923"
   },
@@ -157,7 +157,12 @@
       "description": "AI-translated textbook material and AI-produced corrections and typesetting",
       "model": "GPT-6.1 Sol"
     },
-    "reasoning_effort": "Ultra"
+    "reasoning_effort": "Ultra",
+    "shared_unit_corrections": {
+      "model": "GPT-6 Astra",
+      "reasoning_effort": "Ultra",
+      "description": "सामायिक मराठी विभाग मूळ स्रोताशी जुळवून केलेल्या एआय-निर्मित दुरुस्त्या"
+    }
   },
   "component_credits": "ASSET-CREDITS.md",
   "component_inventory": "ASSET-MANIFEST.json",

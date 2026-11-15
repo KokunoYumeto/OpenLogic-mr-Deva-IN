@@ -131,6 +131,9 @@ def preserve_reader_notes(root, manifest, reader):
 
 def verify_reader_notes(root, manifest, reader, receipt):
     """Replay coverage from current raw sources instead of trusting a count."""
+    if receipt["schema"] == "openlogic-mr-reader-note-separation/2":
+        from reader_note_separation import verify_separation
+        return verify_separation(root, manifest, reader, receipt)
     rows = list(source_notes(root,manifest))
     assert receipt['schema'] == 'openlogic-mr-reader-note-coverage/1'
     assert receipt['reader_sha256'] == sha(reader.encode('utf-8'))

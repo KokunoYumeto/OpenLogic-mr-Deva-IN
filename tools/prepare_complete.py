@@ -9,7 +9,8 @@ from io import StringIO
 from pathlib import Path
 from complete_wrapper_notes import preserve_notes
 from marathi_reader_source import read_source
-from complete_reader_notes import preserve_reader_notes, project_note, verify_reader_notes
+from complete_reader_notes import project_note, verify_reader_notes
+from reader_note_separation import separate_notes
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "build/full"
@@ -85,7 +86,7 @@ for command in extra_preamble:
         core_preamble += command + "\n"
 core_preamble = re.sub(
     r"\\hypersetup\{pdftitle=\{[^\n]*?\},pdfauthor=\{[^\n]*?\}\}",
-    lambda _: r"\hypersetup{pdftitle={मुक्त तर्कशास्त्र: संपूर्ण मराठी आवृत्ती},pdfauthor={Open Logic Project; OpenAI Codex: GPT-5.6 Sol, GPT-6 Sol; corrective review GPT-6.1 Sol; Ultra effort}}",
+    lambda _: r"\hypersetup{pdftitle={मुक्त तर्कशास्त्र: संपूर्ण मराठी आवृत्ती},pdfauthor={Open Logic Project; OpenAI Codex: GPT-5.6 Sol, GPT-6 Sol; corrections GPT-6.1 Sol and GPT-6 Astra; Ultra effort}}",
     core_preamble,
     count=1,
 )
@@ -101,20 +102,17 @@ titlepage = r"""\begin{titlepage}
 पर्यायी आणि मूळ मार्गाबाहेरील विभाग पुढील पूरक भागात दिले आहेत.\par
 यंत्रानुवाद, दुरुस्ती आणि तपासणी: OpenAI Codex —
 GPT-5.6 Sol आणि GPT-6 Sol, दोन्ही Ultra effort.\par
-दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol, Ultra effort.\par
-स्रोताशी तुलना, शब्दनिर्णय आणि यांत्रिक तपासण्या केल्या आहेत.
-स्वतंत्र मानवी संपादनाचा दावा नाही.
-काही तांत्रिक संज्ञा तज्ज्ञ-पुनरावलोकनासाठी खुल्या आहेत.\par
-सर्व 722 एककांच्या 6,644 जुळवलेल्या मजकूरखंडांची नोंद आहे.
-अधिक तपशीलवार शब्दनिर्णय-पुनरावलोकन 281 एककांपुरते आहे;
-हा तपशीलवार पुनरावलोकनाचा दावा संपूर्ण ग्रंथासाठी केलेला नाही.\par
+दुरुस्ती-पुनरावलोकन: GPT-6.1 Sol; मूळ मजकुराशी जुळवून केलेल्या
+दुरुस्त्या: GPT-6 Astra. दोन्हींसाठी Ultra तर्कप्रयत्न.\par
+या यंत्रानुवादाचे स्वतंत्र मानवी भाषिक पुनरावलोकन झालेले नाही.
+काही तांत्रिक संज्ञांचे पर्याय अद्याप खुले आहेत.\par
 मूळ मजकूर आणि हे रूपांतर: Creative Commons Attribution 4.0.
 मूळ घटकांचे स्वतंत्र परवाने लागू राहतात.\par
-\href{https://github.com/OpenLogicProject/OpenLogic/tree/OPENLOGICREVISION}{The Open Logic Text: OPENLOGICSHORTREVISION}\par
-\url{https://github.com/KokunoYumeto/OpenLogic-translations}
+\href{https://github.com/OpenLogicProject/OpenLogic/tree/OPENLOGICREVISION}{मूळ इंग्रजी ग्रंथ}\par
+\href{https://github.com/KokunoYumeto/OpenLogic-translations}{इतर भाषांतील आवृत्त्या}
 \end{titlepage}""".replace(
     "OPENLOGICREVISION", upstream_revision
-).replace("OPENLOGICSHORTREVISION", upstream_revision[:8])
+)
 
 core_body, title_count = re.subn(
     r"\\begin\{titlepage\}.*?\\end\{titlepage\}",
@@ -345,7 +343,8 @@ project("    घेता येते. पहिल्या प्रसंग
         "    घेता येते. पहिल्या प्रसंगात:\\par\\endgroup\n    \\[", 1)
 out, wrapper_note_qa = preserve_notes(ROOT, by_unit, out, helpers["selected"],
                                      helpers["replace_tokens"], core_ns["prior"]["reader_symbol_projections"])
-out, reader_note_qa = preserve_reader_notes(ROOT, by_unit, out)
+out, reader_note_qa, historical_appendix = separate_notes(ROOT, by_unit, out)
+(BUILD / "historical-translation-notes.tex").write_bytes(historical_appendix.encode("utf-8"))
 labels = re.findall(r"\\label\{([^}]+)\}", out)
 assert len(labels) == len(set(labels)), [x for x in labels if labels.count(x) > 1][:10]
 out = re.sub(r"\\readerexternalref\{([^}]+)\}",
@@ -356,6 +355,16 @@ out = out.replace(
     r"\ref{pl:syn:sem:prop:semanticalfacts}",
 )
 assert out.count(r"\end{document}") == 1
+# The legacy propositional chapter cites an earlier axiomatic-deduction
+# numbering scheme. Both propositions are present in this reader.
+for old_key, actual_key, expected in (
+    ("pl:prp:axd:prop:phi", "fol:axd:prv:prop:provability-exhaustive", 2),
+    ("pl:prp:axd:prop:prov-incons", "fol:axd:prv:prop:prov-incons", 1),
+):
+    old_ref = r"\readerexternalref{" + old_key + "}"
+    if actual_key not in labels or out.count(old_ref) != expected:
+        raise ValueError(f"Check the axiomatic-deduction reference {old_key}")
+    out = out.replace(old_ref, r"\ref{" + actual_key + "}")
 # The upstream style gives !A a special mathcode. The standalone reader uses
 # Latin formula metavariables instead, so project that source shorthand here.
 out = re.sub(r"(\\[A-Za-z]+)!([A-Z])", r"\1 \2", out)
@@ -402,16 +411,25 @@ wrapper_ids = {"OLP-0646", "OLP-0657", "OLP-0664", "OLP-0685",
 routes = [core_ids, proof_ids, supplement_ids, front_ids, wrapper_ids]
 assert sum(map(len, routes)) == len(set().union(*routes)) == 722
 assert set().union(*routes) == set(by_unit)
+current_units = {row["id"]: row for row in map(json.loads, (ROOT / "units.jsonl").read_bytes().splitlines())}
+if current_units.keys() != by_unit.keys():
+    raise ValueError("The current unit ledger and the reader routes differ")
+input_units = []
+for row in manifest:
+    uid, source_path = row["unit_id"], row["source_path"]
+    current = current_units[uid]
+    source_name, target_name = "upstream/" + source_path, "mr/" + source_path
+    source_hash = hashlib.sha256((ROOT / source_name).read_bytes()).hexdigest()
+    target_hash = hashlib.sha256((ROOT / target_name).read_bytes()).hexdigest()
+    if (current["path"], current["src_sha256"], current["tr_sha256"]) != (source_path, source_hash, target_hash):
+        raise ValueError(f"{uid}: reader input differs from the current edition ledger")
+    input_units.append({"unit_id": uid, "source_path": source_name, "source_sha256": source_hash,
+                        "target_path": target_name, "target_sha256": target_hash})
 receipt = {
     "schema": "openlogic-mr-full-reader-input/1",
     "frozen_revision": upstream_revision,
     "source_units_translated": 722,
-    "input_units": [
-        {"unit_id": row["unit_id"], "source_path": "upstream/" + row["source_path"],
-         "source_sha256": row["source_sha256"], "target_path": "mr/" + row["source_path"],
-         "target_sha256": hashlib.sha256((ROOT / "mr" / row["source_path"]).read_bytes()).hexdigest()}
-        for row in manifest
-    ],
+    "input_units": input_units,
     "core_unit_count": len(core_inputs["input_units"]),
     "core_unit_ids": sorted(core_ids),
     "proof_unit_ids": sorted(proof_ids),
