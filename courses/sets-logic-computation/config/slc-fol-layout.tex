@@ -27,7 +27,12 @@
 \slcFolLayoutOn{subsection}{fol/ntd/prl}{4}{\Needspace{6\baselineskip}}
 \slcFolLayoutOn{problem}{fol/ntd/prq}{1}{\Needspace{5\baselineskip}}
 \slcFolLayoutOn{proof}{fol/ntd/pro}{15}{\small}
+\slcFolLayoutOn{proofdisplay}{sfr/set/pai}{1}{%
+  \setlength{\abovedisplayskip}{1pt plus 1pt}%
+  \setlength{\abovedisplayshortskip}{0pt}%
+}
 
 \AddToHook{cmd/subsection/before}[slc-fol-layout]{\slcFolLayoutAt{subsection}}
 \AddToHook{env/prob/before}[slc-fol-layout]{\slcFolLayoutAt{problem}}
 \AddToHook{env/prooftree/begin}[slc-fol-layout]{\slcFolLayoutAt{proof}}
+\AddToHook{env/proof/begin}[slc-fol-layout]{\slcFolLayoutAt{proofdisplay}}
