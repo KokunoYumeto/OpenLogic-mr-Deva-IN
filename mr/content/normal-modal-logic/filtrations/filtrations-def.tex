@@ -6,7 +6,7 @@
 
 \begin{document}
 
-\olfileid{nml}{fil}{fil}
+\olfileid[mr]{nml}{fil}{fil}
 
 \olsection{निस्यंदने}
 
@@ -89,16 +89,16 @@ $[w] \in V^*(p)$ असल्यावर एखाद्या $u \in V(p)$
       $p \in \Gamma$ आणि $\mSat{M}{p}[v]$;
       म्हणून $\mSat{M}{\indfrm}[w]$.}
 
-    \tagitem{prvNot}{\iftag{probNot}{सराव.}{\indcase{!A}{\lnot
-          !B}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि तेव्हाच
+    \tagitem{prvNot}{\indcase{!A}{\lnot
+          !B}{\iftag{probNot}{सराव.}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि तेव्हाच
           $\mSat/{M}{!B}[w]$. विगमन गृहीतकानुसार,
           $\mSat/{M}{!B}[w]$ तेव्हा आणि तेव्हाच
           $\mSat/{M^*}{!B}[{[w]}]$. अखेरीस,
           $\mSat/{M^*}{!B}[{[w]}]$ तेव्हा आणि तेव्हाच
           $\mSat{M^*}{\indfrm}[{[w]}]$.}}}{}
 
-    \tagitem{prvAnd}{\iftag{probAnd}{सराव.}{\indcase{!A}{(!B \land
-          !C)}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि तेव्हाच
+    \tagitem{prvAnd}{\indcase{!A}{(!B \land
+          !C)}{\iftag{probAnd}{सराव.}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि तेव्हाच
           $\mSat{M}{!B}[w]$ आणि $\mSat{M}{!C}[w]$.
           विगमन गृहीतकानुसार, $\mSat{M}{!B}[w]$ तेव्हा आणि तेव्हाच
           $\mSat{M^*}{!B}[{[w]}]$, तसेच $\mSat{M}{!C}[w]$
@@ -107,8 +107,8 @@ $[w] \in V^*(p)$ असल्यावर एखाद्या $u \in V(p)$
           $\mSat{M^*}{!B}[{[w]}]$ आणि
           $\mSat{M^*}{!C}[{[w]}]$.}}}{}
 
-    \tagitem{prvOr}{\iftag{probOr}{सराव.}{\indcase{!A}{(!B \lor
-          !C)}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि तेव्हाच
+    \tagitem{prvOr}{\indcase{!A}{(!B \lor
+          !C)}{\iftag{probOr}{सराव.}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि तेव्हाच
           $\mSat{M}{!B}[w]$ किंवा $\mSat{M}{!C}[w]$.
           विगमन गृहीतकानुसार, $\mSat{M}{!B}[w]$ तेव्हा आणि तेव्हाच
           $\mSat{M^*}{!B}[{[w]}]$, तसेच $\mSat{M}{!C}[w]$
@@ -117,8 +117,8 @@ $[w] \in V^*(p)$ असल्यावर एखाद्या $u \in V(p)$
           $\mSat{M^*}{!B}[{[w]}]$ किंवा
           $\mSat{M^*}{!C}[{[w]}]$.}}}{}
 
-    \tagitem{prvIf}{\iftag{probIf}{सराव.}{\indcase{!A}{(!B \lif
-          !C)}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि तेव्हाच
+    \tagitem{prvIf}{\indcase{!A}{(!B \lif
+          !C)}{\iftag{probIf}{सराव.}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि तेव्हाच
           $\mSat/{M}{!B}[w]$ किंवा $\mSat{M}{!C}[w]$.
           विगमन गृहीतकानुसार, $\mSat{M}{!B}[w]$ तेव्हा आणि तेव्हाच
           $\mSat{M^*}{!B}[{[w]}]$, तसेच $\mSat{M}{!C}[w]$
@@ -127,8 +127,8 @@ $[w] \in V^*(p)$ असल्यावर एखाद्या $u \in V(p)$
           $\mSat/{M^*}{!B}[{[w]}]$ किंवा
           $\mSat{M^*}{!C}[{[w]}]$.}}}{}
 
-    \tagitem{prvIff}{\iftag{probIff}{सराव.}{\indcase{!A}{(!B \liff
-          !C)}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि तेव्हाच
+    \tagitem{prvIff}{\indcase{!A}{(!B \liff
+          !C)}{\iftag{probIff}{सराव.}{$\mSat{M}{\indfrm}[w]$ तेव्हा आणि तेव्हाच
           $\mSat{M}{!B}[w]$ आणि $\mSat{M}{!C}[w]$,
           किंवा $\mSat/{M}{!B}[w]$ आणि $\mSat/{M}{!C}[w]$.
           विगमन गृहीतकानुसार, $\mSat{M}{!B}[w]$ तेव्हा आणि तेव्हाच
@@ -140,8 +140,8 @@ $[w] \in V^*(p)$ असल्यावर एखाद्या $u \in V(p)$
           $\mSat/{M^*}{!B}[{[w]}]$ आणि
           $\mSat/{M^*}{!C}[{[w]}]$.}}}{}
 
-    \tagitem{prvBox}{\iftag{probBox}{सराव.}{\indcase{!A}{\Box
-          !B}{$\mSat{M}{\indfrm}[w]$ असे समजा.
+    \tagitem{prvBox}{\indcase{!A}{\Box
+          !B}{\iftag{probBox}{सराव.}{$\mSat{M}{\indfrm}[w]$ असे समजा.
           $\mSat{M^*}{\indfrm}[{[w]}]$ दाखवण्यासाठी
           $R^*[w][v]$ असेल असे कोणतेही~$v$ घ्या.
           \olref{defn:filtration}\olref{defn:filtration-R2}
@@ -157,8 +157,8 @@ $[w] \in V^*(p)$ असल्यावर एखाद्या $u \in V(p)$
           $\mSat{M}{!B}[v]$. $v$ कोणतेही असल्याने
           $\mSat{M}{\indfrm}[w]$.}}}{}
 
-    \tagitem{prvDiamond}{\iftag{probDiamond}{सराव.}{\indcase{!A}{\Diamond
-          !B}{$\mSat{M}{\indfrm}[w]$ असे समजा. मग एखाद्या
+    \tagitem{prvDiamond}{\indcase{!A}{\Diamond
+          !B}{\iftag{probDiamond}{सराव.}{$\mSat{M}{\indfrm}[w]$ असे समजा. मग एखाद्या
           $v \in W$ साठी $Rwv$ आणि $\mSat{M}{!B}[v]$.
           विगमन गृहीतकानुसार $\mSat{M^*}{!B}[{[v]}]$;
           तसेच \olref{defn:filtration}\olref{defn:filtration-R1}

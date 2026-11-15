@@ -160,8 +160,8 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   $!C \in \Xi$ देखील आहे. म्हणून प्रत्येक प्रकरणात
   \iftag{FOL}{$\Struct
     M$}{$\pAssign{v}$} $!A \land !B, \Gamma \Sequent
-  \Delta$ पूर्ण करते. \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} स्वेच्छ
-  असल्याने $!A \land !B, \Gamma \Sequent \Delta$ वैध आहे. $!A \land !B$ हे $!B$ पासून
+  \Delta$, म्हणजेच $\Theta \Sequent \Xi$, पूर्ण करते. \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} स्वेच्छ
+  असल्याने $\Theta \Sequent \Xi$ वैध आहे. $!A \land !B$ हे $!B$ पासून
   निष्पन्न होण्याचे प्रकरणही असेच हाताळता येते; फक्त $!A$ ऐवजी $!B$ घ्या.
 \item शेवटचे अनुमान \RightR{\lor} आहे. याचे दोन प्रकार आहेत: आधारविधानाच्या
   उजव्या बाजूला असलेल्या $!A$ किंवा $!B$ पासून $!A
@@ -208,8 +208,8 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   \Gamma$ साठी $\iftag{FOL}{\Sat/{M}}{\pSat/{v}}{!C}$. (d) प्रकरणात
   एखाद्या $!C \in \Delta$ साठी $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!C}$. प्रत्येक
   प्रकरणात \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$} $\Gamma
-  \Sequent \Delta, !A \lif !B$ पूर्ण करते. \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$}
-  स्वेच्छ असल्याने $\Gamma \Sequent \Delta, !A \lif !B$ वैध आहे. \iftag{FOL}{%
+  \Sequent \Delta, !A \lif !B$, म्हणजेच $\Theta \Sequent \Xi$, पूर्ण करते. \iftag{FOL}{$\Struct{M}$}{$\pAssign{v}$}
+  स्वेच्छ असल्याने $\Theta \Sequent \Xi$ वैध आहे. \iftag{FOL}{%
 \item शेवटचे अनुमान \LeftR{\lforall} आहे. मग !!a{formula}~$!A(x)$ आणि
   बंद पद~$t$ असे आहेत की $\pi$ पुढील रूपात संपते:
   \begin{prooftree}
@@ -234,7 +234,7 @@ $\iftag{FOL}{\Sat{M}}{\pSat{v}}{!A}$.
   त्यामुळे निष्कर्ष-क्रमवर्ती पूर्ण होते. (b) आणि
   (c) प्रकरणांत $\Struct{M}$ देखील $\lforall[x][!A(x)], \Gamma
   \Sequent \Delta$ पूर्ण करते. $\Struct M$ स्वेच्छ असल्याने,
-  $\lforall[x][!A(x)], \Gamma \Sequent \Delta$ वैध आहे.
+  $\lforall[x][!A(x)], \Gamma \Sequent \Delta$, म्हणजेच $\Theta \Sequent \Xi$, वैध आहे.
 \item शेवटचे अनुमान \RightR{\lexists} आहे: सरावासाठी.
 \item शेवटचे अनुमान \RightR{\lforall} आहे. मग
   !!a{formula}~$!A(x)$ आणि !!a{constant}~$a$ असे आहेत की $\pi$ पुढील रूपात

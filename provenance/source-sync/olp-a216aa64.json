@@ -1,0 +1,361 @@
+{
+  "original_work": "https://github.com/OpenLogicProject/OpenLogic",
+  "source_revision": "a216aa641a823b861974b5612579aacbf59fd015",
+  "prior_source_revision": "1e960beff9ed7835bf3e3f1335e21af3439cd107",
+  "marathi_edition_base": "c5bd5d8e74a89bd4efda2f495551ee85520c296a",
+  "correction_model": "GPT-6 Astra",
+  "reasoning_effort": "ultra",
+  "role": "मराठी मजकूर, गणिती सूत्रे आणि स्थानिक आवृत्तीची ओळख यांतील एआय-निर्मित दुरुस्त्या.",
+  "units": [
+    {
+      "unit": "OLP-0039",
+      "path": "content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex",
+      "english_sha256": "da318273e4c07945c8274b71bc911d2181317553283b679b543d416805b64522",
+      "marathi_sha256": "fd0ce01a4ac33dbacc8e5381a94934e9a56946f947f135206a1fd40ecfc44ced",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0081",
+      "path": "content/first-order-logic/sequent-calculus/soundness.tex",
+      "english_sha256": "3e99a9b02f67a8b631aa0b661b5c47683ac48b5520f20a412c297a3e547261cb",
+      "marathi_sha256": "1205c95fb1767f0d2be4abbece8b2c6184ecf52fbe1265de0cd12c53119dba7f",
+      "inherited_attribution": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-13",
+        "method": "patched",
+        "evidence": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/blob/f8722cc37b93350e2f1b2e59d1b3fb783744e717/textbooks/slc/locale/mr/content/first-order-logic/sequent-calculus/soundness.tex"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0089",
+      "path": "content/first-order-logic/natural-deduction/proving-things.tex",
+      "english_sha256": "8b187b4e1e4cf8a9422abec80f97dc65c128c20d9a9973febf4f9b6bdf259095",
+      "marathi_sha256": "56132f5382fa3534589bb2bc7b32f452fde7c80668ae9da78fdc9e906bcd86a8",
+      "inherited_attribution": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-13",
+        "method": "patched",
+        "evidence": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/compare/42049f99c35dfa3c6b606c5a77c5cad1e11ce092...f8722cc37b93350e2f1b2e59d1b3fb783744e717"
+      },
+      "disposition": "carried"
+    },
+    {
+      "unit": "OLP-0106",
+      "path": "content/first-order-logic/tableaux/provability-consistency.tex",
+      "english_sha256": "5a1bf855b71c7350e6463191dcb112cc42d4b2846ce501290766edc96d1b6499",
+      "marathi_sha256": "0fc4ade1de5c11f109da2726a7b382912e6db7714f7ca02de922c80333de3939",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0133",
+      "path": "content/first-order-logic/completeness/identity.tex",
+      "english_sha256": "45c7756976366c46fdea6b3debe94559fbf23362dceabbdb6da0a2a88c4ae6ff",
+      "marathi_sha256": "93f9d44fe9564393b705b77fc3db1ee5460221603cc284be438aa3a33fd0d451",
+      "inherited_attribution": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-13",
+        "method": "patched",
+        "evidence": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/compare/42049f99c35dfa3c6b606c5a77c5cad1e11ce092...f8722cc37b93350e2f1b2e59d1b3fb783744e717"
+      },
+      "disposition": "carried"
+    },
+    {
+      "unit": "OLP-0163",
+      "path": "content/first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "english_sha256": "287d3a512bfc99c7b743ca1f5a66e372d0fb7ff54f8e584ebe351c7701dc5072",
+      "marathi_sha256": "0b9f03b6e1da08d3390c3d1431fb2a0011cadbbcc131c77bff273323afdc6fcb",
+      "inherited_attribution": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-13",
+        "method": "patched",
+        "evidence": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/compare/42049f99c35dfa3c6b606c5a77c5cad1e11ce092...f8722cc37b93350e2f1b2e59d1b3fb783744e717"
+      },
+      "disposition": "carried"
+    },
+    {
+      "unit": "OLP-0207",
+      "path": "content/model-theory/lindstrom/lindstrom-proof.tex",
+      "english_sha256": "182290a6c2dee00b4d09af01bda9c6a83cedf14e6a2e1d4834c8aa9187fb83f7",
+      "marathi_sha256": "9c8b4c1f8569fa04102e940278ad42f46043b42022beaf00fbcc4ea79132acd7",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0300",
+      "path": "content/incompleteness/representability-in-q/sigma1-completeness.tex",
+      "english_sha256": "1ea31e10076afcbbd053c9ff69332f486766b1fb7dd1d477379303d0ccc0f4b3",
+      "marathi_sha256": "65a7be03ec249468ce82d2be5e06048062c773460aebdfc47ca75ad3e508bc5b",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0332",
+      "path": "content/second-order-logic/metatheory/second-order-arithmetic.tex",
+      "english_sha256": "c73dad2d7b4501c6baa33b7e494fdff4fcd25eb76492491521a07e193c5f2d5e",
+      "marathi_sha256": "e6c9c245e3a5742442ec442ec0d5dbfcc5025789e7e03b55a17e673ee4233e48",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0333",
+      "path": "content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex",
+      "english_sha256": "b497aae12d3be8316509937a9919e4b17780d81020c7547561777eb2d9e846ed",
+      "marathi_sha256": "9594e8511ba4b579f1c38f2ea04f995b846fd2528ef84f1d59d0cd887cbcab78",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0375",
+      "path": "content/lambda-calculus/lambda-definability/arithmetical-functions.tex",
+      "english_sha256": "f0364b6753655c14d14d4b0950c2a41edf695ea2593a3f0768b94438defdc6a9",
+      "marathi_sha256": "d1ff58f015f03155277611f3ac9de5cec4526599a538f191e761d6957e29f491",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0377",
+      "path": "content/lambda-calculus/lambda-definability/truth-values.tex",
+      "english_sha256": "a60494fccced101d9a9dabba0265496e724f296782e5154c5803a37e93aeb15a",
+      "marathi_sha256": "efc813ad4c6bfe769227f6ff5b4ebe6257adf80ab20c19bfef89733c021be29e",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0378",
+      "path": "content/lambda-calculus/lambda-definability/primitive-recursive-functions.tex",
+      "english_sha256": "70719932ac70e3f47f37b6a3dede92793ef4a4f0ebdc18c2478a23d8264879bb",
+      "marathi_sha256": "6f8e7f8822cc20ff51878cbe11fe164a3d288283268e702e8b1b3ade5fd4c724",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0379",
+      "path": "content/lambda-calculus/lambda-definability/fixpoints.tex",
+      "english_sha256": "a65ae50d890220d124611e9ec41d38d2c9f2095917fc7f3a5f611f617fbb9634",
+      "marathi_sha256": "9f4ada01a6eb26b68b68e6abdfe0405617d1604261db3ea254385eb8bc120dd7",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0380",
+      "path": "content/lambda-calculus/lambda-definability/minimization.tex",
+      "english_sha256": "c65e9cbd14ffc99101d8abdcf7737fb92e34894062968f6b07d6dcd89e3c4c40",
+      "marathi_sha256": "d061860a0fa17c014d45c84ceeca405cac99edd31b51df469846223da4a56b3c",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0443",
+      "path": "content/normal-modal-logic/completeness/complete-consistent-sets.tex",
+      "english_sha256": "6c24c6ba491212fde0feb8364e266434d8585c767747f1e6f031d876d0e99d78",
+      "marathi_sha256": "60558e2d884ded82fac177d123a83753b0526f97e2daa68a4143d0e7ab7cb5a1",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0451",
+      "path": "content/normal-modal-logic/filtrations/introduction.tex",
+      "english_sha256": "820ad3aa62f77568e5c98e874d7b951fc8048754b4a7de08eb4e97f168d87896",
+      "marathi_sha256": "4a8bba32ef921dcaf0ed2810a0298a937653bfc3125689801906de755d723f9e",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0453",
+      "path": "content/normal-modal-logic/filtrations/filtrations-def.tex",
+      "english_sha256": "288027623e7e36375921e4481e457eb7b419bd48cd2acc2fecbdbf9b7ecf2851",
+      "marathi_sha256": "784667545a5c0eacea71013b98e05de190ad5ac62167cffda449a010294dbdf4",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0454",
+      "path": "content/normal-modal-logic/filtrations/examples-of-filtrations.tex",
+      "english_sha256": "dd1ef75f7d093eac0dea76bc43a05591fdcec6dca8cdceb21ffa1ffdbe9310aa",
+      "marathi_sha256": "80fe2bd7ecdd87b8c0b521e073615aad631550216380291bdadf582166541336",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0464",
+      "path": "content/normal-modal-logic/tableaux/soundness.tex",
+      "english_sha256": "6c2e2e998d75d7533fe70537f715af61061086284a657956520b64d974e3af1f",
+      "marathi_sha256": "582b692e85ad247fb99ce0f4a9528c8669735a27510b7d50e3ca22b971c4a01f",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0515",
+      "path": "content/intuitionistic-logic/tableaux/soundness.tex",
+      "english_sha256": "1142fbf2a886a87a2a38f45263e17fb54dc2eeda94664a8663e6dd634ed3d012",
+      "marathi_sha256": "98b873e7d1f2b65a28ba11122ad2f404b364706b181ac2db3388271e2da606f8",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0577",
+      "path": "content/set-theory/ord-arithmetic/using-addition.tex",
+      "english_sha256": "df075118aa83c2a15b36a8a07bb50e385c5c60d3914fce5d895c96b68bb2d774",
+      "marathi_sha256": "21473bf16f9da77f269e476956568d99c7ff649112f3c03a7282d485b9080fda",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0606",
+      "path": "content/methods/proofs/inference-patterns.tex",
+      "english_sha256": "63bd616d75f232f7789ef8f9c8508327ca86e07fd2a03f80909f8d1ebf95020e",
+      "marathi_sha256": "82f3691feb40559b1d81c2da6d43dff85b68cf11040e28569957e5b6a9204074",
+      "inherited_attribution": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-13",
+        "method": "patched",
+        "evidence": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/blob/f8722cc37b93350e2f1b2e59d1b3fb783744e717/textbooks/slc/locale/mr/content/methods/proofs/inference-patterns.tex"
+      },
+      "disposition": "carried"
+    },
+    {
+      "unit": "OLP-0684",
+      "path": "content/proof-theory/proof-search/tableaux.tex",
+      "english_sha256": "94f8b2203c2caa61393aef956a514cb72ed956e71a8f3a41027c56d07ab5c99e",
+      "marathi_sha256": "2d0f51df0081ea9765856c530432937e8e4a49fbee4937a88597cbf7c703b17a",
+      "inherited_attribution": {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "date": "2026-11-14",
+        "method": "patched",
+        "evidence": "provenance/source-sync/olp-1e960bef.json"
+      },
+      "disposition": "patched"
+    },
+    {
+      "unit": "OLP-0701",
+      "path": "content/proof-theory/sequent-calculus/invertibility.tex",
+      "english_sha256": "f571c2da829ff6fe99d463db679388e735d76718208ba57094ad2550fed382fc",
+      "marathi_sha256": "fc7a57c3b89f5055f008b95c1765ef02c45a1c50b27d8b85a8e6c96a9f413cc5",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "disposition": "patched"
+    }
+  ]
+}
