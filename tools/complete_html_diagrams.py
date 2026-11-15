@@ -11,6 +11,7 @@ import json
 import re
 import subprocess
 from pathlib import Path
+import argparse
 
 import fitz
 from complete_diagram_inventory import current_inventory
@@ -179,6 +180,17 @@ entries["turing-machine"]["source_line"] = tex_source.count("\n", 0, asset_sourc
 
 pdf = fitz.open(PDF)
 pdf_sha = sha(PDF)
+parser = argparse.ArgumentParser(description="Export Marathi diagrams from the settled complete reader.")
+parser.add_argument("--crop-map", type=Path, help="Verified source and rendered locations for this edition")
+args = parser.parse_args()
+map_path = args.crop_map or ROOT / "tools/diagram-maps" / (sha(BUILD / "openlogic-mr-full.tex") + ".json")
+locations = None
+if map_path.is_file() or args.crop_map:
+    locations = json.loads(map_path.read_bytes())
+    if (locations["source_tex_sha256"] != sha(BUILD / "openlogic-mr-full.tex")
+            or locations["unresolved"] or set(locations["matches"]) != set(CROPS)):
+        raise ValueError("Diagram coordinates do not describe this complete TeX source.")
+    CROPS = {name: (row["page"], *row["rect"]) for name, row in locations["matches"].items()}
 aux_source = (BUILD / "openlogic-mr-full.aux").read_text(encoding="utf-8")
 label_pages = {label: int(page) for label, page in re.findall(
     r"\\newlabel\{([^}]+)\}\{\{[^}]*\}\{(\d+)\}", aux_source
@@ -226,6 +238,10 @@ for name, (page_number, x0, y0, x1, y1) in CROPS.items():
     assert len(alt) >= 15 and "\\" not in alt, (name, alt)
     clip = fitz.Rect(x0, y0, x1, y1)
     page = pdf[page_number - 1]
+    if locations:
+        ink = page.get_pixmap(matrix=fitz.Matrix(4,0,0,4,-4*x0,-4*y0),clip=clip,alpha=False)
+        if hashlib.sha256(ink.samples).hexdigest() != locations["matches"][name]["rgb_sha256_at_288dpi"]:
+            raise ValueError("Diagram ink changed at its recorded location: " + name)
     # A crop must contain every label or vector path that it intersects.
     # This also catches a stray fragment of neighboring prose or diagrams.
     for block in page.get_text("dict")["blocks"]:

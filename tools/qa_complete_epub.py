@@ -93,7 +93,16 @@ def main():
                   d.get(f"{{{q.XML_NS}}}lang") == config["language"] for d in content),
               "वाचनभागांची मराठी भाषानोंद चुकली", len(content))
         metrics["reading_documents"] = len(content)
-        check(len(content) == receipt["content"]["reading_documents"] == 98, "पूर्ण spine ची व्याप्ती चुकली")
+        main = source.find(f"./{{{X}}}body/{{{X}}}main")
+        def boundaries(parent):
+            return [(node.tag, node.get("data-pdf-destination"), text_with_glyph_alternatives(node))
+                    for node in parent if node.tag in (f"{{{X}}}h1", f"{{{X}}}h2")]
+        expected_groups = [[heading] for heading in boundaries(main)]
+        if len(main) and main[0].tag not in (f"{{{X}}}h1", f"{{{X}}}h2"):
+            expected_groups.insert(0, [])
+        observed_groups = [boundaries(doc.find(f"./{{{X}}}body/{{{X}}}main")) for doc in content]
+        check(observed_groups == expected_groups and len(content) == receipt["content"]["reading_documents"],
+              "मूळ HTML मधील प्रकरणांच्या सीमा, मजकूर किंवा वाचनक्रम जुळत नाही")
         bodies = [d.find(f"{{{X}}}body") for d in content]
         check(" ".join(text_with_glyph_alternatives(b) for b in bodies) == text_with_glyph_alternatives(source.find(f"{{{X}}}body")), "वाचनक्रमातील पूर्ण मजकूर बदलला")
         source_math = list(source.iter(f"{{{M}}}math"))
