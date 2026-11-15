@@ -1,12 +1,13 @@
 # मुक्त तर्कशास्त्र · मराठी (mr-Deva-IN)
 
 या संग्रहात [The Open Logic Text](https://github.com/OpenLogicProject/OpenLogic)
-च्या सर्व 722 TeX मजकूर-एककांचे संपूर्ण मराठी भाषांतर आहे. मूळ स्रोत
-`1e960beff9ed7835bf3e3f1335e21af3439cd107` या आवृत्तीत गोठवला आहे.
+च्या सर्व 722 TeX मजकूर-एककांचे संपूर्ण मराठी भाषांतर आहे. मूळ स्रोताच्या आवृत्तीची [तांत्रिक नोंद](provenance/source-sync/olp-a216aa64.json) उपलब्ध आहे.
 संकलित वाचकग्रंथात मुख्य, पूरक आणि पर्यायी सामग्री मिळून 79 प्रकरणे व
 613 विभाग आहेत. ही आवृत्ती
 [OpenLogic भाषांतर प्रकल्पाचा](https://github.com/KokunoYumeto/OpenLogic-translations)
 भाग आहे.
+
+[संच, तर्कशास्त्र, संगणन — मराठी पाठ्यपुस्तक](courses/sets-logic-computation/README.md) · [पाठ्यपुस्तकाचे PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-15/slc-screen-mr.pdf) · [EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-15/slc-screen-mr.epub)
 
 संपूर्ण आवृत्तीचे वाचन आणि डाउनलोड
 [`complete-v1.5`](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.5)
