@@ -10,17 +10,18 @@
 [संच, तर्कशास्त्र, संगणन — मराठी पाठ्यपुस्तक](courses/sets-logic-computation/README.md) · [पाठ्यपुस्तकाचे PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-15/slc-screen-mr.pdf) · [EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-15/slc-screen-mr.epub)
 
 संपूर्ण आवृत्तीचे वाचन आणि डाउनलोड
-[`complete-v1.5`](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.5)
+[संपूर्ण मराठी ग्रंथ](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-2026-11-15)
 मधून करा.
 
-- [संपूर्ण PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.5/01-openlogic-mr-complete.pdf)
-- [संपूर्ण संचयी TeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.5/02-openlogic-mr-complete.tex)
-- [सर्व संपादनयोग्य स्रोत](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.5/03-openlogic-mr-complete-editable-sources.zip)
-- [ऑफलाइन HTML](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.5/04-openlogic-mr-complete-html.zip)
-- [संपूर्ण EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.5/06-openlogic-mr-complete.epub)
+- [संपूर्ण PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-15/01-openlogic-mr-complete.pdf)
+- [संपूर्ण संचयी TeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-15/02-openlogic-mr-complete.tex)
+- [सर्व संपादनयोग्य स्रोत](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-15/03-openlogic-mr-complete-editable-sources.zip)
+- [ऑफलाइन HTML](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-15/04-openlogic-mr-complete-html.zip)
+- [संपूर्ण EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-15/06-openlogic-mr-complete.epub)
 
 HTML संग्रह उलगडून `index.html` उघडा. संपादनयोग्य स्रोतांच्या संग्रहात
 स्वतंत्र प्रकरण-स्रोत आणि संकलनासाठी लागणारी सामग्री दिली आहे.
+[complete-v1.5](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.5),
 [complete-v1.4](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.4),
 [complete-v1.3](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.3),
 [complete-v1.2](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.2),
@@ -29,6 +30,8 @@ HTML संग्रह उलगडून `index.html` उघडा. संप�
 यांच्या फाइल्स त्या त्या प्रकाशनातून उपलब्ध आहेत.
 
 ## भाषांतर आणि पुनरावलोकन
+
+इंग्रजीतील विशिष्ट उताऱ्यांशी मराठी मजकूर जुळवण्याचे काम OpenAI Codex — GPT-6 Astra, Ultra तर्कप्रयत्न — यांनी केले. [२५ एककांतील संज्ञा आणि गणिती निवडी](provenance/source-sync/translation-choices-a216aa64-mr.md) पाहता येतील.
 
 सर्व 722 भाषांतरित एकके 6,644 मूळ व मराठी मजकूरखंडांशी जुळवली आहेत.
 संपूर्ण नोंदवहीत स्रोताचे हॅश, नेमके भाषांतरित खंड, प्रत्यक्ष पाहिलेले
@@ -52,7 +55,7 @@ GPT-6.1 Sol, Ultra effort, यांनी केले आहे. या मॉ
 मार्ग आणि OLP एकक-ओळखी [`upstream/`](upstream/) मधील गोठवलेल्या मूळ
 स्रोताशी जुळतात. स्रोत-सूची आणि पुनरावलोकनाच्या नोंदी
 [`provenance/`](provenance/) मध्ये, तर संकलन व तपासणीची साधने
-[`tools/`](tools/) मध्ये आहेत. संपूर्ण प्रकाशनात सर्व 722 एककांच्या
+[`tools/`](tools/) मध्ये आहेत. [पूर्वीच्या पुनरावलोकन-संग्रहात](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-v1.2/05-openlogic-mr-complete-review.zip) सर्व 722 एककांच्या
 नोंदवहीची स्वतंत्र आवृत्ती दिली आहे. तिच्यात 638 शब्दनिर्णय,
 स्रोताच्या हाताळणीचे 655 निर्णय आणि 328 नव्या दुरुस्ती-निवडी,
 एकूण 1,621 निर्णय व 26,364 संदर्भ-निर्देश आहेत. मागील GPT-6 Sol
@@ -62,7 +65,7 @@ GPT-6.1 Sol, Ultra effort, यांनी केले आहे. या मॉ
 प्रत्येक शब्दाच्या अक्षरशः उपस्थितीचे किंवा स्वतंत्र तज्ज्ञ स्वीकृतीचे
 प्रमाणपत्र नाहीत. संपूर्ण निर्णय-JSON ची अचूक संकुचित प्रत आणि ती
 उघडण्याची पद्धत [निर्णय-JSON डाउनलोड मार्गदर्शकात](provenance/translation-decisions/CANONICAL_JSON_DOWNLOAD.md)
-दिल्या आहेत; प्रकाशित ZIP संग्रहांत असंकुचित `DECISIONS.json` आहे.
+दिल्या आहेत. त्या पुनरावलोकन-संग्रहात असंकुचित `DECISIONS.json` आहे.
 
 ## संपूर्ण वाचकग्रंथ पुन्हा संकलित करणे
 
@@ -97,7 +100,7 @@ HTML उघडण्यासाठी `build/full/html/index.html` वापर
 अक्षररूपे आहेत; इंटरनेट जोडणी लागत नाही. `tools/prepare_complete_provenance.py`
 हे उत्पादनाच्या कायमस्वरूपी नोंदींमधून संपूर्ण भाषांतर-नोंदवही तपासून
 निर्यात करते. त्या उत्पादन-नोंदी साध्या स्रोत-कार्यप्रतिमध्ये नसतात;
-प्रकाशित संग्रहात त्यांची तपासलेली निर्यात दिली आहे.
+या नोंदी वरील स्वतंत्र पुनरावलोकन-संग्रहात दिल्या आहेत.
 
 ## परवाना आणि श्रेय
 
