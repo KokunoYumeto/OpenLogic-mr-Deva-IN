@@ -2,6 +2,7 @@
 import hashlib
 import json
 import re
+import tomllib
 from collections import Counter
 from pathlib import Path
 from complete_reader_notes import verify_reader_notes
@@ -17,14 +18,20 @@ manifest = {row["unit_id"]: row for row in (
     if line.strip()
 )}
 inputs_by_unit = {row["unit_id"]: row for row in receipt["input_units"]}
+edition = tomllib.loads((ROOT / "olp-edition.toml").read_text(encoding="utf-8"))
+ledger = [json.loads(line) for line in (ROOT / "units.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
+current = {row["id"]: row for row in ledger}
+assert receipt["frozen_revision"] == edition["pins"]["olp"]["commit"]
 assert len(receipt["input_units"]) == len(inputs_by_unit) == 722
-assert set(inputs_by_unit) == set(manifest)
+assert len(ledger) == len(current) == 722 and set(inputs_by_unit) == set(manifest) == set(current)
 for unit_id, row in inputs_by_unit.items():
-    expected_path = manifest[unit_id]["source_path"]
+    unit = current[unit_id]
+    expected_path = unit["path"]
+    assert expected_path == manifest[unit_id]["source_path"] and unit["state"] == "current", unit_id
     assert row["source_path"] == "upstream/" + expected_path
     assert row["target_path"] == "mr/" + expected_path
-    assert hashlib.sha256((ROOT / row["source_path"]).read_bytes()).hexdigest() == row["source_sha256"] == manifest[unit_id]["source_sha256"]
-    assert hashlib.sha256((ROOT / row["target_path"]).read_bytes()).hexdigest() == row["target_sha256"], f"Reader must be rebuilt after changes to {unit_id}"
+    assert hashlib.sha256((ROOT / row["source_path"]).read_bytes()).hexdigest() == row["source_sha256"] == unit["src_sha256"], unit_id
+    assert hashlib.sha256((ROOT / row["target_path"]).read_bytes()).hexdigest() == row["target_sha256"] == unit["tr_sha256"], unit_id
 assert receipt["represented_unit_count"] == 722
 assert len(receipt["core_unit_ids"]) == 639
 assert len(receipt["proof_unit_ids"]) == 50
