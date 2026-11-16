@@ -1,7 +1,7 @@
 # मुक्त तर्कशास्त्र · मराठी (mr-Deva-IN)
 
 या संग्रहात [The Open Logic Text](https://github.com/OpenLogicProject/OpenLogic)
-च्या सर्व 722 TeX मजकूर-एककांचे संपूर्ण मराठी भाषांतर आहे. मूळ स्रोताच्या आवृत्तीची [तांत्रिक नोंद](provenance/source-sync/olp-a216aa64.json) उपलब्ध आहे.
+च्या सर्व 722 TeX मजकूर-एककांचे संपूर्ण मराठी भाषांतर आहे. मूळ स्रोताच्या आवृत्तीची [तांत्रिक नोंद](provenance/source-sync/olp-a3862d07.json) उपलब्ध आहे.
 संकलित वाचकग्रंथात मुख्य, पूरक आणि पर्यायी सामग्री मिळून 79 प्रकरणे व
 613 विभाग आहेत. ही आवृत्ती
 [OpenLogic भाषांतर प्रकल्पाचा](https://github.com/KokunoYumeto/OpenLogic-translations)
@@ -10,17 +10,18 @@
 [संच, तर्कशास्त्र, संगणन — मराठी पाठ्यपुस्तक](courses/sets-logic-computation/README.md) · [पाठ्यपुस्तकाचे PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16-r2/slc-screen-mr.pdf) · [EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16-r2/slc-screen-mr.epub)
 
 संपूर्ण आवृत्तीचे वाचन आणि डाउनलोड
-[संपूर्ण मराठी ग्रंथ](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-2026-11-15)
+[संपूर्ण मराठी ग्रंथ](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-2026-11-16)
 मधून करा.
 
-- [संपूर्ण PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-15/01-openlogic-mr-complete.pdf)
-- [संपूर्ण संचयी TeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-15/02-openlogic-mr-complete.tex)
-- [सर्व संपादनयोग्य स्रोत](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-15/03-openlogic-mr-complete-editable-sources.zip)
-- [ऑफलाइन HTML](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-15/04-openlogic-mr-complete-html.zip)
-- [संपूर्ण EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-15/06-openlogic-mr-complete.epub)
+- [संपूर्ण PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-16/01-openlogic-mr-complete.pdf)
+- [संपूर्ण संचयी TeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-16/02-openlogic-mr-complete.tex)
+- [सर्व संपादनयोग्य स्रोत](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-16/03-openlogic-mr-complete-editable-sources.zip)
+- [ऑफलाइन HTML](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-16/04-openlogic-mr-complete-html.zip)
+- [संपूर्ण EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-16/06-openlogic-mr-complete.epub)
 
 HTML संग्रह उलगडून `index.html` उघडा. संपादनयोग्य स्रोतांच्या संग्रहात
 स्वतंत्र प्रकरण-स्रोत आणि संकलनासाठी लागणारी सामग्री दिली आहे.
+[complete-2026-11-15](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-2026-11-15),
 [complete-v1.5](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.5),
 [complete-v1.4](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.4),
 [complete-v1.3](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.3),
@@ -31,7 +32,7 @@ HTML संग्रह उलगडून `index.html` उघडा. संप�
 
 ## भाषांतर आणि पुनरावलोकन
 
-इंग्रजीतील विशिष्ट उताऱ्यांशी मराठी मजकूर जुळवण्याचे काम OpenAI Codex — GPT-6 Astra, Ultra तर्कप्रयत्न — यांनी केले. [२५ एककांतील संज्ञा आणि गणिती निवडी](provenance/source-sync/translation-choices-a216aa64-mr.md) पाहता येतील.
+इंग्रजीतील विशिष्ट उताऱ्यांशी मराठी मजकूर जुळवण्याचे काम OpenAI Codex — GPT-6 Astra, Ultra तर्कप्रयत्न — यांनी केले. [२५ एककांतील संज्ञा आणि गणिती निवडी](provenance/source-sync/translation-choices-a216aa64-mr.md) आणि [आठ एककांतील स्रोतवाचन व मराठी शब्दनिवड](provenance/source-sync/translation-choices-a3862d07-mr.md) पाहता येतील.
 
 सर्व 722 भाषांतरित एकके 6,644 मूळ व मराठी मजकूरखंडांशी जुळवली आहेत.
 संपूर्ण नोंदवहीत स्रोताचे हॅश, नेमके भाषांतरित खंड, प्रत्यक्ष पाहिलेले
