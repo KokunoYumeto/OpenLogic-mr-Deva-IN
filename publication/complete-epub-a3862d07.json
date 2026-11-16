@@ -1,0 +1,14 @@
+{
+  "schema": "openlogic-mr-complete-epub-config/1",
+  "language": "mr-Deva-IN",
+  "title": "मुक्त तर्कशास्त्र — संपूर्ण मराठी आवृत्ती",
+  "modified": "2026-11-16T00:00:00Z",
+  "description": "सर्व 722 स्रोत-एककांची संपूर्ण मराठी आवृत्ती. मुख्य ग्रंथात 79 प्रकरणे आणि 613 विभाग आहेत. मूळ इंग्रजी स्रोत आणि जुळवलेल्या भाषांतराची नोंद जतन केली आहे. स्वतंत्र मानवी पुनरावलोकनाचा दावा नाही.",
+  "model_notice_mr": "मूळ लेखक व योगदानकर्ते: Open Logic Project. मराठी यंत्रानुवाद: OpenAI Codex (GPT-5.6 Sol व GPT-6 Sol, Ultra). दुरुस्ती-पुनरावलोकन आणि HTML/EPUB अक्षरजुळणी व क्रमांकन: OpenAI Codex (GPT-6.1 Sol, Ultra). इंग्रजी स्रोताशी मराठी विभाग जुळवणे व या आवृत्तीची अक्षरजुळणी: OpenAI Codex (GPT-6 Astra, Ultra).",
+  "accessibility_summary_mr": "पडद्याच्या रुंदीनुसार मांडता येणारा मराठी मजकूर, MathML सूत्रे, सिद्धतांची रचना, आकृत्यांची मराठी वर्णने आणि वापरता येणारी अनुक्रमणिका. ही सर्व 722 स्रोत-एककांची संपूर्ण आवृत्ती आहे. वाचन-प्रणालीनुसार MathML चा आधार बदलू शकतो. यांत्रिक तपासणी ही मानवी सुलभता-प्रमाणपत्र नाही.",
+  "reader_root": "build/full/html",
+  "reader_html_sha256": "4cd6ea89bb6ef1a7d5b9523c5e49dafc6b083da0ea90bbe98ddc0ad611723df0",
+  "build_root": "build/epub-a3862d07",
+  "output_epub": "build/epub-a3862d07/openlogic-mr-complete.epub",
+  "build_receipt": "build/epub-a3862d07/BUILD.json"
+}

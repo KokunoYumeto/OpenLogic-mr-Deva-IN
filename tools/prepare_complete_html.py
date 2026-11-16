@@ -673,8 +673,17 @@ for emphasis in soup.find_all("em"):
         localized_proof_headings += 1
 
 core_assets = ROOT / "build/core/html/assets"
-core_receipt = json.loads((ROOT / "build/core/HTML_BUILD_RECEIPT.json").read_text(encoding="utf-8"))
-inherited = {Path(entry["filename"]).stem: entry for entry in core_receipt["diagram_assets"]}
+tracked_assets = ROOT / "reader/twenty-chapters/assets"
+inherited = json.loads((ROOT / "tools/core-diagrams.json").read_bytes())
+source_diagrams = {entry["name"]: entry for entry in current_inventory(source.read_text(encoding="utf-8"))}
+for original in inherited.values():
+    entry = source_diagrams[original["source_name"]]
+    if entry["kind"] == "inline-tikz":
+        source_digest = entry["source_sha256"]
+    else:
+        source_digest = sha(ROOT / "upstream/assets/diagrams" / (entry["name"] + ".tikz"))
+    if source_digest != original["source_sha256"]:
+        raise ValueError("Rebuild the SVG for the changed diagram " + entry["name"])
 inherited_names = {
     "union": "union", "intersection": "intersection", "difference": "difference",
     "function": "function", "surjective": "surjective", "injective": "injective",
@@ -684,9 +693,12 @@ inherited_names = {
     "tikz-014": "hilberts-hotel",
 }
 for target, inherited_name in inherited_names.items():
-    source_asset = core_assets / (inherited_name + ".svg")
-    assert source_asset.is_file()
-    assert sha(source_asset) == inherited[inherited_name]["sha256"]
+    filename = inherited_name + ".svg"
+    source_asset = core_assets / filename
+    if not source_asset.is_file():
+        source_asset = tracked_assets / filename
+    if sha(source_asset) != inherited[inherited_name]["sha256"]:
+        raise ValueError("Unexpected diagram contents: " + filename)
     destination = ASSETS / (target + ".svg")
     shutil.copyfile(source_asset, destination)
     for image in soup.select('img[src="assets/' + target + '.svg"]'):

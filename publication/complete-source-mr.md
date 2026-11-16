@@ -23,15 +23,23 @@ PDF `build/full/openlogic-mr-full.pdf` येथे मिळेल. एकक�
 
 यासाठी Pandoc आणि Python मधील PyMuPDF, Beautiful Soup 4 व lxml या लायब्रऱ्या आवश्यक आहेत. PDF तयार झाल्यावर पुढील आज्ञा चालवा.
 
+नव्या आवृत्तीत आकृतीचे पान बदलले असेल, तर मागील प्रकाशित आवृत्तीच्या PDF व संचयी LaTeX फाइलवरून आकृत्यांची स्थाने पुन्हा तपासा. या तपासणीत प्रत्येक आकृतीचा आकार, तिच्यातील अक्षरे आणि प्रतिमा जुळणे आवश्यक आहे.
+
+```powershell
+python -X utf8 tools/locate_complete_diagrams.py --previous-tex PREVIOUS.tex --previous-pdf PREVIOUS.pdf
+```
+
+त्यानंतर HTML आणि EPUB तयार करा.
+
 ```powershell
 python -X utf8 tools/complete_html_diagrams.py
 python -X utf8 tools/prepare_complete_html.py
 python -X utf8 tools/qa_complete_html.py
-python -X utf8 tools/build_complete_epub.py publication/complete-epub-a216aa64.json
+python -X utf8 tools/build_complete_epub.py publication/complete-epub-a3862d07.json
 ```
 
-संगणकावर वाचण्यासाठी `build/full/html/index.html` उघडा. EPUB फाइल `build/epub-a216aa64/openlogic-mr-complete.epub` येथे मिळेल. EPUBCheck च्या JAR फाइलचा स्थानिक मार्ग देऊन EPUB तपासता येतो.
+संगणकावर वाचण्यासाठी `build/full/html/index.html` उघडा. EPUB फाइल `build/epub-a3862d07/openlogic-mr-complete.epub` येथे मिळेल. EPUBCheck च्या JAR फाइलचा स्थानिक मार्ग देऊन EPUB तपासता येतो.
 
 ```powershell
-python -X utf8 tools/qa_complete_epub.py publication/complete-epub-a216aa64.json --epubcheck-jar PATH/TO/epubcheck.jar
+python -X utf8 tools/qa_complete_epub.py publication/complete-epub-a3862d07.json --epubcheck-jar PATH/TO/epubcheck.jar
 ```
