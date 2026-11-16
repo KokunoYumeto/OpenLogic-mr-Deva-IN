@@ -2,11 +2,11 @@
 
 रिचर्ड झॅक यांच्या *Sets, Logic, Computation* या पाठ्यपुस्तकाची मराठी आवृत्ती. तत्त्वज्ञान, गणित आणि संगणकशास्त्राच्या विद्यार्थ्यांसाठी हा औपचारिक अधितर्कशास्त्राचा परिचय आहे. पुस्तकात संच, संबंध आणि फलने; प्रथम-क्रम तर्कशास्त्राची विन्यासमीमांसा, चिन्हार्थमीमांसा व सिद्धतापद्धती; आणि ट्यूरिंग यंत्रे व संगणनक्षमता यांचा अभ्यास आहे. मुख्य मजकुरात १५ प्रकरणे, प्रकरणांचे १२ सारांश आणि सराव आहेत. परिशिष्टांत सिद्धतापद्धती, विगमन, चरित्रे आणि ग्रीक वर्णमाला आहेत. शेवटी ७९ नोंदींची पारिभाषिक शब्दसूची आणि संदर्भसूची दिली आहे.
 
-- [संपूर्ण मराठी पुस्तक वाचा किंवा PDF उतरवा](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16-r2/slc-screen-mr.pdf)
-- [EPUB उतरवा](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16-r2/slc-screen-mr.epub)
-- [मराठी सूत्रवाचनासह ऑफलाइन HTML](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16-r2/slc-screen-mr-html.zip)
-- [एकत्रित संपादनयोग्य LaTeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16-r2/slc-screen-mr.tex)
-- [संपादनयोग्य स्रोत आणि बांधणीसाहित्य (ZIP)](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16-r2/slc-screen-mr-source.zip)
+- [संपूर्ण मराठी पुस्तक वाचा किंवा PDF उतरवा](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16-r3/slc-screen-mr.pdf)
+- [EPUB उतरवा](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16-r3/slc-screen-mr.epub)
+- [मराठी सूत्रवाचनासह ऑफलाइन HTML](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16-r3/slc-screen-mr-html.zip)
+- [एकत्रित संपादनयोग्य LaTeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16-r3/slc-screen-mr.tex)
+- [संपादनयोग्य स्रोत आणि बांधणीसाहित्य (ZIP)](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16-r3/slc-screen-mr-source.zip)
 - [चित्रांचे व छायाचित्रांचे श्रेय](ASSET-CREDITS.md) · [मुद्राक्षरांचे श्रेय आणि परवाने](FONT-CREDITS.md) · [स्रोत व फाइल्सची नोंद](MANIFEST.json)
 मागील आवृत्तीचे [PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-14/slc-screen-mr.pdf), [एकत्रित LaTeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-14/slc-screen-mr.tex) आणि [स्रोतसंच](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-14/slc-source-mr.zip) उपलब्ध आहेत.
 पहिल्या मराठी आवृत्तीचे [PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/raw/f8722cc37b93350e2f1b2e59d1b3fb783744e717/textbooks/slc/slc-screen-mr.pdf), [एकत्रित LaTeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/raw/f8722cc37b93350e2f1b2e59d1b3fb783744e717/textbooks/slc/slc-screen-mr.tex) आणि [स्रोतसंच](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/raw/f8722cc37b93350e2f1b2e59d1b3fb783744e717/textbooks/slc/slc-source-mr.zip) उपलब्ध आहेत.
