@@ -1,0 +1,330 @@
+{
+  "schema": "olpkit.sync-review.v1",
+  "from": "a216aa641a823b861974b5612579aacbf59fd015",
+  "to": "a3862d07d2f5df3a281d4a55df73dcd59e84d5ce",
+  "edition_base": "10d729cc653120316b5b3dfce2334d9aa20c1af1",
+  "model": "GPT-6 Astra",
+  "effort": "ultra",
+  "canon": {
+    "MR-P003": {
+      "source": "https://books.ebalbharati.in/pdfs/901000608.pdf",
+      "locator": "संचांचे प्रकार table, empty/finite/infinite rows",
+      "passage_id": "MR-P003",
+      "source_id": "MR-C001",
+      "source_sha256": "7646a42093bb66af77ae6a1edd0584ba023688b53c2f67dd37161e87f8af67bb",
+      "page": 14,
+      "page_image_sha256": "b8e20798d5e9618d2801c4a1b4c89cf67c7b96fd84158e86230aa82d96d928f6"
+    },
+    "MR-P006": {
+      "source": "https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf",
+      "locator": "विधानीय तर्कशास्त्र, topics 1–4",
+      "passage_id": "MR-P006",
+      "source_id": "MR-C006",
+      "source_sha256": "a51f5af34e4f4fb71f32970b813d3a44fb2cccc28c6c4e2d1b714bec27ebd065",
+      "page": 12,
+      "page_image_sha256": "a92bfe617b68986a9e7b6a25db9655d98d65b23fc667e4e840b8c254508331da"
+    },
+    "MR-P021": {
+      "source": "https://ebooks.ebalbharati.in/pdfs/1201010508.pdf",
+      "locator": "Predicate logic introduction, section 3.1",
+      "passage_id": "MR-P021",
+      "source_id": "MR-C011",
+      "source_sha256": "d6db1feef902f0d88d6480004ea290b0e54b5d39193bcb196f5ba32c65bdc682",
+      "page": 29,
+      "page_image_sha256": "2dd54b1b4ae2ea415254f116955afb924aa3ad0267b70e1da056901850a1066b"
+    },
+    "MR-P029": {
+      "source": "https://vishwakosh.marathi.gov.in/27548/",
+      "locator": "Opening paragraph, current web-search extraction personally read 2026-09-04",
+      "passage_id": "MR-P029",
+      "source_id": "MR-C018"
+    },
+    "MR-P087": {
+      "source": "https://vishwakosh.marathi.gov.in/20027/",
+      "locator": "axiomatic-method, formula-shape and completeness paragraphs; current web-search extraction personally read 2026-09-06",
+      "passage_id": "MR-P087",
+      "source_id": "MR-C002"
+    },
+    "primitive": {
+      "source": "https://shabdakosh.marathi.gov.in/node/42517",
+      "locator": "Primitive, पहिला शब्दार्थ «आदिम». संपूर्ण संगणनशास्त्रीय संज्ञेची नोंद येथे नाही."
+    }
+  },
+  "units": [
+    {
+      "unit": "OLP-0190",
+      "path": "content/model-theory/basics/dlo.tex",
+      "canon": [
+        "MR-P029",
+        "MR-P003"
+      ],
+      "rationale": "दिलेला घटक आंशिक समरूपणाच्या प्रांतात असेल तर मूळ नकाशाच पुरतो. रिक्त नकाशासाठी दुसऱ्या प्रांतातील कोणताही घटक चालतो. हे दोन्ही प्रसंग जुन्या मराठीत होते. इंग्रजीतील चल आणि चार प्रकरणांची रचना जुळवली. आता इंग्रजीतही ही प्रकरणे आहेत म्हणून जुनी उणीव दर्शवणारी टीप निवृत्त केली.",
+      "anchor": "तर $q = p$ घेतल्याने",
+      "target_lines": [
+        46
+      ],
+      "source_hunks": [
+        "@@ -42,9 +42,10 @@"
+      ],
+      "disposition": "patched",
+      "hashes": {
+        "source_before": "9c7bd2cbee65556d3edc1316632fa5714527901ee0aed70ee76e2c4db7c03531",
+        "source_after": "78925883763f738866507a8f3f0303ac20413f8810f6301d1a4de08f6f39015c",
+        "target_before": "ca6d2682687657baf0f7196a534f0294f3cb7ac2839b605e3617f79f899ea06c",
+        "target_after": "c47a4daff7b40ea55c7a8a3e9787ec1cd6395f36204e15d5a24ab1df1a1be2fe"
+      },
+      "confidence": "5/5",
+      "confidence_basis": "लागू असलेली गणिती अट इंग्रजी व मराठी उताऱ्यात प्रत्यक्ष तपासली.",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "text_action": "localized-passage",
+      "locale_marker_added": true
+    },
+    {
+      "unit": "OLP-0213",
+      "path": "content/computability/recursive-functions/pr-functions.tex",
+      "canon": [
+        "primitive",
+        "MR-P029"
+      ],
+      "rationale": "शीर्षकातील «पुनरावर्ती» हे विशेषण «फलने» या नामाला लागू होते. व्याख्येत आरंभीची फलने, संयोजन आणि आदिम पुनरावर्तन दिले आहे. मराठी शीर्षकात आधीच हीच संकल्पना होती. शब्दकोश «आदिम» तर विश्वकोश «फलन» याला आधार देतो. संपूर्ण संज्ञेसाठी स्वतंत्र शब्दकोशीय नोंद मिळाली नाही.",
+      "anchor": "आदिम पुनरावर्ती फलने",
+      "target_lines": [
+        10,
+        54,
+        71,
+        109
+      ],
+      "source_hunks": [
+        "@@ -7,7 +7,7 @@"
+      ],
+      "disposition": "patched",
+      "hashes": {
+        "source_before": "893f3c79391b6a02b0af25282b921b2a06db27f5b94b4a6e0fed0c807e1e0ee1",
+        "source_after": "6a6788f660acef19c6ca2579d820f8c8b0bd7509130c85c150da012e3b03416c",
+        "target_before": "45bab080321127fa19235e71f74697ba65d18422006b6d85e8012738a818f180",
+        "target_after": "c5a97fa6ad671496c13179da2e64526c3ebbff580d9d0cf18ad61e46835f63a4"
+      },
+      "confidence": "4/5",
+      "confidence_basis": "मराठी घटकसंज्ञा साक्षांकित आहेत. संपूर्ण विशेषणासाठी समांतर मराठी साक्ष मर्यादित आहे.",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "text_action": "retained",
+      "locale_marker_added": true
+    },
+    {
+      "unit": "OLP-0214",
+      "path": "content/computability/recursive-functions/notation-pr-functions.tex",
+      "canon": [
+        "primitive",
+        "MR-P029"
+      ],
+      "rationale": "या विभागात फलनांसाठीची चिन्हांकने दिली आहेत. «फलनांची» हे संबंधदर्शक रूप ही व्याप्ती स्पष्ट करते. «आदिम पुनरावर्तनाची चिन्हांकने» म्हटल्यास अर्थ एकाच प्रक्रियेपुरता मर्यादित होईल. «आदिम» व «फलन» हे स्वतंत्रपणे साक्षांकित घटक आहेत.",
+      "anchor": "आदिम पुनरावर्ती फलनांची चिन्हांकने",
+      "target_lines": [
+        10
+      ],
+      "source_hunks": [
+        "@@ -7,7 +7,7 @@"
+      ],
+      "disposition": "patched",
+      "hashes": {
+        "source_before": "8e10b20204065445cbf26871cb999e37664b46af04a7bb7233f880c9404f4a5f",
+        "source_after": "28632413fbaf670bdb63555173df81053921d914d138dd98706ae639e16602e7",
+        "target_before": "0ef8c7633ee9d6133d5088e220678da1057cd12df83a16a4005d43a6c7804b57",
+        "target_after": "e768a251230923022345ac8bae04f08709205a7b09db9eae7a9ce2d77d4df399"
+      },
+      "confidence": "4/5",
+      "confidence_basis": "मराठी घटकसंज्ञा साक्षांकित आहेत. संपूर्ण विशेषणासाठी समांतर मराठी साक्ष मर्यादित आहे.",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "text_action": "retained",
+      "locale_marker_added": true
+    },
+    {
+      "unit": "OLP-0308",
+      "path": "content/incompleteness/theories-computability/first-incompleteness.tex",
+      "canon": [
+        "MR-P087"
+      ],
+      "rationale": "पूर्ण सिद्धांताला स्वयंसिद्धकांची प्रभावी मांडणी देता येणे हे गृहीतक आहे. एखादी विशिष्ट मांडणी आधीच दिली आहे असा दावा आवश्यक नाही. मराठी सिद्धतेत axiomatizable ही खूण आधीच होती. विश्वकोशातील स्वयंसिद्धकीय व्यवस्थेची संज्ञा पाहिली; नेमकी प्रभावीपणाची अट इंग्रजी प्रमेयातून घेतली.",
+      "anchor": "!!{axiomatizable} असेल",
+      "target_lines": [
+        23
+      ],
+      "source_hunks": [
+        "@@ -19,7 +19,7 @@ $\\Th{Q}$."
+      ],
+      "disposition": "patched",
+      "hashes": {
+        "source_before": "6d136f51b1d58f3d8831a237dd21b65a146381874e9549c7e504080264df82bd",
+        "source_after": "36aeeed707ff4825110f032b607a4d8dac82eecebda3453c726d79bfd88ec521",
+        "target_before": "e13ce67736aa406e57e110682e8b49e2530ea8ffc36094a2124426fba8ad70bf",
+        "target_after": "56c43ee96ab96eda659cc762a5e24dbad867a1cfb92d853b62e6641b1f50670c"
+      },
+      "confidence": "5/5",
+      "confidence_basis": "लागू असलेली गणिती अट इंग्रजी व मराठी उताऱ्यात प्रत्यक्ष तपासली.",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "text_action": "retained",
+      "locale_marker_added": true
+    },
+    {
+      "unit": "OLP-0338",
+      "path": "content/second-order-logic/sol-and-set-theory/comparing-sets.tex",
+      "canon": [
+        "MR-P029"
+      ],
+      "rationale": "प्रतिमा Y मध्ये असणे आणि वेगवेगळ्या घटकांच्या प्रतिमा वेगळ्या असणे या दोन्ही अटी X वरील निर्बंधाला लागू होतात. दोन्ही सूत्रांत X(x) व X(y) आधीच होते. प्रस्तावनेतील वाक्य स्पष्ट केले आणि पहिले सूत्र मूळ स्रोतानुसार दोन ओळींत मांडले. फलन, प्रतिमा आणि एकास-एक यांचा वापर विश्वकोशातील फलनाच्या उदाहरणांवर आधारलेला आहे.",
+      "anchor": "एकास-एक आहे, हे दोन्ही गुणधर्म",
+      "target_lines": [
+        38
+      ],
+      "source_hunks": [
+        "@@ -30,16 +30,17 @@ non-empty, i.e., $\\Sat{M}{\\lexists[x][X(x)]}[s]$ iff $s(X) \\neq",
+        "@@ -50,7 +51,7 @@ there is !!a{bijective} function~$f\\colon X \\to Y$."
+      ],
+      "disposition": "patched",
+      "hashes": {
+        "source_before": "d64defa142c5d31762b286b3e9c94fbe278e6462d8f417388b2405383e73b330",
+        "source_after": "2cd0688b17ec73cf03290d37676420b4cd0a7a37e5838e3873add0cac41585bd",
+        "target_before": "7da50e827fa3ed08ee426dd27aeace90588222b4529ee7ff4dc095388cb8feec",
+        "target_after": "35ac8593608b1ae7c2b178893f2affacc77af198cc78f53db4c99c376f6f3f2b"
+      },
+      "confidence": "5/5",
+      "confidence_basis": "लागू असलेली गणिती अट इंग्रजी व मराठी उताऱ्यात प्रत्यक्ष तपासली.",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "text_action": "localized-passage",
+      "locale_marker_added": true
+    },
+    {
+      "unit": "OLP-0643",
+      "path": "content/first-order-logic/axiomatic-deduction/provability.tex",
+      "canon": [
+        "MR-P087",
+        "MR-P021"
+      ],
+      "rationale": "सार्विक संख्यापक फक्त पूर्वांगावर आहे. मराठीतील Ax1 चे सूत्र नव्या स्रोताशी अक्षरशः जुळते. या सूत्राविषयी जुना स्रोतदोष असल्याचे वाक्य निवृत्त केले. निषेधाच्या स्वतंत्र सिद्धतेविषयीची नोंद राखली.",
+      "anchor": "\\lforall[x][\\Subst{!A}{x}{c}] \\lif",
+      "target_lines": [
+        258,
+        262,
+        269
+      ],
+      "source_hunks": [
+        "@@ -242,7 +242,7 @@ in $!A$, then $\\Proves \\lforall[x][\\Subst{!A}{x}{c}] \\equiv"
+      ],
+      "disposition": "patched",
+      "hashes": {
+        "source_before": "150b411bdceac490428e642969889123ecc14db1668fde926adfc1d831e28745",
+        "source_after": "7f7165400dad6c1c62cd90d46e86d5f485ca851e83d3f73ef205ed634b84ea79",
+        "target_before": "917f2d368aaa4d62fd41747f2b8365e5854197914734820943066c7c09ad38e1",
+        "target_after": "20f01316400671750a92e0ae3e3a853c4e5e81b291f73657440e63f539b8b4ac"
+      },
+      "confidence": "5/5",
+      "confidence_basis": "लागू असलेली गणिती अट इंग्रजी व मराठी उताऱ्यात प्रत्यक्ष तपासली.",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "text_action": "localized-passage",
+      "locale_marker_added": true
+    },
+    {
+      "unit": "OLP-0663",
+      "path": "content/proof-theory/natural-deduction/introduction.tex",
+      "canon": [
+        "MR-P006",
+        "MR-P021"
+      ],
+      "rationale": "अतिरिक्त गृहीतक A धरून B निष्पन्न होत असेल तर मूळ गृहीतकांपासून A → B निष्पन्न होते. B एकटे निष्पन्न होते असा नियम नाही. मराठीतील निष्कर्ष आणि गृहीतक आधीच योग्य आहेत.",
+      "anchor": "$\\Gamma \\Entails !A \\lif !B$",
+      "target_lines": [
+        166
+      ],
+      "source_hunks": [
+        "@@ -73,7 +73,7 @@ theory. !!^a{proof} of~$!A$ from assumptions~$\\Gamma$ shows that $!A$"
+      ],
+      "disposition": "patched",
+      "hashes": {
+        "source_before": "782f91d07d6f92f5ae9cea347d3d04f6a84c140008cbe9381d125c63d352ddb9",
+        "source_after": "5d5499e613ba7082328172c50125c1306daac46bedb3ee39874824ab37dd80a4",
+        "target_before": "77050479a86a14343a4a12fabb52d0fa6cbbd46c2999ba3a40c2625ccc9a14e8",
+        "target_after": "a8888cde53d9b51f98c90be337274719152031a7a0e4a8e4b1a63047d09e20ae"
+      },
+      "confidence": "5/5",
+      "confidence_basis": "लागू असलेली गणिती अट इंग्रजी व मराठी उताऱ्यात प्रत्यक्ष तपासली.",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "text_action": "retained",
+      "locale_marker_added": true
+    },
+    {
+      "unit": "OLP-0665",
+      "path": "content/proof-theory/natural-deduction/quantifiers.tex",
+      "canon": [
+        "MR-P006"
+      ],
+      "rationale": "अस्वच्छ अनुमानांची संख्या पूर्णांक आहे. «जास्तीत जास्त n−1» आणि «n पेक्षा कमी» या अटी समतुल्य आहेत. मराठीत नेमकी एकच घट झाली असे म्हटलेले नाही. अनेक अनुमाने एकाच वेळी स्वच्छ होण्याचे स्पष्टीकरण राखले.",
+      "anchor": "जास्तीत जास्त $n-1$",
+      "target_lines": [
+        318
+      ],
+      "source_hunks": [
+        "@@ -173,7 +173,7 @@ proof $\\delta_1'$,"
+      ],
+      "disposition": "patched",
+      "hashes": {
+        "source_before": "1729af6de07c7d3d94f148e87ebf8ac54c84f784036cb0dd47dc3326882d3cdc",
+        "source_after": "74ed2f5f4d196ef50218dedbe90f165de108033a322f3e92dbc969d87f3bd957",
+        "target_before": "fdda9de950d1cfee51bceda469ef333af81a93ff2c36220fa570fd8ec1c2f00b",
+        "target_after": "eecb6c1155f056e51e1848ef827933eb203d2c9bbcc5e038c69c0c6897f678a1"
+      },
+      "confidence": "5/5",
+      "confidence_basis": "लागू असलेली गणिती अट इंग्रजी व मराठी उताऱ्यात प्रत्यक्ष तपासली.",
+      "inherited_attribution": {
+        "model": null,
+        "effort": null,
+        "date": null,
+        "method": "inherited",
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl"
+      },
+      "text_action": "retained",
+      "locale_marker_added": true
+    }
+  ]
+}
