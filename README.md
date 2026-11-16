@@ -7,7 +7,7 @@
 [OpenLogic भाषांतर प्रकल्पाचा](https://github.com/KokunoYumeto/OpenLogic-translations)
 भाग आहे.
 
-[संच, तर्कशास्त्र, संगणन — मराठी पाठ्यपुस्तक](courses/sets-logic-computation/README.md) · [पाठ्यपुस्तकाचे PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16/slc-screen-mr.pdf) · [EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16/slc-screen-mr.epub)
+[संच, तर्कशास्त्र, संगणन — मराठी पाठ्यपुस्तक](courses/sets-logic-computation/README.md) · [पाठ्यपुस्तकाचे PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16-r2/slc-screen-mr.pdf) · [EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-16-r2/slc-screen-mr.epub)
 
 संपूर्ण आवृत्तीचे वाचन आणि डाउनलोड
 [संपूर्ण मराठी ग्रंथ](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-2026-11-15)
