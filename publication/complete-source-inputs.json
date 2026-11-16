@@ -1,0 +1,939 @@
+{
+  "editorial_comments": {
+    "mr/content/applied-modal-logic/epistemic-logic/bisimulations.tex": {
+      "4b332a73c958fc1c619477de8a1cbd2fab36460236af84ac3665a30462e7aac5": "%READERNOTE{SOL6-A190:}"
+    },
+    "mr/content/applied-modal-logic/epistemic-logic/language-epistemic-logic.tex": {
+      "464f94e6a323f301a1cf363da5903b8d5dbd4c94cfe6f5a432d5ce05fc4ff0c2": "%READERNOTE{SOL6-A188:}"
+    },
+    "mr/content/applied-modal-logic/epistemic-logic/properties-accessibility.tex": {
+      "1392bba9828628ec9bbcbc48630799ff4069c51b6a50c16cec999a55cb4fcf91": "%READERNOTE{SOL6-A191:}"
+    },
+    "mr/content/applied-modal-logic/epistemic-logic/public-announcement-logic-semantics.tex": {
+      "4e575b4e691e3eb6980c440e6e1bcbf2ddfedc757ac9103c557671fdf80754b8": "%READERNOTE{SOL6-A193:}"
+    },
+    "mr/content/applied-modal-logic/epistemic-logic/relational-models.tex": {
+      "3f78d28b3cedeb6c44fbda9805e719f7ad76e103a76246d08eaf2d35395841af": "%READERNOTE{SOL6-A192:}"
+    },
+    "mr/content/applied-modal-logic/epistemic-logic/truth-at-w.tex": {
+      "65fae0dccace0e8bc10068f0fef677591da75f0b602b7ffb2153dcbacebd0c40": "%READERNOTE{SOL6-A189:}"
+    },
+    "mr/content/applied-modal-logic/temporal-logic/possible-histories.tex": {
+      "b33fad1b5ca45c9c6e19c6c81fb0e5bc1e7b05800421a62b77df3de5e23762a6": "%READERNOTE{SOL6-A187:}"
+    },
+    "mr/content/computability/computability-theory/application-fixed-point.tex": {
+      "26b6673e950b7eabe4bf5cccd4c7b58ff319d30e6b1ebecf0cc59c26c7479a5b": "%READERNOTE{OLCMP-024:}"
+    },
+    "mr/content/computability/computability-theory/ce-closed-cup-cap.tex": {
+      "58fd7c1267b9e0829056501fac9ccd41b6ae39162038cbb975a633cb326296ab": "%READERNOTE{OLCMP-019:}"
+    },
+    "mr/content/computability/computability-theory/complement-ce.tex": {
+      "dea2e61fd22678303acb005aac96e928019e1630fb6bf77afb33e9bb78de7b68": "%READERNOTE{OLCMP-020:}"
+    },
+    "mr/content/computability/computability-theory/complete-ce-sets.tex": {
+      "43a0bb659b3b948b0e91be2a6069c1d5117cb0fe46f1f18ad7be8da65633a0a0": "%READERNOTE{OLCMP-023:}"
+    },
+    "mr/content/computability/computability-theory/equiv-ce-defs.tex": {
+      "2f78b04e76f7c7d5930895d7ecc76122f9fac6191515f7897be7166917571507": "%READERNOTE{OLCMP-018:}",
+      "4099733ec3a3774b35004b55560ffa6cb8c8b5546e5af8eff8e0f9bb8e9a2d2e": "%READERNOTE{OLCMP-017:}"
+    },
+    "mr/content/computability/computability-theory/k-1.tex": {
+      "9bb9fe21e0bf0e2510ba8851375618f68cc5e28403cf79de39208f919bd73eff": "%READERNOTE{SOL6-A031:}"
+    },
+    "mr/content/computability/computability-theory/no-universal-function.tex": {
+      "d4c6ac5ecb8e2613ba495c4ac9742be6796bc99845812a1d8a3a8a3ddaa4e0f7": "%READERNOTE{OLCMP-015:}"
+    },
+    "mr/content/computability/computability-theory/non-comp-set.tex": {
+      "ab3840f4e26f77829c90f6258c45f2d9cd673470fc5ef788f9165f1b64ea76e0": "%READERNOTE{SOL6-A032:}"
+    },
+    "mr/content/computability/computability-theory/prop-reduce.tex": {
+      "b343bfce6e4de9c89fa7b4487bc0bdd868d6e0cb80a84b6127d823f3490eca9f": "%READERNOTE{OLCMP-022:}"
+    },
+    "mr/content/computability/computability-theory/reducibility.tex": {
+      "8fcedc962c460e72ba2956c0181a938e3449ff9e3c765c1cffba22cff3319aed": "%READERNOTE{OLCMP-021:}"
+    },
+    "mr/content/computability/computability-theory/russells-paradox.tex": {
+      "d8df06b93e64294de394637f172dc9e3c761fa5f9d921c698f3f7dfe54858e09": "%READERNOTE{OLCMP-016:}"
+    },
+    "mr/content/computability/computability-theory/s-m-n.tex": {
+      "d9c024a03b0914201bc352d81133c11197cd8117fea9f684465e1f844ebb792a": "%READERNOTE{OLCMP-013:}"
+    },
+    "mr/content/computability/computability-theory/universal-part-function.tex": {
+      "76326471c399014cba82118a69f04d3d2a0a53a9fce405984de71980fff58d11": "%READERNOTE{OLCMP-014:}"
+    },
+    "mr/content/computability/recursive-functions/halting-problem.tex": {
+      "3620c80be58f0b245f787db775559eb96bfb54aa7de7f3c4cab115e6b12026d6": "%READERNOTE{OLCMP-012:}"
+    },
+    "mr/content/computability/recursive-functions/sequences.tex": {
+      "ce90485a495ceb8adac48ba3ef63b003dc3c38e63fc4b151e15297b9ff88bc9f": "%READERNOTE{SOL6-A029:}"
+    },
+    "mr/content/counterfactuals/introduction/counterfactuals.tex": {
+      "fa73897f3a78a04278314bc4f3fe9a92df3ececebb3ffb6bd79852afdb34896e": "%READERNOTE{OLINC-238:}"
+    },
+    "mr/content/counterfactuals/minimal-change-semantics/introduction.tex": {
+      "539c4b29ee03a9a2016f8f407167052af1d18bd813b05a127d41222f65fe5f1d": "%READERNOTE{SOL6-A213:}"
+    },
+    "mr/content/counterfactuals/minimal-change-semantics/sphere-models.tex": {
+      "e4f02d9869cd2b373fb97ec6d526d3562ae3f9108f7ae59c6001cb0a9b1b1268": "%READERNOTE{SOL6-A214:}"
+    },
+    "mr/content/counterfactuals/minimal-change-semantics/true-false.tex": {
+      "bcdd9664a52847fefd205123213ee03e563a4fc1869e7f2da7bf10fd9c04ba39": "%READERNOTE{SOL6-A217:}"
+    },
+    "mr/content/first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex": {
+      "316ce9c70abe4e494da2f4a9870fdd6a2a114cc4e8aa19fa96a6c0cbfb67b665": "%READERNOTE{OLAXD-002:}",
+      "c22fa86d8011f1c5f81447c6bf3a17601c9004c8b9a828425e02832cb9bdc0ed": "%READERNOTE{OLAXD-003:}"
+    },
+    "mr/content/first-order-logic/axiomatic-deduction/deduction-theorem.tex": {
+      "f97e439082ffa902195ac101b81e9de2143578d328cddc8afc313cf671fea7e2": "%READERNOTE{OLAXD-001:}"
+    },
+    "mr/content/first-order-logic/axiomatic-deduction/identity.tex": {
+      "d41a3f6eace46910b2e9ca60168498c956b80385b1fd6b325e46adcb1a81bf93": "%READERNOTE{OLAXD-009:}"
+    },
+    "mr/content/first-order-logic/axiomatic-deduction/provability-propositional.tex": {
+      "c36f2f8c19af76186ed501bdcf0ece8f6471a0f4af60a8c73b172dccf03144f9": "%READERNOTE{OLAXD-005:}",
+      "c81424b80e9ed7b7c8e5cdb5635dbb7bdd6eea07e70ae1e587e19161824b8050": "%READERNOTE{OLAXD-004:}"
+    },
+    "mr/content/first-order-logic/axiomatic-deduction/provability-quantifiers.tex": {
+      "ff48bc257b969106871020e6e99b2bd222f055de66c6b8d295a75677437ba1ca": "%READERNOTE{OLAXD-006:}"
+    },
+    "mr/content/first-order-logic/axiomatic-deduction/provability.tex": {
+      "1ed1fd17c903290c0d6dcdf5c30b57096188a772624e5803dc1e17594b92cc16": "%READERNOTE{OLINC-321:}",
+      "2ca195bbff25107a5b19e1552fe65b72b63e6df72c0bb6f415dd8b8c1702194f": "%READERNOTE{OLINC-326:}",
+      "2db143f6231db968ce4e537bd661b90b9337387562871149b5d416b71aa078c9": "%READERNOTE{SOL6-A285:}",
+      "4238ac6c4d44fbae960290cb0779c6f41cab5f6d8874347fd21213d09a8b28ac": "%READERNOTE{OLINC-322:}",
+      "5c97b0c204253ef94948579fa9e6a6584b6e5e380dfabc7cc7e921ca442279ed": "%READERNOTE{OLINC-324:}",
+      "9e8b81d58cbe267578e31f74ade2c0a46178d644521fd8112998d252bd9c0434": "%READERNOTE{OLINC-325:}",
+      "d11f7cbcf88fa3f80f67c4c10368dcd74650d1a4087cf0e0bea5fa72486f8637": "%READERNOTE{OLINC-323:}"
+    },
+    "mr/content/first-order-logic/axiomatic-deduction/soundness.tex": {
+      "46b18815b5173b744874de9717857492dc8e344550278536a632057747ed1600": "%READERNOTE{OLAXD-007:}",
+      "9c94f82d76019b7fd644c0d7c89c494003c1319cba0102725c38a8ff2163a1d5": "%READERNOTE{OLAXD-008:}"
+    },
+    "mr/content/first-order-logic/beyond/higher-order-logic.tex": {
+      "281f5ccd37ac9a9c75bcbc80430be2f9d1750837e6f30ccd8682cbf55a411210": "%READERNOTE{OLFOL-025:}"
+    },
+    "mr/content/first-order-logic/completeness/compactness-direct.tex": {
+      "296b52f4c74088779dbe3a9ad39102d00ad3d22c1015c79a8c6bb00589bc97c1": "%READERNOTE{OLCOM-006:}"
+    },
+    "mr/content/first-order-logic/completeness/construction-of-model.tex": {
+      "3cf60afba2a1d5fb338055bf7c552aeaf21c877ffcf4741791f6faaf7492afb6": "%READERNOTE{OLCOM-003:}",
+      "47497932e9c35df6b50af5e256493093b3586efa327e269ed819fbe1e58a8c59": "%READERNOTE{OLCOM-002:}"
+    },
+    "mr/content/first-order-logic/completeness/henkin-expansions.tex": {
+      "eb49bfa902bd0e8183407e14e3d2d8d6055ca7818cdd07d48aa35b2bb6cc0d56": "%READERNOTE{OLCOM-001:}"
+    },
+    "mr/content/first-order-logic/completeness/identity.tex": {
+      "0358790e3e279c10bb77b7e663ba8fc2a7e762ced42d6a66839f0854a3651116": "%READERNOTE{OLCOM-005:}",
+      "9b69ec1f140095720fecdb476dc3775c01f23bc1fbee8bcb60af0b957242ef55": "%READERNOTE{OLCOM-004:}"
+    },
+    "mr/content/first-order-logic/introduction/first-order-logic.tex": {
+      "41d1da5acfbe16d158bd57e149ad28a02278f8a5fc5e893f0bc3a2216b04de12": "%READERNOTE{OLFOL-001:}"
+    },
+    "mr/content/first-order-logic/introduction/satisfaction.tex": {
+      "205c8b9d450804b3c19bfad566e7e5df80c0166ceaabd17014b05c91cf3ffdb2": "%READERNOTE{OLFOL-003:}",
+      "fe0ab57ad4308363e6f6a650cb59a65e9903fe8a1e20db8a6b0f124a021df10f": "%READERNOTE{OLFOL-002:}"
+    },
+    "mr/content/first-order-logic/introduction/substitution.tex": {
+      "e5ac0866fe99e28d8e0f4be5f8361eb6074cbc0db1f7aed147fb9d52b9999ad6": "%READERNOTE{OLFOL-004:}"
+    },
+    "mr/content/first-order-logic/models-theories/expressing-relations.tex": {
+      "dcb1cffcfce82af42fa597fe286b656b01a80f6a2f44b63ddfb42b0d4258567c": "%READERNOTE{OLFOL-024:}"
+    },
+    "mr/content/first-order-logic/syntax-and-semantics/assignments.tex": {
+      "f89cbab2b01df167aedd7396f627440685719b9ddc25a1de1e26f603e8f653c7": "%READERNOTE{OLFOL-021:}"
+    },
+    "mr/content/first-order-logic/syntax-and-semantics/covered-structures.tex": {
+      "87e17d40374fb22858811b5b7992fb1e9c69ef0229863f6cf7b8f664df3ce393": "%READERNOTE{OLFOL-011:}"
+    },
+    "mr/content/first-order-logic/syntax-and-semantics/extensionality.tex": {
+      "0533c712a1da53c2f28fe3b89225ad5653ca2061ad1e6ceec4d80e982f88a033": "%READERNOTE{OLFOL-023:}",
+      "b50f8f67d936a5ae7f3eecd82192b59e82ab2a0f09a44983f580b2b66c6ca024": "%READERNOTE{OLFOL-022:}"
+    },
+    "mr/content/first-order-logic/syntax-and-semantics/formation-sequences.tex": {
+      "26e23eb138c3941aa75fe3de29f6e61f013af1c307a6a46f8e4847c6f68db1c5": "%READERNOTE{OLFOL-006:}",
+      "4d8f5021e750680abe5bce5b9b47e55af37924f80c4e665f202b34f6ea84cc13": "%READERNOTE{OLFOL-008:}",
+      "a457b883e6caf97a8bf16189526f593f3e651a2dfdafa67009cef970c2ae1fdb": "%READERNOTE{OLFOL-007:}"
+    },
+    "mr/content/first-order-logic/syntax-and-semantics/satisfaction.tex": {
+      "52bae14662dddcb0677b7c6f63e17c6668140aee5b1761cb0ada5c5958dd330f": "%READERNOTE{OLFOL-018:}",
+      "530c8998a91cab0ab8b356248ddd3dbab9cdd39d4e0d50c9f2e9b916b0205d3b": "  %READERNOTE{OLFOL-014:}",
+      "6367a0fb55ed3b14d0bb663421f2a77ea5704a38d034bfe5e4a52a206535ea7d": "%READERNOTE{OLFOL-017:}",
+      "822afa47ac1313fe05aa013027fd188d511125868c037d736b79951a0b3d6541": "%READERNOTE{OLFOL-012:}",
+      "8b2596a58347dd80b3d2a15d5bbc9aea9e3f9a345c95cd169bfff4bb53d1f4f4": "%READERNOTE{OLFOL-013:}",
+      "a94869afaeee7b2038792a5ad254f073980768224567f82efe9b075c5a74f2e0": "%READERNOTE{OLFOL-016:}",
+      "e4201fbacf64eead7d959e0875209be7047e100a11d96df99085d050bd415de7": "  %READERNOTE{OLFOL-015:}"
+    },
+    "mr/content/first-order-logic/syntax-and-semantics/structures.tex": {
+      "072ab8bc6395f187fb183a5376cb5019d03957be056ce2037af27215ca7a6366": "%READERNOTE{OLFOL-010:}"
+    },
+    "mr/content/first-order-logic/syntax-and-semantics/terms-formulas.tex": {
+      "04d94908e9f9c47656385ba1315fbc85ecfc6438f00a977f5cf2e6bd20699607": "%READERNOTE{OLFOL-005:}"
+    },
+    "mr/content/history/set-theory/cantor-plane.tex": {
+      "2b329d898c6d7eb21a3b91d9db09ca8a3a7d02752aa59128f33e5c98a97f2569": "%READERNOTE{SOL6-A281:}"
+    },
+    "mr/content/history/set-theory/hilbert-curve.tex": {
+      "76058699560967bfe659f2c20491251e2e3df85eaf2905714c43e309968bb409": "%READERNOTE{OLINC-317:}",
+      "a29b86646965fcba5efefb0a93bdde19a3d07b918235f9484d5d484a0de71228": "%READERNOTE{OLINC-320:}",
+      "b1bf788cbd276bc4ef062f2ce80050728403945939295458b73f516b0d355a06": "%READERNOTE{SOL6-A282:}",
+      "b3ea23ea4720f266e0544ed80e5aa5fc4e0bd16da4e960904f1a286da64b0fe6": "%READERNOTE{OLINC-318:}",
+      "e9040fb4e597938b84c1234e4642f9e5176edf0e8755319904d19449e703d7b3": "%READERNOTE{OLINC-319:}"
+    },
+    "mr/content/history/set-theory/limits.tex": {
+      "ec8fccd7c81a38081a4deb8b6249ff18e828f4938f3de330aa25eecec13af67b": "%READERNOTE{OLINC-314:}"
+    },
+    "mr/content/incompleteness/arithmetization-syntax/coding-formulas.tex": {
+      "1fee37b4a1ea76681731596f4ec2daada9a66fd4c5d3f35226a8a2175d155a04": "%READERNOTE{SOL6-A064:}",
+      "76f635364755317cf31bcaceb9a0411e6521f9009f036a77a080e6cc05ba359e": "%READERNOTE{SOL6-A064:}"
+    },
+    "mr/content/incompleteness/arithmetization-syntax/coding-terms.tex": {
+      "84fe2ef92feb8fc7c4920cce107315013320258c1f06604c22a2c7789e29e717": "%READERNOTE{SOL6-A063:}"
+    },
+    "mr/content/incompleteness/arithmetization-syntax/proofs-in-ax.tex": {
+      "d22aec514f78e13ad1b3442b4c0c0d05850a107e36424bf63984baec273fb19e": "%READERNOTE{SOL6-A067:}"
+    },
+    "mr/content/incompleteness/arithmetization-syntax/proofs-in-lk.tex": {
+      "c7b66f3883a9504f6a04d3810b2693e4c68533ae4503f701acac504311394433": "%READERNOTE{SOL6-A065:}"
+    },
+    "mr/content/incompleteness/arithmetization-syntax/proofs-in-nd.tex": {
+      "c5aeb23a769f6dcd47c53e171743921f79fbd1100d9fe233962a388a4c6abaf1": "%READERNOTE{SOL6-A066:}"
+    },
+    "mr/content/incompleteness/introduction/definitions.tex": {
+      "1425f9c019bf20ab82ca54555a9cc3ce27185e06d535435b5122cfdcdc08e2de": "%READERNOTE{SOL6-A055:}"
+    },
+    "mr/content/incompleteness/introduction/historical-background.tex": {
+      "33eca23ec8be83d978500edb2cfa7d361a0ff82809157805019ff52cacaff440": "%READERNOTE{SOL6-A054:}",
+      "5fc742d18c3d973930adc0d0bfbfd29cc7016873691b74d4bda00fae5fcdd309": "%READERNOTE{SOL6-A054:}",
+      "d76b17f82dea598910bbe16a43a80ae457ec924d54960d16c2c101023605144e": "%READERNOTE{SOL6-A054:}"
+    },
+    "mr/content/incompleteness/introduction/overview.tex": {
+      "fe9383a42a106f0d6482a5cc94c6b0d6ba679fd9676ffdb494509cfeee5cfd99": "%READERNOTE{SOL6-A056:}"
+    },
+    "mr/content/incompleteness/representability-in-q/beta-function.tex": {
+      "72699b3f9b6373e420456fc45e34572b231ffa0d5df82f1bc8558a51465a8a45": "%READERNOTE{SOL6-A070:}"
+    },
+    "mr/content/incompleteness/representability-in-q/c-representable.tex": {
+      "27b323f540bedeb36dc1d7ff0733653d5f352c17f94a1683ed5e76a9658d9898": "%READERNOTE{OLINC-327:}",
+      "9d4175dc6229ed34fad6546293b0ec9895fdb539efd6e5b16b9b7d83b4dcdd2a": "%READERNOTE{OLINC-328:}",
+      "d5afb82ff02be714cc358cb2dce7abb944e390293b0e8531cc970eb37d54d3e8": "%READERNOTE{SOL6-A289:}"
+    },
+    "mr/content/intuitionistic-logic/introduction/constructive-reasoning.tex": {
+      "820d2f33e8efa67c4b5263a1a91e415c4027a793f3954faa761de656aa33ad59": "%READERNOTE{SOL6-A345:}"
+    },
+    "mr/content/intuitionistic-logic/semantics/introduction.tex": {
+      "7a3a8efb61778398ee043e6bb01b2516bb3c367238ae5ccafbfeccfe374af003": "%READERNOTE{SOL6-A196:}"
+    },
+    "mr/content/intuitionistic-logic/semantics/propositions.tex": {
+      "86b6e61f2ace4d17a73d1f57213560331ef80ae85591010f2c3592793b8747c4": "%READERNOTE{OLINC-331:}",
+      "cc5e32006a7d5477bb94579a3a516687ae49065dd61bed1b8fe6cdc88bd8c8e5": "%READERNOTE{OLINC-330:}"
+    },
+    "mr/content/intuitionistic-logic/soundness-completeness/canonical-model.tex": {
+      "d85d7f3cbea13a09cfd0cd03dbbf3a7e6eb6fc3e49a40e4e078c3f7de3c07965": "%READERNOTE{SOL6-A201:}"
+    },
+    "mr/content/intuitionistic-logic/soundness-completeness/decidability.tex": {
+      "67acfe00c4ac698ac3633105cb56d100a61d994cc82a5481011d1fd3fbc8a626": "%READERNOTE{OLINC-226:}",
+      "768562b04a76343c9b85e299cdfa11eb87cad0971650e648ca93a8a2dedcd0e6": "%READERNOTE{SOL6-A203:}"
+    },
+    "mr/content/intuitionistic-logic/soundness-completeness/lindenbaum.tex": {
+      "92bbf1b55c8c49ad5de0d6e19b9ac028e1c44163c2ae343d4067d6d0c2ed4253": "%READERNOTE{SOL6-A200:}"
+    },
+    "mr/content/intuitionistic-logic/tableaux/rules.tex": {
+      "d2fd05294b7495e61bd9e997bfa0c449aeaaee1167062049f7f6f93edc13fbe6": "%READERNOTE{SOL6-A206:}"
+    },
+    "mr/content/intuitionistic-logic/tableaux/soundness.tex": {
+      "69e7a0f6ed56187c76ff8a9727d9304971427bf0f8684f519e4d4160c65b2f7d": "%READERNOTE{SOL6-A207:}",
+      "b777e6314359afe1146b7b8f89f850db409e816a7bb2e5db7ad73b05e3ea87b6": "%READERNOTE{OLINC-233:}"
+    },
+    "mr/content/lambda-calculus/church-rosser/parallel-beta-eta-reduction.tex": {
+      "b1a264a5247bc979b1c97f7e722f5e7e54debfbda4a8e50a61cfa4a4e9ae8bce": "%READERNOTE{SOL6-A126:}"
+    },
+    "mr/content/lambda-calculus/church-rosser/parallel-beta-reduction.tex": {
+      "9638a802f8ed8b0f8715efd5a25dcac2c08df6c1367691670b3d9320fa5961b5": "%READERNOTE{SOL6-A125:}"
+    },
+    "mr/content/lambda-calculus/introduction/basic-pr-lambda.tex": {
+      "e31d085fe67d507306ad12c2f89d323a9122d2ff7fe00b20e066a2f46c3c3f84": "%READERNOTE{SOL6-A108:}"
+    },
+    "mr/content/lambda-calculus/introduction/composition.tex": {
+      "32f171cd196cade6ff5e184833093fcdc25bc250de8982fafc8336dfe5e3cfef": "%READERNOTE{SOL6-A109:}"
+    },
+    "mr/content/lambda-calculus/introduction/computable-lambda.tex": {
+      "ca4d8d5ce3390234131b1d303228a5a015cd5206c7a35ee4e8351a54bc6c4019": "%READERNOTE{SOL6-A111:}"
+    },
+    "mr/content/lambda-calculus/introduction/currying.tex": {
+      "0957ae4d3da454bafef185de45e7f914353a5fef1cf3d61361d58e39bb18b7c1": "%READERNOTE{SOL6-A105:}"
+    },
+    "mr/content/lambda-calculus/introduction/fixed-point-combinator.tex": {
+      "ab7628a32bdf9b8d01651915441c4ae01b9d3bc3889661c788dc8177ffd070a8": "%READERNOTE{SOL6-A113:}"
+    },
+    "mr/content/lambda-calculus/introduction/minimization.tex": {
+      "907294b9a867481cbbc22eccf390a9d6820f85ef2d8ee7861de4d91d40f11915": "%READERNOTE{SOL6-A112:}"
+    },
+    "mr/content/lambda-calculus/introduction/primitive-recursion.tex": {
+      "975f18ae30ec789ebfb074f5948b5abcf0d672b2ad758ec8b5bcf667d6aed5f4": "%READERNOTE{SOL6-A110:}"
+    },
+    "mr/content/lambda-calculus/introduction/reduction.tex": {
+      "86dd1251ef4ae2fe37e11f7d6397dadb31d31e8f0d6c31f633594477540dbcba": "%READERNOTE{SOL6-A103:}"
+    },
+    "mr/content/lambda-calculus/introduction/syntax.tex": {
+      "46076ca4bd2744d24093115211b9ec73a306ad93bc200ff4efea892517a0b191": "%READERNOTE{SOL6-A102:}"
+    },
+    "mr/content/lambda-calculus/lambda-definability/arithmetical-functions.tex": {
+      "4fc5e3a2250df88fe4564a892494cc241b2d63e5c2338ca7583b76839476d26f": "%READERNOTE{SOL6-A128:}"
+    },
+    "mr/content/lambda-calculus/lambda-definability/lists.tex": {
+      "dd596d8d0f099660ff1785687b859b51a4bf47a257e673ab96633ec648dd0736": "%READERNOTE{SOL6-A292:}"
+    },
+    "mr/content/lambda-calculus/syntax/alpha.tex": {
+      "7ea43fa237cd601a46f8360bb39e8955ef5e5f12a069bd794e08f6155f2fc999": "%READERNOTE{SOL6-A120:}"
+    },
+    "mr/content/lambda-calculus/syntax/conversion.tex": {
+      "31fa8d37fcddd6d06a5b8daaeaf935591c389db6180f9c11c729956e9ccddfb3": "%READERNOTE{OLINC-332:}"
+    },
+    "mr/content/lambda-calculus/syntax/de-bruijn.tex": {
+      "23131d183ad3b1d707bb15ebdec954c0485cc8b16b0f2c77a0276dc03740c0f5": "%READERNOTE{SOL6-A121:}"
+    },
+    "mr/content/many-valued-logic/infinite-valued-logics/lukasiewicz.tex": {
+      "8e3254257b937c282a1304d9ee23a33b6ba47c89743ff74f36e3d8215d65b3f6": "%READERNOTE{SOL6-A143:}"
+    },
+    "mr/content/many-valued-logic/sequent-calculus/proof-theoretic-notions.tex": {
+      "1d070cf98c7c0c89a92fe12a44421ef3803f206a37c6e9660e2d66d87753ab81": "%READERNOTE{OLINC-333:}"
+    },
+    "mr/content/many-valued-logic/sequent-calculus/rules-and-proofs.tex": {
+      "6c3a970f6f8f31f51264ed4607b833f528ec54208ef21269ff7f80db1ce6e9f7": "%READERNOTE{SOL6-A144:}"
+    },
+    "mr/content/many-valued-logic/three-valued-logics/kleene.tex": {
+      "ae6c827236975d117b3b759085250737827b6c8a5391d26c2abe638c16666bfa": "%READERNOTE{SOL6-A141:}"
+    },
+    "mr/content/many-valued-logic/three-valued-logics/lukasiewicz.tex": {
+      "782eee26c63203e70124f2011e72a47d8100911e6b259a439260f22d17411180": "%READERNOTE{SOL6-A140:}"
+    },
+    "mr/content/many-valued-logic/three-valued-logics/multiple-designation.tex": {
+      "872eeacabc27d2a87fa0199f515cf6cb8a64cae618fb8e7ac7944394555da4b5": "%READERNOTE{SOL6-A142:}"
+    },
+    "mr/content/model-theory/basics/isomorphism.tex": {
+      "37c7c1a4492012255a2d9a1b7044f85c3c59ffb53dce4262e3e97c22a3c7e469": "  %READERNOTE{OLFOL-026:}"
+    },
+    "mr/content/model-theory/basics/nonstandard-arithmetic.tex": {
+      "31f782479422c95390b2586fcae356cde5cb89aefdc8725e4ccb33f6d94f929b": "  %READERNOTE{OLINC-335:}",
+      "3ddc4dbdeef5313cb5276c5bad5b5fa0c57261a0cb2160165fa9b64af67f4855": "  %READERNOTE{OLINC-338:}",
+      "cad197a550eccd02b01a804c7aeee316fc53bff97068962d13c2df395dac322c": "  %READERNOTE{OLINC-336:}",
+      "dd77a7c60b12cf38ca5b148c9e2faf80c9faff9de81063a4e59c7d72093af6a4": "%READERNOTE{OLINC-334:}",
+      "e6fd15aa1c68cc282da08ede45ded30c454d48722ce14c4fecd67d93a0bb9dc8": "%READERNOTE{SOL6-A293:}",
+      "f1fe31f16ef5e4d29b55a9e1ecfd06648f3acc69a67079bced6a7f388d07a983": "  %READERNOTE{OLINC-337:}"
+    },
+    "mr/content/model-theory/basics/partial-iso.tex": {
+      "bbf88cdcb605b8fa01cda312e0d2ebfbc33349a2734509129e38a795de6f19a9": "   %READERNOTE{OLFOL-027:}"
+    },
+    "mr/content/model-theory/interpolation/definability.tex": {
+      "2c24a9aeef31ded63809f4657f3a297d2e7f0eb2fa093d0f4d6dd00c7aa41678": "%READERNOTE{OLFOL-043:}",
+      "667aa35e501db58562bc8c6cbe78c86eef0343c5ccefe42016aaaba2c8cac0c4": "%READERNOTE{OLFOL-044:}"
+    },
+    "mr/content/model-theory/interpolation/interpolation-proof.tex": {
+      "0696b175a2d365ed5832ba8f47c83af6593a603e02c5f76adbf776a6658a1ba2": "  %READERNOTE{OLFOL-042:}"
+    },
+    "mr/content/model-theory/interpolation/separation.tex": {
+      "b8d56133b1ae374c02980211ceed891d28a2c1624643c1429a3acbabf6b6d6d2": "%READERNOTE{OLFOL-041:}"
+    },
+    "mr/content/model-theory/lindstrom/abstract-logics.tex": {
+      "9ed0030baa2494b6a0f5484f69e76193769ee94648cbe06957e959de25b44e6b": "  %READERNOTE{OLFOL-045:}"
+    },
+    "mr/content/model-theory/lindstrom/lindstrom-proof.tex": {
+      "40ad3dc8a58ff8dec773d7542d120a4222939c811b6c8ff1c8fc8ae0ab64cf5c": "%READERNOTE{OLFOL-054:}",
+      "99ad247e748700fa7d62fa7447434d9420d4140453a66da220935b4b18c46a72": "  %READERNOTE{OLFOL-049:}",
+      "a4a09ca9d1c9d2d75d615298fc7c9effe83ae9bb7e00da9bed1e5507a5e15f6a": "%READERNOTE{SOL6-A019:}",
+      "ad416dfb55aa5631677de2f259350cb1af15d70da43205bdfdf2064fb94eb8ff": "%READERNOTE{OLFOL-051:}",
+      "b22bd079a14fcca30db4cf2bedef47d35fa0422ef1ec9f263572daa2d9be0683": "%READERNOTE{OLFOL-052:}",
+      "b85458b0000dda6605000deefe793d9bedbfc6ecfef6bfa32d954fb63b49d67e": "%READERNOTE{OLNOTE-001:}",
+      "bed0dc28fd6f16d7697475d9c6c8307bb7833473baab50074793cc3ff5300464": "%READERNOTE{OLFOL-053:}",
+      "f97f7dc99f0fcd252030318330805e5e6e896355380aedae23c666ddf85c195f": "%READERNOTE{OLFOL-050:}"
+    },
+    "mr/content/model-theory/lindstrom/ls-property.tex": {
+      "37705280ddf18ca92e7c302032befe911233e67f1c61db38217dcc2df09bd4ea": "%READERNOTE{OLFOL-048:}",
+      "d2d9940eb03fa8e77c81bb8a01699e4ccfc0e972152b3b9c38562190266f34bc": "%READERNOTE{OLFOL-047:}",
+      "e14a12d78d6a543b778dc9fc0f5b8f860703c8dab751d0562a101c825df4c120": "%READERNOTE{OLFOL-046:}"
+    },
+    "mr/content/model-theory/models-of-arithmetic/computable-models.tex": {
+      "478b704e308a4e3cb9884ce922be30f7447b490b488d85000472ff163243ff1f": "%READERNOTE{OLFOL-039:}",
+      "b1ec118b733bead39f48d0e0cfcb2b9db90dca634a423146a5564f200c85abfd": "%READERNOTE{OLFOL-040:}"
+    },
+    "mr/content/model-theory/models-of-arithmetic/introduction.tex": {
+      "2c67c29d5fc4cc6a240c45185d851372f01746c176eed7a86a1971b94358c7f7": "%READERNOTE{OLFOL-029:}"
+    },
+    "mr/content/model-theory/models-of-arithmetic/models-of-pa.tex": {
+      "03d5cacaf677c2005aae9c906ca1e7c985ad27fa29fef4ba98d64ca960dd1968": "%READERNOTE{OLFOL-038:}",
+      "ad7b5580854c5582e5c3dc565e52670490b1530de5ad0fcdf040181fece0d989": "%READERNOTE{OLFOL-036:}",
+      "c5b13437a06298fa4f5c17776804f8490383d3aa9d0eb9f8c20ec1109843f4ee": "%READERNOTE{OLFOL-037:}"
+    },
+    "mr/content/model-theory/models-of-arithmetic/models-of-q.tex": {
+      "0345fa59d674e4000ae49a41d3d462591348d3621cfecd7069721328fac49cfe": "%READERNOTE{OLFOL-035:}",
+      "3cda04260844b968aa324e83637ff25b2a8abc8a293f379d9e6c9f2be4e77c05": "%READERNOTE{OLFOL-034:}"
+    },
+    "mr/content/model-theory/models-of-arithmetic/non-standard-models.tex": {
+      "8807ac2bafe8d5423f995a9534b6341711cd7a43f80bcd84a2bba33743bd97e9": "%READERNOTE{OLFOL-033:}",
+      "a7b5da29ebbfc1eb55918f27828bd785be45bd7ff4e8fd167b8bd573dfbcae11": "%READERNOTE{OLFOL-031:}",
+      "e5e1c27795697f515fee1288fae9667d1052f147135187ddbec7a4cef935cb05": "%READERNOTE{OLFOL-032:}"
+    },
+    "mr/content/model-theory/models-of-arithmetic/standard-models.tex": {
+      "bc60cc6f5698004d1fe233b2492b2d726ffa04d6629cb705c7bb8d1896574e81": "%READERNOTE{OLFOL-030:}"
+    },
+    "mr/content/normal-modal-logic/axioms-systems/consistency.tex": {
+      "42c39f861ce3dbdf5e6ba32096709cf85fee21b7449b2b9a713de7e87311cb49": "%READERNOTE{SOL6-A161:}"
+    },
+    "mr/content/normal-modal-logic/axioms-systems/derived-rules.tex": {
+      "e42e2f02996019fa60a151b5ebafe201b21430cae1f4855bd5df2f6f72783796": "%READERNOTE{SOL6-A157:}"
+    },
+    "mr/content/normal-modal-logic/axioms-systems/introduction.tex": {
+      "a1284a0bf1b7e3f5a045aab0ab87b7c9fbab2e9f63a0b5f70983423dc1df8550": "%READERNOTE{SOL6-A155:}"
+    },
+    "mr/content/normal-modal-logic/axioms-systems/proofs-in-K.tex": {
+      "ec0522a23f12659db4f3ac436017ff41b67ecec86f165803d4cec18596341950": "%READERNOTE{SOL6-A156:}"
+    },
+    "mr/content/normal-modal-logic/axioms-systems/provability-from-set.tex": {
+      "d8a61be0180f4e3598cb80e7ce97abbb52ad946b0e09c03e3eb2421d9e5d0093": "%READERNOTE{SOL6-A160:}"
+    },
+    "mr/content/normal-modal-logic/axioms-systems/soundness.tex": {
+      "d84c83b572fedd099c7944cf325373d19d7f0c45deb0621ce51aad31cba4c607": "%READERNOTE{SOL6-A159:}"
+    },
+    "mr/content/normal-modal-logic/completeness/canonical-models.tex": {
+      "4c100cdfe61a452b574979706136a22e5497677bd72d3aecec32a6a69f812c62": "%READERNOTE{SOL6-A166:}"
+    },
+    "mr/content/normal-modal-logic/completeness/complete-consistent-sets.tex": {
+      "753e685da1c82d54263db050c68533bf57986fb10bc71c8249f81dd628833010": "%READERNOTE{SOL6-A163:}"
+    },
+    "mr/content/normal-modal-logic/completeness/completeness-K.tex": {
+      "b2e44aa458bbe060f2c77148c93aeed291921128045868f4e2c1f7993215dbe8": "%READERNOTE{SOL6-A168:}"
+    },
+    "mr/content/normal-modal-logic/completeness/frame-completeness.tex": {
+      "f35fb2b0f126365158845392583be4a911d1cc8b4752ebe94a63e0ab1cffc4c4": "%READERNOTE{SOL6-A169:}"
+    },
+    "mr/content/normal-modal-logic/completeness/introduction.tex": {
+      "6869667a72d3364e0f5cd68a86a7ba8b2de6ccab5e51f1a879619db3214c421e": "%READERNOTE{SOL6-A162:}"
+    },
+    "mr/content/normal-modal-logic/completeness/lindenbaums-lemma.tex": {
+      "6c58c21bee8b262ebef9e243b82fd6d169ed59a8b998ae5eff231c078478d89c": "%READERNOTE{SOL6-A164:}"
+    },
+    "mr/content/normal-modal-logic/completeness/modalities-ccs.tex": {
+      "c796495f369100d34a65dc6750b4d8b161fa3315adfbeaf4c45b0b4bc80ba79d": "%READERNOTE{SOL6-A165:}"
+    },
+    "mr/content/normal-modal-logic/completeness/truth-lemma.tex": {
+      "09e4370c400410187df59cd2d05374fbc97237e193d7e283ff127fde4a26eb22": "%READERNOTE{SOL6-A167:}"
+    },
+    "mr/content/normal-modal-logic/filtrations/S5-decidable.tex": {
+      "5a088b5ce91362f7c970ca22eed0b8b4a60c99e56dbaa8a2526777010e03e2af": "%READERNOTE{SOL6-A172:}"
+    },
+    "mr/content/normal-modal-logic/filtrations/S5-fmp.tex": {
+      "6d6a8da766a5b90c8bcd2752a27fa7052d29522103733856336a165600f4854a": "%READERNOTE{SOL6-A171:}"
+    },
+    "mr/content/normal-modal-logic/filtrations/euclidean-filtrations.tex": {
+      "8963d19481a27f20cebe301a4e18690056b6be3755575fcc88a333cf0e3f5fc4": "%READERNOTE{SOL6-A174:}"
+    },
+    "mr/content/normal-modal-logic/filtrations/introduction.tex": {
+      "632a34f8b89cef1188c9210980870001cf3fb8918c4ca9c3c911c4d6e7e8f699": "%READERNOTE{SOL6-A170:}"
+    },
+    "mr/content/normal-modal-logic/filtrations/more-filtrations.tex": {
+      "b00a781e73c2966f6437bbe2f6426f33837f3b4945258b6ee8c674084a654d07": "%READERNOTE{SOL6-A173:}"
+    },
+    "mr/content/normal-modal-logic/frame-definability/definability.tex": {
+      "26332711b4faf1e0115c7a6a3ff15bf6e815c63dc93ef2c8b257fd613f6a5b0b": "%READERNOTE{SOL6-A151:}"
+    },
+    "mr/content/normal-modal-logic/frame-definability/properties-accessibility.tex": {
+      "f109c086221ab4ea38ac4aa8a242792d31056931e6afbd2ad4df24a1c85af20d": "%READERNOTE{SOL6-A150:}"
+    },
+    "mr/content/normal-modal-logic/frame-definability/second-order-definability.tex": {
+      "7f95a683285c4a8f6ef51e469c9c8ae96c625c4b8817f20ecda85979368c7528": "%READERNOTE{SOL6-A153:}"
+    },
+    "mr/content/normal-modal-logic/sequent-calculus/introduction.tex": {
+      "c65808bbed86cb8917080f94d6576653991914483053756cdb6f741ce2530499": "%READERNOTE{SOL6-A183:}"
+    },
+    "mr/content/normal-modal-logic/sequent-calculus/more-rules.tex": {
+      "ec0dd5ce73641fceb319477e7b960f4e23e61009b1aa4909832bc5502d11c351": "%READERNOTE{SOL6-A185:}"
+    },
+    "mr/content/normal-modal-logic/sequent-calculus/proofs-in-K.tex": {
+      "4522f7d7bdc0fe17be5bd8c2cf52e0c85be96ff9c56e7010278734cb88140a8e": "%READERNOTE{SOL6-A184:}"
+    },
+    "mr/content/normal-modal-logic/syntax-and-semantics/schemas.tex": {
+      "104b96befa97feb1fa538543a3a0186db2e9aac6cc988d48f98a7f92840bb56e": "%READERNOTE{SOL6-A149:}"
+    },
+    "mr/content/normal-modal-logic/syntax-and-semantics/substitution.tex": {
+      "c02afef6f7a35d260ba378051f74b2a85112934a2ef02b0fb5f07bfc5b177d79": "%READERNOTE{SOL6-A146:}"
+    },
+    "mr/content/normal-modal-logic/tableaux/completeness.tex": {
+      "755305f69d6ec89e048a5ac3b620927a4b41c0581ac5e7982ce6f0f72082e2e6": "%READERNOTE{SOL6-A180:}"
+    },
+    "mr/content/normal-modal-logic/tableaux/countermodels.tex": {
+      "c88fbeefeb83d176b5c66eb68bd3021061bf2f509ba7dbd8593a1152d9606a17": "%READERNOTE{SOL6-A181:}"
+    },
+    "mr/content/normal-modal-logic/tableaux/more-rules.tex": {
+      "a629d57129d42269525885e8944920591ee7747ac160d8ab63e751a677881d6d": "%READERNOTE{SOL6-A179:}"
+    },
+    "mr/content/normal-modal-logic/tableaux/rules-for-K.tex": {
+      "6aaa2f45e2f03265a92a1d457b85ee37621baa113ed8106cebff178ce782b5cf": "%READERNOTE{SOL6-A175:}"
+    },
+    "mr/content/normal-modal-logic/tableaux/soundness.tex": {
+      "cf4fe549a93e85f5a266d51e0323311ade9020201e8d28906c35eed6f1bb8cec": "%READERNOTE{SOL6-A176:}"
+    },
+    "mr/content/proof-theory/cut-elimination/ce-largest.tex": {
+      "2e19da8eb1984bef5a2a6b0c5a95fc4dc024e37a1ad6a8d431f5497c3714d510": "%READERNOTE{OLINC-340:}",
+      "97599384b836ebc63ef8334fd304df336e370bdf32f5c0229a16e2829baae045": "%READERNOTE{SOL6-A294:}",
+      "d8c43aedca95b0af1920c53f6d18e862bea69161b56a56d3aac55bc257c0f9d4": "%READERNOTE{OLINC-339:}"
+    },
+    "mr/content/proof-theory/cut-elimination/ce-topmost.tex": {
+      "51fb9f1d089373f93c13ab0d13c106ea743e2227d841353852c4d516458bace5": "%READERNOTE{OLINC-343:}",
+      "58e15c7c3ef2ce4475912b178152b7a0459cda833f03972142bf738fabacfa4b": "%READERNOTE{OLINC-341:}",
+      "d667bebe7b3c5a4c45a1b2082a9ef0bba1719cd9aadb21066a0fea1d769236ec": "%READERNOTE{SOL6-A295:}",
+      "f1910f77e9528650574910c2743c267a3e503a28026fad418fb411d28cbcb296": "%READERNOTE{OLINC-342:}"
+    },
+    "mr/content/proof-theory/cut-elimination/interpolation.tex": {
+      "88f411129c37142258bd7bde05554c0ab59e4a041a2de101e4856fab4a77607d": "%READERNOTE{SOL6-A303:}",
+      "cd0089fd3a7cdf8f294b1186b423c1b7f58a28583e198233cdd798ae72324ba6": "%READERNOTE{SOL6-A296:}"
+    },
+    "mr/content/proof-theory/cut-elimination/introduction.tex": {
+      "d634c50eb637cef468fb39ac176df8d4cc0ac9dae7373549a49251f8248708fa": "%READERNOTE{SOL6-A297:}"
+    },
+    "mr/content/proof-theory/cut-elimination/midsequent.tex": {
+      "5f1d288b9160a62cbcef376a37e39c4a1a86a0e0311ddf7e5454a10e1cba80ee": "%READERNOTE{SOL6-A298:}"
+    },
+    "mr/content/proof-theory/natural-deduction/grafting.tex": {
+      "7dcc9c03606a9f4b431eee0f6b2005bf8a459026d8dc994b83b562b5f18dc4ee": "%READERNOTE{SOL6-A300:}"
+    },
+    "mr/content/proof-theory/natural-deduction/quantifiers.tex": {
+      "eccbba656aaf575d2408d1ef38970c79c0bd21c32991023b95abccd3fc1ed27b": "%READERNOTE{SOL6-A301:}"
+    },
+    "mr/content/proof-theory/natural-deduction/translation-N2i.tex": {
+      "0bb423d24f9175e9cf9c1151a00c3b406761b75d5d814e0710d9b493aae1bea6": "%READERNOTE{SOL6-A302:}"
+    },
+    "mr/content/proof-theory/normalization/introduction.tex": {
+      "00304ae7d359a669aa6e1d3a3562edd7967fb7213f7fb6a9daad2d8cf2723c2c": "%READERNOTE{SOL6-A307:}"
+    },
+    "mr/content/proof-theory/normalization/permutations.tex": {
+      "7fa40973ed27e154c7ecba78460c40bc3dcbeb562711ae87e2930d8003cc5b52": "%READERNOTE{SOL6-A304:}"
+    },
+    "mr/content/proof-theory/normalization/reductions.tex": {
+      "03d75cb3d2d45d42bbb7be81c2a5ac33d076b609c885945921cce97b96819641": "%READERNOTE{SOL6-A309:}",
+      "c305e8c6654668907ff03716230b10eccd76c95138c4f3f0cee3454ba39c87b5": "%READERNOTE{SOL6-A305:}"
+    },
+    "mr/content/proof-theory/normalization/translations.tex": {
+      "21ac1fb614e54364fffa86a3648af51575794793ea9e3a3b3f40333585862858": "%READERNOTE{SOL6-A306:}",
+      "cbabf873748bf60252f82ace1aa7ca1b1074681cc93cfa08bf6138eaebbacbfe": "%READERNOTE{SOL6-A308:}",
+      "cf7af38d6cdbab6b3143b7867ba1ce41cdc5aac131b25f54d7f04499cb2065e3": "%READERNOTE{SOL6-A310:}"
+    },
+    "mr/content/proof-theory/proof-search/completeness.tex": {
+      "6aca338db3b1f773a16cca63b89c2ece93c1cc805201baed3daa1d91e9103d2b": "%READERNOTE{SOL6-A311:}"
+    },
+    "mr/content/proof-theory/proof-search/introduction.tex": {
+      "b1dd1d7224debb4af3afc0273222b0d9980d52d5c572503d06c653367391ffb7": "%READERNOTE{SOL6-A314:}"
+    },
+    "mr/content/proof-theory/proof-search/search-algorithm.tex": {
+      "ab2176b7bdd2bafd006992c89ff36627121bdca8f77ede5632ad844e739789e9": "%READERNOTE{SOL6-A312:}"
+    },
+    "mr/content/proof-theory/proof-search/tableaux.tex": {
+      "54f48f989722edc12891b900fd11f451f6af9692769ebe320e1870f24dcb65e1": "%READERNOTE{SOL6-A316:}"
+    },
+    "mr/content/proof-theory/propositions-as-types/normalization.tex": {
+      "59a6c0a7d629a6f50dcfca505b75ffd13f2a0be2a9029cd699dde10d2b37ece6": "%READERNOTE{SOL6-A318:}",
+      "c77ea2be207359e879588e68855a56351fb24b92b6e13ec5c07e0a8e3776d1fb": "%READERNOTE{SOL6-A326:}"
+    },
+    "mr/content/proof-theory/propositions-as-types/proof-terms.tex": {
+      "5eb5981893d57d3889613d4210755c4bdfc64794bf4767bad56d98d1d1fc885e": "%READERNOTE{SOL6-A323:}"
+    },
+    "mr/content/proof-theory/propositions-as-types/proofs-to-terms.tex": {
+      "73a1500a4409bab9ddcaec8e1640dad3ac6c3b56ef92be6679cd5f447390fe93": "%READERNOTE{SOL6-A324:}"
+    },
+    "mr/content/proof-theory/propositions-as-types/reduction.tex": {
+      "7f4de5d06c2fb188143a8b813d071e2cd7794a17f24c0da2815c14388a860e00": "%READERNOTE{SOL6-A321:}"
+    },
+    "mr/content/proof-theory/propositions-as-types/rules-tN3.tex": {
+      "4b444eae6c2cedbd1b74ac87c8dee9723d3a0669b7ce2723f5d72170ba44955b": "%READERNOTE{SOL6-A320:}"
+    },
+    "mr/content/proof-theory/propositions-as-types/sequent-natural-deduction.tex": {
+      "d884d27ed5944722f7bcc64beef327bf2c2e400fafcca88fbe1b62bbb78eba94": "%READERNOTE{SOL6-A325:}"
+    },
+    "mr/content/proof-theory/propositions-as-types/type-preservation.tex": {
+      "1502a90aefd21d14b4e987c5b5398ac343380321be9225c2fe1070d7c4a213bb": "%READERNOTE{SOL6-A327:}",
+      "801b5c11491b00756f6ac7e75c61d82788932b4379f63fc115d77a883a85c02c": "%READERNOTE{SOL6-A322:}"
+    },
+    "mr/content/proof-theory/propositions-as-types/types.tex": {
+      "26dad21c8560c29e01ca8f0e53e4d31ce2e5233514fbd2edeb7630ed437185d1": "%READERNOTE{SOL6-A319:}"
+    },
+    "mr/content/proof-theory/sequent-calculus/admissible-derivable.tex": {
+      "489fa73629367fcce43c69caa6d7e6305ee1e964bc7bb7bb36475f9f13dfcf32": "%READERNOTE{SOL6-A328:}"
+    },
+    "mr/content/proof-theory/sequent-calculus/interpretation-rules.tex": {
+      "2d6850569eedb36133de5167427fceec5a25804db8b080174a389d14b8a8fcd4": "%READERNOTE{SOL6-A329:}"
+    },
+    "mr/content/proof-theory/sequent-calculus/introduction.tex": {
+      "2959caf70e1d6a63252444366c587fad5d620ee8a5aa7169e7270ad0678e6c38": "%READERNOTE{SOL6-A330:}"
+    },
+    "mr/content/proof-theory/sequent-calculus/invertibility.tex": {
+      "e1a3164bf05c4af0e29c129483dff7361a8891a9ec5ad2e1c7596a429286a43a": "%READERNOTE{SOL6-A331:}"
+    },
+    "mr/content/proof-theory/sequent-calculus/proof-examples.tex": {
+      "f638fb9bdb640fb0b6d73604078ea6c561164c4ae28ccd248f4734e050089578": "%READERNOTE{SOL6-A332:}"
+    },
+    "mr/content/proof-theory/sequent-calculus/quantifiers.tex": {
+      "77a6aa67822efaed849fdd4c4f1ee91ba5c8238a8f72df0ab7f9c78fc1bc0a6f": "%READERNOTE{SOL6-A313:}"
+    },
+    "mr/content/proof-theory/sequent-calculus/rules-G1i.tex": {
+      "c7e6a478199eeac29a5315a7efcaef3dcd40a4f021565266fe24b8cc56806dd2": "%READERNOTE{SOL6-A333:}"
+    },
+    "mr/content/proof-theory/sequent-calculus/rules-G3i.tex": {
+      "2b64e82c98c2db935753d9cb3133f908f0cca9fb47d99d03a58e1795d65bffe2": "%READERNOTE{SOL6-A334:}"
+    },
+    "mr/content/proof-theory/sequent-calculus/rules-mG3i.tex": {
+      "57c17490af76a73a08a52ae133236f5df38fda4c429d89fe9df5df6c303307d8": "%READERNOTE{SOL6-A335:}"
+    },
+    "mr/content/proof-theory/sequent-calculus/rules-proofs.tex": {
+      "9b31bb458fd09463b544c3a7cdf6a740a7a2cd4b24ee16bb16caee27cc1d1dae": "%READERNOTE{SOL6-A336:}"
+    },
+    "mr/content/proof-theory/sequent-calculus/translations.tex": {
+      "1d74ac53c94a4f8a1e665b7aec320ee2d3b5790987bdd71f49e6d3ed14aaa283": "%READERNOTE{SOL6-A337:}"
+    },
+    "mr/content/propositional-logic/syntax-and-semantics/completeness.tex": {
+      "859ca4c22cd5e3a757d05c3a069a36fa9fcbbcc6268840b15a0b3052b22785ea": "%READERNOTE{SOL6-A338:}"
+    },
+    "mr/content/propositional-logic/syntax-and-semantics/formation-sequences.tex": {
+      "206645cb2477de2c78dbf84b3d7d0f878e0db2b29b43ddd714fb8032ab35efa5": "%READERNOTE{MRPL-002:}"
+    },
+    "mr/content/propositional-logic/syntax-and-semantics/formulas.tex": {
+      "c3071755b3f81a9f7a62cebbe2f971b0e23ca44462441783878c4417966760f9": "%READERNOTE{MRPL-001:}"
+    },
+    "mr/content/propositional-logic/syntax-and-semantics/soundness.tex": {
+      "6dfb63425756944c69391bf4537ee738d76d5a3fa26fbe86a6a8dbc6d9d5d262": "%READERNOTE{SOL6-A339:}"
+    },
+    "mr/content/second-order-logic/metatheory/introduction.tex": {
+      "a4601f4797f0c7c54370f91bf67b586e0016fa1411b78baaf4c25977fa3254a7": "%READERNOTE{SOL6-A093:}"
+    },
+    "mr/content/second-order-logic/metatheory/second-order-arithmetic.tex": {
+      "f2669c1295c24a9a779fa24e036c1d8b946470905225f598b302e4b999500b0e": "%READERNOTE{SOL6-A094:}"
+    },
+    "mr/content/second-order-logic/metatheory/undecidability-and-axiomatizability.tex": {
+      "b4904edbc9484c1975ada09677a99f9786ce139af0ea80f240a21db21f9da360": "%READERNOTE{SOL6-A095:}"
+    },
+    "mr/content/second-order-logic/sol-and-set-theory/cardinalities.tex": {
+      "2f093ab7be58bdb770b65ba95dca28ce2d6112d5ee769bb445eb00caf362c96c": "%READERNOTE{SOL6-A097:}"
+    },
+    "mr/content/second-order-logic/sol-and-set-theory/comparing-sets.tex": {
+      "e70765cd5522e2efefbb751a9ebc1e3d9c12ac42d5323f006b438219f01cc350": "%READERNOTE{SOL6-A096:}"
+    },
+    "mr/content/second-order-logic/sol-and-set-theory/power-of-continuum.tex": {
+      "a49b1c052dc93c2ab88b06c33968386b5f73a0dd6555922b6a52a29e329870e0": "%READERNOTE{SOL6-A098:}"
+    },
+    "mr/content/second-order-logic/syntax-and-semantics/inf-count.tex": {
+      "195ccad9aa5954c6e90a2e83bad9a3ba80bc56b3fddf75d5cc4db2757d3767a3": "%READERNOTE{SOL6-A092:}"
+    },
+    "mr/content/second-order-logic/syntax-and-semantics/satisfaction.tex": {
+      "42310e2d4a837e56bed00c637f78e513af0bae41eb96cfd826c63de29ecd1472": "  %READERNOTE{SOL6-A091:}"
+    },
+    "mr/content/set-theory/choice/countablechoice.tex": {
+      "cd708f8cb34e47c7ab64b1df2b179edbc8a40f61b3635dc07d8c2f6bedc6de76": "%READERNOTE{SOL6-A263:}"
+    },
+    "mr/content/set-theory/ord-arithmetic/exponentiation.tex": {
+      "f4ba6691d95e5e9bb03046ec86376dbef29c564a2b8aebd6a99e51befcfc777e": "%READERNOTE{SOL6-A249:}"
+    },
+    "mr/content/set-theory/ordinals/iso.tex": {
+      "fbd304f9f2abda96df130022dfd11e086cd04ea8eb8a97ce9608cc54b8167326": "%READERNOTE{SOL6-A231:}"
+    },
+    "mr/content/set-theory/ordinals/replacement.tex": {
+      "26ffb873f7cd6955d1fa8d4184d2d199626246ac9d13da6f2e39ece340803716": "%READERNOTE{SOL6-A234:}"
+    },
+    "mr/content/set-theory/ordinals/wo.tex": {
+      "c99ee8ea653d7c05a71043601e18e8e091f2290881c45fd10fd9008cd9725239": "%READERNOTE{SOL6-A230:}"
+    },
+    "mr/content/set-theory/replacement/finiteaxiomatizability.tex": {
+      "de66decd7ebe610f823adf7d5f57477224fe8fea706174ffa5c91e8edd48b438": "%READERNOTE{SOL6-A246:}"
+    },
+    "mr/content/set-theory/replacement/limofsize.tex": {
+      "46e3f07edf41023d7a38956ed753f72e25cb475832fbcd2badd2af72769da4e2": "%READERNOTE{SOL6-A245:}"
+    },
+    "mr/content/set-theory/story/cumulative-approach.tex": {
+      "0217d8060b1795a46c52cb3a884671e0b0f989c2b6b784cbbd022c3e0ac5fe4c": "%READERNOTE{SOL6-A224:}"
+    },
+    "mr/content/set-theory/story/grundgesetze.tex": {
+      "6ea3e8435fe586bc6cd25081e2aa1fae94575c78df08a9cd91725cc56f6405b3": "%READERNOTE{SOL6-A226:}"
+    },
+    "mr/content/set-theory/story/predicativity.tex": {
+      "198b438fd8ec7a17852ae21c5bd01f580d67abce6befe17d6dba468de5c01536": "%READERNOTE{SOL6-A223:}"
+    },
+    "mr/content/set-theory/z/infinity-again.tex": {
+      "393f42abb910f9846a7c2ec660a7a4344bfb5b26c3fe862d581b8fd0192e2635": "%READERNOTE{SOL6-A229:}"
+    },
+    "mr/content/set-theory/z/separation.tex": {
+      "e663d0a974527f7193a20c6424a7bf8d7d8ce0cdf1c8cf893ba1321e96e62436": "%READERNOTE{SOL6-A227:}"
+    },
+    "mr/content/sets-functions-relations/arithmetization/cauchy.tex": {
+      "33c4c92b9f9b1942992adff206875bc1e46717d3cb6f420c262ca2ebd728251a": "%READERNOTE{MRARITH-011:}",
+      "53bb9392e0fa05e543b47b48fc5ffd300791cfa3c7908ac47dd5dce0e178f116": "%READERNOTE{MRARITH-009:}",
+      "8231920500543168843d3dc812132e5033a6027d1e77a6332cc7ada40b6edd1a": "%READERNOTE{MRARITH-012:}",
+      "abd18fe60d460939c182869c8c8506548668565541d17f1ac442e47fdc80ef1e": "%READERNOTE{MRARITH-010:}"
+    },
+    "mr/content/sets-functions-relations/arithmetization/checking-details.tex": {
+      "97502cbef3589dc6ca6adbce3461ccaf144d86f2e8cb0b43d9fcade5fa0cee26": "%READERNOTE{MRARITH-008:}",
+      "fc9a03c5878e031cdb6bd251119f586a081a2550cd70bc465ed82dddc0c8ad52": "%READERNOTE{MRARITH-007:}"
+    },
+    "mr/content/sets-functions-relations/arithmetization/cuts.tex": {
+      "0ab45d49582bd49ed71011f3b9dbea0dc49a3366f93f137089f7f68709f9fda9": "%READERNOTE{MRARITH-005:}",
+      "9441e5477b424fa85c540823b0055ce8db312081518c907a5f196b0153e9dfe2": "%READERNOTE{MRARITH-006:}",
+      "a3d1c4be347539c544680f04d8c5ee99fbc5d4b40b4b87289e98161f56a2eb53": "%READERNOTE{MRARITH-004:}"
+    },
+    "mr/content/sets-functions-relations/arithmetization/rationals.tex": {
+      "3446ca26b7768aa01ef35c3749aafe8c39d7d8fe392f39f016a69e49969ff36e": "%READERNOTE{MRARITH-001:}"
+    },
+    "mr/content/sets-functions-relations/arithmetization/reals.tex": {
+      "3f338baec347685430abc1afc68b2566bc702e540c2991800b9091bc77c4825f": "%READERNOTE{MRARITH-003:}",
+      "e3fe6b7f14a1705c1e9217f89a75e505e895e582e8979fbca968d8506c3e8735": "%READERNOTE{MRARITH-002:}"
+    },
+    "mr/content/sets-functions-relations/functions/function-basics.tex": {
+      "2b6502c43fc9ee23747328567251aa4a7c4b979fb4481e51313e21f379d48c52": "%READERNOTE{OLFUN-002:}",
+      "e82986d2d03beac16f4b1c1edf3d1d6a55ab49e10103af92fcc472ba62229002": "%READERNOTE{OLFUN-003:}"
+    },
+    "mr/content/sets-functions-relations/functions/functions-relations.tex": {
+      "3c78c690e92e0216ed4e91b0cc7872c27fb75aaac3e86561d62559dc83e67eb3": "%READERNOTE{OLFUN-005:}",
+      "cbb73f4ec8a969663637e8bd83576caeecb22800f3f21d71c965168651dfd230": "%READERNOTE{OLFUN-004:}"
+    },
+    "mr/content/sets-functions-relations/functions/inverses.tex": {
+      "a323cb8c64d895cc1086c4ad125cca7e2580cb8b96c520d7bd8f4c146f04d8bc": "%READERNOTE{OLFUN-001:}"
+    },
+    "mr/content/sets-functions-relations/functions/isomorphic-functions.tex": {
+      "de1b594459771f385b41f8e885d090c8fc7bdef4ab95a73b8ae517b7cff6e577": "%READERNOTE{SOL6-A340:}"
+    },
+    "mr/content/sets-functions-relations/inductive-defs-proofs/introduction.tex": {
+      "91871c2803be4e94653b3246722eff66b0e4a428a07a20310ca3fa831d7dae24": "%READERNOTE{SOL6-A341:}"
+    },
+    "mr/content/sets-functions-relations/sets/proofs-about-sets.tex": {
+      "2d5a2b052129b8665a08d29ab1c1bb06c21dce6ceae28121a0cb014593dc111c": "%READERNOTE{SOL6-A342:}"
+    },
+    "mr/content/sets-functions-relations/size-of-sets/comparing-size.tex": {
+      "247d9ce8bdb641ee459e8f797715448d6d6358d48aeab39f0f67d9ffca31585f": "%READERNOTE{OLSIZ-007:}"
+    },
+    "mr/content/sets-functions-relations/size-of-sets/enumerability.tex": {
+      "5fd3c4e63de0602ab8ac569e93795c40c47f1011ab7d74c2527418ce972f035a": "%READERNOTE{OLSIZ-001:}",
+      "ac6c68c69c3b9f2744ab23389fa2e5731eaee55b064d131c3da3f1071a0281bf": "%READERNOTE{MRSIZ-001:}"
+    },
+    "mr/content/sets-functions-relations/size-of-sets/equinumerous-sets.tex": {
+      "0583a40b541eaffa3532d5f09d25ad6a9e7de0ddfd7c395b2ae181397ba28934": "%READERNOTE{OLSIZ-006:}",
+      "e239325c1f9cd088ac633d574184d2d2c2bf6531175e2c1a1a68f07e91b7d36d": "%READERNOTE{MRSIZ-004:}"
+    },
+    "mr/content/sets-functions-relations/size-of-sets/non-enumerability-alt.tex": {
+      "2c2e22bf37ba966ecf6112d6f7d17fbd1c2bd6cf336d76f1edf1b66fac14799b": "%READERNOTE{OLSIZ-009:}",
+      "9dc97b67d69be3a67251cedd47c518d92bf25a3cac304a1e13c84b4fab5cf886": "%READERNOTE{OLSIZ-008:}"
+    },
+    "mr/content/sets-functions-relations/size-of-sets/pairing-alt.tex": {
+      "54e83d0bc17ecacbb959cafbf65b4ccd8c70e692b7af7c2e0ec752bf79032da1": "%READERNOTE{MRSIZ-003:}",
+      "b05a18a7a4b44e15a4504f9020e14ab0d6bcc461631763a32fe94866bf192942": "%READERNOTE{OLSIZ-003:}"
+    },
+    "mr/content/sets-functions-relations/size-of-sets/pairing.tex": {
+      "1ae26e381f1b847cb3eb213a50484f623b9c04ef1e968afbc6fdf7479bd903c2": "  %READERNOTE{MRSIZ-002:}",
+      "c1b58953ad0f61c03a368df681d866a5ca6c2565d0115bb2e90dadae16af7536": "%READERNOTE{OLSIZ-002:}"
+    },
+    "mr/content/sets-functions-relations/size-of-sets/reduction-alt.tex": {
+      "0ce52c9c2e8cd2fbb991268d70de1e6c959e1a6720e53fb9ab26a8aef33128b7": "%READERNOTE{OLSIZ-010:}"
+    },
+    "mr/content/sets-functions-relations/size-of-sets/reduction.tex": {
+      "61a692cf80bbeae9fc55aecea8a1aa1282d9cd1867011326fc1199c94a247cea": "%READERNOTE{OLSIZ-004:}",
+      "6e2faa0d7d023c59b58761e370dde4f9c57eac2ca3795212d0c9ed1eb70f234c": "%READERNOTE{OLSIZ-005:}"
+    }
+  },
+  "inputs": [
+    "LICENSE.md",
+    "courses/sets-logic-computation/config/slc-source-citations.tex",
+    "courses/sets-logic-computation/font-notices/Baskervaldx-NOTICE.txt",
+    "courses/sets-logic-computation/font-notices/GPL-2.0.txt",
+    "courses/sets-logic-computation/font-notices/GUST-FONT-LICENSE.txt",
+    "courses/sets-logic-computation/font-notices/LPPL-1.3c.txt",
+    "courses/sets-logic-computation/font-notices/STIX-Two-Math-OFL.txt",
+    "courses/sets-logic-computation/font-notices/STIX_Font_License_2010.txt",
+    "courses/sets-logic-computation/font-notices/TX-FONTS-COPYRIGHT.txt",
+    "courses/sets-logic-computation/font-notices/URW-PALLADIO-NOTICE.txt",
+    "courses/sets-logic-computation/locale/open-logic-config.sty",
+    "fonts/MANIFEST.json",
+    "fonts/NotoSerifDevanagari.ttf",
+    "fonts/OFL.txt",
+    "fonts/OLMarathiSerif-Bold.ttf",
+    "fonts/OLMarathiSerif-Regular.ttf",
+    "olp-edition.toml",
+    "provenance/CANON_PASSAGES.jsonl",
+    "provenance/CANON_SOURCES.jsonl",
+    "provenance/SOURCE_MANIFEST.jsonl",
+    "provenance/TERM_DECISIONS.jsonl",
+    "reader/twenty-chapters/assets/bijective.svg",
+    "reader/twenty-chapters/assets/composition.svg",
+    "reader/twenty-chapters/assets/difference.svg",
+    "reader/twenty-chapters/assets/function.svg",
+    "reader/twenty-chapters/assets/graph-four.svg",
+    "reader/twenty-chapters/assets/graph-three.svg",
+    "reader/twenty-chapters/assets/hilberts-hotel.svg",
+    "reader/twenty-chapters/assets/injective.svg",
+    "reader/twenty-chapters/assets/intersection.svg",
+    "reader/twenty-chapters/assets/root-two-square.svg",
+    "reader/twenty-chapters/assets/surjective.svg",
+    "reader/twenty-chapters/assets/tree.svg",
+    "reader/twenty-chapters/assets/union.svg",
+    "tools/build_complete_epub.py",
+    "tools/build_epub.py",
+    "tools/build_guarded.ps1",
+    "tools/build_math_text_fallbacks.py",
+    "tools/complete_diagram_inventory.py",
+    "tools/complete_html_diagrams.py",
+    "tools/complete_html_equations.py",
+    "tools/complete_html_floats.py",
+    "tools/complete_html_numbering.py",
+    "tools/complete_math_glyphs.py",
+    "tools/complete_reader_context_layout.py",
+    "tools/complete_reader_layout.py",
+    "tools/complete_reader_notes.py",
+    "tools/complete_reader_topology.py",
+    "tools/complete_wrapper_notes.py",
+    "tools/core-diagrams.json",
+    "tools/core_html_proofs.py",
+    "tools/fetch_fonts.py",
+    "tools/locate_complete_diagrams.py",
+    "tools/marathi_layout_projection.py",
+    "tools/marathi_reader_source.py",
+    "tools/prepare_complete.py",
+    "tools/prepare_complete_html.py",
+    "tools/prepare_core.py",
+    "tools/prepare_core108.py",
+    "tools/prepare_core194.py",
+    "tools/prepare_core248.py",
+    "tools/prepare_core260.py",
+    "tools/prepare_core273.py",
+    "tools/prepare_core279.py",
+    "tools/prepare_core300.py",
+    "tools/prepare_core311.py",
+    "tools/prepare_core321.py",
+    "tools/prepare_core329.py",
+    "tools/prepare_core335.py",
+    "tools/prepare_core340.py",
+    "tools/prepare_core355.py",
+    "tools/prepare_core366.py",
+    "tools/prepare_core372.py",
+    "tools/prepare_core382.py",
+    "tools/prepare_core391.py",
+    "tools/prepare_core397.py",
+    "tools/prepare_core401.py",
+    "tools/prepare_core406.py",
+    "tools/prepare_core418.py",
+    "tools/prepare_core426.py",
+    "tools/prepare_core440.py",
+    "tools/prepare_core449.py",
+    "tools/prepare_core459.py",
+    "tools/prepare_core469.py",
+    "tools/prepare_core474.py",
+    "tools/prepare_core481.py",
+    "tools/prepare_core490.py",
+    "tools/prepare_core497.py",
+    "tools/prepare_core502.py",
+    "tools/prepare_core510.py",
+    "tools/prepare_core515.py",
+    "tools/prepare_core521.py",
+    "tools/prepare_core528.py",
+    "tools/prepare_core536.py",
+    "tools/prepare_core546.py",
+    "tools/prepare_core557.py",
+    "tools/prepare_core564.py",
+    "tools/prepare_core573.py",
+    "tools/prepare_core579.py",
+    "tools/prepare_core585.py",
+    "tools/prepare_core59.py",
+    "tools/prepare_core591.py",
+    "tools/prepare_core600.py",
+    "tools/prepare_core612.py",
+    "tools/prepare_core619.py",
+    "tools/prepare_core632.py",
+    "tools/prepare_core639.py",
+    "tools/prepare_core642.py",
+    "tools/prepare_core65.py",
+    "tools/prepare_core94.py",
+    "tools/prepare_core_html.py",
+    "tools/prepare_cut661.py",
+    "tools/prepare_foundations.py",
+    "tools/prepare_html.py",
+    "tools/prepare_proof671.py",
+    "tools/prepare_proof678.py",
+    "tools/prepare_proof684.py",
+    "tools/prepare_proof697.py",
+    "tools/prepare_proof713.py",
+    "tools/prepare_sets.py",
+    "tools/qa_aligned.py",
+    "tools/qa_complete_epub.py",
+    "tools/qa_complete_html.py",
+    "tools/qa_complete_pdf.py",
+    "tools/qa_complete_reader.py",
+    "tools/qa_core_html.py",
+    "tools/qa_epub.py",
+    "tools/qa_html.py",
+    "tools/reader_bibliography.py",
+    "tools/reader_note_separation.py",
+    "tools/segment_alignment.py",
+    "tools/validate_turing_adder_diagrams.py",
+    "upstream/.github/ISSUE_TEMPLATE/typo.md",
+    "upstream/.github/workflows/build.yml",
+    "upstream/.gitignore",
+    "upstream/.gitmodules",
+    "upstream/LICENSE.md",
+    "upstream/Makefile",
+    "upstream/README.md",
+    "upstream/assets/diagrams/bijective.tikz",
+    "upstream/assets/diagrams/composition.tikz",
+    "upstream/assets/diagrams/difference.tikz",
+    "upstream/assets/diagrams/function.tikz",
+    "upstream/assets/diagrams/injective.tikz",
+    "upstream/assets/diagrams/intersection.tikz",
+    "upstream/assets/diagrams/surjective.tikz",
+    "upstream/assets/diagrams/turing-machine.tikz",
+    "upstream/assets/diagrams/union.tikz",
+    "upstream/assets/logos/aboer-print.png",
+    "upstream/assets/logos/aboer-screen.png",
+    "upstream/assets/logos/by.eps",
+    "upstream/assets/logos/by.pdf",
+    "upstream/assets/logos/cc.eps",
+    "upstream/assets/logos/cc.pdf",
+    "upstream/assets/logos/openlogic-logo-bw.eps",
+    "upstream/assets/logos/openlogic-logo-bw.pdf",
+    "upstream/assets/logos/openlogic-logo-color.eps",
+    "upstream/assets/logos/openlogic-logo-color.pdf",
+    "upstream/assets/logos/openlogic-wm-bw.eps",
+    "upstream/assets/logos/openlogic-wm-bw.pdf",
+    "upstream/assets/logos/openlogic-wm-color.eps",
+    "upstream/assets/logos/openlogic-wm-color.pdf",
+    "upstream/assets/logos/remix.eps",
+    "upstream/assets/logos/remix.pdf",
+    "upstream/assets/logos/ti-print.pdf",
+    "upstream/assets/logos/ti-screen.pdf",
+    "upstream/bib/natbib-oup.bst",
+    "upstream/bib/open-logic.bib",
+    "upstream/courses/README.md",
+    "upstream/courses/enderton/Makefile",
+    "upstream/courses/enderton/open-logic-enderton-config.sty",
+    "upstream/courses/enderton/open-logic-enderton-envs.sty",
+    "upstream/courses/enderton/open-logic-enderton.tex",
+    "upstream/courses/sample/Makefile",
+    "upstream/courses/sample/open-logic-sample-config.sty",
+    "upstream/courses/sample/open-logic-sample.tex",
+    "upstream/include/open-logic-chapter.tex",
+    "upstream/include/open-logic-part.tex",
+    "upstream/include/open-logic-section.tex",
+    "upstream/locale/LOCALIZATION.md",
+    "upstream/misc/htmltoc",
+    "upstream/misc/index.start.html",
+    "upstream/misc/makeolprevision",
+    "upstream/open-logic-complete-config.sty",
+    "upstream/open-logic-complete.tex",
+    "upstream/open-logic-config.sty",
+    "upstream/open-logic-debug.tex",
+    "upstream/open-logic-envs.sty",
+    "upstream/open-logic-locale.sty",
+    "upstream/sty/bpextra.sty",
+    "upstream/sty/bussproofs-extra.sty",
+    "upstream/sty/open-logic-book-envs.sty",
+    "upstream/sty/open-logic-book.cls",
+    "upstream/sty/open-logic-debug.sty",
+    "upstream/sty/open-logic-defer.sty",
+    "upstream/sty/open-logic-formulas.sty",
+    "upstream/sty/open-logic-referencing.sty",
+    "upstream/sty/open-logic-selective.sty",
+    "upstream/sty/open-logic-tokenize.sty",
+    "upstream/sty/open-logic.sty",
+    "upstream/sty/ptolemaicastronomy.sty"
+  ]
+}
