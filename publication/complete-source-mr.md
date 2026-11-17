@@ -4,7 +4,7 @@
 
 मूळ ग्रंथाचे लेखक आणि योगदानकर्ते Open Logic Project चे आहेत. मराठी भाषांतर OpenAI Codex च्या GPT-5.6 Sol व GPT-6 Sol या मॉडेलांनी केले. GPT-6.1 Sol ने भाषांतरातील दुरुस्त्या आणि HTML व EPUB मधील अक्षरजुळणी व क्रमांकन केले. GPT-6 Astra ने बदललेल्या इंग्रजी एककांशी मराठी मजकूर जुळवला आणि ग्रंथाची अक्षरजुळणी केली. या चारही मॉडेलांसाठी Ultra तर्कप्रयत्न वापरले गेले. स्वतंत्र मानवी भाषिक पुनरावलोकन झालेले नाही.
 
-मूळ ग्रंथ आणि भाषांतर Creative Commons Attribution 4.0 या परवान्याखाली उपलब्ध आहेत. परवान्याचा पूर्ण मजकूर `LICENSE.md` मध्ये आहे. अक्षररूपे आणि इतर स्वतंत्र घटकांसाठी त्यांच्यासोबत दिलेल्या परवाना-नोंदी पाहा. [मूळ इंग्रजी आवृत्ती](https://github.com/OpenLogicProject/OpenLogic/tree/a3862d07d2f5df3a281d4a55df73dcd59e84d5ce) · [मराठी आवृत्ती](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN)
+मूळ ग्रंथ आणि भाषांतर Creative Commons Attribution 4.0 या परवान्याखाली उपलब्ध आहेत. परवान्याचा पूर्ण मजकूर `LICENSE.md` मध्ये आहे. अक्षररूपे आणि इतर स्वतंत्र घटकांसाठी त्यांच्यासोबत दिलेल्या परवाना-नोंदी पाहा. [मूळ इंग्रजी आवृत्ती](https://github.com/OpenLogicProject/OpenLogic/tree/f31f879ad93edc85c19e426dd617c99ca897e32c) · [मराठी आवृत्ती](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN)
 
 ## PDF तयार करणे
 
