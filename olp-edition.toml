@@ -34,7 +34,7 @@ attribution_policy = "preserve-recorded-else-unresolved"
 
 [pins.olp]
 repository = "https://github.com/OpenLogicProject/OpenLogic"
-commit = "f31f879ad93edc85c19e426dd617c99ca897e32c"
+commit = "3aacf4afad2ed3827c7cdb46b1b49942574247a6"
 
 [pins.slc]
 repository = "https://github.com/rzach/sets-logic-computation"

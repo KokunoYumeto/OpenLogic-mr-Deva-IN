@@ -1,0 +1,168 @@
+{
+  "canon": {
+    "BU-HINTIKKA": {
+      "consulted_excerpt": "Jaakko Hintikka",
+      "locator": "Department faculty profile, heading",
+      "source": "https://www.bu.edu/philo/profile/jaakko-hintikka/",
+      "source_sha256": "69068e0dd920f955eedfa8bcaaf96f3cb8bc670c46c09bfedf74230a29af7ed7"
+    },
+    "G3c": {
+      "locator": "G3c, initial sequents and atomic identity",
+      "source": "https://github.com/OpenLogicProject/OpenLogic/blob/3aacf4afad2ed3827c7cdb46b1b49942574247a6/content/proof-theory/sequent-calculus/rules-G3c.tex",
+      "source_sha256": "0beb76005abcb4f20109400d18ae1d632e7126bd6dea43c20c9f42d114c9664d"
+    },
+    "MR-P006": {
+      "locator": "विधानीय तर्कशास्त्र, topics 1–4, PDF p. 12",
+      "page_sha256": "a92bfe617b68986a9e7b6a25db9655d98d65b23fc667e4e840b8c254508331da",
+      "source": "https://www.unishivaji.ac.in/uploads/bosnew/Humanities/BAII%20Philosophy.pdf",
+      "source_sha256": "a51f5af34e4f4fb71f32970b813d3a44fb2cccc28c6c4e2d1b714bec27ebd065"
+    },
+    "MR-P021": {
+      "locator": "Predicate logic introduction, section 3.1, PDF p. 29",
+      "page_sha256": "2dd54b1b4ae2ea415254f116955afb924aa3ad0267b70e1da056901850a1066b",
+      "source": "https://ebooks.ebalbharati.in/pdfs/1201010508.pdf",
+      "source_sha256": "d6db1feef902f0d88d6480004ea290b0e54b5d39193bcb196f5ba32c65bdc682"
+    },
+    "T131": {
+      "locator": "T131 · atomic formula",
+      "source": "https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/blob/9f47174cd18f269e150c9b26545d608d41eced70/provenance/TERM_DECISIONS.jsonl",
+      "source_sha256": "b3d9009dca8a156b5d250e96fac3797997a7dc269887c7fe90a79e3b26e1602b"
+    }
+  },
+  "edition_base": "9f47174cd18f269e150c9b26545d608d41eced70",
+  "effort": "ultra",
+  "from": "f31f879ad93edc85c19e426dd617c99ca897e32c",
+  "model": "GPT-6 Astra",
+  "schema": "olpkit.sync-review.v1",
+  "to": "3aacf4afad2ed3827c7cdb46b1b49942574247a6",
+  "units": [
+    {
+      "alternatives": "मराठी नाव जसे आहे तसे ठेवले. Jaakoo या चुकीच्या रूपावरून नवे लिप्यंतरण केले असते तर लेखकाचे नाव चुकले असते.",
+      "anchor": "याक्को हिंटिक्का",
+      "canon": [
+        "BU-HINTIKKA"
+      ],
+      "confidence": "५/५",
+      "confidence_basis": "मराठी नाव जसे आहे तसे ठेवले. Jaakoo या चुकीच्या रूपावरून नवे लिप्यंतरण केले असते तर लेखकाचे नाव चुकले असते.",
+      "disposition": "patched",
+      "hashes": {
+        "source_after": "71bf564e601b3c58991a67a6081363b661bdaf0daa925d023158797a3e189186",
+        "source_before": "b2c3d1cfca757032d8e89e4f17207aa4f37248926fa4f1a3057ef724407c09d9",
+        "target_after": "d7135ab454b2d8f1ed6184a27f4809b22b58c35ca44bc5cea02b1cc505ff3d7d",
+        "target_before": "d60a3d6d2a1da185e04716ae7c00e700e0f383d8648903a47bf235e1f1b63654"
+      },
+      "inherited_attribution": {
+        "date": null,
+        "effort": null,
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl",
+        "method": "inherited",
+        "model": null
+      },
+      "locale_markers_added": 1,
+      "path": "content/applied-modal-logic/epistemic-logic/introduction.tex",
+      "rationale": "बॉस्टन विद्यापीठाच्या तत्त्वज्ञान विभागातील नाव Jaakko Hintikka आहे. मराठी «याक्को हिंटिक्का» हे त्याच नावाचे रूप आहे. इंग्रजीतील Jaakoo हा मुद्रणदोष मराठीत आणलेला नाही.",
+      "source_hunks": [
+        "@@ -18,6 +18,6 @@ Just as modal logic deals with \\emph{modal propositions} and the entailment rela"
+      ],
+      "substantive_target_change": false,
+      "target_lines": [
+        32
+      ],
+      "unit": "OLP-0483",
+      "wording_choices": []
+    },
+    {
+      "alternatives": "T131 मध्ये «आण्विक सूत्र» आहे. याच शोधात आधीपासून «अणुरूप नसलेले» हा विरुद्ध वर्ग वापरला आहे. म्हणून येथे «अणुरूप» ठेवले. शिवाजी विद्यापीठाच्या अभ्यासक्रमात «साधी आणि संयुक्त विधाने» हा भेद आहे. हा संदर्भ भेदासाठी आहे; त्यात «अणुरूप» या अचूक शब्दाची साक्ष नाही. «विधान» वापरल्यास मूळमधील सूत्र ही व्याकरणिक श्रेणी बदलली असती.",
+      "anchor": "हे अणुरूप !!{formula}",
+      "canon": [
+        "G3c",
+        "MR-P006",
+        "MR-P021",
+        "T131"
+      ],
+      "confidence": "४/५",
+      "confidence_basis": "T131 मध्ये «आण्विक सूत्र» आहे. याच शोधात आधीपासून «अणुरूप नसलेले» हा विरुद्ध वर्ग वापरला आहे. म्हणून येथे «अणुरूप» ठेवले. शिवाजी विद्यापीठाच्या अभ्यासक्रमात «साधी आणि संयुक्त विधाने» हा भेद आहे. हा संदर्भ भेदासाठी आहे; त्यात «अणुरूप» या अचूक शब्दाची साक्ष नाही. «विधान» वापरल्यास मूळमधील सूत्र ही व्याकरणिक श्रेणी बदलली असती.",
+      "disposition": "patched",
+      "hashes": {
+        "source_after": "681c94baba43fdb7b9f212487ee932b2df65020b792a739f6531d94defd87060",
+        "source_before": "2ce7994ec2166ec4f50b3c3698d4767f49ff3fd4a39c942f79ba304ca9c1a8a2",
+        "target_after": "69b05c93e5b41336ac1338d57747d311fd03c7f65e140a2c96bf3cd64f629ad1",
+        "target_before": "486f1b7bb9074e58a1ea0636ab090ed59fd15732c7386da641430212bd9599d6"
+      },
+      "inherited_attribution": {
+        "date": null,
+        "effort": null,
+        "evidence": "provenance/SOURCE_MANIFEST.jsonl",
+        "method": "inherited",
+        "model": null
+      },
+      "locale_markers_added": 1,
+      "path": "content/proof-theory/proof-search/search-algorithm.tex",
+      "rationale": "ओळख-स्वयंसिद्धकात दोन्ही बाजूंना असलेले सूत्र अणुरूप असले पाहिजे. शोध थांबवण्याच्या अटीत आणि तयार सिद्धतेच्या पानांचे वर्णन करताना ही मर्यादा दोन्हीकडे स्पष्ट केली. निर्देशांक, उजवी अस्तित्व-संख्यापक नियमखूण व C मधील पहिला स्थिरांक यांची आधीची मराठी मांडणी मूळ दुरुस्तीशी जुळते.",
+      "source_hunks": [
+        "@@ -54,7 +54,7 @@ Suppose the algorithm has generated a tree of indexed sequents, with",
+        "@@ -76,7 +76,7 @@ and according to whether $!A^i$ appears on the left or the right.",
+        "@@ -85,8 +85,8 @@ and according to whether $!A^i$ appears on the left or the right.",
+        "@@ -99,7 +99,7 @@ and according to whether $!A^i$ appears on the left or the right.",
+        "@@ -109,14 +109,14 @@ and according to whether $!A^i$ appears on the left or the right.",
+        "@@ -126,7 +126,7 @@ If at stage $n+1$ we have not added a new sequent to any topmost"
+      ],
+      "substantive_target_change": true,
+      "target_lines": [
+        77,
+        170
+      ],
+      "unit": "OLP-0683",
+      "wording_choices": [
+        {
+          "current": "~$!A$ हे अणुरूप !!{formula} क्रमवर्तीच्या डाव्या",
+          "previous": "~$!A$ हे !!a{formula} क्रमवर्तीच्या डाव्या",
+          "source_role": "शोध थांबवण्याची अट"
+        },
+        {
+          "current": "रूप~$!A, \\Pi \\Sequent \\Lambda, !A$ (येथे~$!A$ हे अणुरूप !!{formula} आहे) किंवा",
+          "previous": "रूप~$!A, \\Pi \\Sequent \\Lambda, !A$ किंवा",
+          "source_role": "सिद्धतेच्या पानांची अट"
+        }
+      ]
+    },
+    {
+      "alternatives": "«सत्यता वृक्ष पद्धत» ही शैक्षणिक संज्ञा आहे. येथे अध्यायाने आधीच «टॅब्लो» निश्चित केले आहे. सर्व पदांवर नियम पुन्हा लागू करण्याची अट केवळ «खूण झाली» असे लिहिल्यास नष्ट होईल.",
+      "anchor": "पूर्णपणे संतृप्त",
+      "canon": [
+        "MR-P006",
+        "MR-P021"
+      ],
+      "confidence": "५/५",
+      "confidence_basis": "«सत्यता वृक्ष पद्धत» ही शैक्षणिक संज्ञा आहे. येथे अध्यायाने आधीच «टॅब्लो» निश्चित केले आहे. सर्व पदांवर नियम पुन्हा लागू करण्याची अट केवळ «खूण झाली» असे लिहिल्यास नष्ट होईल.",
+      "disposition": "carried",
+      "hashes": {
+        "source_after": "ef89ed960280ad83e330b6d86aeeb4812c03857eabd505723184f835c91ef10b",
+        "source_before": "94f8b2203c2caa61393aef956a514cb72ed956e71a8f3a41027c56d07ab5c99e",
+        "target_after": "2d0f51df0081ea9765856c530432937e8e4a49fbee4937a88597cbf7c703b17a",
+        "target_before": "2d0f51df0081ea9765856c530432937e8e4a49fbee4937a88597cbf7c703b17a"
+      },
+      "inherited_attribution": {
+        "date": "2026-11-15",
+        "effort": "ultra",
+        "evidence": "provenance/source-sync/olp-a216aa64.json",
+        "method": "patched",
+        "model": "GPT-6 Astra"
+      },
+      "locale_markers_added": 0,
+      "path": "content/proof-theory/proof-search/tableaux.tex",
+      "rationale": "सत्यचिन्हांकित असत्य, प्रत्येक शाखा बंद झाल्यावर संपूर्ण टॅब्लो बंद होणे, खूण न केलेल्या अणुरूप नसलेल्या सूत्राची निवड, आणि पुन्हा वापरणाऱ्या संख्यापकांसाठी प्रत्येक उपलब्ध पदाची अट या सर्व गोष्टी मराठी पाठात आधीच आहेत.",
+      "source_hunks": [
+        "@@ -42,9 +42,9 @@ the signs $\\True$ and $\\False$ indicate whether !!a{formula} is",
+        "@@ -118,7 +118,7 @@ serve as indications which signed !!{formula}s the rule is applied to",
+        "@@ -139,7 +139,8 @@ already occur on the branch."
+      ],
+      "substantive_target_change": false,
+      "target_lines": [
+        171
+      ],
+      "unit": "OLP-0684",
+      "wording_choices": []
+    }
+  ]
+}
