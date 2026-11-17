@@ -35,11 +35,11 @@ python -X utf8 tools/locate_complete_diagrams.py --previous-tex PREVIOUS.tex --p
 python -X utf8 tools/complete_html_diagrams.py
 python -X utf8 tools/prepare_complete_html.py
 python -X utf8 tools/qa_complete_html.py
-python -X utf8 tools/build_complete_epub.py publication/complete-epub-a3862d07.json
+python -X utf8 tools/build_complete_epub.py publication/complete-epub-3aacf4af.json
 ```
 
-संगणकावर वाचण्यासाठी `build/full/html/index.html` उघडा. EPUB फाइल `build/epub-a3862d07/openlogic-mr-complete.epub` येथे मिळेल. EPUBCheck च्या JAR फाइलचा स्थानिक मार्ग देऊन EPUB तपासता येतो.
+संगणकावर वाचण्यासाठी `build/full/html/index.html` उघडा. EPUB फाइल `build/epub-3aacf4af/openlogic-mr-complete.epub` येथे मिळेल. EPUBCheck च्या JAR फाइलचा स्थानिक मार्ग देऊन EPUB तपासता येतो.
 
 ```powershell
-python -X utf8 tools/qa_complete_epub.py publication/complete-epub-a3862d07.json --epubcheck-jar PATH/TO/epubcheck.jar
+python -X utf8 tools/qa_complete_epub.py publication/complete-epub-3aacf4af.json --epubcheck-jar PATH/TO/epubcheck.jar
 ```
