@@ -10,17 +10,18 @@
 [संच, तर्कशास्त्र, संगणन — मराठी पाठ्यपुस्तक](courses/sets-logic-computation/README.md) · [पाठ्यपुस्तकाचे PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-17/slc-screen-mr.pdf) · [EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/slc-2026-11-17/slc-screen-mr.epub)
 
 संपूर्ण आवृत्तीचे वाचन आणि डाउनलोड
-[संपूर्ण मराठी ग्रंथ](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-2026-11-16)
+[संपूर्ण मराठी ग्रंथ](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-2026-11-17)
 मधून करा.
 
-- [संपूर्ण PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-16/01-openlogic-mr-complete.pdf)
-- [संपूर्ण संचयी TeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-16/02-openlogic-mr-complete.tex)
-- [सर्व संपादनयोग्य स्रोत](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-16/03-openlogic-mr-complete-editable-sources.zip)
-- [ऑफलाइन HTML](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-16/04-openlogic-mr-complete-html.zip)
-- [संपूर्ण EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-16/06-openlogic-mr-complete.epub)
+- [संपूर्ण PDF](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-17/01-openlogic-mr-complete.pdf)
+- [संपूर्ण संचयी TeX](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-17/02-openlogic-mr-complete.tex)
+- [सर्व संपादनयोग्य स्रोत](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-17/03-openlogic-mr-complete-editable-sources.zip)
+- [ऑफलाइन HTML](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-17/04-openlogic-mr-complete-html.zip)
+- [संपूर्ण EPUB](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/download/complete-2026-11-17/06-openlogic-mr-complete.epub)
 
 HTML संग्रह उलगडून `index.html` उघडा. संपादनयोग्य स्रोतांच्या संग्रहात
 स्वतंत्र प्रकरण-स्रोत आणि संकलनासाठी लागणारी सामग्री दिली आहे.
+[complete-2026-11-16](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-2026-11-16),
 [complete-2026-11-15](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-2026-11-15),
 [complete-v1.5](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.5),
 [complete-v1.4](https://github.com/KokunoYumeto/OpenLogic-mr-Deva-IN/releases/tag/complete-v1.4),

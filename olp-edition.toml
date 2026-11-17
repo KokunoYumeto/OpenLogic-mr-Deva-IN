@@ -21,7 +21,7 @@ license = "मूळ मजकूर व मराठी रूपांतर C
 
 [public.catalogue]
 path = "publication/catalogue.json"
-sha256 = "7c2217e07ea8a7957452af46ad19b6e9a8dc9d5e7ff93443e11ea03e697e2312"
+sha256 = "126fdc2938ea3ab33bb599b26836189cd8b604b4227b5e62d37bc74f262e95d7"
 
 [paths]
 content = "mr/content"
